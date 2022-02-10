@@ -22,6 +22,7 @@ class Karaoke:
 	raspi_wifi_config_installed = os.path.exists(raspi_wifi_conf_file)
 
 	queue = []
+	queue_hash = None
 	available_songs = []
 	songname_trans = {} # transliteration is used for sorting and initial letter search
 	now_playing = None
@@ -717,10 +718,10 @@ class Karaoke:
 
 		if self.is_file_playing():
 			if self.use_vlc:
-				return self.vlcclient.command(f"audiodelay&val={self.audio_delay}")
+				self.vlcclient.command(f"audiodelay&val={self.audio_delay}")
 			else:
 				logging.warning("OMXplayer cannot set audio delay!")
-			return True
+			return self.audio_delay
 		logging.warning("Tried to seek, but no file is playing!")
 		return False
 
@@ -730,14 +731,17 @@ class Karaoke:
 			if self.use_vlc:
 				if self.vlcclient.is_playing():
 					self.vlcclient.pause()
+					self.is_paused = True
 				else:
 					self.vlcclient.play()
+					self.is_paused = False
 			else:
 				if self.omxclient.is_playing():
 					self.omxclient.pause()
+					self.is_paused = True
 				else:
 					self.omxclient.play()
-			self.is_paused = not self.is_paused
+					self.is_paused = False
 			return True
 		else:
 			logging.warning("Tried to pause, but no file is playing!")
@@ -746,10 +750,11 @@ class Karaoke:
 	def vol_up(self):
 		if self.is_file_playing():
 			if self.use_vlc:
-				self.vlcclient.vol_up()
+				xml = self.vlcclient.vol_up().text
+				vol = self.vlcclient.get_val_xml(xml, 'volume')
 			else:
-				self.omxclient.vol_up()
-			return True
+				vol = self.omxclient.vol_up()
+			return vol
 		else:
 			logging.warning("Tried to volume up, but no file is playing!")
 			return False
@@ -757,10 +762,11 @@ class Karaoke:
 	def vol_down(self):
 		if self.is_file_playing():
 			if self.use_vlc:
-				self.vlcclient.vol_down()
+				xml = self.vlcclient.vol_down().text
+				vol = self.vlcclient.get_val_xml(xml, 'volume')
 			else:
-				self.omxclient.vol_down()
-			return True
+				vol = self.omxclient.vol_down()
+			return vol
 		else:
 			logging.warning("Tried to volume down, but no file is playing!")
 			return False
@@ -768,16 +774,21 @@ class Karaoke:
 	def vol_set(self, volume):
 		if self.is_file_playing():
 			if self.use_vlc:
-				self.vlcclient.vol_set(volume)
+				xml = self.vlcclient.vol_set(volume).text
+				vol = self.vlcclient.get_val_xml(xml, 'volume')
 			else:
 				logging.warning("Only VLC player can set volume, ignored!")
-			return True
+				vol = self.omxclient.volume_offset
+			return vol
 		else:
 			logging.warning("Tried to set volume, but no file is playing!")
 			return False
 
 	def get_state(self):
-		new_state = self.vlcclient.get_info_xml() if self.use_vlc else {'volume': self.omxclient.volume_offset}
+		new_state = self.vlcclient.get_info_xml() if self.use_vlc else {
+			'volume': self.omxclient.volume_offset,
+			'state': ('paused' if self.omxclient.paused else 'playing')
+		}
 		self.player_state.update(new_state)
 		return defaultdict(lambda: None, self.player_state)
 

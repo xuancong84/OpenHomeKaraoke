@@ -125,26 +125,33 @@
     };
 
     $("#pause-resume").click(function () {
-      $.get("/pause");
-      togglePausePlayButton();
+      $.get("/pause", function (is_paused) {
+				if (is_paused=="true") {
+					$("#pause-resume").removeClass("icon-pause");
+					$("#pause-resume").addClass("icon-play");
+				} else {
+					$("#pause-resume").removeClass("icon-play");
+					$("#pause-resume").addClass("icon-pause");
+				}
+      });
     });
 
     $("#vol-up").click(function () {
-      $.get("/vol_up");
+      $.get("/vol_up", function(vol){$("#vol").text(vol)});
     });
 
     $("#vol-down").click(function () {
-      $.get("/vol_down");
+      $.get("/vol_down", function(vol){$("#vol").text(vol)});
     });
 
     $("#vol").keypress(function (e) {
-    	var ch = String.fromCharCode(e.which);
+			var ch = String.fromCharCode(e.which);
       if(!("0123456789".includes(ch))) e.preventDefault();
       if(ch=="\n" || ch=="\r") $(this).blur();
     });
 
     $("#vol").blur(function () {
-    	$.get("/vol/"+$(this).text());
+    	$.get("/vol/"+$(this).text(), function(vol){$("#vol").text(vol)});
     	volume_changing = false;
     });
 
@@ -173,26 +180,16 @@
     });
 
     $("#delay-inc").click(function () {
-    	$.get("/audio_delay/+");
+    	$.get("/audio_delay/+", function(data){$("#delay-val").text(parseFloat(data).toFixed(2))});
     });
 
     $("#delay-dec").click(function () {
-    	$.get("/audio_delay/-");
+    	$.get("/audio_delay/-", function(data){$("#delay-val").text(parseFloat(data).toFixed(2))});
     });
 
     $("#semitones-info").click(function () {
       showNotification("A semitone is also known as a half-step. It is the smallest interval used in classical Western music, equal to a twelfth of an octave or half a tone.","is-info",10000)
     });
-
-    function togglePausePlayButton() {
-      if ($("#pause-resume").hasClass("icon-pause")) {
-        $("#pause-resume").removeClass("icon-pause");
-        $("#pause-resume").addClass("icon-play");
-      } else {
-        $("#pause-resume").removeClass("icon-play");
-        $("#pause-resume").addClass("icon-pause");
-      }
-    }
 
     getNowPlaying();
     setInterval(getNowPlaying, 1500);
@@ -243,15 +240,15 @@ body {
 
 	<div class="is-flex" style="justify-content: space-between">
 		<h4>Audio Delay (sec):</h4>
-		<h4 title="Decrease Audio Delay" id="delay-dec" class="tabs" style="color:red; cursor: pointer; font-weight: bold;"  >&#xff0d;</h4>
-		<h4 title="Set Audio Delay" id="delay-val" class="tabs" style="cursor: pointer" contenteditable="true" onfocus="audiodelay_typing=true">0</h4>
-		<h4 title="Increase Audio Delay" id="delay-inc" class="tabs" style="color:green; cursor: pointer; font-weight: bold" >&#xff0b;</h4>
+		<h4 title="Decrease Audio Delay" id="delay-dec" class="tabs" style="margin:0; color:red; cursor: pointer; font-weight: bold; font-size:x-large;" >&#x2296;</h4>
+		<h4 title="Set Audio Delay" id="delay-val" class="tabs" style="padding-top:2px; margin:0; cursor: pointer" contenteditable="true" onfocus="audiodelay_typing=true">0</h4>
+		<h4 title="Increase Audio Delay" id="delay-inc" class="tabs" style="margin:0; color:green; cursor: pointer; font-weight:bold;font-size:x-large;" >&#x2295;</h4>
 	</div>
 
 	<div class="is-flex" style="justify-content: space-between">
 		<div><h4>Seek To:</h4></div>
-		<a id="seektrack-val">00:00:00</a>
-		<a id="seektrack-max">00:00:00</a>
+		<a style="padding-top:6px" id="seektrack-val">00:00:00</a>
+		<a style="padding-top:6px" id="seektrack-max">00:00:00</a>
 	</div>
 
 	<div style="width: 100%">
@@ -276,8 +273,7 @@ body {
 
 	{% if show_transpose %}
 	<!-- <div class="has-background-black-bis box control-box" style="max-width: 500px"> -->
-	<hr style="margin-top: 0.5em; margin-bottom: 0.5em;"/>
-	<div class="is-flex" style="justify-content: space-between">
+	<div class="is-flex" style="justify-content: space-between; padding-top: 1em">
 		<div>
 			<h4>Change Key</h4>
 		</div>

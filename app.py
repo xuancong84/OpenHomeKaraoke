@@ -14,9 +14,8 @@ from functools import wraps
 import cherrypy
 import psutil
 from unidecode import unidecode
-from flask import (Flask, flash, jsonify, make_response, redirect,
-                   render_template, request, send_file, send_from_directory,
-                   url_for)
+from flask import *
+from flask.logging import logging
 from flask_paginate import Pagination, get_page_parameter
 
 import karaoke
@@ -89,7 +88,7 @@ def nowplaying():
 			"now_playing_user": k.now_playing_user,
 			"up_next": next_song,
 			"next_user": next_user,
-			"is_paused": k.is_paused,
+			"is_paused": s['state'] == 'paused',
 			"volume": s['volume'],
 			"transpose_value": k.now_playing_transpose,
 			"seektrack_value": s['time'],
@@ -229,7 +228,7 @@ def skip():
 @app.route("/pause")
 def pause():
 	k.pause()
-	return redirect(url_for("home"))
+	return json.dumps(k.is_paused)
 
 
 @app.route("/transpose/<semitones>", methods = ["GET"])
@@ -246,8 +245,8 @@ def seek(goto_sec):
 
 @app.route("/audio_delay/<delay_val>", methods = ["GET"])
 def audio_delay(delay_val):
-	k.set_audio_delay(delay_val)
-	return redirect(url_for("home"))
+	res = k.set_audio_delay(delay_val)
+	return json.dumps(res)
 
 
 @app.route("/restart")
@@ -258,20 +257,17 @@ def restart():
 
 @app.route("/vol_up")
 def vol_up():
-	k.vol_up()
-	return redirect(url_for("home"))
+	return str(k.vol_up())
 
 
 @app.route("/vol_down")
 def vol_down():
-	k.vol_down()
-	return redirect(url_for("home"))
+	return str(k.vol_down())
 
 
 @app.route("/vol/<volume>")
 def vol_set(volume):
-	k.vol_set(volume)
-	return redirect(url_for("home"))
+	return str(k.vol_set(volume))
 
 
 @app.route("/search", methods = ["GET"])

@@ -81,12 +81,14 @@ class OMXClient:
         self.process.stdin.write("=".encode("utf-8"))
         self.process.stdin.flush()
         self.volume_offset += 300
+        return self.volume_offset
 
     def vol_down(self):
         logging.info("Volume down")
         self.process.stdin.write("-".encode("utf-8"))
         self.process.stdin.flush()
         self.volume_offset -= 300
+        return self.volume_offset
 
     def kill(self):
         try:

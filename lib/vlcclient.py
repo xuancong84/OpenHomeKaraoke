@@ -204,6 +204,7 @@ class VLCClient:
 		if self.is_running():
 			url = self.http_command_endpoint + command
 			request = requests.get(url, auth = ("", self.http_password))
+			self.last_status_text = request.text
 			return request
 		else:
 			logging.error("No active VLC process. Could not run command: " + command)
@@ -224,11 +225,17 @@ class VLCClient:
 			return None
 		return s[:posi]
 
+	def cast_float(self, num):
+		try:
+			return float(num)
+		except:
+			return num
+
 	def get_info_xml(self, xml=None):
 		try:
 			if xml is None:
 				xml = self.get_status()
-			return {key: float(self.get_val_xml(xml, key)) for key in ['position', 'length', 'volume', 'time', 'audiodelay']}
+			return {key: self.cast_float(self.get_val_xml(xml, key)) for key in ['position', 'length', 'volume', 'time', 'audiodelay', 'state']}
 		except:
 			return {}
 
