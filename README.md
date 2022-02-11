@@ -1,61 +1,47 @@
-# PiKaraoke
+# PiKaraoke (The World's best open-source Python-based YouTube Karaoke system)
 
-PiKaraoke is a "KTV"-style karaoke song search and queueing system. It connects to your TV, and shows a QR code for computers and smartphones to connect to a web interface. From there, multiple users can seamlessly search your local track library, queue up songs, add an endless selection of new karaoke tracks from YouTube, and more. Works on Raspberry Pi, OSX, Windows, and Linux!
+This is the world's best open-source Python-based YouTube Karaoke system up to today (2022.2), forked from @vicwomg's repo (thanks) and thoroughly revamped. PiKaraoke is a "KTV"-style Karaoke song search and queueing system. It connects to your TV either via an HDMI cable, or screen sharing, or using TV's web-browser (backend KTV player is screen-captured and streamed to HTTP), and shows a QR code for computers and smartphones to connect to a web interface. From there, multiple users can seamlessly search your local track library, queue up songs, add an endless selection of new Karaoke tracks from YouTube, and more. Works on Raspberry Pi, OSX, Windows, and Linux!
 
-If you want to support this project with a little monetary tip, it's much appreciated: <br/>
-<a href="https://www.buymeacoffee.com/vicwomg" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-
-## What's new (1.1.1)
-
-Primarily bugfixes for maintaining mega-libraries
-- Fix slow loading of huge libraries
-- Paging controls on browse screen for libraries > 500
-- Fix issue with singer names with spaces and special characters not appearing #106
-- Support scanning subdirectories #108 (thanks jramboz)
-- Support more video formats and weird case sensitivity of mp3/cdg files #107 #95
-- Singer names persist for 90 days #105
 
 ## Features
-
+- Stream-to-HTTP allows any TV (or IT device) with a web browser to watch the KTV (on Windows and MacOS, you can use wireless-display/screen-projection and Airplay respectively)
 - Web interface for multiple users to queue tracks
 - Splash screen with connection QR code and "Next up" display
 - Searching/browsing a local song library 
-- Adding new songs from Youtube
+- Adding new songs from YouTube
 - mp3 + cdg support, including compressed .zip bundles 
 - Pause/Skip/Restart and volume control
 - Advanced editing of downloaded file names
-- Queue management
-- Key Change / Pitch shifting 
+- Queue management, support dragging of a song to any position in the queue
+- Key Change / Pitch shifting
 - Lock down features with admin mode
+- Seek to play position
+- Audio delay adjustment (YouTube MTVs often have synchronized lyric, this makes singing difficult as there is not enough time to look at the lyric)
+- Filenames containing non-English characters are sorted according to their English transliteration
 
 ## Screenshots
 
 ### TV
 
 <p float="left">
-  <img width="400" alt="pikaraoke-tv1" src="https://user-images.githubusercontent.com/4107190/95813571-06645600-0ccd-11eb-8341-021a20813990.png">
+  <img width="400" alt="pikaraoke-tv1" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/TV.png">
+  <img width="400" alt="pikaraoke-tv1" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/TV-web.jpg">
 <img width="400" alt="pikaraoke-tv2" src="https://user-images.githubusercontent.com/4107190/95813564-019fa200-0ccd-11eb-95e1-57a002c357a3.png">
   </p>
 
 ### Web interface
 
 <p float="left">
-<img width="250" style="float:left" alt="pikaraoke-nowplaying" src="https://user-images.githubusercontent.com/4107190/95813193-2cd5c180-0ccc-11eb-89f4-11a69676dc6f.png">
-<img width="250" style="float:left" alt="pikaraoke-queue" src="https://user-images.githubusercontent.com/4107190/95813195-2d6e5800-0ccc-11eb-8f00-1369350a8a1c.png">
+<img width="250" style="float:left" alt="pikaraoke-nowplaying" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/home.jpg">
+<img width="250" style="float:left" alt="pikaraoke-queue" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/queue.jpg"><br>
 <img width="250" style="float:left" alt="pikaraoke-browse" src="https://user-images.githubusercontent.com/4107190/95813182-27787700-0ccc-11eb-82c8-fde7f0a631c1.png">
 <img width="250" style="float:left" alt="pikaraoke-search1" src="https://user-images.githubusercontent.com/4107190/95813197-2e06ee80-0ccc-11eb-9bf9-ddb24d988332.png">
 <img width="250" style="float:left" alt="pikaraoke-search2" src="https://user-images.githubusercontent.com/4107190/95813190-2ba49480-0ccc-11eb-84e3-f902cbd489a2.png">
   </p>
   
-### Old screens
-
-https://imgur.com/a/wgBYeFb
-
 ## Supported Devices
 
-This _should_ work on all raspberry pi devices, but multi-core models recommended. I did most development on a Pi Zero W and did as much optimization as I could handle, so it will work. However, certain things like concurrent downloads and browsing big song libraries will suffer. All this runs excellently on a Pi 3 and above.
-
-Also works on macs, PCs, and linux!
+This _should_ work on all Raspberry Pi devices (multi-core models recommended) and Linux machines. @vicwomg did most development on a Pi Zero W and did as much optimization as he could handle, while I did all the revamp work on Ubuntu/Linux and MacBook Pro. However, certain things like concurrent downloads and browsing big song libraries might suffer. All this runs excellently on a Pi 3 and above.
 
 ## Installation
 
@@ -153,7 +139,7 @@ The app should launch and show the PiKaraoke splash screen and a QR code and a U
 
 ## Auto-start PiKaraoke
 
-This is optional, but you may want to make your raspberry pi a dedicated karaoke device. If so, add the following to your /etc/rc.local file (paths and arguments may vary) to always start pikaraoke on reboot.
+This is optional, but you may want to make your raspberry pi a dedicated Karaoke device. If so, add the following to your /etc/rc.local file (paths and arguments may vary) to always start pikaraoke on reboot.
 
 ```
 # start pikaraoke on startup
