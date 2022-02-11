@@ -1,5 +1,4 @@
-import hashlib
-import os, random, time, json
+import os, random, time, json, hashlib
 import logging, socket, subprocess
 from pathlib import Path
 from subprocess import check_output
@@ -7,6 +6,8 @@ from collections import *
 
 import pygame
 import qrcode
+import arabic_reshaper
+from bidi.algorithm import get_display
 
 from unidecode import unidecode
 from lib import omxclient, vlcclient
@@ -277,11 +278,11 @@ class Karaoke:
 		if not self.hide_splash_screen:
 			logging.debug("Initializing pygame")
 			self.full_screen = True
-			pygame.display.init()
+			pygame.init()
 			pygame.display.set_caption("pikaraoke")
-			pygame.font.init()
 			pygame.mouse.set_visible(0)
 			self.font = pygame.font.SysFont(pygame.font.get_default_font(), 40)
+			self.fonts = {}
 			self.width = pygame.display.Info().current_w
 			self.height = pygame.display.Info().current_h
 			logging.debug("Initializing screen mode")
@@ -386,28 +387,43 @@ class Karaoke:
 				self.screen.blit(text2, (10, 50))
 				self.screen.blit(text3, (10, 90))
 
+	def render_font(self, size, text, *kargs):
+		# initialize fonts if not found
+		if size not in self.fonts:
+			self.fonts[size] = [pygame.freetype.SysFont(pygame.freetype.get_default_font(), size)] \
+						+ [pygame.freetype.Font(f'font/{name}', size) for name in ['arial-unicode-ms.ttf', 'unifont.ttf']]
+
+		# find a font that contains all characters of the song title, if cannot find, then display transliteration instead
+		found = None
+		for font in self.fonts[size]:
+			if None not in font.get_metrics(text):
+				found = font
+				break
+		if not found:
+			text = unidecode(text)
+			found = self.fonts[size][0]
+
+		# reshape Arabic text
+		text = get_display(arabic_reshaper.reshape(text))
+
+		# draw the font, if too wide, half the string
+		render = found.render(text, *kargs)
+		while render[1].width >= self.width:
+			text = text[:len(text)//2] + '...'
+			render = found.render(text, *kargs)
+		return render
+
 	def render_next_song_to_splash_screen(self):
 		if not self.hide_splash_screen:
 			self.render_splash_screen()
 			if len(self.queue) >= 1:
 				logging.debug("Rendering next song to splash screen")
 				next_song = self.queue[0]["title"]
-				max_length = 60
-				if (len(next_song) > max_length):
-					next_song = next_song[0:max_length] + "..."
 				next_user = self.queue[0]["user"]
-				font_next_song = pygame.font.SysFont(pygame.font.get_default_font(), 60)
-				text = font_next_song.render(
-					"Up next: %s" % (unidecode(next_song)), True, (0, 128, 0)
-				)
-				up_next = font_next_song.render("Up next:  ", True, (255, 255, 0))
-				font_user_name = pygame.font.SysFont(pygame.font.get_default_font(), 50)
-				user_name = font_user_name.render("Added by: %s " % next_user, True, (255, 120, 0))
-				x = self.width - text.get_width() - 10
-				y = 5
-				self.screen.blit(text, (x, y))
-				self.screen.blit(up_next, (x, y))
-				self.screen.blit(user_name, (self.width - user_name.get_width() - 10, y + 50))
+				render_next_song = self.render_font(60, f"Up next: {next_song}", (0, 128, 0))
+				render_next_user = self.render_font(50, f"Added by: {next_user}", (255, 120, 0))
+				self.screen.blit(render_next_song[0], (self.width - render_next_song[1].width - 10, 5))
+				self.screen.blit(render_next_user[0], (self.width - render_next_user[1].width - 10, 70))
 				return True
 			else:
 				logging.debug("Could not render next song to splash. No song in queue")

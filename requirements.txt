@@ -14,4 +14,6 @@ futures
 psutil 
 unidecode
 requests
+arabic-reshaper
+python-bidi
 flask-paginate==2021.10.29
