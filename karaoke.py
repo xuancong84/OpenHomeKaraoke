@@ -255,6 +255,7 @@ class Karaoke:
 			version = 1,
 			box_size = 1,
 			border = 4,
+			error_correction = qrcode.constants.ERROR_CORRECT_H
 		)
 		qr.add_data(self.url)
 		qr.make()
@@ -420,10 +421,10 @@ class Karaoke:
 				logging.debug("Rendering next song to splash screen")
 				next_song = self.queue[0]["title"]
 				next_user = self.queue[0]["user"]
-				render_next_song = self.render_font(60, f"Up next: {next_song}", (0, 128, 0))
-				render_next_user = self.render_font(50, f"Added by: {next_user}", (255, 120, 0))
-				self.screen.blit(render_next_song[0], (self.width - render_next_song[1].width - 10, 5))
-				self.screen.blit(render_next_user[0], (self.width - render_next_user[1].width - 10, 70))
+				render_next_song = self.render_font(60, f"Up next: {next_song}", (255, 255, 0))
+				render_next_user = self.render_font(50, f"Added by: {next_user}", (0, 240, 0))
+				self.screen.blit(render_next_song[0], (self.width - render_next_song[1].width - 10, 10))
+				self.screen.blit(render_next_user[0], (self.width - render_next_user[1].width - 10, 80))
 				return True
 			else:
 				logging.debug("Could not render next song to splash. No song in queue")

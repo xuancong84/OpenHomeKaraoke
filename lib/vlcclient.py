@@ -6,7 +6,7 @@ from threading import Timer
 import requests
 
 from lib.get_platform import get_platform
-
+from types import SimpleNamespace
 
 def get_default_vlc_path(platform):
 	if platform == "osx":
@@ -200,14 +200,16 @@ class VLCClient:
 		self.is_transposing = False
 		logging.debug("Transposing complete")
 
-	def command(self, command):
+	def command(self, command = ''):
 		if self.is_running():
 			url = self.http_command_endpoint + command
 			request = requests.get(url, auth = ("", self.http_password))
 			self.last_status_text = request.text
+			self.last_status_time = time.time()
 			return request
 		else:
 			logging.error("No active VLC process. Could not run command: " + command)
+			return SimpleNamespace(**{'text': '', 'status_code': 500})
 
 	def pause(self):
 		return self.command("pl_pause")
@@ -294,9 +296,7 @@ class VLCClient:
 		cur_time = time.time()
 		if abs(cur_time-self.last_status_time)>1:
 			try:
-				url = self.http_endpoint
-				self.last_status_text = requests.get(url, auth = ("", self.http_password)).text
-				self.last_status_time = cur_time
+				self.command()
 				return self.last_status_text
 			except: pass
 		return self.last_status_text
