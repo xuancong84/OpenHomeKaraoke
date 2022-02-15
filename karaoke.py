@@ -767,7 +767,8 @@ class Karaoke:
 	def vol_up(self):
 		if self.is_file_playing():
 			if self.use_vlc:
-				xml = self.vlcclient.vol_up().text
+				self.vlcclient.vol_up()
+				xml = self.vlcclient.command().text
 				vol = self.vlcclient.get_val_xml(xml, 'volume')
 			else:
 				vol = self.omxclient.vol_up()
@@ -779,7 +780,8 @@ class Karaoke:
 	def vol_down(self):
 		if self.is_file_playing():
 			if self.use_vlc:
-				xml = self.vlcclient.vol_down().text
+				self.vlcclient.vol_down()
+				xml = self.vlcclient.command().text
 				vol = self.vlcclient.get_val_xml(xml, 'volume')
 			else:
 				vol = self.omxclient.vol_down()
@@ -791,7 +793,8 @@ class Karaoke:
 	def vol_set(self, volume):
 		if self.is_file_playing():
 			if self.use_vlc:
-				xml = self.vlcclient.vol_set(volume).text
+				self.vlcclient.vol_set(volume)
+				xml = self.vlcclient.command().text
 				vol = self.vlcclient.get_val_xml(xml, 'volume')
 			else:
 				logging.warning("Only VLC player can set volume, ignored!")

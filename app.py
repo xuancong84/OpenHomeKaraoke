@@ -62,13 +62,13 @@ def is_admin():
 
 @app.route("/")
 def home():
-	s = k.get_state()
+	s = K.get_state()
 	return render_template(
 		"home.html",
 		site_title = site_name,
 		title = "Home",
-		show_transpose = k.use_vlc,
-		transpose_value = k.now_playing_transpose,
+		show_transpose = K.use_vlc,
+		transpose_value = K.now_playing_transpose,
 		volume = s['volume'],
 		admin = is_admin(),
 		seektrack_value = s['time'],
@@ -80,17 +80,17 @@ def home():
 @app.route("/nowplaying")
 def nowplaying():
 	try:
-		next_song = k.queue[0]["title"] if k.queue else None
-		next_user = k.queue[0]["user"] if k.queue else None
-		s = k.get_state()
+		next_song = K.queue[0]["title"] if K.queue else None
+		next_user = K.queue[0]["user"] if K.queue else None
+		s = K.get_state()
 		rc = {
-			"now_playing": k.now_playing,
-			"now_playing_user": k.now_playing_user,
+			"now_playing": K.now_playing,
+			"now_playing_user": K.now_playing_user,
 			"up_next": next_song,
 			"next_user": next_user,
 			"is_paused": s['state'] == 'paused',
 			"volume": s['volume'],
-			"transpose_value": k.now_playing_transpose,
+			"transpose_value": K.now_playing_transpose,
 			"seektrack_value": s['time'],
 			"seektrack_max": s['length'],
 			"audio_delay": s['audiodelay']
@@ -130,22 +130,27 @@ def logout():
 	return resp
 
 
+@app.route("/status")
+def status():
+	return render_template("login.html")
+
+
 @app.route("/queue")
 def queue():
 	return render_template(
-		"queue.html", queue = k.queue, site_title = site_name, title = "Queue", admin = is_admin()
+		"queue.html", queue = K.queue, site_title = site_name, title = "Queue", admin = is_admin()
 	)
 
 
 @app.route("/get_queue/<last_hash>", methods = ["GET"])
 def get_queue(last_hash):
-	return json.dumps([k.queue, k.queue_hash]) if last_hash != k.queue_hash else ''
+	return json.dumps([K.queue, K.queue_hash]) if last_hash != K.queue_hash else ''
 
 
 @app.route("/queue/addrandom", methods = ["GET"])
 def add_random():
 	amount = int(request.args["amount"])
-	rc = k.queue_add_random(amount)
+	rc = K.queue_add_random(amount)
 	if rc:
 		flash("Added %s random tracks" % amount, "is-success")
 	else:
@@ -157,7 +162,7 @@ def add_random():
 def queue_edit():
 	action = request.args["action"]
 	if action == "clear":
-		k.queue_clear()
+		K.queue_clear()
 		flash("Cleared the queue!", "is-warning")
 		return redirect(url_for("queue"))
 	elif action == "move":
@@ -168,7 +173,7 @@ def queue_edit():
 		except:
 			flash("Error moving item inside queue: invalid-argument")
 
-		result = k.queue_edit(None, "move", src=id_from, tgt=id_to, size=id_size)
+		result = K.queue_edit(None, "move", src=id_from, tgt=id_to, size=id_size)
 		if result:
 			flash(f"Moved item inside queue {id_from}->{id_to}/{id_size} : is-success")
 		else:
@@ -177,19 +182,19 @@ def queue_edit():
 		song = request.args["song"]
 		song = unquote(song)
 		if action == "down":
-			result = k.queue_edit(song, "down")
+			result = K.queue_edit(song, "down")
 			if result:
 				flash("Moved down in queue: " + song, "is-success")
 			else:
 				flash("Error moving down in queue: " + song, "is-danger")
 		elif action == "up":
-			result = k.queue_edit(song, "up")
+			result = K.queue_edit(song, "up")
 			if result:
 				flash("Moved up in queue: " + song, "is-success")
 			else:
 				flash("Error moving up in queue: " + song, "is-danger")
 		elif action == "delete":
-			result = k.queue_edit(song, "delete")
+			result = K.queue_edit(song, "delete")
 			if result:
 				flash("Deleted from queue: " + song, "is-success")
 			else:
@@ -209,7 +214,7 @@ def enqueue():
 	else:
 		d = request.form.to_dict()
 		user = d["song-added-by"]
-	rc = k.enqueue(song, user)
+	rc = K.enqueue(song, user)
 	song_title = filename_from_path(song)
 	# if rc:
 	#     flash("Song added to queue: " + song_title, "is-success")
@@ -221,53 +226,53 @@ def enqueue():
 
 @app.route("/skip")
 def skip():
-	k.skip()
+	K.skip()
 	return redirect(url_for("home"))
 
 
 @app.route("/pause")
 def pause():
-	k.pause()
-	return json.dumps(k.is_paused)
+	K.pause()
+	return json.dumps(K.is_paused)
 
 
 @app.route("/transpose/<semitones>", methods = ["GET"])
 def transpose(semitones):
-	k.transpose_current(semitones)
+	K.transpose_current(semitones)
 	return redirect(url_for("home"))
 
 
 @app.route("/seek/<goto_sec>", methods = ["GET"])
 def seek(goto_sec):
-	k.seek(goto_sec)
+	K.seek(goto_sec)
 	return redirect(url_for("home"))
 
 
 @app.route("/audio_delay/<delay_val>", methods = ["GET"])
 def audio_delay(delay_val):
-	res = k.set_audio_delay(delay_val)
+	res = K.set_audio_delay(delay_val)
 	return json.dumps(res)
 
 
 @app.route("/restart")
 def restart():
-	k.restart()
+	K.restart()
 	return redirect(url_for("home"))
 
 
 @app.route("/vol_up")
 def vol_up():
-	return str(k.vol_up())
+	return str(K.vol_up())
 
 
 @app.route("/vol_down")
 def vol_down():
-	return str(k.vol_down())
+	return str(K.vol_down())
 
 
 @app.route("/vol/<volume>")
 def vol_set(volume):
-	return str(k.vol_set(volume))
+	return str(K.vol_set(volume))
 
 
 @app.route("/search", methods = ["GET"])
@@ -275,9 +280,9 @@ def search():
 	if "search_string" in request.args:
 		search_string = request.args["search_string"]
 		if ("non_karaoke" in request.args and request.args["non_karaoke"] == "true"):
-			search_results = k.get_search_results(search_string)
+			search_results = K.get_search_results(search_string)
 		else:
-			search_results = k.get_karaoke_search_results(search_string)
+			search_results = K.get_karaoke_search_results(search_string)
 	else:
 		search_string = None
 		search_results = None
@@ -285,7 +290,7 @@ def search():
 		"search.html",
 		site_title = site_name,
 		title = "Search",
-		songs = k.available_songs,
+		songs = K.available_songs,
 		search_results = search_results,
 		search_string = search_string,
 	)
@@ -295,9 +300,9 @@ def search():
 def autocomplete():
 	q = request.args.get('q').lower()
 	result = []
-	for each in k.available_songs:
+	for each in K.available_songs:
 		if q in each.lower():
-			result.append({"path": each, "fileName": k.filename_from_path(each), "type": "autocomplete"})
+			result.append({"path": each, "fileName": K.filename_from_path(each), "type": "autocomplete"})
 	response = app.response_class(
 		response = json.dumps(result),
 		mimetype = 'application/json'
@@ -312,12 +317,12 @@ def browse():
 
 	letter = request.args.get('letter')
 
-	available_songs = k.available_songs
+	available_songs = K.available_songs
 	if letter:
 		if (letter == "numeric"):
-			available_songs = [k for k,v in k.songname_trans.items() if not v[0].islower()]
+			available_songs = [k for k,v in K.songname_trans.items() if not v[0].islower()]
 		else:
-			available_songs = [k for k,v in k.songname_trans.items() if v.startswith(letter)]
+			available_songs = [k for k,v in K.songname_trans.items() if v.startswith(letter)]
 
 	if "sort" in request.args and request.args["sort"] == "date":
 		songs = sorted(available_songs, key = lambda x: os.path.getctime(x))
@@ -354,7 +359,7 @@ def download():
 		queue = False
 
 	# download in the background since this can take a few minutes
-	t = threading.Thread(target = k.download_video, args = [song, queue, user])
+	t = threading.Thread(target = K.download_video, args = [song, queue, user])
 	t.daemon = True
 	t.start()
 
@@ -374,21 +379,21 @@ def download():
 
 @app.route("/qrcode")
 def qrcode():
-	return send_file(k.qr_code_path, mimetype = "image/png")
+	return send_file(K.qr_code_path, mimetype = "image/png")
 
 
 @app.route("/files/delete", methods = ["GET"])
 def delete_file():
 	if "song" in request.args:
 		song_path = request.args["song"]
-		if song_path in k.queue:
+		if song_path in K.queue:
 			flash(
 				"Error: Can't delete this song because it is in the current queue: "
 				+ song_path,
 				"is-danger",
 			)
 		else:
-			k.delete(song_path)
+			K.delete(song_path)
 			flash("Song deleted: " + song_path, "is-warning")
 	else:
 		flash("Error: No song parameter specified!", "is-danger")
@@ -401,7 +406,7 @@ def edit_file():
 	if "song" in request.args:
 		song_path = request.args["song"]
 		# print "SONG_PATH" + song_path
-		if song_path in k.queue:
+		if song_path in K.queue:
 			flash(queue_error_msg + song_path, "is-danger")
 			return redirect(url_for("browse"))
 		else:
@@ -416,14 +421,14 @@ def edit_file():
 		if "new_file_name" in d and "old_file_name" in d:
 			new_name = d["new_file_name"]
 			old_name = d["old_file_name"]
-			if k.is_song_in_queue(old_name):
+			if K.is_song_in_queue(old_name):
 				# check one more time just in case someone added it during editing
 				flash(queue_error_msg + old_name, "is-danger")
 			else:
 				# check if new_name already exist
 				file_extension = os.path.splitext(old_name)[1]
 				if os.path.isfile(
-						os.path.join(k.download_path, new_name + file_extension)
+						os.path.join(K.download_path, new_name + file_extension)
 				):
 					flash(
 						"Error Renaming file: '%s' to '%s'. Filename already exists."
@@ -431,7 +436,7 @@ def edit_file():
 						"is-danger",
 					)
 				else:
-					k.rename(old_name, new_name)
+					K.rename(old_name, new_name)
 					flash(
 						"Renamed file: '%s' to '%s'." % (old_name, new_name),
 						"is-warning",
@@ -476,7 +481,7 @@ def info():
 	)
 
 	# youtube-dl
-	youtubedl_version = k.youtubedl_version
+	youtubedl_version = K.youtubedl_version
 
 	is_pi = get_platform() == "raspberry_pi"
 
@@ -499,10 +504,10 @@ def info():
 # Delay system commands to allow redirect to render first
 def delayed_halt(cmd):
 	time.sleep(3)
-	k.queue_clear()  # stop all pending omxplayer processes
+	K.queue_clear()  # stop all pending omxplayer processes
 	cherrypy.engine.stop()
 	cherrypy.engine.exit()
-	k.stop()
+	K.stop()
 	if cmd == 0:
 		sys.exit()
 	if cmd == 1:
@@ -517,7 +522,7 @@ def delayed_halt(cmd):
 
 def update_youtube_dl():
 	time.sleep(3)
-	k.upgrade_youtubedl()
+	K.upgrade_youtubedl()
 
 
 @app.route("/update_ytdl")
@@ -537,7 +542,7 @@ def update_ytdl():
 @app.route("/refresh")
 def refresh():
 	if (is_admin()):
-		k.get_available_songs()
+		K.get_available_songs()
 	else:
 		flash("You don't have permission to shut down", "is-danger")
 	return redirect(url_for("browse"))
@@ -545,7 +550,7 @@ def refresh():
 
 @app.route("/resync")
 def resync():
-	k.resync()
+	K.resync()
 	return redirect(url_for("home"))
 
 
@@ -596,7 +601,7 @@ def expand_fs():
 
 
 # Handle sigterm, apparently cherrypy won't shut down without explicit handling
-signal.signal(signal.SIGTERM, lambda signum, stack_frame: k.stop())
+signal.signal(signal.SIGTERM, lambda signum, stack_frame: K.stop())
 
 
 def get_default_youtube_dl_path(platform):
@@ -841,8 +846,8 @@ if __name__ == "__main__":
 		args.hide_splash_screen = True
 
 	# Configure karaoke process
-	global k
-	k = karaoke.Karaoke(
+	global K
+	K = karaoke.Karaoke(
 		nonroot_user = args.nonroot_user,
 		port = args.port,
 		download_path = dl_path,
@@ -866,7 +871,7 @@ if __name__ == "__main__":
 	)
 
 	if (args.developer_mode):
-		th = threading.Thread(target = k.run)
+		th = threading.Thread(target = K.run)
 		th.start()
 		app.run(debug = True, port = args.port)
 	else:
@@ -882,7 +887,7 @@ if __name__ == "__main__":
 			}
 		)
 		cherrypy.engine.start()
-		k.run()
+		K.run()
 		cherrypy.engine.exit()
 
 	sys.exit()
