@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import argparse
 import datetime
 import json
@@ -73,7 +75,8 @@ def home():
 		admin = is_admin(),
 		seektrack_value = s['time'],
 		seektrack_max = s['length'],
-		audio_delay = s['audiodelay']
+		audio_delay = s['audiodelay'],
+		vocal_info = K.get_vocal_info()
 	)
 
 
@@ -93,7 +96,8 @@ def nowplaying():
 			"transpose_value": K.now_playing_transpose,
 			"seektrack_value": s['time'],
 			"seektrack_max": s['length'],
-			"audio_delay": s['audiodelay']
+			"audio_delay": s['audiodelay'],
+			"vocal_info": K.get_vocal_info()
 		}
 		return json.dumps(rc)
 	except Exception as e:
@@ -130,16 +134,15 @@ def logout():
 	return resp
 
 
-@app.route("/status")
-def status():
-	return render_template("login.html")
+@app.route("/get_vocal_todo_list")
+def get_vocal_todo_list():
+	q = ([K.now_playing_filename] if K.now_playing_filename else []) + [i['file'] for i in K.queue]
+	return json.dumps({'download_path': K.download_path, 'queue': q})
 
 
 @app.route("/queue")
 def queue():
-	return render_template(
-		"queue.html", queue = K.queue, site_title = site_name, title = "Queue", admin = is_admin()
-	)
+	return render_template("queue.html", queue = K.queue, site_title = site_name, title = "Queue", admin = is_admin())
 
 
 @app.route("/get_queue/<last_hash>", methods = ["GET"])
@@ -239,13 +242,19 @@ def pause():
 @app.route("/transpose/<semitones>", methods = ["GET"])
 def transpose(semitones):
 	K.transpose_current(semitones)
-	return redirect(url_for("home"))
+	return ''
+
+
+@app.route("/play_vocal/<mode>", methods = ["GET"])
+def play_vocal(mode):
+	K.play_vocal_dnn(mode)
+	return ''
 
 
 @app.route("/seek/<goto_sec>", methods = ["GET"])
 def seek(goto_sec):
 	K.seek(goto_sec)
-	return redirect(url_for("home"))
+	return ''
 
 
 @app.route("/audio_delay/<delay_val>", methods = ["GET"])

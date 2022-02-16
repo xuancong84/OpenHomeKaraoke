@@ -1,16 +1,18 @@
-import argparse
-import os, sys, tempfile
+#!/usr/bin/env python3
+
+import os, sys
+import argparse, requests
+import time
 
 import numpy as np
 import soundfile as sf
 import torch
 from tqdm import tqdm
-from scipy.io import wavfile
 
 from lib import dataset
 from lib import nets
 from lib import spec_utils
-from lib import utils
+import librosa
 
 
 class Separator(object):
@@ -105,39 +107,27 @@ class Separator(object):
 		return y_spec, v_spec
 
 
-class FFMPEG(object):
-	def wav2m4a(self, input_fn, output_fn, br = '128k'):
-		os.system(f"ffmpeg -i {input_fn} -c:a aac -b:a {br} {output_fn}")
-
-	def video2wav(self, input_fn, output_fn):
-		# The built-in DNN model is trained with 44100 sampling rate, it does not work on other sampling rates
-		os.system(f"ffmpeg -i {input_fn} -f wav -ar 44100 {output_fn}")
+def ffm_wav2m4a(input_fn, output_fn, br = '128k'):
+	os.system(f"ffmpeg -y -i '{input_fn}' -c:a aac -b:a {br} '{output_fn}'")
 
 
-def loadWav(self, wav_fn):
-	sr, data = wavfile.read(wav_fn)
-	data = data.transpose().astype(np.float32)/32768
-	return data, sr
+def ffm_video2wav(input_fn, output_fn):
+	# The built-in DNN model is trained on 44100 sampling rate, it can still run but does not work on other sampling rates
+	os.system(f"ffmpeg -y -i '{input_fn}' -f wav -ar 44100 '{output_fn}'")
 
-def saveWav(self, wav_data):
-	pass
-
-
-def process_file(in_mp4_fn, out_m4a_nonvocal, out_m4a_vocal):
-	pass
 
 def split_vocal(in_wav, out_wav_nonvocal, out_wav_vocal, args):
-	print('Loading wave source ...', end = ' ')
-	X, sr = loadWav(in_wav)
-	print('done')
+	print('Loading wave source ...', end = ' ', flush = True)
+	X, sr = librosa.load(in_wav, args.sr, False, dtype = np.float32, res_type = 'kaiser_fast')
+	print('done', flush = True)
 
 	if X.ndim == 1:
 		# mono to stereo
 		X = np.asarray([X, X])
 
-	print('STFT of wave source ...', end = ' ')
+	print('STFT of wave source ...', end = ' ', flush = True)
 	X_spec = spec_utils.wave_to_spectrogram(X, args.hop_length, args.n_fft)
-	print('done')
+	print('done', flush = True)
 
 	sp = Separator(args.model, args.device, args.batchsize, args.cropsize, args.postprocess)
 
@@ -146,23 +136,57 @@ def split_vocal(in_wav, out_wav_nonvocal, out_wav_vocal, args):
 	else:
 		y_spec, v_spec = sp.separate(X_spec)
 
-	print('Inverse STFT of instruments ...', end = ' ')
+	print('Inverse STFT of instruments ...', end = ' ', flush = True)
 	wave = spec_utils.spectrogram_to_wave(y_spec, hop_length = args.hop_length)
-	print('done')
-	sf.write('{}_Instruments.wav'.format(out_wav_nonvocal), wave.T, sr)
+	print('done', flush = True)
+	sf.write(out_wav_nonvocal, wave.T, sr)
 
 	if out_wav_vocal:
-		print('Inverse STFT of vocals ...', end = ' ')
+		print('Inverse STFT of vocals ...', end = ' ', flush = True)
 		wave = spec_utils.spectrogram_to_wave(v_spec, hop_length = args.hop_length)
-		print('done')
-		sf.write('{}_Vocals.wav'.format(out_wav_vocal), wave.T, sr)
+		print('done', flush = True)
+		sf.write(out_wav_vocal, wave.T, sr)
+
+
+song_path = ''
+
+def get_next_file():
+	global song_path
+	try:
+		obj = requests.get('http://localhost:5000/get_vocal_todo_list').json()
+		song_path = obj['download_path'].rstrip('/')
+	except:
+		if not song_path:
+			print('PiKaraoke is not running and --download-path is not specified, exiting ...')
+			sys.exit()
+		obj = {'queue': []}
+
+	if not os.path.isdir(song_path+'/nonvocal') and not os.path.isdir(song_path+'/vocal'):
+		return None
+	for fn in obj['queue']:
+		if os.path.isdir(song_path+'/nonvocal') and not os.path.isfile(f'{song_path}/nonvocal/{os.path.basename(fn)}.m4a'):
+			return os.path.basename(fn)
+		if os.path.isdir(song_path+'/vocal') and not os.path.isfile(f'{song_path}/vocal/{os.path.basename(fn)}.m4a'):
+			return os.path.basename(fn)
+
+	# get from listing directory
+	for bn in [i for i in os.listdir(song_path) if not i.startswith('.') and os.path.isfile(song_path+'/'+i)]:
+		if os.path.isdir(song_path+'/nonvocal') and not os.path.isfile(f'{song_path}/nonvocal/{bn}.m4a'):
+			return bn
+		if os.path.isdir(song_path+'/vocal') and not os.path.isfile(f'{song_path}/vocal/{bn}.m4a'):
+			return bn
+
+	return None
 
 
 def main():
+	global song_path
+
 	p = argparse.ArgumentParser()
-	p.add_argument('--gpu', '-g', type = int, default = -1)
+	p.add_argument('--download-path', '-d', help = "Path for downloaded songs. Will be overridden by the one from HTTP request. "
+					"Set this to forcefully run the vocal-splitter even when PiKaraoke is not running.", default = '')
+	p.add_argument('--gpu', '-g', type = int, help = 'CUDA device ID for GPU inference, set to -1 to use CPU', default = None)
 	p.add_argument('--pretrained_model', '-P', type = str, default = 'models/baseline.pth')
-	p.add_argument('--input', '-i', required = True)
 	p.add_argument('--sr', '-r', type = int, default = 44100)
 	p.add_argument('--n_fft', '-f', type = int, default = 2048)
 	p.add_argument('--hop_length', '-H', type = int, default = 1024)
@@ -172,24 +196,43 @@ def main():
 	p.add_argument('--tta', '-t', action = 'store_true')
 	args = p.parse_args()
 
+	song_path = os.path.expanduser(args.download_path).rstrip('/')
+
 	# Load and initialize DNN model
 	print('Loading vocal-splitter model ...', end = ' ', flush = True)
 	device = torch.device('cpu')
 	model = nets.CascadedNet(args.n_fft)
 	model.load_state_dict(torch.load(args.pretrained_model, map_location = device))
-	if torch.cuda.is_available() and args.gpu >= 0:
-		device = torch.device('cuda:{}'.format(args.gpu))
+	if (args.gpu is None or args.gpu >= 0) and torch.cuda.is_available():
+		device = torch.device(f'cuda:{0 if args.gpu is None else args.gpu}')
 		model.to(device)
 	args.model = model
 	args.device = device
 	print('done')
 
-	# Create temporary files
-	in_wav, out_wav_nonvocal, out_wav_vocal = [tempfile.NamedTemporaryFile() for i in range(3)]
+	# set song_path global variable from local server
+	get_next_file()
+
+	# Create temporary filenames if not done yet
+	in_wav, out_wav_vocal, out_wav_nonvocal, out_m4a_vocal, out_m4a_nonvocal = \
+		[song_path+'/.'+bn for bn in ['input.wav', 'vocal.wav', 'nonvocal.wav', 'vocal.m4a', 'nonvocal.m4a']]
 
 	# Main loop
 	while True:
+		next_file = get_next_file()
+		if not next_file:
+			time.sleep(2)
+			continue
+
+		# run vocal splitter on next_file
+		ffm_video2wav(song_path+'/'+next_file, in_wav)
 		split_vocal(in_wav, out_wav_nonvocal, out_wav_vocal, args)
+		if os.path.isdir(song_path+'/nonvocal'):
+			ffm_wav2m4a(out_wav_nonvocal, out_m4a_nonvocal)
+			os.rename(out_m4a_nonvocal, f'{song_path}/nonvocal/{next_file}.m4a')
+		if os.path.isdir(song_path+'/vocal'):
+			ffm_wav2m4a(out_wav_vocal, out_m4a_vocal)
+			os.rename(out_m4a_vocal, f'{song_path}/vocal/{next_file}.m4a')
 
 
 if __name__ == '__main__':

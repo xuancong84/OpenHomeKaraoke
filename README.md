@@ -9,6 +9,7 @@ This is the world's best open-source Python-based YouTube Karaoke system up to t
 - Splash screen with connection QR code and "Next up" display
 - Searching/browsing a local song library 
 - Adding new songs from YouTube
+- DNN-based (Deep Neural Network) voice splitter (need PyTorch, preferably with GPU support)
 - mp3 + cdg support, including compressed .zip bundles 
 - Pause/Skip/Restart and volume control
 - Advanced editing of downloaded file names
@@ -128,6 +129,16 @@ pip3 install -r requirements.txt
 Note: if you have trouble installing pygame, there's apparently an incompatibility with Python 3.8. Try upgrading to the latest python version or downgrading to 3.7.
 
 ## Launch
+
+On Linux/Mac-OS, run:
+
+cd to the pikaraoke directory and run: `PATH=~/anaconda3/bin:$PATH ./run.sh`
+
+or you make sure that the `python3` in $PATH has all pip requirements installed.
+
+
+
+On Windows:
 
 cd to the pikaraoke directory and run:
 

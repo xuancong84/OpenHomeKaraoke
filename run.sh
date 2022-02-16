@@ -2,10 +2,11 @@
 
 session_name=PiKaraoke
 cmds=("top"
-#"sudo sh -c 'cp -f $HOME/.Xauthority ~ && $HOME/anaconda3/bin/python3 app.py -u $(whoami)'"
-"$HOME/anaconda3/bin/python3 app.py"
+#"sudo sh -c 'cp -f $HOME/.Xauthority ~ && PATH=$PATH python3 app.py -u $(whoami)'"
+"PATH=$PATH python3 app.py"
 "./screencapture.sh -v -D 1 -e 1 -p 4000"
-"# pavucontrol"
+"PATH=$PATH python3 vocal_splitter.py -p -d ~/pikaraoke-songs/"
+#"pavucontrol"
 )
 
 if [ "`tmux ls | grep $session_name`" ]; then

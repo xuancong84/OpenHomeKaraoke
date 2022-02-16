@@ -30,7 +30,10 @@ class Karaoke:
 	now_playing_filename = None
 	now_playing_user = None
 	now_playing_transpose = 0
+	now_playing_slave = ''
 	audio_delay = 0
+	last_vocal_info = 0
+	last_vocal_time = 0
 	is_paused = True
 	process = None
 	qr_code_path = None
@@ -487,18 +490,16 @@ class Karaoke:
 		types = ['.mp4', '.mp3', '.zip', '.mkv', '.avi', '.webm', '.mov']
 		files_grabbed = []
 		self.songname_trans = {}
-		P = Path(self.download_path)
-		for file in P.rglob('*.*'):
-			if file.is_file():
-				file = file.as_posix()
-				if os.path.splitext(file)[1].lower() in types:
-					logging.debug("adding song: " + file)
-					files_grabbed.append(file)
-					trans = unidecode(self.filename_from_path(file)).lower()
+		for bn in os.listdir(self.download_path):
+			fn = self.download_path + bn
+			if not bn.startswith('.') and os.path.isfile(fn):
+				if os.path.splitext(fn)[1].lower() in types:
+					files_grabbed.append(fn)
+					trans = unidecode(self.filename_from_path(fn)).lower()
 					# strip leading non-transliterable symbols
 					while trans and not trans[0].islower() and not trans[0].isdigit():
 						trans = trans[1:]
-					self.songname_trans[file] = trans
+					self.songname_trans[fn] = trans
 
 		# self.available_songs = sorted(files_grabbed, key = lambda f: str.lower(os.path.basename(f)))
 		self.available_songs = sorted(self.songname_trans, key = self.songname_trans.get)
@@ -552,20 +553,23 @@ class Karaoke:
 			logging.debug("Killing old VLC processes")
 			if self.vlcclient != None:
 				self.vlcclient.kill()
-		else:
-			if self.omxclient != None:
+		elif self.omxclient != None:
 				self.omxclient.kill()
 
-	def play_file(self, file_path, semitones = 0, extra_params = []):
+	def play_file(self, file_path, extra_params = []):
 		self.now_playing = self.filename_from_path(file_path)
 		self.now_playing_filename = file_path
 
 		if self.use_vlc:
 			logging.info("Playing video in VLC: " + self.now_playing)
-			if semitones == 0:
+			if os.path.isfile(self.now_playing_slave):
+				extra_params += [f'--input-slave={self.now_playing_slave}', '--audio-track=1']
+			if self.audio_delay:
+				extra_params += [f'--audio-desync={self.audio_delay * 1000}']
+			if self.now_playing_transpose == 0:
 				self.vlcclient.play_file(file_path, extra_params)
 			else:
-				self.vlcclient.play_file_transpose(file_path, semitones, extra_params)
+				self.vlcclient.play_file_transpose(file_path, self.now_playing_transpose, extra_params)
 		else:
 			logging.info("Playing video in omxplayer: " + self.now_playing)
 			self.omxclient.play_file(file_path)
@@ -581,9 +585,26 @@ class Karaoke:
 			info = self.vlcclient.get_info_xml(status_xml)
 			posi = info['position']*info['length']
 			self.now_playing_transpose = semitones
-			self.play_file(self.now_playing_filename, semitones, [f'--start-time={posi}', f'--audio-desync={self.audio_delay*1000}'])
+			self.play_file(self.now_playing_filename, [f'--start-time={posi}'])
 		else:
 			logging.error("Not using VLC. Can't transpose track.")
+
+	def play_vocal_dnn(self, mode):
+		# mode=vocal/nonvocal
+		if self.use_vlc:
+			play_slave = '' if mode=='both' else self.download_path+mode+'/'+os.path.basename(self.now_playing_filename)+'.m4a'
+			if self.now_playing_slave == play_slave:
+				return
+			status_xml = self.vlcclient.pause().text
+			info = self.vlcclient.get_info_xml(status_xml)
+			posi = info['position']*info['length']
+			self.now_playing_slave = play_slave
+			self.play_file(self.now_playing_filename, [f'--start-time={posi}'])
+			self.last_vocal_time = 0
+			self.get_vocal_info()
+			self.vlcclient.command()
+		else:
+			logging.error("Not using VLC. Can't play vocal/nonvocal.")
 
 	def is_file_playing(self):
 		if self.use_vlc:
@@ -804,6 +825,32 @@ class Karaoke:
 			logging.warning("Tried to set volume, but no file is playing!")
 			return False
 
+	def get_vocal_info(self):
+		tm = time.time()
+		if tm-self.last_vocal_time < 2:
+			return self.last_vocal_info
+		if not self.now_playing_filename:
+			return 0
+		mask = 0
+		bn = os.path.basename(self.now_playing_filename)
+		if os.path.isfile(f'{self.download_path}nonvocal/{bn}.m4a'):
+			mask |= 1
+		if os.path.isfile(f'{self.download_path}vocal/{bn}.m4a'):
+			mask |= 2
+		if os.path.isfile(f'{self.download_path}.{bn}.nonvocal.m4a'):
+			mask |= 4
+		if os.path.isfile(f'{self.download_path}.{bn}.vocal.m4a'):
+			mask |= 8
+		if '/nonvocal/' in self.now_playing_slave:
+			mask |= (1 << 4)
+		elif '/vocal/' in self.now_playing_slave:
+			mask |= (3 << 4)
+		else:
+			mask |= (2 << 4)
+		self.last_vocal_info = mask
+		self.last_vocal_time = tm
+		return mask
+
 	def get_state(self):
 		new_state = self.vlcclient.get_info_xml() if self.use_vlc else {
 			'volume': self.omxclient.volume_offset,
@@ -861,7 +908,9 @@ class Karaoke:
 		self.now_playing_user = None
 		self.is_paused = True
 		self.now_playing_transpose = 0
+		self.now_playing_slave = ''
 		self.audio_delay = 0
+		self.last_vocal_info = 0
 
 	def resync(self, delay=0):
 		if os.geteuid()==0 and self.nonroot_user:
@@ -877,7 +926,7 @@ class Karaoke:
 			try:
 				if not self.is_file_playing() and self.now_playing != None:
 					self.reset_now_playing()
-				if len(self.queue) > 0:
+				if self.queue:
 					if not self.is_file_playing():
 						self.reset_now_playing()
 						if not pygame.display.get_active():
@@ -887,12 +936,12 @@ class Karaoke:
 						while i < (self.splash_delay * 1000):
 							self.handle_run_loop()
 							i += self.loop_interval
-						self.play_file(self.queue[0]["file"])
+						head = self.queue.pop(0)
+						self.play_file(head["file"])
 						if isFirstSong:
 							self.resync(1)
 							isFirstSong = False
-						self.now_playing_user = self.queue[0]["user"]
-						self.queue.pop(0)
+						self.now_playing_user = head["user"]
 						self.update_queue_hash()
 				elif not pygame.display.get_active() and not self.is_file_playing():
 					self.pygame_reset_screen()
