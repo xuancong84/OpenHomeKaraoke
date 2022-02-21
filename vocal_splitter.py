@@ -116,7 +116,22 @@ def ffm_video2wav(input_fn, output_fn):
 	os.system(f"ffmpeg -y -i '{input_fn}' -f wav -ar 44100 '{output_fn}'")
 
 
-def split_vocal(in_wav, out_wav_nonvocal, out_wav_vocal, args):
+def split_vocal_by_stereo(in_wav, out_wav_nonvocal, out_wav_vocal):
+	try:
+		# Create temporary filenames if not done yet
+		X, sr = librosa.load(in_wav, 44100, False, dtype = np.float32, res_type = 'kaiser_fast')
+		if X.shape[0] < 2:
+			return False
+		if out_wav_nonvocal:
+			sf.write(out_wav_nonvocal, X[0, :] - X[1, :], sr)
+		if out_wav_vocal:
+			sf.write(out_wav_vocal, X[0, :] + X[1, :], sr)
+		return True
+	except:
+		return False
+
+
+def split_vocal_by_dnn(in_wav, out_wav_nonvocal, out_wav_vocal, args):
 	print('Loading wave source ...', end = ' ', flush = True)
 	X, sr = librosa.load(in_wav, args.sr, False, dtype = np.float32, res_type = 'kaiser_fast')
 	print('done', flush = True)
@@ -149,12 +164,14 @@ def split_vocal(in_wav, out_wav_nonvocal, out_wav_vocal, args):
 
 
 song_path = ''
+use_DNN = True
 
 def get_next_file():
-	global song_path
+	global song_path, use_DNN
 	try:
 		obj = requests.get('http://localhost:5000/get_vocal_todo_list').json()
 		song_path = obj['download_path'].rstrip('/')
+		use_DNN = obj['use_DNN']
 	except:
 		if not song_path:
 			print('PiKaraoke is not running and --download-path is not specified, exiting ...')
@@ -164,16 +181,18 @@ def get_next_file():
 	if not os.path.isdir(song_path+'/nonvocal') and not os.path.isdir(song_path+'/vocal'):
 		return None
 	for fn in obj['queue']:
-		if os.path.isdir(song_path+'/nonvocal') and not os.path.isfile(f'{song_path}/nonvocal/{os.path.basename(fn)}.m4a'):
+		bn = ('' if use_DNN else '.')+os.path.basename(fn)
+		if os.path.isdir(song_path+'/nonvocal') and not os.path.isfile(f'{song_path}/nonvocal/{bn}.m4a'):
 			return os.path.basename(fn)
-		if os.path.isdir(song_path+'/vocal') and not os.path.isfile(f'{song_path}/vocal/{os.path.basename(fn)}.m4a'):
+		if os.path.isdir(song_path+'/vocal') and not os.path.isfile(f'{song_path}/vocal/{bn}.m4a'):
 			return os.path.basename(fn)
 
 	# get from listing directory
 	for bn in [i for i in os.listdir(song_path) if not i.startswith('.') and os.path.isfile(song_path+'/'+i)]:
-		if os.path.isdir(song_path+'/nonvocal') and not os.path.isfile(f'{song_path}/nonvocal/{bn}.m4a'):
+		bn1 = ('' if use_DNN else '.')+bn
+		if os.path.isdir(song_path+'/nonvocal') and not os.path.isfile(f'{song_path}/nonvocal/{bn1}.m4a'):
 			return bn
-		if os.path.isdir(song_path+'/vocal') and not os.path.isfile(f'{song_path}/vocal/{bn}.m4a'):
+		if os.path.isdir(song_path+'/vocal') and not os.path.isfile(f'{song_path}/vocal/{bn1}.m4a'):
 			return bn
 
 	return None
@@ -226,13 +245,23 @@ def main():
 
 		# run vocal splitter on next_file
 		ffm_video2wav(song_path+'/'+next_file, in_wav)
-		split_vocal(in_wav, out_wav_nonvocal, out_wav_vocal, args)
-		if os.path.isdir(song_path+'/nonvocal'):
-			ffm_wav2m4a(out_wav_nonvocal, out_m4a_nonvocal)
-			os.rename(out_m4a_nonvocal, f'{song_path}/nonvocal/{next_file}.m4a')
-		if os.path.isdir(song_path+'/vocal'):
-			ffm_wav2m4a(out_wav_vocal, out_m4a_vocal)
-			os.rename(out_m4a_vocal, f'{song_path}/vocal/{next_file}.m4a')
+
+		if use_DNN:
+			split_vocal_by_dnn(in_wav, out_wav_nonvocal, out_wav_vocal, args)
+			if os.path.isdir(song_path+'/nonvocal'):
+				ffm_wav2m4a(out_wav_nonvocal, out_m4a_nonvocal)
+				os.rename(out_m4a_nonvocal, f'{song_path}/nonvocal/{next_file}.m4a')
+			if os.path.isdir(song_path+'/vocal'):
+				ffm_wav2m4a(out_wav_vocal, out_m4a_vocal)
+				os.rename(out_m4a_vocal, f'{song_path}/vocal/{next_file}.m4a')
+		else:
+			split_vocal_by_stereo(in_wav, out_wav_nonvocal, out_wav_vocal)
+			if os.path.isdir(song_path+'/nonvocal'):
+				ffm_wav2m4a(out_wav_nonvocal, out_m4a_nonvocal)
+				os.rename(out_m4a_nonvocal, f'{song_path}/nonvocal/.{next_file}.m4a')
+			if os.path.isdir(song_path+'/vocal'):
+				ffm_wav2m4a(out_wav_vocal, out_m4a_vocal)
+				os.rename(out_m4a_vocal, f'{song_path}/vocal/.{next_file}.m4a')
 
 
 if __name__ == '__main__':

@@ -34,6 +34,7 @@ class Karaoke:
 	audio_delay = 0
 	last_vocal_info = 0
 	last_vocal_time = 0
+	use_DNN_vocal = True
 	is_paused = True
 	process = None
 	qr_code_path = None
@@ -589,23 +590,6 @@ class Karaoke:
 		else:
 			logging.error("Not using VLC. Can't transpose track.")
 
-	def play_vocal_dnn(self, mode):
-		# mode=vocal/nonvocal
-		if self.use_vlc:
-			play_slave = '' if mode=='both' else self.download_path+mode+'/'+os.path.basename(self.now_playing_filename)+'.m4a'
-			if self.now_playing_slave == play_slave:
-				return
-			status_xml = self.vlcclient.pause().text
-			info = self.vlcclient.get_info_xml(status_xml)
-			posi = info['position']*info['length']
-			self.now_playing_slave = play_slave
-			self.play_file(self.now_playing_filename, [f'--start-time={posi}'])
-			self.last_vocal_time = 0
-			self.get_vocal_info()
-			self.vlcclient.command()
-		else:
-			logging.error("Not using VLC. Can't play vocal/nonvocal.")
-
 	def is_file_playing(self):
 		if self.use_vlc:
 			if self.vlcclient != None and self.vlcclient.is_running():
@@ -825,6 +809,35 @@ class Karaoke:
 			logging.warning("Tried to set volume, but no file is playing!")
 			return False
 
+	def play_vocal(self, mode = None):
+		# mode=vocal/nonvocal/both, or else (use current)
+		if self.use_vlc:
+			if mode not in ['both', 'vocal', 'nonvocal']:
+				mode = {1: 'nonvocal', 2: 'both', 3: 'vocal'}[self.get_vocal_mode()]
+			play_slave = '' if mode == 'both' else self.download_path+mode+'/' + ('' if self.use_DNN_vocal else '.')\
+			                                     + os.path.basename(self.now_playing_filename) + '.m4a'
+			if not os.path.isfile(play_slave):
+				play_slave = ''
+			if self.now_playing_slave == play_slave:
+				return
+			status_xml = self.vlcclient.pause().text
+			info = self.vlcclient.get_info_xml(status_xml)
+			posi = info['position']*info['length']
+			self.now_playing_slave = play_slave
+			self.play_file(self.now_playing_filename, [f'--start-time={posi}'])
+			self.last_vocal_time = 0
+			self.get_vocal_info()
+			self.vlcclient.command()
+		else:
+			logging.error("Not using VLC. Can't play vocal/nonvocal.")
+
+	def get_vocal_mode(self):
+		if '/nonvocal/' in self.now_playing_slave:
+			return 1
+		elif '/vocal/' in self.now_playing_slave:
+			return 3
+		return 2
+
 	def get_vocal_info(self):
 		tm = time.time()
 		if tm-self.last_vocal_time < 2:
@@ -834,24 +847,26 @@ class Karaoke:
 		mask = 0
 		bn = os.path.basename(self.now_playing_filename)
 		if os.path.isfile(f'{self.download_path}nonvocal/{bn}.m4a'):
-			mask |= 1
+			mask |= 0b00000001
 		if os.path.isfile(f'{self.download_path}vocal/{bn}.m4a'):
-			mask |= 2
-		if os.path.isfile(f'{self.download_path}.{bn}.nonvocal.m4a'):
-			mask |= 4
-		if os.path.isfile(f'{self.download_path}.{bn}.vocal.m4a'):
-			mask |= 8
-		if '/nonvocal/' in self.now_playing_slave:
-			mask |= (1 << 4)
-		elif '/vocal/' in self.now_playing_slave:
-			mask |= (3 << 4)
-		else:
-			mask |= (2 << 4)
+			mask |= 0b00000010
+		if os.path.isfile(f'{self.download_path}nonvocal/.{bn}.m4a'):
+			mask |= 0b00000100
+		if os.path.isfile(f'{self.download_path}vocal/.{bn}.m4a'):
+			mask |= 0b00001000
+		if 'vocal/.' in self.now_playing_slave:
+			mask |= 0b10000000
+		if self.use_DNN_vocal:
+			mask |= 0b01000000
+		mask |= (self.get_vocal_mode() << 4)
 		self.last_vocal_info = mask
 		self.last_vocal_time = tm
 		return mask
 
 	def get_state(self):
+		if not self.is_file_playing():
+			self.player_state['now_playing'] = None
+			return defaultdict(lambda: None, self.player_state)
 		new_state = self.vlcclient.get_info_xml() if self.use_vlc else {
 			'volume': self.omxclient.volume_offset,
 			'state': ('paused' if self.omxclient.paused else 'playing')

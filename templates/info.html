@@ -24,11 +24,7 @@
 
     $("#update-ytdl-link").click(function (e) {
       e.preventDefault();
-      if (
-        window.confirm(
-          "Are you sure you want to update Youtube-dl right now? Current and pending downloads may fail."
-        )
-      ) {
+      if (window.confirm("Are you sure you want to update Youtube-dl right now? Current and pending downloads may fail.")) {
         location.href = this.href;
       }
     });
@@ -39,9 +35,77 @@
         location.href = this.href;
       }
     });
+
+    $("#use-DNN").change(function(){
+      $.get("/set_vocal_mode/" + this.checked, function( data ){
+        location.reload();
+      });
+    });
   });
 </script>
 {% endblock %} {% block header %}
+<style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+
 <h1>{% block title %}Information{% endblock %}</h1>
 {% endblock %} {% block content %}
 
@@ -69,8 +133,23 @@
 <hr />
 
 {% if admin %}
-<h1>Updates</h1>
-<p>Re-synchronize audio and video:</p>
+<h2>Advanced Control Options</h2>
+<h4>Vocal splitter mode:</h4>
+<div class="is-flex" style="align-items:center">
+  <span style="vertical-align:middle; text-align:center;">Use L-R/L+R</span>
+  <label style="vertical-align:middle; margin: 5px" class="switch">
+    <input id="use-DNN" type="checkbox" {% if use_DNN %}checked{% endif %}>
+    <span class="slider round"></span>
+  </label>
+  <span style="vertical-align:middle; text-align:center;">Use DNN</span>
+</div>
+<p class="help">Standard MTV audio has the two stereo channels (L and R) encoded in such a way that:
+  L-R is the instrument track, L+R is the vocal track. Thus, by simply subtracting or adding the two stereo channels,
+  we can get the instrumental and vocal track in mono sound. PiKaraoke's built-in DNN-based (deep neural network)
+  vocal splitter uses AI algorithm to split instrumental and vocal sound in each stereo track independently resulting in
+  stereo instrumental and vocal tracks.</p>
+
+<h4>Re-synchronize audio and video:</h4>
 <ul>
   <li>
     <a href="/resync">Re-sync audio/video</a>
@@ -78,7 +157,7 @@
 </ul>
 <p class="help">You should only need to do this if you are playing using a web browser.</p>
 
-<p>Refresh the song list:</p>
+<h4>Refresh the song list:</h4>
 <ul>
   <li>
     <a href="/refresh">Rescan song directory</a>
@@ -86,6 +165,7 @@
 </ul>
 <p class="help">You should only need to do this if you manually copied files to the download directory while pikaraoke was running.</p>
 
+<h2>Updates</h2>
 <p>If downloads or searches stopped working, updating youtube-dl will probably fix it. The current installed version is: "{{ youtubedl_version }}"</p> 
 <ul>
   <li>
@@ -94,7 +174,7 @@
 </ul>
 <p class="help">This update link above may fail if you don't have proper file permissions. Check the pikaraoke log for errors. </p>
 
-<h1>Shutdown</h1>
+<h2>Shutdown</h2>
 <p>
   Don't just pull the plug! Always shut down your server properly to avoid data
   corruption.

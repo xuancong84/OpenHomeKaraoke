@@ -67,13 +67,14 @@ If you're on a Raspberry Pi, you might want to just use the pre-built image to s
 
 ### Manual install
 
-Install git, if you haven't already. (on raspberry pi: `sudo apt-get update; sudo apt-get install git`)
-Install python3/pip3 (usually raspberry pis already have it, run `python3 --version` to check): https://www.python.org/downloads/ (python 2.7 may work, but is not officially supported)
-
-Clone this repo:
+- Install git, if you haven't already. (on raspberry pi: `sudo apt-get update; sudo apt-get install git`)
+- Install python3/pip3 (usually raspberry pis already have it, run `python3 --version` to check): https://www.python.org/downloads/ (python 2.7 may work, but is not officially supported)
+- Create song download directory $HOME/pikaraoke-songs or specify it on the command line.
+- Create directories for extracting instrumental and vocal tracks, $HOME/pikaraoke-songs/nonvocal and $HOME/pikaraoke-songs/vocal, or specify the song download directory.
+- Clone this repo:
 
 ```
-git clone https://github.com/vicwomg/pikaraoke.git
+git clone https://github.com/xuancong84/pikaraoke.git
 cd pikaraoke
 ```
 

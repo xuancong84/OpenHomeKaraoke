@@ -201,13 +201,14 @@ class VLCClient:
 		logging.debug("Transposing complete")
 
 	def command(self, command = ''):
-		if self.is_running():
+		try:
+			assert self.is_running()
 			url = self.http_command_endpoint + command
 			request = requests.get(url, auth = ("", self.http_password))
 			self.last_status_text = request.text
 			self.last_status_time = time.time()
 			return request
-		else:
+		except:
 			logging.error("No active VLC process. Could not run command: " + command)
 			return SimpleNamespace(**{'text': '', 'status_code': 500})
 

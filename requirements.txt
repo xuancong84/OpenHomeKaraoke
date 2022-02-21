@@ -17,3 +17,6 @@ requests
 arabic-reshaper
 python-bidi
 flask-paginate==2021.10.29
+torch>=1.5.1
+tqdm>=4.30
+librosa>=0.6.3,<0.9

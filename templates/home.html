@@ -64,9 +64,11 @@
 					if(!isNaN(obj.audio_delay) && !audiodelay_typing)
 						$("#delay-val").text(obj.audio_delay.toFixed(2));
 
-					s3_enable(1, obj.vocal_info&1);
-					s3_enable(3, obj.vocal_info&2);
+					var use_DNN = obj.vocal_info&0x40;
+					s3_enable(1, use_DNN?(obj.vocal_info&1):(obj.vocal_info&4));
+					s3_enable(3, use_DNN?(obj.vocal_info&2):(obj.vocal_info&8));
 					s3_go_to((obj.vocal_info>>4)&3, false);
+					use_DNN ? $("#pytorch-logo").show():$("#pytorch-logo").hide();
         } else {
           $("#now-playing").html("Nothing is playing right now.");
           $(".control-box").hide();
@@ -204,6 +206,10 @@
       showNotification("A semitone is also known as a half-step. It is the smallest interval used in classical Western music, equal to a twelfth of an octave or half a tone.","is-info",10000)
     });
 
+    $("#pytorch-logo").click(function () {
+      showNotification("DNN-based vocal splitter is enabled. PiKaraoke uses PyTorch (by Facebook) to run a deep neural network to split instrumental and vocal track.","is-info",10000)
+    });
+
     getNowPlaying();
     setInterval(getNowPlaying, 1500);
     if(isMobile)
@@ -268,6 +274,7 @@ body {
 <div class="has-background-black-bis box control-box" style="max-width: 500px">
 	<div class="is-flex" style="justify-content: space-between">
 		<h1 id="label-player-control">Player Control</h1>
+		<img id="pytorch-logo" width="40" src="/static/images/pytorch-logo.png" />
 		<div id="s3-outer" style="position:relative; width:150px; height:50px;">
 				<div id="s3-inner" style="background-color: #222D41; width:150px; height:28px; left:0; position:relative; top:20px; border-radius:14px;">
 						<div class="redButton horizTranslate2" style="width:16px; height:16px; background-color:#DB3D2B; border-radius:8px; position:relative; top:6px; left:6px;"></div>

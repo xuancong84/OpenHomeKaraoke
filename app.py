@@ -137,7 +137,14 @@ def logout():
 @app.route("/get_vocal_todo_list")
 def get_vocal_todo_list():
 	q = ([K.now_playing_filename] if K.now_playing_filename else []) + [i['file'] for i in K.queue]
-	return json.dumps({'download_path': K.download_path, 'queue': q})
+	return json.dumps({'download_path': K.download_path, 'queue': q, 'use_DNN': K.use_DNN_vocal})
+
+
+@app.route("/set_vocal_mode/<mode>")
+def set_vocal_mode(mode):
+	K.use_DNN_vocal = (mode.lower() == 'true')
+	K.play_vocal()
+	return ''
 
 
 @app.route("/queue")
@@ -247,7 +254,7 @@ def transpose(semitones):
 
 @app.route("/play_vocal/<mode>", methods = ["GET"])
 def play_vocal(mode):
-	K.play_vocal_dnn(mode)
+	K.play_vocal(mode)
 	return ''
 
 
@@ -504,6 +511,7 @@ def info():
 		disk = disk,
 		youtubedl_version = youtubedl_version,
 		is_pi = is_pi,
+		use_DNN = K.use_DNN_vocal,
 		pikaraoke_version = VERSION,
 		admin = is_admin(),
 		admin_enabled = admin_password != None
