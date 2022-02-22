@@ -156,6 +156,8 @@ class VLCClient:
 			command = self.cmd_base + params + [file_path]
 			logging.debug("VLC Command: %s" % command)
 			self.process = subprocess.Popen(command, shell = (self.platform == "windows"), stdin = subprocess.PIPE)
+			while self.process.poll() is not None:  # wait for the process to start
+				pass
 		except Exception as e:
 			logging.error("Playing file failed: " + str(e))
 
@@ -207,6 +209,11 @@ class VLCClient:
 			request = requests.get(url, auth = ("", self.http_password))
 			self.last_status_text = request.text
 			self.last_status_time = time.time()
+			if not self.K.now_playing:
+				# by right, here should never be reached
+				request.encoding = 'utf-8'
+				self.K.now_playing_filename = self.get_val_xml(request.text, "info name='filename'")
+				self.K.now_playing = self.K.filename_from_path(self.K.now_playing_filename)
 			return request
 		except:
 			logging.error("No active VLC process. Could not run command: " + command)

@@ -175,11 +175,9 @@ class Karaoke:
 
 		self.generate_qr_code()
 		if self.use_vlc:
-			if (self.show_overlay):
-				self.vlcclient = vlcclient.VLCClient(port = self.vlc_port, path = self.vlc_path,
-				                                     qrcode = self.qr_code_path, url = self.url)
-			else:
-				self.vlcclient = vlcclient.VLCClient(port = self.vlc_port, path = self.vlc_path)
+			self.vlcclient = vlcclient.VLCClient(port = self.vlc_port, path = self.vlc_path,
+			                                     qrcode = (self.qr_code_path if self.show_overlay else None), url = self.url)
+			self.vlcclient.K = self
 		else:
 			self.omxclient = omxclient.OMXClient(path = self.omxplayer_path, adev = self.omxplayer_adev,
 			                                     dual_screen = self.dual_screen, volume_offset = self.volume_offset)
@@ -558,11 +556,8 @@ class Karaoke:
 				self.omxclient.kill()
 
 	def play_file(self, file_path, extra_params = []):
-		self.now_playing = self.filename_from_path(file_path)
-		self.now_playing_filename = file_path
-
 		if self.use_vlc:
-			logging.info("Playing video in VLC: " + self.now_playing)
+			logging.info("Playing video in VLC: " + file_path)
 			if os.path.isfile(self.now_playing_slave):
 				extra_params += [f'--input-slave={self.now_playing_slave}', '--audio-track=1']
 			if self.audio_delay:
@@ -572,9 +567,11 @@ class Karaoke:
 			else:
 				self.vlcclient.play_file_transpose(file_path, self.now_playing_transpose, extra_params)
 		else:
-			logging.info("Playing video in omxplayer: " + self.now_playing)
+			logging.info("Playing video in omxplayer: " + file_path)
 			self.omxclient.play_file(file_path)
 
+		self.now_playing = self.filename_from_path(file_path)
+		self.now_playing_filename = file_path
 		self.is_paused = False
 		self.render_splash_screen()  # remove old previous track
 
@@ -591,18 +588,12 @@ class Karaoke:
 			logging.error("Not using VLC. Can't transpose track.")
 
 	def is_file_playing(self):
-		if self.use_vlc:
-			if self.vlcclient != None and self.vlcclient.is_running():
-				return True
-			else:
-				self.now_playing = None
-				return False
+		client = self.vlcclient if self.use_vlc else self.omxclient
+		if client is not None and client.is_running():
+			return True
 		else:
-			if self.omxclient != None and self.omxclient.is_running():
-				return True
-			else:
-				self.now_playing = None
-				return False
+			self.now_playing = None
+			return False
 
 	def is_song_in_queue(self, song_path):
 		for each in self.queue:
@@ -827,7 +818,7 @@ class Karaoke:
 			self.play_file(self.now_playing_filename, [f'--start-time={posi}'])
 			self.last_vocal_time = 0
 			self.get_vocal_info()
-			self.vlcclient.command()
+			self.vlcclient.last_status_time = time.time()
 		else:
 			logging.error("Not using VLC. Can't play vocal/nonvocal.")
 
