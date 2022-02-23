@@ -248,7 +248,7 @@ def pause():
 
 @app.route("/transpose/<semitones>", methods = ["GET"])
 def transpose(semitones):
-	K.transpose_current(semitones)
+	K.play_transposed(semitones)
 	return ''
 
 

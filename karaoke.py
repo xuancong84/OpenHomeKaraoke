@@ -572,18 +572,18 @@ class Karaoke:
 
 		self.now_playing = self.filename_from_path(file_path)
 		self.now_playing_filename = file_path
-		self.is_paused = False
+		self.is_paused = ('--start-paused' in extra_params)
 		self.render_splash_screen()  # remove old previous track
 
-	def transpose_current(self, semitones):
+	def play_transposed(self, semitones):
 		if self.use_vlc:
 			if self.now_playing_transpose == semitones:
 				return
-			status_xml = self.vlcclient.pause().text
+			status_xml = self.vlcclient.command().text if self.is_paused else self.vlcclient.pause().text
 			info = self.vlcclient.get_info_xml(status_xml)
 			posi = info['position']*info['length']
 			self.now_playing_transpose = semitones
-			self.play_file(self.now_playing_filename, [f'--start-time={posi}'])
+			self.play_file(self.now_playing_filename, [f'--start-time={posi}'] + (['--start-paused'] if self.is_paused else []))
 		else:
 			logging.error("Not using VLC. Can't transpose track.")
 
@@ -811,11 +811,11 @@ class Karaoke:
 				play_slave = ''
 			if self.now_playing_slave == play_slave:
 				return
-			status_xml = self.vlcclient.pause().text
+			status_xml = self.vlcclient.command().text if self.is_paused else self.vlcclient.pause().text
 			info = self.vlcclient.get_info_xml(status_xml)
 			posi = info['position']*info['length']
 			self.now_playing_slave = play_slave
-			self.play_file(self.now_playing_filename, [f'--start-time={posi}'])
+			self.play_file(self.now_playing_filename, [f'--start-time={posi}'] + (['--start-paused'] if self.is_paused else []))
 			self.last_vocal_time = 0
 			self.get_vocal_info()
 			self.vlcclient.last_status_time = time.time()
