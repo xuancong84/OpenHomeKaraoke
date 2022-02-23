@@ -136,6 +136,10 @@ def logout():
 
 @app.route("/get_vocal_todo_list")
 def get_vocal_todo_list():
+	last_completed = request.headers['last_completed']
+	if last_completed in K.rename_history:
+		K.rename(last_completed, os.path.splitext(K.rename_history[last_completed])[0])
+		K.rename_history.pop(last_completed)
 	q = ([K.now_playing_filename] if K.now_playing_filename else []) + [i['file'] for i in K.queue]
 	return json.dumps({'download_path': K.download_path, 'queue': q, 'use_DNN': K.use_DNN_vocal})
 
@@ -402,12 +406,8 @@ def qrcode():
 def delete_file():
 	if "song" in request.args:
 		song_path = request.args["song"]
-		if song_path in K.queue:
-			flash(
-				"Error: Can't delete this song because it is in the current queue: "
-				+ song_path,
-				"is-danger",
-			)
+		if K.is_song_in_queue(song_path):
+			flash("Error: Can't delete this song because it is in the current queue: " + song_path, "is-danger")
 		else:
 			K.delete(song_path)
 			flash("Song deleted: " + song_path, "is-warning")

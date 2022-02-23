@@ -108,12 +108,14 @@ class Separator(object):
 
 
 def ffm_wav2m4a(input_fn, output_fn, br = '128k'):
-	os.system(f"ffmpeg -y -i '{input_fn}' -c:a aac -b:a {br} '{output_fn}'")
+	input_fn, output_fn = [fn.replace('"', '\\"') for fn in [input_fn, output_fn]]
+	os.system(f'ffmpeg -y -i "{input_fn}" -c:a aac -b:a {br} "{output_fn}"')
 
 
 def ffm_video2wav(input_fn, output_fn):
 	# The built-in DNN model is trained on 44100 sampling rate, it can still run but does not work on other sampling rates
-	os.system(f"ffmpeg -y -i '{input_fn}' -f wav -ar 44100 '{output_fn}'")
+	input_fn, output_fn = [fn.replace('"', '\\"') for fn in [input_fn, output_fn]]
+	os.system(f'ffmpeg -y -i "{input_fn}" -f wav -ar 44100 "{output_fn}"')
 
 
 def split_vocal_by_stereo(in_wav, out_wav_nonvocal, out_wav_vocal):
@@ -164,12 +166,13 @@ def split_vocal_by_dnn(in_wav, out_wav_nonvocal, out_wav_vocal, args):
 
 
 song_path = ''
+last_completed = ''
 use_DNN = True
 
 def get_next_file():
-	global song_path, use_DNN
+	global song_path, use_DNN, last_completed
 	try:
-		obj = requests.get('http://localhost:5000/get_vocal_todo_list').json()
+		obj = requests.get('http://localhost:5000/get_vocal_todo_list', headers = {'last_completed': last_completed}).json()
 		song_path = obj['download_path'].rstrip('/')
 		use_DNN = obj['use_DNN']
 	except:
@@ -199,7 +202,7 @@ def get_next_file():
 
 
 def main():
-	global song_path
+	global song_path, last_completed
 
 	p = argparse.ArgumentParser()
 	p.add_argument('--download-path', '-d', help = "Path for downloaded songs. Will be overridden by the one from HTTP request. "
@@ -227,7 +230,7 @@ def main():
 		model.to(device)
 	args.model = model
 	args.device = device
-	print('done')
+	print('done', flush = True)
 
 	# set song_path global variable from local server
 	get_next_file()
@@ -244,6 +247,7 @@ def main():
 			continue
 
 		# run vocal splitter on next_file
+		print(f'Start processing {next_file} :')
 		ffm_video2wav(song_path+'/'+next_file, in_wav)
 
 		if use_DNN:
@@ -262,6 +266,7 @@ def main():
 			if os.path.isdir(song_path+'/vocal'):
 				ffm_wav2m4a(out_wav_vocal, out_m4a_vocal)
 				os.rename(out_m4a_vocal, f'{song_path}/vocal/.{next_file}.m4a')
+		last_completed = next_file
 
 
 if __name__ == '__main__':

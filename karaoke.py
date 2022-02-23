@@ -25,6 +25,7 @@ class Karaoke:
 	queue = []
 	queue_hash = None
 	available_songs = []
+	rename_history = {}
 	songname_trans = {} # transliteration is used for sorting and initial letter search
 	now_playing = None
 	now_playing_filename = None
@@ -503,14 +504,29 @@ class Karaoke:
 		# self.available_songs = sorted(files_grabbed, key = lambda f: str.lower(os.path.basename(f)))
 		self.available_songs = sorted(self.songname_trans, key = self.songname_trans.get)
 
+	def get_all_assoc_files(self, song_path):
+		basename = os.path.basename(song_path)
+		basestem = os.path.splitext(basename)
+		return [self.download_path + basename,
+				self.download_path + basestem[0] + '.cdg',
+				self.download_path + 'nonvocal/' + basename + '.m4a',
+				self.download_path + 'nonvocal/.' + basename + '.m4a',
+				self.download_path + 'vocal/' + basename + '.m4a',
+				self.download_path + 'vocal/.' + basename + '.m4a']
+
+	def delete_if_exist(self, filename):
+		if os.path.isfile(filename):
+			try:
+				os.remove(filename)
+			except:
+				pass
+
 	def delete(self, song_path):
 		logging.info("Deleting song: " + song_path)
-		os.remove(song_path)
-		ext = os.path.splitext(song_path)
-		# if we have an associated cdg file, delete that too
-		cdg_file = song_path.replace(ext[1], ".cdg")
-		if (os.path.exists(cdg_file)):
-			os.remove(cdg_file)
+
+		# delete all associated cdg/vocal/nonvocal files if exist
+		for fn in self.get_all_assoc_files(song_path):
+			self.delete_if_exist(fn)
 
 		self.get_available_songs()
 
@@ -521,21 +537,23 @@ class Karaoke:
 			except:
 				pass
 
-	def rename(self, song_path, new_name):
-		logging.info("Renaming song: '" + song_path + "' to: " + new_name)
-		old_basename = os.path.basename(song_path)
+	def rename(self, song_path, new_basestem):
+		logging.info("Renaming song: '" + song_path + "' to: " + new_basestem)
 		ext = os.path.splitext(song_path)
 		if len(ext) < 2:
 			ext += ['']
-		new_basename = new_name + ext[1]
-		os.rename(song_path, self.download_path + new_basename)
+		new_basename = new_basestem + ext[1]
 
-		# rename associated cdg/vocal/nonvocal files if exist
-		self.rename_if_exist(ext[0] + ".cdg", self.download_path + new_name + ".cdg")
-		self.rename_if_exist(self.download_path + 'vocal/' + old_basename + '.m4a', self.download_path + 'vocal/' + new_basename + '.m4a')
-		self.rename_if_exist(self.download_path + 'vocal/.' + old_basename + '.m4a', self.download_path + 'vocal/.' + new_basename + '.m4a')
-		self.rename_if_exist(self.download_path + 'nonvocal/' + old_basename + '.m4a', self.download_path + 'nonvocal/' + new_basename + '.m4a')
-		self.rename_if_exist(self.download_path + 'nonvocal/.' + old_basename + '.m4a', self.download_path + 'nonvocal/.' + new_basename + '.m4a')
+		# can handle the case while the file is being processed by vocal splitter, it has been renamed multiple times
+		old_basename = os.path.basename(song_path)
+		self.rename_history[old_basename] = new_basename
+		for k, v in self.rename_history.items():
+			if v == old_basename:
+				self.rename_history[k] = new_basename
+
+		# rename all associated cdg/vocal/nonvocal files if exist
+		for src, tgt in zip(self.get_all_assoc_files(song_path), self.get_all_assoc_files(new_basename)):
+			self.rename_if_exist(src, tgt)
 
 		# rename queue entry if inside queue
 		for item in self.queue:
