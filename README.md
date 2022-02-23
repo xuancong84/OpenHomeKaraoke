@@ -3,22 +3,23 @@
 This is the world's best open-source Python-based YouTube Karaoke system up to today (2022.2), forked from @vicwomg's repo (thanks) and thoroughly revamped. PiKaraoke is a "KTV"-style Karaoke song search and queueing system. It connects to your TV either via an HDMI cable, or screen sharing, or using TV's web-browser (backend KTV player is screen-captured and streamed to HTTP), and shows a QR code for computers and smartphones to connect to a web interface. From there, multiple users can seamlessly search your local track library, queue up songs, add an endless selection of new Karaoke tracks from YouTube, and more. Works on Raspberry Pi, OSX, Windows, and Linux!
 
 
-## Features
+## Key Features
 - Stream-to-HTTP allows any TV (or IT device) with a web browser to watch the KTV (on Windows and MacOS, you can use wireless-display/screen-projection and Airplay respectively)
 - Web interface for multiple users to queue tracks
 - Splash screen with connection QR code and "Next up" display
 - Searching/browsing a local song library 
 - Adding new songs from YouTube
-- DNN-based (Deep Neural Network) voice splitter (need PyTorch, preferably with GPU support)
+- DNN-based (Deep Neural Network) vocal splitter (need PyTorch, preferably with GPU support), you can choose to play instrumental, vocal or both
+- Playing instrumental sound by the traditional stereo track subtraction method (disable DNN in Advanced Control Options)
 - mp3 + cdg support, including compressed .zip bundles 
 - Pause/Skip/Restart and volume control
 - Advanced editing of downloaded file names
 - Queue management, support dragging of a song to any position in the queue
 - Key Change / Pitch shifting
 - Lock down features with admin mode
-- Seek to play position
-- Audio delay adjustment (YouTube MTVs often have synchronized lyric, this makes singing difficult as there is not enough time to look at the lyric)
-- Filenames containing non-English characters are sorted according to their English transliteration
+- Seek to play position (you can practice singing a specific sentence over and over again)
+- Audio delay adjustment (YouTube MTVs often have synchronized lyrics, this makes singing difficult as there is not enough time to look at the lyrics)
+- Support song titles in all languages (including Chinese/Japanese/Arabic/Greek/Korean/Vietnamese/Hindi/etc.), filenames containing non-English characters are sorted according to their English transliteration
 
 ## Screenshots
 
@@ -27,18 +28,18 @@ This is the world's best open-source Python-based YouTube Karaoke system up to t
 <p float="left">
   <img width="400" alt="pikaraoke-tv1" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/TV.png">
   <img width="400" alt="pikaraoke-tv1" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/TV-web.jpg">
-<img width="400" alt="pikaraoke-tv2" src="https://user-images.githubusercontent.com/4107190/95813564-019fa200-0ccd-11eb-95e1-57a002c357a3.png">
-  </p>
+  <img width="400" alt="pikaraoke-tv2" src="https://user-images.githubusercontent.com/4107190/95813564-019fa200-0ccd-11eb-95e1-57a002c357a3.png">
+</p>
 
 ### Web interface
 
 <p float="left">
-<img width="250" style="float:left" alt="pikaraoke-nowplaying" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/home.jpg">
-<img width="250" style="float:left" alt="pikaraoke-queue" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/queue.jpg"><br>
-<img width="250" style="float:left" alt="pikaraoke-browse" src="https://user-images.githubusercontent.com/4107190/95813182-27787700-0ccc-11eb-82c8-fde7f0a631c1.png">
-<img width="250" style="float:left" alt="pikaraoke-search1" src="https://user-images.githubusercontent.com/4107190/95813197-2e06ee80-0ccc-11eb-9bf9-ddb24d988332.png">
-<img width="250" style="float:left" alt="pikaraoke-search2" src="https://user-images.githubusercontent.com/4107190/95813190-2ba49480-0ccc-11eb-84e3-f902cbd489a2.png">
-  </p>
+  <img width="250" style="float:left" alt="pikaraoke-nowplaying" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/home.jpg">
+  <img width="250" style="float:left" alt="pikaraoke-queue" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/queue.jpg"><br>
+  <img width="250" style="float:left" alt="pikaraoke-browse" src="https://user-images.githubusercontent.com/4107190/95813182-27787700-0ccc-11eb-82c8-fde7f0a631c1.png">
+  <img width="250" style="float:left" alt="pikaraoke-search1" src="https://user-images.githubusercontent.com/4107190/95813197-2e06ee80-0ccc-11eb-9bf9-ddb24d988332.png">
+  <img width="250" style="float:left" alt="pikaraoke-search2" src="https://user-images.githubusercontent.com/4107190/95813190-2ba49480-0ccc-11eb-84e3-f902cbd489a2.png">
+</p>
   
 ## Supported Devices
 
@@ -70,7 +71,7 @@ If you're on a Raspberry Pi, you might want to just use the pre-built image to s
 - Install git, if you haven't already. (on raspberry pi: `sudo apt-get update; sudo apt-get install git`)
 - Install python3/pip3 (usually raspberry pis already have it, run `python3 --version` to check): https://www.python.org/downloads/ (python 2.7 may work, but is not officially supported)
 - Create song download directory $HOME/pikaraoke-songs or specify it on the command line.
-- Create directories for extracting instrumental and vocal tracks, $HOME/pikaraoke-songs/nonvocal and $HOME/pikaraoke-songs/vocal, or specify the song download directory.
+- Create directories to enable automatic extraction of instrumental and vocal tracks in the background, $HOME/pikaraoke-songs/nonvocal and $HOME/pikaraoke-songs/vocal, or specify the song download directory.
 - Clone this repo:
 
 ```

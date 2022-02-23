@@ -514,16 +514,36 @@ class Karaoke:
 
 		self.get_available_songs()
 
+	def rename_if_exist(self, old_path, new_path):
+		if os.path.isfile(old_path):
+			try:
+				os.rename(old_path, new_path)
+			except:
+				pass
+
 	def rename(self, song_path, new_name):
 		logging.info("Renaming song: '" + song_path + "' to: " + new_name)
+		old_basename = os.path.basename(song_path)
 		ext = os.path.splitext(song_path)
-		if len(ext) == 2:
-			new_file_name = new_name + ext[1]
-		os.rename(song_path, self.download_path + new_file_name)
-		# if we have an associated cdg file, rename that too
-		cdg_file = song_path.replace(ext[1], ".cdg")
-		if (os.path.exists(cdg_file)):
-			os.rename(cdg_file, self.download_path + new_name + ".cdg")
+		if len(ext) < 2:
+			ext += ['']
+		new_basename = new_name + ext[1]
+		os.rename(song_path, self.download_path + new_basename)
+
+		# rename associated cdg/vocal/nonvocal files if exist
+		self.rename_if_exist(ext[0] + ".cdg", self.download_path + new_name + ".cdg")
+		self.rename_if_exist(self.download_path + 'vocal/' + old_basename + '.m4a', self.download_path + 'vocal/' + new_basename + '.m4a')
+		self.rename_if_exist(self.download_path + 'vocal/.' + old_basename + '.m4a', self.download_path + 'vocal/.' + new_basename + '.m4a')
+		self.rename_if_exist(self.download_path + 'nonvocal/' + old_basename + '.m4a', self.download_path + 'nonvocal/' + new_basename + '.m4a')
+		self.rename_if_exist(self.download_path + 'nonvocal/.' + old_basename + '.m4a', self.download_path + 'nonvocal/.' + new_basename + '.m4a')
+
+		# rename queue entry if inside queue
+		for item in self.queue:
+			if item['file'] == song_path:
+				item['file'] = self.download_path + new_basename
+				item['title'] = self.filename_from_path(item['file'])
+				break
+
 		self.get_available_songs()
 
 	def filename_from_path(self, file_path):
@@ -596,10 +616,7 @@ class Karaoke:
 			return False
 
 	def is_song_in_queue(self, song_path):
-		for each in self.queue:
-			if each["file"] == song_path:
-				return True
-		return False
+		return song_path in map(lambda t: t['file'], self.queue)
 
 	def enqueue(self, song_path, user = "Pikaraoke"):
 		if (self.is_song_in_queue(song_path)):
