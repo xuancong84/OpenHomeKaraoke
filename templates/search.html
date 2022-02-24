@@ -213,7 +213,7 @@
       $('#youtube-link').text(url);
       changeImage();
     });
-    //alow click of images
+    //allow click of images
     $('#youtube-thumb').click(function (e) {
       changeImage();
     });
@@ -297,8 +297,11 @@
         </div>
         <input class="song-added-by" type="hidden" name="song-added-by" />
       </div>
-      <div class="control has-text-right">
-        
+      <div class="control has-text-right is-flex" style="justify-content: space-between">
+        <label class="checkbox is-size-7">
+          <input type="checkbox" id="include-non-karaoke" {% if search_nonkaraoke %}checked{% endif %} name="include-non-karaoke">
+          Include non-karaoke matches
+        </label>
         <label class="checkbox is-size-7">
           <input type="checkbox" id="show-advanced" name="show-advanced">
           Advanced
@@ -319,22 +322,13 @@
   <div>
     <div id="advanced-settings" class="box has-background-black-bis" style="margin-top: 10px">
       <div class="control">
-        <label class="checkbox">
-          <input type="checkbox" id="include-non-karaoke" name="include-non-karaoke">
-          Include non-karaoke matches
-        </label>
-      </div>
-      <hr>
-      <div class="control">
         <div class="label">Direct download YouTube url: </div>
         <form  action="{{ url_for('download') }}" method="post">
-          <input class="input" id="direct-download-url" type="text" name="song-url" />
-          <input class="song-added-by" type="hidden" name="song-added-by" />
+          <input class="input" id="direct-download-url" type="text" name="song_url" />
+          <input class="song-added-by" type="hidden" name="song_added_by" />
           <div class="field" style="margin-top: 5px">
-            <label class="checkbox">
-              <input type="checkbox" checked name="queue">
-              Add to queue
-            </label>
+            <label class="checkbox"><input type="checkbox" checked name="enqueue">Add to queue</label>
+            <label class="checkbox"><input type="checkbox" name="include_subtitles">Include subtitles</label>
           </div>
           <div class="has-text-right" style="margin-top: 5px">
             <button class="button is-small is-rounded" disabled id="direct-download-button" type="submit">Download</button>
@@ -361,23 +355,21 @@
     <form action="{{ url_for('download') }}" method="post" target="dummyframe">
       <label class="label">Search results for <small><i>'{{search_string}}'</i></small></label>
       <div class="field select">
-        <select id="search_result_selector" name='song-url'>
+        <select id="search_result_selector" name='song_url'>
           {% for title,url,id in search_results %}
           <option data-ytID='{{id}}' value='{{url}}'>{{title}}</option>
           {% endfor %}
         </select>
         
       </div>
-      <input class="song-added-by" type="hidden" name="song-added-by" />
+      <input class="song-added-by" type="hidden" name="song_added_by" />
       <p class="help">Click dropdown to show more results</p>
 
       <p> Link: <a target="_blank" id='youtube-link' href=''></a> </p>
       <p class="has-text-centered-mobile"> <img id='youtube-thumb'> </p>
       <div class="field">
-        <label class="checkbox">
-          <input type="checkbox" checked name="queue">
-          Add to queue
-        </label>
+        <label class="checkbox"><input type="checkbox" checked name="enqueue">Add to queue</label>&nbsp;
+        <label class="checkbox"><input type="checkbox" name="include_subtitles">Include subtitles</label>
       </div>
       <div class="field">
         <button class="button is-success is-rounded" id="download-button" type="submit">Download</button>

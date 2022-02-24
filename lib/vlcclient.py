@@ -204,7 +204,8 @@ class VLCClient:
 
 	def command(self, command = ''):
 		try:
-			assert self.is_running()
+			if not self.is_running():
+				return SimpleNamespace(**{'text': self.last_status_text, 'status_code': 500})
 			url = self.http_command_endpoint + command
 			request = requests.get(url, auth = ("", self.http_password))
 			self.last_status_text = request.text
@@ -217,7 +218,7 @@ class VLCClient:
 			return request
 		except:
 			logging.error("No active VLC process. Could not run command: " + command)
-			return SimpleNamespace(**{'text': '', 'status_code': 500})
+			return SimpleNamespace(**{'text': self.last_status_text, 'status_code': 500})
 
 	def pause(self):
 		return self.command("pl_pause")

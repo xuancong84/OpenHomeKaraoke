@@ -436,7 +436,7 @@ class Karaoke:
 	def get_search_results(self, textToSearch):
 		logging.info("Searching YouTube for: " + textToSearch)
 		num_results = 10
-		yt_search = 'ytsearch%d:"%s"' % (num_results, unidecode(textToSearch))
+		yt_search = 'ytsearch%d:"%s"' % (num_results, textToSearch)
 		cmd = [self.youtubedl_path, "-j", "--no-playlist", "--flat-playlist", yt_search]
 		logging.debug("Youtube-dl search command: " + " ".join(cmd))
 		try:
@@ -457,32 +457,33 @@ class Karaoke:
 	def get_karaoke_search_results(self, songTitle):
 		return self.get_search_results(songTitle + " karaoke")
 
-	def download_video(self, video_url, enqueue = False, user = "Pikaraoke"):
-		logging.info("Downloading video: " + video_url)
+	def download_video(self, song_url = '', enqueue = False, song_added_by = "Pikaraoke", include_subtitles = False):
+		logging.info("Downloading video: " + song_url)
 		dl_path = self.download_path + "%(title)s---%(id)s.%(ext)s"
 		file_quality = (
 			"bestvideo[ext!=webm][height<=1080]+bestaudio[ext!=webm]/best[ext!=webm]"
 			if self.high_quality
 			else "mp4"
 		)
-		cmd = [self.youtubedl_path, "-f", file_quality, "-o", dl_path, video_url]
+		opt_sub = ['--sub-langs', 'all', '--embed-subs'] if include_subtitles else []
+		cmd = [self.youtubedl_path, "-f", file_quality, "-o", dl_path] + opt_sub + [song_url]
 		logging.debug("Youtube-dl command: " + " ".join(cmd))
 		rc = subprocess.call(cmd)
 		if rc != 0:
 			logging.error("Error code while downloading, retrying once...")
 			rc = subprocess.call(cmd)  # retry once. Seems like this can be flaky
 		if rc == 0:
-			logging.debug("Song successfully downloaded: " + video_url)
+			logging.debug("Song successfully downloaded: " + song_url)
 			self.get_available_songs()
 			if enqueue:
-				y = self.get_youtube_id_from_url(video_url)
+				y = self.get_youtube_id_from_url(song_url)
 				s = self.find_song_by_youtube_id(y)
 				if s:
-					self.enqueue(s, user)
+					self.enqueue(s, song_added_by)
 				else:
-					logging.error("Error queueing song: " + video_url)
+					logging.error("Error queueing song: " + song_url)
 		else:
-			logging.error("Error downloading song: " + video_url)
+			logging.error("Error downloading song: " + song_url)
 		return rc
 
 	def get_available_songs(self):
