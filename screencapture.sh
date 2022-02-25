@@ -28,7 +28,11 @@ SEGMENTDURATION="0.25"
 
 MAXSEGMENTS="1"
 
-TEMPDIRPARENT="/dev/shm"
+# User ramdisk as temp folder to speed up
+TEMPDIRPARENT=
+if [ -d /dev/shm ]; then
+	TEMPDIRPARENT=/dev/shm
+fi
 
 LOGLEVEL="quiet"
 
@@ -154,7 +158,7 @@ startCapture(){
 		-f "$SOUNDSERVER" -thread_queue_size 1024 -itsoffset "$AUDIODELAY" -i "$AUDIODEVICE" \
 		-pix_fmt yuv420p \
 		-filter:a "aresample=first_pts=0" \
-		-c:a aac -strict experimental -b:a 128k -ar 48000 \
+		-c:a aac -strict experimental -b:a 128k -ar 44100 \
 		-filter:v "scale=trunc(iw*$VIDEOSCALE/2)*2:trunc(ih*$VIDEOSCALE/2)*2" \
 		-c:v libx264 -profile:v baseline -tune fastdecode -preset ultrafast -b:v "$TARGETBITRATE" -maxrate "$MAXBITRATE" -bufsize "$BUFFERSIZE" -r "$FRAMERATE" -g $(calc "round($FRAMERATE*$SEGMENTDURATION)") -keyint_min $(calc "round($FRAMERATE*$SEGMENTDURATION)") \
 		-movflags +empty_moov+frag_keyframe+default_base_moof+cgop \

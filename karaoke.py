@@ -3,6 +3,7 @@ import logging, socket, subprocess
 from pathlib import Path
 from subprocess import check_output
 from collections import *
+from constants import media_types
 
 import pygame
 import qrcode
@@ -459,20 +460,21 @@ class Karaoke:
 
 	def download_video(self, song_url = '', enqueue = False, song_added_by = "Pikaraoke", include_subtitles = False):
 		logging.info("Downloading video: " + song_url)
-		dl_path = self.download_path + "%(title)s---%(id)s.%(ext)s"
+		dl_path = "%(title)s---%(id)s.%(ext)s"
 		file_quality = (
 			"bestvideo[ext!=webm][height<=1080]+bestaudio[ext!=webm]/best[ext!=webm]"
 			if self.high_quality
 			else "mp4"
 		)
 		opt_sub = ['--sub-langs', 'all', '--embed-subs'] if include_subtitles else []
-		cmd = [self.youtubedl_path, "-f", file_quality, "-o", dl_path] + opt_sub + [song_url]
+		cmd = [self.youtubedl_path, "-f", file_quality, "-o", self.download_path+'.'+dl_path] + opt_sub + [song_url]
 		logging.debug("Youtube-dl command: " + " ".join(cmd))
 		rc = subprocess.call(cmd)
 		if rc != 0:
 			logging.error("Error code while downloading, retrying once...")
 			rc = subprocess.call(cmd)  # retry once. Seems like this can be flaky
 		if rc == 0:
+			os.rename(self.download_path+'.'+dl_path, self.download_path+dl_path)
 			logging.debug("Song successfully downloaded: " + song_url)
 			self.get_available_songs()
 			if enqueue:
@@ -488,13 +490,12 @@ class Karaoke:
 
 	def get_available_songs(self):
 		logging.info("Fetching available songs in: " + self.download_path)
-		types = ['.mp4', '.mp3', '.zip', '.mkv', '.avi', '.webm', '.mov']
 		files_grabbed = []
 		self.songname_trans = {}
 		for bn in os.listdir(self.download_path):
 			fn = self.download_path + bn
 			if not bn.startswith('.') and os.path.isfile(fn):
-				if os.path.splitext(fn)[1].lower() in types:
+				if os.path.splitext(fn)[1].lower() in media_types:
 					files_grabbed.append(fn)
 					trans = unidecode(self.filename_from_path(fn)).lower()
 					# strip leading non-transliterable symbols
@@ -954,11 +955,29 @@ class Karaoke:
 		self.audio_delay = 0
 		self.last_vocal_info = 0
 
-	def resync(self, delay=0):
+	def streamer_restart(self, delay=0):
 		if os.geteuid()==0 and self.nonroot_user:
-			os.system(f"su -l {self.nonroot_user} -c 'sleep {delay} && tmux send-keys -t PiKaraoke:0.3 C-c Up Enter'")
+			os.system(f"su -l {self.nonroot_user} -c 'sleep {delay} && tmux send-keys -t PiKaraoke:0.3 C-c && tmux send-keys -t PiKaraoke:0.3 Up Enter'")
 		else:
-			os.system(f"sleep {delay} && tmux send-keys -t PiKaraoke:0.3 C-c Up Enter")
+			os.system(f"sleep {delay} && tmux send-keys -t PiKaraoke:0.3 C-c && tmux send-keys -t PiKaraoke:0.3 Up Enter")
+
+	def streamer_stop(self, delay=0):
+		if os.geteuid()==0 and self.nonroot_user:
+			os.system(f"su -l {self.nonroot_user} -c 'sleep {delay} && tmux send-keys -t PiKaraoke:0.3 C-c'")
+		else:
+			os.system(f"sleep {delay} && tmux send-keys -t PiKaraoke:0.3 C-c")
+
+	def vocal_restart(self, delay=0):
+		if os.geteuid()==0 and self.nonroot_user:
+			os.system(f"su -l {self.nonroot_user} -c 'sleep {delay} && tmux send-keys -t PiKaraoke:0.4 C-c && tmux send-keys -t PiKaraoke:0.4 Up Enter'")
+		else:
+			os.system(f"sleep {delay} && tmux send-keys -t PiKaraoke:0.4 C-c && tmux send-keys -t PiKaraoke:0.4 Up Enter")
+
+	def vocal_stop(self, delay=0):
+		if os.geteuid()==0 and self.nonroot_user:
+			os.system(f"su -l {self.nonroot_user} -c 'sleep {delay} && tmux send-keys -t PiKaraoke:0.4 C-c'")
+		else:
+			os.system(f"sleep {delay} && tmux send-keys -t PiKaraoke:0.4 C-c")
 
 	def run(self):
 		logging.info("Starting PiKaraoke!")
@@ -981,7 +1000,7 @@ class Karaoke:
 						head = self.queue.pop(0)
 						self.play_file(head["file"])
 						if isFirstSong:
-							self.resync(1)
+							self.streamer_restart(1)
 							isFirstSong = False
 						self.now_playing_user = head["user"]
 						self.update_queue_hash()

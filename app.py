@@ -478,6 +478,12 @@ def info():
 			+ "% )"
 	)
 
+	# whether screencapture.sh is running
+	screencapture = bool([1 for p in psutil.process_iter() if './screencapture.sh' in p.cmdline()])
+
+	# whether vocal_splitter.py is running
+	vocalsplitter = bool([1 for p in psutil.process_iter() if 'vocal_splitter.py' in p.cmdline()])
+
 	# youtube-dl
 	youtubedl_version = K.youtubedl_version
 
@@ -495,6 +501,8 @@ def info():
 		is_pi = is_pi,
 		use_DNN = K.use_DNN_vocal,
 		pikaraoke_version = VERSION,
+		screencapture = screencapture,
+		vocalsplitter = vocalsplitter,
 		admin = is_admin(),
 		admin_enabled = admin_password != None
 	)
@@ -547,10 +555,17 @@ def refresh():
 	return redirect(url_for("browse"))
 
 
-@app.route("/resync")
-def resync():
-	K.resync()
-	return redirect(url_for("home"))
+@app.route("/bg-process/<cmd>")
+def bg_process(cmd):
+	if cmd == 'streamer-restart':
+		K.streamer_restart()
+	elif cmd == 'streamer-stop':
+		K.streamer_stop()
+	elif cmd == 'vocal-restart':
+		K.vocal_restart()
+	elif cmd == 'vocal-stop':
+		K.vocal_stop()
+	return ''
 
 
 @app.route("/quit")
