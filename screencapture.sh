@@ -21,14 +21,14 @@ VIDEOSCALE="1"
 
 TARGETBITRATE="4M"
 MAXBITRATE="6M"
-BUFFERSIZE="12M"
+BUFFERSIZE="8M"
 
 FRAMERATE="30"
-SEGMENTDURATION="2"
+SEGMENTDURATION="0.25"
 
-MAXSEGMENTS="4"
+MAXSEGMENTS="1"
 
-TEMPDIRPARENT=""
+TEMPDIRPARENT="/dev/shm"
 
 LOGLEVEL="quiet"
 
@@ -118,7 +118,7 @@ do
 			  -b, --targetbitrate size         Output video target bitrate (e.g. 3M)
 			  -m, --maxbitrate size            Output video maximum bitrate (e.g. 4M)
 			  -B, --buffersize size            Video bitrate controler buffer size (e.g. 8M)
-			  -D, --segmentduration seconds    Duration of each segment file (in whole seconds)
+			  -D, --segmentduration seconds    Duration of each segment file (in seconds)
 			  -M, --maxsegments number         Maximum amount of old files kept for each stream (audio and video)
 			  -t, --tempdir directory          Custom directory for temporary files
 			  -v, --verbose                    Show ffmpeg's verbose output
@@ -139,6 +139,10 @@ do
 	fi
 done
 
+calc() {
+	python -c "print($1, end='')"
+}
+
 startCapture(){
 	echo -n "\"use strict\";var mimeCodec=[\"video/mp4; codecs=\\\"avc1.42c01f\\\"\",\"audio/mp4; codecs=\\\"mp4a.40.2\\\"\"];" > metadata.js
 
@@ -152,9 +156,9 @@ startCapture(){
 		-filter:a "aresample=first_pts=0" \
 		-c:a aac -strict experimental -b:a 128k -ar 48000 \
 		-filter:v "scale=trunc(iw*$VIDEOSCALE/2)*2:trunc(ih*$VIDEOSCALE/2)*2" \
-		-c:v libx264 -profile:v baseline -tune fastdecode -preset ultrafast -b:v "$TARGETBITRATE" -maxrate "$MAXBITRATE" -bufsize "$BUFFERSIZE" -r "$FRAMERATE" -g "$(($FRAMERATE*$SEGMENTDURATION))" -keyint_min "$(($FRAMERATE*$SEGMENTDURATION))" \
+		-c:v libx264 -profile:v baseline -tune fastdecode -preset ultrafast -b:v "$TARGETBITRATE" -maxrate "$MAXBITRATE" -bufsize "$BUFFERSIZE" -r "$FRAMERATE" -g $(calc "round($FRAMERATE*$SEGMENTDURATION)") -keyint_min $(calc "round($FRAMERATE*$SEGMENTDURATION)") \
 		-movflags +empty_moov+frag_keyframe+default_base_moof+cgop \
-		-f dash -min_seg_duration "$SEGMENTDURATION"000000 -use_template 0 -window_size "$MAXSEGMENTS" -extra_window_size 0 -remove_at_exit 1 -init_seg_name "\$RepresentationID\$/0" -media_seg_name "\$RepresentationID\$/\$Number\$" manifest.mpd
+		-f dash -seg_duration $SEGMENTDURATION -use_template 0 -window_size "$MAXSEGMENTS" -extra_window_size 0 -remove_at_exit 1 -init_seg_name "\$RepresentationID\$/0" -media_seg_name "\$RepresentationID\$/\$Number\$" manifest.mpd
 
 	local status="$?"
 	if [ "$status" != "0" -a "$status" != "255" ]
