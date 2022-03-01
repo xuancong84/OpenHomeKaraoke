@@ -144,7 +144,7 @@ do
 done
 
 calc() {
-	python -c "print($1, end='')"
+	python3 -c "print($1, end='')"
 }
 
 startCapture(){

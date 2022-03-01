@@ -370,8 +370,8 @@ input:checked + .slider:before {
   <li>CPU: {{ cpu }}</li>
   <li>Disk Usage: {{ disk }}</li>
   <li>Memory: {{ memory }}</li>
-  <li>Screen Capture: {{ "Running" if screencapture else "Stopped" }}</li>
-  <li>Vocal Splitter: {{ "Running" if vocalsplitter else "Stopped" }}</li>
+  <li>Screen Capture: {{ screencapture }}</li>
+  <li>Vocal Splitter: {{ vocalsplitter }}</li>
   <li>Youtube-dl (yt-dlp) version: {{ youtubedl_version }}</li>
   <li>Pikaraoke version: {{ pikaraoke_version }}</li>
 </ul>

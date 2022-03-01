@@ -479,10 +479,17 @@ def info():
 	)
 
 	# whether screencapture.sh is running
-	screencapture = bool([1 for p in psutil.process_iter() if './screencapture.sh' in p.cmdline()])
+	get_status = lambda t: "Unknown" if t is None else ("Running" if t else "Stopped")
+	try:
+		screencapture = bool([1 for p in psutil.process_iter() if './screencapture.sh' in p.cmdline()])
+	except:
+		screencapture = None
 
 	# whether vocal_splitter.py is running
-	vocalsplitter = bool([1 for p in psutil.process_iter() if 'vocal_splitter.py' in p.cmdline()])
+	try:
+		vocalsplitter = bool([1 for p in psutil.process_iter() if 'vocal_splitter.py' in p.cmdline()])
+	except:
+		vocalsplitter = None
 
 	# youtube-dl
 	youtubedl_version = K.youtubedl_version
@@ -501,8 +508,8 @@ def info():
 		is_pi = is_pi,
 		use_DNN = K.use_DNN_vocal,
 		pikaraoke_version = VERSION,
-		screencapture = screencapture,
-		vocalsplitter = vocalsplitter,
+		screencapture = get_status(screencapture),
+		vocalsplitter = get_status(vocalsplitter),
 		admin = is_admin(),
 		admin_enabled = admin_password != None
 	)
@@ -516,6 +523,7 @@ def delayed_halt(cmd):
 	cherrypy.engine.exit()
 	K.stop()
 	if cmd == 0:
+		os.system('(sleep 2 && tmux kill-session -t PiKaraoke) &')
 		sys.exit()
 	if cmd == 1:
 		os.system("shutdown now")

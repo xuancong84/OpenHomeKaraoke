@@ -3,9 +3,9 @@
 session_name=PiKaraoke
 cmds=("top"
 #"sudo sh -c 'cp -f $HOME/.Xauthority ~ && PATH=$PATH python3 app.py -u $(whoami)'"
-"PATH=$PATH python3 app.py"
+"PATH='$PATH' python3 app.py"
 "./screencapture.sh -v -p 4000"
-"PATH=$PATH python3 vocal_splitter.py -p -d ~/pikaraoke-songs/"
+"PATH='$PATH' python3 vocal_splitter.py -p -d ~/pikaraoke-songs/"
 #"pavucontrol"
 )
 
