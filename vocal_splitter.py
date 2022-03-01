@@ -216,6 +216,7 @@ def main():
 	p.add_argument('--cropsize', '-c', type = int, default = 256)
 	p.add_argument('--postprocess', '-p', action = 'store_true')
 	p.add_argument('--tta', '-t', action = 'store_true')
+	p.add_argument('--ramdir', '-rd', help = 'Temporary directory on RAMDISK to reduce I/O load', default = '/dev/shm')
 	args = p.parse_args()
 
 	song_path = os.path.expanduser(args.download_path).rstrip('/')
@@ -235,9 +236,12 @@ def main():
 	# set song_path global variable from local server
 	get_next_file()
 
+	# Use RAMDISK for large temporary .wav files for speed up if available
+	RAMDIR = args.ramdir if os.path.isdir(args.ramdir) else song_path
+
 	# Create temporary filenames if not done yet
 	in_wav, out_wav_vocal, out_wav_nonvocal, out_m4a_vocal, out_m4a_nonvocal = \
-		[song_path+'/.'+bn for bn in ['input.wav', 'vocal.wav', 'nonvocal.wav', 'vocal.m4a', 'nonvocal.m4a']]
+		[f'{RAMDIR}/.input.wav', f'{RAMDIR}/.vocal.wav', f'{RAMDIR}/.nonvocal.wav', f'{song_path}/.vocal.m4a', f'{song_path}/.nonvocal.m4a']
 
 	# Main loop
 	while True:
