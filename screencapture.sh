@@ -24,9 +24,9 @@ MAXBITRATE="6M"
 BUFFERSIZE="8M"
 
 FRAMERATE="30"
-SEGMENTDURATION="0.25"
+SEGMENTDURATION="0.333333"
 
-MAXSEGMENTS="1"
+MAXSEGMENTS="2"
 
 # User ramdisk as temp folder to speed up
 TEMPDIRPARENT=
@@ -160,9 +160,11 @@ startCapture(){
 		-filter:a "aresample=first_pts=0" \
 		-c:a aac -strict experimental -b:a 128k -ar 44100 \
 		-filter:v "scale=trunc(iw*$VIDEOSCALE/2)*2:trunc(ih*$VIDEOSCALE/2)*2" \
-		-c:v libx264 -profile:v baseline -tune fastdecode -preset ultrafast -b:v "$TARGETBITRATE" -maxrate "$MAXBITRATE" -bufsize "$BUFFERSIZE" -r "$FRAMERATE" -g $(calc "round($FRAMERATE*$SEGMENTDURATION)") -keyint_min $(calc "round($FRAMERATE*$SEGMENTDURATION)") \
-		-movflags +empty_moov+frag_keyframe+default_base_moof+cgop \
-		-f dash -seg_duration $SEGMENTDURATION -use_template 0 -window_size "$MAXSEGMENTS" -extra_window_size 0 -remove_at_exit 1 -init_seg_name "\$RepresentationID\$/0" -media_seg_name "\$RepresentationID\$/\$Number\$" manifest.mpd
+		-c:v libx264 -profile:v baseline -tune fastdecode -preset ultrafast -b:v "$TARGETBITRATE" -maxrate "$MAXBITRATE" -bufsize "$BUFFERSIZE" \
+		-r "$FRAMERATE" -g $(calc "round($FRAMERATE*$SEGMENTDURATION)") -keyint_min $(calc "round($FRAMERATE*$SEGMENTDURATION)") \
+		-movflags +empty_moov+frag_keyframe+default_base_moof+cgop -f dash -seg_duration $SEGMENTDURATION \
+		-min_seg_duration $(calc "round($SEGMENTDURATION*1000000)") -use_template 0 -window_size "$MAXSEGMENTS" -extra_window_size 0 -remove_at_exit 1 \
+		-init_seg_name "\$RepresentationID\$/0" -media_seg_name "\$RepresentationID\$/\$Number\$" manifest.mpd
 
 	local status="$?"
 	if [ "$status" != "0" -a "$status" != "255" ]
@@ -193,7 +195,7 @@ startServer(){
 	<html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Screen</title>
+		<title>Click on video to unmute and reduce latency</title>
 		<style>
 			body{
 				margin:0;
@@ -216,8 +218,8 @@ startServer(){
 			var mediaSource;
 			var videoElement;
 
-			var autoplayMessage = true;
-			var mutedMessage = true;
+			var autoplayMessage = false;
+			var mutedMessage = false;
 
 			// restarts stream i at nextId[i]
 			function abortAndRestart(i) {
@@ -233,8 +235,7 @@ startServer(){
 
 				if(sb.buffered.length > 0) {
 					sb.remove(0, sb.buffered.end(sb.buffered.length - 1));
-				}
-				else {
+				} else {
 					fetchNext(i);
 				}
 			}
@@ -245,8 +246,7 @@ startServer(){
 				xhr.addEventListener("load", function() {
 					if(xhr.status == 404) {
 						e404Callback(parseInt(xhr.getResponseHeader("Next-Segment")));
-					}
-					else {
+					} else {
 						callback(xhr.response);
 					}
 				}, false);
@@ -273,17 +273,13 @@ startServer(){
 
 				try {
 					sb.appendBuffer(buf);
-				}
-				catch(e) {
+				} catch(e) {
 					if(sb.buffered.length > 0) { // e is QuotaExceededError
 						queuedAppend[i] = buf;
-
 						var start = sb.buffered.start(0);
 						var end = sb.buffered.end(sb.buffered.length - 1);
-
 						sb.remove(start, Math.max(end - 60, (start + end) / 2)); // remove old frames that were not automatically evicted by the browser
-					}
-					else {
+					} else {
 						abortAndRestart(i);
 					}
 				}
@@ -313,20 +309,15 @@ startServer(){
 
 					if(videoElement.currentTime <= start) {
 						videoElement.currentTime = start;
-						if(videoElement.paused) {
-							tryToPlay();
-						}
-					}
-					else {
+					} else {
 						var end = videoElement.buffered.end(videoElement.buffered.length - 1);
-
 						if(videoElement.currentTime > end) {
 							videoElement.currentTime = end;
-							if(videoElement.paused) {
-								tryToPlay();
-							}
 						}
 					}
+
+					if(videoElement.paused)
+						tryToPlay();
 				}
 			}
 
@@ -337,8 +328,7 @@ startServer(){
 					if(ab == null) {
 						fetchNext(i);
 						tryToPlayAndAjustTime();
-					}
-					else { // previous append failed in sourceBufferAppend(i, buf) and ab needs to be added again
+					} else { // previous append failed in sourceBufferAppend(i, buf) and ab needs to be added again
 						queuedAppend[i] = null;
 						sourceBufferAppend(i, ab);
 					}
@@ -367,7 +357,6 @@ startServer(){
 						if(!MediaSource.isTypeSupported(mimeCodec[i])) {
 							alert("Unsupported media type or codec: " + mimeCodec[i]);
 						}
-
 						nextId.push(0);
 						sourceBuffer.push(null);
 						httpRequest.push(null);
@@ -378,11 +367,9 @@ startServer(){
 					mediaSource.addEventListener("sourceopen", function() {
 						for(var i = 0; i < mimeCodec.length; i++) {
 							sourceBuffer[i] = mediaSource.addSourceBuffer(mimeCodec[i]);
-
 							if(!sourceBuffer[i].updating) {
 								fetchNext(i);
 							}
-
 							addUpdateendListener(i);
 						}
 					}, false);
@@ -391,20 +378,23 @@ startServer(){
 					videoElement.src = URL.createObjectURL(mediaSource);
 
 					videoElement.addEventListener("click", function(e) {
-						if(videoElement.muted) {
+						if(videoElement.muted || videoElement.paused) {
 							videoElement.muted = false;
+							tryToPlay();
+						}else{
+							for(var i = 0; i < mimeCodec.length; i++) {
+								nextId[i]+=2;
+								abortAndRestart(i);
+							}
+							tryToPlayAndAjustTime();
 						}
-						if(videoElement.paused) {
-							videoElement.play();
-						}
-						e.preventDefault();
 					}, false);
 				}
 			}, false);
 		</script>
 	</head>
 	<body>
-		<video id="v" muted></video>
+		<video id="v" muted autoplay></video>
 	</body>
 	</html>
 	EOF
@@ -449,14 +439,15 @@ startServer(){
 		echo -n "$HTML"
 	}
 
-	sleepABit(){
-		if type usleep >/dev/null 2>&1
-		then
-			usleep 200000
-		else
-			sleep 0.2
-		fi
-	}
+  if type usleep >/dev/null 2>&1; then
+    sleepABit() {
+      usleep 100000
+    }
+  else
+    sleepABit() {
+      sleep 0.1
+    }
+  fi
 
 	waitFileExistence(){
 		until [ -f "$1" ]
@@ -485,37 +476,25 @@ startServer(){
 
 		if [ "$segmentId" == "0" ]
 		then
-			waitFileExistence "$1"
+			waitFileNotEmpty "$1"
 		elif [ ! -f "$1" ]
 		then
 			local lastSegmentId=$(getLastSegmentId "$streamId")
 			if [ "$segmentId" -ge "$lastSegmentId" ] && [ "$segmentId" -lt "$((3+$lastSegmentId))" ]
 			then
-				waitFileExistence "$1"
+				waitFileNotEmpty "$1"
 			else
 				printHeaders404 "$lastSegmentId"
 				return
 			fi
 		fi
 
-		waitFileNotEmpty "$1"
-
 		local size=$(stat --printf="%s" "$1" 2>/dev/null)
 
 		if [ "$?" == "0" ]
 		then
-			{
-				exec 3<"$1"
-			} 2>/dev/null
-
-			if [ "$?" == "0" ]
-			then
-				printHeaders200 application/octet-stream "$size"
-				cat <&3
-				exec 3<&-
-			else
-				printHeaders404 "$lastSegmentId"
-			fi
+			printHeaders200 application/octet-stream "$size"
+			cat "$1"
 		else
 			printHeaders404 "$lastSegmentId"
 		fi
@@ -556,7 +535,7 @@ startServer(){
 		ncat --listen --keep-open --source-port "$PORT" --exec ./server.sh
 	elif type socat >/dev/null 2>&1
 	then
-		socat TCP-LISTEN:"$PORT",fork EXEC:./server.sh
+		socat TCP-LISTEN:"$PORT",reuseaddr,reuseport,fork EXEC:./server.sh
 	elif type tcpserver >/dev/null 2>&1
 	then
 		tcpserver 0.0.0.0 "$PORT" ./server.sh

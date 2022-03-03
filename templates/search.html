@@ -231,17 +231,6 @@
       }
     });
 
-    // handle direct download url input change
-    $('#direct-download-url').on('input', function () { 
-      var v = $('#direct-download-url').val()
-      if (isYoutubeURL(v)) {
-        $('#direct-download-button').removeAttr("disabled")
-      }
-      else {
-        $('#direct-download-button').attr("disabled", true)
-      }
-    });
-
     var user = Cookies.get("user");
 
     if (!user) {
@@ -257,15 +246,6 @@
     $(".song-added-by").val(user)
   });
  
-  function isYoutubeURL(s) {
-    if (s.includes("http")) {
-      return s.includes("youtube.com/watch?v=") || s.includes("youtube.com/v/") || s.includes("youtu.be/")
-    }
-    else {
-      return false
-    }
-  }
-
   function changeImage() {
     var next = (++i % 4);
     var youtube_id = $('#search_result_selector').find(':selected').data('ytid');
@@ -331,7 +311,7 @@
             <label class="checkbox"><input type="checkbox" name="include_subtitles">Include subtitles</label>
           </div>
           <div class="has-text-right" style="margin-top: 5px">
-            <button class="button is-small is-rounded" disabled id="direct-download-button" type="submit">Download</button>
+            <button class="button is-small is-rounded" id="direct-download-button" type="submit">Download</button>
           </div>
         </form>
       </div>

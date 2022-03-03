@@ -458,28 +458,38 @@ class Karaoke:
 	def get_karaoke_search_results(self, songTitle):
 		return self.get_search_results(songTitle + " karaoke")
 
+	def get_filename_from_url(self, url):
+		try:
+			youtube_id = url.split("watch?v=")[1].split('&')[0]
+		except:
+			try:
+				out_json = subprocess.check_output([self.youtubedl_path, '-j', url])
+				youtube_id = json.loads(out_json)['id']
+			except:
+				logging.error("Error parsing video id from url: " + url)
+				return None
+
+		try:
+			return [i for i in self.available_songs if youtube_id in i][0]
+		except:
+			return None
+
 	def download_video(self, song_url = '', enqueue = False, song_added_by = "Pikaraoke", include_subtitles = False):
 		logging.info("Downloading video: " + song_url)
 		dl_path = "%(title)s---%(id)s.%(ext)s"
-		file_quality = (
-			"bestvideo[ext!=webm][height<=1080]+bestaudio[ext!=webm]/best[ext!=webm]"
-			if self.high_quality
-			else "mp4"
-		)
+		opt_quality = ['-f', 'bestvideo[ext!=webm][height<=1080]+bestaudio[ext!=webm]/best[ext!=webm]'] if self.high_quality else []
 		opt_sub = ['--sub-langs', 'all', '--embed-subs'] if include_subtitles else []
-		cmd = [self.youtubedl_path, "-f", file_quality, "-o", self.download_path+'.'+dl_path] + opt_sub + [song_url]
+		cmd = [self.youtubedl_path, '-P', f'temp:{self.download_path}tmp'] + opt_quality + ["-o", self.download_path+dl_path] + opt_sub + [song_url]
 		logging.debug("Youtube-dl command: " + " ".join(cmd))
 		rc = subprocess.call(cmd)
 		if rc != 0:
 			logging.error("Error code while downloading, retrying once...")
 			rc = subprocess.call(cmd)  # retry once. Seems like this can be flaky
 		if rc == 0:
-			os.rename(self.download_path+'.'+dl_path, self.download_path+dl_path)
 			logging.debug("Song successfully downloaded: " + song_url)
 			self.get_available_songs()
 			if enqueue:
-				y = self.get_youtube_id_from_url(song_url)
-				s = self.find_song_by_youtube_id(y)
+				s = self.get_filename_from_url(song_url)
 				if s:
 					self.enqueue(s, song_added_by)
 				else:
@@ -571,21 +581,6 @@ class Karaoke:
 		rc = os.path.splitext(rc)[0]
 		rc = rc.split("---")[0]  # removes youtube id if present
 		return rc
-
-	def find_song_by_youtube_id(self, youtube_id):
-		for each in self.available_songs:
-			if youtube_id in each:
-				return each
-		logging.error("No available song found with youtube id: " + youtube_id)
-		return None
-
-	def get_youtube_id_from_url(self, url):
-		s = url.split("watch?v=")
-		if len(s) == 2:
-			return s[1]
-		else:
-			logging.error("Error parsing youtube id from url: " + url)
-			return None
 
 	def kill_player(self):
 		if self.use_vlc:

@@ -35,7 +35,8 @@ This is the world's best open-source Python-based YouTube Karaoke system up to t
 
 <p float="left">
   <img width="250" style="float:left" alt="pikaraoke-nowplaying" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/home.jpg">
-  <img width="250" style="float:left" alt="pikaraoke-queue" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/queue.jpg"><br>
+  <img width="250" style="float:left" alt="pikaraoke-queue" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/queue.jpg">
+  <img width="250" style="float:left" alt="pikaraoke-download" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/download.jpg"><br>
   <img width="250" style="float:left" alt="pikaraoke-browse" src="https://user-images.githubusercontent.com/4107190/95813182-27787700-0ccc-11eb-82c8-fde7f0a631c1.png">
   <img width="250" style="float:left" alt="pikaraoke-search1" src="https://user-images.githubusercontent.com/4107190/95813197-2e06ee80-0ccc-11eb-9bf9-ddb24d988332.png">
   <img width="250" style="float:left" alt="pikaraoke-search2" src="https://user-images.githubusercontent.com/4107190/95813190-2ba49480-0ccc-11eb-84e3-f902cbd489a2.png">
