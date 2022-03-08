@@ -1,6 +1,6 @@
 # PiKaraoke (The World's best open-source Python-based YouTube Karaoke system)
 
-This is the world's best open-source Python-based YouTube Karaoke system up to today (2022.2), forked from @vicwomg's repo (thanks) and thoroughly revamped. PiKaraoke is a "KTV"-style Karaoke song search and queueing system. It connects to your TV either via an HDMI cable, or screen sharing, or using TV's web-browser (backend KTV player is screen-captured and streamed to HTTP), and shows a QR code for computers and smartphones to connect to a web interface. From there, multiple users can seamlessly search your local track library, queue up songs, add an endless selection of new Karaoke tracks from YouTube, and more. Works on Raspberry Pi, OSX, Windows, and Linux!
+This is the world's best open-source Python-based YouTube Karaoke system up to today (2022.3), forked from @vicwomg's repo (thanks) and thoroughly revamped and incorporated @tsurumeso's DNN-based (deep neural network) vocal splitter (thanks to https://github.com/tsurumeso/vocal-remover). PiKaraoke is a "KTV"-style Karaoke song search and queueing system. It connects to your TV either via an HDMI cable, or screen sharing, or using TV's web-browser (backend KTV player is screen-captured and streamed to HTTP), and shows a QR code for computers and smartphones to connect to a web interface. From there, multiple users can seamlessly search your local track library, queue up songs, add an endless selection of new Karaoke tracks from YouTube, and more. Works on Raspberry Pi, OSX, Windows, and Linux!
 
 
 ## Key Features
@@ -44,7 +44,7 @@ This is the world's best open-source Python-based YouTube Karaoke system up to t
   
 ## Supported Devices
 
-This _should_ work on all Raspberry Pi devices (multi-core models recommended) and Linux machines. @vicwomg did most development on a Pi Zero W and did as much optimization as he could handle, while I did all the revamp work on Ubuntu/Linux and MacBook Pro. However, certain things like concurrent downloads and browsing big song libraries might suffer. All this runs excellently on a Pi 3 and above.
+This _should_ work on all Raspberry Pi devices (multi-core models recommended) and Linux machines. @vicwomg did most development on a Pi Zero W and did as much optimization as he could handle, while I did all the revamp work on Ubuntu/Linux, Mac OS and Windows. However, certain things like concurrent downloads and browsing big song libraries might suffer. All this runs excellently on a Pi 3 and above.
 
 ## Installation
 
@@ -115,19 +115,11 @@ sudo ln -s `which yt-dlp` /usr/local/bin/yt-dlp
 #### Windows
 
 - Install VLC (to its default location): https://www.videolan.org/
-- Install ffmpeg (only if you want to use --high-quality flag) https://ffmpeg.org/download.html
-- Install MS Visual C++ (required to launch youtube-dl)  https://www.microsoft.com/en-US/download/details.aspx?id=5555
-- Install youtube-dl (yt-dlp). FYI, pip3 didn't seem to work for this on windows, so I used scoop as a package manager and I think it handles filed permissions best. Install scoop by following the instructions here: https://scoop.sh/
-
-```
-scoop install yt-dlp
-```
-
-Open a powershell, and go to the pikaraoke directory:
-
-```
-pip3 install -r requirements.txt
-```
+- Install Anaconda3 Windows version (https://www.anaconda.com/products/individual)
+- Install pip dependencies: open Anaconda3's prompt/powershell, `pip install -r requirements.txt`
+- Install ffmpeg (if you want to use --high-quality flag or vocal splitter, see https://ffmpeg.org/download.html), and make sure `ffmpeg.exe` is in the execution PATH environment variable
+- Install MS Visual C++ (required to launch youtube-dl/yt-dlp in pip dependencies)  https://www.microsoft.com/en-US/download/details.aspx?id=5555
+- Install PyTorch (with CUDA recommended) using pip in Anaconda3's prompt/powershell, this is required only if you want to use the DNN-based vocal splitter
 
 Note: if you have trouble installing pygame, there's apparently an incompatibility with Python 3.8. Try upgrading to the latest python version or downgrading to 3.7.
 

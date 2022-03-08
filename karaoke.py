@@ -1,6 +1,7 @@
 import os, random, time, json, hashlib
 import logging, socket, subprocess
-from pathlib import Path
+import multiprocessing as mp
+import shutil
 from subprocess import check_output
 from collections import *
 from constants import media_types
@@ -37,6 +38,7 @@ class Karaoke:
 	last_vocal_info = 0
 	last_vocal_time = 0
 	use_DNN_vocal = True
+	vocal_process = None
 	is_paused = True
 	process = None
 	qr_code_path = None
@@ -66,7 +68,8 @@ class Karaoke:
 			vlc_path = None,
 			vlc_port = None,
 			logo_path = None,
-			show_overlay = False
+			show_overlay = False,
+			run_vocal = False
 	):
 
 		# override with supplied constructor args if provided
@@ -89,6 +92,7 @@ class Karaoke:
 		self.vlc_port = vlc_port
 		self.logo_path = self.default_logo_path if logo_path == None else logo_path
 		self.show_overlay = show_overlay
+		self.run_vocal = run_vocal
 
 		# other initializations
 		self.platform = get_platform()
@@ -362,9 +366,10 @@ class Karaoke:
 				else:
 					text = self.font.render("For selecting songs, connect at: " + self.url, True, (255, 255, 255))
 					self.screen.blit(text, (p_image.get_width() + 35, blitY))
-					text = self.font.render("For TV display, connect at: " + self.url.rsplit(":", 1)[0] + ":4000", True,
-					                        (255, 255, 255))
-					self.screen.blit(text, (p_image.get_width() + 35, blitY - 40))
+					# Windows and Mac-OS should use screen projection and AirPlay
+					if self.platform in ['linux', 'raspberry_pi']:
+						text = self.font.render("For TV display, connect at: " + self.url.rsplit(":", 1)[0] + ":4000", True, (255, 255, 255))
+						self.screen.blit(text, (p_image.get_width() + 35, blitY - 40))
 
 			if not self.hide_raspiwifi_instructions and (
 					self.raspi_wifi_config_installed
@@ -458,42 +463,52 @@ class Karaoke:
 	def get_karaoke_search_results(self, songTitle):
 		return self.get_search_results(songTitle + " karaoke")
 
-	def get_filename_from_url(self, url):
+	def get_yt_dlp_json(self, url):
+		out_json = subprocess.check_output([self.youtubedl_path, '-j', url])
+		return json.loads(out_json)
+
+	def get_downloaded_file_basename(self, url):
 		try:
 			youtube_id = url.split("watch?v=")[1].split('&')[0]
 		except:
 			try:
-				out_json = subprocess.check_output([self.youtubedl_path, '-j', url])
-				youtube_id = json.loads(out_json)['id']
+				info_json = self.get_yt_dlp_json(url)
+				youtube_id = info_json['id']
 			except:
 				logging.error("Error parsing video id from url: " + url)
 				return None
 
 		try:
-			return [i for i in self.available_songs if youtube_id in i][0]
+			return [i for i in os.listdir(self.download_path+'tmp/') if youtube_id in i][0]
 		except:
-			return None
+			pass
+
+		filename = f"{info_json['title']}---{info_json['id']}.{info_json['ext']}"
+		return filename if os.path.isfile(self.download_path+'tmp/'+filename) else None
 
 	def download_video(self, song_url = '', enqueue = False, song_added_by = "Pikaraoke", include_subtitles = False):
 		logging.info("Downloading video: " + song_url)
 		dl_path = "%(title)s---%(id)s.%(ext)s"
-		opt_quality = ['-f', 'bestvideo[ext!=webm][height<=1080]+bestaudio[ext!=webm]/best[ext!=webm]'] if self.high_quality else []
+		opt_quality = ['-f', 'bestvideo[ext!=webm][height<=1080]+bestaudio[ext!=webm]/best[ext!=webm]'] if self.high_quality else ['-f', 'mp4']
 		opt_sub = ['--sub-langs', 'all', '--embed-subs'] if include_subtitles else []
-		cmd = [self.youtubedl_path, '-P', f'temp:{self.download_path}tmp'] + opt_quality + ["-o", self.download_path+dl_path] + opt_sub + [song_url]
+		cmd = [self.youtubedl_path] + opt_quality + ["-o", self.download_path+'tmp/'+dl_path] + opt_sub + [song_url]
 		logging.debug("Youtube-dl command: " + " ".join(cmd))
 		rc = subprocess.call(cmd)
 		if rc != 0:
-			logging.error("Error code while downloading, retrying once...")
+			logging.error("Error code while downloading, retrying without format options ...")
+			cmd = [self.youtubedl_path, "-o", self.download_path + 'tmp/' + dl_path] + opt_sub + [song_url]
+			logging.debug("Youtube-dl command: " + " ".join(cmd))
 			rc = subprocess.call(cmd)  # retry once. Seems like this can be flaky
 		if rc == 0:
 			logging.debug("Song successfully downloaded: " + song_url)
-			self.get_available_songs()
-			if enqueue:
-				s = self.get_filename_from_url(song_url)
-				if s:
-					self.enqueue(s, song_added_by)
-				else:
-					logging.error("Error queueing song: " + song_url)
+			bn = self.get_downloaded_file_basename(song_url)
+			if bn:
+				os.rename(self.download_path+'tmp/'+bn, self.download_path+bn)
+				self.get_available_songs()
+				if enqueue:
+					self.enqueue(self.download_path+bn, song_added_by)
+			else:
+				logging.error("Error queueing song: " + song_url)
 		else:
 			logging.error("Error downloading song: " + song_url)
 		return rc
@@ -963,21 +978,39 @@ class Karaoke:
 			os.system(f"sleep {delay} && tmux send-keys -t PiKaraoke:0.3 C-c")
 
 	def vocal_restart(self, delay=0):
-		if os.geteuid()==0 and self.nonroot_user:
-			os.system(f"su -l {self.nonroot_user} -c 'sleep {delay} && tmux send-keys -t PiKaraoke:0.4 C-c && tmux send-keys -t PiKaraoke:0.4 Up Enter'")
+		if self.platform == 'windows':
+			if self.vocal_process is None:
+				import vocal_splitter as vs
+			elif self.vocal_process.is_alive():
+				self.vocal_process.kill()
+			if shutil.which('ffmpeg'):
+				self.vocal_process = mp.Process(target=vs.main, args=(['-p', '-d', self.download_path],))
+				self.vocal_process.start()
 		else:
-			os.system(f"sleep {delay} && tmux send-keys -t PiKaraoke:0.4 C-c && tmux send-keys -t PiKaraoke:0.4 Up Enter")
+			if os.geteuid()==0 and self.nonroot_user:
+				os.system(f"su -l {self.nonroot_user} -c 'sleep {delay} && tmux send-keys -t PiKaraoke:0.4 C-c && tmux send-keys -t PiKaraoke:0.4 Up Enter'")
+			else:
+				os.system(f"sleep {delay} && tmux send-keys -t PiKaraoke:0.4 C-c && tmux send-keys -t PiKaraoke:0.4 Up Enter")
 
 	def vocal_stop(self, delay=0):
-		if os.geteuid()==0 and self.nonroot_user:
-			os.system(f"su -l {self.nonroot_user} -c 'sleep {delay} && tmux send-keys -t PiKaraoke:0.4 C-c'")
+		if self.platform == 'windows':
+			if self.vocal_process is not None and self.vocal_process.is_alive():
+				self.vocal_process.kill()
 		else:
-			os.system(f"sleep {delay} && tmux send-keys -t PiKaraoke:0.4 C-c")
+			if os.geteuid()==0 and self.nonroot_user:
+				os.system(f"su -l {self.nonroot_user} -c 'sleep {delay} && tmux send-keys -t PiKaraoke:0.4 C-c'")
+			else:
+				os.system(f"sleep {delay} && tmux send-keys -t PiKaraoke:0.4 C-c")
 
 	def run(self):
 		logging.info("Starting PiKaraoke!")
 		self.running = True
-		isFirstSong = True
+		isFirstSong = (self.platform != 'windows')
+
+		# Windows does not have tmux, vocal splitter can only be invoked from the main program
+		if self.platform == 'windows' or self.run_vocal:
+			self.vocal_restart()
+
 		while self.running:
 			try:
 				if not self.is_file_playing() and self.now_playing != None:

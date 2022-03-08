@@ -201,7 +201,7 @@ def get_next_file():
 	return None
 
 
-def main():
+def main(argv):
 	global song_path, last_completed
 
 	p = argparse.ArgumentParser()
@@ -216,8 +216,9 @@ def main():
 	p.add_argument('--cropsize', '-c', type = int, default = 256)
 	p.add_argument('--postprocess', '-p', action = 'store_true')
 	p.add_argument('--tta', '-t', action = 'store_true')
-	p.add_argument('--ramdir', '-rd', help = 'Temporary directory on RAMDISK to reduce I/O load', default = '/dev/shm')
-	args = p.parse_args()
+	p.add_argument('--ramdir', '-rd', help = 'Temporary directory on RAMDISK to reduce I/O load',
+	               default = 'z:/' if sys.platform.startswith('win') else '/dev/shm')
+	args = p.parse_args(argv)
 
 	song_path = os.path.expanduser(args.download_path).rstrip('/')
 
@@ -274,4 +275,4 @@ def main():
 
 
 if __name__ == '__main__':
-	main()
+	main(sys.argv[1:])

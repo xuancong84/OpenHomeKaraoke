@@ -54,7 +54,7 @@ class VLCClient:
 		# Set up command line args
 		self.cmd_base = [
 			self.path,
-			"-f",
+			"--fullscreen",
 			"--play-and-exit",
 			"--extraintf",
 			"http",
@@ -66,6 +66,7 @@ class VLCClient:
 			"--no-keyboard-events",
 			"--no-mouse-events",
 			"--video-on-top",
+			"--volume-save",
 			"--no-video-title",
 			"--no-loop",
 			"--no-repeat",

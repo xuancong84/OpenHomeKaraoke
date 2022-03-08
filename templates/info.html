@@ -370,7 +370,7 @@ input:checked + .slider:before {
   <li>CPU: {{ cpu }}</li>
   <li>Disk Usage: {{ disk }}</li>
   <li>Memory: {{ memory }}</li>
-  <li>Screen Capture: {{ screencapture }}</li>
+  {% if platform == 'linux' %} <li>Screen Capture: {{ screencapture }}</li> {% endif %}
   <li>Vocal Splitter: {{ vocalsplitter }}</li>
   <li>Youtube-dl (yt-dlp) version: {{ youtubedl_version }}</li>
   <li>Pikaraoke version: {{ pikaraoke_version }}</li>
@@ -402,6 +402,7 @@ input:checked + .slider:before {
 </ul>
 <p class="help-normal">The vocal splitter (that supports both DNN-based and stereo subtraction) runs as a separate process in the background, generating instrumental/vocal audio file for every song.</p>
 
+{% if platform == 'linux' %}
 <h4 style="margin-bottom:0">Re-synchronize audio and video:</h4>
 <ul class="button-group">
   <li><button id="streamer-stop" class="red button" style="width:150px">Stop Streamer</button></li>
@@ -409,6 +410,7 @@ input:checked + .slider:before {
 </ul>
 <p class="help-normal">This only affects playing KTV via web browser. Restarting the screen-capture-and-streaming improves audio/video synchronization,
   it also decreases the latency between the server and browser.</p>
+{% endif %}
 
 <h4>Refresh the song list:</h4>
 <ul>

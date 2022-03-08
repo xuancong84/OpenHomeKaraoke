@@ -5,6 +5,7 @@ import datetime
 import json
 import logging
 import os
+import shutil
 import signal
 import subprocess
 import sys
@@ -487,7 +488,8 @@ def info():
 
 	# whether vocal_splitter.py is running
 	try:
-		vocalsplitter = bool([1 for p in psutil.process_iter() if 'vocal_splitter.py' in p.cmdline()])
+		vocalsplitter = bool([1 for p in psutil.process_iter() if 'vocal_splitter.py' in p.cmdline()])\
+		                or (K.vocal_process and K.vocal_process.is_alive())
 	except:
 		vocalsplitter = None
 
@@ -510,6 +512,7 @@ def info():
 		pikaraoke_version = VERSION,
 		screencapture = get_status(screencapture),
 		vocalsplitter = get_status(vocalsplitter),
+		platform = K.platform,
 		admin = is_admin(),
 		admin_enabled = admin_password != None
 	)
@@ -518,6 +521,8 @@ def info():
 # Delay system commands to allow redirect to render first
 def delayed_halt(cmd):
 	time.sleep(3)
+	if K.vocal_process is not None and K.vocal_process.is_alive():
+		K.vocal_process.terminate()
 	K.queue_clear()  # stop all pending omxplayer processes
 	cherrypy.engine.stop()
 	cherrypy.engine.exit()
@@ -627,6 +632,11 @@ signal.signal(signal.SIGTERM, lambda signum, stack_frame: K.stop())
 
 
 def get_default_youtube_dl_path(platform):
+	# use Python's cross-platform way
+	shutil_path = shutil.which('yt-dlp')
+	if shutil_path:
+		return shutil_path
+
 	if platform == "windows":
 		choco_ytdl_path = r"C:\ProgramData\chocolatey\bin\yt-dlp.exe"
 		scoop_ytdl_path = os.path.expanduser(r"~\scoop\shims\yt-dlp.exe")
@@ -724,6 +734,12 @@ if __name__ == "__main__":
 		       % default_volume,
 		default = default_volume,
 		required = False,
+	)
+	parser.add_argument(
+		"-V",
+		"--run-vocal",
+		help = "Explicitly run vocal-splitter process from the main program (by default, it only run explicitly in Windows)",
+		action = 'store_true',
 	)
 	parser.add_argument(
 		"-s",
@@ -863,7 +879,7 @@ if __name__ == "__main__":
 		print("Creating download path: " + dl_path)
 		os.makedirs(dl_path)
 
-	if (args.developer_mode):
+	if args.developer_mode:
 		logging.warning("Splash screen is disabled in developer mode due to main thread conflicts")
 		args.hide_splash_screen = True
 
@@ -889,7 +905,8 @@ if __name__ == "__main__":
 		vlc_path = args.vlc_path,
 		vlc_port = args.vlc_port,
 		logo_path = args.logo_path,
-		show_overlay = args.show_overlay
+		show_overlay = args.show_overlay,
+		run_vocal = args.run_vocal
 	)
 
 	if (args.developer_mode):
