@@ -242,7 +242,7 @@ def enqueue():
 @app.route("/skip")
 def skip():
 	K.skip()
-	return redirect(url_for("home"))
+	return ''
 
 
 @app.route("/pause")

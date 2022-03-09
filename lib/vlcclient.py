@@ -144,12 +144,12 @@ class VLCClient:
 		try:
 			file_path = self.process_file(file_path)
 			self.is_transposing = True
-			if self.is_playing() or self.is_paused():
+			if self.process is not None and self.process.poll() is None:
 				logging.debug("VLC is currently playing, stopping track...")
 				# must wait for VLC to quit or force kill, otherwise VLC http server will be borked
 				try:
 					self.stop()
-					self.process.wait(0.2)
+					self.process.wait(2)
 				except:
 					self.process.kill()
 			if self.platform == "windows":
@@ -158,6 +158,10 @@ class VLCClient:
 			logging.debug("VLC Command: %s" % command)
 
 			self.process = subprocess.Popen(command, shell = (self.platform == "windows"), stdin = subprocess.PIPE)
+
+			# wait for the process to start
+			while self.process.poll() is not None:
+				pass
 
 			# workaround --volume-save not working in Windows
 			okay = False
@@ -311,6 +315,8 @@ class VLCClient:
 			return False
 
 	def get_status(self):
+		if self.is_transposing:
+			return self.last_status_text
 		cur_time = time.time()
 		if abs(cur_time-self.last_status_time)>1:
 			try:
