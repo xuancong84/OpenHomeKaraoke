@@ -613,9 +613,9 @@ class Karaoke:
 			if self.audio_delay:
 				extra_params += [f'--audio-desync={self.audio_delay * 1000}']
 			if self.now_playing_transpose == 0:
-				self.vlcclient.play_file(file_path, extra_params)
+				self.vlcclient.play_file(file_path, self.volume, extra_params)
 			else:
-				self.vlcclient.play_file_transpose(file_path, self.now_playing_transpose, extra_params)
+				self.vlcclient.play_file_transpose(file_path, self.now_playing_transpose, self.volume, extra_params)
 		else:
 			logging.info("Playing video in omxplayer: " + file_path)
 			self.omxclient.play_file(file_path)
@@ -629,7 +629,7 @@ class Karaoke:
 		if self.use_vlc:
 			if self.now_playing_transpose == semitones:
 				return
-			status_xml = self.vlcclient.command().text if self.is_paused else self.vlcclient.pause().text
+			status_xml = self.vlcclient.command().text if self.is_paused else self.vlcclient.pause(False).text
 			info = self.vlcclient.get_info_xml(status_xml)
 			posi = info['position']*info['length']
 			self.now_playing_transpose = semitones
@@ -812,10 +812,10 @@ class Karaoke:
 			if self.use_vlc:
 				self.vlcclient.vol_up()
 				xml = self.vlcclient.command().text
-				vol = self.vlcclient.get_val_xml(xml, 'volume')
+				self.volume = int(self.vlcclient.get_val_xml(xml, 'volume'))
 			else:
-				vol = self.omxclient.vol_up()
-			return vol
+				self.volume = self.omxclient.vol_up()
+			return self.volume
 		else:
 			logging.warning("Tried to volume up, but no file is playing!")
 			return False
@@ -825,10 +825,10 @@ class Karaoke:
 			if self.use_vlc:
 				self.vlcclient.vol_down()
 				xml = self.vlcclient.command().text
-				vol = self.vlcclient.get_val_xml(xml, 'volume')
+				self.volume = int(self.vlcclient.get_val_xml(xml, 'volume'))
 			else:
-				vol = self.omxclient.vol_down()
-			return vol
+				self.volume = self.omxclient.vol_down()
+			return self.volume
 		else:
 			logging.warning("Tried to volume down, but no file is playing!")
 			return False
@@ -838,11 +838,11 @@ class Karaoke:
 			if self.use_vlc:
 				self.vlcclient.vol_set(volume)
 				xml = self.vlcclient.command().text
-				vol = self.vlcclient.get_val_xml(xml, 'volume')
+				self.volume = int(self.vlcclient.get_val_xml(xml, 'volume'))
 			else:
 				logging.warning("Only VLC player can set volume, ignored!")
-				vol = self.omxclient.volume_offset
-			return vol
+				self.volume = self.omxclient.volume_offset
+			return self.volume
 		else:
 			logging.warning("Tried to set volume, but no file is playing!")
 			return False
@@ -858,14 +858,12 @@ class Karaoke:
 				play_slave = ''
 			if self.now_playing_slave == play_slave:
 				return
-			status_xml = self.vlcclient.command().text if self.is_paused else self.vlcclient.pause().text
+			status_xml = self.vlcclient.command().text if self.is_paused else self.vlcclient.pause(False).text
 			info = self.vlcclient.get_info_xml(status_xml)
 			posi = info['position']*info['length']
 			self.now_playing_slave = play_slave
+			self.get_vocal_info(True)
 			self.play_file(self.now_playing_filename, [f'--start-time={posi}'] + (['--start-paused'] if self.is_paused else []))
-			self.last_vocal_time = 0
-			self.get_vocal_info()
-			self.vlcclient.last_status_time = time.time()
 		else:
 			logging.error("Not using VLC. Can't play vocal/nonvocal.")
 
@@ -876,9 +874,9 @@ class Karaoke:
 			return 3
 		return 2
 
-	def get_vocal_info(self):
+	def get_vocal_info(self, force_update=False):
 		tm = time.time()
-		if tm-self.last_vocal_time < 2:
+		if not force_update and tm-self.last_vocal_time < 2:
 			return self.last_vocal_info
 		if not self.now_playing_filename:
 			return 0
@@ -966,12 +964,16 @@ class Karaoke:
 		self.last_vocal_info = 0
 
 	def streamer_restart(self, delay=0):
+		if self.platform == 'windows':
+			return
 		if os.geteuid()==0 and self.nonroot_user:
 			os.system(f"su -l {self.nonroot_user} -c 'sleep {delay} && tmux send-keys -t PiKaraoke:0.3 C-c && tmux send-keys -t PiKaraoke:0.3 Up Enter'")
 		else:
 			os.system(f"sleep {delay} && tmux send-keys -t PiKaraoke:0.3 C-c && tmux send-keys -t PiKaraoke:0.3 Up Enter")
 
 	def streamer_stop(self, delay=0):
+		if self.platform == 'windows':
+			return
 		if os.geteuid()==0 and self.nonroot_user:
 			os.system(f"su -l {self.nonroot_user} -c 'sleep {delay} && tmux send-keys -t PiKaraoke:0.3 C-c'")
 		else:
@@ -1038,3 +1040,8 @@ class Karaoke:
 			except KeyboardInterrupt:
 				logging.warn("Keyboard interrupt: Exiting pikaraoke...")
 				self.running = False
+
+		# Clean up before quit
+		self.streamer_stop()
+		self.vocal_stop()
+		(self.vlcclient if self.use_vlc else self.omxclient).kill()

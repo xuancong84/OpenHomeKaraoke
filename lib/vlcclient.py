@@ -1,7 +1,6 @@
 import os, sys, re, random, shutil
 import string, logging, time
 import subprocess, zipfile
-from threading import Timer
 
 import requests
 
@@ -141,9 +140,10 @@ class VLCClient:
 		else:
 			return file_path
 
-	def play_file(self, file_path, params = []):
+	def play_file(self, file_path, volume, params = []):
 		try:
 			file_path = self.process_file(file_path)
+			self.is_transposing = True
 			if self.is_playing() or self.is_paused():
 				logging.debug("VLC is currently playing, stopping track...")
 				# must wait for VLC to quit or force kill, otherwise VLC http server will be borked
@@ -156,13 +156,27 @@ class VLCClient:
 				file_path = r"{}".format(file_path.replace('/', '\\'))
 			command = self.cmd_base + params + [file_path]
 			logging.debug("VLC Command: %s" % command)
+
 			self.process = subprocess.Popen(command, shell = (self.platform == "windows"), stdin = subprocess.PIPE)
-			while self.process.poll() is not None:  # wait for the process to start
-				pass
+
+			# workaround --volume-save not working in Windows
+			okay = False
+			while volume and not okay:
+				try:
+					xml = self.command(f"volume&val={volume}", False).text
+					if int(self.get_val_xml(xml, 'volume')) == volume:
+						okay = True
+					if not self.K.is_paused and self.get_val_xml(xml, 'state') != 'playing':
+						okay = False
+				except:
+					time.sleep(0.1)
+
+			self.is_transposing = False
+
 		except Exception as e:
 			logging.error("Playing file failed: " + str(e))
 
-	def play_file_transpose(self, file_path, semitones, extra_params = []):
+	def play_file_transpose(self, file_path, semitones, volume, extra_params = []):
 		# --speex-resampler-quality=<integer [0 .. 10]>
 		#  Resampling quality (0 = worst and fastest, 10 = best and slowest).
 
@@ -191,26 +205,20 @@ class VLCClient:
 			"%s" % src_type,
 		]
 
-		self.is_transposing = True
 		logging.debug("Transposing file...")
-		self.play_file(file_path, params + extra_params)
+		self.play_file(file_path, volume, params + extra_params)
 
-		# Prevent is_running() from returning False while we're transposing
-		s = Timer(2.0, self.set_transposing_complete)
-		s.start()
-
-	def set_transposing_complete(self):
-		self.is_transposing = False
-		logging.debug("Transposing complete")
-
-	def command(self, command = ''):
+	def command(self, command = '', save_status=True):
 		try:
+			self.last_status_time = time.time()
 			if not self.is_running():
 				return SimpleNamespace(**{'text': self.last_status_text, 'status_code': 500})
 			url = self.http_command_endpoint + command
 			request = requests.get(url, auth = ("", self.http_password))
-			self.last_status_text = request.text
-			self.last_status_time = time.time()
+			if self.is_transposing:
+				return SimpleNamespace(**{'text': self.last_status_text, 'status_code': request.status_code})
+			if save_status:
+				self.last_status_text = request.text
 			if not self.K.now_playing:
 				# by right, here should never be reached
 				request.encoding = 'utf-8'
@@ -221,8 +229,8 @@ class VLCClient:
 			logging.error("No active VLC process. Could not run command: " + command)
 			return SimpleNamespace(**{'text': self.last_status_text, 'status_code': 500})
 
-	def pause(self):
-		return self.command("pl_pause")
+	def pause(self, save_status=True):
+		return self.command("pl_pause", save_status)
 
 	def play(self):
 		return self.command("pl_play")
