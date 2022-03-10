@@ -397,30 +397,41 @@ class Karaoke:
 				self.screen.blit(text2, (10, 50))
 				self.screen.blit(text3, (10, 90))
 
-	def render_font(self, size, text, *kargs):
+	def render_font(self, sizes, text, *kargs):
+		if type(sizes) != list:
+			sizes = [sizes]
+
 		# initialize fonts if not found
-		if size not in self.fonts:
-			self.fonts[size] = [pygame.freetype.SysFont(pygame.freetype.get_default_font(), size)] \
+		for size in sizes:
+			if size not in self.fonts:
+				self.fonts[size] = [pygame.freetype.SysFont(pygame.freetype.get_default_font(), size)] \
 						+ [pygame.freetype.Font(f'font/{name}', size) for name in ['arial-unicode-ms.ttf', 'unifont.ttf']]
 
 		# find a font that contains all characters of the song title, if cannot find, then display transliteration instead
 		found = None
-		for font in self.fonts[size]:
+		for ii, font in enumerate(self.fonts[size]):
 			if None not in font.get_metrics(text):
-				found = font
+				found = ii
 				break
-		if not found:
+		if found is None:
 			text = unidecode(text)
-			found = self.fonts[size][0]
+			found = 0
 
 		# reshape Arabic text
 		text = get_display(arabic_reshaper.reshape(text))
 
 		# draw the font, if too wide, half the string
-		render = found.render(text, *kargs)
-		while render[1].width >= self.width:
-			text = text[:len(text)//2] + '...'
-			render = found.render(text, *kargs)
+		for size in sorted(sizes, reverse = True):
+			font = self.fonts[size][found]
+			render = font.render(text, *kargs)
+			# reduce font size if text too long
+			if render[1].width > self.width and size != min(sizes):
+				continue
+			while render[1].width >= self.width:
+				text = text[:int(len(text)*min(self.width/render[1].width, 0.618))] + '…'
+				del render
+				render = font.render(text, *kargs)
+			break
 		return render
 
 	def render_next_song_to_splash_screen(self):
@@ -430,8 +441,8 @@ class Karaoke:
 				logging.debug("Rendering next song to splash screen")
 				next_song = self.queue[0]["title"]
 				next_user = self.queue[0]["user"]
-				render_next_song = self.render_font(60, f"Up next: {next_song}", (255, 255, 0))
-				render_next_user = self.render_font(50, f"Added by: {next_user}", (0, 240, 0))
+				render_next_song = self.render_font([60, 50, 40], f"Up next: {next_song}", (255, 255, 0))
+				render_next_user = self.render_font([50, 40, 30], f"Added by: {next_user}", (0, 240, 0))
 				self.screen.blit(render_next_song[0], (self.width - render_next_song[1].width - 10, 10))
 				self.screen.blit(render_next_user[0], (self.width - render_next_user[1].width - 10, 80))
 				return True
@@ -747,7 +758,6 @@ class Karaoke:
 				self.vlcclient.stop()
 			else:
 				self.omxclient.stop()
-			self.reset_now_playing()
 			return True
 		logging.warning("Tried to skip, but no file is playing!")
 		return False
@@ -947,9 +957,7 @@ class Karaoke:
 	# Use this to reset the screen in case it loses focus
 	# This seems to occur in windows after playing a video
 	def pygame_reset_screen(self):
-		if self.hide_splash_screen:
-			pass
-		else:
+		if not self.hide_splash_screen:
 			logging.debug("Resetting pygame screen...")
 			pygame.display.quit()
 			self.initialize_screen()
@@ -1046,4 +1054,6 @@ class Karaoke:
 		# Clean up before quit
 		self.streamer_stop()
 		self.vocal_stop()
+		(self.vlcclient if self.use_vlc else self.omxclient).stop()
+		time.sleep(1)
 		(self.vlcclient if self.use_vlc else self.omxclient).kill()
