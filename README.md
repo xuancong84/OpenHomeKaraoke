@@ -69,16 +69,15 @@ If you're on a Raspberry Pi, you might want to just use the pre-built image to s
 
 ### Manual install
 
-- Install git, if you haven't already. (on raspberry pi: `sudo apt-get update; sudo apt-get install git`)
-- Install python3/pip3 (usually raspberry pis already have it, run `python3 --version` to check): https://www.python.org/downloads/ (python 2.7 may work, but is not officially supported)
-- Create song download directory $HOME/pikaraoke-songs or specify it on the command line.
-- Create directories to enable automatic extraction of instrumental and vocal tracks in the background, $HOME/pikaraoke-songs/nonvocal and $HOME/pikaraoke-songs/vocal, or specify the song download directory.
-- Clone this repo:
+Firstly, for all OS:
 
-```
-git clone https://github.com/xuancong84/pikaraoke.git
-cd pikaraoke
-```
+- Install git, if you haven't already. (on Raspberry Pi: `sudo apt-get update; sudo apt-get install git`)
+- Clone this repo, `git clone https://github.com/xuancong84/pikaraoke.git`
+- Download and install Anaconda3 (https://www.anaconda.com/products/individual), it contains Python3, pip/pip3 and common Python libraries
+- Install pip dependencies, in the conda environment, cd into the project folder and run `pip install -r requirements.txt`
+- Create song download directory `$HOME/pikaraoke-songs` (by default) or specify it on the command line.
+- Create `nonvocal` and `vocal` sub-folders inside the song download directory to enable automatic extraction of instrumental and vocal tracks in the background, e.g.,`$HOME/pikaraoke-songs/nonvocal` and `$HOME/pikaraoke-songs/vocal` by default.
+- Make sure `VLC` (https://www.videolan.org/) and `ffmpeg` (https://ffmpeg.org/download.html) are installed, and their executables are in the execution PATH environment variable
 
 #### Raspberry pi
 
@@ -96,50 +95,40 @@ sudo reboot
 
 #### Linux / OSX
 
-- Install VLC (to its default location): https://www.videolan.org/
-- Install ffmpeg (only if you want to use --high-quality flag) https://ffmpeg.org/download.html
-
-Install requirements from the pikaraoke directory:
-
-```
-pip3 install -r requirements.txt
-pip3 install --upgrade yt-dlp
-```
-
-*OSX only:* pip installs to a python library directory specific to your version of Python 3. This sets a symlink for yt-dlp in /usr/local/bin so pikaraoke can find it (optional, otherwise you'll probably need to manually specify --youtubedl-path):
-
-```
-sudo ln -s `which yt-dlp` /usr/local/bin/yt-dlp
-```
+- Install tmux, `sudo apt install tmux`
+- You can activate conda environment by `export PATH=$HOME/anaconda3/bin:$PATH`
+- yt-dlp should be automatically installed when you run `pip install -r requirements.txt`
+- Make sure you can run `yt-dlp`, `ffmpeg` and `vlc` (optionally `cvlc`) directly
+- For GPU-accelerated vocal splitter, install Nvidia driver (Google on how to install); and use Anaconda3's pip to install PyTorch (see https://pytorch.org/)
 
 #### Windows
 
 - Install VLC (to its default location): https://www.videolan.org/
-- Install Anaconda3 Windows version (https://www.anaconda.com/products/individual)
-- Install pip dependencies: open Anaconda3's prompt/powershell, `pip install -r requirements.txt`
-- Install ffmpeg (if you want to use --high-quality flag or vocal splitter, see https://ffmpeg.org/download.html), and make sure `ffmpeg.exe` is in the execution PATH environment variable
 - Install MS Visual C++ (required to launch youtube-dl/yt-dlp in pip dependencies)  https://www.microsoft.com/en-US/download/details.aspx?id=5555
 - Install PyTorch (with CUDA recommended) using pip in Anaconda3's prompt/powershell, this is required only if you want to use the DNN-based vocal splitter
+- You can copy a .exe file into `C:\Windows\system32` folder to make it runnable everywhere or add its path to environment variable (see https://www.computerhope.com/issues/ch000549.htm)
 
 Note: if you have trouble installing pygame, there's apparently an incompatibility with Python 3.8. Try upgrading to the latest python version or downgrading to 3.7.
 
 ## Launch
 
-On Linux/Mac-OS, run:
+**On Linux/Mac-OS, run:**
 
-cd to the pikaraoke directory and run: `PATH=~/anaconda3/bin:$PATH ./run.sh`
-
-or you make sure that the `python3` in $PATH has all pip requirements installed.
+cd into the pikaraoke directory and run: `PATH=~/anaconda3/bin:$PATH ./run.sh`
 
 
+**On Raspberry Pi:**
 
-On Windows:
-
-cd to the pikaraoke directory and run:
-
-`sudo python3 app.py` (pi devices) or `python3 app.py` (other)
+`sudo env PATH=<anaconda3-bin>:$PATH python3 app.py`
 
 You must run as sudo on pi devices if you are running directly from the console since PiKaraoke uses pygame to control the screen buffer. You can probably run as non-sudo from the Raspbian desktop environment, but may need to specify a different download directory than the default with the -d option.
+
+
+**On Windows:**
+
+In Anaconda3's prompt/powershell, cd to the pikaraoke directory and run:
+
+`python3 app.py -d <your-song-download-folder>`
 
 The app should launch and show the PiKaraoke splash screen and a QR code and a URL. Using a device connected to the same wifi network as the Pi, scan this QR code or enter the URL into a browser. You are now connected! You can start exploring the UI and adding/queuing new songs directly from YouTube.
 
