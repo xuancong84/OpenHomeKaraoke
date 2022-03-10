@@ -503,7 +503,7 @@ class Karaoke:
 			logging.debug("Song successfully downloaded: " + song_url)
 			bn = self.get_downloaded_file_basename(song_url)
 			if bn:
-				os.rename(self.download_path+'tmp/'+bn, self.download_path+bn)
+				shutil.move(self.download_path+'tmp/'+bn, self.download_path+bn)
 				self.get_available_songs()
 				if enqueue:
 					self.enqueue(self.download_path+bn, song_added_by)
@@ -560,7 +560,7 @@ class Karaoke:
 	def rename_if_exist(self, old_path, new_path):
 		if os.path.isfile(old_path):
 			try:
-				os.rename(old_path, new_path)
+				shutil.move(old_path, new_path)
 			except:
 				pass
 
@@ -629,10 +629,10 @@ class Karaoke:
 		if self.use_vlc:
 			if self.now_playing_transpose == semitones:
 				return
+			self.now_playing_transpose = semitones
 			status_xml = self.vlcclient.command().text if self.is_paused else self.vlcclient.pause(False).text
 			info = self.vlcclient.get_info_xml(status_xml)
 			posi = info['position']*info['length']
-			self.now_playing_transpose = semitones
 			self.play_file(self.now_playing_filename, [f'--start-time={posi}'] + (['--start-paused'] if self.is_paused else []))
 		else:
 			logging.error("Not using VLC. Can't transpose track.")
@@ -900,6 +900,8 @@ class Karaoke:
 		return mask
 
 	def get_state(self):
+		if self.use_vlc and self.vlcclient.is_transposing:
+			return defaultdict(lambda: None, self.player_state)
 		if not self.is_file_playing():
 			self.player_state['now_playing'] = None
 			return defaultdict(lambda: None, self.player_state)

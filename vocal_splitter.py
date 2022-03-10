@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 
-import os, sys
+import os, sys, time, shutil
 import argparse, requests
-import time
 
 import numpy as np
 import soundfile as sf
@@ -259,18 +258,18 @@ def main(argv):
 			split_vocal_by_dnn(in_wav, out_wav_nonvocal, out_wav_vocal, args)
 			if os.path.isdir(song_path+'/nonvocal'):
 				ffm_wav2m4a(out_wav_nonvocal, out_m4a_nonvocal)
-				os.rename(out_m4a_nonvocal, f'{song_path}/nonvocal/{next_file}.m4a')
+				shutil.move(out_m4a_nonvocal, f'{song_path}/nonvocal/{next_file}.m4a')
 			if os.path.isdir(song_path+'/vocal'):
 				ffm_wav2m4a(out_wav_vocal, out_m4a_vocal)
-				os.rename(out_m4a_vocal, f'{song_path}/vocal/{next_file}.m4a')
+				shutil.move(out_m4a_vocal, f'{song_path}/vocal/{next_file}.m4a')
 		else:
 			split_vocal_by_stereo(in_wav, out_wav_nonvocal, out_wav_vocal)
 			if os.path.isdir(song_path+'/nonvocal'):
 				ffm_wav2m4a(out_wav_nonvocal, out_m4a_nonvocal)
-				os.rename(out_m4a_nonvocal, f'{song_path}/nonvocal/.{next_file}.m4a')
+				shutil.move(out_m4a_nonvocal, f'{song_path}/nonvocal/.{next_file}.m4a')
 			if os.path.isdir(song_path+'/vocal'):
 				ffm_wav2m4a(out_wav_vocal, out_m4a_vocal)
-				os.rename(out_m4a_vocal, f'{song_path}/vocal/.{next_file}.m4a')
+				shutil.move(out_m4a_vocal, f'{song_path}/vocal/.{next_file}.m4a')
 		last_completed = next_file
 
 
