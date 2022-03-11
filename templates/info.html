@@ -1,5 +1,9 @@
 {% extends 'base.html' %} {% block scripts %}
 <script>
+  function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
   $(function () {
     $("#quit-link").click(function (e) {
       e.preventDefault();
@@ -43,19 +47,19 @@
     });
 
     $("#streamer-stop").click(function(){
-      $.get("/bg-process/streamer-stop", function (data) { location.reload(); });
+      $.get("/bg-process/streamer-stop", async function (data) { await sleep(200); location.reload(true); });
     });
 
     $("#streamer-restart").click(function(){
-      $.get("/bg-process/streamer-restart", function (data){ location.reload(); });
+      $.get("/bg-process/streamer-restart", async function (data){ await sleep(200); location.reload(true); });
     });
 
     $("#vocal-stop").click(function(){
-      $.get("/bg-process/vocal-stop", function (data) { location.reload(); });
+      $.get("/bg-process/vocal-stop", async function (data) { await sleep(200); location.reload(true); });
     });
 
     $("#vocal-restart").click(function(){
-      $.get("/bg-process/vocal-restart", function (data){ location.reload(); });
+      $.get("/bg-process/vocal-restart", async function (data){ await sleep(200); location.reload(true); });
     });
   });
 </script>
@@ -367,6 +371,7 @@ input:checked + .slider:before {
 
 <h1>System Info</h1>
 <ul>
+  <li>OS: {{ ostype }}</li>
   <li>CPU: {{ cpu }}</li>
   <li>Disk Usage: {{ disk }}</li>
   <li>Memory: {{ memory }}</li>

@@ -231,11 +231,6 @@ def enqueue():
 		user = d["song-added-by"]
 	rc = K.enqueue(song, user)
 	song_title = filename_from_path(song)
-	# if rc:
-	#     flash("Song added to queue: " + song_title, "is-success")
-	# else:
-	#     flash("Song is already in queue: " + song_title, "is-danger")
-	# return redirect(url_for("home"))
 	return json.dumps({"song": song_title, "success": rc})
 
 
@@ -447,7 +442,7 @@ def edit_file():
 
 @app.route("/info")
 def info():
-	url = "http://" + request.host
+	url = K.url
 
 	# cpu
 	cpu = str(psutil.cpu_percent()) + "%"
@@ -456,42 +451,19 @@ def info():
 	memory = psutil.virtual_memory()
 	available = round(memory.available / 1024.0 / 1024.0, 1)
 	total = round(memory.total / 1024.0 / 1024.0, 1)
-	memory = (
-			str(available)
-			+ "MB free / "
-			+ str(total)
-			+ "MB total ( "
-			+ str(memory.percent)
-			+ "% )"
-	)
+	memory = str(available) + "MB free / " + str(total) + "MB total ( " + str(memory.percent) + "% )"
 
 	# disk
 	disk = psutil.disk_usage("/")
 	# Divide from Bytes -> KB -> MB -> GB
 	free = round(disk.free / 1024.0 / 1024.0 / 1024.0, 1)
 	total = round(disk.total / 1024.0 / 1024.0 / 1024.0, 1)
-	disk = (
-			str(free)
-			+ "GB free / "
-			+ str(total)
-			+ "GB total ( "
-			+ str(disk.percent)
-			+ "% )"
-	)
+	disk = str(free) + "GB free / " + str(total) + "GB total ( " + str(disk.percent) + "% )"
 
-	# whether screencapture.sh is running
+	# whether screencapture.sh and vocal_splitter.py is running
 	get_status = lambda t: "Unknown" if t is None else ("Running" if t else "Stopped")
-	try:
-		screencapture = bool([1 for p in psutil.process_iter() if './screencapture.sh' in p.cmdline()])
-	except:
-		screencapture = None
-
-	# whether vocal_splitter.py is running
-	try:
-		vocalsplitter = bool([1 for p in psutil.process_iter() if 'vocal_splitter.py' in p.cmdline()])\
-		                or (K.vocal_process and K.vocal_process.is_alive())
-	except:
-		vocalsplitter = None
+	screencapture = K.streamer_alive()
+	vocalsplitter = K.vocal_alive()
 
 	# youtube-dl
 	youtubedl_version = K.youtubedl_version
@@ -501,6 +473,7 @@ def info():
 	return render_template(
 		"info.html",
 		site_title = site_name,
+		ostype = sys.platform.upper(),
 		title = "Info",
 		url = url,
 		memory = memory,
@@ -541,7 +514,6 @@ def delayed_halt(cmd):
 
 
 def update_youtube_dl():
-	time.sleep(3)
 	K.upgrade_youtubedl()
 
 

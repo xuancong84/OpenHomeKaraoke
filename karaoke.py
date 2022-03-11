@@ -1,7 +1,7 @@
 import os, random, time, json, hashlib
 import logging, socket, subprocess
 import multiprocessing as mp
-import shutil
+import shutil, psutil
 from subprocess import check_output
 from collections import *
 from constants import media_types
@@ -242,14 +242,10 @@ class Karaoke:
 		if "It looks like you installed youtube-dl with a package manager" in output:
 			try:
 				logging.info("Attempting youtube-dl upgrade via pip3...")
-				output = check_output(
-					["pip3", "install", "--upgrade", "yt-dlp"]
-				).decode("utf8")
+				output = check_output(["pip3", "install", "--upgrade", "yt-dlp"]).decode("utf8")
 			except FileNotFoundError:
 				logging.info("Attempting youtube-dl upgrade via pip...")
-				output = check_output(
-					["pip", "install", "--upgrade", "yt-dlp"]
-				).decode("utf8")
+				output = check_output(["pip", "install", "--upgrade", "yt-dlp"]).decode("utf8")
 			logging.info(output)
 		self.get_youtubedl_version()
 		logging.info("Done. New version: %s" % self.youtubedl_version)
@@ -259,12 +255,7 @@ class Karaoke:
 
 	def generate_qr_code(self):
 		logging.debug("Generating URL QR code")
-		qr = qrcode.QRCode(
-			version = 1,
-			box_size = 1,
-			border = 4,
-			error_correction = qrcode.constants.ERROR_CORRECT_H
-		)
+		qr = qrcode.QRCode(version = 1, box_size = 1, border = 4, error_correction = qrcode.constants.ERROR_CORRECT_H)
 		qr.add_data(self.url)
 		qr.make()
 		img = qr.make_image()
@@ -274,9 +265,8 @@ class Karaoke:
 	def get_default_display_mode(self):
 		if self.use_vlc:
 			if self.platform == "raspberry_pi":
-				os.environ[
-					"SDL_VIDEO_CENTERED"
-				] = "1"  # HACK apparently if display mode is fullscreen the vlc window will be at the bottom of pygame
+				# HACK apparently if display mode is fullscreen the vlc window will be at the bottom of pygame
+				os.environ["SDL_VIDEO_CENTERED"] = "1"
 				return pygame.NOFRAME
 			else:
 				return pygame.FULLSCREEN
@@ -324,16 +314,12 @@ class Karaoke:
 	def toggle_full_screen(self):
 		if not self.hide_splash_screen:
 			logging.debug("Toggling fullscreen...")
+			self.full_screen = not self.full_screen
 			if self.full_screen:
-				self.screen = pygame.display.set_mode([1280, 720])
-				self.render_splash_screen()
-				self.full_screen = False
+				self.screen = pygame.display.set_mode([self.width, self.height], self.get_default_display_mode())
 			else:
-				self.screen = pygame.display.set_mode(
-					[self.width, self.height], self.get_default_display_mode()
-				)
-				self.render_splash_screen()
-				self.full_screen = True
+				self.screen = pygame.display.set_mode([1280, 720], pygame.RESIZABLE)
+			self.render_splash_screen()
 
 	def render_splash_screen(self):
 		if not self.hide_splash_screen:
@@ -758,6 +744,7 @@ class Karaoke:
 				self.vlcclient.stop()
 			else:
 				self.omxclient.stop()
+			self.reset_now_playing()
 			return True
 		logging.warning("Tried to skip, but no file is playing!")
 		return False
@@ -951,6 +938,9 @@ class Karaoke:
 						self.running = False
 					if event.key == pygame.K_f:
 						self.toggle_full_screen()
+				if event.type == pygame.VIDEORESIZE:
+					self.screen = pygame.display.set_mode((event.w, event.h), pygame.RESIZABLE)
+					self.render_next_song_to_splash_screen()
 			pygame.display.update()
 			pygame.time.wait(self.loop_interval)
 
@@ -973,8 +963,14 @@ class Karaoke:
 		self.audio_delay = 0
 		self.last_vocal_info = 0
 
+	def streamer_alive(self):
+		try:
+			return bool([1 for p in psutil.process_iter() if './screencapture.sh' in p.cmdline()])
+		except:
+			return None
+
 	def streamer_restart(self, delay=0):
-		if self.platform == 'windows':
+		if self.platform in ['windows', 'osx']:
 			return
 		if os.geteuid()==0 and self.nonroot_user:
 			os.system(f"su -l {self.nonroot_user} -c 'sleep {delay} && tmux send-keys -t PiKaraoke:0.3 C-c && tmux send-keys -t PiKaraoke:0.3 Up Enter'")
@@ -982,42 +978,47 @@ class Karaoke:
 			os.system(f"sleep {delay} && tmux send-keys -t PiKaraoke:0.3 C-c && tmux send-keys -t PiKaraoke:0.3 Up Enter")
 
 	def streamer_stop(self, delay=0):
-		if self.platform == 'windows':
+		if self.platform in ['windows', 'osx']:
 			return
 		if os.geteuid()==0 and self.nonroot_user:
 			os.system(f"su -l {self.nonroot_user} -c 'sleep {delay} && tmux send-keys -t PiKaraoke:0.3 C-c'")
 		else:
 			os.system(f"sleep {delay} && tmux send-keys -t PiKaraoke:0.3 C-c")
 
-	def vocal_restart(self, delay=0):
-		if self.platform == 'windows':
-			if self.vocal_process is None:
-				import vocal_splitter as vs
-			elif self.vocal_process.is_alive():
+	def vocal_alive(self):
+		try:
+			return bool([1 for p in psutil.process_iter() if 'vocal_splitter.py' in p.cmdline()]) \
+			                or (self.vocal_process and self.vocal_process.is_alive())
+		except:
+			return None
+
+	def vocal_restart(self):
+		if self.platform == 'windows' or self.run_vocal:
+			import vocal_splitter
+			if self.vocal_process is not None and self.vocal_process.is_alive():
 				self.vocal_process.kill()
 			if shutil.which('ffmpeg'):
-				self.vocal_process = mp.Process(target=vs.main, args=(['-p', '-d', self.download_path],))
+				self.vocal_process = mp.Process(target=vocal_splitter.main, args=(['-p', '-d', self.download_path],))
 				self.vocal_process.start()
 		else:
 			if os.geteuid()==0 and self.nonroot_user:
-				os.system(f"su -l {self.nonroot_user} -c 'sleep {delay} && tmux send-keys -t PiKaraoke:0.4 C-c && tmux send-keys -t PiKaraoke:0.4 Up Enter'")
+				os.system(f"su -l {self.nonroot_user} -c 'tmux send-keys -t PiKaraoke:0.4 C-c && tmux send-keys -t PiKaraoke:0.4 Up Enter'")
 			else:
-				os.system(f"sleep {delay} && tmux send-keys -t PiKaraoke:0.4 C-c && tmux send-keys -t PiKaraoke:0.4 Up Enter")
+				os.system(f"tmux send-keys -t PiKaraoke:0.4 C-c && tmux send-keys -t PiKaraoke:0.4 Up Enter")
 
-	def vocal_stop(self, delay=0):
-		if self.platform == 'windows':
-			if self.vocal_process is not None and self.vocal_process.is_alive():
-				self.vocal_process.kill()
-		else:
-			if os.geteuid()==0 and self.nonroot_user:
-				os.system(f"su -l {self.nonroot_user} -c 'sleep {delay} && tmux send-keys -t PiKaraoke:0.4 C-c'")
+	def vocal_stop(self):
+		if self.vocal_process is not None and self.vocal_process.is_alive():
+			self.vocal_process.kill()
+		elif self.platform != 'windows':
+			if os.geteuid() == 0 and self.nonroot_user:
+				os.system(f"su -l {self.nonroot_user} -c 'tmux send-keys -t PiKaraoke:0.4 C-c'")
 			else:
-				os.system(f"sleep {delay} && tmux send-keys -t PiKaraoke:0.4 C-c")
+				os.system(f"tmux send-keys -t PiKaraoke:0.4 C-c")
 
 	def run(self):
 		logging.info("Starting PiKaraoke!")
 		self.running = True
-		isFirstSong = (self.platform != 'windows')
+		isFirstSong = self.streamer_alive()
 
 		# Windows does not have tmux, vocal splitter can only be invoked from the main program
 		if self.platform == 'windows' or self.run_vocal:
