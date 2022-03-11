@@ -40,7 +40,6 @@ class Karaoke:
 	use_DNN_vocal = True
 	vocal_process = None
 	is_paused = True
-	process = None
 	qr_code_path = None
 	base_path = os.path.dirname(__file__)
 	volume_offset = 0
@@ -282,14 +281,12 @@ class Karaoke:
 			pygame.mouse.set_visible(0)
 			self.font = pygame.font.SysFont(pygame.font.get_default_font(), 40)
 			self.fonts = {}
-			self.width = pygame.display.Info().current_w
-			self.height = pygame.display.Info().current_h
+			self.WIDTH = pygame.display.Info().current_w
+			self.HEIGHT = pygame.display.Info().current_h
 			logging.debug("Initializing screen mode")
 
 			if self.platform == "windows":
-				self.screen = pygame.display.set_mode(
-					[self.width, self.height], self.get_default_display_mode()
-				)
+				self.screen = pygame.display.set_mode([self.WIDTH, self.HEIGHT], self.get_default_display_mode())
 			else:
 				# this section is an unbelievable nasty hack - for some reason Pygame
 				# needs a keyboardinterrupt to initialise in some limited circumstances
@@ -303,9 +300,7 @@ class Karaoke:
 				signal(SIGALRM, alarm_handler)
 				alarm(3)
 				try:
-					self.screen = pygame.display.set_mode(
-						[self.width, self.height], self.get_default_display_mode()
-					)
+					self.screen = pygame.display.set_mode([self.WIDTH, self.HEIGHT], self.get_default_display_mode())
 					alarm(0)
 				except Alarm:
 					raise KeyboardInterrupt
@@ -316,72 +311,75 @@ class Karaoke:
 			logging.debug("Toggling fullscreen...")
 			self.full_screen = not self.full_screen
 			if self.full_screen:
-				self.screen = pygame.display.set_mode([self.width, self.height], self.get_default_display_mode())
+				self.screen = pygame.display.set_mode([self.WIDTH, self.HEIGHT], self.get_default_display_mode())
 			else:
 				self.screen = pygame.display.set_mode([1280, 720], pygame.RESIZABLE)
 			self.render_splash_screen()
 
 	def render_splash_screen(self):
-		if not self.hide_splash_screen:
-			logging.debug("Rendering splash screen")
+		if self.hide_splash_screen:
+			return
 
-			self.screen.fill((0, 0, 0))
+		logging.debug("Rendering splash screen")
 
-			logo = pygame.image.load(self.logo_path)
-			logo_rect = logo.get_rect(center = self.screen.get_rect().center)
-			self.screen.blit(logo, logo_rect)
+		self.screen.fill((0, 0, 0))
 
-			blitY = self.screen.get_rect().bottomleft[1] - 40
+		logo = pygame.image.load(self.logo_path)
+		logo_rect = logo.get_rect(center = self.screen.get_rect().center)
+		self.screen.blit(logo, logo_rect)
 
-			if not self.hide_ip:
-				p_image = pygame.image.load(self.qr_code_path)
-				p_image = pygame.transform.scale(p_image, (150, 150))
-				self.screen.blit(p_image, (20, blitY - 125))
-				if not self.is_network_connected():
-					text = self.font.render(
-						"Wifi/Network not connected. Shutting down in 10s...",
-						True,
-						(255, 255, 255),
-					)
-					self.screen.blit(text, (p_image.get_width() + 35, blitY))
-					time.sleep(10)
-					logging.info(
-						"No IP found. Network/Wifi configuration required. For wifi config, try: sudo raspi-config or the desktop GUI: startx"
-					)
-					self.stop()
-				else:
-					text = self.font.render("For selecting songs, connect at: " + self.url, True, (255, 255, 255))
-					self.screen.blit(text, (p_image.get_width() + 35, blitY))
-					# Windows and Mac-OS should use screen projection and AirPlay
-					if self.platform in ['linux', 'raspberry_pi']:
-						text = self.font.render("For TV display, connect at: " + self.url.rsplit(":", 1)[0] + ":4000", True, (255, 255, 255))
-						self.screen.blit(text, (p_image.get_width() + 35, blitY - 40))
+		blitY = self.screen.get_rect().bottomleft[1] - 40
 
-			if not self.hide_raspiwifi_instructions and (
-					self.raspi_wifi_config_installed
-					and self.raspi_wifi_config_ip in self.url
-			):
-				(server_port, ssid_prefix, ssl_enabled) = self.get_raspi_wifi_conf_vals()
-
-				text1 = self.font.render(
-					"RaspiWifiConfig setup mode detected!", True, (255, 255, 255)
-				)
-				text2 = self.font.render(
-					"Connect another device/smartphone to the Wifi AP: '%s'" % ssid_prefix,
+		if not self.hide_ip:
+			p_image = pygame.image.load(self.qr_code_path)
+			p_image = pygame.transform.scale(p_image, (150, 150))
+			self.screen.blit(p_image, (20, blitY - 125))
+			if not self.is_network_connected():
+				text = self.font.render(
+					"Wifi/Network not connected. Shutting down in 10s...",
 					True,
 					(255, 255, 255),
 				)
-				text3 = self.font.render(
-					"Then point its browser to: '%s://%s%s' and follow the instructions."
-					% ("https" if ssl_enabled == "1" else "http",
-					   self.raspi_wifi_config_ip,
-					   ":%s" % server_port if server_port != "80" else ""),
-					True,
-					(255, 255, 255),
+				self.screen.blit(text, (p_image.get_width() + 35, blitY))
+				time.sleep(10)
+				logging.info(
+					"No IP found. Network/Wifi configuration required. For wifi config, try: sudo raspi-config or the desktop GUI: startx"
 				)
-				self.screen.blit(text1, (10, 10))
-				self.screen.blit(text2, (10, 50))
-				self.screen.blit(text3, (10, 90))
+				self.stop()
+			else:
+				text = self.font.render("For selecting songs, connect at: " + self.url, True, (255, 255, 255))
+				self.screen.blit(text, (p_image.get_width() + 35, blitY))
+				# Windows and Mac-OS should use screen projection and AirPlay
+				if self.platform in ['linux', 'raspberry_pi']:
+					text = self.font.render("For TV display, connect at: " + self.url.rsplit(":", 1)[0] + ":4000", True, (255, 255, 255))
+					self.screen.blit(text, (p_image.get_width() + 35, blitY - 40))
+
+		if not self.hide_raspiwifi_instructions and self.raspi_wifi_config_installed and self.raspi_wifi_config_ip in self.url:
+			server_port, ssid_prefix, ssl_enabled = self.get_raspi_wifi_conf_vals()
+
+			text1 = self.font.render("RaspiWifiConfig setup mode detected!", True, (255, 255, 255))
+			text2 = self.font.render("Connect another device/smartphone to the Wifi AP: '%s'" % ssid_prefix, True, (255, 255, 255))
+			text3 = self.font.render(
+				"Then point its browser to: '%s://%s%s' and follow the instructions."
+				% ("https" if ssl_enabled == "1" else "http",
+				   self.raspi_wifi_config_ip,
+				   ":%s" % server_port if server_port != "80" else ""),
+				True,
+				(255, 255, 255),
+			)
+			self.screen.blit(text1, (10, 10))
+			self.screen.blit(text2, (10, 50))
+			self.screen.blit(text3, (10, 90))
+
+		if len(self.queue) >= 1:
+			logging.debug("Rendering next song to splash screen")
+			width = self.screen.get_width()
+			next_song = self.queue[0]["title"]
+			next_user = self.queue[0]["user"]
+			render_next_song = self.render_font([60, 50, 40], f"Up next: {next_song}", (255, 255, 0))
+			render_next_user = self.render_font([50, 40, 30], f"Added by: {next_user}", (0, 240, 0))
+			self.screen.blit(render_next_song[0], (width - render_next_song[1].width - 10, 10))
+			self.screen.blit(render_next_user[0], (width - render_next_user[1].width - 10, 80))
 
 	def render_font(self, sizes, text, *kargs):
 		if type(sizes) != list:
@@ -407,34 +405,19 @@ class Karaoke:
 		text = get_display(arabic_reshaper.reshape(text))
 
 		# draw the font, if too wide, half the string
+		width = self.screen.get_width()
 		for size in sorted(sizes, reverse = True):
 			font = self.fonts[size][found]
 			render = font.render(text, *kargs)
 			# reduce font size if text too long
-			if render[1].width > self.width and size != min(sizes):
+			if render[1].width > width and size != min(sizes):
 				continue
-			while render[1].width >= self.width:
-				text = text[:int(len(text)*min(self.width/render[1].width, 0.618))] + '…'
+			while render[1].width >= width:
+				text = text[:int(len(text) * min(width / render[1].width, 0.618))] + '…'
 				del render
 				render = font.render(text, *kargs)
 			break
 		return render
-
-	def render_next_song_to_splash_screen(self):
-		if not self.hide_splash_screen:
-			self.render_splash_screen()
-			if len(self.queue) >= 1:
-				logging.debug("Rendering next song to splash screen")
-				next_song = self.queue[0]["title"]
-				next_user = self.queue[0]["user"]
-				render_next_song = self.render_font([60, 50, 40], f"Up next: {next_song}", (255, 255, 0))
-				render_next_user = self.render_font([50, 40, 30], f"Added by: {next_user}", (0, 240, 0))
-				self.screen.blit(render_next_song[0], (self.width - render_next_song[1].width - 10, 10))
-				self.screen.blit(render_next_user[0], (self.width - render_next_user[1].width - 10, 80))
-				return True
-			else:
-				logging.debug("Could not render next song to splash. No song in queue")
-				return False
 
 	def get_search_results(self, textToSearch):
 		logging.info("Searching YouTube for: " + textToSearch)
@@ -605,6 +588,9 @@ class Karaoke:
 	def play_file(self, file_path, extra_params = []):
 		if self.use_vlc:
 			logging.info("Playing video in VLC: " + file_path)
+			if self.platform != 'osx':
+				extra_params += ['--drawable-hwnd' if self.platform=='windows' else '--drawable-xid',
+								 hex(pygame.display.get_wm_info()['window'])]
 			if os.path.isfile(self.now_playing_slave):
 				extra_params += [f'--input-slave={self.now_playing_slave}', '--audio-track=1']
 			if self.audio_delay:
@@ -932,16 +918,19 @@ class Karaoke:
 				if event.type == pygame.QUIT:
 					logging.warn("Window closed: Exiting pikaraoke...")
 					self.running = False
-				if event.type == pygame.KEYDOWN:
+				elif event.type == pygame.KEYDOWN:
 					if event.key == pygame.K_ESCAPE:
 						logging.warn("ESC pressed: Exiting pikaraoke...")
 						self.running = False
 					if event.key == pygame.K_f:
 						self.toggle_full_screen()
-				if event.type == pygame.VIDEORESIZE:
-					self.screen = pygame.display.set_mode((event.w, event.h), pygame.RESIZABLE)
-					self.render_next_song_to_splash_screen()
-			pygame.display.update()
+				elif event.type == pygame.VIDEORESIZE:
+					if self.platform != 'osx':
+						self.screen = pygame.display.set_mode((event.w, event.h),
+					            self.get_default_display_mode() if self.full_screen else pygame.RESIZABLE)
+			if not self.is_file_playing():
+				self.render_splash_screen()
+				pygame.display.update()
 			pygame.time.wait(self.loop_interval)
 
 	# Use this to reset the screen in case it loses focus
@@ -988,7 +977,7 @@ class Karaoke:
 	def vocal_alive(self):
 		try:
 			return bool([1 for p in psutil.process_iter() if 'vocal_splitter.py' in p.cmdline()]) \
-			                or (self.vocal_process and self.vocal_process.is_alive())
+			                or bool(self.vocal_process and self.vocal_process.is_alive())
 		except:
 			return None
 
@@ -1033,7 +1022,7 @@ class Karaoke:
 						self.reset_now_playing()
 						if not pygame.display.get_active():
 							self.pygame_reset_screen()
-						self.render_next_song_to_splash_screen()
+						self.render_splash_screen()
 						i = 0
 						while i < (self.splash_delay * 1000):
 							self.handle_run_loop()

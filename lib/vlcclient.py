@@ -55,12 +55,9 @@ class VLCClient:
 			self.path,
 			"--fullscreen",
 			"--play-and-exit",
-			"--extraintf",
-			"http",
-			"--http-port",
-			"%s" % self.port,
-			"--http-password",
-			self.http_password,
+			"--extraintf", "http",
+			"--http-port", "%s" % self.port,
+			"--http-password", self.http_password,
 			"--no-embedded-video",
 			"--no-keyboard-events",
 			"--no-mouse-events",
@@ -69,8 +66,7 @@ class VLCClient:
 			"--no-video-title",
 			"--no-loop",
 			"--no-repeat",
-			"--mouse-hide-timeout",
-			"0",
+			"--mouse-hide-timeout", "0",
 		]
 		if self.platform == "osx":
 			self.cmd_base += [
@@ -78,9 +74,11 @@ class VLCClient:
 				"--no-macosx-show-playmode-buttons",
 				"--no-macosx-interfacestyle",
 				"--macosx-nativefullscreenmode",
-				"--macosx-continue-playback",
-				"0",
+				"--macosx-continue-playback", "0",
 			]
+		else:
+			self.cmd_base += ["--intf", "dummy"]
+
 		if self.qrcode and self.url:
 			self.cmd_base += self.get_marquee_cmd()
 
