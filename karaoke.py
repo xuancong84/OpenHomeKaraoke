@@ -39,6 +39,7 @@ class Karaoke:
 	last_vocal_time = 0
 	use_DNN_vocal = True
 	vocal_process = None
+	vocal_device = None
 	is_paused = True
 	qr_code_path = None
 	base_path = os.path.dirname(__file__)
@@ -1034,7 +1035,7 @@ class Karaoke:
 							isFirstSong = False
 						self.now_playing_user = head["user"]
 						self.update_queue_hash()
-				elif not pygame.display.get_active() and not self.is_file_playing():
+				elif (self.full_screen and not pygame.display.get_active()) and not self.is_file_playing():
 					self.pygame_reset_screen()
 				self.handle_run_loop()
 			except KeyboardInterrupt:

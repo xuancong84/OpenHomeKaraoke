@@ -168,10 +168,10 @@ song_path = ''
 last_completed = ''
 use_DNN = True
 
-def get_next_file():
+def get_next_file(cuda_device):
 	global song_path, use_DNN, last_completed
 	try:
-		obj = requests.get('http://localhost:5000/get_vocal_todo_list', headers = {'last_completed': last_completed}).json()
+		obj = requests.get(f'http://localhost:5000/get_vocal_todo_list/{cuda_device.type}', headers = {'last_completed': last_completed}).json()
 		song_path = obj['download_path'].rstrip('/')
 		use_DNN = obj['use_DNN']
 	except:
@@ -206,7 +206,7 @@ def main(argv):
 	p = argparse.ArgumentParser()
 	p.add_argument('--download-path', '-d', help = "Path for downloaded songs. Will be overridden by the one from HTTP request. "
 					"Set this to forcefully run the vocal-splitter even when PiKaraoke is not running.", default = '')
-	p.add_argument('--gpu', '-g', type = int, help = 'CUDA device ID for GPU inference, set to -1 to use CPU', default = None)
+	p.add_argument('--gpu', '-g', type = int, help = 'CUDA device ID for GPU inference, set to -1 to force to use CPU (default will try to use GPU if available)', default = None)
 	p.add_argument('--pretrained_model', '-P', type = str, default = 'models/baseline.pth')
 	p.add_argument('--sr', '-r', type = int, default = 44100)
 	p.add_argument('--n_fft', '-f', type = int, default = 2048)
@@ -221,7 +221,7 @@ def main(argv):
 
 	song_path = os.path.expanduser(args.download_path).rstrip('/')
 
-	# Load and initialize DNN model
+	# Determine the GPU device and load the DNN model
 	print('Loading vocal-splitter model ...', end = ' ', flush = True)
 	device = torch.device('cpu')
 	model = nets.CascadedNet(args.n_fft)
@@ -234,7 +234,7 @@ def main(argv):
 	print('done', flush = True)
 
 	# set song_path global variable from local server
-	get_next_file()
+	get_next_file(device)
 
 	# Use RAMDISK for large temporary .wav files for speed up if available
 	RAMDIR = args.ramdir if os.path.isdir(args.ramdir) else song_path
@@ -245,7 +245,7 @@ def main(argv):
 
 	# Main loop
 	while True:
-		next_file = get_next_file()
+		next_file = get_next_file(device)
 		if not next_file:
 			time.sleep(2)
 			continue

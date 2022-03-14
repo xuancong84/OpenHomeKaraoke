@@ -135,8 +135,9 @@ def logout():
 	return resp
 
 
-@app.route("/get_vocal_todo_list")
-def get_vocal_todo_list():
+@app.route("/get_vocal_todo_list/<vocal_device>")
+def get_vocal_todo_list(vocal_device):
+	K.vocal_device = vocal_device
 	last_completed = request.headers['last_completed']
 	if last_completed in K.rename_history:
 		K.rename(last_completed, os.path.splitext(K.rename_history[last_completed])[0])
@@ -464,6 +465,9 @@ def info():
 	get_status = lambda t: "Unknown" if t is None else ("Running" if t else "Stopped")
 	screencapture = K.streamer_alive()
 	vocalsplitter = K.vocal_alive()
+	vocal_extra = ''
+	if vocalsplitter:
+		vocal_extra = ' (CPU only)' if K.vocal_device == 'cpu' else ' (GPU enabled)'
 
 	# youtube-dl
 	youtubedl_version = K.youtubedl_version
@@ -484,7 +488,7 @@ def info():
 		use_DNN = K.use_DNN_vocal,
 		pikaraoke_version = VERSION,
 		screencapture = get_status(screencapture),
-		vocalsplitter = get_status(vocalsplitter),
+		vocalsplitter = get_status(vocalsplitter) + vocal_extra,
 		platform = K.platform,
 		admin = is_admin(),
 		admin_enabled = admin_password != None
