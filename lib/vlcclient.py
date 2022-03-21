@@ -6,6 +6,7 @@ import requests
 
 from lib.get_platform import get_platform
 from types import SimpleNamespace
+from html import unescape
 
 def get_default_vlc_path(platform):
 	if platform == "osx":
@@ -58,6 +59,7 @@ class VLCClient:
 			"--extraintf", "http",
 			"--http-port", "%s" % self.port,
 			"--http-password", self.http_password,
+			"--sub-track", "0",
 			"--no-embedded-video",
 			"--no-keyboard-events",
 			"--no-mouse-events",
@@ -161,6 +163,14 @@ class VLCClient:
 			while self.process.poll() is not None:
 				pass
 
+			# wait for VLC HTTP is ready
+			while True:
+				req = self.command("", False)
+				xml = req.text
+				if req.status_code == 200:
+					break
+				time.sleep(0.1)
+
 			# workaround --volume-save not working in Windows
 			okay = False
 			while volume and not okay:
@@ -174,6 +184,7 @@ class VLCClient:
 					time.sleep(0.1)
 
 			self.is_transposing = False
+			return xml
 
 		except Exception as e:
 			logging.error("Playing file failed: " + str(e))
@@ -208,7 +219,7 @@ class VLCClient:
 		]
 
 		logging.debug("Transposing file...")
-		self.play_file(file_path, volume, params + extra_params)
+		return self.play_file(file_path, volume, params + extra_params)
 
 	def command(self, command = '', save_status=True):
 		try:
@@ -217,14 +228,14 @@ class VLCClient:
 				return SimpleNamespace(**{'text': self.last_status_text, 'status_code': 500})
 			url = self.http_command_endpoint + command
 			request = requests.get(url, auth = ("", self.http_password))
-			if self.is_transposing:
+			if self.is_transposing and save_status:
 				return SimpleNamespace(**{'text': self.last_status_text, 'status_code': request.status_code})
 			if save_status:
 				self.last_status_text = request.text
 			if not self.K.now_playing:
 				# by right, here should never be reached
 				request.encoding = 'utf-8'
-				self.K.now_playing_filename = self.get_val_xml(request.text, "info name='filename'")
+				self.K.now_playing_filename = unescape(unescape(self.get_val_xml(request.text, "info name='filename'")))
 				self.K.now_playing = self.K.filename_from_path(self.K.now_playing_filename)
 			return request
 		except:
@@ -237,12 +248,12 @@ class VLCClient:
 	def play(self):
 		return self.command("pl_play")
 
-	def get_val_xml(self, xml, key):
+	def get_val_xml(self, xml, key, end_key_str= '<'):
 		posi = xml.find(f'<{key}>')
 		if posi < 0:
 			return None
 		s = xml[posi+len(key)+2:]
-		posi = s.find('<')
+		posi = s.find(end_key_str)
 		if posi < 0:
 			return None
 		return s[:posi]
@@ -257,7 +268,30 @@ class VLCClient:
 		try:
 			if xml is None:
 				xml = self.get_status()
-			return {key: self.cast_float(self.get_val_xml(xml, key)) for key in ['position', 'length', 'volume', 'time', 'audiodelay', 'state']}
+			return {key: self.cast_float(self.get_val_xml(xml, key)) for key in ['position', 'length', 'volume', 'time', 'audiodelay', 'state', 'subtitledelay']}
+		except:
+			return {}
+
+	def parse_category(self, xml):
+		extract = lambda t: t[:min([t.find(c) for c in ['"', "'"] if c in t])]
+		try:
+			xml = xml.strip()
+			name = extract(xml[16:])
+			infos = {}
+			while '<info ' in xml:
+				p_start = xml.find('<info ')
+				p_end = xml.find('</info>')
+				s1 = extract(xml[p_start+12:])
+				infos[s1] = xml[xml.find('>', p_start)+1: p_end].strip()
+				xml = xml[p_end+7:]
+			return {name: infos}
+		except:
+			return {}
+
+	def get_stream_info(self, xml):
+		try:
+			info = self.get_val_xml(xml, 'information', '</information>').strip()
+			return {k: v for L in info.split('</category>') for k, v in self.parse_category(L).items()}
 		except:
 			return {}
 

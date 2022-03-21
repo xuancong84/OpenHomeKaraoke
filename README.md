@@ -29,6 +29,7 @@ This is the world's best open-source Python-based YouTube Karaoke system up to t
   <img width="400" alt="pikaraoke-tv1" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/TV.png">
   <img width="400" alt="pikaraoke-tv1" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/TV-web.jpg">
   <img width="400" alt="pikaraoke-tv2" src="https://user-images.githubusercontent.com/4107190/95813564-019fa200-0ccd-11eb-95e1-57a002c357a3.png">
+  <img width="400" alt="pikaraoke-sc1" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/screen.png">
 </p>
 
 ### Web interface
@@ -44,7 +45,7 @@ This is the world's best open-source Python-based YouTube Karaoke system up to t
   
 ## Supported Devices
 
-This _should_ work on all Raspberry Pi devices (multi-core models recommended) and Linux machines. @vicwomg did most development on a Pi Zero W and did as much optimization as he could handle, while I did all the revamp work on Ubuntu/Linux, Mac OS and Windows. However, certain things like concurrent downloads and browsing big song libraries might suffer. All this runs excellently on a Pi 3 and above.
+This _should_ work on Windows, Linux machines and all Raspberry Pi devices (multi-core models recommended). @vicwomg did most development on a Pi Zero W and did as much optimization as he could handle, while I did all the revamp work on Ubuntu/Linux, Mac OS and Windows. However, certain things like concurrent downloads and browsing big song libraries might suffer. All this runs excellently on Windows, Linux and RPi (3 and above).
 
 ## Installation
 

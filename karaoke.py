@@ -35,12 +35,15 @@ class Karaoke:
 	now_playing_transpose = 0
 	now_playing_slave = ''
 	audio_delay = 0
+	subtitle = False
+	subtitle_delay = 0
 	last_vocal_info = 0
 	last_vocal_time = 0
 	use_DNN_vocal = True
 	vocal_process = None
 	vocal_device = None
 	is_paused = True
+	firstSongStarted = False
 	qr_code_path = None
 	base_path = os.path.dirname(__file__)
 	volume_offset = 0
@@ -336,24 +339,21 @@ class Karaoke:
 			p_image = pygame.transform.scale(p_image, (150, 150))
 			self.screen.blit(p_image, (20, blitY - 125))
 			if not self.is_network_connected():
-				text = self.font.render(
-					"Wifi/Network not connected. Shutting down in 10s...",
-					True,
-					(255, 255, 255),
-				)
+				text = self.font.render("Wifi/Network not connected. Shutting down in 10s...", True, (255, 255, 255))
 				self.screen.blit(text, (p_image.get_width() + 35, blitY))
 				time.sleep(10)
-				logging.info(
-					"No IP found. Network/Wifi configuration required. For wifi config, try: sudo raspi-config or the desktop GUI: startx"
-				)
+				logging.info("No IP found. Network/Wifi configuration required. For wifi config, try: sudo raspi-config or the desktop GUI: startx")
 				self.stop()
 			else:
 				text = self.font.render("For selecting songs, connect at: " + self.url, True, (255, 255, 255))
 				self.screen.blit(text, (p_image.get_width() + 35, blitY))
 				# Windows and Mac-OS should use screen projection and AirPlay
-				if self.platform in ['linux', 'raspberry_pi']:
+				if self.streamer_alive():
 					text = self.font.render("For TV display, connect at: " + self.url.rsplit(":", 1)[0] + ":4000", True, (255, 255, 255))
 					self.screen.blit(text, (p_image.get_width() + 35, blitY - 40))
+				if not self.firstSongStarted and self.platform != 'osx':
+					text = self.font.render("Press F to toggle full-screen", True, (255, 255, 255))
+					self.screen.blit(text, (p_image.get_width() + 35, blitY - 80))
 
 		if not self.hide_raspiwifi_instructions and self.raspi_wifi_config_installed and self.raspi_wifi_config_ip in self.url:
 			server_port, ssid_prefix, ssl_enabled = self.get_raspi_wifi_conf_vals()
@@ -596,16 +596,19 @@ class Karaoke:
 				extra_params += [f'--input-slave={self.now_playing_slave}', '--audio-track=1']
 			if self.audio_delay:
 				extra_params += [f'--audio-desync={self.audio_delay * 1000}']
+			if self.subtitle_delay:
+				extra_params += [f'--sub-delay={self.subtitle_delay * 10}']
+			self.now_playing = self.filename_from_path(file_path)
+			self.now_playing_filename = file_path
 			if self.now_playing_transpose == 0:
-				self.vlcclient.play_file(file_path, self.volume, extra_params)
+				xml = self.vlcclient.play_file(file_path, self.volume, extra_params)
 			else:
-				self.vlcclient.play_file_transpose(file_path, self.now_playing_transpose, self.volume, extra_params)
+				xml = self.vlcclient.play_file_transpose(file_path, self.now_playing_transpose, self.volume, extra_params)
+			self.subtitle = "<info name='Type'>Subtitle</info>" in xml
 		else:
 			logging.info("Playing video in omxplayer: " + file_path)
 			self.omxclient.play_file(file_path)
 
-		self.now_playing = self.filename_from_path(file_path)
-		self.now_playing_filename = file_path
 		self.is_paused = ('--start-paused' in extra_params)
 		self.render_splash_screen()  # remove old previous track
 
@@ -626,7 +629,7 @@ class Karaoke:
 		if client is not None and client.is_running():
 			return True
 		else:
-			self.now_playing = None
+			self.now_playing = self.now_playing_filename = None
 			return False
 
 	def is_song_in_queue(self, song_path):
@@ -766,7 +769,30 @@ class Karaoke:
 			else:
 				logging.warning("OMXplayer cannot set audio delay!")
 			return self.audio_delay
-		logging.warning("Tried to seek, but no file is playing!")
+		logging.warning("Tried to set audio delay, but no file is playing!")
+		return False
+
+	def set_subtitle_delay(self, delay):
+		if delay == '+':
+			self.subtitle_delay += 0.1
+		elif delay == '-':
+			self.subtitle_delay -= 0.1
+		elif delay == '':
+			self.subtitle_delay = 0
+		else:
+			try:
+				self.subtitle_delay = float(delay)
+			except:
+				logging.warning(f"Tried to set subtitle delay to an invalid value {delay}, ignored!")
+				return False
+
+		if self.is_file_playing():
+			if self.use_vlc:
+				self.vlcclient.command(f"subdelay&val={self.subtitle_delay}")
+			else:
+				logging.warning("OMXplayer cannot set subtitle delay!")
+			return self.subtitle_delay
+		logging.warning("Tried to set subtitle delay, but no file is playing!")
 		return False
 
 	def pause(self):
@@ -951,6 +977,8 @@ class Karaoke:
 		self.now_playing_transpose = 0
 		self.now_playing_slave = ''
 		self.audio_delay = 0
+		self.subtitle_delay = 0
+		self.subtitle = False
 		self.last_vocal_info = 0
 
 	def streamer_alive(self):
@@ -1008,7 +1036,6 @@ class Karaoke:
 	def run(self):
 		logging.info("Starting PiKaraoke!")
 		self.running = True
-		isFirstSong = self.streamer_alive()
 
 		# Windows does not have tmux, vocal splitter can only be invoked from the main program
 		if self.platform == 'windows' or self.run_vocal:
@@ -1021,7 +1048,7 @@ class Karaoke:
 				if self.queue:
 					if not self.is_file_playing():
 						self.reset_now_playing()
-						if not pygame.display.get_active():
+						if self.full_screen and not pygame.display.get_active():
 							self.pygame_reset_screen()
 						self.render_splash_screen()
 						i = 0
@@ -1030,9 +1057,10 @@ class Karaoke:
 							i += self.loop_interval
 						head = self.queue.pop(0)
 						self.play_file(head["file"])
-						if isFirstSong:
-							self.streamer_restart(1)
-							isFirstSong = False
+						if not self.firstSongStarted:
+							if self.streamer_alive():
+								self.streamer_restart(1)
+							self.firstSongStarted = True
 						self.now_playing_user = head["user"]
 						self.update_queue_hash()
 				elif (self.full_screen and not pygame.display.get_active()) and not self.is_file_playing():

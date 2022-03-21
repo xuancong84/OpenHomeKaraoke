@@ -3,6 +3,7 @@
   var transpose_seeking = false;
   var seektrack_seeking = false;
   var audiodelay_typing = false;
+  var subdelay_typing = false;
   var volume_changing = false;
   var toggleSwitch;
   var obj = {};
@@ -61,8 +62,16 @@
 						$("#seektrack-max").text(getHHMMSS(obj.seektrack_max));
 					}
 
-					if(!isNaN(obj.audio_delay) && !audiodelay_typing)
+					if(obj.audio_delay!==null && !audiodelay_typing)
 						$("#delay-val").text(obj.audio_delay.toFixed(2));
+
+					if("subtitle_delay" in obj){
+						$("#subdelay-box").show();
+						if(obj.subtitle_delay!==null && !subdelay_typing)
+							$("#subdelay-val").text(obj.subtitle_delay.toFixed(1));
+					} else {
+						$("#subdelay-box").hide();
+					}
 
 					var use_DNN = obj.vocal_info&0x40;
 					s3_enable(1, use_DNN?(obj.vocal_info&1):(obj.vocal_info&4));
@@ -188,10 +197,22 @@
       if(ch=="\n" || ch=="\r") $(this).blur();
     });
 
+		$("#subdelay-val").keypress(function (e) {
+    	var ch = String.fromCharCode(e.which);
+      if(!("0123456789.-".includes(ch))) e.preventDefault();
+      if(ch=="\n" || ch=="\r") $(this).blur();
+    });
+
     $("#delay-val").blur(function () {
     	if($(this).text()=="") $(this).text("0");
     	$.get("/audio_delay/" + $(this).text());
     	audiodelay_typing=false;
+    });
+
+		$("#subdelay-val").blur(function () {
+    	if($(this).text()=="") $(this).text("0");
+    	$.get("/subtitle_delay/" + $(this).text());
+    	subdelay_typing=false;
     });
 
     $("#delay-inc").click(function () {
@@ -202,8 +223,20 @@
     	$.get("/audio_delay/-", function(data){$("#delay-val").text(parseFloat(data).toFixed(2))});
     });
 
+    $("#subdelay-inc").click(function () {
+    	$.get("/subtitle_delay/+", function(data){$("#subdelay-val").text(parseFloat(data).toFixed(1))});
+    });
+
+    $("#subdelay-dec").click(function () {
+    	$.get("/subtitle_delay/-", function(data){$("#subdelay-val").text(parseFloat(data).toFixed(1))});
+    });
+
     $("#audiodelay-info").click(function () {
       showNotification("Increasing audio delay will give you more time to read lyrics before singing out the next sentence.","is-info",8000)
+    });
+
+    $("#subdelay-info").click(function () {
+      showNotification("Decreasing subtitle delay will give you more time to read lyrics before singing out the next sentence.","is-info",8000)
     });
 
     $("#semitones-info").click(function () {
@@ -303,6 +336,15 @@ body {
       <a title="Volume Up" id="vol-up"><i class="icon icon-volume-up"></i> </a>
     </span>
 	</p>
+
+	<div id="subdelay-box">
+		<div class="is-flex" style="justify-content: space-between">
+			<h4>Subtitle Delay (sec)<a id="subdelay-info"> <i class="icon icon-info-circled-1" title="Info"></i></a>:</h4>
+			<h4 title="Decrease Subtitle Delay" id="subdelay-dec" class="tabs" style="margin:0; color:red; cursor: pointer; font-weight: bold; font-size:x-large;" >&#x2296;</h4>
+			<h4 title="Set Subtitle Delay" id="subdelay-val" class="tabs" style="padding-top:2px; margin:0; cursor: pointer" contenteditable="true" onfocus="subdelay_typing=true">0</h4>
+			<h4 title="Increase Subtitle Delay" id="subdelay-inc" class="tabs" style="margin:0; color:green; cursor: pointer; font-weight:bold;font-size:x-large;" >&#x2295;</h4>
+		</div>
+	</div>
 
 	<div class="is-flex" style="justify-content: space-between">
 		<h4>Audio Delay (sec)<a id="audiodelay-info"> <i class="icon icon-info-circled-1" title="Info"></i></a>:</h4>

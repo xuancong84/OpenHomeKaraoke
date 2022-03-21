@@ -100,6 +100,8 @@ def nowplaying():
 			"audio_delay": s['audiodelay'],
 			"vocal_info": K.get_vocal_info()
 		}
+		if K.subtitle:
+			rc['subtitle_delay'] = s['subtitledelay']
 		return json.dumps(rc)
 	except Exception as e:
 		logging.error(f"Problem loading /nowplaying, pikaraoke may still be starting up: {e}\n{traceback.print_exc()}")
@@ -268,6 +270,12 @@ def seek(goto_sec):
 @app.route("/audio_delay/<delay_val>", methods = ["GET"])
 def audio_delay(delay_val):
 	res = K.set_audio_delay(delay_val)
+	return json.dumps(res)
+
+
+@app.route("/subtitle_delay/<delay_val>", methods = ["GET"])
+def subtitle_delay(delay_val):
+	res = K.set_subtitle_delay(delay_val)
 	return json.dumps(res)
 
 
