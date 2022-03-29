@@ -353,6 +353,8 @@ class Karaoke:
 					self.screen.blit(text, (p_image.get_width() + 35, blitY - 40))
 				if not self.firstSongStarted and self.platform != 'osx':
 					text = self.font.render("Press F to toggle full-screen", True, (255, 255, 255))
+					self.screen.blit(text, (p_image.get_width() + 35, blitY - 120))
+					text = self.font.render("Press ESC to quit PiKaraoke", True, (255, 255, 255))
 					self.screen.blit(text, (p_image.get_width() + 35, blitY - 80))
 
 		if not self.hide_raspiwifi_instructions and self.raspi_wifi_config_installed and self.raspi_wifi_config_ip in self.url:
@@ -1005,8 +1007,8 @@ class Karaoke:
 
 	def vocal_alive(self):
 		try:
-			return bool([1 for p in psutil.process_iter() if 'vocal_splitter.py' in p.cmdline()]) \
-			                or bool(self.vocal_process and self.vocal_process.is_alive())
+			return bool(self.vocal_process and self.vocal_process.is_alive())\
+					or bool([1 for p in psutil.process_iter() if 'vocal_splitter.py' in p.cmdline()])
 		except:
 			return None
 

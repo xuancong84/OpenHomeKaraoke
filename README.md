@@ -19,6 +19,7 @@ This is the world's best open-source Python-based YouTube Karaoke system up to t
 - Lock down features with admin mode
 - Seek to play position (you can practice singing a specific sentence over and over again)
 - Audio delay adjustment (YouTube MTVs often have synchronized lyrics, this makes singing difficult as there is not enough time to look at the lyrics)
+- Subtitle delay adjustment for easier singing (subtitle control will be displayed only if the currently-playing media file contains subtitle tracks)
 - Support song titles in all languages (including Chinese/Japanese/Arabic/Greek/Korean/Vietnamese/Hindi/etc.), filenames containing non-English characters are sorted according to their English transliteration
 
 ## Screenshots
