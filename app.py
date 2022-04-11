@@ -100,7 +100,7 @@ def nowplaying():
 			"audio_delay": s['audiodelay'],
 			"vocal_info": K.get_vocal_info()
 		}
-		if K.subtitle:
+		if K.has_subtitle:
 			rc['subtitle_delay'] = s['subtitledelay']
 		return json.dumps(rc)
 	except Exception as e:

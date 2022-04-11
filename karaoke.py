@@ -35,7 +35,8 @@ class Karaoke:
 	now_playing_transpose = 0
 	now_playing_slave = ''
 	audio_delay = 0
-	subtitle = False
+	has_video = True
+	has_subtitle = False
 	subtitle_delay = 0
 	last_vocal_info = 0
 	last_vocal_time = 0
@@ -383,6 +384,13 @@ class Karaoke:
 			render_next_user = self.render_font([50, 40, 30], f"Added by: {next_user}", (0, 240, 0))
 			self.screen.blit(render_next_song[0], (width - render_next_song[1].width - 10, 10))
 			self.screen.blit(render_next_user[0], (width - render_next_user[1].width - 10, 80))
+		elif not self.has_video:
+			logging.debug("Rendering current song to splash screen")
+			width = self.screen.get_width()
+			render_next_song = self.render_font([60, 50, 40], f"Now playing: {self.now_playing}", (255, 255, 0))
+			render_next_user = self.render_font([50, 40, 30], f"Added by: {self.now_playing_user}", (0, 240, 0))
+			self.screen.blit(render_next_song[0], (width - render_next_song[1].width - 10, 10))
+			self.screen.blit(render_next_user[0], (width - render_next_user[1].width - 10, 80))
 
 	def render_font(self, sizes, text, *kargs):
 		if type(sizes) != list:
@@ -606,7 +614,8 @@ class Karaoke:
 				xml = self.vlcclient.play_file(file_path, self.volume, extra_params)
 			else:
 				xml = self.vlcclient.play_file_transpose(file_path, self.now_playing_transpose, self.volume, extra_params)
-			self.subtitle = "<info name='Type'>Subtitle</info>" in xml
+			self.has_subtitle = "<info name='Type'>Subtitle</info>" in xml
+			self.has_video = "<info name='Type'>Video</info>" in xml
 		else:
 			logging.info("Playing video in omxplayer: " + file_path)
 			self.omxclient.play_file(file_path)
@@ -957,7 +966,7 @@ class Karaoke:
 					if self.platform != 'osx':
 						self.screen = pygame.display.set_mode((event.w, event.h),
 					            self.get_default_display_mode() if self.full_screen else pygame.RESIZABLE)
-			if not self.is_file_playing():
+			if not self.is_file_playing() or not self.has_video:
 				self.render_splash_screen()
 				pygame.display.update()
 			pygame.time.wait(self.loop_interval)
@@ -980,7 +989,8 @@ class Karaoke:
 		self.now_playing_slave = ''
 		self.audio_delay = 0
 		self.subtitle_delay = 0
-		self.subtitle = False
+		self.has_subtitle = False
+		self.has_video = True
 		self.last_vocal_info = 0
 
 	def streamer_alive(self):
