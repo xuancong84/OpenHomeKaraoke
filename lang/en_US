@@ -1,0 +1,181 @@
+Admin mode granted!
+Incorrect admin password!
+Logged out of admin mode!
+Added %s random tracks
+Ran out of songs!
+Cleared the queue!
+Error moving item inside queue: invalid-argument
+Successfully moved item inside queue:
+Error moving item inside queue:
+Moved down in queue:
+Error moving down in queue:
+Moved up in queue:
+Error moving up in queue:
+Deleted from queue:
+Error deleting from queue:
+Download started:
+Upon completion, it will be added to queue.
+Upon completion, it will appear in the "available songs" list.
+Error: Can't delete this song because it is in the current queue:
+Song deleted:
+Error: No song parameter specified!
+Error: Can't edit this song because it is currently being played:
+Song File Edit
+Error Renaming file: '%s' to '%s'. Filename already exists.
+Renamed file: '%s' to '%s'
+Error: No filename parameters were specified!
+Unknown
+Running
+Stopped
+ (CPU only)
+ (GPU enabled)
+Updating youtube-dl! Should take a minute or two... 
+You don't have permission to update youtube-dl
+You don't have permission to shut down
+Quitting PiKaraoke now!
+You don't have permission to quit
+Shutting down system now!
+You don't have permission to shut down
+Rebooting system now!
+You don't have permission to Reboot
+Expanding filesystem and rebooting system now!
+Cannot expand fs on non-raspberry pi devices!
+You don't have permission to resize the filesystem
+Youtube-dl path not found! 
+VLC path not found! 
+omxplayer path not found! 
+Creating download path: 
+Wifi/Network not connected. Shutting down in 10s...
+For selecting songs, scan QR or connect to 
+For TV display, connect to 
+Press F to toggle full-screen
+Press ESC to quit PiKaraoke
+RaspiWifiConfig setup mode detected!
+Connect another device/smartphone to the Wifi AP: '%s'
+Then point its browser to: '%s://%s%s' and follow the instructions.
+Up next: 
+Added by: 
+Now playing: 
+Added by: 
+Increasing audio delay will give you more time to read lyrics before singing out the next sentence.
+Decreasing subtitle delay will give you more time to read lyrics before singing out the next sentence.
+A semitone is also known as a half-step. It is the smallest interval used in classical Western music, equal to a twelfth of an octave or half a tone.
+DNN-based vocal splitter is enabled. PiKaraoke uses PyTorch (by Facebook) to run a deep neural network to split instrumental and vocal sound in each track giving rise to stereo sound.
+Player Control
+Music
+Both
+Voice
+Change Key
+Nothing is playing right now.
+No song is queued.
+This song is not added by you. Are you sure you want to restart this track?
+This song is not added by you. Are you sure you want to skip this track?
+Player Control
+Now Playing
+Next Song
+Seek To:
+Audio Delay (sec)
+Subtitle Delay (sec)
+Restart Song
+Play/Pause
+Stop Current Song
+Volume Down
+Set Volume
+Volume Up
+Decrease Subtitle Delay
+Set Subtitle Delay
+Increase Subtitle Delay
+Decrease Audio Delay
+Set Audio Delay
+Increase Audio Delay
+ semitones
+Please enter your name. This will show up next to the songs you queue up from this device.
+Song added to the queue: 
+Song already the queue: 
+Sort by Date
+Sort by Alphabetical
+Add '%s' to the queue
+Browse
+Sorted by 'Date'
+Sorted by 'Alphabetical'
+songs
+displaying <b>{start} - {end}</b> {record_name}, in total <b>{total}</b> {record_name}
+found <b>{found}</b> {record_name}, displaying <b>{start} - {end}</b> {record_name}
+Edit song
+Move up in queue
+Move down in queue
+Are you sure you want to delete from the queue
+Are you sure you want to clear the ENTIRE queue? Type 'OK' to continue
+Add 3 random songs
+Clear all
+The queue is empty
+Queue
+Delete
+Available songs in local library
+Added song to queue:
+Song is already in the queue:
+Search / Add New
+Search
+Queue
+Include non-karaoke matches
+Advanced
+Type a song (title/artist) to search the available songs and click 'Queue' to add it to the queue.
+If the song doesn't appear in the "Available Songs" dropdown, click 'Search' to find it on Youtube.
+Direct download YouTube url:
+Add to queue
+Include subtitles
+Download
+Searching YouTube for
+Search results for
+Click dropdown to show more results
+Link:
+Available Songs
+Do you want to change the name of the person using this device? This will show up on queued songs. Current:
+Current user
+Info
+PiKaraoke
+Are you sure you want to quit?
+Are you sure you want to shut down?
+Are you sure you want to reboot?
+Are you sure you want to update Youtube-dl right now? Current and pending downloads may fail.
+Are you sure you want to expand the filesystem? This will reboot your raspberry pi.
+Information
+Handy URL QR code to share with a pal:
+OS
+Disk Usage
+Memory
+Screen Capture
+Vocal Splitter
+Youtube-dl (yt-dlp) version
+PiKaraoke version
+Advanced Control Options
+Vocal splitter mode:
+Use L-R/L+R
+Use DNN
+Standard MTV audio has the two stereo channels (L and R) encoded in such a way that: L-R is the instrument track, L+R is the vocal track. Thus, by simply subtracting or adding the two stereo channels, we can get the instrumental and vocal track in mono sound. PiKaraoke's built-in DNN-based (deep neural network) vocal splitter uses AI algorithm to split instrumental and vocal sound in each stereo track independently resulting in stereo instrumental and vocal tracks.
+Stop Splitter
+Restart Splitter
+The vocal splitter (that supports both DNN-based and stereo subtraction) runs as a separate process in the background, generating instrumental/vocal audio file for every song.
+Re-synchronize audio and video:
+Stop Streamer
+Restart Streamer
+This only affects playing KTV via web browser. Restarting the screen-capture-and-streaming improves audio/video synchronization, it also decreases the latency between the server and browser.
+Refresh the song list:
+Rescan song directory
+You should only need to do this if you manually copied files to the download directory while PiKaraoke was running.
+Updates
+If downloads or searches stopped working, updating youtube-dl will probably fix it. The current installed version is:
+Update youtube-dl
+This update link above may fail if you don't have proper file permissions. Check the PiKaraoke log for errors.
+Shutdown
+Don't just pull the plug! Always shut down your server properly to avoid data corruption.
+Quit PiKaraoke
+Reboot System
+Shutdown System
+Other
+Expand Raspberry Pi filesystem
+If you just installed the pre-built pikaraoke pi image and your SD card is larger than 4GB, you may want to expand the filesystem to utilize the remaining space. You only need to do this once. This will reboot the system.
+Disable admin mode
+Enable admin mode
+log out
+log in

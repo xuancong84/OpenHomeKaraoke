@@ -1,0 +1,181 @@
+Mode administrateur accordé !
+Mot de passe administrateur incorrect !
+Déconnecté du mode administrateur !
+%s pistes aléatoires ajoutées
+À court de chansons !
+Effacé la file d'attente !
+Erreur lors du déplacement de l'élément dans la file d'attente : argument invalide
+Élément déplacé avec succès dans la file d'attente :
+Erreur lors du déplacement de l'élément dans la file d'attente :
+Descendu dans la file d'attente :
+Erreur lors du déplacement vers le bas dans la file d'attente :
+Remonté dans la file d'attente :
+Erreur lors du déplacement vers le haut dans la file d'attente :
+Supprimé de la file d'attente :
+Erreur lors de la suppression de la file d'attente :
+Le téléchargement a commencé :
+Une fois terminé, il sera ajouté à la file d'attente.
+Une fois terminé, il apparaîtra dans la liste des "chansons disponibles".
+Erreur : Impossible de supprimer ce morceau, car il se trouve dans la file d'attente actuelle :
+Morceau supprimé :
+Erreur : Aucun paramètre de morceau spécifié !
+Erreur : Impossible de modifier ce morceau, car il est en cours de lecture :
+Édition de fichier de morceau
+Erreur lors du renommage du fichier : '%s' en '%s'. Le nom de fichier existe déjà.
+Fichier renommé : '%s' en '%s'
+Erreur : Aucun paramètre de nom de fichier n'a été spécifié !
+Inconnue
+Fonctionnement
+Arrêté
+ (UC uniquement)
+ (GPU activé)
+Mise à jour de youtube-dl ! Cela devrait prendre une minute ou deux...
+Vous n'êtes pas autorisé à mettre à jour youtube-dl
+Vous n'êtes pas autorisé à fermer
+Quittez PiKaraoke maintenant !
+Vous n'êtes pas autorisé à quitter
+Arrêter le système maintenant !
+Vous n'êtes pas autorisé à fermer
+Redémarrage du système maintenant !
+Vous n'êtes pas autorisé à redémarrer
+Extension du système de fichiers et redémarrage du système maintenant !
+Impossible d'étendre fs sur des appareils autres que Raspberry Pi !
+Vous n'êtes pas autorisé à redimensionner le système de fichiers
+Chemin Youtube-dl introuvable !
+Chemin VLC introuvable !
+Chemin omxplayer introuvable !
+Création du chemin de téléchargement :
+Wifi/Réseau non connecté. Fermeture dans 10s...
+Pour sélectionner des chansons, scannez QR ou connectez-vous à
+Pour l'affichage TV, connectez-vous à
+Appuyez sur F pour basculer en plein écran
+Appuyez sur ESC pour quitter PiKaraoke
+Mode de configuration RaspiWifiConfig détecté !
+Connectez un autre appareil/smartphone au point d'accès Wifi : '%s'
+Pointez ensuite son navigateur vers : '%s://%s%s' et suivez les instructions.
+Suivant:
+Ajouté par:
+Lecture en cours:
+Ajouté par:
+L'augmentation du délai audio vous donnera plus de temps pour lire les paroles avant de chanter la phrase suivante.
+La diminution du délai des sous-titres vous donnera plus de temps pour lire les paroles avant de chanter la phrase suivante.
+Un demi-ton est également appelé demi-ton. C'est le plus petit intervalle utilisé dans la musique occidentale classique, égal à un douzième d'octave ou à un demi-ton.
+Le séparateur vocal basé sur DNN est activé. PiKaraoke utilise PyTorch (par Facebook) pour exécuter un réseau de neurones profond pour séparer le son instrumental et vocal dans chaque piste donnant lieu à un son stéréo.
+Contrôle du joueur
+Musique
+Tous les deux
+Voix
+Changer de clé
+Rien ne joue en ce moment.
+Aucune chanson n'est en file d'attente.
+Cette chanson n'est pas ajoutée par vous. Voulez-vous vraiment redémarrer cette piste ?
+Cette chanson n'est pas ajoutée par vous. Voulez-vous vraiment ignorer cette piste ?
+Contrôle du joueur
+Lecture en cours
+Prochaine chanson
+Chercher à:
+Délai audio (sec)
+Délai de sous-titre (sec)
+Redémarrer la chanson
+Jouer pause
+Arrêter la chanson en cours
+Baisser le volume
+Régler le volume
+Monter le son
+Diminuer le délai des sous-titres
+Définir le délai des sous-titres
+Augmenter le délai des sous-titres
+Diminuer le délai audio
+Définir le délai audio
+Augmenter le délai audio
+ demi-tons
+S'il vous plaît entrez votre nom. Cela s'affichera à côté des chansons que vous avez mises en file d'attente à partir de cet appareil.
+Chanson ajoutée à la file d'attente :
+Chanson déjà dans la file d'attente :
+Trier par date
+Trier par ordre alphabétique
+Ajouter '%s' à la file d'attente
+Parcourir
+Trié par 'Date'
+Trié par 'Alphabétique'
+Chansons
+affichant <b>{start} - {end}</b> {record_name}, au total <b>{total}</b> {record_name}
+trouvé <b>{found}</b> {record_name}, affichant <b>{start} - {end}</b> {record_name}
+Modifier la chanson
+Monter dans la file d'attente
+Descendre dans la file d'attente
+Êtes-vous sûr de vouloir supprimer de la file d'attente
+Voulez-vous vraiment effacer TOUTE la file d'attente ? Tapez 'OK' pour continuer
+Ajouter 3 chansons au hasard
+Tout effacer
+La file d'attente est vide
+File d'attente
+Supprimer
+Chansons disponibles dans la bibliothèque locale
+Chanson ajoutée à la file d'attente :
+Le morceau est déjà dans la file d'attente :
+Rechercher / Ajouter nouveau
+Recherche
+File d'attente
+Inclure les matchs non karaoké
+Avancé
+Tapez une chanson (titre/artiste) pour rechercher les chansons disponibles et cliquez sur "File d'attente" pour l'ajouter à la file d'attente.
+Si la chanson n'apparaît pas dans la liste déroulante « Chansons disponibles », cliquez sur « Rechercher » pour la trouver sur Youtube.
+URL YouTube de téléchargement direct :
+Ajouter à la liste
+Inclure les sous-titres
+Télécharger
+Recherche YouTube pour
+Résultats de recherche pour
+Cliquez sur la liste déroulante pour afficher plus de résultats
+Lien:
+Chansons disponibles
+Voulez-vous modifier le nom de la personne qui utilise cet appareil ? Cela apparaîtra sur les chansons en file d'attente. Courant:
+Utilisateur actuel
+Info
+PiKaraoké
+Êtes-vous sûr de vouloir quitter?
+Voulez-vous vraiment arrêter ?
+Voulez-vous vraiment redémarrer ?
+Êtes-vous sûr de vouloir mettre à jour Youtube-dl maintenant ? Les téléchargements en cours et en attente peuvent échouer.
+Voulez-vous vraiment étendre le système de fichiers ? Cela va redémarrer votre raspberry pi.
+Information
+Code QR d'URL pratique à partager avec un ami :
+SE
+Utilisation du disque
+Mémoire
+Capture d'écran
+Séparateur de voix
+Version Youtube-dl (yt-dlp)
+Version PiKaraoké
+Options de contrôle avancées
+Mode répartiteur vocal :
+Utilisez L-R/L+R
+Utiliser le DNN
+L'audio MTV standard a les deux canaux stéréo (L et R) codés de telle sorte que : L-R est la piste d'instrument, L+R est la piste vocale. Ainsi, en soustrayant ou en ajoutant simplement les deux canaux stéréo, on peut obtenir la piste instrumentale et vocale en son mono. Intégré de PiKaraoke Le séparateur vocal basé sur DNN (réseau de neurones profonds) utilise un algorithme d'intelligence artificielle pour séparer le son instrumental et vocal dans chaque piste stéréo indépendamment, ce qui donne des pistes instrumentales et vocales stéréo.
+Arrêter le séparateur
+Redémarrer le séparateur
+Le séparateur vocal (qui prend en charge à la fois la soustraction basée sur DNN et la soustraction stéréo) fonctionne comme un processus séparé en arrière-plan, générant un fichier audio instrumental/vocal pour chaque chanson.
+Resynchronisez l'audio et la vidéo :
+Arrêter le streamer
+Redémarrer le streamer
+Cela n'affecte que la lecture de KTV via un navigateur Web. Le redémarrage de la capture d'écran et du streaming améliore la synchronisation audio/vidéo, il diminue également la latence entre le serveur et le navigateur.
+Actualisez la liste des chansons :
+Réanalyser le répertoire de chansons
+Vous ne devriez avoir à le faire que si vous avez copié manuellement des fichiers dans le répertoire de téléchargement pendant que PiKaraoke était en cours d'exécution.
+Mises à jour
+Si les téléchargements ou les recherches ont cessé de fonctionner, la mise à jour de youtube-dl résoudra probablement le problème. La version actuellement installée est :
+Mettre à jour youtube-dl
+Ce lien de mise à jour ci-dessus peut échouer si vous ne disposez pas des autorisations de fichier appropriées. Vérifiez le journal PiKaraoke pour les erreurs.
+Fermer
+Ne vous contentez pas de débrancher la prise ! Éteignez toujours votre serveur correctement pour éviter la corruption des données.
+Quitter PiKaraoké
+Redémarrer le système
+Système d'arrêt
+Autre
+Développer le système de fichiers Raspberry Pi
+Si vous venez d'installer l'image pikaraoke pi pré-construite et que votre carte SD est supérieure à 4 Go, vous souhaiterez peut-être étendre le système de fichiers pour utiliser l'espace restant. Vous n'avez besoin de le faire qu'une seule fois. Cela redémarrera le système.
+Désactiver le mode administrateur
+Activer le mode administrateur
+Se déconnecter
+connexion

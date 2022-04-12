@@ -3,6 +3,7 @@
 import argparse
 import datetime
 import json
+import locale
 import logging
 import os
 import shutil
@@ -23,6 +24,7 @@ from flask_paginate import Pagination, get_page_parameter
 
 import karaoke
 from constants import VERSION
+from collections import defaultdict
 from lib.get_platform import get_platform
 from lib.vlcclient import get_default_vlc_path
 
@@ -35,6 +37,14 @@ app = Flask(__name__)
 app.secret_key = os.urandom(24)
 site_name = "PiKaraoke"
 admin_password = None
+os.texts = defaultdict(lambda: "")
+getString = getString1 = lambda ii: os.texts[ii]
+
+
+# Define global symbols for Jinja templates 
+@app.context_processor
+def inject_stage_and_region():
+	return {'getString': getString, 'getString1': getString}
 
 
 def filename_from_path(file_path, remove_youtube_id = True):
@@ -51,6 +61,24 @@ def filename_from_path(file_path, remove_youtube_id = True):
 
 def url_escape(filename):
 	return quote(filename.encode("utf8"))
+
+
+def setLang(lang):
+	set_if_exist = lambda t: f'lang/{t}' if os.path.isfile(f'lang/{t}') else None
+	fn = set_if_exist(lang)
+	if not fn:
+		fn = set_if_exist(lang.split("_")[0])
+	if not fn:
+		prefix = lang.split("_")[0]
+		for f in os.listdir("lang"):
+			if f.startswith(prefix):
+				fn = f'lang/{f}'
+				break
+	if not fn:
+		fn = 'lang/en_US'
+	if not os.path.isfile(fn):
+		raise Exception(f"Language file {fn} not found")
+	os.texts.update({ii: L for ii, L in enumerate([fn] + open(fn, 'rt').read().splitlines())})
 
 
 def is_admin():
@@ -77,7 +105,7 @@ def home():
 		seektrack_value = s['time'],
 		seektrack_max = s['length'],
 		audio_delay = s['audiodelay'],
-		vocal_info = K.get_vocal_info()
+		vocal_info = K.get_vocal_info(),
 	)
 
 
@@ -117,10 +145,10 @@ def auth():
 		expire_date = datetime.datetime.now()
 		expire_date = expire_date + datetime.timedelta(days = 90)
 		resp.set_cookie('admin', admin_password, expires = expire_date)
-		flash("Admin mode granted!", "is-success")
+		flash(getString(1), "is-success")
 	else:
 		resp = make_response(redirect(url_for('login')))
-		flash("Incorrect admin password!", "is-danger")
+		flash(getString(2), "is-danger")
 	return resp
 
 
@@ -133,7 +161,7 @@ def login():
 def logout():
 	resp = make_response(redirect('/'))
 	resp.set_cookie('admin', '')
-	flash("Logged out of admin mode!", "is-success")
+	flash(getString(3), "is-success")
 	return resp
 
 
@@ -170,9 +198,9 @@ def add_random():
 	amount = int(request.args["amount"])
 	rc = K.queue_add_random(amount)
 	if rc:
-		flash("Added %s random tracks" % amount, "is-success")
+		flash(getString(4) % amount, "is-success")
 	else:
-		flash("Ran out of songs!", "is-warning")
+		flash(getString(5), "is-warning")
 	return redirect(url_for("queue"))
 
 
@@ -181,7 +209,7 @@ def queue_edit():
 	action = request.args["action"]
 	if action == "clear":
 		K.queue_clear()
-		flash("Cleared the queue!", "is-warning")
+		flash(getString(6), "is-warning")
 		return redirect(url_for("queue"))
 	elif action == "move":
 		try:
@@ -189,34 +217,34 @@ def queue_edit():
 			id_to = request.args['to']
 			id_size = request.args['size']
 		except:
-			flash("Error moving item inside queue: invalid-argument")
+			flash(getString(7))
 
 		result = K.queue_edit(None, "move", src=id_from, tgt=id_to, size=id_size)
 		if result:
-			flash(f"Moved item inside queue {id_from}->{id_to}/{id_size} : is-success")
+			flash(f"{getString(8)} {id_from}->{id_to}/{id_size}")
 		else:
-			flash(f"Error moving item inside queue {id_from}->{id_to}/{id_size}: is-danger")
+			flash(f"{getString(9)} {id_from}->{id_to}/{id_size}")
 	else:
 		song = request.args["song"]
 		song = unquote(song)
 		if action == "down":
 			result = K.queue_edit(song, "down")
 			if result:
-				flash("Moved down in queue: " + song, "is-success")
+				flash(getString(10) + song, "is-success")
 			else:
-				flash("Error moving down in queue: " + song, "is-danger")
+				flash(getString(11) + song, "is-danger")
 		elif action == "up":
 			result = K.queue_edit(song, "up")
 			if result:
-				flash("Moved up in queue: " + song, "is-success")
+				flash(getString(12) + song, "is-success")
 			else:
-				flash("Error moving up in queue: " + song, "is-danger")
+				flash(getString(13) + song, "is-danger")
 		elif action == "delete":
 			result = K.queue_edit(song, "delete")
 			if result:
-				flash("Deleted from queue: " + song, "is-success")
+				flash(getString(14) + song, "is-success")
 			else:
-				flash("Error deleting from queue: " + song, "is-danger")
+				flash(getString(15) + song, "is-danger")
 	return redirect(url_for("queue"))
 
 
@@ -356,21 +384,24 @@ def browse():
 		songs = sorted(available_songs, key = lambda x: os.path.getctime(x))
 		songs.reverse()
 		sort_order = "Date"
+		sort_order_text = getString1(99)
 	else:
 		songs = available_songs
 		sort_order = "Alphabetical"
+		sort_order_text = getString1(100)
 
 	results_per_page = 500
-	pagination = Pagination(css_framework = 'bulma', page = page, total = len(songs), search = search,
-	                        record_name = 'songs', per_page = results_per_page)
+	pagination = Pagination(css_framework = 'bulma', page = page, total = len(songs), search = search, search_msg = getString1(103),
+	                        record_name = getString1(101), display_msg = getString1(102), per_page = results_per_page)
 	start_index = (page - 1) * (results_per_page - 1)
 	return render_template(
 		"files.html",
 		pagination = pagination,
 		sort_order = sort_order,
+		sort_order_text = sort_order_text,
 		site_title = site_name,
 		letter = letter,
-		title = "Browse",
+		title = getString1(98),
 		songs = songs[start_index:start_index + results_per_page],
 		admin = is_admin()
 	)
@@ -388,8 +419,7 @@ def download():
 	t.daemon = True
 	t.start()
 
-	flash(f'Download started: "{d["song_url"]}" .\n Upon completion, '
-	      + ('it will be added to queue.' if enqueue else 'it will appear in the "available songs" list.'), "is-info")
+	flash(getString(16) + d["song_url"] + '\n' + getString(17 if enqueue else 18), "is-info")
 	return redirect(url_for("search"))
 
 
@@ -399,32 +429,32 @@ def qrcode():
 
 @app.route("/logo")
 def logo():
-    return send_file(k.logo_path, mimetype="image/png")
+	return send_file(K.logo_path, mimetype="image/png")
 
 @app.route("/files/delete", methods = ["GET"])
 def delete_file():
 	if "song" in request.args:
 		song_path = request.args["song"]
 		if K.is_song_in_queue(song_path):
-			flash("Error: Can't delete this song because it is in the current queue: " + song_path, "is-danger")
+			flash(getString(19) + song_path, "is-danger")
 		else:
 			K.delete(song_path)
-			flash("Song deleted: " + song_path, "is-warning")
+			flash(getString(20) + song_path, "is-warning")
 	else:
-		flash("Error: No song parameter specified!", "is-danger")
+		flash(getString(21), "is-danger")
 	return redirect(url_for("browse"))
 
 
 @app.route("/files/edit", methods = ["GET", "POST"])
 def edit_file():
-	queue_error_msg = "Error: Can't edit this song because it is currently being played: "
+	queue_error_msg = getString(22)
 	if "song" in request.args:
 		song_path = request.args["song"]
 		if song_path == K.now_playing_filename:
 			flash(queue_error_msg + song_path, "is-danger")
 			return redirect(url_for("browse"))
 		else:
-			return render_template("edit.html", site_title = site_name, title = "Song File Edit", song = song_path.encode("utf-8"))
+			return render_template("edit.html", site_title = site_name, title = getString(23), song = song_path.encode("utf-8"))
 	else:
 		d = request.form.to_dict()
 		if "new_file_name" in d and "old_file_name" in d:
@@ -436,28 +466,21 @@ def edit_file():
 				# check if new_name already exist
 				file_extension = os.path.splitext(old_name)[1]
 				if os.path.isfile(os.path.join(K.download_path, new_name + file_extension)):
-					flash(
-						"Error Renaming file: '%s' to '%s'. Filename already exists."
-						% (old_name, new_name + file_extension),
-						"is-danger",
-					)
+					flash(getString(24) % (old_name, new_name + file_extension), "is-danger")
 				else:
 					K.rename(old_name, new_name)
-					flash(
-						"Renamed file: '%s' to '%s'." % (old_name, new_name),
-						"is-warning",
-					)
+					flash(getString(25) % (old_name, new_name), "is-warning")
 		else:
-			flash("Error: No filename parameters were specified!", "is-danger")
+			flash(getString(26), "is-danger")
 		return redirect(url_for("browse"))
 
 @app.route("/splash")
 def splash():
-    return render_template(
-        "splash.html",
-        blank_page=True,
-        url="http://" + request.host
-    )
+	return render_template(
+		"splash.html",
+		blank_page=True,
+		url="http://" + request.host
+	)
 
 @app.route("/info")
 def info():
@@ -480,12 +503,12 @@ def info():
 	disk = str(free) + "GB free / " + str(total) + "GB total ( " + str(disk.percent) + "% )"
 
 	# whether screencapture.sh and vocal_splitter.py is running
-	get_status = lambda t: "Unknown" if t is None else ("Running" if t else "Stopped")
+	get_status = lambda t: getString(27) if t is None else (getString(28) if t else getString(29))
 	screencapture = K.streamer_alive()
 	vocalsplitter = K.vocal_alive()
 	vocal_extra = ''
 	if vocalsplitter:
-		vocal_extra = ' (CPU only)' if K.vocal_device == 'cpu' else ' (GPU enabled)'
+		vocal_extra = getString(30) if K.vocal_device == 'cpu' else getString(31)
 
 	# youtube-dl
 	youtubedl_version = K.youtubedl_version
@@ -542,14 +565,11 @@ def update_youtube_dl():
 @app.route("/update_ytdl")
 def update_ytdl():
 	if (is_admin()):
-		flash(
-			"Updating youtube-dl! Should take a minute or two... ",
-			"is-warning",
-		)
+		flash(getString(32), "is-warning")
 		th = threading.Thread(target = update_youtube_dl)
 		th.start()
 	else:
-		flash("You don't have permission to update youtube-dl", "is-danger")
+		flash(getString(33), "is-danger")
 	return redirect(url_for("home"))
 
 
@@ -558,7 +578,7 @@ def refresh():
 	if (is_admin()):
 		K.get_available_songs()
 	else:
-		flash("You don't have permission to shut down", "is-danger")
+		flash(getString(34), "is-danger")
 	return redirect(url_for("browse"))
 
 
@@ -578,46 +598,46 @@ def bg_process(cmd):
 @app.route("/quit")
 def quit():
 	if (is_admin()):
-		flash("Quitting pikaraoke now!", "is-warning")
+		flash(getString(35), "is-warning")
 		th = threading.Thread(target = delayed_halt, args = [0])
 		th.start()
 	else:
-		flash("You don't have permission to quit", "is-danger")
+		flash(getString(36), "is-danger")
 	return redirect(url_for("home"))
 
 
 @app.route("/shutdown")
 def shutdown():
 	if (is_admin()):
-		flash("Shutting down system now!", "is-danger")
+		flash(getString(37), "is-danger")
 		th = threading.Thread(target = delayed_halt, args = [1])
 		th.start()
 	else:
-		flash("You don't have permission to shut down", "is-danger")
+		flash(getString(38), "is-danger")
 	return redirect(url_for("home"))
 
 
 @app.route("/reboot")
 def reboot():
 	if (is_admin()):
-		flash("Rebooting system now!", "is-danger")
+		flash(getString(39), "is-danger")
 		th = threading.Thread(target = delayed_halt, args = [2])
 		th.start()
 	else:
-		flash("You don't have permission to Reboot", "is-danger")
+		flash(getString(40), "is-danger")
 	return redirect(url_for("home"))
 
 
 @app.route("/expand_fs")
 def expand_fs():
 	if (is_admin() and platform == "raspberry_pi"):
-		flash("Expanding filesystem and rebooting system now!", "is-danger")
+		flash(getString(41), "is-danger")
 		th = threading.Thread(target = delayed_halt, args = [3])
 		th.start()
 	elif (platform != "raspberry_pi"):
-		flash("Cannot expand fs on non-raspberry pi devices!", "is-danger")
+		flash(getString(42), "is-danger")
 	else:
-		flash("You don't have permission to resize the filesystem", "is-danger")
+		flash(getString(43), "is-danger")
 	return redirect(url_for("home"))
 
 
@@ -695,37 +715,35 @@ if __name__ == "__main__":
 	parser.add_argument(
 		"-p",
 		"--port",
-		help = "Desired http port (default: %d)" % default_port,
+		help = f"Desired http port (default: {default_port})",
 		default = default_port,
 		required = False,
 	)
 	parser.add_argument(
 		"-d",
 		"--download-path",
-		help = "Desired path for downloaded songs. (default: %s)" % default_dl_dir,
+		help = f"Desired path for downloaded songs. (default: {default_dl_dir})",
 		default = default_dl_dir,
 		required = False,
 	)
 	parser.add_argument(
 		"-o",
 		"--omxplayer-path",
-		help = "Path of omxplayer. Only important to raspberry pi hardware. (default: %s)"
-		       % default_omxplayer_path,
+		help = f"Path of omxplayer. Only important to raspberry pi hardware. (default: {default_omxplayer_path})",
 		default = default_omxplayer_path,
 		required = False,
 	)
 	parser.add_argument(
 		"-y",
 		"--youtubedl-path",
-		help = "Path of youtube-dl. (default: %s)" % default_youtubedl_path,
+		help = f"Path of youtube-dl. (default: {default_youtubedl_path})",
 		default = default_youtubedl_path,
 		required = False,
 	)
 	parser.add_argument(
 		"-v",
 		"--volume",
-		help = "If using omxplayer, the initial player volume is specified in millibels. Negative values ok. (default: %s , Note: 100 millibels = 1 decibel)."
-		       % default_volume,
+		help = f"If using omxplayer, the initial player volume is specified in millibels. Negative values ok. (default: {default_volume} , Note: 100 millibels = 1 decibel).",
 		default = default_volume,
 		required = False,
 	)
@@ -738,16 +756,21 @@ if __name__ == "__main__":
 	parser.add_argument(
 		"-s",
 		"--splash-delay",
-		help = "Delay during splash screen between songs (in secs). (default: %s )"
-		       % default_splash_delay,
+		help = f"Delay during splash screen between songs (in secs). (default: {default_splash_delay} )",
 		default = default_splash_delay,
+		required = False,
+	)
+	parser.add_argument(
+		"-L",
+		"--lang",
+		help = f"Set display language (default: None, set according to the current system locale {locale.getdefaultlocale()[0]})",
+		default = locale.getdefaultlocale()[0],
 		required = False,
 	)
 	parser.add_argument(
 		"-l",
 		"--log-level",
-		help = "Logging level int value (DEBUG: 10, INFO: 20, WARNING: 30, ERROR: 40, CRITICAL: 50). (default: %s )"
-		       % default_log_level,
+		help = f"Logging level int value (DEBUG: 10, INFO: 20, WARNING: 30, ERROR: 40, CRITICAL: 50). (default: {default_log_level} )",
 		default = default_log_level,
 		required = False,
 	)
@@ -771,8 +794,8 @@ if __name__ == "__main__":
 	)
 	parser.add_argument(
 		"--adev",
-		help = "Pass the audio output device argument to omxplayer. Possible values: hdmi/local/both/alsa[:device]. If you are using a rpi USB soundcard or Hifi audio hat, try: 'alsa:hw:0,0' Default: '%s'"
-		       % default_adev,
+		help = f"Pass the audio output device argument to omxplayer. Possible values: hdmi/local/both/alsa[:device]."
+		       f" If you are using a rpi USB soundcard or Hifi audio hat, try: 'alsa:hw:0,0' Default: '{default_adev}'",
 		default = default_adev,
 		required = False,
 	)
@@ -791,7 +814,9 @@ if __name__ == "__main__":
 	parser.add_argument(
 		"--use-omxplayer",
 		action = "store_true",
-		help = "Use OMX Player to play video instead of the default VLC Player. This may be better-performing on older raspberry pi devices. Certain features like key change and cdg support wont be available. Note: if you want to play audio to the headphone jack on a rpi, you'll need to configure this in raspi-config: 'Advanced Options > Audio > Force 3.5mm (headphone)'",
+		help = "Use OMX Player to play video instead of the default VLC Player. This may be better-performing on older raspberry pi devices."
+		       " Certain features like key change and cdg support wont be available. Note: if you want to play audio to the headphone jack on a rpi,"
+		       " you'll need to configure this in raspi-config: 'Advanced Options > Audio > Force 3.5mm (headphone)'",
 		required = False,
 	)
 	parser.add_argument(
@@ -802,13 +827,13 @@ if __name__ == "__main__":
 	)
 	parser.add_argument(
 		"--vlc-path",
-		help = "Full path to VLC (Default: %s)" % default_vlc_path,
+		help = f"Full path to VLC (Default: {default_vlc_path})",
 		default = default_vlc_path,
 		required = False,
 	)
 	parser.add_argument(
 		"--vlc-port",
-		help = "HTTP port for VLC remote control api (Default: %s)" % default_vlc_port,
+		help = f"HTTP port for VLC remote control api (Default: {default_vlc_port})",
 		default = default_vlc_port,
 		required = False,
 	)
@@ -838,6 +863,8 @@ if __name__ == "__main__":
 	)
 	args = parser.parse_args()
 
+	setLang(args.lang)
+
 	if (args.admin_password):
 		admin_password = args.admin_password
 
@@ -852,17 +879,17 @@ if __name__ == "__main__":
 
 	# check if required binaries exist
 	if not os.path.isfile(args.youtubedl_path):
-		print("Youtube-dl path not found! " + args.youtubedl_path)
+		print(getString(44) + args.youtubedl_path)
 		sys.exit(1)
 	if args.use_vlc and not os.path.isfile(args.vlc_path):
-		print("VLC path not found! " + args.vlc_path)
+		print(getString(45) + args.vlc_path)
 		sys.exit(1)
 	if (
 			platform == "raspberry_pi"
 			and not args.use_vlc
 			and not os.path.isfile(args.omxplayer_path)
 	):
-		print("omxplayer path not found! " + args.omxplayer_path)
+		print(getString(46) + args.omxplayer_path)
 		sys.exit(1)
 
 	# setup/create download directory if necessary
@@ -870,7 +897,7 @@ if __name__ == "__main__":
 	if not dl_path.endswith("/"):
 		dl_path += "/"
 	if not os.path.exists(dl_path):
-		print("Creating download path: " + dl_path)
+		print(getString(47) + dl_path)
 		os.makedirs(dl_path)
 
 	if args.developer_mode:

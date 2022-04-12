@@ -27,9 +27,7 @@ class VLCClient:
 	def __init__(self, port = 5002, path = None, qrcode = None, url = None):
 
 		# HTTP remote control server
-		self.http_password = "".join(
-			[random.choice(string.ascii_letters + string.digits) for n in range(32)]
-		)
+		self.http_password = "".join([random.choice(string.ascii_letters + string.digits) for n in range(32)])
 		self.port = port
 		self.http_endpoint = "http://localhost:%s/requests/status.xml" % self.port
 		self.http_command_endpoint = self.http_endpoint + "?command="

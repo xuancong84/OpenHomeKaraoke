@@ -7,35 +7,35 @@
   $(function () {
     $("#quit-link").click(function (e) {
       e.preventDefault();
-      if (window.confirm("Are you sure you want to quit?")) {
+      if (window.confirm("{{getString(137)}}")) {
         location.href = this.href;
       }
     });
 
     $("#shutdown-link").click(function (e) {
       e.preventDefault();
-      if (window.confirm("Are you sure you want to shut down?")) {
+      if (window.confirm("{{getString(138)}}")) {
         location.href = this.href;
       }
     });
 
     $("#restart-link").click(function (e) {
       e.preventDefault();
-      if (window.confirm("Are you sure you want to reboot?")) {
+      if (window.confirm("{{getString(139)}}")) {
         location.href = this.href;
       }
     });
 
     $("#update-ytdl-link").click(function (e) {
       e.preventDefault();
-      if (window.confirm("Are you sure you want to update Youtube-dl right now? Current and pending downloads may fail.")) {
+      if (window.confirm("{{getString(140)}}")) {
         location.href = this.href;
       }
     });
 
     $("#expand-link").click(function (e) {
       e.preventDefault();
-      if (window.confirm("Are you sure you want to expand the filesystem? This will reboot your raspberry pi.")) {
+      if (window.confirm("{{getString(141)}}")) {
         location.href = this.href;
       }
     });
@@ -354,7 +354,7 @@ input:checked + .slider:before {
 }
 </style>
 
-<h1>{% block title %}Information{% endblock %}</h1>
+<h1>{% block title %}{{getString1(142)}}{% endblock %}</h1>
 {% endblock %} {% block content %}
 
 <hr/>
@@ -363,7 +363,7 @@ input:checked + .slider:before {
 <div class="has-text-centered">
   <p>URL of {{site_title}}:</p>
   <p class="is-size-4 has-text-warning has-text-centered">{{ url }}</p>
-  <p>Handy URL QR code to share with a pal:</p>
+  <p>{{getString1(143)}}</p>
 <img id="qr-img" width="300px" src="{{ url_for('qrcode') }}" style="image-rendering: pixelated" />
 </div>
 
@@ -371,95 +371,86 @@ input:checked + .slider:before {
 
 <h1>System Info</h1>
 <ul>
-  <li>OS: {{ ostype }}</li>
+  <li>{{getString1(144)}}: {{ ostype }}</li>
   <li>CPU: {{ cpu }}</li>
-  <li>Disk Usage: {{ disk }}</li>
-  <li>Memory: {{ memory }}</li>
-  {% if platform == 'linux' %} <li>Screen Capture: {{ screencapture }}</li> {% endif %}
-  <li>Vocal Splitter: {{ vocalsplitter }}</li>
-  <li>Youtube-dl (yt-dlp) version: {{ youtubedl_version }}</li>
-  <li>Pikaraoke version: {{ pikaraoke_version }}</li>
+  <li>{{getString1(145)}}: {{ disk }}</li>
+  <li>{{getString1(146)}}: {{ memory }}</li>
+  {% if platform == 'linux' %} <li>{{getString1(147)}}: {{ screencapture }}</li> {% endif %}
+  <li>{{getString1(148)}}: {{ vocalsplitter }}</li>
+  <li>{{getString1(149)}}: {{ youtubedl_version }}</li>
+  <li>{{getString1(150)}}: {{ pikaraoke_version }}</li>
 </ul>
 
 <hr />
 
 {% if admin %}
-<h2>Advanced Control Options</h2>
-<h4>Vocal splitter mode:</h4>
+<h2>{{getString1(151)}}</h2>
+<h4>{{getString1(152)}}</h4>
 <div class="is-flex" style="align-items:center">
-  <span style="vertical-align:middle; text-align:center;">Use L-R/L+R</span>
+  <span style="vertical-align:middle; text-align:center;">{{getString1(153)}}</span>
   <label style="vertical-align:middle; margin: 5px" class="switch">
     <input id="use-DNN" type="checkbox" {% if use_DNN %}checked{% endif %}>
     <span class="slider round"></span>
   </label>
-  <span style="vertical-align:middle; text-align:center;">Use DNN</span>
+  <span style="vertical-align:middle; text-align:center;">{{getString1(154)}}</span>
 </div>
-<p class="help">Standard MTV audio has the two stereo channels (L and R) encoded in such a way that:
-  L-R is the instrument track, L+R is the vocal track. Thus, by simply subtracting or adding the two stereo channels,
-  we can get the instrumental and vocal track in mono sound. PiKaraoke's built-in DNN-based (deep neural network)
-  vocal splitter uses AI algorithm to split instrumental and vocal sound in each stereo track independently resulting in
-  stereo instrumental and vocal tracks.</p>
+<p class="help">{{getString1(155)}}</p>
 
-<h4 style="margin-bottom:0">Vocal splitter:</h4>
+<h4 style="margin-bottom:0">{{getString1(148)}}:</h4>
 <ul class="button-group">
-  <li><button id="vocal-stop" class="red button" style="width:150px">Stop Splitter</button></li>
-  <li><button id="vocal-restart" class="green button" style="width:150px">Restart Splitter</button></li>
+  <li><button id="vocal-stop" class="red button" style="width:150px">{{getString1(156)}}</button></li>
+  <li><button id="vocal-restart" class="green button" style="width:150px">{{getString1(157)}}</button></li>
 </ul>
-<p class="help-normal">The vocal splitter (that supports both DNN-based and stereo subtraction) runs as a separate process in the background, generating instrumental/vocal audio file for every song.</p>
+<p class="help-normal">{{getString1(158)}}</p>
 
 {% if platform == 'linux' %}
-<h4 style="margin-bottom:0">Re-synchronize audio and video:</h4>
+<h4 style="margin-bottom:0">{{getString1(159)}}</h4>
 <ul class="button-group">
-  <li><button id="streamer-stop" class="red button" style="width:150px">Stop Streamer</button></li>
-  <li><button id="streamer-restart" class="green button" style="width:150px">Restart Streamer</button></li>
+  <li><button id="streamer-stop" class="red button" style="width:150px">{{getString1(160)}}</button></li>
+  <li><button id="streamer-restart" class="green button" style="width:150px">{{getString1(161)}}</button></li>
 </ul>
-<p class="help-normal">This only affects playing KTV via web browser. Restarting the screen-capture-and-streaming improves audio/video synchronization,
-  it also decreases the latency between the server and browser.</p>
+<p class="help-normal">{{getString1(162)}}</p>
 {% endif %}
 
-<h4>Refresh the song list:</h4>
+<h4>{{getString1(163)}}</h4>
 <ul>
   <li>
-    <a href="/refresh">Rescan song directory</a>
+    <a href="/refresh">{{getString1(164)}}</a>
   </li>
 </ul>
-<p class="help-normal">You should only need to do this if you manually copied files to the download directory while pikaraoke was running.</p>
+<p class="help-normal">{{getString1(165)}}</p>
 
-<h2>Updates</h2>
-<p>If downloads or searches stopped working, updating youtube-dl will probably fix it. The current installed version is: "{{ youtubedl_version }}"</p> 
+<h2>{{getString1(166)}}</h2>
+<p>{{getString1(167)}} "{{ youtubedl_version }}"</p>
 <ul>
   <li>
-    <a id="update-ytdl-link" href="{{ url_for('update_ytdl') }}">Update youtube-dl</a>
+    <a id="update-ytdl-link" href="{{ url_for('update_ytdl') }}">{{getString1(168)}}</a>
   </li>
 </ul>
-<p class="help-help-normal">This update link above may fail if you don't have proper file permissions. Check the pikaraoke log for errors. </p>
+<p class="help-help-normal">{{getString1(169)}}</p>
 
-<h2>Shutdown</h2>
-<p>
-  Don't just pull the plug! Always shut down your server properly to avoid data
-  corruption.
-</p>
+<h2>{{getString1(170)}}</h2>
+<p>{{getString1(171)}}</p>
 <ul>
-  <li><a id="quit-link" href="{{ url_for('quit') }}">Quit pikaraoke</a></li>
+  <li><a id="quit-link" href="{{ url_for('quit') }}">{{getString1(172)}}</a></li>
   {% if is_pi %}
-  <li><a id="restart-link" href="{{ url_for('reboot') }}">Reboot System</a></li>
-  <li><a id="shutdown-link" href="{{ url_for('shutdown') }}">Shutdown System</a></li>
+  <li><a id="restart-link" href="{{ url_for('reboot') }}">{{getString1(173)}}</a></li>
+  <li><a id="shutdown-link" href="{{ url_for('shutdown') }}">{{getString1(174)}}</a></li>
   {% endif %}
 </ul>
 
 {% if is_pi %}
-<h1>Other</h1>
-<a id="expand-link" href="{{ url_for('expand_fs') }}">Expand Raspberry Pi filesystem</a></li>
-<p class="help">If you just installed the pre-built pikaraoke pi image and your SD card is larger than 4GB,
-  you may want to expand the filesystem to utilize the remaining space. You only need to do this once. This will reboot the system.</p>
+<h1>{{getString1(175)}}</h1>
+<a id="expand-link" href="{{ url_for('expand_fs') }}">{{getString1(176)}}</a></li>
+<p class="help">{{getString1(177)}}</p>
 {% endif %}
 
 <hr/>
 {% if admin_enabled %}
-<p>Disable admin mode: <a href="{{ url_for('logout') }}">log out</a></p>
+<p>{{getString1(178)}}: <a href="{{ url_for('logout') }}">{{getString1(180)}}</a></p>
 {% endif %}
 {% else %}
-<p>Enable admin mode: <a href="{{ url_for('login') }}">log in</a></p>
+<p>{{getString1(179)}}: <a href="{{ url_for('login') }}">{{getString1(181)}}</a></p>
 {% endif %}
 
 {% endblock %}

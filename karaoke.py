@@ -10,10 +10,10 @@ import pygame
 import qrcode
 import arabic_reshaper
 from bidi.algorithm import get_display
-
 from unidecode import unidecode
 from lib import omxclient, vlcclient
 from lib.get_platform import get_platform
+from app import getString
 
 if get_platform() != "windows":
 	from signal import SIGALRM, alarm, signal
@@ -284,7 +284,6 @@ class Karaoke:
 			pygame.init()
 			pygame.display.set_caption("pikaraoke")
 			pygame.mouse.set_visible(0)
-			self.font = pygame.font.SysFont(pygame.font.get_default_font(), 40)
 			self.fonts = {}
 			self.WIDTH = pygame.display.Info().current_w
 			self.HEIGHT = pygame.display.Info().current_h
@@ -334,67 +333,70 @@ class Karaoke:
 		self.screen.blit(logo, logo_rect)
 
 		blitY = self.screen.get_rect().bottomleft[1] - 40
+		sysfont_size = 30
 
 		if not self.hide_ip:
 			p_image = pygame.image.load(self.qr_code_path)
 			p_image = pygame.transform.scale(p_image, (150, 150))
 			self.screen.blit(p_image, (20, blitY - 125))
 			if not self.is_network_connected():
-				text = self.font.render("Wifi/Network not connected. Shutting down in 10s...", True, (255, 255, 255))
-				self.screen.blit(text, (p_image.get_width() + 35, blitY))
+				text = self.render_font(sysfont_size, getString(48), (255, 255, 255))
+				self.screen.blit(text[0], (p_image.get_width() + 35, blitY))
 				time.sleep(10)
 				logging.info("No IP found. Network/Wifi configuration required. For wifi config, try: sudo raspi-config or the desktop GUI: startx")
 				self.stop()
 			else:
-				text = self.font.render("For selecting songs, connect at: " + self.url, True, (255, 255, 255))
-				self.screen.blit(text, (p_image.get_width() + 35, blitY))
+				text = self.render_font(sysfont_size, getString(49) + self.url, (255, 255, 255))
+				self.screen.blit(text[0], (p_image.get_width() + 35, blitY))
 				# Windows and Mac-OS should use screen projection and AirPlay
 				if self.streamer_alive():
-					text = self.font.render("For TV display, connect at: " + self.url.rsplit(":", 1)[0] + ":4000", True, (255, 255, 255))
-					self.screen.blit(text, (p_image.get_width() + 35, blitY - 40))
+					text = self.render_font(sysfont_size, getString(50) + self.url.rsplit(":", 1)[0] + ":4000", (255, 255, 255))
+					self.screen.blit(text[0], (p_image.get_width() + 35, blitY - 40))
 				if not self.firstSongStarted and self.platform != 'osx':
-					text = self.font.render("Press F to toggle full-screen", True, (255, 255, 255))
-					self.screen.blit(text, (p_image.get_width() + 35, blitY - 120))
-					text = self.font.render("Press ESC to quit PiKaraoke", True, (255, 255, 255))
-					self.screen.blit(text, (p_image.get_width() + 35, blitY - 80))
+					text = self.render_font(sysfont_size, getString(51), (255, 255, 255))
+					self.screen.blit(text[0], (p_image.get_width() + 35, blitY - 120))
+					text = self.render_font(sysfont_size, getString(52), (255, 255, 255))
+					self.screen.blit(text[0], (p_image.get_width() + 35, blitY - 80))
 
 		if not self.hide_raspiwifi_instructions and self.raspi_wifi_config_installed and self.raspi_wifi_config_ip in self.url:
 			server_port, ssid_prefix, ssl_enabled = self.get_raspi_wifi_conf_vals()
 
-			text1 = self.font.render("RaspiWifiConfig setup mode detected!", True, (255, 255, 255))
-			text2 = self.font.render("Connect another device/smartphone to the Wifi AP: '%s'" % ssid_prefix, True, (255, 255, 255))
-			text3 = self.font.render(
-				"Then point its browser to: '%s://%s%s' and follow the instructions."
+			text1 = self.render_font(sysfont_size, getString(53), (255, 255, 255))
+			text2 = self.render_font(sysfont_size, getString(54) % ssid_prefix, (255, 255, 255))
+			text3 = self.render_font(sysfont_size,
+				getString(55)
 				% ("https" if ssl_enabled == "1" else "http",
 				   self.raspi_wifi_config_ip,
 				   ":%s" % server_port if server_port != "80" else ""),
-				True,
 				(255, 255, 255),
 			)
-			self.screen.blit(text1, (10, 10))
-			self.screen.blit(text2, (10, 50))
-			self.screen.blit(text3, (10, 90))
+			self.screen.blit(text1[0], (10, 10))
+			self.screen.blit(text2[0], (10, 50))
+			self.screen.blit(text3[0], (10, 90))
 
 		if len(self.queue) >= 1:
 			logging.debug("Rendering next song to splash screen")
 			width = self.screen.get_width()
 			next_song = self.queue[0]["title"]
 			next_user = self.queue[0]["user"]
-			render_next_song = self.render_font([60, 50, 40], f"Up next: {next_song}", (255, 255, 0))
-			render_next_user = self.render_font([50, 40, 30], f"Added by: {next_user}", (0, 240, 0))
+			render_next_song = self.render_font([60, 50, 40], getString(56) + next_song, (255, 255, 0))
+			render_next_user = self.render_font([50, 40, 30], getString(57) + next_user, (0, 240, 0))
 			self.screen.blit(render_next_song[0], (width - render_next_song[1].width - 10, 10))
 			self.screen.blit(render_next_user[0], (width - render_next_user[1].width - 10, 80))
 		elif not self.has_video:
 			logging.debug("Rendering current song to splash screen")
 			width = self.screen.get_width()
-			render_next_song = self.render_font([60, 50, 40], f"Now playing: {self.now_playing}", (255, 255, 0))
-			render_next_user = self.render_font([50, 40, 30], f"Added by: {self.now_playing_user}", (0, 240, 0))
+			render_next_song = self.render_font([60, 50, 40], getString(58) + self.now_playing, (255, 255, 0))
+			render_next_user = self.render_font([50, 40, 30], getString(59) + self.now_playing_user, (0, 240, 0))
 			self.screen.blit(render_next_song[0], (width - render_next_song[1].width - 10, 10))
 			self.screen.blit(render_next_user[0], (width - render_next_user[1].width - 10, 80))
 
 	def render_font(self, sizes, text, *kargs):
 		if type(sizes) != list:
 			sizes = [sizes]
+
+		# normalize font size
+		sizes = [s*self.screen.get_width()/1920 for s in sizes]
 
 		# initialize fonts if not found
 		for size in sizes:

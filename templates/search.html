@@ -79,9 +79,7 @@
       labelField: 'fileName',
       searchField: ['fileName'],
       optgroupField: "type",
-      optgroups: [
-        {value: 'autocomplete', label: 'Available songs in local library'},
-      ],
+      optgroups: [{value: 'autocomplete', label: '{{getString1(114)}}'}],
       createOnBlur: true,
       openOnFocus: false,
       createFilter: function (input) { return input.length >= 2; },
@@ -187,10 +185,10 @@
           success: function(data){
             var obj = JSON.parse(data);
             if (obj.success) {
-              showNotification("Added song to queue: " + obj.song, "is-success")
+              showNotification("{{getString1(115)}}" + obj.song, "is-success")
             }
             else {
-              showNotification("Song is already in the queue: " + obj.song, "is-danger")
+              showNotification("{{getString(116)}}" + obj.song, "is-danger")
             }
             $select[0].selectize.clear()
           }
@@ -234,9 +232,7 @@
     var user = Cookies.get("user");
 
     if (!user) {
-        let name = window.prompt(
-          "Please enter your name. This will show up next to the songs you queue up from this device."
-        );
+        let name = window.prompt("{{getString1(92)}}");
         if (name) {
           Cookies.set("user", name , { expires: 3650 })
         }
@@ -257,7 +253,7 @@
 {% endblock %}
 
 {% block header %}
-<h1>{% block title %}Search / Add New{% endblock %}</h1>
+<h1>{% block title %}{{getString1(117)}}{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
@@ -268,33 +264,29 @@
       <div id="search-field" class="field has-addons" style="margin-bottom: 5px">
         <div class="control" style="width:100%">
           <select id="song-to-add" class="search-selectize is-size-7" name="song-to-add">
-            <optgroup label="Available Songs" id="available-songs"></optgroup>
+            <optgroup label="{{getString1(132)}}" id="available-songs"></optgroup>
           </select>
         </div>
         <div class="control">
-          <a class="button is-warning" id="search-link">Search</a>
-          <a class="button is-info" id="add-queue-link">Queue</a>
+          <a class="button is-warning" id="search-link">{{getString1(118)}}</a>
+          <a class="button is-info" id="add-queue-link">{{getString1(119)}}</a>
         </div>
         <input class="song-added-by" type="hidden" name="song-added-by" />
       </div>
       <div class="control has-text-right is-flex" style="justify-content: space-between">
         <label class="checkbox is-size-7">
           <input type="checkbox" id="include-non-karaoke" {% if search_nonkaraoke %}checked{% endif %} name="include-non-karaoke">
-          Include non-karaoke matches
+          {{getString1(120)}}
         </label>
         <label class="checkbox is-size-7">
           <input type="checkbox" id="show-advanced" name="show-advanced">
-          Advanced
+          {{getString1(121)}}
         </label>
       </div>
       
       <div>
-        <p class="help" style="margin-top: 15px">
-          Type a song (title/artist) to search the available songs and click 'Queue' to add it to the queue.
-        </p> 
-        <p class="help">
-          If the song doesn't appear in the "Available Songs" dropdown, click 'Search' to find it on Youtube
-        </p>
+        <p class="help" style="margin-top: 15px">{{getString1(122)}}</p>
+        <p class="help">{{getString1(123)}}</p>
       </div>
     </form>
   </div>
@@ -302,16 +294,16 @@
   <div>
     <div id="advanced-settings" class="box has-background-black-bis" style="margin-top: 10px">
       <div class="control">
-        <div class="label">Direct download YouTube url: </div>
+        <div class="label">{{getString1(124)}}</div>
         <form  action="{{ url_for('download') }}" method="post">
           <input class="input" id="direct-download-url" type="text" name="song_url" />
           <input class="song-added-by" type="hidden" name="song_added_by" />
           <div class="field" style="margin-top: 5px">
-            <label class="checkbox"><input type="checkbox" checked name="enqueue">Add to queue</label>
-            <label class="checkbox"><input type="checkbox" name="include_subtitles">Include subtitles</label>
+            <label class="checkbox"><input type="checkbox" checked name="enqueue">{{getString1(125)}}</label>
+            <label class="checkbox"><input type="checkbox" name="include_subtitles">{{getString1(126)}}</label>
           </div>
           <div class="has-text-right" style="margin-top: 5px">
-            <button class="button is-small is-rounded" id="direct-download-button" type="submit">Download</button>
+            <button class="button is-small is-rounded" id="direct-download-button" type="submit">{{getString1(127)}}</button>
           </div>
         </form>
       </div>
@@ -327,13 +319,13 @@
     </form>
   </div>
 
-  <div id="searching_loader" class="control is-loading is-hidden">Searching YouTube for <small><i>'<span
+  <div id="searching_loader" class="control is-loading is-hidden">{{getString1(128)}}<small><i>'<span
           id="search_term"></span>'</i></small></div>
   {% if search_results %}
   <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
   <div class="field" id="container_search_result">
     <form action="{{ url_for('download') }}" method="post" target="dummyframe">
-      <label class="label">Search results for <small><i>'{{search_string}}'</i></small></label>
+      <label class="label">{{getString1(129)}}<small><i>'{{search_string}}'</i></small></label>
       <div class="field select">
         <select id="search_result_selector" name='song_url'>
           {% for title,url,id in search_results %}
@@ -343,16 +335,16 @@
         
       </div>
       <input class="song-added-by" type="hidden" name="song_added_by" />
-      <p class="help">Click dropdown to show more results</p>
+      <p class="help">{{getString1(130)}}</p>
 
-      <p> Link: <a target="_blank" id='youtube-link' href=''></a> </p>
+      <p> {{getString1(131)}}<a target="_blank" id='youtube-link' href=''></a> </p>
       <p class="has-text-centered-mobile"> <img id='youtube-thumb'> </p>
       <div class="field">
-        <label class="checkbox"><input type="checkbox" checked name="enqueue">Add to queue</label>&nbsp;
-        <label class="checkbox"><input type="checkbox" name="include_subtitles">Include subtitles</label>
+        <label class="checkbox"><input type="checkbox" checked name="enqueue">{{getString1(125)}}</label>&nbsp;
+        <label class="checkbox"><input type="checkbox" name="include_subtitles">{{getString1(126)}}</label>
       </div>
       <div class="field">
-        <button class="button is-success is-rounded" id="download-button" type="submit">Download</button>
+        <button class="button is-success is-rounded" id="download-button" type="submit">{{getString1(127)}}</button>
       </div>
     </form>
   </div>

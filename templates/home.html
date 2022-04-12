@@ -16,9 +16,9 @@
 
   function getSemitonesLabel(value) {
     if (value > 0) {
-      return "+" + value + " semitones";
+      return "+" + value + "{{getString1(91)}}";
     } else {
-      return value + " semitones";
+      return value + "{{getString1(91)}}";
     }
   }
 
@@ -79,7 +79,7 @@
 					s3_go_to((obj.vocal_info>>4)&3, false);
 					use_DNN ? $("#pytorch-logo").show():$("#pytorch-logo").hide();
         } else {
-          $("#now-playing").html("Nothing is playing right now.");
+          $("#now-playing").html("{{getString1(69)}}");
           $(".control-box").hide();
         }
 
@@ -87,7 +87,7 @@
           $("#up-next").html(`<p style="margin-bottom: 5px">${obj.up_next}</p>
             <p class="has-text-success"><i class="icon icon-mic-1" title="Next singer"></i>${obj.next_user}</p>`);
         } else {
-          $("#up-next").html("No song is queued.");
+          $("#up-next").html("{{getString1(70)}}");
         }
 
         if (obj.is_paused) {
@@ -180,13 +180,13 @@
     });
 
     $("#restart").click(function () {
-      if (checkUser() || confirm("This song is not added by you. Are you sure you want to restart this track?")) {
+      if (checkUser() || confirm("{{getString1(71)}}")) {
         $.get("/restart");
       }
     });
 
     $("#skip").click(function () {
-      if (checkUser() || confirm("This song is not added by you. Are you sure you want to skip this track?")) {
+      if (checkUser() || confirm("{{getString1(72)}}")) {
         $.get("/skip");
       }
     });
@@ -232,25 +232,25 @@
     });
 
     $("#audiodelay-info").click(function () {
-      showNotification("Increasing audio delay will give you more time to read lyrics before singing out the next sentence.","is-info",8000)
+      showNotification("{{getString1(60)}}","is-info",8000)
     });
 
     $("#subdelay-info").click(function () {
-      showNotification("Decreasing subtitle delay will give you more time to read lyrics before singing out the next sentence.","is-info",8000)
+      showNotification("{{getString1(61)}}","is-info",8000)
     });
 
     $("#semitones-info").click(function () {
-      showNotification("A semitone is also known as a half-step. It is the smallest interval used in classical Western music, equal to a twelfth of an octave or half a tone.","is-info",10000)
+      showNotification("{{getString1(62)}}","is-info",10000)
     });
 
     $("#pytorch-logo").click(function () {
-      showNotification("DNN-based vocal splitter is enabled. PiKaraoke uses PyTorch (by Facebook) to run a deep neural network to split instrumental and vocal sound in each track giving rise to stereo sound.","is-info",12000)
+      showNotification("{{getString1(63)}}","is-info",12000)
     });
 
     getNowPlaying();
     setInterval(getNowPlaying, 1500);
     if(isMobile)
-    	$("#label-player-control")[0].outerHTML = '<h3 id="label-player-control">Player Control</h3>';
+    	$("#label-player-control")[0].outerHTML = '<h3 id="label-player-control">{{getString1(73)}}</h3>';
   });
 
 	function s3_go_to(n, do_action) {
@@ -291,7 +291,7 @@ body {
 .legendText{display:inline-block; width:50px; padding-bottom:33px; cursor:default; user-select: none;}
 </style>
 <h1>
-	{% block title %}Now Playing
+	{% block title %}{{getString1(74)}}
 	<img
 			class="playing_gif control-box"
 			width="40"
@@ -303,14 +303,14 @@ body {
 <p class="is-size-4 has-text-warning" id="now-playing"></p>
 
 <hr/>
-<h3>Next Song</h3>
+<h3>{{getString1(75)}}</h3>
 <p id="up-next" class="has-text-warning"></p>
 <hr/>
 
 {% if admin %}
 <div class="has-background-black-bis box control-box" style="max-width: 500px">
 	<div class="is-flex" style="justify-content: space-between">
-		<h1 id="label-player-control">Player Control</h1>
+		<h1 id="label-player-control">{{getString1(64)}}</h1>
 		<img id="pytorch-logo" width="40" src="/static/images/pytorch-logo.png" />
 		<div id="s3-outer" style="position:relative; width:150px; height:50px;">
 				<div id="s3-inner" style="background-color: #222D41; width:150px; height:28px; left:0; position:relative; top:20px; border-radius:14px;">
@@ -319,42 +319,42 @@ body {
 
 			 <div id="s3-text" class="is-flex" style="width:150px; display:inline-block; left:0; position:absolute; top:0;
 			 		font-family:Arial; font-size:12pt; text-align:center; justify-content: space-between">
-						<div id="s3t1" style="color:#ffffff" class="legendText" onclick="s3_go_to(1,true)">Music</div>
-						<div id="s3t2" style="color:#ffffff" class="legendText" onclick="s3_go_to(2,true)">Both </div>
-						<div id="s3t3" style="color:#ffffff" class="legendText" onclick="s3_go_to(3,true)">Voice</div>
+						<div id="s3t1" style="color:#ffffff" class="legendText" onclick="s3_go_to(1,true)">{{getString1(65)}}</div>
+						<div id="s3t2" style="color:#ffffff" class="legendText" onclick="s3_go_to(2,true)">{{getString1(66)}}</div>
+						<div id="s3t3" style="color:#ffffff" class="legendText" onclick="s3_go_to(3,true)">{{getString1(67)}}</div>
 				</div>
 		</div>
 	</div>
 
 	<p class="is-size-3">
-		<a title="Restart Song" id="restart"><i class="icon icon-to-start"></i> </a>&nbsp;&nbsp;
-		<a title="Play/Pause"><i id="pause-resume" class="icon icon-pause"></i> </a>&nbsp;&nbsp;
-		<a title="Stop Current Song" id="skip"><i class="icon icon-to-end"></i> </a>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+		<a title="{{getString1(79)}}" id="restart"><i class="icon icon-to-start"></i> </a>&nbsp;&nbsp;
+		<a title="{{getString1(80)}}"><i id="pause-resume" class="icon icon-pause"></i> </a>&nbsp;&nbsp;
+		<a title="{{getString1(81)}}" id="skip"><i class="icon icon-to-end"></i> </a>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
 		<span class="is-pulled-right">
-      <a title="Volume Down" id="vol-down"><i class="icon icon-volume-down"></i> </a>
-      <a title="Set Volume" id="vol" style="cursor: pointer" contenteditable="true" onfocus="volume_changing=true"> {{ volume }} </a>&nbsp;
-      <a title="Volume Up" id="vol-up"><i class="icon icon-volume-up"></i> </a>
+      <a title="{{getString1(82)}}" id="vol-down"><i class="icon icon-volume-down"></i> </a>
+      <a title="{{getString1(83)}}" id="vol" style="cursor: pointer" contenteditable="true" onfocus="volume_changing=true"> {{ volume }} </a>&nbsp;
+      <a title="{{getString1(84)}}" id="vol-up"><i class="icon icon-volume-up"></i> </a>
     </span>
 	</p>
 
 	<div id="subdelay-box">
 		<div class="is-flex" style="justify-content: space-between">
-			<h4>Subtitle Delay (sec)<a id="subdelay-info"> <i class="icon icon-info-circled-1" title="Info"></i></a>:</h4>
-			<h4 title="Decrease Subtitle Delay" id="subdelay-dec" class="tabs" style="margin:0; color:red; cursor: pointer; font-weight: bold; font-size:x-large;" >&#x2296;</h4>
-			<h4 title="Set Subtitle Delay" id="subdelay-val" class="tabs" style="padding-top:2px; margin:0; cursor: pointer" contenteditable="true" onfocus="subdelay_typing=true">0</h4>
-			<h4 title="Increase Subtitle Delay" id="subdelay-inc" class="tabs" style="margin:0; color:green; cursor: pointer; font-weight:bold;font-size:x-large;" >&#x2295;</h4>
+			<h4>{{getString1(78)}}<a id="subdelay-info"> <i class="icon icon-info-circled-1" title="Info"></i></a>:</h4>
+			<h4 title="{{getString1(85)}}" id="subdelay-dec" class="tabs" style="margin:0; color:red; cursor: pointer; font-weight: bold; font-size:x-large;" >&#x2296;</h4>
+			<h4 title="{{getString1(86)}}" id="subdelay-val" class="tabs" style="padding-top:2px; margin:0; cursor: pointer" contenteditable="true" onfocus="subdelay_typing=true">0</h4>
+			<h4 title="{{getString1(87)}}" id="subdelay-inc" class="tabs" style="margin:0; color:green; cursor: pointer; font-weight:bold;font-size:x-large;" >&#x2295;</h4>
 		</div>
 	</div>
 
 	<div class="is-flex" style="justify-content: space-between">
-		<h4>Audio Delay (sec)<a id="audiodelay-info"> <i class="icon icon-info-circled-1" title="Info"></i></a>:</h4>
-		<h4 title="Decrease Audio Delay" id="delay-dec" class="tabs" style="margin:0; color:red; cursor: pointer; font-weight: bold; font-size:x-large;" >&#x2296;</h4>
-		<h4 title="Set Audio Delay" id="delay-val" class="tabs" style="padding-top:2px; margin:0; cursor: pointer" contenteditable="true" onfocus="audiodelay_typing=true">0</h4>
-		<h4 title="Increase Audio Delay" id="delay-inc" class="tabs" style="margin:0; color:green; cursor: pointer; font-weight:bold;font-size:x-large;" >&#x2295;</h4>
+		<h4>{{getString1(77)}}<a id="audiodelay-info"> <i class="icon icon-info-circled-1" title="Info"></i></a>:</h4>
+		<h4 title="{{getString1(88)}}" id="delay-dec" class="tabs" style="margin:0; color:red; cursor: pointer; font-weight: bold; font-size:x-large;" >&#x2296;</h4>
+		<h4 title="{{getString1(89)}}" id="delay-val" class="tabs" style="padding-top:2px; margin:0; cursor: pointer" contenteditable="true" onfocus="audiodelay_typing=true">0</h4>
+		<h4 title="{{getString1(90)}}" id="delay-inc" class="tabs" style="margin:0; color:green; cursor: pointer; font-weight:bold;font-size:x-large;" >&#x2295;</h4>
 	</div>
 
 	<div class="is-flex" style="justify-content: space-between">
-		<div><h4>Seek To:</h4></div>
+		<div><h4>{{getString1(76)}}</h4></div>
 		<a style="padding-top:6px" id="seektrack-val">00:00:00</a>
 		<a style="padding-top:6px" id="seektrack-max">00:00:00</a>
 	</div>
@@ -383,7 +383,7 @@ body {
 	<!-- <div class="has-background-black-bis box control-box" style="max-width: 500px"> -->
 	<div class="is-flex" style="justify-content: space-between; padding-top: 1em">
 		<div>
-			<h4>Change Key</h4>
+			<h4>{{getString1(68)}}</h4>
 		</div>
 		<div class="is-flex">
 			<h4 id="semitones-label"></h4>

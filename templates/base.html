@@ -74,7 +74,7 @@
       $('#current-user').click(function(e) {
         e.preventDefault();
         let name = window.prompt(
-          "Do you want to change the name of the person using this device? This will show up on queued songs. Current: " + currentUser
+          "{{getString1(133)}}" + currentUser
         );
         if (name) {
           Cookies.set("user", name, { expires: 3650 })
@@ -158,12 +158,12 @@
       <div class="navbar-menu" id="menu">
         <div class="navbar-end">
           <a id="current-user" class="navbar-item is-hidden" href="#">
-            <i class="icon  icon-mic-1" title="Current user"></i>
+            <i class="icon  icon-mic-1" title="{{getString1(134)}}"></i>
             <span></span>
           </a>
           <a id="info" class="navbar-item" href="{{ url_for('info') }}">
-            <i class="icon icon-info-circled-1" title="Info"></i>
-            <span>Pikaraoke</span>&nbsp;&nbsp; 
+            <i class="icon icon-info-circled-1" title="{{getString1(135)}}"></i>
+            <span>{{getString1(136)}}</span>&nbsp;&nbsp;
           </a>
         </div>
       </div>
