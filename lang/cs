@@ -1,0 +1,184 @@
+čeština
+Nesprávné heslo správce!
+Odhlášen z režimu správce!
+Přidáno %s náhodných stop
+Došly písničky!
+Vymazána fronta!
+Chyba při přesunu položky do fronty: invalid-argument
+Položka byla úspěšně přesunuta do fronty:
+Chyba při přesunu položky ve frontě:
+Přesunuto dolů ve frontě:
+Chyba při přesunu dolů ve frontě:
+Posunuto ve frontě:
+Chyba při přesunu ve frontě:
+Smazáno z fronty:
+Chyba při mazání z fronty:
+Stahování zahájeno:
+Po dokončení bude přidán do fronty.
+Po dokončení se objeví v seznamu „dostupných skladeb“.
+Chyba: Tuto skladbu nelze smazat, protože je v aktuální frontě:
+Skladba smazána:
+Chyba: Nebyl zadán žádný parametr skladby!
+Chyba: Tuto skladbu nelze upravit, protože se právě přehrává:
+Úprava souboru písně
+Chyba při přejmenování souboru: '%s' na '%s'. Název souboru již existuje.
+Přejmenován soubor: '%s' na '%s'
+Chyba: Nebyly zadány žádné parametry názvu souboru!
+Neznámý
+Běh
+Zastavil
+ (pouze CPU)
+ (GPU povoleno)
+Aktualizace youtube-dl! Mělo by to trvat minutu nebo dvě...
+Nemáte oprávnění aktualizovat youtube-dl
+Nemáte povolení k vypnutí
+Okamžitě ukončete PiKaraoke!
+Nemáte povolení skončit
+Vypínání systému nyní!
+Nemáte povolení k vypnutí
+Restartujte systém nyní!
+Nemáte oprávnění k restartování
+Rozšiřování souborového systému a restartování systému nyní!
+Nelze rozšířit fs na jiných zařízeních než malina pi!
+Nemáte oprávnění ke změně velikosti souborového systému
+Cesta k Youtube-dl nebyla nalezena!
+Cesta VLC nebyla nalezena!
+cesta k omxplayeru nebyla nalezena!
+Vytvoření cesty ke stažení:
+Wifi/síť není připojena. Vypínání za 10s...
+Chcete-li vybrat skladby, naskenujte QR kód nebo se připojte
+Chcete-li zobrazit TV, připojte k
+Stisknutím F přepnete na celou obrazovku
+Stiskněte ESC pro ukončení PiKaraoke
+Byl zjištěn režim nastavení RaspiWifiConfig!
+Připojte další zařízení/smartphone k Wifi AP: '%s'
+Poté nasměrujte jeho prohlížeč na: '%s://%s%s' a postupujte podle pokynů.
+Další:
+Přidal:
+Právě teď hraje:
+Režim správce povolen!
+Zvýšení zpoždění zvuku vám poskytne více času na přečtení textu, než zazpíváte další větu.
+Snížení zpoždění titulků vám poskytne více času na přečtení textu, než zazpíváte další větu.
+Půltón je také známý jako poloviční krok. Je to nejmenší interval používaný v klasické západní hudbě, rovný dvanáctině oktávy nebo polovině tónu.
+Rozdělovač hlasu založený na DNN je povolen. PiKaraoke používá PyTorch (od Facebooku) k provozování hluboké neuronové sítě k rozdělení instrumentálního a vokálního zvuku v každé stopě, což vede ke stereo zvuku.
+Ovládání přehrávače
+Hudba
+Oba
+Hlas
+Změnit klíč
+Momentálně se nic nehraje.
+Žádná skladba není zařazena do fronty.
+Tuto skladbu jste nepřidali vy. Opravdu chcete restartovat tuto stopu?
+Tuto skladbu jste nepřidali vy. Opravdu chcete tuto stopu přeskočit?
+Ovládání přehrávače
+Právě teď hraje
+Další píseň
+Hledat na:
+Zpoždění zvuku (s)
+Zpoždění titulků (s)
+Restartujte skladbu
+Přehrát/Pozastavit
+Zastavit aktuální skladbu
+Snížit hlasitost
+Nastavte hlasitost
+Zvýšit hlasitost
+Snižte zpoždění titulků
+Nastavte zpoždění titulků
+Zvyšte zpoždění titulků
+Snížit zpoždění zvuku
+Nastavte zpoždění zvuku
+Zvyšte zpoždění zvuku
+ půltóny
+Zadejte prosím své jméno. To se zobrazí vedle skladeb zařazených do fronty z tohoto zařízení.
+Skladba přidána do fronty:
+Píseň je již ve frontě:
+Seřadit podle data
+Seřadit podle abecedy
+Přidejte '%s' do fronty
+Procházet
+Seřazeno podle 'Datum'
+Seřazeno podle 'Abecedně'
+písně
+zobrazeno <b>{start} - {end}</b> {record_name}, celkem <b>{total}</b> {record_name}
+nalezeno <b>{found}</b> {record_name}, zobrazuje se <b>{start} - {end}</b> {record_name}
+Upravit skladbu
+Posuňte se ve frontě nahoru
+Posuňte se ve frontě dolů
+Opravdu chcete smazat z fronty?
+Opravdu chcete vymazat CELOU frontu? Pokračujte zadáním „OK“.
+Přidejte 3 náhodné skladby
+Vymazat vše
+Fronta je prázdná
+Fronta
+Vymazat
+Dostupné skladby v místní knihovně
+Skladba přidána do fronty:
+Skladba je již ve frontě:
+Hledat / Přidat nový
+Vyhledávání
+Fronta
+Zahrňte zápasy bez karaoke
+Pokročilý
+Zadejte skladbu (název/interpreta) pro vyhledání dostupných skladeb a kliknutím na 'Fronta' ji přidejte do fronty.
+Pokud se skladba v rozevíracím seznamu „Dostupné skladby“ nezobrazuje, klikněte na „Hledat“ a najděte ji na Youtube.
+Adresa URL pro přímé stažení z YouTube:
+Přidat do fronty
+Zahrnout titulky
+Stažení
+Hledání na YouTube
+Výsledky hledání pro
+Kliknutím na rozbalovací nabídku zobrazíte další výsledky
+Odkaz:
+Dostupné skladby
+Chcete změnit zobrazované jméno osoby používající toto zařízení? To se zobrazí vedle skladeb ve frontě. Aktuální:
+Současný uživatel
+Info
+PiKaraoke
+Jste si jisti, že chcete skončit?
+Opravdu chcete vypnout?
+Opravdu chcete restartovat?
+Opravdu chcete aktualizovat Youtube-dl právě teď? Aktuální a čekající stahování může selhat.
+Opravdu chcete rozšířit souborový systém? Tím se restartuje vaše malina pi.
+Informace
+Praktický URL QR kód pro sdílení s kamarádem:
+OS
+Využití disku
+Paměť
+Snímání obrazovky
+Vokální splitter
+Verze Youtube-dl (yt-dlp).
+PiKaraoke verze
+Pokročilé možnosti ovládání
+Režim rozdělovače hlasu:
+Použijte L-R/L+R
+Použijte DNN
+Standardní MTV audio má dva stereo kanály (L a R) zakódované takovým způsobem, že: L-R je nástrojová stopa, L+R je vokální stopa. Jednoduchým odečtením nebo přidáním dvou stereo kanálů tedy můžeme získat instrumentální a vokální stopu v mono zvuku. Vestavěný rozdělovač vokálů založený na DNN (hluboké neuronové síti) PiKaraoke používá algoritmus AI k samostatnému rozdělení instrumentálního a vokálního zvuku v každé stereo stopě, což vede ke stereo instrumentálním a vokálním stopám.
+Zastavte splitter
+Restartujte Splitter
+Vokální rozdělovač (který podporuje odečítání založené na DNN i stereo) běží jako samostatný proces na pozadí a generuje instrumentální/vokální zvukový soubor pro každou skladbu.
+Znovu synchronizujte zvuk a video:
+Zastavit Streamer
+Restartujte Streamer
+To má vliv pouze na přehrávání KTV prostřednictvím webového prohlížeče. Restartování screen-capture-and-streaming zlepšuje audio/video synchronizaci a také snižuje latenci mezi serverem a prohlížečem.
+Obnovte seznam skladeb:
+Znovu naskenujte adresář skladeb
+Měli byste to udělat pouze v případě, že jste ručně zkopírovali soubory do adresáře pro stahování, když bylo spuštěno PiKaraoke.
+aktualizace
+Pokud stahování nebo vyhledávání přestalo fungovat, aktualizace youtube-dl to pravděpodobně opraví. Aktuální nainstalovaná verze je:
+Aktualizujte youtube-dl
+Tento odkaz na aktualizaci výše může selhat, pokud nemáte správná oprávnění k souboru. Zkontrolujte protokol PiKaraoke, zda neobsahuje chyby.
+Vypnout
+Nevytahujte jen zástrčku! Vždy řádně vypněte server, aby nedošlo k poškození dat.
+Ukončete PiKaraoke
+Restartovat systém
+Vypínací systém
+jiný
+Rozbalte souborový systém Raspberry Pi
+Pokud jste právě nainstalovali předpřipravený obraz pikaraoke pi a vaše karta SD je větší než 4 GB, možná budete chtít rozšířit systém souborů, abyste využili zbývající místo. Musíte to udělat pouze jednou. Tím se restartuje systém.
+Zakázat režim správce
+Povolit režim správce
+odhlásit se
+přihlásit se
+Systémová informace
+Domov
+Změnit jazyk

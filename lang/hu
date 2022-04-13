@@ -1,0 +1,184 @@
+Magyar
+Helytelen admin jelszó!
+Kijelentkezett az admin módból!
+%s véletlenszerű szám hozzáadva
+Kifogytak a dalok!
+Törölték a sort!
+Hiba az elem soron belüli áthelyezésekor: érvénytelen-argumentum
+Az elem sikeresen áthelyezve a sorban:
+Hiba történt az elem soron belüli áthelyezésekor:
+Lejjebb került a sorban:
+Hiba a sor lejjebb haladásakor:
+Feljebb került a sorban:
+Hiba a sorban feljebb lépéskor:
+A sorból törölve:
+Hiba a sorból való törléskor:
+Letöltés megkezdődött:
+Befejezése után felkerül a sorba.
+A befejezést követően megjelenik az "elérhető dalok" listájában.
+Hiba: Ezt a dalt nem lehet törölni, mert az aktuális sorban van:
+Dal törölve:
+Hiba: Nincs megadva dalparaméter!
+Hiba: Nem lehet szerkeszteni ezt a dalt, mert éppen játsszák:
+Dalfájl szerkesztése
+Hiba a fájl átnevezésekor: „%s” erre: „%s”. A fájlnév már létezik.
+Átnevezett fájl: „%s” erre: „%s”
+Hiba: Nem adtak meg fájlnév paramétereket!
+Ismeretlen
+Futó
+Megállt
+ (csak CPU)
+ (GPU engedélyezve)
+youtube-dl frissítés! Kellene egy-két perc...
+Nincs engedélyed a youtube-dl frissítésére
+Nincs engedélye a leállításra
+Kilépés a PiKaraoke-ból most!
+Nincs engedélye a kilépésre
+A rendszer leállítása most!
+Nincs engedélye a leállításra
+A rendszer újraindítása most!
+Nincs engedélye az újraindításra
+A fájlrendszer bővítése és a rendszer újraindítása most!
+Az fs nem bővíthető nem Raspberry pi eszközökön!
+Nincs engedélye a fájlrendszer átméretezésére
+Youtube-dl elérési út nem található!
+VLC elérési út nem található!
+omxplayer elérési út nem található!
+Letöltési útvonal létrehozása:
+Wifi/hálózat nincs csatlakoztatva. 10 másodperc múlva leáll...
+A dalok kiválasztásához olvassa be a QR-kódot, vagy csatlakozzon
+A TV-képernyőhöz csatlakoztassa
+Nyomja meg az F gombot a teljes képernyőre váltáshoz
+Nyomja meg az ESC gombot a PiKaraoke kilépéséhez
+RaspiWifiConfig beállítási mód észlelve!
+Másik eszköz/okostelefon csatlakoztatása a Wifi AP-hoz: „%s”
+Ezután mutasson a böngészőjének a következőre: '%s://%s%s', és kövesse az utasításokat.
+Következő:
+Hozzáadta:
+Most játszik:
+Adminisztrátori mód engedélyezve!
+A növekvő hangkésleltetés több időt biztosít a dalszövegek elolvasására, mielőtt elénekelné a következő mondatot.
+A feliratok késleltetésének csökkentése több időt biztosít a dalszövegek elolvasására, mielőtt elénekelné a következő mondatot.
+A félhangot féllépésnek is nevezik. Ez a klasszikus nyugati zenében használt legkisebb hangköz, amely egy oktáv tizenketted részével vagy fél hangszínnel egyenlő.
+A DNN-alapú énekelosztó engedélyezve van. A PiKaraoke a PyTorch segítségével (a Facebooktól) egy mély neurális hálózatot futtat, hogy az egyes számokban megoszthassa a hangszeres és az énekhangot, ami sztereó hangzást eredményez.
+Játékos vezérlés
+Zene
+Mindkét
+Hang
+Kulcs módosítása
+Jelenleg semmi sem játszik.
+Nincs dal a sorban.
+Ezt a dalt nem te adtad hozzá. Biztosan újra akarod indítani ezt a számot?
+Ezt a dalt nem te adtad hozzá. Biztos, hogy kihagyja ezt a számot?
+Játékos vezérlés
+Most játszik
+Következő dal
+Törekednek:
+Hangkésleltetés (mp)
+Felirat késleltetése (mp)
+Indítsa újra a dalt
+Lejátszás/Szünet
+Az aktuális dal leállítása
+Lehalkít
+Hangerő beállítása
+Hangerő fel
+Feliratkésleltetés csökkentése
+Feliratkésleltetés beállítása
+Növelje a felirat késleltetését
+Hangkésleltetés csökkentése
+Hangkésleltetés beállítása
+Növelje az audio késleltetést
+ félhangok
+Kérem írja be a nevét. Ez az eszközről a sorba állított dalok mellett jelenik meg.
+A dal felkerült a sorba:
+A dal már sorban áll:
+Rendezés dátum szerint
+Rendezés ábécé szerint
+'%s' hozzáadása a sorhoz
+Tallózás
+"Dátum" szerint rendezve
+Rendezés "ábécé szerint"
+dalok
+<b>{start} - {end}</b> {record_name} megjelenítése, összesen <b>{total}</b> {record_name}
+megtalálva: <b>{found}</b> {record_name}, megjelenítve: <b>{start} - {end}</b> {record_name}
+Dal szerkesztése
+Feljebb a sorban
+Lépjen lejjebb a sorban
+Biztos, hogy törölni akarja a sorból?
+Biztosan törli a TELJES sort? A folytatáshoz írja be az „OK” gombot
+Adj hozzá 3 véletlenszerű dalt
+Mindent kitöröl
+A sor üres
+Sor
+Töröl
+Elérhető dalok a helyi könyvtárban
+Dal hozzáadva a sorhoz:
+A dal már a sorban van:
+Keresés / Új hozzáadása
+Keresés
+Sor
+Tartalmazzon nem karaoke meccseket
+Fejlett
+Írjon be egy dalt (cím/előadó) az elérhető dalok kereséséhez, majd kattintson a „Várólista” gombra, hogy hozzáadja a lejátszási sorhoz.
+Ha a dal nem jelenik meg az „Elérhető dalok” legördülő listában, kattintson a „Keresés” gombra, hogy megtalálja a Youtube-on.
+Közvetlen letöltés YouTube url:
+Hozzáadás a sorhoz
+Feliratok szerepeltetése
+Letöltés
+Keresés a YouTube-on
+Keresés eredménye
+További eredmények megjelenítéséhez kattintson a legördülő menüre
+Link:
+Elérhető dalok
+Meg akarja változtatni az eszközt használó személy megjelenített nevét? Ez a sorban álló dalok mellett fog megjelenni. Jelenlegi:
+Jelenlegi felhasználó
+Info
+PiKaraoke
+Biztosan ki szeretne lépni?
+Biztosan le akarod kapcsolni?
+Biztos, hogy újra akarod indítani?
+Biztos, hogy most azonnal frissíteni szeretnéd a Youtube-dl-t? A jelenlegi és a függőben lévő letöltések sikertelenek lehetnek.
+Biztos benne, hogy ki szeretné bővíteni a fájlrendszert? Ezzel újraindítja a Raspberry pi-t.
+Információ
+Praktikus URL QR-kód, amelyet megoszthat egy barátjával:
+OS
+Lemez használat
+memória
+Képernyőfelvétel
+Vocal Splitter
+Youtube-dl (yt-dlp) verzió
+PiKaraoke verzió
+Speciális vezérlési beállítások
+Énekosztó mód:
+Használja az L-R/L+R
+Használja a DNN-t
+A szabványos MTV hang a két sztereó csatornát (L és R) úgy kódolja, hogy: L-R a hangszersáv, L+R az éneksáv. Így a két sztereó csatorna egyszerű kivonásával vagy összeadásával mono hangzásban kaphatjuk meg a hangszeres és vokális sávot. A PiKaraoke beépített DNN-alapú (mély neurális hálózat) énekelosztója mesterséges intelligencia algoritmust használ a hangszeres és az énekhang felosztására minden sztereó sávban egymástól függetlenül, így sztereó hangszeres és éneksávokat eredményez.
+Állítsa le a Splittert
+Indítsa újra a Splittert
+Az énekelosztó (amely mind a DNN-alapú, mind a sztereó kivonást támogatja) külön folyamatként fut a háttérben, minden dalhoz instrumentális/ének hangfájlt generálva.
+Hang és videó újraszinkronizálása:
+Állítsa le a Streamert
+Indítsa újra a Streamert
+Ez csak a KTV webböngészőn keresztüli lejátszását érinti. A képernyőrögzítés és streaming újraindítása javítja az audio/video szinkronizálást, valamint csökkenti a szerver és a böngésző közötti késleltetést.
+A dallista frissítése:
+Olvassa be újra a dalkönyvtárat
+Ezt csak akkor kell megtennie, ha manuálisan másolta át a fájlokat a letöltési könyvtárba, miközben a PiKaraoke futott.
+Frissítések
+Ha a letöltések vagy a keresések leálltak, a youtube-dl frissítése valószínűleg megoldja. A jelenlegi telepített verzió:
+Frissítse a youtube-dl-t
+A fenti frissítési hivatkozás meghiúsulhat, ha nem rendelkezik megfelelő fájlengedélyekkel. Ellenőrizze a PiKaraoke naplójában hibákat.
+Leállitás
+Ne csak a dugót húzza ki! Mindig megfelelően állítsa le a szervert, hogy elkerülje az adatsérülést.
+Lépjen ki a PiKaraoke-ból
+Rendszer újraindítása
+Leállító rendszer
+Egyéb
+Bontsa ki a Raspberry Pi fájlrendszert
+Ha most telepítette az előre beépített pikaraoke pi képet, és az SD-kártya 4 GB-nál nagyobb, érdemes lehet bővíteni a fájlrendszert, hogy kihasználja a fennmaradó helyet. Ezt csak egyszer kell megtennie. Ezzel újraindul a rendszer.
+Az adminisztrátori mód letiltása
+Adminisztrátori mód engedélyezése
+Kijelentkezés
+Belépés
+Rendszer információ
+itthon
+Válts nyelvet

@@ -1,4 +1,4 @@
-Admin mode granted!
+English
 Incorrect admin password!
 Logged out of admin mode!
 Added %s random tracks
@@ -56,7 +56,7 @@ Then point its browser to: '%s://%s%s' and follow the instructions.
 Up next: 
 Added by: 
 Now playing: 
-Added by: 
+Admin mode granted! 
 Increasing audio delay will give you more time to read lyrics before singing out the next sentence.
 Decreasing subtitle delay will give you more time to read lyrics before singing out the next sentence.
 A semitone is also known as a half-step. It is the smallest interval used in classical Western music, equal to a twelfth of an octave or half a tone.
@@ -130,7 +130,7 @@ Search results for
 Click dropdown to show more results
 Link:
 Available Songs
-Do you want to change the name of the person using this device? This will show up on queued songs. Current:
+Do you want to change the display name of the person using this device? This will show up next to the queued songs. Current:
 Current user
 Info
 PiKaraoke
@@ -179,3 +179,7 @@ Disable admin mode
 Enable admin mode
 log out
 log in
+System Info
+Home
+Change Language
+Please choose language

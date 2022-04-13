@@ -1,0 +1,184 @@
+Suomalainen
+Virheellinen järjestelmänvalvojan salasana!
+Kirjautunut ulos järjestelmänvalvojatilasta!
+Lisätty %s satunnaista raitaa
+Kappaleet loppuivat!
+Tyhjennetty jono!
+Virhe siirrettäessä kohdetta jonossa: virheellinen argumentti
+Kohteen siirtäminen jonossa onnistui:
+Virhe siirrettäessä kohdetta jonossa:
+Siirretty alas jonossa:
+Virhe siirryttäessä alas jonossa:
+Siirretty ylöspäin jonossa:
+Virhe siirryttäessä ylöspäin jonossa:
+Poistettu jonosta:
+Virhe poistettaessa jonosta:
+Lataus aloitettu:
+Kun se on valmis, se lisätään jonoon.
+Kun se on valmis, se näkyy "saatavilla olevien kappaleiden" luettelossa.
+Virhe: Tätä kappaletta ei voi poistaa, koska se on nykyisessä jonossa:
+Kappale poistettu:
+Virhe: kappaleparametria ei ole määritetty!
+Virhe: Tätä kappaletta ei voi muokata, koska sitä soitetaan parhaillaan:
+Kappaletiedoston muokkaus
+Virhe tiedoston "%s" uudelleennimeämisessä nimeksi "%s". Tiedostonimi on jo olemassa.
+Nimetty tiedosto: '%s' uudelleen '%s'
+Virhe: Tiedostonimen parametreja ei määritetty!
+Tuntematon
+Juoksemassa
+Pysähtynyt
+ (vain CPU)
+ (GPU käytössä)
+Päivitetään youtube-dl! Pitäisi kestää minuutti tai kaksi...
+Sinulla ei ole lupaa päivittää youtube-dl:ää
+Sinulla ei ole lupaa sulkea
+Lopeta PiKaraoke nyt!
+Sinulla ei ole lupaa lopettaa
+Sulje järjestelmä nyt!
+Sinulla ei ole lupaa sulkea
+Järjestelmä käynnistetään uudelleen nyt!
+Sinulla ei ole oikeutta käynnistää uudelleen
+Laajenna tiedostojärjestelmää ja käynnistä järjestelmä uudelleen nyt!
+Fs:ää ei voi laajentaa muissa kuin Raspberry pi -laitteissa!
+Sinulla ei ole oikeutta muuttaa tiedostojärjestelmän kokoa
+Youtube-dl polkua ei löydy!
+VLC-polkua ei löydy!
+omxplayer polkua ei löydy!
+Latauspolun luominen:
+Wifi/verkko ei yhdistetty. Suljetaan 10 sekunnissa...
+Voit valita kappaleita skannaamalla QR-koodin tai muodostamalla yhteyden
+Yhdistä TV-näyttöä varten
+Paina F vaihtaaksesi koko näytön tilaan
+Paina ESC poistuaksesi PiKaraokesta
+RaspiWifiConfig-asennustila havaittu!
+Yhdistä toinen laite/älypuhelin Wifi-tukiasemaan: '%s'
+Osoita sitten selain osoitteeseen: '%s://%s%s' ja seuraa ohjeita.
+Seuraavaksi:
+Lisännyt:
+Nyt soi:
+Järjestelmänvalvojatila myönnetty!
+Lisääntyvä äänen viive antaa sinulle enemmän aikaa lukea sanoituksia ennen seuraavan lauseen laulamista.
+Tekstityksen viiveen vähentäminen antaa sinulle enemmän aikaa lukea sanoituksia ennen seuraavan lauseen laulamista.
+Puolisävel tunnetaan myös puoliaskeluna. Se on pienin klassisessa länsimaisessa musiikissa käytetty intervalli, joka vastaa oktaavin kahdestoistaosaa tai puolisäveltä.
+DNN-pohjainen äänenjakaja on käytössä. PiKaraoke käyttää PyTorchia (Facebook) pyörittääkseen syvää hermoverkkoa instrumentaali- ja lauluäänen jakamiseksi kussakin kappaleessa, jolloin syntyy stereoääntä.
+Pelaajan ohjaus
+Musiikki
+Molemmat
+Ääni
+Vaihda avain
+Mikään ei pelaa juuri nyt.
+Yhtään kappaletta ei ole jonossa.
+Et ole lisännyt tätä kappaletta. Haluatko varmasti aloittaa tämän kappaleen uudelleen?
+Et ole lisännyt tätä kappaletta. Haluatko varmasti ohittaa tämän kappaleen?
+Pelaajan ohjaus
+Nyt soi
+Seuraava kappale
+Pyrkiä:
+Äänen viive (s)
+Tekstityksen viive (s)
+Käynnistä kappale uudelleen
+Toista/Tauko
+Pysäytä nykyinen kappale
+Äänenvoimakkuutta pienemmälle
+Aseta äänenvoimakkuus
+Ääni kovemmalle
+Pienennä tekstityksen viivettä
+Aseta tekstityksen viive
+Lisää tekstityksen viivettä
+Pienennä äänen viivettä
+Aseta äänen viive
+Lisää äänen viivettä
+ puolisävelet
+Kirjoita nimesi. Tämä näkyy tältä laitteelta jonossa olevien kappaleiden vieressä.
+Jonoon lisätty kappale:
+Laulu on jo jonossa:
+Lajittele päivämäärän mukaan
+Lajittele aakkosjärjestyksen mukaan
+Lisää '%s' jonoon
+Selaa
+Lajiteltu päivämäärän mukaan
+Lajiteltu "aakkosjärjestyksen" mukaan
+kappaleita
+näytetään <b>{aloitus} - {end}</b> {tietueen_nimi}, yhteensä <b>{total}</b> {record_name}
+löytyi <b>{found}</b> {tietueen_nimi}, näytetään <b>{aloitus} - {end}</b> {tietueen_nimi}
+Muokkaa kappaletta
+Siirrä ylöspäin jonossa
+Siirry alas jonossa
+Haluatko varmasti poistaa jonosta
+Haluatko varmasti tyhjentää KOKO jonon? Kirjoita "OK" jatkaaksesi
+Lisää 3 satunnaista kappaletta
+Tyhjennä
+Jono on tyhjä
+Jonottaa
+Poistaa
+Kappaleet saatavilla paikallisessa kirjastossa
+Lisätty kappale jonoon:
+Kappale on jo jonossa:
+Etsi / Lisää uusi
+Hae
+Jonottaa
+Sisällytä ei-karaoke-ottelut
+Pitkälle kehittynyt
+Kirjoita kappale (nimi/artisti) etsiäksesi käytettävissä olevia kappaleita ja napsauta "Jono" lisätäksesi sen jonoon.
+Jos kappale ei näy Available Songs -pudotusvalikossa, napsauta Hae löytääksesi sen Youtubesta.
+Suora lataus YouTube-url:
+Lisää jonoon
+Sisällytä tekstitykset
+ladata
+Haetaan YouTubesta
+Etsi tuloksia
+Napsauta avattavaa valikkoa nähdäksesi lisää tuloksia
+Linkki:
+Saatavilla olevat kappaleet
+Haluatko muuttaa tätä laitetta käyttävän henkilön näyttönimeä? Tämä näkyy jonossa olevien kappaleiden vieressä. Nykyinen:
+Nykyinen käyttäjä
+Tiedot
+PiKaraoke
+Oletko varma, että haluat lopettaa?
+Haluatko varmasti sulkea?
+Oletko varma, että haluat käynnistää uudelleen?
+Haluatko varmasti päivittää Youtube-dl:n juuri nyt? Nykyiset ja odottavat lataukset voivat epäonnistua.
+Haluatko varmasti laajentaa tiedostojärjestelmää? Tämä käynnistää Raspberry pi uudelleen.
+Tiedot
+Kätevä URL-QR-koodi jaettavaksi kaverin kanssa:
+OS
+Levyn käyttö
+Muisti
+Kuvakaappaus
+Vocal Splitter
+Youtube-dl (yt-dlp) -versio
+PiKaraoke versio
+Ohjauksen lisäasetukset
+Laulunjakajatila:
+Käytä L-R/L+R
+Käytä DNN:tä
+Normaalissa MTV-äänessä on kaksi stereokanavaa (L ja R) koodattuina siten, että: L-R on instrumenttiraita, L+R on lauluraita. Näin ollen yksinkertaisesti vähentämällä tai lisäämällä kaksi stereokanavaa, saamme instrumentaali- ja lauluraidan monoäänellä. PiKaraoken sisäänrakennettu DNN-pohjainen (syvä hermoverkko) äänenjakaja käyttää AI-algoritmia instrumentaali- ja lauluäänen jakamiseen jokaisessa stereoraidassa itsenäisesti, jolloin tuloksena on stereo-instrumentaali- ja lauluraitoja.
+Pysäytä Splitter
+Käynnistä Splitter uudelleen
+Laulunjakaja (joka tukee sekä DNN-pohjaista että stereovähennystä) toimii erillisenä prosessina taustalla, luoden instrumentaali-/lauluäänitiedoston jokaiselle kappaleelle.
+Synkronoi ääni ja video uudelleen:
+Pysäytä Streamer
+Käynnistä Streamer uudelleen
+Tämä vaikuttaa vain KTV:n pelaamiseen verkkoselaimen kautta. Näytön kaappauksen ja suoratoiston uudelleenkäynnistys parantaa äänen/videon synkronointia ja vähentää myös palvelimen ja selaimen välistä latenssia.
+Päivitä kappalelista:
+Skannaa kappalehakemisto uudelleen
+Sinun pitäisi tehdä tämä vain, jos kopioit tiedostot manuaalisesti lataushakemistoon PiKaraoken ollessa käynnissä.
+Päivitykset
+Jos lataukset tai haut lakkaavat toimimasta, youtube-dl:n päivittäminen todennäköisesti korjaa sen. Nykyinen asennettu versio on:
+Päivitä youtube-dl
+Tämä yllä oleva päivityslinkki saattaa epäonnistua, jos sinulla ei ole asianmukaisia ​​tiedostooikeuksia. Tarkista PiKaraoke-lokista virheitä.
+Sammuttaa
+Älä vain vedä pistokkeesta! Sammuta aina palvelin kunnolla tietojen vioittumisen välttämiseksi.
+Lopeta PiKaraoke
+Käynnistä kone uudelleen
+Sammutusjärjestelmä
+Muut
+Laajenna Raspberry Pi -tiedostojärjestelmää
+Jos asensit juuri valmiiksi rakennetun pikaraoke pi -kuvan ja SD-korttisi on suurempi kuin 4 Gt, saatat haluta laajentaa tiedostojärjestelmää hyödyntääksesi jäljellä olevan tilan. Sinun tarvitsee tehdä tämä vain kerran. Tämä käynnistää järjestelmän uudelleen.
+Poista järjestelmänvalvojatila käytöstä
+Ota järjestelmänvalvojatila käyttöön
+kirjautua ulos
+Kirjaudu sisään
+Järjestelmän tiedot
+Koti
+Vaihda kieltä

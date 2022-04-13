@@ -74,7 +74,8 @@ class Karaoke:
 			vlc_port = None,
 			logo_path = None,
 			show_overlay = False,
-			run_vocal = False
+			run_vocal = False,
+			window_mode = False
 	):
 
 		# override with supplied constructor args if provided
@@ -194,7 +195,7 @@ class Karaoke:
 			                                     dual_screen = self.dual_screen, volume_offset = self.volume_offset)
 
 		if not self.hide_splash_screen:
-			self.initialize_screen()
+			self.initialize_screen(not window_mode)
 			self.render_splash_screen()
 
 	# Other ip-getting methods are unreliable and sometimes return 127.0.0.1
@@ -278,10 +279,9 @@ class Karaoke:
 		else:
 			return pygame.FULLSCREEN
 
-	def initialize_screen(self):
+	def initialize_screen(self, fullscreen=True):
 		if not self.hide_splash_screen:
 			logging.debug("Initializing pygame")
-			self.full_screen = True
 			pygame.init()
 			pygame.display.set_caption("pikaraoke")
 			pygame.mouse.set_visible(0)
@@ -290,8 +290,8 @@ class Karaoke:
 			self.HEIGHT = pygame.display.Info().current_h
 			logging.debug("Initializing screen mode")
 
-			if self.platform == "windows":
-				self.screen = pygame.display.set_mode([self.WIDTH, self.HEIGHT], self.get_default_display_mode())
+			if self.platform != "raspberry_pi":
+				self.toggle_full_screen(fullscreen)
 			else:
 				# this section is an unbelievable nasty hack - for some reason Pygame
 				# needs a keyboardinterrupt to initialise in some limited circumstances
@@ -305,16 +305,16 @@ class Karaoke:
 				signal(SIGALRM, alarm_handler)
 				alarm(3)
 				try:
-					self.screen = pygame.display.set_mode([self.WIDTH, self.HEIGHT], self.get_default_display_mode())
+					self.toggle_full_screen(fullscreen)
 					alarm(0)
 				except Alarm:
 					raise KeyboardInterrupt
 			logging.debug("Done initializing splash screen")
 
-	def toggle_full_screen(self):
+	def toggle_full_screen(self, fullscreen=None):
 		if not self.hide_splash_screen:
 			logging.debug("Toggling fullscreen...")
-			self.full_screen = not self.full_screen
+			self.full_screen = not self.full_screen if fullscreen is None else fullscreen
 			if self.full_screen:
 				self.screen = pygame.display.set_mode([self.WIDTH, self.HEIGHT], self.get_default_display_mode())
 			else:
@@ -400,7 +400,7 @@ class Karaoke:
 		elif not self.has_video:
 			logging.debug("Rendering current song to splash screen")
 			render_next_song = self.render_font([60, 50, 40], getString(58) + self.now_playing, (255, 255, 0))
-			render_next_user = self.render_font([50, 40, 30], getString(59) + self.now_playing_user, (0, 240, 0))
+			render_next_user = self.render_font([50, 40, 30], getString(57) + self.now_playing_user, (0, 240, 0))
 			self.screen.blit(render_next_song[0], (self.screen.get_width() - render_next_song[1].width - 10, self.normalize(10)))
 			self.screen.blit(render_next_user[0], (self.screen.get_width() - render_next_user[1].width - 10, self.normalize(80)))
 
@@ -625,6 +625,7 @@ class Karaoke:
 				extra_params += [f'--sub-delay={self.subtitle_delay * 10}']
 			self.now_playing = self.filename_from_path(file_path)
 			self.now_playing_filename = file_path
+			self.is_paused = ('--start-paused' in extra_params)
 			if self.now_playing_transpose == 0:
 				xml = self.vlcclient.play_file(file_path, self.volume, extra_params)
 			else:
@@ -635,7 +636,6 @@ class Karaoke:
 			logging.info("Playing video in omxplayer: " + file_path)
 			self.omxclient.play_file(file_path)
 
-		self.is_paused = ('--start-paused' in extra_params)
 		self.render_splash_screen()  # remove old previous track
 
 	def play_transposed(self, semitones):

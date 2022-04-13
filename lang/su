@@ -1,0 +1,184 @@
+basa Sunda
+Sandi admin lepat!
+Kaluar tina mode admin!
+Ditambahkeun %s lagu acak
+Kahabisan lagu!
+Dibersihkeun antrian!
+Kasalahan mindahkeun item dina antrian: invalid-argument
+Barang hasil dipindahkeun kana antrian:
+Kasalahan nalika mindahkeun item dina antrian:
+Dipindahkeun ka handap dina antrian:
+Kasalahan turun dina antrian:
+Dipindahkeun dina antrian:
+Kasalahan naek dina antrian:
+Dihapus tina antrian:
+Kasalahan ngahapus tina antrian:
+Unduh dimimitian:
+Kana parantosan, éta bakal ditambahkeun kana antrian.
+Saatos réngsé, éta bakal muncul dina daptar "lagu anu sayogi".
+Kasalahan: Teu tiasa ngahapus lagu ieu kusabab aya dina antrian ayeuna:
+Lagu dihapus:
+Kasalahan: Taya parameter lagu dieusian!
+Kasalahan: Teu bisa ngédit ieu lagu sabab keur diputerkeun:
+Lagu File Edit
+Kasalahan Ngaganti ngaran koropak: '%s' jadi '%s'. Ngaran koropak geus aya.
+Ngaran koropak diganti: '%s' jadi '%s'
+Kasalahan: Henteu aya parameter nami file anu ditunjuk!
+Teu dipikanyaho
+Lumpat
+Dieureunkeun
+ (CPU wungkul)
+ (GPU diaktipkeun)
+Ngamutahirkeun youtube-dl! Kudu nyandak hiji atawa dua menit ...
+Anjeun teu gaduh idin pikeun ngapdet youtube-dl
+Anjeun teu gaduh idin pikeun mareuman
+Leupaskeun PiKaraoke ayeuna!
+Anjeun teu gaduh idin pikeun kaluar
+Pareuman sistem ayeuna!
+Anjeun teu gaduh idin pikeun mareuman
+Rebooting sistem ayeuna!
+Anjeun teu gaduh idin pikeun Reboot
+Ngalegaan sistem file sareng sistem rebooting ayeuna!
+Teu tiasa ngagedekeun fs dina alat pi non-raspberry!
+Anjeun teu gaduh idin pikeun ngatur ukuran filesystem
+jalur Youtube-dl teu kapanggih!
+jalur VLC teu kapanggih!
+jalur omxplayer teu kapanggih!
+Nyieun jalur download:
+Wifi/Jaringan teu nyambung. Pareum dina 10s ...
+Pikeun milih lagu, scan QR atanapi sambungkeun ka
+Pikeun tampilan TV, sambungkeun ka
+Pencét F pikeun togél layar pinuh
+Pencét ESC pikeun kaluar PiKaraoke
+Modeu setelan RaspiWifiConfig dideteksi!
+Sambungkeun alat/smartphone sejen ka Wifi AP: '%s'
+Teras arahkeun browserna ka: '%s://%s%s' sareng turutan parentah.
+Salajengna:
+Ditambahkeun ku:
+Ayeuna maén:
+Modeu admin dipasihkeun!
+Ngaronjatkeun reureuh audio bakal masihan anjeun langkung waktos maca lirik sateuacan nyanyian kalimat salajengna.
+Ngurangan reureuh subjudul bakal masihan anjeun langkung waktos maca lirik sateuacan nyanyian kalimat salajengna.
+Semitone ogé katelah satengah léngkah. Ieu mangrupikeun interval pangleutikna anu dianggo dina musik klasik Barat, sami sareng dua belas oktaf atanapi satengah nada.
+Splitter vokal basis DNN diaktipkeun. PiKaraoke nganggo PyTorch (ku Facebook) pikeun ngajalankeun jaringan saraf jero pikeun ngabagi sora instrumental sareng vokal dina unggal lagu anu nyababkeun sora stereo.
+Kontrol pamuter
+Musik
+Duanana
+Sora
+Robah Key
+Henteu aya anu maén ayeuna.
+Teu aya lagu anu ngantri.
+lagu ieu teu ditambahkeun ku anjeun. Naha anjeun yakin hoyong ngabalikan deui lagu ieu?
+lagu ieu teu ditambahkeun ku anjeun. Naha anjeun yakin hoyong ngaliwat lagu ieu?
+Kontrol pamuter
+Ayeuna Maén
+Lagu Salajengna
+Milarian Ka:
+Tunda Audio (detik)
+Tunda Subjudul (detik)
+Balikan deui Lagu
+Play / Reureuh
+Ngeureunkeun Lagu Ayeuna
+Volume Turun
+Setel Jilid
+Jilid ka luhur
+Turunkeun Tunda Subjudul
+Setel Tunda Subjudul
+Ningkatkeun Tunda Subjudul
+Ngurangan Tunda Audio
+Setel Tunda Audio
+Ningkatkeun Tunda Audio
+ semitones
+Mangga lebetkeun nami anjeun. Ieu bakal muncul di gigireun lagu anu anjeun antri ti alat ieu.
+Lagu ditambahkeun kana antrian:
+Lagu geus antri:
+Susun dumasar Tanggal
+Susun dumasar Abjad
+Tambahkeun '%s' kana antrian
+Ngotéktak
+Diurutkeun dumasar 'Tanggal'
+Diurutkeun dumasar 'Alfabétis'
+lagu-lagu
+mintonkeun <b>{start} - {end}</b> {record_name}, total <b>{total}</b> {record_name}
+kapanggih <b>{kapanggih}</b> {record_name}, mintonkeun <b>{start} - {end}</b> {record_name}
+Edit lagu
+Pindah kana antrian
+Pindah ka handap dina antrian
+Naha anjeun yakin rék mupus tina antrian
+Naha anjeun yakin hoyong mupus ENTIRE antrian? Ketik 'OK' pikeun neruskeun
+Tambahkeun 3 lagu acak
+Pupus sadayana
+Antrian kosong
+Ngantri
+Mupus
+Lagu anu sayogi di perpustakaan lokal
+Lagu ditambahkeun kana antrian:
+Lagu parantos aya dina antrian:
+Pilarian / Tambahkeun Anyar
+Pilarian
+Ngantri
+Kaasup patandingan non-karaoke
+Maju
+Ketik lagu (judul/artis) pikeun milarian lagu-lagu anu sayogi teras klik 'Antrian' pikeun nambihanana kana antrian.
+Lamun lagu teu nembongan dina dropdown "Lagu sadia", klik 'Search' pikeun manggihan eta dina Youtube.
+Unduh langsung URL YouTube:
+Tambahkeun ka antrian
+Kaasup subjudul
+Ngundeur
+Milarian YouTube pikeun
+Hasil teangan pikeun
+Klik dropdown pikeun nembongkeun leuwih hasil
+Tumbu:
+Lagu sadia
+Naha anjeun badé ngarobih nami tampilan jalma anu nganggo alat ieu? Ieu bakal muncul gigireun lagu antrian. Ayeuna:
+pamaké ayeuna
+Inpo
+PiKaraoke
+Anjeun yakin rék kaluar?
+Anjeun yakin rék mareuman?
+Anjeun yakin rék reboot?
+Naha anjeun yakin hoyong ngapdet Youtube-dl ayeuna? Undeuran anu ayeuna sareng anu ditangguhkeun tiasa gagal.
+Naha anjeun yakin hoyong ngalegaan sistem file? Ieu bakal reboot pi buah prambus Anjeun.
+Émbaran
+Kode QR URL gunana pikeun dibagikeun sareng sobat:
+OS
+Pamakéan piringan
+Mémori
+Potret layar
+Pamisah Vokal
+Vérsi Youtube-dl (yt-dlp).
+Vérsi PiKaraoke
+Pilihan Control Advanced
+Mode pamisah vokal:
+Paké L-R/L+R
+Paké DNS
+Audio MTV standar gaduh dua saluran stereo (L sareng R) disandikeun ku cara sapertos: L-R nyaéta lagu instrumen, L+R nyaéta lagu vokal. Ku kituna, ku saukur ngurangan atawa nambahkeun dua saluran stereo, urang bisa meunangkeun lagu instrumental jeung vokal dina sora mono. PiKaraoke's built-in DNN basis (jaringan saraf jero) splitter vokal ngagunakeun algoritma AI pikeun pamisah sora instrumental jeung vokal dina unggal lagu stereo sacara mandiri ngahasilkeun lagu instrumental jeung vokal stereo.
+Eureun Splitter
+Balikan deui Splitter
+Splitter vokal (anu ngarojong duanana basis DNN jeung pangurangan stereo) ngajalankeun salaku prosés misah di latar tukang, generating instrumental / file audio vokal pikeun unggal lagu.
+Singkronkeun deui audio sareng pidéo:
+Eureun Streamer
+Balikan deui Streamer
+Ieu ngan mangaruhan maén KTV via web browser. Balikan deui layar-capture-and-streaming ningkatkeun sinkronisasi audio/video, éta ogé ngirangan latency antara server sareng browser.
+Refresh daptar lagu:
+Rescan diréktori lagu
+Anjeun ngan kedah ngalakukeun ieu upami anjeun nyalin file sacara manual kana diréktori undeuran nalika PiKaraoke dijalankeun.
+Pembaruan
+Upami undeuran atanapi pamilarian lirén damel, ngapdet youtube-dl sigana bakal ngalereskeunana. Versi anu dipasang ayeuna nyaéta:
+Apdet youtube-dl
+Tautan apdet ieu di luhur tiasa gagal upami anjeun henteu ngagaduhan idin file anu leres. Pariksa log PiKaraoke pikeun kasalahan.
+Pareuman
+Ulah ngan narik colokan! Salawasna mareuman server anjeun leres pikeun nyegah korupsi data.
+Leupaskeun PiKaraoke
+Reboot System
+Sistem Pareum
+Lain
+Kembangkeun sistem file Raspberry Pi
+Upami anjeun nembé dipasang gambar pikaraoke anu tos diwangun sareng kartu SD anjeun langkung ageung tibatan 4GB, anjeun tiasa ngalegaan sistem file pikeun ngamangpaatkeun rohangan anu sésana. Anjeun ngan ukur kedah ngalakukeun ieu sakali. Ieu bakal reboot sistem.
+Pareuman mode admin
+Aktipkeun mode admin
+kaluar
+lebet
+Inpo Sistim
+Imah
+Robah Basa

@@ -1,0 +1,184 @@
+dansk
+Forkert admin adgangskode!
+Logget ud af admin-tilstand!
+Tilføjede %s tilfældige spor
+Løb tør for sange!
+Ryddede køen!
+Fejl ved flytning af element inde i kø: ugyldigt-argument
+Elementet blev flyttet i køen:
+Fejl ved flytning af element i kø:
+Flyttet ned i køen:
+Fejl ved at flytte ned i køen:
+Flyttet op i køen:
+Fejl ved at rykke op i køen:
+Slettet fra køen:
+Fejl ved sletning fra kø:
+Download startet:
+Efter afslutning vil den blive tilføjet til køen.
+Når den er færdig, vises den på listen "tilgængelige sange".
+Fejl: Kan ikke slette denne sang, fordi den er i den aktuelle kø:
+Sang slettet:
+Fejl: Ingen sangparameter angivet!
+Fejl: Kan ikke redigere denne sang, fordi den afspilles i øjeblikket:
+Rediger sangfil
+Fejl ved omdøbning af fil: '%s' til '%s'. Filnavnet findes allerede.
+Omdøbt fil: '%s' til '%s'
+Fejl: Der blev ikke angivet nogen filnavnsparametre!
+Ukendt
+Løb
+Holdt op
+ (kun CPU)
+ (GPU aktiveret)
+Opdaterer youtube-dl! Det burde tage et minut eller to...
+Du har ikke tilladelse til at opdatere youtube-dl
+Du har ikke tilladelse til at lukke ned
+Afslut PiKaraoke nu!
+Du har ikke tilladelse til at afslutte
+Lukker systemet ned nu!
+Du har ikke tilladelse til at lukke ned
+Genstarter systemet nu!
+Du har ikke tilladelse til at genstarte
+Udvider filsystemet og genstarter systemet nu!
+Kan ikke udvide fs på ikke-raspberry pi-enheder!
+Du har ikke tilladelse til at ændre størrelsen på filsystemet
+Youtube-dl-sti blev ikke fundet!
+VLC-sti ikke fundet!
+omxplayer-stien blev ikke fundet!
+Oprettelse af downloadsti:
+Wifi/netværk ikke tilsluttet. Lukker ned om 10'erne...
+For at vælge sange skal du scanne QR eller oprette forbindelse til
+For tv-visning skal du tilslutte til
+Tryk på F for at skifte til fuld skærm
+Tryk på ESC for at afslutte PiKaraoke
+RaspiWifiConfig opsætningstilstand fundet!
+Tilslut en anden enhed/smartphone til Wifi AP: '%s'
+Peg derefter browseren til: '%s://%s%s' og følg instruktionerne.
+Næste:
+Tilføjet af:
+Spiller nu:
+Admin-tilstand givet!
+Øget lydforsinkelse vil give dig mere tid til at læse tekster, før du synger den næste sætning.
+Formindskelse af undertekstforsinkelse vil give dig mere tid til at læse tekster, før du synger den næste sætning.
+En halvtone er også kendt som et halvt trin. Det er det mindste interval, der bruges i klassisk vestlig musik, svarende til en tolvtedel af en oktav eller en halv tone.
+DNN-baseret stemmesplitter er aktiveret. PiKaraoke bruger PyTorch (af Facebook) til at køre et dybt neuralt netværk for at opdele instrumental og vokal lyd i hvert spor, hvilket giver anledning til stereolyd.
+Spiller kontrol
+musik
+Begge
+Stemme
+Skift nøgle
+Intet spiller lige nu.
+Ingen sang er i kø.
+Denne sang er ikke tilføjet af dig. Er du sikker på, at du vil genstarte dette spor?
+Denne sang er ikke tilføjet af dig. Er du sikker på, at du vil springe dette nummer over?
+Spiller kontrol
+Spiller nu
+Næste sang
+Søge til:
+Lydforsinkelse (sek.)
+Undertekstforsinkelse (sek.)
+Genstart sang
+Afspil/pause
+Stop aktuel sang
+Skrue ned
+Indstil lydstyrke
+Lydstyrke op
+Reducer undertekstforsinkelse
+Indstil undertekstforsinkelse
+Forøg undertekstforsinkelse
+Formindsk lydforsinkelse
+Indstil lydforsinkelse
+Øg lydforsinkelse
+ halvtoner
+Vær sød at skrive dit navn. Dette vises ved siden af ​​de sange, du sætter i kø fra denne enhed.
+Sang tilføjet til køen:
+Sangen står allerede i kø:
+Sorter efter dato
+Sorter efter Alfabetisk
+Tilføj '%s' til køen
+Gennemse
+Sorteret efter 'dato'
+Sorteret efter 'Alfabetisk'
+sange
+viser <b>{start} - {end}</b> {record_name}, i alt <b>{total}</b> {record_name}
+fundet <b>{fundet}</b> {record_name}, viser <b>{start} - {end}</b> {record_name}
+Rediger sang
+Gå op i køen
+Flyt ned i køen
+Er du sikker på, at du vil slette fra køen
+Er du sikker på, at du vil rydde HELE køen? Skriv 'OK' for at fortsætte
+Tilføj 3 tilfældige sange
+Slet alt
+Køen er tom
+Kø
+Slet
+Tilgængelige sange på det lokale bibliotek
+Tilføjet sang til køen:
+Sangen er allerede i køen:
+Søg / Tilføj nyt
+Søg
+Kø
+Inkluder ikke-karaoke kampe
+Fremskreden
+Indtast en sang (titel/kunstner) for at søge efter de tilgængelige sange, og klik på 'Kø' for at tilføje den til køen.
+Hvis sangen ikke vises i rullemenuen "Tilgængelige sange", skal du klikke på 'Søg' for at finde den på Youtube.
+Direkte download YouTube url:
+Tilføj til kø
+Inkluder undertekster
+Hent
+Søger YouTube efter
+Søgeresultater for
+Klik på dropdown for at vise flere resultater
+Link:
+Tilgængelige sange
+Vil du ændre visningsnavnet på den person, der bruger denne enhed? Dette vises ved siden af ​​sangene i køen. Nuværende:
+Nuværende bruger
+Info
+PiKaraoke
+Er du sikker på, at du vil stoppe?
+Er du sikker på, at du vil lukke ned?
+Er du sikker på, at du vil genstarte?
+Er du sikker på, at du vil opdatere Youtube-dl lige nu? Aktuelle og afventende downloads kan mislykkes.
+Er du sikker på, at du vil udvide filsystemet? Dette vil genstarte din raspberry pi.
+Information
+Praktisk URL QR-kode til at dele med en ven:
+OS
+Diskbrug
+Hukommelse
+Skærmbillede
+Vokal Splitter
+Youtube-dl (yt-dlp) version
+PiKaraoke version
+Avancerede kontrolmuligheder
+Vocal splitter tilstand:
+Brug L-R/L+R
+Brug DNN
+Standard MTV-lyd har de to stereokanaler (L og R) kodet på en sådan måde, at: L-R er instrumentsporet, L+R er vokalsporet. Ved blot at trække fra eller tilføje de to stereokanaler kan vi således få instrumental- og vokalsporet i monolyd. PiKaraokes indbyggede DNN-baserede (dybt neurale netværk) vokalsplitter bruger AI-algoritme til at opdele instrumental- og vokallyd i hvert stereospor uafhængigt, hvilket resulterer i stereoinstrumental- og vokalspor.
+Stop splitter
+Genstart Splitter
+Vokalsplitteren (der understøtter både DNN-baseret og stereosubtraktion) kører som en separat proces i baggrunden, der genererer instrumental/vokal lydfil for hver sang.
+Gensynkroniser lyd og video:
+Stop Streamer
+Genstart Streamer
+Dette påvirker kun afspilning af KTV via webbrowser. Genstart af screen-capture-and-streaming forbedrer lyd/video-synkronisering, det reducerer også latensen mellem serveren og browseren.
+Opdater sanglisten:
+Scan sangbiblioteket igen
+Du skulle kun behøve at gøre dette, hvis du manuelt kopierede filer til download-mappen, mens PiKaraoke kørte.
+Opdateringer
+Hvis downloads eller søgninger holdt op med at virke, vil opdatering af youtube-dl sandsynligvis løse det. Den nuværende installerede version er:
+Opdater youtube-dl
+Dette opdateringslink ovenfor kan mislykkes, hvis du ikke har de rigtige filtilladelser. Tjek PiKaraoke-loggen for fejl.
+Lukke ned
+Træk ikke bare stikket! Sluk altid din server korrekt for at undgå datakorruption.
+Afslut PiKaraoke
+Genstart systemet
+Nedlukningssystem
+Andet
+Udvid Raspberry Pi-filsystemet
+Hvis du lige har installeret det forudbyggede pikaraoke pi-billede, og dit SD-kort er større end 4 GB, vil du måske udvide filsystemet for at udnytte den resterende plads. Du behøver kun at gøre dette én gang. Dette vil genstarte systemet.
+Deaktiver administratortilstand
+Aktiver administratortilstand
+Log ud
+Log på
+System info
+Hjem
+Skift sprog

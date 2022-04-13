@@ -1,0 +1,184 @@
+Shona
+password admin isiriyo!
+Yabuda kunze kweadmin mode!
+Yakawedzera %s nziyo dzisina kurongeka
+Nziyo dzapera!
+Yakabvisa mutsara!
+Zvatadza kufambisa chinhu mukati memutsara: nharo-nharo
+Tafambisa chinhu mukati memutsara:
+Zvatadza kufambisa chinhu mukati memutsara:
+Zvakadzikiswa mumutsara:
+Kutadza kudzika mumutsara:
+Yakakwidzwa mumutsara:
+Patadza kufamba mumutsara:
+Dzadzimwa mumutsara:
+Patadza kudzima kubva pamutsetse:
+Kudhaunirodha kwatanga:
+Kana yapedza, ichawedzerwa pamutsetse.
+Kana yapedza, ichaonekwa mu "nziyo dziripo".
+Zvakatadza: Hatikwanisi kudzima rwiyo urwu nekuti rwuri mumutsara uripo.
+Rwiyo rwadzimwa:
+Mhosho: Hapana rwiyo parameter yataurwa!
+Mhosho: Hatikwanisi kugadziridza rwiyo urwu nekuti rurikuridzwa:
+Song File Edit
+Mhosho pakupa zita refaira: '%s' kuenda ku'%s'. Zita refaira ravepo.
+Faera rakapihwa zita: '%s' kuenda ku'%s'
+Mhosho: Hapana mafaera ezita rezita akataurwa!
+Unknown
+Kumhanya
+Akamira
+ (CPU chete)
+ (GPU yakagoneswa)
+Kuvandudza youtube-dl! Zvinofanira kutora miniti kana maviri...
+Hauna mvumo yekuvandudza youtube-dl
+Hauna mvumo yekudzima
+Kusiya PiKaraoke ikozvino!
+Hauna mvumo yekurega
+Kudzima system ikozvino!
+Hauna mvumo yekudzima
+Rebooting system ikozvino!
+Iwe hauna mvumo yekuReboot
+Kuwedzera faira system uye rebooting system izvozvi!
+Haikwanise kuwedzera fs pane isiri-raspberry pi zvishandiso!
+Iwe hauna mvumo yekudzosera saizi yefaira system
+Youtube-dl nzira haina kuwanikwa!
+VLC nzira haina kuwanikwa!
+omxplayer nzira haina kuwanikwa!
+Kugadzira nzira yekurodha:
+Wifi/Network haina kubatana. Kuvhara mu10s...
+Pakusarudza nziyo, tarisa QR kana batanidza kune
+Nekuratidzwa kweTV, batanidza ku
+Dzvanya F kuti ushandure yakazara-skrini
+Dzvanya ESC kuti usiye PiKaraoke
+RaspiWifiConfig setup mode yaonekwa!
+Batanidza imwe mudziyo/smartphone kuWifi AP: '%s'
+Wonangisa bhurawuza ku: '%s://%s%s' wotevera mirairo.
+Zvinotevera:
+Yakawedzerwa ne:
+Zvino kutamba:
+Admin mode yapihwa!
+Kuwedzera kunonoka kwekuteerera kunokupa nguva yakawanda yekuverenga mazwi usati waimba mutsara unotevera.
+Kudzikira subtitle kunonoka kunokupa nguva yakawanda yekuverenga mazwi usati waimba mutsara unotevera.
+Semitone inozivikanwawo sehafu-nhanho. Ndiyo nguva diki diki inoshandiswa mumhanzi wekare wekuMadokero, yakaenzana negumi nembiri yeoctave kana hafu yetoni.
+DNN-based vocal splitter inogoneswa. PiKaraoke inoshandisa PyTorch (neFacebook) kumhanyisa yakadzika neural network kupatsanura chiridzwa uye chezwi ruzha murwiyo rwega rwega zvichipa ruzha rwestereo.
+Mutambi Kudzora
+Vadivelu Comedy Music
+Zvose
+Voice
+Chinja Key
+Hapana chiri kutamba izvozvi.
+Hapana rwiyo rwakaiswa mumutsetse.
+Rwiyo urwu hauna kuwedzerwa newe. Une chokwadi chekuti unoda kutangazve track iyi?
+Rwiyo urwu hauna kuwedzerwa newe. Une chokwadi chekuti unoda kusvetuka track iyi?
+Mutambi Kudzora
+Zvino Kutamba
+Next Song
+Tsvaga Ku:
+Audio Kunonoka (sec)
+Subtitle Kunonoka (sec)
+Restart Song
+Tamba/Misa
+Stop Current Song
+Volume Down
+Seta Inzwi
+Volume Up
+Derece Subtitle Kunonoka
+Seta Subtitle Kunonoka
+Wedzera Subtitle Kunonoka
+Derece Audio Kunonoka
+Seta Audio Kunonoka
+Wedzera Kunonoka Kwekuteerera
+ semitones
+Ndapota isa zita rako. Izvi zvichaonekwa padivi penziyo dzaunoisa mumutsara kubva pachigadzirwa ichi.
+Rwiyo rwakawedzerwa pamutsetse:
+Imba yatova mutsara:
+Ronga neDate
+Ronga neAlfabheti
+Wedzera '%s' kumutsara
+Browse
+Zvakarongwa ne 'Date'
+Zvakarongwa ne'Alphabetical'
+nziyo
+kuratidza <b>{start} - {end}</b> {record_name}, zvakazara <b>{total}</b> {record_name}
+yawanikwa <b>{yakawanikwa}</b> {record_name}, tichiratidza <b>{start} - {end}</b> {record_name}
+Edit song
+Enda kumusoro mumutsetse
+Enda pasi mumutsetse
+Une chokwadi chekuti unoda kudzima kubva pamutsetse
+Une chokwadi chekuti unoda kudzima mutsara WESE? Nyora 'OK' kuti uenderere mberi
+Wedzera 3 nziyo dzisina kurongeka
+Bvisa zvese
+Mutsara hauna chinhu
+Mutsara
+Delete
+Nziyo dziripo muraibhurari yemuno
+Rwiyo rwakawedzerwa pamutsetse:
+Rwiyo rwatova mumutsara:
+Tsvaga / Wedzera Zvitsva
+Search
+Mutsara
+Sanganisira mitambo isiri-karaoke
+Advanced
+Nyora rwiyo (zita/muimbi) kutsvaga nziyo dziripo wodzvanya 'Queue' kuti uiwedzere pamutsetse.
+Kana rwiyo rusingaratidzike mukudonha kwe "Nziyo Dziripo", tinya 'Tsvaga' kuti uiwane paYouTube.
+Dhawunirodha zvakananga YouTube url:
+Wedzera kumutsara
+Batanidza zvinyorwa zvidiki
+Download
+Kutsvaga paYouTube
+Tsvaga mhinduro dze
+Dzvanya kudonhedza kuti uratidze mimwe mibairo
+Link:
+Nziyo dziripo
+Unoda kushandura zita rekuratidza remunhu ari kushandisa mudziyo uyu? Izvi zvichaonekwa padivi penziyo dzakamirirwa. Zvazvino:
+Mushandisi wazvino
+Info
+PiKaraoke
+Une chokwadi chekuti unoda kusiya?
+Une chokwadi chekuti unoda kuvhara?
+Une chokwadi chekuti unoda kutangazve?
+Une chokwadi chekuti unoda kugadzirisa Youtube-dl izvozvi? Zvekudhaunirodha zvazvino uye zvakamirira zvinogona kutadza.
+Une chokwadi chekuti unoda kuwedzera iyo faira system? Izvi zvichatangazve raspberry pi yako.
+Information
+Inobatsira URL QR kodhi yekugovana neshamwari:
+OS
+Kushandiswa kweDisiki
+Memory
+Screen Capture
+Vocal Splitter
+Youtube-dl (yt-dlp) shanduro
+PiKaraoke version
+Advanced Control Options
+Vocal splitter mode:
+Shandisa L-R/L+R
+Shandisa DNN
+Yakajairwa MTV odhiyo ine maviri stereo chiteshi (L uye R) encoded nenzira yekuti: L-R ndiyo track yechiridzwa, L+R ndiyo inonzwika track. Nekudaro, nekungobvisa kana kuwedzera maviri estereo chiteshi, tinogona kuwana chiridzwa uye chezwi rwiyo mumono ruzha. PiKaraoke's yakavakirwa-muDNN-yakavakirwa (yakadzika neural network) inzwi rinopatsanura rinoshandisa AI algorithm kupatsanura chiridzwa uye chezwi ruzha murwiyo rwese stereo zvakazvimiririra zvichikonzera stereo chiridzwa uye manzwi enzwi.
+Stop Splitter
+Tangazve Splitter
+Iyo inopatsanura yezwi (inotsigira zvese DNN-yakavakirwa uye stereo kubvisa) inomhanya seyakaparadzana maitiro kumashure, ichigadzira chiridzwa / izwi redhiyo faira renziyo dzese.
+Batanidza zvakare odhiyo nevhidhiyo:
+Misa Streamer
+Tangazve Streamer
+Izvi zvinongokanganisa kutamba KTV kuburikidza newebhu browser. Kutangazve iyo skrini-kutora-uye-kutenderera inovandudza odhiyo / vhidhiyo kuwiriranisa, zvakare inoderedza iyo latency pakati pesevha nebrowser.
+Gadzirisa runyoro rwenziyo:
+Rescan rwiyo directory
+Iwe unofanirwa chete kuita izvi kana iwe wakakopa mafaera nemaoko kudhairekitori rekurodha PiKaraoke ichimhanya.
+Updates
+Kana kudhawunirodha kana kutsvaga kwakamira kushanda, kugadzirisa youtube-dl kungangozvigadzirisa. Ikozvino yakaiswa vhezheni ndeiyi:
+Gadziridza youtube-dl
+Iyi yekuvandudza link iri pamusoro inogona kutadza kana iwe usina mvumo yefaira. Tarisa iyo PiKaraoke log yezvikanganiso.
+Vhara
+Usangodhonza plug! Gara uchivhara server yako nemazvo kuti udzivise huwori hwe data.
+Quit PiKaraoke
+Reboot System
+Shutdown System
+Zvimwe
+Wedzera Raspberry Pi faira system
+Kana iwe uchangobva kuisa iyo pre-yakavakwa pikaraoke pi mufananidzo uye SD kadhi yako yakakura kupfuura 4GB, ungangoda kuwedzera iyo faira system kushandisa yasara nzvimbo. Unongofanira kuita izvi kamwe chete. Izvi zvichatangazve system.
+Dzima admin modhi
+Gonesa admin modhi
+kubuda
+log in
+System Info
+Kumba
+Chinja Mutauro

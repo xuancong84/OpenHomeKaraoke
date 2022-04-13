@@ -1,0 +1,184 @@
+lëtzebuergesch
+Falsch Administrator Passwuert!
+Ausgeloggt vum Admin Modus!
+%s zoufälleg Bunnen dobäigesat
+Lidder raus!
+D'Schlaang geläscht!
+Feeler beim Beweegen vum Element an der Schlaang: invalid-Argument
+Erfolleg geplënnert Element an der Schlaang:
+Feeler beim Beweegen vum Element an der Schlaang:
+Geplënnert erof an der Schlaang:
+Feeler beim Beweegen erof an der Schlaang:
+Geplënnert an der Schlaang:
+Feeler beim Beweegen an der Schlaang:
+Aus der Schlaang geläscht:
+Feeler beim Läschen aus der Schlaang:
+Download ugefaangen:
+Nom Ofschloss gëtt et an d'Schlaang bäigefüügt.
+Beim Fäerdegstellung erschéngt et an der "verfügbar Lidder" Lëscht.
+Feeler: Kann dëst Lidd net läschen well et an der aktueller Schlaang ass:
+Lidd geläscht:
+Feeler: Kee Songparameter spezifizéiert!
+Feeler: Kann dëst Lidd net änneren well et am Moment gespillt gëtt:
+Lidd Fichier Edit
+Feeler beim Ëmbenennung vun der Datei: '%s' op '%s'. Dateinumm existéiert schonn.
+Ëmbenannt Datei: '%s' op '%s'
+Feeler: Keng Dateinummparameter goufen uginn!
+Onbekannt
+Lafen
+Gestoppt
+ (nëmmen CPU)
+ (GPU aktivéiert)
+Update youtube-dl! Sollt eng Minutt oder zwou daueren ...
+Dir hutt keng Erlaabnis fir youtube-dl ze aktualiséieren
+Dir hutt keng Erlaabnis fir auszeschalten
+PiKaraoke elo ophalen!
+Dir hutt keng Erlaabnis fir opzehalen
+Schalt de System elo aus!
+Dir hutt keng Erlaabnis fir auszeschalten
+Restart System elo!
+Dir hutt keng Erlaabnis fir nei ze starten
+Datesystem ausbauen an de System elo nei starten!
+Kann net fs op Net-Raspberry Pi Apparater ausbauen!
+Dir hutt keng Erlaabnis fir d'Gréisst vum Dateiesystem z'änneren
+Youtube-dl Wee net fonnt!
+VLC Wee net fonnt!
+omxplayer Wee net fonnt!
+Erstellt Download Wee:
+Wifi / Netz net ugeschloss. Schalten an 10s ...
+Fir Lidder ze wielen, scannt QR oder verbënnt mat
+Fir TV Display, konnektéieren mat
+Dréckt F fir de Vollbild ze wiesselen
+Dréckt ESC fir de PiKaraoke opzehalen
+RaspiWifiConfig Setup Modus entdeckt!
+Connect en aneren Apparat/Smartphone mam Wifi AP: '%s'
+Da weist säi Browser op: '%s://%s%s' a befollegt d'Instruktioune.
+Nächst:
+Derbäigesat vun:
+Elo spillt:
+Admin Modus accordéiert!
+D'Erhéijung vun der Audioverzögerung gëtt Iech méi Zäit fir Texter ze liesen ier Dir den nächste Saz séngt.
+Ofsenkung vum Ënnertitelverzögerung gëtt Iech méi Zäit fir Texter ze liesen ier Dir den nächste Saz séngt.
+En Semiton ass och als Hallefschrëtt bekannt. Et ass dee klengste Intervall, deen an der klassescher westlecher Musek benotzt gëtt, gläich wéi engem zwieleften Oktav oder en halleft Toun.
+DNN-baséiert Vokal Splitter ass aktivéiert. PiKaraoke benotzt PyTorch (vu Facebook) fir en déif neuralt Netzwierk auszeféieren fir den instrumentalen a vokalen Toun an all Streck opzedeelen, wat zu Stereo Sound entsteet.
+Spiller Kontroll
+Musek
+Souwuel
+Stëmm
+Schlëssel änneren
+Näischt spillt elo.
+Kee Song ass an der Schlaang.
+Dëst Lidd gëtt net vun Iech bäigefüügt. Sidd Dir sécher datt Dir dës Streck wëllt nei starten?
+Dëst Lidd gëtt net vun Iech bäigefüügt. Sidd Dir sécher, datt Dir dës Streck iwwersprange wëllt?
+Spiller Kontroll
+Elo spillt
+Nächste Lidd
+Sich no:
+Audio Verzögerung (Sek)
+Ënnertitel Verzögerung (Sek)
+Restart Song
+Spillen / Paus
+Stop aktuell Lidd
+Volume erof
+Volumen setzen
+Volume erop
+Reduzéiert Ënnertitel Verzögerung
+Set Ënnertitel Verzögerung
+Erhéijung Ënnertitel Verzögerung
+Audio Verzögerung reduzéieren
+Set Audio Delay
+Erhéijung Audio Verzögerung
+ semitones
+Gitt weg Ären Numm. Dëst erschéngt nieft de Lidder déi Dir vun dësem Apparat an der Schlaang steet.
+Lidd dobäi an d'Schlaang:
+Lidd schon an der Schlaang:
+Sortéiert no Datum
+Sortéiert op Alphabetesch
+Füügt '%s' an d'Schlaang
+Surfen
+Sortéiert no 'Datum'
+Sortéiert no 'Alphabetesch'
+Lidder
+weist <b>{Start} - {end}</b> {record_name}, am Ganzen <b>{total}</b> {record_name}
+fonnt <b>{found}</b> {record_name}, weist <b>{start} - {end}</b> {record_name}
+Lidd änneren
+Plënneren an der Schlaang
+Plënneren erof an der Schlaang
+Sidd Dir sécher datt Dir aus der Schlaang läschen wëllt
+Sidd Dir sécher, datt Dir d'VOLLZÄIT Schlaang läschen wëllt? Typ 'OK' fir weiderzemaachen
+Füügt 3 zoufälleg Lidder
+Alles läschen
+D'Schlaang ass eidel
+Schlaang
+Läschen
+Verfügbar Lidder an der lokaler Bibliothéik
+Lidd an der Schlaang bäigefüügt:
+Lidd steet schon an der Schlaang:
+Sichen / Add New
+Sichen
+Schlaang
+Ëmfaasst Net-Karaokeszelt Mätscher
+Fortgeschratt
+Gidd e Lidd (Titel/Kënschtler) fir déi verfügbar Lidder ze sichen a klickt op 'Queue' fir et an d'Schlaang ze addéieren.
+Wann d'Lidd net am Dropdown "Available Songs" erschéngt, klickt op 'Search' fir et op Youtube ze fannen.
+Direkt eroflueden YouTube URL:
+Füügt an d'Schlaang
+Ënnertitelen enthalen
+Download
+Sichen YouTube fir
+Sich Resultater fir
+Klickt dropdown fir méi Resultater ze weisen
+Link:
+Verfügbar Lidder
+Wëllt Dir den Affichage Numm vun der Persoun änneren, déi dësen Apparat benotzt? Dëst erschéngt nieft de Lidder an der Schlaang. Aktuell:
+Aktuelle Benotzer
+Info
+PiKaraoke
+Sidd Dir sécher datt Dir wëllt ophalen?
+Sidd Dir sécher datt Dir wëllt zoumaachen?
+Sidd Dir sécher datt Dir wëllt nei starten?
+Sidd Dir sécher datt Dir elo Youtube-dl wëllt aktualiséieren? Aktuell an erwaardend Downloads kënnen ausfalen.
+Sidd Dir sécher datt Dir de Dateiesystem ausbaue wëllt? Dëst wäert Äre Raspberry Pi nei starten.
+Informatiounen
+Handy URL QR Code fir mat engem Kolleg ze deelen:
+OS
+Disk Notzung
+Erënnerung
+Écran Capture
+Vocal Splitter
+Youtube-dl (yt-dlp) Versioun
+PiKaraoke Versioun
+Fortgeschratt Kontroll Optiounen
+Vocal Splitter Modus:
+Benotzt L-R/L+R
+Benotzt DNN
+Standard MTV Audio huet déi zwee Stereo Kanäl (L a R) sou kodéiert datt: L-R d'Instrumentstreck ass, L+R d'Gesangstreck ass. Also, andeems mir déi zwee Stereo Kanäl einfach subtrahéieren oder derbäisetzen, kënne mir déi instrumental a Vokal Streck am Mono Sound kréien. PiKaraoke's agebauten DNN-baséierten (deep neuralen Netzwierk) Vokal Splitter benotzt AI Algorithmus fir den instrumentalen a Vokalen Sound an all Stereo Track onofhängeg ze spalten, wat zu Stereo instrumental a Vokal Tracks resultéiert.
+Stop Splitter
+Restart Splitter
+De Gesangsplitter (deen souwuel DNN-baséiert wéi och Stereo-Subtraktioun ënnerstëtzt) leeft als separat Prozess am Hannergrond, generéiert instrumental / Vokal Audiodatei fir all Song.
+Synchroniséiert Audio a Video nei:
+Stop Streamer
+Restart Streamer
+Dëst beaflosst nëmmen KTV iwwer Webbrowser ze spillen. Den Écran Capture-a-Streaming nei starten verbessert d'Audio / Video Synchroniséierung, et reduzéiert och d'Latenz tëscht dem Server an dem Browser.
+D'Liddlëscht erfrëschen:
+Rescan Song Verzeechnes
+Dir sollt dëst nëmmen maachen wann Dir Dateien manuell an den Downloadverzeichnis kopéiert hutt wärend PiKaraoke leeft.
+Aktualiséierungen
+Wann d'Downloads oder d'Sichunge gestoppt hunn ze schaffen, wäert d'Aktualiséierung vun YouTube-dl et wahrscheinlech fixéieren. Déi aktuell installéiert Versioun ass:
+Update youtube-dl
+Dësen Update Link uewendriwwer ka feelen wann Dir net déi richteg Dateirechter hutt. Kontrolléiert de PiKaraoke Log fir Feeler.
+Ausmaachen
+Net nëmmen de Stecker zéien! Schalt Äre Server ëmmer richteg aus fir Datekorruptioun ze vermeiden.
+PiKaraoke ophalen
+Restart System
+Shutdown System
+Aner
+Raspberry Pi Dateisystem erweideren
+Wann Dir just de pre-built Pikaraoke pi Bild installéiert hutt an Är SD Kaart méi grouss ass wéi 4GB, wëllt Dir vläicht de Dateiesystem ausbauen fir de verbleiwen Raum ze benotzen. Dir musst dat nëmmen eemol maachen. Dëst wäert de System nei starten.
+Admin Modus auszeschalten
+Admin Modus aktivéieren
+ausloggen
+aloggen
+System Info
+Doheem
+Sprooch änneren

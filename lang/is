@@ -1,0 +1,184 @@
+íslenskur
+Rangt admin lykilorð!
+Útskráður úr stjórnunarham!
+Bætt við %s handahófi lögum
+Búin að verða uppiskroppa með lög!
+Hreinsaði röðina!
+Villa við að færa atriði inn í biðröð: ógild rök
+Atriði var flutt inn í biðröð:
+Villa við að færa atriði inn í biðröð:
+Fært niður í biðröð:
+Villa við að færa sig niður í biðröð:
+Fært upp í biðröð:
+Villa við að færa sig upp í biðröð:
+Eytt úr biðröð:
+Villa við að eyða úr biðröð:
+Niðurhal byrjað:
+Að því loknu verður því bætt við biðröðina.
+Þegar því er lokið mun það birtast á listanum yfir „tiltæk lög“.
+Villa: Ekki er hægt að eyða þessu lagi vegna þess að það er í núverandi biðröð:
+Lagi eytt:
+Villa: Engin lagabreyta tilgreind!
+Villa: Ekki er hægt að breyta þessu lagi vegna þess að það er verið að spila það:
+Lagaskrá Breyta
+Villa við að endurnefna skrána: '%s' í '%s'. Skráarnafn er þegar til.
+Endurnefna skrá: '%s' í '%s'
+Villa: Engar skráarnafnbreytur voru tilgreindar!
+Óþekktur
+Hlaupandi
+Hætt
+ (aðeins örgjörvi)
+ (GPU virkt)
+Uppfærir youtube-dl! Ætti að taka eina eða tvær mínútur...
+Þú hefur ekki leyfi til að uppfæra youtube-dl
+Þú hefur ekki leyfi til að loka
+Hætta í PiKaraoke núna!
+Þú hefur ekki leyfi til að hætta
+Loka kerfinu núna!
+Þú hefur ekki leyfi til að loka
+Endurræsir kerfið núna!
+Þú hefur ekki leyfi til að endurræsa
+Stækkar skráarkerfið og endurræsir kerfið núna!
+Get ekki stækkað fs á tækjum sem ekki eru hindberjum pi!
+Þú hefur ekki leyfi til að breyta stærð skráarkerfisins
+Youtube-dl slóð fannst ekki!
+VLC slóð fannst ekki!
+omxplayer slóð fannst ekki!
+Að búa til niðurhalsslóð:
+Wi-Fi/net er ekki tengt. Lokar eftir 10s...
+Til að velja lög, skannaðu QR eða tengdu við
+Fyrir sjónvarpsskjá, tengdu við
+Ýttu á F til að skipta yfir allan skjáinn
+Ýttu á ESC til að hætta í PiKaraoke
+RaspiWifiConfig uppsetningarhamur fannst!
+Tengdu annað tæki/snjallsíma við Wifi AP: '%s'
+Beindu síðan vafranum á: '%s://%s%s' og fylgdu leiðbeiningunum.
+Næst:
+Bætt við af:
+Nú spilar:
+Stjórnunarhamur veittur!
+Aukin hljóðtöf mun gefa þér meiri tíma til að lesa texta áður en þú syngur út næstu setningu.
+Með því að draga úr töfum texta mun þú gefa þér meiri tíma til að lesa texta áður en þú syngur næstu setningu.
+Hálftónn er einnig þekktur sem hálfþrep. Það er minnsta bil sem notað er í klassískri vestrænni tónlist, jafnt og tólfta hluta áttundar eða hálfs tóns.
+DNN-undirstaða raddskipting er virkjuð. PiKaraoke notar PyTorch (af Facebook) til að keyra djúpt taugakerfi til að skipta hljóðfæra- og sönghljóði í hverju lagi sem gefur tilefni til steríóhljóðs.
+Leikmannastýring
+Tónlist
+Bæði
+Rödd
+Breyta lykli
+Það er ekkert að spila núna.
+Ekkert lag er í biðröð.
+Þetta lag er ekki bætt af þér. Ertu viss um að þú viljir endurræsa þetta lag?
+Þetta lag er ekki bætt af þér. Ertu viss um að þú viljir sleppa þessu lagi?
+Leikmannastýring
+Nú að spila
+Næsta lag
+Leitaðu að:
+Hljóðseinkun (sek.)
+Töf texta (sek)
+Endurræstu lagið
+Spila / gera hlé
+Stöðva núverandi lag
+Hljóðstyrkur niður
+Stilltu hljóðstyrk
+Hækka
+Minnka seinkun texta
+Stilltu seinkun texta
+Auka seinkun texta
+Minnka seinkun á hljóði
+Stilltu hljóðtöf
+Auka seinkun á hljóði
+ hálftónar
+Vinsamlegast sláðu inn nafnið þitt. Þetta mun birtast við hliðina á lögunum sem þú setur í biðröð úr þessu tæki.
+Lagi bætt við röðina:
+Lagið er þegar í röðinni:
+Raða eftir dagsetningu
+Raða eftir stafrófsröð
+Bættu '%s' við röðina
+Skoðaðu
+Raðað eftir 'dagsetningu'
+Raðað eftir 'stafrófsröð'
+lög
+sýnir <b>{start} - {end}</b> {record_name}, samtals <b>{total}</b> {record_name}
+fann <b>{found}</b> {record_name}, sýnir <b>{start} - {end}</b> {record_name}
+Breyta lagi
+Farðu upp í röð
+Færðu þig niður í biðröð
+Ertu viss um að þú viljir eyða úr biðröðinni
+Ertu viss um að þú viljir hreinsa ALLA biðröðina? Sláðu inn 'Í lagi' til að halda áfram
+Bættu við 3 handahófi lögum
+Hreinsa allt
+Biðröðin er tóm
+Biðröð
+Eyða
+Lög í boði á staðbundnu bókasafni
+Lagi bætt við biðröð:
+Lagið er þegar í biðröðinni:
+Leita / Bæta við nýju
+Leita
+Biðröð
+Láttu leiki sem ekki eru karókí
+Ítarlegri
+Sláðu inn lag (titill/listamaður) til að leita að tiltækum lögum og smelltu á 'Biðröð' til að bæta því við röðina.
+Ef lagið birtist ekki í "Available Songs" fellilistanum, smelltu á 'Search' til að finna það á Youtube.
+Beint niðurhal YouTube vefslóð:
+Bæta við biðröð
+Láttu texta fylgja með
+Sækja
+Er að leita að YouTube
+Leitarniðurstöður fyrir
+Smelltu á fellilistann til að sýna fleiri niðurstöður
+Linkur:
+Lög í boði
+Viltu breyta skjánafni þess sem notar þetta tæki? Þetta mun birtast við hlið löganna í biðröð. Núverandi:
+Núverandi notandi
+Upplýsingar
+PiKaraoke
+Ertu viss um að þú viljir hætta?
+Ertu viss um að þú viljir leggja niður?
+Ertu viss um að þú viljir endurræsa?
+Ertu viss um að þú viljir uppfæra Youtube-dl núna? Núverandi og í bið niðurhal gæti mistekist.
+Ertu viss um að þú viljir stækka skráarkerfið? Þetta mun endurræsa raspberry pi þinn.
+Upplýsingar
+Handhægur slóð QR kóða til að deila með vini:
+OS
+Diskanotkun
+Minni
+Skjámyndataka
+Söngskljúfari
+Youtube-dl (yt-dlp) útgáfa
+PiKaraoke útgáfa
+Ítarlegir stjórnunarvalkostir
+Raddskiptihamur:
+Notaðu L-R/L+R
+Notaðu DNN
+Staðlað MTV hljóð hefur tvær steríórásir (L og R) kóðaðar á þann hátt að: L-R er hljóðfæralagið, L+R er sönglagið. Þannig, með því einfaldlega að draga frá eða bæta við steríórásunum tveimur, getum við fengið hljóðfæra- og sönglagið í mónóhljóði. Innbyggður DNN-undirstaða (djúpt tauganet) raddskilari PiKaraoke notar gervigreind reiknirit til að skipta hljóðfæra- og sönghljóði í hverju steríólagi sjálfstætt sem leiðir til hljóðfæra- og sönglaga.
+Hættu Splitter
+Endurræstu Splitter
+Raddskiptingin (sem styður bæði DNN-undirstaða og hljómtæki frádrátt) keyrir sem sérstakt ferli í bakgrunni og býr til hljóðfæra-/sönghljóðskrá fyrir hvert lag.
+Samstilla hljóð og mynd aftur:
+Stöðva Streamer
+Endurræstu Streamer
+Þetta hefur aðeins áhrif á spilun KTV í gegnum vafra. Að endurræsa skjámyndatöku og streymi bætir samstillingu hljóðs/myndbands, það dregur einnig úr biðtíma milli netþjóns og vafra.
+Endurnýjaðu lagalistann:
+Skannaðu lagaskrána aftur
+Þú ættir aðeins að þurfa að gera þetta ef þú afritaðir skrár handvirkt í niðurhalsskrána á meðan PiKaraoke var í gangi.
+Uppfærslur
+Ef niðurhal eða leit hætti að virka mun uppfærsla youtube-dl líklega laga það. Núverandi uppsett útgáfa er:
+Uppfærðu youtube-dl
+Þessi uppfærslutengil hér að ofan gæti mistekist ef þú hefur ekki viðeigandi skráarheimildir. Athugaðu PiKaraoke log fyrir villur.
+Lokun
+Ekki bara draga í tappa! Slökktu alltaf á netþjóninum þínum á réttan hátt til að forðast gagnaspillingu.
+Hætta í PiKaraoke
+Endurræstu kerfið
+Lokunarkerfi
+Annað
+Stækkaðu Raspberry Pi skráarkerfið
+Ef þú hefur nýlega sett upp forbyggðu pikaraoke pi myndina og SD kortið þitt er stærra en 4GB, gætirðu viljað stækka skráarkerfið til að nýta það sem eftir er. Þú þarft bara að gera þetta einu sinni. Þetta mun endurræsa kerfið.
+Slökktu á stjórnunarham
+Virkja stjórnunarham
+að skrá þig út
+skrá inn
+Kerfisupplýsingar
+Heim
+Skipta um tungumál

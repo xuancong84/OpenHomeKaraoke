@@ -1,0 +1,184 @@
+Esperanto
+Malĝusta administra pasvorto!
+Ensalutinta el administra reĝimo!
+Aldonitaj %s hazardaj trakoj
+Elĉerpigis kantojn!
+Malplenigis la atendovicon!
+Eraro dum movo de objekto en la voston: nevalida argumento
+Sukcese movita aĵo en la atendovico:
+Eraro dum movi eron en la atendovico:
+Moviĝis malsupren en atendovico:
+Eraro moviĝante malsupren en atendovico:
+Moviĝis supren en atendovico:
+Eraro suprenirante en atendovico:
+Forigita el atendovico:
+Eraro dum forigo de vico:
+Elŝuto komenciĝis:
+Post kompletigo, ĝi estos aldonita al vico.
+Post kompletigo, ĝi aperos en la listo de "disponeblaj kantoj".
+Eraro: Ne povas forigi ĉi tiun kanton ĉar ĝi estas en la nuna vico:
+Kanto forigita:
+Eraro: Neniu kanto-parametro specifita!
+Eraro: Ne povas redakti ĉi tiun kanton ĉar ĝi estas nuntempe ludata:
+Kantdosiero Redakti
+Eraro renomante dosieron: '%s' al '%s'. Dosiernomo jam ekzistas.
+Renomita dosiero: '%s' al '%s'
+Eraro: Neniuj dosiernomaj parametroj estis specifitaj!
+Nekonata
+Kurante
+Haltis
+ (Nur CPU)
+ (GPU ebligita)
+Ĝisdatigas youtube-dl! Devus preni unu aŭ du minutojn...
+Vi ne havas permeson ĝisdatigi youtube-dl
+Vi ne havas permeson fermi
+Forlasu PiKaraoke nun!
+Vi ne havas permeson ĉesi
+Fermu la sistemon nun!
+Vi ne havas permeson fermi
+Rekomencu la sistemon nun!
+Vi ne havas permeson Rekomenci
+Vastigante dosiersistemon kaj rekomencan sistemon nun!
+Ne povas vastigi fs sur ne-frambo-pi-aparatoj!
+Vi ne havas permeson regrandigi la dosiersistemon
+Youtube-dl-vojo ne trovita!
+VLC-vojo ne trovita!
+omxplayer-vojo ne trovita!
+Kreante elŝutan vojon:
+Wifi/Reto ne konektita. Fermi post 10-aj jaroj...
+Por elekti kantojn, skanu QR aŭ konektu al
+Por televida ekrano, konekti al
+Premu F por ŝanĝi la plenan ekranon
+Premu ESC por ĉesi PiKaraoke
+RaspiWifiConfig agorda reĝimo detektita!
+Konektu alian aparaton/smartphone al la Wifi AP: '%s'
+Poste direktu ĝian retumilon al: '%s://%s%s' kaj sekvu la instrukciojn.
+Poste:
+Aldonita de:
+Nun ludante:
+Administra reĝimo koncedita!
+Pliigi sonprokraston donos al vi pli da tempo por legi kantotekston antaŭ ol kanti la sekvan frazon.
+Malkreskanta subtitolo prokrasto donos al vi pli da tempo por legi kantotekston antaŭ kanti la sekvan frazon.
+Duontono ankaŭ estas konata kiel duonpaŝo. Ĝi estas la plej malgranda intervalo uzita en klasika okcidenta muziko, egala al dekduono de oktavo aŭ duona tono.
+DNN-bazita voĉdividilo estas ebligita. PiKaraoke uzas PyTorch (de Facebook) por prizorgi profundan neŭralan reton por dividi instrumentan kaj voĉan sonon en ĉiu trako kaŭzante stereosonon.
+Ludanta Kontrolo
+Muziko
+Ambaŭ
+Voĉo
+Ŝanĝi Ŝlosilon
+Nenio ludas nun.
+Neniu kanto estas vicigita.
+Ĉi tiu kanto ne estas aldonita de vi. Ĉu vi certas, ke vi volas rekomenci ĉi tiun trakon?
+Ĉi tiu kanto ne estas aldonita de vi. Ĉu vi certas, ke vi volas preterlasi ĉi tiun trakon?
+Ludanta Kontrolo
+Nun Ludante
+Sekva Kanto
+Serĉu:
+Aŭdprokrasto (sec)
+Subtitolo Prokrasto (sec)
+Rekomencu Kanton
+Ludi/Paŭzu
+Ĉesu Nunan Kanton
+Volumo Malsupren
+Agordu Volumon
+Volumo Supre
+Malpliigu Subtitolon Prokrasto
+Agordu Subtitolon Prokrasto
+Pliigi Subtitolon Prokrasto
+Malpliigu Aŭdan Malfruon
+Agordu Aŭdan Prokraston
+Pliigi Audio Prokrasto
+ duontonoj
+Bonvolu enigi vian nomon. Ĉi tio aperos apud la kantoj, kiujn vi vicigas de ĉi tiu aparato.
+Kanto aldonita al la vico:
+Kanto jam la vico:
+Ordigi laŭ Dato
+Ordigi laŭ Alfabeta
+Aldonu '%s' al la vico
+Foliumi
+Ordigita laŭ 'Dato'
+Ordigita laŭ 'Alfabeta'
+kantoj
+montrante <b>{komenco} - {end}</b> {record_name}, entute <b>{total}</b> {record_name}
+trovita <b>{found}</b> {record_name}, montrante <b>{start} - {end}</b> {record_name}
+Redaktu kanton
+Movu supren en atendovico
+Movu malsupren en atendovico
+Ĉu vi certas, ke vi volas forigi el la atendovico
+Ĉu vi certas, ke vi volas forigi la TUTAN atendovicon? Tajpu 'Bone' por daŭrigi
+Aldonu 3 hazardajn kantojn
+Forigi ĉion
+La vico estas malplena
+Vico
+Forigi
+Disponeblaj kantoj en loka biblioteko
+Aldonita kanto al vico:
+Kanto jam estas en la vico:
+Serĉu / Aldoni Novan
+Serĉu
+Vico
+Inkluzivi ne-karaokeajn matĉojn
+Altnivela
+Tajpu kanton (titolon/artisto) por serĉi la disponeblajn kantojn kaj alklaku 'Vuo' por aldoni ĝin al la vico.
+Se la kanto ne aperas en la menuo "Disponeblaj Kantoj", alklaku 'Serĉi' por trovi ĝin ĉe Youtube.
+Rekta elŝuta YouTube-url:
+Aldonu al vico
+Inkluzivi subtekstojn
+Elŝutu
+Serĉante Jutubo
+Serĉrezultoj por
+Alklaku falmenuon por montri pliajn rezultojn
+Ligo:
+Disponeblaj Kantoj
+Ĉu vi volas ŝanĝi la montran nomon de la persono uzanta ĉi tiun aparaton? Ĉi tio aperos apud la vicigitaj kantoj. Aktualo:
+Nuna uzanto
+Info
+PiKaraoke
+Ĉu vi certas, ke vi volas ĉesi?
+Ĉu vi certas, ke vi volas fermi?
+Ĉu vi certas, ke vi volas rekomenci?
+Ĉu vi certas, ke vi volas ĝisdatigi Youtube-dl nun? Nunaj kaj pritraktataj elŝutoj povas malsukcesi.
+Ĉu vi certas, ke vi volas vastigi la dosiersistemon? Ĉi tio rekomencos vian raspberry pi.
+Informoj
+Praktika URL-QR-kodo por dividi kun amiko:
+OS
+Diska Uzado
+Memoro
+Ekrankapto
+Voĉa Splitter
+Youtube-dl (yt-dlp) versio
+PiKaraoke versio
+Altnivelaj Kontrolaj Opcioj
+Voĉa dividita reĝimo:
+Uzu L-R/L+R
+Uzu DNN
+Norma MTV-aŭdio havas la du stereajn kanalojn (L kaj R) ĉifritajn tiel ke: L-R estas la instrumenttrako, L+R estas la voĉa trako. Tiel, simple subtrahante aŭ aldonante la du stereokanalojn, ni povas akiri la instrumentan kaj voĉan trakon en monoa sono. La enkonstruita DNN-bazita (profunda neŭrala reto) voĉdividilo de PiKaraoke uzas AI-algoritmon por dividi instrumentan kaj voĉan sonon en ĉiu stereofonia aŭtoveturejo sendepende rezultigante stereoajn instrumentajn kaj voĉajn spurojn.
+Haltu Splitter
+Rekomencu Splitter
+La voĉa dividilo (kiu subtenas kaj DNN-bazitan kaj stereon subtraho) funkcias kiel aparta procezo en la fono, generante instrumentan/voĉan sondosieron por ĉiu kanto.
+Re-sinkronigi audio kaj video:
+Haltu Streamer
+Rekomencu Streamer
+Ĉi tio nur influas ludadon de KTV per retumilo. Rekomenci la ekrankapton-kaj-fluon plibonigas aŭd-/videon sinkronigon, ĝi ankaŭ malpliigas la latentecon inter la servilo kaj retumilo.
+Refreŝigu la kantoliston:
+Reskani kantodosierujon
+Vi devus fari tion nur se vi mane kopiis dosierojn al la elŝuta dosierujo dum PiKaraoke funkciis.
+Ĝisdatigoj
+Se elŝutoj aŭ serĉoj ĉesis funkcii, ĝisdatigi youtube-dl verŝajne riparos ĝin. La nuna instalita versio estas:
+Ĝisdatigu youtube-dl
+Ĉi tiu supra ĝisdatiga ligilo povas malsukcesi se vi ne havas taŭgajn dosierpermesojn. Kontrolu la PiKaraoke protokolo por eraroj.
+Malŝalto
+Ne nur tiru la ŝtopilon! Ĉiam malŝaltu vian servilon ĝuste por eviti datuman korupton.
+Forlasu PiKaraoke
+Rekomencu Sistemon
+Malŝalta Sistemo
+Alia
+Vastigu dosiersistemon Raspberry Pi
+Se vi ĵus instalis la antaŭkonstruitan pikaraoke pi-bildon kaj via SD-karto estas pli granda ol 4GB, vi eble volas vastigi la dosiersistemon por uzi la restantan spacon. Vi devas fari ĉi tion nur unufoje. Ĉi tio rekomencos la sistemon.
+Malebligu administran reĝimon
+Ebligu administran reĝimon
+elsaluti
+Ensaluti
+Sisteminformoj
+Hejmo
+Ŝanĝi Lingvon

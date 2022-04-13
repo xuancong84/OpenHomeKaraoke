@@ -1,0 +1,184 @@
+Cebuano
+Sayop nga admin password!
+Naka-log out sa admin mode!
+Gidugang %s random tracks
+Nahutdan ug kanta!
+Gilimpyohan ang pila!
+Error sa paglihok sa butang sulod sa pila: invalid-argument
+Malampuson nga nabalhin ang butang sulod sa pila:
+Error sa paglihok sa butang sulod sa pila:
+Gibalhin sa pila:
+Sayop sa pagpaubos sa pila:
+Gibalhin sa pila:
+Sayop sa pagsaka sa pila:
+Gitangtang sa pila:
+Sayop sa pagtangtang sa pila:
+Nagsugod ang pag-download:
+Kung makompleto, idugang kini sa pila.
+Kung nahuman na, makita kini sa lista nga "magamit nga mga kanta".
+Sayop: Dili mapapas kini nga kanta tungod kay anaa kini sa kasamtangang pila:
+Gitangtang ang kanta:
+Sayop: Walay gipili nga parameter sa kanta!
+Sayop: Dili ma-edit kini nga kanta tungod kay kini gipatugtog karon:
+Pag-edit sa File sa Kanta
+Sayop Pag-usab sa ngalan sa file: '%s' ngadto sa '%s'. Ang ngalan sa file anaa na.
+Giusab ang ngalan sa file: '%s' ngadto sa '%s'
+Sayop: Wala'y gipiho nga mga parameter sa filename!
+Wala mailhi
+Nagdagan
+Mihunong
+ (CPU lang)
+ (GPU gipalihok)
+Pag-update sa youtube-dl! Kinahanglan nga usa o duha ka minuto ...
+Wala kay permiso sa pag-update sa youtube-dl
+Wala kay permiso sa pagsira
+Pag-undang sa PiKaraoke karon!
+Wala kay permiso nga muundang
+Pagsira sa sistema karon!
+Wala kay permiso sa pagsira
+I-reboot ang sistema karon!
+Wala kay permiso sa Reboot
+Pagpalapad sa filesystem ug rebooting system karon!
+Dili mapalapad ang fs sa mga non-raspberry pi device!
+Wala kay permiso sa pag-resize sa filesystem
+Ang dalan sa Youtube-dl wala makit-an!
+Wala makit-an ang dalan sa VLC!
+Ang dalan sa omxplayer wala makit-an!
+Paghimo sa dalan sa pag-download:
+Wala konektado ang Wifi/Network. Pag-shut down sa 10s...
+Alang sa pagpili og mga kanta, i-scan ang QR o kumonekta sa
+Para sa TV display, sumpay sa
+Pindota ang F aron i-toggle ang full-screen
+Pindota ang ESC aron mohunong sa PiKaraoke
+Ang RaspiWifiConfig setup mode nakita!
+Ikonektar ang laing device/smartphone sa Wifi AP: '%s'
+Dayon itudlo ang browser niini sa: '%s://%s%s' ug sunda ang mga instruksyon.
+Sunod:
+Gidugang ni:
+Karon nagdula:
+Admin mode gihatag!
+Ang pagdugang sa paglangan sa audio maghatag kanimo ug daghang oras sa pagbasa sa mga liriko sa dili pa kantahon ang sunod nga sentence.
+Ang pagkunhod sa paglangan sa subtitle maghatag kanimo ug daghang oras sa pagbasa sa mga liriko sa dili pa kantahon ang sunod nga sentence.
+Ang semitone nailhan usab nga tunga nga lakang. Kini ang pinakagamay nga agwat nga gigamit sa klasikal nga musika sa Kasadpan, katumbas sa ikanapulo ug duha sa usa ka oktaba o tunga sa tono.
+Ang vocal splitter nga nakabase sa DNN gipalihok. Gigamit sa PiKaraoke ang PyTorch (sa Facebook) aron magpadagan ug lawom nga neural network aron mabahin ang instrumental ug vocal nga tunog sa matag track nga maghatag ug stereo sound.
+Pagkontrol sa Manlalaro
+Musika
+Ang duha
+Tingog
+Usba ang Yawe
+Walay nagdula karon.
+Walay kanta nga gipila.
+Kini nga kanta wala nimo gidugang. Sigurado ka ba nga gusto nimo i-restart kini nga track?
+Kini nga kanta wala nimo gidugang. Sigurado ka ba nga gusto nimong laktawan kini nga track?
+Pagkontrol sa Manlalaro
+Karon Nagdula
+Sunod nga Awit
+Pangitaa:
+Paglangan sa Audio (seg)
+Paglangan sa Subtitle (seg)
+I-restart ang Kanta
+Play/Pause
+Hunonga ang Karong Kanta
+Pagpaubos sa Volume
+Itakda ang Tomo
+Taas ang Volume
+Bawasan ang Paglangan sa Subtitle
+Itakda ang Paglangan sa Subtitle
+Dugangi ang Paglangan sa Subtitle
+Bawasan ang Paglangan sa Audio
+Itakda ang Paglangan sa Audio
+Dugangi ang Paglangan sa Audio
+ semitones
+Palihug isulod ang imong ngalan. Kini magpakita sunod sa mga kanta nga imong gipila gikan niini nga device.
+Kanta gidugang sa pila:
+Kanta na ang pila:
+Pagsunud sa Petsa
+Pagsunud-sunod sumala sa Alpabetiko
+Idugang ang '%s' sa pila
+Pag-browse
+Gisunod sa 'Petsa'
+Gisunod sa 'Alphabetical'
+mga kanta
+nagpakita <b>{start} - {end}</b> {record_name}, sa kinatibuk-an <b>{total}</b> {record_name}
+nakit-an ang <b>{nakaplagan}</b> {record_name}, nagpakita sa <b>{start} - {end}</b> {record_name}
+Edit kanta
+Pagbalhin sa pila
+Ibalhin sa ubos sa pila
+Sigurado ka nga gusto nimong papason gikan sa pila
+Sigurado ka ba nga gusto nimong hawanan ang TIBUOK pila? I-type ang 'OK' aron magpadayon
+Pagdugang 3 ka random nga kanta
+Klaro tanan
+Walay sulod ang pila
+Pila
+Pagtangtang
+Anaa nga mga kanta sa lokal nga librarya
+Gidugang nga kanta sa pila:
+Naa na sa pila ang kanta:
+Pagpangita / Pagdugang Bag-o
+Pangitaa
+Pila
+Ilakip ang non-karaoke nga mga posporo
+Abante
+Pag-type og kanta (titulo/artista) aron pangitaon ang anaa nga mga kanta ug i-klik ang 'Queue' aron idugang kini sa pila.
+Kung ang kanta dili makita sa dropdown nga "Available Songs", i-klik ang 'Pagpangita' aron makit-an kini sa Youtube.
+Direkta nga pag-download sa YouTube url:
+Idugang sa pila
+Ilakip ang mga subtitle
+Pag-download
+Pagpangita sa YouTube alang sa
+Mga resulta sa pagpangita alang sa
+Pag-klik sa dropdown aron ipakita ang daghang mga resulta
+Link:
+Anaa nga mga Kanta
+Gusto ba nimong usbon ang display name sa tawo nga naggamit niini nga device? Kini magpakita sunod sa mga nakapila nga kanta. Karon:
+Kasamtangang tiggamit
+Impormasyon
+PiKaraoke
+Sigurado ka nga gusto ka moundang?
+Sigurado ka nga gusto nimong isira?
+Sigurado ka ba nga gusto nimo i-reboot?
+Sigurado ka ba nga gusto nimong i-update ang Youtube-dl karon? Ang kasamtangan ug pending nga mga pag-download mahimong mapakyas.
+Sigurado ka ba nga gusto nimong palapdan ang filesystem? Kini mag-reboot sa imong raspberry pi.
+Impormasyon
+Magamit nga URL QR code aron ipaambit sa usa ka higala:
+OS
+Paggamit sa Disk
+Memorya
+Pagkuha sa Screen
+Vocal Splitter
+Youtube-dl (yt-dlp) nga bersyon
+PiKaraoke nga bersyon
+Advanced nga Control Options
+Vocal splitter mode:
+Gamita ang L-R/L+R
+Gamita ang DNN
+Ang standard nga MTV audio adunay duha ka stereo channel (L ug R) nga gi-encode sa paagi nga: L-R ang instrument track, L+R ang vocal track. Busa, pinaagi lamang sa pagkubkob o pagdugang sa duha ka stereo channel, makuha nato ang instrumental ug vocal track sa mono sound. Ang built-in nga DNN-based (deep neural network) vocal splitter sa PiKaraoke naggamit sa AI algorithm aron mabahin ang instrumental ug vocal sound sa matag stereo track nga independente nga moresulta sa stereo instrumental ug vocal tracks.
+Hunong ang Splitter
+I-restart ang Splitter
+Ang vocal splitter (nga nagsuporta sa DNN-based ug stereo subtraction) nagdagan isip usa ka separado nga proseso sa background, nagmugna og instrumental/vocal audio file alang sa matag kanta.
+I-synchronize pag-usab ang audio ug video:
+Hunong ang Streamer
+I-restart ang Streamer
+Kini makaapekto lamang sa pagdula sa KTV pinaagi sa web browser. Ang pagsugod pag-usab sa screen-capture-and-streaming makapauswag sa audio/video synchronization, kini usab makapamenos sa latency tali sa server ug browser.
+I-refresh ang listahan sa kanta:
+I-scan pag-usab ang direktoryo sa kanta
+Kinahanglan ra nimo nga buhaton kini kung imong gikopya ang mga file sa direktoryo sa pag-download samtang nagdagan ang PiKaraoke.
+Mga update
+Kung ang mga pag-download o pagpangita mihunong sa pagtrabaho, ang pag-update sa youtube-dl lagmit nga ayohon kini. Ang kasamtangan nga na-install nga bersyon mao ang:
+Pag-update sa youtube-dl
+Kini nga link sa pag-update sa ibabaw mahimong mapakyas kung wala ka husto nga pagtugot sa file. Susiha ang PiKaraoke log alang sa mga sayup.
+Pagsira
+Ayaw lang ibira ang plug! Kanunay isira ang imong server sa hustong paagi aron malikayan ang korapsyon sa datos.
+Hunong sa PiKaraoke
+Pag-reboot nga Sistema
+Sistema sa pagsira
+Ang uban
+Pagpalapad sa Raspberry Pi filesystem
+Kung imong gi-install ang pre-built nga pikaraoke pi nga imahe ug ang imong SD card mas dako pa sa 4GB, mahimo nimong palapdan ang filesystem aron magamit ang nahabilin nga wanang. Kausa ra nimo kinahanglan buhaton. Kini mag-reboot sa sistema.
+I-disable ang admin mode
+I-enable ang admin mode
+log out
+sulod
+Impormasyon sa Sistema
+Balay
+Usba ang Pinulongan

@@ -1,4 +1,4 @@
-Modalità amministratore concessa!
+Italiano
 Password amministratore errata!
 Disconnesso dalla modalità amministratore!
 Aggiunte %s tracce casuali
@@ -56,7 +56,7 @@ Quindi punta il suo browser su: '%s://%s%s' e segui le istruzioni.
 Avanti il ​​prossimo:
 Aggiunto da:
 Ora in riproduzione:
-Aggiunto da:
+Modalità amministratore concessa!
 L'aumento del ritardo audio ti darà più tempo per leggere i testi prima di cantare la frase successiva.
 Diminuire il ritardo dei sottotitoli ti darà più tempo per leggere i testi prima di cantare la frase successiva.
 Un semitono è anche noto come semitono. È l'intervallo più piccolo utilizzato nella musica classica occidentale, pari a un dodicesimo di ottava o mezzo tono.
@@ -130,7 +130,7 @@ cerca risultati per
 Fare clic sul menu a discesa per mostrare più risultati
 Collegamento:
 Canzoni disponibili
-Vuoi cambiare il nome della persona che utilizza questo dispositivo? Questo apparirà sui brani in coda. Attuale:
+Vuoi cambiare il nome visualizzato della persona che utilizza questo dispositivo? Questo apparirà accanto ai brani in coda. Attuale:
 Utente corrente
 Informazioni
 PiKaraoke
@@ -152,7 +152,7 @@ Opzioni di controllo avanzate
 Modalità splitter vocale:
 Usa L-R/L+R
 Usa DNN
-L'audio standard di MTV ha i due canali stereo (L e R) codificati in modo tale che: L-R è la traccia strumentale, L+R è la traccia vocale. Quindi, semplicemente sottraendo o sommando i due canali stereo, possiamo ottenere la traccia strumentale e vocale in suono mono. Il PiKaraoke è integrato Lo splitter vocale basato su DNN (rete neurale profonda) utilizza l'algoritmo AI per dividere il suono strumentale e vocale in ciascuna traccia stereo in modo indipendente, risultando in tracce stereo strumentali e vocali.
+L'audio standard di MTV ha i due canali stereo (L e R) codificati in modo tale che: L-R è la traccia strumentale, L+R è la traccia vocale. Quindi, semplicemente sottraendo o sommando i due canali stereo, possiamo ottenere la traccia strumentale e vocale in suono mono. Lo splitter vocale integrato basato su DNN (rete neurale profonda) di PiKaraoke utilizza l'algoritmo AI per dividere il suono strumentale e vocale in ciascuna traccia stereo in modo indipendente, risultando in tracce strumentali e vocali stereo.
 Smetti di dividere
 Riavvia splitter
 Lo splitter vocale (che supporta sia la sottrazione stereo basata su DNN) viene eseguito come un processo separato in background, generando file audio strumentali/vocali per ogni brano.
@@ -179,3 +179,6 @@ Disabilita la modalità amministratore
 Abilita la modalità amministratore
 disconnettersi
 accesso
+Informazioni di sistema
+Casa
+Cambia lingua

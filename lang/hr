@@ -1,0 +1,184 @@
+Hrvatski
+Netočna administratorska lozinka!
+Odjavljeni ste iz načina rada administratora!
+Dodano %s nasumičnih pjesama
+Ponestalo je pjesama!
+Očišćeni red!
+Pogreška pri premještanju stavke unutar reda: nevažeći argument
+Stavka je uspješno premještena unutar reda čekanja:
+Pogreška pri premještanju stavke unutar reda čekanja:
+Premješteno dolje u redu čekanja:
+Pogreška pri pomicanju prema dolje u redu čekanja:
+Premješteno gore u redu čekanja:
+Pogreška pri kretanju prema gore u redu čekanja:
+Izbrisano iz reda čekanja:
+Pogreška prilikom brisanja iz reda čekanja:
+Preuzimanje je počelo:
+Po završetku, bit će dodan u red čekanja.
+Po završetku, pojavit će se na popisu "dostupne pjesme".
+Pogreška: Ovu pjesmu nije moguće izbrisati jer je u trenutnom redu čekanja:
+Pjesma obrisana:
+Pogreška: nije naveden parametar pjesme!
+Pogreška: nije moguće urediti ovu pjesmu jer se trenutno reproducira:
+Uređivanje datoteke pjesme
+Pogreška pri preimenovanju datoteke: '%s' u '%s'. Naziv datoteke već postoji.
+Preimenovana datoteka: '%s' u '%s'
+Pogreška: Nisu navedeni parametri naziva datoteke!
+nepoznato
+Trčanje
+Zaustavljeno
+ (samo CPU)
+ (GPU omogućen)
+Ažuriranje youtube-dl! Trebalo bi potrajati minutu ili dvije...
+Nemate dopuštenje za ažuriranje youtube-dl
+Nemate dopuštenje za gašenje
+Napuštam PiKaraoke odmah!
+Nemate dopuštenje za odustajanje
+Isključite sustav odmah!
+Nemate dopuštenje za gašenje
+Ponovno pokretanje sustava sada!
+Nemate dopuštenje za ponovno pokretanje
+Proširivanje datotečnog sustava i ponovno pokretanje sustava sada!
+Nije moguće proširiti fs na uređajima koji nisu raspberry pi!
+Nemate dopuštenje za promjenu veličine datotečnog sustava
+Putanja za Youtube-dl nije pronađena!
+VLC put nije pronađen!
+Put omxplayera nije pronađen!
+Kreiranje putanje za preuzimanje:
+Wifi/mreža nije povezana. Gašenje za 10s...
+Za odabir pjesama skenirajte QR ili se povežite na
+Za TV zaslon, spojite na
+Pritisnite F za prebacivanje preko cijelog zaslona
+Pritisnite ESC da zatvorite PiKaraoke
+Otkriven način postavljanja RaspiWifiConfig!
+Povežite drugi uređaj/pametni telefon na Wifi AP: '%s'
+Zatim usmjerite njegov preglednik na: '%s://%s%s' i slijedite upute.
+Sljedeći:
+Dodao:
+Sada igra:
+Admin način rada odobren!
+Povećanje kašnjenja zvuka dat će vam više vremena za čitanje teksta prije nego što otpjevate sljedeću rečenicu.
+Smanjenje odgode titlova dat će vam više vremena za čitanje teksta prije nego što otpjevate sljedeću rečenicu.
+Poluton je također poznat kao polukorak. To je najmanji interval koji se koristi u klasičnoj zapadnoj glazbi, jednak dvanaestini oktave ili pola tona.
+Omogućen je vokalni razdjelnik koji se temelji na DNN-u. PiKaraoke koristi PyTorch (od Facebooka) za pokretanje duboke neuronske mreže kako bi podijelio instrumentalni i vokalni zvuk u svakoj pjesmi što dovodi do stereo zvuka.
+Kontrola igrača
+glazba, muzika
+Oba
+Glas
+Promjena ključa
+Trenutno se ništa ne igra.
+Nijedna pjesma nije u redu čekanja.
+Ovu pjesmu niste dodali vi. Jeste li sigurni da želite ponovno pokrenuti ovu stazu?
+Ovu pjesmu niste dodali vi. Jeste li sigurni da želite preskočiti ovu stazu?
+Kontrola igrača
+Sada igra
+Sljedeća pjesma
+Tražiti:
+Kašnjenje zvuka (s)
+Odgoda titla (s)
+Ponovno pokrenite pjesmu
+Reprodukcija/pauza
+Zaustavi trenutnu pjesmu
+Stišavanje glasnoće
+Postavite glasnoću
+Pojačati
+Smanjite kašnjenje titlova
+Postavite odgodu titlova
+Povećajte kašnjenje titlova
+Smanjite kašnjenje zvuka
+Postavite odgodu zvuka
+Povećajte kašnjenje zvuka
+ polutonovi
+Molimo unesite svoje ime. To će se prikazati pored pjesama koje stavite u red čekanja s ovog uređaja.
+Pjesma dodana u red čekanja:
+Pjesma je već u redu:
+Poredaj po datumu
+Poredaj po abecedi
+Dodajte '%s' u red čekanja
+pretraživati
+Poredano po 'Datumu'
+Poredano po "abecednom redu"
+Pjesme
+prikazuje <b>{start} - {end}</b> {record_name}, ukupno <b>{total}</b> {record_name}
+pronađeno <b>{found}</b> {record_name}, prikazuje <b>{start} - {end}</b> {record_name}
+Uredi pjesmu
+Krećite se gore u redu
+Pomaknite se dolje u redu
+Jeste li sigurni da želite izbrisati iz reda čekanja
+Jeste li sigurni da želite izbrisati CIJELI red čekanja? Upišite 'OK' za nastavak
+Dodajte 3 nasumične pjesme
+Očistiti sve
+Red je prazan
+Red
+Izbrisati
+Dostupne pjesme u lokalnoj biblioteci
+Dodana pjesma u red čekanja:
+Pjesma je već u redu:
+Traži / Dodaj novo
+traži
+Red
+Uključite ne-karaoke utakmice
+Napredna
+Upišite pjesmu (naslov/izvođač) da biste pretražili dostupne pjesme i kliknite na "Ček čekanja" da je dodate u red čekanja.
+Ako se pjesma ne pojavi na padajućem izborniku "Dostupne pjesme", kliknite "Traži" da biste je pronašli na Youtubeu.
+URL za izravno preuzimanje s YouTubea:
+Dodaj u Red
+Uključite titlove
+preuzimanje datoteka
+Pretraživanje YouTubea za
+Rezultati pretrage za
+Kliknite padajući izbornik za prikaz više rezultata
+Veza:
+Dostupne pjesme
+Želite li promijeniti ime za prikaz osobe koja koristi ovaj uređaj? Ovo će se pojaviti pored pjesama na čekanju. Trenutno:
+Trenutni korisnik
+Info
+PiKaraoke
+Jesi li siguran da želiš odustati?
+Jeste li sigurni da se želite isključiti?
+Jeste li sigurni da se želite ponovno pokrenuti?
+Jeste li sigurni da sada želite ažurirati Youtube-dl? Trenutna preuzimanja i preuzimanja na čekanju možda neće uspjeti.
+Jeste li sigurni da želite proširiti datotečni sustav? Ovo će ponovno pokrenuti vaš raspberry pi.
+Informacija
+Zgodan URL QR kod za dijeljenje s prijateljem:
+OS
+Korištenje diska
+Memorija
+Snimanje zaslona
+Vokalni razdjelnik
+Youtube-dl (yt-dlp) verzija
+PiKaraoke verzija
+Napredne opcije upravljanja
+Način vokalnog razdjelnika:
+Koristite L-R/L+R
+Koristite DNN
+Standardni MTV audio ima dva stereo kanala (L i R) kodirana na takav način da: L-R je instrument instrument, L+R je vokalni zapis. Dakle, jednostavnim oduzimanjem ili zbrajanjem dva stereo kanala, možemo dobiti instrumentalnu i vokalnu pjesmu u mono zvuku. PiKaraokeov ugrađeni vokalni razdjelnik temeljen na DNN-u (duboka neuronska mreža) koristi AI algoritam za razdvajanje instrumentalnog i vokalnog zvuka u svakoj stereo stazi neovisno što rezultira stereo instrumentalnim i vokalnim zapisima.
+Zaustavite Splitter
+Ponovno pokrenite Splitter
+Vokalni razdjelnik (koji podržava i DNN-temeljeno i stereo oduzimanje) radi kao zaseban proces u pozadini, generirajući instrumentalnu/vokalnu audio datoteku za svaku pjesmu.
+Ponovno sinkroniziraj audio i video:
+Zaustavi Streamer
+Ponovno pokrenite Streamer
+To utječe samo na igranje KTV-a putem web preglednika. Ponovno pokretanje screen-capture-and-streaming poboljšava audio/video sinkronizaciju, a također smanjuje kašnjenje između poslužitelja i preglednika.
+Osvježite popis pjesama:
+Ponovno skenirajte imenik pjesama
+To biste trebali učiniti samo ako ste ručno kopirali datoteke u direktorij za preuzimanje dok je PiKaraoke bio pokrenut.
+nadopune
+Ako preuzimanja ili pretraživanja prestanu funkcionirati, ažuriranje youtube-dl će to vjerojatno popraviti. Trenutna instalirana verzija je:
+Ažurirajte youtube-dl
+Ova gornja veza za ažuriranje možda neće uspjeti ako nemate odgovarajuća dopuštenja za datoteku. Provjerite ima li u PiKaraoke zapisniku pogreške.
+Ugasiti
+Nemojte samo izvlačiti utikač! Uvijek ispravno isključite poslužitelj kako biste izbjegli oštećenje podataka.
+Prekinite PiKaraoke
+Ponovno podizanje sustava
+Sustav za isključivanje
+Ostalo
+Proširite Raspberry Pi datotečni sustav
+Ako ste upravo instalirali unaprijed izgrađenu pikaraoke pi sliku i vaša SD kartica je veća od 4 GB, možda biste željeli proširiti datotečni sustav kako biste iskoristili preostali prostor. Ovo trebate učiniti samo jednom. Ovo će ponovno pokrenuti sustav.
+Onemogući način rada administratora
+Omogući način rada administratora
+Odjavite se
+prijaviti se
+Informacije o sustavu
+Dom
+Promijeni jezik

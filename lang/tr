@@ -1,0 +1,184 @@
+Türkçe
+Yanlış yönetici şifresi!
+Yönetici modundan çıkış yapıldı!
+%s rastgele parça eklendi
+Şarkılar tükendi!
+Sırayı temizledi!
+Öğeyi sıraya taşırken hata oluştu: geçersiz argüman
+Öğe sıraya başarıyla taşındı:
+Öğe sıraya taşınırken hata oluştu:
+Sırada aşağı taşındı:
+Kuyrukta aşağı inerken hata oluştu:
+Sırada yükseldi:
+Kuyrukta yukarı çıkma hatası:
+Sıradan silindi:
+Sıradan silme hatası:
+İndirme başladı:
+Tamamlandığında, sıraya eklenecektir.
+Tamamlandığında, "mevcut şarkılar" listesinde görünecektir.
+Hata: Bu şarkı mevcut kuyrukta olduğu için silinemiyor:
+Şarkı silindi:
+Hata: Şarkı parametresi belirtilmedi!
+Hata: Şu anda çalınmakta olduğu için bu şarkı düzenlenemiyor:
+Şarkı Dosyası Düzenleme
+Dosyayı Yeniden Adlandırma Hatası: '%s' - '%s'. Dosya adı zaten var.
+Yeniden adlandırılan dosya: '%s', '%s'
+Hata: Hiçbir dosya adı parametresi belirtilmedi!
+Bilinmeyen
+Koşma
+durduruldu
+ (Yalnızca CPU)
+ (GPU etkin)
+youtube-dl güncelleniyor! Bir veya iki dakika sürmeli...
+youtube-dl'yi güncelleme izniniz yok
+Kapatma izniniz yok
+PiKaraoke'den şimdi çıkılıyor!
+Bırakma izniniz yok
+Sistemi şimdi kapatıyorum!
+Kapatma izniniz yok
+Şimdi sistem yeniden başlatılıyor!
+Yeniden Başlatma izniniz yok
+Dosya sistemini genişletiyor ve sistemi şimdi yeniden başlatıyor!
+Ahududu pi olmayan cihazlarda fs genişletilemiyor!
+Dosya sistemini yeniden boyutlandırma izniniz yok
+Youtube-dl yolu bulunamadı!
+VLC yolu bulunamadı!
+omxplayer yolu bulunamadı!
+İndirme yolu oluşturma:
+Wifi/Ağ bağlı değil. 10 saniye içinde kapanıyor...
+Şarkı seçmek için QR'yi tarayın veya şuraya bağlanın:
+TV ekranı için, şuraya bağlanın:
+Tam ekran arasında geçiş yapmak için F tuşuna basın
+PiKaraoke'den çıkmak için ESC'ye basın
+RaspiWifiConfig kurulum modu algılandı!
+Wifi AP'ye başka bir cihaz/akıllı telefon bağlayın: '%s'
+Ardından tarayıcısını '%s://%s%s' konumuna getirin ve talimatları izleyin.
+Bir sonraki:
+Tarafından eklendi:
+Şimdi oynuyor:
+Yönetici modu verildi!
+Artan ses gecikmesi, bir sonraki cümleyi söylemeden önce şarkı sözlerini okumanız için size daha fazla zaman verecektir.
+Altyazı gecikmesini azaltmak, sonraki cümleyi söylemeden önce şarkı sözlerini okumanız için size daha fazla zaman verecektir.
+Yarım ton, yarım adım olarak da bilinir. Klasik Batı müziğinde kullanılan, bir oktavın on ikide birine veya yarım tona eşit en küçük aralıktır.
+DNN tabanlı ses ayırıcı etkinleştirildi. PiKaraoke, stereo sese yol açan her parçada enstrümantal ve vokal sesi ayırmak için derin bir sinir ağı çalıştırmak için PyTorch'u (Facebook tarafından) kullanır.
+Oyuncu Kontrolü
+Müzik
+İkisi birden
+Ses
+Anahtarı Değiştir
+Şu anda hiçbir şey çalmıyor.
+Hiçbir şarkı sıraya alınmadı.
+Bu şarkı sizin tarafınızdan eklenmedi. Bu parçayı yeniden başlatmak istediğinizden emin misiniz?
+Bu şarkı sizin tarafınızdan eklenmedi. Bu parçayı atlamak istediğinizden emin misiniz?
+Oyuncu Kontrolü
+Şimdi oynuyor
+Sıradaki şarkı
+İçin aramak:
+Ses Gecikmesi (sn)
+Altyazı Gecikmesi (sn)
+Şarkıyı Yeniden Başlat
+Oynat durdur
+Geçerli Şarkıyı Durdur
+Sesi kıs
+Sesi Ayarla
+Sesi aç
+Altyazı Gecikmesini Azalt
+Altyazı Gecikmesini Ayarla
+Altyazı Gecikmesini Artır
+Ses Gecikmesini Azalt
+Ses Gecikmesini Ayarla
+Ses Gecikmesini Artır
+ yarı tonlar
+Lütfen adınızı giriniz. Bu, bu cihazdan sıraya aldığınız şarkıların yanında görünecektir.
+Sıraya eklenen şarkı:
+Şarkı zaten sıra:
+Tarihe göre sırala
+Alfabetik Sırala
+Kuyruğa '%s' ekleyin
+Araştır
+'Tarih'e göre sıralanmış
+'Alfabetik'e göre sıralanmış
+şarkılar
+<b>{start} - {end}</b> {record_name} görüntüleniyor, toplamda <b>{total}</b> {record_name}
+<b>{found}</b> {record_name} bulundu, <b>{start} - {end}</b> {record_name} gösteriliyor
+Şarkıyı düzenle
+Sırada yukarı çık
+Sırada aşağı hareket et
+Sıradan silmek istediğinizden emin misiniz?
+TÜM sırayı temizlemek istediğinizden emin misiniz? Devam etmek için 'Tamam' yazın
+3 rastgele şarkı ekle
+Hepsini temizle
+sıra boş
+Sıra
+Silmek
+Yerel kitaplıkta mevcut şarkılar
+Sıraya eklenen şarkı:
+Şarkı zaten sırada:
+Ara / Yeni Ekle
+Aramak
+Sıra
+Karaoke olmayan maçları dahil et
+ileri
+Mevcut şarkıları aramak için bir şarkı (başlık/sanatçı) yazın ve onu kuyruğa eklemek için 'Sıraya' tıklayın.
+Şarkı "Mevcut Şarkılar" açılır menüsünde görünmüyorsa, Youtube'da bulmak için "Ara"yı tıklayın.
+Doğrudan indirme YouTube url'si:
+Sıraya ekle
+Altyazıları dahil et
+İndirmek
+YouTube'da aranıyor
+için arama sonuçları
+Daha fazla sonuç göstermek için açılır menüyü tıklayın
+Bağlantı:
+Mevcut Şarkılar
+Bu cihazı kullanan kişinin görünen adını değiştirmek istiyor musunuz? Bu, sıraya alınan şarkıların yanında görünecektir. Akım:
+Şu anki kullanıcı
+Bilgi
+PiKaraoke
+Çıkmak istediğinden emin misin?
+Kapatmak istediğinizden emin misiniz?
+Yeniden başlatmak istediğinizden emin misiniz?
+Youtube-dl'yi hemen güncellemek istediğinizden emin misiniz? Mevcut ve bekleyen indirmeler başarısız olabilir.
+Dosya sistemini genişletmek istediğinizden emin misiniz? Bu, ahududu pi'nizi yeniden başlatacaktır.
+Bilgi
+Bir arkadaşınızla paylaşmak için kullanışlı URL QR kodu:
+işletim sistemi
+Disk kullanımı
+Hafıza
+Ekran görüntüsü
+Vokal Bölücü
+Youtube-dl (yt-dlp) sürümü
+PiKaraoke versiyonu
+Gelişmiş Kontrol Seçenekleri
+Vokal ayırıcı modu:
+Sol-Sol/Sol+Sağ kullanın
+DNN'yi kullan
+Standart MTV sesi, şu şekilde kodlanmış iki stereo kanala (Sol ve Sağ) sahiptir: L-R enstrüman izi, L+R vokal izidir. Böylece, iki stereo kanalı basitçe çıkararak veya ekleyerek, enstrümantal ve vokal parçayı mono ses olarak elde edebiliriz. PiKaraoke'nin yerleşik DNN tabanlı (derin sinir ağı) vokal ayırıcısı, enstrümantal ve vokal sesi her stereo parçada bağımsız olarak ayırmak için AI algoritmasını kullanır ve bu da stereo enstrümantal ve vokal parçalar oluşturur.
+Bölücüyü Durdur
+Splitter'ı yeniden başlatın
+Vokal ayırıcı (hem DNN tabanlı hem de stereo çıkarmayı destekler) arka planda ayrı bir işlem olarak çalışır ve her şarkı için enstrümantal/vokal ses dosyası oluşturur.
+Ses ve videoyu yeniden senkronize edin:
+Streamer'ı Durdur
+Streamer'ı yeniden başlatın
+Bu yalnızca KTV'nin web tarayıcısı üzerinden oynatılmasını etkiler. Ekran yakalama ve akışı yeniden başlatmak, ses/video senkronizasyonunu iyileştirir, ayrıca sunucu ile tarayıcı arasındaki gecikmeyi azaltır.
+Şarkı listesini yenileyin:
+Şarkı dizinini yeniden tara
+Bunu yalnızca, dosyaları indirme dizinine PiKaraoke çalışırken manuel olarak kopyaladıysanız yapmanız gerekir.
+güncellemeler
+İndirmeler veya aramalar çalışmayı durdurduysa, youtube-dl'yi güncellemek muhtemelen sorunu çözecektir. Mevcut yüklü sürüm:
+youtube-dl'yi güncelle
+Uygun dosya izinleriniz yoksa yukarıdaki bu güncelleme bağlantısı başarısız olabilir. Hatalar için PiKaraoke günlüğünü kontrol edin.
+Kapat
+Sadece fişi çekmeyin! Veri bozulmasını önlemek için sunucunuzu her zaman düzgün bir şekilde kapatın.
+PiKaraoke'den çık
+Sistemi yeniden başlatma
+Sistemi kapat
+Diğer
+Raspberry Pi dosya sistemini genişletin
+Önceden oluşturulmuş pikaraoke pi görüntüsünü yeni yüklediyseniz ve SD kartınız 4 GB'den büyükse, kalan alanı kullanmak için dosya sistemini genişletmek isteyebilirsiniz. Bunu sadece bir kez yapmanız gerekir. Bu, sistemi yeniden başlatacaktır.
+Yönetici modunu devre dışı bırak
+Yönetici modunu etkinleştir
+çıkış Yap
+giriş yapmak
+Sistem bilgisi
+Ev
+Dili değiştir

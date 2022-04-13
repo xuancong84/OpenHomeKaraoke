@@ -1,0 +1,184 @@
+Gàidhlig na h-Alba
+Facal-faire rianaire ceàrr!
+Air logadh a-mach à modh rianachd!
+Chaidh %s slighean air thuaiream a chur ris
+Ruith a-mach à òrain!
+Glan an ciudha!
+Mearachd a' gluasad nì am broinn ciudha: mì-dhligheach-argamaid
+Chaidh an nì a ghluasad gu soirbheachail taobh a-staigh ciudha:
+Mearachd a' gluasad nì am broinn ciudha:
+Gluais sìos ann an ciudha:
+Mearachd a' gluasad sìos sa chiudha:
+Gluais suas ann an ciudha:
+Mearachd a' gluasad suas sa chiudha:
+Air a sguabadh às a' chiudha:
+Thachair mearachd le sguabadh às a' chiudha:
+Thòisich luchdachadh sìos:
+Nuair a bhios e deiseil, thèid a chur ris a’ chiudha.
+Nuair a bhios e deiseil, nochdaidh e anns an liosta “òrain a tha rim faighinn”.
+Mearachd: Cha ghabh an t-òran seo a sguabadh às a chionn 's gu bheil e sa chiudha làithreach:
+Òran air a sguabadh às:
+Mearachd: Cha deach paramadair òran a shònrachadh!
+Mearachd: Cha ghabh an t-òran seo a dheasachadh a chionn 's gu bheil e ga chluich an-dràsta:
+Deasaich Faidhle Òrain
+Mearachd le ainm ùr air an fhaidhle: '%s' gu '%s'. Tha ainm faidhle ann mu thràth.
+Faidhle ath-ainmichte: '%s' gu '%s'
+Mearachd: Cha deach paramadair ainm faidhle a shònrachadh!
+Neo-aithnichte
+A' ruith
+Sguir
+ (CPU a-mhàin)
+ (GPU air a chomasachadh)
+Ag ùrachadh youtube-dl! Bu chòir dha mionaid no dhà a thoirt...
+Chan eil cead agad youtube-dl ùrachadh
+Chan eil cead agad dùnadh sìos
+A’ fàgail PiKaraoke a-nis!
+Chan eil cead agad sgur
+A’ dùnadh an t-siostam a-nis!
+Chan eil cead agad dùnadh sìos
+Ath-thòiseachadh siostam a-nis!
+Chan eil cead agad ath-thòiseachadh
+A’ leudachadh siostam fhaidhlichean agus siostam ath-thòiseachadh a-nis!
+Chan urrainn fs a leudachadh air innealan pi neo-sùbh-craoibhe!
+Chan eil cead agad an siostam fhaidhlichean atharrachadh
+Cha deach slighe Youtube-dl a lorg!
+Cha deach slighe VLC a lorg!
+slighe omxplayer cha deach a lorg!
+A 'cruthachadh slighe luchdachadh sìos:
+Wifi / lìonra gun cheangal. A dhùnadh sìos ann an 10sg...
+Airson òrain a thaghadh, scan QR no ceangail ri
+Airson taisbeanadh Tbh, ceangail ri
+Brùth F gus làn-sgrìn a thogail
+Brùth ESC gus PiKaraoke fhàgail
+Modh rèiteachaidh RaspiWifiConfig air a lorg!
+Ceangail inneal/fòn cliste eile ris an AP Wifi: '%s'
+An uairsin comharraich am brabhsair aige gu: '%s://%s%s' agus lean an stiùireadh.
+Suas an ath cheum:
+Air a chur ris le:
+A' cluich a-nis:
+Modh rianachd air a bhuileachadh!
+Bheir àrdachadh dàil claisneachd barrachd ùine dhut faclan a leughadh mus seinn thu an ath sheantans.
+Bheir lùghdachadh dàil fo-thiotalan barrachd ùine dhut airson faclan a leughadh mus seinn thu an ath sheantans.
+Canar leth-cheum cuideachd ri semitone. Is e seo an eadar-ama as lugha a thathas a’ cleachdadh ann an ceòl clasaigeach an Iar, co-ionann ri dusan de ochdamh no leth thòn.
+Tha splitter gutha stèidhichte air DNN air a chomasachadh. Bidh PiKaraoke a’ cleachdadh PyTorch (le Facebook) gus lìonra neural domhainn a ruith gus fuaim ionnsramaid is gutha a roinn anns gach slighe ag adhbhrachadh fuaim stereo.
+Smachd cluicheadair
+Ceol
+An dà chuid
+Guth
+Atharraich iuchair
+Chan eil dad a’ cluich an-dràsta.
+Chan eil òran sam bith ann an ciudha.
+Chan eil an t-òran seo air a chuir riut. A bheil thu cinnteach gu bheil thu airson an t-slighe seo ath-thòiseachadh?
+Chan eil an t-òran seo air a chuir riut. A bheil thu cinnteach gu bheil thu airson leum thairis air an t-slighe seo?
+Smachd cluicheadair
+A' cluich a-nis
+An ath òran
+Sireadh gu:
+Dàil claisneachd (diog)
+Dàil fo-thiotal (diog)
+Òran ath-thòisich
+Cluich / Stad
+Stad an t-òran làithreach
+Meud Sìos
+Suidhich Volume
+Tomhais Suas
+Lùghdaich dàil fo-thiotal
+Suidhich dàil fo-thiotal
+Meudaich dàil fo-thiotal
+Lùghdaich dàil claisneachd
+Suidhich dàil claisneachd
+Meudaich dàil claisneachd
+ leth-thonn
+Feuch an cuir thu a-steach d’ ainm. Nochdaidh seo ri taobh nan òran a tha thu a’ ciudha suas bhon inneal seo.
+Òran air a chur ris a’ chiudha:
+Òran mar-thà an ciudha:
+Deasaich a-rèir Ceann-latha
+Deasaich a rèir na h-aibideil
+Cuir '%s' ris a' chiudha
+Dèan brobhsadh
+Deasaich a-rèir 'Ceann-latha'
+Air a chur air dòigh le 'Alphabetical'
+òrain
+a' sealltainn <b>{start} - {end}</b> {record_name}, uile gu lèir <b>{total}</b> {record_name}
+lorg <b>{air a lorg}</b> {record_name}, a' sealltainn <b>{start} - {end}</b> {record_name}
+Deasaich òran
+Gluais suas ann an ciudha
+Gluais sìos ann an ciudha
+A bheil thu cinnteach gu bheil thu airson sguabadh às a’ chiudha
+A bheil thu cinnteach gu bheil thu airson an ciudha UILE a ghlanadh? Taidhp ‘OK’ gus leantainn air adhart
+Cuir 3 òrain air thuaiream ris
+Glan a h-uile
+Tha an ciudha falamh
+ciudha
+Sguab às
+Òrain rim faighinn anns an leabharlann ionadail
+Òran air a chur ris a’ chiudha:
+Tha an t-òran mu thràth anns a’ chiudha:
+Rannsaich / Cuir Ùr ris
+Rannsaich
+ciudha
+Cuir a-steach maidsean neo-karaoke
+Adhartach
+Taidhp òran (tiotal/neach-ealain) gus na h-òrain a tha rim faighinn a sgrùdadh agus cliog air ‘Queue’ gus a chuir ris a’ chiudha.
+Mura h-eil an t-òran a’ nochdadh anns a’ chlàr-taice “Available Songs”, cliog air ‘Search’ gus a lorg air Youtube.
+Luchdaich a-nuas YouTube url gu dìreach. .
+Cuir ris a’ chiudha
+Cuir a-steach fo-thiotalan
+Luchdaich sìos
+A ' coimhead airson YouTube.
+Toraidhean rannsachaidh airson
+Cliog air tuiteam-sìos gus barrachd thoraidhean a shealltainn
+Ceangal:
+Òrain rim faighinn
+A bheil thu airson ainm taisbeanaidh an neach a chleachdas an inneal seo atharrachadh? Nochdaidh seo ri taobh nan òran ciudha. An-dràsta:
+Cleachdaiche làithreach
+Fiosrachadh
+PiKaraoke
+A bheil thu cinnteach gu bheil thu airson sgur?
+A bheil thu cinnteach gu bheil thu airson a dhùnadh sìos?
+A bheil thu cinnteach gu bheil thu airson ath-thòiseachadh?
+A bheil thu cinnteach gu bheil thu airson Youtube-dl ùrachadh an-dràsta? Dh’ fhaodadh fàiligeadh ann an luchdachadh sìos gnàthach is ri thighinn.
+A bheil thu cinnteach gu bheil thu airson an siostam fhaidhlichean a leudachadh? Bidh seo ag ath-thòiseachadh do raspberry pi.
+Fiosrachadh
+Còd QR URL feumail airson a roinn le caraid:
+OS
+Cleachdadh diosc
+Cuimhne
+Glacadh-sgrìn
+Splitter guth
+Tionndadh Youtube-dl (yt-dlp).
+Tionndadh piKaraoke
+Roghainnean smachd adhartach
+Modh splitter gutha:
+Cleachd L-R/L+R
+Cleachd DNN
+Tha an dà sheanail stereo (L agus R) air an còdachadh ann an dòigh a tha: Is e LR an t-slighe ionnstramaid, is e L+R an t-slighe gutha. Mar sin, le bhith dìreach a’ toirt air falbh no a’ cur ris an dà sheanail stereo, gheibh sinn an t-slighe ionnsramaid is gutha ann am fuaim mono. Bidh an inneal-sgoltadh gutha stèidhichte air DNN (lìonra domhainn neural) PiKaraoke a 'cleachdadh algairim AI gus fuaim ionnsramaid is gutha a roinn anns gach slighe stereo gu neo-eisimeileach a' leantainn gu slighean stereo ionnsramaid agus gutha.
+Cuir stad air Splitter
+Ath-thòisich Splitter
+Bidh an splitter gutha (a bheir taic do gach cuid stèidhichte air DNN agus toirt air falbh stereo) a’ ruith mar phròiseas air leth air a’ chùl, a’ gineadh faidhle claisneachd ionnsramaid / guth airson gach òran.
+Dèan ath-shioncronachadh claisneachd is bhidio:
+Cuir stad air Streamer
+Ath-thòisich Streamer
+Cha toir seo buaidh ach air cluich KTV tro bhrobhsair lìn. Le bhith ag ath-thòiseachadh an glacadh-sgrìn-is-shruthadh a’ leasachadh sioncronadh claisneachd / bhidio, bidh e cuideachd a’ lughdachadh an ùine eadar an frithealaiche agus am brabhsair.
+Ùraich liosta nan òran:
+Luchdaich a-nuas an clàr-òrain
+Cha bu chòir gum feum thu seo a dhèanamh ach ma rinn thu leth-bhreac de fhaidhlichean chun chlàr luchdaich sìos fhad ‘s a bha PiKaraoke a’ ruith.
+Ùrachaidhean
+Ma sguir luchdachadh sìos no rannsachaidhean ag obair, is dòcha gun socraich an ùrachadh youtube-dl e. Is e an dreach stàlaichte làithreach:
+Luchdaich a-nuas youtube dl
+Dh’ fhaodadh an ceangal ùrachaidh seo fàiligeadh mura h-eil cead faidhle ceart agad. Thoir sùil air log PiKaraoke airson mearachdan.
+Dùin sìos
+Na tarraing dìreach am plugan! Dùin am frithealaiche agad gu ceart an-còmhnaidh gus coirbeachd dàta a sheachnadh.
+Fàg PiKaraoke
+Ath-thòisich an t-siostam
+Siostam dùnadh
+Eile
+Leudaich siostam faidhlichean Raspberry Pi
+Ma tha thu dìreach air an ìomhaigh pikaraoke pi ro-thogte a chuir a-steach agus gu bheil a’ chairt SD agad nas motha na 4GB, is dòcha gum bi thu airson an siostam faidhle a leudachadh gus an àite a tha air fhàgail a chleachdadh. Chan fheum thu seo a dhèanamh ach aon turas. Bidh seo ag ath-thòiseachadh an t-siostam.
+Cuir à comas modh rianachd
+Cuir an comas modh rianachd
+Log a-mach
+Log a-steach
+Fiosrachadh mun t-siostam
+Dhachaigh
+Atharraich Cànan

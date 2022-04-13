@@ -1,0 +1,184 @@
+Maori
+Kupuhipa kaiwhakahaere hē!
+Kua takiuru ki waho o te aratau whakahaere!
+Kua taapirihia nga %s ara matapōkere
+Kua pau nga waiata!
+Kua whakawāteatia te tūtira!
+Hapa te neke i te tuemi ki roto i te rarangi: he tohenga muhu
+I angitū te nuku tūemi ki roto i te tūtira:
+Hapa te neke i te tuemi ki roto i te rarangi:
+I nuku ki raro i te rarangi:
+Hapa nuku whakararo i te tūtira:
+Kua nuku ki runga i te rarangi:
+Hapa te neke ki runga i te rarangi:
+Kua mukua mai i te tūtira:
+Hapa te muku i te tūtira:
+Kua timata te tango:
+Ka mutu, ka taapirihia ki te rarangi.
+Kia oti, ka puta ki te rarangi "waiata e waatea ana".
+Hapa: Kaore e taea te muku i tenei waiata na te mea kei te rarangi o naianei:
+Kua mukua te waiata:
+Hapa: Karekau he tawhā waiata i tohua!
+Hapa: Kaore e taea te whakatika i tenei waiata na te mea kei te whakatangihia inaianei:
+Whakatika Kōnae Waiata
+Hapa Whakaingoa ano te konae: '%s' ki '%s'. Kei te tīariari kē te ingoa kōnae.
+I whakaingoatia ano te konae: '%s' ki '%s'
+Hapa: Karekau he tawhā ingoa kōnae i tohua!
+Kaore i te mohiotia
+Rere ana
+Ka mutu
+ (PTM anake)
+ (GPU kua whakahohea)
+Kei te whakahōu youtube-dl! Kia kotahi, e rua ranei meneti...
+Karekau he whakaaetanga ki te whakahou i te youtube-dl
+Karekau he whakaaetanga ki te kati
+Ka mutu te PiKaraoke inaianei!
+Karekau he whakaaetanga ki te whakamutu
+Ka kati te punaha inaianei!
+Kaore koe e whai mana ki te kati
+Te whakaara ano i te punaha inaianei!
+Kaore koe e whai mana ki te whakaara ano
+Te whakawhānui i te punaha konae me te whakaara ano i te punaha inaianei!
+Kaore e taea te whakawhanui fs i runga i nga taputapu pi kore-rōpere!
+Kaore koe e whai mana ki te whakarereke i te rahi o te punaha konae
+Kaore i kitea te ara Youtube-dl!
+Kaore i kitea te ara VLC!
+Ko te ara omxplayer kaore i kitea!
+Waihanga ara tikiake:
+Wifi/Whatunga kore hono. Ka kati i roto i te 10s...
+Mo te kowhiri waiata, matawai QR, hono atu ranei ki
+Mo te whakaaturanga pouaka whakaata, hono atu ki
+Pēhia te F hei takahuri i te mata-katoa
+Patohia te ESC kia mutu te PiKaraoke
+I kitea te aratau tatūnga RaspiWifiConfig!
+Honoa tetahi atu taputapu/waea atamai ki te Wifi AP: '%s'
+Na ka tohuhia tana kaitirotiro ki: '%s://%s%s' ka whai i nga tohutohu.
+Ake ake:
+Kua taapirihia e:
+Kei te purei inaianei:
+Kua whakaaetia te aratau kaiwhakahaere!
+Ka nui ake te roa o te ororongo ka nui ake te wa ki te panui kupu i mua i te waiata i te rerenga korero e whai ake nei.
+Ko te whakaheke i te whakaroa taitararoto ka nui ake te wa ki te panui kupu i mua i te waiata i te rerenga korero e whai ake nei.
+Ko te semitone e mohiotia ana ko te hawhe-taahiraa. Koinei te waahi iti rawa e whakamahia ana i roto i nga puoro puoro o te Tai Hauauru, e rite ana ki te tekau ma rua o te octave, te haurua ranei o te oro.
+Ka taea te whakawehe reo-a-DNN. Ka whakamahi a PiKaraoke i a PyTorch (na Facebook) ki te whakahaere i te whatunga neural hohonu ki te wehe i nga oro whakatangitangi me nga oro oro i ia riipene ka puta te tangi oro.
+Mana Player
+Waiata
+E rua
+Reo
+Huri Kī
+Kaore he mea e takaro ana inaianei.
+Karekau he waiata e rarangi.
+Kaore tenei waiata i apitihia e koe. Me timata ano tenei riu?
+Kaore tenei waiata i apitihia e koe. Kei te hiahia peke koe i tenei riu?
+Mana Player
+Kei te takaro inaianei
+Waiata Panuku
+Rapua Ki:
+Roa Ororongo (hekona)
+Taitararoto Roro (hekona)
+Tīmatahia te Waiata
+Purei/Tatari
+Kati Waiata o naianei
+Rōrahi Whakararo
+Tautuhi Rōrahi
+Rōrahi Whakarunga
+Whakaitihia te Taitararoto Rore
+Tautuhi Taitararoto Rore
+Whakanuia te Taitararoto Rore
+Whakaitihia te Roro ororongo
+Tautuhia te Roa Ororongo
+Whakanuia te Rooro Ororongo
+ semitones
+Whakauruhia to ingoa. Ka puta tenei ki te taha o nga waiata e tutira ana koe mai i tenei taputapu.
+Waiata i tapirihia ki te rarangi:
+Waiata kua te rarangi:
+Kōmaka mā te Rā
+Kōmaka mā te Pūāhua
+Tāpirihia te '%s' ki te tūtira
+Tirotiro
+Kōmaka mā te 'Rā'
+Kōmakahia mā te 'Arapū'
+waiata
+whakaatu <b>{tīmatanga} - {end}</b> {record_name}, i te tapeke <b>{total}</b> {record_name}
+kitea <b>{kitea}</b> {record_name}, whakaatu <b>{start} - {end}</b> {record_name}
+Whakatika waiata
+Neke ki runga i te rarangi
+Nuku ki raro i te rarangi
+E tino hiahia ana koe ki te muku mai i te rarangi
+Kei te tino hiahia koe ki te whakawātea i te tūtira KATOA? Patohia 'OK' ki te haere tonu
+Tāpirihia kia 3 nga waiata matapōkere
+Ūkuia katoa
+Kei te takoto kau te rarangi
+Tūtira
+Mukua
+Waiata e waatea ana i te whare pukapuka o te rohe
+Waiata taapiri ki te rarangi:
+Kei roto kē te waiata i te tūtira:
+Rapu / Tāpiri Hou
+Rapu
+Tūtira
+Whakauruhia nga whakataetae kore-karaoke
+Arā atu
+Patohia he waiata (taitara/toi) ki te rapu i nga waiata e waatea ana ka paato i te 'Tira' hei taapiri atu ki te rarangi.
+Ki te kore te waiata e puta ki te takaiho "Waiata e waatea ana", pawhiria te 'Rapu' kia kitea i runga Youtube.
+Tikina tika url YouTube:
+Tāpiri ki te tūtira
+Whakauruhia nga kupu hauraro
+Tikiake
+Kei te rapu YouTube mo
+Nga hua rapu mo
+Paatohia te takaiho hei whakaatu i etahi atu kitenga
+Hononga:
+Waiata Wātea
+Me huri te ingoa whakaatu o te tangata e whakamahi ana i tenei taputapu? Ka puta tenei ki te taha o nga waiata kua rarangi. o nāianei:
+Kaiwhakamahi o naianei
+Nga korero
+PiKaraoke
+Kei te tino hiahia koe ki te whakamutu?
+Kei te tino hiahia koe ki te kati?
+Me whakaara ano koe?
+Kei te tino hiahia koe ki te whakahou i a Youtube-dl inaianei? Ka rahua pea nga tangohanga o naianei me nga mea e tatari ana.
+Kei te tino hiahia koe ki te whakawhanui i te punaha konae? Ma tenei ka whakaara ano i to pi raspberry.
+Nga korero
+Waehere QR URL whaihua hei tiri ki tetahi hoa:
+OS
+Whakamahi Kōpae
+Maharahara
+Hopu Mata
+Whakawehe reo
+Youtube-dl (yt-dlp) putanga
+PiKaraoke version
+Kōwhiringa Mana Arā Atu Anō
+Aratau Wehewehe Wao:
+Whakamahia te L-R/L+R
+Whakamahia te DNN
+Ko te oro MTV paerewa e rua nga hongere tiwharewha (L me R) kua whakawaeheretia kia penei ai: Ko L-R te riu taputapu, ko L+R te riu reo. No reira, ma te tango noa, ma te taapiri ranei i nga hongere tiwharewha e rua, ka whiwhi tatou i te riu puoro me te riu reo i roto i te oro kotahi. Ko te whakawehe reo a PiKaraoke i hangaia i roto i te DNN (whatunga neural hohonu) e whakamahi ana i te AI algorithm ki te wehe i nga oro whakatangitangi me te oro oro i ia riipene hiko motuhake ka puta mai he riipene whakatangitangi me te tangi oro.
+Kati te Splitter
+Tīmataria anō te Splitter
+Ko te wehenga oro (e tautoko ana i te tangohanga DNN me te tiwharewharewha) he mahi motuhake ki te papamuri, ka whakaputa i nga konae puoro puoro/orooro mo ia waiata.
+Tukutahi ano te ororongo me te ataata:
+Kati Streamer
+Tīmata anō i te Streamer
+Ka pa noa tenei ki te purei KTV ma te tirotiro paetukutuku. Ko te whakaara ano i te hopu-mata-me-whakarere ka pai ake te tukutahitanga oro/ataata, ka whakahekehia ano te roanga i waenga i te tūmau me te kaitirotiro.
+Tāmatahia te rārangi waiata:
+Matawai ano i te raarangi waiata
+Me mahi noa koe mena ka kape a ringa koe i nga konae ki te raarangi tangohanga i a PiKaraoke e whakahaere ana.
+Nga whakahou
+Mena ka mutu te mahi tango, rapunga ranei, ma te whakahou i a youtube-dl ka whakatika. Ko te putanga kua whakauruhia inaianei ko:
+Whakahoutia te youtube-dl
+Ka rahua pea tenei hononga whakahou ki runga ake mena karekau he whakaaetanga konae tika. Tirohia te rangitaki PiKaraoke mo nga hapa.
+Whakaweto
+Kaua e kumea noa te mono! Whakawetohia to tūmau i nga wa katoa kia kore ai e pirau nga raraunga.
+Whakamutua PiKaraoke
+Whakahoutia te Pūnaha
+Pūnaha Whakaweto
+Ētahi atu
+Whakanuia te punaha konae Raspberry Pi
+Mena ka whakauruhia e koe te pikitia pikaraoke pi kua oti te hanga me te nui ake o to kaari SD i te 4GB, ka hiahia pea koe ki te whakawhānui ake i te punaha konae ki te whakamahi i te waahi e toe ana. Kia kotahi anake te mahi. Ma tenei ka whakaara ano i te punaha.
+Monokia te aratau whakahaere
+Whakahohehia te aratau whakahaere
+puta ki waho
+takiuru
+Mōhiohio Pūnaha
+Kainga
+Hurihia te Reo

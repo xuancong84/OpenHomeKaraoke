@@ -1,0 +1,184 @@
+Nederlands
+Verkeerd beheerderswachtwoord!
+Uitgelogd uit de beheerdersmodus!
+%s willekeurige nummers toegevoegd
+Liedjes opraken!
+De wachtrij gewist!
+Fout bij verplaatsen item in wachtrij: ongeldig argument
+Het item is met succes naar de wachtrij verplaatst:
+Fout bij verplaatsen item in wachtrij:
+Naar beneden verplaatst in wachtrij:
+Fout bij het naar beneden gaan in de wachtrij:
+Verplaatst in wachtrij:
+Fout bij het omhoog gaan in de wachtrij:
+Verwijderd uit wachtrij:
+Fout bij verwijderen uit wachtrij:
+Download gestart:
+Na voltooiing wordt het toegevoegd aan de wachtrij.
+Na voltooiing zal het verschijnen in de lijst "beschikbare nummers".
+Fout: kan dit nummer niet verwijderen omdat het in de huidige wachtrij staat:
+Nummer verwijderd:
+Fout: Geen songparameter opgegeven!
+Fout: kan dit nummer niet bewerken omdat het momenteel wordt afgespeeld:
+Liedbestand bewerken
+Fout bij hernoemen bestand: '%s' naar '%s'. Bestandsnaam bestaat al.
+Hernoemd bestand: '%s' naar '%s'
+Fout: er zijn geen bestandsnaamparameters opgegeven!
+Onbekend
+Rennen
+Gestopt
+ (alleen CPU)
+ (GPU ingeschakeld)
+YouTube-dl updaten! Moet een minuut of twee duren...
+Je hebt geen toestemming om youtube-dl . te updaten
+Je hebt geen toestemming om af te sluiten
+Stop nu met PiKaraoke!
+Je hebt geen toestemming om te stoppen
+Systeem nu afsluiten!
+Je hebt geen toestemming om af te sluiten
+Systeem nu opnieuw opstarten!
+U heeft geen toestemming om opnieuw op te starten
+Bestandssysteem uitbreiden en systeem nu opnieuw opstarten!
+Kan fs niet uitbreiden op niet-raspberry pi-apparaten!
+U heeft geen toestemming om het bestandssysteem te verkleinen
+Youtube-dl pad niet gevonden!
+VLC-pad niet gevonden!
+omxplayer pad niet gevonden!
+Downloadpad maken:
+Wifi/netwerk niet aangesloten. Over 10 seconden afsluiten...
+Voor het selecteren van nummers, scan QR of maak verbinding met
+Voor tv-weergave, maak verbinding met
+Druk op F om naar volledig scherm te schakelen
+Druk op ESC om PiKaraoke af te sluiten
+RaspiWifiConfig-configuratiemodus gedetecteerd!
+Sluit een ander apparaat/smartphone aan op de Wifi AP: '%s'
+Wijs vervolgens de browser naar: '%s://%s%s' en volg de instructies.
+Volgende:
+Toegevoegd door:
+Nu aan het spelen:
+Admin-modus toegestaan!
+Als je de audiovertraging verhoogt, heb je meer tijd om songteksten te lezen voordat je de volgende zin uitzingt.
+Door de vertraging van de ondertitels te verminderen, heb je meer tijd om de songtekst te lezen voordat je de volgende zin uitzingt.
+Een halve toon wordt ook wel een halve toon genoemd. Het is het kleinste interval dat wordt gebruikt in klassieke westerse muziek, gelijk aan een twaalfde van een octaaf of een halve toon.
+Op DNN gebaseerde vocale splitter is ingeschakeld. PiKaraoke gebruikt PyTorch (van Facebook) om een ​​diep neuraal netwerk te runnen om instrumentaal en vocaal geluid in elk nummer te splitsen, waardoor stereogeluid ontstaat.
+Speler controle
+Muziek
+Beide
+Stem
+Sleutel wijzigen
+Er speelt momenteel niets.
+Er staat geen nummer in de wachtrij.
+Dit nummer is niet door jou toegevoegd. Weet je zeker dat je deze track opnieuw wilt starten?
+Dit nummer is niet door jou toegevoegd. Weet je zeker dat je dit nummer wilt overslaan?
+Speler controle
+Nu aan het spelen
+Volgende liedje
+Zoeken naar:
+Audiovertraging (sec)
+Ondertitelvertraging (sec)
+Herstart nummer
+Speel pauze
+Huidige nummer stoppen
+Volume verminderen
+Volume instellen
+Volume omhoog
+Vertraging ondertiteling verminderen
+Ondertitelvertraging instellen
+Vertraging ondertiteling verhogen
+Audiovertraging verminderen
+Audiovertraging instellen
+Audiovertraging verhogen
+ halve tonen
+Voer uw naam in. Dit wordt weergegeven naast de nummers die u in de wachtrij plaatst vanaf dit apparaat.
+Nummer toegevoegd aan de wachtrij:
+Lied al in de wachtrij:
+Sorteren op datum
+Sorteer op alfabetisch
+Voeg '%s' toe aan de wachtrij
+Bladeren
+Gesorteerd op 'Datum'
+Gesorteerd op 'Alfabetisch'
+liedjes
+met <b>{start} - {end}</b> {record_name}, in totaal <b>{total}</b> {record_name}
+gevonden <b>{found}</b> {record_name}, met <b>{start} - {end}</b> {record_name}
+Bewerk nummer
+Omhoog in de wachtrij
+Omlaag in wachtrij
+Weet u zeker dat u uit de wachtrij wilt verwijderen?
+Weet u zeker dat u de VOLLEDIGE wachtrij wilt wissen? Typ 'OK' om door te gaan
+Voeg 3 willekeurige nummers toe
+Wis alles
+De wachtrij is leeg
+Wachtrij
+Verwijderen
+Beschikbare nummers in de lokale bibliotheek
+Nummer toegevoegd aan wachtrij:
+Nummer staat al in de wachtrij:
+Zoeken / Nieuw toevoegen
+Zoekopdracht
+Wachtrij
+Niet-karaoke-wedstrijden opnemen
+Geavanceerd
+Typ een nummer (titel/artiest) om de beschikbare nummers te zoeken en klik op 'Wachtrij' om het aan de wachtrij toe te voegen.
+Als het nummer niet wordt weergegeven in de vervolgkeuzelijst 'Beschikbare nummers', klikt u op 'Zoeken' om het op YouTube te vinden.
+Directe download YouTube-url:
+Toevoegen aan wachtrij
+Ondertiteling opnemen
+Downloaden
+YouTube zoeken naar
+zoekresultaten voor
+Klik op de vervolgkeuzelijst om meer resultaten weer te geven
+Koppeling:
+Beschikbare nummers
+Wilt u de weergavenaam wijzigen van de persoon die dit apparaat gebruikt? Dit wordt weergegeven naast de nummers in de wachtrij. Huidig:
+Huidige gebruiker
+Info
+PiKaraoke
+Weet je zeker dat je wilt stoppen?
+Weet je zeker dat je wilt afsluiten?
+Weet je zeker dat je opnieuw wilt opstarten?
+Weet je zeker dat je Youtube-dl nu wilt updaten? Huidige en wachtende downloads kunnen mislukken.
+Weet u zeker dat u het bestandssysteem wilt uitbreiden? Hiermee wordt je Raspberry Pi opnieuw opgestart.
+Informatie
+Handige URL QR-code om te delen met een vriend:
+besturingssysteem
+Schijfgebruik
+Geheugen
+Schermopname
+Vocale splitter
+Youtube-dl (yt-dlp) versie
+PiKaraoke-versie
+Geavanceerde besturingsopties
+Vocale splittermodus:
+Gebruik L-R/L+R
+Gebruik DNN
+Bij standaard MTV-audio zijn de twee stereokanalen (L en R) zo gecodeerd dat: L-R het instrumentenspoor is, L+R het vocale spoor. Dus door simpelweg de twee stereokanalen af ​​te trekken of toe te voegen, kunnen we het instrumentale en vocale nummer in monogeluid krijgen. PiKaraoke's ingebouwde DNN-gebaseerde (diep neuraal netwerk) vocal splitter gebruikt AI-algoritme om instrumentaal en vocaal geluid in elke stereotrack onafhankelijk van elkaar te splitsen, wat resulteert in stereo instrumentale en vocale tracks.
+Stop splitter
+Herstart Splitter
+De vocale splitter (die zowel DNN-gebaseerde als stereo-subtractie ondersteunt) draait als een apart proces op de achtergrond en genereert een instrumentaal/vocaal audiobestand voor elk nummer.
+Synchroniseer audio en video opnieuw:
+Stop Streamer
+Herstart Streamer
+Dit is alleen van invloed op het afspelen van KTV via een webbrowser. Het opnieuw starten van de schermopname-en-streaming verbetert de audio/video-synchronisatie en vermindert ook de latentie tussen de server en de browser.
+Ververs de lijst met nummers:
+Nummerdirectory opnieuw scannen
+U hoeft dit alleen te doen als u handmatig bestanden naar de downloadmap hebt gekopieerd terwijl PiKaraoke actief was.
+Updates
+Als downloads of zoekopdrachten niet meer werken, zal het updaten van youtube-dl dit waarschijnlijk oplossen. De huidige geïnstalleerde versie is:
+Update youtube-dl
+Deze updatelink hierboven kan mislukken als u niet over de juiste bestandsrechten beschikt. Controleer het PiKaraoke-logboek op fouten.
+Stilgelegd
+Trek niet zomaar de stekker eruit! Sluit uw server altijd op de juiste manier af om gegevensbeschadiging te voorkomen.
+PiKaraoke afsluiten
+Herstart systeem
+Shutdown-systeem
+Ander
+Vouw Raspberry Pi-bestandssysteem uit
+Als je zojuist de vooraf gebouwde pikaraoke pi-image hebt geïnstalleerd en je SD-kaart groter is dan 4 GB, wil je misschien het bestandssysteem uitbreiden om de resterende ruimte te benutten. U hoeft dit maar één keer te doen. Hiermee wordt het systeem opnieuw opgestart.
+Beheermodus uitschakelen
+Beheermodus inschakelen
+uitloggen
+Log in
+Systeeminformatie
+Thuis
+Taal wijzigen

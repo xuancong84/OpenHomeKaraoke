@@ -1,0 +1,184 @@
+eesti keel
+Vale administraatori parool!
+Administraatorirežiimist välja logitud!
+Lisatud %s juhuslikku rada
+Laulud said otsa!
+Tühjendasin järjekorra!
+Viga üksuse teisaldamisel järjekorda: kehtetu argument
+Üksus on edukalt teisaldatud järjekorda:
+Viga üksuse teisaldamisel järjekorda:
+Järjekorras allapoole teisaldatud:
+Viga järjekorras allapoole liikumisel:
+Järjekorras üles tõstetud:
+Viga järjekorras ülespoole liikumisel:
+Järjekorrast kustutatud:
+Viga järjekorrast kustutamisel:
+Allalaadimine algas:
+Lõpetamisel lisatakse see järjekorda.
+Lõpetamisel kuvatakse see "saadaolevate laulude" loendis.
+Viga: seda laulu ei saa kustutada, kuna see on praeguses järjekorras:
+Lugu kustutatud:
+Viga: laulu parameetrit pole määratud!
+Viga: seda laulu ei saa redigeerida, kuna seda praegu esitatakse:
+Laulu faili redigeerimine
+Viga faili ümbernimetamisel: '%s' nimeks '%s'. Failinimi on juba olemas.
+Nimetatud fail: "%s" ümber "%s"
+Viga: failinime parameetreid pole määratud!
+Tundmatu
+Jooksmine
+Peatatud
+ (ainult CPU)
+ (GPU lubatud)
+youtube-dl värskendamine! See peaks võtma minuti või kaks...
+Teil pole luba youtube-dl värskendamiseks
+Sul pole luba sulgeda
+Lõpetan PiKaraoke kohe!
+Sul pole luba loobuda
+Süsteemi väljalülitamine kohe!
+Sul pole luba sulgeda
+Süsteemi taaskäivitamine kohe!
+Teil pole taaskäivitamiseks luba
+Failisüsteemi laiendamine ja süsteemi taaskäivitamine kohe!
+Fs-i ei saa laiendada mitte-raspberry pi-seadmetes!
+Teil pole failisüsteemi suuruse muutmiseks luba
+Youtube-dl teed ei leitud!
+VLC teed ei leitud!
+omxplayeri teed ei leitud!
+Allalaadimistee loomine:
+WiFi/võrk pole ühendatud. Suletakse 10 sekundi pärast...
+Lugude valimiseks skannige QR-koodi või looge ühendus
+Teleri kuvamiseks looge ühendus
+Täisekraani sisselülitamiseks vajutage F
+PiKaraokest väljumiseks vajutage ESC
+Tuvastati RaspiWifiConfigi seadistusrežiim!
+Ühendage Wifi AP-ga teine ​​seade/nutitelefon: '%s'
+Seejärel suunake brauser aadressile: '%s://%s%s' ja järgige juhiseid.
+Järgmisena:
+Lisas:
+Nüüd mängib:
+Administraatorirežiim lubatud!
+Suurenev heliviivitus annab teile rohkem aega laulusõnade lugemiseks enne järgmise lause väljalaulmist.
+Subtiitrite viivituse vähendamine annab teile rohkem aega laulusõnade lugemiseks enne järgmise lause väljalaulmist.
+Pooltooni tuntakse ka kui poolsammu. See on väikseim klassikalises lääne muusikas kasutatav intervall, mis on võrdne kaheteistkümnendikuga oktavist või pooltoonist.
+DNN-põhine häälejaotur on lubatud. PiKaraoke kasutab PyTorchi (Facebook), et käitada sügavat närvivõrku, et jagada instrumentaal- ja vokaaliheli igal rajal, tekitades stereoheli.
+Mängija juhtimine
+Muusika
+Mõlemad
+Hääl
+Muuda võtit
+Hetkel ei mängi midagi.
+Ühtegi laulu ei ole järjekorras.
+Seda laulu pole teie lisanud. Kas olete kindel, et soovite seda lugu uuesti alustada?
+Seda laulu pole teie lisanud. Kas olete kindel, et soovite selle raja vahele jätta?
+Mängija juhtimine
+Mängib
+Järgmine laul
+Otsima:
+Heli viivitus (s)
+Subtiitrite viivitus (s)
+Taaskäivitage lugu
+Esita/Paus
+Peata praegune laul
+Hääl maha
+Helitugevuse määramine
+Helitugevuse suurendamine
+Subtiitrite viivituse vähendamine
+Subtiitrite viivituse määramine
+Suurendage subtiitrite viivitust
+Vähendage heli viivitust
+Heli viivituse määramine
+Suurendage heli viivitust
+ pooltoonid
+Palun sisestage oma nimi. See kuvatakse selles seadmes järjekorda pandud lugude kõrval.
+Järjekorda lisatud laul:
+Laul on juba järjekorras:
+Sorteeri kuupäeva järgi
+Sorteeri tähestiku järgi
+Lisa '%s' järjekorda
+Sirvige
+Sorteeritud kuupäeva järgi
+Sorteeritud tähestiku järgi
+laulud
+kuvatakse <b>{start} - {end}</b> {record_name}, kokku <b>{total}</b> {record_name}
+leitud <b>{leitud}</b> {rekordi_nimi}, kuvatakse <b>{start} - {end}</b> {record_name}
+Redigeeri laulu
+Liigu järjekorras üles
+Liigu järjekorras allapoole
+Kas olete kindel, et soovite järjekorrast kustutada?
+Kas olete kindel, et soovite TERVE järjekorra tühjendada? Jätkamiseks tippige "OK".
+Lisage 3 juhuslikku laulu
+Kustuta kõik
+Järjekord on tühi
+Järjekord
+Kustuta
+Saadaval laulud kohalikus raamatukogus
+Järjekorda lisatud laul:
+Laul on juba järjekorras:
+Otsi / Lisa uus
+Otsing
+Järjekord
+Kaasa mitte-karaoke vasted
+Täpsemalt
+Saadaolevate lugude otsimiseks tippige lugu (pealkiri/esitaja) ja klõpsake selle järjekorda lisamiseks nuppu "Järjekord".
+Kui lugu ei kuvata rippmenüüs "Saadaolevad laulud", klõpsake selle Youtube'ist leidmiseks nuppu "Otsi".
+Otse allalaadimise YouTube'i URL:
+Lisa järjekorda
+Kaasake subtiitrid
+Lae alla
+Otsin YouTube'ist
+Otsi tulemusi
+Rohkemate tulemuste kuvamiseks klõpsake rippmenüül
+Link:
+Saadaolevad laulud
+Kas soovite muuta seda seadet kasutava isiku kuvatavat nime? See kuvatakse järjekorras olevate lugude kõrval. Praegune:
+Praegune kasutaja
+Info
+PiKaraoke
+Kas olete kindel, et soovite lõpetada?
+Kas soovite kindlasti sulgeda?
+Kas olete kindel, et soovite taaskäivitada?
+Kas olete kindel, et soovite kohe Youtube-dl-i värskendada? Praegused ja ootel allalaadimised võivad ebaõnnestuda.
+Kas olete kindel, et soovite failisüsteemi laiendada? See taaskäivitab teie Raspberry pi.
+Teave
+Mugav URL-i QR-kood sõbraga jagamiseks:
+OS
+Ketta kasutamine
+Mälu
+Ekraanitõmmis
+Vokaal Splitter
+Youtube-dl (yt-dlp) versioon
+PiKaraoke versioon
+Täpsemad juhtimisvalikud
+Vokaaljaoturi režiim:
+Kasutage L-R/L+R
+Kasutage DNN-i
+Standardsel MTV helil on kaks stereokanalit (L ja R) kodeeritud järgmiselt: L-R on instrumendirada, L+R on häälerada. Seega, lihtsalt lahutades või liites kaks stereokanalit, saame instrumentaal- ja vokaalraja monohelis. PiKaraoke sisseehitatud DNN-põhine (sügava närvivõrgu) häälejaotur kasutab AI-algoritmi, et jagada instrumentaal- ja vokaaliheli igas stereorajas eraldi, mille tulemuseks on stereo-instrumentaal- ja vokaalrajad.
+Peatage Splitter
+Taaskäivitage Splitter
+Vokaalijaotur (mis toetab nii DNN-põhist kui ka stereolahutamist) töötab taustal eraldi protsessina, genereerides iga loo jaoks instrumentaalse/vokaalse helifaili.
+Heli ja video uuesti sünkroonimine:
+Peatage Streamer
+Taaskäivitage Streamer
+See mõjutab ainult KTV mängimist veebibrauseri kaudu. Ekraanihõive ja voogesituse taaskäivitamine parandab heli/video sünkroonimist, samuti vähendab see serveri ja brauseri vahelist latentsust.
+Värskenda laululoendit:
+Lugude kataloogi uuesti skannimine
+Peaksite seda tegema ainult siis, kui kopeerisite failid PiKaraoke töötamise ajal käsitsi allalaadimiskataloogi.
+Värskendused
+Kui allalaadimised või otsingud lakkasid töötamast, parandab selle tõenäoliselt youtube-dl värskendamine. Praegune installitud versioon on:
+Värskendage youtube-dl
+See ülaltoodud värskenduslink võib ebaõnnestuda, kui teil pole õigeid failiõigusi. Kontrollige PiKaraoke logist vigu.
+Lülita välja
+Ärge tõmmake lihtsalt pistikust! Andmete kahjustamise vältimiseks lülitage server alati korralikult välja.
+Lõpeta PiKaraoke
+Taaskäivitage süsteem
+Väljalülitussüsteem
+muud
+Laiendage Raspberry Pi failisüsteemi
+Kui installisite just eelehitatud pikaraoke pi pildi ja teie SD-kaart on suurem kui 4 GB, võiksite järelejäänud ruumi ärakasutamiseks failisüsteemi laiendada. Peate seda tegema ainult üks kord. See taaskäivitab süsteemi.
+Keela administraatorirežiim
+Luba administraatorirežiim
+Logi välja
+Logi sisse
+Süsteemi teave
+Kodu
+Muuda keelt

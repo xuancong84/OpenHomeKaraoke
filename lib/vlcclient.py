@@ -151,7 +151,9 @@ class VLCClient:
 			while True:
 				req = self.command("", False)
 				xml = req.text
-				if req.status_code == 200:
+				if not self.K.is_paused and self.get_val_xml(xml, 'state') == 'stopped':
+					pass
+				elif req.status_code == 200:
 					break
 				time.sleep(0.1)
 

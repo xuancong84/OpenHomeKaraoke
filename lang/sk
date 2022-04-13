@@ -1,0 +1,184 @@
+slovenský
+Nesprávne heslo správcu!
+Odhlásený z režimu správcu!
+Pridané %s náhodné stopy
+Došli pesničky!
+Vymazaný rad!
+Chyba pri presúvaní položky vo fronte: invalid-argument
+Položka bola úspešne presunutá vo fronte:
+Chyba pri presúvaní položky vo fronte:
+Presunuté nižšie v poradí:
+Chyba pri presune nadol v poradí:
+Presunuté vyššie v poradí:
+Chyba pri presune vyššie v poradí:
+Odstránené z poradia:
+Chyba pri odstraňovaní z frontu:
+Sťahovanie začalo:
+Po dokončení bude zaradený do poradia.
+Po dokončení sa objaví v zozname „dostupných skladieb“.
+Chyba: Túto skladbu nemožno odstrániť, pretože je v aktuálnom poradí:
+Skladba bola odstránená:
+Chyba: Nie je zadaný žiadny parameter skladby!
+Chyba: Táto skladba sa nedá upraviť, pretože sa práve prehráva:
+Úprava súboru skladby
+Chyba pri premenovávaní súboru: '%s' na '%s'. Názov súboru už existuje.
+Premenovaný súbor: '%s' na '%s'
+Chyba: Neboli zadané žiadne parametre názvu súboru!
+Neznámy
+Beh
+Zastavené
+ (iba CPU)
+ (GPU povolený)
+Aktualizácia youtube-dl! Malo by to trvať minútu alebo dve...
+Nemáte povolenie na aktualizáciu youtube-dl
+Nemáte povolenie na vypnutie
+Okamžite ukončite PiKaraoke!
+Nemáte povolenie skončiť
+Vypínajte systém teraz!
+Nemáte povolenie na vypnutie
+Reštartujte systém teraz!
+Nemáte povolenie na reštart
+Rozširujeme súborový systém a reštartujeme systém teraz!
+Nie je možné rozšíriť fs na iných zariadeniach ako malina pi!
+Nemáte povolenie na zmenu veľkosti súborového systému
+Cesta k Youtube-dl sa nenašla!
+Cesta VLC sa nenašla!
+Cesta k omxplayeru sa nenašla!
+Vytvára sa cesta na stiahnutie:
+Wifi/sieť nie je pripojená. Vypnutie o 10 sekúnd...
+Ak chcete vybrať skladby, naskenujte QR kód alebo sa pripojte
+Ak chcete zobraziť TV, pripojte k
+Stlačením F prepnete zobrazenie na celú obrazovku
+Stlačte ESC na ukončenie PiKaraoke
+Rozpoznal sa režim nastavenia RaspiWifiConfig!
+Pripojte ďalšie zariadenie/smartfón k Wifi AP: '%s'
+Potom nasmerujte prehliadač na: '%s://%s%s' a postupujte podľa pokynov.
+Nasledujúci:
+Pridal:
+Teraz hrá:
+Režim správcu povolený!
+Zvýšenie oneskorenia zvuku vám poskytne viac času na prečítanie textu pred zaspievaním ďalšej vety.
+Zníženie oneskorenia titulkov vám poskytne viac času na prečítanie textu pred zaspievaním ďalšej vety.
+Poltón je známy aj ako polovičný krok. Je to najmenší interval používaný v klasickej západnej hudbe, ktorý sa rovná dvanástine oktávy alebo pol tónu.
+Rozdeľovač hlasu založený na DNN je povolený. PiKaraoke používa PyTorch (od Facebooku) na spustenie hlbokej neurónovej siete na rozdelenie inštrumentálneho a vokálneho zvuku v každej skladbe, čo vedie k stereo zvuku.
+Ovládanie prehrávača
+Hudba
+Obaja
+Hlas
+Zmeniť kľúč
+Momentálne sa nič nehrá.
+Žiadna skladba nie je zaradená do poradia.
+Túto skladbu ste nepridali vy. Naozaj chcete reštartovať túto skladbu?
+Túto skladbu ste nepridali vy. Naozaj chcete preskočiť túto skladbu?
+Ovládanie prehrávača
+Teraz hrá
+Ďalšia skladba
+Hľadať na:
+Oneskorenie zvuku (s)
+Oneskorenie titulkov (s)
+Reštartujte skladbu
+Prehrať/Pozastaviť
+Zastaviť aktuálnu skladbu
+Znížiť hlasitosť
+Nastavte hlasitosť
+Zvýšiť hlasitosť
+Znížte oneskorenie titulkov
+Nastavte oneskorenie titulkov
+Zvýšte oneskorenie titulkov
+Znížte oneskorenie zvuku
+Nastavte oneskorenie zvuku
+Zvýšte oneskorenie zvuku
+ poltóny
+Prosím, zadajte vaše meno. Zobrazí sa vedľa skladieb, ktoré z tohto zariadenia zaradíte do poradia.
+Skladba pridaná do poradia:
+Pieseň je už v rade:
+Zoradiť podľa dátumu
+Zoradiť podľa abecedy
+Pridajte '%s' do frontu
+Prehľadávať
+Zoradené podľa 'Dátumu'
+Zoradené podľa 'Abecedne'
+piesne
+zobrazuje sa <b>{start} - {end}</b> {record_name}, celkovo <b>{total}</b> {record_name}
+nájdené <b>{found}</b> {record_name}, zobrazuje sa <b>{start} - {end}</b> {record_name}
+Upraviť skladbu
+Posunúť sa vyššie v rade
+Posunúť sa v rade nižšie
+Naozaj chcete odstrániť z frontu?
+Naozaj chcete vymazať CELÉ poradie? Ak chcete pokračovať, zadajte „OK“.
+Pridajte 3 náhodné skladby
+Zmazať všetko
+Poradie je prázdne
+Fronta
+Odstrániť
+Dostupné skladby v miestnej knižnici
+Skladba pridaná do poradia:
+Skladba je už v poradí:
+Hľadať / Pridať nový
+Vyhľadávanie
+Fronta
+Zahrňte zápasy bez karaoke
+Pokročilé
+Zadajte skladbu (názov/interpreta) na vyhľadanie dostupných skladieb a kliknutím na „Poradie“ ju pridajte do poradia.
+Ak sa skladba nezobrazuje v rozbaľovacej ponuke „Dostupné skladby“, kliknite na „Hľadať“ a nájdite ju na YouTube.
+Adresa URL na priame stiahnutie z YouTube:
+Pridať do poradia
+Zahrňte titulky
+Stiahnuť ▼
+Hľadá sa na YouTube
+Výsledky vyhľadávania pre
+Kliknutím na rozbaľovaciu ponuku zobrazíte ďalšie výsledky
+odkaz:
+Dostupné skladby
+Chcete zmeniť zobrazované meno osoby, ktorá používa toto zariadenie? Toto sa zobrazí vedľa skladieb zaradených do poradia. Aktuálne:
+Súčasný užívateľ
+Info
+PiKaraoke
+Si si isty ze chces skoncit?
+Naozaj chcete vypnúť?
+Naozaj chcete reštartovať?
+Naozaj chcete aktualizovať Youtube-dl práve teraz? Aktuálne a čakajúce sťahovanie môže zlyhať.
+Naozaj chcete rozšíriť súborový systém? Tým sa reštartuje vaše malina pi.
+Informácie
+Praktický URL QR kód na zdieľanie s kamarátom:
+OS
+Využitie disku
+Pamäť
+Snímanie obrazovky
+Vocal Splitter
+Verzia Youtube-dl (yt-dlp).
+PiKaraoke verzia
+Rozšírené možnosti ovládania
+Režim rozdeľovača hlasu:
+Použite L-R/L+R
+Použite DNN
+Štandardné MTV audio má dva stereo kanály (L a R) zakódované takým spôsobom, že: L-R je nástrojová stopa, L+R je vokálna stopa. Jednoduchým odčítaním alebo pridaním dvoch stereo kanálov teda môžeme získať inštrumentálnu a vokálnu stopu v mono zvuku. Vstavaný vokálny splitter PiKaraoke založený na DNN (hlboká neurónová sieť) využíva algoritmus AI na rozdelenie inštrumentálneho a vokálneho zvuku v každej stereo stope nezávisle, výsledkom čoho sú stereo inštrumentálne a vokálne stopy.
+Zastavte rozdeľovač
+Reštartujte Splitter
+Vokálny rozdeľovač (ktorý podporuje odčítanie na báze DNN aj stereo) beží ako samostatný proces na pozadí a generuje inštrumentálny/vokálny zvukový súbor pre každú skladbu.
+Opätovná synchronizácia zvuku a videa:
+Zastaviť Streamer
+Reštartujte Streamer
+Ovplyvní to iba prehrávanie KTV cez webový prehliadač. Reštartovanie screen-capture-and-streaming zlepšuje audio/video synchronizáciu a tiež znižuje latenciu medzi serverom a prehliadačom.
+Obnovte zoznam skladieb:
+Znova prehľadajte adresár skladieb
+Mali by ste to urobiť iba vtedy, ak ste manuálne skopírovali súbory do adresára sťahovania, kým bolo spustené PiKaraoke.
+Aktualizácie
+Ak sťahovanie alebo vyhľadávanie prestalo fungovať, aktualizácia youtube-dl to pravdepodobne vyrieši. Aktuálna nainštalovaná verzia je:
+Aktualizujte youtube-dl
+Tento odkaz na aktualizáciu vyššie môže zlyhať, ak nemáte správne povolenia na súbor. Skontrolujte protokol PiKaraoke, či neobsahuje chyby.
+Vypnúť
+Nevyťahujte len zástrčku! Vždy správne vypnite server, aby ste predišli poškodeniu údajov.
+Ukončite PiKaraoke
+Reštartovať systém
+Vypínací systém
+Iné
+Rozbaľte súborový systém Raspberry Pi
+Ak ste práve nainštalovali predpripravený obraz pikaraoke pi a vaša SD karta je väčšia ako 4 GB, možno budete chcieť rozšíriť súborový systém, aby ste využili zostávajúci priestor. Musíte to urobiť iba raz. Tým sa reštartuje systém.
+Zakázať režim správcu
+Povoliť režim správcu
+odhlásiť sa
+Prihlásiť sa
+Informácie o systéme
+Domov
+Zmeniť jazyk

@@ -1,0 +1,184 @@
+Malagasy
+Diso ny tenimiafina admin!
+Niala tamin'ny fomba admin!
+Nampiana %s kisendrasendra
+Lany hira!
+Namafa ny filaharana!
+Error mamindra singa ao anatin'ny filaharana: tsy mety-fandresen-dahatra
+Nafindra tao anaty filaharana ny singa:
+Error mamindra entana ao anaty filaharana:
+Nidina tamin'ny filaharana:
+Hadisoana nidina teo amin'ny filaharana:
+Niakatra tamin'ny filaharana:
+Hadisoana miakatra amin'ny filaharana:
+Voafafa tamin'ny filaharana:
+Error famafana amin'ny filaharana:
+Nanomboka ny fampidinana:
+Rehefa vita dia ampidirina amin'ny filaharana izany.
+Rehefa vita dia hiseho ao amin'ny lisitry ny "hira azo alaina".
+Error: Tsy afaka mamafa ity hira ity satria ao anatin'ny filaharana amin'izao fotoana izao:
+Hira voafafa:
+Error: Tsy misy paramètre hira voatondro!
+Error: Tsy azo ovaina ity hira ity satria mandeha amin'izao fotoana izao:
+Fanovana ny rakitra hira
+Error amin'ny fanovana anarana ny rakitra: '%s' ho '%s'. Efa misy ny anaran-drakitra.
+Novana anarana: '%s' ho '%s'
+Error: Tsy nisy mari-pamantarana anaran-drakitra voatondro!
+TSY FANTATRA
+mihazakazaka
+nitsahatra
+ (CPU ihany)
+ (GPU alefa)
+Fanavaozana ny youtube-dl! Tokony haharitra iray na roa minitra...
+Tsy manana alalana hanavao ny youtube-dl ianao
+Tsy manana alalana hanakatona ianao
+Miala amin'ny PiKaraoke izao!
+Tsy manana alalana hiala ianao
+Atsaharo ny rafitra izao!
+Tsy manana alalana hanakatona ianao
+Rebooting ny rafitra izao!
+Tsy manana fahazoan-dàlana hamerenana indray ianao
+Manitatra ny rafi-drakitra sy ny rafitra rebooting izao!
+Tsy afaka manitatra fs amin'ny fitaovana tsy Raspberry pi!
+Tsy manana alalana hanova habe ny rafi-drakitra ianao
+Tsy hita ny lalana Youtube-dl!
+Tsy hita ny lalana VLC!
+tsy hita ny lalana omxplayer!
+Mamorona lalana fampidinana:
+Wifi/Network tsy mifandray. Nakatona afaka 10...
+Raha hifidy hira, scan QR na mifandray amin'ny
+Ho an'ny fampisehoana TV, mifandray amin'ny
+Tsindrio F raha te hanova ny efijery manontolo
+Tsindrio ny ESC raha hiala amin'ny PiKaraoke
+Hita ny fomba fanamboarana RaspiWifiConfig!
+Mampifandray fitaovana/smartphone hafa amin'ny Wifi AP: '%s'
+Avy eo, araho amin'ny: '%s://%s%s' ary araho ny torolalana.
+Manaraka:
+Nampian'i:
+Milalao izao:
+Navela ny fomba Admin!
+Ny fanemorana ny feo dia hanome anao fotoana bebe kokoa hamakiana tononkira alohan'ny hihira ny fehezanteny manaraka.
+Ny fampihenana ny fahatarana ny dikanteny dia hanome anao fotoana bebe kokoa hamakiana tononkira alohan'ny hihira ny fehezanteny manaraka.
+Ny semitone dia fantatra ihany koa amin'ny hoe antsasaky ny dingana. Io no elanelana kely indrindra ampiasaina amin'ny mozika tandrefana klasika, mitovy amin'ny ampahafolon'ny octave na antsasaky ny tonony.
+Ny mpizara feo mifototra amin'ny DNN dia alefa. PiKaraoke dia mampiasa PyTorch (avy amin'ny Facebook) mba hampandehanana tambajotra neural lalina mba hampizarazara ny feon-javamaneno sy feo amin'ny lalana tsirairay ka miteraka feo stereo.
+Fanaraha-maso ny mpilalao
+MOZIKA
+na
+feon'ny
+Change Key
+Tsy misy milalao amin'izao fotoana izao.
+Tsy misy hira milahatra.
+Tsy ampianao ity hira ity. Tena te-hamomboka indray an'ity hira ity ve ianao?
+Tsy ampianao ity hira ity. Tena te handalo ity lalana ity ve ianao?
+Fanaraha-maso ny mpilalao
+Milalao izao
+Hira manaraka
+Mitadiava:
+Fahatarana Audio (sec)
+Fanemorana ny dikanteny (sec)
+Avereno indray ny hira
+Play/Pause
+Atsaharo ny hira ankehitriny
+Midina ny feo
+Mametraha Volume
+Ambony ny boky
+Ahena ny fanemorana ny dikanteny
+Mametraha fahatarana amin'ny Subtitle
+Ampitomboy ny fahatarana ny dikanteny
+Ahena ny fahatarana Audio
+Mametraha fahatarana Audio
+Ampitomboy ny fahatarana Audio
+ semitones
+Ampidiro azafady ny anaranao. Ity dia hiseho eo akaikin'ireo hira milahatra avy amin'ity fitaovana ity.
+Hira nampidirina amin'ny filaharana:
+Hira efa milahatra:
+Alaharo araka ny Daty
+Alaharo araka ny abidy
+Ampio '%s' amin'ny filaharana
+Mikaroka
+Nalahatra araka ny 'Daty'
+Nalahatra araka ny 'alfabetika'
+hira
+mampiseho <b>{start} - {end}</b> {record_name}, total <b>{total}</b> {record_name}
+hita <b>{hita}</b> {record_name}, mampiseho <b>{start} - {end}</b> {record_name}
+Ahitsio hira
+Miakara amin'ny filaharana
+Midina amin'ny filaharana
+Tena te-hamafa amin'ny filaharana ve ianao
+Tena te-hamafa ny filaharana TONTOLO ve ianao? Soraty ny 'OK' raha hanohy
+Ampio hira 3 kisendrasendra
+Fafao daholo
+Foana ny filaharana
+Filaharana
+Mamafa
+Hira misy ao amin'ny tranomboky eo an-toerana
+Hira nampiana amin'ny filaharana:
+Efa eo amin'ny filaharana ny hira:
+Fikarohana / Hanampy Vaovao
+karohy
+Filaharana
+Ampidiro lalao tsy karaoke
+Advanced
+Manorata hira (lohateny/mpanakanto) hikaroka ireo hira misy ary tsindrio ny 'Filaharana' hampidirana azy amin'ny filaharana.
+Raha tsy hita ao amin'ny fidina "Hira misy" ilay hira dia kitiho ny 'Karoka' hahitana azy ao amin'ny Youtube.
+Misintona mivantana ny URL YouTube:
+Ampio amin'ny filaharana
+Asio dikanteny
+DOWNLOAD
+Mikaroka YouTube momba ny
+Valiny fikarohana momba ny
+Kitiho ny midina raha te hampiseho valiny bebe kokoa
+Rohy:
+Hira misy
+Te hanova ny anaran'ny olona mampiasa an'io fitaovana io ve ianao? Izany dia hiseho eo akaikin'ny hira nilahatra. ankehitriny:
+Mpampiasa amin'izao fotoana izao
+Info
+PiKaraoke
+Tena te hiala ve ianao?
+Tena te hikatona tokoa ve ianao?
+Tena te hamerenana ve ianao?
+Tena te hanavao ny Youtube-dl ve ianao izao? Mety tsy hahomby ny fampidinana ankehitriny sy miandry.
+Tena te hanitatra ny rafi-drakitra ve ianao? Izany dia hamerina ny raspberry pi anao.
+Information
+Kaody QR URL azo zaraina amin'ny namana:
+diritti
+Fampiasana kapila
+fahatsiarovana
+Fakan-tsary
+Vocal Splitter
+Youtube-dl (yt-dlp) version
+Version PiKaraoke
+Advanced Control Options
+Fomba fizarazarana feo:
+Ampiasao ny L-R/L+R
+Mampiasà DNS
+Ny feo MTV mahazatra dia manana fantsona stereo roa (L sy R) voahodina amin'ny fomba toy izao: L-R ny làlam-pitaovana, L+R ny feon-kira. Noho izany, amin'ny fanalana tsotra izao na ampiana ireo fantsona stereo roa, dia afaka mahazo ny fitaovana sy ny feo amin'ny feo mono. Ny mpizara feo miorina amin'ny DNN (tambajotra neural lalina) an'i PiKaraoke dia mampiasa algorithm AI mba hanasarahana ny feo misy zavamaneno sy feo ao amin'ny làlam-peo stereo tsirairay ka tsy miankina ka miteraka làlam-peo sy fitaovana stereo.
+Atsaharo ny Splitter
+Avereno indray ny Splitter
+Ny mpizara vocal (izay manohana ny DNN-based sy stereo deduction) dia mandeha ho toy ny dingana mitokana any ambadika, mamorona rakitra misy zavamaneno / feo ho an'ny hira tsirairay.
+Ampifandraiso indray ny feo sy horonan-tsary:
+Atsaharo ny Streamer
+Avereno indray ny Streamer
+Izany dia misy fiantraikany amin'ny filalaovana KTV amin'ny alàlan'ny navigateur web ihany. Ny famerenana indray ny fakan-tsary-ary-streaming dia manatsara ny fampifanarahana feo/video, mampihena ihany koa ny fahatarana eo amin'ny mpizara sy ny navigateur.
+Havaozy ny lisitry ny hira:
+Avereno jerena ny lahatahirin-kira
+Mila manao izany ianao raha toa ka mandika ny rakitra amin'ny tananao amin'ny lahatahiry fampidinana raha mbola mandeha ny PiKaraoke.
+vaovao farany
+Raha tsy miasa intsony ny fampidinana na fikarohana dia mety hanamboatra izany ny fanavaozana ny youtube-dl. Ny kinova napetraka ankehitriny dia:
+Fanavaozana ny youtube-dl
+Ity rohy fanavaozana etsy ambony ity dia mety tsy hahomby raha tsy manana fahazoan-dàlana mety ianao. Jereo ny diarin'ny PiKaraoke raha misy lesoka.
+Hidio
+Aza misintona fotsiny ny plug! Akatona tsara foana ny servero mba hisorohana ny kolikoly angona.
+Atsaharo ny PiKaraoke
+Reboot System
+Rafitra fanakatonana
+Hafa
+Manitatra Raspberry Pi fichiersystem
+Raha vao nametraka ny sary pikaraoke pi efa namboarinao ianao ary lehibe noho ny 4GB ny karatra SD-nao, dia azonao atao ny manitatra ny rafi-drakitra mba hampiasana ny habaka sisa. Indray mandeha ihany ianao no mila manao izany. Izany dia hamerina ny rafitra.
+Atsaharo ny fomba admin
+Alefaso ny fomba admin
+miala
+Hiditra
+System Info
+an-trano
+Hanova fiteny

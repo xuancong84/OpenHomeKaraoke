@@ -1,0 +1,184 @@
+Malti
+Password ta' l-amministratur mhux korretta!
+Idilloggjat mill-modalità admin!
+Miżjud %s binarji każwali
+spiċċat il-kanzunetti!
+Tnaddaf il-kju!
+Żball meta ċaqlaq l-oġġett fil-kju: argument invalid
+Oġġett imċaqlaq b'suċċess fil-kju:
+Żball meta ċaqlaq l-oġġett fil-kju:
+Niżżel fil-kju:
+Żball waqt li tiċċaqlaq 'l isfel fil-kju:
+Tċaqlaq fil-kju:
+Żball meta titla' fil-kju:
+Imħassar mill-kju:
+Żball meta tħassar mill-kju:
+It-tniżżil beda:
+Mat-tlestija, se jiżdied mal-kju.
+Mat-tlestija, se jidher fil-lista "kanzunetti disponibbli".
+Żball: Ma tistax tħassar din il-kanzunetta għax tinsab fil-kju attwali:
+Kanzunetta mħassra:
+Żball: L-ebda parametru tal-kanzunetta speċifikat!
+Żball: Ma tistax teditja din il-kanzunetta għax bħalissa qed tindaqq:
+Editja tal-Fajl tal-Kanzunetta
+Żball Tismija mill-ġdid tal-fajl: '%s' għal '%s'. L-isem tal-fajl diġà jeżisti.
+Fajl b'isem ġdid: '%s' għal '%s'
+Żball: L-ebda parametri tal-isem tal-fajl ma ġew speċifikati!
+Mhux magħruf
+Running
+Waqqaf
+ (CPU biss)
+ (GPU attivata)
+Naġġorna youtube-dl! Għandu jieħu minuta jew tnejn...
+M'għandekx permess biex taġġorna youtube-dl
+M'għandekx permess biex tagħlaq
+Tieqaf PiKaraoke issa!
+M'għandekx permess biex tieqaf
+Jingħalqu sistema issa!
+M'għandekx permess biex tagħlaq
+Rebooting sistema issa!
+M'għandekx permess biex Reboot
+Tespandi sistema ta 'fajls u sistema ta' rebooting issa!
+Ma tistax tespandi fs fuq apparati mhux lampun pi!
+M'għandekx permess biex tibdel id-daqs tas-sistema tal-fajls
+Il-mogħdija ta' Youtube-dl ma nstabx!
+It-triq VLC ma nstabx!
+mogħdija omxplayer ma nstabx!
+Il-ħolqien tal-mogħdija tat-tniżżil:
+Wifi/Netwerk mhux konness. Jingħalqu f'10s...
+Għall-għażla tal-kanzunetti, skennja QR jew qabbad
+Għall-wiri tat-TV, qabbad ma '
+Agħfas F biex taqleb l-iskrin sħiħ
+Agħfas ESC biex tieqaf minn PiKaraoke
+RaspiWifiConfig setup mode misjuba!
+Qabbad apparat/smartphone ieħor mal-Wifi AP: '%s'
+Imbagħad ippunta l-browser tiegħu lejn: '%s://%s%s' u segwi l-istruzzjonijiet.
+Li jmiss:
+Miżjud minn:
+Issa qed tilgħab:
+Mod ta' amministrazzjoni mogħtija!
+Iż-żieda tad-dewmien tal-awdjo tagħtik aktar ħin biex taqra l-lirika qabel tkanta s-sentenza li jmiss.
+It-tnaqqis tad-dewmien tas-sottotitli jagħtik aktar ħin biex taqra l-lirika qabel tkanta s-sentenza li jmiss.
+Semitone huwa magħruf ukoll bħala nofs pass. Huwa l-iżgħar intervall użat fil-mużika klassika tal-Punent, ugwali għal tnax ta' ottava jew nofs ton.
+Splitter vokali bbażat fuq DNN huwa attivat. PiKaraoke juża PyTorch (minn Facebook) biex imexxi netwerk newrali profond biex jaqsam il-ħoss strumentali u vokali f'kull track li jagħti lok għal ħoss stereo.
+Kontroll tal-Plejer
+Mużika
+It-tnejn
+Leħen
+Ibdel Ċavetta
+Xejn qed jilgħab bħalissa.
+L-ebda kanzunetta mhi fil-kju.
+Din il-kanzunetta mhix miżjuda minnek. Int żgur li trid terġa' tibda din il-binarju?
+Din il-kanzunetta mhix miżjuda minnek. Int żgur li trid taqbeż din il-binarju?
+Kontroll tal-Plejer
+Issa Nilgħab
+Kanzunetta li jmiss
+Fittex Biex:
+Dewmien Awdjo (sek)
+Dewmien tas-sottotitli (sek)
+Ibda mill-ġdid il-Kanzunetta
+Play/Pawsa
+Waqqaf il-Kanzunetta Kurrenti
+Volum 'l isfel
+Issettja Volum
+Volum Up
+Naqqas id-Dewmien tas-Subtitolu
+Issettja Dewmien tas-Subtitolu
+Żid Dewmien tas-Subtitolu
+Naqqas id-Dewmien tal-Awdjo
+Issettja Dewmien Awdjo
+Żid Dewmien tal-Awdjo
+ semitoni
+Jekk jogħġbok daħħal ismek. Dan se jidher ħdejn il-kanzunetti li inti fil-kju minn dan l-apparat.
+Kanzunetta miżjuda mal-kju:
+Kanzunetta diġà l-kju:
+Issortja skond id-Data
+Issortja skond Alfabetiku
+Żid '%s' fil-kju
+Fittex
+Issortjati skond 'Data'
+Issortjati skond 'Alfabetiku'
+kanzunetti
+juri <b>{start} - {end}</b> {record_name}, b'kollox <b>{total}</b> {record_name}
+misjub <b>{found}</b> {record_name}, juri <b>{start} - {end}</b> {record_name}
+Editja kanzunetta
+Nimxu 'l fuq fil-kju
+Nimxu 'l isfel fil-kju
+Int żgur li trid tħassar mill-kju
+Int żgur li trid tneħħi l-kju KOLLU? Ittajpja 'OK' biex tkompli
+Żid 3 kanzunetti każwali
+Żbarazza kollox
+Il-kju huwa vojt
+Kju
+Ħassar
+Kanzunetti disponibbli fil-librerija lokali
+Kanzunetta miżjuda fil-kju:
+Il-kanzunetta diġà tinsab fil-kju:
+Fittex / Żid Ġdid
+Fittex
+Kju
+Inkludi logħbiet mhux karaoke
+Avvanzat
+Ittajpja kanzunetta (titlu/artist) biex tfittex il-kanzunetti disponibbli u kklikkja 'Kju' biex iżżidha mal-kju.
+Jekk il-kanzunetta ma tidhirx fil-dropdown "Kanzunetti Disponibbli", ikklikkja 'Fittex' biex issibha fuq Youtube.
+Niżżel dirett YouTube URL:
+Żid mal-kju
+Inkludi sottotitli
+Niżżel
+Fittex għal YouTube
+Riżultati tat-tfittxija għal
+Ikklikkja dropdown biex turi aktar riżultati
+Link:
+Kanzunetti Disponibbli
+Trid tibdel l-isem tal-wiri tal-persuna li tuża dan l-apparat? Dan se jidher ħdejn il-kanzunetti fil-kju. Kurrenti:
+Utent kurrenti
+Info
+PiKaraoke
+Int żgur li trid tieqaf?
+Int żgur li trid tagħlaq?
+Int żgur li trid terġa' tibda?
+Int żgur li trid taġġorna Youtube-dl bħalissa? It-tniżżil attwali u pendenti jistgħu jfallu.
+Int żgur li trid tespandi s-sistema tal-fajls? Dan jerġa 'jibda l-lampun pi tiegħek.
+Informazzjoni
+Kodiċi QR URL handy biex taqsam ma' ħbieb:
+OS
+Użu tad-Disk
+Memorja
+Qbid tal-Iskrin
+Splitter Vokali
+Verżjoni Youtube-dl (yt-dlp).
+Verżjoni PiKaraoke
+Għażliet ta' Kontroll Avvanzati
+Modalità splitter vokali:
+Uża L-R/L+R
+Uża DNN
+L-awdjo MTV standard għandu ż-żewġ kanali stereo (L u R) kodifikati b'tali mod li: L-R hija l-korsa tal-istrument, L + R hija l-korsa vokali. Għalhekk, billi sempliċement innaqqsu jew inżidu ż-żewġ kanali stereo, nistgħu niksbu t-track strumentali u vokali f'ħoss mono. Is-splitter vokali mibni fuq DNN (netwerk newrali profond) ta 'PiKaraoke juża algoritmu AI biex jaqsam il-ħoss strumentali u vokali f'kull track stereo b'mod indipendenti li jirriżulta f'binarji stereo strumentali u vokali.
+Stop Splitter
+Ibda mill-ġdid Splitter
+Is-splitter vokali (li jappoġġja t-tnaqqis kemm ibbażat fuq DNN kif ukoll stereo) jimxi bħala proċess separat fl-isfond, li jiġġenera fajl awdjo strumentali/vokali għal kull kanzunetta.
+Issinkronizza mill-ġdid l-awdjo u l-vidjo:
+Waqqaf Streamer
+Ibda mill-ġdid Streamer
+Dan jaffettwa biss id-daqq tal-KTV permezz tal-web browser. Il-bidu mill-ġdid tal-screen-capture-and-streaming itejjeb is-sinkronizzazzjoni tal-awdjo/vidjow, inaqqas ukoll il-latency bejn is-server u l-browser.
+Aġġorna l-lista tal-kanzunetti:
+Iscan mill-ġdid direttorju tal-kanzunetti
+Għandek bżonn tagħmel dan biss jekk ikkupjajt manwalment fajls fid-direttorju tat-tniżżil waqt li PiKaraoke kien qed jaħdem.
+Aġġornamenti
+Jekk it-tniżżil jew it-tfittxijiet ma baqgħux jaħdmu, l-aġġornament ta' youtube-dl probabbilment se jirranġaha. Il-verżjoni installata attwali hija:
+Aġġorna youtube-dl
+Din il-link għall-aġġornament ta' hawn fuq tista' tfalli jekk ma jkollokx permessi xierqa għall-fajls. Iċċekkja l-log PiKaraoke għal żbalji.
+Għalaq
+Tiġbedx il-plagg biss! Dejjem agħlaq is-server tiegħek sew biex tevita l-korruzzjoni tad-dejta.
+Nieqaf PiKaraoke
+Reboot Sistema
+Sistema ta' Tfigħ
+Oħrajn
+Jespandu s-sistema tal-fajls Raspberry Pi
+Jekk għadek kif installajt l-immaġni pikaraoke pi mibnija minn qabel u l-karta SD tiegħek hija akbar minn 4GB, tista 'tixtieq tespandi s-sistema tal-fajls biex tutilizza l-ispazju li jifdal. Għandek bżonn tagħmel dan darba biss. Dan jerġa 'jibda s-sistema.
+Iddiżattiva l-mod ta' amministrazzjoni
+Ippermetti l-mod ta' amministrazzjoni
+Oħroġ
+Idħol
+Informazzjoni tas-Sistema
+Dar
+Bidla Lingwa

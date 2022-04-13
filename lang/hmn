@@ -1,0 +1,184 @@
+Hmoob
+Admin password tsis raug!
+ID nkag mus ntawm admin hom!
+Ntxiv %s random lem
+Khiav tawm ntawm cov nkauj!
+Cleared lub queue!
+Yuam kev txav khoom hauv kab: invalid-argument
+Ua tiav cov khoom txav mus rau hauv queue:
+Yuam kev txav khoom hauv kab:
+Txav mus rau hauv queue:
+Yuam kev txav mus rau hauv queue:
+Txav mus rau hauv queue:
+Yuam kev txav mus rau hauv queue:
+deleted los ntawm queue:
+Yuam kev deletion ntawm queue:
+Download tau pib:
+Thaum ua tiav, nws yuav muab ntxiv rau hauv kab.
+Thaum ua tiav, nws yuav tshwm nyob rau hauv cov npe "muaj cov nkauj".
+Yuam kev: Tsis tuaj yeem rho tawm zaj nkauj no vim nws nyob hauv kab tam sim no:
+Nkauj deleted:
+yuam kev: Tsis muaj zaj nkauj parameter teev!
+yuam kev: Kho tsis tau zaj nkauj no vim nws tseem tab tom ua si:
+Nkauj Kho Siab
+yuam kev Renaming file: '%s' rau '%s'. Filename twb muaj lawm.
+Hloov npe cov ntaub ntawv: '%s' rau '%s'
+yuam kev: Tsis muaj cov ntaub ntawv npe tsis tau teev tseg!
+Tsis paub
+Khiav
+Nres
+ (CPU nkaus xwb)
+ (GPU enabled)
+Hloov kho youtube-dl! Yuav tsum siv ib feeb lossis ob...
+Koj tsis muaj kev tso cai los hloov youtube-dl
+Koj tsis muaj kev tso cai kaw
+Tso PiKaraoke tam sim no!
+Koj tsis muaj kev tso cai tawm
+Kaw qhov system tam sim no!
+Koj tsis muaj kev tso cai kaw
+Rebooting system tam sim no!
+Koj tsis muaj kev tso cai rau Reboot
+Expanding filesystem thiab rebooting system tam sim no!
+Tsis tuaj yeem nthuav fs ntawm cov khoom siv tsis-raspberry pi!
+Koj tsis muaj kev tso cai los hloov cov ntaub ntawv
+Youtube-dl txoj kev tsis pom!
+VLC txoj kev tsis pom!
+omxplayer txoj kev tsis pom!
+Tsim txoj kev download:
+Wifi/Network tsis txuas. Kev kaw hauv 10s ...
+Txhawm rau xaiv cov nkauj, luam theej duab QR lossis txuas rau
+Rau TV zaub, txuas rau
+Nias F kom toggle puv npo
+Nias ESC tawm PiKaraoke
+RaspiWifiConfig teeb hom kuaj pom!
+Txuas lwm lub cuab yeej/smartphone rau Wifi AP: '%s'
+Tom qab ntawd taw tes nws tus browser mus rau: '%s://%s%s' thiab ua raws li cov lus qhia.
+Tom ntej no:
+Ntxiv los ntawm:
+Tam sim no ua si:
+Admin hom tso cai!
+Kev ncua lub suab yuav muab sij hawm ntxiv rau koj nyeem cov nkauj ua ntej hu nkauj rau kab lus tom ntej.
+Kev txo qis subtitle ncua yuav muab sijhawm rau koj los nyeem cov nkauj ua ntej hu nkauj rau kab lus tom ntej.
+Lub semitone kuj tseem hu ua ib nrab kauj ruam. Nws yog qhov tsawg tshaj plaws siv nyob rau hauv classical Western suab paj nruag, sib npaug rau kaum ob ntawm ib qho octave los yog ib nrab ib lub suab.
+DNN-based suab splitter tau qhib. PiKaraoke siv PyTorch (los ntawm Facebook) los khiav qhov sib sib zog nqus neural network los faib cov suab paj nruag thiab suab hauv txhua txoj kev ua rau lub suab nrov.
+Player Control
+Nkauj
+Ob leeg
+Suab
+Hloov Key
+Tsis muaj dab tsi ua si tam sim no.
+Tsis muaj zaj nkauj yog queued.
+Zaj nkauj no tsis yog koj ntxiv lawm. Koj puas paub tseeb tias koj xav rov pib txoj kab no?
+Zaj nkauj no tsis yog koj ntxiv lawm. Koj puas paub tseeb tias koj xav hla txoj kab no?
+Player Control
+Tam sim no Ua Si
+Tom ntej no Nkauj
+Nrhiav rau:
+Suab qeeb (sec)
+Subtitle ncua (sec)
+Rov pib dua Nkauj
+Ua si / Pause
+Nruas Nkauj Tawm Tshiab
+Volume Down
+Teem ntim
+Volume Up
+Txo subtitle ncua
+Teem Subtitle ncua
+Nce Subtitle ncua
+Txo suab qeeb
+Teem Suab ncua
+Ua kom suab qeeb
+ semitones
+Thov sau koj lub npe. Qhov no yuav tshwm sim ntawm ib sab ntawm cov nkauj uas koj teem caij los ntawm lub cuab yeej no.
+Nkauj ntxiv rau lub queue:
+Nkauj twb keej:
+Xaiv los ntawm Hnub
+Sau los ntawm Alphabetical
+Ntxiv '%s' rau hauv kab
+Saib
+Soj ntsuam los ntawm 'Hnub'
+Soj ntsuam los ntawm 'Alphabetical'
+nkauj
+displaying <b>{start} - {end}</b> {record_name}, tag nrho <b>{total}</b> {record_name}
+pom <b>{found}</b> {record_name}, displaying <b>{start} - {end}</b> {record_name}
+Kho kom raug nkauj
+Txav mus rau hauv queue
+Txav mus rau hauv kab
+Koj puas paub tseeb tias koj xav rho tawm ntawm kab
+Koj puas paub tseeb tias koj xav tshem tag nrho cov kab ke? Ntaus 'OK' mus ntxiv
+Ntxiv 3 zaj nkauj random
+Clear tag nrho
+Lub queue yog khoob
+Daim ntawv
+Rho tawm
+Muaj cov nkauj hauv tsev qiv ntawv hauv zos
+Ntxiv nkauj rau kab:
+Nkauj twb nyob rau hauv kab:
+Nrhiav / Ntxiv Tshiab
+Nrhiav
+Daim ntawv
+suav tsis txheeb karaoke
+Advanced
+Ntaus ib zaj nkauj (lub npe / tus kws kos duab) txhawm rau tshawb cov nkauj muaj thiab nyem 'Queue' ntxiv rau hauv kab.
+Yog hais tias zaj nkauj tsis tshwm nyob rau hauv "Available Songs" dropdown, nyem 'Search' kom pom nws hauv Youtube.
+Direct download YouTube url:
+Ntxiv rau kab
+suav nrog subtitles
+Download tau
+Nrhiav YouTube rau
+Search results for
+Nyem dropdown kom pom cov txiaj ntsig ntxiv
+Txuas:
+Muaj Nkauj
+Koj puas xav hloov lub npe ntawm tus neeg siv lub cuab yeej no? Qhov no yuav tshwm sim ib sab ntawm cov nkauj queued. Tam sim no:
+Tus neeg siv tam sim no
+Cov ntaub ntawv
+PiKaraoke
+Koj puas paub tseeb tias koj xav tawm?
+Koj puas paub tseeb tias koj xav kaw?
+Koj puas paub tseeb tias koj xav reboot?
+Koj puas paub tseeb tias koj xav hloov kho Youtube-dl tam sim no? Tam sim no thiab tseem tos downloads yuav ua tsis tau.
+Koj puas paub tseeb tias koj xav nthuav cov filesystem? Qhov no yuav reboot koj raspberry pi.
+Cov ntaub ntawv
+Yooj yim URL QR code los qhia rau ib tug phooj ywg:
+OS
+Kev siv Disk
+Nco
+Screen Capture
+Vocal Splitter
+Youtube-dl (yt-dlp) version
+PiKaraoke version
+Advanced Control Options
+Vocal splitter hom:
+Siv L-R / L + R
+Siv DNN
+Standard MTV suab muaj ob lub tso suab raws (L thiab R) encoded nyob rau hauv xws li ib tug txoj kev uas: L-R yog qhov ntsuas khiav, L + R yog lub suab khiav. Yog li, los ntawm kev rho tawm lossis ntxiv ob lub tso suab tso suab, peb tuaj yeem tau txais cov twj paj nruag thiab suab hauv lub suab mono. PiKaraoke's built-in DNN-raws li (sib sib zog nqus neural network) suab splitter siv AI algorithm los faib cov suab paj nruag thiab suab hauv txhua lub suab tso suab ntawm nws tus kheej ua rau lub suab seev suab paj nruag thiab suab paj nruag.
+Nres Splitter
+Pib dua Splitter
+Lub suab splitter (uas txhawb nqa DNN-raws li thiab lub tso suab rho tawm) khiav raws li cov txheej txheem sib cais hauv keeb kwm yav dhau, tsim cov ntaub ntawv suab paj nruag / suab rau txhua zaj nkauj.
+Re-synchronize suab thiab video:
+Nres Streamer
+Restart Streamer
+Qhov no tsuas yog cuam tshuam rau kev ua si KTV ntawm lub web browser. Rov pib qhov screen-capture-and-streaming txhim kho suab / video synchronization, nws kuj txo qis latency ntawm tus neeg rau zaub mov thiab browser.
+Refresh lub npe nkauj:
+Rescan song directory
+Koj tsuas yog yuav tsum tau ua qhov no yog tias koj luam cov ntaub ntawv rau hauv phau ntawv rub tawm thaum PiKaraoke tab tom khiav.
+Hloov tshiab
+Yog tias downloads lossis tshawb nrhiav tsis ua haujlwm, hloov kho youtube-dl tej zaum yuav kho nws. Tam sim no ntsia version yog:
+Update youtube-dl
+Qhov hloov tshiab txuas saum toj no yuav ua tsis tau yog tias koj tsis muaj cov ntaub ntawv tso cai kom raug. Kos lub PiKaraoke cav rau qhov yuam kev.
+Kaw
+Tsis txhob rub lub ntsaws! Ib txwm kaw koj lub server kom zoo kom tsis txhob muaj cov ntaub ntawv tsis raug cai.
+Txhob tos lwm tiam karaoke
+Reboot System
+Shutdown System
+Lwm yam
+Nthuav Raspberry Pi filesystem
+Yog tias koj nyuam qhuav teeb tsa cov duab pikaraoke pi ua ntej thiab koj daim npav SD loj dua 4GB, koj tuaj yeem xav nthuav cov ntaub ntawv los siv qhov chaw seem. Koj tsuas yog yuav tsum ua qhov no ib zaug xwb. Qhov no yuav reboot lub system.
+Disable admin hom
+Qhib hom admin
+log tawm
+nkag rau hauv
+System Info
+Tsev
+Hloov lus

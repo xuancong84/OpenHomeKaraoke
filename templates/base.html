@@ -8,12 +8,14 @@
   <title>{{site_title}}</title>
   {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script type=text/javascript src="{{  url_for('static', filename='jquery-3.3.1.min.js') }}"></script>
-  <script src="{{  url_for('static', filename='js.cookie-2.2.1.min.js') }}"></script>
-  <script src="{{  url_for('static', filename='lodash.min.js') }}"></script>
-  <link rel="stylesheet" href="{{  url_for('static', filename='bulma-dark.css') }}">
-  <link rel="stylesheet" href="{{  url_for('static', filename='custom.css') }}">
-  <link rel="icon" type="image/png" href="{{  url_for('static', filename='images/microphone.png') }}">
+  <script src="/static/jquery-3.3.1.min.js"></script>
+  <script src="/static/jquery-ui.min.js"></script>
+  <script src="/static/js.cookie-2.2.1.min.js"></script>
+  <script src="/static/lodash.min.js"></script>
+  <link rel="stylesheet" href="/static/jquery-ui.min.css">
+  <link rel="stylesheet" href="/static/bulma-dark.css">
+  <link rel="stylesheet" href="/static/custom.css">
+  <link rel="icon" type="image/png" href="/static/images/microphone.png">
   <!-- <link rel="stylesheet" href="{{  url_for('static', filename='fontello/css/fontello.css') }}"> -->
   <link rel="stylesheet" href="/static/fontello/css/fontello.css?cachebust=1">
 
@@ -26,6 +28,14 @@
       $("#notification-alt").fadeIn()
       setTimeout(function () {$("#notification-alt").fadeOut()}, timeout)
       setTimeout(function () {$("#notification-alt").removeClass(categoryClass)}, timeout + 750)
+    }
+    
+    function setLanguage(lang, reload){
+      Cookies.set("lang", lang, { expires: 3650 });
+      if(reload){
+        window.scrollTo(0, 0);
+        location.reload();
+      }
     }
 
     $(function () {
@@ -81,7 +91,25 @@
         }
         location.reload();
       });
+      
+      // handle browser language
+      var currentLang = Cookies.get("lang");
+      if(!currentLang){
+        currentLang = window.navigator.language;
+        setLanguage(currentLang, false);
+      }
 
+      $('#current-lang').click(function(e) {
+        e.preventDefault();
+        $.get('/get_lang_list').done(function(lang_json){
+          var lang_dict = JSON.parse(lang_json);
+          var popup_html = '';
+          for(var lang1 in lang_dict)
+            popup_html += `<input type="radio" onclick="setLanguage('${lang1}', true);">&nbsp;${lang_dict[lang1]}<br>`;
+          var popUpList = $(`<div title="{{getString1(185)}}">${popup_html}</div>`)
+          popUpList.dialog();
+        });
+      });
     });
   </script>
   {% block scripts %}
@@ -133,21 +161,21 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand" id="brand" style="padding-left: 10px">
         <a id="home" class="navbar-item" href="{{ url_for('home') }}">
-          <i class="icon icon-home-2" title="Home"></i>
-          <span>Home</span>  
+          <i class="icon icon-home-2" title="{{getString1(183)}}"></i>
+          <span>{{getString1(183)}}</span>
         </a>
 
         <a id="queue" class="navbar-item" href="{{ url_for('queue') }}">
-          <i class="icon icon-list-numbered" title="Queue"></i>
-          <span>Queue</span>  
+          <i class="icon icon-list-numbered" title="{{getString1(112)}}"></i>
+          <span>{{getString1(112)}}</span>
         </a>
         <a id="search" class="navbar-item" href="{{ url_for('search') }}">
-          <i class="icon icon-search-1" title="Search"></i>
-          <span>Search</span>  
+          <i class="icon icon-search-1" title="{{getString1(118)}}"></i>
+          <span>{{getString1(118)}}</span>
         </a>
         <a id="browse" class="navbar-item" href="{{ url_for('browse') }}">
-          <i class="icon icon-folder-open-empty" title="Browse"></i>
-          <span>Browse</span>  
+          <i class="icon icon-folder-open-empty" title="{{getString1(98)}}"></i>
+          <span>{{getString1(98)}}</span>
         </a>
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
@@ -158,11 +186,15 @@
       <div class="navbar-menu" id="menu">
         <div class="navbar-end">
           <a id="current-user" class="navbar-item is-hidden" href="#">
-            <i class="icon  icon-mic-1" title="{{getString1(134)}}"></i>
+            <i class="icon icon-mic-1" title="{{getString1(134)}}"></i>
             <span></span>
           </a>
+          <a id="current-lang" class="navbar-item" href="#">
+            <i class="icon icon-globe" title="{{getString1(184)}}"></i>
+            <span>{{getString1(1)}}</span>
+          </a>
           <a id="info" class="navbar-item" href="{{ url_for('info') }}">
-            <i class="icon icon-info-circled-1" title="{{getString1(135)}}"></i>
+            <i class="icon icon-cog" title="{{getString1(135)}}"></i>
             <span>{{getString1(136)}}</span>&nbsp;&nbsp;
           </a>
         </div>
@@ -195,8 +227,6 @@
     </div>
   </div>
   {% endif %}
-
-
   {% block body %}
   {% endblock %}
 

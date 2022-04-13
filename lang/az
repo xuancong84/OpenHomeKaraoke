@@ -1,0 +1,184 @@
+Azərbaycan
+Səhv admin parolu!
+Admin rejimindən çıxdınız!
+%s təsadüfi trek əlavə edildi
+Mahnılar bitdi!
+Növbəni təmizlədi!
+Elementi növbəyə köçürərkən xəta baş verdi: invalid-arqument
+Element növbəyə uğurla köçürüldü:
+Elementi növbəyə köçürərkən xəta baş verdi:
+Növbəyə salındı:
+Növbəyə enərkən xəta baş verdi:
+Növbəyə köçürüldü:
+Növbəyə keçmə xətası:
+Növbədən silindi:
+Növbədən silərkən xəta baş verdi:
+Yükləmə başladı:
+Tamamlandıqdan sonra növbəyə əlavə olunacaq.
+Tamamlandıqdan sonra "mövcud mahnılar" siyahısında görünəcək.
+Xəta: Bu mahnını silmək mümkün deyil, çünki o, cari növbədədir:
+Mahnı silindi:
+Xəta: Mahnı parametri göstərilməyib!
+Xəta: Bu mahnını redaktə etmək mümkün deyil, çünki o, hazırda oxunur:
+Mahnı faylı redaktə
+Faylın adının dəyişdirilməsi xətası: '%s' - '%s'. Fayl adı artıq mövcuddur.
+Adı dəyişdirilmiş fayl: '%s' - '%s'
+Xəta: Fayl adı parametrləri göstərilməyib!
+Naməlum
+Qaçış
+Dayandı
+ (yalnız CPU)
+ (GPU aktivdir)
+youtube-dl yenilənir! Bir-iki dəqiqə çəkməlidir...
+Sizin youtube-dl-ni yeniləməyə icazəniz yoxdur
+Bağlamaq üçün icazəniz yoxdur
+PiKaraoke-dən indi çıxın!
+Sizin çıxmağa icazəniz yoxdur
+Sistem indi bağlanır!
+Bağlamaq üçün icazəniz yoxdur
+İndi sistem yenidən yüklənir!
+Yenidən başlamağa icazəniz yoxdur
+Fayl sistemi genişləndirilir və sistem indi yenidən yüklənir!
+Moruq olmayan pi cihazlarda fs genişləndirilə bilməz!
+Fayl sisteminin ölçüsünü dəyişmək icazəniz yoxdur
+Youtube-dl yolu tapılmadı!
+VLC yolu tapılmadı!
+omxplayer yolu tapılmadı!
+Yükləmə yolunun yaradılması:
+Wifi/Şəbəkə qoşulmayıb. 10 saniyəyə bağlanır...
+Mahnıları seçmək üçün QR-i skan edin və ya qoşulun
+TV ekranı üçün qoşulun
+Tam ekrana keçmək üçün F düyməsini basın
+PiKaraoke-dən çıxmaq üçün ESC düyməsini basın
+RaspiWifiConfig quraşdırma rejimi aşkar edildi!
+Başqa cihazı/smartfonu Wifi AP-yə qoşun: '%s'
+Sonra onun brauzerini göstərin: '%s://%s%s' və təlimatlara əməl edin.
+Növbəti:
+Əlavə etdi:
+İndi oynayır:
+Admin rejimi verilir!
+Audio gecikmənin artırılması sizə növbəti cümləni oxumazdan əvvəl sözləri oxumaq üçün daha çox vaxt verəcək.
+Altyazı gecikməsini azaltmaq sizə növbəti cümləni oxumazdan əvvəl sözləri oxumaq üçün daha çox vaxt verəcək.
+Yarım ton yarım addım kimi də tanınır. Klassik Qərb musiqisində istifadə olunan ən kiçik intervaldır, oktavanın on ikidə biri və ya yarım tona bərabərdir.
+DNN əsaslı vokal ayırıcı aktivləşdirilib. PiKaraoke PyTorch-dan (Facebook tərəfindən) istifadə edərək, stereo səsə səbəb olan hər bir trekdə instrumental və vokal səsi ayırmaq üçün dərin neyron şəbəkəsini idarə edir.
+Oyunçu Nəzarəti
+Musiqi
+Hər ikisi
+Səs
+Açarı dəyişdirin
+Hazırda heç nə oynanmır.
+Heç bir mahnı növbəyə qoyulmayıb.
+Bu mahnı sizin tərəfinizdən əlavə edilməmişdir. Bu treki yenidən başlatmaq istədiyinizə əminsiniz?
+Bu mahnı sizin tərəfinizdən əlavə edilməmişdir. Bu treki keçmək istədiyinizə əminsiniz?
+Oyunçu Nəzarəti
+İndi oynayır
+Növbəti Mahnı
+Axtarış:
+Audio gecikmə (san)
+Altyazı gecikməsi (san)
+Mahnını yenidən başladın
+Oynat/Pauza
+Cari mahnını dayandırın
+Səsi azaldın
+Səs səviyyəsini təyin edin
+Səs artır
+Altyazı gecikməsini azaldın
+Altyazı gecikməsini təyin edin
+Altyazı gecikməsini artırın
+Audio gecikməni azaldın
+Audio gecikməni təyin edin
+Audio gecikməni artırın
+ yarımtonlar
+Zəhmət olmasa adınızı daxil edin. Bu cihazdan növbəyə qoyduğunuz mahnıların yanında görünəcək.
+Növbəyə əlavə edilən mahnı:
+Mahnı artıq növbədədir:
+Tarixə görə çeşidləyin
+Əlifba sırasına görə çeşidləyin
+Növbəyə '%s' əlavə edin
+Gözdən keçirin
+"Tarix" üzrə çeşidlənib
+"Əlifba sırası" ilə sıralanıb
+mahnılar
+<b>{start} - {end}</b> {record_name} göstərilir, cəmi <b>{total}</b> {record_name}
+tapıldı <b>{tapıldı}</b> {record_name}, göstərilir <b>{start} - {end}</b> {record_name}
+Mahnı redaktə
+Növbədə yuxarı hərəkət edin
+Növbədə aşağı hərəkət edin
+Növbədən silmək istədiyinizə əminsiniz
+BÜTÜN növbəni silmək istədiyinizə əminsiniz? Davam etmək üçün 'OK' yazın
+3 təsadüfi mahnı əlavə edin
+Hamısını sil, hamısını təmizlə
+Növbə boşdur
+Növbə
+Sil
+Yerli kitabxanada mövcud mahnılar
+Növbəyə mahnı əlavə edildi:
+Mahnı artıq növbədədir:
+Axtar / Yeni əlavə et
+Axtar
+Növbə
+Karaoke olmayan matçları daxil edin
+Qabaqcıl
+Mövcud mahnıları axtarmaq üçün mahnını (ad/ifaçı) yazın və onu növbəyə əlavə etmək üçün "Növbəyə" klikləyin.
+Mahnı "Mövcud Mahnılar" açılan siyahısında görünmürsə, onu Youtube-da tapmaq üçün "Axtar" üzərinə klikləyin.
+YouTube url-ni birbaşa yükləyin:
+Növbəyə əlavə edin
+Altyazıları daxil edin
+Yüklə
+YouTube üçün axtarış
+Axtarış nəticələri
+Daha çox nəticə göstərmək üçün açılan menyuya klikləyin
+Link:
+Mövcud Mahnılar
+Bu cihazı istifadə edən şəxsin ekran adını dəyişmək istəyirsiniz? Bu növbəli mahnıların yanında görünəcək. Cari:
+Cari istifadəçi
+Məlumat
+PiKaraoke
+Çıxmaq istədiyinizə əminsiniz?
+Bağlamaq istədiyinizə əminsiniz?
+Yenidən yükləmək istədiyinizə əminsiniz?
+Youtube-dl-ni indi yeniləmək istədiyinizə əminsiniz? Cari və gözlənilən endirmələr uğursuz ola bilər.
+Fayl sistemini genişləndirmək istədiyinizə əminsiniz? Bu, moruq pi-ni yenidən işə salacaq.
+Məlumat
+Dostunuzla paylaşmaq üçün lazımlı URL QR kodu:
+ƏS
+Disk İstifadəsi
+Yaddaş
+Ekran Çəkisi
+Vokal Splitter
+Youtube-dl (yt-dlp) versiyası
+PiKaraoke versiyası
+Qabaqcıl Nəzarət Seçimləri
+Vokal splitter rejimi:
+L-R/L+R istifadə edin
+DNN istifadə edin
+Standart MTV səsi iki stereo kanala (Sol və Sağ) belə kodlaşdırılmış şəkildə malikdir: L-R alət trekidir, L+R vokal trekidir. Beləliklə, sadəcə olaraq iki stereo kanalı çıxarmaqla və ya əlavə etməklə, mono səsdə instrumental və vokal treki əldə edə bilərik. PiKaraoke-nin daxili DNN əsaslı (dərin neyron şəbəkəsi) vokal ayırıcısı hər bir stereo trekdə instrumental və vokal səsi müstəqil şəkildə bölmək üçün süni intellekt alqoritmindən istifadə edir, nəticədə stereo instrumental və vokal treklər yaranır.
+Splitter dayandırın
+Splitter-i yenidən başladın
+Vokal ayırıcı (həm DNN əsaslı, həm də stereo çıxma funksiyasını dəstəkləyir) hər mahnı üçün instrumental/vokal audio faylı yaradaraq, fonda ayrıca proses kimi işləyir.
+Audio və videonu yenidən sinxronizasiya edin:
+Streameri dayandırın
+Streamer-i yenidən başladın
+Bu, yalnız veb brauzer vasitəsilə KTV oynamağa təsir edir. Ekranın çəkilməsi və yayımının yenidən başlaması audio/video sinxronizasiyasını yaxşılaşdırır, həmçinin server və brauzer arasında gecikməni azaldır.
+Mahnı siyahısını yeniləyin:
+Mahnı kataloqunu yenidən yoxlayın
+Bunu yalnız PiKaraoke işləyərkən faylları yükləmə qovluğuna əl ilə kopyaladığınız halda etməlisiniz.
+Yeniləmələr
+Yükləmələr və ya axtarışlar işləməyi dayandırarsa, youtube-dl-nin yenilənməsi yəqin ki, bunu düzəldəcək. Cari quraşdırılmış versiya:
+youtube-dl-ni yeniləyin
+Əgər müvafiq fayl icazələriniz yoxdursa, yuxarıdakı bu yeniləmə linki uğursuz ola bilər. Səhvlər üçün PiKaraoke jurnalını yoxlayın.
+Söndür
+Sadəcə fişini çəkməyin! Məlumatların korlanmasının qarşısını almaq üçün həmişə serverinizi düzgün şəkildə bağlayın.
+PiKaraoke-dən çıxın
+Sistemi yenidən başladın
+Bağlama Sistemi
+Digər
+Raspberry Pi fayl sistemini genişləndirin
+Əgər siz indicə əvvəlcədən qurulmuş pikaraoke pi şəklini quraşdırmısınızsa və SD kartınız 4GB-dan böyükdürsə, qalan yerdən istifadə etmək üçün fayl sistemini genişləndirmək istəyə bilərsiniz. Bunu yalnız bir dəfə etməlisiniz. Bu, sistemi yenidən işə salacaq.
+Admin rejimini söndürün
+Admin rejimini aktivləşdirin
+çıxış
+daxil ol
+Sistem Məlumatı
+Ev
+Dili dəyişdirin

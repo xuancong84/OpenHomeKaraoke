@@ -1,0 +1,184 @@
+kiswahili
+Nenosiri la msimamizi si sahihi!
+Umeondoka kwenye hali ya msimamizi!
+Imeongeza nyimbo %s nasibu
+Nyimbo zimeisha!
+Imefuta foleni!
+Hitilafu katika kuhamisha kipengee ndani ya foleni: hoja-batili
+Imefaulu kuhamisha kipengee ndani ya foleni:
+Hitilafu katika kuhamisha kipengee ndani ya foleni:
+Imesogezwa chini kwenye foleni:
+Hitilafu katika kuteremka kwenye foleni:
+Imesogezwa juu kwenye foleni:
+Hitilafu ya kusonga juu kwenye foleni:
+Imefutwa kutoka kwa foleni:
+Hitilafu katika kufuta kutoka kwenye foleni:
+Upakuaji umeanza:
+Baada ya kukamilika, itaongezwa kwenye foleni.
+Baada ya kukamilika, itaonekana kwenye orodha ya "nyimbo zinazopatikana".
+Hitilafu: Haiwezi kufuta wimbo huu kwa sababu upo kwenye foleni ya sasa:
+Wimbo umefutwa:
+Hitilafu: Hakuna kigezo cha wimbo kilichobainishwa!
+Hitilafu: Haiwezi kuhariri wimbo huu kwa sababu unachezwa kwa sasa:
+Hariri Faili ya Wimbo
+Hitilafu katika Kubadilisha Jina la faili: '%s' hadi '%s'. Jina la faili tayari lipo.
+Faili iliyobadilishwa jina: '%s' hadi '%s'
+Hitilafu: Hakuna vigezo vya jina la faili vilivyobainishwa!
+Haijulikani
+Kimbia
+Imesimamishwa
+ (CPU pekee)
+ (GPU imewashwa)
+Inasasisha youtube-dl! Inapaswa kuchukua dakika moja au mbili...
+Huna ruhusa ya kusasisha youtube-dl
+Huna ruhusa ya kuzima
+Inaacha PiKaraoke sasa!
+Huna ruhusa ya kuacha
+Inazima mfumo sasa!
+Huna ruhusa ya kuzima
+Inaanzisha upya mfumo sasa!
+Huna ruhusa ya Kuwasha Upya
+Kupanua mfumo wa faili na mfumo wa kuwasha upya sasa!
+Haiwezi kupanua fs kwenye vifaa visivyo vya raspberry pi!
+Huna ruhusa ya kubadilisha ukubwa wa mfumo wa faili
+Njia ya Youtube-dl haijapatikana!
+Njia ya VLC haijapatikana!
+njia ya omxplayer haijapatikana!
+Kuunda njia ya kupakua:
+Wifi/Mtandao haujaunganishwa. Inazima baada ya 10s...
+Kwa kuchagua nyimbo, changanua QR au unganisha kwa
+Kwa onyesho la TV, unganisha kwa
+Bonyeza F ili kugeuza skrini nzima
+Bonyeza ESC ili kuacha PiKaraoke
+Hali ya usanidi ya RaspiWifiConfig imegunduliwa!
+Unganisha kifaa/simu mahiri nyingine kwenye AP ya Wifi: '%s'
+Kisha uelekeze kivinjari chake kwa: '%s://%s%s' na ufuate maagizo.
+Inayofuata:
+Imeongezwa na:
+Inacheza sasa:
+Hali ya msimamizi imekubaliwa!
+Kuongezeka kwa ucheleweshaji wa sauti kutakupa muda zaidi wa kusoma maneno kabla ya kuimba sentensi inayofuata.
+Kupunguza ucheleweshaji wa manukuu kutakupa muda zaidi wa kusoma maneno kabla ya kuimba sentensi inayofuata.
+Semitone pia inajulikana kama hatua ya nusu. Ni muda mdogo zaidi unaotumiwa katika muziki wa kitamaduni wa Magharibi, sawa na sehemu ya kumi na mbili ya oktava au nusu ya toni.
+Kigawanya sauti chenye msingi wa DNN kimewashwa. PiKaraoke hutumia PyTorch (na Facebook) kuendesha mtandao wa kina wa neva ili kugawanya sauti ya ala na ya sauti katika kila wimbo na kusababisha sauti ya stereo.
+Udhibiti wa Mchezaji
+Muziki
+Zote mbili
+Sauti
+Badilisha Kitufe
+Hakuna kinachocheza kwa sasa.
+Hakuna wimbo uliowekwa kwenye foleni.
+Wimbo huu haujauongeza. Je, una uhakika unataka kuanzisha upya wimbo huu?
+Wimbo huu haujauongeza. Je, una uhakika unataka kuruka wimbo huu?
+Udhibiti wa Mchezaji
+Inacheza sasa
+Wimbo Unaofuata
+Tafuta Kwa:
+Kuchelewa kwa Sauti (sekunde)
+Kuchelewa kwa Manukuu (sekunde)
+Anzisha Wimbo upya
+Cheza/Sitisha
+Acha Wimbo wa Sasa
+Punguza sauti
+Weka Kiasi
+Volume Up
+Punguza Ucheleweshaji wa Manukuu
+Weka Ucheleweshaji wa Manukuu
+Ongeza Ucheleweshaji wa Manukuu
+Punguza Ucheleweshaji wa Sauti
+Weka Ucheleweshaji wa Sauti
+Ongeza Ucheleweshaji wa Sauti
+ semitones
+Tafadhali weka jina lako. Hii itaonekana karibu na nyimbo unazopanga kwenye foleni kutoka kwa kifaa hiki.
+Wimbo umeongezwa kwenye foleni:
+Wimbo tayari uko kwenye foleni:
+Panga kwa Tarehe
+Panga kwa Kialfabeti
+Ongeza '%s' kwenye foleni
+Vinjari
+Imepangwa kwa 'Tarehe'
+Imepangwa kwa 'Kialfabeti'
+Nyimbo
+inaonyesha <b>{start} - {end}</b> {record_name}, kwa jumla <b>{total}</b> {record_name}
+imepata <b>{imepata}</b> {record_name}, ikionyesha <b>{start} - {end}</b> {record_name}
+Hariri wimbo
+Sogeza juu kwenye foleni
+Sogeza chini kwenye foleni
+Je, una uhakika unataka kufuta kutoka kwenye foleni
+Je, una uhakika unataka kufuta foleni YOTE? Andika 'Sawa' ili kuendelea
+Ongeza nyimbo 3 za nasibu
+Futa zote
+Foleni ni tupu
+Foleni
+Futa
+Nyimbo zinazopatikana katika maktaba ya ndani
+Wimbo ulioongezwa kwenye foleni:
+Wimbo tayari uko kwenye foleni:
+Tafuta / Ongeza Mpya
+Tafuta
+Foleni
+Jumuisha mechi zisizo za karaoke
+Advanced
+Andika wimbo (kichwa/msanii) kutafuta nyimbo zinazopatikana na ubofye 'Foleni' ili kuiongeza kwenye foleni.
+Ikiwa wimbo hauonekani katika menyu kunjuzi ya "Nyimbo Zinazopatikana", bofya 'Tafuta' ili kuipata kwenye Youtube.
+Pakua moja kwa moja url ya YouTube:
+Ongeza kwenye foleni
+Jumuisha manukuu
+Pakua
+Inatafuta YouTube
+Matokeo ya utafutaji
+Bofya menyu kunjuzi ili kuonyesha matokeo zaidi
+Kiungo:
+Nyimbo Zinazopatikana
+Je, ungependa kubadilisha jina la maonyesho la mtu anayetumia kifaa hiki? Hii itaonekana karibu na nyimbo zilizowekwa kwenye foleni. Sasa:
+Mtumiaji wa sasa
+Habari
+PiKaraoke
+Una uhakika unataka kuacha?
+Je, una uhakika unataka kuzima?
+Je, una uhakika unataka kuwasha upya?
+Je, una uhakika ungependa kusasisha Youtube-dl sasa hivi? Vipakuliwa vya sasa na vinavyosubiri vinaweza kushindwa.
+Je, una uhakika unataka kupanua mfumo wa faili? Hii itaanzisha tena raspberry pi yako.
+Habari
+Msimbo wa QR unaofaa wa kushiriki na rafiki:
+Mfumo wa Uendeshaji
+Matumizi ya Diski
+Kumbukumbu
+Picha ya skrini
+Mgawanyiko wa sauti
+Toleo la Youtube-dl (yt-dlp).
+Toleo la PiKaraoke
+Chaguzi za Udhibiti wa Juu
+Njia ya kugawanya sauti:
+Tumia L-R/L+R
+Tumia DNN
+Sauti ya kawaida ya MTV ina chaneli mbili za stereo (L na R) zilizosimbwa kwa njia ambayo: L-R ni wimbo wa ala, L+R ni wimbo wa sauti. Kwa hivyo, kwa kupunguza au kuongeza tu chaneli mbili za stereo, tunaweza kupata wimbo wa ala na sauti katika sauti ya mono. Kipasuaji cha sauti cha PiKaraoke kilichojengwa ndani ya DNN (mtandao wa neva wa kina) hutumia algoriti ya AI kugawanya sauti ya ala na ya sauti katika kila wimbo wa stereo na kusababisha ala za stereo na sauti.
+Acha Kugawanyika
+Anzisha tena Splitter
+Kipasua sauti (kinachoauni msingi wa DNN na utoaji wa stereo) huendesha kama mchakato tofauti chinichini, na kutengeneza faili ya sauti ya ala/ya sauti kwa kila wimbo.
+Sawazisha upya sauti na video:
+Acha Kitiririshaji
+Anzisha tena Kipeperushi
+Hii huathiri tu kucheza KTV kupitia kivinjari cha wavuti. Kuanzisha upya kunasa-na-tiririsha skrini kunaboresha usawazishaji wa sauti/video, pia hupunguza muda wa kusubiri kati ya seva na kivinjari.
+Onyesha upya orodha ya nyimbo:
+Changanua upya saraka ya wimbo
+Unapaswa tu kuhitaji kufanya hivi ikiwa ulinakili faili kwa mikono kwenye saraka ya upakuaji wakati PiKaraoke ilikuwa inaendesha.
+Sasisho
+Ikiwa vipakuliwa au utafutaji utaacha kufanya kazi, kusasisha youtube-dl huenda kutairekebisha. Toleo la sasa lililowekwa ni:
+Sasisha youtube-dl
+Kiungo hiki cha sasisho hapo juu kinaweza kushindwa ikiwa huna ruhusa zinazofaa za faili. Angalia logi ya PiKaraoke kwa makosa.
+Kuzimisha
+Usivute tu kuziba! Zima seva yako kila wakati ili kuzuia uharibifu wa data.
+Acha PiKaraoke
+Anzisha tena Mfumo
+Zima Mfumo
+Nyingine
+Panua mfumo wa faili wa Raspberry Pi
+Ikiwa umesakinisha tu picha ya pikaraoke pi iliyojengwa awali na kadi yako ya SD ni kubwa kuliko 4GB, unaweza kutaka kupanua mfumo wa faili ili kutumia nafasi iliyobaki. Unahitaji kufanya hivi mara moja tu. Hii itaanzisha upya mfumo.
+Zima hali ya msimamizi
+Washa hali ya msimamizi
+toka nje
+Ingia
+Maelezo ya Mfumo
+Nyumbani
+Badilisha Lugha

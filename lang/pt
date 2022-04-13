@@ -1,0 +1,184 @@
+Português
+Senha de administrador incorreta!
+Saiu do modo de administrador!
+Adicionadas %s faixas aleatórias
+Acabou as músicas!
+Limpou a fila!
+Erro ao mover o item para dentro da fila: argumento inválido
+Item movido com sucesso para dentro da fila:
+Erro ao mover o item para dentro da fila:
+Movido para baixo na fila:
+Erro ao descer na fila:
+Subiu na fila:
+Erro ao subir na fila:
+Excluído da fila:
+Erro ao excluir da fila:
+Download iniciado:
+Após a conclusão, ele será adicionado à fila.
+Após a conclusão, ele aparecerá na lista "músicas disponíveis".
+Erro: Não é possível excluir esta música porque ela está na fila atual:
+Música excluída:
+Erro: Nenhum parâmetro de música especificado!
+Erro: Não é possível editar esta música porque ela está sendo reproduzida no momento:
+Editar arquivo de música
+Erro ao renomear arquivo: '%s' para '%s'. O nome do arquivo já existe.
+Arquivo renomeado: '%s' para '%s'
+Erro: Nenhum parâmetro de nome de arquivo foi especificado!
+Desconhecido
+Encontro
+Parado
+ (somente CPU)
+ (GPU habilitado)
+Atualizando youtube-dl! Deve demorar um minuto ou dois...
+Você não tem permissão para atualizar o youtube-dl
+Você não tem permissão para desligar
+Saindo do PiKaraoke agora!
+Você não tem permissão para sair
+Desligando o sistema agora!
+Você não tem permissão para desligar
+Reiniciando o sistema agora!
+Você não tem permissão para reiniciar
+Expandindo o sistema de arquivos e reiniciando o sistema agora!
+Não é possível expandir fs em dispositivos pi sem framboesa!
+Você não tem permissão para redimensionar o sistema de arquivos
+Caminho do Youtube-dl não encontrado!
+Caminho VLC não encontrado!
+caminho omxplayer não encontrado!
+Criando caminho de download:
+Wifi/rede não conectado. Desligando em 10 segundos...
+Para selecionar músicas, escaneie o QR ou conecte-se a
+Para exibição de TV, conecte
+Pressione F para alternar para tela cheia
+Pressione ESC para sair do PiKaraoke
+Modo de configuração RaspiWifiConfig detectado!
+Conecte outro dispositivo/smartphone ao AP Wifi: '%s'
+Em seguida, aponte o navegador para: '%s://%s%s' e siga as instruções.
+A seguir:
+Adicionado por:
+Agora jogando:
+Modo de administrador concedido!
+Aumentar o atraso do áudio lhe dará mais tempo para ler as letras antes de cantar a próxima frase.
+Diminuir o atraso das legendas lhe dará mais tempo para ler as letras antes de cantar a próxima frase.
+Um semitom também é conhecido como meio-tom. É o menor intervalo usado na música clássica ocidental, igual a um duodécimo de oitava ou meio tom.
+O divisor vocal baseado em DNN está habilitado. O PiKaraoke usa o PyTorch (do Facebook) para executar uma rede neural profunda para dividir o som instrumental e vocal em cada faixa, dando origem ao som estéreo.
+Controle do jogador
+Música
+Ambos
+Voz
+Alterar chave
+Nada está jogando agora.
+Nenhuma música está na fila.
+Esta música não foi adicionada por você. Tem certeza de que deseja reiniciar esta faixa?
+Esta música não foi adicionada por você. Tem certeza de que deseja pular esta faixa?
+Controle do jogador
+Em reprodução
+Próxima música
+Procurar:
+Atraso de áudio (s)
+Atraso da legenda (s)
+Reiniciar música
+A pausa
+Parar a música atual
+Volume baixo
+Definir volume
+Aumentar o volume
+Diminuir o atraso das legendas
+Definir atraso de legenda
+Aumentar o atraso das legendas
+Diminuir o atraso de áudio
+Definir atraso de áudio
+Aumentar o atraso de áudio
+ semitons
+Por favor, insira seu nome. Isso aparecerá ao lado das músicas que você colocou na fila deste dispositivo.
+Música adicionada à fila:
+Música já na fila:
+Classificar por data
+Ordenar por ordem alfabética
+Adicionar '%s' à fila
+Navegar
+Ordenado por 'Data'
+Ordenado por 'Alfabético'
+músicas
+exibindo <b>{start} - {end}</b> {record_name}, no total <b>{total}</b> {record_name}
+encontrou <b>{found}</b> {record_name}, exibindo <b>{start} - {end}</b> {record_name}
+Editar música
+Subir na fila
+Descer na fila
+Tem certeza de que deseja excluir da fila
+Tem certeza de que deseja limpar a fila INTEIRA? Digite 'OK' para continuar
+Adicione 3 músicas aleatórias
+Limpar tudo
+A fila está vazia
+Fila
+Excluir
+Músicas disponíveis na biblioteca local
+Música adicionada à fila:
+A música já está na fila:
+Pesquisar / Adicionar Novo
+Procurar
+Fila
+Incluir partidas que não sejam de karaokê
+Avançado
+Digite uma música (título/artista) para pesquisar as músicas disponíveis e clique em 'Fila' para adicioná-la à fila.
+Se a música não aparecer na lista suspensa "Músicas disponíveis", clique em "Pesquisar" para encontrá-la no Youtube.
+URL do YouTube para download direto:
+Adicionar à fila
+Incluir legendas
+Download
+Procurando no YouTube por
+Resultados da busca por
+Clique no menu suspenso para mostrar mais resultados
+Link:
+Músicas disponíveis
+Deseja alterar o nome de exibição da pessoa que usa este dispositivo? Isso aparecerá ao lado das músicas na fila. Atual:
+Usuário atual
+Informações
+PiKaraokê
+Você tem certeza que quer sair?
+Tem certeza de que deseja encerrar?
+Tem certeza de que deseja reiniciar?
+Tem certeza de que deseja atualizar o Youtube-dl agora? Os downloads atuais e pendentes podem falhar.
+Tem certeza de que deseja expandir o sistema de arquivos? Isso reiniciará seu raspberry pi.
+Em formação
+Código QR de URL útil para compartilhar com um amigo:
+SO
+Uso de disco
+Memória
+Captura de tela
+Divisor de voz
+Versão do Youtube-dl (yt-dlp)
+Versão do PiKaraokê
+Opções de controle avançado
+Modo de divisão vocal:
+Use L-R/L+R
+Usar DNN
+O áudio padrão da MTV tem os dois canais estéreo (L e R) codificados de tal forma que: L-R é a faixa do instrumento, L+R é a faixa do vocal. Assim, simplesmente subtraindo ou somando os dois canais estéreo, podemos obter a faixa instrumental e vocal em som mono. O divisor vocal baseado em DNN (rede neural profunda) integrado do PiKaraoke usa o algoritmo de IA para dividir o som instrumental e vocal em cada faixa estéreo de forma independente, resultando em faixas instrumentais e vocais estéreo.
+Parar divisor
+Reiniciar Divisor
+O divisor vocal (que suporta subtração baseada em DNN e estéreo) é executado como um processo separado em segundo plano, gerando arquivo de áudio instrumental/vocal para cada música.
+Sincronize novamente áudio e vídeo:
+Parar streamer
+Reiniciar streamer
+Isso afeta apenas a reprodução de KTV via navegador da web. Reiniciar a captura e transmissão de tela melhora a sincronização de áudio/vídeo, também diminui a latência entre o servidor e o navegador.
+Atualize a lista de músicas:
+Rescan diretório de músicas
+Você só precisará fazer isso se copiou manualmente os arquivos para o diretório de download enquanto o PiKaraoke estava em execução.
+Atualizações
+Se os downloads ou pesquisas pararam de funcionar, a atualização do youtube-dl provavelmente o corrigirá. A versão atual instalada é:
+Atualizar youtube-dl
+Este link de atualização acima pode falhar se você não tiver as permissões de arquivo adequadas. Verifique se há erros no log do PiKaraoke.
+Desligar
+Não basta puxar o plugue! Sempre desligue o servidor corretamente para evitar corrupção de dados.
+Sair do PiKaraokê
+Reiniciar sistema
+Sistema de desligamento
+Outro
+Expanda o sistema de arquivos Raspberry Pi
+Se você acabou de instalar a imagem pikaraoke pi pré-construída e seu cartão SD for maior que 4 GB, talvez você queira expandir o sistema de arquivos para utilizar o espaço restante. Você só precisa fazer isso uma vez. Isso irá reiniciar o sistema.
+Desabilitar o modo administrador
+Ativar o modo de administrador
+sair
+Conecte-se
+Informação do sistema
+Casa
+Mudar idioma

@@ -1,0 +1,184 @@
+Hausa
+Ba daidai ba admin kalmar sirri!
+An fita daga yanayin gudanarwa!
+Ƙara %s waƙoƙi bazuwar
+Gudu daga waƙoƙi!
+An share jerin gwano!
+Kuskuren motsi abu a cikin jerin gwano: hujja mara inganci
+An yi nasarar matsar da abu a cikin jerin gwano:
+Kuskuren motsi abu a cikin jerin gwano:
+An gangara cikin layi:
+Kuskuren sauka a layi:
+An tashi a cikin jerin gwano:
+Kuskuren hawa layi:
+An share daga jerin gwano:
+Kuskuren gogewa daga jerin gwano:
+An fara saukewa:
+Bayan an gama, za a ƙara shi zuwa jerin gwano.
+Bayan kammala, zai bayyana a cikin "samuwa songs" jerin.
+Kuskure: Ba za a iya share wannan waƙa ba saboda tana cikin layi na yanzu:
+An goge waƙar:
+Kuskure: Babu takamaiman sigar waƙa!
+Kuskure: Ba za a iya gyara wannan waƙa ba saboda a halin yanzu ana kunna ta:
+Gyara Fayil na Waƙa
+Kuskuren Sake suna: '%s' zuwa '%s'. Sunan fayil ya riga ya wanzu.
+Fayil da aka sake suna: '%s' zuwa '%s'
+Kuskure: Babu sigogin sunan fayil da aka ƙayyade!
+Ba a sani ba
+Gudu
+Tsaya
+ (CPU kawai)
+ (An kunna GPU)
+Ana ɗaukaka youtube-dl! Ya kamata a dauki minti daya ko biyu ...
+Ba ku da izini don sabunta youtube-dl
+Ba ku da izinin rufewa
+Barin PiKaraoke yanzu!
+Baku da izinin barin aiki
+Kashe tsarin yanzu!
+Ba ku da izinin rufewa
+Sake kunna tsarin yanzu!
+Baku da izinin Sake yi
+Fadada tsarin fayil da tsarin sake kunnawa yanzu!
+Ba za a iya faɗaɗa fs akan na'urorin pi waɗanda ba rasberi ba!
+Ba ku da izini don sake girman tsarin fayil ɗin
+Ba a samo hanyar Youtube-dl ba!
+Ba a samo hanyar VLC ba!
+Ba a samo hanyar omxplayer ba!
+Ƙirƙirar hanyar saukewa:
+Ba a haɗa Wifi/Network ba. Ana rufewa cikin 10s...
+Don zaɓar waƙoƙi, duba QR ko haɗi zuwa
+Don nunin TV, haɗa zuwa
+Danna F don kunna cikakken allo
+Latsa ESC don barin PiKaraoke
+An gano yanayin saitin RaspiWifiConfig!
+Haɗa wata na'ura/wayar wayo zuwa Wifi AP: '%s'
+Sa'an nan kuma nuna browser zuwa: '%s://%s%s' kuma bi umarnin.
+Na gaba:
+Ya kara da:
+Yanzu ana wasa:
+An ba da yanayin admin!
+Ƙara jinkirin sauti zai ba ku ƙarin lokaci don karanta waƙoƙi kafin ku fitar da jumla ta gaba.
+Rage jinkirin juzu'i zai ba ku ƙarin lokaci don karanta waƙoƙi kafin ku fitar da jumla ta gaba.
+Ana kuma san semitone da rabin mataki. Ita ce mafi ƙarancin tazara da aka yi amfani da ita a cikin kiɗan Yammacin duniya na gargajiya, daidai da kashi goma sha biyu na sautin octave ko rabin sautin.
+An kunna mai raba murya na tushen DNN. PiKaraoke yana amfani da PyTorch (ta Facebook) don gudanar da hanyar sadarwa mai zurfi don raba sautin kayan aiki da sauti a kowace waƙa da ke haifar da sautin sitiriyo.
+Ikon Mai kunnawa
+Kiɗa
+Duka
+Murya
+Canza Maɓalli
+Babu wani abu da ke wasa a yanzu.
+Babu waƙa da aka yi layi.
+Wannan waƙar ba ta ku ce. Shin kun tabbata kuna son sake kunna wannan waƙa?
+Wannan waƙar ba ta ku ce. Shin kun tabbata kuna son tsallake wannan waƙar?
+Ikon Mai kunnawa
+Yanzu Ana wasa
+Waka ta gaba
+Nema Zuwa:
+Jinkirta Sauti (minti)
+Jinkirin juzu'i (mintuna)
+Sake kunna Waƙar
+Kunna/Dakata
+Dakatar da Waƙar Yanzu
+Saukar da ƙara
+Saita Ƙarar
+Ƙara girma
+Rage jinkirin Subtitle
+Saita Jinkirin Subtitle
+Ƙara Jinkirin Subtitle
+Rage Jinkirin Sauti
+Saita Jinkirin Sauti
+Ƙara Jinkirin Sauti
+ semitones
+Da fatan za a shigar da sunan ku. Wannan zai bayyana kusa da waƙoƙin da kuka yi layi daga wannan na'urar.
+An ƙara waƙar zuwa jerin gwano:
+Waƙar riga da jerin gwano:
+Tsara ta Kwanan wata
+Tsara ta Alphabetical
+Ƙara '%s' zuwa jerin gwano
+lilo
+An ware ta 'Kwanan Wata'
+An ware ta 'Haruffa'
+waƙoƙi
+yana nunawa <b>{start} - {ƙarshen}</b> {record_name}, a jimlar <b>{total}</b> {record_name}
+sami <b>{aka samo}</b> {record_name}, yana nuna <b>{farawa} - {ƙarshen}</b> {record_name}
+Gyara waƙa
+Matsa cikin jerin gwano
+Matsa kasa cikin jerin gwano
+Ka tabbata kana son sharewa daga jerin gwano
+Shin kun tabbata kuna son share GABA ɗaya jerin gwano? Buga 'Ok' don ci gaba
+Ƙara waƙoƙin bazuwar 3
+Share duk
+Layin babu kowa
+layi
+Share
+Akwai waƙoƙi a cikin ɗakin karatu na gida
+Ƙara waƙa zuwa layi:
+Waƙar ta riga ta kasance a cikin jerin gwano:
+Nemo / Ƙara Sabo
+Bincika
+layi
+Haɗa matches marasa karaoke
+Na ci gaba
+Buga waƙa ( take/mawaƙi) don bincika waƙoƙin da ke akwai kuma danna 'Queue' don ƙara ta zuwa jerin gwano.
+Idan waƙar ba ta bayyana a cikin jerin abubuwan da ake nema ba, danna 'Search' don nemo ta a Youtube.
+Zazzage YouTube url kai tsaye:
+Ƙara zuwa jerin gwano
+Haɗa fassarar magana
+Zazzagewa
+Neman YouTube
+Nemo sakamakon
+Danna zazzagewa don nuna ƙarin sakamako
+mahada:
+Akwai Wakokin
+Kuna so ku canza sunan nuni na mutumin da ke amfani da wannan na'urar? Wannan zai bayyana kusa da waƙoƙin da aka yi layi. Yanzu:
+Mai amfani na yanzu
+Bayani
+PiKaraoke
+Ka tabbata kana so ka daina?
+Kun tabbata kuna son rufewa?
+Shin kun tabbata kuna son sake yi?
+Shin kun tabbata kuna son sabunta Youtube-dl a yanzu? Zazzagewar na yanzu da masu jiran aiki na iya gazawa.
+Shin kun tabbata kuna son faɗaɗa tsarin fayil? Wannan zai sake kunna rasberi pi.
+Bayani
+Lambar QR mai amfani don rabawa tare da aboki:
+OS
+Amfanin Disk
+Ƙwaƙwalwar ajiya
+Ɗaukar allo
+Vocal Splitter
+Youtube-dl (yt-dlp) sigar
+PiKaraoke version
+Babban Zaɓuɓɓukan Sarrafa
+Yanayin raba murya:
+Yi amfani da L-R/L+R
+Yi amfani da DNS
+Daidaitaccen sauti na MTV yana da tashoshin sitiriyo guda biyu (L da R) waɗanda aka sanya su ta hanyar da: L-R ita ce waƙar kayan aiki, L+R ita ce waƙar murya. Don haka, ta hanyar ragewa ko ƙara tashoshi biyu na sitiriyo, za mu iya samun waƙar kayan aiki da murya a cikin sautin mono. Mai raba murya na tushen PiKaraoke na tushen DNN (cibiyar sadarwa mai zurfi) yana amfani da AI algorithm don raba kayan aiki da sautin murya a cikin kowace waƙar sitiriyo daban-daban yana haifar da kayan aikin sitiriyo da waƙoƙin murya.
+Dakatar da Rarraba
+Sake kunna Splitter
+Mai raba murya (wanda ke goyan bayan tushen DNN da ragi na sitiriyo) yana gudana azaman tsari daban a bango, yana samar da fayil ɗin sauti na kayan aiki / murya ga kowace waƙa.
+Sake daidaita sauti da bidiyo:
+Dakatar da Mai Ruwa
+Sake kunna Streamer
+Wannan kawai yana rinjayar kunna KTV ta hanyar burauzar gidan yanar gizo. Sake kunna allo-kama-da-watsawa yana haɓaka aiki tare da sauti/bidiyo, yana kuma rage jinkiri tsakanin uwar garken da mai lilo.
+Sake sabunta jerin waƙa:
+Rescan kundin waƙa
+Dole ne kawai ku buƙaci yin wannan idan kun kwafi fayiloli da hannu zuwa kundin adireshin zazzagewa yayin da PiKaraoke ke gudana.
+Sabuntawa
+Idan zazzagewa ko bincike sun daina aiki, sabunta youtube-dl zai iya gyara shi. Sigar da aka shigar na yanzu shine:
+Sabunta youtube-dl
+Wannan sabuntawar hanyar haɗin yanar gizon da ke sama na iya gazawa idan ba ku da ingantaccen izinin fayil. Duba bayanan PiKaraoke don kurakurai.
+Rufewa
+Kada kawai a ja filogi! Koyaushe rufe uwar garken ku da kyau don guje wa ɓarnatar bayanai.
+Bar PiKaraoke
+Sake yi System
+Tsarin Kashewa
+Sauran
+Fadada tsarin fayil ɗin Rasberi Pi
+Idan kawai ka shigar da hoton pikaraoke pi da aka riga aka gina kuma katin SD ɗinka ya fi 4GB girma, ƙila ka so faɗaɗa tsarin fayil ɗin don amfani da ragowar sarari. Kuna buƙatar yin wannan sau ɗaya kawai. Wannan zai sake kunna tsarin.
+Kashe yanayin gudanarwa
+Kunna yanayin gudanarwa
+fita
+shiga
+Bayanin tsarin
+Gida
+Canja Harshe

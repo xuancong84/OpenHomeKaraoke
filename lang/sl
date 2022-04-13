@@ -1,0 +1,184 @@
+Slovenščina
+Napačno skrbniško geslo!
+Odjavljen iz skrbniškega načina!
+Dodanih %s naključnih skladb
+Zmanjkalo je pesmi!
+Počistili čakalno vrsto!
+Napaka pri premikanju predmeta v čakalno vrsto: neveljaven argument
+Element je bil uspešno premaknjen v čakalno vrsto:
+Napaka pri premikanju predmeta v čakalno vrsto:
+Premaknjeno navzdol v čakalni vrsti:
+Napaka pri premikanju navzdol v čakalni vrsti:
+Premaknjeno navzgor v čakalni vrsti:
+Napaka pri premikanju navzgor v čakalni vrsti:
+Izbrisano iz čakalne vrste:
+Napaka pri brisanju iz čakalne vrste:
+Prenos se je začel:
+Po zaključku bo dodan v čakalno vrsto.
+Po zaključku se bo pojavil na seznamu "razpoložljive pesmi".
+Napaka: Te pesmi ni mogoče izbrisati, ker je v trenutni čakalni vrsti:
+Pesem izbrisana:
+Napaka: ni določen parameter pesmi!
+Napaka: Te pesmi ni mogoče urediti, ker se trenutno predvaja:
+Urejanje datoteke pesmi
+Napaka pri preimenovanju datoteke: '%s' v '%s'. Ime datoteke že obstaja.
+Preimenovana datoteka: '%s' v '%s'
+Napaka: ni bil določen noben parameter imena datoteke!
+neznano
+Tek
+Ustavil se
+ (samo CPE)
+ (GPU omogočen)
+Posodabljanje youtube-dl! Trajalo bi minuto ali dve...
+Nimate dovoljenja za posodabljanje youtube-dl
+Nimate dovoljenja za izklop
+Zdaj zapustite PiKaraoke!
+Nimate dovoljenja za odpoved
+Zaustavitev sistema zdaj!
+Nimate dovoljenja za izklop
+Ponovni zagon sistema zdaj!
+Nimate dovoljenja za ponovni zagon
+Razširitev datotečnega sistema in ponovni zagon sistema zdaj!
+Fs ni mogoče razširiti na napravah, ki niso raspberry pi!
+Nimate dovoljenja za spreminjanje velikosti datotečnega sistema
+Youtube-dl poti ni bilo mogoče najti!
+VLC poti ni bilo mogoče najti!
+Pot omxplayerja ni najdena!
+Ustvarjanje poti za prenos:
+Wifi/omrežje ni povezano. Izklop čez 10 s...
+Za izbiro skladb skenirajte QR ali se povežite z
+Za TV zaslon se povežite z
+Pritisnite F, da preklopite na celozaslonski način
+Pritisnite ESC, da zaprete PiKaraoke
+Zaznan je način nastavitve RaspiWifiConfig!
+Povežite drugo napravo/pametni telefon z dostopno točko Wifi: '%s'
+Nato usmerite njegov brskalnik na: '%s://%s%s' in sledite navodilom.
+Naslednje:
+dodal:
+Zdaj igra:
+Skrbniški način je odobren!
+Povečanje zakasnitve zvoka vam bo dalo več časa za branje besedil, preden zapojete naslednji stavek.
+Zmanjšanje zakasnitve podnapisov vam bo dalo več časa za branje besedil, preden zapojete naslednji stavek.
+Polton je znan tudi kot pol-korak. To je najmanjši interval, ki se uporablja v klasični zahodni glasbi, enak dvanajstini oktave ali polovici tona.
+Vokalni razdelilnik, ki temelji na DNN, je omogočen. PiKaraoke uporablja PyTorch (od Facebooka) za zagon globoke nevronske mreže za razdelitev instrumentalnega in vokalnega zvoka v vsaki skladbi, kar povzroči stereo zvok.
+Nadzor igralca
+Glasba
+Oboje
+Glas
+Spremeni ključ
+Trenutno se nič ne predvaja.
+Nobena skladba ni v čakalni vrsti.
+Te pesmi niste dodali vi. Ali ste prepričani, da želite znova zagnati to skladbo?
+Te pesmi niste dodali vi. Ali ste prepričani, da želite preskočiti to skladbo?
+Nadzor igralca
+Zdaj igra
+Naslednja pesem
+Išči za:
+Zakasnitev zvoka (s)
+Zakasnitev podnapisov (s)
+Znova zaženi pesem
+Predvajaj/Pavza
+Ustavi trenutno skladbo
+Znižaj glasnost
+Nastavite glasnost
+Povečaj glasnost
+Zmanjšajte zakasnitev podnapisov
+Nastavite zamik podnapisov
+Povečaj zakasnitev podnapisov
+Zmanjšajte zakasnitev zvoka
+Nastavite zakasnitev zvoka
+Povečaj zakasnitev zvoka
+ poltoni
+Prosimo vnesite svoje ime. To se bo prikazalo poleg skladb, ki jih postavite v čakalno vrsto iz te naprave.
+Pesem dodana v čakalno vrsto:
+Pesem je že v vrsti:
+Razvrsti po datumu
+Razvrsti po abecedi
+Dodajte »%s« v čakalno vrsto
+Prebrskaj
+Razvrščeno po 'Datumu'
+Razvrščeno po 'abecednem redu'
+pesmi
+prikazuje <b>{start} - {end}</b> {record_name}, skupaj <b>{total}</b> {record_name}
+najdeno <b>{found}</b> {record_name}, prikazano je <b>{start} - {end}</b> {record_name}
+Uredi pesem
+Pomaknite se navzgor v čakalni vrsti
+Pomaknite se navzdol v čakalni vrsti
+Ali ste prepričani, da želite izbrisati iz čakalne vrste
+Ali ste prepričani, da želite počistiti VSE čakalno vrsto? Za nadaljevanje vnesite »V redu«.
+Dodajte 3 naključne pesmi
+Počisti vse
+Čakalna vrsta je prazna
+Čakalna vrsta
+Izbriši
+Pesmi so na voljo v lokalni knjižnici
+Dodana skladba v čakalno vrsto:
+Pesem je že v čakalni vrsti:
+Išči / Dodaj novo
+Iskanje
+Čakalna vrsta
+Vključite tekme, ki niso karaoke
+Napredno
+Vnesite pesem (naslov/izvajalec), da poiščete razpoložljive pesmi, in kliknite »V čakalni vrsti«, da jo dodate v čakalno vrsto.
+Če se skladba ne prikaže v spustnem meniju »Razpoložljive pesmi«, kliknite »Išči«, da jo poiščete na Youtubu.
+URL za neposreden prenos YouTube:
+Dodaj v čakalno vrsto
+Vključi podnapise
+Prenesi
+Iskanje po YouTubu
+Rezultati iskanja
+Kliknite spustni meni, da prikažete več rezultatov
+Povezava:
+Razpoložljive pesmi
+Ali želite spremeniti prikazno ime osebe, ki uporablja to napravo? To se bo prikazalo poleg skladb v čakalni vrsti. trenutno:
+Trenutni uporabnik
+Info
+PiKaraoke
+Si prepričan, da želiš odnehati?
+Ali ste prepričani, da želite zapreti?
+Ali ste prepričani, da želite znova zagnati?
+Ali ste prepričani, da želite posodobiti Youtube-dl zdaj? Trenutni in čakajoči prenosi morda ne bodo uspeli.
+Ali ste prepričani, da želite razširiti datotečni sistem? To bo znova zagnalo vaš Raspberry Pi.
+Informacije
+Priročna URL QR koda za skupno rabo s prijateljem:
+OS
+Uporaba diska
+Spomin
+Zajem zaslona
+Vokalni razdelilnik
+Različica Youtube-dl (yt-dlp).
+Različica PiKaraoke
+Napredne možnosti nadzora
+Način vokalne razdelitve:
+Uporabite L-R/L+R
+Uporabite DNN
+Standardni zvok MTV ima dva stereo kanala (L in R), ki sta kodirana tako, da: L-R je skladba instrumenta, L+R je vokalna skladba. Tako lahko s preprostim odštevanjem ali seštevanjem dveh stereo kanala dobimo instrumentalno in vokalno skladbo v mono zvoku. PiKaraoke-jev vgrajeni vokalni razdelilnik, ki temelji na DNN (globoko nevronsko omrežje), uporablja algoritem AI za razdelitev instrumentalnega in vokalnega zvoka v vsaki stereo skladbi neodvisno, kar ima za posledico stereo instrumentalne in vokalne skladbe.
+Stop Splitter
+Znova zaženite Splitter
+Vokalni razdelilnik (ki podpira tako DNN kot stereo odštevanje) deluje kot ločen proces v ozadju in ustvarja instrumentalno/vokalno zvočno datoteko za vsako skladbo.
+Ponovno sinhronizirajte zvok in video:
+Ustavi Streamer
+Znova zaženite Streamer
+To vpliva samo na predvajanje KTV prek spletnega brskalnika. Ponovni zagon zajema in pretakanja zaslona izboljša sinhronizacijo zvoka/videa, zmanjša pa tudi zakasnitev med strežnikom in brskalnikom.
+Osvežite seznam skladb:
+Ponovno skenirajte imenik pesmi
+To morate storiti samo, če ste ročno kopirali datoteke v imenik za prenos, medtem ko je PiKaraoke deloval.
+Posodobitve
+Če so prenosi ali iskanja prenehali delovati, bo posodobitev youtube-dl verjetno popravila. Trenutna nameščena različica je:
+Posodobite youtube-dl
+Ta zgornja povezava za posodobitev morda ne bo uspela, če nimate ustreznih dovoljenj za datoteko. Preverite dnevnik PiKaraoke za napake.
+Ugasniti
+Ne vlecite samo vtiča! Vedno pravilno zaustavite strežnik, da preprečite poškodbe podatkov.
+Zapustite PiKaraoke
+Ponovno zaženite sistem
+Sistem za zaustavitev
+Drugo
+Razširite datotečni sistem Raspberry Pi
+Če ste pravkar namestili vnaprej vgrajeno sliko pikaraoke pi in je vaša kartica SD večja od 4 GB, boste morda želeli razširiti datotečni sistem, da izkoristite preostali prostor. To morate storiti samo enkrat. To bo znova zagnalo sistem.
+Onemogoči skrbniški način
+Omogoči skrbniški način
+Odjava
+Vpiši se
+Informacije o sistemu
+Domov
+Spremeni jezik

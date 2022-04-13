@@ -32,7 +32,7 @@
   }
 
   function getNowPlaying() {
-      $.get('{{ url_for("nowplaying") }}', function (data) {
+      $.get('{{ url_for("nowplaying") }}').done(function (data) {
       	if(!data) return;
         obj = JSON.parse(data);
         if (obj.now_playing) {

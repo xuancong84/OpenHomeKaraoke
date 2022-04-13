@@ -1,0 +1,184 @@
+svenska
+Felaktigt administratörslösenord!
+Utloggad från adminläge!
+Lade till %s slumpmässiga spår
+Fick slut på låtar!
+Rensat kön!
+Det gick inte att flytta objektet i kön: invalid-argument
+Objektet har flyttats in i kön:
+Det gick inte att flytta objekt i kön:
+Flyttade ner i kön:
+Det gick inte att flytta ner i kön:
+Flyttade upp i kön:
+Det gick inte att flytta upp i kön:
+Raderad från kön:
+Fel vid borttagning från kön:
+Nedladdning påbörjad:
+När det är klart kommer det att läggas till i kön.
+När det är klart kommer det att visas i listan "tillgängliga låtar".
+Fel: Det går inte att ta bort den här låten eftersom den finns i den aktuella kön:
+Låten raderad:
+Fel: Ingen låtparameter specificerad!
+Fel: Det går inte att redigera den här låten eftersom den spelas för närvarande:
+Redigera sångfil
+Fel vid byte av fil: '%s' till '%s'. Filnamnet finns redan.
+Omdöpt fil: '%s' till '%s'
+Fel: Inga filnamnsparametrar har angetts!
+Okänd
+Löpning
+Slutade
+ (endast CPU)
+ (GPU aktiverad)
+Uppdaterar youtube-dl! Borde ta en minut eller två...
+Du har inte behörighet att uppdatera youtube-dl
+Du har inte behörighet att stänga av
+Avsluta PiKaraoke nu!
+Du har inte behörighet att sluta
+Stänger av systemet nu!
+Du har inte behörighet att stänga av
+Startar om systemet nu!
+Du har inte behörighet att starta om
+Utökar filsystemet och startar om systemet nu!
+Kan inte utöka fs på icke-raspberry pi-enheter!
+Du har inte behörighet att ändra storlek på filsystemet
+Youtube-dl sökväg hittades inte!
+VLC-sökväg hittades inte!
+omxplayer sökväg hittades inte!
+Skapar nedladdningsväg:
+Wifi/nätverk är inte anslutet. Stängs av om 10...
+För att välja låtar, skanna QR eller anslut till
+För TV-visning, anslut till
+Tryck på F för att växla helskärm
+Tryck på ESC för att avsluta PiKaraoke
+RaspiWifiConfig-inställningsläge upptäckt!
+Anslut en annan enhet/smarttelefon till Wifi AP: '%s'
+Rikta sedan webbläsaren till: '%s://%s%s' och följ instruktionerna.
+Strax:
+Tillagd av:
+Nu spelas:
+Adminläge beviljat!
+Ökad ljudfördröjning ger dig mer tid att läsa texter innan du sjunger ut nästa mening.
+Om du minskar undertextens fördröjning får du mer tid att läsa texterna innan du sjunger ut nästa mening.
+En halvton är också känd som ett halvsteg. Det är det minsta intervallet som används i klassisk västerländsk musik, lika med en tolftedel av en oktav eller en halv ton.
+DNN-baserad röstsplitter är aktiverad. PiKaraoke använder PyTorch (av Facebook) för att driva ett djupt neuralt nätverk för att dela upp instrumental- och vokalljud i varje spår som ger upphov till stereoljud.
+Spelarkontroll
+musik
+Både
+Röst
+Ändra nyckel
+Ingenting spelar just nu.
+Ingen låt står i kö.
+Den här låten har inte lagts till av dig. Är du säker på att du vill starta om det här spåret?
+Den här låten har inte lagts till av dig. Är du säker på att du vill hoppa över det här spåret?
+Spelarkontroll
+Nu spelas
+Nästa låt
+Sök till:
+Ljudfördröjning (sek)
+Undertextfördröjning (sek)
+Starta om låten
+Spela/Pausa
+Stoppa aktuell låt
+Sänk volymen
+Ställ in volym
+Höj volymen
+Minska undertextfördröjningen
+Ställ in undertextfördröjning
+Öka undertextfördröjningen
+Minska ljudfördröjningen
+Ställ in ljudfördröjning
+Öka ljudfördröjningen
+ halvtoner
+Vänligen fyll i ditt namn. Detta kommer att visas bredvid låtarna du köar från den här enheten.
+Låten har lagts till i kön:
+Låten står redan i kö:
+Sortera efter datum
+Sortera efter Alfabetisk
+Lägg till '%s' i kön
+Bläddra
+Sorterat efter "Datum"
+Sorterat efter "Alfabetisk"
+sånger
+visar <b>{start} - {end}</b> {record_name}, totalt <b>{total}</b> {record_name}
+hittade <b>{found}</b> {record_name}, visar <b>{start} - {end}</b> {record_name}
+Redigera låt
+Flytta upp i kön
+Flytta ner i kön
+Är du säker på att du vill ta bort från kön
+Är du säker på att du vill rensa HELA kön? Skriv 'OK' för att fortsätta
+Lägg till 3 slumpmässiga låtar
+Rensa alla
+Kön är tom
+Kö
+Radera
+Tillgängliga låtar i det lokala biblioteket
+Lade till låt i kön:
+Låten finns redan i kön:
+Sök / Lägg till ny
+Sök
+Kö
+Inkludera icke-karaoke-matcher
+Avancerad
+Skriv en låt (titel/artist) för att söka efter tillgängliga låtar och klicka på "Kö" för att lägga till den i kön.
+Om låten inte visas i rullgardinsmenyn "Tillgängliga låtar", klicka på "Sök" för att hitta den på Youtube.
+Direktnedladdning YouTube url:
+Lägg till i kö
+Inkludera undertexter
+Ladda ner
+Söker på YouTube efter
+Sökresultat för
+Klicka på rullgardinsmenyn för att visa fler resultat
+Länk:
+Tillgängliga låtar
+Vill du ändra visningsnamnet på personen som använder den här enheten? Detta kommer att visas bredvid de köade låtarna. Nuvarande:
+Nuvarande användaren
+Info
+PiKaraoke
+Är du säker på att du vill sluta?
+Är du säker på att du vill stänga av?
+Är du säker på att du vill starta om?
+Är du säker på att du vill uppdatera Youtube-dl just nu? Aktuella och väntande nedladdningar kan misslyckas.
+Är du säker på att du vill utöka filsystemet? Detta kommer att starta om din raspberry pi.
+Information
+Praktisk URL QR-kod att dela med en kompis:
+OS
+Diskanvändning
+Minne
+Skärminspelning
+Vocal Splitter
+Youtube-dl (yt-dlp) version
+PiKaraoke version
+Avancerade kontrollalternativ
+Vocal splitter-läge:
+Använd L-R/L+R
+Använd DNN
+Standard MTV-ljud har de två stereokanalerna (L och R) kodade på ett sådant sätt att: L-R är instrumentspåret, L+R är sångspåret. Således, genom att helt enkelt subtrahera eller lägga till de två stereokanalerna, kan vi få instrumental- och vokalspåret i monoljud. PiKaraokes inbyggda DNN-baserade (djupa neurala nätverk) sångsplitter använder AI-algoritm för att dela upp instrumental- och vokalljud i varje stereospår oberoende vilket resulterar i stereoinstrument- och vokalspår.
+Stoppa Splitter
+Starta om Splitter
+Vokalsplittern (som stöder både DNN-baserad och stereosubtraktion) körs som en separat process i bakgrunden och genererar instrumental/vokal ljudfil för varje låt.
+Synkronisera om ljud och video:
+Stoppa Streamer
+Starta om Streamer
+Detta påverkar endast att spela KTV via webbläsaren. Om du startar om skärmdumpningen och strömningen förbättras ljud-/videosynkroniseringen, det minskar också latensen mellan servern och webbläsaren.
+Uppdatera låtlistan:
+Skanna sångkatalogen igen
+Du ska bara behöva göra detta om du manuellt kopierade filer till nedladdningskatalogen medan PiKaraoke kördes.
+Uppdateringar
+Om nedladdningar eller sökningar slutade fungera, kommer uppdatering av youtube-dl förmodligen att fixa det. Den nuvarande installerade versionen är:
+Uppdatera youtube-dl
+Den här uppdateringslänken ovan kan misslyckas om du inte har rätt filbehörighet. Kontrollera PiKaraoke-loggen för fel.
+Stänga av
+Dra inte bara ur kontakten! Stäng alltid av din server ordentligt för att undvika datakorruption.
+Avsluta PiKaraoke
+Omstart-system
+Avstängningssystem
+Övrig
+Expandera Raspberry Pi-filsystemet
+Om du precis har installerat den förbyggda pikaraoke pi-bilden och ditt SD-kort är större än 4 GB, kanske du vill utöka filsystemet för att utnyttja det återstående utrymmet. Du behöver bara göra detta en gång. Detta kommer att starta om systemet.
+Inaktivera adminläge
+Aktivera administratörsläge
+logga ut
+logga in
+System information
+Hem
+Ändra språk

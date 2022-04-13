@@ -1,0 +1,184 @@
+Melayu
+Kata laluan pentadbir salah!
+Log keluar daripada mod pentadbir!
+Menambahkan %s trek rawak
+Kehabisan lagu!
+Membersihkan baris gilir!
+Ralat mengalihkan item dalam baris gilir: invalid-argument
+Berjaya mengalihkan item dalam baris gilir:
+Ralat memindahkan item dalam baris gilir:
+Dialihkan ke bawah dalam baris gilir:
+Ralat bergerak ke bawah dalam baris gilir:
+Dialihkan ke atas dalam baris gilir:
+Ralat bergerak ke atas dalam baris gilir:
+Dipadamkan daripada baris gilir:
+Ralat memadamkan daripada baris gilir:
+Muat turun bermula:
+Setelah selesai, ia akan ditambahkan ke baris gilir.
+Setelah selesai, ia akan muncul dalam senarai "lagu yang tersedia".
+Ralat: Tidak dapat memadamkan lagu ini kerana ia berada dalam baris gilir semasa:
+Lagu dipadamkan:
+Ralat: Tiada parameter lagu ditentukan!
+Ralat: Tidak dapat mengedit lagu ini kerana ia sedang dimainkan:
+Suntingan Fail Lagu
+Ralat Menamakan semula fail: '%s' kepada '%s'. Nama fail sudah wujud.
+Namakan semula fail: '%s' kepada '%s'
+Ralat: Tiada parameter nama fail ditentukan!
+Tidak diketahui
+Berlari
+Berhenti
+ (CPU sahaja)
+ (GPU didayakan)
+Mengemas kini youtube-dl! Perlu mengambil satu atau dua minit...
+Anda tiada kebenaran untuk mengemas kini youtube-dl
+Anda tidak mempunyai kebenaran untuk menutup
+Berhenti PiKaraoke sekarang!
+Anda tidak mempunyai kebenaran untuk berhenti
+Matikan sistem sekarang!
+Anda tidak mempunyai kebenaran untuk menutup
+But semula sistem sekarang!
+Anda tidak mempunyai kebenaran untuk But semula
+Kembangkan sistem fail dan sistem but semula sekarang!
+Tidak boleh mengembangkan fs pada peranti pi bukan raspberi!
+Anda tidak mempunyai kebenaran untuk mengubah saiz sistem fail
+Laluan Youtube-dl tidak ditemui!
+Laluan VLC tidak ditemui!
+laluan omxplayer tidak ditemui!
+Mencipta laluan muat turun:
+Wifi/Rangkaian tidak disambungkan. Tutup dalam 10s...
+Untuk memilih lagu, imbas QR atau sambung ke
+Untuk paparan TV, sambung ke
+Tekan F untuk menogol skrin penuh
+Tekan ESC untuk keluar dari PiKaraoke
+Mod persediaan RaspiWifiConfig dikesan!
+Sambungkan peranti/telefon pintar lain ke AP Wifi: '%s'
+Kemudian halakan penyemak imbasnya ke: '%s://%s%s' dan ikut arahan.
+Seterusnya:
+Ditambah oleh:
+Bermain sekarang:
+Mod pentadbir diberikan!
+Penambahan kelewatan audio akan memberi anda lebih banyak masa untuk membaca lirik sebelum menyanyikan ayat seterusnya.
+Mengurangkan kelewatan sari kata akan memberi anda lebih masa untuk membaca lirik sebelum menyanyikan ayat seterusnya.
+Semitone juga dikenali sebagai separuh langkah. Ia adalah selang terkecil yang digunakan dalam muzik Barat klasik, sama dengan satu perdua belas oktaf atau setengah nada.
+Pemisah vokal berasaskan DNN didayakan. PiKaraoke menggunakan PyTorch (oleh Facebook) untuk menjalankan rangkaian saraf dalam untuk memisahkan bunyi instrumental dan vokal dalam setiap trek yang menimbulkan bunyi stereo.
+Kawalan Pemain
+Muzik
+kedua-duanya
+Suara
+Tukar Kunci
+Tiada apa yang dimainkan sekarang.
+Tiada lagu beratur.
+Lagu ini tidak ditambah oleh anda. Adakah anda pasti mahu memulakan semula lagu ini?
+Lagu ini tidak ditambah oleh anda. Adakah anda pasti mahu melangkau trek ini?
+Kawalan Pemain
+Bermain sekarang
+Lagu Seterusnya
+Cari Untuk:
+Kelewatan Audio (saat)
+Kelewatan Sarikata (saat)
+Mulakan semula Lagu
+Main/Jeda
+Hentikan Lagu Semasa
+Perlahankan suara
+Tetapkan Kelantangan
+Kelantangan Naik
+Kurangkan Kelewatan Sarikata
+Tetapkan Kelewatan Sari Kata
+Tingkatkan Kelewatan Sari Kata
+Kurangkan Kelewatan Audio
+Tetapkan Kelewatan Audio
+Tingkatkan Kelewatan Audio
+ semitones
+Sila masukkan nama anda. Ini akan dipaparkan di sebelah lagu yang anda baris gilir daripada peranti ini.
+Lagu ditambahkan pada baris gilir:
+Lagu sudah beratur:
+Isih mengikut Tarikh
+Isih mengikut Abjad
+Tambahkan '%s' pada baris gilir
+Semak imbas
+Diisih mengikut 'Tarikh'
+Diisih mengikut 'Abjad'
+lagu
+memaparkan <b>{start} - {end}</b> {record_name}, total <b>{total}</b> {record_name}
+menemui <b>{found}</b> {record_name}, memaparkan <b>{start} - {end}</b> {record_name}
+Edit lagu
+Bergerak ke atas dalam baris gilir
+Bergerak ke bawah dalam baris gilir
+Adakah anda pasti mahu memadamkan daripada baris gilir
+Adakah anda pasti mahu mengosongkan KESELURUHAN baris gilir? Taip 'OK' untuk meneruskan
+Tambah 3 lagu rawak
+Kosongkan semua
+Beratur kosong
+Beratur
+Padam
+Lagu yang tersedia di perpustakaan tempatan
+Menambahkan lagu pada baris gilir:
+Lagu sudah berada dalam baris gilir:
+Cari / Tambah Baharu
+Cari
+Beratur
+Sertakan perlawanan bukan karaoke
+Maju
+Taip lagu (tajuk/artis) untuk mencari lagu yang tersedia dan klik 'Barisan' untuk menambahkannya pada baris gilir.
+Jika lagu itu tidak muncul dalam lungsur turun "Lagu Tersedia", klik 'Cari' untuk mencarinya di Youtube.
+Muat turun terus url YouTube:
+Tambah ke dalam barisan
+Sertakan sari kata
+Muat turun
+Mencari YouTube untuk
+Hasil carian untuk
+Klik lungsur turun untuk menunjukkan lebih banyak hasil
+pautan:
+Lagu Tersedia
+Adakah anda mahu menukar nama paparan orang yang menggunakan peranti ini? Ini akan dipaparkan di sebelah lagu beratur. semasa:
+Pengguna semasa
+info
+PiKaraoke
+Adakah anda pasti mahu berhenti?
+Adakah anda pasti mahu menutup?
+Adakah anda pasti mahu but semula?
+Adakah anda pasti mahu mengemas kini Youtube-dl sekarang? Muat turun semasa dan belum selesai mungkin gagal.
+Adakah anda pasti mahu mengembangkan sistem fail? Ini akan but semula raspberry pi anda.
+Maklumat
+Kod QR URL berguna untuk dikongsi dengan rakan:
+OS
+Penggunaan cakera
+Ingatan
+Tangkapan skrin
+Pemisah Vokal
+Versi Youtube-dl (yt-dlp).
+versi PiKaraoke
+Pilihan Kawalan Lanjutan
+Mod pemisah vokal:
+Gunakan L-R/L+R
+Gunakan DNS
+Audio MTV standard mempunyai dua saluran stereo (L dan R) yang dikodkan sedemikian rupa sehingga: L-R ialah trek instrumen, L+R ialah trek vokal. Oleh itu, dengan hanya menolak atau menambah dua saluran stereo, kita boleh mendapatkan trek instrumental dan vokal dalam bunyi mono. Pemisah vokal berasaskan DNN (rangkaian neural dalam) terbina dalam PiKaraoke menggunakan algoritma AI untuk membelah bunyi instrumental dan vokal dalam setiap trek stereo secara bebas menghasilkan trek instrumental dan vokal stereo.
+Hentikan Splitter
+Mulakan semula Splitter
+Pemisah vokal (yang menyokong penolakan berasaskan DNN dan stereo) berjalan sebagai proses berasingan di latar belakang, menjana fail audio instrumental/vokal untuk setiap lagu.
+Segerakkan semula audio dan video:
+Hentikan Streamer
+Mulakan semula Penstrim
+Ini hanya menjejaskan bermain KTV melalui pelayar web. Memulakan semula tangkapan-dan-strim skrin meningkatkan penyegerakan audio/video, ia juga mengurangkan kependaman antara pelayan dan penyemak imbas.
+Muat semula senarai lagu:
+Imbas semula direktori lagu
+Anda hanya perlu melakukan ini jika anda menyalin fail secara manual ke direktori muat turun semasa PiKaraoke sedang berjalan.
+Kemas kini
+Jika muat turun atau carian berhenti berfungsi, mengemas kini youtube-dl mungkin akan membetulkannya. Versi yang dipasang semasa ialah:
+Kemas kini youtube-dl
+Pautan kemas kini di atas mungkin gagal jika anda tidak mempunyai kebenaran fail yang betul. Semak log PiKaraoke untuk mencari ralat.
+Menutup
+Jangan hanya tarik palam! Sentiasa matikan pelayan anda dengan betul untuk mengelakkan rasuah data.
+Berhenti PiKaraoke
+Sistem But semula
+Sistem Tutup
+Lain-lain
+Kembangkan sistem fail Raspberry Pi
+Jika anda baru sahaja memasang imej pikaraoke pi pra-bina dan kad SD anda lebih besar daripada 4GB, anda mungkin mahu mengembangkan sistem fail untuk menggunakan ruang yang tinggal. Anda hanya perlu melakukan ini sekali sahaja. Ini akan but semula sistem.
+Lumpuhkan mod pentadbir
+Dayakan mod pentadbir
+log keluar
+log masuk
+Maklumat Sistem
+Rumah
+Tukar bahasa

@@ -1,0 +1,184 @@
+latviski
+Nepareiza administratora parole!
+Atteicies no administratora režīma!
+Pievienoti %s nejauši celiņi
+Beigušās dziesmas!
+Notīrīta rinda!
+Pārvietojot vienumu rindā, radās kļūda: nederīgs arguments
+Vienums veiksmīgi pārvietots rindā:
+Pārvietojot vienumu rindā, radās kļūda:
+Pārvietots uz leju rindā:
+Pārvietojoties rindā uz leju, radās kļūda:
+Pārvietots rindā uz augšu:
+Pārvietojoties rindā, radās kļūda:
+Izdzēsts no rindas:
+Kļūda, dzēšot no rindas:
+Lejupielāde sākta:
+Pēc pabeigšanas tas tiks pievienots rindai.
+Pēc pabeigšanas tas parādīsies sarakstā "pieejamās dziesmas".
+Kļūda: šo dziesmu nevar izdzēst, jo tā ir pašreizējā rindā:
+Dziesma izdzēsta:
+Kļūda: nav norādīts dziesmas parametrs!
+Kļūda: šo dziesmu nevar rediģēt, jo tā pašlaik tiek atskaņota:
+Dziesmas faila rediģēšana
+Kļūda, pārdēvējot failu: '%s' uz '%s'. Faila nosaukums jau pastāv.
+Pārdēvēts fails: '%s' uz '%s'
+Kļūda: netika norādīti faila nosaukuma parametri!
+Nezināms
+Skriešana
+Apstājās
+ (tikai centrālais procesors)
+ (GPU iespējots)
+Notiek youtube-dl atjaunināšana! Vajadzētu kādu minūti vai divas...
+Jums nav atļaujas atjaunināt youtube-dl
+Jums nav atļaujas izslēgt
+Pabeigt PiKaraoke tūlīt!
+Jums nav atļaujas atmest
+Sistēmas izslēgšana tūlīt!
+Jums nav atļaujas izslēgt
+Sistēmas pārstartēšana tūlīt!
+Jums nav atļaujas pārstartēt
+Failu sistēmas paplašināšana un sistēmas atsāknēšana tūlīt!
+Nevar izvērst fs ierīcēs, kas nav Raspberry Pi!
+Jums nav atļaujas mainīt failu sistēmas izmērus
+Youtube-dl ceļš nav atrasts!
+VLC ceļš nav atrasts!
+omxplayer ceļš nav atrasts!
+Lejupielādes ceļa izveide:
+Wi-Fi/tīkls nav savienots. Izslēgsies pēc 10 s...
+Lai atlasītu dziesmas, skenējiet QR kodu vai izveidojiet savienojumu ar
+Televizora displejam izveidojiet savienojumu ar
+Nospiediet F, lai pārslēgtu pilnekrāna režīmu
+Nospiediet ESC, lai aizvērtu PiKaraoke
+Konstatēts RaspiWifiConfig iestatīšanas režīms!
+Savienojiet citu ierīci/viedtālruni ar Wifi AP: '%s'
+Pēc tam norādiet pārlūkprogrammu uz: '%s://%s%s' un izpildiet norādījumus.
+Nākošais:
+Pievienoja:
+Tagad spēlē:
+Administratora režīms ir piešķirts!
+Palielināta audio aizkave dos jums vairāk laika, lai lasītu dziesmu tekstus pirms nākamā teikuma izdziedāšanas.
+Samazinot subtitru aizkavi, jums būs vairāk laika lasīt dziesmu tekstus pirms nākamā teikuma izdziedāšanas.
+Pustonis ir pazīstams arī kā pussolis. Tas ir mazākais klasiskajā Rietumu mūzikā izmantotais intervāls, kas vienāds ar oktāvas divpadsmito daļu vai pustoni.
+Ir iespējots uz DNN balstīts balss sadalītājs. PiKaraoke izmanto PyTorch (no Facebook), lai palaistu dziļu neironu tīklu, lai sadalītu instrumentālo un vokālo skaņu katrā ierakstā, radot stereo skaņu.
+Spēlētāja vadība
+Mūzika
+Abi
+Balss
+Mainīt taustiņu
+Pašlaik nekas nespēlējas.
+Rindā nav neviena dziesma.
+Šo dziesmu neesat pievienojis jūs. Vai tiešām vēlaties restartēt šo ierakstu?
+Šo dziesmu neesat pievienojis jūs. Vai tiešām vēlaties izlaist šo ierakstu?
+Spēlētāja vadība
+Tagad spēlē
+Nākamā dziesma
+Meklēt:
+Audio aizkave (s)
+Subtitru aizkave (s)
+Restartēt dziesmu
+Atskaņot/Pauzēt
+Apturēt pašreizējo dziesmu
+Skaļums uz leju
+Iestatīt skaļumu
+Skaļāk
+Samaziniet subtitru aizkavi
+Iestatiet subtitru aizkavi
+Palieliniet subtitru aizkavi
+Samaziniet audio aizkavi
+Iestatiet audio aizkavi
+Palieliniet audio aizkavi
+ pustoņi
+Lūdzu, ievadiet savu vārdu. Tas tiks parādīts blakus dziesmām, kuras ievietojat rindā no šīs ierīces.
+Dziesma pievienota rindai:
+Dziesma jau ir rindā:
+Kārtot pēc datuma
+Kārtot pēc alfabēta
+Pievienojiet "%s" rindai
+Pārlūkot
+Sakārtots pēc 'Datuma'
+Sakārtots pēc "Alfabētiskā"
+dziesmas
+tiek rādīts <b>{start}–{end}</b> {record_name}, kopā <b>{total}</b> {record_name}
+atrasts <b>{found}</b> {record_name}, tiek rādīts <b>{sākt}–{end}</b> {record_name}
+Rediģēt dziesmu
+Pāriet rindā uz augšu
+Pārvietojieties uz leju rindā
+Vai tiešām vēlaties dzēst no rindas
+Vai tiešām vēlaties notīrīt VISU rindu? Lai turpinātu, ierakstiet “OK”.
+Pievienojiet 3 nejaušas dziesmas
+Iztīrīt visu
+Rinda ir tukša
+Rinda
+Dzēst
+Pieejamās dziesmas vietējā bibliotēkā
+Rindai pievienota dziesma:
+Dziesma jau ir rindā:
+Meklēt / Pievienot jaunu
+Meklēt
+Rinda
+Iekļaujiet spēles, kas nav karaoke
+Papildu
+Ierakstiet dziesmu (nosaukumu/mākslinieku), lai meklētu pieejamās dziesmas, un noklikšķiniet uz "Rinda", lai to pievienotu rindai.
+Ja dziesma neparādās nolaižamajā izvēlnē “Pieejamās dziesmas”, noklikšķiniet uz “Meklēt”, lai to atrastu vietnē Youtube.
+Tiešās lejupielādes YouTube URL:
+Pievienot rindai
+Iekļaut subtitrus
+Lejupielādēt
+Notiek YouTube meklēšana
+Meklēšanas rezultāti
+Noklikšķiniet uz nolaižamās izvēlnes, lai parādītu vairāk rezultātu
+Saite:
+Pieejamās dziesmas
+Vai vēlaties mainīt šīs ierīces lietotājas parādāmo vārdu? Tas tiks parādīts blakus rindā esošajām dziesmām. Pašreizējais:
+Pašreizējais lietotājs
+Informācija
+PiKaraoke
+Vai tiešām vēlaties atmest?
+Vai tiešām vēlaties aizvērt?
+Vai tiešām vēlaties atsāknēt?
+Vai tiešām vēlaties atjaunināt Youtube-dl tūlīt? Pašreizējās un neapstiprinātās lejupielādes var neizdoties.
+Vai tiešām vēlaties paplašināt failu sistēmu? Tas atsāknēs jūsu Raspberry pi.
+Informācija
+Ērts URL QR kods, ko kopīgot ar draugu:
+OS
+Diska lietošana
+Atmiņa
+Ekrāna tveršana
+Vokālais sadalītājs
+Youtube-dl (yt-dlp) versija
+PiKaraoke versija
+Papildu vadības opcijas
+Vokālā sadalītāja režīms:
+Izmantojiet L-R/L+R
+Izmantojiet DNN
+Standarta MTV audio ir divi stereo kanāli (L un R), kas kodēti tā, ka: L-R ir instrumenta celiņš, L+R ir vokālais celiņš. Tādējādi, vienkārši atņemot vai pievienojot divus stereo kanālus, mēs varam iegūt instrumentālo un vokālo celiņu mono skaņā. PiKaraoke iebūvētais DNN (dziļā neironu tīkla) balss sadalītājs izmanto AI algoritmu, lai sadalītu instrumentālo un vokālo skaņu katrā stereo celiņā neatkarīgi, tādējādi radot stereo instrumentālos un vokālos ierakstus.
+Apturiet sadalītāju
+Restartējiet Splitter
+Balss sadalītājs (kas atbalsta gan uz DNN balstītu, gan stereo atņemšanu) darbojas kā atsevišķs process fonā, ģenerējot instrumentālo/vokālo audio failu katrai dziesmai.
+Atkārtoti sinhronizējiet audio un video:
+Apturēt Streamer
+Restartējiet Streamer
+Tas ietekmē tikai KTV atskaņošanu, izmantojot tīmekļa pārlūkprogrammu. Ekrāna tveršanas un straumēšanas restartēšana uzlabo audio/video sinhronizāciju, kā arī samazina latentumu starp serveri un pārlūkprogrammu.
+Atsvaidziniet dziesmu sarakstu:
+Atkārtoti skenēt dziesmu direktoriju
+Tas jādara tikai tad, ja manuāli kopējāt failus lejupielādes direktorijā, kamēr darbojās PiKaraoke.
+Atjauninājumi
+Ja lejupielādes vai meklēšana pārstāja darboties, youtube-dl atjaunināšana, iespējams, to novērsīs. Pašreizējā instalētā versija ir:
+Atjaunināt youtube-dl
+Ja jums nav atbilstošu faila atļauju, šī atjaunināšanas saite var nedarboties. Pārbaudiet, vai PiKaraoke žurnālā nav kļūdu.
+Izslēgt
+Nevelciet tikai aiz kontaktdakšas! Vienmēr pareizi izslēdziet serveri, lai izvairītos no datu sabojāšanas.
+Iziet no PiKaraoke
+Restartējiet sistēmu
+Izslēgšanas sistēma
+Cits
+Paplašiniet Raspberry Pi failu sistēmu
+Ja tikko instalējāt iepriekš iebūvēto pikaraoke pi attēlu un jūsu SD karte ir lielāka par 4 GB, iespējams, vēlēsities paplašināt failu sistēmu, lai izmantotu atlikušo vietu. Jums tas jādara tikai vienu reizi. Tādējādi sistēma tiks restartēta.
+Atspējot administratora režīmu
+Iespējot administratora režīmu
+izlogoties
+Pieslēgties
+Sistēmas informācija
+Mājas
+Mainīt VALODU

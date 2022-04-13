@@ -1,0 +1,184 @@
+Cymraeg
+Cyfrinair gweinyddol anghywir!
+Wedi allgofnodi o'r modd gweinyddol!
+Wedi ychwanegu %s o draciau ar hap
+Rhedeg allan o ganeuon!
+Wedi clirio'r ciw!
+Gwall wrth symud eitem y tu mewn i'r ciw: annilys-argument
+Wedi symud yr eitem yn llwyddiannus y tu mewn i'r ciw:
+Gwall wrth symud eitem y tu mewn i'r ciw:
+Wedi symud i lawr yn y ciw:
+Gwall wrth symud i lawr yn y ciw:
+Wedi symud i fyny yn y ciw:
+Gwall wrth symud i fyny yn y ciw:
+Wedi'i ddileu o'r ciw:
+Gwall wrth ddileu o'r ciw:
+Dechreuwyd llwytho i lawr:
+Ar ôl ei gwblhau, bydd yn cael ei ychwanegu at y ciw.
+Ar ôl ei gwblhau, bydd yn ymddangos yn y rhestr "caneuon sydd ar gael".
+Gwall: Methu dileu'r gân hon oherwydd ei bod yn y ciw presennol:
+Cân wedi'i dileu:
+Gwall: Dim paramedr cân wedi'i nodi!
+Gwall: Methu golygu'r gân hon oherwydd ei bod yn cael ei chwarae ar hyn o bryd:
+Golygu Ffeil Cân
+Gwall wrth ailenwi ffeil: '%s' i '%s'. Mae enw ffeil eisoes yn bodoli.
+Ffeil wedi'i hailenwi: '%s' i '%s'
+Gwall: Ni phennwyd paramedrau enw ffeil!
+Anhysbys
+Rhedeg
+Wedi stopio
+ (CPU yn unig)
+ (GPU wedi'i alluogi)
+Yn diweddaru youtube-dl! Dylai gymryd munud neu ddwy...
+Nid oes gennych ganiatâd i ddiweddaru youtube-dl
+Nid oes gennych ganiatâd i gau i lawr
+Rhoi'r gorau i PiKaraoke nawr!
+Nid oes gennych ganiatâd i roi'r gorau iddi
+System cau i lawr nawr!
+Nid oes gennych ganiatâd i gau i lawr
+System ailgychwyn nawr!
+Nid oes gennych ganiatâd i Ailgychwyn
+System ffeiliau ehangu a system ailgychwyn nawr!
+Methu ehangu fs ar ddyfeisiadau pi di-mafon!
+Nid oes gennych ganiatâd i newid maint y system ffeiliau
+Heb ganfod llwybr Youtube-dl!
+Heb ganfod llwybr VLC!
+llwybr omxplayer heb ei ganfod!
+Creu llwybr lawrlwytho:
+Wifi/Rhwydwaith heb ei gysylltu. Cau i lawr mewn 10s...
+Ar gyfer dewis caneuon, sganiwch QR neu cysylltwch â
+Ar gyfer arddangosfa deledu, cysylltwch â
+Pwyswch F i doglo sgrin lawn
+Pwyswch ESC i roi'r gorau iddi PiKaraoke
+Wedi canfod modd gosod RaspiWifiConfig!
+Cysylltwch dyfais/ffôn clyfar arall i'r AP Wifi: '%s'
+Yna pwyntiwch ei borwr at: '%s://%s%s' a dilynwch y cyfarwyddiadau.
+I fyny nesaf:
+Ychwanegwyd gan:
+Nawr yn chwarae:
+Modd gweinyddol wedi'i ganiatáu!
+Bydd oedi cynyddol gyda sain yn rhoi mwy o amser i chi ddarllen geiriau cyn canu'r frawddeg nesaf.
+Bydd oedi is-deitlau yn rhoi mwy o amser i chi ddarllen geiriau cyn canu'r frawddeg nesaf.
+Gelwir hanner tôn hefyd yn hanner cam. Dyma'r cyfwng lleiaf a ddefnyddir yng ngherddoriaeth glasurol y Gorllewin, sy'n hafal i ddeuddegfed wythfed neu hanner tôn.
+Mae holltwr lleisiol seiliedig ar DNN wedi'i alluogi. Mae PiKaraoke yn defnyddio PyTorch (gan Facebook) i redeg rhwydwaith niwral dwfn i hollti sain offerynnol a lleisiol ym mhob trac gan arwain at sain stereo.
+Rheoli Chwaraewr
+Cerddoriaeth
+Y ddau
+Llais
+Newid Allwedd
+Does dim byd yn chwarae ar hyn o bryd.
+Nid oes unrhyw gân yn ciwio.
+Nid yw'r gân hon yn cael ei hychwanegu gennych chi. Ydych chi'n siŵr eich bod am ailgychwyn y trac hwn?
+Nid yw'r gân hon yn cael ei hychwanegu gennych chi. Ydych chi'n siŵr eich bod am hepgor y trac hwn?
+Rheoli Chwaraewr
+Nawr yn chwarae
+Can nesaf
+Ceisio:
+Oedi Sain (eiliad)
+Oedi Isdeitl (eiliad)
+Ailgychwyn y Gân
+Chwarae/Saib
+Stopiwch y Gân Gyfredol
+Cyfrol Lawr
+Gosod Cyfrol
+Cyfrol i Fyny
+Gostwng Oedi Isdeitl
+Gosod Oedi Isdeitl
+Cynyddu Oedi Isdeitl
+Lleihau Oedi Sain
+Gosod Oedi Sain
+Cynyddu Oedi Sain
+ hanner tonau
+Rhowch eich enw. Bydd hyn yn ymddangos wrth ymyl y caneuon rydych chi'n eu ciwio o'r ddyfais hon.
+Cân wedi'i hychwanegu at y ciw:
+Cân yn y ciw yn barod:
+Trefnu yn ôl Dyddiad
+Trefnu yn ôl yr Wyddor
+Ychwanegu '%s' i'r ciw
+Pori
+Trefnwyd yn ôl 'Dyddiad'
+Trefnwyd yn ôl 'Alphabetical'
+caneuon
+yn dangos <b>{start} - {end}</b> {record_name}, cyfanswm <b>{total}</b> {record_name}
+dod o hyd i <b>{found}</b> {record_name}, yn dangos <b>{start} - {end}</b> {record_name}
+Golygu cân
+Symud i fyny yn y ciw
+Symud i lawr yn y ciw
+Ydych chi'n siŵr eich bod am ddileu o'r ciw
+Ydych chi'n siŵr eich bod am glirio'r ciw CYFAN? Teipiwch 'OK' i barhau
+Ychwanegu 3 cân ar hap
+Clirio'r cyfan
+Mae'r ciw yn wag
+Ciw
+Dileu
+Caneuon ar gael yn y llyfrgell leol
+Wedi ychwanegu cân i'r ciw:
+Mae'r gân eisoes yn y ciw:
+Chwilio / Ychwanegu Newydd
+Chwiliwch
+Ciw
+Cynhwyswch gemau nad ydynt yn rhai karaoke
+Uwch
+Teipiwch gân (teitl/artist) i chwilio'r caneuon sydd ar gael a chliciwch ar 'Ciw' i'w hychwanegu at y ciw.
+Os nad yw'r gân yn ymddangos yn y gwymplen "Available Songs", cliciwch ar 'Chwilio' i ddod o hyd iddi ar Youtube.
+Lawrlwytho url YouTube yn uniongyrchol:
+Ychwanegu at y ciw
+Cynnwys isdeitlau
+Lawrlwythwch
+Chwilio YouTube am
+Canlyniadau chwilio am
+Cliciwch ar y gwymplen i ddangos mwy o ganlyniadau
+Dolen:
+Caneuon Sydd ar Gael
+Ydych chi am newid enw arddangos y person sy'n defnyddio'r ddyfais hon? Bydd hwn yn ymddangos wrth ymyl y caneuon ciwio. Cyfredol:
+Defnyddiwr presennol
+Gwybodaeth
+PiKaraoke
+Ydych chi'n siŵr eich bod am roi'r gorau iddi?
+Ydych chi'n siŵr eich bod am gau i lawr?
+Ydych chi'n siŵr eich bod am ailgychwyn?
+Ydych chi'n siŵr eich bod am ddiweddaru Youtube-dl ar hyn o bryd? Mae'n bosibl y bydd lawrlwythiadau cyfredol ac arfaethedig yn methu.
+Ydych chi'n siŵr eich bod am ehangu'r system ffeiliau? Bydd hyn yn ailgychwyn eich raspberry pi.
+Gwybodaeth
+Cod QR URL defnyddiol i'w rannu â ffrind:
+OS
+Defnydd Disg
+Cof
+Dal Sgrin
+Llorweddol Lleisiol
+Fersiwn Youtube-dl (yt-dlp).
+Fersiwn PiKaraoke
+Opsiynau Rheoli Uwch
+Modd hollti lleisiol:
+Defnyddiwch L-R/L+R
+Defnyddiwch DNN
+Mae sain MTV safonol yn cynnwys y ddwy sianel stereo (L ac R) wedi'u hamgodio yn y fath fodd fel: LR yw'r trac offeryn, L + R yw'r trac lleisiol. Felly, trwy dynnu neu ychwanegu'r ddwy sianel stereo yn unig, gallwn gael y trac offerynnol a lleisiol mewn sain mono. Mae holltwr lleisiol adeiledig PiKaraoke yn seiliedig ar DNN (rhwydwaith niwral dwfn) yn defnyddio algorithm AI i hollti sain offerynnol a lleisiol ym mhob trac stereo yn annibynnol gan arwain at draciau stereo offerynnol a lleisiol.
+Stopiwch Hollti
+Ailgychwyn Hollti
+Mae'r holltwr lleisiol (sy'n cefnogi tynnu seiliedig ar DNN a stereo) yn rhedeg fel proses ar wahân yn y cefndir, gan gynhyrchu ffeil sain offerynnol / lleisiol ar gyfer pob cân.
+Ail-gydamseru sain a fideo:
+Stopiwch Streamer
+Ailgychwyn Streamer
+Dim ond trwy borwr gwe y mae hyn yn effeithio ar chwarae KTV. Mae ailgychwyn y sgrin-dal-a-ffrydio yn gwella cydamseru sain/fideo, mae hefyd yn lleihau'r hwyrni rhwng y gweinydd a'r porwr.
+Adnewyddu'r rhestr caneuon:
+Ailsganio cyfeiriadur caneuon
+Dim ond os gwnaethoch chi gopïo ffeiliau â llaw i'r cyfeiriadur lawrlwytho tra roedd PiKaraoke yn rhedeg y dylai fod angen i chi wneud hyn.
+Diweddariadau
+Pe bai lawrlwythiadau neu chwiliadau'n stopio gweithio, mae'n debyg y bydd diweddaru youtube-dl yn ei drwsio. Y fersiwn sydd wedi'i gosod ar hyn o bryd yw:
+Diweddaru youtube-dl
+Mae'n bosibl y bydd y ddolen diweddaru hon uchod yn methu os nad oes gennych ganiatâd ffeil priodol. Gwiriwch log PiKaraoke am wallau.
+Cau i lawr
+Peidiwch â thynnu'r plwg yn unig! Caewch eich gweinydd yn iawn bob amser er mwyn osgoi llygredd data.
+Gadael PiKaraoke
+System Ailgychwyn
+System Shutdown
+Arall
+Ehangu system ffeiliau Raspberry Pi
+Os ydych chi newydd osod y ddelwedd pi pikaraoke a adeiladwyd ymlaen llaw a bod eich cerdyn SD yn fwy na 4GB, efallai y byddwch am ehangu'r system ffeiliau i ddefnyddio'r gofod sy'n weddill. Dim ond unwaith mae angen i chi wneud hyn. Bydd hyn yn ailgychwyn y system.
+Analluogi modd gweinyddol
+Galluogi modd gweinyddol
+allgofnodi
+Mewngofnodi
+Gwybodaeth System
+Cartref
+Newid Iaith

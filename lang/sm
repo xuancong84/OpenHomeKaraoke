@@ -1,0 +1,184 @@
+Samoa
+E sese le upu faataga a le pulega!
+Ua logo ese mai le faiga fa'atonu!
+Fa'aopoopo %s ala fa'afuase'i
+Ua leai ni pese!
+Fa'amama le laina!
+Sese le fe'avea'i o mea i totonu o le laina: le sa'o-finauga
+Manuia le fesiitaiga o mea i totonu o le laina:
+Sese le feaveaiina o mea i totonu o le laina:
+Sii i lalo ile laina:
+Sese le alu i lalo ile laina:
+Sii i luga i le laina:
+Sese le agai i luga i le laina:
+Ave'esea mai le laina:
+Sese ile tapeina mai le laina:
+Na amata le la'uina:
+A mae'a, o le a fa'aopoopo i le laina.
+A mae'a, o le a fa'aalia i le lisi o "pese avanoa".
+Sese: E le mafai ona tape lenei pese ona o lo'o i le laina o lo'o iai nei:
+Ua tapeina le pese:
+Sese: Leai se parakalafa pese na fa'amaonia!
+Sese: E le mafai ona fa'asa'o le pese ona o lo'o tata nei:
+Fa'atonu Faipese
+Sese Suiga igoa faila: '%s' i le '%s'. Ua iai le igoa faila.
+Toe fa'aigoa faila: '%s' i le '%s'
+Sese: Leai se igoa faila na fa'ailoa mai!
+Le iloa
+Tamomoe
+Tu'u
+ (Na'o CPU)
+ (GPU ua mafai)
+Fa'afouina youtube-dl! E tatau ona ave se minute pe lua ...
+E leai sau fa'atagaga e fa'afou ai le youtube-dl
+E leai sau fa'atagaga e tapuni ai
+Tu'u nei PiKaraoke!
+E leai sau fa'atagaga e tu'u ai
+Tapuni le faiga i le taimi nei!
+E leai sau fa'atagaga e tapuni ai
+Toe fa'afouina le faiga i le taimi nei!
+E leai sau fa'atagaga e toe fa'afouina
+Fa'alautele le faiga faila ma toe fa'afouina le faiga i le taimi nei!
+E le mafai ona fa'alautele fs i masini e le o le rasipipi!
+E leai sau fa'atagaga e sui ai le faila faila
+Youtube-dl ala e le maua!
+E le o maua le ala VLC!
+omxplayer ala e le maua!
+Fausia le ala e la'u mai ai:
+E le'o feso'ota'i le WiFi/Network. Tapuni i lalo ile 10s...
+Mo le filifilia o pese, su'esu'e le QR pe ​​fa'afeso'ota'i i
+Mo fa'aaliga TV, fa'afeso'ota'i i
+Oomi le F e sui ai le mata atoa
+Oomi le ESC e tuu ai PiKaraoke
+RaspiWifiConfig setup mode ua iloa!
+Fa'afeso'ota'i se isi masini/telefoni atamai i le Wifi AP: '%s'
+Ona tusi lea o lana su'esu'ega i: '%s://%s%s' ma mulimuli i faatonuga.
+O lo'o soso'o mai:
+Faaopoopo e:
+Ta'alo nei:
+Fa'atagaina le fa'atonuga!
+O le fa'atuputeleina o le tuai o leo e maua ai le tele o le taimi e te faitau ai upu a'o le'i usuina le isi fuaiupu.
+O le fa'aitiitia o le tuai o ulutala e maua ai le tele o le taimi e te faitau ai fa'aupu a'o le'i usuina le isi fuaiupu.
+O le semitone e lauiloa foi o le afa-laasaga. O le va itiiti lea e fa'aaogaina i musika fa'apapalagi fa'apapalagi, e tutusa ma le sefululua o le octave po'o le afa leo.
+DNN-faavae leo vaeluaga ua mafai. E fa'aaoga e PiKaraoke le PyTorch (e ala i le Facebook) e fa'agasolo ai se feso'ota'iga neural loloto e vaelua ai meafaifa'aili ma leo leo i ala ta'itasi e fa'atupu ai le leo fa'alogo.
+Pulea ta'aalo
+Musika
+E lua
+Leo
+Suia Ki
+E leai se mea o taalo i le taimi nei.
+E leai se pese e laina.
+E le'i fa'aopoopoina e oe lenei pese. E te mautinoa e te mana'o e toe amata lenei ala?
+E le'i fa'aopoopoina e oe lenei pese. E te mautinoa e te mana'o e faamisi lenei ala?
+Pulea ta'aalo
+Taaalo nei
+Pese Sosoo
+Saili ia:
+Tuai leo (sec)
+Fa'atuai Fa'aulutala (sec)
+Toe amata le Pese
+Ta'alo/Taofi
+Taofi le Pese o iai nei
+Volume i lalo
+Seti le Volume
+Volume i luga
+Fa'aitiitia le Fa'atuai ole Ulutala
+Seti Ulutala Fa'atuai
+Fa'atele le Fa'atuai Suafa
+Fa'aitiitia le tuai o leo
+Seti le tuai o leo
+Fa'atele le tuai o leo
+ semitones
+Fa'amolemole tu'u lou igoa. O le a fa'aalia i tafatafa o pese e te tu'u mai i lenei masini.
+Pese faaopoopo i le laina:
+Pese ua i le laina:
+Fa'avasega ile Aso
+Fa'avasega ile Alafapeta
+Fa'aopoopo le '%s' ile laina
+Su'esu'e
+Fa'avasega i le 'Aso'
+Fa'avasega ile 'Alphabetical'
+pese
+fa'aali <b>{amata} - {end}</b> {record_name}, atoa <b>{total}</b> {record_name}
+maua <b>{found}</b> {record_name}, fa'aalia <b>{start} - {end}</b> {record_name}
+Fa'atonu pese
+Alu i luga i le laina
+Alu i lalo ile laina
+E te mautinoa e te mana'o e tape mai le laina
+E te mautinoa e te mana'o e tapeina le fa'ailoga ATU? Tu'i 'Ua lelei' e fa'aauau
+Faaopoopo 3 pese fa'afuase'i
+Fa'amama uma
+Ua gaogao le laina
+Tuli
+Aveese
+Pese avanoa i le faletusi a le lotoifale
+Faaopoopo le pese i le laina:
+Ua i ai le pese i le laina:
+Su'e / Fa'aopoopo Fou
+Su'e
+Tuli
+Fa'aaofia afitusi e le o karaoke
+Maualuluga
+Tusi se pese (igoa/tusiata) e su'e ai pese o lo'o avanoa ma kiliki 'Queue' e fa'aopoopo i le laina.
+Afai e le o aliali mai le pese i le "Available Songs" dropdown, kiliki 'Search' e su'e ai ile Youtube.
+La'u sa'o mai YouTube url:
+Faaopoopo i le laina
+Fa'aaofia ai ulutala
+La'u mai
+Su'e YouTube mo
+Su'esu'ega mo
+Kiliki le pa'u i lalo e fa'aali atili ai fa'ai'uga
+So'oga:
+Pese Avanoa
+E te mana'o e sui le igoa fa'aali o le tagata o lo'o fa'aogaina lenei masini? O le a fa'aalia lea i tafatafa o pese tu'u. Ole taimi nei:
+Tagata fa'aoga nei
+Fa'amatalaga
+PiKaraoke
+E te mautinoa e te mana'o e tu'u?
+E te mautinoa e te mana'o e tapuni?
+E te mautinoa e te mana'o e toe fa'aola?
+E te mautinoa e te mana'o e fa'afou le Youtube-dl i le taimi nei? Atonu e le manuia laiga o lo'o iai nei ma fa'atali.
+E te mautinoa e te mana'o e fa'alautele le faiga faila? Ole mea lea ole a toe fa'afouina lau rasipi pi.
+Fa'amatalaga
+Fa'aaoga URL QR code e fa'asoa ma se uo:
+OS
+Fa'aoga Disk
+Manatu
+Pu'e Ata
+Vocal Splitter
+Youtube-dl (yt-dlp) version
+PiKaraoke version
+Filifiliga Pulea Maualuga
+Faiga vaelua leo:
+Fa'aaoga L-R/L+R
+Fa'aaoga le DNN
+O leo MTV masani e lua ala leo (L ma le R) ua fa'ailogaina i se auala e: L-R o le mea faifa'aili, L+R o le ala leo. O lea la, i le na'o le to'ese pe fa'aopoopoina o ala leo e lua, e mafai ai ona tatou maua le meafaifaaili ma le leo i le leo e tasi. PiKaraoke's built-in DNN-based (deep neural network) vocal splitter e fa'aogaina ai le AI algorithm e vaelua ai mea faifa'aili ma leo leo i ala fa'aleo ta'itasi ta'ito'atasi e maua ai mea fa'aili ma ala leo.
+Taofi Splitter
+Toe amata le Splitter
+O le vaelua leo (lea e lagolagoina uma le DNN-faʻavae ma le faʻaogaina o le leo) o loʻo tamomoe o se faʻagasologa ese i tua, faʻatupuina faila meafaifaaili / leo leo mo pese uma.
+Toe fa'amaopoopo leo ma vitiō:
+Taofi Streamer
+Toe amata le Streamer
+E na'o le a'afia ai o le ta'alo KTV e ala ile 'upega tafa'ilagi. O le toe amataina o le screen-capture-and-streaming e faʻaleleia ai le faʻaogaina o leo/vitio, e faʻaitiitia ai foi le leo i le va o le server ma le browser.
+Toe faafou le lisi o pese:
+Toe su'esu'e le lisi o pese
+E na'o le mana'omia ona e faia lea mea pe afai e te kopiina ma le lima faila i le lisi o le download a'o tamo'e PiKaraoke.
+Fa'afouga
+Afai e le toe galue le download poʻo suʻesuʻega, o le faʻafouina o le youtube-dl atonu o le a toe faaleleia. O le lomiga fa'apipi'i nei o le:
+Fa'afou youtube-dl
+O lenei feso'ota'iga fa'afouga o lo'o i luga e ono fa'aletonu pe a leai sau fa'atagaga tatau faila. Siaki le PiKaraoke log mo mea sese.
+Tapuni i lalo
+Aua le na'o le tosoina o le polo! Tapuni lelei i taimi uma lau 'au'aunaga e 'alofia ai fa'amatalaga pi'opi'o.
+Tuu le PiKaraoke
+Toe Toe Fa'atonu
+Faiga Tapuni
+Isi
+Fa'alautele le faiga faila o le Raspberry Pi
+Afai na'o e fa'apipi'i le ata pikaraoke pi na fausia muamua ma lau SD card e tele atu nai lo le 4GB, atonu e te mana'o e fa'alautele le faila faila e fa'aoga ai le avanoa o totoe. E na'o le tasi le mea e te mana'omia. O le a toe fa'afouina le faiga.
+Ta'e le faiga fa'atonu
+Fa'aagaoi le pulega
+saini ese j
+ulufale i totonu
+Fa'amatalaga Fa'atonu
+Aiga
+Suia Gagana

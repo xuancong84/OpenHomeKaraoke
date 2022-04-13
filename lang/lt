@@ -1,0 +1,184 @@
+lietuvių
+Neteisingas administratoriaus slaptažodis!
+Atsijungėte nuo administratoriaus režimo!
+Pridėta %s atsitiktinių takelių
+Pritrūko dainų!
+Išvalyta eilė!
+Perkeliant elementą į eilę įvyko klaida: negaliojantis argumentas
+Elementas sėkmingai perkeltas į eilę:
+Perkeliant elementą į eilę įvyko klaida:
+Perkeltas žemyn eilėje:
+Klaida judant eilėje žemyn:
+Perkeltas į eilę:
+Klaida judant eilėje:
+Ištrinta iš eilės:
+Klaida ištrinant iš eilės:
+Atsisiuntimas pradėtas:
+Užbaigus, jis bus įtrauktas į eilę.
+Užbaigus jis bus rodomas „galimų dainų“ sąraše.
+Klaida: negalima ištrinti šios dainos, nes ji yra dabartinėje eilėje:
+Daina ištrinta:
+Klaida: nenurodytas dainos parametras!
+Klaida: negaliu redaguoti šios dainos, nes ji šiuo metu grojama:
+Dainos failo redagavimas
+Klaida pervardijant failą: „%s“ į „%s“. Failo pavadinimas jau yra.
+Failas pervardytas: „%s“ į „%s“
+Klaida: nebuvo nurodyti failo pavadinimo parametrai!
+Nežinoma
+Bėgimas
+Sustojo
+ (tik CPU)
+ (įjungtas GPU)
+Atnaujinamas youtube-dl! Turėtų užtrukti minutę ar dvi...
+Neturite leidimo atnaujinti youtube-dl
+Neturite leidimo išjungti
+Baigti PiKaraoke dabar!
+Jūs neturite leidimo mesti
+Sistema išjungiama dabar!
+Neturite leidimo išjungti
+Sistema perkraunama dabar!
+Neturite leidimo paleisti iš naujo
+Išplečiama failų sistema ir perkraunama sistema dabar!
+Negalima išplėsti fs ne Raspberry Pi įrenginiuose!
+Neturite leidimo keisti failų sistemos dydžio
+Youtube-dl kelias nerastas!
+VLC kelias nerastas!
+omxplayer kelias nerastas!
+Kuriamas atsisiuntimo kelias:
+Wifi / tinklas neprijungtas. Išsijungs po 10 sekundžių...
+Norėdami pasirinkti dainas, nuskaitykite QR kodą arba prisijunkite prie
+Norėdami televizoriaus ekraną, prijunkite prie
+Norėdami perjungti viso ekrano režimą, paspauskite F
+Paspauskite ESC, kad išeitumėte iš PiKaraoke
+Aptiktas „RaspiWifiConfig“ sąrankos režimas!
+Prijunkite kitą įrenginį / išmanųjį telefoną prie „Wi-Fi“ AP: „%s“
+Tada nukreipkite naršyklę į: „%s://%s%s“ ir vykdykite instrukcijas.
+Kitas:
+Pridėjo:
+Dabar žaidžia:
+Administratoriaus režimas suteiktas!
+Didėjant garso delsai, turėsite daugiau laiko perskaityti dainų tekstus prieš išdainuojant kitą sakinį.
+Sumažėjus subtitrų delsai, turėsite daugiau laiko perskaityti dainų tekstus prieš išdainuojant kitą sakinį.
+Pustonis taip pat žinomas kaip pusė žingsnio. Tai mažiausias klasikinėje Vakarų muzikoje naudojamas intervalas, lygus oktavos dvyliktajai daliai arba pusei tono.
+DNN pagrįstas balso skirstytuvas įjungtas. „PiKaraoke“ naudoja „PyTorch“ („Facebook“), kad paleistų gilų neuroninį tinklą, kad padalitų instrumentinį ir vokalinį garsą kiekviename takelyje ir sukuria stereo garsą.
+Žaidėjo valdymas
+Muzika
+Abu
+Balsas
+Keisti raktą
+Šiuo metu niekas negroja.
+Nė viena daina nėra eilėje.
+Šios dainos nepridėjote jūs. Ar tikrai norite iš naujo paleisti šį takelį?
+Šios dainos nepridėjote jūs. Ar tikrai norite praleisti šį takelį?
+Žaidėjo valdymas
+Dabar žaidžia
+Kita daina
+Siekti:
+Garso delsa (sek.)
+Subtitrų delsa (sek.)
+Iš naujo paleisti dainą
+Leisti / pristabdyti
+Sustabdyti dabartinę dainą
+Patildyti
+Nustatykite garsumą
+Pagarsink
+Sumažinti subtitrų delsą
+Nustatykite subtitrų delsą
+Padidinkite subtitrų delsą
+Sumažinti garso delsą
+Nustatykite garso delsą
+Padidinkite garso delsą
+ pustoniai
+Įveskite savo vardą. Tai bus rodoma šalia dainų, kurias įtrauksite į eilę iš šio įrenginio.
+Daina įtraukta į eilę:
+Daina jau eilėje:
+Rūšiuoti pagal datą
+Rūšiuoti pagal abėcėlę
+Įtraukite „%s“ į eilę
+Naršyti
+Rūšiuota pagal datą
+Rūšiuota pagal abėcėlę
+dainas
+rodomas <b>{start}–{end}</b> {record_name}, iš viso <b>{total}</b> {record_name}
+rasta <b>{found}</b> {record_name}, rodoma <b>{start} – {end}</b> {record_name}
+Redaguoti dainą
+Perkelti eilėje
+Pereikite į eilę žemyn
+Ar tikrai norite ištrinti iš eilės
+Ar tikrai norite išvalyti VISĄ eilę? Norėdami tęsti, įveskite „Gerai“.
+Pridėkite 3 atsitiktines dainas
+Išvalyti viską
+Eilė tuščia
+Eilė
+Ištrinti
+Galimos dainos vietinėje bibliotekoje
+Daina įtraukta į eilę:
+Daina jau eilėje:
+Ieškoti / Pridėti naują
+Paieška
+Eilė
+Įtraukite ne karaoke rungtynes
+Išplėstinė
+Įveskite dainą (pavadinimą / atlikėją), kad ieškotumėte galimų dainų, ir spustelėkite „Eilė“, kad įtrauktumėte ją į eilę.
+Jei daina nerodoma išskleidžiamajame meniu „Galimos dainos“, spustelėkite „Ieškoti“, kad ją rastumėte „YouTube“.
+Tiesioginio atsisiuntimo „YouTube“ URL:
+Pridėti į eilę
+Įtraukti subtitrus
+parsisiųsti
+„YouTube“ ieškoma
+Pieškos rezultatai
+Spustelėkite išskleidžiamąjį meniu, kad pamatytumėte daugiau rezultatų
+Nuoroda:
+Galimos dainos
+Ar norite pakeisti šį įrenginį naudojančio asmens rodomą vardą? Tai bus rodoma šalia eilėje esančių dainų. Dabartinis:
+Dabartinis vartotojas
+Informacija
+PiKaraoke
+Ar tikrai norite mesti?
+Ar tikrai norite išjungti?
+Ar tikrai norite paleisti iš naujo?
+Ar tikrai norite atnaujinti Youtube-dl dabar? Gali nepavykti dabartinių ir laukiančių atsisiuntimų.
+Ar tikrai norite išplėsti failų sistemą? Tai iš naujo paleis jūsų raspberry pi.
+Informacija
+Patogus URL QR kodas, kurį norite bendrinti su draugu:
+OS
+Disko naudojimas
+Atmintis
+Ekrano nuotrauka
+Vokalo skirstytuvas
+Youtube-dl (yt-dlp) versija
+PiKaraoke versija
+Išplėstinės valdymo parinktys
+Balso skirstytuvo režimas:
+Naudokite L-R/L+R
+Naudokite DNN
+Standartiniame MTV garse yra du stereo kanalai (L ir R), užkoduoti taip, kad: L-R yra instrumento takelis, L+R yra balso takelis. Taigi, tiesiog atėmus arba pridėjus du stereo kanalus, instrumentinį ir vokalinį takelį galime gauti mono garsu. „PiKaraoke“ integruotas DNN (giliojo neuroninio tinklo) balso skirstytuvas naudoja AI algoritmą, kad atskirtų instrumentinį ir vokalinį garsą kiekviename stereo takelyje atskirai, todėl sukuriami stereo instrumentiniai ir vokaliniai takeliai.
+Sustabdykite skirstytuvą
+Iš naujo paleiskite skirstytuvą
+Balso skirstytuvas (kuris palaiko tiek DNN, tiek stereo atimtį) veikia kaip atskiras procesas fone, kiekvienai dainai generuodamas instrumentinį / vokalinį garso failą.
+Iš naujo sinchronizuokite garsą ir vaizdą:
+Sustabdyti Streamer
+Iš naujo paleiskite „Streamer“.
+Tai turi įtakos tik KTV žaidimui per interneto naršyklę. Iš naujo paleidus ekrano fiksavimo ir srautinio perdavimo funkciją, pagerėja garso ir vaizdo sinchronizavimas, taip pat sumažėja delsa tarp serverio ir naršyklės.
+Atnaujinkite dainų sąrašą:
+Iš naujo nuskaityti dainų katalogą
+Turėtumėte tai padaryti tik tuo atveju, jei rankiniu būdu nukopijavote failus į atsisiuntimų katalogą, kai veikė PiKaraoke.
+Atnaujinimai
+Jei atsisiuntimai ar paieškos nustojo veikti, atnaujinus youtube-dl tikriausiai tai išspręs. Dabartinė įdiegta versija yra:
+Atnaujinti youtube-dl
+Ši aukščiau pateikta naujinimo nuoroda gali neveikti, jei neturite tinkamų failo teisių. Patikrinkite, ar PiKaraoke žurnale nėra klaidų.
+Išjungti
+Netraukite tik už kištuko! Visada tinkamai išjunkite serverį, kad išvengtumėte duomenų sugadinimo.
+Išeikite iš PiKaraoke
+Perkraukite sistemą
+Išjungimo sistema
+Kita
+Išplėskite Raspberry Pi failų sistemą
+Jei ką tik įdiegėte iš anksto sukurtą pikaraoke pi vaizdą ir jūsų SD kortelė yra didesnė nei 4 GB, galbūt norėsite išplėsti failų sistemą, kad išnaudotumėte likusią vietą. Tai padaryti reikia tik vieną kartą. Tai iš naujo paleis sistemą.
+Išjungti administratoriaus režimą
+Įjungti administratoriaus režimą
+Atsijungti
+Prisijungti
+Sistemos informacija
+Namai
+Pakeisti KALBĄ

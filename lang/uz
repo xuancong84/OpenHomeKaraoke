@@ -1,0 +1,184 @@
+o'zbek
+Administrator paroli noto'g'ri!
+Administrator rejimidan chiqdingiz!
+%s tasodifiy trek qo‘shildi
+Qo'shiqlar tugadi!
+Navbat tozalandi!
+Elementni navbatga ko‘chirishda xatolik yuz berdi: noto‘g‘ri argument
+Element navbatga muvaffaqiyatli koʻchirildi:
+Navbat ichidagi elementni ko‘chirishda xatolik yuz berdi:
+Navbatga koʻchirildi:
+Navbatda pastga siljishda xatolik yuz berdi:
+Navbatga koʻtarildi:
+Navbatda yuqoriga koʻtarilishda xatolik yuz berdi:
+Navbatdan oʻchirildi:
+Navbatdan oʻchirishda xatolik yuz berdi:
+Yuklash boshlandi:
+Tugallangach, u navbatga qo'shiladi.
+Tugallangach, u "mavjud qo'shiqlar" ro'yxatida paydo bo'ladi.
+Xato: Bu qoʻshiqni oʻchirib boʻlmadi, chunki u joriy navbatda:
+Qo'shiq o'chirildi:
+Xato: qo'shiq parametri ko'rsatilmagan!
+Xato: Bu qo‘shiqni tahrirlab bo‘lmadi, chunki u hozir ijro etilmoqda:
+Qo'shiq faylini tahrirlash
+Fayl nomini o‘zgartirishda xatolik: “%s” dan “%s”ga. Fayl nomi allaqachon mavjud.
+Nomi o‘zgartirilgan fayl: “%s” dan “%s”ga
+Xato: fayl nomi parametrlari belgilanmagan!
+Noma'lum
+Yugurish
+To'xtatildi
+ (faqat CPU)
+ (GPU yoqilgan)
+youtube-dl yangilanmoqda! Bir-ikki daqiqa kerak...
+Sizda youtube-dl-ni yangilash uchun ruxsat yo'q
+Oʻchirish uchun ruxsatingiz yoʻq
+PiKaraoke-ni hozir tark eting!
+Chiqish uchun ruxsatingiz yo‘q
+Tizim hozir o'chirilmoqda!
+Oʻchirish uchun ruxsatingiz yoʻq
+Endi tizim qayta ishga tushirilmoqda!
+Qayta ishga tushirishga ruxsatingiz yo'q
+Fayl tizimini kengaytirish va tizimni hozir qayta ishga tushirish!
+Raspberry pi qurilmalarida fsni kengaytirib bo'lmaydi!
+Fayl tizimining oʻlchamini oʻzgartirishga ruxsatingiz yoʻq
+Youtube-dl yo'li topilmadi!
+VLC yo'li topilmadi!
+omxplayer yo'li topilmadi!
+Yuklab olish yo'lini yaratish:
+Wi-Fi/tarmoq ulanmagan. 10 soniyadan keyin yopiladi...
+Qo'shiqlarni tanlash uchun QR ni skanerlang yoki ulaning
+Televizorni ko'rsatish uchun ulaning
+Toʻliq ekranga oʻtish uchun F tugmasini bosing
+PiKaraoke-dan chiqish uchun ESC tugmasini bosing
+RaspiWifiConfig sozlash rejimi aniqlandi!
+Boshqa qurilmani/smartfonni Wi-Fi APga ulang: '%s'
+Keyin brauzerni '%s://%s%s' manziliga yo'naltiring va ko'rsatmalarga amal qiling.
+Keyingisi:
+Qoʻshilgan:
+Hozir ijro etilmoqda:
+Administrator rejimi berildi!
+Ovozni kechiktirishni oshirish sizga keyingi jumlani kuylashdan oldin matnni o'qish uchun ko'proq vaqt beradi.
+Subtitr kechikishini kamaytirish keyingi jumlani kuylashdan oldin matnlarni o'qish uchun ko'proq vaqt beradi.
+Yarim ohang yarim qadam sifatida ham tanilgan. Bu klassik Gʻarb musiqasida qoʻllaniladigan eng kichik interval boʻlib, oktavaning oʻn ikkidan biriga yoki yarim tonga teng.
+DNN-ga asoslangan vokal splitter yoqilgan. PiKaraoke PyTorch-dan (Facebook tomonidan) chuqur neyron tarmoqni ishga tushirish uchun har bir trekda instrumental va vokal tovushlarni ajratib, stereo tovushni keltirib chiqaradi.
+O'yinchi nazorati
+Musiqa
+Ikkalasi ham
+Ovoz
+Kalitni o'zgartirish
+Hozir hech narsa oʻynamayapti.
+Hech qanday qoʻshiq navbatga qoʻyilmagan.
+Bu qo'shiq siz qo'shmagan. Haqiqatan ham bu trekni qayta ishga tushirmoqchimisiz?
+Bu qo'shiq siz qo'shmagan. Haqiqatan ham bu trekni o‘tkazib yubormoqchimisiz?
+O'yinchi nazorati
+Hozir ijro etilmoqda
+Keyingi qo'shiq
+Izlash:
+Audio kechikish (sek)
+Subtitr kechikishi (soniya)
+Qo'shiqni qayta ishga tushirish
+Oʻynatish/toʻxtatib turish
+Joriy qo'shiqni to'xtatish
+Ovozni pasaytirish
+Ovoz balandligini sozlash
+Ovozni oshirish
+Subtitr kechikishini kamaytiring
+Subtitrni kechiktirish
+Subtitr kechikishini oshiring
+Ovoz kechikishini kamaytiring
+Ovozni kechiktirishni o'rnating
+Ovoz kechikishini oshiring
+ yarim ohanglar
+Iltimos, ismingizni kiriting. Bu qurilmadan navbatga qoʻygan qoʻshiqlaringiz yonida koʻrsatiladi.
+Navbatga qo'shilgan qo'shiq:
+Qo'shiq allaqachon navbat:
+Sana bo'yicha saralash
+Alifbo tartibida tartiblash
+Navbatga “%s” qo‘shing
+Ko‘rib chiqish
+“Sana” bo‘yicha saralangan
+“Alifbo tartibida” saralangan
+qo'shiqlar
+ko'rsatilmoqda <b>{start} - {end}</b> {record_name}, jami <b>{total}</b> {record_name}
+topildi <b>{topildi}</b> {record_name}, koʻrsatilayotgan <b>{start} - {end}</b> {record_name}
+Qo'shiqni tahrirlash
+Navbatda yuqoriga o'ting
+Navbatda pastga tushing
+Haqiqatan ham navbatdan oʻchirib tashlamoqchimisiz
+Toʻliq navbatni tozalamoqchimisiz? Davom etish uchun “OK” ni kiriting
+3 ta tasodifiy qo'shiq qo'shing
+Hammasini tozalamoq
+Navbat boʻsh
+Navbat
+Oʻchirish
+Mahalliy kutubxonada mavjud qo'shiqlar
+Navbatga qoʻshilgan qoʻshiq:
+Qo'shiq allaqachon navbatda:
+Qidiruv / Yangi qo'shish
+Qidirmoq
+Navbat
+Karaoke bo'lmagan o'yinlarni qo'shing
+Murakkab
+Mavjud qo'shiqlarni qidirish uchun qo'shiqni (nom/ijodkor) kiriting va uni navbatga qo'shish uchun "Navbat" tugmasini bosing.
+Agar qo'shiq "Mavjud qo'shiqlar" ochiladigan ro'yxatida ko'rinmasa, uni Youtube-da topish uchun "Qidirish" tugmasini bosing.
+YouTube url-ni to'g'ridan-to'g'ri yuklab olish:
+Navbatga qo'shish
+Subtitrlarni qo'shing
+Yuklab olish
+YouTube uchun qidirilmoqda
+uchun qidiruv natijalari
+Ko'proq natijalarni ko'rsatish uchun ochiladigan menyuni bosing
+Havola:
+Mavjud qo'shiqlar
+Ushbu qurilmadan foydalanayotgan shaxsning ismini oʻzgartirmoqchimisiz? Bu navbatdagi qoʻshiqlar yonida koʻrsatiladi. Hozirgi:
+Joriy foydalanuvchi
+Ma'lumot
+PiKaraoke
+Chiqishni xohlayotganingizga ishonchingiz komilmi?
+Haqiqatan ham oʻchirib qoʻymoqchimisiz?
+Haqiqatan ham qayta ishga tushirishni xohlaysizmi?
+Haqiqatan ham Youtube-dl-ni hozir yangilamoqchimisiz? Joriy va kutilayotgan yuklab olishlar muvaffaqiyatsiz bo'lishi mumkin.
+Haqiqatan ham fayl tizimini kengaytirmoqchimisiz? Bu malina pi-ni qayta ishga tushiradi.
+Ma `lumot
+Do'stingiz bilan baham ko'rish uchun qulay URL QR kodi:
+OS
+Diskdan foydalanish
+Xotira
+Ekran tasviri
+Vokal ajratuvchi
+Youtube-dl (yt-dlp) versiyasi
+PiKaraoke versiyasi
+Kengaytirilgan boshqaruv parametrlari
+Vokal splitter rejimi:
+L-R/L+R dan foydalaning
+DNN dan foydalaning
+Standart MTV audiosi ikkita stereo kanalga ega (L va R) shunday kodlangan: L-R - asbob treki, L+R - vokal trek. Shunday qilib, ikkita stereo kanalni oddiygina ayirish yoki qo'shish orqali biz mono tovushda instrumental va vokal trekni olishimiz mumkin. PiKaraoke-ning o'rnatilgan DNN-ga asoslangan (chuqur neyron tarmog'i) vokal splitteri AI algoritmidan foydalanib, har bir stereo trekda instrumental va vokal tovushni mustaqil ravishda ajratib turadi, natijada stereo instrumental va vokal treklar paydo bo'ladi.
+Splitterni to'xtating
+Splitterni qayta ishga tushiring
+Vokal splitter (ham DNN-ga asoslangan, ham stereo chiqarishni qo'llab-quvvatlaydi) fonda alohida jarayon sifatida ishlaydi va har bir qo'shiq uchun instrumental/vokal audio faylini yaratadi.
+Audio va videoni qayta sinxronlash:
+Streamerni toʻxtating
+Streamerni qayta ishga tushiring
+Bu faqat veb-brauzer orqali KTV o'ynashga ta'sir qiladi. Ekranni suratga olish va oqimlashni qayta ishga tushirish audio/video sinxronizatsiyasini yaxshilaydi, shuningdek, server va brauzer o‘rtasidagi kechikishni kamaytiradi.
+Qo'shiqlar ro'yxatini yangilang:
+Qo'shiq katalogini qayta skanerlash
+Buni faqat PiKaraoke ishlayotgan vaqtda fayllarni yuklab olish katalogiga qo'lda ko'chirgan bo'lsangizgina qilishingiz kerak.
+Yangilanishlar
+Agar yuklab olishlar yoki qidiruvlar ishlamay qolsa, youtube-dl-ni yangilash muammoni hal qilishi mumkin. Joriy o'rnatilgan versiya:
+youtube-dl-ni yangilang
+Tegishli fayl ruxsatnomalariga ega boʻlmasangiz, yuqoridagi yangilanish havolasi ishlamay qolishi mumkin. Xatolar uchun PiKaraoke jurnalini tekshiring.
+Yopmoq
+Shunchaki vilkadan tortmang! Ma'lumotlarning buzilishini oldini olish uchun har doim serveringizni to'g'ri o'chirib qo'ying.
+PiKaraoke-dan chiqing
+Tizimni qayta ishga tushirish
+O'chirish tizimi
+Boshqa
+Raspberry Pi fayl tizimini kengaytiring
+Agar siz oldindan o'rnatilgan pikaraoke pi tasvirini o'rnatgan bo'lsangiz va SD-kartangiz 4 Gb dan katta bo'lsa, qolgan joydan foydalanish uchun fayl tizimini kengaytirishni xohlashingiz mumkin. Buni faqat bir marta qilishingiz kerak. Bu tizimni qayta ishga tushiradi.
+Administrator rejimini o'chiring
+Administrator rejimini yoqing
+chiqish
+tizimga kirish
+Tizim ma'lumotlari
+Uy
+Tilni o'zgartirish

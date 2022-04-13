@@ -1,0 +1,184 @@
+Deutsch
+Falsches Admin-Passwort!
+Aus dem Admin-Modus abgemeldet!
+%s zufällige Tracks hinzugefügt
+Lieder ausgegangen!
+Warteschlange gelöscht!
+Fehler beim Verschieben des Elements in die Warteschlange: ungültiges Argument
+Element erfolgreich in Warteschlange verschoben:
+Fehler beim Verschieben des Elements in die Warteschlange:
+In der Warteschlange nach unten verschoben:
+Fehler beim Verschieben nach unten in der Warteschlange:
+In der Warteschlange nach oben gerückt:
+Fehler beim Aufsteigen in der Warteschlange:
+Aus Warteschlange gelöscht:
+Fehler beim Löschen aus der Warteschlange:
+Download gestartet:
+Nach Abschluss wird es der Warteschlange hinzugefügt.
+Nach Abschluss erscheint es in der Liste "verfügbare Songs".
+Fehler: Dieses Lied kann nicht gelöscht werden, da es sich in der aktuellen Warteschlange befindet:
+Lied gelöscht:
+Fehler: Kein Songparameter angegeben!
+Fehler: Dieser Song kann nicht bearbeitet werden, da er gerade abgespielt wird:
+Bearbeiten von Songdateien
+Fehler beim Umbenennen der Datei: '%s' in '%s'. Dateiname existiert bereits.
+Datei umbenannt: '%s' in '%s'
+Fehler: Es wurden keine Dateinamenparameter angegeben!
+Unbekannt
+Betrieb
+Gestoppt
+ (nur CPU)
+ (GPU aktiviert)
+Aktualisierung von youtube-dl! Sollte ein oder zwei Minuten dauern...
+Du bist nicht berechtigt, YouTube-dl zu aktualisieren
+Sie haben keine Berechtigung zum Herunterfahren
+Jetzt PiKaraoke beenden!
+Sie haben keine Berechtigung zum Aufhören
+System jetzt herunterfahren!
+Sie haben keine Berechtigung zum Herunterfahren
+System jetzt neu starten!
+Sie haben keine Berechtigung zum Neustart
+Dateisystem erweitern und System jetzt neu starten!
+Kann fs auf Nicht-Raspberry-Pi-Geräten nicht erweitern!
+Sie sind nicht berechtigt, die Größe des Dateisystems zu ändern
+Youtube-dl-Pfad nicht gefunden!
+VLC-Pfad nicht gefunden!
+omxplayer-Pfad nicht gefunden!
+Downloadpfad erstellen:
+WLAN/Netzwerk nicht verbunden. Abschaltung in 10s...
+Um Songs auszuwählen, scannen Sie QR oder stellen Sie eine Verbindung her
+Verbinden Sie für die TV-Anzeige mit
+Drücken Sie F, um zum Vollbildmodus zu wechseln
+Drücken Sie ESC, um PiKaraoke zu beenden
+RaspiWifiConfig Setup-Modus erkannt!
+Verbinden Sie ein anderes Gerät/Smartphone mit dem WLAN-AP: '%s'
+Zeigen Sie dann in seinem Browser auf: '%s://%s%s' und folgen Sie den Anweisungen.
+Als nächstes:
+Hinzugefügt von:
+Läuft gerade:
+Admin-Modus gewährt!
+Wenn Sie die Audioverzögerung erhöhen, haben Sie mehr Zeit, den Text zu lesen, bevor Sie den nächsten Satz singen.
+Wenn Sie die Untertitelverzögerung verringern, haben Sie mehr Zeit, den Text zu lesen, bevor Sie den nächsten Satz singen.
+Ein Halbton wird auch als Halbschritt bezeichnet. Es ist das kleinste Intervall, das in der klassischen westlichen Musik verwendet wird, und entspricht einer zwölftel Oktave oder einem halben Ton.
+Der DNN-basierte Vocal-Splitter ist aktiviert. PiKaraoke verwendet PyTorch (von Facebook), um ein tiefes neuronales Netzwerk zu betreiben, um Instrumental- und Gesangssound in jeder Spur aufzuteilen, wodurch Stereosound entsteht.
+Spielersteuerung
+Musik
+Beide
+Stimme
+Schlüssel ändern
+Im Moment wird nichts abgespielt.
+Kein Lied ist in der Warteschlange.
+Dieses Lied wurde nicht von Ihnen hinzugefügt. Möchten Sie diesen Track wirklich neu starten?
+Dieses Lied wurde nicht von Ihnen hinzugefügt. Möchten Sie diesen Titel wirklich überspringen?
+Spielersteuerung
+Läuft gerade
+Nächstes Lied
+Versuchen:
+Audioverzögerung (Sek.)
+Untertitelverzögerung (Sek.)
+Lied neu starten
+Spielpause
+Stoppen Sie den aktuellen Song
+Lautstärke runter
+Lautstärke einstellen
+Lauter
+Untertitelverzögerung verringern
+Untertitelverzögerung einstellen
+Untertitelverzögerung erhöhen
+Verringern Sie die Audioverzögerung
+Stellen Sie die Audioverzögerung ein
+Erhöhen Sie die Audioverzögerung
+ Halbtöne
+Bitte geben Sie Ihren Namen ein. Dies wird neben den Titeln angezeigt, die Sie von diesem Gerät in die Warteschlange stellen.
+Der Warteschlange hinzugefügtes Lied:
+Song schon die Warteschlange:
+Nach Datum sortieren
+Alphabetisch sortieren
+Füge '%s' zur Warteschlange hinzu
+Durchsuche
+Sortiert nach 'Datum'
+Sortiert nach 'Alphabetisch'
+Lieder
+Anzeige von <b>{start} - {end}</b> {record_name}, insgesamt <b>{total}</b> {record_name}
+<b>{found}</b> {record_name} gefunden, Anzeige <b>{start} - {end}</b> {record_name}
+Lied bearbeiten
+Bewegen Sie sich in der Warteschlange nach oben
+Gehen Sie in der Warteschlange nach unten
+Möchten Sie wirklich aus der Warteschlange löschen?
+Möchten Sie wirklich die GESAMTE Warteschlange löschen? Geben Sie „OK“ ein, um fortzufahren
+Füge 3 zufällige Lieder hinzu
+Alles löschen
+Die Warteschlange ist leer
+Warteschlange
+Löschen
+Verfügbare Songs in der lokalen Bibliothek
+Lied zur Warteschlange hinzugefügt:
+Lied ist bereits in der Warteschlange:
+Suchen / Neu hinzufügen
+Suche
+Warteschlange
+Schließen Sie Nicht-Karaoke-Matches ein
+Fortschrittlich
+Geben Sie einen Song (Titel/Künstler) ein, um die verfügbaren Songs zu durchsuchen, und klicken Sie auf „Warteschlange“, um ihn der Warteschlange hinzuzufügen.
+Wenn der Song nicht in der Dropdown-Liste „Verfügbare Songs“ angezeigt wird, klicken Sie auf „Suchen“, um ihn auf YouTube zu finden.
+YouTube-URL für direkten Download:
+Zur Warteschlange hinzufügen
+Fügen Sie Untertitel hinzu
+Download
+Suche auf YouTube nach
+Suchergebnisse für
+Klicken Sie auf das Dropdown-Menü, um weitere Ergebnisse anzuzeigen
+Verknüpfung:
+Verfügbare Lieder
+Möchten Sie den Anzeigenamen der Person ändern, die dieses Gerät verwendet? Dies wird neben den Songs in der Warteschlange angezeigt. Strom:
+Aktueller Benutzer
+Die Info
+PiKaraoke
+Sind Sie sicher, dass Sie aufhören wollen?
+Sind Sie sicher, dass Sie herunterfahren möchten?
+Möchten Sie wirklich neu starten?
+Sind Sie sicher, dass Sie Youtube-dl jetzt aktualisieren möchten? Aktuelle und ausstehende Downloads können fehlschlagen.
+Sind Sie sicher, dass Sie das Dateisystem erweitern möchten? Dadurch wird Ihr Himbeer-Pi neu gestartet.
+Information
+Praktischer URL-QR-Code zum Teilen mit einem Freund:
+Betriebssystem
+Festplattennutzung
+Speicher
+Bildschirmaufnahme
+Vocal-Splitter
+Youtube-dl (yt-dlp)-Version
+PiKaraoke-Version
+Erweiterte Steuerungsoptionen
+Vocal-Splitter-Modus:
+Verwenden Sie L-R/L+R
+Verwenden Sie DNN
+Bei Standard-MTV-Audio sind die beiden Stereokanäle (L und R) so codiert, dass: L-R die Instrumentenspur ist, L+R die Gesangsspur ist. Durch einfaches Subtrahieren oder Addieren der beiden Stereokanäle erhalten wir also die Instrumental- und Gesangsspur in Mono-Sound. Der integrierte DNN-basierte (Deep Neural Network) Vocal Splitter von PiKaraoke verwendet einen KI-Algorithmus, um Instrumental- und Vocal-Sound in jeder Stereospur unabhängig voneinander aufzuteilen, was zu Stereo-Instrumental- und Vocal-Tracks führt.
+Splitter stoppen
+Splitter neu starten
+Der Vocal-Splitter (der sowohl DNN-basierte als auch Stereo-Subtraktion unterstützt) läuft als separater Prozess im Hintergrund und generiert instrumentale/vokale Audiodateien für jeden Song.
+Audio und Video neu synchronisieren:
+Streamer stoppen
+Streamer neu starten
+Dies betrifft nur das Spielen von KTV über den Webbrowser. Das Neustarten der Bildschirmaufnahme und des Streamings verbessert die Audio-/Video-Synchronisation und verringert auch die Latenz zwischen Server und Browser.
+Aktualisieren Sie die Songliste:
+Songverzeichnis erneut scannen
+Sie sollten dies nur tun müssen, wenn Sie Dateien manuell in das Download-Verzeichnis kopiert haben, während PiKaraoke ausgeführt wurde.
+Aktualisierung
+Wenn Downloads oder Suchen nicht mehr funktionieren, wird die Aktualisierung von youtube-dl wahrscheinlich das Problem beheben. Die aktuell installierte Version ist:
+Aktualisieren Sie youtube-dl
+Dieser Update-Link oben kann fehlschlagen, wenn Sie nicht über die entsprechenden Dateiberechtigungen verfügen. Überprüfen Sie das PiKaraoke-Protokoll auf Fehler.
+Abschalten
+Ziehen Sie nicht einfach den Stecker! Fahren Sie Ihren Server immer ordnungsgemäß herunter, um Datenbeschädigungen zu vermeiden.
+Beenden Sie PiKaraoke
+System neu starten
+System herunterfahren
+Sonstiges
+Erweitern Sie das Raspberry Pi-Dateisystem
+Wenn Sie gerade das vorgefertigte Pikaraoke-Pi-Image installiert haben und Ihre SD-Karte größer als 4 GB ist, möchten Sie möglicherweise das Dateisystem erweitern, um den verbleibenden Speicherplatz zu nutzen. Sie müssen dies nur einmal tun. Dadurch wird das System neu gestartet.
+Admin-Modus deaktivieren
+Administratormodus aktivieren
+Ausloggen
+Einloggen
+Systeminformationen
+Heim
+Sprache ändern

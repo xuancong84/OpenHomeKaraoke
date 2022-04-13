@@ -1,0 +1,184 @@
+Corsu
+Password amministratore sbagliata!
+Uscitu da u modu amministratore!
+Aggiuntu %s tracce casuali
+Finu di canzoni!
+Sguassatu a fila!
+Errore durante u muvimentu di l'elementu in a fila: argumentu invalidu
+Elementu spustatu cù successu in a fila:
+Errore durante u muvimentu di l'elementu in a fila:
+Spostatu in a fila:
+Errore chì si move in a fila:
+Sposta in fila:
+Errore di muvimentu in a fila:
+Eliminatu da a fila:
+Errore di sguassà da a fila:
+Scaricamentu cuminciatu:
+À a fine, serà aghjuntu à a fila.
+À a fine, apparirà in a lista di "canzoni dispunibili".
+Errore: Ùn pò micca sguassà sta canzone perchè hè in a fila attuale:
+Canzona eliminata:
+Errore: Nisun parametru di canzone specificatu!
+Errore: Ùn pò micca edità sta canzone perchè hè attualmente in riproduzione:
+Canzone File Edit
+Errore di rinominazione di u schedariu: '%s' à '%s'. U nome di file esiste digià.
+File rinominatu: '%s' à '%s'
+Errore: Nisun paràmetru di nome di file hè statu specificatu!
+Inconnu
+Corsa
+Fermatu
+ (Solu CPU)
+ (GPU attivatu)
+Aghjurnà youtube-dl! Duverebbe piglià un minutu o dui ...
+Ùn avete micca permessu per aghjurnà youtube-dl
+Ùn avete micca permessu di chjude
+Abbandunà PiKaraoke avà!
+Ùn avete micca permessu di abbandunà
+Chiudi u sistema avà!
+Ùn avete micca permessu di chjude
+Riavvia u sistema avà!
+Ùn avete micca permessu di reboot
+Espansione di u sistema di filesystem è riavvia u sistema avà!
+Ùn pò micca espansione fs nantu à i dispositi micca raspberry pi!
+Ùn avete micca permessu di ridimensionà u filesystem
+Percorsu Youtube-dl micca trovu!
+Percorsu VLC micca trovu!
+U percorsu omxplayer ùn hè micca truvatu!
+Crià una strada di scaricamentu:
+Wifi / Rete micca cunnessu. Chiude in 10s...
+Per selezziunà e canzoni, scansione QR o cunnetta
+Per a visualizazione di TV, cunnette à
+Appughjà F per cambià a pantalla piena
+Press ESC per abbandunà PiKaraoke
+U modu di installazione di RaspiWifiConfig rilevatu!
+Cunnette un altru dispositivu/smartphone à l'AP Wifi: '%s'
+Dopu puntate u so navigatore à: '%s://%s%s' è seguite e struzzioni.
+In seguitu:
+Aggiuntu da:
+Avà ghjucatu:
+Modu amministratore cuncessu!
+L'aumentu di u ritardu audio vi darà più tempu per leghje e parole prima di cantà a prossima frase.
+A diminuzione di u ritardu di i sottotitoli vi darà più tempu per leghje e parole prima di cantà a prossima frase.
+Un semitone hè ancu cunnisciutu cum'è mezzu passu. Hè u più chjucu intervallu utilizatu in a musica classica occidentale, uguali à un dodicesimu d'ottava o a mità di tonu.
+U splitter vocale basatu in DNN hè attivatu. PiKaraoke usa PyTorch (da Facebook) per eseguisce una rete neurale profonda per sparghje u sonu strumentale è vocale in ogni traccia chì dà origine à un sonu stereo.
+Cuntrolla di u ghjucatore
+Musica
+Tramindui
+Voce
+Cambia chjave
+Nunda hè ghjucatu avà.
+Nisuna canzone hè in fila.
+Questa canzone ùn hè micca aghjunta da voi. Sò sicuru chì vulete riavvia sta pista ?
+Questa canzone ùn hè micca aghjunta da voi. Sò sicuru chì vulete saltà sta pista?
+Cuntrolla di u ghjucatore
+Avà ghjucà
+Next Song
+Cercà à:
+Ritardo audio (sec)
+Délai de sous-titre (sec)
+Riavvia a canzone
+Play / Pausa
+Stop Song Current
+Volume Down
+Set Volume
+Volume Up
+Diminuisce u ritardu di i sottutituli
+Stabilisci u ritardu di i sottutituli
+Aumentà u ritardu di i sottutituli
+Diminuisce u ritardu audio
+Stabbilisce u Delay Audio
+Aumente u ritardu audio
+ semitoni
+Per piacè inserite u vostru nome. Stu vi mustrarà accantu à i canti vi fila da stu dispusitivu.
+Canzona aghjuntu à a fila:
+Canzona digià in fila:
+Ordine per Data
+Ordine per Alfabeticu
+Aghjunghjite "%s" à a fila
+Sfoglia
+Ordinatu per "Data"
+Ordinatu per 'alfabeticu'
+canti
+affissendu <b>{start} - {end}</b> {record_name}, in totale <b>{total}</b> {record_name}
+trovu <b>{found}</b> {record_name}, affissendu <b>{start} - {end}</b> {record_name}
+Edita a canzone
+Sposta in fila
+Scendete in fila
+Sò sicuru chì vulete sguassà da a fila
+Siate sicuru chì vulete sguassà TUTTA a fila ? Type 'OK' per cuntinuà
+Aghjunghjite 3 canzoni casuali
+Pulisce tuttu
+A fila hè viota
+Coda
+Sguassà
+Canzoni dispunibuli in a biblioteca lucale
+Canzona aghjunta à a fila:
+A canzone hè digià in fila:
+Ricerca / Add New
+Ricerca
+Coda
+Includite partite non-karaoke
+Avanzatu
+Scrivite una canzone (titulu / artista) per circà i canti dispunibili è cliccate "Queue" per aghjunghje à a fila.
+Se a canzone ùn hè micca apparsa in u menù dropdown "Canzoni dispunibili", cliccate "Ricerca" per truvà in Youtube.
+Scarica direttamente l'url di YouTube:
+Aghjunghjite à a fila
+Includite sottutituli
+Scaricate
+In cerca di YouTube
+Risultati di ricerca per
+Cliccate nantu à u dropdown per vede più risultati
+Link:
+Canzoni dispunibuli
+Vulete cambià u nome di visualizazione di a persona chì usa stu dispusitivu? Questu apparirà accantu à e canzoni in fila. attuale:
+Utente attuale
+Info
+PiKaraoke
+Sò sicuru chì vulete lascià?
+Sò sicuru chì vulete chjude ?
+Sò sicuru chì vulete riavvià ?
+Sè sicuru chì vulete aghjurnà Youtube-dl avà? I scaricamenti attuali è pendenti ponu falla.
+Sò sicuru chì vulete espansione u sistema di filesystem? Questu riavviarà u vostru raspberry pi.
+infurmazione
+U codice QR URL praticu per sparte cun un amicu:
+OS
+Utilizazione di u discu
+Memoria
+Screen Capture
+Splitter vocale
+Versione Youtube-dl (yt-dlp).
+Versione PiKaraoke
+Opzioni di cuntrollu avanzatu
+Modu di splitter vocale:
+Aduprà L-R/L+R
+Aduprate DNN
+L'audio MTV standard hà i dui canali stereo (L è R) codificati in modu chì: L-R hè a traccia di l'instrumentu, L + R hè a traccia vocale. Cusì, solu sottumettendu o aghjunghjendu i dui canali stereo, pudemu uttene a pista instrumentale è vocale in u sonu mono. U splitter vocale integratu di PiKaraoke basatu in DNN (rete neurale profonda) usa l'algoritmu AI per sparghje u sonu strumentale è vocale in ogni traccia stereo in modu indipindenti, risultando in piste stereo strumentali è vocali.
+Stop Splitter
+Riavvia Splitter
+U splitter vocale (chì supporta a sottrazione basata in DNN è stereo) funziona cum'è un prucessu separatu in u fondu, generendu un schedariu audio instrumentale / vocale per ogni canzone.
+Risincronizza l'audio è u video:
+Stop Streamer
+Riavvia Streamer
+Questu afecta solu à ghjucà KTV via navigatore web. Riavvia a screen-capture-and-streaming mellora a sincronizazione audio / video, diminuisce ancu a latenza trà u servitore è u navigatore.
+Refresh a lista di canzoni:
+Rescannu u repertoriu di canzone
+Duvete bisognu di fà questu solu s'ellu avete copiatu manualmente i schedari à u cartulare di scaricamentu mentre PiKaraoke era in esecuzione.
+Aghjurnamenti
+Se i scaricamenti o e ricerche anu cessatu di travaglià, l'aghjurnamentu di youtube-dl probabilmente risolverà. A versione installata attuale hè:
+Aghjurnate youtube-dl
+Stu ligame di l'aghjurnamentu sopra pò fallu se ùn avete micca permessi di fugliale adattati. Verificate u log PiKaraoke per errori.
+Chjodi
+Ùn tirate micca solu u plug! Sempre chjude u vostru servitore bè per evità a corruzzione di dati.
+Lasciate PiKaraoke
+Reboot System
+Sistema di arrestu
+Altru
+Espandi u sistema di file Raspberry Pi
+Se avete appena installatu l'imaghjini pikaraoke pi pre-custruita è a vostra carta SD hè più grande di 4GB, pudete vulete espansione u sistema di filesystem per utilizà u spaziu restante. Solu bisognu di fà questu una volta. Questu riavviarà u sistema.
+Disattivà u modu amministratore
+Attivà u modu amministratore
+scunnettà si
+accede
+Info di u sistema
+A casa
+Cambia lingua

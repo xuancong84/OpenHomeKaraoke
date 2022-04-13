@@ -1,0 +1,184 @@
+Afrikaans
+Verkeerde admin wagwoord!
+Uit admin-modus afgemeld!
+Het %s ewekansige snitte bygevoeg
+Het nie meer liedjies gehad nie!
+Het die tou skoongemaak!
+Kon nie item binne-in tou skuif nie: ongeldige argument
+Suksesvol geskuif item binne tou:
+Kon nie item binne die tou skuif nie:
+Afgeskuif in tou:
+Fout beweeg af in tou:
+Opgeskuif in tou:
+Kon nie in ry opskuif nie:
+Uit tou uitgevee:
+Kon nie uit tou uitvee nie:
+Aflaai het begin:
+Na voltooiing sal dit by die tou gevoeg word.
+Na voltooiing sal dit in die "beskikbare liedjies"-lys verskyn.
+Fout: Kan nie hierdie liedjie uitvee nie, want dit is in die huidige tou:
+Liedjie uitgevee:
+Fout: Geen liedjieparameter gespesifiseer nie!
+Fout: Kan nie hierdie liedjie wysig nie, want dit word tans gespeel:
+Liedjie lêer wysig
+Kon nie lêer hernoem: '%s' na '%s'. Lêernaam bestaan ​​reeds.
+Hernoem lêer: '%s' na '%s'
+Fout: Geen lêernaamparameters is gespesifiseer nie!
+Onbekend
+Hardloop
+Gestop
+ (Slegs CPU)
+ (GPU geaktiveer)
+Dateer tans youtube-dl op! Behoort 'n minuut of twee te neem...
+Jy het nie toestemming om youtube-dl op te dateer nie
+Jy het nie toestemming om af te sluit nie
+Stop nou met PiKaraoke!
+Jy het nie toestemming om op te hou nie
+Skakel stelsel nou af!
+Jy het nie toestemming om af te sluit nie
+Herlaai stelsel nou!
+Jy het nie toestemming om te herlaai nie
+Brei lêerstelsel uit en herlaai stelsel nou!
+Kan nie fs uitbrei op nie-raspberry pi-toestelle nie!
+Jy het nie toestemming om die grootte van die lêerstelsel te verander nie
+Youtube-dl-pad nie gevind nie!
+VLC-pad nie gevind nie!
+omxplayer-pad nie gevind nie!
+Skep aflaaipad:
+Wifi/netwerk nie gekoppel nie. Sluit oor 10s af...
+Om liedjies te kies, skandeer QR of koppel aan
+Vir TV-vertoning, koppel aan
+Druk F om volskerm te wissel
+Druk ESC om PiKaraoke te verlaat
+RaspiWifiConfig-opstellingsmodus bespeur!
+Koppel 'n ander toestel/slimfoon aan die Wifi AP: '%s'
+Wys dan sy blaaier na: '%s://%s%s' en volg die instruksies.
+Volgende:
+Bygevoeg deur:
+Speel nou:
+Admin-modus toegestaan!
+Verhoogde klankvertraging sal jou meer tyd gee om lirieke te lees voordat jy die volgende sin uitsing.
+Deur ondertitelvertraging te verminder, sal jy meer tyd gee om lirieke te lees voordat jy die volgende sin uitsing.
+'n Halftoon staan ​​ook bekend as 'n halfstap. Dit is die kleinste interval wat in klassieke Westerse musiek gebruik word, gelyk aan 'n twaalfde van 'n oktaaf ​​of 'n halwe toon.
+DNN-gebaseerde vokale splitter is geaktiveer. PiKaraoke gebruik PyTorch (deur Facebook) om 'n diep neurale netwerk te bestuur om instrumentele en vokale klank in elke snit te verdeel wat aanleiding gee tot stereoklank.
+Speler beheer
+Musiek
+Albei
+Stem
+Verander sleutel
+Niks speel tans nie.
+Geen liedjie staan ​​in die tou nie.
+Hierdie liedjie is nie deur jou bygevoeg nie. Is jy seker jy wil hierdie snit herbegin?
+Hierdie liedjie is nie deur jou bygevoeg nie. Is jy seker jy wil hierdie snit oorslaan?
+Speler beheer
+Speel nou
+Volgende Liedjie
+Poog om:
+Oudiovertraging (sek.)
+Onderskrifvertraging (sek.)
+Herbegin liedjie
+Speel / Pouse
+Stop huidige liedjie
+Volume af
+Stel volume
+Volume op
+Verminder ondertitelvertraging
+Stel onderskrifvertraging
+Verhoog ondertitelvertraging
+Verminder oudiovertraging
+Stel oudiovertraging in
+Verhoog oudiovertraging
+ halftone
+Voer asseblief jou naam in. Dit sal verskyn langs die liedjies wat jy van hierdie toestel af in tou staan.
+Liedjie is by die ry gevoeg:
+Lied reeds in die ry:
+Sorteer volgens Datum
+Sorteer volgens Alfabeties
+Voeg '%s' by die tou
+Snuffel
+Gesorteer volgens 'Datum'
+Gesorteer volgens 'Alfabeties'
+liedjies
+vertoon <b>{start} - {end}</b> {record_name}, in totaal <b>{total}</b> {record_name}
+gevind <b>{found}</b> {record_name}, vertoon <b>{start} - {end}</b> {record_name}
+Redigeer liedjie
+Skuif op in die tou
+Beweeg af in die tou
+Is jy seker jy wil uit die tou verwyder
+Is jy seker jy wil die HELE tou uitvee? Tik 'OK' om voort te gaan
+Voeg 3 ewekansige liedjies by
+Vee alles uit
+Die tou is leeg
+Tou
+Vee uit
+Beskikbare liedjies in plaaslike biblioteek
+Liedjie by tou gevoeg:
+Liedjie is reeds in die ry:
+Soek / Voeg nuwe by
+Soek
+Tou
+Sluit nie-karaoke-wedstryde in
+Gevorderd
+Tik 'n liedjie (titel/kunstenaar) om die beskikbare liedjies te soek en klik 'Wou' om dit by die tou te voeg.
+As die liedjie nie in die "Beskikbare liedjies" aftreklys verskyn nie, klik 'Soek' om dit op Youtube te vind.
+Direkte aflaai YouTube url:
+Voeg by tou
+Sluit onderskrifte in
+Aflaai
+Soek YouTube vir
+Soek resultate vir
+Klik aftreklys om meer resultate te wys
+Skakel:
+Beskikbare liedjies
+Wil jy die vertoonnaam verander van die persoon wat hierdie toestel gebruik? Dit sal langs die liedjies in die ry verskyn. Huidige:
+Huidige gebruiker
+Inligting
+PiKaraoke
+Is jy seker jy wil opgee?
+Is jy seker jy wil afskakel?
+Is jy seker jy wil herlaai?
+Is jy seker jy wil Youtube-dl nou opdateer? Huidige en hangende aflaaie kan misluk.
+Is jy seker jy wil die lêerstelsel uitbrei? Dit sal jou raspberry pi herlaai.
+Inligting
+Handige URL QR-kode om met 'n maat te deel:
+OS
+Skyfgebruik
+Geheue
+Sketmskoot
+Vokale Splitter
+Youtube-dl (yt-dlp) weergawe
+PiKaraoke weergawe
+Gevorderde beheeropsies
+Vokale splitter-modus:
+Gebruik L-R/L+R
+Gebruik DNN
+Standaard MTV-klank het die twee stereokanale (L en R) so geënkodeer dat: L-R die instrumentsnit is, L+R die vokale snit is. Dus, deur eenvoudig die twee stereokanale af te trek of by te voeg, kan ons die instrumentale en vokale snit in monoklank kry. PiKaraoke se ingeboude DNN-gebaseerde (diep neurale netwerk) vokale splitter gebruik AI-algoritme om instrumentele en vokale klank in elke stereosnit onafhanklik te verdeel, wat lei tot stereo-instrumentele en vokale snitte.
+Stop Splitter
+Herbegin Splitter
+Die vokale splitter (wat beide DNN-gebaseerde en stereo-aftrekking ondersteun) loop as 'n aparte proses in die agtergrond, wat instrumentale/vokale oudiolêer vir elke liedjie genereer.
+Hersinchroniseer oudio en video:
+Stop Streamer
+Herbegin Streamer
+Dit beïnvloed slegs die speel van KTV via webblaaier. Die herbegin van die skermvasvang-en-stroom verbeter oudio/video-sinchronisasie, dit verminder ook die vertraging tussen die bediener en blaaier.
+Herlaai die liedjielys:
+Skandeer die liedgids weer
+Jy hoef dit net te doen as jy lêers met die hand na die aflaaigids gekopieer het terwyl PiKaraoke aan die gang was.
+Opdaterings
+As aflaaie of soektogte ophou werk het, sal die opdatering van youtube-dl dit waarskynlik regmaak. Die huidige geïnstalleerde weergawe is:
+Dateer youtube-dl op
+Hierdie opdateringskakel hierbo kan misluk as jy nie behoorlike lêertoestemmings het nie. Gaan die PiKaraoke-logboek na vir foute.
+Afskakeling
+Moenie net die prop uittrek nie! Sluit altyd jou bediener behoorlik af om data korrupsie te vermy.
+Verlaat PiKaraoke
+Herlaai stelsel
+Afskakelstelsel
+Ander
+Brei Raspberry Pi-lêerstelsel uit
+As jy sopas die voorafgeboude pikaraoke pi-beeld geïnstalleer het en jou SD-kaart is groter as 4GB, wil jy dalk die lêerstelsel uitbrei om die oorblywende spasie te benut. Jy hoef dit net een keer te doen. Dit sal die stelsel herlaai.
+Deaktiveer adminmodus
+Aktiveer adminmodus
+teken uit
+teken aan
+Stelsel inligting
+Tuis
+Verander taal

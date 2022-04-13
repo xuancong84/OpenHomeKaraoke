@@ -1,0 +1,184 @@
+galego
+Contrasinal de administrador incorrecto!
+Pechaches sesión do modo de administrador!
+Engadíronse %s pistas aleatorias
+Quedaron sen cancións!
+Despexouse a cola!
+Erro ao mover o elemento dentro da cola: argumento non válido
+O elemento moveuse correctamente dentro da cola:
+Erro ao mover o elemento dentro da cola:
+Movido abaixo na cola:
+Erro ao baixar na cola:
+Subiu na cola:
+Erro ao subir na cola:
+Eliminado da cola:
+Erro ao eliminar da cola:
+Descarga iniciada:
+Ao rematar, engadirase á cola.
+Ao rematar, aparecerá na lista de "cancións dispoñibles".
+Erro: non se pode eliminar esta canción porque está na cola actual:
+Canción eliminada:
+Erro: non se especificou ningún parámetro de canción.
+Erro: non se pode editar esta canción porque está a reproducirse actualmente:
+Editar ficheiro de canción
+Erro ao cambiar o nome do ficheiro: '%s' a '%s'. O nome de ficheiro xa existe.
+Ficheiro renomeado: '%s' a '%s'
+Erro: Non se especificou ningún parámetro de nome de ficheiro!
+Descoñecido
+Correndo
+Detido
+ (só CPU)
+ (GPU activada)
+Actualizando youtube-dl! Debería levar un ou dous minutos...
+Non tes permiso para actualizar youtube-dl
+Non tes permiso para apagar
+Saindo de PiKaraoke agora!
+Non tes permiso para saír
+Apagando o sistema agora!
+Non tes permiso para apagar
+Reiniciando o sistema agora!
+Non tes permiso para reiniciar
+Ampliando o sistema de ficheiros e reiniciando o sistema agora!
+Non se pode expandir fs en dispositivos que non sexan Raspberry Pi.
+Non tes permiso para cambiar o tamaño do sistema de ficheiros
+Non se atopou o camiño de Youtube-dl!
+Non se atopou o camiño VLC!
+O camiño de omxplayer non se atopou!
+Creando ruta de descarga:
+Wifi/rede non conectada. Pechando en 10 segundos...
+Para seleccionar cancións, escanea QR ou conéctate a
+Para a pantalla de TV, conéctese a
+Preme F para cambiar a pantalla completa
+Preme ESC para saír de PiKaraoke
+Modo de configuración RaspiWifiConfig detectado!
+Conecta outro dispositivo/teléfono intelixente ao AP Wifi: '%s'
+A continuación, apunte o seu navegador a: '%s://%s%s' e siga as instrucións.
+A continuación:
+Engadido por:
+Agora xogando:
+Modo administrador concedido!
+Aumentar o atraso do audio darache máis tempo para ler as letras antes de cantar a seguinte frase.
+Ao diminuír o atraso dos subtítulos, darache máis tempo para ler as letras antes de cantar a seguinte frase.
+Un semitono tamén se coñece como medio paso. É o intervalo máis pequeno empregado na música clásica occidental, igual a un duodécimo de oitava ou medio ton.
+O divisor de voz baseado en DNN está activado. PiKaraoke usa PyTorch (de Facebook) para executar unha rede neuronal profunda para dividir o son instrumental e vocal en cada pista dando lugar a un son estéreo.
+Control do xogador
+Música
+Ambos
+Voz
+Cambiar clave
+Non se xoga nada neste momento.
+Non hai ningunha canción en cola.
+Esta canción non a engadiches ti. Estás seguro de que queres reiniciar esta pista?
+Esta canción non a engadiches ti. Estás seguro de que queres omitir esta pista?
+Control do xogador
+Agora xogando
+Próxima canción
+Busca:
+Retraso de audio (s)
+Retraso de subtítulos (s)
+Reinicia a canción
+Reproducir/Pausa
+Detén a canción actual
+Baixar o volume
+Establecer volume
+Subir volume
+Diminuír o atraso dos subtítulos
+Establecer o atraso dos subtítulos
+Aumenta o atraso dos subtítulos
+Diminuír o retardo de audio
+Establecer o retardo de audio
+Aumenta o retardo de audio
+ semitonos
+Introduce o teu nome. Isto aparecerá xunto ás cancións que poñas na cola deste dispositivo.
+Canción engadida á cola:
+A canción xa está na cola:
+Ordenar por data
+Ordenar por Alfabético
+Engade '%s' á cola
+Explorar
+Ordenado por "Data"
+Ordenado por "Alfabético"
+cancións
+mostrando <b>{start} - {end}</b> {record_name}, en total <b>{total}</b> {record_name}
+atopou <b>{found}</b> {record_name}, mostrando <b>{start} - {end}</b> {record_name}
+Editar canción
+Sube na cola
+Mover cara abaixo na cola
+Seguro que queres eliminar da cola
+Estás seguro de que queres borrar TODA a cola? Escribe "Aceptar" para continuar
+Engade 3 cancións aleatorias
+Borrar todo
+A cola está baleira
+Fila
+Eliminar
+Cancións dispoñibles na biblioteca local
+Canción engadida á cola:
+A canción xa está na cola:
+Buscar / Engadir novo
+Busca
+Fila
+Inclúe partidas que non sexan de karaoke
+Avanzado
+Escribe unha canción (título/artista) para buscar as cancións dispoñibles e fai clic en 'Cola' para engadila á cola.
+Se a canción non aparece no menú despregable "Cancións dispoñibles", fai clic en "Buscar" para atopala en Youtube.
+URL de descarga directa de YouTube:
+Engadir á cola
+Incluír subtítulos
+Descargar
+Buscando en YouTube
+Resultados da busca para
+Fai clic no menú despregable para mostrar máis resultados
+Ligazón:
+Cancións dispoñibles
+Queres cambiar o nome para mostrar da persoa que usa este dispositivo? Isto aparecerá xunto ás cancións da cola. Actual:
+Usuario actual
+Información
+PiKaraoke
+Estás seguro de que queres saír?
+Estás seguro de que queres pechar?
+Estás seguro de que queres reiniciar?
+Estás seguro de que queres actualizar Youtube-dl agora mesmo? As descargas actuais e pendentes poden fallar.
+Estás seguro de que queres ampliar o sistema de ficheiros? Isto reiniciará o teu raspberry pi.
+Información
+Práctico código QR de URL para compartir cun amigo:
+OS
+Uso do disco
+Memoria
+Captura de pantalla
+Divisor vocal
+Versión Youtube-dl (yt-dlp).
+Versión de PiKaraoke
+Opcións de control avanzadas
+Modo divisor vocal:
+Use L-R/L+R
+Usa DNN
+O audio estándar de MTV ten as dúas canles estéreo (L e R) codificadas de tal xeito que: L-R é a pista do instrumento, L+R é a pista vocal. Así, simplemente restando ou sumando as dúas canles estéreo, podemos obter a pista instrumental e vocal en son mono. O divisor vocal integrado de PiKaraoke baseado en DNN (rede neuronal profunda) usa o algoritmo de intelixencia artificial para dividir o son instrumental e vocal en cada pista estéreo de forma independente, dando como resultado pistas instrumentais e vocais estéreo.
+Detén Splitter
+Reinicie Splitter
+O divisor vocal (que admite a subtracción baseada en DNN e estéreo) execútase como un proceso separado en segundo plano, xerando ficheiros de audio instrumental/vocal para cada canción.
+Volve sincronizar audio e vídeo:
+Detén Streamer
+Reinicie Streamer
+Isto só afecta a reprodución de KTV a través do navegador web. Reiniciar a captura de pantalla e a transmisión mellora a sincronización de audio/vídeo e tamén diminúe a latencia entre o servidor e o navegador.
+Actualiza a lista de cancións:
+Volver a buscar o directorio de cancións
+Só deberías facelo se copiaches ficheiros manualmente no directorio de descargas mentres PiKaraoke estaba en execución.
+Actualizacións
+Se as descargas ou as buscas deixaron de funcionar, a actualización de youtube-dl probablemente o solucione. A versión instalada actual é:
+Actualizar youtube-dl
+Esta ligazón de actualización anterior pode fallar se non tes os permisos de ficheiro adecuados. Comprobe o rexistro de PiKaraoke para detectar erros.
+Apagado
+Non só tires do enchufe! Apague sempre o servidor correctamente para evitar a corrupción dos datos.
+Saír de PiKaraoke
+Reinicie o sistema
+Sistema de apagado
+Outra
+Expanda o sistema de ficheiros Raspberry Pi
+Se acabas de instalar a imaxe de pikaraoke pi preconstruída e a túa tarxeta SD ten máis de 4 GB, quizais queiras ampliar o sistema de ficheiros para utilizar o espazo restante. Só tes que facelo unha vez. Isto reiniciará o sistema.
+Desactiva o modo administrador
+Activa o modo administrador
+pechar sesión
+acceder
+Información do sistema
+Casa
+Cambiar Idioma

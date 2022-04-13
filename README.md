@@ -373,3 +373,9 @@ If you only hear audio, you may be running the `--use-omxplayer` option. Omxplay
 ### I'm on a laptop, how do I output just pikaraoke to an external monitor/screen?
 
 You might be able to just drag the windows to the target screen (press 'f' to toggle fullscreen). But in my experience there can be issues figuring out which monitor to use once videos start playing. For now you'd probably have the most consistent experience using single-screen mirrored mode.
+
+## For developers
+### How to refresh Google translation?
+Pip install py-googletrans: `pip install googletrans==3.1.0a0`
+
+You must manually edit lang/en_US and lang/zh_CN, and let the system generate Google translation for the rest.

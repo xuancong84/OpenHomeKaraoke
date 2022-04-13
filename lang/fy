@@ -1,0 +1,184 @@
+Frysk
+Unjildich admin wachtwurd!
+Utlogd út admin modus!
+%s willekeurige spoaren tafoege
+Rûn út ferskes!
+Ferwiderje de wachtrige!
+Flater by it ferpleatsen fan item yn wachtrige: ûnjildich argumint
+Suksesfol ferpleatst item yn wachtrige:
+Flater by it ferpleatsen fan item binnen wachtrige:
+Nei ûnderen yn wachtrige:
+Flater ferpleatse nei ûnderen yn wachtrige:
+Ferpleatst yn wachtrige:
+Flater ferpleatse yn wachtrige:
+Wiske út wachtrige:
+Flater by it wiskjen út wachtrige:
+Download begon:
+Nei it foltôgjen sil it tafoege wurde oan wachtrige.
+Nei it foltôgjen sil it ferskine yn 'e list "beskikbere ferskes".
+Flater: kin dit ferske net wiskje omdat it yn de aktuele wachtrige stiet:
+Lied wiske:
+Flater: Gjin ferskeparameter oantsjutte!
+Flater: kin dit ferske net bewurkje omdat it op it stuit spile wurdt:
+Song Triem bewurkje
+Flater by it omneamen fan triem: '%s' nei '%s'. Bestânsnamme bestiet al.
+Bestân feroare: '%s' nei '%s'
+Flater: gjin triemnammeparameters binne opjûn!
+Ûnbekend
+Te rinnen
+Ophâlden
+ (allinich CPU)
+ (GPU ynskeakele)
+YouTube-dl bywurkje! Moat in minút as twa duorje ...
+Jo hawwe gjin tastimming om youtube-dl te aktualisearjen
+Jo hawwe gjin tastimming om ôf te sluten
+Stopje mei PiKaraoke no!
+Jo hawwe gjin tastimming om te stopjen
+Systeem no ôfslute!
+Jo hawwe gjin tastimming om ôf te sluten
+Systeem no opnij opstarte!
+Jo hawwe gjin tastimming foar Reboot
+Bestânssysteem útwreidzje en systeem no opnij opstarte!
+Kin fs net útwreidzje op net-raspberry pi-apparaten!
+Jo hawwe gjin tastimming om de grutte fan it triemsysteem te feroarjen
+Youtube-dl-paad net fûn!
+VLC paad net fûn!
+omxplayer paad net fûn!
+Ynlaadpaad oanmeitsje:
+Wifi / Netwurk net ferbûn. Yn 10 sekonden ôfslute ...
+Foar it selektearjen fan ferskes, scan QR of ferbine mei
+Foar TV werjefte, ferbine mei
+Druk op F om folslein skerm te wikseljen
+Druk op ESC om PiKaraoke te stopjen
+RaspiWifiConfig opsetmodus ûntdutsen!
+Ferbine in oar apparaat/smartphone mei it Wifi AP: '%s'
+Rjochtsje dan syn browser nei: '%s://%s%s' en folgje de ynstruksjes.
+Folgjende:
+Taheakke troch:
+Spilet no:
+Behearmodus ferliend!
+Tanimmende audiofertraging sil jo mear tiid jaan om teksten te lêzen foardat jo de folgjende sin sjonge.
+Ferminderjen fan ûndertitelfertraging sil jo mear tiid jaan om teksten te lêzen foardat jo de folgjende sin sjonge.
+In heale toan wurdt ek wol in heale stap neamd. It is it lytste ynterval dat brûkt wurdt yn klassike westerske muzyk, gelyk oan in tolfde fan in oktaaf ​​of heale toan.
+DNN-basearre fokale splitter is ynskeakele. PiKaraoke brûkt PyTorch (troch Facebook) om in djip neuraal netwurk út te fieren om ynstrumintaal en fokaal lûd yn elk spoar te splitsen dat oanlieding is ta stereolûd.
+Spiler kontrôle
+Muzyk
+Beide
+Lûd
+Feroarje Key
+Der spilet no neat.
+Gjin ferske stiet yn de wachtrige.
+Dit liet is net troch jo tafoege. Binne jo wis dat jo dit spoar opnij starte wolle?
+Dit liet is net troch jo tafoege. Binne jo wis dat jo dit spoar oerslaan wolle?
+Spiler kontrôle
+Spilet no
+Folgjende Lied
+Sykje nei:
+Audio fertraging (sek)
+Undertitelfertraging (sek)
+Lied opnij starte
+Play / Pause
+Stopje aktuele ferske
+Volume del
+Set Volume
+Folume omheech
+Ferminderje ûndertitelfertraging
+Stel ûndertitelfertraging yn
+Fergrutsje ûndertitelfertraging
+Audio fertraging ferminderje
+Audio Delay ynstelle
+Ferheegje Audio Delay
+ heale toanen
+Fier jo namme yn. Dit sil ferskine neist de ferskes dy't jo fan dit apparaat yn 'e wachtrige stean.
+Lied tafoege oan de wachtrige:
+Song al de wachtrige:
+Sortearje op datum
+Sortearje op alfabetysk
+Foegje '%s' ta oan de wachtrige
+Blêdzje
+Sortearre op 'Datum'
+Sortearre op 'Alfabetisch'
+ferskes
+werjaan fan <b>{start} - {end}</b> {record_name}, yn totaal <b>{total}</b> {record_name}
+fûn <b>{found}</b> {record_name}, toant <b>{start} - {end}</b> {record_name}
+Lied bewurkje
+Gean omheech yn wachtrige
+Ferpleats nei ûnderen yn wachtrige
+Binne jo wis dat jo wolle wiskje út de wachtrige
+Binne jo wis dat jo de HELE wachtrige wiskje wolle? Typ 'OK' om troch te gean
+Foegje 3 willekeurige ferskes ta
+Alles wiskje
+De wachtrige is leech
+Rigel
+Wiskje
+Beskikbere ferskes yn lokale bibleteek
+Lied tafoege oan wachtrige:
+It liet stiet al yn de wachtrige:
+Sykje / Nij taheakje
+Sykje
+Rigel
+Net-karaoke wedstriden opnimme
+Avansearre
+Typ in ferske (titel/artyst) om de beskikbere ferskes te sykjen en klik op 'Wachtrige' om it ta te foegjen oan de wachtrige.
+As it ferske net ferskynt yn it útklapmenu "Beskikbere ferskes", klik dan op 'Sykje' om it op Youtube te finen.
+Direkte download YouTube url:
+Tafoegje oan wachtrige
+Ynklusyf ûndertitels
+Download
+Sykje op YouTube foar
+sykresultaten foar
+Klikje op dropdown om mear resultaten te sjen
+Link:
+Beskikbere Songs
+Wolle jo de werjeftenamme feroarje fan de persoan dy't dit apparaat brûkt? Dit sil ferskine neist de wachtrige ferskes. Aktueel:
+Aktuele brûker
+Info
+PiKaraoke
+Bisto wis dasto stoppe wolst?
+Binne jo wis dat jo ôfslute wolle?
+Binne jo wis dat jo opnij opstarte wolle?
+Binne jo wis dat jo Youtube-dl no direkt bywurkje wolle? Aktuele en wachtsjende downloads kinne mislearje.
+Binne jo wis dat jo it triemsysteem útwreidzje wolle? Dit sil jo raspberry pi opnij starte.
+Ynformaasje
+Handige URL QR-koade om te dielen mei in freon:
+OS
+Skiifgebrûk
+Oantinken
+Screen Capture
+Vocal Splitter
+Youtube-dl (yt-dlp) ferzje
+PiKaraoke ferzje
+Avansearre kontrôleopsjes
+Vocal splitter modus:
+Brûk L-R/L+R
+Brûk DNN
+Standert MTV audio hat de twa stereokanalen (L en R) kodearre op sa'n manier dat: L-R it ynstrumintspoar is, L+R it fokale spoar is. Sa kinne wy ​​​​troch de twa stereokanalen gewoan ôf te trekken of ta te foegjen, kinne wy ​​​​it ynstrumintale en fokale spoar krije yn monolûd. PiKaraoke's ynboude DNN-basearre (djippe neurale netwurk) fokale splitter brûkt AI-algoritme om ynstrumintaal en fokaal lûd yn elk stereospoar ûnôfhinklik te splitsen, wat resulteart yn stereo-ynstrumintale en fokale spoaren.
+Stopje Splitter
+Splitter opnij starte
+De fokale splitter (dy't sawol DNN-basearre as stereo-subtraksje stipet) rint as in apart proses op 'e eftergrûn, en generearret ynstrumintale / fokaal audiobestân foar elk ferske.
+Syngronisearje audio en fideo opnij:
+Stopje Streamer
+Streamer opnij starte
+Dit hat allinich ynfloed op it spieljen fan KTV fia webbrowser. It op 'e nij begjinne fan' e skermopname-en-streaming ferbetteret audio / fideo syngronisaasje, it fermindert ek de latency tusken de tsjinner en de browser.
+Ferfarskje de ferskelist:
+Fersykje ferskemap opnij
+Jo moatte dit allinich dwaan as jo bestannen manuell kopieare nei de downloadmap wylst PiKaraoke draaide.
+Updates
+As downloads of sykopdrachten ophâlde te wurkjen, sil it bywurkjen fan youtube-dl it wierskynlik reparearje. De hjoeddeistige ynstalleare ferzje is:
+Update youtube-dl
+Dizze fernijingskeppeling hjirboppe kin mislearje as jo gjin goede triemrjochten hawwe. Kontrolearje it PiKaraoke-logboek foar flaters.
+Ofslúte
+Net gewoan de stekker útlûke! Slút jo tsjinner altyd goed ôf om datakorrupsje te foarkommen.
+PiKaraoke ôfslute
+Werstart it systeem
+Shutdown System
+Oar
+Raspberry Pi triemsysteem útwreidzje
+As jo ​​​​krekt de foarboude pikaraoke pi-ôfbylding hawwe ynstalleare en jo SD-kaart is grutter dan 4GB, kinne jo it bestânsysteem útwreidzje om de oerbleaune romte te brûken. Jo moatte dit mar ien kear dwaan. Dit sil it systeem opnij starte.
+Utskeakelje admin modus
+Behearmodus ynskeakelje
+útlogge
+ynlogge
+Systeem ynformaasje
+Thús
+Feroarje Taal

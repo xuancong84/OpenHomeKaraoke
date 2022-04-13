@@ -1,0 +1,184 @@
+ʻŌlelo Hawaiʻi
+Ua hewa ka ʻōlelo huna admin!
+Ua haʻalele i ke ʻano admin!
+Hoʻohui ʻia %s mau mele ʻākeʻakeʻa
+Pau nā mele!
+Hoʻomaʻemaʻe i ka pila!
+Ua hewa ka hoʻoneʻe ʻana i ka mea i loko o ka pila: ʻaʻohe manaʻo
+Ua hoʻoneʻe ʻia ka mea i loko o ka pila:
+Ua hewa ka hoʻoneʻe ʻana i ka mea i loko o ka pila:
+Neʻe ʻia i lalo i ka pila:
+Ua hewa ka neʻe ʻana i lalo i ka pila:
+Ua hoʻoneʻe ʻia ma ka pila:
+Kuʻia ka neʻe ʻana ma ka pila:
+Holoi ʻia mai ka pila:
+Ua hewa ke holoi ʻana mai ka pila:
+Hoʻomaka ka hoʻoiho:
+Ke hoʻopau ʻia, e hoʻohui ʻia i ka pila.
+I ka pau ʻana, e ʻike ʻia ma ka papa inoa "nā mele i loaʻa".
+Hapa: ʻAʻole hiki ke holoi i kēia mele no ka mea aia ia i ka pila o kēia manawa:
+Ua holoi ʻia ke mele:
+Hapa: ʻAʻohe koho mele i kuhikuhi ʻia!
+Hapa: ʻAʻole hiki ke hoʻoponopono i kēia mele no ka mea ke hoʻokani ʻia nei:
+Hoʻoponopono Waihona Mele
+Ua hewa ke kapa hou ʻana i ka faila: '%s' i '%s'. Aia ka inoa faila.
+Kapa hou i ka waihona: '%s' i '%s'
+Hapa: ʻAʻole i kuhikuhi ʻia nā ʻāpana inoa faila!
+ʻAʻole ʻike ʻia
+Ke holo nei
+Ua kū
+ (CPU wale nō)
+ (Hāʻia ka GPU)
+Ke hōʻano hou nei iā youtube-dl! Pono e lawe i hoʻokahi minute a ʻelua paha ...
+ʻAʻohe ou ʻae e hoʻohou iā youtube-dl
+ʻAʻohe ou ʻae e pani
+Haʻalele iā PiKaraoke i kēia manawa!
+ʻAʻohe ou ʻae e haʻalele
+Ke pani nei i ka ʻōnaehana i kēia manawa!
+ʻAʻohe ou ʻae e pani
+Hoʻomaka hou i ka ʻōnaehana i kēia manawa!
+ʻAʻohe ou ʻae e hoʻomaka hou
+Ke hoʻonui nei i ka ʻōnaehana faila a me ka hoʻomaka hou ʻana i kēia manawa!
+ʻAʻole hiki ke hoʻonui i nā fs ma nā mea ʻaʻole raspberry pi!
+ʻAʻohe ou ʻae e hoʻololi i ka ʻōnaehana waihona
+ʻAʻole i loaʻa ke ala Youtube-dl!
+ʻAʻole ʻike ʻia ke ala VLC!
+ʻAʻole i loaʻa ke ala omxplayer!
+Ke hana nei i ke ala hoʻoiho:
+ʻAʻole pili ʻo Wifi/Network. Ke pani nei i ka 10s...
+No ke koho ʻana i nā mele, scan QR a i ʻole hoʻopili iā
+No ka hōʻike TV, hoʻohui i
+E kaomi i ka F e hoʻololi i ka pale piha
+E kaomi iā ESC e haʻalele iā PiKaraoke
+Ua ʻike ʻia ke ʻano hoʻonohonoho RaspiWifiConfig!
+Hoʻohui i kekahi mea ʻē aʻe/smartphone i ka Wifi AP: '%s'
+A laila e kuhikuhi i kāna polokalamu kele pūnaewele i: '%s://%s%s' a hahai i nā kuhikuhi.
+Ma luna aʻe:
+Hoʻohui ʻia e:
+Ke pāʻani nei:
+Hāʻawi ʻia ke ʻano hoʻokele!
+ʻO ka hoʻonui ʻana i ka lohi leo e hāʻawi i ka manawa hou e heluhelu ai i nā mele ma mua o ka hīmeni ʻana i ka ʻōlelo aʻe.
+ʻO ka hoʻemi ʻana i ka lohi subtitle e hāʻawi iā ʻoe i ka manawa hou e heluhelu ai i nā mele ma mua o ka hīmeni ʻana i ka ʻōlelo aʻe.
+Ua ʻike ʻia ka semitone ma ke ʻano he hapalua. ʻO ia ka manawa liʻiliʻi loa i hoʻohana ʻia i nā mele Western Western, e like me ka ʻumikūmālua o ka octave a i ʻole ka hapalua leo.
+Hoʻohana ʻia ka hoʻokaʻawale leo ma DNN. Hoʻohana ʻo PiKaraoke iā PyTorch (na Facebook) e holo i kahi pūnaewele neural hohonu e hoʻokaʻawale i nā mea kani a me nā leo leo i kēlā me kēia mele e hoʻāla ai i ke kani stereo.
+Hoʻomalu Mea pāʻani
+Mele
+ʻelua
+Leo
+Hoʻololi kī
+ʻAʻohe mea e pāʻani nei i kēia manawa.
+ʻAʻohe mele i laina.
+ʻAʻole ʻoe i hoʻohui ʻia kēia mele. Makemake ʻoe e hoʻomaka hou i kēia mele?
+ʻAʻole ʻoe i hoʻohui ʻia kēia mele. Makemake ʻoe e hoʻolei i kēia mele?
+Hoʻomalu Mea pāʻani
+Ke pāʻani nei
+Mele Aʻe
+E ʻimi iā:
+Hoʻopaneʻe leo (sec)
+Hoʻopaneʻe Subtitle (sec)
+Hoʻomaka hou i ke mele
+Pāʻani/Hoʻomaha
+Kāohi i ke mele o kēia manawa
+Hoʻohaʻahaʻa ka Volume
+Hoʻonohonoho i ka Volume
+Piʻi ka Volume
+E ho'ēmi i ka hoʻopaneʻe inoa
+E hoʻopaʻa i ka hoʻopaneʻe inoa
+E hoʻonui i ka hoʻopaneʻe inoa
+E hoemi i ka lohi leo
+E hoʻopaʻa i ka lohi leo
+Hoʻonui i ka lohi leo
+ semitones
+E ʻoluʻolu e hoʻokomo i kou inoa. E hōʻike ʻia kēia ma ka ʻaoʻao o nā mele āu e pila ai mai kēia hāmeʻa.
+Hoʻohui ʻia ke mele i ka pila:
+Mele i ka lālani:
+Hoʻokaʻawale ma ka lā
+Hoʻokaʻawale ma ka Alphabetical
+Hoʻohui '%s' i ka pila
+Huli
+Hoʻopili ʻia e ka 'La'
+Hoʻopili ʻia e ka 'Alphabetical'
+mele
+e hōʻike ana i <b>{start} - {end}</b> {record_name}, i ka huina <b>{total}</b> {record_name}
+loaʻa <b>{loaʻa}</b> {record_name}, hōʻike <b>{start} - {end}</b> {record_name}
+Hoʻoponopono mele
+E neʻe i luna ma ka pila
+E neʻe i lalo i ka pila
+Makemake ʻoe e holoi mai ka pila
+Makemake ʻoe e holoi i ka pila ENTIRE? E kikokiko 'OK' e hoʻomau
+E hoʻohui i 3 mau mele maʻamau
+Holoi i nā mea a pau
+Ua hakahaka ka laina
+Ka lālani
+Holoi
+Loaʻa nā mele ma ka hale waihona puke
+Hoʻohui ʻia ke mele i ka pila:
+Aia ke mele i ka lālani:
+Huli / Hoʻohui hou
+Huli
+Ka lālani
+Hoʻohui i nā pāʻani karaoke ʻole
+Kiʻekiʻe
+Kākau i kahi mele (poʻo/mea pena) e ʻimi i nā mele i loaʻa a kaomi iā 'Queue' no ka hoʻohui ʻana i ka pila.
+Inā ʻaʻole ʻike ʻia ke mele ma ka "Available Songs" dropdown, kaomi iā 'Search' e loaʻa iā ia ma Youtube.
+Hoʻoiho pololei i ka URL YouTube:
+Hoʻohui i ka pila
+E hoʻokomo i nā huaʻōlelo
+Hoʻoiho
+Huli YouTube no
+Huli nā hualoaʻa no
+Kaomi i ka hāʻule iho e hōʻike i nā hopena hou aʻe
+loulou:
+Loaʻa nā Mele
+Makemake ʻoe e hoʻololi i ka inoa hōʻike o ka mea hoʻohana i kēia hāmeʻa? E hōʻike ʻia kēia ma hope o nā mele i hoʻonohonoho ʻia. I kēia manawa:
+Mea hoʻohana i kēia manawa
+ʻIke
+PiKaraoke
+Makemake ʻoe e haʻalele?
+Makemake ʻoe e pani?
+Makemake ʻoe e hoʻomaka hou?
+Makemake ʻoe e hoʻohou iā Youtube-dl i kēia manawa? Hiki ʻole ke hoʻoiho ʻia i kēia manawa a me nā mea e kali nei.
+Makemake ʻoe e hoʻonui i ka ʻōnaehana waihona? E hoʻomaka hou kēia i kāu raspberry pi.
+ʻIkepili
+He helu QR URL maʻalahi e kaʻana like me kahi hoaaloha:
+OS
+Hoʻohana Disk
+Hoʻomanaʻo
+Paʻi Paʻi
+Hoʻokaʻawale leo
+Youtube-dl (yt-dlp) mana
+Manao PiKaraoke
+Nā Koho Mana Kiʻekiʻe
+ʻAno hoʻokaʻawale leo:
+E hoʻohana iā L-R/L+R
+E hoʻohana i ka DNN
+Loaʻa i ka leo MTV maʻamau nā kaha kani stereo ʻelua (L a me R) i hoʻopaʻa ʻia ma ke ʻano: ʻo L-R ke mele mea kani, ʻo L+R ke mele leo. No laila, ma ka unuhi wale ʻana a i ʻole ka hoʻohui ʻana i nā kaila stereo ʻelua, hiki iā mākou ke kiʻi i ke ala kani a me ka leo i ke kani mono. Hoʻohana ʻo PiKaraoke i ka DNN-based (deep neural network) vocal splitter hoʻohana iā AI algorithm e hoʻokaʻawale i nā mea kani a me nā leo leo i kēlā me kēia mele stereo me ke kūʻokoʻa e hopena i nā mea kani a me nā mele leo.
+Hoʻopau iā Splitter
+Hoʻomaka hou i ka Splitter
+Hoʻokaʻawale ʻia ka mea hoʻokaʻawale leo (e kākoʻo ana i ka DNN-based a me ka stereo subtraction) ma ke ʻano he kaʻina kaʻawale ma ke kua, e hana ana i nā faila leo kani no kēlā me kēia mele.
+Hoʻonohonoho hou i ka leo a me ka wikiō:
+Kāohi Streamer
+Hoʻomaka hou i ka Streamer
+Pili wale kēia i ka pāʻani KTV ma o ka polokalamu kele pūnaewele. ʻO ka hoʻomaka hou ʻana i ka pale-hopu-a-streaming e hoʻomaikaʻi i ka synchronization leo/wikiō, e hoʻemi ana hoʻi i ka latency ma waena o ke kikowaena a me ka polokalamu kele pūnaewele.
+Hōʻano hou i ka papa inoa mele:
+E nānā hou i ka papa kuhikuhi mele
+Pono ʻoe e hana i kēia inā ʻoe e kope lima i nā faila i ka papa kuhikuhi hoʻoiho i ka wā e holo ana ʻo PiKaraoke.
+Nā mea hou
+Inā pau ka hana ʻana a i ʻole ka huli ʻana, e hoʻoponopono paha ka hoʻonui ʻana iā youtube-dl. ʻO ka mana i hoʻokomo ʻia i kēia manawa:
+Hōʻano hou iā youtube-dl
+Hiki i kēia loulou hōʻano hou ma luna ke hāʻule inā ʻaʻohe ʻae faila kūpono. E nānā i ka log PiKaraoke no nā hewa.
+E hoʻopio
+Mai huki wale i ke kaula! E pani mau i kāu kikowaena pono e pale i ka palaho ʻikepili.
+Haʻalele iā PiKaraoke
+Pūnaehana hou
+Pūnaehana pani
+'ē aʻe
+E hoʻonui i ka ʻōnaehana file Raspberry Pi
+Inā ʻoe i hoʻokomo i ke kiʻi pikaraoke pi i kūkulu mua ʻia a ʻoi aku ka nui o kāu kāleka SD ma mua o 4GB, makemake paha ʻoe e hoʻonui i ka ʻōnaehana waihona e hoʻohana i ke koena wahi. Pono ʻoe e hana i kēia. E hoʻomaka hou kēia i ka ʻōnaehana.
+Hoʻopau i ke ʻano hoʻokele
+E hoʻā i ke ʻano hoʻokele
+lele
+komo i loko
+ʻIke Pūnaewele
+Home
+Hoʻololi ʻŌlelo
