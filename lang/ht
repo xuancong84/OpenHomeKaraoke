@@ -156,7 +156,7 @@ Odyo MTV estanda gen de chanèl stereo yo (L ak R) kode nan yon fason ke: L-R se
 One Stop Splitter
 Rekòmanse Splitter
 Splitter vokal la (ki sipòte tou de DNN ki baze sou ak stereo soustraksyon) kouri kòm yon pwosesis separe nan background nan, jenere dosye enstrimantal / vwa odyo pou chak chante.
-Re-synchronize odyo ak videyo:
+Re-senkronize odyo ak videyo:
 One Stop Streamer
 Rekòmanse Streamer
 Sa sèlman afekte jwe KTV atravè navigatè entènèt. Rekòmanse ekran-kaptire-ak-difizyon amelyore senkronizasyon odyo / videyo, li tou diminye latansi ki genyen ant sèvè a ak navigatè a.
@@ -182,3 +182,7 @@ ouvri sesyon an
 Enfòmasyon sou sistèm
 Lakay
 Chanje Lang
+Tanpri chwazi lang
+Lang sistèm
+Lang sistèm aktyèl la:
+Sa a chanje langaj sistèm backend PiKaraoke la ki parèt sou ekran televizyon; nplis de sa, chak itilizatè konekte kapab tou chanje respektif lang UI Web yo nan bouton glòb la nan meni an tèt dwat.

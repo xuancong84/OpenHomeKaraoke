@@ -52,7 +52,7 @@ Appughjà F per cambià a pantalla piena
 Press ESC per abbandunà PiKaraoke
 U modu di installazione di RaspiWifiConfig rilevatu!
 Cunnette un altru dispositivu/smartphone à l'AP Wifi: '%s'
-Dopu puntate u so navigatore à: '%s://%s%s' è seguite e struzzioni.
+Allora puntate u so navigatore à: '%s://%s%s' è seguite e struzzioni.
 In seguitu:
 Aggiuntu da:
 Avà ghjucatu:
@@ -111,7 +111,7 @@ Pulisce tuttu
 A fila hè viota
 Coda
 Sguassà
-Canzoni dispunibuli in a biblioteca lucale
+Canzoni dispunibili in a biblioteca lucale
 Canzona aghjunta à a fila:
 A canzone hè digià in fila:
 Ricerca / Add New
@@ -137,7 +137,7 @@ PiKaraoke
 Sò sicuru chì vulete lascià?
 Sò sicuru chì vulete chjude ?
 Sò sicuru chì vulete riavvià ?
-Sè sicuru chì vulete aghjurnà Youtube-dl avà? I scaricamenti attuali è pendenti ponu falla.
+Sò sicuru chì vulete aghjurnà Youtube-dl avà? I scaricamenti attuali è pendenti ponu falla.
 Sò sicuru chì vulete espansione u sistema di filesystem? Questu riavviarà u vostru raspberry pi.
 infurmazione
 U codice QR URL praticu per sparte cun un amicu:
@@ -164,9 +164,9 @@ Refresh a lista di canzoni:
 Rescannu u repertoriu di canzone
 Duvete bisognu di fà questu solu s'ellu avete copiatu manualmente i schedari à u cartulare di scaricamentu mentre PiKaraoke era in esecuzione.
 Aghjurnamenti
-Se i scaricamenti o e ricerche anu cessatu di travaglià, l'aghjurnamentu di youtube-dl probabilmente risolverà. A versione installata attuale hè:
+Se i scaricamenti o e ricerche anu cessatu di travaglià, l'aghjurnamentu di youtube-dl probabilmente risolverà. A versione attuale installata hè:
 Aghjurnate youtube-dl
-Stu ligame di l'aghjurnamentu sopra pò fallu se ùn avete micca permessi di fugliale adattati. Verificate u log PiKaraoke per errori.
+Stu ligame di l'aghjurnamentu sopra pò fallu s'ellu ùn avete micca i permessi di u schedariu propiu. Verificate u log PiKaraoke per errori.
 Chjodi
 Ùn tirate micca solu u plug! Sempre chjude u vostru servitore bè per evità a corruzzione di dati.
 Lasciate PiKaraoke
@@ -182,3 +182,7 @@ accede
 Info di u sistema
 A casa
 Cambia lingua
+Per piacè sceglite a lingua
+Lingua di sistema
+Lingua di u sistema attuale:
+Questu cambia a lingua di u sistema di backend PiKaraoke chì si vede nantu à u screnu TV; in più, ogni utilizatore di cunnessione pò ancu cambià a so lingua UI Web in u buttone globu in u menù in cima à a destra.

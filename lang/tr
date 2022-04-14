@@ -45,7 +45,7 @@ Youtube-dl yolu bulunamadı!
 VLC yolu bulunamadı!
 omxplayer yolu bulunamadı!
 İndirme yolu oluşturma:
-Wifi/Ağ bağlı değil. 10 saniye içinde kapanıyor...
+Wifi/Ağ bağlı değil. 10 saniyede kapanıyor...
 Şarkı seçmek için QR'yi tarayın veya şuraya bağlanın:
 TV ekranı için, şuraya bağlanın:
 Tam ekran arasında geçiş yapmak için F tuşuna basın
@@ -164,7 +164,7 @@ Bu yalnızca KTV'nin web tarayıcısı üzerinden oynatılmasını etkiler. Ekra
 Şarkı dizinini yeniden tara
 Bunu yalnızca, dosyaları indirme dizinine PiKaraoke çalışırken manuel olarak kopyaladıysanız yapmanız gerekir.
 güncellemeler
-İndirmeler veya aramalar çalışmayı durdurduysa, youtube-dl'yi güncellemek muhtemelen sorunu çözecektir. Mevcut yüklü sürüm:
+İndirmeler veya aramalar çalışmayı durdurduysa, youtube-dl'yi güncellemek muhtemelen sorunu çözecektir. Geçerli yüklü sürüm:
 youtube-dl'yi güncelle
 Uygun dosya izinleriniz yoksa yukarıdaki bu güncelleme bağlantısı başarısız olabilir. Hatalar için PiKaraoke günlüğünü kontrol edin.
 Kapat
@@ -182,3 +182,7 @@ giriş yapmak
 Sistem bilgisi
 Ev
 Dili değiştir
+Lütfen dil seçin
+Sistem Dili
+Mevcut sistem dili:
+Bu, TV ekranında görüntülenen PiKaraoke arka uç sisteminin dilini değiştirir; ayrıca, bağlanan her kullanıcı, sağ üst menüdeki küre düğmesinde ilgili Web UI dilini de değiştirebilir.

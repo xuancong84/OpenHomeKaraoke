@@ -59,7 +59,7 @@ Ayeuna maén:
 Modeu admin dipasihkeun!
 Ngaronjatkeun reureuh audio bakal masihan anjeun langkung waktos maca lirik sateuacan nyanyian kalimat salajengna.
 Ngurangan reureuh subjudul bakal masihan anjeun langkung waktos maca lirik sateuacan nyanyian kalimat salajengna.
-Semitone ogé katelah satengah léngkah. Ieu mangrupikeun interval pangleutikna anu dianggo dina musik klasik Barat, sami sareng dua belas oktaf atanapi satengah nada.
+Semitone ogé katelah satengah léngkah. Ieu mangrupikeun interval pangleutikna anu dianggo dina musik Barat klasik, sami sareng dua belas oktaf atanapi satengah nada.
 Splitter vokal basis DNN diaktipkeun. PiKaraoke nganggo PyTorch (ku Facebook) pikeun ngajalankeun jaringan saraf jero pikeun ngabagi sora instrumental sareng vokal dina unggal lagu anu nyababkeun sora stereo.
 Kontrol pamuter
 Musik
@@ -67,12 +67,12 @@ Duanana
 Sora
 Robah Key
 Henteu aya anu maén ayeuna.
-Teu aya lagu anu ngantri.
+Taya lagu anu ngantri.
 lagu ieu teu ditambahkeun ku anjeun. Naha anjeun yakin hoyong ngabalikan deui lagu ieu?
-lagu ieu teu ditambahkeun ku anjeun. Naha anjeun yakin hoyong ngaliwat lagu ieu?
+lagu ieu teu ditambahkeun ku anjeun. Naha anjeun yakin hoyong ngantunkeun lagu ieu?
 Kontrol pamuter
 Ayeuna Maén
-Lagu Salajengna
+Lagu salajengna
 Milarian Ka:
 Tunda Audio (detik)
 Tunda Subjudul (detik)
@@ -89,7 +89,7 @@ Ngurangan Tunda Audio
 Setel Tunda Audio
 Ningkatkeun Tunda Audio
  semitones
-Mangga lebetkeun nami anjeun. Ieu bakal muncul di gigireun lagu anu anjeun antri ti alat ieu.
+Mangga lebetkeun nami anjeun. Ieu bakal muncul di gigireun lagu anu anjeun antri tina alat ieu.
 Lagu ditambahkeun kana antrian:
 Lagu geus antri:
 Susun dumasar Tanggal
@@ -140,7 +140,7 @@ Anjeun yakin rék reboot?
 Naha anjeun yakin hoyong ngapdet Youtube-dl ayeuna? Undeuran anu ayeuna sareng anu ditangguhkeun tiasa gagal.
 Naha anjeun yakin hoyong ngalegaan sistem file? Ieu bakal reboot pi buah prambus Anjeun.
 Émbaran
-Kode QR URL gunana pikeun dibagikeun sareng sobat:
+Kode QR URL gunana pikeun dibagikeun sareng babaturan:
 OS
 Pamakéan piringan
 Mémori
@@ -182,3 +182,7 @@ lebet
 Inpo Sistim
 Imah
 Robah Basa
+Mangga pilih basa
+Basa Sistim
+Basa sistem ayeuna:
+Ieu ngarobah basa sistem backend PiKaraoke nu bakal dipintonkeun dina layar TV; Leuwih ti éta, unggal pamaké nyambungkeun ogé bisa ngarobah masing-masing basa UI Web maranéhanana dina tombol dunya dina menu katuhu-luhureun.

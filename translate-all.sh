@@ -30,7 +30,7 @@ cat langs.list | sed "/en$/d; /zh-/d" \
 
 
 if [ `cat lang/zh_CN 2>/dev/null | wc -l` != `cat lang/zh_TW 2>/dev/null | wc -l` ]; then
-  (echo 汉语; sed -n '2,$p' lang/zh_CN) | ./translate.py -s zh-CN -d zh-TW >lang/zh_TW
+  (echo 繁体中文; sed -n '2,$p' lang/zh_CN) | ./translate.py -s zh-CN -d zh-TW >lang/zh_TW
   echo zh_TW "==>" lang/zh_TW
 fi
 

@@ -137,7 +137,7 @@ PiKaraoke
 Biztosan ki szeretne lépni?
 Biztosan le akarod kapcsolni?
 Biztos, hogy újra akarod indítani?
-Biztos, hogy most azonnal frissíteni szeretnéd a Youtube-dl-t? A jelenlegi és a függőben lévő letöltések sikertelenek lehetnek.
+Biztos, hogy most azonnal frissíti a Youtube-dl-t? A jelenlegi és a függőben lévő letöltések sikertelenek lehetnek.
 Biztos benne, hogy ki szeretné bővíteni a fájlrendszert? Ezzel újraindítja a Raspberry pi-t.
 Információ
 Praktikus URL QR-kód, amelyet megoszthat egy barátjával:
@@ -166,7 +166,7 @@ Ezt csak akkor kell megtennie, ha manuálisan másolta át a fájlokat a letölt
 Frissítések
 Ha a letöltések vagy a keresések leálltak, a youtube-dl frissítése valószínűleg megoldja. A jelenlegi telepített verzió:
 Frissítse a youtube-dl-t
-A fenti frissítési hivatkozás meghiúsulhat, ha nem rendelkezik megfelelő fájlengedélyekkel. Ellenőrizze a PiKaraoke naplójában hibákat.
+A fenti frissítési hivatkozás meghiúsulhat, ha nem rendelkezik megfelelő fájlengedélyekkel. Ellenőrizze a PiKaraoke naplójában, hogy vannak-e hibák.
 Leállitás
 Ne csak a dugót húzza ki! Mindig megfelelően állítsa le a szervert, hogy elkerülje az adatsérülést.
 Lépjen ki a PiKaraoke-ból
@@ -182,3 +182,7 @@ Belépés
 Rendszer információ
 itthon
 Válts nyelvet
+Kérjük, válasszon nyelvet
+Rendszer nyelve
+A rendszer jelenlegi nyelve:
+Ez megváltoztatja a PiKaraoke háttérrendszer nyelvét, amely megjelenik a TV képernyőjén; ezen túlmenően minden egyes csatlakozó felhasználó módosíthatja a webes felhasználói felület megfelelő nyelvét a jobb felső menüben található földgömb gombbal.

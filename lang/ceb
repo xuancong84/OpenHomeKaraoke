@@ -6,7 +6,7 @@ Nahutdan ug kanta!
 Gilimpyohan ang pila!
 Error sa paglihok sa butang sulod sa pila: invalid-argument
 Malampuson nga nabalhin ang butang sulod sa pila:
-Error sa paglihok sa butang sulod sa pila:
+Sayop sa paglihok sa butang sulod sa pila:
 Gibalhin sa pila:
 Sayop sa pagpaubos sa pila:
 Gibalhin sa pila:
@@ -100,7 +100,7 @@ Gisunod sa 'Petsa'
 Gisunod sa 'Alphabetical'
 mga kanta
 nagpakita <b>{start} - {end}</b> {record_name}, sa kinatibuk-an <b>{total}</b> {record_name}
-nakit-an ang <b>{nakaplagan}</b> {record_name}, nagpakita sa <b>{start} - {end}</b> {record_name}
+nakit-an ang <b>{nakaplagan}</b> {record_name}, nagpakita <b>{start} - {end}</b> {record_name}
 Edit kanta
 Pagbalhin sa pila
 Ibalhin sa ubos sa pila
@@ -120,7 +120,7 @@ Pila
 Ilakip ang non-karaoke nga mga posporo
 Abante
 Pag-type og kanta (titulo/artista) aron pangitaon ang anaa nga mga kanta ug i-klik ang 'Queue' aron idugang kini sa pila.
-Kung ang kanta dili makita sa dropdown nga "Available Songs", i-klik ang 'Pagpangita' aron makit-an kini sa Youtube.
+Kung ang kanta dili makita sa dropdown nga "Available Songs", i-klik ang 'Search' aron makit-an kini sa Youtube.
 Direkta nga pag-download sa YouTube url:
 Idugang sa pila
 Ilakip ang mga subtitle
@@ -153,7 +153,7 @@ Vocal splitter mode:
 Gamita ang L-R/L+R
 Gamita ang DNN
 Ang standard nga MTV audio adunay duha ka stereo channel (L ug R) nga gi-encode sa paagi nga: L-R ang instrument track, L+R ang vocal track. Busa, pinaagi lamang sa pagkubkob o pagdugang sa duha ka stereo channel, makuha nato ang instrumental ug vocal track sa mono sound. Ang built-in nga DNN-based (deep neural network) vocal splitter sa PiKaraoke naggamit sa AI algorithm aron mabahin ang instrumental ug vocal sound sa matag stereo track nga independente nga moresulta sa stereo instrumental ug vocal tracks.
-Hunong ang Splitter
+Hunonga ang Splitter
 I-restart ang Splitter
 Ang vocal splitter (nga nagsuporta sa DNN-based ug stereo subtraction) nagdagan isip usa ka separado nga proseso sa background, nagmugna og instrumental/vocal audio file alang sa matag kanta.
 I-synchronize pag-usab ang audio ug video:
@@ -174,7 +174,7 @@ Pag-reboot nga Sistema
 Sistema sa pagsira
 Ang uban
 Pagpalapad sa Raspberry Pi filesystem
-Kung imong gi-install ang pre-built nga pikaraoke pi nga imahe ug ang imong SD card mas dako pa sa 4GB, mahimo nimong palapdan ang filesystem aron magamit ang nahabilin nga wanang. Kausa ra nimo kinahanglan buhaton. Kini mag-reboot sa sistema.
+Kung imong gi-install ang pre-built nga pikaraoke pi nga imahe ug ang imong SD card mas dako pa sa 4GB, mahimo nimong palapdan ang filesystem aron magamit ang nahabilin nga wanang. Kausa ra nimo kini buhaton. Kini mag-reboot sa sistema.
 I-disable ang admin mode
 I-enable ang admin mode
 log out
@@ -182,3 +182,7 @@ sulod
 Impormasyon sa Sistema
 Balay
 Usba ang Pinulongan
+Palihug pagpili og pinulongan
+Sistema nga Pinulongan
+Kasamtangang pinulongan sa sistema:
+Gibag-o niini ang lengguwahe sa PiKaraoke backend system nga gipakita sa screen sa TV; Dugang pa, ang matag nagkonektar nga tiggamit mahimo usab nga magbag-o sa ilang sinultian nga Web UI sa buton sa globo sa tuo nga menu.

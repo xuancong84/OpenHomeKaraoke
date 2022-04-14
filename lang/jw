@@ -119,9 +119,9 @@ Nggoleki
 antri
 Kalebu pertandhingan non-karaoke
 Majeng
-Ketik lagu (judul/artis) kanggo nelusuri lagu sing kasedhiya lan klik 'Antri' kanggo ditambahake menyang antrian.
+Ketik lagu (judul/artis) kanggo nelusuri lagu sing kasedhiya lan klik 'Antrian' kanggo ditambahake menyang antrian.
 Yen lagu ora katon ing gulung mudhun "Lagu Kasedhiya", klik 'Telusuri' kanggo nemokake ing Youtube.
-Ngundhuh langsung URL YouTube:
+Langsung download url YouTube:
 Tambah menyang antrian
 Kalebu subtitle
 Ngundhuh
@@ -168,7 +168,7 @@ Yen undhuhan utawa telusuran mandheg, nganyari youtube-dl bisa uga bakal ndandan
 Nganyari youtube-dl
 Link nganyari ing ndhuwur bisa uga gagal yen sampeyan ora duwe ijin file sing tepat. Priksa log PiKaraoke kanggo kesalahan.
 mateni
-Aja mung narik plug! Tansah mateni server kanthi bener supaya ora korupsi data.
+Aja mung narik plug! Tansah mateni server sampeyan kanthi bener supaya ora korupsi data.
 Mungkasi PiKaraoke
 Sistem urip maneh
 Sistem shutdown
@@ -182,3 +182,7 @@ mlebu
 Sistem Informasi
 Ngarep
 Ganti Basa
+Mangga milih basa
+Basa Sistem
+Basa sistem saiki:
+Iki ngganti basa sistem backend PiKaraoke sing bakal ditampilake ing layar TV; malih, saben pangguna nyambungake uga bisa ngganti pamilike basa UI Web ing tombol globe ing menu tengen ndhuwur.

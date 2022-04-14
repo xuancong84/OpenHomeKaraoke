@@ -164,7 +164,7 @@ Athnuaigh an liosta amhrán:
 Athscan eolaire amhrán
 Níor cheart go mbeadh ort é seo a dhéanamh ach amháin má chóipeáil tú comhaid de láimh chuig an eolaire íoslódála agus PiKaraoke ar siúl.
 Nuashonruithe
-Mura n-oibríonn íoslódálacha nó cuardaigh ag obair, is dócha go socróidh nuashonrú youtube-dl é. Is é an leagan suiteáilte reatha ná:
+Mura n-oibríonn íoslódálacha nó cuardaigh ag obair, is dócha go socróidh nuashonrú youtube-dl é. Is é an leagan suiteáilte reatha:
 Nuashonraigh youtube-dl
 Seans go dteipfidh ar an nasc nuashonraithe seo thuas mura bhfuil na ceadanna cuí comhaid agat. Seiceáil logáil PiKaraoke le haghaidh earráidí.
 Múchadh
@@ -182,3 +182,7 @@ Logáil isteach
 Eolas faoin gCóras
 Baile
 Athrú Teanga
+Roghnaigh teanga le do thoil
+Teanga an Chórais
+Teanga an chórais reatha:
+Athraíonn sé seo teanga an chórais backend PiKaraoke a thaispeánfar ar scáileán na teilifíse; ina theannta sin, is féidir le gach úsáideoir nasctha a dteanga Chomhéadain Gréasáin faoi seach a athrú freisin sa chnaipe cruinne sa roghchlár ar bharr na láimhe deise.

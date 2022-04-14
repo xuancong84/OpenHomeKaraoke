@@ -97,7 +97,7 @@ Poredaj po abecedi
 Dodajte '%s' u red čekanja
 pretraživati
 Poredano po 'Datumu'
-Poredano po "abecednom redu"
+Poredano po 'abecednom redu'
 Pjesme
 prikazuje <b>{start} - {end}</b> {record_name}, ukupno <b>{total}</b> {record_name}
 pronađeno <b>{found}</b> {record_name}, prikazuje <b>{start} - {end}</b> {record_name}
@@ -123,14 +123,14 @@ Upišite pjesmu (naslov/izvođač) da biste pretražili dostupne pjesme i klikni
 Ako se pjesma ne pojavi na padajućem izborniku "Dostupne pjesme", kliknite "Traži" da biste je pronašli na Youtubeu.
 URL za izravno preuzimanje s YouTubea:
 Dodaj u Red
-Uključite titlove
+Uključi titlove
 preuzimanje datoteka
 Pretraživanje YouTubea za
 Rezultati pretrage za
 Kliknite padajući izbornik za prikaz više rezultata
 Veza:
 Dostupne pjesme
-Želite li promijeniti ime za prikaz osobe koja koristi ovaj uređaj? Ovo će se pojaviti pored pjesama na čekanju. Trenutno:
+Želite li promijeniti ime za prikaz osobe koja koristi ovaj uređaj? Ovo će se prikazati pored pjesama na čekanju. Trenutno:
 Trenutni korisnik
 Info
 PiKaraoke
@@ -182,3 +182,7 @@ prijaviti se
 Informacije o sustavu
 Dom
 Promijeni jezik
+Molimo odaberite jezik
+Jezik sustava
+Trenutni jezik sustava:
+To mijenja jezik pozadinskog sustava PiKaraoke koji se prikazuje na TV ekranu; štoviše, svaki korisnik koji se povezuje može također promijeniti svoj jezik web korisničkog sučelja na gumbu globusa u desnom gornjem izborniku.

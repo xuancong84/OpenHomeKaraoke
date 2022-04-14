@@ -121,7 +121,7 @@ Zahrňte zápasy bez karaoke
 Pokročilé
 Zadajte skladbu (názov/interpreta) na vyhľadanie dostupných skladieb a kliknutím na „Poradie“ ju pridajte do poradia.
 Ak sa skladba nezobrazuje v rozbaľovacej ponuke „Dostupné skladby“, kliknite na „Hľadať“ a nájdite ju na YouTube.
-Adresa URL na priame stiahnutie z YouTube:
+URL na priame stiahnutie z YouTube:
 Pridať do poradia
 Zahrňte titulky
 Stiahnuť ▼
@@ -182,3 +182,7 @@ Prihlásiť sa
 Informácie o systéme
 Domov
 Zmeniť jazyk
+Vyberte jazyk
+Systémový jazyk
+Aktuálny jazyk systému:
+Tým sa zmení jazyk backendového systému PiKaraoke, ktorý sa zobrazí na TV obrazovke; každý pripájajúci sa používateľ môže navyše zmeniť príslušný jazyk svojho webového používateľského rozhrania na tlačidle zemegule v pravom hornom menu.

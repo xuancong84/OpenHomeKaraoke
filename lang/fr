@@ -15,7 +15,7 @@ Supprimé de la file d'attente :
 Erreur lors de la suppression de la file d'attente :
 Le téléchargement a commencé :
 Une fois terminé, il sera ajouté à la file d'attente.
-Une fois terminé, il apparaîtra dans la liste des "chansons disponibles".
+Une fois terminé, il apparaîtra dans la liste "chansons disponibles".
 Erreur : Impossible de supprimer ce morceau, car il se trouve dans la file d'attente actuelle :
 Morceau supprimé :
 Erreur : Aucun paramètre de morceau spécifié !
@@ -182,3 +182,7 @@ connexion
 Information système
 Domicile
 Changer de langue
+Veuillez choisir la langue
+Langue du système
+Langue actuelle du système :
+Cela change la langue du système backend PiKaraoke qui s'affiche sur l'écran du téléviseur ; de plus, chaque utilisateur qui se connecte peut également modifier la langue de son interface utilisateur Web dans le bouton globe du menu en haut à droite.

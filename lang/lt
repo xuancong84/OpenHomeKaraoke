@@ -60,7 +60,7 @@ Administratoriaus režimas suteiktas!
 Didėjant garso delsai, turėsite daugiau laiko perskaityti dainų tekstus prieš išdainuojant kitą sakinį.
 Sumažėjus subtitrų delsai, turėsite daugiau laiko perskaityti dainų tekstus prieš išdainuojant kitą sakinį.
 Pustonis taip pat žinomas kaip pusė žingsnio. Tai mažiausias klasikinėje Vakarų muzikoje naudojamas intervalas, lygus oktavos dvyliktajai daliai arba pusei tono.
-DNN pagrįstas balso skirstytuvas įjungtas. „PiKaraoke“ naudoja „PyTorch“ („Facebook“), kad paleistų gilų neuroninį tinklą, kad padalitų instrumentinį ir vokalinį garsą kiekviename takelyje ir sukuria stereo garsą.
+DNN pagrįstas balso skirstytuvas įjungtas. „PiKaraoke“ naudoja „PyTorch“ („Facebook“), kad paleistų gilųjį neuroninį tinklą, kad kiekviename takelyje būtų padalintas instrumentinis ir vokalinis garsas, sukuriantis stereo garsą.
 Žaidėjo valdymas
 Muzika
 Abu
@@ -97,7 +97,7 @@ Rūšiuoti pagal abėcėlę
 Įtraukite „%s“ į eilę
 Naršyti
 Rūšiuota pagal datą
-Rūšiuota pagal abėcėlę
+Rūšiuota pagal "abėcėlę"
 dainas
 rodomas <b>{start}–{end}</b> {record_name}, iš viso <b>{total}</b> {record_name}
 rasta <b>{found}</b> {record_name}, rodoma <b>{start} – {end}</b> {record_name}
@@ -152,7 +152,7 @@ Išplėstinės valdymo parinktys
 Balso skirstytuvo režimas:
 Naudokite L-R/L+R
 Naudokite DNN
-Standartiniame MTV garse yra du stereo kanalai (L ir R), užkoduoti taip, kad: L-R yra instrumento takelis, L+R yra balso takelis. Taigi, tiesiog atėmus arba pridėjus du stereo kanalus, instrumentinį ir vokalinį takelį galime gauti mono garsu. „PiKaraoke“ integruotas DNN (giliojo neuroninio tinklo) balso skirstytuvas naudoja AI algoritmą, kad atskirtų instrumentinį ir vokalinį garsą kiekviename stereo takelyje atskirai, todėl sukuriami stereo instrumentiniai ir vokaliniai takeliai.
+Standartiniame MTV garse yra du stereo kanalai (L ir R), užkoduoti taip, kad: L-R yra instrumento takelis, L+R yra balso takelis. Taigi, tiesiog atėmus arba pridėjus du stereo kanalus, instrumentinį ir vokalinį takelį galime gauti mono garsu. „PiKaraoke“ integruotas DNN pagrįstas (giliojo neuroninio tinklo) balso skirstytuvas naudoja AI algoritmą, kad atskirtų instrumentinį ir vokalinį garsą kiekviename stereo takelyje atskirai, todėl sukuriami stereo instrumentiniai ir vokaliniai takeliai.
 Sustabdykite skirstytuvą
 Iš naujo paleiskite skirstytuvą
 Balso skirstytuvas (kuris palaiko tiek DNN, tiek stereo atimtį) veikia kaip atskiras procesas fone, kiekvienai dainai generuodamas instrumentinį / vokalinį garso failą.
@@ -182,3 +182,7 @@ Prisijungti
 Sistemos informacija
 Namai
 Pakeisti KALBĄ
+Pasirinkite kalbą
+Sistemos kalba
+Dabartinė sistemos kalba:
+Tai pakeičia PiKaraoke backend sistemos kalbą, kuri rodoma televizoriaus ekrane; be to, kiekvienas besijungiantis vartotojas taip pat gali pakeisti atitinkamą savo žiniatinklio vartotojo sąsajos kalbą gaublio mygtuku viršutiniame dešiniajame meniu.

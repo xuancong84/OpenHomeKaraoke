@@ -174,7 +174,7 @@ Reinicieu el sistema
 Sistema d'apagada
 Altres
 Amplieu el sistema de fitxers Raspberry Pi
-Si acabeu d'instal·lar la imatge de pikaraoke pi preconstruïda i la vostra targeta SD és de més de 4 GB, és possible que vulgueu ampliar el sistema de fitxers per utilitzar l'espai restant. Només heu de fer això una vegada. Això reiniciarà el sistema.
+Si acabeu d'instal·lar la imatge de pikaraoke pi preconstruïda i la vostra targeta SD és de més de 4 GB, és possible que vulgueu ampliar el sistema de fitxers per utilitzar l'espai restant. Només has de fer això una vegada. Això reiniciarà el sistema.
 Desactiva el mode d'administració
 Activa el mode d'administració
 tancar sessió
@@ -182,3 +182,7 @@ iniciar Sessió
 Informació del sistema
 a casa
 Canviar d'idioma
+Si us plau, trieu l'idioma
+Llenguatge del sistema
+Idioma del sistema actual:
+Això canvia l'idioma del sistema de fons PiKaraoke que es mostra a la pantalla del televisor; a més, cada usuari que es connecta també pot canviar l'idioma corresponent de la seva interfície d'usuari web al botó del globus terrestre del menú superior dret.

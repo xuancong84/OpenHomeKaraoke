@@ -4,11 +4,11 @@ Uphumile kwimowudi yomlawuli!
 Kongezwe i-%s iingoma ezingaqhelekanga
 Ziphelelwe ziingoma!
 Icociwe umgca!
-Imposiso yokuhambisa into ngaphakathi komgca: inqobo-impikiswano
+Imposiso yokuhambisa into ngaphakathi komgca: invalid-argument
 Isuswe ngempumelelo into ngaphakathi komgca:
 Impazamo yokuhambisa into ngaphakathi komgca:
 Yehlisiwe emgceni:
-Impazamo yokuhambisa ezantsi emgceni:
+Imposiso ekuhambiseni emgceni:
 Unyusiwe emgceni:
 Impazamo ekunyukeni emgceni:
 Icinyiwe emgceni:
@@ -164,7 +164,7 @@ Hlaziya uluhlu lweengoma:
 Skena kwakhona uluhlu lwengoma
 Kufuneka wenze oku kuphela ukuba ukhuphele ngesandla iifayile kulawulo lokhuphelo ngelixa iPiKaraoke ibisebenza.
 Uhlaziyo
-Ukuba ukhuphelo okanye uphendlo luyekile ukusebenza, ukuhlaziya i-youtube-dl mhlawumbi kuya kuyilungisa. Inguqulelo ehlohliweyo yangoku yile:
+Ukuba ukhuphelo okanye uphendlo luyekile ukusebenza, ukuhlaziya i-youtube-dl mhlawumbi kuya kuyilungisa. Inguqulelo yangoku ehlohliweyo yile:
 Hlaziya i-youtube-dl
 Olu nxulumaniso lohlaziyo lungasentla lunokusilela ukuba awunazo iimvume zefayile ezifanelekileyo. Jonga iPiKaraoke log ngeempazamo.
 Cima
@@ -182,3 +182,7 @@ Ngema
 Ulwazi lweNkqubo
 Ekhaya
 Guqula ulwimi
+Nceda ukhethe ulwimi
+Ulwimi Lwenkqubo
+Ulwimi lwenkqubo yangoku:
+Oku kutshintsha ulwimi lwePiKaraoke backend system eboniswa kwiscreen seTV; ngaphezu koko, umsebenzisi ngamnye oqhagamshelayo unokutshintsha ngokufanelekileyo ulwimi lwabo lwe-UI yewebhu kwiqhosha leglowubhu kwimenyu ephezulu ngasekunene.

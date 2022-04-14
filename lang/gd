@@ -52,7 +52,7 @@ Brùth F gus làn-sgrìn a thogail
 Brùth ESC gus PiKaraoke fhàgail
 Modh rèiteachaidh RaspiWifiConfig air a lorg!
 Ceangail inneal/fòn cliste eile ris an AP Wifi: '%s'
-An uairsin comharraich am brabhsair aige gu: '%s://%s%s' agus lean an stiùireadh.
+An uairsin comharraich a bhrobhsair gu: '%s://%s%s' agus lean an stiùireadh.
 Suas an ath cheum:
 Air a chur ris le:
 A' cluich a-nis:
@@ -89,7 +89,7 @@ Lùghdaich dàil claisneachd
 Suidhich dàil claisneachd
 Meudaich dàil claisneachd
  leth-thonn
-Feuch an cuir thu a-steach d’ ainm. Nochdaidh seo ri taobh nan òran a tha thu a’ ciudha suas bhon inneal seo.
+Feuch an cuir thu a-steach d’ ainm. Nochdaidh seo ri taobh nan òran a bhios tu a’ ciudha suas bhon inneal seo.
 Òran air a chur ris a’ chiudha:
 Òran mar-thà an ciudha:
 Deasaich a-rèir Ceann-latha
@@ -121,7 +121,7 @@ Cuir a-steach maidsean neo-karaoke
 Adhartach
 Taidhp òran (tiotal/neach-ealain) gus na h-òrain a tha rim faighinn a sgrùdadh agus cliog air ‘Queue’ gus a chuir ris a’ chiudha.
 Mura h-eil an t-òran a’ nochdadh anns a’ chlàr-taice “Available Songs”, cliog air ‘Search’ gus a lorg air Youtube.
-Luchdaich a-nuas YouTube url gu dìreach. .
+Luchdaich a-nuas YouTube url gu dìreach
 Cuir ris a’ chiudha
 Cuir a-steach fo-thiotalan
 Luchdaich sìos
@@ -182,3 +182,7 @@ Log a-steach
 Fiosrachadh mun t-siostam
 Dhachaigh
 Atharraich Cànan
+Feuch an tagh thu cànan
+Cànan an t-siostaim
+Cànan an t-siostaim làithreach:
+Bidh seo ag atharrachadh cànan siostam backend PiKaraoke a thèid a thaisbeanadh air scrion Tbh; A bharrachd air an sin, faodaidh gach neach-cleachdaidh ceangail an cànan UI lìn aca atharrachadh anns a’ phutan cruinne sa chlàr gu h-àrd air an làimh dheis.

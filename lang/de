@@ -182,3 +182,7 @@ Einloggen
 Systeminformationen
 Heim
 Sprache ändern
+Bitte Sprache auswählen
+Systemsprache
+Aktuelle Systemsprache:
+Dies ändert die Sprache des PiKaraoke-Backend-Systems, das auf dem Fernsehbildschirm angezeigt wird; Darüber hinaus kann jeder verbindende Benutzer auch die jeweilige Sprache seiner Web-Benutzeroberfläche über die Globus-Schaltfläche im rechten oberen Menü ändern.

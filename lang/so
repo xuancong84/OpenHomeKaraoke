@@ -45,7 +45,7 @@ Jidka Youtube-dl lama helin!
 Waddada VLC lama helin!
 Waddada omxplayer lama helin!
 Abuuritaanka dariiqa soo dejinta:
-Wifi/Network kuma xirna La xirayo 10s ka...
+Wifi/Network kuma xidhna La xirayo 10s ka...
 Xulashada heesaha, sawir QR ama ku xidh
 Bandhigga TV-ga, ku xidh
 Riix F si aad u rogto shaashadda buuxda
@@ -60,7 +60,7 @@ Habka maamulka waa la siiyay!
 Kordhinta daahitaanka maqalku waxay ku siin doontaa wakhti dheeraad ah oo aad ku akhrido erayada ka hor intaadan heesin jumlada xigta.
 Hoos u dhigista daahitaanka qoraal-hoosaadku waxay ku siin doontaa wakhti dheeraad ah oo aad ku akhrido erayada ka hor intaadan heesin jumlada xigta.
 Semitone sidoo kale waxaa loo yaqaannaa tallaabo nus ah. Waa inta u dhexaysa ugu yar ee loo isticmaalo muusiga reer galbeedka qadiimiga ah, oo la mid ah laba iyo tobnaad ee octave ama codka badhkii.
-Qaybiyaha codka ku salaysan ee DNS waa la dajiyay PiKaraoke waxay isticmaashaa PyTorch (ee Facebook) si ay u socodsiiso shabakad neerfaha qoto dheer si ay u kala qaybiso codka qalabka iyo codka ee raad kasta oo kor u qaada codka isteeriyo.
+Qaybiyaha codka ku salaysan ee DNS waa la dajiyay PiKaraoke waxay isticmaashaa PyTorch (ee Facebook) si ay u socodsiiso shabakad neerfaha qoto dheer si ay u kala qaybiso codka qalabka iyo dhawaaqa raad kasta oo kor u qaada codka isteeriyo.
 Xakamaynta Ciyaartoyga
 Muusiga
 Labadaba
@@ -182,3 +182,7 @@ gal
 Macluumaadka nidaamka
 Guriga
 Beddel luqadda
+Fadlan door luqadda
+Luuqadda Nidaamka
+Luuqadda nidaamka hadda:
+Tani waxay bedeshaa luqadda nidaamka dhabarka dambe ee PiKaraoke kaas oo lagu soo bandhigo shaashadda TV-ga; Intaa waxaa dheer, isticmaale kasta oo isku xira ayaa sidoo kale beddeli kara siday u kala horreeyaan luqaddooda Shabakadda UI ee badhanka adduunka ee menu-ka sare ee midig.

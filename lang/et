@@ -138,7 +138,7 @@ Kas olete kindel, et soovite lõpetada?
 Kas soovite kindlasti sulgeda?
 Kas olete kindel, et soovite taaskäivitada?
 Kas olete kindel, et soovite kohe Youtube-dl-i värskendada? Praegused ja ootel allalaadimised võivad ebaõnnestuda.
-Kas olete kindel, et soovite failisüsteemi laiendada? See taaskäivitab teie Raspberry pi.
+Kas soovite kindlasti failisüsteemi laiendada? See taaskäivitab teie Raspberry pi.
 Teave
 Mugav URL-i QR-kood sõbraga jagamiseks:
 OS
@@ -182,3 +182,7 @@ Logi sisse
 Süsteemi teave
 Kodu
 Muuda keelt
+Valige keel
+Süsteemi keel
+Praegune süsteemi keel:
+See muudab PiKaraoke taustasüsteemi keelt, mis kuvatakse teleriekraanil; Lisaks saab iga ühenduse loov kasutaja oma veebikasutaja keelt muuta ka parempoolses ülanurgas asuval gloobusnupul.

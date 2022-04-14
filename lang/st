@@ -52,7 +52,7 @@ Tobetsa F ho fetola skrineng se felletseng
 Tobetsa ESC ho tlohela PiKaraoke
 Mokhoa oa ho seta oa RaspiWifiConfig o fumanoe!
 Hokela sesebelisoa se seng/smartphone ho Wifi AP: '%s'
-Ebe u supa sebatli ho: '%s://%s%s' ebe u latela litaelo.
+Ebe u supa sebatli sa eona ho: '%s://%s%s' ebe u latela litaelo.
 E latelang:
 E kentsoe ke:
 E ntse e bapala:
@@ -182,3 +182,7 @@ kena
 Lintlha tsa Tsamaiso
 Lehae
 Fetola Puo
+Ka kopo, khetha puo
+Puo ea Tsamaiso
+Puo ea hajoale ea sistimi:
+Sena se fetola puo ea PiKaraoke backend system e hlahang skrineng sa TV; Ho feta moo, mosebelisi e mong le e mong ea hokahanyang a ka boela a fetola puo ea bona ea Web UI ka har'a konopo ea lefats'e ho menu e kaholimo ho le letona.

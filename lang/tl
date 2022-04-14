@@ -109,14 +109,14 @@ Sigurado ka bang gusto mong i-clear ang BUONG pila? I-type ang 'OK' para magpatu
 Magdagdag ng 3 random na kanta
 Alisin lahat
 Walang laman ang pila
-Nakapila
+pila
 Tanggalin
 Magagamit na mga kanta sa lokal na aklatan
 Nagdagdag ng kanta sa queue:
 Nasa pila na ang kanta:
 Maghanap / Magdagdag ng Bago
 Maghanap
-Nakapila
+pila
 Isama ang mga non-karaoke na laban
 Advanced
 Mag-type ng kanta (title/artist) para hanapin ang mga available na kanta at i-click ang 'Queue' para idagdag ito sa queue.
@@ -166,9 +166,9 @@ Kailangan mo lang gawin ito kung manu-mano mong kinopya ang mga file sa direktor
 Mga update
 Kung huminto sa paggana ang mga pag-download o paghahanap, malamang na ayusin ito ng pag-update ng youtube-dl. Ang kasalukuyang naka-install na bersyon ay:
 I-update ang youtube-dl
-Maaaring mabigo ang link sa pag-update na ito sa itaas kung wala kang wastong mga pahintulot sa file. Suriin ang PiKaraoke log para sa mga error.
+Maaaring mabigo ang link sa pag-update na ito sa itaas kung wala kang tamang mga pahintulot sa file. Suriin ang PiKaraoke log para sa mga error.
 Pagsara
-Huwag lang hilahin ang plug! Palaging isara nang maayos ang iyong server upang maiwasan ang pagkasira ng data.
+Huwag lang hilahin ang plug! Palaging isara nang maayos ang iyong server upang maiwasan ang katiwalian ng data.
 Ihinto ang PiKaraoke
 I-reboot ang System
 Sistema ng Pagsara
@@ -182,3 +182,7 @@ mag log in
 Info ng sistema
 Bahay
 Baguhin ang Wika
+Mangyaring pumili ng wika
+Wika ng Sistema
+Kasalukuyang wika ng system:
+Binabago nito ang wika ng PiKaraoke backend system na ipapakita sa screen ng TV; bukod pa rito, maaari ding baguhin ng bawat kumukonektang user ang kani-kanilang wika ng Web UI sa globe button sa kanang tuktok na menu.

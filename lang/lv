@@ -89,8 +89,8 @@ Samaziniet audio aizkavi
 Iestatiet audio aizkavi
 Palieliniet audio aizkavi
  pustoņi
-Lūdzu, ievadiet savu vārdu. Tas tiks parādīts blakus dziesmām, kuras ievietojat rindā no šīs ierīces.
-Dziesma pievienota rindai:
+Lūdzu, ievadiet savu vārdu. Tas tiks rādīts blakus dziesmām, kuras ievietojat rindā no šīs ierīces.
+Rindai pievienota dziesma:
 Dziesma jau ir rindā:
 Kārtot pēc datuma
 Kārtot pēc alfabēta
@@ -182,3 +182,7 @@ Pieslēgties
 Sistēmas informācija
 Mājas
 Mainīt VALODU
+Lūdzu, izvēlieties valodu
+Sistēmas valoda
+Pašreizējā sistēmas valoda:
+Tas maina PiKaraoke aizmugursistēmas valodu, kas tiek parādīta TV ekrānā; turklāt katrs savienojošais lietotājs var arī mainīt attiecīgo Web UI valodu, izmantojot globusa pogu augšējā labajā izvēlnē.

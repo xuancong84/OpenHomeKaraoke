@@ -97,7 +97,7 @@ Poredaj po abecedi
 Dodajte '%s' u red čekanja
 Pregledaj
 Sortirano po 'Datumu'
-Poredano po 'abecednom redu'
+Sortirano po 'abecednom redu'
 pjesme
 prikazuje <b>{start} - {end}</b> {record_name}, ukupno <b>{total}</b> {record_name}
 pronađeno <b>{found}</b> {record_name}, prikazuje <b>{početak} - {end}</b> {record_name}
@@ -182,3 +182,7 @@ Ulogovati se
 Informacije o sistemu
 Dom
 Promijeni jezik
+Molimo odaberite jezik
+Sistemski jezik
+Trenutni sistemski jezik:
+Ovo menja jezik pozadinskog sistema PiKaraoke koji se prikazuje na TV ekranu; štaviše, svaki korisnik koji se povezuje može takođe promeniti odgovarajući jezik svog veb korisničkog interfejsa pomoću dugmeta globusa u desnom gornjem meniju.

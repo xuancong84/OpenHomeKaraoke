@@ -155,7 +155,7 @@ Erabili DNN
 MTV audio estandarrak bi estereo kanalak ditu (L eta R) honela kodetuta: L-R instrumentu-pista da, L+R ahots-pista da. Horrela, bi kanal estereo kenduz edo gehituz, pista instrumentala eta ahotsa mono soinuan lor ditzakegu. PiKaraoke-ren DNNn oinarritutako (sare neuronal sakona) ahots-banatzaileak AI algoritmoa erabiltzen du soinu instrumentala eta ahotsa pista estereo bakoitzean modu independentean banatzeko, instrumental eta ahots-pista estereoen ondorioz.
 Gelditu Splitter
 Berrabiarazi Splitter
-Ahots zatitzailea (DNNn oinarritutako kenketa estereoa eta kenketa onartzen duena) prozesu bereizi gisa exekutatzen da atzeko planoan, abesti bakoitzeko audio-fitxategi instrumental/ahotsa sortzen du.
+Ahots zatitzailea (DNNn oinarritutako kenketa estereoa onartzen duena) prozesu bereizi gisa exekutatzen da atzeko planoan, abesti bakoitzeko audio-fitxategi instrumentala/ahotsa sortuz.
 Berriro sinkronizatu audioa eta bideoa:
 Gelditu Streamer
 Berrabiarazi Streamer
@@ -174,7 +174,7 @@ Berrabiarazi sistema
 Itzaltze sistema
 Bestela
 Zabaldu Raspberry Pi fitxategi-sistema
-Aurrez eraikitako pikaraoke pi irudia instalatu berri baduzu eta zure SD txartela 4 GB baino handiagoa bada, baliteke fitxategi-sistema zabaldu nahi izatea geratzen den espazioa erabiltzeko. Behin bakarrik egin behar duzu. Honek sistema berrabiaraziko du.
+Aurrez eraikitako pikaraoke pi irudia instalatu berri baduzu eta zure SD txartela 4GB baino handiagoa bada, baliteke fitxategi-sistema zabaldu nahi izatea geratzen den espazioa erabiltzeko. Behin bakarrik egin behar duzu. Honek sistema berrabiaraziko du.
 Desgaitu administratzaile modua
 Gaitu administratzaile modua
 Saioa amaitu
@@ -182,3 +182,7 @@ saioa hasi
 Sistemaren informazioa
 Hasiera
 Hizkuntza aldatu
+Mesedez, aukeratu hizkuntza
+Sistemaren hizkuntza
+Egungo sistemaren hizkuntza:
+Horrek telebistako pantailan bistaratzen den PiKaraoke backend sistemaren hizkuntza aldatzen du; gainera, konektatzen den erabiltzaile bakoitzak bere Web UI hizkuntza ere alda dezake eskuineko goiko menuko globo-botoian.

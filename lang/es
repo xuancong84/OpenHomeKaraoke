@@ -182,3 +182,7 @@ iniciar sesión
 Información del sistema
 Casa
 Cambiar idioma
+Por favor elige idioma
+Lenguaje del sistema
+Idioma actual del sistema:
+Esto cambia el idioma del sistema backend de PiKaraoke que se muestra en la pantalla del televisor; además, cada usuario que se conecta también puede cambiar el idioma de su interfaz de usuario web en el botón del globo en el menú superior derecho.

@@ -45,7 +45,7 @@ Youtube-dl-sti ble ikke funnet!
 VLC-bane ikke funnet!
 omxplayer-banen ble ikke funnet!
 Oppretter nedlastingsbane:
-Wifi/nettverk er ikke tilkoblet. Slår av om 10...
+Wifi/nettverk ikke tilkoblet. Slår av om 10...
 For å velge sanger, skann QR eller koble til
 For TV-visning, koble til
 Trykk F for å bytte fullskjerm
@@ -182,3 +182,7 @@ Logg Inn
 Systeminformasjon
 Hjem
 Skifte språk
+Vennligst velg språk
+Systemspråk
+Gjeldende systemspråk:
+Dette endrer språket til PiKaraoke-backend-systemet som vises på TV-skjermen; dessuten kan hver tilkoblende bruker også endre sitt web-UI-språk i globusknappen i menyen øverst til høyre.

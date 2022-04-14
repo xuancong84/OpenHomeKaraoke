@@ -3,6 +3,12 @@
   function sleep(ms) {
       return new Promise(resolve => setTimeout(resolve, ms));
   }
+  
+  function setServerLang(val){
+    $.get('/change_language/'+val).done(function(){
+      location.reload();
+    });
+  }
 
   $(function () {
     $("#quit-link").click(function (e) {
@@ -226,8 +232,6 @@ input:checked + .slider:before {
   background-image: linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
 }
 
-/* */
-
 .button.green{
   background-color: #57a957;
   border-color: #57a957;
@@ -240,8 +244,6 @@ input:checked + .slider:before {
 .button.green:active{
   background: #57a957;
 }
-
-/* */
 
 .button.red{
   background-color: #ca3535;
@@ -256,8 +258,6 @@ input:checked + .slider:before {
   background: #c43c35;
 }
 
-/* */
-
 .button.blue{
   background-color: #269CE9;
   border-color: #269CE9;
@@ -270,8 +270,6 @@ input:checked + .slider:before {
 .button.blue:active{
   background: #269CE9;
 }
-
-/* */
 
 .green[disabled], .green[disabled]:hover, .green[disabled]:active{
   border-color: #57A957;
@@ -352,6 +350,70 @@ input:checked + .slider:before {
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset;
   box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset;
 }
+
+
+/* Language select */
+select {
+
+  /* styling */
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 2.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+/* arrows */
+select.Round {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    radial-gradient(#ddd 70%, transparent 72%);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - .5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.Round:focus {
+  background-image:
+    linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    radial-gradient(gray 70%, transparent 72%);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - .5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
 </style>
 
 <h1>{% block title %}{{getString1(142)}}{% endblock %}</h1>
@@ -412,27 +474,34 @@ input:checked + .slider:before {
 <p class="help-normal">{{getString1(162)}}</p>
 {% endif %}
 
+<h4>{{getString1(186)}}</h4>
+<p>
+  {{getString1(187)}}
+  <select class="Round" onchange="setServerLang(this.value)">
+    {% for k, v in langs.items() %}
+      <option value="{{k}}" {{ "selected" if k==lang }}>{{v[1]}}</option>
+    {% endfor %}
+  </select>
+</p>
+<p class="help-normal">{{getString1(188)}}</p>
+
 <h4>{{getString1(163)}}</h4>
-<ul>
-  <li>
-    <a href="/refresh">{{getString1(164)}}</a>
-  </li>
+<ul style="list-style-type:none;">
+  <li><a href="/refresh"><i class="icon icon-arrows-cw"></i>{{getString1(164)}}</a></li>
 </ul>
 <p class="help-normal">{{getString1(165)}}</p>
 
 <h2>{{getString1(166)}}</h2>
 <p>{{getString1(167)}} "{{ youtubedl_version }}"</p>
-<ul>
-  <li>
-    <a id="update-ytdl-link" href="{{ url_for('update_ytdl') }}">{{getString1(168)}}</a>
-  </li>
+<ul style="list-style-type:none;">
+  <li><a id="update-ytdl-link" href="{{ url_for('update_ytdl') }}"><i class="icon icon-arrows-cw"></i>{{getString1(168)}}</a></li>
 </ul>
 <p class="help-help-normal">{{getString1(169)}}</p>
 
 <h2>{{getString1(170)}}</h2>
 <p>{{getString1(171)}}</p>
-<ul>
-  <li><a id="quit-link" href="{{ url_for('quit') }}">{{getString1(172)}}</a></li>
+<ul style="list-style-type:none;">
+  <li><a id="quit-link" href="{{ url_for('quit') }}"><i class="icon icon-off"></i>{{getString1(172)}}</a></li>
   {% if is_pi %}
   <li><a id="restart-link" href="{{ url_for('reboot') }}">{{getString1(173)}}</a></li>
   <li><a id="shutdown-link" href="{{ url_for('shutdown') }}">{{getString1(174)}}</a></li>
@@ -447,10 +516,10 @@ input:checked + .slider:before {
 
 <hr/>
 {% if admin_enabled %}
-<p>{{getString1(178)}}: <a href="{{ url_for('logout') }}">{{getString1(180)}}</a></p>
+<p>{{getString1(178)}}: <a href="{{ url_for('logout') }}"><i class="icon icon-logout"></i>{{getString1(180)}}</a></p>
 {% endif %}
 {% else %}
-<p>{{getString1(179)}}: <a href="{{ url_for('login') }}">{{getString1(181)}}</a></p>
+<p>{{getString1(179)}}: <a href="{{ url_for('login') }}"><i class="icon icon-login"></i>{{getString1(181)}}</a></p>
 {% endif %}
 
 {% endblock %}

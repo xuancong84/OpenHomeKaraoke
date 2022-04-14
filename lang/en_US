@@ -183,3 +183,6 @@ System Info
 Home
 Change Language
 Please choose language
+System Language
+Current system language:
+This changes the language of the PiKaraoke backend system which gets displayed onto TV screen; moreover, each connecting user can also change their respective Web UI language in the globe button in the right-top menu. 

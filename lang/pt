@@ -15,7 +15,7 @@ Excluído da fila:
 Erro ao excluir da fila:
 Download iniciado:
 Após a conclusão, ele será adicionado à fila.
-Após a conclusão, ele aparecerá na lista "músicas disponíveis".
+Após a conclusão, ele aparecerá na lista de "músicas disponíveis".
 Erro: Não é possível excluir esta música porque ela está na fila atual:
 Música excluída:
 Erro: Nenhum parâmetro de música especificado!
@@ -182,3 +182,7 @@ Conecte-se
 Informação do sistema
 Casa
 Mudar idioma
+Por favor, escolha o idioma
+Idioma do sistema
+Idioma atual do sistema:
+Isso altera o idioma do sistema de back-end PiKaraoke que é exibido na tela da TV; além disso, cada usuário conectado também pode alterar o idioma da interface do usuário da Web no botão globo no menu superior direito.

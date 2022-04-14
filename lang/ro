@@ -137,7 +137,7 @@ PiKaraoke
 Esti sigur ca vrei sa renunti?
 Ești sigur că vrei să închizi?
 Sigur doriți să reporniți?
-Sigur doriți să actualizați Youtube-dl chiar acum? Descărcările curente și în așteptare pot eșua.
+Sigur vrei să actualizezi Youtube-dl chiar acum? Descărcările curente și în așteptare pot eșua.
 Sigur doriți să extindeți sistemul de fișiere? Acest lucru va reporni raspberry pi.
 informație
 Cod URL QR la îndemână pentru a le partaja unui prieten:
@@ -182,3 +182,7 @@ Autentificare
 Informatie de sistem
 Acasă
 Schimbați limba
+Vă rugăm să alegeți limba
+Limbajul sistemului
+Limba actuală a sistemului:
+Aceasta schimbă limba sistemului de backend PiKaraoke, care este afișată pe ecranul televizorului; în plus, fiecare utilizator care se conectează își poate schimba și limba interfeței de utilizare Web în butonul glob din meniul din dreapta sus.

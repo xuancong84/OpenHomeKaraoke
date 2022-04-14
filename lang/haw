@@ -29,7 +29,7 @@ Ke holo nei
 Ua kū
  (CPU wale nō)
  (Hāʻia ka GPU)
-Ke hōʻano hou nei iā youtube-dl! Pono e lawe i hoʻokahi minute a ʻelua paha ...
+Ke hōʻano hou nei iā youtube-dl! Pono e lawe i hoʻokahi minuke a ʻelua paha ...
 ʻAʻohe ou ʻae e hoʻohou iā youtube-dl
 ʻAʻohe ou ʻae e pani
 Haʻalele iā PiKaraoke i kēia manawa!
@@ -39,14 +39,14 @@ Ke pani nei i ka ʻōnaehana i kēia manawa!
 Hoʻomaka hou i ka ʻōnaehana i kēia manawa!
 ʻAʻohe ou ʻae e hoʻomaka hou
 Ke hoʻonui nei i ka ʻōnaehana faila a me ka hoʻomaka hou ʻana i kēia manawa!
-ʻAʻole hiki ke hoʻonui i nā fs ma nā mea ʻaʻole raspberry pi!
+ʻAʻole hiki ke hoʻonui i nā fs ma nā polokalamu pi non-raspberry!
 ʻAʻohe ou ʻae e hoʻololi i ka ʻōnaehana waihona
 ʻAʻole i loaʻa ke ala Youtube-dl!
-ʻAʻole ʻike ʻia ke ala VLC!
+ʻAʻole i loaʻa ke ala VLC!
 ʻAʻole i loaʻa ke ala omxplayer!
 Ke hana nei i ke ala hoʻoiho:
 ʻAʻole pili ʻo Wifi/Network. Ke pani nei i ka 10s...
-No ke koho ʻana i nā mele, scan QR a i ʻole hoʻopili iā
+No ke koho ʻana i nā mele, scan QR a i ʻole e hoʻopili iā
 No ka hōʻike TV, hoʻohui i
 E kaomi i ka F e hoʻololi i ka pale piha
 E kaomi iā ESC e haʻalele iā PiKaraoke
@@ -117,7 +117,7 @@ Aia ke mele i ka lālani:
 Huli / Hoʻohui hou
 Huli
 Ka lālani
-Hoʻohui i nā pāʻani karaoke ʻole
+Hoʻokomo i nā pāʻani karaoke ʻole
 Kiʻekiʻe
 Kākau i kahi mele (poʻo/mea pena) e ʻimi i nā mele i loaʻa a kaomi iā 'Queue' no ka hoʻohui ʻana i ka pila.
 Inā ʻaʻole ʻike ʻia ke mele ma ka "Available Songs" dropdown, kaomi iā 'Search' e loaʻa iā ia ma Youtube.
@@ -137,7 +137,7 @@ PiKaraoke
 Makemake ʻoe e haʻalele?
 Makemake ʻoe e pani?
 Makemake ʻoe e hoʻomaka hou?
-Makemake ʻoe e hoʻohou iā Youtube-dl i kēia manawa? Hiki ʻole ke hoʻoiho ʻia i kēia manawa a me nā mea e kali nei.
+Makemake ʻoe e hoʻohou iā Youtube-dl i kēia manawa? Hiki ʻole ke hoʻoiho ʻia i kēia manawa a ke kali nei.
 Makemake ʻoe e hoʻonui i ka ʻōnaehana waihona? E hoʻomaka hou kēia i kāu raspberry pi.
 ʻIkepili
 He helu QR URL maʻalahi e kaʻana like me kahi hoaaloha:
@@ -149,7 +149,7 @@ Hoʻokaʻawale leo
 Youtube-dl (yt-dlp) mana
 Manao PiKaraoke
 Nā Koho Mana Kiʻekiʻe
-ʻAno hoʻokaʻawale leo:
+ʻano hoʻokaʻawale leo:
 E hoʻohana iā L-R/L+R
 E hoʻohana i ka DNN
 Loaʻa i ka leo MTV maʻamau nā kaha kani stereo ʻelua (L a me R) i hoʻopaʻa ʻia ma ke ʻano: ʻo L-R ke mele mea kani, ʻo L+R ke mele leo. No laila, ma ka unuhi wale ʻana a i ʻole ka hoʻohui ʻana i nā kaila stereo ʻelua, hiki iā mākou ke kiʻi i ke ala kani a me ka leo i ke kani mono. Hoʻohana ʻo PiKaraoke i ka DNN-based (deep neural network) vocal splitter hoʻohana iā AI algorithm e hoʻokaʻawale i nā mea kani a me nā leo leo i kēlā me kēia mele stereo me ke kūʻokoʻa e hopena i nā mea kani a me nā mele leo.
@@ -164,9 +164,9 @@ Hōʻano hou i ka papa inoa mele:
 E nānā hou i ka papa kuhikuhi mele
 Pono ʻoe e hana i kēia inā ʻoe e kope lima i nā faila i ka papa kuhikuhi hoʻoiho i ka wā e holo ana ʻo PiKaraoke.
 Nā mea hou
-Inā pau ka hana ʻana a i ʻole ka huli ʻana, e hoʻoponopono paha ka hoʻonui ʻana iā youtube-dl. ʻO ka mana i hoʻokomo ʻia i kēia manawa:
+Inā pau ka hoʻoiho ʻana a i ʻole ka huli ʻana, e hoʻoponopono paha ka hoʻonui ʻana iā youtube-dl. ʻO ka mana i hoʻokomo ʻia i kēia manawa:
 Hōʻano hou iā youtube-dl
-Hiki i kēia loulou hōʻano hou ma luna ke hāʻule inā ʻaʻohe ʻae faila kūpono. E nānā i ka log PiKaraoke no nā hewa.
+Hiki i kēia loulou hōʻano hou ma luna ke hāʻule inā ʻaʻole ʻae ʻoe i nā faila kūpono. E nānā i ka log PiKaraoke no nā hewa.
 E hoʻopio
 Mai huki wale i ke kaula! E pani mau i kāu kikowaena pono e pale i ka palaho ʻikepili.
 Haʻalele iā PiKaraoke
@@ -174,7 +174,7 @@ Pūnaehana hou
 Pūnaehana pani
 'ē aʻe
 E hoʻonui i ka ʻōnaehana file Raspberry Pi
-Inā ʻoe i hoʻokomo i ke kiʻi pikaraoke pi i kūkulu mua ʻia a ʻoi aku ka nui o kāu kāleka SD ma mua o 4GB, makemake paha ʻoe e hoʻonui i ka ʻōnaehana waihona e hoʻohana i ke koena wahi. Pono ʻoe e hana i kēia. E hoʻomaka hou kēia i ka ʻōnaehana.
+Inā ʻoe i hoʻokomo i ke kiʻi pikaraoke pi i kūkulu mua ʻia a ʻoi aku ka nui o kāu kāleka SD ma mua o 4GB, makemake paha ʻoe e hoʻonui i ka ʻōnaehana waihona e hoʻohana i ke koena wahi. Pono ʻoe e hana i kēia i hoʻokahi wale nō. E hoʻomaka hou kēia i ka ʻōnaehana.
 Hoʻopau i ke ʻano hoʻokele
 E hoʻā i ke ʻano hoʻokele
 lele
@@ -182,3 +182,7 @@ komo i loko
 ʻIke Pūnaewele
 Home
 Hoʻololi ʻŌlelo
+E ʻoluʻolu e koho i ka ʻōlelo
+ʻŌlelo Pūnaehana
+ʻŌlelo ʻōnaehana o kēia manawa:
+Hoʻololi kēia i ka ʻōlelo o ka ʻōnaehana hope PiKaraoke e hōʻike ʻia ma ka pale TV; Eia kekahi, hiki i kēlā me kēia mea hoʻohana hoʻohui ke hoʻololi i kā lākou ʻōlelo UI pūnaewele ma ka pihi honua ma ka papa kuhikuhi ʻākau.

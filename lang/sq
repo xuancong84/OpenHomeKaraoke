@@ -59,7 +59,7 @@ Duke luajtur:
 Modaliteti i administratorit u dha!
 Rritja e vonesës së audios do t'ju japë më shumë kohë për të lexuar tekstet para se të këndoni fjalinë tjetër.
 Zvogëlimi i vonesës së titrave do t'ju japë më shumë kohë për të lexuar tekstet para se të këndoni fjalinë tjetër.
-Një gjysmëton njihet gjithashtu si gjysmë hapi. Është intervali më i vogël i përdorur në muzikën klasike perëndimore, i barabartë me një të dymbëdhjetën e oktavës ose gjysmë tonin.
+Një gjysmëton njihet gjithashtu si gjysmë hapi. Është intervali më i vogël i përdorur në muzikën klasike perëndimore, i barabartë me një të dymbëdhjetë të oktavës ose gjysmë tonin.
 Ndarësi vokal i bazuar në DNN është aktivizuar. PiKaraoke përdor PyTorch (nga Facebook) për të drejtuar një rrjet të thellë nervor për të ndarë tingujt instrumentalë dhe vokalë në secilën këngë duke krijuar tinguj stereo.
 Kontrolli i lojtarit
 Muzikë
@@ -89,7 +89,7 @@ Ulja e vonesës së audios
 Cakto vonesën e audios
 Rritja e vonesës së audios
  gjysmëtonet
-Ju lutemi shkruani emrin tuaj. Kjo do të shfaqet pranë këngëve që vendosni në radhë nga kjo pajisje.
+Ju lutemi shkruani emrin tuaj. Kjo do të shfaqet pranë këngëve që ju vendosni në radhë nga kjo pajisje.
 Kënga u shtua në radhë:
 Kënga tashmë është në radhë:
 Rendit sipas datës
@@ -138,9 +138,9 @@ Jeni i sigurt që dëshironi të hiqni dorë?
 Je i sigurt që dëshiron ta mbyllësh?
 Jeni i sigurt që dëshironi të rindizni?
 Jeni i sigurt që dëshironi të përditësoni Youtube-dl tani? Shkarkimet aktuale dhe ato në pritje mund të dështojnë.
-Jeni i sigurt që dëshironi të zgjeroni sistemin e skedarëve? Kjo do të ristartoni raspberry pi.
+Jeni i sigurt që dëshironi të zgjeroni sistemin e skedarëve? Kjo do të ristartoni raspberry pi-në tuaj.
 Informacion
-Kodi QR i përshtatshëm i URL-së për t'u ndarë me një mik:
+Kodi QR i dobishëm i URL-së për t'u ndarë me një mik:
 OS
 Përdorimi i diskut
 Kujtesa
@@ -154,7 +154,7 @@ Përdorni L-R/L+R
 Përdorni DNN
 Audioja standarde MTV ka dy kanale stereo (L dhe R) të koduar në atë mënyrë që: L-R është pjesa e instrumentit, L+R është pjesa vokale. Kështu, thjesht duke zbritur ose shtuar dy kanalet stereo, mund të marrim pjesën instrumentale dhe vokale në tingull mono. Ndarësi vokal i integruar i bazuar në DNN (rrjeti nervor i thellë) i PiKaraoke përdor algoritmin e AI për të ndarë tingujt instrumental dhe vokal në çdo pjesë stereo në mënyrë të pavarur duke rezultuar në këngë stereo instrumentale dhe vokale.
 Stop Spliter
-Rinisni Splitter
+Rinisni Spliter
 Ndarësi vokal (që mbështet zbritjen e bazuar në DNN dhe stereo) funksionon si një proces i veçantë në sfond, duke gjeneruar skedar audio instrumental/vokal për çdo këngë.
 Risinkronizoni audio dhe video:
 Ndalo transmetimin
@@ -164,7 +164,7 @@ Rifresko listën e këngëve:
 Riskano direktorinë e këngëve
 Ju duhet ta bëni këtë vetëm nëse i keni kopjuar manualisht skedarët në drejtorinë e shkarkimit ndërsa PiKaraoke po funksiononte.
 Përditësimet
-Nëse shkarkimet ose kërkimet kanë pushuar së funksionuari, përditësimi i youtube-dl ndoshta do ta rregullojë atë. Versioni aktual i instaluar është:
+Nëse shkarkimet ose kërkimet pushuan së funksionuari, përditësimi i youtube-dl ndoshta do ta rregullojë atë. Versioni aktual i instaluar është:
 Përditëso youtube-dl
 Kjo lidhje përditësuese e mësipërme mund të dështojë nëse nuk keni lejet e duhura të skedarit. Kontrolloni regjistrin e PiKaraoke për gabime.
 Fike
@@ -182,3 +182,7 @@ identifikohu
 Informacioni i Sistemit
 Shtëpi
 Ndrysho gjuhën
+Ju lutemi zgjidhni gjuhën
+Gjuha e sistemit
+Gjuha aktuale e sistemit:
+Kjo ndryshon gjuhën e sistemit mbështetës PiKaraoke i cili shfaqet në ekranin e televizorit; Për më tepër, çdo përdorues që lidhet gjithashtu mund të ndryshojë gjuhën përkatëse të ndërfaqes së uebit në butonin globe në menynë e sipërme djathtas.

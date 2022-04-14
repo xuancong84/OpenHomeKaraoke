@@ -92,7 +92,7 @@ Erhéijung Audio Verzögerung
 Gitt weg Ären Numm. Dëst erschéngt nieft de Lidder déi Dir vun dësem Apparat an der Schlaang steet.
 Lidd dobäi an d'Schlaang:
 Lidd schon an der Schlaang:
-Sortéiert no Datum
+Sortéieren no Datum
 Sortéiert op Alphabetesch
 Füügt '%s' an d'Schlaang
 Surfen
@@ -166,9 +166,9 @@ Dir sollt dëst nëmmen maachen wann Dir Dateien manuell an den Downloadverzeich
 Aktualiséierungen
 Wann d'Downloads oder d'Sichunge gestoppt hunn ze schaffen, wäert d'Aktualiséierung vun YouTube-dl et wahrscheinlech fixéieren. Déi aktuell installéiert Versioun ass:
 Update youtube-dl
-Dësen Update Link uewendriwwer ka feelen wann Dir net déi richteg Dateirechter hutt. Kontrolléiert de PiKaraoke Log fir Feeler.
+Dësen Updatelink uewendriwwer ka feelen wann Dir net déi richteg Dateirechter hutt. Kontrolléiert de PiKaraoke Log fir Feeler.
 Ausmaachen
-Net nëmmen de Stecker zéien! Schalt Äre Server ëmmer richteg aus fir Datekorruptioun ze vermeiden.
+Net nëmmen de Stecker zéien! Schalt Äre Server ëmmer richteg aus fir Datenkorruptioun ze vermeiden.
 PiKaraoke ophalen
 Restart System
 Shutdown System
@@ -182,3 +182,7 @@ aloggen
 System Info
 Doheem
 Sprooch änneren
+Wielt w.e.g. Sprooch
+System Sprooch
+Aktuell System Sprooch:
+Dëst ännert d'Sprooch vum PiKaraoke Backend System deen op der Fernsehbildschierm ugewise gëtt; Desweideren, all konnektéieren Benotzer kann och jeeweileg hir Web UI Sprooch am Globus Knäppchen am riets-Top Menü änneren.

@@ -182,3 +182,7 @@ Log på
 System info
 Hjem
 Skift sprog
+Vælg venligst sprog
+Systemsprog
+Aktuelt systemsprog:
+Dette ændrer sproget i PiKaraoke-backend-systemet, som vises på TV-skærmen; desuden kan hver tilsluttende bruger også ændre deres respektive web-UI-sprog i globusknappen i menuen øverst til højre.

@@ -307,27 +307,9 @@
       "src": "fontawesome"
     },
     {
-      "uid": "95501182783a570088194c41bc63543b",
-      "css": "venus",
-      "code": 61985,
-      "src": "fontawesome"
-    },
-    {
-      "uid": "5d5d8995aa777cb59c88671e89ab5ced",
-      "css": "mars",
-      "code": 61986,
-      "src": "fontawesome"
-    },
-    {
       "uid": "eeadb020bb75d089b25d8424aabe19e0",
       "css": "minus-circled",
       "code": 59421,
-      "src": "fontawesome"
-    },
-    {
-      "uid": "861ab06e455e2de3232ebef67d60d708",
-      "css": "minus",
-      "code": 59422,
       "src": "fontawesome"
     },
     {
@@ -364,6 +346,24 @@
       "uid": "8b9e6a8dd8f67f7c003ed8e7e5ee0857",
       "css": "off",
       "code": 59428,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3a00327e61b997b58518bd43ed83c3df",
+      "css": "login",
+      "code": 59422,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "0d20938846444af8deb1920dc85a29fb",
+      "css": "logout",
+      "code": 59429,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "a73c5deb486c8d66249811642e5d719a",
+      "css": "arrows-cw",
+      "code": 9654,
       "src": "fontawesome"
     }
   ]

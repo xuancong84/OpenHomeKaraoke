@@ -36,7 +36,7 @@ PiKaraoke-ni hozir tark eting!
 Chiqish uchun ruxsatingiz yo‘q
 Tizim hozir o'chirilmoqda!
 Oʻchirish uchun ruxsatingiz yoʻq
-Endi tizim qayta ishga tushirilmoqda!
+Tizim hozir qayta ishga tushirilmoqda!
 Qayta ishga tushirishga ruxsatingiz yo'q
 Fayl tizimini kengaytirish va tizimni hozir qayta ishga tushirish!
 Raspberry pi qurilmalarida fsni kengaytirib bo'lmaydi!
@@ -91,7 +91,7 @@ Ovoz kechikishini oshiring
  yarim ohanglar
 Iltimos, ismingizni kiriting. Bu qurilmadan navbatga qoʻygan qoʻshiqlaringiz yonida koʻrsatiladi.
 Navbatga qo'shilgan qo'shiq:
-Qo'shiq allaqachon navbat:
+Qo'shiq allaqachon navbatda:
 Sana bo'yicha saralash
 Alifbo tartibida tartiblash
 Navbatga “%s” qo‘shing
@@ -130,7 +130,7 @@ uchun qidiruv natijalari
 Ko'proq natijalarni ko'rsatish uchun ochiladigan menyuni bosing
 Havola:
 Mavjud qo'shiqlar
-Ushbu qurilmadan foydalanayotgan shaxsning ismini oʻzgartirmoqchimisiz? Bu navbatdagi qoʻshiqlar yonida koʻrsatiladi. Hozirgi:
+Ushbu qurilmadan foydalanadigan odamning ismini o'zgartirmoqchimisiz? Bu navbatdagi qoʻshiqlar yonida koʻrsatiladi. Hozirgi:
 Joriy foydalanuvchi
 Ma'lumot
 PiKaraoke
@@ -182,3 +182,7 @@ tizimga kirish
 Tizim ma'lumotlari
 Uy
 Tilni o'zgartirish
+Iltimos, tilni tanlang
+Tizim tili
+Joriy tizim tili:
+Bu televizor ekranida ko'rsatiladigan PiKaraoke backend tizimining tilini o'zgartiradi; Bundan tashqari, har bir ulanish foydalanuvchisi o'zining yuqori o'ng menyusidagi globe tugmasidagi tegishli Web UI tilini o'zgartirishi mumkin.

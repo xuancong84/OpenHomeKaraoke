@@ -136,7 +136,7 @@ Inligting
 PiKaraoke
 Is jy seker jy wil opgee?
 Is jy seker jy wil afskakel?
-Is jy seker jy wil herlaai?
+Is jy seker jy wil herselflaai?
 Is jy seker jy wil Youtube-dl nou opdateer? Huidige en hangende aflaaie kan misluk.
 Is jy seker jy wil die lêerstelsel uitbrei? Dit sal jou raspberry pi herlaai.
 Inligting
@@ -155,7 +155,7 @@ Gebruik DNN
 Standaard MTV-klank het die twee stereokanale (L en R) so geënkodeer dat: L-R die instrumentsnit is, L+R die vokale snit is. Dus, deur eenvoudig die twee stereokanale af te trek of by te voeg, kan ons die instrumentale en vokale snit in monoklank kry. PiKaraoke se ingeboude DNN-gebaseerde (diep neurale netwerk) vokale splitter gebruik AI-algoritme om instrumentele en vokale klank in elke stereosnit onafhanklik te verdeel, wat lei tot stereo-instrumentele en vokale snitte.
 Stop Splitter
 Herbegin Splitter
-Die vokale splitter (wat beide DNN-gebaseerde en stereo-aftrekking ondersteun) loop as 'n aparte proses in die agtergrond, wat instrumentale/vokale oudiolêer vir elke liedjie genereer.
+Die vokale splitter (wat beide DNN-gebaseerde en stereo-aftrekking ondersteun) loop as 'n aparte proses in die agtergrond, wat instrumentale/vokale klanklêer vir elke liedjie genereer.
 Hersinchroniseer oudio en video:
 Stop Streamer
 Herbegin Streamer
@@ -175,10 +175,14 @@ Afskakelstelsel
 Ander
 Brei Raspberry Pi-lêerstelsel uit
 As jy sopas die voorafgeboude pikaraoke pi-beeld geïnstalleer het en jou SD-kaart is groter as 4GB, wil jy dalk die lêerstelsel uitbrei om die oorblywende spasie te benut. Jy hoef dit net een keer te doen. Dit sal die stelsel herlaai.
-Deaktiveer adminmodus
+Deaktiveer administrasiemodus
 Aktiveer adminmodus
 teken uit
 teken aan
-Stelsel inligting
+Stelselinligting
 Tuis
 Verander taal
+Kies asseblief taal
+Stelseltaal
+Huidige stelseltaal:
+Dit verander die taal van die PiKaraoke backend-stelsel wat op TV-skerm vertoon word; bowendien kan elke verbindende gebruiker ook hul web-UI-taal in die aardbolknoppie in die regterbo-kieslys verander.

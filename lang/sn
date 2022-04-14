@@ -6,7 +6,7 @@ Nziyo dzapera!
 Yakabvisa mutsara!
 Zvatadza kufambisa chinhu mukati memutsara: nharo-nharo
 Tafambisa chinhu mukati memutsara:
-Zvatadza kufambisa chinhu mukati memutsara:
+Chatadza kufambisa chinhu mukati memutsara:
 Zvakadzikiswa mumutsara:
 Kutadza kudzika mumutsara:
 Yakakwidzwa mumutsara:
@@ -19,7 +19,7 @@ Kana yapedza, ichaonekwa mu "nziyo dziripo".
 Zvakatadza: Hatikwanisi kudzima rwiyo urwu nekuti rwuri mumutsara uripo.
 Rwiyo rwadzimwa:
 Mhosho: Hapana rwiyo parameter yataurwa!
-Mhosho: Hatikwanisi kugadziridza rwiyo urwu nekuti rurikuridzwa:
+Zvakanganisika: Hatikwanisi kugadziridza rwiyo urwu nekuti rurikuridzwa:
 Song File Edit
 Mhosho pakupa zita refaira: '%s' kuenda ku'%s'. Zita refaira ravepo.
 Faera rakapihwa zita: '%s' kuenda ku'%s'
@@ -130,7 +130,7 @@ Tsvaga mhinduro dze
 Dzvanya kudonhedza kuti uratidze mimwe mibairo
 Link:
 Nziyo dziripo
-Unoda kushandura zita rekuratidza remunhu ari kushandisa mudziyo uyu? Izvi zvichaonekwa padivi penziyo dzakamirirwa. Zvazvino:
+Unoda kushandura zita rekuratidza remunhu ari kushandisa mudziyo uyu? Izvi zvichaonekwa padivi penziyo dzakaiswa mumutsara. Zvazvino:
 Mushandisi wazvino
 Info
 PiKaraoke
@@ -182,3 +182,7 @@ log in
 System Info
 Kumba
 Chinja Mutauro
+Ndapota sarudza mutauro
+Mutauro Wehurongwa
+Mutauro wehurongwa hwazvino:
+Izvi zvinoshandura mutauro wePiKaraoke backend system inoratidzwa paTV screen; uyezve, mushandisi wega wega wekubatanidza anogonawo kuchinja zvinoenderana nemutauro wavo weWebhu UI mubhatani repasi mune yekurudyi-yepamusoro menyu.

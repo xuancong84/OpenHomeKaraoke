@@ -4,7 +4,7 @@ Ensalutinta el administra reĝimo!
 Aldonitaj %s hazardaj trakoj
 Elĉerpigis kantojn!
 Malplenigis la atendovicon!
-Eraro dum movo de objekto en la voston: nevalida argumento
+Eraro dum movi eron en la voston: nevalida argumento
 Sukcese movita aĵo en la atendovico:
 Eraro dum movi eron en la atendovico:
 Moviĝis malsupren en atendovico:
@@ -166,14 +166,14 @@ Vi devus fari tion nur se vi mane kopiis dosierojn al la elŝuta dosierujo dum P
 Ĝisdatigoj
 Se elŝutoj aŭ serĉoj ĉesis funkcii, ĝisdatigi youtube-dl verŝajne riparos ĝin. La nuna instalita versio estas:
 Ĝisdatigu youtube-dl
-Ĉi tiu supra ĝisdatiga ligilo povas malsukcesi se vi ne havas taŭgajn dosierpermesojn. Kontrolu la PiKaraoke protokolo por eraroj.
+Ĉi tiu supra ĝisdatiga ligilo povas malsukcesi se vi ne havas taŭgajn dosierpermesojn. Kontrolu la PiKaraoke protokolon por eraroj.
 Malŝalto
 Ne nur tiru la ŝtopilon! Ĉiam malŝaltu vian servilon ĝuste por eviti datuman korupton.
 Forlasu PiKaraoke
 Rekomencu Sistemon
 Malŝalta Sistemo
 Alia
-Vastigu dosiersistemon Raspberry Pi
+Vastigu Raspberry Pi dosiersistemon
 Se vi ĵus instalis la antaŭkonstruitan pikaraoke pi-bildon kaj via SD-karto estas pli granda ol 4GB, vi eble volas vastigi la dosiersistemon por uzi la restantan spacon. Vi devas fari ĉi tion nur unufoje. Ĉi tio rekomencos la sistemon.
 Malebligu administran reĝimon
 Ebligu administran reĝimon
@@ -182,3 +182,7 @@ Ensaluti
 Sisteminformoj
 Hejmo
 Ŝanĝi Lingvon
+Bonvolu elekti lingvon
+Sistema Lingvo
+Nuna sistema lingvo:
+Ĉi tio ŝanĝas la lingvon de la backend-sistemo PiKaraoke, kiu montriĝas sur televida ekrano; plie, ĉiu konektanta uzanto ankaŭ povas ŝanĝi respektive sian Retejan Interfacon-lingvon en la globbutono en la dekstra supra menuo.

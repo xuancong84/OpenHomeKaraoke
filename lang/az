@@ -149,7 +149,7 @@ Vokal Splitter
 Youtube-dl (yt-dlp) versiyası
 PiKaraoke versiyası
 Qabaqcıl Nəzarət Seçimləri
-Vokal splitter rejimi:
+Vokal ayırıcı rejimi:
 L-R/L+R istifadə edin
 DNN istifadə edin
 Standart MTV səsi iki stereo kanala (Sol və Sağ) belə kodlaşdırılmış şəkildə malikdir: L-R alət trekidir, L+R vokal trekidir. Beləliklə, sadəcə olaraq iki stereo kanalı çıxarmaqla və ya əlavə etməklə, mono səsdə instrumental və vokal treki əldə edə bilərik. PiKaraoke-nin daxili DNN əsaslı (dərin neyron şəbəkəsi) vokal ayırıcısı hər bir stereo trekdə instrumental və vokal səsi müstəqil şəkildə bölmək üçün süni intellekt alqoritmindən istifadə edir, nəticədə stereo instrumental və vokal treklər yaranır.
@@ -182,3 +182,7 @@ daxil ol
 Sistem Məlumatı
 Ev
 Dili dəyişdirin
+Zəhmət olmasa dil seçin
+Sistem dili
+Cari sistem dili:
+Bu, TV ekranında göstərilən PiKaraoke backend sisteminin dilini dəyişir; üstəlik, hər bir qoşulan istifadəçi yuxarı sağdakı menyuda yer kürəsinin düyməsindəki müvafiq Veb UI dilini də dəyişə bilər.

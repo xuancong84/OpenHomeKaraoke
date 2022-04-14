@@ -25,7 +25,7 @@ from flask_paginate import Pagination, get_page_parameter
 import karaoke
 from constants import VERSION
 from collections import defaultdict
-from lib.get_platform import get_platform
+from lib.get_platform import *
 from lib.vlcclient import get_default_vlc_path
 
 try:
@@ -74,31 +74,6 @@ def filename_from_path(file_path, remove_youtube_id = True):
 
 def url_escape(filename):
 	return quote(filename.encode("utf8"))
-
-
-def find_language(lang):
-	check_lang = lambda L: L if L in os.langs else None
-	lang = lang.replace('-', '_')
-	found = check_lang(lang)
-	if not found:
-		prefix = lang.split("_")[0]
-		found = check_lang(prefix)
-	if not found:
-		for k in sorted(os.langs.keys()):
-			if k.startswith(prefix):
-				found = check_lang(k)
-	if not found:
-		found = check_lang('en_US')
-	return found
-
-
-def set_language(lang):
-	loadf = lambda f: defaultdict(lambda: "", {ii: L for ii, L in enumerate([''] + open(f, 'rt').read().splitlines())})
-	os.langs = {f:loadf('lang/'+f) for f in os.listdir('lang') if os.path.getsize('lang/'+f)}
-	os.lang = find_language(lang)
-	if not os.lang:
-		raise Exception(f"Language file lang/{lang} not found")
-	os.texts = os.langs[os.lang]
 
 
 def is_admin():
@@ -159,7 +134,16 @@ def nowplaying():
 
 @app.route("/get_lang_list")
 def get_lang_list():
-	return json.dumps({k: v[1] for k, v in os.langs.items()})
+	return json.dumps({k: v[1] for k, v in os.langs.items()}, sort_keys = False)
+
+
+@app.route("/change_language/<language>")
+def change_language(language):
+	try:
+		set_language(language)
+	except:
+		logging.error(f"Failed to set server language to {language}")
+	return os.lang
 
 
 @app.route("/auth", methods = ["POST"])
@@ -534,12 +518,13 @@ def info():
 	disk = str(free) + "GB free / " + str(total) + "GB total ( " + str(disk.percent) + "% )"
 
 	# whether screencapture.sh and vocal_splitter.py is running
-	get_status = lambda t: getString(27) if t is None else (getString(28) if t else getString(29))
+	getString2 = lambda ii: getString1(request.client_lang, ii)
+	get_status = lambda t: getString2(27) if t is None else (getString2(28) if t else getString2(29))
 	screencapture = K.streamer_alive()
 	vocalsplitter = K.vocal_alive()
 	vocal_extra = ''
 	if vocalsplitter:
-		vocal_extra = getString(30) if K.vocal_device == 'cpu' else getString(31)
+		vocal_extra = getString2(30) if K.vocal_device == 'cpu' else getString2(31)
 
 	# youtube-dl
 	youtubedl_version = K.youtubedl_version
@@ -548,7 +533,8 @@ def info():
 
 	return render_template(
 		"info.html",
-		getString1 = lambda ii: getString1(request.client_lang, ii),
+		getString1 = getString2,
+		langs = os.langs, lang = os.lang,
 		site_title = site_name,
 		ostype = sys.platform.upper(),
 		title = "Info",

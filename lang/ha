@@ -52,7 +52,7 @@ Danna F don kunna cikakken allo
 Latsa ESC don barin PiKaraoke
 An gano yanayin saitin RaspiWifiConfig!
 Haɗa wata na'ura/wayar wayo zuwa Wifi AP: '%s'
-Sa'an nan kuma nuna browser zuwa: '%s://%s%s' kuma bi umarnin.
+Sa'an nan kuma nuna mai bincikensa zuwa: '%s://%s%s' kuma bi umarnin.
 Na gaba:
 Ya kara da:
 Yanzu ana wasa:
@@ -182,3 +182,7 @@ shiga
 Bayanin tsarin
 Gida
 Canja Harshe
+Da fatan za a zaɓi harshe
+Harshen Tsari
+Harshen tsarin yanzu:
+Wannan yana canza yaren tsarin baya na PiKaraoke wanda ke nunawa akan allon TV; haka ma, kowane mai amfani da haɗin kai kuma zai iya canza yaren UI ɗin su na yanar gizo a cikin maɓallin duniya a cikin menu na sama na dama.

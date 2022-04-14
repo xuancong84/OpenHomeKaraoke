@@ -37,7 +37,7 @@ Sinulla ei ole lupaa lopettaa
 Sulje järjestelmä nyt!
 Sinulla ei ole lupaa sulkea
 Järjestelmä käynnistetään uudelleen nyt!
-Sinulla ei ole oikeutta käynnistää uudelleen
+Sinulla ei ole lupaa käynnistää uudelleen
 Laajenna tiedostojärjestelmää ja käynnistä järjestelmä uudelleen nyt!
 Fs:ää ei voi laajentaa muissa kuin Raspberry pi -laitteissa!
 Sinulla ei ole oikeutta muuttaa tiedostojärjestelmän kokoa
@@ -52,7 +52,7 @@ Paina F vaihtaaksesi koko näytön tilaan
 Paina ESC poistuaksesi PiKaraokesta
 RaspiWifiConfig-asennustila havaittu!
 Yhdistä toinen laite/älypuhelin Wifi-tukiasemaan: '%s'
-Osoita sitten selain osoitteeseen: '%s://%s%s' ja seuraa ohjeita.
+Valitse sitten selain osoitteeseen %s://%s%s ja noudata ohjeita.
 Seuraavaksi:
 Lisännyt:
 Nyt soi:
@@ -182,3 +182,7 @@ Kirjaudu sisään
 Järjestelmän tiedot
 Koti
 Vaihda kieltä
+Valitse kieli
+Järjestelmän kieli
+Nykyinen järjestelmän kieli:
+Tämä muuttaa PiKaraoke-taustajärjestelmän kielen, joka näytetään TV-ruudulla; Lisäksi jokainen yhteyden muodostava käyttäjä voi myös vaihtaa vastaavaa verkkokäyttöliittymänsä kieltä oikean ylävalikon maapallo-painikkeesta.

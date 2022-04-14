@@ -182,3 +182,7 @@ Mewngofnodi
 Gwybodaeth System
 Cartref
 Newid Iaith
+Dewiswch iaith
+Iaith System
+Iaith system gyfredol:
+Mae hyn yn newid iaith system backend PiKaraoke sy'n cael ei harddangos ar sgrin deledu; ar ben hynny, gall pob defnyddiwr cyswllt hefyd newid eu hiaith Web UI yn y botwm glôb yn y ddewislen top dde.
