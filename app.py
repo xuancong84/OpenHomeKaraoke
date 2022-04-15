@@ -39,7 +39,7 @@ site_name = "PiKaraoke"
 admin_password = None
 os.texts = defaultdict(lambda: "")
 getString = lambda ii: os.texts[ii]
-getString1 = lambda lang, ii: os.langs[lang][ii]
+getString1 = lambda lang, ii: os.langs[lang].get(ii, os.langs['en_US'][ii])
 
 
 # Define global symbols for Jinja templates 
@@ -433,9 +433,12 @@ def download():
 	t.daemon = True
 	t.start()
 
-	flash(getString(16) + d["song_url"] + '\n' + getString(17 if enqueue else 18), "is-info")
-	return redirect(url_for("search"))
+	return getString(16) + d["song_url"] + '\n' + getString(17 if enqueue else 18)
 
+@app.route("/check_download", methods = ["POST"])
+def check_download():
+	ret = K.downloading_songs.get(request.values.get('url', None), 1)
+	return str(ret)
 
 @app.route("/qrcode")
 def qrcode():

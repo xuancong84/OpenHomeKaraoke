@@ -106,6 +106,7 @@ class Karaoke:
 		self.omxclient = None
 		self.screen = None
 		self.player_state = {}
+		self.downloading_songs = {}
 
 		logging.basicConfig(
 			format = "[%(asctime)s] %(levelname)s: %(message)s",
@@ -494,6 +495,7 @@ class Karaoke:
 
 	def download_video(self, song_url = '', enqueue = False, song_added_by = "Pikaraoke", include_subtitles = False):
 		logging.info("Downloading video: " + song_url)
+		self.downloading_songs[song_url] = 1
 		dl_path = "%(title)s---%(id)s.%(ext)s"
 		opt_quality = ['-f', 'bestvideo[ext!=webm][height<=1080]+bestaudio[ext!=webm]/best[ext!=webm]'] if self.high_quality else ['-f', 'mp4']
 		opt_sub = ['--sub-langs', 'all', '--embed-subs'] if include_subtitles else []
@@ -507,16 +509,20 @@ class Karaoke:
 			rc = subprocess.call(cmd)  # retry once. Seems like this can be flaky
 		if rc == 0:
 			logging.debug("Song successfully downloaded: " + song_url)
+			self.downloading_songs[song_url] = 0
 			bn = self.get_downloaded_file_basename(song_url)
 			if bn:
 				shutil.move(self.download_path+'tmp/'+bn, self.download_path+bn)
 				self.get_available_songs()
 				if enqueue:
 					self.enqueue(self.download_path+bn, song_added_by)
+					self.downloading_songs[song_url] = '00'
 			else:
 				logging.error("Error queueing song: " + song_url)
+				self.downloading_songs[song_url] = '01'
 		else:
 			logging.error("Error downloading song: " + song_url)
+			self.downloading_songs[song_url] = -1
 		return rc
 
 	def get_available_songs(self):

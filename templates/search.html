@@ -34,8 +34,26 @@
   }
 </style>
 <script>
+  var download_url = "";
+  var timer;
+  function check_download(){
+    $.post('/check_download', {"url": download_url}, function(val){
+      msg = "";
+      switch(val){
+        case '1': return;
+        case '00': msg = "{{getString1(191)}}";
+        case '0': msg = "{{getString1(189)}} "+msg; break;
+        case '-1': msg ="{{getString1(190)}}"; break;
+        case '01': msg = "{{getString1(189)}} {{getString1(192)}}"; break;
+      }
+      clearInterval(timer);
+      $("#download-button").removeClass("is-loading");
+      $("#direct-download-button").removeClass("is-loading");
+      showNotification(msg);
+    });
+  }
   $(function () {
-
+  
     $("#search_result_selector").focus();
 
     $("#search-link").click(function () {
@@ -48,6 +66,21 @@
       if (!$("#download-button").is('[disabled=disabled]')) {
         $("#download-button").addClass("is-loading");
       }
+    });
+    
+    $("#direct-download-button").click(function () {
+      if (!$("#direct-download-button").is('[disabled=disabled]')) {
+        $("#direct-download-button").addClass("is-loading");
+      }
+    });
+    
+    $('.download-direct').submit(function(){
+      download_url = $(this).find('[name=song_url]').val()
+      $.post($(this).attr('action'), $(this).serialize(), function(msg) {
+        showNotification(msg);
+        timer = setInterval(check_download, 2000);
+      }, 'text');
+      return false;
     });
 
     $("#add-queue-link").click(function () {
@@ -295,7 +328,7 @@
     <div id="advanced-settings" class="box has-background-black-bis" style="margin-top: 10px">
       <div class="control">
         <div class="label">{{getString1(124)}}</div>
-        <form  action="{{ url_for('download') }}" method="post">
+        <form class="download-direct" action="{{ url_for('download') }}" method="post">
           <input class="input" id="direct-download-url" type="text" name="song_url" />
           <input class="song-added-by" type="hidden" name="song_added_by" />
           <div class="field" style="margin-top: 5px">
@@ -324,7 +357,7 @@
   {% if search_results %}
   <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
   <div class="field" id="container_search_result">
-    <form action="{{ url_for('download') }}" method="post" target="dummyframe">
+    <form class="download-direct" action="{{ url_for('download') }}" method="post">
       <label class="label">{{getString1(129)}}<small><i>'{{search_string}}'</i></small></label>
       <div class="field select">
         <select id="search_result_selector" name='song_url'>

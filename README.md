@@ -1,26 +1,27 @@
 # PiKaraoke (The World's best open-source Python-based YouTube Karaoke system)
 
 This is the world's best open-source Python-based YouTube Karaoke system up to today (2022.4), forked from @vicwomg's repo (thanks) and thoroughly revamped and incorporated @tsurumeso's DNN-based (deep neural network) vocal splitter (thanks to https://github.com/tsurumeso/vocal-remover). PiKaraoke is a "KTV"-style Karaoke song search and queueing system. It connects to your TV either via an HDMI cable, or screen sharing, or using TV's web-browser (backend KTV player is screen-captured and streamed to HTTP), and shows a QR code for computers and smartphones to connect to a web interface. From there, multiple users can seamlessly search your local track library, queue up songs, add an endless selection of new Karaoke tracks from YouTube, and more. Works on Raspberry Pi, OSX, Windows, and Linux!
-
+See a demo on YouTube: [![Img alt text](https://img.youtube.com/vi/kmQax0EhAxE/0.jpg)](https://www.youtube.com/watch?v=kmQax0EhAxE)
 
 ## Key Features
-- Stream-to-HTTP allows any TV (or IT device) with a web browser to watch the KTV (on Windows and MacOS, you can use wireless-display/screen-projection and Airplay respectively)
-- Web interface for multiple users to queue tracks
-- Splash screen with connection QR code and "Next up" display
-- Searching/browsing a local song library 
-- Adding new songs from YouTube
 - DNN-based (Deep Neural Network) vocal splitter (need PyTorch, preferably with GPU support), you can choose to play instrumental, vocal or both
 - Playing instrumental sound by the traditional stereo track subtraction method (disable DNN in Advanced Control Options)
-- mp3 + cdg support, including compressed .zip bundles 
+- Web interface for multiple users to queue tracks
+- Splash screen with connection QR code and "Next up" display
+- Searching/browsing a local song library
+- Search for songs on YouTube and download new songs from YouTube and many other video websites such as Youku, Bilibili, etc
+- mp3 + cdg support, including compressed .zip bundles
 - Pause/Skip/Restart and volume control
-- Advanced editing of downloaded file names
+- Support renaming and deletion of downloaded files
 - Queue management, support dragging of a song to any position in the queue
 - Key Change / Pitch shifting
 - Lock down features with admin mode
 - Seek to play position (you can practice singing a specific sentence over and over again)
 - Audio delay adjustment (YouTube MTVs often have synchronized lyrics, this makes singing difficult as there is not enough time to look at the lyrics)
 - Subtitle delay adjustment for easier singing (subtitle control will be displayed only if the currently-playing media file contains subtitle tracks)
+- Stream-to-HTTP allows any TV (or IT device) with a web browser to watch the KTV (on Windows and MacOS, you can use wireless-display/screen-projection and Airplay respectively)
 - Support song titles in all languages (including Chinese/Japanese/Arabic/Greek/Korean/Vietnamese/Hindi/etc.), filenames containing non-English characters are sorted according to their English transliteration
+- Multi-lingual support in both Web UI and backend system UI
 
 ## Screenshots
 
