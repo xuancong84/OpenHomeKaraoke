@@ -219,9 +219,8 @@
             var obj = JSON.parse(data);
             if (obj.success) {
               showNotification("{{getString1(115)}}" + obj.song, "is-success")
-            }
-            else {
-              showNotification("{{getString(116)}}" + obj.song, "is-danger")
+            } else {
+              showNotification("{{getString1(116)}}" + obj.song, "is-danger")
             }
             $select[0].selectize.clear()
           }

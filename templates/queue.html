@@ -84,14 +84,14 @@
       });
     }
     else {
-      html += `<tr><td><p class="has-text-warning">{{getString(111)}}</p></td></tr>`
+      html += `<tr><td><p class="has-text-warning">{{getString1(111)}}</p></td></tr>`
     }
     return html;
   }
 
   $(document).on('click', '.confirm-delete', function (e) {
     e.preventDefault();
-      if (window.confirm(`{{getString(107)}} "${this.title}" ?`)) {
+      if (window.confirm(`{{getString1(107)}} "${this.title}" ?`)) {
         $.get(this.href, function (data) {})
         getQueue();
       }
