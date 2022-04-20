@@ -63,7 +63,7 @@ Nîvek jî wekî nîv-gavek tê zanîn. Ew navbera herî piçûk e ku di muzîka
 Parçekirina dengbêja-bingeha DNN-ê çalak e. PiKaraoke PyTorch (ji hêla Facebook) ve bikar tîne da ku torgilokek neuralî ya kûr bimeşîne da ku di her rêkê de dengê instrumental û dengbêjî parçe bike û dengê stereo derxe.
 Player Control
 Mûzîk
-Herdû
+Mixed
 Deng
 Biguherîne Key
 Niha tiştek nayê lîstin.
@@ -78,7 +78,7 @@ Derengiya Dengê (çirk)
 Derengiya binnivîsê (saniye)
 Stran ji nû ve bidin destpêkirin
 Play/Pause
-Stop Current Song
+Stirana Niha derbas bibe
 Volume Down
 Set Volume
 Volume Up
@@ -127,12 +127,12 @@ Binnivîsan têde
 Download
 Lêgerîna YouTube ji bo
 Encamên lêgerînê ji bo
-Bişkojka dakêşanê bikirtînin da ku encamên bêtir nîşan bidin
+Bişkojka dakêşanê bikirtînin ku encamên bêtir nîşan bidin
 Pêvek:
 Stranên Berdest
 Ma hûn dixwazin navê xuyangê yê kesê ku vê amûrê bikar tîne biguherînin? Ev ê li kêleka stranên rêzkirî nîşan bide. Vêga:
 Bikarhênerê niha
-Info
+Settings
 PiKaraoke
 Ma hûn guman dikin ku hûn dixwazin dev jê berdin?
 Ma tu bi rastî dixwazî ​​bigirî?
@@ -185,4 +185,9 @@ Ziman biguherînin
 Ji kerema xwe ziman hilbijêrin
 Ziman Sîstem
 Zimanê pergalê yê niha:
-Ev zimanê pergala pişta PiKaraoke ku li ser ekrana TV-yê tê xuyang kirin diguhezîne; Wekî din, her bikarhênerek têkildar dikare di menuya jorîn a rastê de di bişkoja gerdûnê de zimanê UI-ya xweya Webê jî biguhezîne.
+Ev zimanê pergala pişta PiKaraoke ku li ser ekrana TV-yê tê xuyang kirin diguhezîne; Wekî din, her bikarhênerek têkildar dikare di menuya jorîn a rastê de di bişkoja gerdûnê de zimanê UI-ya Web-a xwe ya têkildar jî biguhezîne.
+Daxistin bi serkeftî qediya!
+Daxistin bi ser neket!
+Stran li dorê hat zêdekirin!
+Di rêza stranê de têk çû!
+Agahiyên Pergalê & Mîhengan

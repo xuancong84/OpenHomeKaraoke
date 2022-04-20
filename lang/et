@@ -63,7 +63,7 @@ Pooltooni tuntakse ka kui poolsammu. See on väikseim klassikalises lääne muus
 DNN-põhine häälejaotur on lubatud. PiKaraoke kasutab PyTorchi (Facebook), et käitada sügavat närvivõrku, et jagada instrumentaal- ja vokaaliheli igal rajal, tekitades stereoheli.
 Mängija juhtimine
 Muusika
-Mõlemad
+Segatud
 Hääl
 Muuda võtit
 Hetkel ei mängi midagi.
@@ -78,7 +78,7 @@ Heli viivitus (s)
 Subtiitrite viivitus (s)
 Taaskäivitage lugu
 Esita/Paus
-Peata praegune laul
+Jäta praegune laul vahele
 Hääl maha
 Helitugevuse määramine
 Helitugevuse suurendamine
@@ -132,10 +132,10 @@ Link:
 Saadaolevad laulud
 Kas soovite muuta seda seadet kasutava isiku kuvatavat nime? See kuvatakse järjekorras olevate lugude kõrval. Praegune:
 Praegune kasutaja
-Info
+Seaded
 PiKaraoke
 Kas olete kindel, et soovite lõpetada?
-Kas soovite kindlasti sulgeda?
+Kas olete kindel, et soovite välja lülitada?
 Kas olete kindel, et soovite taaskäivitada?
 Kas olete kindel, et soovite kohe Youtube-dl-i värskendada? Praegused ja ootel allalaadimised võivad ebaõnnestuda.
 Kas soovite kindlasti failisüsteemi laiendada? See taaskäivitab teie Raspberry pi.
@@ -185,4 +185,9 @@ Muuda keelt
 Valige keel
 Süsteemi keel
 Praegune süsteemi keel:
-See muudab PiKaraoke taustasüsteemi keelt, mis kuvatakse teleriekraanil; Lisaks saab iga ühenduse loov kasutaja oma veebikasutaja keelt muuta ka parempoolses ülanurgas asuval gloobusnupul.
+See muudab PiKaraoke taustasüsteemi keelt, mis kuvatakse teleriekraanil; pealegi saab iga ühenduse loov kasutaja oma veebikasutaja keelt muuta ka parempoolses ülamenüüs asuval gloobusnupul.
+Allalaadimine on edukalt lõpule viidud!
+Allalaadimine ebaõnnestus!
+Laul lisati järjekorda!
+Laulu järjekorda seadmine ebaõnnestus!
+Süsteemi teave ja sätted

@@ -63,7 +63,7 @@ Hálftónn er einnig þekktur sem hálfþrep. Það er minnsta bil sem notað er
 DNN-undirstaða raddskipting er virkjuð. PiKaraoke notar PyTorch (af Facebook) til að keyra djúpt taugakerfi til að skipta hljóðfæra- og sönghljóði í hverju lagi sem gefur tilefni til steríóhljóðs.
 Leikmannastýring
 Tónlist
-Bæði
+Blandað
 Rödd
 Breyta lykli
 Það er ekkert að spila núna.
@@ -78,7 +78,7 @@ Hljóðseinkun (sek.)
 Töf texta (sek)
 Endurræstu lagið
 Spila / gera hlé
-Stöðva núverandi lag
+Slepptu núverandi lagi
 Hljóðstyrkur niður
 Stilltu hljóðstyrk
 Hækka
@@ -132,7 +132,7 @@ Linkur:
 Lög í boði
 Viltu breyta skjánafni þess sem notar þetta tæki? Þetta mun birtast við hlið löganna í biðröð. Núverandi:
 Núverandi notandi
-Upplýsingar
+Stillingar
 PiKaraoke
 Ertu viss um að þú viljir hætta?
 Ertu viss um að þú viljir leggja niður?
@@ -185,4 +185,9 @@ Skipta um tungumál
 Vinsamlegast veldu tungumál
 Kerfismál
 Núverandi tungumál kerfisins:
-Þetta breytir tungumáli PiKaraoke bakendakerfisins sem birtist á sjónvarpsskjánum; þar að auki getur hver notandi sem tengir einnig breytt viðkomandi vefviðmótstungumáli sínu í hnatthnappnum í valmyndinni efst til hægri.
+Þetta breytir tungumáli PiKaraoke bakendakerfisins sem birtist á sjónvarpsskjánum; þar að auki getur hver notandi sem tengist einnig breytt viðkomandi vefviðmótstungumáli sínu í hnatthnappnum í valmyndinni efst til hægri.
+Niðurhali lokið með góðum árangri!
+Niðurhal mistókst!
+Lagi bætt í röðina!
+Mistókst að setja lagið í biðröð!
+Kerfisupplýsingar og stillingar

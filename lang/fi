@@ -52,7 +52,7 @@ Paina F vaihtaaksesi koko näytön tilaan
 Paina ESC poistuaksesi PiKaraokesta
 RaspiWifiConfig-asennustila havaittu!
 Yhdistä toinen laite/älypuhelin Wifi-tukiasemaan: '%s'
-Valitse sitten selain osoitteeseen %s://%s%s ja noudata ohjeita.
+Osoita sitten selain osoitteeseen: '%s://%s%s' ja seuraa ohjeita.
 Seuraavaksi:
 Lisännyt:
 Nyt soi:
@@ -63,7 +63,7 @@ Puolisävel tunnetaan myös puoliaskeluna. Se on pienin klassisessa länsimaises
 DNN-pohjainen äänenjakaja on käytössä. PiKaraoke käyttää PyTorchia (Facebook) pyörittääkseen syvää hermoverkkoa instrumentaali- ja lauluäänen jakamiseksi kussakin kappaleessa, jolloin syntyy stereoääntä.
 Pelaajan ohjaus
 Musiikki
-Molemmat
+Sekoitettu
 Ääni
 Vaihda avain
 Mikään ei pelaa juuri nyt.
@@ -78,7 +78,7 @@ Pyrkiä:
 Tekstityksen viive (s)
 Käynnistä kappale uudelleen
 Toista/Tauko
-Pysäytä nykyinen kappale
+Ohita nykyinen kappale
 Äänenvoimakkuutta pienemmälle
 Aseta äänenvoimakkuus
 Ääni kovemmalle
@@ -132,7 +132,7 @@ Linkki:
 Saatavilla olevat kappaleet
 Haluatko muuttaa tätä laitetta käyttävän henkilön näyttönimeä? Tämä näkyy jonossa olevien kappaleiden vieressä. Nykyinen:
 Nykyinen käyttäjä
-Tiedot
+asetukset
 PiKaraoke
 Oletko varma, että haluat lopettaa?
 Haluatko varmasti sulkea?
@@ -172,7 +172,7 @@ Sammuttaa
 Lopeta PiKaraoke
 Käynnistä kone uudelleen
 Sammutusjärjestelmä
-Muut
+muu
 Laajenna Raspberry Pi -tiedostojärjestelmää
 Jos asensit juuri valmiiksi rakennetun pikaraoke pi -kuvan ja SD-korttisi on suurempi kuin 4 Gt, saatat haluta laajentaa tiedostojärjestelmää hyödyntääksesi jäljellä olevan tilan. Sinun tarvitsee tehdä tämä vain kerran. Tämä käynnistää järjestelmän uudelleen.
 Poista järjestelmänvalvojatila käytöstä
@@ -185,4 +185,9 @@ Vaihda kieltä
 Valitse kieli
 Järjestelmän kieli
 Nykyinen järjestelmän kieli:
-Tämä muuttaa PiKaraoke-taustajärjestelmän kielen, joka näytetään TV-ruudulla; Lisäksi jokainen yhteyden muodostava käyttäjä voi myös vaihtaa vastaavaa verkkokäyttöliittymänsä kieltä oikean ylävalikon maapallo-painikkeesta.
+Tämä muuttaa PiKaraoke-taustajärjestelmän kielen, joka näytetään TV-ruudulla; Lisäksi jokainen yhteyden muodostava käyttäjä voi myös vaihtaa oman verkkokäyttöliittymänsä kielen oikean ylävalikon maapallo-painikkeesta.
+Lataus suoritettu onnistuneesti!
+Lataus epäonnistui!
+Kappale lisätty jonoon!
+Kappaleen asettaminen jonoon epäonnistui!
+Järjestelmätiedot ja asetukset

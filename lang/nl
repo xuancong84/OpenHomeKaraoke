@@ -5,7 +5,7 @@ Uitgelogd uit de beheerdersmodus!
 Liedjes opraken!
 De wachtrij gewist!
 Fout bij verplaatsen item in wachtrij: ongeldig argument
-Het item is met succes naar de wachtrij verplaatst:
+Item in wachtrij verplaatst:
 Fout bij verplaatsen item in wachtrij:
 Naar beneden verplaatst in wachtrij:
 Fout bij het naar beneden gaan in de wachtrij:
@@ -63,7 +63,7 @@ Een halve toon wordt ook wel een halve toon genoemd. Het is het kleinste interva
 Op DNN gebaseerde vocale splitter is ingeschakeld. PiKaraoke gebruikt PyTorch (van Facebook) om een ​​diep neuraal netwerk te runnen om instrumentaal en vocaal geluid in elk nummer te splitsen, waardoor stereogeluid ontstaat.
 Speler controle
 Muziek
-Beide
+Gemengd
 Stem
 Sleutel wijzigen
 Er speelt momenteel niets.
@@ -78,7 +78,7 @@ Audiovertraging (sec)
 Ondertitelvertraging (sec)
 Herstart nummer
 Speel pauze
-Huidige nummer stoppen
+Huidig ​​nummer overslaan
 Volume verminderen
 Volume instellen
 Volume omhoog
@@ -132,7 +132,7 @@ Koppeling:
 Beschikbare nummers
 Wilt u de weergavenaam wijzigen van de persoon die dit apparaat gebruikt? Dit wordt weergegeven naast de nummers in de wachtrij. Huidig:
 Huidige gebruiker
-Info
+Instellingen
 PiKaraoke
 Weet je zeker dat je wilt stoppen?
 Weet je zeker dat je wilt afsluiten?
@@ -185,4 +185,9 @@ Taal wijzigen
 Kies a.u.b. taal
 Systeemtaal
 Huidige systeemtaal:
-Dit verandert de taal van het PiKaraoke-backendsysteem dat op het tv-scherm wordt weergegeven; bovendien kan elke verbindende gebruiker ook hun Web UI-taal wijzigen in de wereldbolknop in het menu rechtsboven.
+Dit verandert de taal van het PiKaraoke-backendsysteem dat op het tv-scherm wordt weergegeven; bovendien kan elke verbindende gebruiker ook zijn respectievelijke Web UI-taal wijzigen in de wereldbol-knop in het menu rechtsboven.
+Download succesvol voltooid!
+Download mislukt!
+Nummer toegevoegd aan de wachtrij!
+Kan het nummer niet in de wachtrij plaatsen!
+Systeeminfo & Instellingen

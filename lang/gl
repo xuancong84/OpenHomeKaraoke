@@ -63,7 +63,7 @@ Un semitono tamén se coñece como medio paso. É o intervalo máis pequeno empr
 O divisor de voz baseado en DNN está activado. PiKaraoke usa PyTorch (de Facebook) para executar unha rede neuronal profunda para dividir o son instrumental e vocal en cada pista dando lugar a un son estéreo.
 Control do xogador
 Música
-Ambos
+Mixto
 Voz
 Cambiar clave
 Non se xoga nada neste momento.
@@ -78,7 +78,7 @@ Retraso de audio (s)
 Retraso de subtítulos (s)
 Reinicia a canción
 Reproducir/Pausa
-Detén a canción actual
+Saltar a canción actual
 Baixar o volume
 Establecer volume
 Subir volume
@@ -132,7 +132,7 @@ Ligazón:
 Cancións dispoñibles
 Queres cambiar o nome para mostrar da persoa que usa este dispositivo? Isto aparecerá xunto ás cancións da cola. Actual:
 Usuario actual
-Información
+Configuración
 PiKaraoke
 Estás seguro de que queres saír?
 Estás seguro de que queres pechar?
@@ -185,4 +185,9 @@ Cambiar Idioma
 Escolla o idioma
 Linguaxe do sistema
 Idioma do sistema actual:
-Isto cambia o idioma do sistema de backend PiKaraoke que se mostra na pantalla do televisor; ademais, cada usuario que se conecte tamén pode cambiar o idioma da súa IU web no botón globo terráqueo do menú superior dereito.
+Isto cambia o idioma do sistema de backend PiKaraoke que se mostra na pantalla do televisor; ademais, cada usuario que se conecte tamén pode cambiar o seu idioma da IU web no botón globo terráqueo do menú superior dereito.
+Descarga completada con éxito!
+Fallou a descarga!
+Canción engadida á cola!
+Produciuse un erro ao poñer a canción na cola!
+Información e configuración do sistema

@@ -63,7 +63,7 @@ Ang semitone ay kilala rin bilang kalahating hakbang. Ito ang pinakamaliit na pa
 Naka-enable ang vocal splitter na nakabatay sa DNN. Gumagamit ang PiKaraoke ng PyTorch (sa pamamagitan ng Facebook) upang magpatakbo ng isang malalim na neural network upang hatiin ang instrumental at vocal na tunog sa bawat track na nagdudulot ng stereo sound.
 Kontrol ng Manlalaro
 musika
-pareho
+Magkakahalo
 Boses
 Baguhin ang Key
 Walang naglalaro ngayon.
@@ -78,7 +78,7 @@ Pagkaantala ng Audio (seg)
 Pagkaantala ng Subtitle (seg)
 I-restart ang Kanta
 I-play/I-pause
-Itigil ang Kasalukuyang Kanta
+Laktawan ang Kasalukuyang Kanta
 Hinaan ang Volume
 Itakda ang Volume
 Lakasan ang tunog
@@ -132,7 +132,7 @@ Link:
 Mga Magagamit na Kanta
 Gusto mo bang baguhin ang display name ng taong gumagamit ng device na ito? Lalabas ito sa tabi ng mga nakapila na kanta. Kasalukuyan:
 Gumagamit ngayon
-Impormasyon
+Mga setting
 PiKaraoke
 Sigurado ka bang gusto mong umalis?
 Sigurado ka bang gusto mong isara?
@@ -166,9 +166,9 @@ Kailangan mo lang gawin ito kung manu-mano mong kinopya ang mga file sa direktor
 Mga update
 Kung huminto sa paggana ang mga pag-download o paghahanap, malamang na ayusin ito ng pag-update ng youtube-dl. Ang kasalukuyang naka-install na bersyon ay:
 I-update ang youtube-dl
-Maaaring mabigo ang link sa pag-update na ito sa itaas kung wala kang tamang mga pahintulot sa file. Suriin ang PiKaraoke log para sa mga error.
+Maaaring mabigo ang link sa pag-update na ito sa itaas kung wala kang wastong mga pahintulot sa file. Suriin ang PiKaraoke log para sa mga error.
 Pagsara
-Huwag lang hilahin ang plug! Palaging isara nang maayos ang iyong server upang maiwasan ang katiwalian ng data.
+Huwag lang hilahin ang plug! Palaging isara nang maayos ang iyong server upang maiwasan ang pagkasira ng data.
 Ihinto ang PiKaraoke
 I-reboot ang System
 Sistema ng Pagsara
@@ -185,4 +185,9 @@ Baguhin ang Wika
 Mangyaring pumili ng wika
 Wika ng Sistema
 Kasalukuyang wika ng system:
-Binabago nito ang wika ng PiKaraoke backend system na ipapakita sa screen ng TV; bukod pa rito, maaari ding baguhin ng bawat kumukonektang user ang kani-kanilang wika ng Web UI sa globe button sa kanang tuktok na menu.
+Binabago nito ang wika ng PiKaraoke backend system na ipapakita sa screen ng TV; bukod pa rito, ang bawat kumukonektang user ay maaari ding baguhin ang kani-kanilang wika ng Web UI sa globe button sa kanang-itaas na menu.
+Matagumpay na nakumpleto ang pag-download!
+Nabigo ang pag-download!
+Idinagdag ang kanta sa pila!
+Nabigong i-queue ang kanta!
+Impormasyon at Mga Setting ng System

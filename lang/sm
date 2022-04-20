@@ -6,7 +6,7 @@ Ua leai ni pese!
 Fa'amama le laina!
 Sese le fe'avea'i o mea i totonu o le laina: le sa'o-finauga
 Manuia le fesiitaiga o mea i totonu o le laina:
-Sese le feaveaiina o mea i totonu o le laina:
+Sese le fesiitaiga o mea i totonu o le laina:
 Sii i lalo ile laina:
 Sese le alu i lalo ile laina:
 Sii i luga i le laina:
@@ -59,11 +59,11 @@ Ta'alo nei:
 Fa'atagaina le fa'atonuga!
 O le fa'atuputeleina o le tuai o leo e maua ai le tele o le taimi e te faitau ai upu a'o le'i usuina le isi fuaiupu.
 O le fa'aitiitia o le tuai o ulutala e maua ai le tele o le taimi e te faitau ai fa'aupu a'o le'i usuina le isi fuaiupu.
-O le semitone e lauiloa foi o le afa-laasaga. O le va'aiga la'ititi lea e fa'aaogaina i musika masani i Sisifo, e tutusa ma le sefululua o le octave po'o le afa leo.
-DNN-faavae leo vaeluaga ua mafai. E fa'aaoga e PiKaraoke le PyTorch (e le Facebook) e fa'atautaia ai se feso'ota'iga neural loloto e vaelua ai meafaifa'aili ma leo leo i ala ta'itasi ma fa'atupuina ai le leo fa'alogo.
+O le semitone e lauiloa foi o le afa-laasaga. O le va itiiti lea e fa'aaogaina i musika fa'apapalagi fa'apapalagi, e tutusa ma le sefululua o le octave po'o le afa leo.
+DNN-faavae leo vaeluaga ua mafai. E fa'aoga e PiKaraoke le PyTorch (e ala i le Facebook) e fa'agasolo ai se feso'ota'iga neural loloto e vaelua ai meafaifa'aili ma leo leo i ala ta'itasi e fa'atupu ai le leo fa'alogo.
 Pulea ta'aalo
 Musika
-E lua
+Fefiloi
 Leo
 Suia Ki
 E leai se mea o taalo i le taimi nei.
@@ -78,7 +78,7 @@ Tuai leo (sec)
 Fa'atuai Fa'aulutala (sec)
 Toe amata le Pese
 Ta'alo/Taofi
-Taofi le Pese o iai nei
+Fa'ase'e Pese o iai nei
 Volume i lalo
 Seti le Volume
 Volume i luga
@@ -113,14 +113,14 @@ Tuli
 Aveese
 Pese avanoa i le faletusi
 Faaopoopo le pese i le laina:
-Ua uma ona iai le pese i le laina:
+Ua i ai le pese i le laina:
 Su'e / Fa'aopoopo Fou
 Su'e
 Tuli
 Fa'aaofia afitusi e le o karaoke
 Maualuluga
 Tusi se pese (igoa/tusiata) e su'e ai pese o lo'o avanoa ma kiliki 'Queue' e fa'aopoopo i le laina.
-Afai e le o aliali mai le pese i le "Available Songs", kiliki 'Search' e su'e ai ile Youtube.
+Afai e le o aliali mai le pese i le "Available Songs" dropdown, kiliki 'Search' e su'e ai ile Youtube.
 La'u sa'o mai YouTube url:
 Faaopoopo i le laina
 Fa'aaofia ai ulutala
@@ -130,9 +130,9 @@ Su'esu'ega mo
 Kiliki le pa'u i lalo e fa'aali atili ai fa'ai'uga
 So'oga:
 Pese Avanoa
-E te mana'o e sui le igoa fa'aali o le tagata o lo'o fa'aogaina lenei masini? O le a fa'aalia lea i tafatafa o pese tu'u. Ole taimi nei:
+E te mana'o e sui le igoa fa'aali o le tagata o lo'o fa'aogaina lenei masini? O le a fa'aalia lea i talaane o pese tu'u. Ole taimi nei:
 Tagata fa'aoga nei
-Fa'amatalaga
+Fa'atonu
 PiKaraoke
 E te mautinoa e te mana'o e tu'u?
 E te mautinoa e te mana'o e tapuni?
@@ -168,7 +168,7 @@ Afai e le toe galue le download poʻo suʻesuʻega, o le faʻafouina o le youtub
 Fa'afou youtube-dl
 O lenei feso'ota'iga fa'afouga o lo'o i luga e ono fa'aletonu pe a leai sau fa'atagaga tatau faila. Siaki le PiKaraoke log mo mea sese.
 Tapuni i lalo
-Aua le na'o le tosoina o le polo! Tapuni lelei lau server i taimi uma e aloese ai mai le pala o faʻamatalaga.
+Aua le na'o le tosoina o le polo! Tapuni lelei i taimi uma lau 'au'aunaga e 'alofia ai fa'amatalaga pi'opi'o.
 Tuu le PiKaraoke
 Toe Toe Fa'atonu
 Faiga Tapuni
@@ -185,4 +185,9 @@ Suia Gagana
 Fa'amolemole filifili le gagana
 Gagana Fa'atonu
 Gagana o lo'o iai nei:
-E suia ai le gagana a le PiKaraoke backend system lea e fa'aalia i luga o lau TV; e lē gata i lea, e mafai fo'i e tagata fa'afeso'ota'i ta'ito'atasi ona suia a latou gagana Uepiuta UI i le fa'amau o le kelope i le lisi taumatau pito i luga.
+E suia ai le gagana a le PiKaraoke backend system lea e fa'aalia i luga o lau TV; e lē gata i lea, e mafai fo'i e tagata fa'afeso'ota'i ta'ito'atasi ona suia a latou lava gagana Web UI i le fa'amau o le kelope i le lisi taumatau i luga.
+Ua mae'a le download!
+Le manuia le la'uina!
+Ua faaopoopo le pese i le laina!
+Ua le mafai ona tu'u le pese!
+Fa'amatalaga Faiga & Fa'atonu

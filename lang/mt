@@ -63,7 +63,7 @@ Semitone huwa magħruf ukoll bħala nofs pass. Huwa l-iżgħar intervall użat f
 Splitter vokali bbażat fuq DNN huwa attivat. PiKaraoke juża PyTorch (minn Facebook) biex imexxi netwerk newrali profond biex jaqsam il-ħoss strumentali u vokali f'kull track li jagħti lok għal ħoss stereo.
 Kontroll tal-Plejer
 Mużika
-It-tnejn
+Imħallat
 Leħen
 Ibdel Ċavetta
 Xejn qed jilgħab bħalissa.
@@ -78,7 +78,7 @@ Dewmien Awdjo (sek)
 Dewmien tas-sottotitli (sek)
 Ibda mill-ġdid il-Kanzunetta
 Play/Pawsa
-Waqqaf il-Kanzunetta Kurrenti
+Aqbeż Kanzunetta Kurrenti
 Volum 'l isfel
 Issettja Volum
 Volum Up
@@ -132,7 +132,7 @@ Link:
 Kanzunetti Disponibbli
 Trid tibdel l-isem tal-wiri tal-persuna li tuża dan l-apparat? Dan se jidher ħdejn il-kanzunetti fil-kju. Kurrenti:
 Utent kurrenti
-Info
+Settings
 PiKaraoke
 Int żgur li trid tieqaf?
 Int żgur li trid tagħlaq?
@@ -186,3 +186,8 @@ Jekk jogħġbok agħżel il-lingwa
 Lingwa tas-Sistema
 Lingwa tas-sistema attwali:
 Dan jibdel il-lingwa tas-sistema backend PiKaraoke li tintwera fuq l-iskrin tat-TV; barra minn hekk, kull utent li jgħaqqad jista 'wkoll ibiddel il-lingwa rispettiva tagħhom tal-Web UI fil-buttuna globu fil-menu ta' fuq tal-lemin.
+It-tniżżil tlesta b'suċċess!
+It-tniżżil falla!
+Kanzunetta miżjuda mal-kju!
+Naqas milli jpoġġi l-kanzunetta fil-kju!
+Informazzjoni tas-Sistema u Settings

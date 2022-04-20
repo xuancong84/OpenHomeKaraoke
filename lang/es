@@ -51,7 +51,7 @@ Para la visualización de TV, conéctese a
 Presione F para alternar pantalla completa
 Presione ESC para salir de PiKaraoke
 ¡Modo de configuración de RaspiWifiConfig detectado!
-Conecte otro dispositivo/smartphone al punto de acceso Wifi: '%s'
+Conectar otro dispositivo/smartphone al Wifi AP: '%s'
 Luego apunte su navegador a: '%s://%s%s' y siga las instrucciones.
 Hasta la próxima:
 Añadido por:
@@ -63,7 +63,7 @@ Un semitono también se conoce como medio paso. Es el intervalo más pequeño ut
 El divisor vocal basado en DNN está habilitado. PiKaraoke usa PyTorch (de Facebook) para ejecutar una red neuronal profunda para dividir el sonido instrumental y vocal en cada pista, lo que genera un sonido estéreo.
 Control del jugador
 Música
-Ambas cosas
+Mezclado
 Voz
 Cambiar clave
 Nada está jugando en este momento.
@@ -78,7 +78,7 @@ Retardo de audio (seg)
 Retraso de subtítulos (seg)
 Reiniciar canción
 Reproducir pausar
-Detener la canción actual
+Saltar canción actual
 Bajar volumen
 Establecer volumen
 Sube el volumen
@@ -132,7 +132,7 @@ Enlace:
 Canciones disponibles
 ¿Desea cambiar el nombre para mostrar de la persona que usa este dispositivo? Esto aparecerá junto a las canciones en cola. Actual:
 Usuario actual
-Información
+Ajustes
 PiKaraoke
 ¿Seguro que quieres salir?
 ¿Estás seguro de que quieres cerrar?
@@ -185,4 +185,9 @@ Cambiar idioma
 Por favor elige idioma
 Lenguaje del sistema
 Idioma actual del sistema:
-Esto cambia el idioma del sistema backend de PiKaraoke que se muestra en la pantalla del televisor; además, cada usuario que se conecta también puede cambiar el idioma de su interfaz de usuario web en el botón del globo en el menú superior derecho.
+Esto cambia el idioma del sistema backend de PiKaraoke que se muestra en la pantalla del televisor; además, cada usuario que se conecta también puede cambiar su respectivo idioma de la interfaz de usuario web en el botón del globo en el menú superior derecho.
+¡Descarga completada con éxito!
+¡Descarga fracasó!
+¡Canción añadida a la cola!
+¡Error al poner en cola la canción!
+Información y configuración del sistema

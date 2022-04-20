@@ -40,7 +40,7 @@ Rebooting system hona joale!
 Ha u na tumello ea ho Reboot
 Ho holisa sistimi ea lifaele le ho qala sistimi hape hona joale!
 Ha e khone ho atolosa li-fs ho lisebelisoa tsa non-raspberry pi!
-Ha u na tumello ea ho fetola boholo ba sistimi
+Ha u na tumello ea ho fetola boholo ba sistimi ea lifaele
 Tsela ea Youtube-dl ha e fumanehe!
 Tsela ea VLC ha e fumanehe!
 tsela ea omxplayer ha e fumanehe!
@@ -63,7 +63,7 @@ Semitone e boetse e tsejoa e le halofo ea mohato. Ke nako e nyane ka ho fetisisa
 Sesebelisoa sa ho arola mantsoe se thehiloeng ho DNN se lumelletsoe. PiKaraoke e sebelisa PyTorch (ka Facebook) ho tsamaisa marang-rang a tebileng a methapo ea kutlo ho arola molumo oa liletsa le lentsoe pina e 'ngoe le e 'ngoe e hlahisang molumo oa stereo.
 Taolo ea libapali
 Mmino
-Ka bobeli
+Kopantsoeng
 Lentsoe
 Fetola Key
 Ha ho letho le bapalang hona joale.
@@ -78,7 +78,7 @@ Audio Ho lieha (metsotsoana)
 Subtitle Delay (metsotsoana)
 Qala Pina bocha
 Bapala/Emisa
-Emisa Pina ea Hona Joale
+Tlola Pina ea Hona Joale
 Phahamiso ea Phahamiso
 Seta Bolumo
 Phahamisa Phahamiso
@@ -132,7 +132,7 @@ Sehokelo:
 Lipina Tse Fumanehang
 Na u batla ho fetola lebitso la motho ea sebelisang sesebelisoa see? Sena se tla hlaha haufi le lipina tse behiloeng. Hona joale:
 Mosebelisi oa hajoale
-Info
+Litlhophiso
 PiKaraoke
 Na ehlile u batla ho tlohela?
 Na ehlile u batla ho koala?
@@ -185,4 +185,9 @@ Fetola Puo
 Ka kopo, khetha puo
 Puo ea Tsamaiso
 Puo ea hajoale ea sistimi:
-Sena se fetola puo ea PiKaraoke backend system e hlahang skrineng sa TV; Ho feta moo, mosebelisi e mong le e mong ea hokahanyang a ka boela a fetola puo ea bona ea Web UI ka har'a konopo ea lefats'e ho menu e kaholimo ho le letona.
+Sena se fetola puo ea PiKaraoke backend system e hlahang skrineng sa TV; Ho feta moo, mosebelisi e mong le e mong ea hokelang a ka fetola puo ea bona ea Web UI ka har'a konopo ea lefats'e ho menu e kaholimo ho le letona.
+Ho phethela ka katleho!
+E hlolehile ho khoasolla!
+Pina e kentsoe moleng!
+E hlolehile ho emisa pina!
+Tsamaiso Info & Settings

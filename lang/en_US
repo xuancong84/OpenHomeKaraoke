@@ -63,7 +63,7 @@ A semitone is also known as a half-step. It is the smallest interval used in cla
 DNN-based vocal splitter is enabled. PiKaraoke uses PyTorch (by Facebook) to run a deep neural network to split instrumental and vocal sound in each track giving rise to stereo sound.
 Player Control
 Music
-Both
+Mixed
 Voice
 Change Key
 Nothing is playing right now.
@@ -132,7 +132,7 @@ Link:
 Available Songs
 Do you want to change the display name of the person using this device? This will show up next to the queued songs. Current:
 Current user
-Info
+Settings
 PiKaraoke
 Are you sure you want to quit?
 Are you sure you want to shut down?
@@ -190,3 +190,4 @@ Download completed successfully!
 Download failed!
 Song added to the queue!
 Failed to queue the song!
+System Info & Settings

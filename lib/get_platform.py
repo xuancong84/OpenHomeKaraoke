@@ -167,7 +167,7 @@ def set_language(lang):
 		iso2popularity = defaultdict(lambda: 0, {k: lang_popularity[v] for k, v in iso2name.items()})
 		loadf = lambda f: defaultdict(lambda: "", {ii: L for ii, L in enumerate([''] + open(f, 'rb').read().decode('utf-8', 'ignore').splitlines())})
 		sorted_lang_list = sorted(os.listdir('lang'), key = lambda t: iso2popularity.get(t, iso2popularity[t.split('_')[0]]), reverse=True)
-		os.langs = {f: loadf('lang/' + f) for f in sorted_lang_list if os.path.getsize('lang/' + f)}
+		os.langs = {f: loadf('lang/' + f) for f in sorted_lang_list if os.path.getsize('lang/' + f) and not f.startswith('.')}
 	new_lang = find_language(lang)
 	if not new_lang:
 		raise Exception(f"Language file lang/{lang} not found")

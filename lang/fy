@@ -63,7 +63,7 @@ In heale toan wurdt ek wol in heale stap neamd. It is it lytste ynterval dat br�
 DNN-basearre fokale splitter is ynskeakele. PiKaraoke brûkt PyTorch (troch Facebook) om in djip neuraal netwurk út te fieren om ynstrumintaal en fokaal lûd yn elk spoar te splitsen dat oanlieding is ta stereolûd.
 Spiler kontrôle
 Muzyk
-Beide
+Mixed
 Lûd
 Feroarje Key
 Der spilet no neat.
@@ -78,7 +78,7 @@ Audio fertraging (sek)
 Undertitelfertraging (sek)
 Lied opnij starte
 Play / Pause
-Stopje aktuele ferske
+Oerslaan aktuele ferske
 Volume del
 Set Volume
 Folume omheech
@@ -132,7 +132,7 @@ Link:
 Beskikbere Songs
 Wolle jo de werjeftenamme feroarje fan de persoan dy't dit apparaat brûkt? Dit sil ferskine neist de wachtrige ferskes. Aktueel:
 Aktuele brûker
-Info
+Ynstellings
 PiKaraoke
 Bisto wis dasto stoppe wolst?
 Binne jo wis dat jo ôfslute wolle?
@@ -164,9 +164,9 @@ Ferfarskje de ferskelist:
 Fersykje ferskemap opnij
 Jo moatte dit allinich dwaan as jo bestannen manuell kopieare nei de downloadmap wylst PiKaraoke draaide.
 Updates
-As downloads of sykopdrachten ophâlde te wurkjen, sil it bywurkjen fan youtube-dl it wierskynlik reparearje. De hjoeddeistige ynstalleare ferzje is:
+As downloads of sykopdrachten ophâlde te wurkjen, sil it bywurkjen fan youtube-dl it wierskynlik reparearje. De hjoeddeistige ynstallearre ferzje is:
 Update youtube-dl
-Dizze fernijingskeppeling hjirboppe kin mislearje as jo gjin goede triemrjochten hawwe. Kontrolearje it PiKaraoke-logboek foar flaters.
+Dizze fernijingskeppeling hjirboppe kin mislearje as jo gjin goede triemrjochten hawwe. Kontrolearje it PiKaraoke-log foar flaters.
 Ofslúte
 Net gewoan de stekker útlûke! Slút jo tsjinner altyd goed ôf om datakorrupsje te foarkommen.
 PiKaraoke ôfslute
@@ -185,4 +185,9 @@ Feroarje Taal
 Kies asjebleaft taal
 Systeemtaal
 Aktuele systeemtaal:
-Dit feroaret de taal fan it PiKaraoke backend systeem dat wurdt werjûn op TV skerm; boppedat, elke ferbinende brûker kin ek feroarje respektivelik harren Web UI taal yn de globe knop yn de rjochter-top menu.
+Dit feroaret de taal fan it PiKaraoke backend systeem dat wurdt werjûn op TV skerm; boppedat, eltse ferbinende brûker kin ek feroarje harren respektive Web UI taal yn de globe knop yn de rjochter-top menu.
+Download mei súkses foltôge!
+Download mislearre!
+Lied tafoege oan de wachtrige!
+It ferske is net slagge!
+Systeemynfo en ynstellings

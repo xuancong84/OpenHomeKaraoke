@@ -63,7 +63,7 @@ Gelwir hanner tôn hefyd yn hanner cam. Dyma'r cyfwng lleiaf a ddefnyddir yng ng
 Mae holltwr lleisiol seiliedig ar DNN wedi'i alluogi. Mae PiKaraoke yn defnyddio PyTorch (gan Facebook) i redeg rhwydwaith niwral dwfn i hollti sain offerynnol a lleisiol ym mhob trac gan arwain at sain stereo.
 Rheoli Chwaraewr
 Cerddoriaeth
-Y ddau
+Cymysg
 Llais
 Newid Allwedd
 Does dim byd yn chwarae ar hyn o bryd.
@@ -78,7 +78,7 @@ Oedi Sain (eiliad)
 Oedi Isdeitl (eiliad)
 Ailgychwyn y Gân
 Chwarae/Saib
-Stopiwch y Gân Gyfredol
+Hepgor y Gân Gyfredol
 Cyfrol Lawr
 Gosod Cyfrol
 Cyfrol i Fyny
@@ -132,7 +132,7 @@ Dolen:
 Caneuon Sydd ar Gael
 Ydych chi am newid enw arddangos y person sy'n defnyddio'r ddyfais hon? Bydd hwn yn ymddangos wrth ymyl y caneuon ciwio. Cyfredol:
 Defnyddiwr presennol
-Gwybodaeth
+Gosodiadau
 PiKaraoke
 Ydych chi'n siŵr eich bod am roi'r gorau iddi?
 Ydych chi'n siŵr eich bod am gau i lawr?
@@ -185,4 +185,9 @@ Newid Iaith
 Dewiswch iaith
 Iaith System
 Iaith system gyfredol:
-Mae hyn yn newid iaith system backend PiKaraoke sy'n cael ei harddangos ar sgrin deledu; ar ben hynny, gall pob defnyddiwr cyswllt hefyd newid eu hiaith Web UI yn y botwm glôb yn y ddewislen top dde.
+Mae hyn yn newid iaith system backend PiKaraoke sy'n cael ei harddangos ar sgrin deledu; ar ben hynny, gall pob defnyddiwr cyswllt hefyd newid eu hiaith Web UI priodol yn y botwm glôb yn y ddewislen top dde.
+Cwblhawyd y lawrlwythiad yn llwyddiannus!
+Wedi methu llwytho i lawr!
+Cân wedi'i hychwanegu at y ciw!
+Wedi methu ciwio'r gân!
+Gwybodaeth a Gosodiadau System

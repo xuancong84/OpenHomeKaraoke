@@ -4,7 +4,7 @@ Uit admin-modus afgemeld!
 Het %s ewekansige snitte bygevoeg
 Het nie meer liedjies gehad nie!
 Het die tou skoongemaak!
-Kon nie item binne-in tou skuif nie: ongeldige argument
+Kon nie item binne die tou skuif nie: ongeldige argument
 Suksesvol geskuif item binne tou:
 Kon nie item binne die tou skuif nie:
 Afgeskuif in tou:
@@ -63,7 +63,7 @@ Deur ondertitelvertraging te verminder, sal jy meer tyd gee om lirieke te lees v
 DNN-gebaseerde vokale splitter is geaktiveer. PiKaraoke gebruik PyTorch (deur Facebook) om 'n diep neurale netwerk te bestuur om instrumentele en vokale klank in elke snit te verdeel wat aanleiding gee tot stereoklank.
 Speler beheer
 Musiek
-Albei
+Gemengd
 Stem
 Verander sleutel
 Niks speel tans nie.
@@ -78,7 +78,7 @@ Oudiovertraging (sek.)
 Onderskrifvertraging (sek.)
 Herbegin liedjie
 Speel / Pouse
-Stop huidige liedjie
+Slaan huidige liedjie oor
 Volume af
 Stel volume
 Volume op
@@ -132,7 +132,7 @@ Skakel:
 Beskikbare liedjies
 Wil jy die vertoonnaam verander van die persoon wat hierdie toestel gebruik? Dit sal langs die liedjies in die ry verskyn. Huidige:
 Huidige gebruiker
-Inligting
+Instellings
 PiKaraoke
 Is jy seker jy wil opgee?
 Is jy seker jy wil afskakel?
@@ -185,4 +185,9 @@ Verander taal
 Kies asseblief taal
 Stelseltaal
 Huidige stelseltaal:
-Dit verander die taal van die PiKaraoke backend-stelsel wat op TV-skerm vertoon word; bowendien kan elke verbindende gebruiker ook hul web-UI-taal in die aardbolknoppie in die regterbo-kieslys verander.
+Dit verander die taal van die PiKaraoke backend-stelsel wat op TV-skerm vertoon word; bowendien kan elke koppelende gebruiker ook hul onderskeie web-UI-taal verander in die aardbolknoppie in die regterbo-kieslys.
+Aflaai suksesvol voltooi!
+Aflaai het misluk!
+Liedjie is by die tou gevoeg!
+Kon nie die liedjie in tou stel nie!
+Stelselinligting en -instellings

@@ -8,7 +8,7 @@ Errore durante u muvimentu di l'elementu in a fila: argumentu invalidu
 Elementu spustatu cù successu in a fila:
 Errore durante u muvimentu di l'elementu in a fila:
 Spostatu in a fila:
-Errore chì si move in a fila:
+Errore in scende in fila:
 Sposta in fila:
 Errore di muvimentu in a fila:
 Eliminatu da a fila:
@@ -52,7 +52,7 @@ Appughjà F per cambià a pantalla piena
 Press ESC per abbandunà PiKaraoke
 U modu di installazione di RaspiWifiConfig rilevatu!
 Cunnette un altru dispositivu/smartphone à l'AP Wifi: '%s'
-Allora puntate u so navigatore à: '%s://%s%s' è seguite e struzzioni.
+Dopu puntate u so navigatore à: '%s://%s%s' è seguite e struzzioni.
 In seguitu:
 Aggiuntu da:
 Avà ghjucatu:
@@ -63,7 +63,7 @@ Un semitone hè ancu cunnisciutu cum'è mezzu passu. Hè u più chjucu intervall
 U splitter vocale basatu in DNN hè attivatu. PiKaraoke usa PyTorch (da Facebook) per eseguisce una rete neurale profonda per sparghje u sonu strumentale è vocale in ogni traccia chì dà origine à un sonu stereo.
 Cuntrolla di u ghjucatore
 Musica
-Tramindui
+mistu
 Voce
 Cambia chjave
 Nunda hè ghjucatu avà.
@@ -78,7 +78,7 @@ Ritardo audio (sec)
 Délai de sous-titre (sec)
 Riavvia a canzone
 Play / Pausa
-Stop Song Current
+Salta a canzone attuale
 Volume Down
 Set Volume
 Volume Up
@@ -132,7 +132,7 @@ Link:
 Canzoni dispunibuli
 Vulete cambià u nome di visualizazione di a persona chì usa stu dispusitivu? Questu apparirà accantu à e canzoni in fila. attuale:
 Utente attuale
-Info
+Settings
 PiKaraoke
 Sò sicuru chì vulete lascià?
 Sò sicuru chì vulete chjude ?
@@ -185,4 +185,9 @@ Cambia lingua
 Per piacè sceglite a lingua
 Lingua di sistema
 Lingua di u sistema attuale:
-Questu cambia a lingua di u sistema di backend PiKaraoke chì si vede nantu à u screnu TV; in più, ogni utilizatore di cunnessione pò ancu cambià a so lingua UI Web in u buttone globu in u menù in cima à a destra.
+Questu cambia a lingua di u sistema di backend PiKaraoke chì si vede nantu à u screnu TV; in più, ogni utilizatore di cunnessione pò ancu cambià a so lingua rispettiva Web UI in u buttone globu in u menù di u dirittu-top.
+Scaricamentu cumpletu cù successu!
+Scaricamentu fiascatu!
+Canzona aghjunta à a fila !
+Impossibile mette in fila a canzone!
+Sistema Info & Settings

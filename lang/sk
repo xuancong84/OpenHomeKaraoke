@@ -63,7 +63,7 @@ Poltón je známy aj ako polovičný krok. Je to najmenší interval používan�
 Rozdeľovač hlasu založený na DNN je povolený. PiKaraoke používa PyTorch (od Facebooku) na spustenie hlbokej neurónovej siete na rozdelenie inštrumentálneho a vokálneho zvuku v každej skladbe, čo vedie k stereo zvuku.
 Ovládanie prehrávača
 Hudba
-Obaja
+Zmiešané
 Hlas
 Zmeniť kľúč
 Momentálne sa nič nehrá.
@@ -78,7 +78,7 @@ Oneskorenie zvuku (s)
 Oneskorenie titulkov (s)
 Reštartujte skladbu
 Prehrať/Pozastaviť
-Zastaviť aktuálnu skladbu
+Preskočiť aktuálnu skladbu
 Znížiť hlasitosť
 Nastavte hlasitosť
 Zvýšiť hlasitosť
@@ -132,7 +132,7 @@ odkaz:
 Dostupné skladby
 Chcete zmeniť zobrazované meno osoby, ktorá používa toto zariadenie? Toto sa zobrazí vedľa skladieb zaradených do poradia. Aktuálne:
 Súčasný užívateľ
-Info
+nastavenie
 PiKaraoke
 Si si isty ze chces skoncit?
 Naozaj chcete vypnúť?
@@ -185,4 +185,9 @@ Zmeniť jazyk
 Vyberte jazyk
 Systémový jazyk
 Aktuálny jazyk systému:
-Tým sa zmení jazyk backendového systému PiKaraoke, ktorý sa zobrazí na TV obrazovke; každý pripájajúci sa používateľ môže navyše zmeniť príslušný jazyk svojho webového používateľského rozhrania na tlačidle zemegule v pravom hornom menu.
+Tým sa zmení jazyk backendového systému PiKaraoke, ktorý sa zobrazí na TV obrazovke; každý pripájajúci sa používateľ môže navyše zmeniť svoj príslušný jazyk webového používateľského rozhrania na tlačidle zemegule v ponuke vpravo hore.
+Sťahovanie bolo úspešne dokončené!
+Sťahovanie zlyhalo!
+Skladba pridaná do poradia!
+Skladbu sa nepodarilo zaradiť do poradia!
+Systémové informácie a nastavenia

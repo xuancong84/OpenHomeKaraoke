@@ -63,7 +63,7 @@ Un semitono è anche noto come semitono. È l'intervallo più piccolo utilizzato
 Lo splitter vocale basato su DNN è abilitato. PiKaraoke utilizza PyTorch (di Facebook) per gestire una rete neurale profonda per dividere il suono strumentale e vocale in ogni traccia dando origine al suono stereo.
 Controllo del giocatore
 Musica
-Tutti e due
+Misto
 Voce
 Cambia chiave
 Niente sta giocando in questo momento.
@@ -78,7 +78,7 @@ Ritardo audio (sec)
 Ritardo sottotitoli (sec)
 Riavvia la canzone
 Play pausa
-Interrompi la canzone corrente
+Salta la canzone corrente
 Volume basso
 Imposta il volume
 Alza il volume
@@ -132,7 +132,7 @@ Collegamento:
 Canzoni disponibili
 Vuoi cambiare il nome visualizzato della persona che utilizza questo dispositivo? Questo apparirà accanto ai brani in coda. Attuale:
 Utente corrente
-Informazioni
+Impostazioni
 PiKaraoke
 Sei sicuro di voler uscire?
 Sei sicuro di voler chiudere?
@@ -185,4 +185,9 @@ Cambia lingua
 Si prega di scegliere la lingua
 Linguaggio di sistema
 Lingua di sistema attuale:
-Questo cambia la lingua del sistema di backend PiKaraoke che viene visualizzato sullo schermo TV; inoltre, ogni utente che si connette può anche cambiare la rispettiva lingua dell'interfaccia utente Web nel pulsante del globo nel menu in alto a destra.
+Questo cambia la lingua del sistema di backend PiKaraoke che viene visualizzato sullo schermo TV; inoltre, ogni utente che si connette può anche modificare la rispettiva lingua dell'interfaccia utente Web nel pulsante del globo nel menu in alto a destra.
+Download completato con successo!
+Scaricamento fallito!
+Canzone aggiunta alla coda!
+Impossibile mettere in coda il brano!
+Informazioni e impostazioni di sistema

@@ -57,13 +57,13 @@ Tom ntej no:
 Ntxiv los ntawm:
 Tam sim no ua si:
 Admin hom tso cai!
-Kev ncua lub suab yuav muab sij hawm ntxiv rau koj nyeem cov nkauj ua ntej hu nkauj rau kab lus tom ntej.
+Kev ncua lub suab yuav muab sijhawm ntau rau koj los nyeem cov nkauj ua ntej hu nkauj tawm ntawm kab lus tom ntej.
 Kev txo qis subtitle ncua yuav muab sijhawm rau koj los nyeem cov nkauj ua ntej hu nkauj rau kab lus tom ntej.
 Lub semitone kuj tseem hu ua ib nrab kauj ruam. Nws yog qhov tsawg tshaj plaws siv nyob rau hauv classical Western suab paj nruag, sib npaug rau kaum ob ntawm ib qho octave los yog ib nrab ib lub suab.
-DNN-based suab splitter tau qhib. PiKaraoke siv PyTorch (los ntawm Facebook) los khiav qhov sib sib zog nqus neural network los faib cov suab paj nruag thiab suab hauv txhua txoj kev ua rau lub suab nrov.
+DNN-raws li lub suab splitter tau qhib. PiKaraoke siv PyTorch (los ntawm Facebook) los khiav qhov sib sib zog nqus neural network los faib cov suab paj nruag thiab suab hauv txhua txoj kev ua rau lub suab nrov.
 Player Control
 Nkauj
-Ob leeg
+Mixed
 Suab
 Hloov Key
 Tsis muaj dab tsi ua si tam sim no.
@@ -78,7 +78,7 @@ Suab qeeb (sec)
 Subtitle ncua (sec)
 Rov pib dua Nkauj
 Ua si / Pause
-Nruas Nkauj Tawm Tshiab
+Hla Txoj Nkauj Tam Sim No
 Volume Down
 Teem ntim
 Volume Up
@@ -121,7 +121,7 @@ suav tsis txheeb karaoke
 Advanced
 Ntaus ib zaj nkauj (lub npe / tus kws kos duab) txhawm rau tshawb cov nkauj muaj thiab nyem 'Queue' ntxiv rau hauv kab.
 Yog hais tias zaj nkauj tsis tshwm nyob rau hauv "Available Songs" dropdown, nyem 'Search' kom pom nws hauv Youtube.
-Direct download YouTube url:
+Direct download tau YouTube url:
 Ntxiv rau kab
 suav nrog subtitles
 Download tau
@@ -132,7 +132,7 @@ Txuas:
 Muaj Nkauj
 Koj puas xav hloov lub npe ntawm tus neeg siv lub cuab yeej no? Qhov no yuav tshwm sim ib sab ntawm cov nkauj queued. Tam sim no:
 Tus neeg siv tam sim no
-Cov ntaub ntawv
+Chaw
 PiKaraoke
 Koj puas paub tseeb tias koj xav tawm?
 Koj puas paub tseeb tias koj xav kaw?
@@ -152,7 +152,7 @@ Advanced Control Options
 Vocal splitter hom:
 Siv L-R / L + R
 Siv DNN
-Standard MTV suab muaj ob lub tso suab raws (L thiab R) encoded nyob rau hauv xws li ib tug txoj kev uas: L-R yog qhov ntsuas khiav, L + R yog lub suab khiav. Yog li, los ntawm kev rho tawm lossis ntxiv ob lub tso suab tso suab, peb tuaj yeem tau txais cov twj paj nruag thiab suab hauv lub suab mono. PiKaraoke's built-in DNN-raws li (sib sib zog nqus neural network) suab splitter siv AI algorithm los faib cov suab paj nruag thiab suab hauv txhua lub suab tso suab ntawm nws tus kheej ua rau lub suab seev suab paj nruag thiab suab paj nruag.
+Standard MTV suab muaj ob lub tso suab raws (L thiab R) encoded nyob rau hauv xws li ib tug txoj kev uas: L-R yog lub ntsuas khiav, L + R yog lub suab khiav. Yog li, los ntawm kev rho tawm lossis ntxiv ob lub tso suab tso suab, peb tuaj yeem tau txais cov twj paj nruag thiab suab hauv lub suab mono. PiKaraoke's built-in DNN-raws li (sib sib zog nqus neural network) suab splitter siv AI algorithm los faib cov suab paj nruag thiab suab hauv txhua lub suab tso suab ntawm nws tus kheej ua rau lub suab seev suab paj nruag thiab suab paj nruag.
 Nres Splitter
 Pib dua Splitter
 Lub suab splitter (uas txhawb nqa DNN-raws li thiab lub tso suab rho tawm) khiav raws li cov txheej txheem sib cais hauv keeb kwm yav dhau, tsim cov ntaub ntawv suab paj nruag / suab rau txhua zaj nkauj.
@@ -166,7 +166,7 @@ Koj tsuas yog yuav tsum tau ua qhov no yog tias koj luam cov ntaub ntawv rau hau
 Hloov tshiab
 Yog tias downloads lossis tshawb nrhiav tsis ua haujlwm, hloov kho youtube-dl tej zaum yuav kho nws. Tam sim no ntsia version yog:
 Update youtube-dl
-Qhov hloov tshiab txuas saum toj no yuav ua tsis tau yog tias koj tsis muaj cov ntaub ntawv tso cai kom raug. Kos lub PiKaraoke cav rau qhov yuam kev.
+Qhov hloov tshiab txuas saum toj no yuav ua tsis tiav yog tias koj tsis muaj kev tso cai ua ntaub ntawv tsim nyog. Kos lub PiKaraoke cav rau qhov yuam kev.
 Kaw
 Tsis txhob rub lub ntsaws! Ib txwm kaw koj lub server kom zoo kom tsis txhob muaj cov ntaub ntawv tsis raug cai.
 Txhob tos lwm tiam karaoke
@@ -185,4 +185,9 @@ Hloov lus
 Thov xaiv hom lus
 System Language
 Hom lus tam sim no:
-Qhov no hloov cov lus ntawm PiKaraoke backend system uas tau tso tawm rau hauv TV screen; Tsis tas li ntawd, txhua tus neeg siv txuas kuj tuaj yeem hloov pauv lawv cov lus Web UI hauv lub ntiaj teb khawm hauv cov ntawv qhia zaub mov sab xis.
+Qhov no hloov cov lus ntawm PiKaraoke backend system uas tau tso tawm rau hauv TV screen; Ntxiv mus, txhua tus neeg siv txuas kuj tuaj yeem hloov pauv lawv cov lus Web UI hauv lub ntiaj teb khawm hauv cov ntawv qhia zaub mov sab xis.
+Download tau tiav lawm!
+Download tsis tau!
+Nkauj ntxiv rau cov kab!
+Ua tsis tau tejyam rau queue zaj nkauj!
+System Info & Chaw

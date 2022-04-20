@@ -63,7 +63,7 @@ Tonu erdi bat pauso erdi gisa ere ezagutzen da. Mendebaldeko musika klasikoan er
 DNNn oinarritutako ahots banatzailea gaituta dago. PiKaraoke-k PyTorch erabiltzen du (Facebook-ek) sare neuronal sakon bat exekutatzeko, soinu instrumentala eta ahotsa banatzeko soinu estereoa sortuz pista bakoitzean.
 Jokalari Kontrola
 Musika
-Biak
+Mistoa
 Ahotsa
 Aldatu gakoa
 Momentu honetan ez da ezer jokatzen.
@@ -78,7 +78,7 @@ Audio-atzerapena (seg)
 Azpitituluen atzerapena (seg)
 Berrabiarazi abestia
 Erreproduzitu/Pausatu
-Gelditu uneko abestia
+Saltatu uneko abestia
 Bolumena jaitsi
 Ezarri bolumena
 Bolumena igo
@@ -132,7 +132,7 @@ Esteka:
 Eskuragarri dauden abestiak
 Gailu hau erabiltzen duen pertsonaren bistaratzeko izena aldatu nahi duzu? Hau ilaran dauden abestien ondoan agertuko da. Unekoa:
 Egungo erabiltzailea
-Info
+Ezarpenak
 PiKaraokea
 Ziur utzi nahi duzula?
 Ziur itxi nahi duzula?
@@ -185,4 +185,9 @@ Hizkuntza aldatu
 Mesedez, aukeratu hizkuntza
 Sistemaren hizkuntza
 Egungo sistemaren hizkuntza:
-Horrek telebistako pantailan bistaratzen den PiKaraoke backend sistemaren hizkuntza aldatzen du; gainera, konektatzen den erabiltzaile bakoitzak bere Web UI hizkuntza ere alda dezake eskuineko goiko menuko globo-botoian.
+Horrek telebistako pantailan bistaratzen den PiKaraoke backend sistemaren hizkuntza aldatzen du; gainera, konektatzen den erabiltzaile bakoitzak dagokion Web UI hizkuntza ere alda dezake eskuineko goiko menuko globo-botoian.
+Deskarga ondo osatu da!
+Deskargatu huts egin du!
+Abestia ilaran gehitu da!
+Ezin izan da abestia ilaran jarri!
+Sistemaren informazioa eta ezarpenak

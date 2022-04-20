@@ -63,7 +63,7 @@ En halvtone er også kendt som et halvt trin. Det er det mindste interval, der b
 DNN-baseret stemmesplitter er aktiveret. PiKaraoke bruger PyTorch (af Facebook) til at køre et dybt neuralt netværk for at opdele instrumental og vokal lyd i hvert spor, hvilket giver anledning til stereolyd.
 Spiller kontrol
 musik
-Begge
+Blandet
 Stemme
 Skift nøgle
 Intet spiller lige nu.
@@ -78,7 +78,7 @@ Lydforsinkelse (sek.)
 Undertekstforsinkelse (sek.)
 Genstart sang
 Afspil/pause
-Stop aktuel sang
+Spring over den aktuelle sang
 Skrue ned
 Indstil lydstyrke
 Lydstyrke op
@@ -132,7 +132,7 @@ Link:
 Tilgængelige sange
 Vil du ændre visningsnavnet på den person, der bruger denne enhed? Dette vises ved siden af ​​sangene i køen. Nuværende:
 Nuværende bruger
-Info
+Indstillinger
 PiKaraoke
 Er du sikker på, at du vil stoppe?
 Er du sikker på, at du vil lukke ned?
@@ -186,3 +186,8 @@ Vælg venligst sprog
 Systemsprog
 Aktuelt systemsprog:
 Dette ændrer sproget i PiKaraoke-backend-systemet, som vises på TV-skærmen; desuden kan hver tilsluttende bruger også ændre deres respektive web-UI-sprog i globusknappen i menuen øverst til højre.
+Download fuldført med succes!
+Download fejlede!
+Sang tilføjet til køen!
+Det lykkedes ikke at sætte sangen i kø!
+Systemoplysninger og indstillinger

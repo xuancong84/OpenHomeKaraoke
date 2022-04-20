@@ -63,7 +63,7 @@ Półton jest również nazywany półkrokiem. Jest to najmniejszy interwał sto
 Rozdzielacz głosu oparty na DNN jest włączony. PiKaraoke używa PyTorch (firmy Facebook) do uruchomienia głębokiej sieci neuronowej, aby podzielić dźwięk instrumentalny i wokalny w każdym utworze, tworząc dźwięk stereo.
 Kontrola gracza
 Muzyka
-Obydwa
+Mieszany
 Głos
 Zmień klucz
 W tej chwili nic nie jest odtwarzane.
@@ -78,7 +78,7 @@ Opóźnienie dźwięku (s)
 Opóźnienie napisów (s)
 Uruchom ponownie utwór
 Odtwórz/Pauza
-Zatrzymaj bieżący utwór
+Pomiń bieżący utwór
 Ściszanie
 Ustaw głośność
 Zwiększanie głośności
@@ -132,7 +132,7 @@ Połączyć:
 Dostępne utwory
 Czy chcesz zmienić nazwę wyświetlaną osoby korzystającej z tego urządzenia? Pojawi się obok utworów w kolejce. Aktualny:
 Aktualny użytkownik
-Informacje
+Ustawienia
 PiKaraoke
 Czy na pewno chcesz zrezygnować?
 Czy na pewno chcesz się zamknąć?
@@ -185,4 +185,9 @@ Zmień język
 Proszę wybrać język
 Język systemu
 Aktualny język systemu:
-Zmienia to język systemu zaplecza PiKaraoke, który jest wyświetlany na ekranie telewizora; co więcej, każdy łączący się użytkownik może również zmienić swój język interfejsu internetowego za pomocą przycisku z kulą ziemską w prawym górnym menu.
+Zmienia to język systemu zaplecza PiKaraoke, który jest wyświetlany na ekranie telewizora; co więcej, każdy łączący się użytkownik może również zmienić swój język interfejsu internetowego za pomocą przycisku globusa w prawym górnym menu.
+Pobieranie zakończone pomyślnie!
+Pobieranie nie udane!
+Piosenka dodana do kolejki!
+Nie udało się umieścić utworu w kolejce!
+Informacje o systemie i ustawienia

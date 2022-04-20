@@ -45,7 +45,7 @@ Youtube-dl yolu bulunamadı!
 VLC yolu bulunamadı!
 omxplayer yolu bulunamadı!
 İndirme yolu oluşturma:
-Wifi/Ağ bağlı değil. 10 saniyede kapanıyor...
+Wifi/Ağ bağlı değil. 10 saniye içinde kapanıyor...
 Şarkı seçmek için QR'yi tarayın veya şuraya bağlanın:
 TV ekranı için, şuraya bağlanın:
 Tam ekran arasında geçiş yapmak için F tuşuna basın
@@ -63,7 +63,7 @@ Yarım ton, yarım adım olarak da bilinir. Klasik Batı müziğinde kullanılan
 DNN tabanlı ses ayırıcı etkinleştirildi. PiKaraoke, stereo sese yol açan her parçada enstrümantal ve vokal sesi ayırmak için derin bir sinir ağı çalıştırmak için PyTorch'u (Facebook tarafından) kullanır.
 Oyuncu Kontrolü
 Müzik
-İkisi birden
+Karışık
 Ses
 Anahtarı Değiştir
 Şu anda hiçbir şey çalmıyor.
@@ -78,7 +78,7 @@ Ses Gecikmesi (sn)
 Altyazı Gecikmesi (sn)
 Şarkıyı Yeniden Başlat
 Oynat durdur
-Geçerli Şarkıyı Durdur
+Geçerli Şarkıyı Atla
 Sesi kıs
 Sesi Ayarla
 Sesi aç
@@ -132,7 +132,7 @@ Bağlantı:
 Mevcut Şarkılar
 Bu cihazı kullanan kişinin görünen adını değiştirmek istiyor musunuz? Bu, sıraya alınan şarkıların yanında görünecektir. Akım:
 Şu anki kullanıcı
-Bilgi
+Ayarlar
 PiKaraoke
 Çıkmak istediğinden emin misin?
 Kapatmak istediğinizden emin misiniz?
@@ -185,4 +185,9 @@ Dili değiştir
 Lütfen dil seçin
 Sistem Dili
 Mevcut sistem dili:
-Bu, TV ekranında görüntülenen PiKaraoke arka uç sisteminin dilini değiştirir; ayrıca, bağlanan her kullanıcı, sağ üst menüdeki küre düğmesinde ilgili Web UI dilini de değiştirebilir.
+Bu, TV ekranında görüntülenen PiKaraoke arka uç sisteminin dilini değiştirir; ayrıca, bağlanan her kullanıcı, sağ üst menüdeki küre düğmesinde kendi Web UI dilini de değiştirebilir.
+İndirme başarıyla tamamlandı!
+Yükleme başarısız!
+Şarkı sıraya eklendi!
+Şarkı sıraya alınamadı!
+Sistem Bilgileri ve Ayarlar

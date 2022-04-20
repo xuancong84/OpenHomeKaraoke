@@ -44,6 +44,7 @@ class Karaoke:
 	use_DNN_vocal = True
 	vocal_process = None
 	vocal_device = None
+	vocal_mode = 'mixed'
 	is_paused = True
 	firstSongStarted = False
 	qr_code_path = None
@@ -337,17 +338,18 @@ class Karaoke:
 		# Clear the screen and start
 		logging.debug("Rendering splash screen")
 		self.screen.fill((0, 0, 0))
+		blitY = self.ref_H - 40
+		sysfont_size = 30
 
-		# Draw logo
+		# Draw logo and name
+		text = self.render_font(sysfont_size * 2, getString(136), (255, 255, 255))
 		if not hasattr(self, 'logo'):
 			self.logo = pygame.image.load(self.logo_path)
 		_, _, W, H = self.normalize(list(self.logo.get_rect()))
 		center = self.screen.get_rect().center
 		self.logo1 = pygame.transform.scale(self.logo, (W, H))
-		self.screen.blit(self.logo1, (center[0]-W/2, center[1]-H/2))
-
-		blitY = self.ref_H - 40
-		sysfont_size = 30
+		self.screen.blit(self.logo1, (center[0]-W/2, center[1]-H/2-text[1].height/2))
+		self.screen.blit(text[0], (center[0]-text[1].width/2, center[1]+H/2))
 
 		if not self.hide_ip:
 			qr_size = 150
@@ -390,20 +392,23 @@ class Karaoke:
 			self.screen.blit(text2[0], self.normalize((10, 50)))
 			self.screen.blit(text3[0], self.normalize((10, 90)))
 
+		blitY = 10
+		if not self.has_video:
+			logging.debug("Rendering current song to splash screen")
+			render_next_song = self.render_font([60, 50, 40], getString(58) + (self.now_playing or ''), (255, 255, 0))
+			render_next_user = self.render_font([50, 40, 30], getString(57) + (self.now_playing_user or ''), (0, 240, 0))
+			self.screen.blit(render_next_song[0], (self.screen.get_width() - render_next_song[1].width - 10, self.normalize(10)))
+			self.screen.blit(render_next_user[0], (self.screen.get_width() - render_next_user[1].width - 10, self.normalize(80)))
+			blitY += 140
+
 		if len(self.queue) >= 1:
 			logging.debug("Rendering next song to splash screen")
 			next_song = self.queue[0]["title"]
 			next_user = self.queue[0]["user"]
 			render_next_song = self.render_font([60, 50, 40], getString(56) + next_song, (255, 255, 0))
 			render_next_user = self.render_font([50, 40, 30], getString(57) + next_user, (0, 240, 0))
-			self.screen.blit(render_next_song[0], (self.screen.get_width() - render_next_song[1].width - 10, self.normalize(10)))
-			self.screen.blit(render_next_user[0], (self.screen.get_width() - render_next_user[1].width - 10, self.normalize(80)))
-		elif not self.has_video:
-			logging.debug("Rendering current song to splash screen")
-			render_next_song = self.render_font([60, 50, 40], getString(58) + self.now_playing, (255, 255, 0))
-			render_next_user = self.render_font([50, 40, 30], getString(57) + self.now_playing_user, (0, 240, 0))
-			self.screen.blit(render_next_song[0], (self.screen.get_width() - render_next_song[1].width - 10, self.normalize(10)))
-			self.screen.blit(render_next_user[0], (self.screen.get_width() - render_next_user[1].width - 10, self.normalize(80)))
+			self.screen.blit(render_next_song[0], (self.screen.get_width() - render_next_song[1].width - 10, self.normalize(blitY)))
+			self.screen.blit(render_next_user[0], (self.screen.get_width() - render_next_user[1].width - 10, self.normalize(blitY+70)))
 
 	def render_font(self, sizes, text, *kargs):
 		if type(sizes) != list:
@@ -889,15 +894,22 @@ class Karaoke:
 			logging.warning("Tried to set volume, but no file is playing!")
 			return False
 
+	def try_set_vocal_mode(self, mode, now_playing_filename):
+		if mode not in ['mixed', 'vocal', 'nonvocal']:
+			mode = {1: 'nonvocal', 2: 'mixed', 3: 'vocal'}[self.get_vocal_mode()]
+		play_slave = '' if mode == 'mixed' else self.download_path + mode + '/' + ('' if self.use_DNN_vocal else '.') \
+		                                       + os.path.basename(now_playing_filename) + '.m4a'
+		if os.path.isfile(play_slave):
+			self.vocal_mode = mode
+		else:
+			play_slave = ''
+			self.vocal_mode = 'mixed'
+		return play_slave
+
 	def play_vocal(self, mode = None):
-		# mode=vocal/nonvocal/both, or else (use current)
+		# mode=vocal/nonvocal/mixed, or else (use current)
 		if self.use_vlc:
-			if mode not in ['both', 'vocal', 'nonvocal']:
-				mode = {1: 'nonvocal', 2: 'both', 3: 'vocal'}[self.get_vocal_mode()]
-			play_slave = '' if mode == 'both' else self.download_path+mode+'/' + ('' if self.use_DNN_vocal else '.')\
-			                                     + os.path.basename(self.now_playing_filename) + '.m4a'
-			if not os.path.isfile(play_slave):
-				play_slave = ''
+			play_slave = self.try_set_vocal_mode(mode, self.now_playing_filename)
 			if self.now_playing_slave == play_slave:
 				return
 			status_xml = self.vlcclient.command().text if self.is_paused else self.vlcclient.pause(False).text
@@ -1089,7 +1101,9 @@ class Karaoke:
 							self.handle_run_loop()
 							i += self.loop_interval
 						head = self.queue.pop(0)
-						self.play_file(head["file"])
+						if self.vocal_mode != 'mixed':
+							self.now_playing_slave = self.try_set_vocal_mode(self.vocal_mode, head['file'])
+						self.play_file(head['file'])
 						if not self.firstSongStarted:
 							if self.streamer_alive():
 								self.streamer_restart(1)

@@ -20,7 +20,7 @@ Erreur : Impossible de supprimer ce morceau, car il se trouve dans la file d'at
 Morceau supprimé :
 Erreur : Aucun paramètre de morceau spécifié !
 Erreur : Impossible de modifier ce morceau, car il est en cours de lecture :
-Édition de fichier de chanson
+Édition de fichier de morceau
 Erreur lors du renommage du fichier : '%s' en '%s'. Le nom de fichier existe déjà.
 Fichier renommé : '%s' en '%s'
 Erreur : Aucun paramètre de nom de fichier n'a été spécifié !
@@ -63,7 +63,7 @@ Un demi-ton est également appelé demi-ton. C'est le plus petit intervalle util
 Le séparateur vocal basé sur DNN est activé. PiKaraoke utilise PyTorch (par Facebook) pour exécuter un réseau de neurones profond pour séparer le son instrumental et vocal dans chaque piste donnant lieu à un son stéréo.
 Contrôle du joueur
 Musique
-Tous les deux
+Mixte
 Voix
 Changer de clé
 Rien ne joue en ce moment.
@@ -78,7 +78,7 @@ Délai audio (sec)
 Délai de sous-titre (sec)
 Redémarrer la chanson
 Jouer pause
-Arrêter la chanson en cours
+Ignorer la chanson en cours
 Baisser le volume
 Régler le volume
 Monter le son
@@ -132,7 +132,7 @@ Lien:
 Chansons disponibles
 Voulez-vous modifier le nom d'affichage de la personne qui utilise cet appareil ? Cela apparaîtra à côté des chansons en file d'attente. Courant:
 Utilisateur actuel
-Info
+Réglages
 PiKaraoké
 Êtes-vous sûr de vouloir quitter?
 Voulez-vous vraiment arrêter ?
@@ -185,4 +185,9 @@ Changer de langue
 Veuillez choisir la langue
 Langue du système
 Langue actuelle du système :
-Cela change la langue du système backend PiKaraoke qui s'affiche sur l'écran du téléviseur ; de plus, chaque utilisateur qui se connecte peut également modifier la langue de son interface utilisateur Web dans le bouton globe du menu en haut à droite.
+Cela change la langue du système backend PiKaraoke qui s'affiche sur l'écran du téléviseur ; de plus, chaque utilisateur qui se connecte peut également modifier la langue de son interface utilisateur Web respective dans le bouton globe du menu en haut à droite.
+Téléchargement terminé avec succès !
+Échec du téléchargement!
+Chanson ajoutée à la file d'attente !
+Échec de la mise en file d'attente du morceau !
+Informations et paramètres système

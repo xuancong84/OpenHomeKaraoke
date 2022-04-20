@@ -63,7 +63,7 @@ Sebuah semitone juga dikenal sebagai setengah langkah. Ini adalah interval terke
 Pemisah vokal berbasis DNN diaktifkan. PiKaraoke menggunakan PyTorch (oleh Facebook) untuk menjalankan jaringan saraf dalam untuk membagi suara instrumental dan vokal di setiap trek sehingga menghasilkan suara stereo.
 Kontrol Pemain
 Musik
-Keduanya
+Campuran
 Suara
 Ubah Kunci
 Tidak ada yang sedang diputar sekarang.
@@ -78,7 +78,7 @@ Penundaan Audio (dtk)
 Penundaan Subtitel (dtk)
 Mulai Ulang Lagu
 Putar/Jeda
-Hentikan Lagu Saat Ini
+Lewati Lagu Saat Ini
 Volume Turun
 Setel Volume
 Volume Naik
@@ -132,7 +132,7 @@ Tautan:
 Lagu yang tersedia
 Apakah Anda ingin mengubah nama tampilan orang yang menggunakan perangkat ini? Ini akan muncul di sebelah lagu yang diantrekan. Saat ini:
 Pengguna saat ini
-Info
+Pengaturan
 PiKaraoke
 Apakah Anda yakin ingin berhenti?
 Apakah Anda yakin ingin menutup?
@@ -186,3 +186,8 @@ Silakan pilih bahasa
 Bahasa Sistem
 Bahasa sistem saat ini:
 Ini mengubah bahasa sistem backend PiKaraoke yang ditampilkan ke layar TV; Selain itu, setiap pengguna yang terhubung juga dapat mengubah bahasa UI Web masing-masing di tombol globe di menu kanan atas.
+Unduhan selesai dengan sukses!
+Unduhan gagal!
+Lagu ditambahkan ke antrean!
+Gagal mengantrekan lagu!
+Info & Pengaturan Sistem

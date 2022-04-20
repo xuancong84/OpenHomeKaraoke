@@ -15,7 +15,7 @@ Excluído da fila:
 Erro ao excluir da fila:
 Download iniciado:
 Após a conclusão, ele será adicionado à fila.
-Após a conclusão, ele aparecerá na lista de "músicas disponíveis".
+Após a conclusão, ele aparecerá na lista "músicas disponíveis".
 Erro: Não é possível excluir esta música porque ela está na fila atual:
 Música excluída:
 Erro: Nenhum parâmetro de música especificado!
@@ -63,7 +63,7 @@ Um semitom também é conhecido como meio-tom. É o menor intervalo usado na mú
 O divisor vocal baseado em DNN está habilitado. O PiKaraoke usa o PyTorch (do Facebook) para executar uma rede neural profunda para dividir o som instrumental e vocal em cada faixa, dando origem ao som estéreo.
 Controle do jogador
 Música
-Ambos
+Misturado
 Voz
 Alterar chave
 Nada está jogando agora.
@@ -78,7 +78,7 @@ Atraso de áudio (s)
 Atraso da legenda (s)
 Reiniciar música
 A pausa
-Parar a música atual
+Pular a música atual
 Volume baixo
 Definir volume
 Aumentar o volume
@@ -132,7 +132,7 @@ Link:
 Músicas disponíveis
 Deseja alterar o nome de exibição da pessoa que usa este dispositivo? Isso aparecerá ao lado das músicas na fila. Atual:
 Usuário atual
-Informações
+Definições
 PiKaraokê
 Você tem certeza que quer sair?
 Tem certeza de que deseja encerrar?
@@ -185,4 +185,9 @@ Mudar idioma
 Por favor, escolha o idioma
 Idioma do sistema
 Idioma atual do sistema:
-Isso altera o idioma do sistema de back-end PiKaraoke que é exibido na tela da TV; além disso, cada usuário conectado também pode alterar o idioma da interface do usuário da Web no botão globo no menu superior direito.
+Isso altera o idioma do sistema de back-end PiKaraoke que é exibido na tela da TV; além disso, cada usuário conectado também pode alterar seu respectivo idioma da interface do usuário da Web no botão globo no menu superior direito.
+Download concluído com sucesso!
+Falha no Download!
+Música adicionada à fila!
+Falha ao colocar a música na fila!
+Informações e configurações do sistema

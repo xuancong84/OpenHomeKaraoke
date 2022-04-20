@@ -63,7 +63,7 @@ En halvton är också känd som ett halvsteg. Det är det minsta intervallet som
 DNN-baserad röstsplitter är aktiverad. PiKaraoke använder PyTorch (av Facebook) för att driva ett djupt neuralt nätverk för att dela upp instrumental- och vokalljud i varje spår som ger upphov till stereoljud.
 Spelarkontroll
 musik
-Både
+Blandad
 Röst
 Ändra nyckel
 Ingenting spelar just nu.
@@ -78,7 +78,7 @@ Ljudfördröjning (sek)
 Undertextfördröjning (sek)
 Starta om låten
 Spela/Pausa
-Stoppa aktuell låt
+Hoppa över aktuell låt
 Sänk volymen
 Ställ in volym
 Höj volymen
@@ -132,7 +132,7 @@ Länk:
 Tillgängliga låtar
 Vill du ändra visningsnamnet på personen som använder den här enheten? Detta kommer att visas bredvid de köade låtarna. Nuvarande:
 Nuvarande användaren
-Info
+inställningar
 PiKaraoke
 Är du säker på att du vill sluta?
 Är du säker på att du vill stänga av?
@@ -176,7 +176,7 @@ Avstängningssystem
 Expandera Raspberry Pi-filsystemet
 Om du precis har installerat den förbyggda pikaraoke pi-bilden och ditt SD-kort är större än 4 GB, kanske du vill utöka filsystemet för att utnyttja det återstående utrymmet. Du behöver bara göra detta en gång. Detta kommer att starta om systemet.
 Inaktivera adminläge
-Aktivera administratörsläge
+Aktivera adminläge
 logga ut
 logga in
 System information
@@ -185,4 +185,9 @@ Hem
 Välj språk
 Systemspråk
 Aktuellt systemspråk:
-Detta ändrar språket för PiKaraoke backend-systemet som visas på TV-skärmen; dessutom kan varje anslutande användare också ändra sitt webbgränssnittsspråk i globknappen i menyn högst upp till höger.
+Detta ändrar språket för PiKaraoke backend-systemet som visas på TV-skärmen; dessutom kan varje anslutande användare också ändra sitt respektive webbgränssnittsspråk i globknappen i menyn högst upp till höger.
+Nedladdningen har slutförts!
+Nedladdning misslyckad!
+Låten har lagts till i kön!
+Det gick inte att köa låten!
+Systeminformation och inställningar

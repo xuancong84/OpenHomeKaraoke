@@ -63,7 +63,7 @@ Yon semitone konnen tou kòm yon demi-etap. Li se entèval ki pi piti yo itilize
 Splitter vokal ki baze sou DNN aktive. PiKaraoke itilize PyTorch (pa Facebook) pou dirije yon rezo neral pwofon pou divize son enstrimantal ak vokal nan chak track ki bay monte son stereo.
 Kontwòl jwè
 Mizik
-Tou de
+Melanje
 Vwa
 Chanje kle
 Pa gen anyen k ap jwe kounye a.
@@ -78,7 +78,7 @@ Reta odyo (seg)
 Reta sou-titre (seg)
 Rekòmanse chante
 Jwe/Poz
-Sispann chante aktyèl la
+Sote chan aktyèl la
 Volim desann
 Mete Volim
 Volim leve
@@ -132,7 +132,7 @@ Link:
 Chante ki disponib
 Èske w vle chanje non moun k ap itilize aparèy sa a? Sa a pral parèt akote chante yo nan file. Kouran:
 Itilizatè aktyèl la
-Info
+Anviwònman
 PiKaraoke
 Èske w sèten ou vle kite fimen?
 Èske ou sèten ou vle fèmen?
@@ -185,4 +185,9 @@ Chanje Lang
 Tanpri chwazi lang
 Lang sistèm
 Lang sistèm aktyèl la:
-Sa a chanje langaj sistèm backend PiKaraoke la ki parèt sou ekran televizyon; nplis de sa, chak itilizatè konekte kapab tou chanje respektif lang UI Web yo nan bouton glòb la nan meni an tèt dwat.
+Sa a chanje langaj sistèm backend PiKaraoke la ki parèt sou ekran televizyon; nplis de sa, chak itilizatè konekte kapab tou chanje lang respektif yo UI nan bouton glòb la nan meni an tèt dwat.
+Download ranpli avèk siksè!
+Telechajman echwe!
+Chante te ajoute nan keu la!
+Echwe pou keu chante a!
+Enfòmasyon ak Anviwònman Sistèm

@@ -63,12 +63,12 @@ Půltón je také známý jako poloviční krok. Je to nejmenší interval použ
 Rozdělovač hlasu založený na DNN je povolen. PiKaraoke používá PyTorch (od Facebooku) k provozování hluboké neuronové sítě k rozdělení instrumentálního a vokálního zvuku v každé stopě, což vede ke stereo zvuku.
 Ovládání přehrávače
 Hudba
-Oba
+Smíšený
 Hlas
 Změnit klíč
 Momentálně se nic nehraje.
 Žádná skladba není zařazena do fronty.
-Tuto skladbu jste nepřidali vy. Opravdu chcete tuto stopu restartovat?
+Tuto skladbu jste nepřidali vy. Opravdu chcete restartovat tuto stopu?
 Tuto skladbu jste nepřidali vy. Opravdu chcete tuto stopu přeskočit?
 Ovládání přehrávače
 Právě teď hraje
@@ -78,7 +78,7 @@ Zpoždění zvuku (s)
 Zpoždění titulků (s)
 Restartujte skladbu
 Přehrát/Pozastavit
-Zastavit aktuální skladbu
+Přeskočit aktuální skladbu
 Snížit hlasitost
 Nastavte hlasitost
 Zvýšit hlasitost
@@ -132,7 +132,7 @@ Odkaz:
 Dostupné skladby
 Chcete změnit zobrazované jméno osoby používající toto zařízení? To se zobrazí vedle skladeb ve frontě. Aktuální:
 Současný uživatel
-Info
+Nastavení
 PiKaraoke
 Jste si jisti, že chcete skončit?
 Opravdu chcete vypnout?
@@ -185,4 +185,9 @@ Změnit jazyk
 Vyberte jazyk
 Systémový jazyk
 Aktuální jazyk systému:
-Tím se změní jazyk backendového systému PiKaraoke, který se zobrazí na televizní obrazovce; navíc každý připojující se uživatel může také změnit příslušný jazyk webového uživatelského rozhraní v tlačítku zeměkoule v pravé horní nabídce.
+Tím se změní jazyk backendového systému PiKaraoke, který se zobrazí na televizní obrazovce; navíc každý připojující se uživatel může také změnit svůj příslušný jazyk webového uživatelského rozhraní na tlačítku zeměkoule v nabídce vpravo nahoře.
+Stahování bylo úspěšně dokončeno!
+Stažení se nezdařilo!
+Skladba přidána do fronty!
+Skladbu se nepodařilo zařadit do fronty!
+Systémové informace a nastavení

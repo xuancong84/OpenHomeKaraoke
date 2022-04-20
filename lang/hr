@@ -63,7 +63,7 @@ Poluton je također poznat kao polukorak. To je najmanji interval koji se korist
 Omogućen je vokalni razdjelnik koji se temelji na DNN-u. PiKaraoke koristi PyTorch (od Facebooka) za pokretanje duboke neuronske mreže kako bi podijelio instrumentalni i vokalni zvuk u svakoj pjesmi što dovodi do stereo zvuka.
 Kontrola igrača
 glazba, muzika
-Oba
+Miješano
 Glas
 Promjena ključa
 Trenutno se ništa ne igra.
@@ -78,7 +78,7 @@ Kašnjenje zvuka (s)
 Odgoda titla (s)
 Ponovno pokrenite pjesmu
 Reprodukcija/pauza
-Zaustavi trenutnu pjesmu
+Preskoči trenutnu pjesmu
 Stišavanje glasnoće
 Postavite glasnoću
 Pojačati
@@ -130,9 +130,9 @@ Rezultati pretrage za
 Kliknite padajući izbornik za prikaz više rezultata
 Veza:
 Dostupne pjesme
-Želite li promijeniti ime za prikaz osobe koja koristi ovaj uređaj? Ovo će se prikazati pored pjesama na čekanju. Trenutno:
+Želite li promijeniti ime za prikaz osobe koja koristi ovaj uređaj? Ovo će se pojaviti pored pjesama na čekanju. Trenutno:
 Trenutni korisnik
-Info
+Postavke
 PiKaraoke
 Jesi li siguran da želiš odustati?
 Jeste li sigurni da se želite isključiti?
@@ -186,3 +186,8 @@ Molimo odaberite jezik
 Jezik sustava
 Trenutni jezik sustava:
 To mijenja jezik pozadinskog sustava PiKaraoke koji se prikazuje na TV ekranu; štoviše, svaki korisnik koji se povezuje može također promijeniti svoj jezik web korisničkog sučelja na gumbu globusa u desnom gornjem izborniku.
+Preuzimanje je uspješno završeno!
+Preuzimanje neuspješno!
+Pjesma je dodana u red čekanja!
+Stavljanje pjesme u red čekanja nije uspjelo!
+Informacije o sustavu i postavke

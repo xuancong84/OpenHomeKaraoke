@@ -63,7 +63,7 @@ Canar leth-cheum cuideachd ri semitone. Is e seo an eadar-ama as lugha a thathas
 Tha splitter gutha stèidhichte air DNN air a chomasachadh. Bidh PiKaraoke a’ cleachdadh PyTorch (le Facebook) gus lìonra neural domhainn a ruith gus fuaim ionnsramaid is gutha a roinn anns gach slighe ag adhbhrachadh fuaim stereo.
 Smachd cluicheadair
 Ceol
-An dà chuid
+Measgaichte
 Guth
 Atharraich iuchair
 Chan eil dad a’ cluich an-dràsta.
@@ -78,7 +78,7 @@ Dàil claisneachd (diog)
 Dàil fo-thiotal (diog)
 Òran ath-thòisich
 Cluich / Stad
-Stad an t-òran làithreach
+Skip Song An-dràsta
 Meud Sìos
 Suidhich Volume
 Tomhais Suas
@@ -132,7 +132,7 @@ Ceangal:
 Òrain rim faighinn
 A bheil thu airson ainm taisbeanaidh an neach a chleachdas an inneal seo atharrachadh? Nochdaidh seo ri taobh nan òran ciudha. An-dràsta:
 Cleachdaiche làithreach
-Fiosrachadh
+Suidhichidhean
 PiKaraoke
 A bheil thu cinnteach gu bheil thu airson sgur?
 A bheil thu cinnteach gu bheil thu airson a dhùnadh sìos?
@@ -185,4 +185,9 @@ Atharraich Cànan
 Feuch an tagh thu cànan
 Cànan an t-siostaim
 Cànan an t-siostaim làithreach:
-Bidh seo ag atharrachadh cànan siostam backend PiKaraoke a thèid a thaisbeanadh air scrion Tbh; A bharrachd air an sin, faodaidh gach neach-cleachdaidh ceangail an cànan UI lìn aca atharrachadh anns a’ phutan cruinne sa chlàr gu h-àrd air an làimh dheis.
+Bidh seo ag atharrachadh cànan siostam backend PiKaraoke a thèid a thaisbeanadh air scrion Tbh; A bharrachd air an sin, faodaidh gach neach-cleachdaidh ceangail an cànan UI lìn aca atharrachadh cuideachd anns a’ phutan cruinne sa chlàr gu h-àrd air an làimh dheis.
+Chaidh an luchdachadh sìos a chrìochnachadh gu soirbheachail!
+Dh'fhàillig an luchdachadh sìos!
+Òran air a chur ris a’ chiudha!
+Dh’ fhàillig ciudha an òrain!
+Fiosrachadh mun t-siostam & roghainnean

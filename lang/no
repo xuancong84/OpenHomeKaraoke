@@ -45,7 +45,7 @@ Youtube-dl-sti ble ikke funnet!
 VLC-bane ikke funnet!
 omxplayer-banen ble ikke funnet!
 Oppretter nedlastingsbane:
-Wifi/nettverk ikke tilkoblet. Slår av om 10...
+Wifi/nettverk er ikke tilkoblet. Slår av om 10...
 For å velge sanger, skann QR eller koble til
 For TV-visning, koble til
 Trykk F for å bytte fullskjerm
@@ -60,10 +60,10 @@ Administrasjonsmodus gitt!
 Økende lydforsinkelse vil gi deg mer tid til å lese tekster før du synger ut neste setning.
 Redusere undertekstforsinkelse vil gi deg mer tid til å lese tekster før du synger ut neste setning.
 En halvtone er også kjent som et halvtrinn. Det er det minste intervallet som brukes i klassisk vestlig musikk, lik en tolvtedel av en oktav eller en halv tone.
-DNN-basert stemmesplitter er aktivert. PiKaraoke bruker PyTorch (av Facebook) til å kjøre et dypt nevralt nettverk for å dele instrumental- og vokallyd i hvert spor som gir opphav til stereolyd.
+DNN-basert stemmesplitter er aktivert. PiKaraoke bruker PyTorch (fra Facebook) for å kjøre et dypt nevralt nettverk for å dele instrumental- og vokallyd i hvert spor som gir opphav til stereolyd.
 Spillerkontroll
 Musikk
-Både
+Blandet
 Stemme
 Endre nøkkel
 Ingenting spiller akkurat nå.
@@ -78,7 +78,7 @@ Lydforsinkelse (sek.)
 Undertekstforsinkelse (sek.)
 Start sangen på nytt
 Spill av/pause
-Stopp gjeldende sang
+Hopp over gjeldende sang
 Volum ned
 Still inn volum
 Volum opp
@@ -132,7 +132,7 @@ Link:
 Tilgjengelige sanger
 Vil du endre visningsnavnet til personen som bruker denne enheten? Dette vil vises ved siden av sangene i køen. Nåværende:
 Nåværende bruker
-Info
+Innstillinger
 PiKaraoke
 Er du sikker på at du vil slutte?
 Er du sikker på at du vil avslutte?
@@ -185,4 +185,9 @@ Skifte språk
 Vennligst velg språk
 Systemspråk
 Gjeldende systemspråk:
-Dette endrer språket til PiKaraoke-backend-systemet som vises på TV-skjermen; dessuten kan hver tilkoblende bruker også endre sitt web-UI-språk i globusknappen i menyen øverst til høyre.
+Dette endrer språket til PiKaraoke-backend-systemet som vises på TV-skjermen; dessuten kan hver tilkoblede bruker også endre sitt respektive web-UI-språk i globusknappen i menyen øverst til høyre.
+Nedlasting fullført!
+Nedlasting mislyktes!
+Sang lagt til i køen!
+Kunne ikke sette sangen i kø!
+Systeminfo og innstillinger

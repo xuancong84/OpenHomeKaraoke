@@ -38,7 +38,7 @@ Bạn không có quyền thoát
 Bạn không có quyền tắt
 Khởi động lại hệ thống ngay bây giờ!
 Bạn không có quyền khởi động lại
-Mở rộng hệ thống tập tin và khởi động lại hệ thống ngay bây giờ!
+Mở rộng hệ thống tập tin và hệ thống khởi động lại ngay bây giờ!
 Không thể mở rộng fs trên các thiết bị pi không phải mâm xôi!
 Bạn không có quyền thay đổi kích thước hệ thống tệp
 Không tìm thấy đường dẫn Youtube-dl!
@@ -59,11 +59,11 @@ Thêm bởi:
 Đã cấp chế độ quản trị viên!
 Tăng độ trễ âm thanh sẽ giúp bạn có nhiều thời gian hơn để đọc lời bài hát trước khi hát câu tiếp theo.
 Giảm độ trễ của phụ đề sẽ giúp bạn có nhiều thời gian hơn để đọc lời bài hát trước khi hát câu tiếp theo.
-Một nửa cung còn được gọi là nửa bước. Đây là quãng nhỏ nhất được sử dụng trong âm nhạc cổ điển phương Tây, bằng một phần mười hai của quãng tám hoặc nửa giai điệu.
+Một nửa cung còn được gọi là nửa cung. Đây là quãng nhỏ nhất được sử dụng trong âm nhạc cổ điển phương Tây, bằng một phần mười hai của quãng tám hoặc nửa giai điệu.
 Bộ tách giọng nói dựa trên DNN được bật. PiKaraoke sử dụng PyTorch (của Facebook) để chạy một mạng lưới thần kinh sâu nhằm tách âm thanh nhạc cụ và giọng hát trong mỗi bản nhạc để tạo ra âm thanh nổi.
 Kiểm soát người chơi
 Âm nhạc
-Cả hai
+Trộn
 Tiếng nói
 Thay đổi khóa
 Không có gì đang phát ngay bây giờ.
@@ -78,7 +78,7 @@ Tìm kiếm:
 Độ trễ phụ đề (giây)
 Khởi động lại bài hát
 Tạm dừng chơi
-Dừng bài hát hiện tại
+Bỏ qua bài hát hiện tại
 Giảm âm lượng
 Đặt âm lượng
 Tăng âm lượng
@@ -132,7 +132,7 @@ Liên kết:
 Bài hát có sẵn
 Bạn có muốn thay đổi tên hiển thị của người đang sử dụng thiết bị này không? Điều này sẽ hiển thị bên cạnh các bài hát được xếp hàng đợi. Hiện hành:
 Người dùng hiện tại
-Thông tin
+Cài đặt
 PiKaraoke
 Bạn có chắc bạn muốn thoát khỏi?
 Bạn có chắc chắn muốn tắt không?
@@ -152,19 +152,19 @@ Tùy chọn điều khiển nâng cao
 Chế độ tách giọng:
 Sử dụng L-R / L + R
 Sử dụng DNN
-Âm thanh MTV tiêu chuẩn có hai kênh âm thanh nổi (L và R) được mã hóa theo cách: L-R là bản nhạc cụ, L + R là bản giọng hát. Do đó, chỉ cần trừ hoặc cộng hai kênh âm thanh nổi, chúng ta có thể có được bài hát nhạc cụ và giọng hát ở dạng âm thanh đơn âm. Bộ tách giọng hát dựa trên DNN (mạng nơ ron sâu) tích hợp của PiKaraoke sử dụng thuật toán AI để tách âm thanh nhạc cụ và giọng hát trong mỗi bản nhạc âm thanh nổi một cách độc lập, tạo ra các bản nhạc âm thanh và nhạc cụ âm thanh nổi.
+Âm thanh MTV tiêu chuẩn có hai kênh âm thanh nổi (L và R) được mã hóa theo cách: L-R là bản nhạc cụ, L + R là bản giọng hát. Do đó, chỉ cần trừ hoặc cộng hai kênh âm thanh nổi, chúng ta có thể có được bài hát nhạc cụ và giọng hát ở dạng âm thanh đơn âm. Bộ tách giọng hát dựa trên DNN (mạng thần kinh sâu) được tích hợp sẵn của PiKaraoke sử dụng thuật toán AI để tách âm thanh nhạc cụ và giọng hát trong mỗi bản nhạc âm thanh nổi một cách độc lập dẫn đến các bản nhạc âm thanh và nhạc cụ âm thanh nổi.
 Ngừng Splitter
 Khởi động lại Splitter
 Bộ tách giọng hát (hỗ trợ cả phép trừ âm thanh nổi và dựa trên DNN) chạy như một quy trình riêng biệt trong nền, tạo ra tệp âm thanh nhạc cụ / giọng hát cho mọi bài hát.
 Đồng bộ hóa lại âm thanh và video:
 Ngừng phát trực tiếp
 Khởi động lại Streamer
-Điều này chỉ ảnh hưởng đến việc chơi KTV thông qua trình duyệt web. Khởi động lại chế độ chụp và phát trực tuyến màn hình giúp cải thiện đồng bộ hóa âm thanh / video, nó cũng làm giảm độ trễ giữa máy chủ và trình duyệt.
+Điều này chỉ ảnh hưởng đến việc chơi KTV thông qua trình duyệt web. Khởi động lại chế độ chụp và phát trực tuyến màn hình cải thiện đồng bộ hóa âm thanh / video, nó cũng làm giảm độ trễ giữa máy chủ và trình duyệt.
 Làm mới danh sách bài hát:
 Quét lại thư mục bài hát
 Bạn chỉ cần thực hiện việc này nếu bạn đã sao chép thủ công các tệp vào thư mục tải xuống trong khi PiKaraoke đang chạy.
 Cập nhật
-Nếu quá trình tải xuống hoặc tìm kiếm ngừng hoạt động, việc cập nhật youtube-dl có thể sẽ khắc phục được sự cố. Phiên bản cài đặt hiện tại là:
+Nếu quá trình tải xuống hoặc tìm kiếm ngừng hoạt động, việc cập nhật youtube-dl có thể sẽ khắc phục được sự cố. Phiên bản được cài đặt hiện tại là:
 Cập nhật youtube-dl
 Liên kết cập nhật ở trên có thể không thành công nếu bạn không có quyền đối với tệp thích hợp. Kiểm tra nhật ký PiKaraoke để tìm lỗi.
 Tắt
@@ -186,3 +186,8 @@ Vui lòng chọn ngôn ngữ
 Ngôn ngữ hệ thống
 Ngôn ngữ hệ thống hiện tại:
 Điều này thay đổi ngôn ngữ của hệ thống phụ trợ PiKaraoke được hiển thị trên màn hình TV; hơn nữa, mỗi người dùng kết nối cũng có thể thay đổi ngôn ngữ giao diện người dùng Web tương ứng của họ trong nút quả địa cầu ở menu trên cùng bên phải.
+Đã hoàn tất tải xuống thành công!
+Tải xuống không thành công!
+Bài hát đã được thêm vào hàng đợi!
+Không thể xếp hàng bài hát!
+Thông tin và cài đặt hệ thống

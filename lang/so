@@ -19,7 +19,7 @@ Marka la dhammeeyo, waxay ka soo muuqan doontaa liiska "heesaha la heli karo".
 Cilad: Lama tirtiri karo heestan sababtoo ah waxay ku jirtaa safka hadda:
 Heesta waa la tirtiray:
 Khalad: Halbeeg-beegtida heesta lama cayimin!
-Khalad: Ma tafatiri karo heestan sababtoo ah hadda waa la tumay:
+Khalad: Lama tafatirin karo heestan sababtoo ah hadda waa la tumay:
 Tafatirka faylka heesta
 Cilad dib u magacaabista faylka: '%s' ilaa '%s' Magaca faylka ayaa hore u jiray
 Faylka la beddelay: '%s' ilaa '%s'
@@ -63,7 +63,7 @@ Semitone sidoo kale waxaa loo yaqaannaa tallaabo nus ah. Waa inta u dhexaysa ugu
 Qaybiyaha codka ku salaysan ee DNS waa la dajiyay PiKaraoke waxay isticmaashaa PyTorch (ee Facebook) si ay u socodsiiso shabakad neerfaha qoto dheer si ay u kala qaybiso codka qalabka iyo dhawaaqa raad kasta oo kor u qaada codka isteeriyo.
 Xakamaynta Ciyaartoyga
 Muusiga
-Labadaba
+Isku qas
 Codka
 Beddel Furaha
 Wax hadda ciyaaraya ma jiraan.
@@ -78,7 +78,7 @@ Dib u dhigista maqalka (sekn)
 Dib-u-dhig-hoosaad (sek)
 Dib u bilow heesta
 Ciyaar/hakis
-Jooji Heesta Hadda
+Ka bood Heesta Hadda
 Hoosta Mugga
 Deji mugga
 Kor U Qaadida
@@ -132,7 +132,7 @@ Xiriirinta:
 Heesaha la heli karo
 Ma doonaysaa in aad badasho magaca muuqaalka ee qofka isticmaalaya qalabkan? Tani waxay ka muuqan doontaa agteeda heesaha safka ku jira. Hadda:
 Isticmaalaha hadda
-Xog
+Dejinta
 PiKaraoke
 Ma hubtaa inaad doonayso inaad joojiso?
 Ma hubtaa inaad doonayso inaad xidho?
@@ -185,4 +185,9 @@ Beddel luqadda
 Fadlan door luqadda
 Luuqadda Nidaamka
 Luuqadda nidaamka hadda:
-Tani waxay bedeshaa luqadda nidaamka dhabarka dambe ee PiKaraoke kaas oo lagu soo bandhigo shaashadda TV-ga; Intaa waxaa dheer, isticmaale kasta oo isku xira ayaa sidoo kale beddeli kara siday u kala horreeyaan luqaddooda Shabakadda UI ee badhanka adduunka ee menu-ka sare ee midig.
+Tani waxay bedeshaa luqadda nidaamka dhabarka dambe ee PiKaraoke kaas oo lagu soo bandhigo shaashadda TV-ga; Intaa waxaa dheer, isticmaale kasta oo isku xira ayaa sidoo kale beddeli kara luqaddooda Shabakadda UI ee badhanka adduunka ee menu-ka sare ee midig.
+Soo dejintu waxay dhammaatay si guul leh!
+Soo dejintu way fashilantay!
+Hees ayaa lagu daray safka!
+Ku guuldarraystay inuu safto heesta!
+Macluumaadka Nidaamka & Dejinta

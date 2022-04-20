@@ -63,7 +63,7 @@ A félhangot féllépésnek is nevezik. Ez a klasszikus nyugati zenében haszná
 A DNN-alapú énekelosztó engedélyezve van. A PiKaraoke a PyTorch segítségével (a Facebooktól) egy mély neurális hálózatot futtat, hogy az egyes számokban megoszthassa a hangszeres és az énekhangot, ami sztereó hangzást eredményez.
 Játékos vezérlés
 Zene
-Mindkét
+Vegyes
 Hang
 Kulcs módosítása
 Jelenleg semmi sem játszik.
@@ -78,7 +78,7 @@ Hangkésleltetés (mp)
 Felirat késleltetése (mp)
 Indítsa újra a dalt
 Lejátszás/Szünet
-Az aktuális dal leállítása
+Aktuális dal kihagyása
 Lehalkít
 Hangerő beállítása
 Hangerő fel
@@ -132,7 +132,7 @@ Link:
 Elérhető dalok
 Meg akarja változtatni az eszközt használó személy megjelenített nevét? Ez a sorban álló dalok mellett fog megjelenni. Jelenlegi:
 Jelenlegi felhasználó
-Info
+Beállítások
 PiKaraoke
 Biztosan ki szeretne lépni?
 Biztosan le akarod kapcsolni?
@@ -140,7 +140,7 @@ Biztos, hogy újra akarod indítani?
 Biztos, hogy most azonnal frissíti a Youtube-dl-t? A jelenlegi és a függőben lévő letöltések sikertelenek lehetnek.
 Biztos benne, hogy ki szeretné bővíteni a fájlrendszert? Ezzel újraindítja a Raspberry pi-t.
 Információ
-Praktikus URL QR-kód, amelyet megoszthat egy barátjával:
+Praktikus URL QR-kód, amelyet megoszthat egy haverjával:
 OS
 Lemez használat
 memória
@@ -185,4 +185,9 @@ Válts nyelvet
 Kérjük, válasszon nyelvet
 Rendszer nyelve
 A rendszer jelenlegi nyelve:
-Ez megváltoztatja a PiKaraoke háttérrendszer nyelvét, amely megjelenik a TV képernyőjén; ezen túlmenően minden egyes csatlakozó felhasználó módosíthatja a webes felhasználói felület megfelelő nyelvét a jobb felső menüben található földgömb gombbal.
+Ez megváltoztatja a PiKaraoke háttérrendszer nyelvét, amely megjelenik a TV képernyőjén; Ezenkívül minden egyes csatlakozó felhasználó megváltoztathatja a megfelelő webes felhasználói felület nyelvét a jobb felső menüben található földgömb gombbal.
+A letöltés sikeresen befejeződött!
+Sikertelen letöltés!
+A dal felkerült a sorba!
+Nem sikerült sorba állítani a dalt!
+Rendszerinformációk és beállítások

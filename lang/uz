@@ -36,11 +36,11 @@ PiKaraoke-ni hozir tark eting!
 Chiqish uchun ruxsatingiz yo‘q
 Tizim hozir o'chirilmoqda!
 Oʻchirish uchun ruxsatingiz yoʻq
-Tizim hozir qayta ishga tushirilmoqda!
+Endi tizim qayta ishga tushirilmoqda!
 Qayta ishga tushirishga ruxsatingiz yo'q
 Fayl tizimini kengaytirish va tizimni hozir qayta ishga tushirish!
 Raspberry pi qurilmalarida fsni kengaytirib bo'lmaydi!
-Fayl tizimining oʻlchamini oʻzgartirishga ruxsatingiz yoʻq
+Sizda fayl tizimining oʻlchamini oʻzgartirishga ruxsatingiz yoʻq
 Youtube-dl yo'li topilmadi!
 VLC yo'li topilmadi!
 omxplayer yo'li topilmadi!
@@ -63,7 +63,7 @@ Yarim ohang yarim qadam sifatida ham tanilgan. Bu klassik Gʻarb musiqasida qoʻ
 DNN-ga asoslangan vokal splitter yoqilgan. PiKaraoke PyTorch-dan (Facebook tomonidan) chuqur neyron tarmoqni ishga tushirish uchun har bir trekda instrumental va vokal tovushlarni ajratib, stereo tovushni keltirib chiqaradi.
 O'yinchi nazorati
 Musiqa
-Ikkalasi ham
+Aralashgan
 Ovoz
 Kalitni o'zgartirish
 Hozir hech narsa oʻynamayapti.
@@ -78,7 +78,7 @@ Audio kechikish (sek)
 Subtitr kechikishi (soniya)
 Qo'shiqni qayta ishga tushirish
 Oʻynatish/toʻxtatib turish
-Joriy qo'shiqni to'xtatish
+Joriy qo‘shiqni o‘tkazib yuborish
 Ovozni pasaytirish
 Ovoz balandligini sozlash
 Ovozni oshirish
@@ -91,7 +91,7 @@ Ovoz kechikishini oshiring
  yarim ohanglar
 Iltimos, ismingizni kiriting. Bu qurilmadan navbatga qoʻygan qoʻshiqlaringiz yonida koʻrsatiladi.
 Navbatga qo'shilgan qo'shiq:
-Qo'shiq allaqachon navbatda:
+Qo'shiq allaqachon navbat:
 Sana bo'yicha saralash
 Alifbo tartibida tartiblash
 Navbatga “%s” qo‘shing
@@ -130,9 +130,9 @@ uchun qidiruv natijalari
 Ko'proq natijalarni ko'rsatish uchun ochiladigan menyuni bosing
 Havola:
 Mavjud qo'shiqlar
-Ushbu qurilmadan foydalanadigan odamning ismini o'zgartirmoqchimisiz? Bu navbatdagi qoʻshiqlar yonida koʻrsatiladi. Hozirgi:
+Ushbu qurilmadan foydalanayotgan shaxsning ismini oʻzgartirmoqchimisiz? Bu navbatdagi qoʻshiqlar yonida koʻrsatiladi. Hozirgi:
 Joriy foydalanuvchi
-Ma'lumot
+Sozlamalar
 PiKaraoke
 Chiqishni xohlayotganingizga ishonchingiz komilmi?
 Haqiqatan ham oʻchirib qoʻymoqchimisiz?
@@ -185,4 +185,9 @@ Tilni o'zgartirish
 Iltimos, tilni tanlang
 Tizim tili
 Joriy tizim tili:
-Bu televizor ekranida ko'rsatiladigan PiKaraoke backend tizimining tilini o'zgartiradi; Bundan tashqari, har bir ulanish foydalanuvchisi o'zining yuqori o'ng menyusidagi globe tugmasidagi tegishli Web UI tilini o'zgartirishi mumkin.
+Bu televizor ekranida ko'rsatiladigan PiKaraoke backend tizimining tilini o'zgartiradi; bundan tashqari, har bir ulanish foydalanuvchisi o'zining yuqori o'ng menyusidagi globe tugmasidagi tegishli Web UI tilini ham o'zgartirishi mumkin.
+Yuklab olish muvaffaqiyatli yakunlandi!
+Yuklab olinmadi!
+Qo'shiq navbatga qo'shildi!
+Qo‘shiqni navbatga qo‘yib bo‘lmadi!
+Tizim ma'lumotlari va sozlamalari

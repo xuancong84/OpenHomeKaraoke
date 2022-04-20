@@ -63,7 +63,7 @@ Yarım ton yarım addım kimi də tanınır. Klassik Qərb musiqisində istifad�
 DNN əsaslı vokal ayırıcı aktivləşdirilib. PiKaraoke PyTorch-dan (Facebook tərəfindən) istifadə edərək, stereo səsə səbəb olan hər bir trekdə instrumental və vokal səsi ayırmaq üçün dərin neyron şəbəkəsini idarə edir.
 Oyunçu Nəzarəti
 Musiqi
-Hər ikisi
+Qarışıq
 Səs
 Açarı dəyişdirin
 Hazırda heç nə oynanmır.
@@ -78,7 +78,7 @@ Audio gecikmə (san)
 Altyazı gecikməsi (san)
 Mahnını yenidən başladın
 Oynat/Pauza
-Cari mahnını dayandırın
+Cari Mahnıdan keçin
 Səsi azaldın
 Səs səviyyəsini təyin edin
 Səs artır
@@ -132,7 +132,7 @@ Link:
 Mövcud Mahnılar
 Bu cihazı istifadə edən şəxsin ekran adını dəyişmək istəyirsiniz? Bu növbəli mahnıların yanında görünəcək. Cari:
 Cari istifadəçi
-Məlumat
+Parametrlər
 PiKaraoke
 Çıxmaq istədiyinizə əminsiniz?
 Bağlamaq istədiyinizə əminsiniz?
@@ -186,3 +186,8 @@ Zəhmət olmasa dil seçin
 Sistem dili
 Cari sistem dili:
 Bu, TV ekranında göstərilən PiKaraoke backend sisteminin dilini dəyişir; üstəlik, hər bir qoşulan istifadəçi yuxarı sağdakı menyuda yer kürəsinin düyməsindəki müvafiq Veb UI dilini də dəyişə bilər.
+Yükləmə uğurla tamamlandı!
+Endirmə alınmadı!
+Mahnı növbəyə əlavə edildi!
+Mahnını növbəyə qoymaq alınmadı!
+Sistem Məlumatı və Parametrlər

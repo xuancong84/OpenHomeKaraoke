@@ -63,7 +63,7 @@ Un semitò també es coneix com a mig pas. És l'interval més petit utilitzat e
 El divisor vocal basat en DNN està habilitat. PiKaraoke utilitza PyTorch (de Facebook) per executar una xarxa neuronal profunda per dividir el so instrumental i vocal a cada pista donant lloc a un so estèreo.
 Control del jugador
 Música
-Tots dos
+Mixt
 veu
 Canvia clau
 No es juga res ara mateix.
@@ -78,7 +78,7 @@ Retard d'àudio (s)
 Retard dels subtítols (s)
 Reinicia la cançó
 Reproduir/Pausa
-Atura la cançó actual
+Omet la cançó actual
 Baixar el volum
 Estableix el volum
 Pujar el volum
@@ -132,7 +132,7 @@ Enllaç:
 Cançons disponibles
 Voleu canviar el nom de visualització de la persona que utilitza aquest dispositiu? Això apareixerà al costat de les cançons a la cua. Actual:
 Usuari actual
-Informació
+Configuració
 PiKaraoke
 Estàs segur que vols deixar-ho?
 Esteu segur que voleu tancar?
@@ -185,4 +185,9 @@ Canviar d'idioma
 Si us plau, trieu l'idioma
 Llenguatge del sistema
 Idioma del sistema actual:
-Això canvia l'idioma del sistema de fons PiKaraoke que es mostra a la pantalla del televisor; a més, cada usuari que es connecta també pot canviar l'idioma corresponent de la seva interfície d'usuari web al botó del globus terrestre del menú superior dret.
+Això canvia l'idioma del sistema de fons PiKaraoke que es mostra a la pantalla del televisor; a més, cada usuari que es connecta també pot canviar el seu respectiu idioma de la interfície d'usuari web al botó del globus terraqüi del menú superior dret.
+La descàrrega s'ha completat correctament!
+La descàrrega ha fallat!
+La cançó s'ha afegit a la cua!
+No s'ha pogut posar a la cua la cançó!
+Informació i configuració del sistema

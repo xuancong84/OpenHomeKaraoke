@@ -260,7 +260,7 @@
 			else toggleSwitch.classList.remove('horizTranslate'+i);
 		}
 		if(do_action)
-			$.get("/play_vocal/"+(n==2?'both':(n==1?'nonvocal':'vocal')));
+			$.get("/play_vocal/"+(n==2?'mixed':(n==1?'nonvocal':'vocal')));
 	}
 	
 	function s3_enable(n, val) {

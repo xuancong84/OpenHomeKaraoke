@@ -63,7 +63,7 @@ Ang semitone nailhan usab nga tunga nga lakang. Kini ang pinakagamay nga agwat n
 Ang vocal splitter nga nakabase sa DNN gipalihok. Gigamit sa PiKaraoke ang PyTorch (sa Facebook) aron magpadagan ug lawom nga neural network aron mabahin ang instrumental ug vocal nga tunog sa matag track nga maghatag ug stereo sound.
 Pagkontrol sa Manlalaro
 Musika
-Ang duha
+Gisagol
 Tingog
 Usba ang Yawe
 Walay nagdula karon.
@@ -78,7 +78,7 @@ Paglangan sa Audio (seg)
 Paglangan sa Subtitle (seg)
 I-restart ang Kanta
 Play/Pause
-Hunonga ang Karong Kanta
+Laktawan ang Karon nga Kanta
 Pagpaubos sa Volume
 Itakda ang Tomo
 Taas ang Volume
@@ -100,7 +100,7 @@ Gisunod sa 'Petsa'
 Gisunod sa 'Alphabetical'
 mga kanta
 nagpakita <b>{start} - {end}</b> {record_name}, sa kinatibuk-an <b>{total}</b> {record_name}
-nakit-an ang <b>{nakaplagan}</b> {record_name}, nagpakita <b>{start} - {end}</b> {record_name}
+nakit-an ang <b>{nakaplagan}</b> {record_name}, nagpakita sa <b>{start} - {end}</b> {record_name}
 Edit kanta
 Pagbalhin sa pila
 Ibalhin sa ubos sa pila
@@ -120,7 +120,7 @@ Pila
 Ilakip ang non-karaoke nga mga posporo
 Abante
 Pag-type og kanta (titulo/artista) aron pangitaon ang anaa nga mga kanta ug i-klik ang 'Queue' aron idugang kini sa pila.
-Kung ang kanta dili makita sa dropdown nga "Available Songs", i-klik ang 'Search' aron makit-an kini sa Youtube.
+Kung ang kanta dili makita sa dropdown nga "Available Songs", i-klik ang 'Pagpangita' aron makit-an kini sa Youtube.
 Direkta nga pag-download sa YouTube url:
 Idugang sa pila
 Ilakip ang mga subtitle
@@ -132,7 +132,7 @@ Link:
 Anaa nga mga Kanta
 Gusto ba nimong usbon ang display name sa tawo nga naggamit niini nga device? Kini magpakita sunod sa mga nakapila nga kanta. Karon:
 Kasamtangang tiggamit
-Impormasyon
+Mga setting
 PiKaraoke
 Sigurado ka nga gusto ka moundang?
 Sigurado ka nga gusto nimong isira?
@@ -153,7 +153,7 @@ Vocal splitter mode:
 Gamita ang L-R/L+R
 Gamita ang DNN
 Ang standard nga MTV audio adunay duha ka stereo channel (L ug R) nga gi-encode sa paagi nga: L-R ang instrument track, L+R ang vocal track. Busa, pinaagi lamang sa pagkubkob o pagdugang sa duha ka stereo channel, makuha nato ang instrumental ug vocal track sa mono sound. Ang built-in nga DNN-based (deep neural network) vocal splitter sa PiKaraoke naggamit sa AI algorithm aron mabahin ang instrumental ug vocal sound sa matag stereo track nga independente nga moresulta sa stereo instrumental ug vocal tracks.
-Hunonga ang Splitter
+Hunong ang Splitter
 I-restart ang Splitter
 Ang vocal splitter (nga nagsuporta sa DNN-based ug stereo subtraction) nagdagan isip usa ka separado nga proseso sa background, nagmugna og instrumental/vocal audio file alang sa matag kanta.
 I-synchronize pag-usab ang audio ug video:
@@ -185,4 +185,9 @@ Usba ang Pinulongan
 Palihug pagpili og pinulongan
 Sistema nga Pinulongan
 Kasamtangang pinulongan sa sistema:
-Gibag-o niini ang lengguwahe sa PiKaraoke backend system nga gipakita sa screen sa TV; Dugang pa, ang matag nagkonektar nga tiggamit mahimo usab nga magbag-o sa ilang sinultian nga Web UI sa buton sa globo sa tuo nga menu.
+Gibag-o niini ang lengguwahe sa PiKaraoke backend system nga gipakita sa screen sa TV; Dugang pa, ang matag nagkonektar nga tiggamit mahimo usab nga magbag-o sa ilang tagsa-tagsa nga Web UI nga pinulongan sa globe nga buton sa tuo nga menu.
+Malampuson nga nahuman ang pag-download!
+Napakyas ang pag-download!
+Kanta gidugang sa pila!
+Napakyas sa pagpila sa kanta!
+Impormasyon ug Mga Setting sa Sistema

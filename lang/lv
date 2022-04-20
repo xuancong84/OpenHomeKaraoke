@@ -63,7 +63,7 @@ Pustonis ir pazīstams arī kā pussolis. Tas ir mazākais klasiskajā Rietumu m
 Ir iespējots uz DNN balstīts balss sadalītājs. PiKaraoke izmanto PyTorch (no Facebook), lai palaistu dziļu neironu tīklu, lai sadalītu instrumentālo un vokālo skaņu katrā ierakstā, radot stereo skaņu.
 Spēlētāja vadība
 Mūzika
-Abi
+Jaukti
 Balss
 Mainīt taustiņu
 Pašlaik nekas nespēlējas.
@@ -78,7 +78,7 @@ Audio aizkave (s)
 Subtitru aizkave (s)
 Restartēt dziesmu
 Atskaņot/Pauzēt
-Apturēt pašreizējo dziesmu
+Izlaist pašreizējo dziesmu
 Skaļums uz leju
 Iestatīt skaļumu
 Skaļāk
@@ -132,7 +132,7 @@ Saite:
 Pieejamās dziesmas
 Vai vēlaties mainīt šīs ierīces lietotājas parādāmo vārdu? Tas tiks parādīts blakus rindā esošajām dziesmām. Pašreizējais:
 Pašreizējais lietotājs
-Informācija
+Iestatījumi
 PiKaraoke
 Vai tiešām vēlaties atmest?
 Vai tiešām vēlaties aizvērt?
@@ -185,4 +185,9 @@ Mainīt VALODU
 Lūdzu, izvēlieties valodu
 Sistēmas valoda
 Pašreizējā sistēmas valoda:
-Tas maina PiKaraoke aizmugursistēmas valodu, kas tiek parādīta TV ekrānā; turklāt katrs savienojošais lietotājs var arī mainīt attiecīgo Web UI valodu, izmantojot globusa pogu augšējā labajā izvēlnē.
+Tas maina PiKaraoke aizmugursistēmas valodu, kas tiek parādīta TV ekrānā; turklāt katrs lietotājs, kas izveido savienojumu, var arī mainīt savu Web UI valodu, izmantojot globusa pogu augšējā labajā izvēlnē.
+Lejupielāde ir veiksmīgi pabeigta!
+Lejupielāde neizdevās!
+Dziesma pievienota rindai!
+Neizdevās dziesmu ievietot rindā!
+Sistēmas informācija un iestatījumi

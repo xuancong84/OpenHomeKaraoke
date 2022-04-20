@@ -48,7 +48,7 @@ Kupanga njira yotsitsa:
 Wifi/Network sinalumikizidwe. Kutseka mu 10s ...
 Posankha nyimbo, sankhani QR kapena gwirizanitsani
 Kwa chiwonetsero cha TV, lumikizani ku
-Dinani F kuti musinthe mawonekedwe athunthu
+Dinani F kuti musinthe skrini yonse
 Dinani ESC kuti musiye PiKaraoke
 Kukhazikitsa kwa RaspiWifiConfig kwapezeka!
 Lumikizani chipangizo china/foni ya m'manja ku Wifi AP: '%s'
@@ -63,7 +63,7 @@ Semitone imadziwikanso ngati theka-sitepe. Ndi nthawi yaying'ono kwambiri yomwe 
 DNN-based vocal splitter ndiwoyatsidwa. PiKaraoke imagwiritsa ntchito PyTorch (yolemba Facebook) kuyendetsa netiweki yakuya ya neural kuti igawanitse phokoso la zida ndi mawu munyimbo iliyonse zomwe zimapangitsa kuti pakhale phokoso la stereo.
 Player Control
 Nyimbo
-Onse
+Zosakanizidwa
 Mawu
 Sinthani Key
 Palibe chomwe chikusewera pakali pano.
@@ -78,7 +78,7 @@ Kuchedwa Kwamawu (mphindikati)
 Subtitle Kuchedwa (mphindikati)
 Yambitsaninso Nyimbo
 Sewerani/Imitsani
-Imani Nyimbo Yamakono
+Dumphani Nyimbo Yamakono
 Voliyumu Pansi
 Khazikitsani Voliyumu
 Voliyumu Up
@@ -119,7 +119,7 @@ Sakani
 Mzere
 Phatikizani machesi omwe si a karaoke
 Zapamwamba
-Lembani nyimbo (mutu/wojambula) kuti mufufuze nyimbo zomwe zilipo ndikudina 'Mzere' kuti muwonjezere pamzere.
+Lembani nyimbo (mutu / wojambula) kufufuza nyimbo zomwe zilipo ndikudina 'Mzere' kuti muwonjezere pamzere.
 Ngati nyimboyo sikuwoneka mu "Nyimbo Zomwe Zilipo", dinani 'Sakani' kuti mupeze pa Youtube.
 Tsitsani mwachindunji ulalo wa YouTube:
 Onjezani pamzere
@@ -132,7 +132,7 @@ Ulalo:
 Nyimbo Zopezeka
 Kodi mukufuna kusintha dzina la munthu amene akugwiritsa ntchito chipangizochi? Izi zidzawonekera pafupi ndi nyimbo zomwe zili pamzere. Panopa:
 Wogwiritsa ntchito pano
-Zambiri
+Zokonda
 PiKaraoke
 Mukutsimikiza kuti mukufuna kusiya?
 Mukutsimikiza kuti mukufuna kutseka?
@@ -140,7 +140,7 @@ Kodi mukutsimikiza kuti mukufuna kuyambitsanso?
 Kodi mukutsimikiza kuti mukufuna kusintha YouTube-dl pompano? Kutsitsa kwapano ndi komwe kukudikirira kungalephereke.
 Kodi mukutsimikiza kuti mukufuna kukulitsa mafayilo amafayilo? Izi zidzayambitsanso rasipiberi pi yanu.
 Zambiri
-Khodi ya QR yothandiza kuti mugawane ndi mnzanu:
+Nambala ya QR yothandiza ya URL yoti mugawane ndi mnzanu:
 OS
 Kugwiritsa Ntchito Disk
 Memory
@@ -186,3 +186,8 @@ Chonde sankhani chilankhulo
 Chinenero Chadongosolo
 Chilankhulo chamakono:
 Izi zikusintha chilankhulo cha PiKaraoke backend system yomwe imawonetsedwa pa TV; Komanso, wogwiritsa ntchito aliyense wolumikizira amathanso kusintha chilankhulo chawo cha Web UI pa batani lapadziko lonse lapansi patsamba lakumanja.
+Kutsitsa kwatha!
+Kutsitsa kwalephera!
+Nyimbo idawonjezedwa pamzere!
+Zalephera kuyimitsa nyimboyi!
+Zambiri Zadongosolo & Zikhazikiko

@@ -63,7 +63,7 @@ Un semiton este cunoscut și sub denumirea de jumătate de pas. Este cel mai mic
 Divizorul vocal bazat pe DNN este activat. PiKaraoke folosește PyTorch (de la Facebook) pentru a rula o rețea neuronală profundă pentru a împărți sunetul instrumental și vocal în fiecare piesă, dând naștere unui sunet stereo.
 Controlul jucătorului
 Muzică
-Ambii
+Amestecat
 Voce
 Schimbați cheia
 Nu se joacă nimic în acest moment.
@@ -78,7 +78,7 @@ Următorul cântec
 Întârziere subtitrare (sec)
 Reporniți melodia
 Redare/Pauză
-Opriți melodia curentă
+Omite cântecul curent
 Volum scăzut
 Setați volumul
 Creșterea volumului
@@ -132,7 +132,7 @@ Legătură:
 Cântece disponibile
 Doriți să schimbați numele afișat al persoanei care utilizează acest dispozitiv? Aceasta va apărea lângă melodiile din coadă. Actual:
 Utilizator curent
-Info
+Setări
 PiKaraoke
 Esti sigur ca vrei sa renunti?
 Ești sigur că vrei să închizi?
@@ -185,4 +185,9 @@ Schimbați limba
 Vă rugăm să alegeți limba
 Limbajul sistemului
 Limba actuală a sistemului:
-Aceasta schimbă limba sistemului de backend PiKaraoke, care este afișată pe ecranul televizorului; în plus, fiecare utilizator care se conectează își poate schimba și limba interfeței de utilizare Web în butonul glob din meniul din dreapta sus.
+Aceasta schimbă limba sistemului de backend PiKaraoke, care este afișată pe ecranul televizorului; în plus, fiecare utilizator care se conectează își poate schimba și limba respectivă a interfeței de utilizare Web în butonul glob din meniul din dreapta sus.
+Descărcarea a fost finalizată cu succes!
+Descarcare esuata!
+Cântec adăugat la coadă!
+Nu s-a putut pune în coadă melodia!
+Informații de sistem și setări

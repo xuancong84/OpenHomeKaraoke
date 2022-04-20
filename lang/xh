@@ -4,7 +4,7 @@ Uphumile kwimowudi yomlawuli!
 Kongezwe i-%s iingoma ezingaqhelekanga
 Ziphelelwe ziingoma!
 Icociwe umgca!
-Imposiso yokuhambisa into ngaphakathi komgca: invalid-argument
+Imposiso yokuhambisa into ngaphakathi komgca: inqobo-impikiswano
 Isuswe ngempumelelo into ngaphakathi komgca:
 Impazamo yokuhambisa into ngaphakathi komgca:
 Yehlisiwe emgceni:
@@ -63,7 +63,7 @@ I-semitone ikwabizwa ngokuba yi-half-step. Lelona thuba lincinci lisetyenziswa k
 Isahluli selizwi esekwe kwi-DNN sivuliwe. I-PiKaraoke isebenzisa i-PyTorch (ngu-Facebook) ukuqhuba inethiwekhi ye-neural enzulu ukwahlula isixhobo kunye nesandi selizwi kwingoma nganye evelisa isandi se-stereo.
 Ulawulo lomdlali
 Umculo
-Zombini
+Ixutyiwe
 Ilizwi
 Guqula isitshixo
 Akukho nto idlalayo ngoku.
@@ -78,7 +78,7 @@ Ulibaziseko lomsindo (umzuzwana)
 Ulibaziso lwesihloko (imizuzwana)
 Qala kwakhona Ingoma
 Dlala/Misa
-Yeka Ingoma Yangoku
+Tsiba Ingoma Yangoku
 Umthamo Phantsi
 Seta iVolume
 Unyuse umthamo
@@ -121,7 +121,7 @@ Bandakanya imidlalo engeyiyo ekaraoke
 Ikwinqanaba eliphezulu
 Chwetheza ingoma (isihloko/igcisa) ukukhangela iingoma ezikhoyo kwaye ucofe u-'Queue' ukuzongeza emgceni.
 Ukuba ingoma ayiveli "kwiingoma ezifumanekayo", cofa u 'Khangela' ukuze uyifumane kwi-Youtube.
-Khuphela ngokuthe ngqo url kaYouTube:
+Khuphela ngokuthe ngqo i-url kaYouTube:
 Yongeza emgceni
 Bandakanya izihlokwana
 Khuphela
@@ -132,7 +132,7 @@ Ikhonkco:
 Iingoma ezifumanekayo
 Ngaba uyafuna ukutshintsha igama elibonisayo lomntu osebenzisa esi sixhobo? Oku kuya kubonakala ecaleni kweengoma ezisemgceni. Okwangoku:
 Umsebenzisi wangoku
-Ulwazi
+Iisetingi
 PiKaraoke
 Uqinisekile ufuna ukuyeka?
 Uqinisekile ufuna ukuvala?
@@ -164,7 +164,7 @@ Hlaziya uluhlu lweengoma:
 Skena kwakhona uluhlu lwengoma
 Kufuneka wenze oku kuphela ukuba ukhuphele ngesandla iifayile kulawulo lokhuphelo ngelixa iPiKaraoke ibisebenza.
 Uhlaziyo
-Ukuba ukhuphelo okanye uphendlo luyekile ukusebenza, ukuhlaziya i-youtube-dl mhlawumbi kuya kuyilungisa. Inguqulelo yangoku ehlohliweyo yile:
+Ukuba ukhuphelo okanye uphendlo luyekile ukusebenza, ukuhlaziya i-youtube-dl mhlawumbi kuya kuyilungisa. Inguqulelo ehlohliweyo yangoku yile:
 Hlaziya i-youtube-dl
 Olu nxulumaniso lohlaziyo lungasentla lunokusilela ukuba awunazo iimvume zefayile ezifanelekileyo. Jonga iPiKaraoke log ngeempazamo.
 Cima
@@ -185,4 +185,9 @@ Guqula ulwimi
 Nceda ukhethe ulwimi
 Ulwimi Lwenkqubo
 Ulwimi lwenkqubo yangoku:
-Oku kutshintsha ulwimi lwePiKaraoke backend system eboniswa kwiscreen seTV; ngaphezu koko, umsebenzisi ngamnye oqhagamshelayo unokutshintsha ngokufanelekileyo ulwimi lwabo lwe-UI yewebhu kwiqhosha leglowubhu kwimenyu ephezulu ngasekunene.
+Oku kutshintsha ulwimi lwePiKaraoke backend system eboniswa kwiscreen seTV; ngaphezu koko, umsebenzisi ngamnye odibanisayo unokutshintsha ulwimi lwabo lwe-UI yeWebhu ehlukeneyo kwiqhosha leglowubhu kwimenyu ephezulu ngasekunene.
+Ukukhuphela kugqitywe ngempumelelo!
+Ukukhuphela akuphumelelanga!
+Ingoma yongezwe emgceni!
+Ayiphumelelanga ukufola ingoma!
+Ulwazi lweNkqubo & Izicwangciso

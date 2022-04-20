@@ -63,7 +63,7 @@ Semitone uga dikenal minangka setengah langkah. Iki minangka interval paling cil
 Pemisah vokal basis DNN diaktifake. PiKaraoke nggunakake PyTorch (dening Facebook) kanggo mbukak jaringan saraf sing jero kanggo pamisah swara instrumental lan vokal ing saben trek sing nyebabake swara stereo.
 Kontrol pamuter
 Musik
-loro-lorone
+Campuran
 Swara
 Ganti Kunci
 Ora ana sing main saiki.
@@ -78,7 +78,7 @@ Tundha Audio (detik)
 Tundha Subtitle (detik)
 Wiwiti maneh Lagu
 Play / Ngaso
-Stop Lagu Saiki
+Skip Lagu Saiki
 Volume mudhun
 Setel Volume
 Volume Up
@@ -119,9 +119,9 @@ Nggoleki
 antri
 Kalebu pertandhingan non-karaoke
 Majeng
-Ketik lagu (judul/artis) kanggo nelusuri lagu sing kasedhiya lan klik 'Antrian' kanggo ditambahake menyang antrian.
+Ketik lagu (judul/artis) kanggo nelusuri lagu sing kasedhiya lan klik 'Antri' kanggo ditambahake menyang antrian.
 Yen lagu ora katon ing gulung mudhun "Lagu Kasedhiya", klik 'Telusuri' kanggo nemokake ing Youtube.
-Langsung download url YouTube:
+Ngundhuh langsung URL YouTube:
 Tambah menyang antrian
 Kalebu subtitle
 Ngundhuh
@@ -132,7 +132,7 @@ Link:
 Lagu kasedhiya
 Apa sampeyan pengin ngganti jeneng tampilan wong sing nggunakake piranti iki? Iki bakal katon ing jejere lagu sing wis antri. saiki:
 pangguna saiki
-Info
+Setelan
 PiKaraoke
 Apa sampeyan yakin pengin mandheg?
 Apa sampeyan yakin arep mateni?
@@ -185,4 +185,9 @@ Ganti Basa
 Mangga milih basa
 Basa Sistem
 Basa sistem saiki:
-Iki ngganti basa sistem backend PiKaraoke sing bakal ditampilake ing layar TV; malih, saben pangguna nyambungake uga bisa ngganti pamilike basa UI Web ing tombol globe ing menu tengen ndhuwur.
+Iki ngganti basa sistem backend PiKaraoke sing bakal ditampilake ing layar TV; liyane, saben pangguna nyambungake uga bisa ngganti basa UI Web pamilike ing tombol globe ing menu tengen ndhuwur.
+Download kasil rampung!
+Download gagal!
+Lagu ditambahake ing antrian!
+Gagal ngantri lagu!
+Info & Setelan Sistem

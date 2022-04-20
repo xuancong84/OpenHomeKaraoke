@@ -63,7 +63,7 @@ Polton je znan tudi kot pol-korak. To je najmanjši interval, ki se uporablja v 
 Vokalni razdelilnik, ki temelji na DNN, je omogočen. PiKaraoke uporablja PyTorch (od Facebooka) za zagon globoke nevronske mreže za razdelitev instrumentalnega in vokalnega zvoka v vsaki skladbi, kar povzroči stereo zvok.
 Nadzor igralca
 Glasba
-Oboje
+Mešano
 Glas
 Spremeni ključ
 Trenutno se nič ne predvaja.
@@ -78,7 +78,7 @@ Zakasnitev zvoka (s)
 Zakasnitev podnapisov (s)
 Znova zaženi pesem
 Predvajaj/Pavza
-Ustavi trenutno skladbo
+Preskoči trenutno skladbo
 Znižaj glasnost
 Nastavite glasnost
 Povečaj glasnost
@@ -121,7 +121,7 @@ Vključite tekme, ki niso karaoke
 Napredno
 Vnesite pesem (naslov/izvajalec), da poiščete razpoložljive pesmi, in kliknite »V čakalni vrsti«, da jo dodate v čakalno vrsto.
 Če se skladba ne prikaže v spustnem meniju »Razpoložljive pesmi«, kliknite »Išči«, da jo poiščete na Youtubu.
-URL za neposreden prenos YouTube:
+URL za neposredni prenos YouTube:
 Dodaj v čakalno vrsto
 Vključi podnapise
 Prenesi
@@ -132,7 +132,7 @@ Povezava:
 Razpoložljive pesmi
 Ali želite spremeniti prikazno ime osebe, ki uporablja to napravo? To se bo prikazalo poleg skladb v čakalni vrsti. trenutno:
 Trenutni uporabnik
-Info
+Nastavitve
 PiKaraoke
 Si prepričan, da želiš odnehati?
 Ali ste prepričani, da želite zapreti?
@@ -186,3 +186,8 @@ Prosim izberite jezik
 Sistemski jezik
 Trenutni sistemski jezik:
 To spremeni jezik zalednega sistema PiKaraoke, ki se prikaže na TV zaslonu; poleg tega lahko vsak uporabnik, ki se povezuje, spremeni tudi svoj jezik spletnega uporabniškega vmesnika z gumbom globus v zgornjem desnem meniju.
+Prenos je uspešno zaključen!
+Prenos ni uspel!
+Pesem dodana v čakalno vrsto!
+Skladbe ni bilo mogoče postaviti v čakalno vrsto!
+Informacije o sistemu in nastavitve

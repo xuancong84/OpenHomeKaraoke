@@ -63,7 +63,7 @@ Duontono ankaŭ estas konata kiel duonpaŝo. Ĝi estas la plej malgranda interva
 DNN-bazita voĉdividilo estas ebligita. PiKaraoke uzas PyTorch (de Facebook) por prizorgi profundan neŭralan reton por dividi instrumentan kaj voĉan sonon en ĉiu trako kaŭzante stereosonon.
 Ludanta Kontrolo
 Muziko
-Ambaŭ
+Miksita
 Voĉo
 Ŝanĝi Ŝlosilon
 Nenio ludas nun.
@@ -78,7 +78,7 @@ Aŭdprokrasto (sec)
 Subtitolo Prokrasto (sec)
 Rekomencu Kanton
 Ludi/Paŭzu
-Ĉesu Nunan Kanton
+Saltu Nunan Kanton
 Volumo Malsupren
 Agordu Volumon
 Volumo Supre
@@ -132,7 +132,7 @@ Ligo:
 Disponeblaj Kantoj
 Ĉu vi volas ŝanĝi la montran nomon de la persono uzanta ĉi tiun aparaton? Ĉi tio aperos apud la vicigitaj kantoj. Aktualo:
 Nuna uzanto
-Info
+Agordoj
 PiKaraoke
 Ĉu vi certas, ke vi volas ĉesi?
 Ĉu vi certas, ke vi volas fermi?
@@ -185,4 +185,9 @@ Hejmo
 Bonvolu elekti lingvon
 Sistema Lingvo
 Nuna sistema lingvo:
-Ĉi tio ŝanĝas la lingvon de la backend-sistemo PiKaraoke, kiu montriĝas sur televida ekrano; plie, ĉiu konektanta uzanto ankaŭ povas ŝanĝi respektive sian Retejan Interfacon-lingvon en la globbutono en la dekstra supra menuo.
+Ĉi tio ŝanĝas la lingvon de la backend-sistemo PiKaraoke, kiu montriĝas sur televida ekrano; plie, ĉiu konektanta uzanto ankaŭ povas ŝanĝi sian respektivan Retejan Interfacon-lingvon en la globbutono en la dekstra supra menuo.
+Elŝuto sukcese kompletigita!
+Elŝuto malsukcesis!
+Kanto aldonita al la vico!
+Malsukcesis vicigi la kanton!
+Sistema Informoj kaj Agordoj

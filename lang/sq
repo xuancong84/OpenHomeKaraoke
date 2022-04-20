@@ -63,7 +63,7 @@ Një gjysmëton njihet gjithashtu si gjysmë hapi. Është intervali më i vogë
 Ndarësi vokal i bazuar në DNN është aktivizuar. PiKaraoke përdor PyTorch (nga Facebook) për të drejtuar një rrjet të thellë nervor për të ndarë tingujt instrumentalë dhe vokalë në secilën këngë duke krijuar tinguj stereo.
 Kontrolli i lojtarit
 Muzikë
-te dyja
+Të përziera
 Zëri
 Ndrysho çelësin
 Asgjë nuk po luan për momentin.
@@ -78,7 +78,7 @@ Vonesa e audios (sek)
 Vonesa e titrave (sek)
 Rinis këngën
 Luaj/Puzë
-Ndalo këngën aktuale
+Kapërceni këngën aktuale
 Ule volumin
 Vendos volumin
 Vëllimi lart
@@ -132,15 +132,15 @@ Link:
 Këngët e disponueshme
 Dëshiron të ndryshosh emrin e shfaqur të personit që përdor këtë pajisje? Kjo do të shfaqet pranë këngëve në radhë. Aktuale:
 Përdoruesi aktual
-Informacion
+Cilësimet
 PiKaraoke
 Jeni i sigurt që dëshironi të hiqni dorë?
 Je i sigurt që dëshiron ta mbyllësh?
 Jeni i sigurt që dëshironi të rindizni?
 Jeni i sigurt që dëshironi të përditësoni Youtube-dl tani? Shkarkimet aktuale dhe ato në pritje mund të dështojnë.
-Jeni i sigurt që dëshironi të zgjeroni sistemin e skedarëve? Kjo do të ristartoni raspberry pi-në tuaj.
+Jeni i sigurt që dëshironi të zgjeroni sistemin e skedarëve? Kjo do të ristartoni raspberry pi.
 Informacion
-Kodi QR i dobishëm i URL-së për t'u ndarë me një mik:
+Kodi QR i përshtatshëm i URL-së për t'u ndarë me një mik:
 OS
 Përdorimi i diskut
 Kujtesa
@@ -154,7 +154,7 @@ Përdorni L-R/L+R
 Përdorni DNN
 Audioja standarde MTV ka dy kanale stereo (L dhe R) të koduar në atë mënyrë që: L-R është pjesa e instrumentit, L+R është pjesa vokale. Kështu, thjesht duke zbritur ose shtuar dy kanalet stereo, mund të marrim pjesën instrumentale dhe vokale në tingull mono. Ndarësi vokal i integruar i bazuar në DNN (rrjeti nervor i thellë) i PiKaraoke përdor algoritmin e AI për të ndarë tingujt instrumental dhe vokal në çdo pjesë stereo në mënyrë të pavarur duke rezultuar në këngë stereo instrumentale dhe vokale.
 Stop Spliter
-Rinisni Spliter
+Rinisni Splitter
 Ndarësi vokal (që mbështet zbritjen e bazuar në DNN dhe stereo) funksionon si një proces i veçantë në sfond, duke gjeneruar skedar audio instrumental/vokal për çdo këngë.
 Risinkronizoni audio dhe video:
 Ndalo transmetimin
@@ -185,4 +185,9 @@ Ndrysho gjuhën
 Ju lutemi zgjidhni gjuhën
 Gjuha e sistemit
 Gjuha aktuale e sistemit:
-Kjo ndryshon gjuhën e sistemit mbështetës PiKaraoke i cili shfaqet në ekranin e televizorit; Për më tepër, çdo përdorues që lidhet gjithashtu mund të ndryshojë gjuhën përkatëse të ndërfaqes së uebit në butonin globe në menynë e sipërme djathtas.
+Kjo ndryshon gjuhën e sistemit mbështetës PiKaraoke i cili shfaqet në ekranin e televizorit; Për më tepër, çdo përdorues që lidhet gjithashtu mund të ndryshojë gjuhën e tij përkatëse të ndërfaqes së uebit në butonin globe në menynë e sipërme djathtas.
+Shkarkimi përfundoi me sukses!
+Shkarkimi deshtoi!
+Kënga u shtua në radhë!
+Dështoi në radhën e këngës!
+Informacioni dhe cilësimet e sistemit

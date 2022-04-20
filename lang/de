@@ -63,7 +63,7 @@ Ein Halbton wird auch als Halbschritt bezeichnet. Es ist das kleinste Intervall,
 Der DNN-basierte Vocal-Splitter ist aktiviert. PiKaraoke verwendet PyTorch (von Facebook), um ein tiefes neuronales Netzwerk zu betreiben, um Instrumental- und Gesangssound in jeder Spur aufzuteilen, wodurch Stereosound entsteht.
 Spielersteuerung
 Musik
-Beide
+Gemischt
 Stimme
 Schlüssel ändern
 Im Moment wird nichts abgespielt.
@@ -78,7 +78,7 @@ Audioverzögerung (Sek.)
 Untertitelverzögerung (Sek.)
 Lied neu starten
 Spielpause
-Stoppen Sie den aktuellen Song
+Aktuellen Titel überspringen
 Lautstärke runter
 Lautstärke einstellen
 Lauter
@@ -132,7 +132,7 @@ Verknüpfung:
 Verfügbare Lieder
 Möchten Sie den Anzeigenamen der Person ändern, die dieses Gerät verwendet? Dies wird neben den Songs in der Warteschlange angezeigt. Strom:
 Aktueller Benutzer
-Die Info
+Einstellungen
 PiKaraoke
 Sind Sie sicher, dass Sie aufhören wollen?
 Sind Sie sicher, dass Sie herunterfahren möchten?
@@ -182,7 +182,12 @@ Einloggen
 Systeminformationen
 Heim
 Sprache ändern
-Bitte Sprache auswählen
+Bitte Sprache wählen
 Systemsprache
 Aktuelle Systemsprache:
-Dies ändert die Sprache des PiKaraoke-Backend-Systems, das auf dem Fernsehbildschirm angezeigt wird; Darüber hinaus kann jeder verbindende Benutzer auch die jeweilige Sprache seiner Web-Benutzeroberfläche über die Globus-Schaltfläche im rechten oberen Menü ändern.
+Dies ändert die Sprache des PiKaraoke-Backend-Systems, das auf dem Fernsehbildschirm angezeigt wird; Darüber hinaus kann jeder Benutzer, der eine Verbindung herstellt, seine jeweilige Web-UI-Sprache über die Globus-Schaltfläche im rechten oberen Menü ändern.
+Download erfolgreich abgeschlossen!
+Herunterladen fehlgeschlagen!
+Lied zur Warteschlange hinzugefügt!
+Das Lied konnte nicht in die Warteschlange gestellt werden!
+Systeminfo & Einstellungen

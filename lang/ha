@@ -63,7 +63,7 @@ Ana kuma san semitone da rabin mataki. Ita ce mafi ƙarancin tazara da aka yi am
 An kunna mai raba murya na tushen DNN. PiKaraoke yana amfani da PyTorch (ta Facebook) don gudanar da hanyar sadarwa mai zurfi don raba sautin kayan aiki da sauti a kowace waƙa da ke haifar da sautin sitiriyo.
 Ikon Mai kunnawa
 Kiɗa
-Duka
+Gauraye
 Murya
 Canza Maɓalli
 Babu wani abu da ke wasa a yanzu.
@@ -78,7 +78,7 @@ Jinkirta Sauti (minti)
 Jinkirin juzu'i (mintuna)
 Sake kunna Waƙar
 Kunna/Dakata
-Dakatar da Waƙar Yanzu
+Tsallake Waƙar Yanzu
 Saukar da ƙara
 Saita Ƙarar
 Ƙara girma
@@ -132,7 +132,7 @@ mahada:
 Akwai Wakokin
 Kuna so ku canza sunan nuni na mutumin da ke amfani da wannan na'urar? Wannan zai bayyana kusa da waƙoƙin da aka yi layi. Yanzu:
 Mai amfani na yanzu
-Bayani
+Saituna
 PiKaraoke
 Ka tabbata kana so ka daina?
 Kun tabbata kuna son rufewa?
@@ -155,7 +155,7 @@ Yi amfani da DNS
 Daidaitaccen sauti na MTV yana da tashoshin sitiriyo guda biyu (L da R) waɗanda aka sanya su ta hanyar da: L-R ita ce waƙar kayan aiki, L+R ita ce waƙar murya. Don haka, ta hanyar ragewa ko ƙara tashoshi biyu na sitiriyo, za mu iya samun waƙar kayan aiki da murya a cikin sautin mono. Mai raba murya na tushen PiKaraoke na tushen DNN (cibiyar sadarwa mai zurfi) yana amfani da AI algorithm don raba kayan aiki da sautin murya a cikin kowace waƙar sitiriyo daban-daban yana haifar da kayan aikin sitiriyo da waƙoƙin murya.
 Dakatar da Rarraba
 Sake kunna Splitter
-Mai raba murya (wanda ke goyan bayan tushen DNN da ragi na sitiriyo) yana gudana azaman tsari daban a bango, yana samar da fayil ɗin sauti na kayan aiki / murya ga kowace waƙa.
+Mai raba murya (wanda ke goyan bayan tushen tushen DNN da ragi na sitiriyo) yana gudana azaman tsari daban a bango, yana samar da fayil ɗin sauti na kayan aiki / murya ga kowace waƙa.
 Sake daidaita sauti da bidiyo:
 Dakatar da Mai Ruwa
 Sake kunna Streamer
@@ -174,7 +174,7 @@ Sake yi System
 Tsarin Kashewa
 Sauran
 Fadada tsarin fayil ɗin Rasberi Pi
-Idan kawai ka shigar da hoton pikaraoke pi da aka riga aka gina kuma katin SD ɗinka ya fi 4GB girma, ƙila ka so faɗaɗa tsarin fayil ɗin don amfani da ragowar sarari. Kuna buƙatar yin wannan sau ɗaya kawai. Wannan zai sake kunna tsarin.
+Idan kawai ka shigar da hoton pikaraoke pi da aka riga aka gina kuma katin SD ɗinka ya fi 4GB girma, ƙila ka so fadada tsarin fayil don amfani da ragowar sarari. Kuna buƙatar yin wannan sau ɗaya kawai. Wannan zai sake kunna tsarin.
 Kashe yanayin gudanarwa
 Kunna yanayin gudanarwa
 fita
@@ -185,4 +185,9 @@ Canja Harshe
 Da fatan za a zaɓi harshe
 Harshen Tsari
 Harshen tsarin yanzu:
-Wannan yana canza yaren tsarin baya na PiKaraoke wanda ke nunawa akan allon TV; haka ma, kowane mai amfani da haɗin kai kuma zai iya canza yaren UI ɗin su na yanar gizo a cikin maɓallin duniya a cikin menu na sama na dama.
+Wannan yana canza yaren tsarin baya na PiKaraoke wanda ke nunawa akan allon TV; haka ma, kowane mai amfani da haɗin kai kuma zai iya canza yaren UI na gidan yanar gizon su a cikin maɓallin duniya a cikin menu na sama na dama.
+An gama saukewa cikin nasara!
+An kasa saukewa!
+An ƙara waƙar zuwa jerin gwano!
+An kasa yin layi na waƙar!
+Bayanin Tsarin & Saituna

@@ -63,7 +63,7 @@ Ny semitone dia fantatra ihany koa amin'ny hoe antsasaky ny dingana. Io no elane
 Ny mpizara feo mifototra amin'ny DNN dia alefa. PiKaraoke dia mampiasa PyTorch (avy amin'ny Facebook) mba hampandehanana tambajotra neural lalina mba hampizarazara ny feon-javamaneno sy feo amin'ny lalana tsirairay ka miteraka feo stereo.
 Fanaraha-maso ny mpilalao
 MOZIKA
-na
+mifangaro
 feon'ny
 Change Key
 Tsy misy milalao amin'izao fotoana izao.
@@ -78,7 +78,7 @@ Fahatarana Audio (sec)
 Fanemorana ny dikanteny (sec)
 Avereno indray ny hira
 Play/Pause
-Atsaharo ny hira ankehitriny
+Tsidiho ny hira ankehitriny
 Midina ny feo
 Mametraha Volume
 Ambony ny boky
@@ -120,19 +120,19 @@ Filaharana
 Ampidiro lalao tsy karaoke
 Advanced
 Manorata hira (lohateny/mpanakanto) hikaroka ireo hira misy ary tsindrio ny 'Filaharana' hampidirana azy amin'ny filaharana.
-Raha toa ka tsy hita ao amin'ny fidina "Hira misy" ilay hira, tsindrio ny 'Karoka' hahitana azy ao amin'ny Youtube.
+Raha tsy hita ao amin'ny fidina "Hira misy" ilay hira dia kitiho ny 'Karoka' hahitana azy ao amin'ny Youtube.
 Misintona mivantana ny URL YouTube:
 Ampio amin'ny filaharana
 Asio dikanteny
 DOWNLOAD
 Mikaroka YouTube momba ny
-Valiny fikarohana momba ny
+Vokatra fikarohana momba ny
 Kitiho ny midina raha te hampiseho valiny bebe kokoa
 Rohy:
 Hira misy
 Te hanova ny anaran'ny olona mampiasa an'io fitaovana io ve ianao? Izany dia hiseho eo akaikin'ny hira nilahatra. ankehitriny:
 Mpampiasa amin'izao fotoana izao
-Info
+Fikirana
 PiKaraoke
 Tena te hiala ve ianao?
 Tena te hikatona tokoa ve ianao?
@@ -147,12 +147,12 @@ fahatsiarovana
 Fakan-tsary
 Vocal Splitter
 Youtube-dl (yt-dlp) version
-Version PiKaraoke
+PiKaraoke version
 Advanced Control Options
 Fomba fizarazarana feo:
 Ampiasao ny L-R/L+R
 Mampiasà DNS
-Ny feo MTV mahazatra dia manana fantsona stereo roa (L sy R) voahodina amin'ny fomba toy izao: L-R ny làlam-pitaovana, L+R ny feon-kira. Noho izany, amin'ny fanalana tsotra izao na ampiana ireo fantsona stereo roa, dia afaka mahazo ny fitaovana sy ny feo amin'ny feo mono. Ny mpizara feo miorina amin'ny DNN (tambajotra neural lalina) an'i PiKaraoke dia mampiasa algorithm AI mba hanasarahana ny feo misy zavamaneno sy feo ao amin'ny làlam-peo stereo tsirairay ka tsy miankina ka miteraka làlam-peo sy fitaovana stereo.
+Ny feo MTV mahazatra dia manana fantsona stereo roa (L sy R) voahodina amin'ny fomba toy izao: L-R ny làlam-pitaovana, L+R ny feon-kira. Noho izany, amin'ny fanalana tsotra izao na ampiana ireo fantsona stereo roa, dia afaka mahazo ny fitaovana sy ny feo amin'ny feo mono. Ny mpizara feo miorina amin'ny DNN (tambajotra neural lalina) an'i PiKaraoke dia mampiasa algorithm AI mba hanasarahana ny feon'ny zavamaneno sy ny feo amin'ny rindran-kira stereo tsirairay ka tsy miankina ka miteraka làlam-peo sy fitaovana stereo.
 Atsaharo ny Splitter
 Avereno indray ny Splitter
 Ny mpizara vocal (izay manohana ny DNN-based sy stereo deduction) dia mandeha ho toy ny dingana mitokana any ambadika, mamorona rakitra misy zavamaneno / feo ho an'ny hira tsirairay.
@@ -185,4 +185,9 @@ Hanova fiteny
 Mifidiana fiteny azafady
 System Language
 Fiteny rafitra ankehitriny:
-Izany dia manova ny fitenin'ny rafitra backend PiKaraoke izay aseho amin'ny efijery fahitalavitra; Ankoatr'izay, ny mpampiasa mifandray tsirairay dia afaka manova ny fiteniny Web UI ao amin'ny bokotra globe ao amin'ny menio ambony havanana.
+Izany dia manova ny fitenin'ny rafitra backend PiKaraoke izay aseho amin'ny efijery fahitalavitra; Ankoatr'izay, ny mpampiasa mampifandray tsirairay dia afaka manova ny fitenin'ny Web UI tsirairay ao amin'ny bokotra globe ao amin'ny menio ambony havanana.
+Vita soa aman-tsara ny fandefasana!
+Tsy nahomby ny fampidinana!
+Hira nampidirina amin'ny filaharana!
+Tsy nahavita nilahatra ilay hira!
+System Info & Settings

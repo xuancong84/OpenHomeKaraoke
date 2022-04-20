@@ -63,7 +63,7 @@ Semitone juga dikenali sebagai separuh langkah. Ia adalah selang terkecil yang d
 Pemisah vokal berasaskan DNN didayakan. PiKaraoke menggunakan PyTorch (oleh Facebook) untuk menjalankan rangkaian saraf dalam untuk memisahkan bunyi instrumental dan vokal dalam setiap trek yang menimbulkan bunyi stereo.
 Kawalan Pemain
 Muzik
-Kedua-duanya
+bercampur-campur
 Suara
 Tukar Kunci
 Tiada apa yang dimainkan sekarang.
@@ -78,7 +78,7 @@ Kelewatan Audio (saat)
 Kelewatan Sarikata (saat)
 Mulakan semula Lagu
 Main/Jeda
-Hentikan Lagu Semasa
+Langkau Lagu Semasa
 Perlahankan suara
 Tetapkan Kelantangan
 Kelantangan Naik
@@ -132,7 +132,7 @@ pautan:
 Lagu Tersedia
 Adakah anda mahu menukar nama paparan orang yang menggunakan peranti ini? Ini akan dipaparkan di sebelah lagu beratur. semasa:
 Pengguna semasa
-info
+tetapan
 PiKaraoke
 Adakah anda pasti mahu berhenti?
 Adakah anda pasti mahu menutup?
@@ -185,4 +185,9 @@ Tukar bahasa
 Sila pilih bahasa
 Bahasa Sistem
 Bahasa sistem semasa:
-Ini menukar bahasa sistem hujung belakang PiKaraoke yang akan dipaparkan pada skrin TV; tambahan pula, setiap pengguna yang menyambungkan juga boleh menukar bahasa UI Web masing-masing dalam butang glob dalam menu bahagian atas sebelah kanan.
+Ini menukar bahasa sistem hujung belakang PiKaraoke yang akan dipaparkan pada skrin TV; selain itu, setiap pengguna yang menyambungkan juga boleh menukar bahasa UI Web masing-masing dalam butang glob dalam menu sebelah kanan atas.
+Muat turun berjaya diselesaikan!
+Muat turun gagal!
+Lagu ditambahkan pada baris gilir!
+Gagal untuk beratur lagu!
+Maklumat & Tetapan Sistem
