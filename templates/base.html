@@ -104,8 +104,9 @@
         $.get('/get_lang_list').done(function(lang_json){
           var lang_dict = JSON.parse(lang_json);
           var popup_html = '';
-          for(var lang1 in lang_dict)
-            popup_html += `<input type="radio" onclick="setLanguage('${lang1}', true);">&nbsp;${lang_dict[lang1]}<br>`;
+          for(var lang1 in lang_dict){
+            popup_html += `<input type="radio" onclick="setLanguage('${lang1}', true);" ${currentLang==lang1?"checked":""}>&nbsp;${lang_dict[lang1]}<br>`;
+          }
           var popUpList = $(`<div title="{{getString1(185)}}">${popup_html}</div>`)
           popUpList.dialog();
         });
