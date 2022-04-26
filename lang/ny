@@ -8,7 +8,7 @@ Cholakwika pakusuntha chinthu mkati mwa mzere: mkangano wolakwika
 Zinthu zasuntha bwino mkati mwa mzere:
 Vuto pakusuntha chinthu mkati mwa mzere:
 Zatsitsidwa pamzere:
-Zolakwika pakusuntha pamzere:
+Vuto likusuntha pamzere:
 Zakwezedwa pamzere:
 Vuto kukwera pamzere:
 Zachotsedwa pamzere:
@@ -18,7 +18,7 @@ Mukamaliza, zidzawonjezedwa pamzere.
 Akamaliza, izo kuonekera mu "nyimbo zilipo" mndandanda.
 Vuto: Sitingathe kuchotsa nyimboyi chifukwa ili pamzere pano:
 Nyimbo yachotsedwa:
-Vuto: Palibe nyimbo yotchulidwa!
+Vuto: Palibe gawo la nyimbo lomwe latchulidwa!
 Vuto: Sitingathe kusintha nyimboyi chifukwa ikuseweredwa pano:
 Sinthani Fayilo ya Nyimbo
 Fayilo yolakwika: '%s' kukhala '%s'. Fayiloyo ilipo kale.
@@ -119,7 +119,7 @@ Sakani
 Mzere
 Phatikizani machesi omwe si a karaoke
 Zapamwamba
-Lembani nyimbo (mutu / wojambula) kufufuza nyimbo zomwe zilipo ndikudina 'Mzere' kuti muwonjezere pamzere.
+Lembani nyimbo (mutu/wojambula) kuti mufufuze nyimbo zomwe zilipo ndikudina 'Mzere' kuti muwonjezere pamzere.
 Ngati nyimboyo sikuwoneka mu "Nyimbo Zomwe Zilipo", dinani 'Sakani' kuti mupeze pa Youtube.
 Tsitsani mwachindunji ulalo wa YouTube:
 Onjezani pamzere
@@ -188,6 +188,8 @@ Chilankhulo chamakono:
 Izi zikusintha chilankhulo cha PiKaraoke backend system yomwe imawonetsedwa pa TV; Komanso, wogwiritsa ntchito aliyense wolumikizira amathanso kusintha chilankhulo chawo cha Web UI pa batani lapadziko lonse lapansi patsamba lakumanja.
 Kutsitsa kwatha!
 Kutsitsa kwalephera!
-Nyimbo idawonjezedwa pamzere!
+Nyimbo yawonjezedwa pamzere!
 Zalephera kuyimitsa nyimboyi!
 Zambiri Zadongosolo & Zikhazikiko
+Kusintha kwa Voliyumu
+Nyimbo zosiyana nthawi zambiri zimakhala ndi voliyumu yosiyana. Kuthandizira kukhazikika kwa voliyumu kumayendetsa <i>ffmpeg</i>kuwerengera kuchuluka kwa nyimbo padziko lonse lapansi ndikusinthiratu voliyumu ya osewera kuti nyimbo iliyonse izimveka mokweza chimodzimodzi.

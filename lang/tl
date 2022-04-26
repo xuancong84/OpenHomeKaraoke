@@ -109,14 +109,14 @@ Sigurado ka bang gusto mong i-clear ang BUONG pila? I-type ang 'OK' para magpatu
 Magdagdag ng 3 random na kanta
 Alisin lahat
 Walang laman ang pila
-pila
+Nakapila
 Tanggalin
 Magagamit na mga kanta sa lokal na aklatan
 Nagdagdag ng kanta sa queue:
 Nasa pila na ang kanta:
 Maghanap / Magdagdag ng Bago
 Maghanap
-pila
+Nakapila
 Isama ang mga non-karaoke na laban
 Advanced
 Mag-type ng kanta (title/artist) para hanapin ang mga available na kanta at i-click ang 'Queue' para idagdag ito sa queue.
@@ -166,9 +166,9 @@ Kailangan mo lang gawin ito kung manu-mano mong kinopya ang mga file sa direktor
 Mga update
 Kung huminto sa paggana ang mga pag-download o paghahanap, malamang na ayusin ito ng pag-update ng youtube-dl. Ang kasalukuyang naka-install na bersyon ay:
 I-update ang youtube-dl
-Maaaring mabigo ang link sa pag-update na ito sa itaas kung wala kang wastong mga pahintulot sa file. Suriin ang PiKaraoke log para sa mga error.
+Maaaring mabigo ang link sa pag-update na ito sa itaas kung wala kang tamang mga pahintulot sa file. Suriin ang PiKaraoke log para sa mga error.
 Pagsara
-Huwag lang hilahin ang plug! Palaging isara nang maayos ang iyong server upang maiwasan ang pagkasira ng data.
+Huwag lang hilahin ang plug! Palaging isara nang maayos ang iyong server upang maiwasan ang katiwalian ng data.
 Ihinto ang PiKaraoke
 I-reboot ang System
 Sistema ng Pagsara
@@ -176,7 +176,7 @@ Iba pa
 Palawakin ang Raspberry Pi filesystem
 Kung kaka-install mo lang ng pre-built na pikaraoke pi image at ang iyong SD card ay mas malaki sa 4GB, maaaring gusto mong palawakin ang filesystem upang magamit ang natitirang espasyo. Isang beses mo lang kailangang gawin ito. Ire-reboot nito ang system.
 I-disable ang admin mode
-Paganahin ang mode ng admin
+Paganahin ang admin mode
 mag log out
 mag log in
 Info ng sistema
@@ -191,3 +191,5 @@ Nabigo ang pag-download!
 Idinagdag ang kanta sa pila!
 Nabigong i-queue ang kanta!
 Impormasyon at Mga Setting ng System
+Volume Normalization
+Ang iba't ibang kanta ay kadalasang may iba't ibang volume. Ang pagpapagana ng volume normalization ay tatakbo muna ng <i>ffmpeg</i> upang makalkula ang pandaigdigang volume ng isang kanta at awtomatikong isaayos ang volume ng player upang ang bawat kanta ay tumunog nang pantay na malakas.

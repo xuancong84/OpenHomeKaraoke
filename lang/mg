@@ -126,7 +126,7 @@ Ampio amin'ny filaharana
 Asio dikanteny
 DOWNLOAD
 Mikaroka YouTube momba ny
-Vokatra fikarohana momba ny
+Valiny fikarohana momba ny
 Kitiho ny midina raha te hampiseho valiny bebe kokoa
 Rohy:
 Hira misy
@@ -147,7 +147,7 @@ fahatsiarovana
 Fakan-tsary
 Vocal Splitter
 Youtube-dl (yt-dlp) version
-PiKaraoke version
+Version PiKaraoke
 Advanced Control Options
 Fomba fizarazarana feo:
 Ampiasao ny L-R/L+R
@@ -161,12 +161,12 @@ Atsaharo ny Streamer
 Avereno indray ny Streamer
 Izany dia misy fiantraikany amin'ny filalaovana KTV amin'ny alàlan'ny navigateur web ihany. Ny famerenana indray ny fakan-tsary-ary-streaming dia manatsara ny fampifanarahana feo/video, mampihena ihany koa ny fahatarana eo amin'ny mpizara sy ny navigateur.
 Havaozy ny lisitry ny hira:
-Rescan lahatahiry
+Avereno jerena ny lahatahirin-kira
 Mila manao izany ianao raha toa ka mandika ny rakitra amin'ny tananao amin'ny lahatahiry fampidinana raha mbola mandeha ny PiKaraoke.
 vaovao farany
 Raha tsy miasa intsony ny fampidinana na fikarohana dia mety hanamboatra izany ny fanavaozana ny youtube-dl. Ny kinova napetraka ankehitriny dia:
 Fanavaozana ny youtube-dl
-Ity rohy fanavaozam-baovao etsy ambony ity dia mety tsy hahomby raha tsy manana fahazoan-dàlana mety ianao. Jereo ny diarin'ny PiKaraoke raha misy lesoka.
+Ity rohy fanavaozana etsy ambony ity dia mety tsy hahomby raha tsy manana fahazoan-dàlana mety ianao. Jereo ny diarin'ny PiKaraoke raha misy lesoka.
 Hidio
 Aza misintona fotsiny ny plug! Akatona tsara foana ny servero mba hisorohana ny kolikoly angona.
 Atsaharo ny PiKaraoke
@@ -185,9 +185,11 @@ Hanova fiteny
 Mifidiana fiteny azafady
 System Language
 Fiteny rafitra ankehitriny:
-Izany dia manova ny fitenin'ny rafitra backend PiKaraoke izay aseho amin'ny efijery fahitalavitra; Ankoatr'izay, ny mpampiasa mampifandray tsirairay dia afaka manova ny fitenin'ny Web UI tsirairay ao amin'ny bokotra globe ao amin'ny menio ambony havanana.
+Izany dia manova ny fitenin'ny rafitra backend PiKaraoke izay aseho amin'ny efijery fahitalavitra; Ankoatr'izay, ny mpampiasa mifandray tsirairay dia afaka manova ny fitenin'ny Web UI tsirairay ao amin'ny bokotra globe ao amin'ny menio havanana.
 Vita soa aman-tsara ny fandefasana!
 Tsy nahomby ny fampidinana!
 Hira nampidirina amin'ny filaharana!
 Tsy nahavita nilahatra ilay hira!
 System Info & Settings
+Normalization ny volume
+Ny hira samy hafa matetika dia samy hafa ny feony. Ny fampandehanana ny fanamafisam-peo dia handeha <i>ffmpeg</i> voalohany hanisa ny haavon'ny hira iray ary hanitsy ho azy ny haavon'ny mpilalao mba hitovy feo mafy ny hira rehetra.

@@ -45,7 +45,7 @@ Youtube-dl slóð fannst ekki!
 VLC slóð fannst ekki!
 omxplayer slóð fannst ekki!
 Að búa til niðurhalsslóð:
-Wi-Fi/net er ekki tengt. Lokar eftir 10s...
+Wifi/net er ekki tengt. Lokar eftir 10s...
 Til að velja lög, skannaðu QR eða tengdu við
 Fyrir sjónvarpsskjá, tengdu við
 Ýttu á F til að skipta yfir allan skjáinn
@@ -191,3 +191,5 @@ Niðurhal mistókst!
 Lagi bætt í röðina!
 Mistókst að setja lagið í biðröð!
 Kerfisupplýsingar og stillingar
+Volume Normalization
+Mismunandi lög hafa oft mismunandi hljóðstyrk. Ef stöðlun hljóðstyrks er virkt mun fyrst keyra <i>ffmpeg</i> til að reikna út heildarstyrk lags og stilla hljóðstyrk spilarans sjálfkrafa þannig að hvert lag hljómi jafn hátt.

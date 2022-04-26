@@ -155,14 +155,14 @@ Usa DNN
 O audio estándar de MTV ten as dúas canles estéreo (L e R) codificadas de tal xeito que: L-R é a pista do instrumento, L+R é a pista vocal. Así, simplemente restando ou sumando as dúas canles estéreo, podemos obter a pista instrumental e vocal en son mono. O divisor vocal integrado de PiKaraoke baseado en DNN (rede neuronal profunda) usa o algoritmo de intelixencia artificial para dividir o son instrumental e vocal en cada pista estéreo de forma independente, dando como resultado pistas instrumentais e vocais estéreo.
 Detén Splitter
 Reinicie Splitter
-O divisor vocal (que admite a subtracción baseada en DNN e estéreo) execútase como un proceso separado en segundo plano, xerando ficheiros de audio instrumental/vocal para cada canción.
+O divisor de voz (que admite a subtracción baseada en DNN e estéreo) execútase como un proceso separado en segundo plano, xerando ficheiros de audio instrumental/vocal para cada canción.
 Volve sincronizar audio e vídeo:
 Detén Streamer
 Reinicie Streamer
 Isto só afecta a reprodución de KTV a través do navegador web. Reiniciar a captura de pantalla e a transmisión mellora a sincronización de audio/vídeo e tamén diminúe a latencia entre o servidor e o navegador.
 Actualiza a lista de cancións:
 Volver a buscar o directorio de cancións
-Só deberías facelo se copiaches ficheiros manualmente no directorio de descargas mentres PiKaraoke estaba en execución.
+Só deberías facelo se copiaches manualmente ficheiros no directorio de descargas mentres PiKaraoke estaba en execución.
 Actualizacións
 Se as descargas ou as buscas deixaron de funcionar, a actualización de youtube-dl probablemente o solucione. A versión instalada actual é:
 Actualizar youtube-dl
@@ -185,9 +185,11 @@ Cambiar Idioma
 Escolla o idioma
 Linguaxe do sistema
 Idioma do sistema actual:
-Isto cambia o idioma do sistema de backend PiKaraoke que se mostra na pantalla do televisor; ademais, cada usuario que se conecte tamén pode cambiar o seu idioma da IU web no botón globo terráqueo do menú superior dereito.
+Isto cambia o idioma do sistema de backend PiKaraoke que se mostra na pantalla do televisor; ademais, cada usuario que se conecta tamén pode cambiar o seu idioma da IU web no botón globo terráqueo do menú superior dereito.
 Descarga completada con éxito!
 Fallou a descarga!
 Canción engadida á cola!
 Produciuse un erro ao poñer a canción na cola!
 Información e configuración do sistema
+Normalización de volume
+As cancións diferentes adoitan ter un volume diferente. Ao activar a normalización do volume, primeiro executarase <i>ffmpeg</i> para calcular o volume global dunha canción e axustar automaticamente o volume do reprodutor para que cada canción soe igual de alto.

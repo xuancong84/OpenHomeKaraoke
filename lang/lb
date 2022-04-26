@@ -15,7 +15,7 @@ Aus der Schlaang geläscht:
 Feeler beim Läschen aus der Schlaang:
 Download ugefaangen:
 Nom Ofschloss gëtt et an d'Schlaang bäigefüügt.
-No der Fäerdegstellung erschéngt et an der "verfügbar Lidder" Lëscht.
+Beim Fäerdegstellung erschéngt et an der "verfügbar Lidder" Lëscht.
 Feeler: Kann dëst Lidd net läschen well et an der aktueller Schlaang ass:
 Lidd geläscht:
 Feeler: Kee Songparameter spezifizéiert!
@@ -45,7 +45,7 @@ Youtube-dl Wee net fonnt!
 VLC Wee net fonnt!
 omxplayer Wee net fonnt!
 Erstellt Download Wee:
-Wifi / Netzwierk net ugeschloss. Schalten an 10s ...
+Wifi / Netz net ugeschloss. Schalten an 10s ...
 Fir Lidder ze wielen, scannt QR oder verbënnt mat
 Fir TV Display, konnektéieren mat
 Dréckt F fir de Vollbild ze wiesselen
@@ -92,7 +92,7 @@ Erhéijung Audio Verzögerung
 Gitt weg Ären Numm. Dëst erschéngt nieft de Lidder déi Dir vun dësem Apparat an der Schlaang steet.
 Lidd dobäi an d'Schlaang:
 Lidd schon an der Schlaang:
-Sortéiert no Datum
+Sortéieren no Datum
 Sortéiert op Alphabetesch
 Füügt '%s' an d'Schlaang
 Surfen
@@ -191,3 +191,5 @@ Eroflueden gescheitert!
 Lidd dobäi an d'Schlaang!
 Konnt d'Lidd net an der Schlaang setzen!
 System Info & Astellungen
+Volumen Normaliséierung
+Verschidde Lidder hunn dacks ënnerschiddlech Volumen. Wann Dir Volumennormaliséierung aktivéiert, leeft als éischt <i>ffmpeg</i> fir de globale Volume vun engem Lidd ze berechnen an automatesch de Spillervolumen unzepassen, sou datt all Lidd gläich haart kléngt.

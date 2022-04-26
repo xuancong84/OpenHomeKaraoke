@@ -122,6 +122,7 @@ def nowplaying():
 			"seektrack_value": s['time'],
 			"seektrack_max": s['length'],
 			"audio_delay": s['audiodelay'],
+			"vol_norm": K.normalize_vol,
 			"vocal_info": K.get_vocal_info()
 		}
 		if K.has_subtitle:
@@ -190,6 +191,12 @@ def get_vocal_todo_list(vocal_device):
 def set_vocal_mode(mode):
 	K.use_DNN_vocal = (mode.lower() == 'true')
 	K.play_vocal()
+	return ''
+
+
+@app.route("/norm_vol/<mode>", methods = ["GET"])
+def norm_vol(mode):
+	K.enable_vol_norm(mode.lower() == 'true')
 	return ''
 
 
@@ -548,6 +555,7 @@ def info():
 		youtubedl_version = youtubedl_version,
 		is_pi = is_pi,
 		use_DNN = K.use_DNN_vocal,
+		norm_vol = K.normalize_vol,
 		pikaraoke_version = VERSION,
 		screencapture = get_status(screencapture),
 		vocalsplitter = get_status(vocalsplitter) + vocal_extra,
@@ -713,7 +721,7 @@ if __name__ == "__main__":
 	platform = get_platform()
 	default_port = 5000
 	default_volume = 0
-	default_splash_delay = 5
+	default_splash_delay = 3
 	default_log_level = logging.INFO
 
 	default_dl_dir = get_default_dl_dir(platform)
@@ -759,6 +767,11 @@ if __name__ == "__main__":
 	parser.add_argument(
 		"-V", "--run-vocal",
 		help = "Explicitly run vocal-splitter process from the main program (by default, it only run explicitly in Windows)",
+		action = 'store_true',
+	)
+	parser.add_argument(
+		"-nv", "--normalize-volume",
+		help = "Enable volume normalization",
 		action = 'store_true',
 	)
 	parser.add_argument(
@@ -921,6 +934,7 @@ if __name__ == "__main__":
 		logo_path = args.logo_path,
 		show_overlay = args.show_overlay,
 		run_vocal = args.run_vocal,
+		normalize_vol = args.normalize_volume,
 		window_mode = args.windowed
 	)
 

@@ -4,7 +4,7 @@ Wedi allgofnodi o'r modd gweinyddol!
 Wedi ychwanegu %s o draciau ar hap
 Rhedeg allan o ganeuon!
 Wedi clirio'r ciw!
-Gwall wrth symud eitem y tu mewn i'r ciw: annilys-argument
+Gwall wrth symud eitem y tu mewn i'r ciw: invalid-argument
 Wedi symud yr eitem yn llwyddiannus y tu mewn i'r ciw:
 Gwall wrth symud eitem y tu mewn i'r ciw:
 Wedi symud i lawr yn y ciw:
@@ -152,14 +152,14 @@ Opsiynau Rheoli Uwch
 Modd hollti lleisiol:
 Defnyddiwch L-R/L+R
 Defnyddiwch DNN
-Mae sain MTV safonol yn cynnwys y ddwy sianel stereo (L ac R) wedi'u hamgodio yn y fath fodd fel: LR yw'r trac offeryn, L + R yw'r trac lleisiol. Felly, trwy dynnu neu ychwanegu'r ddwy sianel stereo yn unig, gallwn gael y trac offerynnol a lleisiol mewn sain mono. Mae holltwr lleisiol adeiledig PiKaraoke yn seiliedig ar DNN (rhwydwaith niwral dwfn) yn defnyddio algorithm AI i hollti sain offerynnol a lleisiol ym mhob trac stereo yn annibynnol gan arwain at draciau stereo offerynnol a lleisiol.
+Mae gan sain MTV safonol y ddwy sianel stereo (L ac R) wedi'u hamgodio yn y fath fodd fel: LR yw'r trac offeryn, L + R yw'r trac lleisiol. Felly, trwy dynnu neu ychwanegu'r ddwy sianel stereo yn unig, gallwn gael y trac offerynnol a lleisiol mewn sain mono. Mae holltwr lleisiol adeiledig PiKaraoke yn seiliedig ar DNN (rhwydwaith niwral dwfn) yn defnyddio algorithm AI i hollti sain offerynnol a lleisiol ym mhob trac stereo yn annibynnol gan arwain at draciau stereo offerynnol a lleisiol.
 Stopiwch Hollti
 Ailgychwyn Hollti
 Mae'r holltwr lleisiol (sy'n cefnogi tynnu seiliedig ar DNN a stereo) yn rhedeg fel proses ar wahân yn y cefndir, gan gynhyrchu ffeil sain offerynnol / lleisiol ar gyfer pob cân.
 Ail-gydamseru sain a fideo:
 Stopiwch Streamer
 Ailgychwyn Streamer
-Dim ond trwy borwr gwe y mae hyn yn effeithio ar chwarae KTV. Mae ailgychwyn y sgrin-dal-a-ffrydio yn gwella cydamseru sain/fideo, mae hefyd yn lleihau'r hwyrni rhwng y gweinydd a'r porwr.
+Mae hyn ond yn effeithio ar chwarae KTV trwy borwr gwe. Mae ailgychwyn y sgrin-dal-a-ffrydio yn gwella cydamseru sain/fideo, mae hefyd yn lleihau'r hwyrni rhwng y gweinydd a'r porwr.
 Adnewyddu'r rhestr caneuon:
 Ailsganio cyfeiriadur caneuon
 Dim ond os gwnaethoch chi gopïo ffeiliau â llaw i'r cyfeiriadur lawrlwytho tra roedd PiKaraoke yn rhedeg y dylai fod angen i chi wneud hyn.
@@ -191,3 +191,5 @@ Wedi methu llwytho i lawr!
 Cân wedi'i hychwanegu at y ciw!
 Wedi methu ciwio'r gân!
 Gwybodaeth a Gosodiadau System
+Normaleiddio Cyfrol
+Yn aml mae gan wahanol ganeuon gyfaint gwahanol. Bydd galluogi normaleiddio sain yn rhedeg <i>ffmpeg</i> yn gyntaf i gyfrifo cyfaint byd-eang cân ac addasu cyfaint y chwaraewr yn awtomatig fel bod pob cân yr un mor uchel.

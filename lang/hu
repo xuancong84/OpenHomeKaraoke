@@ -105,7 +105,7 @@ Dal szerkesztése
 Feljebb a sorban
 Lépjen lejjebb a sorban
 Biztos, hogy törölni akarja a sorból?
-Biztosan törli a TELJES sort? A folytatáshoz írja be az „OK” gombot
+Biztosan törli a TELJES sort? A folytatáshoz írja be az „OK” parancsot
 Adj hozzá 3 véletlenszerű dalt
 Mindent kitöröl
 A sor üres
@@ -191,3 +191,5 @@ Sikertelen letöltés!
 A dal felkerült a sorba!
 Nem sikerült sorba állítani a dalt!
 Rendszerinformációk és beállítások
+Hangerő normalizálása
+A különböző dalok hangereje gyakran eltérő. A hangerő normalizálásának engedélyezése először az <i>ffmpeg</i> programot futtatja, hogy kiszámítsa egy dal globális hangerejét, és automatikusan beállítja a lejátszó hangerejét, hogy minden dal egyformán hangosan szóljon.

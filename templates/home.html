@@ -78,6 +78,11 @@
 					s3_enable(3, use_DNN?(obj.vocal_info&2):(obj.vocal_info&8));
 					s3_go_to((obj.vocal_info>>4)&3, false);
 					use_DNN ? $("#pytorch-logo").show():$("#pytorch-logo").hide();
+					
+					if(obj.vol_norm)
+						$("#vol").addClass('boxedText');
+					else
+						$("#vol").removeClass('boxedText');
         } else {
           $("#now-playing").html("{{getString1(69)}}");
           $(".control-box").hide();
@@ -289,6 +294,7 @@ body {
 .redButton.horizTranslate2 { -webkit-transition: -webkit-transform 0.1s linear; -webkit-transform: translateX(60px);}
 .redButton.horizTranslate3 { -webkit-transition: -webkit-transform 0.1s linear; -webkit-transform: translateX(120px);}
 .legendText{display:inline-block; width:50px; padding-bottom:33px; cursor:default; user-select: none;}
+.boxedText { padding: 2px; border: 1px solid white; font-size:1.6rem; }
 </style>
 <h1>
 	{% block title %}{{getString1(74)}}

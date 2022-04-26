@@ -4,7 +4,7 @@ Ji moda rêveberiyê derketin!
 %s şopên tesadufî lê zêde kirin
 Ji stranan xilas bûn!
 Dorê paqij kir!
-Çewtî di veguheztina babetê de di nav rêzê de: nederbasdar-argument
+Çewtî di veguheztina babetê de di rêzê de: nederbasdar-argument
 Tiştek bi serfirazî li hundurê rêzê hate guheztin:
 Çewtî di veguheztina babetê de di nav rêzê de:
 Di dorê de bar kirin:
@@ -127,7 +127,7 @@ Binnivîsan têde
 Download
 Lêgerîna YouTube ji bo
 Encamên lêgerînê ji bo
-Bişkojka dakêşanê bikirtînin ku encamên bêtir nîşan bidin
+Bişkojka dakêşanê bikirtînin da ku encamên bêtir nîşan bidin
 Pêvek:
 Stranên Berdest
 Ma hûn dixwazin navê xuyangê yê kesê ku vê amûrê bikar tîne biguherînin? Ev ê li kêleka stranên rêzkirî nîşan bide. Vêga:
@@ -185,9 +185,11 @@ Ziman biguherînin
 Ji kerema xwe ziman hilbijêrin
 Ziman Sîstem
 Zimanê pergalê yê niha:
-Ev zimanê pergala pişta PiKaraoke ku li ser ekrana TV-yê tê xuyang kirin diguhezîne; Wekî din, her bikarhênerek têkildar dikare di menuya jorîn a rastê de di bişkoja gerdûnê de zimanê UI-ya Web-a xwe ya têkildar jî biguhezîne.
+Ev zimanê pergala pişta PiKaraoke ku li ser ekrana TV-yê tê xuyang kirin diguhezîne; Digel vê yekê, her bikarhênerek têkildar dikare di menuya jorîn a rastê de di bişkoja gerdûnê de zimanê UI-ya Web-a xwe ya têkildar jî biguhezîne.
 Daxistin bi serkeftî qediya!
 Daxistin bi ser neket!
 Stran li dorê hat zêdekirin!
 Di rêza stranê de têk çû!
 Agahiyên Pergalê & Mîhengan
+Normalîzasyona Volume
+Stranên cihê bi gelemperî dengên cûda hene. Çalakkirina normalîzekirina dengdanê dê pêşî <i>ffmpeg</i> bixebite da ku qebareya gerdûnî ya stranekê hesab bike û bixweber dengê lîstikvanê rast bike da ku her stran bi heman rengî deng bide.

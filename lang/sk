@@ -191,3 +191,5 @@ Sťahovanie zlyhalo!
 Skladba pridaná do poradia!
 Skladbu sa nepodarilo zaradiť do poradia!
 Systémové informácie a nastavenia
+Normalizácia hlasitosti
+Rôzne piesne majú často rôznu hlasitosť. Po povolení normalizácie hlasitosti sa najprv spustí <i>ffmpeg</i>, aby sa vypočítala globálna hlasitosť skladby a automaticky sa nastaví hlasitosť prehrávača tak, aby každá skladba znela rovnako hlasno.

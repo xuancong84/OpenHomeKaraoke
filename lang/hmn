@@ -121,7 +121,7 @@ suav tsis txheeb karaoke
 Advanced
 Ntaus ib zaj nkauj (lub npe / tus kws kos duab) txhawm rau tshawb cov nkauj muaj thiab nyem 'Queue' ntxiv rau hauv kab.
 Yog hais tias zaj nkauj tsis tshwm nyob rau hauv "Available Songs" dropdown, nyem 'Search' kom pom nws hauv Youtube.
-Direct download tau YouTube url:
+Direct download YouTube url:
 Ntxiv rau kab
 suav nrog subtitles
 Download tau
@@ -152,7 +152,7 @@ Advanced Control Options
 Vocal splitter hom:
 Siv L-R / L + R
 Siv DNN
-Standard MTV suab muaj ob lub tso suab raws (L thiab R) encoded nyob rau hauv xws li ib tug txoj kev uas: L-R yog lub ntsuas khiav, L + R yog lub suab khiav. Yog li, los ntawm kev rho tawm lossis ntxiv ob lub tso suab tso suab, peb tuaj yeem tau txais cov twj paj nruag thiab suab hauv lub suab mono. PiKaraoke's built-in DNN-raws li (sib sib zog nqus neural network) suab splitter siv AI algorithm los faib cov suab paj nruag thiab suab hauv txhua lub suab tso suab ntawm nws tus kheej ua rau lub suab seev suab paj nruag thiab suab paj nruag.
+Standard MTV suab muaj ob lub tso suab raws (L thiab R) encoded nyob rau hauv xws li ib tug txoj kev uas: L-R yog qhov ntsuas khiav, L + R yog lub suab khiav. Yog li, los ntawm kev rho tawm lossis ntxiv ob lub tso suab tso suab, peb tuaj yeem tau txais cov twj paj nruag thiab suab hauv lub suab mono. PiKaraoke's built-in DNN-raws li (sib sib zog nqus neural network) suab splitter siv AI algorithm los faib cov suab paj nruag thiab suab hauv txhua lub suab tso suab ntawm nws tus kheej ua rau lub suab seev suab paj nruag thiab suab paj nruag.
 Nres Splitter
 Pib dua Splitter
 Lub suab splitter (uas txhawb nqa DNN-raws li thiab lub tso suab rho tawm) khiav raws li cov txheej txheem sib cais hauv keeb kwm yav dhau, tsim cov ntaub ntawv suab paj nruag / suab rau txhua zaj nkauj.
@@ -185,9 +185,11 @@ Hloov lus
 Thov xaiv hom lus
 System Language
 Hom lus tam sim no:
-Qhov no hloov cov lus ntawm PiKaraoke backend system uas tau tso tawm rau hauv TV screen; Ntxiv mus, txhua tus neeg siv txuas kuj tuaj yeem hloov pauv lawv cov lus Web UI hauv lub ntiaj teb khawm hauv cov ntawv qhia zaub mov sab xis.
+Qhov no hloov cov lus ntawm PiKaraoke backend system uas tau tso tawm rau hauv TV screen; Ntxiv mus, txhua tus neeg siv sib txuas kuj tuaj yeem hloov pauv lawv cov lus Web UI hauv lub ntiaj teb khawm hauv cov ntawv qhia zaub mov sab xis.
 Download tau tiav lawm!
 Download tsis tau!
 Nkauj ntxiv rau cov kab!
 Ua tsis tau tejyam rau queue zaj nkauj!
 System Info & Chaw
+Volume Normalization
+Cov nkauj sib txawv feem ntau muaj qhov sib txawv. Enabling ntim normalization yuav xub khiav <i>ffmpeg</i> los xam lub ntiaj teb no ntim ntawm ib zaj nkauj thiab yuav kho cov neeg uas ua ntawv ntim kom txhua lub suab nrov sib npaug zos.

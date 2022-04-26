@@ -15,7 +15,7 @@ Eroare la mutarea sus în coadă:
 Eroare la ștergerea din coadă:
 Descărcarea a început:
 La finalizare, acesta va fi adăugat la coadă.
-După finalizare, va apărea în lista „melodiilor disponibile”.
+După finalizare, acesta va apărea în lista „melodiilor disponibile”.
 Eroare: nu se poate șterge această melodie deoarece se află în coada curentă:
 Cântec șters:
 Eroare: nu a fost specificat niciun parametru de melodie!
@@ -191,3 +191,5 @@ Descarcare esuata!
 Cântec adăugat la coadă!
 Nu s-a putut pune în coadă melodia!
 Informații de sistem și setări
+Normalizarea volumului
+Cântece diferite au adesea volum diferit. Activarea normalizării volumului va rula mai întâi <i>ffmpeg</i> pentru a calcula volumul global al unei melodii și va ajusta automat volumul playerului, astfel încât fiecare melodie să sune la fel de tare.

@@ -4,7 +4,7 @@ Uphumile kwimowudi yomlawuli!
 Kongezwe i-%s iingoma ezingaqhelekanga
 Ziphelelwe ziingoma!
 Icociwe umgca!
-Imposiso yokuhambisa into ngaphakathi komgca: inqobo-impikiswano
+Imposiso yokuhambisa into ngaphakathi komgca: invalid-argument
 Isuswe ngempumelelo into ngaphakathi komgca:
 Impazamo yokuhambisa into ngaphakathi komgca:
 Yehlisiwe emgceni:
@@ -121,7 +121,7 @@ Bandakanya imidlalo engeyiyo ekaraoke
 Ikwinqanaba eliphezulu
 Chwetheza ingoma (isihloko/igcisa) ukukhangela iingoma ezikhoyo kwaye ucofe u-'Queue' ukuzongeza emgceni.
 Ukuba ingoma ayiveli "kwiingoma ezifumanekayo", cofa u 'Khangela' ukuze uyifumane kwi-Youtube.
-Khuphela ngokuthe ngqo i-url kaYouTube:
+Khuphela ngokuthe ngqo url kaYouTube:
 Yongeza emgceni
 Bandakanya izihlokwana
 Khuphela
@@ -164,7 +164,7 @@ Hlaziya uluhlu lweengoma:
 Skena kwakhona uluhlu lwengoma
 Kufuneka wenze oku kuphela ukuba ukhuphele ngesandla iifayile kulawulo lokhuphelo ngelixa iPiKaraoke ibisebenza.
 Uhlaziyo
-Ukuba ukhuphelo okanye uphendlo luyekile ukusebenza, ukuhlaziya i-youtube-dl mhlawumbi kuya kuyilungisa. Inguqulelo ehlohliweyo yangoku yile:
+Ukuba ukhuphelo okanye uphendlo luyekile ukusebenza, ukuhlaziya i-youtube-dl mhlawumbi kuya kuyilungisa. Inguqulelo yangoku ehlohliweyo yile:
 Hlaziya i-youtube-dl
 Olu nxulumaniso lohlaziyo lungasentla lunokusilela ukuba awunazo iimvume zefayile ezifanelekileyo. Jonga iPiKaraoke log ngeempazamo.
 Cima
@@ -191,3 +191,5 @@ Ukukhuphela akuphumelelanga!
 Ingoma yongezwe emgceni!
 Ayiphumelelanga ukufola ingoma!
 Ulwazi lweNkqubo & Izicwangciso
+Ukumiselwa komthamo
+Iingoma ezahlukeneyo zihlala zinevolumu eyahlukileyo. Ukuvumela ivolumu yesiqhelo iya kuqala <i>ffmpeg</i> ukubala umthamo wehlabathi wengoma kunye nokulungelelanisa ngokuzenzekelayo umthamo womdlali ukuze ingoma nganye ivakalise ngokulinganayo.

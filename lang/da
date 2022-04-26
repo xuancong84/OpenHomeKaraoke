@@ -43,7 +43,7 @@ Kan ikke udvide fs på ikke-raspberry pi-enheder!
 Du har ikke tilladelse til at ændre størrelsen på filsystemet
 Youtube-dl-sti blev ikke fundet!
 VLC-sti ikke fundet!
-omxplayer-stien blev ikke fundet!
+omxplayer-sti ikke fundet!
 Oprettelse af downloadsti:
 Wifi/netværk ikke tilsluttet. Lukker ned om 10'erne...
 For at vælge sange skal du scanne QR eller oprette forbindelse til
@@ -52,7 +52,7 @@ Tryk på F for at skifte til fuld skærm
 Tryk på ESC for at afslutte PiKaraoke
 RaspiWifiConfig opsætningstilstand fundet!
 Tilslut en anden enhed/smartphone til Wifi AP: '%s'
-Peg derefter browseren til: '%s://%s%s' og følg instruktionerne.
+Peg derefter browseren på: '%s://%s%s' og følg instruktionerne.
 Næste:
 Tilføjet af:
 Spiller nu:
@@ -186,8 +186,10 @@ Vælg venligst sprog
 Systemsprog
 Aktuelt systemsprog:
 Dette ændrer sproget i PiKaraoke-backend-systemet, som vises på TV-skærmen; desuden kan hver tilsluttende bruger også ændre deres respektive web-UI-sprog i globusknappen i menuen øverst til højre.
-Download fuldført med succes!
+Download fuldført!
 Download fejlede!
 Sang tilføjet til køen!
 Det lykkedes ikke at sætte sangen i kø!
 Systemoplysninger og indstillinger
+Volumennormalisering
+Forskellige sange har ofte forskellig lydstyrke. Aktivering af volumennormalisering vil først køre <i>ffmpeg</i> for at beregne den globale lydstyrke for en sang og automatisk justere afspillerens lydstyrke, så hver sang lyder lige højt.

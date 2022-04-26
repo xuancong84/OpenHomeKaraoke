@@ -4,7 +4,7 @@ Wylogowano z trybu administratora!
 Dodano %s losowych utworów
 Zabrakło piosenek!
 Wyczyszczono kolejkę!
-Błąd podczas przenoszenia elementu w kolejce: nieprawidłowy argument
+Błąd podczas przenoszenia elementu w kolejce: nieprawidłowy-argument
 Pomyślnie przeniesiono element do kolejki:
 Błąd podczas przenoszenia elementu w kolejce:
 Przeniesiono w kolejce w dół:
@@ -191,3 +191,5 @@ Pobieranie nie udane!
 Piosenka dodana do kolejki!
 Nie udało się umieścić utworu w kolejce!
 Informacje o systemie i ustawienia
+Normalizacja głośności
+Różne piosenki często mają różną głośność. Włączenie normalizacji głośności uruchomi najpierw <i>ffmpeg</i>, aby obliczyć globalną głośność utworu i automatycznie dostosować głośność odtwarzacza, aby każdy utwór brzmiał równie głośno.

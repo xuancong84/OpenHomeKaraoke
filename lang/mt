@@ -19,7 +19,7 @@ Mat-tlestija, se jidher fil-lista "kanzunetti disponibbli".
 Żball: Ma tistax tħassar din il-kanzunetta għax tinsab fil-kju attwali:
 Kanzunetta mħassra:
 Żball: L-ebda parametru tal-kanzunetta speċifikat!
-Żball: Ma tistax teditja din il-kanzunetta għax bħalissa qed tindaqq:
+Żball: Ma tistax teditja din il-kanzunetta għaliex bħalissa qed tindaqq:
 Editja tal-Fajl tal-Kanzunetta
 Żball Tismija mill-ġdid tal-fajl: '%s' għal '%s'. L-isem tal-fajl diġà jeżisti.
 Fajl b'isem ġdid: '%s' għal '%s'
@@ -191,3 +191,5 @@ It-tniżżil falla!
 Kanzunetta miżjuda mal-kju!
 Naqas milli jpoġġi l-kanzunetta fil-kju!
 Informazzjoni tas-Sistema u Settings
+Normalizzazzjoni tal-Volum
+Kanzunetti differenti ħafna drabi jkollhom volum differenti. L-abilitazzjoni tan-normalizzazzjoni tal-volum l-ewwel se taħdem <i>ffmpeg</i> biex tikkalkula l-volum globali ta 'kanzunetta u taġġusta awtomatikament il-volum tal-plejer sabiex kull kanzunetta tinstema' ugwalment qawwi.

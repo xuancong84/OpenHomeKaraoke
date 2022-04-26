@@ -182,7 +182,7 @@ Einloggen
 Systeminformationen
 Heim
 Sprache ändern
-Bitte Sprache wählen
+Bitte Sprache auswählen
 Systemsprache
 Aktuelle Systemsprache:
 Dies ändert die Sprache des PiKaraoke-Backend-Systems, das auf dem Fernsehbildschirm angezeigt wird; Darüber hinaus kann jeder Benutzer, der eine Verbindung herstellt, seine jeweilige Web-UI-Sprache über die Globus-Schaltfläche im rechten oberen Menü ändern.
@@ -191,3 +191,5 @@ Herunterladen fehlgeschlagen!
 Lied zur Warteschlange hinzugefügt!
 Das Lied konnte nicht in die Warteschlange gestellt werden!
 Systeminfo & Einstellungen
+Volumennormalisierung
+Unterschiedliche Songs haben oft unterschiedliche Lautstärken. Wenn Sie die Lautstärkenormalisierung aktivieren, wird zuerst <i>ffmpeg</i> ausgeführt, um die globale Lautstärke eines Songs zu berechnen und die Player-Lautstärke automatisch so anzupassen, dass jeder Song gleich laut klingt.

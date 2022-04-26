@@ -130,12 +130,12 @@ Tsvaga mhinduro dze
 Dzvanya kudonhedza kuti uratidze mimwe mibairo
 Link:
 Nziyo dziripo
-Unoda kushandura zita rekuratidza remunhu ari kushandisa mudziyo uyu? Izvi zvichaonekwa padivi penziyo dzakaiswa mumutsara. Zvazvino:
+Unoda kushandura zita rekuratidza remunhu ari kushandisa mudziyo uyu? Izvi zvichaonekwa padivi penziyo dzakamirirwa. Zvazvino:
 Mushandisi wazvino
 Settings
 PiKaraoke
 Une chokwadi chekuti unoda kusiya?
-Une chokwadi chekuti unoda kudzima?
+Une chokwadi chekuti unoda kuvhara?
 Une chokwadi chekuti unoda kutangazve?
 Une chokwadi chekuti unoda kugadzirisa Youtube-dl izvozvi? Zvekudhaunirodha zvazvino uye zvakamirira zvinogona kutadza.
 Une chokwadi chekuti unoda kuwedzera iyo faira system? Izvi zvichatangazve raspberry pi yako.
@@ -191,3 +191,5 @@ Kudhaunirodha kwatadza!
 Rwiyo rwakawedzerwa pamutsetse!
 Tatadza kumisa rwiyo!
 System Info & Zvirongwa
+Volume Normalization
+Nziyo dzakasiyana kazhinji dzine ruzha rwakasiyana. Kugonesa vhoriyamu normalization kunotanga kumhanya <i>ffmpeg</i> kuverengera vhoriyamu yerwiyo rwepasi rose uye kugadzirisa otomatiki vhoriyamu yevatambi kuti rwiyo rwese rwuridze zvakaenzana.

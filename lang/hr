@@ -191,3 +191,5 @@ Preuzimanje neuspješno!
 Pjesma je dodana u red čekanja!
 Stavljanje pjesme u red čekanja nije uspjelo!
 Informacije o sustavu i postavke
+Normalizacija volumena
+Različite pjesme često imaju različitu glasnoću. Omogućavanje normalizacije glasnoće prvo će pokrenuti <i>ffmpeg</i> za izračunavanje globalne glasnoće pjesme i automatski prilagoditi glasnoću playera tako da svaka pjesma zvuči jednako glasno.

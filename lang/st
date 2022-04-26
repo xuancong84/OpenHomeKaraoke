@@ -40,7 +40,7 @@ Rebooting system hona joale!
 Ha u na tumello ea ho Reboot
 Ho holisa sistimi ea lifaele le ho qala sistimi hape hona joale!
 Ha e khone ho atolosa li-fs ho lisebelisoa tsa non-raspberry pi!
-Ha u na tumello ea ho fetola boholo ba sistimi ea lifaele
+Ha u na tumello ea ho fetola boholo ba sistimi
 Tsela ea Youtube-dl ha e fumanehe!
 Tsela ea VLC ha e fumanehe!
 tsela ea omxplayer ha e fumanehe!
@@ -52,7 +52,7 @@ Tobetsa F ho fetola skrineng se felletseng
 Tobetsa ESC ho tlohela PiKaraoke
 Mokhoa oa ho seta oa RaspiWifiConfig o fumanoe!
 Hokela sesebelisoa se seng/smartphone ho Wifi AP: '%s'
-Ebe u supa sebatli sa eona ho: '%s://%s%s' ebe u latela litaelo.
+Ebe u supa sebatli ho: '%s://%s%s' ebe u latela litaelo.
 E latelang:
 E kentsoe ke:
 E ntse e bapala:
@@ -191,3 +191,5 @@ E hlolehile ho khoasolla!
 Pina e kentsoe moleng!
 E hlolehile ho emisa pina!
 Tsamaiso Info & Settings
+Ho tloaeleha ha Molumo
+Hangata lipina tse fapaneng li na le molumo o fapaneng. Ho nolofaletsa ho tloaeleha ha molumo ho tla qala ka <i>ffmpeg</i> ho kopanya bophahamo ba molumo oa pina lefatšeng ka bophara le ho fetola molumo oa sebapali hore pina e 'ngoe le e 'ngoe e lle ka ho lekana.

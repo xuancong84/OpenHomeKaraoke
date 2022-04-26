@@ -190,4 +190,6 @@ Bu, TV ekranında görüntülenen PiKaraoke arka uç sisteminin dilini değişti
 Yükleme başarısız!
 Şarkı sıraya eklendi!
 Şarkı sıraya alınamadı!
-Sistem Bilgileri ve Ayarlar
+Sistem Bilgisi ve Ayarlar
+Hacim Normalleştirme
+Farklı şarkılar genellikle farklı ses seviyesine sahiptir. Ses düzeyi normalleştirmeyi etkinleştirmek, önce bir şarkının genel ses düzeyini hesaplamak için <i>ffmpeg</i> çalıştırır ve oynatıcı ses düzeyini her şarkının eşit derecede yüksek ses çıkarması için otomatik olarak ayarlar.

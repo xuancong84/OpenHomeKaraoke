@@ -15,6 +15,7 @@ See a demo on YouTube: [![Img alt text](https://img.youtube.com/vi/kmQax0EhAxE/0
 - Support renaming and deletion of downloaded files
 - Queue management, support dragging of a song to any position in the queue
 - Key Change / Pitch shifting
+- Volume normalization (all songs will sound equally loud)
 - Lock down features with admin mode
 - Seek to play position (you can practice singing a specific sentence over and over again)
 - Audio delay adjustment (YouTube MTVs often have synchronized lyrics, this makes singing difficult as there is not enough time to look at the lyrics)
@@ -134,36 +135,6 @@ In Anaconda3's prompt/powershell, cd to the pikaraoke directory and run:
 `python3 app.py -d <your-song-download-folder>`
 
 The app should launch and show the PiKaraoke splash screen and a QR code and a URL. Using a device connected to the same wifi network as the Pi, scan this QR code or enter the URL into a browser. You are now connected! You can start exploring the UI and adding/queuing new songs directly from YouTube.
-
-## Auto-start PiKaraoke
-
-This is optional, but you may want to make your raspberry pi a dedicated Karaoke device. If so, add the following to your /etc/rc.local file (paths and arguments may vary) to always start pikaraoke on reboot.
-
-```
-# start pikaraoke on startup
-/usr/bin/python3 /home/pi/pikaraoke/app.py &
-```
-
-Or if you're like me and want some logging for aiding debugging, the following stores output at: /var/log/pikaraoke.log:
-
-```
-# start pikaraoke on startup / logging
-/usr/bin/python3 /home/pi/pikaraoke/app.py >> /var/log/pikaraoke.log 2>&1 &
-```
-
-Another option is to only launch if there's a valid IP detected during startup, that way pikaraoke wont hijack your pi if it can't get connected:
-
-```
-_IP=$(hostname -I) || true
-if [ "$_IP" ]; then
-  printf "My IP address is %s\n" "$_IP"
-  /usr/bin/python3 /home/pi/pikaraoke/app.py >> /var/log/pikaraoke.log 2>&1 &
-fi
-```
-
-If you want to kill the pikaraoke process, you can do so from the PiKaraoke Web UI under: `Info > Quit pikaraoke`. Or you can ssh in and run `sudo killall python` or something similar.
-
-Note that if your wifi/network is inactive pikaraoke will error out 10 seconds after being launched. This is to prevent the app from hijacking your ability to login to repair the connection.
 
 ## Usage
 
@@ -309,11 +280,7 @@ Make sure youtube-dl is up to date, old versions have higher failure rates due t
 You can update youtube-dl directly from the web UI. Go to `Info > Update Youtube-dl` (depending on how you installed, you may need to be running pikaraoke as sudo for this to work)
 
 Or, from the CLI (path may vary):
-`yt-dlp -U`
-
-### Downloads are slow!
-
-youtube-dl is very CPU intensive, especially for single-core devices like the pi models zero and less-than 2. The more simultaneous downloads there are, the longer they will take. Try to limit it to 1-2 at a time. Pi 3 can handle quite a bit more.
+`yt-dlp -U` or `pip install yt-dlp -U`
 
 ### I brought my pikaraoke to a friend's house and it can't connect to their network. How do I change wifi connection without ssh?
 
@@ -338,9 +305,9 @@ Add the SD card back to the pi and start it up. On boot, Raspbian should automat
 
 ### Can I run PiKaraoke without a wifi/network connection?
 
-Actually, yes! But you can only access your existing library and won't be able to download new songs, obviously.
+Actually, yes! But you can only access your existing library and won't be able to search or download new songs from the Internet, obviously.
 
-If you run your pi as a wifi access point, your browser can connect to that access point, and it should work. See: https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md
+If you run your Pi as a Wifi access point, your browser can connect to that access point, and it should work. See: https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md
 
 Or an even easier approach, if you install this: https://github.com/jasbur/RaspiWiFi (used for configuring wifi connections headless, see above). While it's in AP mode, you can connect to the pi as an AP and connect directly to it at http://10.0.0.1:5000
 
@@ -352,7 +319,7 @@ The pi doesn't have a hardware audio input. Technically, you should be able to r
 
 ### How do I change song pitch/key?
 
-While a song is playing, the home screen of the web interface will show a transpose slider. Slide it up or down based on your preference and press the "ok" button to restart the song in the given key.
+While a song is playing, the home screen of the web interface will show a transpose slider. Slide it up or down based on your preference.
 
 If you don't see this option, you may be running the `--use-omxplayer` option. Omxplayer does not support key change.
 
@@ -362,7 +329,7 @@ You'll need to add them manually by copying them to the root of your download fo
 
 ### My mp3/cdg file is not playing
 
-CDG files must have an mp3 file with a exact matching file name. They can also be bundled together in a single zip file, but the filenames in the zip must still match. They must also be placed in the root of the download directory and not stashed away in sub-directories. 
+CDG files must have an mp3 file with an exact matching file name. They can also be bundled together in a single zip file, but the filenames in the zip must still match. They must also be placed in the root of the download directory and not stashed away in sub-directories. 
 
 If you only hear audio, you may be running the `--use-omxplayer` option. Omxplayer does not support cdg.
 
@@ -374,4 +341,4 @@ You might be able to just drag the windows to the target screen (press 'f' to to
 ### How to refresh Google translation?
 Pip install py-googletrans: `pip install googletrans==3.1.0a0`
 
-You must manually edit lang/en_US and lang/zh_CN, and let the system generate Google translation for the rest.
+You must manually edit `lang/en_US` and `lang/zh_CN`, and then run `./translate-all.sh -c` to re-generate Google translations for the rest. If you just want to add a new language from Google translate, omit the `-c` option.

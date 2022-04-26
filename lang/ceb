@@ -33,7 +33,7 @@ Pag-update sa youtube-dl! Kinahanglan nga usa o duha ka minuto ...
 Wala kay permiso sa pag-update sa youtube-dl
 Wala kay permiso sa pagsira
 Pag-undang sa PiKaraoke karon!
-Wala kay permiso nga muundang
+Wala kay permiso nga moundang
 Pagsira sa sistema karon!
 Wala kay permiso sa pagsira
 I-reboot ang sistema karon!
@@ -174,7 +174,7 @@ Pag-reboot nga Sistema
 Sistema sa pagsira
 Ang uban
 Pagpalapad sa Raspberry Pi filesystem
-Kung imong gi-install ang pre-built nga pikaraoke pi nga imahe ug ang imong SD card mas dako pa sa 4GB, mahimo nimong palapdan ang filesystem aron magamit ang nahabilin nga wanang. Kausa ra nimo kini buhaton. Kini mag-reboot sa sistema.
+Kung imong gi-install ang pre-built nga pikaraoke pi nga imahe ug ang imong SD card mas dako pa sa 4GB, mahimo nimong palapdan ang filesystem aron magamit ang nahabilin nga wanang. Kausa ra nimo kinahanglan buhaton. Kini mag-reboot sa sistema.
 I-disable ang admin mode
 I-enable ang admin mode
 log out
@@ -191,3 +191,5 @@ Napakyas ang pag-download!
 Kanta gidugang sa pila!
 Napakyas sa pagpila sa kanta!
 Impormasyon ug Mga Setting sa Sistema
+Pag-normalize sa Volume
+Ang lainlaing mga kanta kasagaran adunay lainlaing volume. Ang pagpagana sa pag-normalize sa volume modagan una og <i>ffmpeg</i> aron makwenta ang tibuok kalibutan nga volume sa usa ka kanta ug awtomatik nga i-adjust ang volume sa player aron ang matag kanta parehas og kusog.

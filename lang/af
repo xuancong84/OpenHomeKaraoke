@@ -190,4 +190,6 @@ Aflaai suksesvol voltooi!
 Aflaai het misluk!
 Liedjie is by die tou gevoeg!
 Kon nie die liedjie in tou stel nie!
-Stelselinligting en -instellings
+Stelselinligting en instellings
+Volume Normalisering
+Verskillende liedjies het dikwels verskillende volume. Aktivering van volumenormalisering sal eers <i>ffmpeg</i> laat loop om die globale volume van 'n liedjie te bereken en spelervolume outomaties aan te pas sodat elke liedjie ewe hard klink.

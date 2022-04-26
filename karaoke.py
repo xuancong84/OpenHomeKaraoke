@@ -4,6 +4,9 @@ import multiprocessing as mp
 import shutil, psutil
 from subprocess import check_output
 from collections import *
+
+import numpy as np
+
 from constants import media_types
 
 import pygame
@@ -14,6 +17,8 @@ from unidecode import unidecode
 from lib import omxclient, vlcclient
 from lib.get_platform import get_platform
 from app import getString
+
+STD_VOL = 65536/8/np.sqrt(2)
 
 if get_platform() != "windows":
 	from signal import SIGALRM, alarm, signal
@@ -52,6 +57,7 @@ class Karaoke:
 	volume_offset = 0
 	loop_interval = 500  # in milliseconds
 	default_logo_path = os.path.join(base_path, "logo.png")
+	logical_volume = None   # for normalized volume
 
 	def __init__(
 			self,
@@ -76,6 +82,7 @@ class Karaoke:
 			logo_path = None,
 			show_overlay = False,
 			run_vocal = False,
+			normalize_vol = False,
 			window_mode = False
 	):
 
@@ -100,6 +107,7 @@ class Karaoke:
 		self.logo_path = self.default_logo_path if logo_path == None else logo_path
 		self.show_overlay = show_overlay
 		self.run_vocal = run_vocal
+		self.normalize_vol = normalize_vol
 
 		# other initializations
 		self.platform = get_platform()
@@ -624,25 +632,33 @@ class Karaoke:
 
 	def play_file(self, file_path, extra_params = []):
 		if self.use_vlc:
+			extra_params1 = []
 			logging.info("Playing video in VLC: " + file_path)
 			if self.platform != 'osx':
-				extra_params += ['--drawable-hwnd' if self.platform=='windows' else '--drawable-xid',
-								 hex(pygame.display.get_wm_info()['window'])]
+				extra_params1 += ['--drawable-hwnd' if self.platform == 'windows' else '--drawable-xid',
+				                  hex(pygame.display.get_wm_info()['window'])]
+			self.now_playing_slave = self.try_set_vocal_mode(self.vocal_mode, file_path)
 			if os.path.isfile(self.now_playing_slave):
-				extra_params += [f'--input-slave={self.now_playing_slave}', '--audio-track=1']
+				extra_params1 += [f'--input-slave={self.now_playing_slave}', '--audio-track=1']
 			if self.audio_delay:
-				extra_params += [f'--audio-desync={self.audio_delay * 1000}']
+				extra_params1 += [f'--audio-desync={self.audio_delay * 1000}']
 			if self.subtitle_delay:
-				extra_params += [f'--sub-delay={self.subtitle_delay * 10}']
+				extra_params1 += [f'--sub-delay={self.subtitle_delay * 10}']
 			self.now_playing = self.filename_from_path(file_path)
 			self.now_playing_filename = file_path
-			self.is_paused = ('--start-paused' in extra_params)
+			self.is_paused = ('--start-paused' in extra_params1)
+			if self.normalize_vol and self.logical_volume is not None:
+				self.volume = self.logical_volume / self.compute_volume(file_path)
 			if self.now_playing_transpose == 0:
-				xml = self.vlcclient.play_file(file_path, self.volume, extra_params)
+				xml = self.vlcclient.play_file(file_path, self.volume, extra_params + extra_params1)
 			else:
-				xml = self.vlcclient.play_file_transpose(file_path, self.now_playing_transpose, self.volume, extra_params)
+				xml = self.vlcclient.play_file_transpose(file_path, self.now_playing_transpose, self.volume, extra_params + extra_params1)
 			self.has_subtitle = "<info name='Type'>Subtitle</info>" in xml
 			self.has_video = "<info name='Type'>Video</info>" in xml
+			self.volume = round(float(self.vlcclient.get_val_xml(xml, 'volume')))
+			if self.normalize_vol:
+				self.media_vol = self.compute_volume(self.now_playing_filename)
+				self.logical_volume = self.volume * self.media_vol
 		else:
 			logging.info("Playing video in omxplayer: " + file_path)
 			self.omxclient.play_file(file_path)
@@ -665,9 +681,9 @@ class Karaoke:
 		client = self.vlcclient if self.use_vlc else self.omxclient
 		if client is not None and client.is_running():
 			return True
-		else:
+		elif self.now_playing_filename:
 			self.now_playing = self.now_playing_filename = None
-			return False
+		return False
 
 	def is_song_in_queue(self, song_path):
 		return song_path in map(lambda t: t['file'], self.queue)
@@ -862,6 +878,7 @@ class Karaoke:
 				self.volume = int(self.vlcclient.get_val_xml(xml, 'volume'))
 			else:
 				self.volume = self.omxclient.vol_up()
+			self.update_logical_vol()
 			return self.volume
 		else:
 			logging.warning("Tried to volume up, but no file is playing!")
@@ -875,6 +892,7 @@ class Karaoke:
 				self.volume = int(self.vlcclient.get_val_xml(xml, 'volume'))
 			else:
 				self.volume = self.omxclient.vol_down()
+			self.update_logical_vol()
 			return self.volume
 		else:
 			logging.warning("Tried to volume down, but no file is playing!")
@@ -889,6 +907,7 @@ class Karaoke:
 			else:
 				logging.warning("Only VLC player can set volume, ignored!")
 				self.volume = self.omxclient.volume_offset
+			self.update_logical_vol()
 			return self.volume
 		else:
 			logging.warning("Tried to set volume, but no file is playing!")
@@ -915,9 +934,8 @@ class Karaoke:
 			status_xml = self.vlcclient.command().text if self.is_paused else self.vlcclient.pause(False).text
 			info = self.vlcclient.get_info_xml(status_xml)
 			posi = info['position']*info['length']
-			self.now_playing_slave = play_slave
-			self.get_vocal_info(True)
 			self.play_file(self.now_playing_filename, [f'--start-time={posi}'] + (['--start-paused'] if self.is_paused else []))
+			self.get_vocal_info(True)
 		else:
 			logging.error("Not using VLC. Can't play vocal/nonvocal.")
 
@@ -1078,6 +1096,25 @@ class Karaoke:
 			else:
 				os.system(f"tmux send-keys -t PiKaraoke:0.4 C-c")
 
+	def compute_volume(self, filename):
+		try:
+			pcm_data = subprocess.check_output(['ffmpeg', '-i', filename, '-vn', '-f', 's16le', '-acodec', 'pcm_s16le', '-'], stderr = subprocess.DEVNULL)
+			return np.clip(np.sqrt(np.std(np.frombuffer(pcm_data, dtype = np.int16))/STD_VOL), 0.1, 10)
+		except:
+			return 1
+
+	def update_logical_vol(self):
+		if hasattr(self, 'media_vol'):
+			self.logical_volume = self.volume * self.media_vol
+
+	def enable_vol_norm(self, enable):
+		self.normalize_vol = enable
+		if enable and self.now_playing_filename:
+			self.volume = self.vlcclient.get_info_xml()['volume']
+			self.media_vol = self.compute_volume(self.now_playing_filename)
+			self.update_logical_vol()
+		return str(self.logical_volume)
+
 	def run(self):
 		logging.info("Starting PiKaraoke!")
 		self.running = True
@@ -1101,8 +1138,6 @@ class Karaoke:
 							self.handle_run_loop()
 							i += self.loop_interval
 						head = self.queue.pop(0)
-						if self.vocal_mode != 'mixed':
-							self.now_playing_slave = self.try_set_vocal_mode(self.vocal_mode, head['file'])
 						self.play_file(head['file'])
 						if not self.firstSongStarted:
 							if self.streamer_alive():

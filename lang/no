@@ -45,7 +45,7 @@ Youtube-dl-sti ble ikke funnet!
 VLC-bane ikke funnet!
 omxplayer-banen ble ikke funnet!
 Oppretter nedlastingsbane:
-Wifi/nettverk er ikke tilkoblet. Slår av om 10...
+Wifi/nettverk ikke tilkoblet. Slår av om 10...
 For å velge sanger, skann QR eller koble til
 For TV-visning, koble til
 Trykk F for å bytte fullskjerm
@@ -191,3 +191,5 @@ Nedlasting mislyktes!
 Sang lagt til i køen!
 Kunne ikke sette sangen i kø!
 Systeminfo og innstillinger
+Volumnormalisering
+Ulike sanger har ofte ulikt volum. Aktivering av volumnormalisering vil først kjøre <i>ffmpeg</i> for å beregne det globale volumet til en sang og automatisk justere spillervolumet slik at hver sang høres like høyt ut.

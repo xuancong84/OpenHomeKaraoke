@@ -186,8 +186,10 @@ Silakan pilih bahasa
 Bahasa Sistem
 Bahasa sistem saat ini:
 Ini mengubah bahasa sistem backend PiKaraoke yang ditampilkan ke layar TV; Selain itu, setiap pengguna yang terhubung juga dapat mengubah bahasa UI Web masing-masing di tombol globe di menu kanan atas.
-Unduhan selesai dengan sukses!
+Unduhan berhasil diselesaikan!
 Unduhan gagal!
 Lagu ditambahkan ke antrean!
 Gagal mengantrekan lagu!
 Info & Pengaturan Sistem
+Normalisasi Volume
+Lagu yang berbeda seringkali memiliki volume yang berbeda. Mengaktifkan normalisasi volume pertama-tama akan menjalankan <i>ffmpeg</i> untuk menghitung volume global sebuah lagu dan secara otomatis menyesuaikan volume pemutar sehingga setiap lagu terdengar sama kerasnya.

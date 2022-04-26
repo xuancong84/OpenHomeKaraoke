@@ -37,7 +37,7 @@ Sinulla ei ole lupaa lopettaa
 Sulje järjestelmä nyt!
 Sinulla ei ole lupaa sulkea
 Järjestelmä käynnistetään uudelleen nyt!
-Sinulla ei ole lupaa käynnistää uudelleen
+Sinulla ei ole oikeutta käynnistää uudelleen
 Laajenna tiedostojärjestelmää ja käynnistä järjestelmä uudelleen nyt!
 Fs:ää ei voi laajentaa muissa kuin Raspberry pi -laitteissa!
 Sinulla ei ole oikeutta muuttaa tiedostojärjestelmän kokoa
@@ -138,7 +138,7 @@ Oletko varma, että haluat lopettaa?
 Haluatko varmasti sulkea?
 Oletko varma, että haluat käynnistää uudelleen?
 Haluatko varmasti päivittää Youtube-dl:n juuri nyt? Nykyiset ja odottavat lataukset voivat epäonnistua.
-Haluatko varmasti laajentaa tiedostojärjestelmää? Tämä käynnistää Raspberry pi uudelleen.
+Haluatko varmasti laajentaa tiedostojärjestelmää? Tämä käynnistää Raspberry pi -laitteen uudelleen.
 Tiedot
 Kätevä URL-QR-koodi jaettavaksi kaverin kanssa:
 OS
@@ -172,7 +172,7 @@ Sammuttaa
 Lopeta PiKaraoke
 Käynnistä kone uudelleen
 Sammutusjärjestelmä
-muu
+Muut
 Laajenna Raspberry Pi -tiedostojärjestelmää
 Jos asensit juuri valmiiksi rakennetun pikaraoke pi -kuvan ja SD-korttisi on suurempi kuin 4 Gt, saatat haluta laajentaa tiedostojärjestelmää hyödyntääksesi jäljellä olevan tilan. Sinun tarvitsee tehdä tämä vain kerran. Tämä käynnistää järjestelmän uudelleen.
 Poista järjestelmänvalvojatila käytöstä
@@ -191,3 +191,5 @@ Lataus epäonnistui!
 Kappale lisätty jonoon!
 Kappaleen asettaminen jonoon epäonnistui!
 Järjestelmätiedot ja asetukset
+Äänenvoimakkuuden normalisointi
+Eri kappaleilla on usein eri äänenvoimakkuus. Äänenvoimakkuuden normalisoinnin ottaminen käyttöön suorittaa ensin <i>ffmpeg</i>-komennon, joka laskee kappaleen yleisen äänenvoimakkuuden ja säätää automaattisesti soittimen äänenvoimakkuutta niin, että jokainen kappale kuulostaa yhtä kovalta.

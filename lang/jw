@@ -100,7 +100,7 @@ Diurut miturut 'Tanggal'
 Diurut miturut 'Alphabetical'
 tembang
 nampilake <b>{start} - {end}</b> {record_name}, total <b>{total}</b> {record_name}
-ketemu <b>{found}</b> {record_name}, nampilake <b>{start} - {end}</b> {record_name}
+ketemu <b>{temu}</b> {record_name}, nampilake <b>{start} - {end}</b> {record_name}
 Sunting lagu
 Pindhah munggah ing antrian
 Pindhah mudhun ing antrian
@@ -121,7 +121,7 @@ Kalebu pertandhingan non-karaoke
 Majeng
 Ketik lagu (judul/artis) kanggo nelusuri lagu sing kasedhiya lan klik 'Antri' kanggo ditambahake menyang antrian.
 Yen lagu ora katon ing gulung mudhun "Lagu Kasedhiya", klik 'Telusuri' kanggo nemokake ing Youtube.
-Ngundhuh langsung URL YouTube:
+Langsung download url YouTube:
 Tambah menyang antrian
 Kalebu subtitle
 Ngundhuh
@@ -191,3 +191,5 @@ Download gagal!
 Lagu ditambahake ing antrian!
 Gagal ngantri lagu!
 Info & Setelan Sistem
+Normalisasi Volume
+Lagu sing beda kerep duwe volume sing beda. Ngaktifake normalisasi volume bakal mbukak <i>ffmpeg</i> kanggo ngetung volume global lagu lan nyetel volume pamuter kanthi otomatis supaya saben lagu muni padha banter.

@@ -191,3 +191,5 @@ Lejupielāde neizdevās!
 Dziesma pievienota rindai!
 Neizdevās dziesmu ievietot rindā!
 Sistēmas informācija un iestatījumi
+Skaļuma normalizēšana
+Dažādām dziesmām bieži ir atšķirīgs skaļums. Iespējojot skaļuma normalizēšanu, vispirms tiks palaists <i>ffmpeg</i>, lai aprēķinātu dziesmas kopējo skaļumu un automātiski pielāgotu atskaņotāja skaļumu, lai katra dziesma skanētu vienlīdz skaļi.

@@ -35,7 +35,7 @@ Bạn không có quyền tắt
 Thoát PiKaraoke ngay bây giờ!
 Bạn không có quyền thoát
 Đang tắt hệ thống!
-Bạn không có quyền tắt
+Bạn không có quyền tắt máy
 Khởi động lại hệ thống ngay bây giờ!
 Bạn không có quyền khởi động lại
 Mở rộng hệ thống tập tin và hệ thống khởi động lại ngay bây giờ!
@@ -159,12 +159,12 @@ Bộ tách giọng hát (hỗ trợ cả phép trừ âm thanh nổi và dựa t
 Đồng bộ hóa lại âm thanh và video:
 Ngừng phát trực tiếp
 Khởi động lại Streamer
-Điều này chỉ ảnh hưởng đến việc chơi KTV thông qua trình duyệt web. Khởi động lại chế độ chụp và phát trực tuyến màn hình cải thiện đồng bộ hóa âm thanh / video, nó cũng làm giảm độ trễ giữa máy chủ và trình duyệt.
+Điều này chỉ ảnh hưởng đến việc chơi KTV thông qua trình duyệt web. Khởi động lại chế độ chụp và phát trực tuyến màn hình giúp cải thiện đồng bộ hóa âm thanh / video, nó cũng làm giảm độ trễ giữa máy chủ và trình duyệt.
 Làm mới danh sách bài hát:
 Quét lại thư mục bài hát
 Bạn chỉ cần thực hiện việc này nếu bạn đã sao chép thủ công các tệp vào thư mục tải xuống trong khi PiKaraoke đang chạy.
 Cập nhật
-Nếu quá trình tải xuống hoặc tìm kiếm ngừng hoạt động, việc cập nhật youtube-dl có thể sẽ khắc phục được sự cố. Phiên bản được cài đặt hiện tại là:
+Nếu quá trình tải xuống hoặc tìm kiếm ngừng hoạt động, việc cập nhật youtube-dl có thể sẽ khắc phục được sự cố. Phiên bản cài đặt hiện tại là:
 Cập nhật youtube-dl
 Liên kết cập nhật ở trên có thể không thành công nếu bạn không có quyền đối với tệp thích hợp. Kiểm tra nhật ký PiKaraoke để tìm lỗi.
 Tắt
@@ -191,3 +191,5 @@ Tải xuống không thành công!
 Bài hát đã được thêm vào hàng đợi!
 Không thể xếp hàng bài hát!
 Thông tin và cài đặt hệ thống
+Chuẩn hóa âm lượng
+Các bài hát khác nhau thường có âm lượng khác nhau. Bật chuẩn hóa âm lượng trước tiên sẽ chạy <i> ffmpeg </i> để tính âm lượng chung của bài hát và tự động điều chỉnh âm lượng trình phát sao cho mọi bài hát đều có âm lượng lớn như nhau.

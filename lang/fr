@@ -15,12 +15,12 @@ Supprimé de la file d'attente :
 Erreur lors de la suppression de la file d'attente :
 Le téléchargement a commencé :
 Une fois terminé, il sera ajouté à la file d'attente.
-Une fois terminé, il apparaîtra dans la liste "chansons disponibles".
+Une fois terminé, il apparaîtra dans la liste des "chansons disponibles".
 Erreur : Impossible de supprimer ce morceau, car il se trouve dans la file d'attente actuelle :
 Morceau supprimé :
 Erreur : Aucun paramètre de morceau spécifié !
 Erreur : Impossible de modifier ce morceau, car il est en cours de lecture :
-Édition de fichier de morceau
+Édition de fichier de chanson
 Erreur lors du renommage du fichier : '%s' en '%s'. Le nom de fichier existe déjà.
 Fichier renommé : '%s' en '%s'
 Erreur : Aucun paramètre de nom de fichier n'a été spécifié !
@@ -120,7 +120,7 @@ File d'attente
 Inclure les matchs non karaoké
 Avancé
 Tapez une chanson (titre/artiste) pour rechercher les chansons disponibles et cliquez sur "File d'attente" pour l'ajouter à la file d'attente.
-Si la chanson n'apparaît pas dans la liste déroulante « Chansons disponibles », cliquez sur « Rechercher » pour la trouver sur Youtube.
+Si la chanson n'apparaît pas dans le menu déroulant « Chansons disponibles », cliquez sur « Rechercher » pour la trouver sur Youtube.
 URL YouTube de téléchargement direct :
 Ajouter à la liste
 Inclure les sous-titres
@@ -191,3 +191,5 @@ Téléchargement terminé avec succès !
 Chanson ajoutée à la file d'attente !
 Échec de la mise en file d'attente du morceau !
 Informations et paramètres système
+Normalisation des volumes
+Différentes chansons ont souvent un volume différent. L'activation de la normalisation du volume exécutera d'abord <i>ffmpeg</i> pour calculer le volume global d'une chanson et ajustera automatiquement le volume du lecteur afin que chaque chanson sonne de la même manière.

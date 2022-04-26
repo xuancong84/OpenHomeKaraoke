@@ -52,7 +52,7 @@ Cindezela okuthi F ukuze uguqule isikrini esigcwele
 Cindezela u-ESC ukuze uyeke i-PiKaraoke
 Imodi yokusetha ye-RaspiWifiConfig itholiwe!
 Xhuma enye idivayisi/i-smartphone ku-Wifi AP: '%s'
-Bese ukhomba isiphequluli sayo ku-: '%s://%s%s' bese ulandela imiyalelo.
+Bese ukhomba isiphequluli sayo kokuthi: '%s://%s%s' bese ulandela imiyalelo.
 Okulandelayo:
 Kwengezwe ngu:
 Okudlalayo manje:
@@ -191,3 +191,5 @@ Ukulanda kuhlulekile!
 Ingoma yengezwe kulayini!
 Yehlulekile ukufaka umugqa ingoma!
 Ulwazi Lwesistimu & Izilungiselelo
+Ukwenziwa Kwevolumu
+Izingoma ezihlukene zivame ukuba nevolumu ehlukene. Ukunika amandla ukwenziwa kwevolumu evamile kuzoqala kuqalise i-<i>ffmpeg</i> ukuze kubalwe ivolumu yomhlaba wonke yengoma futhi kulungise ngokuzenzakalelayo ivolumu yesidlali ukuze ingoma ngayinye izwakale phezulu ngokulinganayo.

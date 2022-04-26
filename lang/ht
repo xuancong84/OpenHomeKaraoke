@@ -134,7 +134,7 @@ Chante ki disponib
 Itilizatè aktyèl la
 Anviwònman
 PiKaraoke
-Èske w sèten ou vle kite fimen?
+Èske ou sèten ou vle kite fimen?
 Èske ou sèten ou vle fèmen?
 Èske w sèten ou vle rdemare?
 Èske w sèten ou vle mete ajou Youtube-dl kounye a? Aktyèl ak annatant telechajman yo ka echwe.
@@ -191,3 +191,5 @@ Telechajman echwe!
 Chante te ajoute nan keu la!
 Echwe pou keu chante a!
 Enfòmasyon ak Anviwònman Sistèm
+Nòmalizasyon Volim
+Chante diferan souvan gen volim diferan. Pèmèt nòmalizasyon volim pral premye kouri <i>ffmpeg</i> pou kalkile volim mondyal yon chante epi otomatikman ajiste volim jwè pou chak chante son egalman fò.

@@ -135,7 +135,7 @@ Praegune kasutaja
 Seaded
 PiKaraoke
 Kas olete kindel, et soovite lõpetada?
-Kas olete kindel, et soovite välja lülitada?
+Kas soovite kindlasti sulgeda?
 Kas olete kindel, et soovite taaskäivitada?
 Kas olete kindel, et soovite kohe Youtube-dl-i värskendada? Praegused ja ootel allalaadimised võivad ebaõnnestuda.
 Kas soovite kindlasti failisüsteemi laiendada? See taaskäivitab teie Raspberry pi.
@@ -191,3 +191,5 @@ Allalaadimine ebaõnnestus!
 Laul lisati järjekorda!
 Laulu järjekorda seadmine ebaõnnestus!
 Süsteemi teave ja sätted
+Helitugevuse normaliseerimine
+Erinevatel lauludel on sageli erinev helitugevus. Helitugevuse normaliseerimise lubamisel käivitatakse esmalt <i>ffmpeg</i>, mis arvutab loo globaalse helitugevuse ja reguleerib automaatselt pleieri helitugevust, nii et iga lugu kõlaks võrdselt.

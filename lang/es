@@ -51,7 +51,7 @@ Para la visualización de TV, conéctese a
 Presione F para alternar pantalla completa
 Presione ESC para salir de PiKaraoke
 ¡Modo de configuración de RaspiWifiConfig detectado!
-Conectar otro dispositivo/smartphone al Wifi AP: '%s'
+Conecte otro dispositivo/smartphone al punto de acceso Wifi: '%s'
 Luego apunte su navegador a: '%s://%s%s' y siga las instrucciones.
 Hasta la próxima:
 Añadido por:
@@ -191,3 +191,5 @@ Esto cambia el idioma del sistema backend de PiKaraoke que se muestra en la pant
 ¡Canción añadida a la cola!
 ¡Error al poner en cola la canción!
 Información y configuración del sistema
+Normalización de volumen
+Diferentes canciones a menudo tienen un volumen diferente. Al habilitar la normalización del volumen, primero se ejecutará <i>ffmpeg</i> para calcular el volumen global de una canción y ajustará automáticamente el volumen del reproductor para que cada canción suene igual de fuerte.

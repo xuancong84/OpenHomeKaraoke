@@ -140,7 +140,7 @@ Yenidən yükləmək istədiyinizə əminsiniz?
 Youtube-dl-ni indi yeniləmək istədiyinizə əminsiniz? Cari və gözlənilən endirmələr uğursuz ola bilər.
 Fayl sistemini genişləndirmək istədiyinizə əminsiniz? Bu, moruq pi-ni yenidən işə salacaq.
 Məlumat
-Dostunuzla paylaşmaq üçün lazımlı URL QR kodu:
+Dostunuzla bölüşmək üçün lazımlı URL QR kodu:
 ƏS
 Disk İstifadəsi
 Yaddaş
@@ -191,3 +191,5 @@ Endirmə alınmadı!
 Mahnı növbəyə əlavə edildi!
 Mahnını növbəyə qoymaq alınmadı!
 Sistem Məlumatı və Parametrlər
+Həcmi Normallaşdırma
+Fərqli mahnılar çox vaxt fərqli həcmə malikdir. Səs səviyyəsinin normallaşdırılmasının aktivləşdirilməsi əvvəlcə mahnının qlobal həcmini hesablamaq üçün <i>ffmpeg</i>-i işə salacaq və hər mahnının eyni dərəcədə yüksək səslənməsi üçün pleyerin səsini avtomatik tənzimləyəcək.

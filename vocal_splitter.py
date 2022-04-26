@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import os, sys, time, shutil
-import argparse, requests
+import argparse, requests, subprocess
 
 import numpy as np
 import soundfile as sf
@@ -108,13 +108,13 @@ class Separator(object):
 
 def ffm_wav2m4a(input_fn, output_fn, br = '128k'):
 	input_fn, output_fn = [fn.replace('"', '\\"') for fn in [input_fn, output_fn]]
-	os.system(f'ffmpeg -y -i "{input_fn}" -c:a aac -b:a {br} "{output_fn}"')
+	subprocess.run(['ffmpeg', '-y', '-i', input_fn, '-c:a', 'aac', '-b:a', br, output_fn])
 
 
 def ffm_video2wav(input_fn, output_fn):
 	# The built-in DNN model is trained on 44100 sampling rate, it can still run but does not work on other sampling rates
 	input_fn, output_fn = [fn.replace('"', '\\"') for fn in [input_fn, output_fn]]
-	os.system(f'ffmpeg -y -i "{input_fn}" -f wav -ar 44100 "{output_fn}"')
+	subprocess.run(['ffmpeg', '-y', '-i', input_fn, '-f', 'wav', '-ar', '44100', output_fn])
 
 
 def split_vocal_by_stereo(in_wav, out_wav_nonvocal, out_wav_vocal):

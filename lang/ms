@@ -191,3 +191,5 @@ Muat turun gagal!
 Lagu ditambahkan pada baris gilir!
 Gagal untuk beratur lagu!
 Maklumat & Tetapan Sistem
+Normalisasi Kelantangan
+Lagu yang berbeza selalunya mempunyai volum yang berbeza. Mendayakan penormalan volum akan dijalankan dahulu <i>ffmpeg</i> untuk mengira volum global lagu dan melaraskan volum pemain secara automatik supaya setiap lagu berbunyi sama kuat.

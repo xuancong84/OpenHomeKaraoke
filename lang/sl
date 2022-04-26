@@ -89,7 +89,7 @@ Zmanjšajte zakasnitev zvoka
 Nastavite zakasnitev zvoka
 Povečaj zakasnitev zvoka
  poltoni
-Prosimo vnesite svoje ime. To se bo prikazalo poleg skladb, ki jih postavite v čakalno vrsto iz te naprave.
+Prosimo, vnesite svoje ime. To se bo prikazalo poleg skladb, ki jih postavite v čakalno vrsto iz te naprave.
 Pesem dodana v čakalno vrsto:
 Pesem je že v vrsti:
 Razvrsti po datumu
@@ -191,3 +191,5 @@ Prenos ni uspel!
 Pesem dodana v čakalno vrsto!
 Skladbe ni bilo mogoče postaviti v čakalno vrsto!
 Informacije o sistemu in nastavitve
+Normalizacija glasnosti
+Različne pesmi imajo pogosto različno glasnost. Če omogočite normalizacijo glasnosti, bo najprej zagnal <i>ffmpeg</i>, da bi izračunal globalno glasnost skladbe in samodejno prilagodil glasnost predvajalnika, tako da bo vsaka skladba zvenela enako glasno.

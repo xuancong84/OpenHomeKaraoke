@@ -94,7 +94,7 @@ Daina įtraukta į eilę:
 Daina jau eilėje:
 Rūšiuoti pagal datą
 Rūšiuoti pagal abėcėlę
-Įtraukite „%s“ į eilę
+Pridėti „%s“ į eilę
 Naršyti
 Rūšiuota pagal datą
 Rūšiuota pagal "abėcėlę"
@@ -191,3 +191,5 @@ Atsisiuntimas nepavyko!
 Daina įtraukta į eilę!
 Nepavyko įrašyti dainos eilės!
 Sistemos informacija ir nustatymai
+Garso normalizavimas
+Įvairių dainų garsumas dažnai skiriasi. Įgalinus garsumo normalizavimą pirmiausia bus paleista <i>ffmpeg</i>, kad būtų apskaičiuotas bendras dainos garsumas ir automatiškai sureguliuotas grotuvo garsumas, kad kiekviena daina skambėtų vienodai garsiai.

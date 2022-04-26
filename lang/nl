@@ -5,7 +5,7 @@ Uitgelogd uit de beheerdersmodus!
 Liedjes opraken!
 De wachtrij gewist!
 Fout bij verplaatsen item in wachtrij: ongeldig argument
-Item in wachtrij verplaatst:
+Het item is met succes naar de wachtrij verplaatst:
 Fout bij verplaatsen item in wachtrij:
 Naar beneden verplaatst in wachtrij:
 Fout bij het naar beneden gaan in de wachtrij:
@@ -191,3 +191,5 @@ Download mislukt!
 Nummer toegevoegd aan de wachtrij!
 Kan het nummer niet in de wachtrij plaatsen!
 Systeeminfo & Instellingen
+Volume normalisatie
+Verschillende nummers hebben vaak een ander volume. Als u volumenormalisatie inschakelt, wordt eerst <i>ffmpeg</i> uitgevoerd om het globale volume van een nummer te berekenen en automatisch het spelervolume aan te passen zodat elk nummer even hard klinkt.

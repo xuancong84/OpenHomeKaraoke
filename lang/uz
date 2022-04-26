@@ -36,11 +36,11 @@ PiKaraoke-ni hozir tark eting!
 Chiqish uchun ruxsatingiz yo‘q
 Tizim hozir o'chirilmoqda!
 Oʻchirish uchun ruxsatingiz yoʻq
-Endi tizim qayta ishga tushirilmoqda!
+Tizim hozir qayta ishga tushirilmoqda!
 Qayta ishga tushirishga ruxsatingiz yo'q
 Fayl tizimini kengaytirish va tizimni hozir qayta ishga tushirish!
 Raspberry pi qurilmalarida fsni kengaytirib bo'lmaydi!
-Sizda fayl tizimining oʻlchamini oʻzgartirishga ruxsatingiz yoʻq
+Fayl tizimining oʻlchamini oʻzgartirishga ruxsatingiz yoʻq
 Youtube-dl yo'li topilmadi!
 VLC yo'li topilmadi!
 omxplayer yo'li topilmadi!
@@ -191,3 +191,5 @@ Yuklab olinmadi!
 Qo'shiq navbatga qo'shildi!
 Qo‘shiqni navbatga qo‘yib bo‘lmadi!
 Tizim ma'lumotlari va sozlamalari
+Ovozni normallashtirish
+Turli xil qo'shiqlar ko'pincha har xil hajmga ega. Ovoz balandligini normallashtirishni yoqish birinchi navbatda qo'shiqning global hajmini hisoblash uchun <i>ffmpeg</i>ni ishga tushiradi va har bir qo'shiq bir xil darajada baland bo'lishi uchun o'yinchi ovozini avtomatik ravishda sozlaydi.

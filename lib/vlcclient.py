@@ -139,7 +139,18 @@ class VLCClient:
 			if self.platform == "windows":
 				file_path = r"{}".format(file_path.replace('/', '\\'))
 			command = self.cmd_base + params + [file_path]
-			logging.debug("VLC Command: %s" % command)
+			logging.info("VLC Command: %s" % command)
+			
+			#DEBUG
+			aa = [c for c in command if c.startswith('--input-slave')]
+			if len(aa)>1:
+				aa=5
+			elif aa:
+				aa = aa[0]
+				slave_bn = os.path.basename(aa.split('=', 1)[1]).replace('.m4a', '')
+				media_bn = os.path.basename(command[-1])
+				if slave_bn != media_bn:
+					aa = 5
 
 			self.process = subprocess.Popen(command, shell = (self.platform == "windows"), stdin = subprocess.PIPE)
 
@@ -149,18 +160,19 @@ class VLCClient:
 
 			# wait for VLC HTTP is ready
 			while True:
+				time.sleep(0.1)
 				req = self.command("", False)
 				xml = req.text
 				if not self.K.is_paused and self.get_val_xml(xml, 'state') == 'stopped':
 					pass
 				elif req.status_code == 200:
 					break
-				time.sleep(0.1)
 
 			# workaround --volume-save not working in Windows
 			okay = False
 			while volume and not okay:
 				try:
+					volume = round(volume)
 					xml = self.command(f"volume&val={volume}", False).text
 					if int(self.get_val_xml(xml, 'volume')) == volume:
 						okay = True
@@ -218,10 +230,13 @@ class VLCClient:
 				return SimpleNamespace(**{'text': self.last_status_text, 'status_code': request.status_code})
 			if save_status:
 				self.last_status_text = request.text
+				self.K.has_video = "<info name='Type'>Video</info>" in request.text
 			if not self.K.now_playing:
 				# by right, here should never be reached
 				request.encoding = 'utf-8'
 				self.K.now_playing_filename = unescape(unescape(self.get_val_xml(request.text, "info name='filename'")))
+				if not os.path.isfile(self.K.now_playing_filename):
+					self.K.now_playing_filename = self.K.download_path + self.K.now_playing_filename
 				self.K.now_playing = self.K.filename_from_path(self.K.now_playing_filename)
 			return request
 		except:
