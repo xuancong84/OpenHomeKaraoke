@@ -91,7 +91,7 @@ Ses Gecikmesini Artır
  yarı tonlar
 Lütfen adınızı giriniz. Bu, bu cihazdan sıraya aldığınız şarkıların yanında görünecektir.
 Sıraya eklenen şarkı:
-Şarkı zaten sıra:
+Şarkı zaten sırada:
 Tarihe göre sırala
 Alfabetik Sırala
 Kuyruğa '%s' ekleyin
@@ -193,3 +193,5 @@ Yükleme başarısız!
 Sistem Bilgisi ve Ayarlar
 Hacim Normalleştirme
 Farklı şarkılar genellikle farklı ses seviyesine sahiptir. Ses düzeyi normalleştirmeyi etkinleştirmek, önce bir şarkının genel ses düzeyini hesaplamak için <i>ffmpeg</i> çalıştırır ve oynatıcı ses düzeyini her şarkının eşit derecede yüksek ses çıkarması için otomatik olarak ayarlar.
+Şarkı kitaplığı indirme yolu
+Toplam şarkı sayısı

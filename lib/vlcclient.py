@@ -9,6 +9,10 @@ from types import SimpleNamespace
 from html import unescape
 
 def get_default_vlc_path(platform):
+	shutil_path = shutil.which('cvlc') or shutil.which('vlc')
+	if shutil_path:
+		return shutil_path
+
 	if platform == "osx":
 		return "/Applications/VLC.app/Contents/MacOS/VLC"
 	elif platform == "windows":
@@ -18,7 +22,7 @@ def get_default_vlc_path(platform):
 		else:
 			return r"C:\Program Files\VideoLAN\VLC\vlc.exe"
 	else:
-		return shutil.which('cvlc') or shutil.which('vlc')
+		return 'vlc'
 
 
 class VLCClient:
@@ -140,17 +144,6 @@ class VLCClient:
 				file_path = r"{}".format(file_path.replace('/', '\\'))
 			command = self.cmd_base + params + [file_path]
 			logging.info("VLC Command: %s" % command)
-			
-			#DEBUG
-			aa = [c for c in command if c.startswith('--input-slave')]
-			if len(aa)>1:
-				aa=5
-			elif aa:
-				aa = aa[0]
-				slave_bn = os.path.basename(aa.split('=', 1)[1]).replace('.m4a', '')
-				media_bn = os.path.basename(command[-1])
-				if slave_bn != media_bn:
-					aa = 5
 
 			self.process = subprocess.Popen(command, shell = (self.platform == "windows"), stdin = subprocess.PIPE)
 
@@ -186,6 +179,7 @@ class VLCClient:
 
 		except Exception as e:
 			logging.error("Playing file failed: " + str(e))
+			self.is_transposing = False
 
 	def play_file_transpose(self, file_path, semitones, volume, extra_params = []):
 		# --speex-resampler-quality=<integer [0 .. 10]>

@@ -91,7 +91,7 @@ Increase Audio Delay
  semitones
 Please enter your name. This will show up next to the songs you queue up from this device.
 Song added to the queue: 
-Song already the queue: 
+Song already in the queue: 
 Sort by Date
 Sort by Alphabetical
 Add '%s' to the queue
@@ -193,3 +193,5 @@ Failed to queue the song!
 System Info & Settings
 Volume Normalization
 Different songs often have different volume. Enabling volume normalization will first run <i>ffmpeg</i> to compute the global volume of a song and automatically adjust player volume so that every song sounds equally loud.
+Song library download path
+Total number of songs

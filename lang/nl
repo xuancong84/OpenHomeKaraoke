@@ -91,7 +91,7 @@ Audiovertraging verhogen
  halve tonen
 Voer uw naam in. Dit wordt weergegeven naast de nummers die u in de wachtrij plaatst vanaf dit apparaat.
 Nummer toegevoegd aan de wachtrij:
-Lied al in de wachtrij:
+Nummer al in de wachtrij:
 Sorteren op datum
 Sorteer op alfabetisch
 Voeg '%s' toe aan de wachtrij
@@ -193,3 +193,5 @@ Kan het nummer niet in de wachtrij plaatsen!
 Systeeminfo & Instellingen
 Volume normalisatie
 Verschillende nummers hebben vaak een ander volume. Als u volumenormalisatie inschakelt, wordt eerst <i>ffmpeg</i> uitgevoerd om het globale volume van een nummer te berekenen en automatisch het spelervolume aan te passen zodat elk nummer even hard klinkt.
+Downloadpad voor songbibliotheek
+Totaal aantal nummers

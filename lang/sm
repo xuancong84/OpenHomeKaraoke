@@ -52,14 +52,14 @@ Oomi le F e sui ai le mata atoa
 Oomi le ESC e tuu ai PiKaraoke
 RaspiWifiConfig setup mode ua iloa!
 Fa'afeso'ota'i se isi masini/telefoni atamai i le Wifi AP: '%s'
-Ona tusi lea o lana su'esu'ega i: '%s://%s%s' ma mulimuli i faatonuga.
+Ona tusi lea o lana su'esu'e ile: '%s://%s%s' ma mulimuli i faatonuga.
 O lo'o soso'o mai:
 Faaopoopo e:
 Ta'alo nei:
 Fa'atagaina le fa'atonuga!
 O le fa'atuputeleina o le tuai o leo e maua ai le tele o le taimi e te faitau ai upu a'o le'i usuina le isi fuaiupu.
 O le fa'aitiitia o le tuai o ulutala e maua ai le tele o le taimi e te faitau ai fa'aupu a'o le'i usuina le isi fuaiupu.
-O le semitone e lauiloa foi o le afa-laasaga. O le va'aiga la'ititi lea e fa'aaogaina i musika masani i Sisifo, e tutusa ma le sefululua o le octave po'o le afa leo.
+O le semitone e lauiloa foi o le afa-laasaga. O le va itiiti lea e fa'aaogaina i musika fa'apapalagi fa'apapalagi, e tutusa ma le sefululua o le octave po'o le afa leo.
 DNN-faavae leo vaeluaga ua mafai. E fa'aaoga e PiKaraoke le PyTorch (e le Facebook) e fa'atautaia ai se feso'ota'iga neural loloto e vaelua ai meafaifa'aili ma leo leo i ala ta'itasi ma fa'atupuina ai le leo fa'alogo.
 Pulea ta'aalo
 Musika
@@ -91,7 +91,7 @@ Fa'atele le tuai o leo
  semitones
 Fa'amolemole tu'u lou igoa. O le a fa'aalia i tafatafa o pese e te tu'u mai i lenei masini.
 Pese faaopoopo i le laina:
-Pese ua i le laina:
+Pese ua uma ona iai i le laina:
 Fa'avasega ile Aso
 Fa'avasega ile Alafapeta
 Fa'aopoopo le '%s' ile laina
@@ -99,7 +99,7 @@ Su'esu'e
 Fa'avasega i le 'Aso'
 Fa'avasega ile 'Alphabetical'
 pese
-fa'aali <b>{amata} - {end}</b> {record_name}, atoa <b>{total}</b> {record_name}
+fa'aalia <b>{amata} - {end}</b> {record_name}, atoa <b>{total}</b> {record_name}
 maua <b>{found}</b> {record_name}, fa'aalia <b>{start} - {end}</b> {record_name}
 Fa'atonu pese
 Alu i luga i le laina
@@ -113,14 +113,14 @@ Tuli
 Aveese
 Pese avanoa i le faletusi
 Faaopoopo le pese i le laina:
-Ua i ai le pese i le laina:
+Ua uma ona iai le pese i le laina:
 Su'e / Fa'aopoopo Fou
 Su'e
 Tuli
 Fa'aaofia afitusi e le o karaoke
 Maualuluga
 Tusi se pese (igoa/tusiata) e su'e ai pese o lo'o avanoa ma kiliki 'Queue' e fa'aopoopo i le laina.
-Afai e le o aliali mai le pese i le "Available Songs", kiliki 'Search' e su'e ai ile Youtube.
+Afai e le o aliali mai le pese i le "Available Songs" dropdown, kiliki 'Search' e su'e ai ile Youtube.
 La'u sa'o mai YouTube url:
 Faaopoopo i le laina
 Fa'aaofia ai ulutala
@@ -193,3 +193,5 @@ Ua le mafai ona tu'u le pese!
 Fa'amatalaga Faiga & Fa'atonu
 Volume Normalization
 O pese eseese e masani ona eseese leo. O le fa'aagaoioiga o le fa'avasegaina o le leo o le a muamua lava <i>ffmpeg</i>e fa'atatau le leo o le pese i le lalolagi atoa ma otometi ona fetu'una'i le leo o le ta'alo ina ia tutusa le leo o pese uma.
+Ala e la'u mai ai le faletusi pese
+Aofa'i o pese

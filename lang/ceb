@@ -16,7 +16,7 @@ Sayop sa pagtangtang sa pila:
 Nagsugod ang pag-download:
 Kung makompleto, idugang kini sa pila.
 Kung nahuman na, makita kini sa lista nga "magamit nga mga kanta".
-Sayop: Dili mapapas kini nga kanta tungod kay anaa kini sa kasamtangang pila:
+Sayop: Dili matangtang kini nga kanta tungod kay naa kini sa karon nga pila:
 Gitangtang ang kanta:
 Sayop: Walay gipili nga parameter sa kanta!
 Sayop: Dili ma-edit kini nga kanta tungod kay kini gipatugtog karon:
@@ -33,7 +33,7 @@ Pag-update sa youtube-dl! Kinahanglan nga usa o duha ka minuto ...
 Wala kay permiso sa pag-update sa youtube-dl
 Wala kay permiso sa pagsira
 Pag-undang sa PiKaraoke karon!
-Wala kay permiso nga moundang
+Wala kay permiso nga muundang
 Pagsira sa sistema karon!
 Wala kay permiso sa pagsira
 I-reboot ang sistema karon!
@@ -91,7 +91,7 @@ Dugangi ang Paglangan sa Audio
  semitones
 Palihug isulod ang imong ngalan. Kini magpakita sunod sa mga kanta nga imong gipila gikan niini nga device.
 Kanta gidugang sa pila:
-Kanta na ang pila:
+Kanta na sa pila:
 Pagsunud sa Petsa
 Pagsunud-sunod sumala sa Alpabetiko
 Idugang ang '%s' sa pila
@@ -100,7 +100,7 @@ Gisunod sa 'Petsa'
 Gisunod sa 'Alphabetical'
 mga kanta
 nagpakita <b>{start} - {end}</b> {record_name}, sa kinatibuk-an <b>{total}</b> {record_name}
-nakit-an ang <b>{nakaplagan}</b> {record_name}, nagpakita sa <b>{start} - {end}</b> {record_name}
+nakit-an ang <b>{nakaplagan}</b> {record_name}, nagpakita <b>{start} - {end}</b> {record_name}
 Edit kanta
 Pagbalhin sa pila
 Ibalhin sa ubos sa pila
@@ -120,7 +120,7 @@ Pila
 Ilakip ang non-karaoke nga mga posporo
 Abante
 Pag-type og kanta (titulo/artista) aron pangitaon ang anaa nga mga kanta ug i-klik ang 'Queue' aron idugang kini sa pila.
-Kung ang kanta dili makita sa dropdown nga "Available Songs", i-klik ang 'Pagpangita' aron makit-an kini sa Youtube.
+Kung ang kanta dili makita sa dropdown nga "Available Songs", i-klik ang 'Search' aron makit-an kini sa Youtube.
 Direkta nga pag-download sa YouTube url:
 Idugang sa pila
 Ilakip ang mga subtitle
@@ -193,3 +193,5 @@ Napakyas sa pagpila sa kanta!
 Impormasyon ug Mga Setting sa Sistema
 Pag-normalize sa Volume
 Ang lainlaing mga kanta kasagaran adunay lainlaing volume. Ang pagpagana sa pag-normalize sa volume modagan una og <i>ffmpeg</i> aron makwenta ang tibuok kalibutan nga volume sa usa ka kanta ug awtomatik nga i-adjust ang volume sa player aron ang matag kanta parehas og kusog.
+Paagi sa pag-download sa librarya sa kanta
+Kinatibuk-ang gidaghanon sa mga kanta

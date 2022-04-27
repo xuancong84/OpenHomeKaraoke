@@ -36,7 +36,7 @@ PiKaraoke-ni hozir tark eting!
 Chiqish uchun ruxsatingiz yo‘q
 Tizim hozir o'chirilmoqda!
 Oʻchirish uchun ruxsatingiz yoʻq
-Tizim hozir qayta ishga tushirilmoqda!
+Endi tizim qayta ishga tushirilmoqda!
 Qayta ishga tushirishga ruxsatingiz yo'q
 Fayl tizimini kengaytirish va tizimni hozir qayta ishga tushirish!
 Raspberry pi qurilmalarida fsni kengaytirib bo'lmaydi!
@@ -91,7 +91,7 @@ Ovoz kechikishini oshiring
  yarim ohanglar
 Iltimos, ismingizni kiriting. Bu qurilmadan navbatga qoʻygan qoʻshiqlaringiz yonida koʻrsatiladi.
 Navbatga qo'shilgan qo'shiq:
-Qo'shiq allaqachon navbat:
+Qo'shiq allaqachon navbatda:
 Sana bo'yicha saralash
 Alifbo tartibida tartiblash
 Navbatga “%s” qo‘shing
@@ -193,3 +193,5 @@ Qo‘shiqni navbatga qo‘yib bo‘lmadi!
 Tizim ma'lumotlari va sozlamalari
 Ovozni normallashtirish
 Turli xil qo'shiqlar ko'pincha har xil hajmga ega. Ovoz balandligini normallashtirishni yoqish birinchi navbatda qo'shiqning global hajmini hisoblash uchun <i>ffmpeg</i>ni ishga tushiradi va har bir qo'shiq bir xil darajada baland bo'lishi uchun o'yinchi ovozini avtomatik ravishda sozlaydi.
+Qo'shiq kutubxona yuklab olish yo'li
+Qo'shiqlarning umumiy soni

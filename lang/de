@@ -91,7 +91,7 @@ Erhöhen Sie die Audioverzögerung
  Halbtöne
 Bitte geben Sie Ihren Namen ein. Dies wird neben den Titeln angezeigt, die Sie von diesem Gerät in die Warteschlange stellen.
 Der Warteschlange hinzugefügtes Lied:
-Song schon die Warteschlange:
+Lied bereits in der Warteschlange:
 Nach Datum sortieren
 Alphabetisch sortieren
 Füge '%s' zur Warteschlange hinzu
@@ -138,7 +138,7 @@ Sind Sie sicher, dass Sie aufhören wollen?
 Sind Sie sicher, dass Sie herunterfahren möchten?
 Möchten Sie wirklich neu starten?
 Sind Sie sicher, dass Sie Youtube-dl jetzt aktualisieren möchten? Aktuelle und ausstehende Downloads können fehlschlagen.
-Sind Sie sicher, dass Sie das Dateisystem erweitern möchten? Dadurch wird Ihr Himbeer-Pi neu gestartet.
+Möchten Sie das Dateisystem wirklich erweitern? Dadurch wird Ihr Himbeer-Pi neu gestartet.
 Information
 Praktischer URL-QR-Code zum Teilen mit einem Freund:
 Betriebssystem
@@ -164,7 +164,7 @@ Aktualisieren Sie die Songliste:
 Songverzeichnis erneut scannen
 Sie sollten dies nur tun müssen, wenn Sie Dateien manuell in das Download-Verzeichnis kopiert haben, während PiKaraoke ausgeführt wurde.
 Aktualisierung
-Wenn Downloads oder Suchen nicht mehr funktionieren, wird die Aktualisierung von youtube-dl wahrscheinlich das Problem beheben. Die aktuell installierte Version ist:
+Wenn Downloads oder Suchen nicht mehr funktionieren, wird es wahrscheinlich durch die Aktualisierung von youtube-dl behoben. Die aktuell installierte Version ist:
 Aktualisieren Sie youtube-dl
 Dieser Update-Link oben kann fehlschlagen, wenn Sie nicht über die entsprechenden Dateiberechtigungen verfügen. Überprüfen Sie das PiKaraoke-Protokoll auf Fehler.
 Abschalten
@@ -193,3 +193,5 @@ Das Lied konnte nicht in die Warteschlange gestellt werden!
 Systeminfo & Einstellungen
 Volumennormalisierung
 Unterschiedliche Songs haben oft unterschiedliche Lautstärken. Wenn Sie die Lautstärkenormalisierung aktivieren, wird zuerst <i>ffmpeg</i> ausgeführt, um die globale Lautstärke eines Songs zu berechnen und die Player-Lautstärke automatisch so anzupassen, dass jeder Song gleich laut klingt.
+Download-Pfad der Songbibliothek
+Gesamtzahl der Lieder

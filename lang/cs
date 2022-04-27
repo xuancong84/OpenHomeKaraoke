@@ -68,7 +68,7 @@ Hlas
 Změnit klíč
 Momentálně se nic nehraje.
 Žádná skladba není zařazena do fronty.
-Tuto skladbu jste nepřidali vy. Opravdu chcete restartovat tuto stopu?
+Tuto skladbu jste nepřidali vy. Opravdu chcete tuto stopu restartovat?
 Tuto skladbu jste nepřidali vy. Opravdu chcete tuto stopu přeskočit?
 Ovládání přehrávače
 Právě teď hraje
@@ -91,7 +91,7 @@ Zvyšte zpoždění zvuku
  půltóny
 Zadejte prosím své jméno. To se zobrazí vedle skladeb zařazených do fronty z tohoto zařízení.
 Skladba přidána do fronty:
-Píseň je již ve frontě:
+Skladba již ve frontě:
 Seřadit podle data
 Seřadit podle abecedy
 Přidejte '%s' do fronty
@@ -155,11 +155,11 @@ Použijte DNN
 Standardní MTV audio má dva stereo kanály (L a R) zakódované takovým způsobem, že: L-R je nástrojová stopa, L+R je vokální stopa. Jednoduchým odečtením nebo přidáním dvou stereo kanálů tedy můžeme získat instrumentální a vokální stopu v mono zvuku. Vestavěný rozdělovač vokálů založený na DNN (hluboké neuronové síti) PiKaraoke používá algoritmus AI k samostatnému rozdělení instrumentálního a vokálního zvuku v každé stereo stopě, což vede ke stereo instrumentálním a vokálním stopám.
 Zastavte splitter
 Restartujte Splitter
-Vokální rozdělovač (který podporuje odečítání založené na DNN i stereo) běží jako samostatný proces na pozadí a generuje instrumentální/vokální zvukový soubor pro každou skladbu.
+Vokální splitter (který podporuje odečítání založené na DNN i stereo) běží jako samostatný proces na pozadí a generuje instrumentální/vokální zvukový soubor pro každou skladbu.
 Znovu synchronizujte zvuk a video:
 Zastavit Streamer
 Restartujte Streamer
-To má vliv pouze na přehrávání KTV prostřednictvím webového prohlížeče. Restartování screen-capture-and-streaming zlepšuje audio/video synchronizaci a také snižuje latenci mezi serverem a prohlížečem.
+To se týká pouze přehrávání KTV prostřednictvím webového prohlížeče. Restartování screen-capture-and-streaming zlepšuje audio/video synchronizaci a také snižuje latenci mezi serverem a prohlížečem.
 Obnovte seznam skladeb:
 Znovu naskenujte adresář skladeb
 Měli byste to udělat pouze v případě, že jste ručně zkopírovali soubory do adresáře pro stahování, když bylo spuštěno PiKaraoke.
@@ -193,3 +193,5 @@ Skladbu se nepodařilo zařadit do fronty!
 Systémové informace a nastavení
 Normalizace hlasitosti
 Různé písně mají často různou hlasitost. Po povolení normalizace hlasitosti se nejprve spustí <i>ffmpeg</i>, aby se vypočítala celková hlasitost skladby a automaticky se nastaví hlasitost přehrávače tak, aby každá skladba zněla stejně hlasitě.
+Cesta ke stažení knihovny písní
+Celkový počet skladeb

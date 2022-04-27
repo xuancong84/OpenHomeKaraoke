@@ -52,7 +52,7 @@ Pencét F pikeun togél layar pinuh
 Pencét ESC pikeun kaluar PiKaraoke
 Modeu setelan RaspiWifiConfig dideteksi!
 Sambungkeun alat/smartphone sejen ka Wifi AP: '%s'
-Teras arahkeun browserna ka: '%s://%s%s' sareng turutan parentah.
+Teras arahkeun browserna ka: '%s://%s%s' teras turutan parentah.
 Salajengna:
 Ditambahkeun ku:
 Ayeuna maén:
@@ -89,9 +89,9 @@ Ngurangan Tunda Audio
 Setel Tunda Audio
 Ningkatkeun Tunda Audio
  semitones
-Mangga lebetkeun nami anjeun. Ieu bakal muncul di gigireun lagu anu anjeun antri tina alat ieu.
+Mangga lebetkeun nami anjeun. Ieu bakal muncul di gigireun lagu anu anjeun antri ti alat ieu.
 Lagu ditambahkeun kana antrian:
-Lagu geus antri:
+Lagu geus aya dina antrian:
 Susun dumasar Tanggal
 Susun dumasar Abjad
 Tambahkeun '%s' kana antrian
@@ -140,7 +140,7 @@ Anjeun yakin rék reboot?
 Naha anjeun yakin hoyong ngapdet Youtube-dl ayeuna? Undeuran anu ayeuna sareng anu ditangguhkeun tiasa gagal.
 Naha anjeun yakin hoyong ngalegaan sistem file? Ieu bakal reboot pi buah prambus Anjeun.
 Émbaran
-Kode QR URL gunana pikeun dibagikeun sareng babaturan:
+Kode QR URL gunana pikeun dibagikeun sareng sobat:
 OS
 Pamakéan piringan
 Mémori
@@ -193,3 +193,5 @@ Gagal ngantri lagu!
 Inpormasi Sistem & Setélan
 Normalisasi Volume
 Lagu anu béda sering gaduh volume anu béda. Aktipkeun normalisasi volume bakal mimiti ngajalankeun <i>ffmpeg</i> pikeun ngitung volume global hiji lagu sareng otomatis nyaluyukeun volume pamuter supados unggal lagu disada sami nyaring.
+Jalur download perpustakaan lagu
+Jumlah total lagu

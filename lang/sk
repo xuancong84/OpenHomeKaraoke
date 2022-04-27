@@ -91,7 +91,7 @@ Zvýšte oneskorenie zvuku
  poltóny
 Prosím, zadajte vaše meno. Zobrazí sa vedľa skladieb, ktoré z tohto zariadenia zaradíte do poradia.
 Skladba pridaná do poradia:
-Pieseň je už v rade:
+Skladba už v poradí:
 Zoradiť podľa dátumu
 Zoradiť podľa abecedy
 Pridajte '%s' do frontu
@@ -192,4 +192,6 @@ Skladba pridaná do poradia!
 Skladbu sa nepodarilo zaradiť do poradia!
 Systémové informácie a nastavenia
 Normalizácia hlasitosti
-Rôzne piesne majú často rôznu hlasitosť. Po povolení normalizácie hlasitosti sa najprv spustí <i>ffmpeg</i>, aby sa vypočítala globálna hlasitosť skladby a automaticky sa nastaví hlasitosť prehrávača tak, aby každá skladba znela rovnako hlasno.
+Rôzne piesne majú často rôznu hlasitosť. Po povolení normalizácie hlasitosti sa najskôr spustí <i>ffmpeg</i>, aby sa vypočítala globálna hlasitosť skladby a automaticky sa nastaví hlasitosť prehrávača tak, aby každá skladba znela rovnako hlasno.
+Cesta na stiahnutie knižnice skladieb
+Celkový počet skladieb

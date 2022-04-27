@@ -91,7 +91,7 @@ Ställ in ljudfördröjning
  halvtoner
 Vänligen fyll i ditt namn. Detta kommer att visas bredvid låtarna du köar från den här enheten.
 Låten har lagts till i kön:
-Låten står redan i kö:
+Låten redan i kön:
 Sortera efter datum
 Sortera efter Alfabetisk
 Lägg till '%s' i kön
@@ -193,3 +193,5 @@ Det gick inte att köa låten!
 Systeminformation och inställningar
 Volymnormalisering
 Olika låtar har ofta olika volym. Aktivering av volymnormalisering kommer först att köra <i>ffmpeg</i> för att beräkna den globala volymen för en låt och automatiskt justera spelarvolymen så att varje låt låter lika högt.
+Sökväg för nedladdning av låtbibliotek
+Totalt antal låtar

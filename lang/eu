@@ -193,3 +193,5 @@ Ezin izan da abestia ilaran jarri!
 Sistemaren informazioa eta ezarpenak
 Bolumen Normalizazioa
 Abesti ezberdinek bolumen ezberdina izaten dute. Bolumenaren normalizazioa gaituz gero, lehenik <i>ffmpeg</i> exekutatuko da abesti baten bolumen globala kalkulatzeko eta erreproduzitzailearen bolumena automatikoki doituko da, abesti guztiak berdin ozen izan daitezen.
+Abestien liburutegia deskargatzeko bidea
+Abesti kopurua guztira

@@ -47,7 +47,7 @@ Put omxplayera nije pronađen!
 Kreiranje putanje za preuzimanje:
 Wifi/mreža nije povezana. Gašenje za 10s...
 Za odabir pjesama skenirajte QR ili se povežite na
-Za TV zaslon, spojite na
+Za TV zaslon, spojite se na
 Pritisnite F za prebacivanje preko cijelog zaslona
 Pritisnite ESC da zatvorite PiKaraoke
 Otkriven način postavljanja RaspiWifiConfig!
@@ -97,7 +97,7 @@ Poredaj po abecedi
 Dodajte '%s' u red čekanja
 pretraživati
 Poredano po 'Datumu'
-Poredano po 'abecednom redu'
+Poredano po "abecednom redu"
 Pjesme
 prikazuje <b>{start} - {end}</b> {record_name}, ukupno <b>{total}</b> {record_name}
 pronađeno <b>{found}</b> {record_name}, prikazuje <b>{start} - {end}</b> {record_name}
@@ -193,3 +193,5 @@ Stavljanje pjesme u red čekanja nije uspjelo!
 Informacije o sustavu i postavke
 Normalizacija volumena
 Različite pjesme često imaju različitu glasnoću. Omogućavanje normalizacije glasnoće prvo će pokrenuti <i>ffmpeg</i> za izračunavanje globalne glasnoće pjesme i automatski prilagoditi glasnoću playera tako da svaka pjesma zvuči jednako glasno.
+Put za preuzimanje biblioteke pjesama
+Ukupan broj pjesama

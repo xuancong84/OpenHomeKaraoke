@@ -15,7 +15,7 @@ Aus der Schlaang geläscht:
 Feeler beim Läschen aus der Schlaang:
 Download ugefaangen:
 Nom Ofschloss gëtt et an d'Schlaang bäigefüügt.
-Beim Fäerdegstellung erschéngt et an der "verfügbar Lidder" Lëscht.
+No der Fäerdegstellung erschéngt et an der "verfügbar Lidder" Lëscht.
 Feeler: Kann dëst Lidd net läschen well et an der aktueller Schlaang ass:
 Lidd geläscht:
 Feeler: Kee Songparameter spezifizéiert!
@@ -91,7 +91,7 @@ Erhéijung Audio Verzögerung
  semitones
 Gitt weg Ären Numm. Dëst erschéngt nieft de Lidder déi Dir vun dësem Apparat an der Schlaang steet.
 Lidd dobäi an d'Schlaang:
-Lidd schon an der Schlaang:
+Lidd schonn an der Schlaang:
 Sortéieren no Datum
 Sortéiert op Alphabetesch
 Füügt '%s' an d'Schlaang
@@ -191,5 +191,7 @@ Eroflueden gescheitert!
 Lidd dobäi an d'Schlaang!
 Konnt d'Lidd net an der Schlaang setzen!
 System Info & Astellungen
-Volumen Normaliséierung
+Normaliséierung vum Volume
 Verschidde Lidder hunn dacks ënnerschiddlech Volumen. Wann Dir Volumennormaliséierung aktivéiert, leeft als éischt <i>ffmpeg</i> fir de globale Volume vun engem Lidd ze berechnen an automatesch de Spillervolumen unzepassen, sou datt all Lidd gläich haart kléngt.
+Songbibliothéik Download Wee
+Total Zuel vu Lidder

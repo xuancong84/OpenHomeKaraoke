@@ -35,7 +35,7 @@ Bạn không có quyền tắt
 Thoát PiKaraoke ngay bây giờ!
 Bạn không có quyền thoát
 Đang tắt hệ thống!
-Bạn không có quyền tắt máy
+Bạn không có quyền tắt
 Khởi động lại hệ thống ngay bây giờ!
 Bạn không có quyền khởi động lại
 Mở rộng hệ thống tập tin và hệ thống khởi động lại ngay bây giờ!
@@ -59,7 +59,7 @@ Thêm bởi:
 Đã cấp chế độ quản trị viên!
 Tăng độ trễ âm thanh sẽ giúp bạn có nhiều thời gian hơn để đọc lời bài hát trước khi hát câu tiếp theo.
 Giảm độ trễ của phụ đề sẽ giúp bạn có nhiều thời gian hơn để đọc lời bài hát trước khi hát câu tiếp theo.
-Một nửa cung còn được gọi là nửa cung. Đây là quãng nhỏ nhất được sử dụng trong âm nhạc cổ điển phương Tây, bằng một phần mười hai của quãng tám hoặc nửa giai điệu.
+Một nửa cung còn được gọi là nửa bước. Đây là quãng nhỏ nhất được sử dụng trong âm nhạc cổ điển phương Tây, bằng một phần mười hai của quãng tám hoặc nửa giai điệu.
 Bộ tách giọng nói dựa trên DNN được bật. PiKaraoke sử dụng PyTorch (của Facebook) để chạy một mạng lưới thần kinh sâu nhằm tách âm thanh nhạc cụ và giọng hát trong mỗi bản nhạc để tạo ra âm thanh nổi.
 Kiểm soát người chơi
 Âm nhạc
@@ -91,7 +91,7 @@ Tăng độ trễ âm thanh
  nửa cung
 Xin hãy nhập tên của bạn. Điều này sẽ hiển thị bên cạnh các bài hát bạn xếp hàng từ thiết bị này.
 Bài hát được thêm vào hàng đợi:
-Bài hát đã là hàng đợi:
+Bài hát đã có trong hàng đợi:
 Lọc theo ngày
 Sắp xếp theo thứ tự bảng chữ cái
 Thêm '% s' vào hàng đợi
@@ -159,12 +159,12 @@ Bộ tách giọng hát (hỗ trợ cả phép trừ âm thanh nổi và dựa t
 Đồng bộ hóa lại âm thanh và video:
 Ngừng phát trực tiếp
 Khởi động lại Streamer
-Điều này chỉ ảnh hưởng đến việc chơi KTV thông qua trình duyệt web. Khởi động lại chế độ chụp và phát trực tuyến màn hình giúp cải thiện đồng bộ hóa âm thanh / video, nó cũng làm giảm độ trễ giữa máy chủ và trình duyệt.
+Điều này chỉ ảnh hưởng đến việc chơi KTV thông qua trình duyệt web. Khởi động lại chế độ chụp và phát trực tuyến màn hình cải thiện đồng bộ hóa âm thanh / video, nó cũng làm giảm độ trễ giữa máy chủ và trình duyệt.
 Làm mới danh sách bài hát:
 Quét lại thư mục bài hát
 Bạn chỉ cần thực hiện việc này nếu bạn đã sao chép thủ công các tệp vào thư mục tải xuống trong khi PiKaraoke đang chạy.
 Cập nhật
-Nếu quá trình tải xuống hoặc tìm kiếm ngừng hoạt động, việc cập nhật youtube-dl có thể sẽ khắc phục được sự cố. Phiên bản cài đặt hiện tại là:
+Nếu quá trình tải xuống hoặc tìm kiếm ngừng hoạt động, việc cập nhật youtube-dl có thể sẽ khắc phục được sự cố. Phiên bản được cài đặt hiện tại là:
 Cập nhật youtube-dl
 Liên kết cập nhật ở trên có thể không thành công nếu bạn không có quyền đối với tệp thích hợp. Kiểm tra nhật ký PiKaraoke để tìm lỗi.
 Tắt
@@ -193,3 +193,5 @@ Không thể xếp hàng bài hát!
 Thông tin và cài đặt hệ thống
 Chuẩn hóa âm lượng
 Các bài hát khác nhau thường có âm lượng khác nhau. Bật chuẩn hóa âm lượng trước tiên sẽ chạy <i> ffmpeg </i> để tính âm lượng chung của bài hát và tự động điều chỉnh âm lượng trình phát sao cho mọi bài hát đều có âm lượng lớn như nhau.
+Đường dẫn tải xuống thư viện bài hát
+Tổng số bài hát

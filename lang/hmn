@@ -91,7 +91,7 @@ Ua kom suab qeeb
  semitones
 Thov sau koj lub npe. Qhov no yuav tshwm sim ntawm ib sab ntawm cov nkauj uas koj teem caij los ntawm lub cuab yeej no.
 Nkauj ntxiv rau lub queue:
-Nkauj twb keej:
+Nkauj twb nyob rau hauv kab:
 Xaiv los ntawm Hnub
 Sau los ntawm Alphabetical
 Ntxiv '%s' rau hauv kab
@@ -121,7 +121,7 @@ suav tsis txheeb karaoke
 Advanced
 Ntaus ib zaj nkauj (lub npe / tus kws kos duab) txhawm rau tshawb cov nkauj muaj thiab nyem 'Queue' ntxiv rau hauv kab.
 Yog hais tias zaj nkauj tsis tshwm nyob rau hauv "Available Songs" dropdown, nyem 'Search' kom pom nws hauv Youtube.
-Direct download YouTube url:
+Direct download tau YouTube url:
 Ntxiv rau kab
 suav nrog subtitles
 Download tau
@@ -193,3 +193,5 @@ Ua tsis tau tejyam rau queue zaj nkauj!
 System Info & Chaw
 Volume Normalization
 Cov nkauj sib txawv feem ntau muaj qhov sib txawv. Enabling ntim normalization yuav xub khiav <i>ffmpeg</i> los xam lub ntiaj teb no ntim ntawm ib zaj nkauj thiab yuav kho cov neeg uas ua ntawv ntim kom txhua lub suab nrov sib npaug zos.
+Nkauj Library download path
+Tag nrho cov nkauj

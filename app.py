@@ -108,6 +108,8 @@ def home():
 @app.route("/nowplaying")
 def nowplaying():
 	try:
+		if K.switchingSong:
+			return ""
 		next_song = K.queue[0]["title"] if K.queue else None
 		next_user = K.queue[0]["user"] if K.queue else None
 		s = K.get_state()
@@ -557,6 +559,8 @@ def info():
 		use_DNN = K.use_DNN_vocal,
 		norm_vol = K.normalize_vol,
 		pikaraoke_version = VERSION,
+		download_path = K.args.download_path,
+		num_of_songs = len(K.available_songs),
 		screencapture = get_status(screencapture),
 		vocalsplitter = get_status(vocalsplitter) + vocal_extra,
 		platform = K.platform,
@@ -702,18 +706,12 @@ def get_default_youtube_dl_path(platform):
 def get_default_dl_dir(platform):
 	if platform == "raspberry_pi":
 		return "/usr/lib/pikaraoke/songs"
-	elif platform == "windows":
+	else:
 		legacy_directory = os.path.expanduser("~\pikaraoke\songs")
 		if os.path.exists(legacy_directory):
 			return legacy_directory
 		else:
-			return "~\pikaraoke-songs"
-	else:
-		legacy_directory = "~/pikaraoke/songs"
-		if os.path.exists(legacy_directory):
-			return legacy_directory
-		else:
-			return "~/pikaraoke-songs"
+			return os.path.expanduser("~\pikaraoke-songs")
 
 
 if __name__ == "__main__":
@@ -770,7 +768,7 @@ if __name__ == "__main__":
 		action = 'store_true',
 	)
 	parser.add_argument(
-		"-nv", "--normalize-volume",
+		"-nv", "--normalize-vol",
 		help = "Enable volume normalization",
 		action = 'store_true',
 	)
@@ -890,21 +888,17 @@ if __name__ == "__main__":
 	if args.use_vlc and not os.path.isfile(args.vlc_path):
 		print(getString(45) + args.vlc_path)
 		sys.exit(1)
-	if (
-			platform == "raspberry_pi"
-			and not args.use_vlc
-			and not os.path.isfile(args.omxplayer_path)
-	):
+	if platform == "raspberry_pi" and not args.use_vlc and not os.path.isfile(args.omxplayer_path):
 		print(getString(46) + args.omxplayer_path)
 		sys.exit(1)
 
 	# setup/create download directory if necessary
-	dl_path = os.path.expanduser(args.download_path)
-	if not dl_path.endswith("/"):
-		dl_path += "/"
-	if not os.path.exists(dl_path):
-		print(getString(47) + dl_path)
-		os.makedirs(dl_path)
+	args.dl_path = os.path.expanduser(args.download_path)
+	if not args.dl_path.endswith("/"):
+		args.dl_path += "/"
+	if not os.path.exists(args.dl_path):
+		print(getString(47) + args.dl_path)
+		os.makedirs(args.dl_path)
 
 	if args.developer_mode:
 		logging.warning("Splash screen is disabled in developer mode due to main thread conflicts")
@@ -912,31 +906,7 @@ if __name__ == "__main__":
 
 	# Configure karaoke process
 	global K
-	K = karaoke.Karaoke(
-		nonroot_user = args.nonroot_user,
-		port = args.port,
-		download_path = dl_path,
-		omxplayer_path = args.omxplayer_path,
-		youtubedl_path = args.youtubedl_path,
-		splash_delay = args.splash_delay,
-		log_level = args.log_level,
-		volume = args.volume,
-		hide_ip = args.hide_ip,
-		hide_raspiwifi_instructions = args.hide_raspiwifi_instructions,
-		hide_splash_screen = args.hide_splash_screen,
-		omxplayer_adev = args.adev,
-		dual_screen = args.dual_screen,
-		high_quality = args.high_quality,
-		use_omxplayer = args.use_omxplayer,
-		use_vlc = args.use_vlc,
-		vlc_path = args.vlc_path,
-		vlc_port = args.vlc_port,
-		logo_path = args.logo_path,
-		show_overlay = args.show_overlay,
-		run_vocal = args.run_vocal,
-		normalize_vol = args.normalize_volume,
-		window_mode = args.windowed
-	)
+	K = karaoke.Karaoke(args)
 
 	if (args.developer_mode):
 		th = threading.Thread(target = K.run)

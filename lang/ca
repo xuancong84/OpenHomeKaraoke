@@ -193,3 +193,5 @@ No s'ha pogut posar a la cua la cançó!
 Informació i configuració del sistema
 Normalització del volum
 Les diferents cançons solen tenir un volum diferent. Si activeu la normalització del volum, primer s'executarà <i>ffmpeg</i> per calcular el volum global d'una cançó i ajustar automàticament el volum del reproductor perquè cada cançó soni igual de fort.
+Camí de descàrrega de la biblioteca de cançons
+Nombre total de cançons

@@ -43,7 +43,7 @@ Kan ikke udvide fs på ikke-raspberry pi-enheder!
 Du har ikke tilladelse til at ændre størrelsen på filsystemet
 Youtube-dl-sti blev ikke fundet!
 VLC-sti ikke fundet!
-omxplayer-sti ikke fundet!
+omxplayer-stien blev ikke fundet!
 Oprettelse af downloadsti:
 Wifi/netværk ikke tilsluttet. Lukker ned om 10'erne...
 For at vælge sange skal du scanne QR eller oprette forbindelse til
@@ -91,7 +91,7 @@ Indstil lydforsinkelse
  halvtoner
 Vær sød at skrive dit navn. Dette vises ved siden af ​​de sange, du sætter i kø fra denne enhed.
 Sang tilføjet til køen:
-Sangen står allerede i kø:
+Sangen allerede i køen:
 Sorter efter dato
 Sorter efter Alfabetisk
 Tilføj '%s' til køen
@@ -193,3 +193,5 @@ Det lykkedes ikke at sætte sangen i kø!
 Systemoplysninger og indstillinger
 Volumennormalisering
 Forskellige sange har ofte forskellig lydstyrke. Aktivering af volumennormalisering vil først køre <i>ffmpeg</i> for at beregne den globale lydstyrke for en sang og automatisk justere afspillerens lydstyrke, så hver sang lyder lige højt.
+Sti til download af sangbibliotek
+Samlet antal sange

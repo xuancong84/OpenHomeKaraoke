@@ -29,7 +29,7 @@ Ke holo nei
 Ua kū
  (CPU wale nō)
  (Hāʻia ka GPU)
-Ke hōʻano hou nei iā youtube-dl! Pono e lawe i hoʻokahi minuke a ʻelua paha ...
+Ke hōʻano hou nei iā youtube-dl! Pono e lawe i hoʻokahi minute a ʻelua paha ...
 ʻAʻohe ou ʻae e hoʻohou iā youtube-dl
 ʻAʻohe ou ʻae e pani
 Haʻalele iā PiKaraoke i kēia manawa!
@@ -57,7 +57,7 @@ Ma luna aʻe:
 Hoʻohui ʻia e:
 Ke pāʻani nei:
 Hāʻawi ʻia ke ʻano hoʻokele!
-ʻO ka hoʻonui ʻana i ka lohi leo e hāʻawi i ka manawa hou e heluhelu ai i nā mele ma mua o ka hīmeni ʻana i ka ʻōlelo aʻe.
+ʻO ka hoʻonui ʻana i ka lohi leo e hāʻawi iā ʻoe i ka manawa hou e heluhelu ai i nā mele ma mua o ka hīmeni ʻana i ka ʻōlelo aʻe.
 ʻO ka hoʻemi ʻana i ka lohi subtitle e hāʻawi iā ʻoe i ka manawa hou e heluhelu ai i nā mele ma mua o ka hīmeni ʻana i ka ʻōlelo aʻe.
 Ua ʻike ʻia ka semitone ma ke ʻano he hapalua. ʻO ia ka manawa liʻiliʻi loa i hoʻohana ʻia i nā mele Western Western, e like me ka ʻumikūmālua o ka octave a i ʻole ka hapalua leo.
 Hoʻohana ʻia ka hoʻokaʻawale leo ma DNN. Hoʻohana ʻo PiKaraoke iā PyTorch (na Facebook) e holo i kahi pūnaewele neural hohonu e hoʻokaʻawale i nā mea kani a me nā leo leo i kēlā me kēia mele e hoʻāla ai i ke kani stereo.
@@ -75,7 +75,7 @@ Ke pāʻani nei
 Mele Aʻe
 E ʻimi iā:
 Hoʻopaneʻe leo (sec)
-Hoʻopaneʻe ka Subtitle (sec)
+Hoʻopaneʻe Subtitle (sec)
 Hoʻomaka hou i ke mele
 Pāʻani/Hoʻomaha
 Hoʻokuʻu i ke mele o kēia manawa
@@ -83,7 +83,7 @@ Hoʻohaʻahaʻa ka Volume
 Hoʻonohonoho i ka Volume
 Piʻi ka Volume
 E ho'ēmi i ka hoʻopaneʻe inoa
-E hoʻopaʻa i ka lohi ʻōlelo
+E hoʻopaʻa i ka hoʻopaneʻe inoa
 E hoʻonui i ka hoʻopaneʻe inoa
 E hoemi i ka lohi leo
 E hoʻopaʻa i ka lohi leo
@@ -119,7 +119,7 @@ Huli
 Ka lālani
 Hoʻohui i nā pāʻani karaoke ʻole
 Kiʻekiʻe
-Kākau i kahi mele (poʻo/mea pena) e ʻimi i nā mele i loaʻa a kaomi iā 'Queue' no ka hoʻohui ʻana i ka pila.
+Kākau i kahi mele (title/artist) no ka huli ʻana i nā mele i loaʻa a kaomi iā 'Queue' e hoʻohui iā ia i ka pila.
 Inā ʻaʻole ʻike ʻia ke mele ma ka "Available Songs" dropdown, kaomi iā 'Search' e loaʻa iā ia ma Youtube.
 Hoʻoiho pololei i ka URL YouTube:
 Hoʻohui i ka pila
@@ -137,7 +137,7 @@ PiKaraoke
 Makemake ʻoe e haʻalele?
 Makemake ʻoe e pani?
 Makemake ʻoe e hoʻomaka hou?
-Makemake ʻoe e hoʻohou iā Youtube-dl i kēia manawa? Hiki ʻole ke hoʻoiho ʻia i kēia manawa a ke kali nei.
+Makemake ʻoe e hoʻohou iā Youtube-dl i kēia manawa? Hiki ʻole ke hoʻoiho ʻia i kēia manawa a me nā mea e kali nei.
 Makemake ʻoe e hoʻonui i ka ʻōnaehana waihona? E hoʻomaka hou kēia i kāu raspberry pi.
 ʻIkepili
 He helu QR URL maʻalahi e kaʻana like me kahi hoaaloha:
@@ -159,14 +159,14 @@ Hoʻokaʻawale ʻia ka mea hoʻokaʻawale leo (e kākoʻo ana i ka DNN-based a m
 Hoʻonohonoho hou i ka leo a me ka wikiō:
 Kāohi Streamer
 Hoʻomaka hou i ka Streamer
-Pili wale kēia i ka pāʻani KTV ma o ka polokalamu kele pūnaewele. ʻO ka hoʻomaka hou ʻana i ka pale-hopu-a-streaming e hoʻomaikaʻi i ka synchronization leo/wikiō, e hoʻemi ana hoʻi i ka latency ma waena o ke kikowaena a me ka polokalamu kele pūnaewele.
+Pili wale kēia i ka pāʻani ʻana iā KTV ma o ka polokalamu kele pūnaewele. ʻO ka hoʻomaka hou ʻana i ka pale-hopu-a-streaming e hoʻomaikaʻi i ka synchronization leo/wikiō, e hoʻemi ana hoʻi i ka latency ma waena o ke kikowaena a me ka polokalamu kele pūnaewele.
 Hōʻano hou i ka papa inoa mele:
 E nānā hou i ka papa kuhikuhi mele
 Pono ʻoe e hana i kēia inā ʻoe e kope lima i nā faila i ka papa kuhikuhi hoʻoiho i ka wā e holo ana ʻo PiKaraoke.
 Nā mea hou
-Inā pau ka hoʻoiho ʻana a i ʻole ka huli ʻana, e hoʻoponopono paha ka hoʻonui ʻana iā youtube-dl. ʻO ka mana i hoʻokomo ʻia i kēia manawa:
+Inā pau ka hana ʻana a i ʻole ka huli ʻana, e hoʻoponopono paha ka hoʻonui ʻana iā youtube-dl. ʻO ka mana i hoʻokomo ʻia i kēia manawa:
 Hōʻano hou iā youtube-dl
-Hiki i kēia loulou hōʻano hou ma luna ke hāʻule inā ʻaʻole ʻae ʻoe i nā faila kūpono. E nānā i ka log PiKaraoke no nā hewa.
+Hiki i kēia loulou hōʻano hou ma luna ke hāʻule inā ʻaʻohe ʻae faila kūpono. E nānā i ka log PiKaraoke no nā hewa.
 E hoʻopio
 Mai huki wale i ke kaula! E pani mau i kāu kikowaena pono e pale i ka palaho ʻikepili.
 Haʻalele iā PiKaraoke
@@ -192,4 +192,6 @@ Hoʻohui ʻia ke mele i ka pila!
 ʻAʻole hiki ke hoʻonohonoho i ke mele!
 ʻIke Pūnaewele & Hoʻonohonoho
 Hoʻo·mau leo
-He ʻokoʻa ka leo o nā mele like ʻole. ʻO ka ʻae ʻana i ka hoʻoponopono ʻana i ka leo e holo mua i <i>ffmpeg</i> e helu i ka leo honua o kahi mele a hoʻoponopono ʻakomi i ka leo mea pāʻani i like ke kani ʻana o kēlā me kēia mele.
+ʻOkoʻa ka leo o nā mele like ʻole. ʻO ka ʻae ʻana i ka hoʻoponopono ʻana i ka leo e holo mua i <i>ffmpeg</i> e helu i ka leo honua o kahi mele a hoʻoponopono ʻakomi i ka leo mea pāʻani i like ke kani ʻana o kēlā me kēia mele.
+Ala hoʻoiho hale waihona mele
+Huina helu o na mele

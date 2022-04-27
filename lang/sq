@@ -91,7 +91,7 @@ Rritja e vonesës së audios
  gjysmëtonet
 Ju lutemi shkruani emrin tuaj. Kjo do të shfaqet pranë këngëve që ju vendosni në radhë nga kjo pajisje.
 Kënga u shtua në radhë:
-Kënga tashmë është në radhë:
+Kënga tashmë në radhë:
 Rendit sipas datës
 Rendit sipas alfabetit
 Shto '%s' në radhë
@@ -192,4 +192,6 @@ Kënga u shtua në radhë!
 Dështoi në radhën e këngës!
 Informacioni dhe cilësimet e sistemit
 Normalizimi i volumit
-Këngët e ndryshme shpesh kanë volum të ndryshëm. Aktivizimi i normalizimit të volumit fillimisht do të ekzekutojë <i>ffmpeg</i> për të llogaritur volumin global të një kënge dhe për të rregulluar automatikisht volumin e luajtësit në mënyrë që çdo këngë të tingëllojë njësoj e lartë.
+Këngët e ndryshme shpesh kanë volum të ndryshëm. Aktivizimi i normalizimit të volumit do të ekzekutojë fillimisht <i>ffmpeg</i> për të llogaritur volumin global të një kënge dhe për të rregulluar automatikisht volumin e luajtësit në mënyrë që çdo këngë të tingëllojë njësoj e lartë.
+Rruga e shkarkimit të bibliotekës së këngëve
+Numri total i këngëve

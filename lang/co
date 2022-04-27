@@ -8,7 +8,7 @@ Errore durante u muvimentu di l'elementu in a fila: argumentu invalidu
 Elementu spustatu cù successu in a fila:
 Errore durante u muvimentu di l'elementu in a fila:
 Spostatu in a fila:
-Errore chì si move in a fila:
+Errore in scende in fila:
 Sposta in fila:
 Errore di muvimentu in a fila:
 Eliminatu da a fila:
@@ -52,7 +52,7 @@ Appughjà F per cambià a pantalla piena
 Press ESC per abbandunà PiKaraoke
 U modu di installazione di RaspiWifiConfig rilevatu!
 Cunnette un altru dispositivu/smartphone à l'AP Wifi: '%s'
-Dopu puntate u so navigatore à: '%s://%s%s' è seguite e struzzioni.
+Allora puntate u so navigatore à: '%s://%s%s' è seguite e struzzioni.
 In seguitu:
 Aggiuntu da:
 Avà ghjucatu:
@@ -90,7 +90,7 @@ Stabbilisce u Delay Audio
 Aumente u ritardu audio
  semitoni
 Per piacè inserite u vostru nome. Stu vi mustrarà accantu à i canti vi fila da stu dispusitivu.
-Canzona aghjunta à a fila:
+Canzona aghjuntu à a fila:
 Canzona digià in fila:
 Ordine per Data
 Ordine per Alfabeticu
@@ -121,7 +121,7 @@ Includite partite non-karaoke
 Avanzatu
 Scrivite una canzone (titulu / artista) per circà i canti dispunibili è cliccate "Queue" per aghjunghje à a fila.
 Se a canzone ùn hè micca apparsa in u menù dropdown "Canzoni dispunibili", cliccate "Ricerca" per truvà in Youtube.
-Url di scaricamentu direttu di YouTube:
+Scarica direttamente l'url di YouTube:
 Aghjunghjite à a fila
 Includite sottutituli
 Scaricate
@@ -189,7 +189,9 @@ Questu cambia a lingua di u sistema di backend PiKaraoke chì si vede nantu à u
 Scaricamentu cumpletu cù successu!
 Scaricamentu fiascatu!
 Canzona aghjunta à a fila !
-Impossible di mette in fila a canzone!
+Impossibile mette in fila a canzone!
 Sistema Info & Settings
 Normalizazione di u voluminu
 Diversi canti spessu anu un volumu diversu. L'attivazione di a normalizazione di u voluminu prima eseguirà <i>ffmpeg</i> per calculà u voluminu globale di una canzone è aghjustà automaticamente u voluminu di u lettore in modu chì ogni canzone sona ugualmente forte.
+Percorsu di scaricamentu di a biblioteca di canzoni
+U numeru tutale di canzoni

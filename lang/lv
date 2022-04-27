@@ -91,7 +91,7 @@ Palieliniet audio aizkavi
  pustoņi
 Lūdzu, ievadiet savu vārdu. Tas tiks rādīts blakus dziesmām, kuras ievietojat rindā no šīs ierīces.
 Rindai pievienota dziesma:
-Dziesma jau ir rindā:
+Dziesma jau rindā:
 Kārtot pēc datuma
 Kārtot pēc alfabēta
 Pievienojiet "%s" rindai
@@ -193,3 +193,5 @@ Neizdevās dziesmu ievietot rindā!
 Sistēmas informācija un iestatījumi
 Skaļuma normalizēšana
 Dažādām dziesmām bieži ir atšķirīgs skaļums. Iespējojot skaļuma normalizēšanu, vispirms tiks palaists <i>ffmpeg</i>, lai aprēķinātu dziesmas kopējo skaļumu un automātiski pielāgotu atskaņotāja skaļumu, lai katra dziesma skanētu vienlīdz skaļi.
+Dziesmu bibliotēkas lejupielādes ceļš
+Kopējais dziesmu skaits

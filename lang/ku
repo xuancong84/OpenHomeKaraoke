@@ -4,7 +4,7 @@ Ji moda rêveberiyê derketin!
 %s şopên tesadufî lê zêde kirin
 Ji stranan xilas bûn!
 Dorê paqij kir!
-Çewtî di veguheztina babetê de di rêzê de: nederbasdar-argument
+Çewtî di veguheztina babetê de di nav rêzê de: nederbasdar-argument
 Tiştek bi serfirazî li hundurê rêzê hate guheztin:
 Çewtî di veguheztina babetê de di nav rêzê de:
 Di dorê de bar kirin:
@@ -48,7 +48,7 @@ Afirandina riya dakêşanê:
 Wifi/Tor ne girêdayî ye. Di nava 10 saniyan de tê girtin...
 Ji bo hilbijartina stranan, QR bişopînin an pê ve girêdin
 Ji bo dîmendera TV-yê, pê ve girêdin
-F-ê bikirtînin da ku tev-ekranê biguherînin
+F bikirtînin da ku tev-ekranê biguherînin
 ESC bikirtînin da ku PiKaraoke biterikînin
 Moda sazkirinê ya RaspiWifiConfig hate dîtin!
 Amûrek/smartphone din bi Wifi AP ve girêdin: '%s'
@@ -91,7 +91,7 @@ Derengiya Dengê Zêde bikin
  nîvton
 Ji kerema xwe navê xwe binivîse. Ev ê li kêleka stranên ku hûn ji vê cîhazê di rêzê de dihêlin xuya bibe.
 Stran li rêzê hat zêdekirin:
-Jixwe stran li dorê ye:
+Stran jixwe di rêzê de ye:
 Rêzkirina li gorî Dîrokê
 Li gorî alfabeyê rêz bikin
 '%s' li dorê zêde bike
@@ -105,7 +105,7 @@ Edit song
 Di dorê de bizivirin
 Di dorê de bimeşin
 Ma hûn pê bawer in ku hûn dixwazin ji rêzê jêbirin
-Ma hûn pê ewle ne ku hûn dixwazin TEMÛ dorê paqij bikin? Ji bo berdewamiyê 'OK' binivîse
+Ma hûn pê bawer in ku hûn dixwazin TEMÛ dorê paqij bikin? Ji bo berdewamiyê 'OK' binivîse
 3 stranên rasthatî lê zêde bikin
 Hemî paqij bikin
 Dorê vala ye
@@ -127,7 +127,7 @@ Binnivîsan têde
 Download
 Lêgerîna YouTube ji bo
 Encamên lêgerînê ji bo
-Bişkojka dakêşanê bikirtînin da ku encamên bêtir nîşan bidin
+Bişkojka dakêşanê bikirtînin ku encamên bêtir nîşan bidin
 Pêvek:
 Stranên Berdest
 Ma hûn dixwazin navê xuyangê yê kesê ku vê amûrê bikar tîne biguherînin? Ev ê li kêleka stranên rêzkirî nîşan bide. Vêga:
@@ -193,3 +193,5 @@ Di rêza stranê de têk çû!
 Agahiyên Pergalê & Mîhengan
 Normalîzasyona Volume
 Stranên cihê bi gelemperî dengên cûda hene. Çalakkirina normalîzekirina dengdanê dê pêşî <i>ffmpeg</i> bixebite da ku qebareya gerdûnî ya stranekê hesab bike û bixweber dengê lîstikvanê rast bike da ku her stran bi heman rengî deng bide.
+Rêya dakêşana pirtûkxaneya stranan
+Hejmara tevahî stranan

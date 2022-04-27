@@ -52,7 +52,7 @@ Brùth F gus làn-sgrìn a thogail
 Brùth ESC gus PiKaraoke fhàgail
 Modh rèiteachaidh RaspiWifiConfig air a lorg!
 Ceangail inneal/fòn cliste eile ris an AP Wifi: '%s'
-An uairsin comharraich am brabhsair aige gu: '%s://%s%s' agus lean an stiùireadh.
+An uairsin comharraich a bhrobhsair gu: '%s://%s%s' agus lean an stiùireadh.
 Suas an ath cheum:
 Air a chur ris le:
 A' cluich a-nis:
@@ -89,9 +89,9 @@ Lùghdaich dàil claisneachd
 Suidhich dàil claisneachd
 Meudaich dàil claisneachd
  leth-thonn
-Feuch an cuir thu a-steach d’ ainm. Nochdaidh seo ri taobh nan òran a tha thu a’ ciudha suas bhon inneal seo.
+Feuch an cuir thu a-steach d’ ainm. Nochdaidh seo ri taobh nan òran a bhios tu a’ ciudha suas bhon inneal seo.
 Òran air a chur ris a’ chiudha:
-Òran mar-thà an ciudha:
+Òran mu thràth anns a’ chiudha:
 Deasaich a-rèir Ceann-latha
 Deasaich a rèir na h-aibideil
 Cuir '%s' ris a' chiudha
@@ -121,13 +121,13 @@ Cuir a-steach maidsean neo-karaoke
 Adhartach
 Taidhp òran (tiotal/neach-ealain) gus na h-òrain a tha rim faighinn a sgrùdadh agus cliog air ‘Queue’ gus a chuir ris a’ chiudha.
 Mura h-eil an t-òran a’ nochdadh anns a’ chlàr-taice “Available Songs”, cliog air ‘Search’ gus a lorg air Youtube.
-Luchdaich a-nuas YouTube url gu dìreach. .
+Luchdaich a-nuas YouTube url gu dìreach
 Cuir ris a’ chiudha
 Cuir a-steach fo-thiotalan
 Luchdaich sìos
 A ' coimhead airson YouTube.
 Toraidhean rannsachaidh airson
-Cliog air tuiteam sìos gus barrachd thoraidhean a shealltainn
+Cliog air tuiteam-sìos gus barrachd thoraidhean a shealltainn
 Ceangal:
 Òrain rim faighinn
 A bheil thu airson ainm taisbeanaidh an neach a chleachdas an inneal seo atharrachadh? Nochdaidh seo ri taobh nan òran ciudha. An-dràsta:
@@ -193,3 +193,5 @@ Dh’ fhàillig ciudha an òrain!
 Fiosrachadh mun t-siostam & roghainnean
 Normalachadh Tomhais
 Gu tric bidh ceòl eadar-dhealaichte aig diofar òrain. Le bhith a’ comasachadh gnàthachadh meud ruithidh <i>ffmpeg</i> an-toiseach gus tomhas cruinne òran a thomhas agus atharrachadh gu fèin-ghluasadach air meud cluicheadair gus am bi a h-uile òran a’ faireachdainn a cheart cho àrd.
+An t-slighe leabharlann luchdadh a-nuas
+An àireamh iomlan de dh'òrain a

@@ -63,7 +63,7 @@ Semitone juga dikenali sebagai separuh langkah. Ia adalah selang terkecil yang d
 Pemisah vokal berasaskan DNN didayakan. PiKaraoke menggunakan PyTorch (oleh Facebook) untuk menjalankan rangkaian saraf dalam untuk memisahkan bunyi instrumental dan vokal dalam setiap trek yang menimbulkan bunyi stereo.
 Kawalan Pemain
 Muzik
-bercampur-campur
+bercampur
 Suara
 Tukar Kunci
 Tiada apa yang dimainkan sekarang.
@@ -91,7 +91,7 @@ Tingkatkan Kelewatan Audio
  semitones
 Sila masukkan nama anda. Ini akan dipaparkan di sebelah lagu yang anda baris gilir daripada peranti ini.
 Lagu ditambahkan pada baris gilir:
-Lagu sudah menjadi baris gilir:
+Lagu sudah dalam baris gilir:
 Isih mengikut Tarikh
 Isih mengikut Abjad
 Tambahkan '%s' pada baris gilir
@@ -135,7 +135,7 @@ Pengguna semasa
 tetapan
 PiKaraoke
 Adakah anda pasti mahu berhenti?
-Adakah anda pasti mahu menutup?
+Adakah anda pasti mahu tutup?
 Adakah anda pasti mahu but semula?
 Adakah anda pasti mahu mengemas kini Youtube-dl sekarang? Muat turun semasa dan belum selesai mungkin gagal.
 Adakah anda pasti mahu mengembangkan sistem fail? Ini akan but semula raspberry pi anda.
@@ -185,7 +185,7 @@ Tukar bahasa
 Sila pilih bahasa
 Bahasa Sistem
 Bahasa sistem semasa:
-Ini menukar bahasa sistem hujung belakang PiKaraoke yang akan dipaparkan pada skrin TV; selain itu, setiap pengguna yang menyambungkan juga boleh menukar bahasa UI Web masing-masing dalam butang glob dalam menu sebelah kanan atas.
+Ini menukar bahasa sistem hujung belakang PiKaraoke yang akan dipaparkan pada skrin TV; lebih-lebih lagi, setiap pengguna yang menyambungkan juga boleh menukar bahasa UI Web masing-masing dalam butang glob dalam menu sebelah kanan atas.
 Muat turun berjaya diselesaikan!
 Muat turun gagal!
 Lagu ditambahkan pada baris gilir!
@@ -193,3 +193,5 @@ Gagal untuk beratur lagu!
 Maklumat & Tetapan Sistem
 Normalisasi Kelantangan
 Lagu yang berbeza selalunya mempunyai volum yang berbeza. Mendayakan penormalan volum akan dijalankan dahulu <i>ffmpeg</i> untuk mengira volum global lagu dan melaraskan volum pemain secara automatik supaya setiap lagu berbunyi sama kuat.
+Laluan muat turun perpustakaan lagu
+Jumlah bilangan lagu

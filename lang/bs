@@ -190,6 +190,8 @@ Preuzimanje je uspješno završeno!
 Preuzimanje nije uspjelo!
 Pjesma je dodana u red čekanja!
 Stavljanje pjesme u red čekanja nije uspjelo!
-Informacije o sistemu i podešavanja
+Informacije o sistemu i postavke
 Normalizacija volumena
 Različite pjesme često imaju različitu jačinu zvuka. Omogućavanje normalizacije jačine zvuka će prvo pokrenuti <i>ffmpeg</i> da izračuna globalnu jačinu zvuka pjesme i automatski prilagodi jačinu zvuka plejera tako da svaka pjesma zvuči jednako glasno.
+Putanja za preuzimanje biblioteke pjesama
+Ukupan broj pjesama

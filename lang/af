@@ -91,7 +91,7 @@ Verhoog oudiovertraging
  halftone
 Voer asseblief jou naam in. Dit sal verskyn langs die liedjies wat jy van hierdie toestel af in tou staan.
 Liedjie is by die ry gevoeg:
-Lied reeds in die ry:
+Liedjie reeds in die ry:
 Sorteer volgens Datum
 Sorteer volgens Alfabeties
 Voeg '%s' by die tou
@@ -193,3 +193,5 @@ Kon nie die liedjie in tou stel nie!
 Stelselinligting en instellings
 Volume Normalisering
 Verskillende liedjies het dikwels verskillende volume. Aktivering van volumenormalisering sal eers <i>ffmpeg</i> laat loop om die globale volume van 'n liedjie te bereken en spelervolume outomaties aan te pas sodat elke liedjie ewe hard klink.
+Liedjiebiblioteek aflaai pad
+Totale aantal liedjies

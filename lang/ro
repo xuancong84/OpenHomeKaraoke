@@ -89,9 +89,9 @@ Reduceți întârzierea audio
 Setați întârzierea audio
 Creșteți întârzierea audio
  semitonuri
-Te rog scrieti numele. Acesta va apărea lângă melodiile pe care le puneți la coadă de pe acest dispozitiv.
+Te rog scrieti numele. Acesta va apărea lângă melodiile pe care le puneți în coadă de pe acest dispozitiv.
 Cântec adăugat la coadă:
-Cântec deja la coadă:
+Cântec deja în coadă:
 Sortati dupa data
 Sortați după alfabetic
 Adăugați „%s” la coadă
@@ -140,7 +140,7 @@ Sigur doriți să reporniți?
 Sigur vrei să actualizezi Youtube-dl chiar acum? Descărcările curente și în așteptare pot eșua.
 Sigur doriți să extindeți sistemul de fișiere? Acest lucru va reporni raspberry pi.
 informație
-Cod URL QR la îndemână pentru a le partaja unui prieten:
+Cod QR URL la îndemână pentru a le partaja unui prieten:
 OS
 Utilizarea discului
 Memorie
@@ -193,3 +193,5 @@ Nu s-a putut pune în coadă melodia!
 Informații de sistem și setări
 Normalizarea volumului
 Cântece diferite au adesea volum diferit. Activarea normalizării volumului va rula mai întâi <i>ffmpeg</i> pentru a calcula volumul global al unei melodii și va ajusta automat volumul playerului, astfel încât fiecare melodie să sune la fel de tare.
+Calea de descărcare a bibliotecii de melodii
+Numărul total de melodii

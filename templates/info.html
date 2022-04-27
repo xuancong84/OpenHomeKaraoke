@@ -54,7 +54,7 @@
 
     $("#norm-vol").change(function(){
       $.get("/norm_vol/" + this.checked, function( data ){
-        location.reload();
+        location.reload(true);
       });
     });
 
@@ -439,6 +439,8 @@ select:-moz-focusring {
 
 <h1>{{getString1(182)}}</h1>
 <ul>
+  <li>{{getString1(196)}}: {{ download_path }}</li>
+  <li>{{getString1(197)}}: {{ num_of_songs }}</li>
   <li>{{getString1(144)}}: {{ ostype }}</li>
   <li>CPU: {{ cpu }}</li>
   <li>{{getString1(145)}}: {{ disk }}</li>

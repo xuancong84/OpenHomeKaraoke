@@ -91,7 +91,7 @@ Issettja Dewmien Awdjo
  semitoni
 Jekk jogħġbok daħħal ismek. Dan se jidher ħdejn il-kanzunetti li inti fil-kju minn dan l-apparat.
 Kanzunetta miżjuda mal-kju:
-Kanzunetta diġà l-kju:
+Kanzunetta diġà fil-kju:
 Issortja skond id-Data
 Issortja skond Alfabetiku
 Żid '%s' fil-kju
@@ -193,3 +193,5 @@ Naqas milli jpoġġi l-kanzunetta fil-kju!
 Informazzjoni tas-Sistema u Settings
 Normalizzazzjoni tal-Volum
 Kanzunetti differenti ħafna drabi jkollhom volum differenti. L-abilitazzjoni tan-normalizzazzjoni tal-volum l-ewwel se taħdem <i>ffmpeg</i> biex tikkalkula l-volum globali ta 'kanzunetta u taġġusta awtomatikament il-volum tal-plejer sabiex kull kanzunetta tinstema' ugwalment qawwi.
+Mogħdija tat-tniżżil tal-librerija tal-kanzunetti
+Numru totali ta' kanzunetti

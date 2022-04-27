@@ -15,7 +15,7 @@ Excluído da fila:
 Erro ao excluir da fila:
 Download iniciado:
 Após a conclusão, ele será adicionado à fila.
-Após a conclusão, ele aparecerá na lista de "músicas disponíveis".
+Após a conclusão, ele aparecerá na lista "músicas disponíveis".
 Erro: Não é possível excluir esta música porque ela está na fila atual:
 Música excluída:
 Erro: Nenhum parâmetro de música especificado!
@@ -193,3 +193,5 @@ Falha ao colocar a música na fila!
 Informações e configurações do sistema
 Normalização de Volume
 Músicas diferentes geralmente têm volume diferente. Ativar a normalização de volume primeiro executará o <i>ffmpeg</i> para calcular o volume global de uma música e ajustar automaticamente o volume do player para que todas as músicas soem igualmente altas.
+Caminho de download da biblioteca de músicas
+Número total de músicas

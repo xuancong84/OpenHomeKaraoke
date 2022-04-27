@@ -1,6 +1,6 @@
 Magyar
 Helytelen admin jelszó!
-Kijelentkezett az admin módból!
+Kijelentkezve adminisztrátori módból!
 %s véletlenszerű szám hozzáadva
 Kifogytak a dalok!
 Törölték a sort!
@@ -140,7 +140,7 @@ Biztos, hogy újra akarod indítani?
 Biztos, hogy most azonnal frissíti a Youtube-dl-t? A jelenlegi és a függőben lévő letöltések sikertelenek lehetnek.
 Biztos benne, hogy ki szeretné bővíteni a fájlrendszert? Ezzel újraindítja a Raspberry pi-t.
 Információ
-Praktikus URL QR-kód, amelyet megoszthat egy haverjával:
+Praktikus URL QR-kód, amelyet megoszthat egy barátjával:
 OS
 Lemez használat
 memória
@@ -193,3 +193,5 @@ Nem sikerült sorba állítani a dalt!
 Rendszerinformációk és beállítások
 Hangerő normalizálása
 A különböző dalok hangereje gyakran eltérő. A hangerő normalizálásának engedélyezése először az <i>ffmpeg</i> programot futtatja, hogy kiszámítsa egy dal globális hangerejét, és automatikusan beállítja a lejátszó hangerejét, hogy minden dal egyformán hangosan szóljon.
+Dalkönyvtár letöltési útvonala
+A dalok teljes száma

@@ -91,7 +91,7 @@ Tambah Tundha Audio
  semitone
 Mangga ketik jeneng sampeyan. Iki bakal ditampilake ing jejere lagu sing sampeyan antri saka piranti iki.
 Lagu ditambahake ing antrian:
-Lagu wis antri:
+Lagu wis ana ing antrian:
 Urut miturut Tanggal
 Urut miturut Abjad
 Tambah '%s' menyang antrian
@@ -100,7 +100,7 @@ Diurut miturut 'Tanggal'
 Diurut miturut 'Alphabetical'
 tembang
 nampilake <b>{start} - {end}</b> {record_name}, total <b>{total}</b> {record_name}
-ketemu <b>{temu}</b> {record_name}, nampilake <b>{start} - {end}</b> {record_name}
+ketemu <b>{found}</b> {record_name}, nampilake <b>{start} - {end}</b> {record_name}
 Sunting lagu
 Pindhah munggah ing antrian
 Pindhah mudhun ing antrian
@@ -121,7 +121,7 @@ Kalebu pertandhingan non-karaoke
 Majeng
 Ketik lagu (judul/artis) kanggo nelusuri lagu sing kasedhiya lan klik 'Antri' kanggo ditambahake menyang antrian.
 Yen lagu ora katon ing gulung mudhun "Lagu Kasedhiya", klik 'Telusuri' kanggo nemokake ing Youtube.
-Langsung download url YouTube:
+Ngundhuh langsung URL YouTube:
 Tambah menyang antrian
 Kalebu subtitle
 Ngundhuh
@@ -193,3 +193,5 @@ Gagal ngantri lagu!
 Info & Setelan Sistem
 Normalisasi Volume
 Lagu sing beda kerep duwe volume sing beda. Ngaktifake normalisasi volume bakal mbukak <i>ffmpeg</i> kanggo ngetung volume global lagu lan nyetel volume pamuter kanthi otomatis supaya saben lagu muni padha banter.
+Path download perpustakaan lagu
+Jumlah total lagu

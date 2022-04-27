@@ -89,9 +89,9 @@ Zmanjšajte zakasnitev zvoka
 Nastavite zakasnitev zvoka
 Povečaj zakasnitev zvoka
  poltoni
-Prosimo, vnesite svoje ime. To se bo prikazalo poleg skladb, ki jih postavite v čakalno vrsto iz te naprave.
+Prosimo vnesite svoje ime. To se bo prikazalo poleg skladb, ki jih postavite v čakalno vrsto iz te naprave.
 Pesem dodana v čakalno vrsto:
-Pesem je že v vrsti:
+Pesem je že v čakalni vrsti:
 Razvrsti po datumu
 Razvrsti po abecedi
 Dodajte »%s« v čakalno vrsto
@@ -121,7 +121,7 @@ Vključite tekme, ki niso karaoke
 Napredno
 Vnesite pesem (naslov/izvajalec), da poiščete razpoložljive pesmi, in kliknite »V čakalni vrsti«, da jo dodate v čakalno vrsto.
 Če se skladba ne prikaže v spustnem meniju »Razpoložljive pesmi«, kliknite »Išči«, da jo poiščete na Youtubu.
-URL za neposredni prenos YouTube:
+URL za neposreden prenos YouTube:
 Dodaj v čakalno vrsto
 Vključi podnapise
 Prenesi
@@ -193,3 +193,5 @@ Skladbe ni bilo mogoče postaviti v čakalno vrsto!
 Informacije o sistemu in nastavitve
 Normalizacija glasnosti
 Različne pesmi imajo pogosto različno glasnost. Če omogočite normalizacijo glasnosti, bo najprej zagnal <i>ffmpeg</i>, da bi izračunal globalno glasnost skladbe in samodejno prilagodil glasnost predvajalnika, tako da bo vsaka skladba zvenela enako glasno.
+Pot za prenos knjižnice pesmi
+Skupno število pesmi

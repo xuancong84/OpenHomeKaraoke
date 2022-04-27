@@ -91,7 +91,7 @@ Suurendage heli viivitust
  pooltoonid
 Palun sisestage oma nimi. See kuvatakse selles seadmes järjekorda pandud lugude kõrval.
 Järjekorda lisatud laul:
-Laul on juba järjekorras:
+Laul juba järjekorras:
 Sorteeri kuupäeva järgi
 Sorteeri tähestiku järgi
 Lisa '%s' järjekorda
@@ -130,7 +130,7 @@ Otsi tulemusi
 Rohkemate tulemuste kuvamiseks klõpsake rippmenüül
 Link:
 Saadaolevad laulud
-Kas soovite muuta seda seadet kasutava isiku kuvatavat nime? See kuvatakse järjekorras olevate lugude kõrval. Praegune:
+Kas soovite muuta seda seadet kasutava inimese kuvatavat nime? See kuvatakse järjekorras olevate lugude kõrval. Praegune:
 Praegune kasutaja
 Seaded
 PiKaraoke
@@ -193,3 +193,5 @@ Laulu järjekorda seadmine ebaõnnestus!
 Süsteemi teave ja sätted
 Helitugevuse normaliseerimine
 Erinevatel lauludel on sageli erinev helitugevus. Helitugevuse normaliseerimise lubamisel käivitatakse esmalt <i>ffmpeg</i>, mis arvutab loo globaalse helitugevuse ja reguleerib automaatselt pleieri helitugevust, nii et iga lugu kõlaks võrdselt.
+Laulukogu allalaadimise tee
+Laulude koguarv

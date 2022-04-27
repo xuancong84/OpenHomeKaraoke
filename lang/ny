@@ -8,7 +8,7 @@ Cholakwika pakusuntha chinthu mkati mwa mzere: mkangano wolakwika
 Zinthu zasuntha bwino mkati mwa mzere:
 Vuto pakusuntha chinthu mkati mwa mzere:
 Zatsitsidwa pamzere:
-Vuto likusuntha pamzere:
+Zolakwika pakusuntha pamzere:
 Zakwezedwa pamzere:
 Vuto kukwera pamzere:
 Zachotsedwa pamzere:
@@ -18,7 +18,7 @@ Mukamaliza, zidzawonjezedwa pamzere.
 Akamaliza, izo kuonekera mu "nyimbo zilipo" mndandanda.
 Vuto: Sitingathe kuchotsa nyimboyi chifukwa ili pamzere pano:
 Nyimbo yachotsedwa:
-Vuto: Palibe gawo la nyimbo lomwe latchulidwa!
+Vuto: Palibe nyimbo yotchulidwa!
 Vuto: Sitingathe kusintha nyimboyi chifukwa ikuseweredwa pano:
 Sinthani Fayilo ya Nyimbo
 Fayilo yolakwika: '%s' kukhala '%s'. Fayiloyo ilipo kale.
@@ -48,7 +48,7 @@ Kupanga njira yotsitsa:
 Wifi/Network sinalumikizidwe. Kutseka mu 10s ...
 Posankha nyimbo, sankhani QR kapena gwirizanitsani
 Kwa chiwonetsero cha TV, lumikizani ku
-Dinani F kuti musinthe skrini yonse
+Dinani F kuti musinthe mawonekedwe athunthu
 Dinani ESC kuti musiye PiKaraoke
 Kukhazikitsa kwa RaspiWifiConfig kwapezeka!
 Lumikizani chipangizo china/foni ya m'manja ku Wifi AP: '%s'
@@ -91,7 +91,7 @@ Onjezani Kuchedwa Kwamawu
  semitones
 Chonde lowetsani dzina lanu. Izi ziwoneka pafupi ndi nyimbo zomwe mumayimilira pachidachi.
 Nyimbo idawonjezedwa pamzere:
-Nyimbo yomwe ili kale pamzere:
+Nyimbo ili kale pamzere:
 Sanjani ndi Tsiku
 Sanjani ndi Zilembo
 Onjezani '%s' pamzere
@@ -188,8 +188,10 @@ Chilankhulo chamakono:
 Izi zikusintha chilankhulo cha PiKaraoke backend system yomwe imawonetsedwa pa TV; Komanso, wogwiritsa ntchito aliyense wolumikizira amathanso kusintha chilankhulo chawo cha Web UI pa batani lapadziko lonse lapansi patsamba lakumanja.
 Kutsitsa kwatha!
 Kutsitsa kwalephera!
-Nyimbo yawonjezedwa pamzere!
+Nyimbo idawonjezedwa pamzere!
 Zalephera kuyimitsa nyimboyi!
 Zambiri Zadongosolo & Zikhazikiko
 Kusintha kwa Voliyumu
 Nyimbo zosiyana nthawi zambiri zimakhala ndi voliyumu yosiyana. Kuthandizira kukhazikika kwa voliyumu kumayendetsa <i>ffmpeg</i>kuwerengera kuchuluka kwa nyimbo padziko lonse lapansi ndikusinthiratu voliyumu ya osewera kuti nyimbo iliyonse izimveka mokweza chimodzimodzi.
+Nyimbo laibulale download njira
+Chiwerengero cha nyimbo

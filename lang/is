@@ -91,7 +91,7 @@ Auka seinkun á hljóði
  hálftónar
 Vinsamlegast sláðu inn nafnið þitt. Þetta mun birtast við hliðina á lögunum sem þú setur í biðröð úr þessu tæki.
 Lagi bætt við röðina:
-Lagið er þegar í röðinni:
+Lag þegar í röðinni:
 Raða eftir dagsetningu
 Raða eftir stafrófsröð
 Bættu '%s' við röðina
@@ -117,7 +117,7 @@ Lagið er þegar í biðröðinni:
 Leita / Bæta við nýju
 Leita
 Biðröð
-Láttu leiki sem ekki eru karókí
+Látið fylgja leiki sem ekki eru karókí
 Ítarlegri
 Sláðu inn lag (titill/listamaður) til að leita að tiltækum lögum og smelltu á 'Biðröð' til að bæta því við röðina.
 Ef lagið birtist ekki í "Available Songs" fellilistanum, smelltu á 'Search' til að finna það á Youtube.
@@ -193,3 +193,5 @@ Mistókst að setja lagið í biðröð!
 Kerfisupplýsingar og stillingar
 Volume Normalization
 Mismunandi lög hafa oft mismunandi hljóðstyrk. Ef stöðlun hljóðstyrks er virkt mun fyrst keyra <i>ffmpeg</i> til að reikna út heildarstyrk lags og stilla hljóðstyrk spilarans sjálfkrafa þannig að hvert lag hljómi jafn hátt.
+Slóð lagasafns til að sækja
+Heildarfjöldi laga

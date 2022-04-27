@@ -91,7 +91,7 @@ Tingkatkan Penundaan Audio
  semitone
 Silahkan masukan nama anda. Ini akan muncul di sebelah lagu yang Anda antri dari perangkat ini.
 Lagu ditambahkan ke antrian:
-Lagu sudah antrian:
+Lagu sudah dalam antrian:
 Urutkan berdasarkan Tanggal
 Urutkan berdasarkan Abjad
 Tambahkan '%s' ke antrian
@@ -164,7 +164,7 @@ Segarkan daftar lagu:
 Pindai ulang direktori lagu
 Anda hanya perlu melakukan ini jika Anda menyalin file secara manual ke direktori unduhan saat PiKaraoke sedang berjalan.
 Pembaruan
-Jika unduhan atau pencarian berhenti berfungsi, memperbarui youtube-dl mungkin akan memperbaikinya. Versi terinstal saat ini adalah:
+Jika unduhan atau pencarian berhenti berfungsi, memperbarui youtube-dl mungkin akan memperbaikinya. Versi yang diinstal saat ini adalah:
 Perbarui youtube-dl
 Tautan pembaruan di atas ini mungkin gagal jika Anda tidak memiliki izin file yang tepat. Periksa log PiKaraoke untuk kesalahan.
 Menutup
@@ -193,3 +193,5 @@ Gagal mengantrekan lagu!
 Info & Pengaturan Sistem
 Normalisasi Volume
 Lagu yang berbeda seringkali memiliki volume yang berbeda. Mengaktifkan normalisasi volume pertama-tama akan menjalankan <i>ffmpeg</i> untuk menghitung volume global sebuah lagu dan secara otomatis menyesuaikan volume pemutar sehingga setiap lagu terdengar sama kerasnya.
+Jalur unduhan perpustakaan lagu
+Jumlah lagu

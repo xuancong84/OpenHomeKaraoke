@@ -6,7 +6,7 @@ Elĉerpigis kantojn!
 Malplenigis la atendovicon!
 Eraro dum movi eron en la voston: nevalida argumento
 Sukcese movita aĵo en la atendovico:
-Eraro dum movi eron en la atendovico:
+Eraro dum movo de objekto en la atendovico:
 Moviĝis malsupren en atendovico:
 Eraro moviĝante malsupren en atendovico:
 Moviĝis supren en atendovico:
@@ -91,7 +91,7 @@ Pliigi Audio Prokrasto
  duontonoj
 Bonvolu enigi vian nomon. Ĉi tio aperos apud la kantoj, kiujn vi vicigas de ĉi tiu aparato.
 Kanto aldonita al la vico:
-Kanto jam la vico:
+Kanto jam en la vico:
 Ordigi laŭ Dato
 Ordigi laŭ Alfabeta
 Aldonu '%s' al la vico
@@ -193,3 +193,5 @@ Malsukcesis vicigi la kanton!
 Sistema Informoj kaj Agordoj
 Volumo Normaligo
 Malsamaj kantoj ofte havas malsaman volumon. Ebligi volumnormaligon unue ruliĝos <i>ffmpeg</i> por kalkuli la tutmondan volumon de kanto kaj aŭtomate ĝustigi ludantan volumon tiel ke ĉiu kanto sonu same laŭte.
+Kantbiblioteko elŝuta vojo
+Tuta nombro da kantoj

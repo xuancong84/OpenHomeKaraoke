@@ -69,7 +69,7 @@ Huri Kī
 Kaore he mea e takaro ana inaianei.
 Karekau he waiata e rarangi.
 Kaore tenei waiata i apitihia e koe. Me timata ano tenei riu?
-Karekau tenei waiata i apitihia e koe. Kei te hiahia peke koe i tenei riu?
+Kaore tenei waiata i apitihia e koe. Kei te hiahia peke koe i tenei riu?
 Mana Player
 Kei te takaro inaianei
 Waiata Panuku
@@ -91,7 +91,7 @@ Whakanuia te Rooro Ororongo
  semitones
 Whakauruhia to ingoa. Ka puta tenei ki te taha o nga waiata e tutira ana koe mai i tenei taputapu.
 Waiata i tapirihia ki te rarangi:
-Waiata kua te rarangi:
+Waiata kei roto kē i te tūtira:
 Kōmaka mā te Rā
 Kōmaka mā te Pūāhua
 Tāpirihia te '%s' ki te tūtira
@@ -149,7 +149,7 @@ Whakawehe reo
 Youtube-dl (yt-dlp) putanga
 PiKaraoke version
 Kōwhiringa Mana Arā Atu Anō
-Aratau Wehewehe reo:
+Aratau Wehewehe Wao:
 Whakamahia te L-R/L+R
 Whakamahia te DNN
 Ko te oro MTV paerewa e rua nga hongere tiwharewha (L me R) kua whakawaeheretia kia penei ai: Ko L-R te riu taputapu, ko L+R te riu reo. No reira, ma te tango noa, ma te taapiri ranei i nga hongere tiwharewha e rua, ka whiwhi tatou i te riu puoro me te riu reo i roto i te oro kotahi. Ko te whakawehe reo a PiKaraoke i hangaia i roto i te DNN (whatunga neural hohonu) e whakamahi ana i te AI algorithm ki te wehe i nga oro whakatangitangi me te oro oro i roto i ia riipene hiko motuhake ka puta mai he riipene whakatangitangi me te tangi oro.
@@ -164,9 +164,9 @@ Tāmatahia te rārangi waiata:
 Matawai ano i te raarangi waiata
 Me mahi noa koe mena ka kape a ringa koe i nga konae ki te raarangi tangohanga i a PiKaraoke e whakahaere ana.
 Nga whakahou
-Mena ka mutu te mahi tango, rapunga ranei, ma te whakahou i a youtube-dl ka whakatika. Ko te putanga kua whakauruhia inaianei ko:
+Mena ka mutu te mahi tango, rapunga ranei, ma te whakahou i te youtube-dl ka whakatika. Ko te putanga kua whakauruhia inaianei ko:
 Whakahoutia te youtube-dl
-Ka rahua pea tenei hononga whakahou ki runga ake mena karekau he whakaaetanga konae tika. Tirohia te rangitaki PiKaraoke mo nga hapa.
+Ka rahua pea tenei hononga whakahou ki runga ake mena karekau koe i nga whakaaetanga konae tika. Tirohia te rangitaki PiKaraoke mo nga hapa.
 Whakaweto
 Kaua e kumea noa te mono! Whakawetohia to tūmau i nga wa katoa kia kore ai e pirau nga raraunga.
 Whakamutua PiKaraoke
@@ -185,7 +185,7 @@ Hurihia te Reo
 Kōwhirihia te reo
 Te Reo Pūnaha
 Reo pūnaha o nāianei:
-Ka huri tenei i te reo o te punaha PiKaraoke ka whakaatuhia ki te mata pouaka whakaata; i tua atu, ka taea hoki e ia kaiwhakamahi hono te huri i o raatau reo UI Tukutuku i roto i te paatene o te ao i te tahua matau-runga.
+Ka huri tenei i te reo o te punaha PiKaraoke ki muri ka whakaatuhia ki te mata pouaka whakaata; i tua atu, ka taea hoki e ia kaiwhakamahi hono te huri i o raatau reo UI Tukutuku i roto i te paatene o te ao i te tahua matau-runga.
 Kua oti pai te tango!
 I rahua te tango!
 Waiata kua tapirihia ki te rarangi!
@@ -193,3 +193,5 @@ I rahua te tūtira i te waiata!
 Mōhiohio Pūnaha & Tautuhinga
 Whakaritea Rōrahi
 He rereke te reo o nga waiata rereke. Ko te whakaahei i te whakaorite oro ka rere tuatahi <i>ffmpeg</i> ki te tatau i te rōrahi o te ao o te waiata me te whakatika aunoa i te rōrahi kaitākaro kia rite te tangi o ia waiata.
+Te ara tiki pukapuka waiata
+Te maha o nga waiata

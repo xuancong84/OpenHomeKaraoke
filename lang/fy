@@ -91,7 +91,7 @@ Ferheegje Audio Delay
  heale toanen
 Fier jo namme yn. Dit sil ferskine neist de ferskes dy't jo yn 'e wachtrige stean fan dit apparaat.
 Lied tafoege oan de wachtrige:
-Song al de wachtrige:
+Lied al yn 'e wachtrige:
 Sortearje op datum
 Sortearje op alfabetysk
 Foegje '%s' ta oan de wachtrige
@@ -164,7 +164,7 @@ Ferfarskje de ferskelist:
 Fersykje ferskemap opnij
 Jo moatte dit allinich dwaan as jo bestannen manuell kopieare nei de downloadmap wylst PiKaraoke draaide.
 Updates
-As downloads of sykopdrachten ophâlde te wurkjen, sil it bywurkjen fan youtube-dl it wierskynlik reparearje. De hjoeddeistige ynstalleare ferzje is:
+As downloads of sykopdrachten ophâlde te wurkjen, sil it bywurkjen fan youtube-dl it wierskynlik reparearje. De hjoeddeistige ynstallearre ferzje is:
 Update youtube-dl
 Dizze fernijingskeppeling hjirboppe kin mislearje as jo gjin goede triemrjochten hawwe. Kontrolearje it PiKaraoke-log foar flaters.
 Ofslúte
@@ -192,4 +192,6 @@ Lied tafoege oan de wachtrige!
 It ferske is net slagge!
 Systeemynfo en ynstellings
 Volume normalization
-Ferskillende lieten hawwe faak ferskillende folume. It ynskeakeljen fan folumenormalisaasje sil earst <i>ffmpeg</i> útfiere om it globale folume fan in ferske te berekkenjen en it folume fan it spiler automatysk oan te passen sadat elk ferske like heech klinkt.
+Ferskillende ferskes hawwe faak ferskillende folume. It ynskeakeljen fan folumenormalisaasje sil earst <i>ffmpeg</i> útfiere om it globale folume fan in ferske te berekkenjen en it folume fan it spiler automatysk oan te passen sadat elk ferske like heech klinkt.
+Paad fan de liedbibliotheek download
+Totaal oantal ferskes

@@ -52,6 +52,7 @@ class Karaoke:
 	vocal_mode = 'mixed'
 	is_paused = True
 	firstSongStarted = False
+	switchingSong = False
 	qr_code_path = None
 	base_path = os.path.dirname(__file__)
 	volume_offset = 0
@@ -59,55 +60,31 @@ class Karaoke:
 	default_logo_path = os.path.join(base_path, "logo.png")
 	logical_volume = None   # for normalized volume
 
-	def __init__(
-			self,
-			nonroot_user = None,
-			port = 5000,
-			download_path = "/usr/lib/pikaraoke/songs",
-			hide_ip = False,
-			hide_raspiwifi_instructions = False,
-			hide_splash_screen = False,
-			omxplayer_adev = "both",
-			dual_screen = False,
-			high_quality = False,
-			volume = 0,
-			log_level = logging.DEBUG,
-			splash_delay = 2,
-			youtubedl_path = "/usr/local/bin/yt-dlp",
-			omxplayer_path = None,
-			use_omxplayer = False,
-			use_vlc = True,
-			vlc_path = None,
-			vlc_port = None,
-			logo_path = None,
-			show_overlay = False,
-			run_vocal = False,
-			normalize_vol = False,
-			window_mode = False
-	):
+	def __init__(self, args):
 
 		# override with supplied constructor args if provided
-		self.nonroot_user = nonroot_user
-		self.port = port
-		self.hide_ip = hide_ip
-		self.hide_raspiwifi_instructions = hide_raspiwifi_instructions
-		self.hide_splash_screen = hide_splash_screen
-		self.omxplayer_adev = omxplayer_adev
-		self.download_path = download_path
-		self.dual_screen = dual_screen
-		self.high_quality = high_quality
-		self.splash_delay = int(splash_delay)
-		self.volume_offset = self.volume = volume
-		self.youtubedl_path = youtubedl_path
-		self.omxplayer_path = omxplayer_path
-		self.use_omxplayer = use_omxplayer
-		self.use_vlc = use_vlc
-		self.vlc_path = vlc_path
-		self.vlc_port = vlc_port
-		self.logo_path = self.default_logo_path if logo_path == None else logo_path
-		self.show_overlay = show_overlay
-		self.run_vocal = run_vocal
-		self.normalize_vol = normalize_vol
+		self.args = args
+		self.nonroot_user = args.nonroot_user
+		self.port = args.port
+		self.hide_ip = args.hide_ip
+		self.hide_raspiwifi_instructions = args.hide_raspiwifi_instructions
+		self.hide_splash_screen = args.hide_splash_screen
+		self.omxplayer_adev = 'both'
+		self.download_path = args.dl_path
+		self.dual_screen = args.dual_screen
+		self.high_quality = args.high_quality
+		self.splash_delay = int(args.splash_delay)
+		self.volume_offset = self.volume = args.volume
+		self.youtubedl_path = args.youtubedl_path
+		self.omxplayer_path = args.omxplayer_path
+		self.use_omxplayer = args.use_omxplayer
+		self.use_vlc = args.use_vlc
+		self.vlc_path = args.vlc_path
+		self.vlc_port = args.vlc_port
+		self.logo_path = self.default_logo_path if args.logo_path == None else args.logo_path
+		self.show_overlay = args.show_overlay
+		self.run_vocal = args.run_vocal
+		self.normalize_vol = args.normalize_vol
 
 		# other initializations
 		self.platform = get_platform()
@@ -116,11 +93,12 @@ class Karaoke:
 		self.screen = None
 		self.player_state = {}
 		self.downloading_songs = {}
+		self.log_level = int(args.log_level)
 
 		logging.basicConfig(
 			format = "[%(asctime)s] %(levelname)s: %(message)s",
 			datefmt = "%Y-%m-%d %H:%M:%S",
-			level = int(log_level),
+			level = self.log_level,
 		)
 
 		logging.debug(
@@ -162,7 +140,7 @@ class Karaoke:
 				self.use_vlc,
 				self.vlc_path,
 				self.vlc_port,
-				log_level,
+				self.log_level,
 				self.show_overlay
 			)
 		)
@@ -205,7 +183,7 @@ class Karaoke:
 			                                     dual_screen = self.dual_screen, volume_offset = self.volume_offset)
 
 		if not self.hide_splash_screen:
-			self.initialize_screen(not window_mode)
+			self.initialize_screen(not args.windowed)
 			self.render_splash_screen()
 
 	# Other ip-getting methods are unreliable and sometimes return 127.0.0.1
@@ -417,6 +395,11 @@ class Karaoke:
 			render_next_user = self.render_font([50, 40, 30], getString(57) + next_user, (0, 240, 0))
 			self.screen.blit(render_next_song[0], (self.screen.get_width() - render_next_song[1].width - 10, self.normalize(blitY)))
 			self.screen.blit(render_next_user[0], (self.screen.get_width() - render_next_user[1].width - 10, self.normalize(blitY+70)))
+		elif not self.firstSongStarted:
+			text1 = self.render_font(sysfont_size, getString(196) + ': ' + self.download_path, (255, 255, 0))
+			self.screen.blit(text1[0], self.normalize((20, 20)))
+			text2 = self.render_font(sysfont_size, getString(197) + ': %d'%len(self.available_songs), (255, 255, 0))
+			self.screen.blit(text2[0], self.normalize((20, 30+sysfont_size)))
 
 	def render_font(self, sizes, text, *kargs):
 		if type(sizes) != list:
@@ -631,6 +614,7 @@ class Karaoke:
 				self.omxclient.kill()
 
 	def play_file(self, file_path, extra_params = []):
+		self.switchingSong = True
 		if self.use_vlc:
 			extra_params1 = []
 			logging.info("Playing video in VLC: " + file_path)
@@ -663,6 +647,7 @@ class Karaoke:
 			logging.info("Playing video in omxplayer: " + file_path)
 			self.omxclient.play_file(file_path)
 
+		self.switchingSong = False
 		self.render_splash_screen()  # remove old previous track
 
 	def play_transposed(self, semitones):
@@ -1101,6 +1086,7 @@ class Karaoke:
 			pcm_data = subprocess.check_output(['ffmpeg', '-i', filename, '-vn', '-f', 's16le', '-acodec', 'pcm_s16le', '-'], stderr = subprocess.DEVNULL)
 			return np.clip(np.sqrt(np.std(np.frombuffer(pcm_data, dtype = np.int16))/STD_VOL), 0.1, 10)
 		except:
+			self.normalize_vol = False
 			return 1
 
 	def update_logical_vol(self):
@@ -1109,6 +1095,8 @@ class Karaoke:
 
 	def enable_vol_norm(self, enable):
 		self.normalize_vol = enable
+		if enable and shutil.which('ffmpeg') is None:
+			self.normalize_vol = enable = False
 		if enable and self.now_playing_filename:
 			self.volume = self.vlcclient.get_info_xml()['volume']
 			self.media_vol = self.compute_volume(self.now_playing_filename)

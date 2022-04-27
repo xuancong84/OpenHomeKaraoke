@@ -1,5 +1,7 @@
 {% extends 'base.html' %} {% block scripts %}
 <script>
+	var cutoffTime = Date.now();
+	var queryTime = Date.now();
   var transpose_seeking = false;
   var seektrack_seeking = false;
   var audiodelay_typing = false;
@@ -32,8 +34,9 @@
   }
 
   function getNowPlaying() {
+  		queryTime = Date.now();
       $.get('{{ url_for("nowplaying") }}').done(function (data) {
-      	if(!data) return;
+      	if(!data || queryTime<cutoffTime) return;
         obj = JSON.parse(data);
         if (obj.now_playing) {
           var nowPlayingHtml = `<p style="margin-bottom: 5px">${obj.now_playing}</p>
@@ -139,6 +142,7 @@
         value = 0;
       }
       if ( value != slider_prev_value ){
+        cutoffTime = Date.now();
         $.get("/transpose/" + value);
         output.innerHTML = getSemitonesLabel(slider.value);
         slider_prev_value = value
@@ -147,6 +151,7 @@
 
 		var seektrack = document.getElementById("seektrack");
 		seektrack.onchange = function () {
+			cutoffTime = Date.now();
 			$.get("/seek/" + seektrack.value);
     };
     seektrack.oninput = function () {
@@ -186,6 +191,7 @@
 
     $("#restart").click(function () {
       if (checkUser() || confirm("{{getString1(71)}}")) {
+      	cutoffTime = Date.now();
         $.get("/restart");
       }
     });
@@ -264,8 +270,10 @@
 			if(i==n) toggleSwitch.classList.add('horizTranslate'+i);
 			else toggleSwitch.classList.remove('horizTranslate'+i);
 		}
-		if(do_action)
+		if(do_action){
+			cutoffTime = Date.now();
 			$.get("/play_vocal/"+(n==2?'mixed':(n==1?'nonvocal':'vocal')));
+		}
 	}
 	
 	function s3_enable(n, val) {

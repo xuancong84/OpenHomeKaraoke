@@ -91,7 +91,7 @@ Mu Idaduro ohun pọ si
  awọn semitones
 Jọwọ tẹ orukọ rẹ sii. Eyi yoo ṣafihan lẹgbẹẹ awọn orin ti o ti isinyi lati ẹrọ yii.
 Orin ti a fi kun si isinyi:
-Orin ti isinyi tẹlẹ:
+Orin tẹlẹ ninu isinyi:
 Too nipa Ọjọ
 To lẹsẹsẹ nipasẹ Alfabeti
 Ṣafikun '%s' si isinyin
@@ -99,7 +99,7 @@ To lẹsẹsẹ nipasẹ Alfabeti
 Ti ṣeto nipasẹ 'Ọjọ'
 To lẹsẹsẹ nipasẹ 'Alfabeti'
 awọn orin
-ti nfihan <b>{bẹrẹ} - {opin}</b> {orukọ igbasilẹ}, lapapọ <b>{lapapọ}</b> {orukọ igbasilẹ}
+ti nfihan <b>{bẹrẹ} - {opin}</b> {orukọ_igbasilẹ}, lapapọ <b>{lapapọ}</b> {orukọ igbasilẹ}
 ri <b>{ri}</b> {record_name}, ti nfihan <b>{bẹrẹ} - {opin}</b> {orukọ igbasilẹ}
 Ṣatunkọ orin
 Gbe soke ni isinyi
@@ -130,7 +130,7 @@ Wa esi fun
 Tẹ silẹ lati ṣafihan awọn abajade diẹ sii
 Ọna asopọ:
 Awọn orin to wa
-Ṣe o fẹ yi orukọ ifihan ti eniyan ti o nlo ẹrọ yii pada bi? Eyi yoo han lẹgbẹẹ awọn orin ti o wa ni ila. Lọwọlọwọ:
+Ṣe o fẹ yi orukọ ifihan ti eniyan ti o nlo ẹrọ yii pada? Eyi yoo han lẹgbẹẹ awọn orin ti o wa ni ila. Lọwọlọwọ:
 Olumulo lọwọlọwọ
 Ètò
 PiKaraoke
@@ -159,7 +159,7 @@ Pipin ohun (ti o ṣe atilẹyin mejeeji orisun-DNN ati iyokuro sitẹrio) nṣi
 Tun ohun ati fidio ṣiṣẹpọ:
 Duro Streamer
 Tun Streamer bẹrẹ
-Eyi kan ti ndun KTV nikan nipasẹ ẹrọ aṣawakiri wẹẹbu. Atunbẹrẹ iboju-yaworan-ati-sisanwọle ṣe imuṣiṣẹpọ ohun/fidio, o tun dinku lairi laarin olupin ati ẹrọ aṣawakiri.
+Eyi nikan kan ti ndun KTV nipasẹ ẹrọ aṣawakiri wẹẹbu. Atunbẹrẹ iboju-yaworan-ati-sisanwọle ṣe imuṣiṣẹpọ ohun/fidio, o tun dinku lairi laarin olupin ati ẹrọ aṣawakiri.
 Tun akojọ orin naa sọ:
 Atunyẹwo orin liana
 O yẹ ki o nilo lati ṣe eyi nikan ti o ba daakọ awọn faili pẹlu ọwọ si ilana igbasilẹ lakoko ti PiKaraoke nṣiṣẹ.
@@ -189,7 +189,9 @@ Eyi yipada ede ti eto ẹhin PiKaraoke eyiti o han loju iboju TV; pẹlupẹlu, 
 Ṣe igbasilẹ ti pari ni aṣeyọri!
 Gbigbasilẹ kuna!
 Orin kun si awọn ti isinyi!
-Kuna lati fi orin laini!
-Alaye Eto & Eto
+O kuna lati ṣe isinyin orin naa!
+Alaye System & Eto
 Didara iwọn didun
 Awọn orin oriṣiriṣi nigbagbogbo ni iwọn didun oriṣiriṣi. Muu ṣiṣẹ deede iwọn didun yoo kọkọ ṣiṣẹ <i>ffmpeg</i>lati ṣe iṣiro iwọn didun agbaye ti orin kan ati ṣatunṣe iwọn didun ẹrọ laifọwọyi ki gbogbo orin yoo dun gaan.
+Song ìkàwé download ona
+Lapapọ nọmba ti awọn orin
