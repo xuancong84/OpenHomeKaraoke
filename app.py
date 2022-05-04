@@ -707,11 +707,11 @@ def get_default_dl_dir(platform):
 	if platform == "raspberry_pi":
 		return "/usr/lib/pikaraoke/songs"
 	else:
-		legacy_directory = os.path.expanduser("~\pikaraoke\songs")
+		legacy_directory = os.path.expanduser("~/pikaraoke/songs")
 		if os.path.exists(legacy_directory):
 			return legacy_directory
 		else:
-			return os.path.expanduser("~\pikaraoke-songs")
+			return os.path.expanduser("~/pikaraoke-songs")
 
 
 if __name__ == "__main__":
