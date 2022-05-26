@@ -15,7 +15,7 @@ import arabic_reshaper
 from bidi.algorithm import get_display
 from unidecode import unidecode
 from lib import omxclient, vlcclient
-from lib.get_platform import get_platform
+from lib.get_platform import *
 from app import getString
 
 STD_VOL = 65536/8/np.sqrt(2)

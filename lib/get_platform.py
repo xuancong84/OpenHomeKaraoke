@@ -173,3 +173,8 @@ def set_language(lang):
 		raise Exception(f"Language file lang/{lang} not found")
 	os.lang = new_lang
 	os.texts = os.langs[new_lang]
+
+
+def escape_win_filename(fn):
+	return fn.replace('/', '\\').replace('^', '^^').replace('&', '^&').replace('(', '^(').replace(')', '^)').replace('%', '^%')
+

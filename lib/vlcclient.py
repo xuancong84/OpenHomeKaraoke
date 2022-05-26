@@ -4,7 +4,7 @@ import subprocess, zipfile
 
 import requests
 
-from lib.get_platform import get_platform
+from lib.get_platform import *
 from types import SimpleNamespace
 from html import unescape
 
@@ -140,12 +140,10 @@ class VLCClient:
 					self.process.wait(2)
 				except:
 					self.process.kill()
-			if self.platform == "windows":
-				file_path = r"{}".format(file_path.replace('/', '\\'))
 			command = self.cmd_base + params + [file_path]
 			logging.info("VLC Command: %s" % command)
 
-			self.process = subprocess.Popen(command, shell = (self.platform == "windows"), stdin = subprocess.PIPE)
+			self.process = subprocess.Popen(command, stdin = subprocess.PIPE)
 
 			# wait for the process to start
 			while self.process.poll() is not None:
