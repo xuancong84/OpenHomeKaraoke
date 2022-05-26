@@ -154,7 +154,7 @@ class VLCClient:
 				time.sleep(0.1)
 				req = self.command("", False)
 				xml = req.text
-				if not self.K.is_paused and self.get_val_xml(xml, 'state') == 'stopped':
+				if "<info name='Type'>Video</info>" not in xml and "<info name='Type'>Audio</info>" not in xml:
 					pass
 				elif req.status_code == 200:
 					break
