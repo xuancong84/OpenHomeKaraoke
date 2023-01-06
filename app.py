@@ -708,10 +708,7 @@ def get_default_dl_dir(platform):
 		return "/usr/lib/pikaraoke/songs"
 	else:
 		legacy_directory = os.path.expanduser("~/pikaraoke/songs")
-		if os.path.exists(legacy_directory):
-			return legacy_directory
-		else:
-			return os.path.expanduser("~/pikaraoke-songs")
+		return legacy_directory if os.path.exists(legacy_directory) else os.path.expanduser("~/pikaraoke-songs")
 
 
 if __name__ == "__main__":
@@ -896,6 +893,8 @@ if __name__ == "__main__":
 	args.dl_path = os.path.expanduser(args.download_path)
 	if not args.dl_path.endswith("/"):
 		args.dl_path += "/"
+	if platform == 'windows':	# on Windows, VLC cannot open filenames containing '/'
+		args.dl_path = escape_win_filename(args.dl_path)
 	if not os.path.exists(args.dl_path):
 		print(getString(47) + args.dl_path)
 		os.makedirs(args.dl_path)

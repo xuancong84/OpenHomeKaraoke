@@ -231,9 +231,9 @@ class Karaoke:
 
 	def upgrade_youtubedl(self):
 		logging.info("Upgrading youtube-dl, current version: %s" % self.youtubedl_version)
-		output = check_output([self.youtubedl_path, "-U"]).decode("utf8").strip()
+		output = check_output([self.youtubedl_path, "-U"], stderr=subprocess.STDOUT).decode("utf8").strip()
 		logging.info(output)
-		if "It looks like you installed youtube-dl with a package manager" in output:
+		if "it looks like you installed yt-dlp with a package manager" in output.lower():
 			try:
 				logging.info("Attempting youtube-dl upgrade via pip3...")
 				output = check_output(["pip3", "install", "--upgrade", "yt-dlp"]).decode("utf8")
@@ -925,9 +925,9 @@ class Karaoke:
 			logging.error("Not using VLC. Can't play vocal/nonvocal.")
 
 	def get_vocal_mode(self):
-		if '/nonvocal/' in self.now_playing_slave:
+		if '/nonvocal/' in self.now_playing_slave.replace('\\', '/'):
 			return 1
-		elif '/vocal/' in self.now_playing_slave:
+		elif '/vocal/' in self.now_playing_slave.replace('\\', '/'):
 			return 3
 		return 2
 
