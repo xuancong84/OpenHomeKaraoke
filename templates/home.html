@@ -72,6 +72,7 @@
 						$("#subdelay-box").show();
 						if(obj.subtitle_delay!==null && !subdelay_typing)
 							$("#subdelay-val").text(obj.subtitle_delay.toFixed(1));
+						$('#subtitle-sel').css('text-decoration', obj.show_subtitle?"":"line-through");
 					} else {
 						$("#subdelay-box").hide();
 					}
@@ -220,6 +221,10 @@
     	audiodelay_typing=false;
     });
 
+		$("#subtitle-sel").click(function () {
+    	$.get("/toggle_subtitle");
+    });
+
 		$("#subdelay-val").blur(function () {
     	if($(this).text()=="") $(this).text("0");
     	$.get("/subtitle_delay/" + $(this).text());
@@ -353,7 +358,7 @@ body {
 
 	<div id="subdelay-box">
 		<div class="is-flex" style="justify-content: space-between">
-			<h4>{{getString1(78)}}<a id="subdelay-info"> <i class="icon icon-info-circled-1" title="Info"></i></a>:</h4>
+			<h4><span title="{{getString1(198)}}" id="subtitle-sel" style="cursor:pointer">{{getString1(78)}}</span><a id="subdelay-info"> <i class="icon icon-info-circled-1" title="Info"></i></a>:</h4>
 			<h4 title="{{getString1(85)}}" id="subdelay-dec" class="tabs" style="margin:0; color:red; cursor: pointer; font-weight: bold; font-size:x-large;" >&#x2296;</h4>
 			<h4 title="{{getString1(86)}}" id="subdelay-val" class="tabs" style="padding-top:2px; margin:0; cursor: pointer" contenteditable="true" onfocus="subdelay_typing=true">0</h4>
 			<h4 title="{{getString1(87)}}" id="subdelay-inc" class="tabs" style="margin:0; color:green; cursor: pointer; font-weight:bold;font-size:x-large;" >&#x2295;</h4>

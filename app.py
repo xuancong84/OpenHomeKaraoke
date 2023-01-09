@@ -129,6 +129,7 @@ def nowplaying():
 		}
 		if K.has_subtitle:
 			rc['subtitle_delay'] = s['subtitledelay']
+			rc['show_subtitle'] = K.show_subtitle
 		return json.dumps(rc)
 	except Exception as e:
 		logging.error(f"Problem loading /nowplaying, pikaraoke may still be starting up: {e}\n{traceback.print_exc()}")
@@ -324,6 +325,13 @@ def audio_delay(delay_val):
 def subtitle_delay(delay_val):
 	res = K.set_subtitle_delay(delay_val)
 	return json.dumps(res)
+
+
+@app.route("/toggle_subtitle")
+def toggle_subtitle():
+	K.show_subtitle = not K.show_subtitle
+	K.play_vocal(force = True)
+	return ''
 
 
 @app.route("/restart")

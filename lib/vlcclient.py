@@ -61,7 +61,6 @@ class VLCClient:
 			"--extraintf", "http",
 			"--http-port", "%s" % self.port,
 			"--http-password", self.http_password,
-			"--sub-track", "0",
 			"--no-embedded-video",
 			"--no-keyboard-events",
 			"--no-mouse-events",

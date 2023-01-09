@@ -44,6 +44,7 @@ class Karaoke:
 	has_video = True
 	has_subtitle = False
 	subtitle_delay = 0
+	show_subtitle = True
 	last_vocal_info = 0
 	last_vocal_time = 0
 	use_DNN_vocal = True
@@ -628,6 +629,8 @@ class Karaoke:
 				extra_params1 += [f'--audio-desync={self.audio_delay * 1000}']
 			if self.subtitle_delay:
 				extra_params1 += [f'--sub-delay={self.subtitle_delay * 10}']
+			if self.show_subtitle:
+				extra_params1 += [f'--sub-track=0']
 			self.now_playing = self.filename_from_path(file_path)
 			self.now_playing_filename = file_path
 			self.is_paused = ('--start-paused' in extra_params1)
@@ -910,11 +913,11 @@ class Karaoke:
 			self.vocal_mode = 'mixed'
 		return play_slave
 
-	def play_vocal(self, mode = None):
+	def play_vocal(self, mode = None, force = False):
 		# mode=vocal/nonvocal/mixed, or else (use current)
 		if self.use_vlc:
 			play_slave = self.try_set_vocal_mode(mode, self.now_playing_filename)
-			if self.now_playing_slave == play_slave:
+			if not force and self.now_playing_slave == play_slave:
 				return
 			status_xml = self.vlcclient.command().text if self.is_paused else self.vlcclient.pause(False).text
 			info = self.vlcclient.get_info_xml(status_xml)
@@ -1025,6 +1028,7 @@ class Karaoke:
 		self.now_playing_slave = ''
 		self.audio_delay = 0
 		self.subtitle_delay = 0
+		self.show_subtitle = True
 		self.has_subtitle = False
 		self.has_video = True
 		self.last_vocal_info = 0

@@ -174,7 +174,7 @@ Reboot System
 Shutdown System
 Other
 Expand Raspberry Pi filesystem
-If you just installed the pre-built pikaraoke pi image and your SD card is larger than 4GB, you may want to expand the filesystem to utilize the remaining space. You only need to do this once. This will reboot the system.
+If you just installed the pre-built PiKaraoke pi image and your SD card is larger than 4GB, you may want to expand the filesystem to utilize the remaining space. You only need to do this once. This will reboot the system.
 Disable admin mode
 Enable admin mode
 log out
@@ -195,3 +195,4 @@ Volume Normalization
 Different songs often have different volume. Enabling volume normalization will first run <i>ffmpeg</i> to compute the global volume of a song and automatically adjust player volume so that every song sounds equally loud.
 Song library download path
 Total number of songs
+Show/Hide Subtitle
