@@ -635,7 +635,7 @@ class Karaoke:
 			self.now_playing_filename = file_path
 			self.is_paused = ('--start-paused' in extra_params1)
 			if self.normalize_vol and self.logical_volume is not None:
-				self.volume = self.logical_volume / self.compute_volume(file_path)
+				self.volume = self.logical_volume / np.sqrt(self.compute_volume(file_path))
 			if self.now_playing_transpose == 0:
 				xml = self.vlcclient.play_file(file_path, self.volume, extra_params + extra_params1)
 			else:
@@ -645,7 +645,7 @@ class Karaoke:
 			self.volume = round(float(self.vlcclient.get_val_xml(xml, 'volume')))
 			if self.normalize_vol:
 				self.media_vol = self.compute_volume(self.now_playing_filename)
-				self.logical_volume = self.volume * self.media_vol
+				self.logical_volume = self.volume * np.sqrt(self.media_vol)
 		else:
 			logging.info("Playing video in omxplayer: " + file_path)
 			self.omxclient.play_file(file_path)
