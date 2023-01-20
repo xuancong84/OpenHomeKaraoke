@@ -5,25 +5,25 @@ Admin modutik amaitu duzu saioa!
 Abestirik gabe geratu!
 Ilara garbitu!
 Errore bat gertatu da elementua ilararen barruan mugitzean: argumentu baliogabea
-Elementua behar bezala mugitu da ilaran:
+Behar bezala eraman da elementua ilaran:
 Errore bat gertatu da elementua ilararen barruan mugitzean:
-Ilaran behera eraman dute:
+Ilaran behera eraman da:
 Errore bat gertatu da ilaran behera mugitzean:
-Gora ilaran:
+Ilaran igota:
 Errore bat gertatu da ilaran igotzean:
 Ilaratik ezabatu da:
 Errore bat gertatu da ilaratik ezabatzean:
 Deskarga hasi da:
 Amaitzean, ilaran gehituko da.
-Amaitzean, "erabilgarri dauden abestiak" zerrendan agertuko da.
+Amaitzean, "abesti erabilgarri" zerrendan agertuko da.
 Errorea: Ezin da abesti hau ezabatu uneko ilaran dagoelako:
 Abestia ezabatu da:
 Errorea: Ez dago abestiaren parametrorik zehaztu!
-Errorea: ezin da abesti hau editatu, une honetan erreproduzitzen ari delako:
+Errorea: ezin da abesti hau editatu une honetan erreproduzitzen ari delako:
 Abestiaren fitxategia editatzea
-Errorea fitxategiaren izena aldatzean: '%s' '%s' izatera. Fitxategi-izena jada existitzen da.
-Fitxategiaren izena aldatu da: '%s'-ra '%s'
-Errorea: Ez da fitxategi-izen parametrorik zehaztu!
+Errorea fitxategiaren izena aldatzean: '%s' '%s' izatera. Fitxategi-izena dagoeneko badago.
+Fitxategiaren izena aldatu da: '%s' izatera '%s'
+Errorea: ez da fitxategi-izen parametrorik zehaztu!
 Ezezaguna
 Korrika
 Gelditu
@@ -32,7 +32,7 @@ Gelditu
 YouTube-dl eguneratzen! Minutu bat edo bi beharko lituzke...
 Ez duzu youtube-dl eguneratzeko baimenik
 Ez duzu ixteko baimenik
-PiKaraoke-tik irten orain!
+PiKaraoke irten orain!
 Ez duzu irteteko baimenik
 Sistema ixten orain!
 Ez duzu ixteko baimenik
@@ -43,7 +43,7 @@ Ezin da fs zabaldu raspberry pi ez diren gailuetan!
 Ez duzu fitxategi-sistemaren tamaina aldatzeko baimenik
 Youtube-dl bidea ez da aurkitu!
 Ez da aurkitu VLC bidea!
-Ez da aurkitu omxplayer bidea!
+omxplayer bidea ez da aurkitu!
 Deskarga-bidea sortzea:
 Wifi/sarea ez dago konektatuta. 10 segundotan itxiko da...
 Abestiak hautatzeko, eskaneatu QR edo konektatu
@@ -59,21 +59,21 @@ Orain jolasten:
 Admin modua eman da!
 Audio-atzerapena handitzeak denbora gehiago emango dizu letra irakurtzeko hurrengo esaldia abestu aurretik.
 Azpitituluen atzerapena murrizteak denbora gehiago emango dizu letra irakurtzeko hurrengo esaldia abestu aurretik.
-Tonu erdi bat pauso erdi gisa ere ezagutzen da. Mendebaldeko musika klasikoan erabiltzen den tarterik txikiena da, zortzidun baten hamabiaren edo tonu erdiaren berdina.
-DNNn oinarritutako ahots banatzailea gaituta dago. PiKaraoke-k PyTorch erabiltzen du (Facebook-ek) sare neuronal sakon bat exekutatzeko, soinu instrumentala eta ahotsa banatzeko soinu estereoa sortuz pista bakoitzean.
+Tonu erdi bat urrats erdi gisa ere ezagutzen da. Mendebaldeko musika klasikoan erabiltzen den tarterik txikiena da, zortzidun baten hamabiaren edo tonu erdiaren berdina.
+DNNn oinarritutako ahots banatzailea gaituta dago. PiKaraoke-k PyTorch (Facebooken eskutik) erabiltzen du sare neuronal sakon bat exekutatzeko, soinu instrumentala eta ahotsa banatzeko soinu estereoa sortuz pista bakoitzean.
 Jokalari Kontrola
 Musika
 Mistoa
 Ahotsa
 Aldatu gakoa
-Momentu honetan ez da ezer jokatzen.
+Une honetan ez da ezer jokatzen.
 Ez dago abestirik ilaran.
 Abesti hau ez duzu zuk gehitu. Ziur pista hau berrabiarazi nahi duzula?
 Abesti hau ez duzu zuk gehitu. Ziur pista hau saltatu nahi duzula?
 Jokalari Kontrola
 Orain jolasten
 Hurrengo Abestia
-Hona bilatu:
+Bilatu:
 Audio-atzerapena (seg)
 Azpitituluen atzerapena (seg)
 Berrabiarazi abestia
@@ -120,12 +120,12 @@ Ilara
 Sartu karaokea ez diren partidak
 Aurreratua
 Idatzi abesti bat (izenburua/artista) erabilgarri dauden abestiak bilatzeko eta sakatu 'Ilara' ilaran gehitzeko.
-Abestia "Eskuragarri dauden abestiak" goitibeherako zerrendan agertzen ez bada, egin klik "Bilatu" aukeran Youtuben aurkitzeko.
+Abestia "Eskuragarri dauden abestiak" goitibeherako atalean agertzen ez bada, egin klik "Bilatu" aukeran Youtuben aurkitzeko.
 Deskarga zuzena YouTube url:
-Gehitu ilarara
+Gehitu ilaran
 Sartu azpitituluak
 Deskargatu
-YouTube bilatzen
+YouTube bila
 Bilaketaren emaitzak
 Egin klik goitibeheran emaitza gehiago ikusteko
 Esteka:
@@ -152,29 +152,29 @@ Kontrol-aukera aurreratuak
 Ahots banatzaile modua:
 Erabili L-R/L+R
 Erabili DNN
-MTV audio estandarrak bi estereo kanalak ditu (L eta R) honela kodetuta: L-R instrumentu-pista da, L+R ahots-pista da. Horrela, bi kanal estereo kenduz edo gehituz, pista instrumentala eta ahotsa mono soinuan lor ditzakegu. PiKaraoke-ren DNNn oinarritutako (sare neuronal sakona) ahots-banatzaileak AI algoritmoa erabiltzen du soinu instrumentala eta ahotsa pista estereo bakoitzean modu independentean banatzeko, instrumental eta ahots-pista estereoen ondorioz.
+MTV audio estandarrak bi kanal estereo (L eta R) ditu honela kodetuta: L-R instrumentuaren pista da, L+R ahotsaren pista da. Horrela, bi kanal estereo kenduz edo gehituz, pista instrumentala eta ahotsa mono soinuan lor ditzakegu. PiKaraoke-ren DNNn oinarritutako (sare neuronal sakona) ahots-banatzaileak AI algoritmoa erabiltzen du soinu instrumentala eta ahotsa pista estereo bakoitzean modu independentean banatzeko, instrumental eta ahots-pista estereoen ondorioz.
 Gelditu Splitter
 Berrabiarazi Splitter
-Ahots zatitzailea (DNNn oinarritutako kenketa estereoa onartzen duena) prozesu bereizi gisa exekutatzen da atzeko planoan, abesti bakoitzeko audio-fitxategi instrumentala/ahotsa sortuz.
+Ahots zatitzailea (DNNn oinarritutako kenketa estereoa onartzen duena) prozesu bereizi gisa exekutatzen da atzeko planoan, abesti bakoitzaren audio instrumental/ahots fitxategia sortuz.
 Berriro sinkronizatu audioa eta bideoa:
 Gelditu Streamer
 Berrabiarazi Streamer
-Honek web arakatzailearen bidez KTV erreproduzitzeari eragiten dio soilik. Pantaila-harrapaketa-eta-streaming-a berrabiarazteak audio/bideoaren sinkronizazioa hobetzen du, zerbitzariaren eta arakatzailearen arteko latentzia ere murrizten du.
+Honek KTV-a web arakatzailearen bidez erreproduzitzen du soilik. Pantaila-harrapaketa-eta-streaming-a berrabiarazteak audio/bideoaren sinkronizazioa hobetzen du, zerbitzariaren eta arakatzailearen arteko latentzia ere murrizten du.
 Freskatu abestien zerrenda:
 Berriro eskaneatu abestien direktorioa
 PiKaraoke exekutatzen ari zen bitartean fitxategiak eskuz kopiatu badituzu deskarga-direktoriora bakarrik egin beharko zenuke.
 Eguneraketak
 Deskargak edo bilaketak funtzionatzeari uzten badiote, ziurrenik youtube-dl eguneratzeak konponduko du. Oraingo instalatutako bertsioa hau da:
 Eguneratu youtube-dl
-Goiko eguneratze-esteka honek huts egin dezake fitxategien baimen egokiak ez badituzu. Egiaztatu PiKaraoke erregistroan akatsak dauden.
+Goiko eguneratze-esteka honek huts egin dezake fitxategien baimen egokiak ez badituzu. Begiratu PiKaraoke erregistroan akatsak dauden.
 Itzali
-Ez atera entxufeari bakarrik! Itzali beti zerbitzaria behar bezala datuak usteltzea ekiditeko.
+Ez atera entxufea bakarrik! Itzali beti zerbitzaria behar bezala datuak usteltzea ekiditeko.
 Irten PiKaraoke
 Berrabiarazi sistema
-Itzaltze sistema
+Itzte sistema
 Bestela
 Zabaldu Raspberry Pi fitxategi-sistema
-Aurrez eraikitako pikaraoke pi irudia instalatu berri baduzu eta zure SD txartela 4GB baino handiagoa bada, baliteke fitxategi-sistema zabaldu nahi izatea geratzen den espazioa erabiltzeko. Behin bakarrik egin behar duzu. Honek sistema berrabiaraziko du.
+Aurrez eraikitako PiKaraoke pi irudia instalatu berri baduzu eta zure SD txartela 4GB baino handiagoa bada, baliteke fitxategi-sistema zabaldu nahi izatea geratzen den espazioa erabiltzeko. Hau behin bakarrik egin behar duzu. Honek sistema berrabiaraziko du.
 Desgaitu administratzaile modua
 Gaitu administratzaile modua
 Saioa amaitu
@@ -192,6 +192,14 @@ Abestia ilaran gehitu da!
 Ezin izan da abestia ilaran jarri!
 Sistemaren informazioa eta ezarpenak
 Bolumen Normalizazioa
-Abesti ezberdinek bolumen ezberdina izaten dute. Bolumenaren normalizazioa gaituz gero, lehenik <i>ffmpeg</i> exekutatuko da abesti baten bolumen globala kalkulatzeko eta erreproduzitzailearen bolumena automatikoki doituko da, abesti guztiak berdin ozen izan daitezen.
+Abesti ezberdinek bolumen ezberdina izaten dute. Bolumenaren normalizazioa gaitzen baduzu, lehenik <i>ffmpeg</i> exekutatuko da abesti baten bolumen globala kalkulatzeko eta erreproduzitzailearen bolumena automatikoki doituko da, abesti guztiak berdin ozen izan daitezen.
 Abestien liburutegia deskargatzeko bidea
 Abesti kopurua guztira
+Erakutsi/Ezkutatu Azpitituluak
+Abiadura aldatu
+Abestia azkarrago edo motelago abes dezakezu erreprodukzio-abiadura 0,8x-tik 1,2x-ra aldatuz abiadura-barra erabiliz; beste erreprodukzio-abiaduraren kasuan, egin klik aldatzeko abiadura-balioan.
+Egin klik erreprodukzio-abiadura 1x-era berrezartzeko
+Egin klik erreprodukzio-abiadura ezartzeko
+Egin klik tekla/tonua berrezartzeko
+Berrezarri tekla
+Berrezarri Abiadura

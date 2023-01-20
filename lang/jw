@@ -21,8 +21,8 @@ Lagu dibusak:
 Error: Ora ana parameter lagu sing ditemtokake!
 Error: Ora bisa nyunting lagu iki amarga lagi diputer:
 Sunting File Lagu
-Kasalahan ngganti jeneng berkas: '%s' dadi '%s'. Jeneng berkas wis ana.
-Ganti jeneng berkas: '%s' dadi '%s'
+Kasalahan Ganti jeneng berkas: '%s' dadi '%s'. Jeneng berkas wis ana.
+Jeneng berkas: '%s' dadi '%s'
 Error: Ora ana parameter jeneng berkas sing ditemtokake!
 Ora dingerteni
 mlaku
@@ -40,13 +40,13 @@ Sistem reboot saiki!
 Sampeyan ora duwe idin kanggo urip maneh
 Ngembangake sistem file lan rebooting sistem saiki!
 Ora bisa nggedhekake fs ing piranti pi non-raspberry!
-Sampeyan ora duwe idin kanggo ngowahi ukuran filesystem
+Sampeyan ora duwe ijin kanggo ngowahi ukuran filesystem
 Path Youtube-dl ora ditemokake!
 Path VLC ora ditemokake!
 path omxplayer ora ketemu!
 Nggawe path download:
 Wifi/Jaringan ora nyambung. Mati ing 10s ...
-Kanggo milih lagu, scan QR utawa nyambung menyang
+Kanggo milih lagu, pindai QR utawa sambungake
 Kanggo tampilan TV, nyambung menyang
 Pencet F kanggo ngowahi layar wutuh
 Pencet ESC kanggo metu saka PiKaraoke
@@ -55,7 +55,7 @@ Sambungake piranti/smartphone liya menyang AP Wifi: '%s'
 Banjur arahake browser menyang: '%s://%s%s' lan tindakake pandhuane.
 Sabanjure:
 Ditambahake dening:
-Saiki diputer:
+Saiki muter:
 Mode admin diwenehake!
 Nambah wektu tundha audio bakal menehi wektu luwih akeh kanggo maca lirik sadurunge nembangake ukara sabanjure.
 Ngurangi wektu tundha subtitle bakal menehi wektu luwih akeh kanggo maca lirik sadurunge nembangake ukara sabanjure.
@@ -87,7 +87,7 @@ Setel Tundha Subtitle
 Tambah Tundha Subtitle
 Ngurangi wektu tundha Audio
 Setel Tundha Audio
-Tambah Tundha Audio
+Tambah wektu tundha Audio
  semitone
 Mangga ketik jeneng sampeyan. Iki bakal ditampilake ing jejere lagu sing sampeyan antri saka piranti iki.
 Lagu ditambahake ing antrian:
@@ -100,8 +100,8 @@ Diurut miturut 'Tanggal'
 Diurut miturut 'Alphabetical'
 tembang
 nampilake <b>{start} - {end}</b> {record_name}, total <b>{total}</b> {record_name}
-ketemu <b>{found}</b> {record_name}, nampilake <b>{start} - {end}</b> {record_name}
-Sunting lagu
+ketemu <b>{ketemu}</b> {record_name}, nampilake <b>{start} - {end}</b> {record_name}
+Ngedit lagu
 Pindhah munggah ing antrian
 Pindhah mudhun ing antrian
 Apa sampeyan yakin pengin mbusak saka antrian
@@ -119,7 +119,7 @@ Nggoleki
 antri
 Kalebu pertandhingan non-karaoke
 Majeng
-Ketik lagu (judul/artis) kanggo nelusuri lagu sing kasedhiya lan klik 'Antri' kanggo ditambahake menyang antrian.
+Ketik lagu (judhul/artis) kanggo nelusuri lagu sing kasedhiya lan klik 'Antrian' kanggo ditambahake menyang antrian.
 Yen lagu ora katon ing gulung mudhun "Lagu Kasedhiya", klik 'Telusuri' kanggo nemokake ing Youtube.
 Ngundhuh langsung URL YouTube:
 Tambah menyang antrian
@@ -127,10 +127,10 @@ Kalebu subtitle
 Ngundhuh
 Nggoleki YouTube kanggo
 asil panelusuran kanggo
-Klik molor kanggo nuduhake asil liyane
+Klik gulung mudhun kanggo nuduhake asil liyane
 Link:
 Lagu kasedhiya
-Apa sampeyan pengin ngganti jeneng tampilan wong sing nggunakake piranti iki? Iki bakal katon ing jejere lagu sing wis antri. saiki:
+Apa sampeyan pengin ngganti jeneng tampilan wong sing nggunakake piranti iki? Iki bakal ditampilake ing jejere lagu sing wis antri. saiki:
 pangguna saiki
 Setelan
 PiKaraoke
@@ -166,7 +166,7 @@ Sampeyan mung kudu nindakake iki yen sampeyan nyalin file kanthi manual menyang 
 Nganyari
 Yen undhuhan utawa telusuran mandheg, nganyari youtube-dl bisa uga bakal ndandani. Versi sing diinstal saiki yaiku:
 Nganyari youtube-dl
-Link nganyari ing ndhuwur bisa uga gagal yen sampeyan ora duwe ijin file sing tepat. Priksa log PiKaraoke kanggo kesalahan.
+Link nganyari ing ndhuwur bisa gagal yen sampeyan ora duwe ijin file sing tepat. Priksa log PiKaraoke kanggo kesalahan.
 mateni
 Aja mung narik plug! Tansah mateni server sampeyan kanthi bener supaya ora korupsi data.
 Mungkasi PiKaraoke
@@ -174,7 +174,7 @@ Sistem urip maneh
 Sistem shutdown
 Liyane
 Expand sistem file Raspberry Pi
-Yen sampeyan mung nginstal gambar pikaraoke pi sing wis dibangun lan kertu SD luwih gedhe tinimbang 4GB, sampeyan bisa uga pengin nggedhekake sistem file kanggo nggunakake papan sing isih ana. Sampeyan mung kudu nindakake iki sapisan. Iki bakal urip maneh sistem.
+Yen sampeyan mung nginstal gambar PiKaraoke pi sing wis dibangun lan kertu SD sampeyan luwih gedhe tinimbang 4GB, sampeyan bisa uga pengin nggedhekake sistem file kanggo nggunakake ruang sing isih ana. Sampeyan mung kudu nindakake iki sapisan. Iki bakal urip maneh sistem.
 Pateni mode admin
 Aktifake mode admin
 metu
@@ -185,7 +185,7 @@ Ganti Basa
 Mangga milih basa
 Basa Sistem
 Basa sistem saiki:
-Iki ngganti basa sistem backend PiKaraoke sing bakal ditampilake ing layar TV; liyane, saben pangguna nyambungake uga bisa ngganti basa UI Web pamilike ing tombol globe ing menu tengen ndhuwur.
+Iki ngganti basa sistem backend PiKaraoke sing bakal ditampilake ing layar TV; malih, saben pangguna nyambungake uga bisa ngganti basa UI Web pamilike ing tombol globe ing menu tengen ndhuwur.
 Download kasil rampung!
 Download gagal!
 Lagu ditambahake ing antrian!
@@ -193,5 +193,13 @@ Gagal ngantri lagu!
 Info & Setelan Sistem
 Normalisasi Volume
 Lagu sing beda kerep duwe volume sing beda. Ngaktifake normalisasi volume bakal mbukak <i>ffmpeg</i> kanggo ngetung volume global lagu lan nyetel volume pamuter kanthi otomatis supaya saben lagu muni padha banter.
-Path download perpustakaan lagu
+Perpustakaan lagu dalan download
 Jumlah total lagu
+Tampilake / Singidaken Subtitle
+Ganti Kacepetan
+Sampeyan bisa nyanyi lagu luwih cepet utawa luwih alon kanthi ngganti kacepetan puter maneh dadi 0,8x dadi 1,2x nggunakake trackbar kacepetan; kanggo kacepetan puter maneh liyane, klik ing Nilai kacepetan kanggo ngganti.
+Klik kanggo ngreset kacepetan puter maneh menyang 1x
+Klik kanggo nyetel kacepetan puter maneh
+Klik kanggo ngreset tombol/pitch
+Reset Key
+Reset Kacepetan

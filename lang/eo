@@ -4,9 +4,9 @@ Ensalutinta el administra reĝimo!
 Aldonitaj %s hazardaj trakoj
 Elĉerpigis kantojn!
 Malplenigis la atendovicon!
-Eraro dum movi eron en la voston: nevalida argumento
+Eraro dum movo de objekto en la vosto: nevalida argumento
 Sukcese movita aĵo en la atendovico:
-Eraro dum movo de objekto en la atendovico:
+Eraro dum movi eron en la atendovico:
 Moviĝis malsupren en atendovico:
 Eraro moviĝante malsupren en atendovico:
 Moviĝis supren en atendovico:
@@ -45,9 +45,9 @@ Youtube-dl-vojo ne trovita!
 VLC-vojo ne trovita!
 omxplayer-vojo ne trovita!
 Kreante elŝutan vojon:
-Wifi/Reto ne konektita. Fermi post 10-aj jaroj...
+Wifi/Reto ne konektita. Fermu post 10-aj jaroj...
 Por elekti kantojn, skanu QR aŭ konektu al
-Por televida ekrano, konekti al
+Por televida ekrano, konektu al
 Premu F por ŝanĝi la plenan ekranon
 Premu ESC por ĉesi PiKaraoke
 RaspiWifiConfig agorda reĝimo detektita!
@@ -57,7 +57,7 @@ Poste:
 Aldonita de:
 Nun ludante:
 Administra reĝimo koncedita!
-Pliigi sonprokraston donos al vi pli da tempo por legi kantotekston antaŭ ol kanti la sekvan frazon.
+Pliiĝanta sonprokrasto donos al vi pli da tempo por legi kantotekston antaŭ ol kanti la sekvan frazon.
 Malkreskanta subtitolo prokrasto donos al vi pli da tempo por legi kantotekston antaŭ kanti la sekvan frazon.
 Duontono ankaŭ estas konata kiel duonpaŝo. Ĝi estas la plej malgranda intervalo uzita en klasika okcidenta muziko, egala al dekduono de oktavo aŭ duona tono.
 DNN-bazita voĉdividilo estas ebligita. PiKaraoke uzas PyTorch (de Facebook) por prizorgi profundan neŭralan reton por dividi instrumentan kaj voĉan sonon en ĉiu trako kaŭzante stereosonon.
@@ -119,7 +119,7 @@ Serĉu
 Vico
 Inkluzivi ne-karaokeajn matĉojn
 Altnivela
-Tajpu kanton (titolon/artisto) por serĉi la disponeblajn kantojn kaj alklaku 'Vuo' por aldoni ĝin al la vico.
+Tajpu kanton (titolon/artisto) por serĉi la disponeblajn kantojn kaj alklaku 'Avico' por aldoni ĝin al la vico.
 Se la kanto ne aperas en la menuo "Disponeblaj Kantoj", alklaku 'Serĉi' por trovi ĝin ĉe Youtube.
 Rekta elŝuta YouTube-url:
 Aldonu al vico
@@ -145,17 +145,17 @@ OS
 Diska Uzado
 Memoro
 Ekrankapto
-Voĉa Splitter
+Voĉa Spliter
 Youtube-dl (yt-dlp) versio
 PiKaraoke versio
 Altnivelaj Kontrolaj Opcioj
 Voĉa dividita reĝimo:
 Uzu L-R/L+R
 Uzu DNN
-Norma MTV-aŭdio havas la du stereajn kanalojn (L kaj R) ĉifritajn tiel ke: L-R estas la instrumenttrako, L+R estas la voĉa trako. Tiel, simple subtrahante aŭ aldonante la du stereokanalojn, ni povas akiri la instrumentan kaj voĉan trakon en monoa sono. La enkonstruita DNN-bazita (profunda neŭrala reto) voĉdividilo de PiKaraoke uzas AI-algoritmon por dividi instrumentan kaj voĉan sonon en ĉiu stereofonia aŭtoveturejo sendepende rezultigante stereoajn instrumentajn kaj voĉajn spurojn.
+Norma MTV-aŭdio havas la du stereajn kanalojn (L kaj R) ĉifritajn tiel ke: L-R estas la instrumenttrako, L+R estas la voĉa trako. Tiel, simple subtrahante aŭ aldonante la du stereajn kanalojn, ni povas akiri la instrumentan kaj voĉan trakon en monoa sono. La enkonstruita DNN-bazita (profunda neŭrala reto) voĉdividilo de PiKaraoke uzas AI-algoritmon por disfendi instrumentan kaj voĉan sonon en ĉiu stereofonia aŭtoveturejo sendepende rezultigante stereoajn instrumentajn kaj voĉajn spurojn.
 Haltu Splitter
 Rekomencu Splitter
-La voĉa dividilo (kiu subtenas kaj DNN-bazitan kaj stereon subtraho) funkcias kiel aparta procezo en la fono, generante instrumentan/voĉan sondosieron por ĉiu kanto.
+La voĉa splitilo (kiu subtenas kaj DNN-bazitan kaj stereon subtraho) funkcias kiel aparta procezo en la fono, generante instrumentan/voĉan sondosieron por ĉiu kanto.
 Re-sinkronigi audio kaj video:
 Haltu Streamer
 Rekomencu Streamer
@@ -166,15 +166,15 @@ Vi devus fari tion nur se vi mane kopiis dosierojn al la elŝuta dosierujo dum P
 Ĝisdatigoj
 Se elŝutoj aŭ serĉoj ĉesis funkcii, ĝisdatigi youtube-dl verŝajne riparos ĝin. La nuna instalita versio estas:
 Ĝisdatigu youtube-dl
-Ĉi tiu supra ĝisdatiga ligilo povas malsukcesi se vi ne havas taŭgajn dosierpermesojn. Kontrolu la PiKaraoke protokolon por eraroj.
+Ĉi tiu supre ĝisdatiga ligilo povas malsukcesi se vi ne havas taŭgajn dosierpermesojn. Kontrolu la protokolon de PiKaraoke por eraroj.
 Malŝalto
 Ne nur tiru la ŝtopilon! Ĉiam malŝaltu vian servilon ĝuste por eviti datuman korupton.
 Forlasu PiKaraoke
 Rekomencu Sistemon
 Malŝalta Sistemo
 Alia
-Vastigu Raspberry Pi dosiersistemon
-Se vi ĵus instalis la antaŭkonstruitan pikaraoke pi-bildon kaj via SD-karto estas pli granda ol 4GB, vi eble volas vastigi la dosiersistemon por uzi la restantan spacon. Vi devas fari ĉi tion nur unufoje. Ĉi tio rekomencos la sistemon.
+Vastigu dosiersistemon Raspberry Pi
+Se vi ĵus instalis la antaŭkonstruitan PiKaraoke pi-bildon kaj via SD-karto estas pli granda ol 4GB, vi eble volas vastigi la dosiersistemon por uzi la restantan spacon. Vi devas fari ĉi tion nur unufoje. Ĉi tio rekomencos la sistemon.
 Malebligu administran reĝimon
 Ebligu administran reĝimon
 elsaluti
@@ -192,6 +192,14 @@ Kanto aldonita al la vico!
 Malsukcesis vicigi la kanton!
 Sistema Informoj kaj Agordoj
 Volumo Normaligo
-Malsamaj kantoj ofte havas malsaman volumon. Ebligi volumnormaligon unue ruliĝos <i>ffmpeg</i> por kalkuli la tutmondan volumon de kanto kaj aŭtomate ĝustigi ludantan volumon tiel ke ĉiu kanto sonu same laŭte.
+Malsamaj kantoj ofte havas malsaman volumon. Ebligi volumnormaligon unue ruliĝos <i>ffmpeg</i> por kalkuli la tutmondan volumon de kanto kaj aŭtomate ĝustigi ludan volumon tiel ke ĉiu kanto sonu same laŭte.
 Kantbiblioteko elŝuta vojo
 Tuta nombro da kantoj
+Montri/Kaŝi Subtitolon
+Ŝanĝi Rapidon
+Vi povas kanti la kanton pli rapide aŭ pli malrapide ŝanĝante la reproduktan rapidon al ene de 0.8x ĝis 1.2x uzante la rapidecan spurstangon; por alia reprodukta rapido, alklaku la rapidvaloron por ŝanĝi.
+Alklaku por restarigi la reproduktan rapidon al 1x
+Alklaku por agordi reproduktan rapidon
+Alklaku por restarigi klavon/tonaliĝon
+Restarigi Ŝlosilon
+Restarigi Rapidon

@@ -11,18 +11,18 @@ Txav mus rau hauv queue:
 Yuam kev txav mus rau hauv queue:
 Txav mus rau hauv queue:
 Yuam kev txav mus rau hauv queue:
-deleted los ntawm queue:
+Deleted los ntawm queue:
 Yuam kev deletion ntawm queue:
 Download tau pib:
 Thaum ua tiav, nws yuav muab ntxiv rau hauv kab.
-Thaum ua tiav, nws yuav tshwm nyob rau hauv cov npe "muaj cov nkauj".
+Thaum ua tiav, nws yuav tshwm nyob rau hauv daim ntawv teev "muaj cov nkauj".
 Yuam kev: Tsis tuaj yeem rho tawm zaj nkauj no vim nws nyob hauv kab tam sim no:
 Nkauj deleted:
 yuam kev: Tsis muaj zaj nkauj parameter teev!
 yuam kev: Kho tsis tau zaj nkauj no vim nws tseem tab tom ua si:
 Nkauj Kho Siab
 yuam kev Renaming file: '%s' rau '%s'. Filename twb muaj lawm.
-Hloov npe cov ntaub ntawv: '%s' rau '%s'
+Renamed cov ntaub ntawv: '%s' rau '%s'
 yuam kev: Tsis muaj cov ntaub ntawv npe tsis tau teev tseg!
 Tsis paub
 Khiav
@@ -52,17 +52,17 @@ Nias F kom toggle puv npo
 Nias ESC tawm PiKaraoke
 RaspiWifiConfig teeb hom kuaj pom!
 Txuas lwm lub cuab yeej/smartphone rau Wifi AP: '%s'
-Tom qab ntawd taw tes nws tus browser mus rau: '%s://%s%s' thiab ua raws li cov lus qhia.
+Tom qab ntawd taw tes nws qhov browser mus rau: '%s: // %s%s' thiab ua raws li cov lus qhia.
 Tom ntej no:
 Ntxiv los ntawm:
 Tam sim no ua si:
 Admin hom tso cai!
-Kev ncua lub suab yuav muab sijhawm ntau rau koj los nyeem cov nkauj ua ntej hu nkauj tawm ntawm kab lus tom ntej.
-Kev txo qis subtitle ncua yuav muab sijhawm rau koj los nyeem cov nkauj ua ntej hu nkauj rau kab lus tom ntej.
-Lub semitone kuj tseem hu ua ib nrab kauj ruam. Nws yog qhov tsawg tshaj plaws siv nyob rau hauv classical Western suab paj nruag, sib npaug rau kaum ob ntawm ib qho octave los yog ib nrab ib lub suab.
-DNN-raws li lub suab splitter tau qhib. PiKaraoke siv PyTorch (los ntawm Facebook) los khiav qhov sib sib zog nqus neural network los faib cov suab paj nruag thiab suab hauv txhua txoj kev ua rau lub suab nrov.
+Kev ncua lub suab yuav muab sij hawm ntxiv rau koj nyeem cov nkauj ua ntej hu nkauj tawm ntawm kab lus tom ntej.
+Kev txo qis subtitle ncua yuav muab sijhawm rau koj nyeem cov nkauj ua ntej hu nkauj rau kab lus tom ntej.
+Lub semitone kuj tseem hu ua ib nrab kauj ruam. Nws yog qhov tsawg tshaj plaws siv nyob rau hauv classical Western suab paj nruag, sib npaug rau kaum ob ntawm ib octave los yog ib nrab ib lub suab.
+DNN-based suab splitter tau qhib. PiKaraoke siv PyTorch (los ntawm Facebook) los khiav qhov sib sib zog nqus neural network los faib cov suab paj nruag thiab suab hauv txhua txoj kev ua rau lub suab nrov.
 Player Control
-Nkauj
+Suab paj nruag
 Mixed
 Suab
 Hloov Key
@@ -87,11 +87,11 @@ Teem Subtitle ncua
 Nce Subtitle ncua
 Txo suab qeeb
 Teem Suab ncua
-Ua kom suab qeeb
+Ua kom lub suab qeeb
  semitones
-Thov sau koj lub npe. Qhov no yuav tshwm sim ntawm ib sab ntawm cov nkauj uas koj teem caij los ntawm lub cuab yeej no.
+Thov sau koj lub npe. Qhov no yuav tshwm sim ntawm ib sab ntawm cov nkauj uas koj tau teev los ntawm lub cuab yeej no.
 Nkauj ntxiv rau lub queue:
-Nkauj twb nyob rau hauv kab:
+Nkauj twb nyob rau hauv queue:
 Xaiv los ntawm Hnub
 Sau los ntawm Alphabetical
 Ntxiv '%s' rau hauv kab
@@ -103,7 +103,7 @@ displaying <b>{start} - {end}</b> {record_name}, tag nrho <b>{total}</b> {record
 pom <b>{found}</b> {record_name}, displaying <b>{start} - {end}</b> {record_name}
 Kho kom raug nkauj
 Txav mus rau hauv queue
-Txav mus rau hauv kab
+Txav mus rau hauv queue
 Koj puas paub tseeb tias koj xav rho tawm ntawm kab
 Koj puas paub tseeb tias koj xav tshem tag nrho cov kab ke? Ntaus 'OK' mus ntxiv
 Ntxiv 3 zaj nkauj random
@@ -121,7 +121,7 @@ suav tsis txheeb karaoke
 Advanced
 Ntaus ib zaj nkauj (lub npe / tus kws kos duab) txhawm rau tshawb cov nkauj muaj thiab nyem 'Queue' ntxiv rau hauv kab.
 Yog hais tias zaj nkauj tsis tshwm nyob rau hauv "Available Songs" dropdown, nyem 'Search' kom pom nws hauv Youtube.
-Direct download tau YouTube url:
+Direct download YouTube url:
 Ntxiv rau kab
 suav nrog subtitles
 Download tau
@@ -152,14 +152,14 @@ Advanced Control Options
 Vocal splitter hom:
 Siv L-R / L + R
 Siv DNN
-Standard MTV suab muaj ob lub tso suab raws (L thiab R) encoded nyob rau hauv xws li ib tug txoj kev uas: L-R yog qhov ntsuas khiav, L + R yog lub suab khiav. Yog li, los ntawm kev rho tawm lossis ntxiv ob lub tso suab tso suab, peb tuaj yeem tau txais cov twj paj nruag thiab suab hauv lub suab mono. PiKaraoke's built-in DNN-raws li (sib sib zog nqus neural network) suab splitter siv AI algorithm los faib cov suab paj nruag thiab suab hauv txhua lub suab tso suab ntawm nws tus kheej ua rau lub suab seev suab paj nruag thiab suab paj nruag.
+Standard MTV suab muaj ob lub tso suab raws (L thiab R) encoded nyob rau hauv xws li ib tug txoj kev uas: L-R yog lub twj paj nruag khiav, L + R yog lub suab khiav. Yog li, los ntawm kev rho tawm lossis ntxiv ob lub tso suab tso suab, peb tuaj yeem tau txais cov twj paj nruag thiab suab hauv lub suab mono. PiKaraoke's built-in DNN-raws li (sib sib zog nqus neural network) lub suab splitter siv AI algorithm los faib cov suab paj nruag thiab suab hauv txhua lub tso suab ntawm nws tus kheej ua rau lub suab seev suab paj nruag thiab suab paj nruag.
 Nres Splitter
 Pib dua Splitter
-Lub suab splitter (uas txhawb nqa DNN-raws li thiab lub tso suab rho tawm) khiav raws li cov txheej txheem sib cais hauv keeb kwm yav dhau, tsim cov ntaub ntawv suab paj nruag / suab rau txhua zaj nkauj.
+Lub suab splitter (uas txhawb nqa DNN-raws li thiab lub tso suab rho tawm) khiav raws li cov txheej txheem sib cais hauv keeb kwm yav dhau, tsim cov ntaub ntawv suab paj nruag / suab suab rau txhua zaj nkauj.
 Re-synchronize suab thiab video:
 Nres Streamer
 Restart Streamer
-Qhov no tsuas yog cuam tshuam rau kev ua si KTV ntawm lub web browser. Rov pib qhov screen-capture-and-streaming txhim kho suab / video synchronization, nws kuj txo qis latency ntawm tus neeg rau zaub mov thiab browser.
+Qhov no tsuas yog cuam tshuam rau kev ua si KTV ntawm lub web browser. Rov pib qhov screen-capture-thiab-streaming txhim kho suab / video synchronization, nws kuj txo qis latency ntawm tus neeg rau zaub mov thiab browser.
 Refresh lub npe nkauj:
 Rescan song directory
 Koj tsuas yog yuav tsum tau ua qhov no yog tias koj luam cov ntaub ntawv rau hauv phau ntawv rub tawm thaum PiKaraoke tab tom khiav.
@@ -174,7 +174,7 @@ Reboot System
 Shutdown System
 Lwm yam
 Nthuav Raspberry Pi filesystem
-Yog tias koj nyuam qhuav teeb tsa cov duab pikaraoke pi ua ntej thiab koj daim npav SD loj dua 4GB, koj tuaj yeem xav nthuav cov ntaub ntawv los siv qhov chaw seem. Koj tsuas yog yuav tsum ua qhov no ib zaug xwb. Qhov no yuav reboot lub system.
+Yog tias koj nyuam qhuav teeb tsa cov duab PiKaraoke pi ua ntej thiab koj daim npav SD loj dua 4GB, koj tuaj yeem xav nthuav cov ntaub ntawv los siv qhov chaw seem. Koj tsuas yog yuav tsum ua qhov no ib zaug xwb. Qhov no yuav reboot lub system.
 Disable admin hom
 Qhib hom admin
 log tawm
@@ -185,13 +185,21 @@ Hloov lus
 Thov xaiv hom lus
 System Language
 Hom lus tam sim no:
-Qhov no hloov cov lus ntawm PiKaraoke backend system uas tau tso tawm rau hauv TV screen; Ntxiv mus, txhua tus neeg siv sib txuas kuj tuaj yeem hloov pauv lawv cov lus Web UI hauv lub ntiaj teb khawm hauv cov ntawv qhia zaub mov sab xis.
+Qhov no hloov cov lus ntawm PiKaraoke backend system uas tau tso tawm rau hauv TV screen; Tsis tas li ntawd, txhua tus neeg siv txuas kuj tuaj yeem hloov pauv lawv cov lus Web UI hauv lub ntiaj teb khawm hauv cov ntawv qhia zaub mov sab xis.
 Download tau tiav lawm!
 Download tsis tau!
 Nkauj ntxiv rau cov kab!
 Ua tsis tau tejyam rau queue zaj nkauj!
 System Info & Chaw
 Volume Normalization
-Cov nkauj sib txawv feem ntau muaj qhov sib txawv. Enabling ntim normalization yuav xub khiav <i>ffmpeg</i> los xam lub ntiaj teb no ntim ntawm ib zaj nkauj thiab yuav kho cov neeg uas ua ntawv ntim kom txhua lub suab nrov sib npaug zos.
+Cov nkauj sib txawv feem ntau muaj qhov sib txawv. Enabling ntim normalization yuav xub khiav <i>ffmpeg</i> los xam lub ntiaj teb ntim ntawm ib zaj nkauj thiab yuav kho cov neeg uas ua ntawv ntim kom txhua zaj nkauj suab nrov sib npaug.
 Nkauj Library download path
 Tag nrho cov nkauj
+Qhia/Hide Subtitle
+Hloov ceev
+Koj tuaj yeem hu nkauj sai dua lossis qeeb dua los ntawm kev hloov cov playback ceev kom tsis pub dhau 0.8x rau 1.2x siv lub trackbar ceev; rau lwm cov playback ceev, nyem rau ntawm tus nqi ceev hloov.
+Nyem rau pib dua playback ceev rau 1x
+Nyem rau teeb tsa playback ceev
+Nyem rau pib dua qhov tseem ceeb / suab
+Pib dua tus yuam sij
+Rov pib dua ceev

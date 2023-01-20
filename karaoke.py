@@ -44,6 +44,7 @@ class Karaoke:
 	has_video = True
 	has_subtitle = False
 	subtitle_delay = 0
+	play_speed = 1.0
 	show_subtitle = True
 	last_vocal_info = 0
 	last_vocal_time = 0
@@ -631,6 +632,8 @@ class Karaoke:
 				extra_params1 += [f'--sub-delay={self.subtitle_delay * 10}']
 			if self.show_subtitle:
 				extra_params1 += [f'--sub-track=0']
+			if self.play_speed != 1:
+				extra_params1 += [f'--rate={self.play_speed}']
 			self.now_playing = self.filename_from_path(file_path)
 			self.now_playing_filename = file_path
 			self.is_paused = ('--start-paused' in extra_params1)
@@ -901,6 +904,20 @@ class Karaoke:
 			logging.warning("Tried to set volume, but no file is playing!")
 			return False
 
+	def play_speed_set(self, speed):
+		if self.is_file_playing():
+			if self.use_vlc:
+				self.vlcclient.playspeed_set(speed)
+				xml = self.vlcclient.command().text
+				self.play_speed = float(self.vlcclient.get_val_xml(xml, 'rate'))
+				logging.info(f"Playback speed set to {self.play_speed}")
+			else:
+				logging.warning("Only VLC player can set playback speed, ignored!")
+			return self.play_speed
+		else:
+			logging.warning("Tried to set play speed, but no file is playing!")
+			return False
+
 	def try_set_vocal_mode(self, mode, now_playing_filename):
 		if mode not in ['mixed', 'vocal', 'nonvocal']:
 			mode = {1: 'nonvocal', 2: 'mixed', 3: 'vocal'}[self.get_vocal_mode()]
@@ -1032,6 +1049,7 @@ class Karaoke:
 		self.has_subtitle = False
 		self.has_video = True
 		self.last_vocal_info = 0
+		self.play_speed = 1
 
 	def streamer_alive(self):
 		try:

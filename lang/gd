@@ -40,19 +40,19 @@ Ath-thòiseachadh siostam a-nis!
 Chan eil cead agad ath-thòiseachadh
 A’ leudachadh siostam fhaidhlichean agus siostam ath-thòiseachadh a-nis!
 Chan urrainn fs a leudachadh air innealan pi neo-sùbh-craoibhe!
-Chan eil cead agad an siostam fhaidhlichean atharrachadh
+Chan eil cead agad an siostam fhaidhlichean ath-mheudachadh
 Cha deach slighe Youtube-dl a lorg!
 Cha deach slighe VLC a lorg!
 slighe omxplayer cha deach a lorg!
 A 'cruthachadh slighe luchdachadh sìos:
 Wifi / lìonra gun cheangal. A dhùnadh sìos ann an 10sg...
 Airson òrain a thaghadh, scan QR no ceangail ri
-Airson taisbeanadh Tbh, ceangail ri
+Airson taisbeanadh Tbh, ceangail ris
 Brùth F gus làn-sgrìn a thogail
-Brùth ESC gus PiKaraoke fhàgail
+Brùth ESC gus PiKaraoke a leigeil seachad
 Modh rèiteachaidh RaspiWifiConfig air a lorg!
 Ceangail inneal/fòn cliste eile ris an AP Wifi: '%s'
-An uairsin comharraich a bhrobhsair gu: '%s://%s%s' agus lean an stiùireadh.
+An uairsin comharraich am brabhsair aige gu: '%s:: //%s%s' agus lean an stiùireadh.
 Suas an ath cheum:
 Air a chur ris le:
 A' cluich a-nis:
@@ -78,7 +78,7 @@ Dàil claisneachd (diog)
 Dàil fo-thiotal (diog)
 Òran ath-thòisich
 Cluich / Stad
-Skip Song An-dràsta
+Thoir leum air an òran làithreach
 Meud Sìos
 Suidhich Volume
 Tomhais Suas
@@ -89,25 +89,25 @@ Lùghdaich dàil claisneachd
 Suidhich dàil claisneachd
 Meudaich dàil claisneachd
  leth-thonn
-Feuch an cuir thu a-steach d’ ainm. Nochdaidh seo ri taobh nan òran a bhios tu a’ ciudha suas bhon inneal seo.
+Feuch an cuir thu a-steach d’ ainm. Nochdaidh seo ri taobh nan òran a tha thu a’ ciudha suas bhon inneal seo.
 Òran air a chur ris a’ chiudha:
 Òran mu thràth anns a’ chiudha:
-Deasaich a-rèir Ceann-latha
+Deasaich a rèir Ceann-latha
 Deasaich a rèir na h-aibideil
 Cuir '%s' ris a' chiudha
 Dèan brobhsadh
 Deasaich a-rèir 'Ceann-latha'
 Air a chur air dòigh le 'Alphabetical'
 òrain
-a' sealltainn <b>{start} - {end}</b> {record_name}, uile gu lèir <b>{total}</b> {record_name}
-lorg <b>{air a lorg}</b> {record_name}, a' sealltainn <b>{start} - {end}</b> {record_name}
+a' sealltainn <b>{start} - {end}</b> {record_name}, gu h-iomlan <b>{total}</b> {record_name}
+lorg <b>{ found}</b> {record_name}, a' sealltainn <b>{start} - {end}</b> {record_name}
 Deasaich òran
 Gluais suas ann an ciudha
 Gluais sìos ann an ciudha
 A bheil thu cinnteach gu bheil thu airson sguabadh às a’ chiudha
 A bheil thu cinnteach gu bheil thu airson an ciudha UILE a ghlanadh? Taidhp ‘OK’ gus leantainn air adhart
 Cuir 3 òrain air thuaiream ris
-Glan a h-uile
+Glan na h-uile
 Tha an ciudha falamh
 ciudha
 Sguab às
@@ -120,7 +120,7 @@ ciudha
 Cuir a-steach maidsean neo-karaoke
 Adhartach
 Taidhp òran (tiotal/neach-ealain) gus na h-òrain a tha rim faighinn a sgrùdadh agus cliog air ‘Queue’ gus a chuir ris a’ chiudha.
-Mura h-eil an t-òran a’ nochdadh anns a’ chlàr-taice “Available Songs”, cliog air ‘Search’ gus a lorg air Youtube.
+Mura nochd an t-òran anns a’ chlàr-taice “Available Songs”, cliog air ‘Search’ gus a lorg air Youtube.
 Luchdaich a-nuas YouTube url gu dìreach
 Cuir ris a’ chiudha
 Cuir a-steach fo-thiotalan
@@ -152,17 +152,17 @@ Roghainnean smachd adhartach
 Modh splitter gutha:
 Cleachd L-R/L+R
 Cleachd DNN
-Tha an dà sheanail stereo (L agus R) air an còdachadh ann an dòigh a tha: Is e LR an t-slighe ionnstramaid, is e L+R an t-slighe gutha. Mar sin, le bhith dìreach a’ toirt air falbh no a’ cur ris an dà sheanail stereo, gheibh sinn an t-slighe ionnsramaid is gutha ann am fuaim mono. Bidh an inneal-sgoltadh gutha stèidhichte air DNN (lìonra domhainn neural) PiKaraoke a 'cleachdadh algairim AI gus fuaim ionnsramaid is gutha a roinn anns gach slighe stereo gu neo-eisimeileach a' leantainn gu slighean stereo ionnsramaid agus gutha.
+Tha an dà sheanail stereo (L agus R) air an còdachadh ann an dòigh a tha: Is e LR an t-slighe ionnstramaid, is e L+R an t-slighe gutha. Mar sin, le bhith dìreach a’ toirt air falbh no a’ cur ris an dà sheanail stereo, gheibh sinn an t-slighe ionnsramaid is gutha ann am fuaim mono. Bidh an inneal-sgoltadh gutha stèidhichte air DNN (lìonra domhainn neural) PiKaraoke a 'cleachdadh algairim AI gus fuaim ionnsramaid agus gutha a roinn anns gach slighe stereo gu neo-eisimeileach a' leantainn gu slighean stereo ionnsramaid agus gutha.
 Cuir stad air Splitter
 Ath-thòisich Splitter
 Bidh an splitter gutha (a bheir taic do gach cuid stèidhichte air DNN agus toirt air falbh stereo) a’ ruith mar phròiseas air leth air a’ chùl, a’ gineadh faidhle claisneachd ionnsramaid / guth airson gach òran.
 Dèan ath-shioncronachadh claisneachd is bhidio:
 Cuir stad air Streamer
 Ath-thòisich Streamer
-Cha toir seo buaidh ach air cluich KTV tro bhrobhsair lìn. Le bhith ag ath-thòiseachadh an glacadh-sgrìn-is-shruthadh a’ leasachadh sioncronadh claisneachd / bhidio, bidh e cuideachd a’ lughdachadh an ùine eadar an frithealaiche agus am brabhsair.
+Cha toir seo buaidh ach air cluich KTV tro bhrobhsair lìn. Le bhith ag ath-thòiseachadh an glacadh-sgrìn-is-sruthadh a’ leasachadh sioncronadh claisneachd / bhidio, bidh e cuideachd a’ lughdachadh an ùine eadar an frithealaiche agus am brabhsair.
 Ùraich liosta nan òran:
 Luchdaich a-nuas an clàr-òrain
-Cha bu chòir gum feum thu seo a dhèanamh ach ma rinn thu leth-bhreac de fhaidhlichean chun chlàr luchdaich sìos fhad ‘s a bha PiKaraoke a’ ruith.
+Cha bu chòir gum feum thu seo a dhèanamh ach ma rinn thu leth-bhreac de fhaidhlichean chun eòlaire luchdachadh sìos fhad ‘s a bha PiKaraoke a’ ruith.
 Ùrachaidhean
 Ma sguir luchdachadh sìos no rannsachaidhean ag obair, is dòcha gun socraich an ùrachadh youtube-dl e. Is e an dreach stàlaichte làithreach:
 Luchdaich a-nuas youtube dl
@@ -174,7 +174,7 @@ Ath-thòisich an t-siostam
 Siostam dùnadh
 Eile
 Leudaich siostam faidhlichean Raspberry Pi
-Ma tha thu dìreach air an ìomhaigh pikaraoke pi ro-thogte a chuir a-steach agus gu bheil a’ chairt SD agad nas motha na 4GB, is dòcha gum bi thu airson an siostam faidhle a leudachadh gus an àite a tha air fhàgail a chleachdadh. Chan fheum thu seo a dhèanamh ach aon turas. Bidh seo ag ath-thòiseachadh an t-siostam.
+Ma tha thu dìreach air an ìomhaigh PiKaraoke pi ro-thogte a chuir a-steach agus gu bheil a’ chairt SD agad nas motha na 4GB, is dòcha gum bi thu airson an siostam faidhle a leudachadh gus an àite a tha air fhàgail a chleachdadh. Chan fheum thu seo a dhèanamh ach aon turas. Bidh seo ag ath-thòiseachadh an t-siostam.
 Cuir à comas modh rianachd
 Cuir an comas modh rianachd
 Log a-mach
@@ -191,7 +191,15 @@ Dh'fhàillig an luchdachadh sìos!
 Òran air a chur ris a’ chiudha!
 Dh’ fhàillig ciudha an òrain!
 Fiosrachadh mun t-siostam & roghainnean
-Normalachadh Tomhais
+Normalachadh tomhas-lìonaidh
 Gu tric bidh ceòl eadar-dhealaichte aig diofar òrain. Le bhith a’ comasachadh gnàthachadh meud ruithidh <i>ffmpeg</i> an-toiseach gus tomhas cruinne òran a thomhas agus atharrachadh gu fèin-ghluasadach air meud cluicheadair gus am bi a h-uile òran a’ faireachdainn a cheart cho àrd.
 An t-slighe leabharlann luchdadh a-nuas
 An àireamh iomlan de dh'òrain a
+Seall/Falaich fo-thiotal
+Atharraich Luas
+Faodaidh tu an t-òran a sheinn nas luaithe no nas slaodaiche le bhith ag atharrachadh an astar ath-chluich gu taobh a-staigh 0.8x gu 1.2x a’ cleachdadh a’ bhàr-rèile astair; airson astar ath-chluich eile, cliog air an luach astair gus atharrachadh.
+Cliog gus astar ath-chluich ath-shuidheachadh gu 1x
+Cliog gus astar ath-chluich a shuidheachadh
+Cliog gus iuchair / pitch ath-shuidheachadh
+Ath-shuidhich an iuchair
+Ath-shuidheachadh Luas

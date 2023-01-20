@@ -1,6 +1,6 @@
 Afrikaans
 Verkeerde admin wagwoord!
-Uit admin-modus afgemeld!
+Uit adminmodus afgemeld!
 Het %s ewekansige snitte bygevoeg
 Het nie meer liedjies gehad nie!
 Het die tou skoongemaak!
@@ -34,7 +34,7 @@ Jy het nie toestemming om youtube-dl op te dateer nie
 Jy het nie toestemming om af te sluit nie
 Stop nou met PiKaraoke!
 Jy het nie toestemming om op te hou nie
-Skakel stelsel nou af!
+Sluit stelsel nou af!
 Jy het nie toestemming om af te sluit nie
 Herlaai stelsel nou!
 Jy het nie toestemming om te herlaai nie
@@ -43,14 +43,14 @@ Kan nie fs uitbrei op nie-raspberry pi-toestelle nie!
 Jy het nie toestemming om die grootte van die lêerstelsel te verander nie
 Youtube-dl-pad nie gevind nie!
 VLC-pad nie gevind nie!
-omxplayer-pad nie gevind nie!
+omxplayer pad nie gevind nie!
 Skep aflaaipad:
-Wifi/netwerk nie gekoppel nie. Sluit oor 10s af...
+Wifi/netwerk nie gekoppel nie. Sluit af in 10s...
 Om liedjies te kies, skandeer QR of koppel aan
 Vir TV-vertoning, koppel aan
 Druk F om volskerm te wissel
 Druk ESC om PiKaraoke te verlaat
-RaspiWifiConfig-opstellingsmodus bespeur!
+RaspiWifiConfig opstelmodus bespeur!
 Koppel 'n ander toestel/slimfoon aan die Wifi AP: '%s'
 Wys dan sy blaaier na: '%s://%s%s' en volg die instruksies.
 Volgende:
@@ -58,9 +58,9 @@ Bygevoeg deur:
 Speel nou:
 Admin-modus toegestaan!
 Verhoogde klankvertraging sal jou meer tyd gee om lirieke te lees voordat jy die volgende sin uitsing.
-Deur ondertitelvertraging te verminder, sal jy meer tyd gee om lirieke te lees voordat jy die volgende sin uitsing.
+As u ondertitelvertraging verminder, sal u meer tyd gee om lirieke te lees voordat u die volgende sin uitsing.
 'n Halftoon staan ​​ook bekend as 'n halfstap. Dit is die kleinste interval wat in klassieke Westerse musiek gebruik word, gelyk aan 'n twaalfde van 'n oktaaf ​​of 'n halwe toon.
-DNN-gebaseerde vokale splitter is geaktiveer. PiKaraoke gebruik PyTorch (deur Facebook) om 'n diep neurale netwerk te bestuur om instrumentele en vokale klank in elke snit te verdeel wat aanleiding gee tot stereoklank.
+DNN-gebaseerde vokale splitter is geaktiveer. PiKaraoke gebruik PyTorch (deur Facebook) om 'n diep neurale netwerk te bestuur om instrumentele en vokale klank in elke snit te verdeel wat tot stereoklank aanleiding gee.
 Speler beheer
 Musiek
 Gemengd
@@ -84,7 +84,7 @@ Stel volume
 Volume op
 Verminder ondertitelvertraging
 Stel onderskrifvertraging
-Verhoog ondertitelvertraging
+Verhoog onderskrifvertraging
 Verminder oudiovertraging
 Stel oudiovertraging in
 Verhoog oudiovertraging
@@ -137,7 +137,7 @@ PiKaraoke
 Is jy seker jy wil opgee?
 Is jy seker jy wil afskakel?
 Is jy seker jy wil herselflaai?
-Is jy seker jy wil Youtube-dl nou opdateer? Huidige en hangende aflaaie kan misluk.
+Is jy seker jy wil YouTube-dl nou opdateer? Huidige en hangende aflaaie kan misluk.
 Is jy seker jy wil die lêerstelsel uitbrei? Dit sal jou raspberry pi herlaai.
 Inligting
 Handige URL QR-kode om met 'n maat te deel:
@@ -152,7 +152,7 @@ Gevorderde beheeropsies
 Vokale splitter-modus:
 Gebruik L-R/L+R
 Gebruik DNN
-Standaard MTV-klank het die twee stereokanale (L en R) so geënkodeer dat: L-R die instrumentsnit is, L+R die vokale snit is. Dus, deur eenvoudig die twee stereokanale af te trek of by te voeg, kan ons die instrumentale en vokale snit in monoklank kry. PiKaraoke se ingeboude DNN-gebaseerde (diep neurale netwerk) vokale splitter gebruik AI-algoritme om instrumentele en vokale klank in elke stereosnit onafhanklik te verdeel, wat lei tot stereo-instrumentele en vokale snitte.
+Standaard MTV-klank het die twee stereokanale (L en R) so geënkodeer dat: L-R die instrumentsnit is, L+R die vokale snit is. Dus, deur eenvoudig die twee stereokanale af te trek of by te voeg, kan ons die instrumentale en vokale snit in monoklank kry. PiKaraoke se ingeboude DNN-gebaseerde (diep neurale netwerk) vokale splitter gebruik AI-algoritme om instrumentele en vokale klank in elke stereo-snit onafhanklik te verdeel, wat lei tot stereo-instrumentele en vokale snitte.
 Stop Splitter
 Herbegin Splitter
 Die vokale splitter (wat beide DNN-gebaseerde en stereo-aftrekking ondersteun) loop as 'n aparte proses in die agtergrond, wat instrumentale/vokale klanklêer vir elke liedjie genereer.
@@ -161,37 +161,45 @@ Stop Streamer
 Herbegin Streamer
 Dit beïnvloed slegs die speel van KTV via webblaaier. Die herbegin van die skermvasvang-en-stroom verbeter oudio/video-sinchronisasie, dit verminder ook die vertraging tussen die bediener en blaaier.
 Herlaai die liedjielys:
-Skandeer die liedgids weer
+Skandeer liedjiegids weer
 Jy hoef dit net te doen as jy lêers met die hand na die aflaaigids gekopieer het terwyl PiKaraoke aan die gang was.
 Opdaterings
 As aflaaie of soektogte ophou werk het, sal die opdatering van youtube-dl dit waarskynlik regmaak. Die huidige geïnstalleerde weergawe is:
 Dateer youtube-dl op
 Hierdie opdateringskakel hierbo kan misluk as jy nie behoorlike lêertoestemmings het nie. Gaan die PiKaraoke-logboek na vir foute.
 Afskakeling
-Moenie net die prop uittrek nie! Sluit altyd jou bediener behoorlik af om data korrupsie te vermy.
+Moenie net die prop uittrek nie! Skakel altyd jou bediener behoorlik af om datakorrupsie te vermy.
 Verlaat PiKaraoke
 Herlaai stelsel
 Afskakelstelsel
 Ander
 Brei Raspberry Pi-lêerstelsel uit
-As jy sopas die voorafgeboude pikaraoke pi-beeld geïnstalleer het en jou SD-kaart is groter as 4GB, wil jy dalk die lêerstelsel uitbrei om die oorblywende spasie te benut. Jy hoef dit net een keer te doen. Dit sal die stelsel herlaai.
-Deaktiveer administrasiemodus
+As jy pas die voorafgeboude PiKaraoke pi-beeld geïnstalleer het en jou SD-kaart is groter as 4GB, wil jy dalk die lêerstelsel uitbrei om die oorblywende spasie te benut. Jy hoef dit net een keer te doen. Dit sal die stelsel herlaai.
+Deaktiveer adminmodus
 Aktiveer adminmodus
 teken uit
 teken aan
-Stelselinligting
+Stelsel inligting
 Tuis
 Verander taal
 Kies asseblief taal
 Stelseltaal
 Huidige stelseltaal:
-Dit verander die taal van die PiKaraoke backend-stelsel wat op TV-skerm vertoon word; bowendien kan elke koppelende gebruiker ook hul onderskeie web-UI-taal verander in die aardbolknoppie in die regterbo-kieslys.
+Dit verander die taal van die PiKaraoke backend-stelsel wat op TV-skerm vertoon word; bowendien kan elke verbindende gebruiker ook hul onderskeie web-UI-taal verander in die aardbolknoppie in die regterbo-kieslys.
 Aflaai suksesvol voltooi!
 Aflaai het misluk!
 Liedjie is by die tou gevoeg!
 Kon nie die liedjie in tou stel nie!
 Stelselinligting en instellings
-Volume Normalisering
+Volume normalisering
 Verskillende liedjies het dikwels verskillende volume. Aktivering van volumenormalisering sal eers <i>ffmpeg</i> laat loop om die globale volume van 'n liedjie te bereken en spelervolume outomaties aan te pas sodat elke liedjie ewe hard klink.
 Liedjiebiblioteek aflaai pad
 Totale aantal liedjies
+Wys/versteek onderskrif
+Verander spoed
+Jy kan die liedjie vinniger of stadiger sing deur die terugspeelspoed na binne 0,8x tot 1,2x te verander deur die spoedspoorbalk te gebruik; vir ander afspeelspoed, klik op die spoedwaarde om te verander.
+Klik om terugspeelspoed na 1x terug te stel
+Klik om afspeelspoed te stel
+Klik om sleutel/toonhoogte terug te stel
+Stel sleutel terug
+Stel spoed terug

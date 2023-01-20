@@ -1,77 +1,77 @@
 Tiếng Việt
 Mật khẩu quản trị không chính xác!
-Đăng xuất khỏi chế độ quản trị!
-Đã thêm% s bản nhạc ngẫu nhiên
-Hết bài hát!
+Đăng xuất khỏi chế độ quản trị viên!
+Đã thêm %s bản nhạc ngẫu nhiên
+Đã hết bài hát!
 Đã xóa hàng đợi!
-Lỗi khi di chuyển mục bên trong hàng đợi: không hợp lệ-đối số
-Đã di chuyển thành công mục bên trong hàng đợi:
-Lỗi khi di chuyển mục bên trong hàng đợi:
-Chuyển xuống hàng đợi:
-Lỗi khi di chuyển xuống hàng đợi:
-Di chuyển trong hàng đợi:
-Lỗi khi di chuyển lên trong hàng đợi:
+Lỗi di chuyển mục bên trong hàng đợi: đối số không hợp lệ
+Đã di chuyển thành công mục vào hàng đợi:
+Lỗi di chuyển mục bên trong hàng đợi:
+Di chuyển xuống trong hàng đợi:
+Lỗi di chuyển xuống trong hàng đợi:
+Di chuyển lên trong hàng đợi:
+Lỗi di chuyển lên trong hàng đợi:
 Đã xóa khỏi hàng đợi:
-Lỗi khi xóa khỏi hàng đợi:
+Lỗi xóa khỏi hàng đợi:
 Đã bắt đầu tải xuống:
 Sau khi hoàn thành, nó sẽ được thêm vào hàng đợi.
 Sau khi hoàn thành, nó sẽ xuất hiện trong danh sách "các bài hát có sẵn".
 Lỗi: Không thể xóa bài hát này vì nó nằm trong hàng đợi hiện tại:
 Bài hát đã bị xóa:
-Lỗi: Không có thông số bài hát được chỉ định!
+Lỗi: Không có thông số bài hát nào được chỉ định!
 Lỗi: Không thể chỉnh sửa bài hát này vì nó hiện đang được phát:
-Chỉnh sửa tệp bài hát
-Lỗi khi đổi tên tệp: '% s' thành '% s'. Tên tệp đã tồn tại.
-Đã đổi tên tệp: '% s' thành '% s'
-Lỗi: Không có thông số tên tệp nào được chỉ định!
+Chỉnh sửa tập tin bài hát
+Lỗi khi đổi tên tệp: '%s' thành '%s'. Tên tệp đã tồn tại.
+Đã đổi tên tệp: '%s' thành '%s'
+Lỗi: Không có tham số tên tệp nào được chỉ định!
 không xác định
-Chạy bộ
-Đã dừng lại
- (Chỉ CPU)
+Đang chạy
+Đã dừng
+ (chỉ CPU)
  (Đã bật GPU)
 Đang cập nhật youtube-dl! Sẽ mất một hoặc hai phút ...
 Bạn không có quyền cập nhật youtube-dl
-Bạn không có quyền tắt
-Thoát PiKaraoke ngay bây giờ!
+Bạn không có quyền tắt máy
+Bỏ PiKaraoke ngay!
 Bạn không có quyền thoát
-Đang tắt hệ thống!
-Bạn không có quyền tắt
+Tắt hệ thống ngay bây giờ!
+Bạn không có quyền tắt máy
 Khởi động lại hệ thống ngay bây giờ!
-Bạn không có quyền khởi động lại
-Mở rộng hệ thống tập tin và hệ thống khởi động lại ngay bây giờ!
+Bạn không có quyền Khởi động lại
+Mở rộng hệ thống tập tin và khởi động lại hệ thống ngay bây giờ!
 Không thể mở rộng fs trên các thiết bị pi không phải mâm xôi!
-Bạn không có quyền thay đổi kích thước hệ thống tệp
+Bạn không có quyền thay đổi kích thước hệ thống tập tin
 Không tìm thấy đường dẫn Youtube-dl!
 Không tìm thấy đường dẫn VLC!
 không tìm thấy đường dẫn omxplayer!
 Tạo đường dẫn tải xuống:
-Không kết nối được Wifi / Mạng. Tắt sau 10 giây ...
+Wifi/Mạng không được kết nối. Tắt sau 10s...
 Để chọn bài hát, hãy quét QR hoặc kết nối với
-Để hiển thị TV, hãy kết nối với
-Nhấn F để chuyển đổi toàn màn hình
-Nhấn ESC để thoát khỏi PiKaraoke
+Đối với màn hình TV, hãy kết nối với
+Nhấn F để chuyển toàn màn hình
+Nhấn ESC để thoát PiKaraoke
 Đã phát hiện chế độ thiết lập RaspiWifiConfig!
-Kết nối thiết bị / điện thoại thông minh khác với AP Wifi: '% s'
-Sau đó trỏ trình duyệt của nó đến: '% s: //% s% s' và làm theo hướng dẫn.
+Kết nối thiết bị/điện thoại thông minh khác với Wifi AP: '%s'
+Sau đó trỏ trình duyệt của nó tới: '%s://%s%s' và làm theo hướng dẫn.
 Tiếp theo:
-Thêm bởi:
+Được thêm bởi:
 Đang chơi:
-Đã cấp chế độ quản trị viên!
-Tăng độ trễ âm thanh sẽ giúp bạn có nhiều thời gian hơn để đọc lời bài hát trước khi hát câu tiếp theo.
-Giảm độ trễ của phụ đề sẽ giúp bạn có nhiều thời gian hơn để đọc lời bài hát trước khi hát câu tiếp theo.
-Một nửa cung còn được gọi là nửa bước. Đây là quãng nhỏ nhất được sử dụng trong âm nhạc cổ điển phương Tây, bằng một phần mười hai của quãng tám hoặc nửa giai điệu.
-Bộ tách giọng nói dựa trên DNN được bật. PiKaraoke sử dụng PyTorch (của Facebook) để chạy một mạng lưới thần kinh sâu nhằm tách âm thanh nhạc cụ và giọng hát trong mỗi bản nhạc để tạo ra âm thanh nổi.
+Chế độ quản trị được cấp!
+Tăng độ trễ âm thanh sẽ giúp bạn có thêm thời gian để đọc lời bài hát trước khi hát to câu tiếp theo.
+Giảm độ trễ phụ đề sẽ cho bạn nhiều thời gian hơn để đọc lời bài hát trước khi hát câu tiếp theo.
+Nửa cung còn được gọi là nửa cung. Đó là quãng nhỏ nhất được sử dụng trong âm nhạc cổ điển phương Tây, bằng một phần mười hai quãng tám hoặc nửa cung.
+Bộ tách âm dựa trên DNN được bật. PiKaraoke sử dụng PyTorch (của Facebook) để chạy một mạng lưới thần kinh sâu nhằm phân tách âm thanh của nhạc cụ và giọng hát trong mỗi bản nhạc để tạo ra âm thanh nổi.
 Kiểm soát người chơi
 Âm nhạc
 Trộn
 Tiếng nói
 Thay đổi khóa
-Không có gì đang phát ngay bây giờ.
-Không có bài hát nào được xếp hàng đợi.
+Không có gì đang chơi ngay bây giờ.
+Không có bài hát nào được xếp hàng.
 Bài hát này không phải do bạn thêm vào. Bạn có chắc chắn muốn bắt đầu lại bản nhạc này không?
-Bài hát này không phải do bạn thêm vào. Bạn có chắc chắn muốn bỏ qua bản nhạc này không?
+Bài hát này không phải do bạn thêm vào. Bạn có chắc chắn muốn bỏ qua bài hát này?
 Kiểm soát người chơi
-Đang chơi
+Đang phát
 Bài hát tiếp theo
 Tìm kiếm:
 Độ trễ âm thanh (giây)
@@ -93,89 +93,89 @@ Xin hãy nhập tên của bạn. Điều này sẽ hiển thị bên cạnh cá
 Bài hát được thêm vào hàng đợi:
 Bài hát đã có trong hàng đợi:
 Lọc theo ngày
-Sắp xếp theo thứ tự bảng chữ cái
-Thêm '% s' vào hàng đợi
-Duyệt qua
-Được sắp xếp theo 'Ngày tháng'
-Được sắp xếp theo 'Thứ tự bảng chữ cái'
+Sắp xếp theo bảng chữ cái
+Thêm '%s' vào hàng đợi
+duyệt
+Sắp xếp theo 'Ngày'
+Sắp xếp theo 'Bảng chữ cái'
 bài hát
-hiển thị <b> {start} - {end} </b> {record_name}, tổng cộng <b> {total} </b> {record_name}
-tìm thấy <b> {found} </b> {record_name}, hiển thị <b> {start} - {end} </b> {record_name}
-Chỉnh sửa bài hát
+hiển thị tổng cộng <b>{start} - {end}</b> {record_name}, <b>{total}</b> {record_name}
+đã tìm thấy <b>{found}</b> {record_name}, đang hiển thị <b>{start} - {end}</b> {record_name}
+chỉnh sửa bài hát
 Di chuyển lên trong hàng đợi
-Di chuyển xuống hàng đợi
-Bạn có chắc chắn muốn xóa khỏi hàng đợi không
-Bạn có chắc chắn muốn xóa TOÀN BỘ hàng đợi không? Gõ 'OK' để tiếp tục
+Di chuyển xuống trong hàng đợi
+Bạn có chắc chắn muốn xóa khỏi hàng đợi
+Bạn có chắc chắn muốn xóa TOÀN BỘ hàng đợi không? Nhập 'OK' để tiếp tục
 Thêm 3 bài hát ngẫu nhiên
 Quet sạch tât cả
 Hàng đợi trống
 Xếp hàng
 Xóa bỏ
-Các bài hát có sẵn trong thư viện địa phương
+bài hát có sẵn trong thư viện địa phương
 Đã thêm bài hát vào hàng đợi:
 Bài hát đã có trong hàng đợi:
 Tìm kiếm / Thêm mới
 Tìm kiếm
 Xếp hàng
 Bao gồm các trận đấu không phải karaoke
-Trình độ cao
-Nhập một bài hát (tiêu đề / nghệ sĩ) để tìm kiếm các bài hát có sẵn và nhấp vào 'Hàng đợi' để thêm bài hát đó vào hàng đợi.
+Nâng cao
+Nhập một bài hát (tiêu đề/nghệ sĩ) để tìm kiếm các bài hát có sẵn và nhấp vào 'Hàng đợi' để thêm bài hát đó vào hàng đợi.
 Nếu bài hát không xuất hiện trong menu thả xuống "Bài hát có sẵn", hãy nhấp vào 'Tìm kiếm' để tìm bài hát đó trên Youtube.
-Url tải xuống trực tiếp trên YouTube:
+Tải xuống trực tiếp url YouTube:
 Thêm vào hàng
 Bao gồm phụ đề
 Tải xuống
-Tìm kiếm trên YouTube cho
+Tìm kiếm YouTube cho
 tìm kiếm kết quả cho
 Nhấp vào menu thả xuống để hiển thị thêm kết quả
-Liên kết:
-Bài hát có sẵn
-Bạn có muốn thay đổi tên hiển thị của người đang sử dụng thiết bị này không? Điều này sẽ hiển thị bên cạnh các bài hát được xếp hàng đợi. Hiện hành:
+liên kết:
+bài hát có sẵn
+Bạn có muốn thay đổi tên hiển thị của người đang sử dụng thiết bị này không? Điều này sẽ hiển thị bên cạnh các bài hát xếp hàng. Hiện hành:
 Người dùng hiện tại
 Cài đặt
 PiKaraoke
 Bạn có chắc bạn muốn thoát khỏi?
-Bạn có chắc chắn muốn tắt không?
-Bạn có chắc chắn muốn khởi động lại không?
+Bạn có chắc chắn muốn tắt máy không?
+Bạn có chắc chắn muốn khởi động lại?
 Bạn có chắc chắn muốn cập nhật Youtube-dl ngay bây giờ không? Tải xuống hiện tại và đang chờ xử lý có thể không thành công.
-Bạn có chắc chắn muốn mở rộng hệ thống tệp không? Thao tác này sẽ khởi động lại pi raspberry của bạn.
+Bạn có chắc chắn muốn mở rộng hệ thống tập tin? Thao tác này sẽ khởi động lại mâm xôi pi của bạn.
 Thông tin
 Mã QR URL tiện dụng để chia sẻ với bạn bè:
-Hệ điều hành
+hệ điều hành
 Sử dụng đĩa
-Ký ức
+Trí nhớ
 Chụp màn hình
-Bộ tách giọng
+Bộ tách giọng hát
 Phiên bản Youtube-dl (yt-dlp)
 Phiên bản PiKaraoke
 Tùy chọn điều khiển nâng cao
-Chế độ tách giọng:
-Sử dụng L-R / L + R
+Chế độ tách âm thanh:
+Sử dụng L-R/L+R
 Sử dụng DNN
-Âm thanh MTV tiêu chuẩn có hai kênh âm thanh nổi (L và R) được mã hóa theo cách: L-R là bản nhạc cụ, L + R là bản giọng hát. Do đó, chỉ cần trừ hoặc cộng hai kênh âm thanh nổi, chúng ta có thể có được bài hát nhạc cụ và giọng hát ở dạng âm thanh đơn âm. Bộ tách giọng hát dựa trên DNN (mạng thần kinh sâu) được tích hợp sẵn của PiKaraoke sử dụng thuật toán AI để tách âm thanh nhạc cụ và giọng hát trong mỗi bản nhạc âm thanh nổi một cách độc lập dẫn đến các bản nhạc âm thanh và nhạc cụ âm thanh nổi.
-Ngừng Splitter
-Khởi động lại Splitter
-Bộ tách giọng hát (hỗ trợ cả phép trừ âm thanh nổi và dựa trên DNN) chạy như một quy trình riêng biệt trong nền, tạo ra tệp âm thanh nhạc cụ / giọng hát cho mọi bài hát.
+Âm thanh MTV tiêu chuẩn có hai kênh âm thanh nổi (L và R) được mã hóa theo cách: L-R là rãnh nhạc cụ, L+R là rãnh giọng hát. Do đó, chỉ bằng cách trừ hoặc cộng hai kênh âm thanh nổi, chúng ta có thể nhận được bản nhạc cụ và giọng hát ở dạng âm thanh đơn âm. Bộ tách giọng hát dựa trên DNN (mạng nơ-ron sâu) tích hợp của PiKaraoke sử dụng thuật toán AI để phân tách âm thanh nhạc cụ và giọng hát trong từng rãnh âm thanh nổi một cách độc lập dẫn đến các rãnh nhạc và giọng hát âm thanh nổi.
+Dừng bộ chia
+Khởi động lại bộ chia
+Bộ tách giọng hát (hỗ trợ cả DNN và phép trừ âm thanh nổi) chạy dưới dạng một quy trình riêng biệt trong nền, tạo tệp âm thanh nhạc cụ/giọng hát cho mỗi bài hát.
 Đồng bộ hóa lại âm thanh và video:
-Ngừng phát trực tiếp
-Khởi động lại Streamer
-Điều này chỉ ảnh hưởng đến việc chơi KTV thông qua trình duyệt web. Khởi động lại chế độ chụp và phát trực tuyến màn hình cải thiện đồng bộ hóa âm thanh / video, nó cũng làm giảm độ trễ giữa máy chủ và trình duyệt.
+Dừng truyền phát
+Khởi động lại bộ truyền phát
+Điều này chỉ ảnh hưởng đến việc phát KTV qua trình duyệt web. Việc khởi động lại tính năng chụp và phát trực tuyến màn hình sẽ cải thiện khả năng đồng bộ hóa âm thanh/video, đồng thời giảm độ trễ giữa máy chủ và trình duyệt.
 Làm mới danh sách bài hát:
 Quét lại thư mục bài hát
-Bạn chỉ cần thực hiện việc này nếu bạn đã sao chép thủ công các tệp vào thư mục tải xuống trong khi PiKaraoke đang chạy.
-Cập nhật
-Nếu quá trình tải xuống hoặc tìm kiếm ngừng hoạt động, việc cập nhật youtube-dl có thể sẽ khắc phục được sự cố. Phiên bản được cài đặt hiện tại là:
+Bạn chỉ cần làm điều này nếu bạn đã sao chép các tệp theo cách thủ công vào thư mục tải xuống trong khi PiKaraoke đang chạy.
+cập nhật
+Nếu quá trình tải xuống hoặc tìm kiếm ngừng hoạt động, việc cập nhật youtube-dl có thể sẽ khắc phục được sự cố đó. Phiên bản cài đặt hiện tại là:
 Cập nhật youtube-dl
 Liên kết cập nhật ở trên có thể không thành công nếu bạn không có quyền đối với tệp thích hợp. Kiểm tra nhật ký PiKaraoke để tìm lỗi.
 Tắt
-Đừng chỉ rút phích cắm! Luôn tắt máy chủ của bạn đúng cách để tránh hỏng dữ liệu.
-Thoát PiKaraoke
+Đừng chỉ rút phích cắm! Luôn tắt máy chủ của bạn đúng cách để tránh làm hỏng dữ liệu.
+Bỏ PiKaraoke
 Hệ thống khởi động lại
-Hệ thống tắt máy
+hệ thống tắt máy
 Khác
-Mở rộng hệ thống tệp Raspberry Pi
-Nếu bạn vừa cài đặt hình ảnh pikaraoke pi được tạo sẵn và thẻ SD của bạn lớn hơn 4GB, bạn có thể muốn mở rộng hệ thống tệp để tận dụng dung lượng còn lại. Bạn chỉ cần làm điều này một lần. Thao tác này sẽ khởi động lại hệ thống.
-Tắt chế độ quản trị viên
+Mở rộng hệ thống tập tin Raspberry Pi
+Nếu bạn vừa cài đặt hình ảnh PiKaraoke pi dựng sẵn và thẻ SD của bạn lớn hơn 4GB, bạn có thể muốn mở rộng hệ thống tệp để sử dụng dung lượng còn lại. Bạn chỉ cần làm điều này một lần. Điều này sẽ khởi động lại hệ thống.
+Tắt chế độ quản trị
 Bật chế độ quản trị viên
 đăng xuất
 đăng nhập
@@ -185,13 +185,21 @@ Thay đổi ngôn ngữ
 Vui lòng chọn ngôn ngữ
 Ngôn ngữ hệ thống
 Ngôn ngữ hệ thống hiện tại:
-Điều này thay đổi ngôn ngữ của hệ thống phụ trợ PiKaraoke được hiển thị trên màn hình TV; hơn nữa, mỗi người dùng kết nối cũng có thể thay đổi ngôn ngữ giao diện người dùng Web tương ứng của họ trong nút quả địa cầu ở menu trên cùng bên phải.
-Đã hoàn tất tải xuống thành công!
+Điều này thay đổi ngôn ngữ của hệ thống phụ trợ PiKaraoke được hiển thị trên màn hình TV; hơn nữa, mỗi người dùng kết nối cũng có thể thay đổi ngôn ngữ Giao diện người dùng web tương ứng của họ trong nút quả địa cầu ở menu trên cùng bên phải.
+Tải xuống hoàn tất thành công!
 Tải xuống không thành công!
-Bài hát đã được thêm vào hàng đợi!
+Bài hát được thêm vào hàng đợi!
 Không thể xếp hàng bài hát!
-Thông tin và cài đặt hệ thống
+Thông tin & Cài đặt hệ thống
 Chuẩn hóa âm lượng
-Các bài hát khác nhau thường có âm lượng khác nhau. Bật chuẩn hóa âm lượng trước tiên sẽ chạy <i> ffmpeg </i> để tính âm lượng chung của bài hát và tự động điều chỉnh âm lượng trình phát sao cho mọi bài hát đều có âm lượng lớn như nhau.
-Đường dẫn tải xuống thư viện bài hát
+Các bài hát khác nhau thường có âm lượng khác nhau. Bật chuẩn hóa âm lượng trước tiên sẽ chạy <i>ffmpeg</i> để tính toán âm lượng chung của một bài hát và tự động điều chỉnh âm lượng của trình phát để mọi bài hát đều có âm lượng lớn như nhau.
+Đường dẫn tải thư viện bài hát
 Tổng số bài hát
+Hiện/Ẩn phụ đề
+Thay đổi tốc độ
+Bạn có thể hát bài hát nhanh hơn hoặc chậm hơn bằng cách thay đổi tốc độ phát lại trong khoảng 0,8x đến 1,2x bằng thanh theo dõi tốc độ; đối với tốc độ phát lại khác, nhấp vào giá trị tốc độ để thay đổi.
+Nhấp để đặt lại tốc độ phát lại thành 1x
+Nhấp để đặt tốc độ phát lại
+Nhấp để đặt lại phím/cao độ
+Đặt lại chìa khoá
+Đặt lại tốc độ

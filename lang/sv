@@ -4,7 +4,7 @@ Utloggad från adminläge!
 Lade till %s slumpmässiga spår
 Fick slut på låtar!
 Rensat kön!
-Det gick inte att flytta objektet i kön: invalid-argument
+Det gick inte att flytta objekt i kön: invalid-argument
 Objektet har flyttats in i kön:
 Det gick inte att flytta objekt i kön:
 Flyttade ner i kön:
@@ -51,16 +51,16 @@ För TV-visning, anslut till
 Tryck på F för att växla helskärm
 Tryck på ESC för att avsluta PiKaraoke
 RaspiWifiConfig-inställningsläge upptäckt!
-Anslut en annan enhet/smarttelefon till Wifi AP: '%s'
+Anslut en annan enhet/smartphone till Wifi AP: '%s'
 Rikta sedan webbläsaren till: '%s://%s%s' och följ instruktionerna.
 Strax:
 Tillagd av:
 Nu spelas:
 Adminläge beviljat!
 Ökad ljudfördröjning ger dig mer tid att läsa texter innan du sjunger ut nästa mening.
-Om du minskar undertextens fördröjning får du mer tid att läsa texterna innan du sjunger ut nästa mening.
+Om du minskar fördröjningen av undertexter får du mer tid att läsa texterna innan du sjunger ut nästa mening.
 En halvton är också känd som ett halvsteg. Det är det minsta intervallet som används i klassisk västerländsk musik, lika med en tolftedel av en oktav eller en halv ton.
-DNN-baserad röstsplitter är aktiverad. PiKaraoke använder PyTorch (av Facebook) för att driva ett djupt neuralt nätverk för att dela upp instrumental- och vokalljud i varje spår som ger upphov till stereoljud.
+DNN-baserad röstsplitter är aktiverad. PiKaraoke använder PyTorch (av Facebook) för att köra ett djupt neuralt nätverk för att dela upp instrumental- och vokalljud i varje spår som ger upphov till stereoljud.
 Spelarkontroll
 musik
 Blandad
@@ -152,14 +152,14 @@ Avancerade kontrollalternativ
 Vocal splitter-läge:
 Använd L-R/L+R
 Använd DNN
-Standard MTV-ljud har de två stereokanalerna (L och R) kodade på ett sådant sätt att: L-R är instrumentspåret, L+R är sångspåret. Således, genom att helt enkelt subtrahera eller lägga till de två stereokanalerna, kan vi få instrumental- och vokalspåret i monoljud. PiKaraokes inbyggda DNN-baserade (djupa neurala nätverk) sångsplitter använder AI-algoritm för att dela upp instrumental- och vokalljud i varje stereospår oberoende vilket resulterar i stereoinstrument- och vokalspår.
+Standard MTV-ljud har de två stereokanalerna (L och R) kodade på ett sådant sätt att: L-R är instrumentspåret, L+R är sångspåret. Således, genom att helt enkelt subtrahera eller lägga till de två stereokanalerna, kan vi få instrumental- och vokalspåret i monoljud. PiKaraokes inbyggda DNN-baserade (djupa neurala nätverk) sångsplitter använder AI-algoritm för att dela upp instrument- och sångljud i varje stereospår oberoende vilket resulterar i stereoinstrument- och sångspår.
 Stoppa Splitter
 Starta om Splitter
-Vokalsplittern (som stöder både DNN-baserad och stereosubtraktion) körs som en separat process i bakgrunden och genererar instrumental/vokal ljudfil för varje låt.
+Röstdelaren (som stöder både DNN-baserad och stereosubtraktion) körs som en separat process i bakgrunden och genererar instrumental/vokal ljudfil för varje låt.
 Synkronisera om ljud och video:
 Stoppa Streamer
 Starta om Streamer
-Detta påverkar endast att spela KTV via webbläsaren. Om du startar om skärmdumpningen och strömningen förbättras ljud-/videosynkroniseringen, det minskar också latensen mellan servern och webbläsaren.
+Detta påverkar endast att spela KTV via webbläsare. Om du startar om screen-capture-and-streaming förbättras ljud/video-synkroniseringen, det minskar också latensen mellan servern och webbläsaren.
 Uppdatera låtlistan:
 Skanna sångkatalogen igen
 Du ska bara behöva göra detta om du manuellt kopierade filer till nedladdningskatalogen medan PiKaraoke kördes.
@@ -174,9 +174,9 @@ Omstart-system
 Avstängningssystem
 Övrig
 Expandera Raspberry Pi-filsystemet
-Om du precis har installerat den förbyggda pikaraoke pi-bilden och ditt SD-kort är större än 4 GB, kanske du vill utöka filsystemet för att utnyttja det återstående utrymmet. Du behöver bara göra detta en gång. Detta kommer att starta om systemet.
+Om du precis har installerat den förbyggda PiKaraoke pi-bilden och ditt SD-kort är större än 4 GB, kanske du vill utöka filsystemet för att utnyttja det återstående utrymmet. Du behöver bara göra detta en gång. Detta kommer att starta om systemet.
 Inaktivera adminläge
-Aktivera adminläge
+Aktivera administratörsläge
 logga ut
 logga in
 System information
@@ -195,3 +195,11 @@ Volymnormalisering
 Olika låtar har ofta olika volym. Aktivering av volymnormalisering kommer först att köra <i>ffmpeg</i> för att beräkna den globala volymen för en låt och automatiskt justera spelarvolymen så att varje låt låter lika högt.
 Sökväg för nedladdning av låtbibliotek
 Totalt antal låtar
+Visa/dölj undertext
+Ändra hastighet
+Du kan sjunga låten snabbare eller långsammare genom att ändra uppspelningshastigheten till 0,8x till 1,2x med hjälp av hastighetens spårfält; för annan uppspelningshastighet, klicka på hastighetsvärdet för att ändra.
+Klicka för att återställa uppspelningshastigheten till 1x
+Klicka för att ställa in uppspelningshastighet
+Klicka för att återställa nyckel/tonhöjd
+Återställ nyckel
+Återställ hastighet

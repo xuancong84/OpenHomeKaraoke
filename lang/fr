@@ -15,7 +15,7 @@ Supprimé de la file d'attente :
 Erreur lors de la suppression de la file d'attente :
 Le téléchargement a commencé :
 Une fois terminé, il sera ajouté à la file d'attente.
-Une fois terminé, il apparaîtra dans la liste "chansons disponibles".
+Une fois terminé, il apparaîtra dans la liste des "chansons disponibles".
 Erreur : Impossible de supprimer ce morceau, car il se trouve dans la file d'attente actuelle :
 Morceau supprimé :
 Erreur : Aucun paramètre de morceau spécifié !
@@ -25,7 +25,7 @@ Erreur lors du renommage du fichier : '%s' en '%s'. Le nom de fichier existe d�
 Fichier renommé : '%s' en '%s'
 Erreur : Aucun paramètre de nom de fichier n'a été spécifié !
 Inconnue
-Fonctionnement
+En cours d'exécution
 Arrêté
  (UC uniquement)
  (GPU activé)
@@ -115,7 +115,7 @@ Chansons disponibles dans la bibliothèque locale
 Chanson ajoutée à la file d'attente :
 Le morceau est déjà dans la file d'attente :
 Rechercher / Ajouter nouveau
-Recherche
+Rechercher
 File d'attente
 Inclure les matchs non karaoké
 Avancé
@@ -132,14 +132,14 @@ Lien:
 Chansons disponibles
 Voulez-vous modifier le nom d'affichage de la personne qui utilise cet appareil ? Cela apparaîtra à côté des chansons en file d'attente. Courant:
 Utilisateur actuel
-Réglages
+Paramètres
 PiKaraoké
 Êtes-vous sûr de vouloir quitter?
 Voulez-vous vraiment arrêter ?
 Voulez-vous vraiment redémarrer ?
 Êtes-vous sûr de vouloir mettre à jour Youtube-dl maintenant ? Les téléchargements en cours et en attente peuvent échouer.
 Voulez-vous vraiment étendre le système de fichiers ? Cela va redémarrer votre raspberry pi.
-Information
+Informations
 Code QR d'URL pratique à partager avec un ami :
 SE
 Utilisation du disque
@@ -174,7 +174,7 @@ Redémarrer le système
 Système d'arrêt
 Autre
 Développer le système de fichiers Raspberry Pi
-Si vous venez d'installer l'image pikaraoke pi pré-construite et que votre carte SD est supérieure à 4 Go, vous souhaiterez peut-être étendre le système de fichiers pour utiliser l'espace restant. Vous n'avez besoin de le faire qu'une seule fois. Cela redémarrera le système.
+Si vous venez d'installer l'image PiKaraoke pi pré-construite et que votre carte SD est supérieure à 4 Go, vous souhaiterez peut-être étendre le système de fichiers pour utiliser l'espace restant. Vous n'avez besoin de le faire qu'une seule fois. Cela redémarrera le système.
 Désactiver le mode administrateur
 Activer le mode administrateur
 Se déconnecter
@@ -195,3 +195,11 @@ Normalisation des volumes
 Différentes chansons ont souvent un volume différent. L'activation de la normalisation du volume exécutera d'abord <i>ffmpeg</i> pour calculer le volume global d'une chanson et ajustera automatiquement le volume du lecteur afin que chaque chanson sonne de la même manière.
 Chemin de téléchargement de la bibliothèque de chansons
 Nombre total de chansons
+Afficher/Masquer les sous-titres
+Changer de vitesse
+Vous pouvez chanter la chanson plus rapidement ou plus lentement en modifiant la vitesse de lecture entre 0,8x et 1,2x à l'aide de la barre de vitesse ; pour une autre vitesse de lecture, cliquez sur la valeur de vitesse à modifier.
+Cliquez pour réinitialiser la vitesse de lecture à 1x
+Cliquez pour régler la vitesse de lecture
+Cliquez pour réinitialiser la tonalité/la hauteur
+Touche de réinitialisation
+Vitesse de réinitialisation

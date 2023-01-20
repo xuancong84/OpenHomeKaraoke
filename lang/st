@@ -12,7 +12,7 @@ Phoso ea ho theoha moleng:
 E nyolohile moleng:
 Phoso ea ho nyoloha moleng:
 E hlakotsoe moleng:
-Phoso ea ho phumula lethathamong:
+Phoso ea ho phumula moleng:
 Ho qadile ho jarolla:
 Ha e phethiloe, e tla ekeletsoa moleng.
 Ha e qetile, e tla hlaha lethathamong la "lipina tse teng".
@@ -23,13 +23,13 @@ Phoso: Ha e khone ho hlophisa pina ena hobane e ntse e bapaloa:
 Pina File Edit
 Phoso ea Ho reha faele bocha: '%s' ho ea ho '%s'. Filename e se e ntse e le teng.
 Faele e fetoletsoeng: '%s' ho isa ho '%s'
-Phoso: Ha ho litlhophiso tsa lebitso la faele tse boletsoeng!
+Phoso: Ha ho liparamente tsa lebitso la faele tse boletsoeng!
 Tse sa tsejoeng
 Ho matha
 E emisitsoe
  (CPU feela)
  (GPU e lumelletsoe)
-E nchafatsa youtube-dl! Eka nka motsotso kapa e mmedi...
+E nchafatsa youtube-dl! E ka nka motsotso kapa e 'meli...
 Ha u na tumello ea ho nchafatsa youtube-dl
 Ha u na tumello ea ho koala
 E tlohela PiKaraoke hona joale!
@@ -38,8 +38,8 @@ Ho koala sistimi hona joale!
 Ha u na tumello ea ho koala
 Rebooting system hona joale!
 Ha u na tumello ea ho Reboot
-Ho holisa sistimi ea lifaele le ho qala sistimi hape hona joale!
-Ha e khone ho atolosa li-fs ho lisebelisoa tsa non-raspberry pi!
+Ho holisa sistimi ea faele le sistimi ea ho qala bocha hona joale!
+Ha e khone ho holisa li-fs ho lisebelisoa tsa non-raspberry pi!
 Ha u na tumello ea ho fetola boholo ba sistimi
 Tsela ea Youtube-dl ha e fumanehe!
 Tsela ea VLC ha e fumanehe!
@@ -61,7 +61,7 @@ Ho eketsa ho lieha ha molumo ho tla u fa nako e eketsehileng ea ho bala mantsoe 
 Ho fokotsa ho lieha ha sehloohoana ho tla u fa nako e eketsehileng ea ho bala mantsoe pele u bina polelo e latelang.
 Semitone e boetse e tsejoa e le halofo ea mohato. Ke nako e nyane ka ho fetisisa e sebelisoang 'minong oa khale oa Bophirimela, e lekanang le karolo ea leshome le metso e' meli ea octave kapa halofo ea molumo.
 Sesebelisoa sa ho arola mantsoe se thehiloeng ho DNN se lumelletsoe. PiKaraoke e sebelisa PyTorch (ka Facebook) ho tsamaisa marang-rang a tebileng a methapo ea kutlo ho arola molumo oa liletsa le lentsoe pina e 'ngoe le e 'ngoe e hlahisang molumo oa stereo.
-Taolo ea libapali
+Taolo ea Sebapali
 Mmino
 Kopantsoeng
 Lentsoe
@@ -70,26 +70,26 @@ Ha ho letho le bapalang hona joale.
 Ha ho pina e behiloeng moleng.
 Pina ena ha e ea eketsoa ke uena. Na ehlile u batla ho qala pina ee bocha?
 Pina ena ha e ea eketsoa ke uena. Na ehlile u batla ho tlola pina ee?
-Taolo ea libapali
+Taolo ea Sebapali
 E ea Bapala Joale
-Next Song
+Sefela se Latelang
 Batla ho:
 Audio Ho lieha (metsotsoana)
 Subtitle Delay (metsotsoana)
 Qala Pina bocha
 Bapala/Emisa
 Tlola Pina ea Hona Joale
-Phahamiso ea Phahamiso
+Phatlalatso ea Phahamiso
 Seta Bolumo
 Phahamisa Phahamiso
 Fokotsa Subtitle Ho lieha
 Beha Subtitle Ho lieha
 Eketsa Subtitle Ho lieha
-Fokotsa tieho ea molumo
+Fokotsa ho lieha ha molumo
 Beha Ho lieha ha Audio
-Eketsa tieho ea molumo
+Eketsa Tieho ea Audio
  li-semitones
-Ka kopo, kenya lebitso la hau. Sena se tla hlaha haufi le lipina tseo u li behelang ho tloha sesebelisoa sena.
+Ka kopo, kenya lebitso la hau. Sena se tla hlaha haufi le lipina tseo u li behelang ho tsoa sesebelisoa sena.
 Pina e kentsoe moleng:
 Pina e se e le moleng:
 Hlophisa ka Letsatsi
@@ -137,7 +137,7 @@ PiKaraoke
 Na ehlile u batla ho tlohela?
 Na ehlile u batla ho koala?
 Na ehlile u batla ho qala bocha?
-Na u na le bonnete ba hore u batla ho nchafatsa Youtube-dl hona joale? Litjarollo tsa hajoale le tse ntseng li emetse ho jarolla li ka hloleha.
+Na u na le bonnete ba hore u batla ho nchafatsa Youtube-dl hona joale? Litharollo tsa hajoale le tse ntseng li letile li ka hloleha.
 Na u na le bonnete ba hore u batla ho holisa sistimi ea lifaele? Sena se tla qala raspberry pi ea hau hape.
 Boitsebiso
 QR khoutu ea QR e sebetsang eo u ka e arolelanang le motsoalle:
@@ -152,7 +152,7 @@ Mekhoa e tsoetseng pele ea ho laola
 Mokhoa oa ho arohana ha lentsoe:
 Sebelisa L-R/L+R
 Sebelisa DNN
-Molumo o tloaelehileng oa MTV o na le likanale tse peli tsa stereo (L le R) tse kentsoeng ka tsela ea hore: L-R ke pina ea seletsa, L+R ke pina ea lentsoe. Kahoo, ka ho tlosa kapa ho kenyelletsa liteishene tse peli tsa stereo, re ka fumana pina ea liletsa le lentsoe ka molumo oa mono. PiKaraoke e hahelletsoeng ka har'a DNN-based (deep neural network) vocal splitter e sebelisa algorithm ea AI ho arola molumo oa liletsa le oa lentsoe pina e 'ngoe le e 'ngoe ea stereo ka tsela e ikemetseng e hlahisang liletsa tsa stereo le tsa mantsoe.
+Molumo o tloaelehileng oa MTV o na le likanale tse peli tsa stereo (L le R) tse kentsoeng ka tsela ea hore: L-R ke pina ea seletsa, L+R ke pina ea lentsoe. Kahoo, ka ho tlosa kapa ho kenyelletsa liteishene tse peli tsa stereo, re ka fumana pina ea liletsa le lentsoe ka molumo oa mono. PiKaraoke e hahelletsoeng ka hare ho DNN-based (deep neural network) vocal splitter e sebelisa algorithm ea AI ho arola molumo oa liletsa le oa lentsoe pina e 'ngoe le e 'ngoe ea stereo ka boikemelo e hlahisang liletsa tsa stereo le tsa mantsoe.
 Emisa Splitter
 Qala hape Splitter
 Moqapi oa lentsoe (o tšehetsang ho tlosoa ha DNN-based le stereo) o sebetsa e le mokhoa o arohaneng ka morao, o hlahisa faele ea molumo oa liletsa / lentsoe bakeng sa pina e 'ngoe le e 'ngoe.
@@ -174,7 +174,7 @@ Qala hape Sisteme
 Sistimi ea ho koala
 Tse ding
 Eketsa tsamaiso ea lifaele tsa Raspberry Pi
-Haeba u sa tsoa kenya setšoantšo sa pikaraoke pi se entsoeng esale pele 'me karete ea hau ea SD e kholo ho feta 4GB, u ka' na ua batla ho atolosa tsamaiso ea lifaele ho sebelisa sebaka se setseng. U hloka ho etsa sena hang feela. Sena se tla qala sistimi hape.
+Haeba u sa tsoa kenya setšoantšo sa PiKaraoke pi se hahiloeng pele 'me karete ea hau ea SD e kholo ho feta 4GB, u ka' na ua batla ho atolosa tsamaiso ea lifaele ho sebelisa sebaka se setseng. U hloka ho etsa sena hang feela. Sena se tla qala sistimi hape.
 Tlosa mokhoa oa admin
 Lumella mokhoa oa admin
 tsoa
@@ -185,13 +185,21 @@ Fetola Puo
 Ka kopo, khetha puo
 Puo ea Tsamaiso
 Puo ea hajoale ea sistimi:
-Sena se fetola puo ea PiKaraoke backend system e hlahang skrineng sa TV; Ho feta moo, mosebelisi e mong le e mong ea hokelang a ka fetola puo ea bona ea Web UI ka har'a konopo ea lefats'e ho menu e kaholimo ho le letona.
+Sena se fetola puo ea PiKaraoke backend system e hlahang skrineng sa TV; Ho feta moo, mosebelisi e mong le e mong ea hokahanyang a ka fetola puo ea bona ea Web UI ka har'a konopo ea globe ho menu e kaholimo ho le letona.
 Ho phethela ka katleho!
-E hlolehile ho khoasolla!
+Ho daunelouta ho hlolehile!
 Pina e kentsoe moleng!
 E hlolehile ho emisa pina!
 Tsamaiso Info & Settings
 Ho tloaeleha ha Molumo
 Hangata lipina tse fapaneng li na le molumo o fapaneng. Ho nolofaletsa ho tloaeleha ha molumo ho tla qala ka <i>ffmpeg</i> ho kopanya bophahamo ba molumo oa pina lefatšeng ka bophara le ho fetola molumo oa sebapali hore pina e 'ngoe le e 'ngoe e lle ka ho lekana.
-Tsela ea ho khoasolla laebrari ea lipina
+Tsela ea ho jarolla laebrari ea lipina
 Palo eohle ea lipina
+Bontša/Pata Sengoloa
+Fetola Lebelo
+O ka bina pina ka potlako kapa butle ka ho fetola lebelo la ho bapala ho isa ho 0.8x ho isa ho 1.2x o sebelisa trackbar ea lebelo; bakeng sa lebelo le leng la ho bapala, tobetsa boleng ba lebelo ho fetoha.
+Tobetsa ho seta lebelo la ho bapala hape ho 1x
+Tobetsa ho seta lebelo la ho bapala
+Tobetsa ho reset key/pitch
+Seta hape Senotlolo
+Seta Lebelo hape

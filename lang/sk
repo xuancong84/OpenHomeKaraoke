@@ -5,10 +5,10 @@ Pridané %s náhodné stopy
 Došli pesničky!
 Vymazaný rad!
 Chyba pri presúvaní položky vo fronte: invalid-argument
-Položka bola úspešne presunutá vo fronte:
+Položka bola úspešne presunutá do frontu:
 Chyba pri presúvaní položky vo fronte:
 Presunuté nižšie v poradí:
-Chyba pri presune nadol v poradí:
+Chyba pri prechode nadol v poradí:
 Presunuté vyššie v poradí:
 Chyba pri presune vyššie v poradí:
 Odstránené z poradia:
@@ -30,18 +30,18 @@ Zastavené
  (iba CPU)
  (GPU povolený)
 Aktualizácia youtube-dl! Malo by to trvať minútu alebo dve...
-Nemáte povolenie na aktualizáciu youtube-dl
+Nemáte povolenie aktualizovať youtube-dl
 Nemáte povolenie na vypnutie
 Okamžite ukončite PiKaraoke!
 Nemáte povolenie skončiť
-Vypínajte systém teraz!
+Teraz vypnite systém!
 Nemáte povolenie na vypnutie
 Reštartujte systém teraz!
 Nemáte povolenie na reštart
 Rozširujeme súborový systém a reštartujeme systém teraz!
 Nie je možné rozšíriť fs na iných zariadeniach ako malina pi!
 Nemáte povolenie na zmenu veľkosti súborového systému
-Cesta k Youtube-dl sa nenašla!
+Cesta Youtube-dl sa nenašla!
 Cesta VLC sa nenašla!
 Cesta k omxplayeru sa nenašla!
 Vytvára sa cesta na stiahnutie:
@@ -57,7 +57,7 @@ Nasledujúci:
 Pridal:
 Teraz hrá:
 Režim správcu povolený!
-Zvýšenie oneskorenia zvuku vám poskytne viac času na prečítanie textu pred zaspievaním ďalšej vety.
+Zvýšenie oneskorenia zvuku vám poskytne viac času na prečítanie textov pred zaspievaním ďalšej vety.
 Zníženie oneskorenia titulkov vám poskytne viac času na prečítanie textu pred zaspievaním ďalšej vety.
 Poltón je známy aj ako polovičný krok. Je to najmenší interval používaný v klasickej západnej hudbe, ktorý sa rovná dvanástine oktávy alebo pol tónu.
 Rozdeľovač hlasu založený na DNN je povolený. PiKaraoke používa PyTorch (od Facebooku) na spustenie hlbokej neurónovej siete na rozdelenie inštrumentálneho a vokálneho zvuku v každej skladbe, čo vedie k stereo zvuku.
@@ -89,7 +89,7 @@ Znížte oneskorenie zvuku
 Nastavte oneskorenie zvuku
 Zvýšte oneskorenie zvuku
  poltóny
-Prosím, zadajte vaše meno. Zobrazí sa vedľa skladieb, ktoré z tohto zariadenia zaradíte do poradia.
+Prosím, zadajte vaše meno. Zobrazí sa vedľa skladieb z tohto zariadenia, ktoré ste zaradili do poradia.
 Skladba pridaná do poradia:
 Skladba už v poradí:
 Zoradiť podľa dátumu
@@ -119,13 +119,13 @@ Vyhľadávanie
 Fronta
 Zahrňte zápasy bez karaoke
 Pokročilé
-Zadajte skladbu (názov/interpreta) na vyhľadanie dostupných skladieb a kliknutím na „Poradie“ ju pridajte do poradia.
+Zadajte skladbu (názov/interpreta), aby ste vyhľadali dostupné skladby a kliknutím na položku „Poradie“ ju pridajte do poradia.
 Ak sa skladba nezobrazuje v rozbaľovacej ponuke „Dostupné skladby“, kliknite na „Hľadať“ a nájdite ju na YouTube.
-URL na priame stiahnutie z YouTube:
+Adresa URL na priame stiahnutie z YouTube:
 Pridať do poradia
 Zahrňte titulky
 Stiahnuť ▼
-Hľadá sa na YouTube
+Vyhľadávanie na YouTube
 Výsledky vyhľadávania pre
 Kliknutím na rozbaľovaciu ponuku zobrazíte ďalšie výsledky
 odkaz:
@@ -159,7 +159,7 @@ Vokálny rozdeľovač (ktorý podporuje odčítanie na báze DNN aj stereo) bež
 Opätovná synchronizácia zvuku a videa:
 Zastaviť Streamer
 Reštartujte Streamer
-Ovplyvní to iba prehrávanie KTV cez webový prehliadač. Reštartovanie screen-capture-and-streaming zlepšuje audio/video synchronizáciu a tiež znižuje latenciu medzi serverom a prehliadačom.
+Ovplyvní to iba prehrávanie KTV cez webový prehliadač. Reštartovanie snímania a streamovania obrazovky zlepšuje synchronizáciu zvuku a videa a tiež znižuje latenciu medzi serverom a prehliadačom.
 Obnovte zoznam skladieb:
 Znova prehľadajte adresár skladieb
 Mali by ste to urobiť iba vtedy, ak ste manuálne skopírovali súbory do adresára sťahovania, kým bolo spustené PiKaraoke.
@@ -174,7 +174,7 @@ Reštartovať systém
 Vypínací systém
 Iné
 Rozbaľte súborový systém Raspberry Pi
-Ak ste práve nainštalovali predpripravený obraz pikaraoke pi a vaša SD karta je väčšia ako 4 GB, možno budete chcieť rozšíriť súborový systém, aby ste využili zostávajúci priestor. Musíte to urobiť iba raz. Tým sa reštartuje systém.
+Ak ste práve nainštalovali predpripravený obraz PiKaraoke pi a vaša SD karta je väčšia ako 4 GB, možno budete chcieť rozšíriť súborový systém, aby ste využili zostávajúci priestor. Musíte to urobiť iba raz. Tým sa reštartuje systém.
 Zakázať režim správcu
 Povoliť režim správcu
 odhlásiť sa
@@ -192,6 +192,14 @@ Skladba pridaná do poradia!
 Skladbu sa nepodarilo zaradiť do poradia!
 Systémové informácie a nastavenia
 Normalizácia hlasitosti
-Rôzne piesne majú často rôznu hlasitosť. Po povolení normalizácie hlasitosti sa najskôr spustí <i>ffmpeg</i>, aby sa vypočítala globálna hlasitosť skladby a automaticky sa nastaví hlasitosť prehrávača tak, aby každá skladba znela rovnako hlasno.
+Rôzne piesne majú často rôznu hlasitosť. Po povolení normalizácie hlasitosti sa najprv spustí <i>ffmpeg</i>, aby sa vypočítala globálna hlasitosť skladby a automaticky sa nastaví hlasitosť prehrávača tak, aby každá skladba znela rovnako hlasno.
 Cesta na stiahnutie knižnice skladieb
 Celkový počet skladieb
+Zobraziť/skryť titulky
+Zmeniť rýchlosť
+Pieseň môžete spievať rýchlejšie alebo pomalšie zmenou rýchlosti prehrávania na 0,8x až 1,2x pomocou rýchlostnej lišty; pre inú rýchlosť prehrávania kliknite na hodnotu rýchlosti, ktorú chcete zmeniť.
+Kliknutím obnovíte rýchlosť prehrávania na 1x
+Kliknutím nastavíte rýchlosť prehrávania
+Kliknutím obnovíte tón/výšku tónu
+Resetovať kľúč
+Obnoviť rýchlosť

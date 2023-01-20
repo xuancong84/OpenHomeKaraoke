@@ -4,7 +4,9 @@
 	var queryTime = Date.now();
   var transpose_seeking = false;
   var seektrack_seeking = false;
+  var playspeed_seeking = false;
   var audiodelay_typing = false;
+  var playspeed_typing = false;
   var subdelay_typing = false;
   var volume_changing = false;
   var toggleSwitch;
@@ -43,16 +45,22 @@
             <p class="has-text-success" style="margin-bottom: 5px"><i class="icon icon-mic-1" title="Current singer"></i>${obj.now_playing_user}</p>`;
 
           if ($("#transpose")){
-            if (obj.transpose_value != 0) {
-              nowPlayingHtml +=
-                "<span class='is-size-6 has-text-success'><b>Key</b>: " +
-                getSemitonesLabel(obj.transpose_value) +
-                "<span>";
-            }
             if(!transpose_seeking){
               $("#transpose").val( obj.transpose_value );
               $("#semitones-label").html(getSemitonesLabel(obj.transpose_value));
+              set_reset_key(obj.transpose_value!=0);
             }
+            
+            if(!playspeed_seeking){
+              $("#playspeed").val( Math.round(obj.play_speed*100) );
+              var spd_val = parseFloat(obj.play_speed).toFixed(2);
+              if(spd_val>=0.8 && spd_val<=1.2)$("#playspeed").show();
+							else $("#playspeed").hide();
+							if(!playspeed_typing && obj.play_speed!=null){
+								$("#playspeed-val").html(obj.play_speed.toFixed(2));
+								set_reset_speed(obj.play_speed!=1);
+							}
+						}
           }
 
           $("#now-playing").html(nowPlayingHtml);
@@ -118,6 +126,18 @@
   	try{ return obj.now_playing_user=='Randomizer' || $('#current-user').text().trim()==obj.now_playing_user; }
   	catch(err){ return false; }
   }
+  
+  function set_reset_key(state){
+  	$("#reset_key").text(state?"{{getString1(204)}}":"{{getString1(68)}}");
+  	if(state)$("#reset_key").addClass('boxedText');
+  	else $("#reset_key").removeClass('boxedText');
+  }
+  
+  function set_reset_speed(state){
+  	$("#reset_speed").text(state?"{{getString1(205)}}":"{{getString1(199)}}");
+  	if(state)$("#reset_speed").addClass('boxedText');
+  	else $("#reset_speed").removeClass('boxedText');
+  }
 
   $(function () {
     $(".control-box").hide();
@@ -157,6 +177,14 @@
     };
     seektrack.oninput = function () {
 			$("#seektrack-val").text(getHHMMSS(seektrack.value));
+    };
+    
+    var speedtrack = document.getElementById("playspeed");
+		speedtrack.onchange = function () {
+			$.get("/play_speed/" + speedtrack.value/100);
+    };
+    speedtrack.oninput = function () {
+			$("#playspeed-val").text(speedtrack.value/100);
     };
 
     $("#pause-resume").click(function () {
@@ -215,10 +243,22 @@
       if(ch=="\n" || ch=="\r") $(this).blur();
     });
 
+		$("#playspeed-val").keypress(function (e) {
+    	var ch = String.fromCharCode(e.which);
+      if(!("0123456789.".includes(ch))) e.preventDefault();
+      if(ch=="\n" || ch=="\r") $(this).blur();
+    });
+
     $("#delay-val").blur(function () {
     	if($(this).text()=="") $(this).text("0");
     	$.get("/audio_delay/" + $(this).text());
     	audiodelay_typing=false;
+    });
+
+    $("#playspeed-val").blur(function () {
+    	if($(this).text()=="") $(this).text("1");
+    	$.get("/play_speed/" + $(this).text());
+    	playspeed_typing=false;
     });
 
 		$("#subtitle-sel").click(function () {
@@ -257,6 +297,10 @@
 
     $("#semitones-info").click(function () {
       showNotification("{{getString1(62)}}","is-info",10000)
+    });
+
+    $("#playspeed-info").click(function () {
+      showNotification("{{getString1(200)}}","is-info",10000)
     });
 
     $("#pytorch-logo").click(function () {
@@ -374,8 +418,8 @@ body {
 
 	<div class="is-flex" style="justify-content: space-between">
 		<div><h4>{{getString1(76)}}</h4></div>
-		<a style="padding-top:6px" id="seektrack-val">00:00:00</a>
-		<a style="padding-top:6px" id="seektrack-max">00:00:00</a>
+		<span style="padding-top:6px" id="seektrack-val">00:00:00</span>
+		<span style="padding-top:6px" id="seektrack-max">00:00:00</span>
 	</div>
 
 	<div style="width: 100%">
@@ -402,7 +446,7 @@ body {
 	<!-- <div class="has-background-black-bis box control-box" style="max-width: 500px"> -->
 	<div class="is-flex" style="justify-content: space-between; padding-top: 1em">
 		<div>
-			<h4>{{getString1(68)}}</h4>
+			<h4 id="reset_key" title="{{getString1(203)}}" style="cursor: pointer" onclick="$.get('/transpose/0')">{{getString1(68)}}</h4>
 		</div>
 		<div class="is-flex">
 			<h4 id="semitones-label"></h4>
@@ -428,8 +472,37 @@ body {
 			/>
 		</div>
 	</div>
+	
+	<div class="is-flex" style="justify-content: space-between; padding-top: 1em">
+		<div>
+			<h4 id="reset_speed" title="{{getString1(201)}}" style="cursor: pointer" onclick="$.get('/play_speed/1')">{{getString1(199)}}</h4>
+		</div>
+		<div class="is-flex">
+			<h4><span id="playspeed-val" title="{{getString1(202)}}" style="cursor: pointer" contenteditable="true" onfocus="playspeed_typing=true"></span>x</h4>
+			<a id="playspeed-info"> <i class="icon icon-info-circled-1" title="Info"></i></a>
+		</div>
+	</div>
+
+	<div style="width: 100%">
+		<div class="is-flex">
+			<input
+					id="playspeed"
+					type="range"
+					min="80"
+					max="120"
+					value="{{ play_speed }}"
+					width="300px"
+					class="transpose-slider"
+					style="width: 100%"
+					onmousedown="playspeed_seeking=true"
+					onmouseup="playspeed_seeking=false"
+					ontouchstart="playspeed_seeking=true"
+					ontouchend="playspeed_seeking=false"
+			/>
+		</div>
+	</div>
+	{% endif %}
 </div>
-{% endif %}
 
 {% endif %}
 

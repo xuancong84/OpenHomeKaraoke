@@ -1,16 +1,16 @@
 Polski
 Nieprawidłowe hasło administratora!
 Wylogowano z trybu administratora!
-Dodano %s losowych utworów
-Zabrakło piosenek!
-Wyczyszczono kolejkę!
-Błąd podczas przenoszenia elementu w kolejce: nieprawidłowy argument
+Dodano losowe trasy %s
+Skończyły się piosenki!
+Oczyścił kolejkę!
+Błąd przenoszenia elementu do kolejki: nieprawidłowy argument
 Pomyślnie przeniesiono element do kolejki:
-Błąd podczas przenoszenia elementu w kolejce:
-Przeniesiono w kolejce w dół:
-Błąd poruszania się w dół w kolejce:
-Przeniesiony w kolejce:
-Błąd poruszania się w kolejce:
+Błąd przenoszenia elementu w kolejce:
+Przesunięto w dół w kolejce:
+Błąd przejścia w dół kolejki:
+Awans w kolejce:
+Błąd podczas przesuwania się w kolejce:
 Usunięto z kolejki:
 Błąd podczas usuwania z kolejki:
 Pobieranie rozpoczęte:
@@ -19,55 +19,55 @@ Po zakończeniu pojawi się na liście „dostępnych utworów”.
 Błąd: nie można usunąć tego utworu, ponieważ znajduje się on w bieżącej kolejce:
 Utwór usunięty:
 Błąd: nie określono parametru utworu!
-Błąd: nie można edytować tego utworu, ponieważ jest aktualnie odtwarzany:
+Błąd: nie można edytować tego utworu, ponieważ jest on aktualnie odtwarzany:
 Edycja pliku utworu
-Błąd podczas zmiany nazwy pliku: '%s' na '%s'. Nazwa pliku już istnieje.
-Zmieniono nazwę pliku: '%s' na '%s'
-Błąd: nie określono parametrów nazwy pliku!
+Błąd podczas zmiany nazwy pliku: „%s” na „%s”. Nazwa pliku już istnieje.
+Zmieniono nazwę pliku: „%s” na „%s”
+Błąd: Nie podano parametrów nazwy pliku!
 Nieznany
 Działanie
 Zatrzymany
  (tylko procesor)
- (włączony GPU)
-Aktualizuję youtube-dl! Powinno to zająć minutę lub dwie...
-Nie masz uprawnień do aktualizowania youtube-dl
-Nie masz pozwolenia na zamknięcie
-Rezygnacja z PiKaraoke już teraz!
-Nie masz uprawnień, aby zrezygnować
-Wyłączam system teraz!
-Nie masz pozwolenia na zamknięcie
+ (GPU włączone)
+Aktualizowanie youtube-dl! Powinno zająć minutę lub dwie...
+Nie masz uprawnień do aktualizacji youtube-dl
+Nie masz uprawnień do zamknięcia
+Rzucam teraz PiKaraoke!
+Nie masz uprawnień do rezygnacji
+Zamykanie systemu teraz!
+Nie masz uprawnień do zamknięcia
 Ponowne uruchamianie systemu teraz!
 Nie masz uprawnień do ponownego uruchomienia
 Rozszerzanie systemu plików i ponowne uruchamianie systemu teraz!
-Nie można rozszerzyć fs na urządzeniach innych niż Raspberry Pi!
+Nie można rozszerzyć plików FS na urządzeniach innych niż Raspberry Pi!
 Nie masz uprawnień do zmiany rozmiaru systemu plików
 Nie znaleziono ścieżki Youtube-dl!
 Nie znaleziono ścieżki VLC!
-Nie znaleziono ścieżki omxplayer!
+Nie znaleziono ścieżki omxplayera!
 Tworzenie ścieżki pobierania:
-Brak połączenia Wi-Fi/sieci. Wyłączam za 10 s...
+Brak połączenia Wi-Fi/sieci. Zamknięcie za 10 sekund...
 Aby wybrać utwory, zeskanuj kod QR lub połącz się z
-Aby wyświetlić telewizor, podłącz do
-Naciśnij F, aby przełączyć tryb pełnoekranowy
+Aby wyświetlać na telewizorze, podłącz do
+Naciśnij F, aby przełączyć na pełny ekran
 Naciśnij ESC, aby wyjść z PiKaraoke
 Wykryto tryb konfiguracji RaspiWifiConfig!
-Podłącz inne urządzenie/smartfon do Wifi AP: '%s'
-Następnie skieruj przeglądarkę na: '%s://%s%s' i postępuj zgodnie z instrukcjami.
+Podłącz inne urządzenie/smartfon do punktu dostępowego Wi-Fi: „%s”
+Następnie skieruj jego przeglądarkę na: „%s://%s%s” i postępuj zgodnie z instrukcjami.
 W przyszłym:
 Dodane przez:
 Teraz gra:
 Tryb administratora przyznany!
-Zwiększenie opóźnienia dźwięku da Ci więcej czasu na przeczytanie tekstu przed odśpiewaniem następnego zdania.
-Zmniejszenie opóźnienia napisów da Ci więcej czasu na przeczytanie tekstu przed odśpiewaniem następnego zdania.
-Półton jest również nazywany półkrokiem. Jest to najmniejszy interwał stosowany w klasycznej muzyce zachodniej, równy dwunastej części oktawy lub pół tonu.
-Rozdzielacz głosu oparty na DNN jest włączony. PiKaraoke używa PyTorch (firmy Facebook) do uruchomienia głębokiej sieci neuronowej, aby podzielić dźwięk instrumentalny i wokalny w każdym utworze, tworząc dźwięk stereo.
+Zwiększenie opóźnienia dźwięku da ci więcej czasu na przeczytanie tekstu przed wyśpiewaniem następnego zdania.
+Zmniejszenie opóźnienia napisów da ci więcej czasu na przeczytanie tekstu przed wyśpiewaniem następnego zdania.
+Półton jest również znany jako półton. Jest to najmniejszy interwał używany w klasycznej muzyce zachodniej, równy dwunastej części oktawy lub pół tonu.
+Rozdzielacz głosu oparty na DNN jest włączony. PiKaraoke używa PyTorch (firmy Facebook) do uruchomienia głębokiej sieci neuronowej w celu rozdzielenia dźwięku instrumentalnego i wokalnego na każdą ścieżkę, co daje dźwięk stereo.
 Kontrola gracza
 Muzyka
 Mieszany
 Głos
 Zmień klucz
-W tej chwili nic nie jest odtwarzane.
-Żadna piosenka nie jest w kolejce.
+W tej chwili nic nie gra.
+Żaden utwór nie jest w kolejce.
 Ta piosenka nie została dodana przez Ciebie. Czy na pewno chcesz ponownie uruchomić ten utwór?
 Ta piosenka nie została dodana przez Ciebie. Czy na pewno chcesz pominąć ten utwór?
 Kontrola gracza
@@ -77,11 +77,11 @@ Dążyć do:
 Opóźnienie dźwięku (s)
 Opóźnienie napisów (s)
 Uruchom ponownie utwór
-Odtwórz/Pauza
+Odtwórz/wstrzymaj
 Pomiń bieżący utwór
 Ściszanie
 Ustaw głośność
-Zwiększanie głośności
+Zwiększ głośność
 Zmniejsz opóźnienie napisów
 Ustaw opóźnienie napisów
 Zwiększ opóźnienie napisów
@@ -89,24 +89,24 @@ Zmniejsz opóźnienie dźwięku
 Ustaw opóźnienie dźwięku
 Zwiększ opóźnienie dźwięku
  półtony
-Proszę wpisać swoje imię. Pojawi się obok utworów, które dodasz do kolejki z tego urządzenia.
+Proszę wpisać swoje imię. To pojawi się obok utworów, które ustawiasz w kolejce z tego urządzenia.
 Piosenka dodana do kolejki:
 Piosenka już w kolejce:
 Sortowanie według daty
-Sortuj alfabetycznie
-Dodaj '%s' do kolejki
+Sortuj według alfabetycznie
+Dodaj „%s” do kolejki
 Przeglądaj
 Posortowane według „Daty”
-Posortowane według „Alfabetycznie”
+Sortowane według „Alfabetycznie”
 piosenki
-wyświetlanie <b>{start} - {end}</b> {record_name}, łącznie <b>{total}</b> {record_name}
-znaleziono <b>{znaleziono}</b> {record_name}, wyświetlając <b>{start} - {end}</b> {record_name}
+wyświetla <b>{start} - {end}</b> {record_name}, w sumie <b>{total}</b> {record_name}
+znaleziono <b>{found}</b> {nazwa_rekordu}, wyświetlanie <b>{start} - {end}</b> {nazwa_rekordu}
 Edytuj piosenkę
-Przejdź w górę w kolejce
-Przesuń się w dół w kolejce
-Czy na pewno chcesz usunąć z kolejki?
+Awansuj w kolejce
+Przesuń w dół w kolejce
+Czy na pewno chcesz usunąć z kolejki
 Czy na pewno chcesz wyczyścić CAŁĄ kolejkę? Wpisz „OK”, aby kontynuować
-Dodaj 3 losowe utwory
+Dodaj 3 losowe piosenki
 Wyczyść wszystko
 Kolejka jest pusta
 Kolejka
@@ -119,62 +119,62 @@ Szukaj
 Kolejka
 Uwzględnij mecze inne niż karaoke
 Zaawansowany
-Wpisz utwór (tytuł/wykonawca), aby wyszukać dostępne utwory i kliknij „Kolejka”, aby dodać go do kolejki.
-Jeśli utwór nie pojawia się w menu „Dostępne utwory”, kliknij „Szukaj”, aby znaleźć go na Youtube.
-Adres URL pobierania bezpośredniego z YouTube:
+Wpisz utwór (tytuł/artystę), aby wyszukać dostępne utwory i kliknij „Kolejka”, aby dodać go do kolejki.
+Jeśli utworu nie ma na liście rozwijanej „Dostępne utwory”, kliknij „Wyszukaj”, aby znaleźć go w serwisie YouTube.
+Bezpośredni adres URL do pobrania z YouTube:
 Dodać do kolejki
-Uwzględnij napisy
+Dołącz napisy
 Pobierać
-Szukam w YouTube
+Wyszukiwanie w YouTube
 Wyniki wyszukiwania dla
-Kliknij menu, aby wyświetlić więcej wyników
+Kliknij listę rozwijaną, aby wyświetlić więcej wyników
 Połączyć:
 Dostępne utwory
-Czy chcesz zmienić nazwę wyświetlaną osoby korzystającej z tego urządzenia? Pojawi się obok utworów w kolejce. Aktualny:
+Czy chcesz zmienić wyświetlaną nazwę osoby korzystającej z tego urządzenia? To pojawi się obok utworów w kolejce. Aktualny:
 Aktualny użytkownik
 Ustawienia
 PiKaraoke
 Czy na pewno chcesz zrezygnować?
-Czy na pewno chcesz się zamknąć?
-Czy na pewno chcesz zrestartować komputer?
+Czy na pewno chcesz zamknąć?
+Czy na pewno chcesz uruchomić ponownie?
 Czy na pewno chcesz teraz zaktualizować Youtube-dl? Bieżące i oczekujące pobieranie może się nie powieść.
-Czy na pewno chcesz rozszerzyć system plików? Spowoduje to ponowne uruchomienie twojego Raspberry Pi.
+Czy na pewno chcesz rozszerzyć system plików? Spowoduje to ponowne uruchomienie Raspberry Pi.
 Informacja
-Poręczny kod QR adresu URL do udostępnienia znajomemu:
-OS
+Przydatny kod QR adresu URL do udostępnienia znajomemu:
+system operacyjny
 Użycie dysku
 Pamięć
 Zrzut ekranu
 Rozdzielacz wokalny
-Wersja Youtube-dl (yt-dlp)
+Wersja Youtube-dl (yt-dlp).
 Wersja PiKaraoke
 Zaawansowane opcje sterowania
 Tryb rozdzielacza wokalu:
-Użyj L-P/L+P
+Użyj L-P/L+R
 Użyj DNN
-Standardowe audio MTV ma dwa kanały stereo (L i R) zakodowane w taki sposób, że: L-R to ścieżka instrumentu, L+R to ścieżka wokalu. Tak więc, po prostu odejmując lub dodając dwa kanały stereo, możemy uzyskać ścieżkę instrumentalną i wokalną w dźwięku mono. Wbudowany rozdzielacz wokalny PiKaraoke oparty na DNN (głębokiej sieci neuronowej) wykorzystuje algorytm AI do dzielenia dźwięku instrumentalnego i wokalnego na każdej ścieżce stereo niezależnie, co daje stereofoniczne ścieżki instrumentalne i wokalne.
-Zatrzymaj rozdzielacz
-Uruchom ponownie rozdzielacz
-Rozdzielacz wokalny (obsługujący zarówno odejmowanie DNN, jak i odejmowanie stereo) działa jako osobny proces w tle, generując instrumentalny/wokalny plik audio dla każdego utworu.
-Ponowna synchronizacja audio i wideo:
-Zatrzymaj streamera
-Uruchom ponownie Streamer
-Dotyczy to tylko odtwarzania KTV przez przeglądarkę internetową. Ponowne uruchomienie funkcji przechwytywania ekranu i przesyłania strumieniowego poprawia synchronizację audio/wideo, a także zmniejsza opóźnienie między serwerem a przeglądarką.
+Standardowy dźwięk MTV ma dwa kanały stereo (L i R) zakodowane w taki sposób, że: L-R to ścieżka instrumentalna, L+R to ścieżka wokalna. W ten sposób, po prostu odejmując lub dodając dwa kanały stereo, możemy uzyskać ścieżkę instrumentalną i wokalną w dźwięku mono. Wbudowany rozdzielacz wokalny PiKaraoke oparty na DNN (głębokiej sieci neuronowej) wykorzystuje algorytm AI do niezależnego rozdzielania dźwięku instrumentalnego i wokalnego na każdą ścieżkę stereo, co daje stereofoniczne ścieżki instrumentalne i wokalne.
+Zatrzymaj Splitter
+Uruchom ponownie Splitter
+Rozdzielacz wokalny (obsługujący zarówno odejmowanie oparte na DNN, jak i odejmowanie stereo) działa jako osobny proces w tle, generując instrumentalny/wokalny plik audio dla każdego utworu.
+Ponownie zsynchronizuj audio i wideo:
+Zatrzymaj Streamera
+Uruchom ponownie Streamera
+Dotyczy to tylko odtwarzania KTV przez przeglądarkę internetową. Ponowne uruchomienie przechwytywania ekranu i przesyłania strumieniowego poprawia synchronizację audio/wideo, zmniejsza również opóźnienie między serwerem a przeglądarką.
 Odśwież listę utworów:
-Ponownie przeskanuj katalog utworów
-Powinieneś to zrobić tylko wtedy, gdy ręcznie skopiowałeś pliki do katalogu pobierania podczas działania PiKaraoke.
+Przeskanuj ponownie katalog utworów
+Powinieneś to zrobić tylko wtedy, gdy ręcznie skopiowałeś pliki do katalogu pobierania, gdy PiKaraoke był uruchomiony.
 Aktualizacje
-Jeśli pobieranie lub wyszukiwanie przestanie działać, aktualizacja youtube-dl prawdopodobnie to naprawi. Aktualnie zainstalowana wersja to:
+Jeśli pobieranie lub wyszukiwanie przestało działać, aktualizacja youtube-dl prawdopodobnie to naprawi. Aktualnie zainstalowana wersja to:
 Zaktualizuj youtube-dl
-Powyższe łącze aktualizacji może zakończyć się niepowodzeniem, jeśli nie masz odpowiednich uprawnień do plików. Sprawdź dziennik PiKaraoke pod kątem błędów.
+Powyższy link do aktualizacji może się nie powieść, jeśli nie masz odpowiednich uprawnień do pliku. Sprawdź dziennik PiKaraoke pod kątem błędów.
 Zamknąć
-Nie tylko wyciągaj wtyczkę! Zawsze należy poprawnie wyłączać serwer, aby uniknąć uszkodzenia danych.
-Zamknij PiKaraoke
+Nie wystarczy wyciągnąć wtyczkę! Zawsze prawidłowo zamykaj serwer, aby uniknąć uszkodzenia danych.
+Zrezygnuj z PiKaraoke
 Uruchom ponownie system
-System wyłączania
+System zamykania
 Inne
 Rozwiń system plików Raspberry Pi
-Jeśli właśnie zainstalowałeś gotowy obraz pikaraoke pi, a Twoja karta SD jest większa niż 4 GB, możesz rozszerzyć system plików, aby wykorzystać pozostałe miejsce. Wystarczy to zrobić tylko raz. Spowoduje to ponowne uruchomienie systemu.
+Jeśli właśnie zainstalowałeś gotowy obraz PiKaraoke pi, a twoja karta SD jest większa niż 4 GB, możesz rozszerzyć system plików, aby wykorzystać pozostałą przestrzeń. Musisz to zrobić tylko raz. Spowoduje to ponowne uruchomienie systemu.
 Wyłącz tryb administratora
 Włącz tryb administratora
 Wyloguj
@@ -182,16 +182,24 @@ Zaloguj sie
 Informacja o systemie
 Dom
 Zmień język
-Proszę wybrać język
-Język systemu
-Aktualny język systemu:
-Zmienia to język systemu zaplecza PiKaraoke, który jest wyświetlany na ekranie telewizora; co więcej, każdy łączący się użytkownik może również zmienić swój język interfejsu internetowego za pomocą przycisku globusa w prawym górnym menu.
+Wybierz język
+Język systemowy
+Bieżący język systemu:
+Zmienia to język systemu zaplecza PiKaraoke, który jest wyświetlany na ekranie telewizora; ponadto każdy łączący się użytkownik może również zmienić swój język interfejsu internetowego za pomocą przycisku kuli ziemskiej w prawym górnym menu.
 Pobieranie zakończone pomyślnie!
 Pobieranie nie udane!
 Piosenka dodana do kolejki!
 Nie udało się umieścić utworu w kolejce!
 Informacje o systemie i ustawienia
 Normalizacja głośności
-Różne piosenki często mają różną głośność. Włączenie normalizacji głośności uruchomi najpierw <i>ffmpeg</i>, aby obliczyć globalną głośność utworu i automatycznie dostosować głośność odtwarzacza, aby każdy utwór brzmiał równie głośno.
+Różne utwory często mają różną głośność. Włączenie normalizacji głośności najpierw uruchomi <i>ffmpeg</i>, aby obliczyć globalną głośność utworu i automatycznie dostosować głośność odtwarzacza, aby każdy utwór brzmiał równie głośno.
 Ścieżka pobierania biblioteki utworów
 Całkowita liczba utworów
+Pokaż/ukryj napisy
+Zmień prędkość
+Możesz śpiewać piosenkę szybciej lub wolniej, zmieniając prędkość odtwarzania w zakresie od 0,8x do 1,2x za pomocą paska prędkości; w przypadku innej prędkości odtwarzania kliknij wartość prędkości, aby ją zmienić.
+Kliknij, aby zresetować prędkość odtwarzania do 1x
+Kliknij, aby ustawić prędkość odtwarzania
+Kliknij, aby zresetować tonację/ton
+Przycisk reset
+Zresetuj prędkość

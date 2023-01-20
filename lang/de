@@ -124,13 +124,13 @@ Wenn der Song nicht in der Dropdown-Liste „Verfügbare Songs“ angezeigt wird
 YouTube-URL für direkten Download:
 Zur Warteschlange hinzufügen
 Fügen Sie Untertitel hinzu
-Download
+Herunterladen
 Suche auf YouTube nach
 Suchergebnisse für
 Klicken Sie auf das Dropdown-Menü, um weitere Ergebnisse anzuzeigen
 Verknüpfung:
 Verfügbare Lieder
-Möchten Sie den Anzeigenamen der Person ändern, die dieses Gerät verwendet? Dies wird neben den Songs in der Warteschlange angezeigt. Strom:
+Möchten Sie den Anzeigenamen der Person ändern, die dieses Gerät verwendet? Dies wird neben den Songs in der Warteschlange angezeigt. Aktuell:
 Aktueller Benutzer
 Einstellungen
 PiKaraoke
@@ -143,7 +143,7 @@ Information
 Praktischer URL-QR-Code zum Teilen mit einem Freund:
 Betriebssystem
 Festplattennutzung
-Speicher
+Erinnerung
 Bildschirmaufnahme
 Vocal-Splitter
 Youtube-dl (yt-dlp)-Version
@@ -167,14 +167,14 @@ Aktualisierung
 Wenn Downloads oder Suchen nicht mehr funktionieren, wird es wahrscheinlich durch die Aktualisierung von youtube-dl behoben. Die aktuell installierte Version ist:
 Aktualisieren Sie youtube-dl
 Dieser Update-Link oben kann fehlschlagen, wenn Sie nicht über die entsprechenden Dateiberechtigungen verfügen. Überprüfen Sie das PiKaraoke-Protokoll auf Fehler.
-Abschalten
+Stilllegen
 Ziehen Sie nicht einfach den Stecker! Fahren Sie Ihren Server immer ordnungsgemäß herunter, um Datenbeschädigungen zu vermeiden.
 Beenden Sie PiKaraoke
 System neu starten
 System herunterfahren
-Sonstiges
+Andere
 Erweitern Sie das Raspberry Pi-Dateisystem
-Wenn Sie gerade das vorgefertigte Pikaraoke-Pi-Image installiert haben und Ihre SD-Karte größer als 4 GB ist, möchten Sie möglicherweise das Dateisystem erweitern, um den verbleibenden Speicherplatz zu nutzen. Sie müssen dies nur einmal tun. Dadurch wird das System neu gestartet.
+Wenn Sie gerade das vorgefertigte PiKaraoke-Pi-Image installiert haben und Ihre SD-Karte größer als 4 GB ist, möchten Sie möglicherweise das Dateisystem erweitern, um den verbleibenden Speicherplatz zu nutzen. Sie müssen dies nur einmal tun. Dadurch wird das System neu gestartet.
 Admin-Modus deaktivieren
 Administratormodus aktivieren
 Ausloggen
@@ -182,7 +182,7 @@ Einloggen
 Systeminformationen
 Heim
 Sprache ändern
-Bitte Sprache auswählen
+Bitte Sprache wählen
 Systemsprache
 Aktuelle Systemsprache:
 Dies ändert die Sprache des PiKaraoke-Backend-Systems, das auf dem Fernsehbildschirm angezeigt wird; Darüber hinaus kann jeder Benutzer, der eine Verbindung herstellt, seine jeweilige Web-UI-Sprache über die Globus-Schaltfläche im rechten oberen Menü ändern.
@@ -195,3 +195,11 @@ Volumennormalisierung
 Unterschiedliche Songs haben oft unterschiedliche Lautstärken. Wenn Sie die Lautstärkenormalisierung aktivieren, wird zuerst <i>ffmpeg</i> ausgeführt, um die globale Lautstärke eines Songs zu berechnen und die Player-Lautstärke automatisch so anzupassen, dass jeder Song gleich laut klingt.
 Download-Pfad der Songbibliothek
 Gesamtzahl der Lieder
+Untertitel anzeigen/ausblenden
+Geschwindigkeit ändern
+Sie können den Song schneller oder langsamer singen, indem Sie die Wiedergabegeschwindigkeit mit der Geschwindigkeits-Trackbar auf 0,8x bis 1,2x ändern; Klicken Sie für eine andere Wiedergabegeschwindigkeit auf den Geschwindigkeitswert, um ihn zu ändern.
+Klicken Sie hier, um die Wiedergabegeschwindigkeit auf 1x zurückzusetzen
+Klicken Sie hier, um die Wiedergabegeschwindigkeit einzustellen
+Klicken Sie hier, um die Tonart/Tonhöhe zurückzusetzen
+Schlüssel zurücksetzen
+Geschwindigkeit zurücksetzen

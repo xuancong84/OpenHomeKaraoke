@@ -43,9 +43,9 @@ Kan ikke utvide fs på ikke-raspberry pi-enheter!
 Du har ikke tillatelse til å endre størrelse på filsystemet
 Youtube-dl-sti ble ikke funnet!
 VLC-bane ikke funnet!
-omxplayer-banen ble ikke funnet!
+omxplayer banen ble ikke funnet!
 Oppretter nedlastingsbane:
-Wifi/nettverk ikke tilkoblet. Slår av om 10...
+Wifi/nettverk er ikke tilkoblet. Slår av om 10...
 For å velge sanger, skann QR eller koble til
 For TV-visning, koble til
 Trykk F for å bytte fullskjerm
@@ -60,7 +60,7 @@ Administrasjonsmodus gitt!
 Økende lydforsinkelse vil gi deg mer tid til å lese tekster før du synger ut neste setning.
 Redusere undertekstforsinkelse vil gi deg mer tid til å lese tekster før du synger ut neste setning.
 En halvtone er også kjent som et halvtrinn. Det er det minste intervallet som brukes i klassisk vestlig musikk, lik en tolvtedel av en oktav eller en halv tone.
-DNN-basert stemmesplitter er aktivert. PiKaraoke bruker PyTorch (fra Facebook) for å kjøre et dypt nevralt nettverk for å dele instrumental- og vokallyd i hvert spor som gir opphav til stereolyd.
+DNN-basert vokalsplitter er aktivert. PiKaraoke bruker PyTorch (fra Facebook) til å kjøre et dypt nevralt nettverk for å dele instrumental- og vokallyd i hvert spor som gir opphav til stereolyd.
 Spillerkontroll
 Musikk
 Blandet
@@ -107,7 +107,7 @@ Flytt ned i køen
 Er du sikker på at du vil slette fra køen
 Er du sikker på at du vil tømme HELE køen? Skriv 'OK' for å fortsette
 Legg til 3 tilfeldige sanger
-Slett alt
+Rydd alt
 Køen er tom
 Kø
 Slett
@@ -145,14 +145,14 @@ OS
 Diskbruk
 Hukommelse
 Skjermfangst
-Vocal Splitter
+Vokal Splitter
 Youtube-dl (yt-dlp) versjon
 PiKaraoke versjon
 Avanserte kontrollalternativer
 Vocal splitter-modus:
 Bruk L-R/L+R
 Bruk DNN
-Standard MTV-lyd har de to stereokanalene (L og R) kodet på en slik måte at: L-R er instrumentsporet, L+R er vokalsporet. Dermed kan vi ved å trekke fra eller legge til de to stereokanalene få instrument- og vokalsporet i monolyd. PiKaraokes innebygde DNN-baserte (dyp nevrale nettverk) vokalsplitter bruker AI-algoritme for å dele instrumental- og vokallyd i hvert stereospor uavhengig, noe som resulterer i stereoinstrumental- og vokalspor.
+Standard MTV-lyd har de to stereokanalene (L og R) kodet på en slik måte at: L-R er instrumentsporet, L+R er vokalsporet. Ved ganske enkelt å trekke fra eller legge til de to stereokanalene, kan vi altså få instrumental- og vokalsporet i monolyd. PiKaraokes innebygde DNN-baserte (dyp nevrale nettverk) vokalsplitter bruker AI-algoritme for å dele instrumental- og vokallyd i hvert stereospor uavhengig, noe som resulterer i stereoinstrumental- og vokalspor.
 Stopp splitter
 Start Splitter på nytt
 Vokalsplitteren (som støtter både DNN-basert og stereosubtraksjon) kjører som en separat prosess i bakgrunnen, og genererer instrumental/vokal lydfil for hver sang.
@@ -162,7 +162,7 @@ Start Streamer på nytt
 Dette påvirker kun å spille KTV via nettleseren. Omstart av skjermfangst-og-streaming forbedrer lyd/video-synkronisering, det reduserer også ventetiden mellom serveren og nettleseren.
 Oppdater sanglisten:
 Skann sangkatalogen på nytt
-Du skal bare trenge å gjøre dette hvis du manuelt kopierte filer til nedlastingskatalogen mens PiKaraoke kjørte.
+Du skal bare trenge å gjøre dette hvis du manuelt kopierte filer til nedlastingsmappen mens PiKaraoke kjørte.
 Oppdateringer
 Hvis nedlastinger eller søk sluttet å virke, vil oppdatering av youtube-dl sannsynligvis fikse det. Den nåværende installerte versjonen er:
 Oppdater youtube-dl
@@ -174,7 +174,7 @@ Restart systemet
 Slå av systemet
 Annen
 Utvid Raspberry Pi-filsystemet
-Hvis du nettopp installerte det forhåndsbygde pikaraoke pi-bildet og SD-kortet ditt er større enn 4 GB, kan det være lurt å utvide filsystemet for å utnytte den gjenværende plassen. Du trenger bare å gjøre dette én gang. Dette vil starte systemet på nytt.
+Hvis du nettopp installerte det forhåndsbygde PiKaraoke pi-bildet og SD-kortet ditt er større enn 4 GB, vil du kanskje utvide filsystemet for å utnytte den gjenværende plassen. Du trenger bare å gjøre dette én gang. Dette vil starte systemet på nytt.
 Deaktiver admin-modus
 Aktiver admin-modus
 Logg ut
@@ -185,7 +185,7 @@ Skifte språk
 Vennligst velg språk
 Systemspråk
 Gjeldende systemspråk:
-Dette endrer språket til PiKaraoke-backend-systemet som vises på TV-skjermen; dessuten kan hver tilkoblede bruker også endre sitt respektive web-UI-språk i globusknappen i menyen øverst til høyre.
+Dette endrer språket til PiKaraoke-backend-systemet som vises på TV-skjermen; dessuten kan hver tilkoblende bruker også endre sitt respektive web-UI-språk i globusknappen i menyen øverst til høyre.
 Nedlasting fullført!
 Nedlasting mislyktes!
 Sang lagt til i køen!
@@ -195,3 +195,11 @@ Volumnormalisering
 Ulike sanger har ofte ulikt volum. Aktivering av volumnormalisering vil først kjøre <i>ffmpeg</i> for å beregne det globale volumet til en sang og automatisk justere spillervolumet slik at hver sang høres like høyt ut.
 Last ned bane for sangbibliotek
 Totalt antall sanger
+Vis/skjul undertekst
+Endre hastighet
+Du kan synge sangen raskere eller langsommere ved å endre avspillingshastigheten til innenfor 0,8x til 1,2x ved å bruke hastighetssporlinjen; for annen avspillingshastighet, klikk på hastighetsverdien for å endre.
+Klikk for å tilbakestille avspillingshastigheten til 1x
+Klikk for å angi avspillingshastighet
+Klikk for å tilbakestille nøkkel/pitch
+Tilbakestill nøkkel
+Tilbakestill hastighet

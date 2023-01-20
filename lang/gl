@@ -1,11 +1,11 @@
 galego
 Contrasinal de administrador incorrecto!
-Pechaches sesión do modo de administrador!
+Pechaches sesión do modo administrador!
 Engadíronse %s pistas aleatorias
 Quedaron sen cancións!
 Despexouse a cola!
 Erro ao mover o elemento dentro da cola: argumento non válido
-O elemento moveuse correctamente dentro da cola:
+Moveuse correctamente o elemento dentro da cola:
 Erro ao mover o elemento dentro da cola:
 Movido abaixo na cola:
 Erro ao baixar na cola:
@@ -23,7 +23,7 @@ Erro: non se pode editar esta canción porque está a reproducirse actualmente:
 Editar ficheiro de canción
 Erro ao cambiar o nome do ficheiro: '%s' a '%s'. O nome de ficheiro xa existe.
 Ficheiro renomeado: '%s' a '%s'
-Erro: Non se especificou ningún parámetro de nome de ficheiro!
+Erro: Non se especificou ningún parámetro de nome de ficheiro.
 Descoñecido
 Correndo
 Detido
@@ -50,7 +50,7 @@ Para seleccionar cancións, escanea QR ou conéctate a
 Para a pantalla de TV, conéctese a
 Preme F para cambiar a pantalla completa
 Preme ESC para saír de PiKaraoke
-Modo de configuración RaspiWifiConfig detectado!
+Modo de configuración de RaspiWifiConfig detectado!
 Conecta outro dispositivo/teléfono intelixente ao AP Wifi: '%s'
 A continuación, apunte o seu navegador a: '%s://%s%s' e siga as instrucións.
 A continuación:
@@ -151,8 +151,8 @@ Versión de PiKaraoke
 Opcións de control avanzadas
 Modo divisor vocal:
 Use L-R/L+R
-Usa DNN
-O audio estándar de MTV ten as dúas canles estéreo (L e R) codificadas de tal xeito que: L-R é a pista do instrumento, L+R é a pista vocal. Así, simplemente restando ou sumando as dúas canles estéreo, podemos obter a pista instrumental e vocal en son mono. O divisor vocal integrado de PiKaraoke baseado en DNN (rede neuronal profunda) usa o algoritmo de intelixencia artificial para dividir o son instrumental e vocal en cada pista estéreo de forma independente, dando como resultado pistas instrumentais e vocais estéreo.
+Use DNN
+O audio estándar de MTV ten as dúas canles estéreo (L e R) codificadas de tal xeito que: L-R é a pista do instrumento, L+R é a pista vocal. Así, simplemente restando ou sumando as dúas canles estéreo, podemos obter a pista instrumental e vocal en son mono. O divisor vocal integrado de PiKaraoke baseado en DNN (rede neuronal profunda) usa o algoritmo de intelixencia artificial para dividir o son instrumental e vocal en cada pista estéreo de forma independente, o que resulta en pistas instrumentais e vocais estéreo.
 Detén Splitter
 Reinicie Splitter
 O divisor vocal (que admite a subtracción baseada en DNN e estéreo) execútase como un proceso separado en segundo plano, xerando ficheiros de audio instrumental/vocal para cada canción.
@@ -162,36 +162,44 @@ Reinicie Streamer
 Isto só afecta a reprodución de KTV a través do navegador web. Reiniciar a captura de pantalla e a transmisión mellora a sincronización de audio/vídeo e tamén diminúe a latencia entre o servidor e o navegador.
 Actualiza a lista de cancións:
 Volver a buscar o directorio de cancións
-Só deberías facelo se copiaches ficheiros manualmente no directorio de descargas mentres PiKaraoke estaba en execución.
+Só deberías facelo se copiaches manualmente ficheiros no directorio de descargas mentres PiKaraoke estaba en execución.
 Actualizacións
 Se as descargas ou as buscas deixaron de funcionar, a actualización de youtube-dl probablemente o solucione. A versión instalada actual é:
 Actualizar youtube-dl
 Esta ligazón de actualización anterior pode fallar se non tes os permisos de ficheiro adecuados. Comprobe o rexistro de PiKaraoke para detectar erros.
 Apagado
-Non só tires do enchufe! Apague sempre o servidor correctamente para evitar a corrupción dos datos.
+Non só tire do enchufe! Apague sempre o servidor correctamente para evitar a corrupción dos datos.
 Saír de PiKaraoke
 Reinicie o sistema
 Sistema de apagado
 Outra
 Expanda o sistema de ficheiros Raspberry Pi
-Se acabas de instalar a imaxe de pikaraoke pi preconstruída e a túa tarxeta SD ten máis de 4 GB, quizais queiras ampliar o sistema de ficheiros para utilizar o espazo restante. Só tes que facelo unha vez. Isto reiniciará o sistema.
-Desactiva o modo administrador
+Se acabas de instalar a imaxe de PiKaraoke pi preconstruída e a túa tarxeta SD ten máis de 4 GB, quizais queiras expandir o sistema de ficheiros para utilizar o espazo restante. Só tes que facelo unha vez. Isto reiniciará o sistema.
+Desactivar o modo administrador
 Activa o modo administrador
 pechar sesión
-acceder
+Iniciar sesión
 Información do sistema
 Casa
 Cambiar Idioma
 Escolla o idioma
 Linguaxe do sistema
 Idioma do sistema actual:
-Isto cambia o idioma do sistema de backend PiKaraoke que se mostra na pantalla do televisor; ademais, cada usuario que se conecte tamén pode cambiar o seu idioma da IU web no botón globo terráqueo do menú superior dereito.
+Isto cambia o idioma do sistema de backend PiKaraoke que se mostra na pantalla do televisor; ademais, cada usuario que se conecta tamén pode cambiar o seu idioma da IU web no botón globo terráqueo do menú superior dereito.
 Descarga completada con éxito!
 Fallou a descarga!
 Canción engadida á cola!
 Produciuse un erro ao poñer a canción na cola.
 Información e configuración do sistema
 Normalización de volume
-As cancións diferentes adoitan ter un volume diferente. Ao activar a normalización de volume, primeiro executarase <i>ffmpeg</i> para calcular o volume global dunha canción e axustar automaticamente o volume do reprodutor para que cada canción soe igual de alto.
+As cancións diferentes adoitan ter un volume diferente. Ao activar a normalización do volume, primeiro executarase <i>ffmpeg</i> para calcular o volume global dunha canción e axustar automaticamente o volume do reprodutor para que cada canción soe igual de alto.
 Ruta de descarga da biblioteca de cancións
 Número total de cancións
+Mostrar/Ocultar subtítulos
+Cambiar a velocidade
+Podes cantar a canción máis rápido ou máis lento cambiando a velocidade de reprodución a entre 0,8x e 1,2x usando a barra de seguimento de velocidade; para outra velocidade de reprodución, fai clic no valor de velocidade para cambiar.
+Fai clic para restablecer a velocidade de reprodución a 1x
+Fai clic para configurar a velocidade de reprodución
+Fai clic para restablecer a tecla/tono
+Tecla de reinicio
+Restablecer velocidade

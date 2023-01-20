@@ -5,18 +5,18 @@ Nagdagdag ng %s na random na track
 Naubusan ng kanta!
 Nilinis ang pila!
 Error sa paglipat ng item sa loob ng queue: invalid-argument
-Matagumpay na nailipat ang item sa loob ng pila:
-Error sa paglipat ng item sa loob ng pila:
+Matagumpay na nailipat ang item sa loob ng queue:
+Error sa paglipat ng item sa loob ng queue:
 Inilipat pababa sa pila:
-Error sa paglipat pababa sa pila:
+Error sa paglipat pababa sa queue:
 Inilipat sa pila:
 Error sa pag-akyat sa pila:
 Tinanggal mula sa pila:
 Error sa pagtanggal sa pila:
 Nagsimula ang pag-download:
-Sa pagkumpleto, ito ay idaragdag sa pila.
+Kapag nakumpleto, ito ay idaragdag sa pila.
 Sa pagkumpleto, lalabas ito sa listahan ng "mga available na kanta."
-Error: Hindi matanggal ang kantang ito dahil nasa kasalukuyang queue ito:
+Error: Hindi matanggal ang kantang ito dahil nasa kasalukuyang pila ito:
 Tinanggal ang kanta:
 Error: Walang tinukoy na parameter ng kanta!
 Error: Hindi ma-edit ang kantang ito dahil kasalukuyan itong pinapatugtog:
@@ -28,7 +28,7 @@ Hindi alam
 Tumatakbo
 Huminto
  (CPU lang)
- (GPU pinagana)
+ (Pinagana ang GPU)
 Ina-update ang youtube-dl! Dapat tumagal ng isang minuto o dalawa...
 Wala kang pahintulot na i-update ang youtube-dl
 Wala kang pahintulot na mag-shut down
@@ -42,15 +42,15 @@ Pinapalawak ang filesystem at rebooting system ngayon!
 Hindi ma-expand ang fs sa mga non-raspberry pi device!
 Wala kang pahintulot na baguhin ang laki ng filesystem
 Hindi nahanap ang path ng Youtube-dl!
-Hindi nahanap ang landas ng VLC!
+Hindi nahanap ang path ng VLC!
 hindi nahanap ang landas ng omxplayer!
-Paglikha ng landas sa pag-download:
+Lumilikha ng landas sa pag-download:
 Hindi nakakonekta ang Wifi/Network. Magsasara sa loob ng 10s...
 Para sa pagpili ng mga kanta, i-scan ang QR o kumonekta sa
 Para sa TV display, kumonekta sa
 Pindutin ang F upang i-toggle ang full-screen
 Pindutin ang ESC upang ihinto ang PiKaraoke
-Nakita ang RaspiWifiConfig setup mode!
+Na-detect ang RaspiWifiConfig setup mode!
 Ikonekta ang isa pang device/smartphone sa Wifi AP: '%s'
 Pagkatapos ay ituro ang browser nito sa: '%s://%s%s' at sundin ang mga tagubilin.
 Susunod:
@@ -59,10 +59,10 @@ Nilalaro na:
 Nabigyan ng admin mode!
 Ang pagtaas ng pagkaantala sa audio ay magbibigay sa iyo ng mas maraming oras upang basahin ang mga lyrics bago kantahin ang susunod na pangungusap.
 Ang pagpapababa ng pagkaantala sa subtitle ay magbibigay sa iyo ng mas maraming oras upang basahin ang mga lyrics bago kantahin ang susunod na pangungusap.
-Ang semitone ay kilala rin bilang kalahating hakbang. Ito ang pinakamaliit na pagitan na ginagamit sa klasikal na musikang Kanluranin, katumbas ng ikalabindalawa ng isang oktaba o kalahating tono.
-Naka-enable ang vocal splitter na nakabatay sa DNN. Gumagamit ang PiKaraoke ng PyTorch (sa pamamagitan ng Facebook) upang magpatakbo ng isang malalim na neural network upang hatiin ang instrumental at vocal na tunog sa bawat track na nagdudulot ng stereo sound.
+Ang isang semitone ay kilala rin bilang isang kalahating hakbang. Ito ang pinakamaliit na pagitan na ginagamit sa klasikal na musikang Kanluranin, katumbas ng ikalabindalawa ng isang oktaba o kalahating tono.
+Naka-enable ang vocal splitter na nakabatay sa DNN. Gumagamit ang PiKaraoke ng PyTorch (sa pamamagitan ng Facebook) upang magpatakbo ng malalim na neural network upang hatiin ang instrumental at vocal na tunog sa bawat track na nagdudulot ng stereo sound.
 Kontrol ng Manlalaro
-musika
+Musika
 Magkakahalo
 Boses
 Baguhin ang Key
@@ -88,12 +88,12 @@ Dagdagan ang Pagkaantala ng Subtitle
 Bawasan ang Audio Delay
 Itakda ang Audio Delay
 Dagdagan ang Pagkaantala ng Audio
- semitones
+ mga semitone
 Pakilagay ang iyong pangalan. Lalabas ito sa tabi ng mga kantang nakapila ka mula sa device na ito.
 Idinagdag ang kanta sa pila:
 Nasa pila na ang kanta:
-Pagkakasunod sunod base sa petsa
-Pagbukud-bukurin ayon sa alpabeto
+Ayusin ayon sa petsa
+Pagbukud-bukurin ayon sa Alpabeto
 Idagdag ang '%s' sa pila
 Mag-browse
 Pinagbukud-bukod ayon sa 'Petsa'
@@ -109,14 +109,14 @@ Sigurado ka bang gusto mong i-clear ang BUONG pila? I-type ang 'OK' para magpatu
 Magdagdag ng 3 random na kanta
 Alisin lahat
 Walang laman ang pila
-Nakapila
+pila
 Tanggalin
 Magagamit na mga kanta sa lokal na aklatan
 Nagdagdag ng kanta sa queue:
 Nasa pila na ang kanta:
 Maghanap / Magdagdag ng Bago
 Maghanap
-Nakapila
+pila
 Isama ang mga non-karaoke na laban
 Advanced
 Mag-type ng kanta (title/artist) para hanapin ang mga available na kanta at i-click ang 'Queue' para idagdag ito sa queue.
@@ -127,7 +127,7 @@ Isama ang mga subtitle
 I-download
 Naghahanap sa YouTube para sa
 Mga resulta ng paghahanap para sa
-I-click ang dropdown upang magpakita ng higit pang mga resulta
+I-click ang dropdown para magpakita ng higit pang mga resulta
 Link:
 Mga Magagamit na Kanta
 Gusto mo bang baguhin ang display name ng taong gumagamit ng device na ito? Lalabas ito sa tabi ng mga nakapila na kanta. Kasalukuyan:
@@ -166,17 +166,17 @@ Kailangan mo lang gawin ito kung manu-mano mong kinopya ang mga file sa direktor
 Mga update
 Kung huminto sa paggana ang mga pag-download o paghahanap, malamang na ayusin ito ng pag-update ng youtube-dl. Ang kasalukuyang naka-install na bersyon ay:
 I-update ang youtube-dl
-Maaaring mabigo ang link sa pag-update na ito sa itaas kung wala kang wastong mga pahintulot sa file. Suriin ang PiKaraoke log para sa mga error.
+Maaaring mabigo ang link sa pag-update na ito sa itaas kung wala kang tamang mga pahintulot sa file. Suriin ang PiKaraoke log para sa mga error.
 Pagsara
-Huwag lang hilahin ang plug! Palaging isara nang maayos ang iyong server upang maiwasan ang pagkasira ng data.
+Huwag lamang hilahin ang plug! Palaging isara nang maayos ang iyong server upang maiwasan ang pagkasira ng data.
 Ihinto ang PiKaraoke
 I-reboot ang System
 Sistema ng Pagsara
 Iba pa
 Palawakin ang Raspberry Pi filesystem
-Kung kaka-install mo lang ng pre-built na pikaraoke pi image at ang iyong SD card ay mas malaki sa 4GB, maaaring gusto mong palawakin ang filesystem upang magamit ang natitirang espasyo. Isang beses mo lang kailangang gawin ito. Ire-reboot nito ang system.
+Kung kaka-install mo lang ng pre-built na PiKaraoke pi image at ang iyong SD card ay mas malaki sa 4GB, maaaring gusto mong palawakin ang filesystem upang magamit ang natitirang espasyo. Isang beses mo lang kailangang gawin ito. Ire-reboot nito ang system.
 I-disable ang admin mode
-Paganahin ang mode ng admin
+Paganahin ang admin mode
 mag log out
 mag log in
 Info ng sistema
@@ -185,13 +185,21 @@ Baguhin ang Wika
 Mangyaring pumili ng wika
 Wika ng Sistema
 Kasalukuyang wika ng system:
-Binabago nito ang wika ng PiKaraoke backend system na ipapakita sa screen ng TV; bukod pa rito, ang bawat kumukonektang user ay maaari ding baguhin ang kani-kanilang wika ng Web UI sa globe button sa kanang-itaas na menu.
+Binabago nito ang wika ng PiKaraoke backend system na ipapakita sa screen ng TV; bukod pa rito, maaari ding baguhin ng bawat kumukonektang user ang kani-kanilang wika ng Web UI sa globe button sa kanang tuktok na menu.
 Matagumpay na nakumpleto ang pag-download!
 Nabigo ang pag-download!
 Idinagdag ang kanta sa pila!
 Nabigong i-queue ang kanta!
 Impormasyon at Mga Setting ng System
 Volume Normalization
-Ang iba't ibang kanta ay kadalasang may iba't ibang volume. Ang pagpapagana ng volume normalization ay tatakbo muna ng <i>ffmpeg</i> upang kalkulahin ang pandaigdigang volume ng isang kanta at awtomatikong isaayos ang volume ng player upang ang bawat kanta ay tumunog nang pantay na malakas.
+Ang iba't ibang kanta ay kadalasang may iba't ibang volume. Ang pagpapagana ng volume normalization ay tatakbo muna ng <i>ffmpeg</i> upang makalkula ang pandaigdigang volume ng isang kanta at awtomatikong ayusin ang volume ng player upang ang bawat kanta ay tumunog nang pantay na malakas.
 Landas sa pag-download ng library ng kanta
 Kabuuang bilang ng mga kanta
+Ipakita/Itago ang Subtitle
+Baguhin ang Bilis
+Maaari mong kantahin ang kanta nang mas mabilis o mas mabagal sa pamamagitan ng pagpapalit ng bilis ng pag-playback sa loob ng 0.8x hanggang 1.2x gamit ang speed trackbar; para sa iba pang bilis ng pag-playback, mag-click sa halaga ng bilis upang baguhin.
+I-click upang i-reset ang bilis ng pag-playback sa 1x
+I-click upang itakda ang bilis ng pag-playback
+I-click upang i-reset ang key/pitch
+I-reset ang Key
+I-reset ang Bilis

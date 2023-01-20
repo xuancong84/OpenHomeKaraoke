@@ -19,7 +19,7 @@ Pas përfundimit, ajo do të shfaqet në listën "këngët e disponueshme".
 Gabim: Kjo këngë nuk mund të fshihet sepse është në radhën aktuale:
 Kënga u fshi:
 Gabim: Nuk është specifikuar asnjë parametër i këngës!
-Gabim: Kjo këngë nuk mund të modifikohet sepse po luhet aktualisht:
+Gabim: Kjo këngë nuk mund të modifikohet sepse është duke u luajtur aktualisht:
 Redaktimi i skedarit të këngës
 Gabim gjatë riemërtimit të skedarit: '%s' në '%s'. Emri i skedarit ekziston tashmë.
 Skedari u riemërua: '%s' në '%s'
@@ -29,13 +29,13 @@ Vrapimi
 Ndaloi
  (vetëm CPU)
  (GPU i aktivizuar)
-youtube-dl po përditësohet! Duhet të marrë një ose dy minuta ...
+youtube-dl po përditësohet! Duhet të duhen një ose dy minuta ...
 Nuk ke leje të përditësosh youtube-dl
-Ju nuk keni leje për t'u mbyllur
+Nuk ke leje të mbyllesh
 Po largohesh nga PiKaraoke tani!
-Ju nuk keni leje për të lënë
+Ju nuk keni leje të hiqni dorë
 Sistemi po mbyllet tani!
-Ju nuk keni leje për t'u mbyllur
+Nuk ke leje të mbyllesh
 Sistemi po rindizet tani!
 Ju nuk keni leje për të rindezur
 Zgjerimi i sistemit të skedarëve dhe rinisja e sistemit tani!
@@ -59,8 +59,8 @@ Duke luajtur:
 Modaliteti i administratorit u dha!
 Rritja e vonesës së audios do t'ju japë më shumë kohë për të lexuar tekstet para se të këndoni fjalinë tjetër.
 Zvogëlimi i vonesës së titrave do t'ju japë më shumë kohë për të lexuar tekstet para se të këndoni fjalinë tjetër.
-Një gjysmëton njihet gjithashtu si gjysmë hapi. Është intervali më i vogël i përdorur në muzikën klasike perëndimore, i barabartë me një të dymbëdhjetë të oktavës ose gjysmë tonin.
-Ndarësi vokal i bazuar në DNN është aktivizuar. PiKaraoke përdor PyTorch (nga Facebook) për të drejtuar një rrjet të thellë nervor për të ndarë tingujt instrumentalë dhe vokalë në secilën këngë duke krijuar tinguj stereo.
+Një gjysmëton njihet gjithashtu si gjysmë hapi. Është intervali më i vogël i përdorur në muzikën klasike perëndimore, i barabartë me një të dymbëdhjetën e oktavës ose gjysmë tonin.
+Ndarësi vokal i bazuar në DNN është aktivizuar. PiKaraoke përdor PyTorch (nga Facebook) për të drejtuar një rrjet të thellë nervor për të ndarë tingullin instrumental dhe vokal në secilën këngë duke krijuar tinguj stereo.
 Kontrolli i lojtarit
 Muzikë
 Të përziera
@@ -73,11 +73,11 @@ Kjo këngë nuk është shtuar nga ju. Je i sigurt që dëshiron ta kapërcesh k
 Kontrolli i lojtarit
 Duke luajtur
 Kënga e radhës
-Kërkoni për:
+Kërkoni për të:
 Vonesa e audios (sek)
-Vonesa e titrave (sek)
+Vonesa e titrave (sek.)
 Rinis këngën
-Luaj/Puzë
+Luaj/Pauzë
 Kapërceni këngën aktuale
 Ule volumin
 Vendos volumin
@@ -97,7 +97,7 @@ Rendit sipas alfabetit
 Shto '%s' në radhë
 Shfletoni
 Renditur sipas 'Data'
-Renditur sipas 'Alfabetik'
+Renditur sipas 'Alfabetike'
 këngët
 duke shfaqur <b>{start} - {end}</b> {record_name}, në total <b>{total}</b> {record_name}
 u gjet <b>{found}</b> {record_name}, duke shfaqur <b>{start} - {end}</b> {record_name}
@@ -117,11 +117,11 @@ Kënga tashmë është në radhë:
 Kërko / Shto të Re
 Kërko
 Radhe
-Përfshini ndeshjet jo-karaoke
+Përfshi ndeshje jo karaoke
 E avancuar
 Shkruani një këngë (titull/artist) për të kërkuar këngët e disponueshme dhe klikoni 'Radhë' për ta shtuar në radhë.
-Nëse kënga nuk shfaqet në listën rënëse "Këngët e disponueshme", kliko "Kërko" për ta gjetur në Youtube.
-Shkarkimi i drejtpërdrejtë i URL-së në YouTube:
+Nëse kënga nuk shfaqet në listën rënëse "Këngët e disponueshme", klikoni "Kërko" për ta gjetur në Youtube.
+URL-ja e YouTube për shkarkim direkt:
 Shto në radhë
 Përfshi titrat
 Shkarko
@@ -152,9 +152,9 @@ Opsionet e avancuara të kontrollit
 Modaliteti i ndarjes vokale:
 Përdorni L-R/L+R
 Përdorni DNN
-Audioja standarde MTV ka dy kanale stereo (L dhe R) të koduar në atë mënyrë që: L-R është pjesa e instrumentit, L+R është pjesa vokale. Kështu, thjesht duke zbritur ose shtuar dy kanalet stereo, mund të marrim pjesën instrumentale dhe vokale në tingull mono. Ndarësi vokal i integruar i bazuar në DNN (rrjeti nervor i thellë) i PiKaraoke përdor algoritmin e AI për të ndarë tingujt instrumental dhe vokal në çdo pjesë stereo në mënyrë të pavarur duke rezultuar në këngë stereo instrumentale dhe vokale.
-Stop Spliter
-Rinisni Splitter
+Audioja standarde MTV ka dy kanale stereo (L dhe R) të koduar në atë mënyrë që: L-R është pjesa e instrumentit, L+R është pjesa vokale. Kështu, thjesht duke zbritur ose shtuar dy kanalet stereo, mund të marrim pjesën instrumentale dhe vokale në tingull mono. Ndarësi vokal i integruar i bazuar në DNN (rrjeti nervor i thellë) i PiKaraoke përdor algoritmin AI për të ndarë tingujt instrumental dhe vokal në çdo pjesë stereo në mënyrë të pavarur duke rezultuar në këngë stereo instrumentale dhe vokale.
+Stop Splitter
+Rinisni Spliter
 Ndarësi vokal (që mbështet zbritjen e bazuar në DNN dhe stereo) funksionon si një proces i veçantë në sfond, duke gjeneruar skedar audio instrumental/vokal për çdo këngë.
 Risinkronizoni audio dhe video:
 Ndalo transmetimin
@@ -174,7 +174,7 @@ Rinisni sistemin
 Sistemi i mbylljes
 Të tjera
 Zgjero sistemin e skedarëve Raspberry Pi
-Nëse sapo keni instaluar imazhin e para-ndërtuar pikaraoke pi dhe karta juaj SD është më e madhe se 4 GB, mund të dëshironi të zgjeroni sistemin e skedarëve për të përdorur hapësirën e mbetur. Ju duhet ta bëni këtë vetëm një herë. Kjo do të rifillojë sistemin.
+Nëse sapo keni instaluar imazhin e para-ndërtuar PiKaraoke pi dhe karta juaj SD është më e madhe se 4 GB, mund të dëshironi të zgjeroni sistemin e skedarëve për të përdorur hapësirën e mbetur. Ju duhet ta bëni këtë vetëm një herë. Kjo do të rifillojë sistemin.
 Çaktivizo modalitetin e administratorit
 Aktivizo modalitetin e administratorit
 shkyç
@@ -185,13 +185,21 @@ Ndrysho gjuhën
 Ju lutemi zgjidhni gjuhën
 Gjuha e sistemit
 Gjuha aktuale e sistemit:
-Kjo ndryshon gjuhën e sistemit mbështetës PiKaraoke i cili shfaqet në ekranin e televizorit; Për më tepër, çdo përdorues që lidhet gjithashtu mund të ndryshojë gjuhën e tij përkatëse të ndërfaqes së uebit në butonin globe në menynë e sipërme djathtas.
+Kjo ndryshon gjuhën e sistemit mbështetës PiKaraoke i cili shfaqet në ekranin e televizorit; Për më tepër, çdo përdorues që lidhet gjithashtu mund të ndryshojë gjuhën e tij përkatëse të ndërfaqes së uebit në butonin globe në menunë e sipërme djathtas.
 Shkarkimi përfundoi me sukses!
 Shkarkimi deshtoi!
 Kënga u shtua në radhë!
 Dështoi në radhën e këngës!
 Informacioni dhe cilësimet e sistemit
 Normalizimi i volumit
-Këngët e ndryshme shpesh kanë volum të ndryshëm. Aktivizimi i normalizimit të volumit do të ekzekutojë fillimisht <i>ffmpeg</i> për të llogaritur volumin global të një kënge dhe për të rregulluar automatikisht volumin e luajtësit në mënyrë që çdo këngë të tingëllojë njësoj e lartë.
+Këngët e ndryshme shpesh kanë volum të ndryshëm. Aktivizimi i normalizimit të volumit fillimisht do të ekzekutojë <i>ffmpeg</i> për të llogaritur volumin global të një kënge dhe për të rregulluar automatikisht volumin e luajtësit në mënyrë që çdo këngë të tingëllojë njësoj e lartë.
 Rruga e shkarkimit të bibliotekës së këngëve
 Numri total i këngëve
+Shfaq/Fshihe titrat
+Ndrysho shpejtësinë
+Mund ta këndoni këngën më shpejt ose më ngadalë duke ndryshuar shpejtësinë e riprodhimit brenda 0,8x në 1,2x duke përdorur shiritin e shpejtësisë; për shpejtësi të tjera të riprodhimit, klikoni në vlerën e shpejtësisë për të ndryshuar.
+Klikoni për të rivendosur shpejtësinë e luajtjes në 1x
+Klikoni për të vendosur shpejtësinë e riprodhimit
+Klikoni për të rivendosur tastin/tonin
+Tasti i rivendosjes
+Rivendos shpejtësinë

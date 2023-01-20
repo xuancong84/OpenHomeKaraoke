@@ -5,11 +5,11 @@ Kwengezwe %s amathrekhi angahleliwe
 Ziphelelwe izingoma!
 Isule ulayini!
 Iphutha lokuhambisa into ngaphakathi komugqa: ukungqubuzana okungavumelekile
-Kuhanjiswe ngempumelelo into phakathi komugqa:
+Kuhanjiswe ngempumelelo into ngaphakathi komugqa:
 Iphutha lokuhambisa into ngaphakathi komugqa:
 Kwehliswe emgqeni:
 Iphutha lokwehla emugqeni:
-Kwenyuswe emgqeni:
+Kwenyuswe kulayini:
 Iphutha lokukhuphuka ngomugqa:
 Kususiwe emugqeni:
 Iphutha ekususeni kulayini:
@@ -38,7 +38,7 @@ Ivala isistimu manje!
 Awunayo imvume yokuvala
 Iqalisa kabusha isistimu manje!
 Awunayo imvume yokuqalisa kabusha
-Inweba uhlelo lwefayela kanye nohlelo lokuqalisa kabusha manje!
+Inweba uhlelo lwefayela kanye nesistimu yokuqalisa kabusha manje!
 Ayikwazi ukunweba ama-fs kumadivayisi we-non-raspberry pi!
 Awunayo imvume yokushintsha usayizi wesistimu yefayela
 Indlela ye-YouTube-dl ayitholakali!
@@ -46,22 +46,22 @@ Indlela ye-VLC ayitholakali!
 indlela ye-omxplayer ayitholakali!
 Idala indlela yokulanda:
 I-Wifi/Inethiwekhi ayixhunyiwe. Ivala ngo-10s...
-Ngokukhetha izingoma, skena i-QR noma xhuma kuyo
-Ngombukiso we-TV, xhuma ku
+Ngokukhetha izingoma, skena i-QR noma xhuma ku
+Ngombukiso we-TV, xhuma ku-
 Cindezela okuthi F ukuze uguqule isikrini esigcwele
 Cindezela u-ESC ukuze uyeke i-PiKaraoke
 Imodi yokusetha ye-RaspiWifiConfig itholiwe!
 Xhuma enye idivayisi/i-smartphone ku-Wifi AP: '%s'
-Bese ukhomba isiphequluli sayo kokuthi: '%s://%s%s' bese ulandela imiyalelo.
+Bese ukhomba isiphequluli sayo ku-: '%s://%s%s' bese ulandela imiyalelo.
 Okulandelayo:
 Kwengezwe ngu:
 Okudlalayo manje:
 Imodi yokuphatha ivunyiwe!
-Ukwenyusa ukubambezeleka komsindo kuzokunika isikhathi esengeziwe sokufunda amagama ngaphambi kokucula umusho olandelayo.
+Ukwenyusa ukubambezeleka komsindo kuzokunikeza isikhathi esengeziwe sokufunda amagama ngaphambi kokucula umusho olandelayo.
 Ukunciphisa ukubambezeleka kwemibhalo engezansi kuzokunikeza isikhathi esengeziwe sokufunda amagama ngaphambi kokucula umusho olandelayo.
 I-semitone yaziwa nangokuthi i-half-step. Isikhathi esincane kunazo zonke esisetshenziswa emculweni wasendulo waseNtshonalanga, esilingana neshumi nambili le-octave noma ithoni uhhafu.
-Isihlukanisi sezwi esisekelwe ku-DNN sivuliwe. I-PiKaraoke isebenzisa i-PyTorch (nge-Facebook) ukusebenzisa inethiwekhi ejulile ye-neural ukuze ihlukanise umsindo wezinsimbi kanye nezwi kuthrekhi ngayinye ekhipha umsindo we-stereo.
-Ukulawula Umdlali
+Isihlukanisi sezwi esisekelwe ku-DNN sivuliwe. I-PiKaraoke isebenzisa i-PyTorch (nge-Facebook) ukuze iqhube inethiwekhi ejulile ye-neural ukuze ihlukanise umsindo wezinsimbi kanye nezwi kuthrekhi ngayinye ekhipha umsindo we-stereo.
+Ukulawula Isidlali
 Umculo
 Kuxutshiwe
 Izwi
@@ -70,7 +70,7 @@ Akukho okudlalayo njengamanje.
 Ayikho ingoma ekulayini.
 Le ngoma ayingezwanga nguwe. Uqinisekile ukuthi ufuna ukuqala kabusha le ngoma?
 Le ngoma ayingezwanga nguwe. Uqinisekile ukuthi ufuna ukweqa le ngoma?
-Ukulawula Umdlali
+Ukulawula Isidlali
 Kuyadlala Manje
 Iculo Elilandelayo
 Funa ku:
@@ -99,7 +99,7 @@ Phequlula
 Kuhlungwe ngokuthi 'Idethi'
 Kuhlungwe nge-'Alfabhethi'
 izingoma
-ibonisa <b>{start} - {end}</b> {record_name}, isiyonke <b>{total}</b> {record_name}
+ukubonisa <b>{start} - {end}</b> {record_name}, isiyonke <b>{total}</b> {record_name}
 kutholwe <b>{found}</b> {record_name}, kuboniswa <b>{start} - {end}</b> {record_name}
 Hlela ingoma
 Hamba phezulu kulayini
@@ -119,7 +119,7 @@ Sesha
 Ulayini
 Bandakanya okufanayo okungewona we-karaoke
 Okuthuthukile
-Thayipha iculo (isihloko/umculi) ukuze useshe izingoma ezitholakalayo bese uchofoza u-'Layini' ukuze uyengeze kulayini.
+Thayipha ingoma (isihloko/umculi) ukuze useshe izingoma ezitholakalayo bese uchofoza u-'Layini' ukuze uyengeze kulayini.
 Uma ingoma ingaveli kokuthi "Izingoma Ezitholakalayo", chofoza okuthi 'Sesha' ukuze uyithole ku-YouTube.
 Landa i-url ye-YouTube eqondile:
 Engeza kulayini
@@ -152,17 +152,17 @@ Izinketho Zokulawula Okuthuthukile
 Imodi ye-Vocal splitter:
 Sebenzisa i-L-R/L+R
 Sebenzisa i-DNN
-Umsindo we-MTV ojwayelekile unamashaneli amabili e-stereo (L no-R) afakwe ikhodi ngendlela yokuthi: I-L-R iyiculo lensimbi, i-L+R iyiculo lezwi. Ngakho, ngokumane sikhiphe noma singeze amashaneli amabili e-stereo, singathola ithrekhi yezinsimbi nezwi kumsindo we-mono. Isihlukanisi sezwi se-PiKaraoke esakhelwe ngaphakathi se-DNN (inethiwekhi ye-neural ejulile) sisebenzisa i-algorithm ye-AI ukuhlukanisa umsindo wezinsimbi kanye nezwi kuthrekhi ngayinye ye-stereo ngokuzimela okuholela ekudlalwayo kwezinsimbi zesitiriyo kanye namathrekhi ephimbo.
+Umsindo we-MTV ojwayelekile unamashaneli amabili e-stereo (L no-R) afakwe ikhodi ngendlela yokuthi: I-L-R iyiculo lensimbi, i-L+R iyiculo lezwi. Ngakho-ke, ngokumane sikhiphe noma singeze amashaneli amabili e-stereo, singathola ithrekhi yezinsimbi nezwi kumsindo we-mono. Isihlukanisi sezwi se-PiKaraoke esakhelwe ngaphakathi se-DNN (inethiwekhi ye-neural ejulile) sisebenzisa i-algorithm ye-AI ukuhlukanisa umsindo wezinsimbi kanye nezwi kuthrekhi ngayinye ye-stereo ngokuzimela okuholela ekudlalwayo kwezinsimbi ze-stereo nezwi.
 Misa i-Splitter
 Qala kabusha i-Splitter
-Isihlukanisi sephimbo (esisekela kokubili ukususa okusekelwe ku-DNN kanye nokukhipha istiriyo) sisebenza njengenqubo ehlukile ngemuva, sikhiqiza ifayela lomsindo wezinsimbi/izwi layo yonke ingoma.
+Isihlukanisi sephimbo (esisekela kokubili ukususa okusekelwe ku-DNN kanye nokukhipha isitiriyo) sisebenza njengenqubo ehlukile ngemuva, sikhiqiza ifayela lomsindo wezinsimbi/izwi layo yonke ingoma.
 Phinda uvumelanise umsindo nevidiyo:
 Misa i-Streamer
 Qala kabusha i-Streamer
-Lokhu kuthinta kuphela ukudlala i-KTV ngesiphequluli sewebhu. Ukuqalisa kabusha ukuthwebula isikrini-nokusakaza-bukhoma kuthuthukisa ukuvumelanisa komsindo/ividiyo, futhi kunciphisa ukubambezeleka phakathi kweseva nesiphequluli.
+Lokhu kuthinta kuphela ukudlala i-KTV ngesiphequluli sewebhu. Ukuqalisa kabusha ukuthwebula-nokusakaza-bukhoma kuthuthukisa ukuvumelanisa komsindo/ividiyo, futhi kunciphisa ukubambezeleka phakathi kweseva nesiphequluli.
 Vuselela uhlu lwezingoma:
 Skena kabusha umkhombandlela wengoma
-Kuzomele wenze lokhu kuphela uma ukopishele amafayela ngesandla kuhla lwemibhalo ngenkathi i-PiKaraoke isebenza.
+Kufanele wenze lokhu kuphela uma ukopishele amafayela ngesandla kuhla lwemibhalo ngenkathi i-PiKaraoke isebenza.
 Izibuyekezo
 Uma okulandiwe noma ukusesha kuyeka ukusebenza, ukubuyekeza i-youtube-dl cishe kuzoyilungisa. Inguqulo efakiwe yamanje ithi:
 Buyekeza i-youtube-dl
@@ -174,7 +174,7 @@ Qalisa kabusha Uhlelo
 Vala uhlelo
 Okunye
 Nweba isistimu yefayela ye-Raspberry Pi
-Uma usanda kufaka isithombe esakhiwe ngaphambilini se-pikaraoke pi futhi ikhadi lakho le-SD likhulu kuno-4GB, ungase ufune ukwandisa uhlelo lwefayela ukuze usebenzise isikhala esisele. Udinga ukwenza lokhu kanye kuphela. Lokhu kuzoqalisa kabusha isistimu.
+Uma usanda kufaka isithombe esakhiwe ngaphambilini se-PiKaraoke pi futhi ikhadi lakho le-SD likhulu kuno-4GB, ungase ufune ukwandisa uhlelo lwefayela ukuze usebenzise isikhala esisele. Udinga ukwenza lokhu kanye kuphela. Lokhu kuzoqalisa kabusha isistimu.
 Khubaza imodi yomqondisi
 Nika amandla imodi yomqondisi
 Phuma
@@ -193,5 +193,13 @@ Yehlulekile ukufaka umugqa ingoma!
 Ulwazi Lwesistimu & Izilungiselelo
 Ukwenziwa Kwevolumu
 Izingoma ezihlukene zivame ukuba nevolumu ehlukene. Ukunika amandla ukwenziwa kwevolumu evamile kuzoqala kuqalise i-<i>ffmpeg</i> ukuze kubalwe ivolumu yomhlaba wonke yengoma futhi kulungise ngokuzenzakalelayo ivolumu yesidlali ukuze ingoma ngayinye izwakale phezulu ngokulinganayo.
-Indlela yokulanda umtapo wezingoma
+Indlela yokulanda umtapo wezingoma wezingoma
 Isamba senani lezingoma
+Bonisa/Fihla umbhalo ongezansi
+Shintsha Isivinini
+Ungakwazi ukucula ingoma ngokushesha noma kancane ngokushintsha ijubane lokudlala libe phakathi kuka-0.8x ukuya ku-1.2x usebenzisa ibha yokulandelela isivinini; ngesinye isivinini sokudlala, chofoza inani lesivinini ukuze ushintshe.
+Chofoza ukuze usethe kabusha isivinini sokudlala sibe ngu-1x
+Chofoza ukuze usethe isivinini sokudlala
+Chofoza ukuze usethe kabusha ukhiye/iphimbo
+Setha kabusha ukhiye
+Setha kabusha isivinini

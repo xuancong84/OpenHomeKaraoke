@@ -99,13 +99,13 @@ Sirvige
 Sorteeritud kuupäeva järgi
 Sorteeritud tähestiku järgi
 laulud
-kuvatakse <b>{start} - {end}</b> {record_name}, kokku <b>{total}</b> {record_name}
-leitud <b>{leitud}</b> {rekordi_nimi}, kuvatakse <b>{start} - {end}</b> {record_name}
+kuvatakse <b>{start} – {end}</b> {record_name}, kokku <b>{total}</b> {record_name}
+leitud <b>{leitud}</b> {rekordi_nimi}, kuvatakse <b>{start}–{end}</b> {record_name}
 Redigeeri laulu
 Liigu järjekorras üles
-Liigu järjekorras allapoole
+Liigu järjekorras alla
 Kas olete kindel, et soovite järjekorrast kustutada?
-Kas olete kindel, et soovite TERVE järjekorra tühjendada? Jätkamiseks tippige "OK".
+Kas soovite kindlasti TERVE järjekorra tühjendada? Jätkamiseks tippige "OK".
 Lisage 3 juhuslikku laulu
 Kustuta kõik
 Järjekord on tühi
@@ -120,7 +120,7 @@ Järjekord
 Kaasa mitte-karaoke vasted
 Täpsemalt
 Saadaolevate lugude otsimiseks tippige lugu (pealkiri/esitaja) ja klõpsake selle järjekorda lisamiseks nuppu "Järjekord".
-Kui lugu ei kuvata rippmenüüs "Saadaolevad laulud", klõpsake selle Youtube'ist leidmiseks nuppu "Otsi".
+Kui lugu ei kuvata rippmenüüs "Saadaolevad laulud", klõpsake selle leidmiseks Youtube'is nuppu "Otsi".
 Otse allalaadimise YouTube'i URL:
 Lisa järjekorda
 Kaasake subtiitrid
@@ -138,7 +138,7 @@ Kas olete kindel, et soovite lõpetada?
 Kas soovite kindlasti sulgeda?
 Kas olete kindel, et soovite taaskäivitada?
 Kas olete kindel, et soovite kohe Youtube-dl-i värskendada? Praegused ja ootel allalaadimised võivad ebaõnnestuda.
-Kas soovite kindlasti failisüsteemi laiendada? See taaskäivitab teie Raspberry pi.
+Kas olete kindel, et soovite failisüsteemi laiendada? See taaskäivitab teie raspberry pi.
 Teave
 Mugav URL-i QR-kood sõbraga jagamiseks:
 OS
@@ -152,7 +152,7 @@ Täpsemad juhtimisvalikud
 Vokaaljaoturi režiim:
 Kasutage L-R/L+R
 Kasutage DNN-i
-Standardsel MTV helil on kaks stereokanalit (L ja R) kodeeritud järgmiselt: L-R on instrumendirada, L+R on häälerada. Seega, lihtsalt lahutades või liites kaks stereokanalit, saame instrumentaal- ja vokaalraja monohelis. PiKaraoke sisseehitatud DNN-põhine (sügava närvivõrgu) häälejaotur kasutab AI-algoritmi, et jagada instrumentaal- ja vokaaliheli igas stereorajas eraldi, mille tulemuseks on stereo-instrumentaal- ja vokaalrajad.
+Standardse MTV heli puhul on kaks stereokanalit (L ja R) kodeeritud järgmiselt: L-R on instrumendirada, L+R on vokaalrada. Seega, lihtsalt lahutades või liites kaks stereokanalit, saame instrumentaal- ja vokaalraja monohelis. PiKaraoke sisseehitatud DNN-põhine (sügava närvivõrgu) häälejaotur kasutab AI-algoritmi, et jagada instrumentaal- ja vokaaliheli igas stereorajas eraldi, mille tulemuseks on stereo-instrumentaal- ja vokaalrajad.
 Peatage Splitter
 Taaskäivitage Splitter
 Vokaalijaotur (mis toetab nii DNN-põhist kui ka stereolahutamist) töötab taustal eraldi protsessina, genereerides iga loo jaoks instrumentaalse/vokaalse helifaili.
@@ -174,24 +174,32 @@ Taaskäivitage süsteem
 Väljalülitussüsteem
 muud
 Laiendage Raspberry Pi failisüsteemi
-Kui installisite just eelehitatud pikaraoke pi pildi ja teie SD-kaart on suurem kui 4 GB, võiksite järelejäänud ruumi ärakasutamiseks failisüsteemi laiendada. Peate seda tegema ainult üks kord. See taaskäivitab süsteemi.
-Keela administraatorirežiim
+Kui installisite just eelehitatud PiKaraoke pi pildi ja teie SD-kaart on suurem kui 4 GB, võiksite järelejäänud ruumi ärakasutamiseks failisüsteemi laiendada. Peate seda tegema ainult üks kord. See taaskäivitab süsteemi.
+Keela administraatori režiim
 Luba administraatorirežiim
 Logi välja
 Logi sisse
 Süsteemi teave
 Kodu
 Muuda keelt
-Valige keel
+Palun valige keel
 Süsteemi keel
 Praegune süsteemi keel:
-See muudab PiKaraoke taustasüsteemi keelt, mis kuvatakse teleriekraanil; pealegi saab iga ühenduse loov kasutaja oma veebikasutaja keelt muuta ka parempoolses ülamenüüs asuval gloobusnupul.
+See muudab PiKaraoke taustasüsteemi keelt, mis kuvatakse teleriekraanil; pealegi saab iga ühenduse loov kasutaja muuta oma veebiliidese keelt ka parempoolses ülamenüüs asuval gloobusnupul.
 Allalaadimine on edukalt lõpule viidud!
 Allalaadimine ebaõnnestus!
 Laul lisati järjekorda!
 Laulu järjekorda seadmine ebaõnnestus!
 Süsteemi teave ja sätted
 Helitugevuse normaliseerimine
-Erinevatel lauludel on sageli erinev helitugevus. Helitugevuse normaliseerimise lubamisel käivitatakse esmalt <i>ffmpeg</i>, mis arvutab loo globaalse helitugevuse ja reguleerib automaatselt pleieri helitugevust, nii et iga lugu kõlaks võrdselt.
+Erinevatel lauludel on sageli erinev helitugevus. Helitugevuse normaliseerimise lubamisel käivitatakse esmalt <i>ffmpeg</i>, et arvutada loo globaalne helitugevus ja reguleerida mängija helitugevust automaatselt nii, et iga lugu kõlaks võrdselt.
 Laulukogu allalaadimise tee
 Laulude koguarv
+Kuva/peida subtiitrid
+Muuda kiirust
+Saate laulda laulu kiiremini või aeglasemalt, muutes kiiruse juhtriba abil taasesituse kiirust vahemikku 0,8x kuni 1,2x; muu taasesituskiiruse jaoks klõpsake muutmiseks kiiruse väärtust.
+Klõpsake taasesituse kiiruse 1x lähtestamiseks
+Klõpsake taasesituse kiiruse määramiseks
+Klahvi/heli lähtestamiseks klõpsake
+Lähtestamisklahv
+Lähtestage kiirus

@@ -3,70 +3,70 @@ Password amministratore errata!
 Disconnesso dalla modalità amministratore!
 Aggiunte %s tracce casuali
 Hai finito le canzoni!
-Svuotata la coda!
-Errore durante lo spostamento dell'elemento all'interno della coda: argomento-non valido
-Elemento spostato con successo all'interno della coda:
+Cancellata la coda!
+Errore durante lo spostamento dell'elemento all'interno della coda: argomento non valido
+Elemento spostato correttamente all'interno della coda:
 Errore durante lo spostamento dell'elemento all'interno della coda:
-Spostati in coda:
-Errore durante lo spostamento in coda:
+Spostato in basso nella coda:
+Errore durante lo spostamento verso il basso nella coda:
 Spostato in coda:
-Errore durante la salita in coda:
+Errore durante lo spostamento in coda:
 Eliminato dalla coda:
 Errore durante l'eliminazione dalla coda:
 Download iniziato:
 Al termine, verrà aggiunto alla coda.
-Al termine, apparirà nell'elenco dei "brani disponibili".
+Al termine, apparirà nell'elenco "brani disponibili".
 Errore: impossibile eliminare questo brano perché è nella coda corrente:
 Canzone eliminata:
 Errore: nessun parametro del brano specificato!
 Errore: impossibile modificare questo brano perché è attualmente in riproduzione:
-Modifica file brano
-Errore durante la ridenominazione del file: da '%s' a '%s'. Il nome del file esiste già.
-File rinominato: da '%s' a '%s'
-Errore: non sono stati specificati parametri del nome file!
+Modifica del file del brano
+Errore durante la ridenominazione del file: '%s' in '%s'. Il nome del file esiste già.
+File rinominato: '%s' in '%s'
+Errore: non è stato specificato alcun parametro per il nome file!
 Sconosciuto
 Corsa
 Fermato
- (Solo CPU)
+ (solo CPU)
  (GPU abilitato)
-Aggiornamento youtube-dl! Dovrebbero volerci un minuto o due...
-Non hai l'autorizzazione per aggiornare youtube-dl
+Aggiornamento di youtube-dl! Dovrebbero volerci un minuto o due...
+Non sei autorizzato ad aggiornare youtube-dl
 Non hai il permesso di chiudere
-Esci subito da PiKaraoke!
+Uscire da PiKaraoke adesso!
 Non hai il permesso di uscire
 Spegnimento del sistema ora!
 Non hai il permesso di chiudere
 Riavvio del sistema ora!
-Non hai l'autorizzazione per il riavvio
+Non hai l'autorizzazione per riavviare
 Espansione del filesystem e riavvio del sistema ora!
 Impossibile espandere fs su dispositivi non Raspberry Pi!
-Non hai l'autorizzazione per ridimensionare il filesystem
+Non sei autorizzato a ridimensionare il filesystem
 Percorso Youtube-dl non trovato!
 Percorso VLC non trovato!
 percorso omxplayer non trovato!
 Creazione del percorso di download:
-Wi-Fi/rete non connesso. Spegnimento tra 10 secondi...
+Wi-Fi/rete non connessa. Spegnimento tra 10 secondi...
 Per selezionare i brani, scansiona QR o connettiti a
-Per la visualizzazione TV, collegarsi a
-Premi F per passare a schermo intero
-Premi ESC per uscire da PiKaraoke
-Rilevata modalità di configurazione RaspiWifiConfig!
-Collega un altro dispositivo/smartphone all'AP Wifi: '%s'
+Per la visualizzazione TV, connettersi a
+Premi F per passare allo schermo intero
+Premere ESC per uscire da PiKaraoke
+Rilevata modalità di installazione di RaspiWifiConfig!
+Collega un altro dispositivo/smartphone all'AP Wi-Fi: '%s'
 Quindi punta il suo browser su: '%s://%s%s' e segui le istruzioni.
 Avanti il ​​prossimo:
 Aggiunto da:
 Ora in riproduzione:
 Modalità amministratore concessa!
 L'aumento del ritardo audio ti darà più tempo per leggere i testi prima di cantare la frase successiva.
-Diminuire il ritardo dei sottotitoli ti darà più tempo per leggere i testi prima di cantare la frase successiva.
+La riduzione del ritardo dei sottotitoli ti darà più tempo per leggere i testi prima di cantare la frase successiva.
 Un semitono è anche noto come semitono. È l'intervallo più piccolo utilizzato nella musica classica occidentale, pari a un dodicesimo di ottava o mezzo tono.
-Lo splitter vocale basato su DNN è abilitato. PiKaraoke utilizza PyTorch (di Facebook) per gestire una rete neurale profonda per dividere il suono strumentale e vocale in ogni traccia dando origine al suono stereo.
+Lo splitter vocale basato su DNN è abilitato. PiKaraoke utilizza PyTorch (di Facebook) per eseguire una rete neurale profonda per dividere il suono strumentale e vocale in ogni traccia dando origine al suono stereo.
 Controllo del giocatore
 Musica
 Misto
 Voce
 Cambia chiave
-Niente sta giocando in questo momento.
+Non c'è niente in riproduzione in questo momento.
 Nessun brano è in coda.
 Questa canzone non è stata aggiunta da te. Sei sicuro di voler riavviare questa traccia?
 Questa canzone non è stata aggiunta da te. Sei sicuro di voler saltare questa traccia?
@@ -78,69 +78,69 @@ Ritardo audio (sec)
 Ritardo sottotitoli (sec)
 Riavvia la canzone
 Play pausa
-Salta la canzone corrente
+Salta il brano corrente
 Volume basso
-Imposta il volume
-Alza il volume
-Diminuisci il ritardo dei sottotitoli
+Imposta volume
+Volume su
+Diminuire il ritardo dei sottotitoli
 Imposta il ritardo dei sottotitoli
 Aumenta il ritardo dei sottotitoli
-Diminuisci il ritardo audio
+Diminuire il ritardo audio
 Imposta ritardo audio
 Aumenta il ritardo audio
  semitoni
-Per favore inserisci il tuo nome. Questo apparirà accanto ai brani in coda da questo dispositivo.
+Per favore inserisci il tuo nome. Questo verrà visualizzato accanto ai brani che metti in coda da questo dispositivo.
 Brano aggiunto alla coda:
-Canzone già in coda:
+Brano già in coda:
 Ordinare per data
 Ordina per alfabetico
 Aggiungi '%s' alla coda
 Navigare
-Ordinato per "Data"
+Ordinato per 'Data'
 Ordinato per 'Alfabetico'
 canzoni
 visualizzazione di <b>{start} - {end}</b> {record_name}, in totale <b>{total}</b> {record_name}
-trovato <b>{found}</b> {record_name}, visualizzando <b>{start} - {end}</b> {record_name}
-Modifica canzone
+trovato <b>{found}</b> {record_name}, visualizzato <b>{start} - {end}</b> {record_name}
+Modifica brano
 Sali in coda
 Scendi in coda
 Sei sicuro di voler eliminare dalla coda
-Sei sicuro di voler cancellare TUTTA la coda? Digita "OK" per continuare
+Sei sicuro di voler cancellare l'INTERA coda? Digita "OK" per continuare
 Aggiungi 3 brani casuali
 Cancella tutto
 La coda è vuota
-Fare la coda
-Eliminare
-Brani disponibili nella libreria locale
-Brano aggiunto alla coda:
+Coda
+Elimina
+Canzoni disponibili nella libreria locale
+Canzone aggiunta alla coda:
 Il brano è già in coda:
 Cerca / Aggiungi nuovo
 Ricerca
-Fare la coda
-Includi partite non di karaoke
+Coda
+Includi partite non karaoke
 Avanzate
 Digita un brano (titolo/artista) per cercare i brani disponibili e fai clic su "Coda" per aggiungerlo alla coda.
-Se il brano non viene visualizzato nel menu a discesa "Brani disponibili", fai clic su "Cerca" per trovarlo su Youtube.
-URL di YouTube per il download diretto:
+Se il brano non viene visualizzato nel menu a discesa "Canzoni disponibili", fai clic su "Cerca" per trovarlo su Youtube.
+URL per il download diretto di YouTube:
 Aggiungi alla coda
-Includi i sottotitoli
+Includere i sottotitoli
 Scarica
-Cercando su YouTube
+Ricerca su YouTube per
 cerca risultati per
-Fare clic sul menu a discesa per mostrare più risultati
+Fai clic sul menu a discesa per visualizzare più risultati
 Collegamento:
 Canzoni disponibili
 Vuoi cambiare il nome visualizzato della persona che utilizza questo dispositivo? Questo apparirà accanto ai brani in coda. Attuale:
-Utente corrente
+Utente attuale
 Impostazioni
 PiKaraoke
 Sei sicuro di voler uscire?
 Sei sicuro di voler chiudere?
 Sei sicuro di voler riavviare?
-Sei sicuro di voler aggiornare Youtube-dl in questo momento? I download correnti e in sospeso potrebbero non riuscire.
+Sei sicuro di voler aggiornare Youtube-dl in questo momento? I download correnti e in attesa potrebbero non riuscire.
 Sei sicuro di voler espandere il filesystem? Questo riavvierà il tuo Raspberry Pi.
 Informazione
-Comodo codice QR per URL da condividere con un amico:
+Pratico codice QR URL da condividere con un amico:
 Sistema operativo
 Uso del disco
 Memoria
@@ -152,29 +152,29 @@ Opzioni di controllo avanzate
 Modalità splitter vocale:
 Usa L-R/L+R
 Usa DNN
-L'audio standard di MTV ha i due canali stereo (L e R) codificati in modo tale che: L-R è la traccia strumentale, L+R è la traccia vocale. Quindi, semplicemente sottraendo o sommando i due canali stereo, possiamo ottenere la traccia strumentale e vocale in suono mono. Lo splitter vocale integrato basato su DNN (rete neurale profonda) di PiKaraoke utilizza l'algoritmo AI per dividere il suono strumentale e vocale in ciascuna traccia stereo in modo indipendente, risultando in tracce strumentali e vocali stereo.
-Smetti di dividere
-Riavvia splitter
-Lo splitter vocale (che supporta sia la sottrazione stereo basata su DNN) viene eseguito come un processo separato in background, generando file audio strumentali/vocali per ogni brano.
+L'audio MTV standard ha i due canali stereo (L e R) codificati in modo tale che: L-R è la traccia strumentale, L+R è la traccia vocale. Così, semplicemente sottraendo o sommando i due canali stereo, possiamo ottenere la traccia strumentale e vocale in mono. Lo splitter vocale integrato basato su DNN (rete neurale profonda) di PiKaraoke utilizza l'algoritmo AI per dividere il suono strumentale e vocale in ciascuna traccia stereo in modo indipendente, risultando in tracce strumentali e vocali stereo.
+Ferma lo spaccalegna
+Riavvia Splitter
+Lo splitter vocale (che supporta sia la sottrazione basata su DNN che quella stereo) viene eseguito come processo separato in background, generando file audio strumentali/vocali per ogni canzone.
 Risincronizza audio e video:
-Arresta streamer
+Ferma lo streamer
 Riavvia lo streamer
-Ciò riguarda solo la riproduzione di KTV tramite browser web. Il riavvio dell'acquisizione dello schermo e dello streaming migliora la sincronizzazione audio/video, inoltre diminuisce la latenza tra il server e il browser.
+Ciò riguarda solo la riproduzione di KTV tramite browser web. Il riavvio della cattura dello schermo e dello streaming migliora la sincronizzazione audio/video e riduce anche la latenza tra il server e il browser.
 Aggiorna l'elenco dei brani:
 Riscansiona la directory dei brani
 Dovresti farlo solo se hai copiato manualmente i file nella directory di download mentre PiKaraoke era in esecuzione.
 Aggiornamenti
-Se i download o le ricerche hanno smesso di funzionare, l'aggiornamento di youtube-dl probabilmente lo risolverà. La versione attualmente installata è:
+Se i download o le ricerche smettono di funzionare, l'aggiornamento di youtube-dl probabilmente lo risolverà. La versione attualmente installata è:
 Aggiorna youtube-dl
-Questo collegamento di aggiornamento sopra potrebbe non riuscire se non si dispone delle autorizzazioni file appropriate. Controlla il registro di PiKaraoke per gli errori.
+Questo collegamento di aggiornamento sopra potrebbe non riuscire se non si dispone delle autorizzazioni file appropriate. Controlla la presenza di errori nel registro di PiKaraoke.
 Spegnimento
-Non staccare la spina! Spegni sempre il server correttamente per evitare il danneggiamento dei dati.
+Non limitarti a staccare la spina! Arrestare sempre correttamente il server per evitare il danneggiamento dei dati.
 Esci da PiKaraoke
 Riavvio del sistema
-Sistema di spegnimento
+Sistema di arresto
 Altro
-Espandi il file system Raspberry Pi
-Se hai appena installato l'immagine pikaraoke pi pre-costruita e la tua scheda SD è più grande di 4 GB, potresti voler espandere il filesystem per utilizzare lo spazio rimanente. Devi farlo solo una volta. Questo riavvierà il sistema.
+Espandi il filesystem Raspberry Pi
+Se hai appena installato l'immagine PiKaraoke pi predefinita e la tua scheda SD è più grande di 4 GB, potresti voler espandere il filesystem per utilizzare lo spazio rimanente. Devi farlo solo una volta. Questo riavvierà il sistema.
 Disabilita la modalità amministratore
 Abilita la modalità amministratore
 disconnettersi
@@ -183,15 +183,23 @@ Informazioni di sistema
 Casa
 Cambia lingua
 Si prega di scegliere la lingua
-Linguaggio di sistema
+Lingua di sistema
 Lingua di sistema attuale:
-Questo cambia la lingua del sistema di backend PiKaraoke che viene visualizzato sullo schermo TV; inoltre, ogni utente che si connette può anche modificare la rispettiva lingua dell'interfaccia utente Web nel pulsante del globo nel menu in alto a destra.
+Questo cambia la lingua del sistema di backend PiKaraoke che viene visualizzato sullo schermo della TV; inoltre, ogni utente che si connette può anche cambiare la rispettiva lingua dell'interfaccia utente Web nel pulsante del globo nel menu in alto a destra.
 Download completato con successo!
 Scaricamento fallito!
 Canzone aggiunta alla coda!
 Impossibile mettere in coda il brano!
 Informazioni e impostazioni di sistema
 Normalizzazione del volume
-Canzoni diverse spesso hanno un volume diverso. L'abilitazione della normalizzazione del volume eseguirà prima <i>ffmpeg</i> per calcolare il volume globale di un brano e regolare automaticamente il volume del lettore in modo che ogni brano suoni allo stesso volume.
-Percorso di download della libreria di brani
-Numero totale di brani
+Canzoni diverse hanno spesso un volume diverso. L'abilitazione della normalizzazione del volume eseguirà prima <i>ffmpeg</i> per calcolare il volume globale di un brano e regolare automaticamente il volume del lettore in modo che ogni brano suoni allo stesso volume.
+Percorso di download della libreria dei brani
+Numero totale di canzoni
+Mostra/Nascondi sottotitoli
+Cambia velocità
+Puoi cantare la canzone più velocemente o più lentamente modificando la velocità di riproduzione da 0,8x a 1,2x utilizzando la barra della velocità; per un'altra velocità di riproduzione, fare clic sul valore della velocità da modificare.
+Fare clic per reimpostare la velocità di riproduzione su 1x
+Fare clic per impostare la velocità di riproduzione
+Fare clic per reimpostare tonalità/intonazione
+Chiave di ripristino
+Ripristina velocità

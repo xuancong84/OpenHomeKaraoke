@@ -38,7 +38,7 @@ Matikan sistem sekarang!
 Anda tidak mempunyai kebenaran untuk menutup
 But semula sistem sekarang!
 Anda tidak mempunyai kebenaran untuk But semula
-Kembangkan sistem fail dan sistem but semula sekarang!
+Kembangkan sistem fail dan but semula sistem sekarang!
 Tidak boleh mengembangkan fs pada peranti pi bukan raspberi!
 Anda tidak mempunyai kebenaran untuk mengubah saiz sistem fail
 Laluan Youtube-dl tidak ditemui!
@@ -83,7 +83,7 @@ Perlahankan suara
 Tetapkan Kelantangan
 Kelantangan Naik
 Kurangkan Kelewatan Sarikata
-Tetapkan Kelewatan Sari Kata
+Tetapkan Kelewatan Sarikata
 Tingkatkan Kelewatan Sari Kata
 Kurangkan Kelewatan Audio
 Tetapkan Kelewatan Audio
@@ -112,7 +112,7 @@ Beratur kosong
 Beratur
 Padam
 Lagu yang tersedia di perpustakaan tempatan
-Menambahkan lagu pada baris gilir:
+Lagu ditambahkan pada baris gilir:
 Lagu sudah berada dalam baris gilir:
 Cari / Tambah Baharu
 Cari
@@ -128,14 +128,14 @@ Muat turun
 Mencari YouTube untuk
 Hasil carian untuk
 Klik lungsur turun untuk menunjukkan lebih banyak hasil
-pautan:
+Pautan:
 Lagu Tersedia
 Adakah anda mahu menukar nama paparan orang yang menggunakan peranti ini? Ini akan dipaparkan di sebelah lagu beratur. semasa:
 Pengguna semasa
 tetapan
 PiKaraoke
 Adakah anda pasti mahu berhenti?
-Adakah anda pasti mahu tutup?
+Adakah anda pasti mahu menutup?
 Adakah anda pasti mahu but semula?
 Adakah anda pasti mahu mengemas kini Youtube-dl sekarang? Muat turun semasa dan belum selesai mungkin gagal.
 Adakah anda pasti mahu mengembangkan sistem fail? Ini akan but semula raspberry pi anda.
@@ -152,14 +152,14 @@ Pilihan Kawalan Lanjutan
 Mod pemisah vokal:
 Gunakan L-R/L+R
 Gunakan DNS
-Audio MTV standard mempunyai dua saluran stereo (L dan R) yang dikodkan sedemikian rupa sehingga: L-R ialah trek instrumen, L+R ialah trek vokal. Oleh itu, dengan hanya menolak atau menambah dua saluran stereo, kita boleh mendapatkan trek instrumental dan vokal dalam bunyi mono. Pemisah vokal berasaskan DNN (rangkaian neural dalam) terbina dalam PiKaraoke menggunakan algoritma AI untuk membelah bunyi instrumental dan vokal dalam setiap trek stereo secara bebas menghasilkan trek instrumental dan vokal stereo.
+Audio MTV standard mempunyai dua saluran stereo (L dan R) yang dikodkan sedemikian rupa sehingga: L-R ialah trek instrumen, L+R ialah trek vokal. Oleh itu, dengan hanya menolak atau menambah dua saluran stereo, kita boleh mendapatkan trek instrumental dan vokal dalam bunyi mono. Pemisah vokal berasaskan DNN (rangkaian neural dalam) terbina dalam PiKaraoke menggunakan algoritma AI untuk memisahkan bunyi instrumental dan vokal dalam setiap trek stereo secara bebas menghasilkan trek instrumental dan vokal stereo.
 Hentikan Splitter
 Mulakan semula Splitter
 Pemisah vokal (yang menyokong penolakan berasaskan DNN dan stereo) berjalan sebagai proses berasingan di latar belakang, menjana fail audio instrumental/vokal untuk setiap lagu.
 Segerakkan semula audio dan video:
 Hentikan Streamer
 Mulakan semula Penstrim
-Ini hanya menjejaskan bermain KTV melalui pelayar web. Memulakan semula tangkapan-dan-strim skrin meningkatkan penyegerakan audio/video, ia juga mengurangkan kependaman antara pelayan dan penyemak imbas.
+Ini hanya menjejaskan bermain KTV melalui pelayar web. Memulakan semula tangkapan skrin dan penstriman meningkatkan penyegerakan audio/video, ia juga mengurangkan kependaman antara pelayan dan penyemak imbas.
 Muat semula senarai lagu:
 Imbas semula direktori lagu
 Anda hanya perlu melakukan ini jika anda menyalin fail secara manual ke direktori muat turun semasa PiKaraoke sedang berjalan.
@@ -174,7 +174,7 @@ Sistem But semula
 Sistem Tutup
 Lain-lain
 Kembangkan sistem fail Raspberry Pi
-Jika anda baru sahaja memasang imej pikaraoke pi pra-bina dan kad SD anda lebih besar daripada 4GB, anda mungkin mahu mengembangkan sistem fail untuk menggunakan ruang yang tinggal. Anda hanya perlu melakukan ini sekali sahaja. Ini akan but semula sistem.
+Jika anda baru sahaja memasang imej PiKaraoke pi pra-bina dan kad SD anda lebih besar daripada 4GB, anda mungkin mahu mengembangkan sistem fail untuk menggunakan ruang yang tinggal. Anda hanya perlu melakukan ini sekali sahaja. Ini akan but semula sistem.
 Lumpuhkan mod pentadbir
 Dayakan mod pentadbir
 log keluar
@@ -195,3 +195,11 @@ Normalisasi Kelantangan
 Lagu yang berbeza selalunya mempunyai volum yang berbeza. Mendayakan penormalan volum akan dijalankan dahulu <i>ffmpeg</i> untuk mengira volum global lagu dan melaraskan volum pemain secara automatik supaya setiap lagu berbunyi sama kuat.
 Laluan muat turun perpustakaan lagu
 Jumlah bilangan lagu
+Tunjukkan/Sembunyikan Sarikata
+Tukar Kelajuan
+Anda boleh menyanyikan lagu dengan lebih pantas atau lebih perlahan dengan menukar kelajuan main balik kepada dalam 0.8x hingga 1.2x menggunakan bar jejak kelajuan; untuk kelajuan main balik yang lain, klik pada nilai kelajuan untuk menukar.
+Klik untuk menetapkan semula kelajuan main balik kepada 1x
+Klik untuk menetapkan kelajuan main balik
+Klik untuk menetapkan semula kunci/padang
+Tetapkan Semula Kunci
+Tetapkan Semula Kelajuan

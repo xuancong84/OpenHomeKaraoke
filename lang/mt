@@ -1,6 +1,6 @@
 Malti
 Password ta' l-amministratur mhux korretta!
-Idilloggjat mill-modalità admin!
+Idilloggjat mill-mod ta' amministrazzjoni!
 Miżjud %s binarji każwali
 spiċċat il-kanzunetti!
 Tnaddaf il-kju!
@@ -13,13 +13,13 @@ Tċaqlaq fil-kju:
 Żball meta titla' fil-kju:
 Imħassar mill-kju:
 Żball meta tħassar mill-kju:
-It-tniżżil beda:
+Inbeda t-tniżżil:
 Mat-tlestija, se jiżdied mal-kju.
 Mat-tlestija, se jidher fil-lista "kanzunetti disponibbli".
 Żball: Ma tistax tħassar din il-kanzunetta għax tinsab fil-kju attwali:
 Kanzunetta mħassra:
 Żball: L-ebda parametru tal-kanzunetta speċifikat!
-Żball: Ma tistax teditja din il-kanzunetta għaliex bħalissa qed tindaqq:
+Żball: Ma tistax teditja din il-kanzunetta għax bħalissa qed tindaqq:
 Editja tal-Fajl tal-Kanzunetta
 Żball Tismija mill-ġdid tal-fajl: '%s' għal '%s'. L-isem tal-fajl diġà jeżisti.
 Fajl b'isem ġdid: '%s' għal '%s'
@@ -42,7 +42,7 @@ Tespandi sistema ta 'fajls u sistema ta' rebooting issa!
 Ma tistax tespandi fs fuq apparati mhux lampun pi!
 M'għandekx permess biex tibdel id-daqs tas-sistema tal-fajls
 Il-mogħdija ta' Youtube-dl ma nstabx!
-It-triq VLC ma nstabx!
+It-triq tal-VLC ma nstabx!
 mogħdija omxplayer ma nstabx!
 Il-ħolqien tal-mogħdija tat-tniżżil:
 Wifi/Netwerk mhux konness. Jingħalqu f'10s...
@@ -71,7 +71,7 @@ L-ebda kanzunetta mhi fil-kju.
 Din il-kanzunetta mhix miżjuda minnek. Int żgur li trid terġa' tibda din il-binarju?
 Din il-kanzunetta mhix miżjuda minnek. Int żgur li trid taqbeż din il-binarju?
 Kontroll tal-Plejer
-Issa Nilgħab
+Issa Playing
 Kanzunetta li jmiss
 Fittex Biex:
 Dewmien Awdjo (sek)
@@ -89,7 +89,7 @@ Naqqas id-Dewmien tal-Awdjo
 Issettja Dewmien Awdjo
 Żid Dewmien tal-Awdjo
  semitoni
-Jekk jogħġbok daħħal ismek. Dan se jidher ħdejn il-kanzunetti li inti fil-kju minn dan l-apparat.
+Jekk jogħġbok daħħal ismek. Dan se jidher ħdejn il-kanzunetti inti fil-kju minn dan l-apparat.
 Kanzunetta miżjuda mal-kju:
 Kanzunetta diġà fil-kju:
 Issortja skond id-Data
@@ -120,12 +120,12 @@ Kju
 Inkludi logħbiet mhux karaoke
 Avvanzat
 Ittajpja kanzunetta (titlu/artist) biex tfittex il-kanzunetti disponibbli u kklikkja 'Kju' biex iżżidha mal-kju.
-Jekk il-kanzunetta ma tidhirx fil-dropdown "Kanzunetti Disponibbli", ikklikkja 'Fittex' biex issibha fuq Youtube.
+Jekk il-kanzunetta ma tidhirx fid-dropdown "Kanzunetti Disponibbli", ikklikkja 'Fittex' biex issibha fuq Youtube.
 Niżżel dirett YouTube URL:
 Żid mal-kju
 Inkludi sottotitli
 Niżżel
-Fittex għal YouTube
+Fittex fuq YouTube
 Riżultati tat-tfittxija għal
 Ikklikkja dropdown biex turi aktar riżultati
 Link:
@@ -148,7 +148,7 @@ Qbid tal-Iskrin
 Splitter Vokali
 Verżjoni Youtube-dl (yt-dlp).
 Verżjoni PiKaraoke
-Għażliet ta' Kontroll Avvanzati
+Għażliet ta 'Kontroll Avvanzati
 Modalità splitter vokali:
 Uża L-R/L+R
 Uża DNN
@@ -166,7 +166,7 @@ Għandek bżonn tagħmel dan biss jekk ikkupjajt manwalment fajls fid-direttorju
 Aġġornamenti
 Jekk it-tniżżil jew it-tfittxijiet ma baqgħux jaħdmu, l-aġġornament ta' youtube-dl probabbilment se jirranġaha. Il-verżjoni installata attwali hija:
 Aġġorna youtube-dl
-Din il-link għall-aġġornament ta' hawn fuq tista' tfalli jekk ma jkollokx permessi xierqa għall-fajls. Iċċekkja l-log PiKaraoke għal żbalji.
+Din il-link ta' aġġornament ta' hawn fuq tista' tfalli jekk ma jkollokx permessi xierqa għall-fajls. Iċċekkja l-log PiKaraoke għal żbalji.
 Għalaq
 Tiġbedx il-plagg biss! Dejjem agħlaq is-server tiegħek sew biex tevita l-korruzzjoni tad-dejta.
 Nieqaf PiKaraoke
@@ -174,7 +174,7 @@ Reboot Sistema
 Sistema ta' Tfigħ
 Oħrajn
 Jespandu s-sistema tal-fajls Raspberry Pi
-Jekk għadek kif installajt l-immaġni pikaraoke pi mibnija minn qabel u l-karta SD tiegħek hija akbar minn 4GB, tista 'tixtieq tespandi s-sistema tal-fajls biex tutilizza l-ispazju li jifdal. Għandek bżonn tagħmel dan darba biss. Dan jerġa 'jibda s-sistema.
+Jekk għadek kif installajt l-immaġni PiKaraoke pi mibnija minn qabel u l-karta SD tiegħek hija akbar minn 4GB, tista 'tixtieq tespandi s-sistema tal-fajls biex tutilizza l-ispazju li jifdal. Għandek bżonn tagħmel dan darba biss. Dan jerġa 'jibda s-sistema.
 Iddiżattiva l-mod ta' amministrazzjoni
 Ippermetti l-mod ta' amministrazzjoni
 Oħroġ
@@ -184,7 +184,7 @@ Dar
 Bidla Lingwa
 Jekk jogħġbok agħżel il-lingwa
 Lingwa tas-Sistema
-Lingwa tas-sistema attwali:
+Lingwa tas-sistema kurrenti:
 Dan jibdel il-lingwa tas-sistema backend PiKaraoke li tintwera fuq l-iskrin tat-TV; barra minn hekk, kull utent li jgħaqqad jista 'wkoll ibiddel il-lingwa rispettiva tagħhom tal-Web UI fil-buttuna globu fil-menu ta' fuq tal-lemin.
 It-tniżżil tlesta b'suċċess!
 It-tniżżil falla!
@@ -195,3 +195,11 @@ Normalizzazzjoni tal-Volum
 Kanzunetti differenti ħafna drabi jkollhom volum differenti. L-abilitazzjoni tan-normalizzazzjoni tal-volum l-ewwel se taħdem <i>ffmpeg</i> biex tikkalkula l-volum globali ta 'kanzunetta u taġġusta awtomatikament il-volum tal-plejer sabiex kull kanzunetta tinstema' ugwalment qawwi.
 Mogħdija tat-tniżżil tal-librerija tal-kanzunetti
 Numru totali ta' kanzunetti
+Uri/Aħbi s-sottotitolu
+Bidla Veloċità
+Tista 'tkanta l-kanzunetta aktar malajr jew aktar bil-mod billi tbiddel il-veloċità tal-plejbek sa 0.8x sa 1.2x billi tuża t-trackbar tal-veloċità; għal veloċità oħra tal-plejbek, ikklikkja fuq il-valur tal-veloċità biex tibdel.
+Ikklikkja biex tirrisettja l-veloċità tad-daqq għal 1x
+Ikklikkja biex tissettja l-veloċità tad-daqq
+Ikklikkja biex tirrisettja ċ-ċavetta/pitch
+Irrisettja Ċavetta
+Irrisettja Veloċità

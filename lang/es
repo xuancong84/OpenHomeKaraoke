@@ -26,7 +26,7 @@ Archivo renombrado: '%s' a '%s'
 Error: ¡No se especificaron parámetros de nombre de archivo!
 Desconocido
 Corriendo
-Detenido
+Interrumpido
  (solo CPU)
  (GPU habilitado)
 Actualizando youtube-dl! Debería tomar un minuto o dos...
@@ -58,7 +58,7 @@ Añadido por:
 Jugando ahora:
 ¡Modo administrador concedido!
 Aumentar la demora del audio le dará más tiempo para leer la letra antes de cantar la siguiente oración.
-Disminuir la demora de los subtítulos le dará más tiempo para leer la letra antes de cantar la siguiente oración.
+La disminución de la demora de los subtítulos le dará más tiempo para leer la letra antes de cantar la siguiente oración.
 Un semitono también se conoce como medio paso. Es el intervalo más pequeño utilizado en la música clásica occidental, igual a un doceavo de octava o medio tono.
 El divisor vocal basado en DNN está habilitado. PiKaraoke usa PyTorch (de Facebook) para ejecutar una red neuronal profunda para dividir el sonido instrumental y vocal en cada pista, lo que genera un sonido estéreo.
 Control del jugador
@@ -115,7 +115,7 @@ Canciones disponibles en la biblioteca local
 Canción añadida a la cola:
 La canción ya está en la cola:
 Buscar / Agregar nuevo
-Búsqueda
+Buscar
 Cola
 Incluir partidos que no sean de karaoke
 Avanzado
@@ -162,7 +162,7 @@ Reiniciar transmisor
 Esto solo afecta la reproducción de KTV a través del navegador web. Reiniciar la captura de pantalla y la transmisión mejora la sincronización de audio/video, también disminuye la latencia entre el servidor y el navegador.
 Actualizar la lista de canciones:
 Volver a escanear el directorio de canciones
-Solo debería necesitar hacer esto si copió manualmente los archivos al directorio de descarga mientras se ejecutaba PiKaraoke.
+Solo debería necesitar hacer esto si copió manualmente los archivos al directorio de descarga mientras PiKaraoke se estaba ejecutando.
 Actualizaciones
 Si las descargas o las búsquedas dejaron de funcionar, es probable que la actualización de youtube-dl lo solucione. La versión actual instalada es:
 Actualizar youtube-dl
@@ -174,7 +174,7 @@ Reiniciar el sistema
 Sistema apagado
 Otro
 Expandir el sistema de archivos Raspberry Pi
-Si acaba de instalar la imagen pikaraoke pi preconstruida y su tarjeta SD tiene más de 4 GB, es posible que desee expandir el sistema de archivos para utilizar el espacio restante. Sólo necesitas hacer esto una vez. Esto reiniciará el sistema.
+Si acaba de instalar la imagen PiKaraoke pi preconstruida y su tarjeta SD tiene más de 4 GB, es posible que desee expandir el sistema de archivos para utilizar el espacio restante. Sólo necesitas hacer esto una vez. Esto reiniciará el sistema.
 Deshabilitar el modo de administrador
 Habilitar el modo de administrador
 cerrar sesión
@@ -195,3 +195,11 @@ Normalización de volumen
 Diferentes canciones a menudo tienen un volumen diferente. Al habilitar la normalización del volumen, primero se ejecutará <i>ffmpeg</i> para calcular el volumen global de una canción y ajustará automáticamente el volumen del reproductor para que cada canción suene igual de fuerte.
 Ruta de descarga de la biblioteca de canciones
 Número total de canciones
+Mostrar/Ocultar subtítulo
+Cambiar velocidad
+Puede cantar la canción más rápido o más lento cambiando la velocidad de reproducción entre 0,8x y 1,2x usando la barra de seguimiento de velocidad; para otra velocidad de reproducción, haga clic en el valor de velocidad para cambiar.
+Haga clic para restablecer la velocidad de reproducción a 1x
+Haga clic para establecer la velocidad de reproducción
+Haz clic para restablecer la clave/tono
+Tecla de reinicio
+Restablecer velocidad

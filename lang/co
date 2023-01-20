@@ -1,14 +1,14 @@
 Corsu
 Password amministratore sbagliata!
-Uscitu da u modu amministratore!
+Sconnessu da u modu amministratore!
 Aggiuntu %s tracce casuali
 Finu di canzoni!
 Sguassatu a fila!
 Errore durante u muvimentu di l'elementu in a fila: argumentu invalidu
-Elementu spustatu cù successu in a fila:
+Elementu spustatu bè in a fila:
 Errore durante u muvimentu di l'elementu in a fila:
 Spostatu in a fila:
-Errore in scende in fila:
+Errore di scendere in fila:
 Sposta in fila:
 Errore di muvimentu in a fila:
 Eliminatu da a fila:
@@ -17,7 +17,7 @@ Scaricamentu cuminciatu:
 À a fine, serà aghjuntu à a fila.
 À a fine, apparirà in a lista di "canzoni dispunibili".
 Errore: Ùn pò micca sguassà sta canzone perchè hè in a fila attuale:
-Canzona eliminata:
+Canzone eliminata:
 Errore: Nisun parametru di canzone specificatu!
 Errore: Ùn pò micca edità sta canzone perchè hè attualmente in riproduzione:
 Canzone File Edit
@@ -30,7 +30,7 @@ Fermatu
  (Solu CPU)
  (GPU attivatu)
 Aghjurnà youtube-dl! Duverebbe piglià un minutu o dui ...
-Ùn avete micca permessu per aghjurnà youtube-dl
+Ùn avete micca permessu di aghjurnà youtube-dl
 Ùn avete micca permessu di chjude
 Abbandunà PiKaraoke avà!
 Ùn avete micca permessu di abbandunà
@@ -38,7 +38,7 @@ Chiudi u sistema avà!
 Ùn avete micca permessu di chjude
 Riavvia u sistema avà!
 Ùn avete micca permessu di reboot
-Espansione di u sistema di filesystem è riavvia u sistema avà!
+Espansione di u sistema di filesystem è u sistema di reboot avà!
 Ùn pò micca espansione fs nantu à i dispositi micca raspberry pi!
 Ùn avete micca permessu di ridimensionà u filesystem
 Percorsu Youtube-dl micca trovu!
@@ -48,19 +48,19 @@ Crià una strada di scaricamentu:
 Wifi / Rete micca cunnessu. Chiude in 10s...
 Per selezziunà e canzoni, scansione QR o cunnetta
 Per a visualizazione di TV, cunnette à
-Appughjà F per cambià a pantalla piena
+Pulsà F per cambià a pantalla piena
 Press ESC per abbandunà PiKaraoke
-U modu di installazione di RaspiWifiConfig rilevatu!
+U modu di cunfigurazione RaspiWifiConfig rilevatu!
 Cunnette un altru dispositivu/smartphone à l'AP Wifi: '%s'
-Allora puntate u so navigatore à: '%s://%s%s' è seguite e struzzioni.
+Dopu puntate u so navigatore à: '%s://%s%s' è seguite l'istruzzioni.
 In seguitu:
 Aggiuntu da:
 Avà ghjucatu:
 Modu amministratore cuncessu!
 L'aumentu di u ritardu audio vi darà più tempu per leghje e parole prima di cantà a prossima frase.
 A diminuzione di u ritardu di i sottotitoli vi darà più tempu per leghje e parole prima di cantà a prossima frase.
-Un semitone hè ancu cunnisciutu cum'è mezzu passu. Hè u più chjucu intervallu utilizatu in a musica classica occidentale, uguali à un dodicesimu d'ottava o a mità di tonu.
-U splitter vocale basatu in DNN hè attivatu. PiKaraoke usa PyTorch (da Facebook) per eseguisce una rete neurale profonda per sparghje u sonu strumentale è vocale in ogni traccia chì dà origine à un sonu stereo.
+Un semitone hè ancu cunnisciutu com'è a mità di passu. Hè u più chjucu intervallu utilizatu in a musica classica occidentale, uguali à un dodicesimu d'ottava o a mità di tonu.
+U splitter vocale basatu in DNN hè attivatu. PiKaraoke usa PyTorch (da Facebook) per gestisce una rete neurale profonda per sparghje u sonu strumentale è vocale in ogni traccia chì dà origine à un sonu stereo.
 Cuntrolla di u ghjucatore
 Musica
 mistu
@@ -83,7 +83,7 @@ Volume Down
 Set Volume
 Volume Up
 Diminuisce u ritardu di i sottutituli
-Stabilisci u ritardu di i sottutituli
+Stabilisci u ritardu di u sottutitulu
 Aumentà u ritardu di i sottutituli
 Diminuisce u ritardu audio
 Stabbilisce u Delay Audio
@@ -105,7 +105,7 @@ Edita a canzone
 Sposta in fila
 Scendete in fila
 Sò sicuru chì vulete sguassà da a fila
-Siate sicuru chì vulete sguassà TUTTA a fila ? Type 'OK' per cuntinuà
+Siate sicuru chì vulete sguassà TUTTA a fila? Type 'OK' per cuntinuà
 Aghjunghjite 3 canzoni casuali
 Pulisce tuttu
 A fila hè viota
@@ -119,9 +119,9 @@ Ricerca
 Coda
 Includite partite non-karaoke
 Avanzatu
-Scrivite una canzone (titulu / artista) per circà i canti dispunibili è cliccate "Queue" per aghjunghje à a fila.
+Scrivite una canzone (titulu / artista) per circà i canti dispunibuli è cliccate "Queue" per aghjunghje à a fila.
 Se a canzone ùn hè micca apparsa in u menù dropdown "Canzoni dispunibili", cliccate "Ricerca" per truvà in Youtube.
-Scarica direttamente l'url di YouTube:
+Url di scaricamentu direttu di YouTube:
 Aghjunghjite à a fila
 Includite sottutituli
 Scaricate
@@ -150,23 +150,23 @@ Versione Youtube-dl (yt-dlp).
 Versione PiKaraoke
 Opzioni di cuntrollu avanzatu
 Modu di splitter vocale:
-Aduprà L-R/L+R
+Utilizà L-R/L+R
 Aduprate DNN
-L'audio MTV standard hà i dui canali stereo (L è R) codificati in modu chì: L-R hè a traccia di l'instrumentu, L + R hè a traccia vocale. Cusì, solu sottumettendu o aghjunghjendu i dui canali stereo, pudemu uttene a pista instrumentale è vocale in u sonu mono. U splitter vocale integratu di PiKaraoke basatu in DNN (rete neurale profonda) usa l'algoritmu AI per sparghje u sonu strumentale è vocale in ogni traccia stereo in modu indipindenti, risultando in piste stereo strumentali è vocali.
+L'audio MTV standard hà i dui canali stereo (L è R) codificati in modu chì: L-R hè a traccia di l'instrumentu, L + R hè a traccia vocale. Cusì, solu sottumettendu o aghjunghjendu i dui canali stereo, pudemu uttene a pista instrumentale è vocale in u sonu mono. U splitter vocale integratu di PiKaraoke basatu in DNN (rete neurale profonda) usa l'algoritmu AI per sparghje u sonu strumentale è vocale in ogni traccia stereo in modu indipindenti, risultatu in tracce strumentali è vocali stereo.
 Stop Splitter
 Riavvia Splitter
-U splitter vocale (chì supporta a sottrazione basata in DNN è stereo) funziona cum'è un prucessu separatu in u fondu, generendu un schedariu audio instrumentale / vocale per ogni canzone.
+U splitter vocale (chì supporta a sottrazione basata in DNN è stereo) funziona cum'è un prucessu separatu in u sfondate, generendu un schedariu audio instrumentale / vocale per ogni canzone.
 Risincronizza l'audio è u video:
 Stop Streamer
 Riavvia Streamer
-Questu afecta solu à ghjucà KTV via navigatore web. Riavvia a screen-capture-and-streaming mellora a sincronizazione audio / video, diminuisce ancu a latenza trà u servitore è u navigatore.
+Questu solu afecta à ghjucà KTV via navigatore web. Riavvia a screen-capture-and-streaming mellora a sincronizazione audio / video, diminuisce ancu a latenza trà u servitore è u navigatore.
 Refresh a lista di canzoni:
 Rescannu u repertoriu di canzone
-Duvete bisognu di fà questu solu s'ellu avete copiatu manualmente i schedari à u cartulare di scaricamentu mentre PiKaraoke era in esecuzione.
+Duvete bisognu di fà questu solu s'ellu avete copiatu manualmente i schedari in u cartulare di scaricamentu mentre PiKaraoke era in esecuzione.
 Aghjurnamenti
-Se i scaricamenti o e ricerche anu cessatu di travaglià, l'aghjurnamentu di youtube-dl probabilmente risolverà. A versione attuale installata hè:
+Se i scaricamenti o e ricerche anu cessatu di travaglià, l'aghjurnamentu di youtube-dl probabilmente risolverà. A versione installata attuale hè:
 Aghjurnate youtube-dl
-Stu ligame di l'aghjurnamentu sopra pò fallu s'ellu ùn avete micca i permessi di u schedariu propiu. Verificate u log PiKaraoke per errori.
+Stu ligame di l'aghjurnamentu sopra pò fallu s'ellu ùn avete micca permessi adatti à u schedariu. Verificate u log PiKaraoke per errori.
 Chjodi
 Ùn tirate micca solu u plug! Sempre chjude u vostru servitore bè per evità a corruzzione di dati.
 Lasciate PiKaraoke
@@ -174,8 +174,8 @@ Reboot System
 Sistema di arrestu
 Altru
 Espandi u sistema di file Raspberry Pi
-Se avete appena installatu l'imaghjini pikaraoke pi pre-custruita è a vostra carta SD hè più grande di 4GB, pudete vulete espansione u sistema di filesystem per utilizà u spaziu restante. Solu bisognu di fà questu una volta. Questu riavviarà u sistema.
-Disattivà u modu amministratore
+Se avete appena installatu l'imaghjini PiKaraoke pi pre-custruita è a vostra carta SD hè più grande di 4GB, pudete vulete espansione u sistema di filesystem per utilizà u spaziu restante. Solu bisognu di fà questu una volta. Questu riavviarà u sistema.
+Disattivà u modu di amministratore
 Attivà u modu amministratore
 scunnettà si
 accede
@@ -190,8 +190,16 @@ Scaricamentu cumpletu cù successu!
 Scaricamentu fiascatu!
 Canzona aghjunta à a fila !
 Impossibile mette in fila a canzone!
-Sistema Info & Settings
+Info di sistema è paràmetri
 Normalizazione di u voluminu
 Diversi canti spessu anu un volumu diversu. L'attivazione di a normalizazione di u voluminu prima eseguirà <i>ffmpeg</i> per calculà u voluminu globale di una canzone è aghjustà automaticamente u voluminu di u lettore in modu chì ogni canzone sona ugualmente forte.
 Percorsu di scaricamentu di a biblioteca di canzoni
 U numeru tutale di canzoni
+Mostra / Oculte u Subtitle
+Cambia a velocità
+Pudete cantà a canzone più veloce o più lenta cambiendu a velocità di riproduzione à 0.8x à 1.2x usendu a trackbar di velocità; per altre velocità di riproduzione, cliccate nant'à u valore di velocità per cambià.
+Cliccate per resettà a velocità di riproduzione à 1x
+Cliccate per stabilisce a velocità di riproduzione
+Cliccate per resettà a chjave / pitch
+Reset Key
+Resetta a velocità

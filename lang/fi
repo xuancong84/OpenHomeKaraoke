@@ -21,16 +21,16 @@ Kappale poistettu:
 Virhe: kappaleparametria ei ole määritetty!
 Virhe: Tätä kappaletta ei voi muokata, koska sitä soitetaan parhaillaan:
 Kappaletiedoston muokkaus
-Virhe tiedoston "%s" uudelleennimeämisessä nimeksi "%s". Tiedostonimi on jo olemassa.
+Virhe tiedoston "%s" nimeämisessä uudelleen muotoon "%s". Tiedostonimi on jo olemassa.
 Nimetty tiedosto: '%s' uudelleen '%s'
-Virhe: Tiedostonimen parametreja ei määritetty!
+Virhe: Tiedostonimiparametreja ei määritetty!
 Tuntematon
 Juoksemassa
 Pysähtynyt
  (vain CPU)
  (GPU käytössä)
 Päivitetään youtube-dl! Pitäisi kestää minuutti tai kaksi...
-Sinulla ei ole lupaa päivittää youtube-dl:ää
+Sinulla ei ole lupaa päivittää youtube-dl
 Sinulla ei ole lupaa sulkea
 Lopeta PiKaraoke nyt!
 Sinulla ei ole lupaa lopettaa
@@ -52,15 +52,15 @@ Paina F vaihtaaksesi koko näytön tilaan
 Paina ESC poistuaksesi PiKaraokesta
 RaspiWifiConfig-asennustila havaittu!
 Yhdistä toinen laite/älypuhelin Wifi-tukiasemaan: '%s'
-Valitse sitten selain osoitteeseen %s://%s%s ja noudata ohjeita.
+Valitse sitten selain osoitteeseen %s://%s%s ja seuraa ohjeita.
 Seuraavaksi:
 Lisännyt:
 Nyt soi:
 Järjestelmänvalvojatila myönnetty!
 Lisääntyvä äänen viive antaa sinulle enemmän aikaa lukea sanoituksia ennen seuraavan lauseen laulamista.
 Tekstityksen viiveen vähentäminen antaa sinulle enemmän aikaa lukea sanoituksia ennen seuraavan lauseen laulamista.
-Puolisävel tunnetaan myös puoliaskeluna. Se on pienin klassisessa länsimaisessa musiikissa käytetty intervalli, joka vastaa oktaavin kahdestoistaosaa tai puolisäveltä.
-DNN-pohjainen äänenjakaja on käytössä. PiKaraoke käyttää PyTorchia (Facebook) pyörittääkseen syvää hermoverkkoa instrumentaali- ja lauluäänen jakamiseksi kussakin kappaleessa, jolloin syntyy stereoääntä.
+Puolisäveltä kutsutaan myös puoliaskeleeksi. Se on pienin klassisessa länsimaisessa musiikissa käytetty intervalli, joka vastaa oktaavin kahdestoistaosaa tai puolisäveltä.
+DNN-pohjainen äänenjakaja on käytössä. PiKaraoke käyttää PyTorchia (Facebook) pyörittääkseen syvää hermoverkkoa instrumentaalisen ja lauluäänen jakamiseksi kussakin kappaleessa, jolloin syntyy stereoääntä.
 Pelaajan ohjaus
 Musiikki
 Sekoitettu
@@ -91,7 +91,7 @@ Lisää äänen viivettä
  puolisävelet
 Kirjoita nimesi. Tämä näkyy tältä laitteelta jonossa olevien kappaleiden vieressä.
 Jonoon lisätty kappale:
-Laulu jo jonossa:
+Kappale jo jonossa:
 Lajittele päivämäärän mukaan
 Lajittele aakkosjärjestyksen mukaan
 Lisää '%s' jonoon
@@ -111,17 +111,17 @@ Tyhjennä
 Jono on tyhjä
 Jonottaa
 Poistaa
-Kappaleet saatavilla paikallisessa kirjastossa
+Kappaleet saatavilla paikallisesta kirjastosta
 Lisätty kappale jonoon:
 Kappale on jo jonossa:
 Etsi / Lisää uusi
 Hae
 Jonottaa
-Sisällytä ei-karaoke-ottelut
+Sisällytä muita kuin karaoke-otteluita
 Pitkälle kehittynyt
-Kirjoita kappale (nimi/artisti) etsiäksesi käytettävissä olevia kappaleita ja napsauta "Jono" lisätäksesi sen jonoon.
+Hae käytettävissä olevia kappaleita kirjoittamalla kappale (nimi/artisti) ja lisää se jonoon napsauttamalla Jono.
 Jos kappale ei näy Available Songs -pudotusvalikossa, napsauta Hae löytääksesi sen Youtubesta.
-Suora lataus YouTube-url:
+Suora lataus YouTube url:
 Lisää jonoon
 Sisällytä tekstitykset
 ladata
@@ -152,14 +152,14 @@ Ohjauksen lisäasetukset
 Laulunjakajatila:
 Käytä L-R/L+R
 Käytä DNN:tä
-Normaalissa MTV-äänessä on kaksi stereokanavaa (L ja R) koodattuina siten, että: L-R on instrumenttiraita, L+R on lauluraita. Näin ollen yksinkertaisesti vähentämällä tai lisäämällä kaksi stereokanavaa, saamme instrumentaali- ja lauluraidan monoäänellä. PiKaraoken sisäänrakennettu DNN-pohjainen (syvä hermoverkko) äänenjakaja käyttää AI-algoritmia instrumentaali- ja lauluäänen jakamiseen jokaisessa stereoraidassa itsenäisesti, jolloin tuloksena on stereo-instrumentaali- ja lauluraitoja.
-Pysäytä Splitter
+Tavallisessa MTV-äänessä on kaksi stereokanavaa (L ja R) koodattuina siten, että: L-R on instrumenttiraita, L+R on lauluraita. Näin ollen yksinkertaisesti vähentämällä tai lisäämällä kaksi stereokanavaa, saamme instrumentaali- ja lauluraidan monoäänellä. PiKaraoken sisäänrakennettu DNN-pohjainen (syvä hermoverkko) äänenjakaja käyttää AI-algoritmia instrumentaali- ja lauluäänen jakamiseen jokaisessa stereoraidassa itsenäisesti, jolloin tuloksena on stereo-instrumentaali- ja lauluraitoja.
+Pysäytä Splitteri
 Käynnistä Splitter uudelleen
 Laulunjakaja (joka tukee sekä DNN-pohjaista että stereovähennystä) toimii erillisenä prosessina taustalla, luoden instrumentaali-/lauluäänitiedoston jokaiselle kappaleelle.
 Synkronoi ääni ja video uudelleen:
 Pysäytä Streamer
 Käynnistä Streamer uudelleen
-Tämä vaikuttaa vain KTV:n pelaamiseen verkkoselaimen kautta. Näytön kaappauksen ja suoratoiston uudelleenkäynnistys parantaa äänen/videon synkronointia ja vähentää myös palvelimen ja selaimen välistä latenssia.
+Tämä vaikuttaa vain KTV:n pelaamiseen verkkoselaimen kautta. Näytön kaappauksen ja suoratoiston käynnistäminen uudelleen parantaa äänen/videon synkronointia ja vähentää myös palvelimen ja selaimen välistä latenssia.
 Päivitä kappalelista:
 Skannaa kappalehakemisto uudelleen
 Sinun pitäisi tehdä tämä vain, jos kopioit tiedostot manuaalisesti lataushakemistoon PiKaraoken ollessa käynnissä.
@@ -170,11 +170,11 @@ Tämä yllä oleva päivityslinkki saattaa epäonnistua, jos sinulla ei ole asia
 Sammuttaa
 Älä vain vedä pistokkeesta! Sammuta aina palvelin kunnolla tietojen vioittumisen välttämiseksi.
 Lopeta PiKaraoke
-Käynnistä kone uudelleen
+Käynnistä järjestelmä uudelleen
 Sammutusjärjestelmä
-Muut
+muu
 Laajenna Raspberry Pi -tiedostojärjestelmää
-Jos asensit juuri valmiiksi rakennetun pikaraoke pi -kuvan ja SD-korttisi on suurempi kuin 4 Gt, saatat haluta laajentaa tiedostojärjestelmää hyödyntääksesi jäljellä olevan tilan. Sinun tarvitsee tehdä tämä vain kerran. Tämä käynnistää järjestelmän uudelleen.
+Jos asensit juuri valmiiksi rakennetun PiKaraoke pi -kuvan ja SD-korttisi on suurempi kuin 4 Gt, saatat haluta laajentaa tiedostojärjestelmää hyödyntääksesi jäljellä olevan tilan. Sinun tarvitsee tehdä tämä vain kerran. Tämä käynnistää järjestelmän uudelleen.
 Poista järjestelmänvalvojatila käytöstä
 Ota järjestelmänvalvojatila käyttöön
 kirjautua ulos
@@ -185,7 +185,7 @@ Vaihda kieltä
 Valitse kieli
 Järjestelmän kieli
 Nykyinen järjestelmän kieli:
-Tämä muuttaa PiKaraoke-taustajärjestelmän kielen, joka näytetään TV-ruudulla; Lisäksi jokainen yhteyden muodostava käyttäjä voi myös vaihtaa oman verkkokäyttöliittymänsä kielen oikean ylävalikon maapallo-painikkeesta.
+Tämä muuttaa PiKaraoke-taustajärjestelmän kielen, joka näytetään TV-ruudulla; Lisäksi jokainen yhteyden muodostava käyttäjä voi myös vaihtaa oman Web-käyttöliittymänsä kielen oikean ylävalikon maapallo-painikkeesta.
 Lataus suoritettu onnistuneesti!
 Lataus epäonnistui!
 Kappale lisätty jonoon!
@@ -195,3 +195,11 @@ Järjestelmätiedot ja asetukset
 Eri kappaleilla on usein eri äänenvoimakkuus. Äänenvoimakkuuden normalisoinnin ottaminen käyttöön suorittaa ensin <i>ffmpeg</i>-komennon, joka laskee kappaleen yleisen äänenvoimakkuuden ja säätää automaattisesti soittimen äänenvoimakkuutta niin, että jokainen kappale kuulostaa yhtä kovalta.
 Kappalekirjaston latauspolku
 Kappaleiden kokonaismäärä
+Näytä/piilota tekstitys
+Muuta nopeutta
+Voit laulaa kappaleen nopeammin tai hitaammin muuttamalla toistonopeudeksi 0,8x 1,2x käyttämällä nopeuden ohjauspalkkia; muuta toistonopeutta napsauttamalla nopeusarvoa muuttaaksesi.
+Napsauta palauttaaksesi toistonopeuden 1x
+Napsauta asettaaksesi toistonopeuden
+Napsauta nollataksesi näppäimen/sävelkorkeuden
+Reset Key
+Nollaa nopeus

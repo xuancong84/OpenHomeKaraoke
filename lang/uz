@@ -9,11 +9,11 @@ Element navbatga muvaffaqiyatli koʻchirildi:
 Navbat ichidagi elementni ko‘chirishda xatolik yuz berdi:
 Navbatga koʻchirildi:
 Navbatda pastga siljishda xatolik yuz berdi:
-Navbatga koʻtarildi:
-Navbatda yuqoriga koʻtarilishda xatolik yuz berdi:
+Navbatga koʻchirildi:
+Navbatda yuqoriga o'tishda xatolik yuz berdi:
 Navbatdan oʻchirildi:
 Navbatdan oʻchirishda xatolik yuz berdi:
-Yuklash boshlandi:
+Yuklab olish boshlandi:
 Tugallangach, u navbatga qo'shiladi.
 Tugallangach, u "mavjud qo'shiqlar" ro'yxatida paydo bo'ladi.
 Xato: Bu qoʻshiqni oʻchirib boʻlmadi, chunki u joriy navbatda:
@@ -21,7 +21,7 @@ Qo'shiq o'chirildi:
 Xato: qo'shiq parametri ko'rsatilmagan!
 Xato: Bu qo‘shiqni tahrirlab bo‘lmadi, chunki u hozir ijro etilmoqda:
 Qo'shiq faylini tahrirlash
-Fayl nomini o‘zgartirishda xatolik: “%s” dan “%s”ga. Fayl nomi allaqachon mavjud.
+Fayl nomini oʻzgartirishda xatolik: “%s” dan “%s”ga. Fayl nomi allaqachon mavjud.
 Nomi o‘zgartirilgan fayl: “%s” dan “%s”ga
 Xato: fayl nomi parametrlari belgilanmagan!
 Noma'lum
@@ -29,25 +29,25 @@ Yugurish
 To'xtatildi
  (faqat CPU)
  (GPU yoqilgan)
-youtube-dl yangilanmoqda! Bir-ikki daqiqa kerak...
+youtube-dl yangilanmoqda! Bir-ikki daqiqa kerak ...
 Sizda youtube-dl-ni yangilash uchun ruxsat yo'q
-Oʻchirish uchun ruxsatingiz yoʻq
+Oʻchirishga ruxsatingiz yoʻq
 PiKaraoke-ni hozir tark eting!
 Chiqish uchun ruxsatingiz yo‘q
 Tizim hozir o'chirilmoqda!
-Oʻchirish uchun ruxsatingiz yoʻq
+Oʻchirishga ruxsatingiz yoʻq
 Endi tizim qayta ishga tushirilmoqda!
-Qayta ishga tushirishga ruxsatingiz yo'q
+Qayta ishga tushirish uchun ruxsatingiz yo'q
 Fayl tizimini kengaytirish va tizimni hozir qayta ishga tushirish!
-Raspberry pi qurilmalarida fsni kengaytirib bo'lmaydi!
-Fayl tizimining oʻlchamini oʻzgartirishga ruxsatingiz yoʻq
+Malinali bo'lmagan pi qurilmalarida fsni kengaytirib bo'lmaydi!
+Sizda fayl tizimining oʻlchamini oʻzgartirishga ruxsatingiz yoʻq
 Youtube-dl yo'li topilmadi!
 VLC yo'li topilmadi!
 omxplayer yo'li topilmadi!
 Yuklab olish yo'lini yaratish:
 Wi-Fi/tarmoq ulanmagan. 10 soniyadan keyin yopiladi...
 Qo'shiqlarni tanlash uchun QR ni skanerlang yoki ulaning
-Televizorni ko'rsatish uchun ulaning
+Televizor ekrani uchun ulaning
 Toʻliq ekranga oʻtish uchun F tugmasini bosing
 PiKaraoke-dan chiqish uchun ESC tugmasini bosing
 RaspiWifiConfig sozlash rejimi aniqlandi!
@@ -57,7 +57,7 @@ Keyingisi:
 Qoʻshilgan:
 Hozir ijro etilmoqda:
 Administrator rejimi berildi!
-Ovozni kechiktirishni oshirish sizga keyingi jumlani kuylashdan oldin matnni o'qish uchun ko'proq vaqt beradi.
+Ovozni kechiktirishni oshirish sizga keyingi jumlani kuylashdan oldin matnlarni o'qish uchun ko'proq vaqt beradi.
 Subtitr kechikishini kamaytirish keyingi jumlani kuylashdan oldin matnlarni o'qish uchun ko'proq vaqt beradi.
 Yarim ohang yarim qadam sifatida ham tanilgan. Bu klassik Gʻarb musiqasida qoʻllaniladigan eng kichik interval boʻlib, oktavaning oʻn ikkidan biriga yoki yarim tonga teng.
 DNN-ga asoslangan vokal splitter yoqilgan. PiKaraoke PyTorch-dan (Facebook tomonidan) chuqur neyron tarmoqni ishga tushirish uchun har bir trekda instrumental va vokal tovushlarni ajratib, stereo tovushni keltirib chiqaradi.
@@ -67,7 +67,7 @@ Aralashgan
 Ovoz
 Kalitni o'zgartirish
 Hozir hech narsa oʻynamayapti.
-Hech qanday qoʻshiq navbatga qoʻyilmagan.
+Hech qanday qo'shiq navbatga qo'yilmagan.
 Bu qo'shiq siz qo'shmagan. Haqiqatan ham bu trekni qayta ishga tushirmoqchimisiz?
 Bu qo'shiq siz qo'shmagan. Haqiqatan ham bu trekni o‘tkazib yubormoqchimisiz?
 O'yinchi nazorati
@@ -75,7 +75,7 @@ Hozir ijro etilmoqda
 Keyingi qo'shiq
 Izlash:
 Audio kechikish (sek)
-Subtitr kechikishi (soniya)
+Subtitr kechikishi (sek.)
 Qo'shiqni qayta ishga tushirish
 Oʻynatish/toʻxtatib turish
 Joriy qo‘shiqni o‘tkazib yuborish
@@ -112,14 +112,14 @@ Navbat boʻsh
 Navbat
 Oʻchirish
 Mahalliy kutubxonada mavjud qo'shiqlar
-Navbatga qoʻshilgan qoʻshiq:
+Navbatga qo'shilgan qo'shiq:
 Qo'shiq allaqachon navbatda:
-Qidiruv / Yangi qo'shish
+Qidirish / Yangisini qo'shish
 Qidirmoq
 Navbat
 Karaoke bo'lmagan o'yinlarni qo'shing
 Murakkab
-Mavjud qo'shiqlarni qidirish uchun qo'shiqni (nom/ijodkor) kiriting va uni navbatga qo'shish uchun "Navbat" tugmasini bosing.
+Mavjud qo'shiqlarni qidirish uchun qo'shiqni (nom/ifachi) kiriting va uni navbatga qo'shish uchun "Navbat" tugmasini bosing.
 Agar qo'shiq "Mavjud qo'shiqlar" ochiladigan ro'yxatida ko'rinmasa, uni Youtube-da topish uchun "Qidirish" tugmasini bosing.
 YouTube url-ni to'g'ridan-to'g'ri yuklab olish:
 Navbatga qo'shish
@@ -130,7 +130,7 @@ uchun qidiruv natijalari
 Ko'proq natijalarni ko'rsatish uchun ochiladigan menyuni bosing
 Havola:
 Mavjud qo'shiqlar
-Ushbu qurilmadan foydalanayotgan shaxsning ismini oʻzgartirmoqchimisiz? Bu navbatdagi qoʻshiqlar yonida koʻrsatiladi. Hozirgi:
+Ushbu qurilmadan foydalanadigan odamning ismini o'zgartirmoqchimisiz? Bu navbatdagi qoʻshiqlar yonida koʻrsatiladi. Hozirgi:
 Joriy foydalanuvchi
 Sozlamalar
 PiKaraoke
@@ -144,7 +144,7 @@ Do'stingiz bilan baham ko'rish uchun qulay URL QR kodi:
 OS
 Diskdan foydalanish
 Xotira
-Ekran tasviri
+Ekranni suratga olish
 Vokal ajratuvchi
 Youtube-dl (yt-dlp) versiyasi
 PiKaraoke versiyasi
@@ -152,14 +152,14 @@ Kengaytirilgan boshqaruv parametrlari
 Vokal splitter rejimi:
 L-R/L+R dan foydalaning
 DNN dan foydalaning
-Standart MTV audiosi ikkita stereo kanalga ega (L va R) shunday kodlangan: L-R - asbob treki, L+R - vokal trek. Shunday qilib, ikkita stereo kanalni oddiygina ayirish yoki qo'shish orqali biz mono tovushda instrumental va vokal trekni olishimiz mumkin. PiKaraoke-ning o'rnatilgan DNN-ga asoslangan (chuqur neyron tarmog'i) vokal splitteri AI algoritmidan foydalanib, har bir stereo trekda instrumental va vokal tovushni mustaqil ravishda ajratib turadi, natijada stereo instrumental va vokal treklar paydo bo'ladi.
+Standart MTV audiosi ikkita stereo kanalga ega (L va R) shunday kodlangan: L-R - asbob treki, L+R - vokal trek. Shunday qilib, ikkita stereo kanalni oddiygina ayirish yoki qo'shish orqali biz mono tovushda instrumental va vokal trekni olishimiz mumkin. PiKaraoke-ning o'rnatilgan DNN-ga asoslangan (chuqur neyron tarmog'i) vokal splitteri AI algoritmidan foydalanib, har bir stereo trekdagi instrumental va vokal tovushlarni mustaqil ravishda ajratib turadi, natijada stereo instrumental va vokal treklar paydo bo'ladi.
 Splitterni to'xtating
 Splitterni qayta ishga tushiring
 Vokal splitter (ham DNN-ga asoslangan, ham stereo chiqarishni qo'llab-quvvatlaydi) fonda alohida jarayon sifatida ishlaydi va har bir qo'shiq uchun instrumental/vokal audio faylini yaratadi.
 Audio va videoni qayta sinxronlash:
 Streamerni toʻxtating
 Streamerni qayta ishga tushiring
-Bu faqat veb-brauzer orqali KTV o'ynashga ta'sir qiladi. Ekranni suratga olish va oqimlashni qayta ishga tushirish audio/video sinxronizatsiyasini yaxshilaydi, shuningdek, server va brauzer o‘rtasidagi kechikishni kamaytiradi.
+Bu faqat veb-brauzer orqali KTV o'ynashga ta'sir qiladi. Ekranni suratga olish va oqimni qayta ishga tushirish audio/video sinxronizatsiyasini yaxshilaydi, shuningdek, server va brauzer o‘rtasidagi kechikishni kamaytiradi.
 Qo'shiqlar ro'yxatini yangilang:
 Qo'shiq katalogini qayta skanerlash
 Buni faqat PiKaraoke ishlayotgan vaqtda fayllarni yuklab olish katalogiga qo'lda ko'chirgan bo'lsangizgina qilishingiz kerak.
@@ -174,7 +174,7 @@ Tizimni qayta ishga tushirish
 O'chirish tizimi
 Boshqa
 Raspberry Pi fayl tizimini kengaytiring
-Agar siz oldindan o'rnatilgan pikaraoke pi tasvirini o'rnatgan bo'lsangiz va SD-kartangiz 4 Gb dan katta bo'lsa, qolgan joydan foydalanish uchun fayl tizimini kengaytirishni xohlashingiz mumkin. Buni faqat bir marta qilishingiz kerak. Bu tizimni qayta ishga tushiradi.
+Agar siz oldindan o'rnatilgan PiKaraoke pi tasvirini o'rnatgan bo'lsangiz va SD-kartangiz 4 Gb dan katta bo'lsa, qolgan joydan foydalanish uchun fayl tizimini kengaytirishni xohlashingiz mumkin. Buni faqat bir marta qilishingiz kerak. Bu tizimni qayta ishga tushiradi.
 Administrator rejimini o'chiring
 Administrator rejimini yoqing
 chiqish
@@ -192,6 +192,14 @@ Qo'shiq navbatga qo'shildi!
 Qo‘shiqni navbatga qo‘yib bo‘lmadi!
 Tizim ma'lumotlari va sozlamalari
 Ovozni normallashtirish
-Turli xil qo'shiqlar ko'pincha har xil hajmga ega. Ovoz balandligini normallashtirishni yoqish birinchi navbatda qo'shiqning global hajmini hisoblash uchun <i>ffmpeg</i>ni ishga tushiradi va har bir qo'shiq bir xil darajada baland bo'lishi uchun o'yinchi ovozini avtomatik ravishda sozlaydi.
+Turli xil qo'shiqlar ko'pincha har xil hajmga ega. Ovoz balandligini normallashtirishni yoqish birinchi navbatda qo'shiqning global hajmini hisoblash uchun <i>ffmpeg</i>ni ishga tushiradi va har bir qo'shiq bir xil darajada baland bo'lishi uchun o'yinchi ovozini avtomatik ravishda moslashtiradi.
 Qo'shiq kutubxona yuklab olish yo'li
 Qo'shiqlarning umumiy soni
+Subtitrni ko'rsatish/yashirish
+Tezlikni o'zgartirish
+Tezlik trek paneli yordamida ijro tezligini 0,8x dan 1,2x gacha o'zgartirish orqali qo'shiqni tezroq yoki sekinroq kuylashingiz mumkin; boshqa ijro tezligi uchun o'zgartirish uchun tezlik qiymatini bosing.
+Ijro tezligini 1x ga tiklash uchun bosing
+Ijro tezligini o'rnatish uchun bosing
+Tugmani/pitchni tiklash uchun bosing
+Qayta tiklash kaliti
+Tezlikni tiklash

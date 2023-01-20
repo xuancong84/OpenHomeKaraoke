@@ -56,11 +56,11 @@ Pēc tam norādiet pārlūkprogrammu uz: '%s://%s%s' un izpildiet norādījumus.
 Nākošais:
 Pievienoja:
 Tagad spēlē:
-Administratora režīms ir piešķirts!
+Administrēšanas režīms ir piešķirts!
 Palielināta audio aizkave dos jums vairāk laika, lai lasītu dziesmu tekstus pirms nākamā teikuma izdziedāšanas.
-Samazinot subtitru aizkavi, jums būs vairāk laika lasīt dziesmu tekstus pirms nākamā teikuma izdziedāšanas.
+Subtitru aizkaves samazināšana dos jums vairāk laika, lai lasītu dziesmu tekstus pirms nākamā teikuma izdziedāšanas.
 Pustonis ir pazīstams arī kā pussolis. Tas ir mazākais klasiskajā Rietumu mūzikā izmantotais intervāls, kas vienāds ar oktāvas divpadsmito daļu vai pustoni.
-Ir iespējots uz DNN balstīts balss sadalītājs. PiKaraoke izmanto PyTorch (no Facebook), lai palaistu dziļu neironu tīklu, lai sadalītu instrumentālo un vokālo skaņu katrā ierakstā, radot stereo skaņu.
+Ir iespējots DNN balss sadalītājs. PiKaraoke izmanto PyTorch (no Facebook), lai palaistu dziļu neironu tīklu, lai sadalītu instrumentālo un vokālo skaņu katrā ierakstā, radot stereo skaņu.
 Spēlētāja vadība
 Mūzika
 Jaukti
@@ -102,7 +102,7 @@ dziesmas
 tiek rādīts <b>{start}–{end}</b> {record_name}, kopā <b>{total}</b> {record_name}
 atrasts <b>{found}</b> {record_name}, tiek rādīts <b>{sākt}–{end}</b> {record_name}
 Rediģēt dziesmu
-Pāriet rindā uz augšu
+Pārvietoties rindā uz augšu
 Pārvietojieties uz leju rindā
 Vai tiešām vēlaties dzēst no rindas
 Vai tiešām vēlaties notīrīt VISU rindu? Lai turpinātu, ierakstiet “OK”.
@@ -158,7 +158,7 @@ Restartējiet Splitter
 Balss sadalītājs (kas atbalsta gan uz DNN balstītu, gan stereo atņemšanu) darbojas kā atsevišķs process fonā, ģenerējot instrumentālo/vokālo audio failu katrai dziesmai.
 Atkārtoti sinhronizējiet audio un video:
 Apturēt Streamer
-Restartējiet Streamer
+Restartējiet programmu Streamer
 Tas ietekmē tikai KTV atskaņošanu, izmantojot tīmekļa pārlūkprogrammu. Ekrāna tveršanas un straumēšanas restartēšana uzlabo audio/video sinhronizāciju, kā arī samazina latentumu starp serveri un pārlūkprogrammu.
 Atsvaidziniet dziesmu sarakstu:
 Atkārtoti skenēt dziesmu direktoriju
@@ -174,7 +174,7 @@ Restartējiet sistēmu
 Izslēgšanas sistēma
 Cits
 Paplašiniet Raspberry Pi failu sistēmu
-Ja tikko instalējāt iepriekš iebūvēto pikaraoke pi attēlu un jūsu SD karte ir lielāka par 4 GB, iespējams, vēlēsities paplašināt failu sistēmu, lai izmantotu atlikušo vietu. Jums tas jādara tikai vienu reizi. Tādējādi sistēma tiks restartēta.
+Ja tikko instalējāt iepriekš izveidoto PiKaraoke pi attēlu un jūsu SD karte ir lielāka par 4 GB, iespējams, vēlēsities paplašināt failu sistēmu, lai izmantotu atlikušo vietu. Jums tas jādara tikai vienu reizi. Tādējādi sistēma tiks restartēta.
 Atspējot administratora režīmu
 Iespējot administratora režīmu
 izlogoties
@@ -195,3 +195,11 @@ Skaļuma normalizēšana
 Dažādām dziesmām bieži ir atšķirīgs skaļums. Iespējojot skaļuma normalizēšanu, vispirms tiks palaists <i>ffmpeg</i>, lai aprēķinātu dziesmas kopējo skaļumu un automātiski pielāgotu atskaņotāja skaļumu, lai katra dziesma skanētu vienlīdz skaļi.
 Dziesmu bibliotēkas lejupielādes ceļš
 Kopējais dziesmu skaits
+Rādīt/slēpt subtitrus
+Mainīt ātrumu
+Varat dziedāt dziesmu ātrāk vai lēnāk, mainot atskaņošanas ātrumu uz 0,8x līdz 1,2x, izmantojot ātruma kursorjoslu; lai iegūtu citu atskaņošanas ātrumu, noklikšķiniet uz ātruma vērtības, lai to mainītu.
+Noklikšķiniet, lai atiestatītu atskaņošanas ātrumu uz 1x
+Noklikšķiniet, lai iestatītu atskaņošanas ātrumu
+Noklikšķiniet, lai atiestatītu taustiņu/soli
+Atiestatīšanas atslēga
+Atiestatīt ātrumu

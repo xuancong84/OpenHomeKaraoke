@@ -2,7 +2,7 @@ basa Sunda
 Sandi admin lepat!
 Kaluar tina mode admin!
 Ditambahkeun %s lagu acak
-Kahabisan lagu!
+Habisan lagu!
 Dibersihkeun antrian!
 Kasalahan mindahkeun item dina antrian: invalid-argument
 Barang hasil dipindahkeun kana antrian:
@@ -10,7 +10,7 @@ Kasalahan nalika mindahkeun item dina antrian:
 Dipindahkeun ka handap dina antrian:
 Kasalahan turun dina antrian:
 Dipindahkeun dina antrian:
-Kasalahan naek dina antrian:
+Kasalahan dina antrian:
 Dihapus tina antrian:
 Kasalahan ngahapus tina antrian:
 Unduh dimimitian:
@@ -23,7 +23,7 @@ Kasalahan: Teu bisa ngédit ieu lagu sabab keur diputerkeun:
 Lagu File Edit
 Kasalahan Ngaganti ngaran koropak: '%s' jadi '%s'. Ngaran koropak geus aya.
 Ngaran koropak diganti: '%s' jadi '%s'
-Kasalahan: Henteu aya parameter nami file anu ditunjuk!
+Kasalahan: Henteu aya parameter nami file anu disebatkeun!
 Teu dipikanyaho
 Lumpat
 Dieureunkeun
@@ -39,7 +39,7 @@ Anjeun teu gaduh idin pikeun mareuman
 Rebooting sistem ayeuna!
 Anjeun teu gaduh idin pikeun Reboot
 Ngalegaan sistem file sareng sistem rebooting ayeuna!
-Teu tiasa ngagedekeun fs dina alat pi non-raspberry!
+Teu tiasa dilegakeun fs dina alat pi non-raspberry!
 Anjeun teu gaduh idin pikeun ngatur ukuran filesystem
 jalur Youtube-dl teu kapanggih!
 jalur VLC teu kapanggih!
@@ -59,7 +59,7 @@ Ayeuna maén:
 Modeu admin dipasihkeun!
 Ngaronjatkeun reureuh audio bakal masihan anjeun langkung waktos maca lirik sateuacan nyanyian kalimat salajengna.
 Ngurangan reureuh subjudul bakal masihan anjeun langkung waktos maca lirik sateuacan nyanyian kalimat salajengna.
-Semitone ogé katelah satengah léngkah. Ieu mangrupikeun interval pangleutikna anu dianggo dina musik Barat klasik, sami sareng dua belas oktaf atanapi satengah nada.
+Semitone ogé katelah satengah léngkah. Interval pangleutikna dipaké dina musik Barat klasik, sarua jeung dua belas hiji oktaf atawa satengah nada.
 Splitter vokal basis DNN diaktipkeun. PiKaraoke nganggo PyTorch (ku Facebook) pikeun ngajalankeun jaringan saraf jero pikeun ngabagi sora instrumental sareng vokal dina unggal lagu anu nyababkeun sora stereo.
 Kontrol pamuter
 Musik
@@ -69,19 +69,19 @@ Robah Key
 Henteu aya anu maén ayeuna.
 Taya lagu anu ngantri.
 lagu ieu teu ditambahkeun ku anjeun. Naha anjeun yakin hoyong ngabalikan deui lagu ieu?
-lagu ieu teu ditambahkeun ku anjeun. Naha anjeun yakin hoyong ngantunkeun lagu ieu?
+lagu ieu teu ditambahkeun ku anjeun. Naha anjeun yakin yén anjeun hoyong ngalangkungan lagu ieu?
 Kontrol pamuter
 Ayeuna Maén
 Lagu salajengna
 Milarian Ka:
 Tunda Audio (detik)
-Tunda Subjudul (detik)
+Tunda subjudul (detik)
 Balikan deui Lagu
 Play / Reureuh
 Skip Lagu Ayeuna
 Volume Turun
 Setel Jilid
-Jilid ka luhur
+Volume Up
 Turunkeun Tunda Subjudul
 Setel Tunda Subjudul
 Ningkatkeun Tunda Subjudul
@@ -152,7 +152,7 @@ Pilihan Control Advanced
 Mode pamisah vokal:
 Paké L-R/L+R
 Paké DNS
-Audio MTV standar gaduh dua saluran stereo (L sareng R) disandikeun ku cara sapertos: L-R nyaéta lagu instrumen, L+R nyaéta lagu vokal. Ku kituna, ku saukur ngurangan atawa nambahkeun dua saluran stereo, urang bisa meunangkeun lagu instrumental jeung vokal dina sora mono. PiKaraoke's built-in DNN basis (jaringan saraf jero) splitter vokal ngagunakeun algoritma AI pikeun pamisah sora instrumental jeung vokal dina unggal lagu stereo sacara mandiri ngahasilkeun lagu instrumental jeung vokal stereo.
+Audio MTV standar gaduh dua saluran stereo (L sareng R) disandikeun ku cara sapertos: L-R nyaéta lagu instrumen, L+R nyaéta lagu vokal. Ku kituna, ku saukur ngurangan atawa nambahkeun dua saluran stereo, urang bisa meunangkeun lagu instrumental jeung vokal dina sora mono. PiKaraoke diwangun-di basis DNN (jaringan saraf jero) splitter vokal ngagunakeun algoritma AI pikeun ngabagi sora instrumental jeung vokal dina unggal lagu stereo sacara mandiri ngahasilkeun lagu instrumental jeung vokal stereo.
 Eureun Splitter
 Balikan deui Splitter
 Splitter vokal (anu ngarojong duanana basis DNN jeung pangurangan stereo) ngajalankeun salaku prosés misah di latar tukang, generating instrumental / file audio vokal pikeun unggal lagu.
@@ -162,10 +162,10 @@ Balikan deui Streamer
 Ieu ngan mangaruhan maén KTV via web browser. Balikan deui layar-capture-and-streaming ningkatkeun sinkronisasi audio/video, éta ogé ngirangan latency antara server sareng browser.
 Refresh daptar lagu:
 Rescan diréktori lagu
-Anjeun ngan kedah ngalakukeun ieu upami anjeun nyalin file sacara manual kana diréktori undeuran nalika PiKaraoke dijalankeun.
+Anjeun ngan kedah ngalakukeun ieu upami anjeun nyalin file sacara manual ka diréktori undeuran nalika PiKaraoke dijalankeun.
 Pembaruan
 Upami undeuran atanapi pamilarian lirén damel, ngapdet youtube-dl sigana bakal ngalereskeunana. Versi anu dipasang ayeuna nyaéta:
-Apdet youtube-dl
+Ngamutahirkeun youtube-dl
 Tautan apdet ieu di luhur tiasa gagal upami anjeun henteu ngagaduhan idin file anu leres. Pariksa log PiKaraoke pikeun kasalahan.
 Pareuman
 Ulah ngan narik colokan! Salawasna mareuman server anjeun leres pikeun nyegah korupsi data.
@@ -174,7 +174,7 @@ Reboot System
 Sistem Pareum
 Lain
 Kembangkeun sistem file Raspberry Pi
-Upami anjeun nembé dipasang gambar pikaraoke anu tos diwangun sareng kartu SD anjeun langkung ageung tibatan 4GB, anjeun tiasa ngalegaan sistem file pikeun ngamangpaatkeun rohangan anu sésana. Anjeun ngan ukur kedah ngalakukeun ieu sakali. Ieu bakal reboot sistem.
+Upami anjeun nembé dipasang gambar PiKaraoke pi anu tos diwangun sareng kartu SD anjeun langkung ageung tibatan 4GB, anjeun tiasa ngalegaan sistem file pikeun ngamangpaatkeun rohangan anu sésana. Anjeun ngan ukur kedah ngalakukeun ieu sakali. Ieu bakal reboot sistem.
 Pareuman mode admin
 Aktipkeun mode admin
 kaluar
@@ -195,3 +195,11 @@ Normalisasi Volume
 Lagu anu béda sering gaduh volume anu béda. Aktipkeun normalisasi volume bakal mimiti ngajalankeun <i>ffmpeg</i> pikeun ngitung volume global hiji lagu sareng otomatis nyaluyukeun volume pamuter supados unggal lagu disada sami nyaring.
 Jalur download perpustakaan lagu
 Jumlah total lagu
+Témbongkeun / Sumputkeun Subjudul
+Robah Speed
+Anjeun tiasa nyanyi lagu gancang atawa laun ku cara ngarobah speed playback kana 0.8x mun 1.2x ngagunakeun speed trackbar; pikeun speed playback séjén, klik dina nilai speed robah.
+Klik pikeun ngareset laju playback ka 1x
+Klik pikeun ngeset speed playback
+Klik pikeun ngareset konci / pitch
+Reset konci
+Reset Speed

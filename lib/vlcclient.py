@@ -260,7 +260,7 @@ class VLCClient:
 		try:
 			if xml is None:
 				xml = self.get_status()
-			return {key: self.cast_float(self.get_val_xml(xml, key)) for key in ['position', 'length', 'volume', 'time', 'audiodelay', 'state', 'subtitledelay']}
+			return {key: self.cast_float(self.get_val_xml(xml, key)) for key in ['position', 'length', 'volume', 'time', 'audiodelay', 'state', 'subtitledelay', 'rate']}
 		except:
 			return {}
 
@@ -311,6 +311,9 @@ class VLCClient:
 
 	def vol_set(self, value):
 		return self.command(f"volume&val={value}")
+
+	def playspeed_set(self, value):
+		return self.command(f"rate&val={value}")
 
 	def kill(self):
 		try:

@@ -7,7 +7,7 @@ Vymazána fronta!
 Chyba při přesunu položky do fronty: invalid-argument
 Položka byla úspěšně přesunuta do fronty:
 Chyba při přesunu položky ve frontě:
-Přesunuto dolů ve frontě:
+Přesunuto ve frontě níže:
 Chyba při přesunu dolů ve frontě:
 Posunuto ve frontě:
 Chyba při přesunu ve frontě:
@@ -15,7 +15,7 @@ Smazáno z fronty:
 Chyba při mazání z fronty:
 Stahování zahájeno:
 Po dokončení bude přidán do fronty.
-Po dokončení se objeví v seznamu „dostupných skladeb“.
+Po dokončení se objeví v seznamu "dostupných skladeb".
 Chyba: Tuto skladbu nelze smazat, protože je v aktuální frontě:
 Skladba smazána:
 Chyba: Nebyl zadán žádný parametr skladby!
@@ -41,13 +41,13 @@ Nemáte oprávnění k restartování
 Rozšiřování souborového systému a restartování systému nyní!
 Nelze rozšířit fs na jiných zařízeních než malina pi!
 Nemáte oprávnění ke změně velikosti souborového systému
-Cesta k Youtube-dl nebyla nalezena!
+Cesta Youtube-dl nebyla nalezena!
 Cesta VLC nebyla nalezena!
 cesta k omxplayeru nebyla nalezena!
 Vytvoření cesty ke stažení:
 Wifi/síť není připojena. Vypínání za 10s...
 Chcete-li vybrat skladby, naskenujte QR kód nebo se připojte
-Chcete-li zobrazit TV, připojte k
+Chcete-li zobrazit TV, připojte se k
 Stisknutím F přepnete na celou obrazovku
 Stiskněte ESC pro ukončení PiKaraoke
 Byl zjištěn režim nastavení RaspiWifiConfig!
@@ -105,7 +105,7 @@ Upravit skladbu
 Posuňte se ve frontě nahoru
 Posuňte se ve frontě dolů
 Opravdu chcete smazat z fronty?
-Opravdu chcete vymazat CELOU frontu? Pokračujte zadáním „OK“.
+Opravdu chcete vymazat CELOU frontu? Chcete-li pokračovat, zadejte „OK“.
 Přidejte 3 náhodné skladby
 Vymazat vše
 Fronta je prázdná
@@ -120,8 +120,8 @@ Fronta
 Zahrňte zápasy bez karaoke
 Pokročilý
 Zadejte skladbu (název/interpreta) pro vyhledání dostupných skladeb a kliknutím na 'Fronta' ji přidejte do fronty.
-Pokud se skladba v rozevíracím seznamu „Dostupné skladby“ nezobrazuje, klikněte na „Hledat“ a najděte ji na Youtube.
-Adresa URL pro přímé stažení z YouTube:
+Pokud se skladba nezobrazuje v rozevírací nabídce „Dostupné skladby“, klikněte na „Hledat“ a najděte ji na YouTube.
+URL pro přímé stažení z YouTube:
 Přidat do fronty
 Zahrnout titulky
 Stažení
@@ -138,7 +138,7 @@ Jste si jisti, že chcete skončit?
 Opravdu chcete vypnout?
 Opravdu chcete restartovat?
 Opravdu chcete aktualizovat Youtube-dl právě teď? Aktuální a čekající stahování může selhat.
-Opravdu chcete rozšířit souborový systém? Tím se restartuje vaše malina pi.
+Opravdu chcete rozšířit souborový systém? Tím se vaše raspberry pi restartuje.
 Informace
 Praktický URL QR kód pro sdílení s kamarádem:
 OS
@@ -159,11 +159,11 @@ Vokální splitter (který podporuje odečítání založené na DNN i stereo) b
 Znovu synchronizujte zvuk a video:
 Zastavit Streamer
 Restartujte Streamer
-To se týká pouze přehrávání KTV prostřednictvím webového prohlížeče. Restartování screen-capture-and-streaming zlepšuje audio/video synchronizaci a také snižuje latenci mezi serverem a prohlížečem.
+To má vliv pouze na přehrávání KTV prostřednictvím webového prohlížeče. Restartování screen-capture-and-streaming zlepšuje audio/video synchronizaci a také snižuje latenci mezi serverem a prohlížečem.
 Obnovte seznam skladeb:
-Znovu naskenujte adresář skladeb
+Znovu prohledejte adresář skladeb
 Měli byste to udělat pouze v případě, že jste ručně zkopírovali soubory do adresáře pro stahování, když bylo spuštěno PiKaraoke.
-aktualizace
+Aktualizace
 Pokud stahování nebo vyhledávání přestalo fungovat, aktualizace youtube-dl to pravděpodobně opraví. Aktuální nainstalovaná verze je:
 Aktualizujte youtube-dl
 Tento odkaz na aktualizaci výše může selhat, pokud nemáte správná oprávnění k souboru. Zkontrolujte protokol PiKaraoke, zda neobsahuje chyby.
@@ -174,7 +174,7 @@ Restartovat systém
 Vypínací systém
 jiný
 Rozbalte souborový systém Raspberry Pi
-Pokud jste právě nainstalovali předpřipravený obraz pikaraoke pi a vaše karta SD je větší než 4 GB, možná budete chtít rozšířit systém souborů, abyste využili zbývající místo. Musíte to udělat pouze jednou. Tím se restartuje systém.
+Pokud jste právě nainstalovali předpřipravený obraz PiKaraoke pi a vaše SD karta je větší než 4 GB, možná budete chtít rozšířit souborový systém, abyste využili zbývající místo. Musíte to udělat pouze jednou. Tím se systém restartuje.
 Zakázat režim správce
 Povolit režim správce
 odhlásit se
@@ -182,7 +182,7 @@ přihlásit se
 Systémová informace
 Domov
 Změnit jazyk
-Vyberte jazyk
+Vyberte prosím jazyk
 Systémový jazyk
 Aktuální jazyk systému:
 Tím se změní jazyk backendového systému PiKaraoke, který se zobrazí na televizní obrazovce; navíc každý připojující se uživatel může také změnit svůj příslušný jazyk webového uživatelského rozhraní na tlačítku zeměkoule v nabídce vpravo nahoře.
@@ -192,6 +192,14 @@ Skladba přidána do fronty!
 Skladbu se nepodařilo zařadit do fronty!
 Systémové informace a nastavení
 Normalizace hlasitosti
-Různé písně mají často různou hlasitost. Po povolení normalizace hlasitosti se nejprve spustí <i>ffmpeg</i>, aby se vypočítala celková hlasitost skladby a automaticky se nastaví hlasitost přehrávače tak, aby každá skladba zněla stejně hlasitě.
+Různé skladby mají často různou hlasitost. Po povolení normalizace hlasitosti se nejprve spustí <i>ffmpeg</i>, která vypočítá celkovou hlasitost skladby a automaticky upraví hlasitost přehrávače tak, aby každá skladba zněla stejně hlasitě.
 Cesta ke stažení knihovny písní
 Celkový počet skladeb
+Zobrazit/skrýt titulky
+Změňte rychlost
+Skladbu můžete zpívat rychleji nebo pomaleji změnou rychlosti přehrávání na 0,8x až 1,2x pomocí rychlého trackbaru; pro jinou rychlost přehrávání klikněte na hodnotu rychlosti, kterou chcete změnit.
+Kliknutím obnovíte rychlost přehrávání na 1x
+Kliknutím nastavíte rychlost přehrávání
+Klepnutím resetujte tóninu/výšku tónu
+Resetovací klíč
+Obnovit rychlost

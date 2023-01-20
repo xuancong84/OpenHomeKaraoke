@@ -6,7 +6,7 @@ Rûn út ferskes!
 Ferwiderje de wachtrige!
 Flater by it ferpleatsen fan item yn wachtrige: ûnjildich argumint
 Suksesfol ferpleatst item yn wachtrige:
-Flater by it ferpleatsen fan item binnen wachtrige:
+Flater by it ferpleatsen fan item binnen de wachtrige:
 Nei ûnderen yn wachtrige:
 Flater ferpleatse nei ûnderen yn wachtrige:
 Ferpleatst yn wachtrige:
@@ -22,22 +22,22 @@ Flater: Gjin ferskeparameter oantsjutte!
 Flater: kin dit ferske net bewurkje omdat it op it stuit spile wurdt:
 Song Triem bewurkje
 Flater by it omneamen fan triem: '%s' nei '%s'. Bestânsnamme bestiet al.
-Bestân feroare: '%s' nei '%s'
+Omneamde triem: '%s' nei '%s'
 Flater: gjin triemnammeparameters binne opjûn!
 Ûnbekend
 Te rinnen
 Ophâlden
  (allinich CPU)
  (GPU ynskeakele)
-YouTube-dl bywurkje! Moat in minút as twa duorje ...
+YouTube-dl bywurkje! It moat in minút as twa duorje ...
 Jo hawwe gjin tastimming om youtube-dl te aktualisearjen
 Jo hawwe gjin tastimming om ôf te sluten
 Stopje mei PiKaraoke no!
 Jo hawwe gjin tastimming om te stopjen
 Systeem no ôfslute!
 Jo hawwe gjin tastimming om ôf te sluten
-Systeem no opnij opstarte!
-Jo hawwe gjin tastimming foar Reboot
+System no opnij opstarte!
+Jo hawwe gjin tastimming om te Reboot
 Bestânssysteem útwreidzje en systeem no opnij opstarte!
 Kin fs net útwreidzje op net-raspberry pi-apparaten!
 Jo hawwe gjin tastimming om de grutte fan it triemsysteem te feroarjen
@@ -57,9 +57,9 @@ Folgjende:
 Taheakke troch:
 Spilet no:
 Behearmodus ferliend!
-Tanimmende audiofertraging sil jo mear tiid jaan om teksten te lêzen foardat jo de folgjende sin sjonge.
+Ferheging fan audiofertraging sil jo mear tiid jaan om teksten te lêzen foardat jo de folgjende sin sjonge.
 Ferminderjen fan ûndertitelfertraging sil jo mear tiid jaan om teksten te lêzen foardat jo de folgjende sin sjonge.
-In heale toan wurdt ek wol in heale stap neamd. It is it lytste ynterval dat brûkt wurdt yn klassike westerske muzyk, gelyk oan in tolfde fan in oktaaf ​​of heale toan.
+In heale toan wurdt ek wol in heale stap neamd. It is it lytste ynterval dat brûkt wurdt yn klassike westerske muzyk, gelyk oan in tolfde fan in oktaaf ​​of in heale toan.
 DNN-basearre fokale splitter is ynskeakele. PiKaraoke brûkt PyTorch (troch Facebook) om in djip neuraal netwurk út te fieren om ynstrumintaal en fokaal lûd yn elk spoar te splitsen dat oanlieding is ta stereolûd.
 Spiler kontrôle
 Muzyk
@@ -85,11 +85,11 @@ Folume omheech
 Ferminderje ûndertitelfertraging
 Stel ûndertitelfertraging yn
 Fergrutsje ûndertitelfertraging
-Audio fertraging ferminderje
+Audiofertraging ferminderje
 Audio Delay ynstelle
 Ferheegje Audio Delay
  heale toanen
-Fier jo namme yn. Dit sil ferskine neist de ferskes dy't jo yn 'e wachtrige stean fan dit apparaat.
+Fier jo namme yn. Dit sil ferskine neist de ferskes dy't jo fan dit apparaat yn 'e wachtrige stean.
 Lied tafoege oan de wachtrige:
 Lied al yn 'e wachtrige:
 Sortearje op datum
@@ -127,7 +127,7 @@ Ynklusyf ûndertitels
 Download
 Sykje op YouTube foar
 sykresultaten foar
-Klikje op dropdown om mear resultaten te sjen
+Klik dropdown om mear resultaten te sjen
 Link:
 Beskikbere Songs
 Wolle jo de werjeftenamme feroarje fan de persoan dy't dit apparaat brûkt? Dit sil ferskine neist de wachtrige ferskes. Aktueel:
@@ -142,9 +142,9 @@ Binne jo wis dat jo it triemsysteem útwreidzje wolle? Dit sil jo raspberry pi o
 Ynformaasje
 Handige URL QR-koade om te dielen mei in freon:
 OS
-Skiifgebrûk
+Skiif Gebrûk
 Oantinken
-Screen Capture
+Skermopname
 Vocal Splitter
 Youtube-dl (yt-dlp) ferzje
 PiKaraoke ferzje
@@ -152,21 +152,21 @@ Avansearre kontrôleopsjes
 Vocal splitter modus:
 Brûk L-R/L+R
 Brûk DNN
-Standert MTV audio hat de twa stereokanalen (L en R) kodearre op sa'n manier dat: L-R it ynstrumintspoar is, L+R it fokale spoar is. Sa kinne wy ​​​​troch de twa stereokanalen gewoan ôf te trekken of ta te foegjen, kinne wy ​​​​it ynstrumintale en fokale spoar krije yn monolûd. PiKaraoke's ynboude DNN-basearre (djippe neurale netwurk) fokale splitter brûkt AI-algoritme om ynstrumintaal en fokaal lûd yn elk stereospoar ûnôfhinklik te splitsen, wat resulteart yn stereo-ynstrumintale en fokale spoaren.
+Standert MTV-audio hat de twa stereokanalen (L en R) op sa'n manier kodearre dat: L-R it ynstrumintspoar is, L+R it fokale spoar is. Sa kinne wy ​​​​troch gewoan de twa stereokanalen te subtrahearjen of ta te foegjen, it ynstrumintale en fokale spoar yn monolûd krije. PiKaraoke's ynboude DNN-basearre (djippe neurale netwurk) fokale splitter brûkt AI-algoritme om ynstrumintaal en fokaal lûd yn elk stereospoar ûnôfhinklik te splitsen, wat resulteart yn stereo-ynstrumintale en fokale spoaren.
 Stopje Splitter
 Splitter opnij starte
 De fokale splitter (dy't sawol DNN-basearre as stereo-subtraksje stipet) rint as in apart proses op 'e eftergrûn, en generearret ynstrumintale / fokaal audiobestân foar elk ferske.
 Syngronisearje audio en fideo opnij:
 Stopje Streamer
 Streamer opnij starte
-Dit hat allinich ynfloed op it spieljen fan KTV fia webbrowser. It op 'e nij begjinne fan' e skermopname-en-streaming ferbetteret audio / fideo syngronisaasje, it fermindert ek de latency tusken de tsjinner en de browser.
+Dit hat allinich ynfloed op it spieljen fan KTV fia webbrowser. It opnij starte fan 'e skerm-capture-en-streaming ferbetteret audio / fideo syngronisaasje, it ferminderet ek de latency tusken de server en browser.
 Ferfarskje de ferskelist:
-Fersykje ferskemap opnij
+Rescan ferske triemtafel
 Jo moatte dit allinich dwaan as jo bestannen manuell kopieare nei de downloadmap wylst PiKaraoke draaide.
 Updates
-As downloads of sykopdrachten ophâlde te wurkjen, sil it bywurkjen fan youtube-dl it wierskynlik reparearje. De hjoeddeistige ynstallearre ferzje is:
+As downloads of sykopdrachten ophâlde te wurkjen, sil it bywurkjen fan youtube-dl it wierskynlik reparearje. De hjoeddeistige ynstalleare ferzje is:
 Update youtube-dl
-Dizze fernijingskeppeling hjirboppe kin mislearje as jo gjin goede triemrjochten hawwe. Kontrolearje it PiKaraoke-log foar flaters.
+Dizze fernijingskeppeling hjirboppe kin mislearje as jo gjin goede triemrjochten hawwe. Kontrolearje it PiKaraoke-logboek foar flaters.
 Ofslúte
 Net gewoan de stekker útlûke! Slút jo tsjinner altyd goed ôf om datakorrupsje te foarkommen.
 PiKaraoke ôfslute
@@ -174,7 +174,7 @@ Werstart it systeem
 Shutdown System
 Oar
 Raspberry Pi triemsysteem útwreidzje
-As jo ​​​​krekt de foarboude pikaraoke pi-ôfbylding hawwe ynstalleare en jo SD-kaart is grutter dan 4GB, kinne jo it bestânsysteem útwreidzje om de oerbleaune romte te brûken. Jo moatte dit mar ien kear dwaan. Dit sil it systeem opnij starte.
+As jo ​​​​krekt de foarboude PiKaraoke pi-ôfbylding hawwe ynstalleare en jo SD-kaart is grutter dan 4GB, kinne jo it bestânsysteem útwreidzje om de oerbleaune romte te brûken. Jo moatte dit mar ien kear dwaan. Dit sil it systeem opnij starte.
 Utskeakelje admin modus
 Behearmodus ynskeakelje
 útlogge
@@ -189,9 +189,17 @@ Dit feroaret de taal fan it PiKaraoke backend systeem dat wurdt werjûn op TV sk
 Download mei súkses foltôge!
 Download mislearre!
 Lied tafoege oan de wachtrige!
-It ferske is net slagge!
+It ferske koe net yn wachtrige stean!
 Systeemynfo en ynstellings
 Volume normalization
-Ferskillende ferskes hawwe faak ferskillende folume. It ynskeakeljen fan folumenormalisaasje sil earst <i>ffmpeg</i> útfiere om it globale folume fan in ferske te berekkenjen en it folume fan it spiler automatysk oan te passen sadat elk ferske like heech klinkt.
+Ferskillende lieten hawwe faak ferskillende folume. It ynskeakeljen fan folumenormalisaasje sil earst <i>ffmpeg</i> útfiere om it globale folume fan in ferske te berekkenjen en it folume fan it spiler automatysk oan te passen sadat elk ferske like heech klinkt.
 Paad fan de liedbibliotheek download
 Totaal oantal ferskes
+Undertitel sjen litte / ferbergje
+Feroarje Speed
+Jo kinne it ferske rapper of stadiger sjonge troch de ôfspielsnelheid te feroarjen nei binnen 0,8x nei 1,2x mei de snelheidspoarbalke; foar oare playback snelheid, klik op de snelheid wearde te feroarjen.
+Klikje om de ôfspielsnelheid werom te setten nei 1x
+Klikje om de ôfspielsnelheid yn te stellen
+Klikje om kaai / toanhichte werom te setten
+Kaai weromsette
+Reset Speed

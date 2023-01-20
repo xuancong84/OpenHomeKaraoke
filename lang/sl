@@ -1,12 +1,12 @@
 Slovenščina
-Nepravilno skrbniško geslo!
+Napačno skrbniško geslo!
 Odjavljen iz skrbniškega načina!
 Dodanih %s naključnih skladb
-Zmanjkalo je pesmi!
-Počistili čakalno vrsto!
-Napaka pri premikanju predmeta v čakalno vrsto: neveljaven argument
+Zmanjkalo pesmi!
+Počistil čakalno vrsto!
+Napaka pri premikanju elementa znotraj čakalne vrste: neveljaven-argument
 Element je bil uspešno premaknjen v čakalno vrsto:
-Napaka pri premikanju predmeta v čakalno vrsto:
+Napaka pri premikanju elementa znotraj čakalne vrste:
 Premaknjeno navzdol v čakalni vrsti:
 Napaka pri premikanju navzdol v čakalni vrsti:
 Premaknjeno navzgor v čakalni vrsti:
@@ -15,25 +15,25 @@ Izbrisano iz čakalne vrste:
 Napaka pri brisanju iz čakalne vrste:
 Prenos se je začel:
 Po zaključku bo dodan v čakalno vrsto.
-Po zaključku se bo pojavil na seznamu "razpoložljive pesmi".
-Napaka: Te pesmi ni mogoče izbrisati, ker je v trenutni čakalni vrsti:
+Po zaključku se prikaže na seznamu "razpoložljivih pesmi".
+Napaka: te pesmi ni mogoče izbrisati, ker je v trenutni čakalni vrsti:
 Pesem izbrisana:
-Napaka: ni določen parameter pesmi!
-Napaka: Te pesmi ni mogoče urediti, ker se trenutno predvaja:
+Napaka: parameter pesmi ni določen!
+Napaka: te pesmi ni mogoče urediti, ker se trenutno predvaja:
 Urejanje datoteke pesmi
 Napaka pri preimenovanju datoteke: '%s' v '%s'. Ime datoteke že obstaja.
 Preimenovana datoteka: '%s' v '%s'
-Napaka: ni bil določen noben parameter imena datoteke!
-neznano
-Tek
-Ustavil se
- (samo CPE)
+Napaka: Podani niso bili parametri imena datoteke!
+Neznano
+tek
+ustavil
+ (samo procesor)
  (GPU omogočen)
-Posodabljanje youtube-dl! Trajalo bi minuto ali dve...
-Nimate dovoljenja za posodabljanje youtube-dl
+Posodabljanje youtube-dl! Trajalo bi minuto ali dve ...
+Nimate dovoljenja za posodobitev youtube-dl
 Nimate dovoljenja za izklop
-Zdaj zapustite PiKaraoke!
-Nimate dovoljenja za odpoved
+Zapustite PiKaraoke zdaj!
+Nimate dovoljenja za odstop
 Zaustavitev sistema zdaj!
 Nimate dovoljenja za izklop
 Ponovni zagon sistema zdaj!
@@ -41,157 +41,165 @@ Nimate dovoljenja za ponovni zagon
 Razširitev datotečnega sistema in ponovni zagon sistema zdaj!
 Fs ni mogoče razširiti na napravah, ki niso raspberry pi!
 Nimate dovoljenja za spreminjanje velikosti datotečnega sistema
-Youtube-dl poti ni bilo mogoče najti!
-VLC poti ni bilo mogoče najti!
-Pot omxplayerja ni najdena!
+Youtube-dl poti ni mogoče najti!
+VLC poti ni mogoče najti!
+pot do omxplayerja ni najdena!
 Ustvarjanje poti za prenos:
-Wifi/omrežje ni povezano. Izklop čez 10 s...
-Za izbiro skladb skenirajte QR ali se povežite z
-Za TV zaslon se povežite z
-Pritisnite F, da preklopite na celozaslonski način
+Wifi/omrežje ni povezano. Izklop v 10 s ...
+Za izbiro pesmi skenirajte QR ali se povežite z
+Za TV-prikaz povežite z
+Pritisnite F za preklop na celozaslonski način
 Pritisnite ESC, da zaprete PiKaraoke
-Zaznan je način nastavitve RaspiWifiConfig!
-Povežite drugo napravo/pametni telefon z dostopno točko Wifi: '%s'
-Nato usmerite njegov brskalnik na: '%s://%s%s' in sledite navodilom.
+Zaznan način nastavitve RaspiWifiConfig!
+Povežite drugo napravo/pametni telefon z Wifi AP: '%s'
+Nato usmerite brskalnik na: '%s://%s%s' in sledite navodilom.
 Naslednje:
 dodal:
 Zdaj igra:
-Skrbniški način je odobren!
-Povečanje zakasnitve zvoka vam bo dalo več časa za branje besedil, preden zapojete naslednji stavek.
-Zmanjšanje zakasnitve podnapisov vam bo dalo več časa za branje besedil, preden zapojete naslednji stavek.
-Polton je znan tudi kot pol-korak. To je najmanjši interval, ki se uporablja v klasični zahodni glasbi, enak dvanajstini oktave ali polovici tona.
-Vokalni razdelilnik, ki temelji na DNN, je omogočen. PiKaraoke uporablja PyTorch (od Facebooka) za zagon globoke nevronske mreže za razdelitev instrumentalnega in vokalnega zvoka v vsaki skladbi, kar povzroči stereo zvok.
+Skrbniški način odobren!
+Če povečate zakasnitev zvoka, boste imeli več časa za branje besedila, preden zapojete naslednji stavek.
+Če zmanjšate zakasnitev podnapisov, boste imeli več časa za branje besedila, preden zapojete naslednji stavek.
+Polton je znan tudi kot pol-korak. Je najmanjši interval, ki se uporablja v klasični zahodni glasbi in je enak dvanajstini oktave ali pol tona.
+Vokalni razdelilnik na osnovi DNN je omogočen. PiKaraoke uporablja PyTorch (od Facebooka) za vodenje globoke nevronske mreže za razdelitev instrumentalnega in vokalnega zvoka v vsaki skladbi, kar povzroči stereo zvok.
 Nadzor igralca
 Glasba
 Mešano
 Glas
 Spremeni ključ
 Trenutno se nič ne predvaja.
-Nobena skladba ni v čakalni vrsti.
+Nobena pesem ni v čakalni vrsti.
 Te pesmi niste dodali vi. Ali ste prepričani, da želite znova zagnati to skladbo?
 Te pesmi niste dodali vi. Ali ste prepričani, da želite preskočiti to skladbo?
 Nadzor igralca
 Zdaj igra
 Naslednja pesem
-Išči za:
+Išči do:
 Zakasnitev zvoka (s)
 Zakasnitev podnapisov (s)
 Znova zaženi pesem
-Predvajaj/Pavza
-Preskoči trenutno skladbo
+Predvajaj/Premor
+Preskoči trenutno pesem
 Znižaj glasnost
 Nastavite glasnost
 Povečaj glasnost
 Zmanjšajte zakasnitev podnapisov
-Nastavite zamik podnapisov
-Povečaj zakasnitev podnapisov
+Nastavite zakasnitev podnapisov
+Povečajte zakasnitev podnapisov
 Zmanjšajte zakasnitev zvoka
 Nastavite zakasnitev zvoka
 Povečaj zakasnitev zvoka
  poltoni
-Prosimo vnesite svoje ime. To se bo prikazalo poleg skladb, ki jih postavite v čakalno vrsto iz te naprave.
+Prosim vnesite svoje ime. To bo prikazano poleg skladb, ki jih postavite v čakalno vrsto iz te naprave.
 Pesem dodana v čakalno vrsto:
 Pesem je že v čakalni vrsti:
 Razvrsti po datumu
 Razvrsti po abecedi
-Dodajte »%s« v čakalno vrsto
+V čakalno vrsto dodajte '%s'
 Prebrskaj
 Razvrščeno po 'Datumu'
-Razvrščeno po 'abecednem redu'
+Razvrščeno po 'abecedi'
 pesmi
-prikazuje <b>{start} - {end}</b> {record_name}, skupaj <b>{total}</b> {record_name}
-najdeno <b>{found}</b> {record_name}, prikazano je <b>{start} - {end}</b> {record_name}
+prikaz <b>{start} - {end}</b> {record_name}, skupaj <b>{total}</b> {record_name}
+najdeno <b>{found}</b> {record_name}, prikazuje <b>{start} - {end}</b> {record_name}
 Uredi pesem
-Pomaknite se navzgor v čakalni vrsti
-Pomaknite se navzdol v čakalni vrsti
+Premakni se navzgor v čakalni vrsti
+Premakni se navzdol v čakalni vrsti
 Ali ste prepričani, da želite izbrisati iz čakalne vrste
-Ali ste prepričani, da želite počistiti VSE čakalno vrsto? Za nadaljevanje vnesite »V redu«.
+Ali ste prepričani, da želite počistiti CELOTNO čakalno vrsto? Za nadaljevanje vnesite »V redu«.
 Dodajte 3 naključne pesmi
 Počisti vse
 Čakalna vrsta je prazna
 Čakalna vrsta
 Izbriši
-Pesmi so na voljo v lokalni knjižnici
+Pesmi, ki so na voljo v lokalni knjižnici
 Dodana skladba v čakalno vrsto:
 Pesem je že v čakalni vrsti:
-Išči / Dodaj novo
+Iskanje / Dodaj novo
 Iskanje
 Čakalna vrsta
-Vključite tekme, ki niso karaoke
+Vključite tekme brez karaok
 Napredno
-Vnesite pesem (naslov/izvajalec), da poiščete razpoložljive pesmi, in kliknite »V čakalni vrsti«, da jo dodate v čakalno vrsto.
-Če se skladba ne prikaže v spustnem meniju »Razpoložljive pesmi«, kliknite »Išči«, da jo poiščete na Youtubu.
-URL za neposreden prenos YouTube:
+Vnesite pesem (naslov/izvajalec), da poiščete razpoložljive skladbe, in kliknite »Čakalna vrsta«, da jo dodate v čakalno vrsto.
+Če skladba ni prikazana v spustnem meniju »Razpoložljive pesmi«, kliknite »Iskanje«, da jo poiščete na Youtube.
+URL neposrednega prenosa YouTube:
 Dodaj v čakalno vrsto
 Vključi podnapise
 Prenesi
-Iskanje po YouTubu
+Iskanje YouTube za
 Rezultati iskanja
-Kliknite spustni meni, da prikažete več rezultatov
+Kliknite spustni meni za prikaz več rezultatov
 Povezava:
 Razpoložljive pesmi
-Ali želite spremeniti prikazno ime osebe, ki uporablja to napravo? To se bo prikazalo poleg skladb v čakalni vrsti. trenutno:
+Ali želite spremeniti prikazno ime osebe, ki uporablja to napravo? To bo prikazano poleg skladb v čakalni vrsti. trenutno:
 Trenutni uporabnik
-Nastavitve
+nastavitve
 PiKaraoke
 Si prepričan, da želiš odnehati?
 Ali ste prepričani, da želite zapreti?
 Ali ste prepričani, da želite znova zagnati?
-Ali ste prepričani, da želite posodobiti Youtube-dl zdaj? Trenutni in čakajoči prenosi morda ne bodo uspeli.
-Ali ste prepričani, da želite razširiti datotečni sistem? To bo znova zagnalo vaš Raspberry Pi.
+Ali ste prepričani, da želite takoj posodobiti Youtube-dl? Trenutni in čakajoči prenosi morda ne bodo uspeli.
+Ali ste prepričani, da želite razširiti datotečni sistem? S tem boste znova zagnali vaš raspberry pi.
 Informacije
-Priročna URL QR koda za skupno rabo s prijateljem:
+Priročna URL koda QR za skupno rabo s prijateljem:
 OS
 Uporaba diska
 Spomin
 Zajem zaslona
-Vokalni razdelilnik
+Vocal Splitter
 Različica Youtube-dl (yt-dlp).
-Različica PiKaraoke
+PiKaraoke verzija
 Napredne možnosti nadzora
-Način vokalne razdelitve:
-Uporabite L-R/L+R
+Način razdelitve glasu:
+Uporabi L-R/L+R
 Uporabite DNN
-Standardni zvok MTV ima dva stereo kanala (L in R), ki sta kodirana tako, da: L-R je skladba instrumenta, L+R je vokalna skladba. Tako lahko s preprostim odštevanjem ali seštevanjem dveh stereo kanala dobimo instrumentalno in vokalno skladbo v mono zvoku. PiKaraoke-jev vgrajeni vokalni razdelilnik, ki temelji na DNN (globoko nevronsko omrežje), uporablja algoritem AI za razdelitev instrumentalnega in vokalnega zvoka v vsaki stereo skladbi neodvisno, kar ima za posledico stereo instrumentalne in vokalne skladbe.
+Standardni zvok MTV ima dva stereo kanala (L in R), kodirana tako, da: L-R je instrumentalna skladba, L+R je vokalna skladba. Tako lahko s preprostim odštevanjem ali dodajanjem dveh stereo kanalov dobimo instrumentalno in vokalno skladbo v mono zvoku. Vgrajeni vokalni razdelilnik PiKaraoke, ki temelji na DNN (globoko nevronsko omrežje), uporablja algoritem umetne inteligence za razdelitev instrumentalnega in vokalnega zvoka v vsaki stereo skladbi neodvisno, kar ima za posledico stereo instrumentalne in vokalne skladbe.
 Stop Splitter
-Znova zaženite Splitter
-Vokalni razdelilnik (ki podpira tako DNN kot stereo odštevanje) deluje kot ločen proces v ozadju in ustvarja instrumentalno/vokalno zvočno datoteko za vsako skladbo.
+Ponovno zaženite Splitter
+Vokalni razdelilnik (ki podpira tako DNN-osnovano kot stereo odštevanje) teče kot ločen proces v ozadju in ustvari instrumentalno/vokalno zvočno datoteko za vsako pesem.
 Ponovno sinhronizirajte zvok in video:
 Ustavi Streamer
 Znova zaženite Streamer
-To vpliva samo na predvajanje KTV prek spletnega brskalnika. Ponovni zagon zajema in pretakanja zaslona izboljša sinhronizacijo zvoka/videa, zmanjša pa tudi zakasnitev med strežnikom in brskalnikom.
-Osvežite seznam skladb:
-Ponovno skenirajte imenik pesmi
-To morate storiti samo, če ste ročno kopirali datoteke v imenik za prenos, medtem ko je PiKaraoke deloval.
+To vpliva samo na predvajanje KTV prek spletnega brskalnika. Ponovni zagon zajemanja in pretakanja zaslona izboljša sinhronizacijo zvoka/video, prav tako zmanjša zakasnitev med strežnikom in brskalnikom.
+Osvežite seznam pesmi:
+Znova pregledaj imenik pesmi
+To bi morali storiti samo, če ste ročno kopirali datoteke v imenik za prenos, medtem ko je PiKaraoke deloval.
 Posodobitve
-Če so prenosi ali iskanja prenehali delovati, bo posodobitev youtube-dl verjetno popravila. Trenutna nameščena različica je:
+Če so prenosi ali iskanja prenehali delovati, bo to verjetno popravljeno s posodobitvijo youtube-dl. Trenutno nameščena različica je:
 Posodobite youtube-dl
-Ta zgornja povezava za posodobitev morda ne bo uspela, če nimate ustreznih dovoljenj za datoteko. Preverite dnevnik PiKaraoke za napake.
+Ta zgornja povezava za posodobitev morda ne bo uspela, če nimate ustreznih dovoljenj za datoteke. Preverite dnevnik PiKaraoke za napake.
 Ugasniti
-Ne vlecite samo vtiča! Vedno pravilno zaustavite strežnik, da preprečite poškodbe podatkov.
-Zapustite PiKaraoke
-Ponovno zaženite sistem
+Ne izvlecite vtikača! Strežnik vedno pravilno zaustavite, da preprečite poškodbe podatkov.
+Zapri PiKaraoke
+Znova zaženi sistem
 Sistem za zaustavitev
-Drugo
+drugo
 Razširite datotečni sistem Raspberry Pi
-Če ste pravkar namestili vnaprej vgrajeno sliko pikaraoke pi in je vaša kartica SD večja od 4 GB, boste morda želeli razširiti datotečni sistem, da izkoristite preostali prostor. To morate storiti samo enkrat. To bo znova zagnalo sistem.
+Če ste pravkar namestili vnaprej zgrajeno sliko PiKaraoke pi in je vaša kartica SD večja od 4 GB, boste morda želeli razširiti datotečni sistem, da boste izkoristili preostali prostor. To morate storiti samo enkrat. To bo znova zagnalo sistem.
 Onemogoči skrbniški način
 Omogoči skrbniški način
 Odjava
 Vpiši se
 Informacije o sistemu
-Domov
+domov
 Spremeni jezik
-Prosim izberite jezik
+Prosimo izberite jezik
 Sistemski jezik
-Trenutni sistemski jezik:
-To spremeni jezik zalednega sistema PiKaraoke, ki se prikaže na TV zaslonu; poleg tega lahko vsak uporabnik, ki se povezuje, spremeni tudi svoj jezik spletnega uporabniškega vmesnika z gumbom globus v zgornjem desnem meniju.
-Prenos je uspešno zaključen!
+Trenutni jezik sistema:
+To spremeni jezik zalednega sistema PiKaraoke, ki se prikaže na TV-zaslonu; Poleg tega lahko vsak uporabnik, ki se poveže, spremeni svoj jezik spletnega uporabniškega vmesnika v gumbu globusa v zgornjem desnem meniju.
+Prenos uspešno zaključen!
 Prenos ni uspel!
 Pesem dodana v čakalno vrsto!
 Skladbe ni bilo mogoče postaviti v čakalno vrsto!
-Informacije o sistemu in nastavitve
+Sistemske informacije in nastavitve
 Normalizacija glasnosti
-Različne pesmi imajo pogosto različno glasnost. Če omogočite normalizacijo glasnosti, bo najprej zagnal <i>ffmpeg</i>, da bi izračunal globalno glasnost skladbe in samodejno prilagodil glasnost predvajalnika, tako da bo vsaka skladba zvenela enako glasno.
-Pot za prenos knjižnice pesmi
+Različne pesmi imajo pogosto različno glasnost. Če omogočite normalizacijo glasnosti, se bo najprej zagnal <i>ffmpeg</i>, da izračuna globalno glasnost pesmi in samodejno prilagodi glasnost predvajalnika, tako da vsaka pesem zveni enako glasno.
+Pot prenosa knjižnice pesmi
 Skupno število pesmi
+Prikaži/skrij podnapis
+Spremeni hitrost
+Pesem lahko pojete hitreje ali počasneje, tako da spremenite hitrost predvajanja na 0,8x do 1,2x s pomočjo sledilne vrstice hitrosti; za drugo hitrost predvajanja kliknite vrednost hitrosti, da jo spremenite.
+Kliknite za ponastavitev hitrosti predvajanja na 1x
+Kliknite za nastavitev hitrosti predvajanja
+Kliknite za ponastavitev ključa/tona
+Ključ za ponastavitev
+Ponastavi hitrost

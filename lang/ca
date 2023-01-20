@@ -4,7 +4,7 @@ S'ha tancat la sessió del mode d'administració!
 S'han afegit %s pistes aleatòries
 S'han quedat sense cançons!
 S'ha netejat la cua!
-Error en moure l'element dins de la cua: argument-invàlid
+S'ha produït un error en moure l'element dins de la cua: argument no vàlid
 Element mogut correctament dins de la cua:
 Error en moure l'element dins de la cua:
 S'ha mogut cap avall a la cua:
@@ -60,7 +60,7 @@ Mode administrador concedit!
 Augmentar el retard d'àudio us donarà més temps per llegir les lletres abans de cantar la següent frase.
 Disminuir el retard dels subtítols us donarà més temps per llegir les lletres abans de cantar la següent frase.
 Un semitò també es coneix com a mig pas. És l'interval més petit utilitzat en la música clàssica occidental, igual a una dotzena part d'octava o mig to.
-El divisor vocal basat en DNN està habilitat. PiKaraoke utilitza PyTorch (de Facebook) per executar una xarxa neuronal profunda per dividir el so instrumental i vocal a cada pista donant lloc a un so estèreo.
+El divisor vocal basat en DNN està habilitat. PiKaraoke utilitza PyTorch (de Facebook) per executar una xarxa neuronal profunda per dividir el so instrumental i vocal a cada pista donant lloc a so estèreo.
 Control del jugador
 Música
 Mixt
@@ -152,7 +152,7 @@ Opcions de control avançades
 Mode divisor vocal:
 Utilitzeu L-R/L+R
 Utilitzeu DNN
-L'àudio estàndard de MTV té els dos canals estèreo (L i R) codificats de manera que: L-R és la pista de l'instrument, L+R és la pista vocal. Així, simplement restant o sumant els dos canals estèreo, podem obtenir la pista instrumental i vocal en so mono. El divisor vocal integrat basat en DNN (xarxa neuronal profunda) de PiKaraoke utilitza un algorisme d'IA per dividir el so instrumental i vocal a cada pista estèreo de manera independent, donant com a resultat pistes vocals i instrumentals estèreo.
+L'àudio estàndard de MTV té els dos canals estèreo (L i R) codificats de manera que: L-R és la pista de l'instrument, L+R és la pista vocal. Així, simplement restant o sumant els dos canals estèreo, podem obtenir la pista instrumental i vocal en so mono. El divisor vocal integrat de PiKaraoke basat en DNN (xarxa neuronal profunda) utilitza un algorisme d'IA per dividir el so instrumental i vocal a cada pista estèreo de manera independent, donant com a resultat pistes instrumentals i vocals estèreo.
 Atura Splitter
 Reinicieu Splitter
 El divisor vocal (que admet tant la resta basada en DNN com la estèreo) s'executa com un procés independent en segon pla, generant un fitxer d'àudio instrumental/vocal per a cada cançó.
@@ -162,11 +162,11 @@ Reinicieu Streamer
 Això només afecta la reproducció de KTV mitjançant el navegador web. Reiniciar la captura de pantalla i la transmissió en temps real millora la sincronització d'àudio/vídeo i també disminueix la latència entre el servidor i el navegador.
 Actualitza la llista de cançons:
 Torna a escanejar el directori de cançons
-Només hauríeu de fer-ho si heu copiat manualment fitxers al directori de descàrregues mentre s'executava PiKaraoke.
+Només hauríeu de fer-ho si heu copiat manualment fitxers al directori de descàrrega mentre s'executava PiKaraoke.
 Actualitzacions
 Si les baixades o les cerques van deixar de funcionar, l'actualització de youtube-dl probablement ho solucionarà. La versió instal·lada actual és:
 Actualitza youtube-dl
-Aquest enllaç d'actualització anterior pot fallar si no teniu els permisos de fitxer adequats. Comproveu si hi ha errors al registre de PiKaraoke.
+Aquest enllaç d'actualització anterior pot fallar si no teniu els permisos de fitxer adequats. Comproveu el registre de PiKaraoke per detectar errors.
 Tancar
 No només estireu l'endoll! Apagueu sempre el vostre servidor correctament per evitar la corrupció de dades.
 Surt de PiKaraoke
@@ -174,20 +174,20 @@ Reinicieu el sistema
 Sistema d'apagada
 Altres
 Amplieu el sistema de fitxers Raspberry Pi
-Si acabeu d'instal·lar la imatge de pikaraoke pi preconstruïda i la vostra targeta SD és de més de 4 GB, és possible que vulgueu ampliar el sistema de fitxers per utilitzar l'espai restant. Només has de fer això una vegada. Això reiniciarà el sistema.
+Si acabeu d'instal·lar la imatge de PiKaraoke pi preconstruïda i la vostra targeta SD és de més de 4 GB, és possible que vulgueu ampliar el sistema de fitxers per utilitzar l'espai restant. Només heu de fer això una vegada. Això reiniciarà el sistema.
 Desactiva el mode d'administració
 Activa el mode d'administració
 tancar sessió
 iniciar Sessió
 Informació del sistema
-a casa
+Casa
 Canviar d'idioma
 Si us plau, trieu l'idioma
 Llenguatge del sistema
-Idioma del sistema actual:
+Idioma actual del sistema:
 Això canvia l'idioma del sistema de fons PiKaraoke que es mostra a la pantalla del televisor; a més, cada usuari que es connecta també pot canviar el seu respectiu idioma de la interfície d'usuari web al botó del globus terraqüi del menú superior dret.
 La descàrrega s'ha completat correctament!
-La descàrrega ha fallat!
+La baixada ha fallat!
 La cançó s'ha afegit a la cua!
 No s'ha pogut posar a la cua la cançó!
 Informació i configuració del sistema
@@ -195,3 +195,11 @@ Normalització del volum
 Les diferents cançons solen tenir un volum diferent. Si activeu la normalització del volum, primer s'executarà <i>ffmpeg</i> per calcular el volum global d'una cançó i ajustar automàticament el volum del reproductor perquè cada cançó soni igual de fort.
 Camí de descàrrega de la biblioteca de cançons
 Nombre total de cançons
+Mostra/amaga el subtítol
+Canvia la velocitat
+Podeu cantar la cançó més ràpid o més lentament canviant la velocitat de reproducció entre 0,8x i 1,2x mitjançant la barra de seguiment de velocitat; per a una altra velocitat de reproducció, feu clic al valor de velocitat per canviar.
+Feu clic per restablir la velocitat de reproducció a 1x
+Feu clic per configurar la velocitat de reproducció
+Feu clic per restablir la tecla/el to
+Clau de restabliment
+Restableix la velocitat

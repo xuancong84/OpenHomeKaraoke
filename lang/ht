@@ -2,10 +2,10 @@ Kreyòl ayisyen
 Modpas admin ki pa kòrèk!
 Dekonekte nan mòd admin!
 Te ajoute %s tras o aza
-Te manke chante!
+Te kouri soti nan chante!
 Netwaye keu la!
 Erè lè w ap deplase atik nan keu a: agiman envalid
-Siksè deplase atik nan keu:
+Siksè te deplase atik nan keu:
 Erè lè w ap deplase atik nan keu a:
 Deplase desann nan keu:
 Erè nan deplase desann nan keu:
@@ -39,11 +39,11 @@ Ou pa gen pèmisyon pou fèmen
 Redemaraj sistèm kounye a!
 Ou pa gen pèmisyon pou rdemare
 Agrandi sistèm fichye ak sistèm rdemare kounye a!
-Pa ka elaji fs sou aparèy ki pa Franbwaz Pi!
+Pa ka elaji fs sou aparèy ki pa Franbwaz pi!
 Ou pa gen pèmisyon pou redimensionner sistèm fichye a
 Youtube-dl chemen pa jwenn!
 Chemen VLC pa jwenn!
-Chemen omxplayer pa jwenn!
+chemen omxplayer pa jwenn!
 Kreye chemen download:
 Wifi/Rezo pa konekte. Fèmen nan 10s...
 Pou chwazi chante, eskane QR oswa konekte
@@ -53,7 +53,7 @@ Peze ESC pou kite PiKaraoke
 Mòd konfigirasyon RaspiWifiConfig detekte!
 Konekte yon lòt aparèy/smartphone ak Wifi AP: '%s'
 Lè sa a, montre navigatè li a: '%s://%s%s' epi swiv enstriksyon yo.
-Pwochen:
+Pi devan:
 Te ajoute pa:
 Kounye a ap jwe:
 Mòd admin akòde!
@@ -136,7 +136,7 @@ Anviwònman
 PiKaraoke
 Èske ou sèten ou vle kite fimen?
 Èske ou sèten ou vle fèmen?
-Èske w sèten ou vle rdemare?
+Èske ou sèten ou vle rdemare?
 Èske w sèten ou vle mete ajou Youtube-dl kounye a? Aktyèl ak annatant telechajman yo ka echwe.
 Èske w sèten ou vle elaji sistèm fichye a? Sa a pral rdemare Franbwaz pi ou a.
 Enfòmasyon
@@ -152,21 +152,21 @@ Opsyon kontwòl avanse
 Mòd splitter vokal:
 Sèvi ak L-R/L+R
 Sèvi ak DNN
-Odyo MTV estanda gen de chanèl stereo yo (L ak R) kode nan yon fason ke: L-R se tras la enstriman, L + R se tras la vokal. Kidonk, tou senpleman soustraksyon oswa ajoute de chanèl stereo yo, nou ka jwenn tras enstrimantal ak vokal nan son mono. Splitter vokal PiKaraoke ki baze sou DNN (rezo neral gwo twou san fon) sèvi ak algorithm AI pou divize son enstrimantal ak vokal nan chak track stereo poukont sa ki lakòz track instrumental ak vokal stereo.
+Odyo MTV estanda gen de chanèl stereo yo (L ak R) kode nan yon fason ke: L-R se tras la enstriman, L + R se tras la vokal. Kidonk, tou senpleman soustraksyon oswa ajoute de chanèl stereo yo, nou ka jwenn tras enstrimantal ak vokal nan son mono. Splitter vokal PiKaraoke ki baze sou DNN (rezo neral pwofon) sèvi ak algorithm AI pou divize son enstrimantal ak vokal nan chak tras stereo poukont sa ki lakòz tras enstrimantal ak vokal stereo.
 One Stop Splitter
 Rekòmanse Splitter
-Splitter vokal la (ki sipòte tou de DNN ki baze sou ak stereo soustraksyon) kouri kòm yon pwosesis separe nan background nan, jenere dosye enstrimantal / vwa odyo pou chak chante.
+Splitter vokal la (ki sipòte tou de DNN ki baze sou ak soustraksyon stereo) kouri kòm yon pwosesis separe nan background nan, jenere dosye enstrimantal / vwa odyo pou chak chante.
 Re-senkronize odyo ak videyo:
 One Stop Streamer
 Rekòmanse Streamer
 Sa sèlman afekte jwe KTV atravè navigatè entènèt. Rekòmanse ekran-kaptire-ak-difizyon amelyore senkronizasyon odyo / videyo, li tou diminye latansi ki genyen ant sèvè a ak navigatè a.
 Rafrechi lis chante a:
-Anyè chante ankò
+Reeskane anyè chante
 Ou ta dwe sèlman bezwen fè sa si ou manyèlman kopye fichye nan anyè download la pandan PiKaraoke t ap kouri.
 Mizajou
-Si telechajman oswa rechèch yo sispann travay, aktyalizasyon youtube-dl pral pwobableman ranje li. Vèsyon aktyèl la enstale se:
+Si telechajman oswa rechèch yo sispann travay, mete ajou youtube-dl pral pwobableman ranje li. Vèsyon aktyèl la enstale se:
 Mete ajou youtube-dl
-Lyen aktyalizasyon sa a ki anwo a ka echwe si ou pa gen otorizasyon pou fichye apwopriye. Tcheke jounal PiKaraoke pou erè.
+Lyen aktyalizasyon sa a pi wo a ka echwe si ou pa gen otorizasyon pou fichye apwopriye. Tcheke jounal PiKaraoke pou erè.
 Fèmen
 Pa jis rale ploge a! Toujou fèmen sèvè ou byen pou evite koripsyon done yo.
 Kite PiKaraoke
@@ -174,7 +174,7 @@ Rdemare Sistèm
 Sistèm fèmen
 Lòt
 Elaji sistèm fichye Franbwaz Pi
-Si ou jis enstale imaj pikaraoke pi pre-bati a epi kat SD ou a pi gwo pase 4GB, ou ka vle elaji sistèm fichye a pou itilize espas ki rete a. Ou sèlman bezwen fè sa yon fwa. Sa a pral rdemare sistèm lan.
+Si ou jis enstale imaj PiKaraoke pi pre-bati a epi kat SD ou a pi gwo pase 4GB, ou ka vle elaji sistèm fichye a pou itilize espas ki rete a. Ou sèlman bezwen fè sa yon fwa. Sa a pral rdemare sistèm lan.
 Enfim mòd admin
 Pèmèt mòd admin
 Dekonekte
@@ -195,3 +195,11 @@ Nòmalizasyon Volim
 Chante diferan souvan gen volim diferan. Pèmèt nòmalizasyon volim pral premye kouri <i>ffmpeg</i> pou kalkile volim mondyal yon chante epi otomatikman ajiste volim jwè pou chak chante son egalman fò.
 Chemen download bibliyotèk chante
 Kantite total chante
+Montre/Kache Soutit
+Chanje vitès
+Ou ka chante chante a pi vit oswa pi dousman lè w chanje vitès la lèktur nan 0.8x a 1.2x lè l sèvi avèk trackbar vitès la; pou lòt vitès lecture, klike sou valè vitès pou chanje.
+Klike pou Reyajiste vitès lèktur a 1x
+Klike sou yo mete vitès lèktur
+Klike pou reset kle/ton
+Reyajiste kle
+Reyajiste vitès

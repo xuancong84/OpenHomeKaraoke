@@ -101,6 +101,7 @@ def home():
 		seektrack_value = s['time'],
 		seektrack_max = s['length'],
 		audio_delay = s['audiodelay'],
+		play_speed = s['rate'],
 		vocal_info = K.get_vocal_info(),
 	)
 
@@ -125,6 +126,7 @@ def nowplaying():
 			"seektrack_max": s['length'],
 			"audio_delay": s['audiodelay'],
 			"vol_norm": K.normalize_vol,
+			"play_speed": s['rate'],
 			"vocal_info": K.get_vocal_info()
 		}
 		if K.has_subtitle:
@@ -306,6 +308,12 @@ def transpose(semitones):
 @app.route("/play_vocal/<mode>", methods = ["GET"])
 def play_vocal(mode):
 	K.play_vocal(mode)
+	return ''
+
+
+@app.route("/play_speed/<speed>", methods = ["GET"])
+def play_speed(speed):
+	K.play_speed_set(speed)
 	return ''
 
 

@@ -9,13 +9,13 @@ Elementas sėkmingai perkeltas į eilę:
 Perkeliant elementą į eilę įvyko klaida:
 Perkeltas žemyn eilėje:
 Klaida judant eilėje žemyn:
-Perkeltas į eilę:
+Perkelta į eilę:
 Klaida judant eilėje:
 Ištrinta iš eilės:
 Klaida ištrinant iš eilės:
 Atsisiuntimas pradėtas:
 Užbaigus, jis bus įtrauktas į eilę.
-Užbaigus jis bus rodomas „galimų dainų“ sąraše.
+Užbaigus, jis bus rodomas „galimų dainų“ sąraše.
 Klaida: negalima ištrinti šios dainos, nes ji yra dabartinėje eilėje:
 Daina ištrinta:
 Klaida: nenurodytas dainos parametras!
@@ -59,7 +59,7 @@ Dabar žaidžia:
 Administratoriaus režimas suteiktas!
 Didėjant garso delsai, turėsite daugiau laiko perskaityti dainų tekstus prieš išdainuojant kitą sakinį.
 Sumažėjus subtitrų delsai, turėsite daugiau laiko perskaityti dainų tekstus prieš išdainuojant kitą sakinį.
-Pustonis taip pat žinomas kaip pusė žingsnio. Tai mažiausias klasikinėje Vakarų muzikoje naudojamas intervalas, lygus oktavos dvyliktajai daliai arba pusei tono.
+Pustonis taip pat žinomas kaip pusė žingsnio. Tai mažiausias klasikinėje Vakarų muzikoje naudojamas intervalas, lygus dvyliktajai oktavos arba pusei tono.
 DNN pagrįstas balso skirstytuvas įjungtas. „PiKaraoke“ naudoja „PyTorch“ („Facebook“), kad paleistų gilųjį neuroninį tinklą, kad kiekviename takelyje būtų padalintas instrumentinis ir vokalinis garsas, sukuriantis stereo garsą.
 Žaidėjo valdymas
 Muzika
@@ -88,13 +88,13 @@ Padidinkite subtitrų delsą
 Sumažinti garso delsą
 Nustatykite garso delsą
 Padidinkite garso delsą
- pustoniai
+ pustonius
 Įveskite savo vardą. Tai bus rodoma šalia dainų, kurias įtrauksite į eilę iš šio įrenginio.
 Daina įtraukta į eilę:
 Daina jau eilėje:
 Rūšiuoti pagal datą
 Rūšiuoti pagal abėcėlę
-Įtraukite „%s“ į eilę
+Pridėti „%s“ į eilę
 Naršyti
 Rūšiuota pagal datą
 Rūšiuota pagal "abėcėlę"
@@ -102,7 +102,7 @@ dainas
 rodomas <b>{start}–{end}</b> {record_name}, iš viso <b>{total}</b> {record_name}
 rasta <b>{found}</b> {record_name}, rodoma <b>{start} – {end}</b> {record_name}
 Redaguoti dainą
-Perkelti eilėje
+Perkelti eilėje aukštyn
 Pereikite į eilę žemyn
 Ar tikrai norite ištrinti iš eilės
 Ar tikrai norite išvalyti VISĄ eilę? Norėdami tęsti, įveskite „Gerai“.
@@ -174,7 +174,7 @@ Perkraukite sistemą
 Išjungimo sistema
 Kita
 Išplėskite Raspberry Pi failų sistemą
-Jei ką tik įdiegėte iš anksto sukurtą pikaraoke pi vaizdą ir jūsų SD kortelė yra didesnė nei 4 GB, galbūt norėsite išplėsti failų sistemą, kad išnaudotumėte likusią vietą. Tai padaryti reikia tik vieną kartą. Tai iš naujo paleis sistemą.
+Jei ką tik įdiegėte iš anksto sukurtą PiKaraoke pi vaizdą ir jūsų SD kortelė yra didesnė nei 4 GB, galbūt norėsite išplėsti failų sistemą, kad išnaudotumėte likusią vietą. Tai padaryti reikia tik vieną kartą. Tai iš naujo paleis sistemą.
 Išjungti administratoriaus režimą
 Įjungti administratoriaus režimą
 Atsijungti
@@ -192,6 +192,14 @@ Daina įtraukta į eilę!
 Nepavyko įrašyti dainos eilės!
 Sistemos informacija ir nustatymai
 Garso normalizavimas
-Įvairių dainų garsumas dažnai skiriasi. Įgalinus garsumo normalizavimą pirmiausia bus paleista <i>ffmpeg</i>, kad būtų apskaičiuotas bendras dainos garsumas ir automatiškai sureguliuotas grotuvo garsumas, kad kiekviena daina skambėtų vienodai garsiai.
+Įvairių dainų garsumas dažnai skiriasi. Įgalinus garsumo normalizavimą, pirmiausia bus paleista <i>ffmpeg</i>, kad būtų apskaičiuotas bendras dainos garsumas ir automatiškai sureguliuotas grotuvo garsumas, kad kiekviena daina skambėtų vienodai garsiai.
 Dainų bibliotekos atsisiuntimo kelias
 Bendras dainų skaičius
+Rodyti/slėpti subtitrus
+Keisti greitį
+Dainą galite dainuoti greičiau arba lėčiau, naudodami greičio stebėjimo juostą pakeisdami atkūrimo greitį nuo 0,8 iki 1,2 karto; Norėdami pakeisti kitą atkūrimo greitį, spustelėkite greičio reikšmę.
+Spustelėkite, jei norite iš naujo nustatyti atkūrimo greitį iki 1x
+Spustelėkite norėdami nustatyti atkūrimo greitį
+Spustelėkite norėdami iš naujo nustatyti klavišą / žingsnį
+Atstatyti raktas
+Iš naujo nustatyti greitį

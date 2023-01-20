@@ -5,7 +5,7 @@ Cuireadh %s traiceanna randamacha leis
 Rith amach as amhráin!
 Glanadh an scuaine!
 Earráid agus mír á bogadh laistigh den scuaine: argóint neamhbhailí
-D'éirigh leis an mír a bhogadh laistigh den scuaine:
+D'éirigh leis an mír a bhogadh sa scuaine:
 Earráid agus an mhír á bogadh laistigh den scuaine:
 Bogtha síos sa scuaine:
 Earráid ag bogadh síos sa scuaine:
@@ -21,11 +21,11 @@ Amhrán scriosta:
 Earráid: Níor sonraíodh aon pharaiméadar amhráin!
 Earráid: Ní féidir an t-amhrán seo a chur in eagar toisc go bhfuil sé á sheinm faoi láthair:
 Amhrán Eagarthóir Comhad
-Earráid agus comhad á athainmniú: '%s' go '%s'. Tá ainm an chomhaid ann cheana.
+Earráid agus comhad á athainmniú: '%s' go '%s'. Tá ainm comhaid ann cheana féin.
 Comhad athainmnithe: '%s' go '%s'
-Earráid: Níor sonraíodh paraiméadair ainm comhaid ar bith!
+Earráid: Níor sonraíodh aon pharaiméadair ainm comhaid!
 Anaithnid
-Ag rith
+Rith
 Stopadh
  (LAP amháin)
  (GPU cumasaithe)
@@ -34,7 +34,7 @@ Níl cead agat youtube-dl a nuashonrú
 Níl cead agat dúnadh
 Ag éirí as PiKaraoke anois!
 Níl cead agat éirí as
-Córas múchta anois!
+Córas múchadh anois!
 Níl cead agat dúnadh
 Córas atosaithe anois!
 Níl cead agat Atosaigh
@@ -57,10 +57,10 @@ Suas seo chugainn:
 Arna chur leis ag:
 Anois ag imirt:
 Mód riaracháin ceadaithe!
-Má mhéadaítear moille fuaime, tabharfar níos mó ama duit chun liricí a léamh sula gcanfaidh tú an chéad abairt eile.
-Tabharfaidh laghdú ar an mhoill ar fhotheideal níos mó ama duit liricí a léamh roimh an gcéad abairt eile a chanadh.
-Tugtar leathchéim ar leath-thón freisin. Is é an t-eatramh is lú a úsáidtear i gceol clasaiceach an Iarthair é, arb ionann é agus an dóú cuid déag de ochtáibh nó leath ton.
-Tá scoilteoir gutha bunaithe ar DNN cumasaithe. Úsáideann PiKaraoke PyTorch (le Facebook) chun líonra néarach domhain a rith chun fuaim uirlise agus gutha a roinnt i ngach rian as a dtagann fuaim steirió.
+Má mhéadaítear moille fuaime, cuirfear níos mó ama ar fáil duit le liricí a léamh roimh an gcéad abairt eile a chanadh.
+Má laghdaítear an mhoill ar fhotheideal beidh níos mó ama agat chun liricí a léamh sula gcanfaidh tú an chéad abairt eile.
+Tugtar leathchéim ar leath-thón freisin. Is é an t-eatramh is lú a úsáidtear i gceol clasaiceach an Iarthair é, arb ionann é agus an dóú cuid déag d'ochtábh nó leath ton.
+Tá scoilteoir gutha bunaithe ar DNN cumasaithe. Úsáideann PiKaraoke PyTorch (le Facebook) chun líonra néarach domhain a reáchtáil chun fuaim uirlise agus gutha a roinnt i ngach rian as a dtagann fuaim steirió.
 Rialú Imreoir
 Ceol
 Measctha
@@ -68,14 +68,14 @@ Guth
 Athraigh Eochair
 Níl aon rud ag imirt faoi láthair.
 Níl aon amhrán i scuaine.
-Ní chuireann tú an t-amhrán seo leis. An bhfuil tú cinnte gur mhaith leat an traic seo a atosú?
+Ní chuireann tú an t-amhrán seo leis. An bhfuil tú cinnte gur mhaith leat an t-amhrán seo a atosú?
 Ní chuireann tú an t-amhrán seo leis. An bhfuil tú cinnte gur mhaith leat an traic seo a scipeáil?
 Rialú Imreoir
 Anois ag imirt
 Amhrán Eile
 Iarracht a dhéanamh:
 Moill Fuaime (soic)
-Moill ar Fhotheideal (soicind)
+Moill ar Fhotheideal (soic)
 Amhrán a atosú
 Súgradh/Sos
 Léim Amhrán Reatha
@@ -105,7 +105,7 @@ Cuir an t-amhrán in eagar
 Bog suas sa scuaine
 Bog síos sa scuaine
 An bhfuil tú cinnte gur mhaith leat a scriosadh as an scuaine
-An bhfuil tú cinnte gur mhaith leat an scuaine UILE a ghlanadh? Clóscríobh 'OK' chun leanúint ar aghaidh
+An bhfuil tú cinnte gur mian leat an scuaine UILE a ghlanadh? Clóscríobh 'OK' chun leanúint ar aghaidh
 Cuir 3 amhrán randamacha leis
 Soiléir ar fad
 Tá an scuaine folamh
@@ -117,11 +117,11 @@ Tá an t-amhrán sa scuaine cheana féin:
 Cuardach/Cuir Nua Leis
 Cuardach
 scuaine
-Cuir lasáin neamh-karaoke san áireamh
+Cuir cluichí neamh-karaoke san áireamh
 Casta
-Clóscríobh amhrán (teideal/ealaíontóir) chun na hamhráin atá ar fáil a chuardach agus cliceáil ar ‘Queue’ chun é a chur leis an scuaine.
+Clóscríobh amhrán (teideal/ealaíontóir) chun na hamhráin atá ar fáil a chuardach agus cliceáil ‘Queue’ chun é a chur leis an scuaine.
 Mura bhfuil an t-amhrán le feiceáil sa roghchlár anuas "Amhráin ar Fáil", cliceáil ar 'Search' chun é a fháil ar Youtube.
-Íoslódáil YouTube url go díreach.
+Íoslódáil YouTube go díreach. .
 Cuir leis an scuaine
 Cuir fotheidil san áireamh
 Íosluchtaigh
@@ -130,7 +130,7 @@ Torthaí cuardaigh le haghaidh
 Cliceáil anuas chun tuilleadh torthaí a thaispeáint
 Nasc:
 Amhráin ar Fáil
-Ar mhaith leat ainm taispeána an duine a úsáideann an gléas seo a athrú? Beidh sé seo le feiceáil in aice leis na hamhráin scuaine. Reatha:
+Ar mhaith leat ainm taispeána an duine a úsáideann an gléas seo a athrú? Taispeánfar é seo in aice leis na hamhráin atá i scuaine. Reatha:
 Úsáideoir reatha
 Socruithe
 PiKaraoke
@@ -145,36 +145,36 @@ OS
 Úsáid Diosca
 Cuimhne
 Gabháil Scáileáin
-Scoilteoir Gutha
+Scoilteoir gutha
 Leagan Youtube-dl (yt-dlp).
 Leagan piKaraoke
 Ardroghanna Rialaithe
 Mód scoilteoir gutha:
 Úsáid L-R/L+R
 Úsáid DNN
-Tá an dá chainéal steirió (L agus R) ionchódaithe i bhfuaim chaighdeánach MTV sa chaoi is gur: L-R an rian uirlise, is é L+R an rian gutha. Mar sin, tríd an dá chainéal steirió a dhealú nó a chur leis, is féidir linn an rian uirlise agus gutha a fháil i mona-fhuaim. Úsáideann scoilteoir gutha ionsuite DNN (líonra domhain neural) PiKaraoke algartam AI chun fuaim uirlise agus gutha a roinnt i ngach rian steirió go neamhspleách agus rianta steirió uirlise agus gutha mar thoradh air.
+Tá an dá chainéal steirió (L agus R) ionchódaithe i bhfuaim chaighdeánach MTV sa chaoi is gur: L-R an rian uirlise, is é L+R an rian gutha. Mar sin, tríd an dá chainéal steirió a dhealú nó a chur leis, is féidir linn an rian uirlise agus gutha a fháil i bhfuaim mona. Úsáideann scoilteoir gutha ionsuite DNN (líonra domhain neural) PiKaraoke algartam AI chun fuaim uirlise agus gutha a roinnt i ngach rian steirió go neamhspleách agus rianta steirió uirlise agus gutha mar thoradh air.
 Stop Scoilteoir
 Atosaigh Scoilteoir
-Ritheann an scoilteoir gutha (a thacaíonn le dealú bunaithe ar DNN agus steirió araon) mar phróiseas ar leith sa chúlra, ag giniúint comhad fuaime uirlise/gutha do gach amhrán.
+Ritheann an scoilteoir gutha (a thacaíonn le dealú DNN-bhunaithe agus steirió araon) mar phróiseas ar leith sa chúlra, ag giniúint comhad fuaime uirlise / gutha do gach amhrán.
 Athshioncronú fuaime agus físe:
 Stop Streamer
 Atosaigh Streamer
-Ní dhéanann sé seo ach tionchar a imirt ar KTV trí bhrabhsálaí gréasáin. Feabhsaítear an sioncronú fuaime/físeán má atosaítear an scáileán-gabháil-agus-sruthú, laghdaítear freisin an fhola idir an freastalaí agus an brabhsálaí.
+Ní dhéanann sé seo ach difear do imirt KTV trí bhrabhsálaí gréasáin. Feabhsaítear an sioncrónú fuaime/físeán má atosaítear an scáileán-gabháil-agus-sruthú, laghdaítear an foighne idir an freastalaí agus an brabhsálaí freisin.
 Athnuaigh an liosta amhrán:
 Athscan eolaire amhrán
 Níor cheart go mbeadh ort é seo a dhéanamh ach amháin má chóipeáil tú comhaid de láimh chuig an eolaire íoslódála agus PiKaraoke ar siúl.
 Nuashonruithe
-Mura n-oibríonn íoslódálacha nó cuardaigh ag obair, is dócha go socróidh nuashonrú youtube-dl é. Is é an leagan suiteáilte reatha:
+Mura n-oibríonn íoslódálacha nó cuardaigh ag obair, is dócha go socróidh nuashonrú youtube-dl é. Is é an leagan suiteáilte reatha ná:
 Nuashonraigh youtube-dl
 Seans go dteipfidh ar an nasc nuashonraithe seo thuas mura bhfuil na ceadanna cuí comhaid agat. Seiceáil logáil PiKaraoke le haghaidh earráidí.
 Múchadh
-Ná tarraing díreach an breiseán! Dún do fhreastalaí síos i gceart i gcónaí chun éilliú sonraí a sheachaint.
+Ná tarraing an breiseán díreach! Dún do fhreastalaí síos i gceart i gcónaí chun éilliú sonraí a sheachaint.
 Scoir PiKaraoke
 Córas Atosaigh
-Córas múchta
+Córas Múchadh
 Eile
 Leathnaigh córas comhaid Raspberry Pi
-Má tá tú díreach tar éis an íomhá pikaraoke pie réamhthógtha a shuiteáil agus go bhfuil do chárta SD níos mó ná 4GB, b'fhéidir gur mhaith leat an córas comhaid a leathnú chun an spás atá fágtha a úsáid. Ní mór duit é seo a dhéanamh ach uair amháin. Atosóidh sé seo an córas.
+Má tá tú díreach tar éis an íomhá PiKaraoke pi réamhthógtha a shuiteáil agus go bhfuil do chárta SD níos mó ná 4GB, b'fhéidir gur mhaith leat an córas comhaid a leathnú chun an spás atá fágtha a úsáid. Ní mór duit é seo a dhéanamh ach uair amháin. Atosóidh sé seo an córas.
 Díchumasaigh mód riaracháin
 Cumasaigh mód riaracháin
 Logáil Amach
@@ -185,13 +185,21 @@ Athrú Teanga
 Roghnaigh teanga le do thoil
 Teanga an Chórais
 Teanga an chórais reatha:
-Athraíonn sé seo teanga an chórais backend PiKaraoke a thaispeánfar ar scáileán na teilifíse; ina theannta sin, is féidir le gach úsáideoir nasctha a dteanga Chomhéadain Gréasáin faoi seach a athrú freisin sa chnaipe cruinne sa roghchlár ar bharr na láimhe deise.
+Athraíonn sé seo teanga an chórais backend PiKaraoke a thaispeánfar ar scáileán teilifíse; ina theannta sin, is féidir le gach úsáideoir nasctha a dteanga Chomhéadain Gréasáin faoi seach a athrú freisin sa chnaipe cruinne sa roghchlár ar dheis.
 Íosluchtú críochnaithe go rathúil!
 Theip ar an íoslódáil!
 Amhrán curtha leis an scuaine!
 Theip ar scuaine an amhráin!
 Eolas & Socruithe Córais
 Normalú Toirt
-Is minic a bhíonn toirt éagsúil ag amhráin éagsúla. Rithfidh <i>ffmpeg</i> chun normalú toirte a chumasú ar dtús chun toirt dhomhanda amhráin a ríomh agus chun toirt an imreora a choigeartú go huathoibríoch ionas go gcloisfidh gach amhrán chomh hard céanna.
+Is minic a bhíonn toirt éagsúil ag amhráin éagsúla. Má dhéantar normalú toirte a chumasú, déanfar <i>ffmpeg</i> ar dtús chun toirt dhomhanda amhráin a ríomh agus chun toirt an imreora a choigeartú go huathoibríoch ionas go gcloisfidh gach amhrán chomh hard céanna.
 Leabharlann amhráin a íoslódáil
 Líon iomlán na n-amhrán
+Taispeáin/Folaigh Fotheideal
+Athraigh Luas
+Is féidir leat an t-amhrán a chanadh níos tapúla nó níos moille ach an luas athsheinm a athrú go dtí laistigh de 0.8x go 1.2x ag baint úsáide as an barra rian luais; le haghaidh luas athsheinm eile, cliceáil ar an luach luas a athrú.
+Cliceáil chun luas athsheinm a athshocrú go 1x
+Cliceáil chun luas athsheinm a shocrú
+Cliceáil chun eochair/pitse a athshocrú
+Eochair Athshocraigh
+Luas Athshocraigh

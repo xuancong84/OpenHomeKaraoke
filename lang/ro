@@ -1,7 +1,7 @@
 Română
 Parolă de administrator incorectă!
 Deconectat din modul admin!
-Au fost adăugate %s piese aleatorii
+S-au adăugat %s piese aleatorii
 A rămas fără cântece!
 S-a golit coada!
 Eroare la mutarea articolului în coadă: argument-invalid
@@ -10,17 +10,17 @@ Eroare la mutarea articolului în coadă:
 Mutat în jos în coadă:
 Eroare la mutarea în jos în coadă:
 Mutat în sus în coadă:
-Eroare la mutarea sus în coadă:
+Eroare la mutarea în sus în coadă:
 Șters din coadă:
 Eroare la ștergerea din coadă:
 Descărcarea a început:
 La finalizare, acesta va fi adăugat la coadă.
-După finalizare, acesta va apărea în lista „melodiilor disponibile”.
+După finalizare, va apărea în lista „melodiilor disponibile”.
 Eroare: nu se poate șterge această melodie deoarece se află în coada curentă:
-Cântec șters:
+Melodia a fost ștearsă:
 Eroare: nu a fost specificat niciun parametru de melodie!
 Eroare: nu se poate edita această melodie deoarece este redată în prezent:
-Editare fișier melodie
+Editare fișier cântec
 Eroare la redenumirea fișierului: „%s” în „%s”. Numele fișierului există deja.
 Fișier redenumit: „%s” în „%s”
 Eroare: Nu s-au specificat parametri pentru numele fișierului!
@@ -48,7 +48,7 @@ Se creează calea de descărcare:
 Wifi/Rețea nu este conectată. Se închide în 10 secunde...
 Pentru a selecta melodii, scanați QR sau conectați-vă la
 Pentru afișajul TV, conectați-vă la
-Apăsați F pentru a comuta la ecranul complet
+Apăsați F pentru a comuta la ecran complet
 Apăsați ESC pentru a părăsi PiKaraoke
 Modul de configurare RaspiWifiConfig a fost detectat!
 Conectați un alt dispozitiv/smartphone la AP-ul Wifi: „%s”
@@ -58,7 +58,7 @@ Adăugat de:
 Acum se joacă:
 Modul de administrare este acordat!
 Creșterea întârzierii audio vă va oferi mai mult timp pentru a citi versurile înainte de a cânta următoarea propoziție.
-Scăderea întârzierii subtitrarilor vă va oferi mai mult timp pentru a citi versurile înainte de a cânta următoarea propoziție.
+Scăderea întârzierii subtitrării vă va oferi mai mult timp pentru a citi versurile înainte de a cânta următoarea propoziție.
 Un semiton este cunoscut și sub denumirea de jumătate de pas. Este cel mai mic interval folosit în muzica clasică occidentală, egal cu o doisprezecea parte de octavă sau jumătate de ton.
 Divizorul vocal bazat pe DNN este activat. PiKaraoke folosește PyTorch (de la Facebook) pentru a rula o rețea neuronală profundă pentru a împărți sunetul instrumental și vocal în fiecare piesă, dând naștere unui sunet stereo.
 Controlul jucătorului
@@ -84,12 +84,12 @@ Setați volumul
 Creșterea volumului
 Reduceți întârzierea subtitrarilor
 Setați întârzierea subtitrarilor
-Măriți întârzierea subtitrarilor
+Creșteți întârzierea subtitrarilor
 Reduceți întârzierea audio
 Setați întârzierea audio
 Creșteți întârzierea audio
  semitonuri
-Te rog scrieti numele. Acesta va apărea lângă melodiile pe care le puneți în coadă de pe acest dispozitiv.
+Te rog scrieti numele. Aceasta va apărea lângă melodiile pe care le puneți în coadă de pe acest dispozitiv.
 Cântec adăugat la coadă:
 Cântec deja în coadă:
 Sortati dupa data
@@ -103,9 +103,9 @@ afișează <b>{start} - {end}</b> {record_name}, în total <b>{total}</b> {recor
 găsit <b>{found}</b> {record_name}, afișând <b>{start} - {end}</b> {record_name}
 Editează melodia
 Deplasați-vă la coadă
-Deplasați-vă în jos în coadă
+Deplasați-vă în jos la coadă
 Sigur doriți să ștergeți din coadă
-Sigur doriți să ștergeți TOATĂ coada? Tastați „OK” pentru a continua
+Sigur doriți să goliți TOATE coada? Tastați „OK” pentru a continua
 Adăugați 3 melodii aleatorii
 Curata tot
 Coada este goală
@@ -137,7 +137,7 @@ PiKaraoke
 Esti sigur ca vrei sa renunti?
 Ești sigur că vrei să închizi?
 Sigur doriți să reporniți?
-Sigur vrei să actualizezi Youtube-dl chiar acum? Descărcările curente și în așteptare pot eșua.
+Sigur doriți să actualizați Youtube-dl chiar acum? Descărcările curente și în așteptare pot eșua.
 Sigur doriți să extindeți sistemul de fișiere? Acest lucru va reporni raspberry pi.
 informație
 Cod QR URL la îndemână pentru a le partaja unui prieten:
@@ -149,13 +149,13 @@ Splitter vocal
 Versiunea Youtube-dl (yt-dlp).
 Versiunea PiKaraoke
 Opțiuni avansate de control
-Mod splitter vocal:
+Modul splitter vocal:
 Folosiți L-R/L+R
 Folosiți DNN
-Audio standard MTV are cele două canale stereo (L și R) codificate astfel încât: L-R este pista instrumentului, L+R este pista vocală. Astfel, prin simpla scadere sau adaugare a celor doua canale stereo, putem obtine piesa instrumentala si vocala in sunet mono. Divizorul vocal încorporat de la PiKaraoke, bazat pe DNN (rețea neuronală profundă), utilizează algoritmul AI pentru a împărți sunetul instrumental și vocal în fiecare piesă stereo în mod independent, rezultând piese stereo instrumentale și vocale.
+Audio standard MTV are cele două canale stereo (L și R) codificate astfel încât: L-R este pista instrumentului, L+R este pista vocală. Astfel, prin simpla scadere sau adaugare a celor doua canale stereo, putem obtine piesa instrumentala si vocala in sunet mono. Divizorul vocal încorporat de la PiKaraoke, bazat pe DNN (rețea neuronală profundă), folosește algoritmul AI pentru a împărți sunetul instrumental și vocal în fiecare piesă stereo în mod independent, rezultând piese stereo instrumentale și vocale.
 Opriți Splitter-ul
 Reporniți Splitter
-Splitter-ul vocal (care acceptă atât scăderea bazată pe DNN, cât și stereo) rulează ca un proces separat în fundal, generând fișiere audio instrumentale/vocale pentru fiecare melodie.
+Splitter-ul vocal (care acceptă atât scăderea bazată pe DNN, cât și scăderea stereo) rulează ca un proces separat în fundal, generând fișiere audio instrumentale/vocale pentru fiecare melodie.
 Resincronizează audio și video:
 Opriți Streamer-ul
 Reporniți Streamer
@@ -174,9 +174,9 @@ Sistem de repornire
 Sistem de oprire
 Alte
 Extindeți sistemul de fișiere Raspberry Pi
-Dacă tocmai ați instalat imaginea pikaraoke pi pre-construită și cardul SD este mai mare de 4 GB, este posibil să doriți să extindeți sistemul de fișiere pentru a utiliza spațiul rămas. Trebuie să faci asta o singură dată. Aceasta va reporni sistemul.
-Dezactivați modul de administrare
-Activați modul admin
+Dacă tocmai ați instalat imaginea PiKaraoke pi pre-construită și cardul SD este mai mare de 4 GB, este posibil să doriți să extindeți sistemul de fișiere pentru a utiliza spațiul rămas. Trebuie să faci asta o singură dată. Aceasta va reporni sistemul.
+Dezactivează modul admin
+Activați modul de administrare
 deconectați-vă
 Autentificare
 Informatie de sistem
@@ -195,3 +195,11 @@ Normalizarea volumului
 Cântece diferite au adesea volum diferit. Activarea normalizării volumului va rula mai întâi <i>ffmpeg</i> pentru a calcula volumul global al unei melodii și va ajusta automat volumul playerului, astfel încât fiecare melodie să sune la fel de tare.
 Calea de descărcare a bibliotecii de melodii
 Numărul total de melodii
+Afișați/Ascundeți subtitrarea
+Schimbați viteza
+Puteți cânta melodia mai repede sau mai lent schimbând viteza de redare la 0,8x la 1,2x utilizând bara de viteză; pentru alte viteze de redare, faceți clic pe valoarea vitezei pentru a modifica.
+Faceți clic pentru a reseta viteza de redare la 1x
+Faceți clic pentru a seta viteza de redare
+Faceți clic pentru a reseta cheia/pitch-ul
+Resetare cheie
+Resetați viteza

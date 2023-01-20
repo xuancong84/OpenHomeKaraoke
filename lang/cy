@@ -2,7 +2,7 @@ Cymraeg
 Cyfrinair gweinyddol anghywir!
 Wedi allgofnodi o'r modd gweinyddol!
 Wedi ychwanegu %s o draciau ar hap
-Rhedeg allan o ganeuon!
+Wedi rhedeg allan o ganeuon!
 Wedi clirio'r ciw!
 Gwall wrth symud eitem y tu mewn i'r ciw: annilys-argument
 Wedi symud yr eitem yn llwyddiannus y tu mewn i'r ciw:
@@ -39,7 +39,7 @@ Nid oes gennych ganiatâd i gau i lawr
 System ailgychwyn nawr!
 Nid oes gennych ganiatâd i Ailgychwyn
 System ffeiliau ehangu a system ailgychwyn nawr!
-Methu ehangu fs ar ddyfeisiadau pi di-mafon!
+Methu ehangu fs ar ddyfeisiau pi di-mafon!
 Nid oes gennych ganiatâd i newid maint y system ffeiliau
 Heb ganfod llwybr Youtube-dl!
 Heb ganfod llwybr VLC!
@@ -57,7 +57,7 @@ I fyny nesaf:
 Ychwanegwyd gan:
 Nawr yn chwarae:
 Modd gweinyddol wedi'i ganiatáu!
-Bydd oedi cynyddol gyda sain yn rhoi mwy o amser i chi ddarllen geiriau cyn canu'r frawddeg nesaf.
+Bydd oedi cynyddol sain yn rhoi mwy o amser i chi ddarllen geiriau cyn canu'r frawddeg nesaf.
 Bydd oedi is-deitlau yn rhoi mwy o amser i chi ddarllen geiriau cyn canu'r frawddeg nesaf.
 Gelwir hanner tôn hefyd yn hanner cam. Dyma'r cyfwng lleiaf a ddefnyddir yng ngherddoriaeth glasurol y Gorllewin, sy'n hafal i ddeuddegfed wythfed neu hanner tôn.
 Mae holltwr lleisiol seiliedig ar DNN wedi'i alluogi. Mae PiKaraoke yn defnyddio PyTorch (gan Facebook) i redeg rhwydwaith niwral dwfn i hollti sain offerynnol a lleisiol ym mhob trac gan arwain at sain stereo.
@@ -72,17 +72,17 @@ Nid yw'r gân hon yn cael ei hychwanegu gennych chi. Ydych chi'n siŵr eich bod 
 Nid yw'r gân hon yn cael ei hychwanegu gennych chi. Ydych chi'n siŵr eich bod am hepgor y trac hwn?
 Rheoli Chwaraewr
 Nawr yn chwarae
-Can nesaf
+Can Nesaf
 Ceisio:
 Oedi Sain (eiliad)
 Oedi Isdeitl (eiliad)
 Ailgychwyn y Gân
 Chwarae/Saib
 Hepgor y Gân Gyfredol
-Cyfrol Lawr
+Cyfrol i Lawr
 Gosod Cyfrol
 Cyfrol i Fyny
-Gostwng Oedi Isdeitl
+Lleihau Oedi Isdeitl
 Gosod Oedi Isdeitl
 Cynyddu Oedi Isdeitl
 Lleihau Oedi Sain
@@ -100,7 +100,7 @@ Trefnwyd yn ôl 'Dyddiad'
 Trefnwyd yn ôl 'Alphabetical'
 caneuon
 yn dangos <b>{start} - {end}</b> {record_name}, cyfanswm <b>{total}</b> {record_name}
-dod o hyd i <b>{found}</b> {record_name}, yn dangos <b>{start} - {end}</b> {record_name}
+canfuwyd <b>{found}</b> {record_name}, yn dangos <b>{start} - {end}</b> {record_name}
 Golygu cân
 Symud i fyny yn y ciw
 Symud i lawr yn y ciw
@@ -117,7 +117,7 @@ Mae'r gân eisoes yn y ciw:
 Chwilio / Ychwanegu Newydd
 Chwiliwch
 Ciw
-Cynhwyswch gemau nad ydynt yn rhai karaoke
+Cynnwys gemau nad ydynt yn rhai karaoke
 Uwch
 Teipiwch gân (teitl/artist) i chwilio'r caneuon sydd ar gael a chliciwch ar 'Ciw' i'w hychwanegu at y ciw.
 Os nad yw'r gân yn ymddangos yn y gwymplen "Available Songs", cliciwch ar 'Chwilio' i ddod o hyd iddi ar Youtube.
@@ -152,21 +152,21 @@ Opsiynau Rheoli Uwch
 Modd hollti lleisiol:
 Defnyddiwch L-R/L+R
 Defnyddiwch DNN
-Mae sain MTV safonol yn cynnwys y ddwy sianel stereo (L ac R) wedi'u hamgodio yn y fath fodd fel: LR yw'r trac offeryn, L + R yw'r trac lleisiol. Felly, trwy dynnu neu ychwanegu'r ddwy sianel stereo yn unig, gallwn gael y trac offerynnol a lleisiol mewn sain mono. Mae holltwr lleisiol adeiledig PiKaraoke yn seiliedig ar DNN (rhwydwaith niwral dwfn) yn defnyddio algorithm AI i hollti sain offerynnol a lleisiol ym mhob trac stereo yn annibynnol gan arwain at draciau stereo offerynnol a lleisiol.
+Mae gan sain MTV safonol y ddwy sianel stereo (L ac R) wedi'u hamgodio yn y fath fodd fel: LR yw'r trac offeryn, L + R yw'r trac lleisiol. Felly, trwy dynnu neu ychwanegu'r ddwy sianel stereo yn unig, gallwn gael y trac offerynnol a lleisiol mewn sain mono. Mae holltwr lleisiol adeiledig PiKaraoke yn seiliedig ar DNN (rhwydwaith niwral dwfn) yn defnyddio algorithm AI i hollti sain offerynnol a lleisiol ym mhob trac stereo yn annibynnol gan arwain at draciau stereo offerynnol a lleisiol.
 Stopiwch Hollti
 Ailgychwyn Hollti
 Mae'r holltwr lleisiol (sy'n cefnogi tynnu seiliedig ar DNN a stereo) yn rhedeg fel proses ar wahân yn y cefndir, gan gynhyrchu ffeil sain offerynnol / lleisiol ar gyfer pob cân.
 Ail-gydamseru sain a fideo:
 Stopiwch Streamer
 Ailgychwyn Streamer
-Dim ond trwy borwr gwe y mae hyn yn effeithio ar chwarae KTV. Mae ailgychwyn y sgrin-dal-a-ffrydio yn gwella cydamseru sain/fideo, mae hefyd yn lleihau'r hwyrni rhwng y gweinydd a'r porwr.
+Mae hyn ond yn effeithio ar chwarae KTV trwy borwr gwe. Mae ailgychwyn y sgrin-dal-a-ffrydio yn gwella cydamseru sain/fideo, mae hefyd yn lleihau'r hwyrni rhwng y gweinydd a'r porwr.
 Adnewyddu'r rhestr caneuon:
 Ailsganio cyfeiriadur caneuon
 Dim ond os gwnaethoch chi gopïo ffeiliau â llaw i'r cyfeiriadur lawrlwytho tra roedd PiKaraoke yn rhedeg y dylai fod angen i chi wneud hyn.
 Diweddariadau
 Pe bai lawrlwythiadau neu chwiliadau'n stopio gweithio, mae'n debyg y bydd diweddaru youtube-dl yn ei drwsio. Y fersiwn sydd wedi'i gosod ar hyn o bryd yw:
 Diweddaru youtube-dl
-Mae'n bosibl y bydd y ddolen diweddaru hon uchod yn methu os nad oes gennych ganiatâd ffeil priodol. Gwiriwch log PiKaraoke am wallau.
+Mae'n bosibl y bydd y ddolen ddiweddaru hon uchod yn methu os nad oes gennych ganiatâd ffeil priodol. Gwiriwch log PiKaraoke am wallau.
 Cau i lawr
 Peidiwch â thynnu'r plwg yn unig! Caewch eich gweinydd yn iawn bob amser er mwyn osgoi llygredd data.
 Gadael PiKaraoke
@@ -174,7 +174,7 @@ System Ailgychwyn
 System Shutdown
 Arall
 Ehangu system ffeiliau Raspberry Pi
-Os ydych chi newydd osod y ddelwedd pi pikaraoke a adeiladwyd ymlaen llaw a bod eich cerdyn SD yn fwy na 4GB, efallai y byddwch am ehangu'r system ffeiliau i ddefnyddio'r gofod sy'n weddill. Dim ond unwaith mae angen i chi wneud hyn. Bydd hyn yn ailgychwyn y system.
+Os ydych newydd osod y ddelwedd PiKaraoke pi a adeiladwyd ymlaen llaw a bod eich cerdyn SD yn fwy na 4GB, efallai y byddwch am ehangu'r system ffeiliau i ddefnyddio'r gofod sy'n weddill. Dim ond unwaith y mae angen i chi wneud hyn. Bydd hyn yn ailgychwyn y system.
 Analluogi modd gweinyddol
 Galluogi modd gweinyddol
 allgofnodi
@@ -192,6 +192,14 @@ Cân wedi'i hychwanegu at y ciw!
 Wedi methu ciwio'r gân!
 Gwybodaeth a Gosodiadau System
 Normaleiddio Cyfrol
-Yn aml mae gan wahanol ganeuon gyfaint gwahanol. Bydd galluogi normaleiddio sain yn rhedeg <i>ffmpeg</i> yn gyntaf i gyfrifo cyfaint byd-eang cân ac addasu cyfaint y chwaraewr yn awtomatig fel bod pob cân yr un mor uchel.
-Llwybr lawrlwytho'r llyfrgell ganeuon
+Yn aml mae gan wahanol ganeuon gyfaint gwahanol. Bydd galluogi normaleiddio sain yn rhedeg <i>ffmpeg</i> yn gyntaf i gyfrifo cyfaint byd-eang cân ac yn addasu cyfaint y chwaraewr yn awtomatig fel bod pob cân yr un mor uchel.
+Llwybr lawrlwytho llyfrgell caneuon
 Cyfanswm y caneuon
+Dangos/Cuddio Isdeitl
+Newid Cyflymder
+Gallwch ganu'r gân yn gyflymach neu'n arafach trwy newid y cyflymder chwarae o fewn 0.8x i 1.2x gan ddefnyddio'r bar trac cyflymder; ar gyfer cyflymder chwarae arall, cliciwch ar y gwerth cyflymder i newid.
+Cliciwch i ailosod cyflymder chwarae i 1x
+Cliciwch i osod cyflymder chwarae
+Cliciwch i ailosod allwedd/traw
+Ailosod Allwedd
+Ailosod Cyflymder

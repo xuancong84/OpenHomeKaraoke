@@ -1,5 +1,5 @@
 íslenskur
-Rangt admin lykilorð!
+Rangt stjórnanda lykilorð!
 Útskráður úr stjórnunarham!
 Bætt við %s handahófi lögum
 Búin að verða uppiskroppa með lög!
@@ -14,16 +14,16 @@ Villa við að færa sig upp í biðröð:
 Eytt úr biðröð:
 Villa við að eyða úr biðröð:
 Niðurhal byrjað:
-Að því loknu verður því bætt við biðröðina.
-Þegar því er lokið mun það birtast á listanum yfir „tiltæk lög“.
+Þegar því er lokið mun það bætast í biðröð.
+Þegar því er lokið mun það birtast á listanum „tiltæk lög“.
 Villa: Ekki er hægt að eyða þessu lagi vegna þess að það er í núverandi biðröð:
 Lagi eytt:
 Villa: Engin lagabreyta tilgreind!
 Villa: Ekki er hægt að breyta þessu lagi vegna þess að það er verið að spila það:
 Lagaskrá Breyta
-Villa við að endurnefna skrána: '%s' í '%s'. Skráarnafn er þegar til.
+Villa við að endurnefna skrá: '%s' í '%s'. Skráarnafn er þegar til.
 Endurnefna skrá: '%s' í '%s'
-Villa: Engar skráarnafnbreytur voru tilgreindar!
+Villa: Engar færibreytur skráarnafns voru tilgreindar!
 Óþekktur
 Hlaupandi
 Hætt
@@ -45,7 +45,7 @@ Youtube-dl slóð fannst ekki!
 VLC slóð fannst ekki!
 omxplayer slóð fannst ekki!
 Að búa til niðurhalsslóð:
-Wifi/net er ekki tengt. Lokar eftir 10s...
+WiFi/net er ekki tengt. Lokar eftir 10s...
 Til að velja lög, skannaðu QR eða tengdu við
 Fyrir sjónvarpsskjá, tengdu við
 Ýttu á F til að skipta yfir allan skjáinn
@@ -57,10 +57,10 @@ Næst:
 Bætt við af:
 Nú spilar:
 Stjórnunarhamur veittur!
-Aukin hljóðtöf mun gefa þér meiri tíma til að lesa texta áður en þú syngur út næstu setningu.
-Með því að draga úr töfum texta mun þú gefa þér meiri tíma til að lesa texta áður en þú syngur næstu setningu.
-Hálftónn er einnig þekktur sem hálfþrep. Það er minnsta bil sem notað er í klassískri vestrænni tónlist, jafnt og tólfta hluta áttundar eða hálfs tóns.
-DNN-undirstaða raddskipting er virkjuð. PiKaraoke notar PyTorch (af Facebook) til að keyra djúpt taugakerfi til að skipta hljóðfæra- og sönghljóði í hverju lagi sem gefur tilefni til steríóhljóðs.
+Aukin seinkun á hljóði mun gefa þér meiri tíma til að lesa texta áður en þú syngur út næstu setningu.
+Með því að draga úr töfum texta mun þú gefa þér meiri tíma til að lesa texta áður en þú syngur út næstu setningu.
+Hálftónn er einnig þekktur sem hálftónn. Það er minnsta bil sem notað er í klassískri vestrænni tónlist, jafnt og tólfta hluta áttundar eða hálfs tóns.
+DNN-undirstaða raddskipting er virkjuð. PiKaraoke notar PyTorch (eftir Facebook) til að keyra djúpt taugakerfi til að skipta hljóðfæra- og sönghljóði í hverju lagi sem gefur tilefni til steríóhljóðs.
 Leikmannastýring
 Tónlist
 Blandað
@@ -74,7 +74,7 @@ Leikmannastýring
 Nú að spila
 Næsta lag
 Leitaðu að:
-Hljóðseinkun (sek.)
+Töf á hljóði (sek.)
 Töf texta (sek)
 Endurræstu lagið
 Spila / gera hlé
@@ -90,10 +90,10 @@ Stilltu hljóðtöf
 Auka seinkun á hljóði
  hálftónar
 Vinsamlegast sláðu inn nafnið þitt. Þetta mun birtast við hliðina á lögunum sem þú setur í biðröð úr þessu tæki.
-Lagi bætt við röðina:
+Lagi bætt í röðina:
 Lag þegar í röðinni:
 Raða eftir dagsetningu
-Raða eftir stafrófsröð
+Raða eftir Stafrófsröð
 Bættu '%s' við röðina
 Skoðaðu
 Raðað eftir 'dagsetningu'
@@ -102,7 +102,7 @@ lög
 sýnir <b>{start} - {end}</b> {record_name}, samtals <b>{total}</b> {record_name}
 fann <b>{found}</b> {record_name}, sýnir <b>{start} - {end}</b> {record_name}
 Breyta lagi
-Farðu upp í röð
+Farðu upp í biðröð
 Færðu þig niður í biðröð
 Ertu viss um að þú viljir eyða úr biðröðinni
 Ertu viss um að þú viljir hreinsa ALLA biðröðina? Sláðu inn 'Í lagi' til að halda áfram
@@ -117,7 +117,7 @@ Lagið er þegar í biðröðinni:
 Leita / Bæta við nýju
 Leita
 Biðröð
-Látið fylgja leiki sem ekki eru karókí
+Láttu leiki sem ekki eru karókí
 Ítarlegri
 Sláðu inn lag (titill/listamaður) til að leita að tiltækum lögum og smelltu á 'Biðröð' til að bæta því við röðina.
 Ef lagið birtist ekki í "Available Songs" fellilistanum, smelltu á 'Search' til að finna það á Youtube.
@@ -145,21 +145,21 @@ OS
 Diskanotkun
 Minni
 Skjámyndataka
-Söngskljúfari
+Vocal Splitter
 Youtube-dl (yt-dlp) útgáfa
 PiKaraoke útgáfa
 Ítarlegir stjórnunarvalkostir
 Raddskiptihamur:
 Notaðu L-R/L+R
 Notaðu DNN
-Staðlað MTV hljóð hefur tvær steríórásir (L og R) kóðaðar á þann hátt að: L-R er hljóðfæralagið, L+R er sönglagið. Þannig, með því einfaldlega að draga frá eða bæta við steríórásunum tveimur, getum við fengið hljóðfæra- og sönglagið í mónóhljóði. Innbyggður DNN-undirstaða (djúpt tauganet) raddskilari PiKaraoke notar gervigreind reiknirit til að skipta hljóðfæra- og sönghljóði í hverju steríólagi sjálfstætt sem leiðir til hljóðfæra- og sönglaga.
+Staðlað MTV hljóð hefur tvær steríórásir (L og R) kóðaðar á þann hátt að: L-R er hljóðfæralagið, L+R er sönglagið. Þannig, með því einfaldlega að draga frá eða bæta við steríórásunum tveimur, getum við fengið hljóðfæra- og sönglagið í mónóhljóði. Innbyggður DNN-undirstaða (djúpt tauganet) raddskilari PiKaraoke notar gervigreind reiknirit til að skipta hljóðfæra- og raddhljóði í hverju steríólagi sjálfstætt, sem leiðir til hljóðfæra- og sönglaga.
 Hættu Splitter
 Endurræstu Splitter
 Raddskiptingin (sem styður bæði DNN-undirstaða og hljómtæki frádrátt) keyrir sem sérstakt ferli í bakgrunni og býr til hljóðfæra-/sönghljóðskrá fyrir hvert lag.
 Samstilla hljóð og mynd aftur:
 Stöðva Streamer
 Endurræstu Streamer
-Þetta hefur aðeins áhrif á spilun KTV í gegnum vafra. Að endurræsa skjámyndatöku og streymi bætir samstillingu hljóðs/myndbands, það dregur einnig úr biðtíma milli netþjóns og vafra.
+Þetta hefur aðeins áhrif á spilun KTV í gegnum vafra. Að endurræsa skjámyndatöku og straumspilun bætir samstillingu hljóðs/myndbands, það dregur einnig úr leynd milli netþjónsins og vafrans.
 Endurnýjaðu lagalistann:
 Skannaðu lagaskrána aftur
 Þú ættir aðeins að þurfa að gera þetta ef þú afritaðir skrár handvirkt í niðurhalsskrána á meðan PiKaraoke var í gangi.
@@ -168,13 +168,13 @@ Ef niðurhal eða leit hætti að virka mun uppfærsla youtube-dl líklega laga 
 Uppfærðu youtube-dl
 Þessi uppfærslutengil hér að ofan gæti mistekist ef þú hefur ekki viðeigandi skráarheimildir. Athugaðu PiKaraoke log fyrir villur.
 Lokun
-Ekki bara draga í tappa! Slökktu alltaf á netþjóninum þínum á réttan hátt til að forðast gagnaspillingu.
+Ekki bara draga úr sambandi! Slökktu alltaf á netþjóninum þínum á réttan hátt til að forðast gagnaspillingu.
 Hætta í PiKaraoke
 Endurræstu kerfið
 Lokunarkerfi
 Annað
 Stækkaðu Raspberry Pi skráarkerfið
-Ef þú hefur nýlega sett upp forbyggðu pikaraoke pi myndina og SD kortið þitt er stærra en 4GB, gætirðu viljað stækka skráarkerfið til að nýta það sem eftir er. Þú þarft bara að gera þetta einu sinni. Þetta mun endurræsa kerfið.
+Ef þú hefur nýlega sett upp forbyggðu PiKaraoke pi myndina og SD kortið þitt er stærra en 4GB, gætirðu viljað stækka skráarkerfið til að nýta það sem eftir er. Þú þarft bara að gera þetta einu sinni. Þetta mun endurræsa kerfið.
 Slökktu á stjórnunarham
 Virkja stjórnunarham
 að skrá þig út
@@ -185,7 +185,7 @@ Skipta um tungumál
 Vinsamlegast veldu tungumál
 Kerfismál
 Núverandi tungumál kerfisins:
-Þetta breytir tungumáli PiKaraoke bakendakerfisins sem birtist á sjónvarpsskjánum; þar að auki getur hver notandi sem tengist einnig breytt viðkomandi vefviðmótstungumáli sínu í hnatthnappnum í valmyndinni efst til hægri.
+Þetta breytir tungumáli PiKaraoke bakenda kerfisins sem birtist á sjónvarpsskjánum; þar að auki getur hver notandi sem tengist einnig breytt viðkomandi vefviðmótstungumáli sínu í hnatthnappnum í valmyndinni efst til hægri.
 Niðurhali lokið með góðum árangri!
 Niðurhal mistókst!
 Lagi bætt í röðina!
@@ -195,3 +195,11 @@ Volume Normalization
 Mismunandi lög hafa oft mismunandi hljóðstyrk. Ef stöðlun hljóðstyrks er virkt mun fyrst keyra <i>ffmpeg</i> til að reikna út heildarstyrk lags og stilla hljóðstyrk spilarans sjálfkrafa þannig að hvert lag hljómi jafn hátt.
 Slóð lagasafns til að sækja
 Heildarfjöldi laga
+Sýna/fela texta
+Breyta hraða
+Þú getur sungið lagið hraðar eða hægar með því að breyta spilunarhraðanum í 0,8x til 1,2x með því að nota hraðastakkann; fyrir annan spilunarhraða, smelltu á hraðagildið til að breyta.
+Smelltu til að endurstilla spilunarhraða í 1x
+Smelltu til að stilla spilunarhraða
+Smelltu til að endurstilla lykil/pitch
+Endurstilla lykil
+Endurstilla hraða

@@ -196,3 +196,10 @@ Different songs often have different volume. Enabling volume normalization will 
 Song library download path
 Total number of songs
 Show/Hide Subtitle
+Change Speed
+You can sing the song faster or slower by changing the playback speed to within 0.8x to 1.2x using the speed trackbar; for other playback speed, click on the speed value to change.
+Click to reset playback speed to 1x
+Click to set playback speed
+Click to reset key/pitch
+Reset Key
+Reset Speed

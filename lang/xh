@@ -8,9 +8,9 @@ Imposiso yokuhambisa into ngaphakathi komgca: invalid-argument
 Isuswe ngempumelelo into ngaphakathi komgca:
 Impazamo yokuhambisa into ngaphakathi komgca:
 Yehlisiwe emgceni:
-Imposiso ekuhambiseni emgceni:
+Imposiso ekuhambiseni ezantsi emgceni:
 Unyusiwe emgceni:
-Impazamo ekunyukeni emgceni:
+Impazamo yokunyuka kumgca:
 Icinyiwe emgceni:
 Impazamo yokucima kumgca:
 Ukukhuphela kuqalile:
@@ -19,11 +19,11 @@ Ekugqityweni kwayo, iya kuvela kuluhlu "lweengoma ezikhoyo".
 Imposiso: Ayinakuyicima le ngoma kuba ikumgca wangoku:
 Ingoma icinyiwe:
 Imposiso: Akukho parameter yengoma ixeliweyo!
-Impazamo: Ayinakuhlela le ngoma kuba idlalwa ngoku:
-Hlela iFayile yeNgoma
+Imposiso: Ayinakuyihlela le ngoma kuba idlalwa ngoku:
+Hlela iFayile yeeNgoma
 Ifayili ethiywa ngokutsha ngemposiso: '%s' ukuya kwi-'%s'. Igama lefayile sele likhona.
 Ifayili ethiywe ngokutsha: '%s' ukuya kwi-'%s'
-Imposiso: Akukho ziparamitha zegama lefayile zichaziweyo!
+Imposiso: Akukho zipharamitha zegama lefayile zichaziweyo!
 Akwaziwa
 Ukubaleka
 Kumisiwe
@@ -40,7 +40,7 @@ Iqala ngokutsha inkqubo ngoku!
 Awunayo imvume yokuQalisa kwakhona
 Ukwandisa inkqubo yefayile kunye nenkqubo yokuqalisa ngokutsha ngoku!
 Ayikwazi ukwandisa fs kwi izixhobo non-raspberry pi!
-Awunayo imvume yokwenza ubungakanani bendlela yefayile
+Awunayo imvume yokwenza ubungakanani kwakhona kwisixokelelwano sefayile
 Indlela ye-Youtube-dl ayifunyenwanga!
 Indlela yeVLC ayifunyenwanga!
 indlela ye-omxplayer ayifunyenwanga!
@@ -69,12 +69,12 @@ Guqula isitshixo
 Akukho nto idlalayo ngoku.
 Akukho ngoma ibekwe emgceni.
 Le ngoma ayongezwa nguwe. Uqinisekile ufuna ukuyiqala kwakhona le ngoma?
-Le ngoma ayongezwa nguwe. Uqinisekile ufuna ukutsiba le ngoma?
+Le ngoma ayongezwa nguwe. Uqinisekile ufuna ukuyitsiba le ngoma?
 Ulawulo lomdlali
 Ngoku Iyadlala
 Ingoma elandelayo
 Funa Uku:
-Ulibaziseko lomsindo (umzuzwana)
+Ulibaziseko lweAudio (umzuzwana)
 Ulibaziso lwesihloko (imizuzwana)
 Qala kwakhona Ingoma
 Dlala/Misa
@@ -83,7 +83,7 @@ Umthamo Phantsi
 Seta iVolume
 Unyuse umthamo
 Nciphisa ukulibaziseka kweSihlokwana
-Cwangcisa ukulibaziseka kweSihlokwana
+Cwangcisa ukulibaziseka komxholo
 Yandisa Ukulibaziseka kweSihlokwana
 Nciphisa ulibaziseko lweAudio
 Cwangcisa Ukulibaziseka komsindo
@@ -119,18 +119,18 @@ Khangela
 Umgca
 Bandakanya imidlalo engeyiyo ekaraoke
 Ikwinqanaba eliphezulu
-Chwetheza ingoma (isihloko/igcisa) ukukhangela iingoma ezikhoyo kwaye ucofe u-'Queue' ukuzongeza emgceni.
+Chwetheza ingoma (isihloko/igcisa) ukukhangela iingoma ezikhoyo kwaye ucofe u-'Queue' ukuyongeza emgceni.
 Ukuba ingoma ayiveli "kwiingoma ezifumanekayo", cofa u 'Khangela' ukuze uyifumane kwi-Youtube.
-Khuphela ngokuthe ngqo i-url kaYouTube:
+Khuphela ngokuthe ngqo url kaYouTube:
 Yongeza emgceni
 Bandakanya izihlokwana
 Khuphela
 Iphendla u-YouTube
-Khangela iziphumo ze
+Phendla iziphumo ze
 Cofa ukwehla ukubonisa iziphumo ezingakumbi
 Ikhonkco:
 Iingoma ezifumanekayo
-Ngaba uyafuna ukutshintsha igama elibonisayo lomntu osebenzisa esi sixhobo? Oku kuya kubonakala ecaleni kweengoma ezisemgceni. Okwangoku:
+Ngaba uyafuna ukutshintsha igama elibonisiweyo lomntu osebenzisa esi sixhobo? Oku kuya kubonakala ecaleni kweengoma ezisemgceni. Okwangoku:
 Umsebenzisi wangoku
 Iisetingi
 PiKaraoke
@@ -152,21 +152,21 @@ Iinketho zoLawulo oluPhezulu
 Imowudi yokwahlula ilizwi:
 Sebenzisa i-L-R/L+R
 Sebenzisa i-DNN
-Umsindo we-MTV oqhelekileyo unamajelo amabini e-stereo (L kunye no-R) afakwe ngekhowudi ngendlela yokuba: L-R yingoma yesixhobo, i-L + R yingoma yezwi. Ke, ngokususa ngokulula okanye ukongeza itshaneli ezimbini zestereo, sinokufumana isixhobo kunye nengoma yezwi kwisandi se-mono. I-PiKaraoke eyakhelwe-ngaphakathi ye-DNN-based (inethiwekhi ye-neural enzulu) i-vocal splitter isebenzisa i-algorithm ye-AI ukwahlula isandi sesixhobo kunye nesandi kwingoma nganye ye-stereo ngokuzimeleyo okukhokelela kwisixhobo se-stereo kunye neengoma zelizwi.
+Umsindo we-MTV oqhelekileyo unamajelo amabini e-stereo (L kunye no-R) afakwe ngekhowudi ngendlela yokuba: L-R yingoma yesixhobo, i-L+R yingoma yezwi. Ke, ngokususa ngokulula okanye ukongeza iziteshi ezimbini zestereo, sinokufumana isixhobo kunye nengoma yezwi kwisandi se-mono. I-PiKaraoke eyakhelwe-ngaphakathi kwi-DNN-based (inethiwekhi ye-neural enzulu) i-vocal splitter isebenzisa i-algorithm ye-AI ukwahlula isandi sesixhobo kunye nesandi kwingoma nganye ye-stereo ngokuzimeleyo okukhokelela kwisixhobo se-stereo kunye neengoma zelizwi.
 Misa iSplitter
 Qala kwakhona iSplitter
 I-vocal splitter (exhasa zombini i-DNN-based kunye ne-stereo yokuthabatha) iqhuba njengenkqubo eyahlukileyo ngasemva, ivelisa ifayile ye-instrumental/vocal audio kwingoma nganye.
 Lungelelanisa kwakhona iaudio kunye nevidiyo:
 Misa i-Streamer
-Qalisa kwakhona i-Streamer
+Qala kwakhona i-Streamer
 Oku kuchaphazela kuphela ukudlala i-KTV nge-browser yewebhu. Ukuqalisa kwakhona ukuthathwa kwesikrini-kunye-nokusasaza kuphucula ulungelelwaniso lweaudio/yevidiyo, ikwanciphisa nokubambezeleka phakathi kweseva kunye nesikhangeli.
 Hlaziya uluhlu lweengoma:
 Skena kwakhona uluhlu lwengoma
 Kufuneka wenze oku kuphela ukuba ukhuphele ngesandla iifayile kulawulo lokhuphelo ngelixa iPiKaraoke ibisebenza.
 Uhlaziyo
-Ukuba ukhuphelo okanye uphendlo luyekile ukusebenza, ukuhlaziya i-youtube-dl mhlawumbi kuya kuyilungisa. Inguqulelo yangoku ehlohliweyo yile:
+Ukuba ukhuphelo okanye ukhangelo luyekile ukusebenza, ukuhlaziya i-youtube-dl mhlawumbi kuya kuyilungisa. Inguqulelo yangoku ehlohliweyo yile:
 Hlaziya i-youtube-dl
-Olu nxulumaniso lohlaziyo lungasentla lunokusilela ukuba awunazo iimvume zefayile ezifanelekileyo. Jonga iPiKaraoke log ngeempazamo.
+Olu nxulumaniso lohlaziyo lungasentla lunokusilela ukuba awunazo iimvume ezifanelekileyo zefayile. Jonga iPiKaraoke log ngeempazamo.
 Cima
 Musa ukutsala iplagi nje! Soloko uvala iseva yakho ngokufanelekileyo ukunqanda ukonakala kwedatha.
 Yeka iPiKaraoke
@@ -174,7 +174,7 @@ Qalisa kwakhona inkqubo
 Cima inkqubo
 Okunye
 Yandisa inkqubo yefayile yeRaspberry Pi
-Ukuba usandula ukufaka umfanekiso we-pikaraoke pi owakhelwe ngaphambili kwaye ikhadi lakho le-SD likhulu kune-4GB, unokufuna ukwandisa inkqubo yefayile ukusebenzisa indawo eseleyo. Kufuneka wenze oku kube kanye kuphela. Oku kuya kuqalisa kwakhona inkqubo.
+Ukuba ufake nje umfanekiso wePiKaraoke pi owakhelwe ngaphambili kwaye ikhadi lakho le-SD likhulu kune-4GB, unokufuna ukwandisa inkqubo yefayile ukusebenzisa indawo eseleyo. Kufuneka wenze oku kube kanye kuphela. Oku kuya kuqalisa kwakhona inkqubo.
 Cima imo yolawulo
 Vula imo yolawulo
 phuma
@@ -185,13 +185,21 @@ Guqula ulwimi
 Nceda ukhethe ulwimi
 Ulwimi Lwenkqubo
 Ulwimi lwenkqubo yangoku:
-Oku kutshintsha ulwimi lwePiKaraoke backend system eboniswa kwiscreen seTV; ngaphezu koko, umsebenzisi ngamnye odibanisayo unokutshintsha ulwimi lwabo lwe-UI yeWebhu ehlukeneyo kwiqhosha leglowubhu kwimenyu ephezulu ngasekunene.
+Oku kutshintsha ulwimi lwePiKaraoke backend system eboniswa kwiscreen seTV; ngaphezu koko, umsebenzisi ngamnye odibanisayo unokutshintsha ulwimi lwabo lwe-Web UI kwiqhosha leglowubhu kwimenyu ephezulu ngasekunene.
 Ukukhuphela kugqitywe ngempumelelo!
 Ukukhuphela akuphumelelanga!
 Ingoma yongezwe emgceni!
 Ayiphumelelanga ukufola ingoma!
 Ulwazi lweNkqubo & Izicwangciso
-Ukumiselwa komthamo
+Ukwenziwa kweVolume Normalization
 Iingoma ezahlukeneyo zihlala zinevolumu eyahlukileyo. Ukuvumela ivolumu yesiqhelo iya kuqala <i>ffmpeg</i> ukubala umthamo wehlabathi wengoma kunye nokulungelelanisa ngokuzenzekelayo umthamo womdlali ukuze ingoma nganye ivakalise ngokulinganayo.
 Indlela yokukhuphela ilayibrari yeengoma
 Lilonke inani leengoma
+Bonisa/Fihla iSihlokwana
+Guqula isantya
+Ungayicula ingoma ngokukhawuleza okanye ngokukhawuleza ngokutshintsha isantya sokudlala ukuya kwi-0.8x ukuya kwi-1.2x usebenzisa i-trackbar yesantya; ngezinye isantya sokudlala, cofa kwixabiso lesantya ukuze utshintshe.
+Cofa ukuseta kwakhona isantya sokudlala ukuya ku-1x
+Cofa ukuseta isantya sokudlala
+Cofa ukuseta kwakhona isitshixo/isandi
+Seta kwakhona iqhosha
+Lungisa kwakhona isantya

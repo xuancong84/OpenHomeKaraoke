@@ -11,12 +11,12 @@ Imesogezwa chini kwenye foleni:
 Hitilafu katika kuteremka kwenye foleni:
 Imesogezwa juu kwenye foleni:
 Hitilafu ya kusonga juu kwenye foleni:
-Imefutwa kutoka kwa foleni:
+Imefutwa kutoka kwenye foleni:
 Hitilafu katika kufuta kutoka kwenye foleni:
 Upakuaji umeanza:
 Baada ya kukamilika, itaongezwa kwenye foleni.
 Baada ya kukamilika, itaonekana kwenye orodha ya "nyimbo zinazopatikana".
-Hitilafu: Haiwezi kufuta wimbo huu kwa sababu upo kwenye foleni ya sasa:
+Hitilafu: Haiwezi kufuta wimbo huu kwa sababu uko kwenye foleni ya sasa:
 Wimbo umefutwa:
 Hitilafu: Hakuna kigezo cha wimbo kilichobainishwa!
 Hitilafu: Haiwezi kuhariri wimbo huu kwa sababu unachezwa kwa sasa:
@@ -60,16 +60,16 @@ Hali ya msimamizi imekubaliwa!
 Kuongezeka kwa ucheleweshaji wa sauti kutakupa muda zaidi wa kusoma maneno kabla ya kuimba sentensi inayofuata.
 Kupunguza ucheleweshaji wa manukuu kutakupa muda zaidi wa kusoma maneno kabla ya kuimba sentensi inayofuata.
 Semitone pia inajulikana kama hatua ya nusu. Ni muda mdogo zaidi unaotumiwa katika muziki wa kitamaduni wa Magharibi, sawa na sehemu ya kumi na mbili ya oktava au nusu ya toni.
-Kigawanya sauti chenye msingi wa DNN kimewashwa. PiKaraoke hutumia PyTorch (na Facebook) kuendesha mtandao wa kina wa neva ili kugawanya sauti ya ala na ya sauti katika kila wimbo na kusababisha sauti ya stereo.
+Kigawanya sauti cha msingi wa DNN kimewashwa. PiKaraoke hutumia PyTorch (na Facebook) kuendesha mtandao wa kina wa neva ili kugawanya sauti ya ala na ya sauti katika kila wimbo na kusababisha sauti ya stereo.
 Udhibiti wa Mchezaji
 Muziki
 Imechanganywa
 Sauti
 Badilisha Kitufe
-Hakuna kinachocheza kwa sasa.
+Hakuna kinachocheza sasa hivi.
 Hakuna wimbo uliowekwa kwenye foleni.
 Wimbo huu haujaongezwa na wewe. Je, una uhakika unataka kuanzisha upya wimbo huu?
-Wimbo huu haujauongeza. Je, una uhakika unataka kuruka wimbo huu?
+Wimbo huu haujaongezwa na wewe. Je, una uhakika unataka kuruka wimbo huu?
 Udhibiti wa Mchezaji
 Inacheza sasa
 Wimbo Unaofuata
@@ -102,7 +102,7 @@ Nyimbo
 inaonyesha <b>{start} - {end}</b> {record_name}, kwa jumla <b>{total}</b> {record_name}
 imepata <b>{imepata}</b> {record_name}, ikionyesha <b>{start} - {end}</b> {record_name}
 Hariri wimbo
-Sogeza juu kwenye foleni
+Nenda juu kwenye foleni
 Sogeza chini kwenye foleni
 Je, una uhakika unataka kufuta kutoka kwenye foleni
 Je, una uhakika unataka kufuta foleni YOTE? Andika 'Sawa' ili kuendelea
@@ -111,7 +111,7 @@ Futa zote
 Foleni ni tupu
 Foleni
 Futa
-Nyimbo zinazopatikana katika maktaba ya ndani
+Nyimbo zinazopatikana katika maktaba ya karibu
 Wimbo ulioongezwa kwenye foleni:
 Wimbo tayari uko kwenye foleni:
 Tafuta / Ongeza Mpya
@@ -120,7 +120,7 @@ Foleni
 Jumuisha mechi zisizo za karaoke
 Advanced
 Andika wimbo (kichwa/msanii) kutafuta nyimbo zinazopatikana na ubofye 'Foleni' ili kuiongeza kwenye foleni.
-Ikiwa wimbo hauonekani katika menyu kunjuzi ya "Nyimbo Zinazopatikana", bofya 'Tafuta' ili kuipata kwenye Youtube.
+Ikiwa wimbo hauonekani kwenye menyu kunjuzi ya "Nyimbo Zinazopatikana", bofya 'Tafuta' ili kuipata kwenye Youtube.
 Pakua moja kwa moja url ya YouTube:
 Ongeza kwenye foleni
 Jumuisha manukuu
@@ -130,7 +130,7 @@ Matokeo ya utafutaji
 Bofya menyu kunjuzi ili kuonyesha matokeo zaidi
 Kiungo:
 Nyimbo Zinazopatikana
-Je, ungependa kubadilisha jina la maonyesho la mtu anayetumia kifaa hiki? Hii itaonekana karibu na nyimbo zilizowekwa kwenye foleni. Sasa:
+Je, ungependa kubadilisha jina la onyesho la mtu anayetumia kifaa hiki? Hii itaonekana karibu na nyimbo zilizowekwa kwenye foleni. Sasa:
 Mtumiaji wa sasa
 Mipangilio
 PiKaraoke
@@ -148,14 +148,14 @@ Picha ya skrini
 Mgawanyiko wa sauti
 Toleo la Youtube-dl (yt-dlp).
 Toleo la PiKaraoke
-Chaguzi za Udhibiti wa Juu
+Chaguzi za Udhibiti wa hali ya juu
 Njia ya kugawanya sauti:
 Tumia L-R/L+R
 Tumia DNN
-Sauti ya kawaida ya MTV ina chaneli mbili za stereo (L na R) zilizosimbwa kwa njia ambayo: L-R ni wimbo wa ala, L+R ni wimbo wa sauti. Kwa hivyo, kwa kupunguza au kuongeza tu chaneli mbili za stereo, tunaweza kupata wimbo wa ala na sauti katika sauti ya mono. Kipasuaji cha sauti cha PiKaraoke kilichojengwa ndani ya DNN (mtandao wa neva wa kina) hutumia algoriti ya AI kugawanya sauti ya ala na ya sauti katika kila wimbo wa stereo na kusababisha ala za stereo na sauti.
+Sauti ya kawaida ya MTV ina chaneli mbili za stereo (L na R) zilizosimbwa kwa njia ambayo: L-R ni wimbo wa ala, L+R ni wimbo wa sauti. Kwa hivyo, kwa kupunguza au kuongeza chaneli mbili za stereo, tunaweza kupata wimbo wa ala na sauti katika sauti ya mono. Kipasuaji cha sauti cha PiKaraoke kilichojengwa ndani ya DNN (mtandao wa neva wa kina) hutumia algoriti ya AI kugawanya sauti ya ala na sauti katika kila wimbo wa stereo na kusababisha ala za stereo na sauti.
 Acha Kugawanyika
 Anzisha tena Splitter
-Kipasua sauti (kinachoauni msingi wa DNN na utoaji wa stereo) huendesha kama mchakato tofauti chinichini, na kutengeneza faili ya sauti ya ala/ya sauti kwa kila wimbo.
+Kigawanyiko cha sauti (kinachoauni utoaji wa DNN na stereo) huendesha kama mchakato tofauti chinichini, na kutengeneza faili ya sauti ya ala/ya sauti kwa kila wimbo.
 Sawazisha upya sauti na video:
 Acha Kitiririshaji
 Anzisha tena Kipeperushi
@@ -164,7 +164,7 @@ Onyesha upya orodha ya nyimbo:
 Changanua upya saraka ya wimbo
 Unapaswa tu kuhitaji kufanya hivi ikiwa ulinakili faili kwa mikono kwenye saraka ya upakuaji wakati PiKaraoke ilikuwa inaendesha.
 Sasisho
-Ikiwa vipakuliwa au utafutaji utaacha kufanya kazi, kusasisha youtube-dl huenda kutairekebisha. Toleo la sasa lililowekwa ni:
+Ikiwa upakuaji au utafutaji utaacha kufanya kazi, kusasisha youtube-dl kunaweza kurekebisha. Toleo la sasa lililowekwa ni:
 Sasisha youtube-dl
 Kiungo hiki cha sasisho hapo juu kinaweza kushindwa ikiwa huna ruhusa zinazofaa za faili. Angalia logi ya PiKaraoke kwa makosa.
 Kuzimisha
@@ -174,10 +174,10 @@ Anzisha tena Mfumo
 Zima Mfumo
 Nyingine
 Panua mfumo wa faili wa Raspberry Pi
-Ikiwa umesakinisha tu picha ya pikaraoke pi iliyojengwa awali na kadi yako ya SD ni kubwa kuliko 4GB, unaweza kutaka kupanua mfumo wa faili ili kutumia nafasi iliyobaki. Unahitaji kufanya hivi mara moja tu. Hii itaanzisha upya mfumo.
+Ikiwa umesakinisha tu picha ya PiKaraoke pi iliyojengwa awali na kadi yako ya SD ni kubwa kuliko 4GB, unaweza kutaka kupanua mfumo wa faili ili kutumia nafasi iliyobaki. Unahitaji kufanya hivi mara moja tu. Hii itaanzisha upya mfumo.
 Zima hali ya msimamizi
 Washa hali ya msimamizi
-toka nje
+ingia nje
 Ingia
 Maelezo ya Mfumo
 Nyumbani
@@ -185,7 +185,7 @@ Badilisha Lugha
 Tafadhali chagua lugha
 Lugha ya Mfumo
 Lugha ya mfumo wa sasa:
-Hii inabadilisha lugha ya mfumo wa nyuma wa PiKaraoke ambao huonyeshwa kwenye skrini ya TV; zaidi ya hayo, kila mtumiaji anayeunganisha pia anaweza kubadilisha lugha yake ya UI ya Wavuti katika kitufe cha ulimwengu kwenye menyu ya juu kulia.
+Hii inabadilisha lugha ya mfumo wa nyuma wa PiKaraoke ambao huonyeshwa kwenye skrini ya TV; zaidi ya hayo, kila mtumiaji anayeunganisha pia anaweza kubadilisha lugha yake ya Kiolesura cha Wavuti katika kitufe cha ulimwengu kwenye menyu ya juu kulia.
 Upakuaji umekamilika!
 Imeshindwa kupakua!
 Wimbo umeongezwa kwenye foleni!
@@ -195,3 +195,11 @@ Urekebishaji wa Kiasi
 Nyimbo tofauti mara nyingi huwa na sauti tofauti. Kuwasha urekebishaji wa sauti kutaendesha kwanza <i>ffmpeg</i> ili kukokotoa sauti ya kimataifa ya wimbo na kurekebisha kiotomati sauti ya kicheza ili kila wimbo usikike kwa sauti kubwa sawa.
 Njia ya kupakua ya maktaba ya wimbo
 Jumla ya idadi ya nyimbo
+Onyesha/Ficha Manukuu
+Badilisha Kasi
+Unaweza kuimba wimbo kwa kasi au polepole zaidi kwa kubadilisha kasi ya kucheza hadi ndani ya 0.8x hadi 1.2x kwa kutumia upau wa kufuatilia kasi; kwa kasi nyingine ya uchezaji, bofya thamani ya kasi ili kubadilisha.
+Bofya ili kuweka upya kasi ya uchezaji iwe 1x
+Bofya ili kuweka kasi ya kucheza tena
+Bofya ili kuweka upya ufunguo/ sauti
+Weka Ufunguo Upya
+Weka upya Kasi

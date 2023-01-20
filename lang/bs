@@ -1,8 +1,8 @@
 bosanski
 Neispravna administratorska lozinka!
-Odjavljeni ste iz admin moda!
+Odjavljen iz admin moda!
 Dodano %s nasumičnih pjesama
-Ponestalo je pjesama!
+Ponestalo je pesama!
 Očišćeni red!
 Greška pri premještanju stavke unutar reda: nevažeći argument
 Uspješno premještena stavka u red čekanja:
@@ -10,7 +10,7 @@ Greška pri premještanju stavke unutar reda:
 Pomaknuto dolje u redu čekanja:
 Greška pri kretanju prema dolje u redu čekanja:
 Premješteno gore u redu čekanja:
-Greška pri kretanju u redu čekanja:
+Greška pri kretanju prema gore u redu čekanja:
 Izbrisano iz reda čekanja:
 Greška prilikom brisanja iz reda čekanja:
 Preuzimanje je počelo:
@@ -19,7 +19,7 @@ Po završetku, pojavit će se na listi "dostupnih pjesama".
 Greška: Ne mogu izbrisati ovu pjesmu jer je u trenutnom redu čekanja:
 Pjesma obrisana:
 Greška: Nije naveden parametar pjesme!
-Greška: Nije moguće urediti ovu pjesmu jer se trenutno reprodukuje:
+Greška: Nije moguće urediti ovu pjesmu jer se trenutno reproducira:
 Uređivanje datoteke pjesme
 Greška pri preimenovanju datoteke: '%s' u '%s'. Ime datoteke već postoji.
 Preimenovan fajl: '%s' u '%s'
@@ -83,7 +83,7 @@ Utišavanje zvuka
 Podesite jačinu zvuka
 Volume Up
 Smanjite kašnjenje titlova
-Postavite odgodu titla
+Podesite odgodu titla
 Povećajte kašnjenje titlova
 Smanjite kašnjenje zvuka
 Postavite odgodu zvuka
@@ -91,12 +91,12 @@ Povećajte kašnjenje zvuka
  polutonovi
 Molimo unesite svoje ime. Ovo će se pojaviti pored pjesama koje stavite u red čekanja s ovog uređaja.
 Pjesma je dodana u red čekanja:
-Pesma je vec u redu:
+Pesma je već u redu:
 Poredaj po datumu
 Poredaj po abecedi
 Dodajte '%s' u red čekanja
 Pregledaj
-Sortirano po 'Datumu'
+Poredano po 'Datumu'
 Sortirano po 'abecednom redu'
 pjesme
 prikazuje <b>{start} - {end}</b> {record_name}, ukupno <b>{total}</b> {record_name}
@@ -149,20 +149,20 @@ Vocal Splitter
 Youtube-dl (yt-dlp) verzija
 PiKaraoke verzija
 Napredne opcije kontrole
-Način razdjelnika glasa:
+Način vokalnog razdjelnika:
 Koristite L-R/L+R
 Koristite DNN
 Standardni MTV audio ima dva stereo kanala (L i R) kodirana na takav način da: L-R je instrument numera, L+R je vokalna traka. Dakle, jednostavnim oduzimanjem ili sabiranjem dva stereo kanala, možemo dobiti instrumentalnu i vokalnu numeru u mono zvuku. PiKaraokeov ugrađeni vokalni razdjelnik baziran na DNN-u (duboka neuronska mreža) koristi AI algoritam da podijeli instrumentalni i vokalni zvuk u svakoj stereo stazi nezavisno, što rezultira stereo instrumentalnim i vokalnim zapisima.
 Stop Splitter
 Ponovo pokrenite Splitter
 Vokalni razdjelnik (koji podržava i DNN-bazirano i stereo oduzimanje) radi kao poseban proces u pozadini, generirajući instrumentalni/vokalni audio fajl za svaku pjesmu.
-Ponovo sinhronizirajte audio i video:
+Ponovno sinhronizirajte audio i video:
 Zaustavi Streamer
 Ponovo pokrenite Streamer
-Ovo utiče samo na igranje KTV-a putem web pretraživača. Ponovno pokretanje screen-capture-and-streaming poboljšava audio/video sinhronizaciju, takođe smanjuje kašnjenje između servera i pretraživača.
+Ovo utiče samo na igranje KTV-a putem web pretraživača. Ponovno pokretanje screen-capture-and-streaming poboljšava audio/video sinhronizaciju, a takođe smanjuje kašnjenje između servera i pretraživača.
 Osvježite listu pjesama:
 Ponovno skenirajte direktorij pjesama
-Ovo trebate učiniti samo ako ste ručno kopirali datoteke u direktorij za preuzimanje dok je PiKaraoke bio pokrenut.
+Ovo biste trebali učiniti samo ako ste ručno kopirali datoteke u direktorij za preuzimanje dok je PiKaraoke bio pokrenut.
 Ažuriranja
 Ako preuzimanja ili pretraživanja prestanu raditi, ažuriranje youtube-dl će to vjerovatno popraviti. Trenutna instalirana verzija je:
 Ažurirajte youtube-dl
@@ -174,7 +174,7 @@ Ponovo pokrenite sistem
 Sistem za isključivanje
 Ostalo
 Proširite Raspberry Pi sistem datoteka
-Ako ste upravo instalirali unaprijed izgrađenu pikaraoke pi sliku i vaša SD kartica je veća od 4 GB, možda biste željeli proširiti sistem datoteka kako biste iskoristili preostali prostor. Ovo treba da uradite samo jednom. Ovo će ponovo pokrenuti sistem.
+Ako ste upravo instalirali unaprijed izgrađenu sliku PiKaraoke pi i vaša SD kartica je veća od 4 GB, možda biste željeli proširiti sistem datoteka kako biste iskoristili preostali prostor. Ovo treba da uradite samo jednom. Ovo će ponovo pokrenuti sistem.
 Onemogućite način rada administratora
 Omogući način rada administratora
 odjaviti se
@@ -190,8 +190,16 @@ Preuzimanje je uspješno završeno!
 Preuzimanje nije uspjelo!
 Pjesma je dodana u red čekanja!
 Stavljanje pjesme u red čekanja nije uspjelo!
-Informacije o sistemu i postavke
+Informacije o sistemu i podešavanja
 Normalizacija volumena
 Različite pjesme često imaju različitu jačinu zvuka. Omogućavanje normalizacije jačine zvuka će prvo pokrenuti <i>ffmpeg</i> da izračuna globalnu jačinu zvuka pjesme i automatski prilagodi jačinu zvuka plejera tako da svaka pjesma zvuči jednako glasno.
 Putanja za preuzimanje biblioteke pjesama
 Ukupan broj pjesama
+Prikaži/sakrij titl
+Promjena brzine
+Pjesmu možete pjevati brže ili sporije tako što ćete promijeniti brzinu reprodukcije unutar 0,8x do 1,2x koristeći traku za praćenje brzine; za drugu brzinu reprodukcije, kliknite na vrijednost brzine koju želite promijeniti.
+Kliknite da vratite brzinu reprodukcije na 1x
+Kliknite da postavite brzinu reprodukcije
+Kliknite da resetujete tipku/visinu
+Reset Key
+Resetiraj brzinu

@@ -8,14 +8,14 @@ Feeler beim Beweegen vum Element an der Schlaang: invalid-Argument
 Erfolleg geplënnert Element an der Schlaang:
 Feeler beim Beweegen vum Element an der Schlaang:
 Geplënnert erof an der Schlaang:
-Feeler beim Beweegen erof an der Schlaang:
+Feeler beim Plënneren an der Schlaang:
 Geplënnert an der Schlaang:
 Feeler beim Beweegen an der Schlaang:
 Aus der Schlaang geläscht:
 Feeler beim Läschen aus der Schlaang:
-Download ugefaangen:
+Download ugefaang:
 Nom Ofschloss gëtt et an d'Schlaang bäigefüügt.
-No der Fäerdegstellung erschéngt et an der "verfügbar Lidder" Lëscht.
+Nom Fäerdegstellung erschéngt et an der "verfügbar Lidder" Lëscht.
 Feeler: Kann dëst Lidd net läschen well et an der aktueller Schlaang ass:
 Lidd geläscht:
 Feeler: Kee Songparameter spezifizéiert!
@@ -47,7 +47,7 @@ omxplayer Wee net fonnt!
 Erstellt Download Wee:
 Wifi / Netz net ugeschloss. Schalten an 10s ...
 Fir Lidder ze wielen, scannt QR oder verbënnt mat
-Fir TV Display, konnektéieren mat
+Fir Fernsehsendung, verbannen mat
 Dréckt F fir de Vollbild ze wiesselen
 Dréckt ESC fir de PiKaraoke opzehalen
 RaspiWifiConfig Setup Modus entdeckt!
@@ -59,8 +59,8 @@ Elo spillt:
 Admin Modus accordéiert!
 D'Erhéijung vun der Audioverzögerung gëtt Iech méi Zäit fir Texter ze liesen ier Dir den nächste Saz séngt.
 Ofsenkung vum Ënnertitelverzögerung gëtt Iech méi Zäit fir Texter ze liesen ier Dir den nächste Saz séngt.
-En Semiton ass och als Hallefschrëtt bekannt. Et ass dee klengste Intervall, deen an der klassescher westlecher Musek benotzt gëtt, gläich wéi engem zwieleften Oktav oder en halleft Toun.
-DNN-baséiert Vokal Splitter ass aktivéiert. PiKaraoke benotzt PyTorch (vu Facebook) fir en déif neuralt Netzwierk auszeféieren fir den instrumentalen a vokalen Toun an all Streck opzedeelen, wat zu Stereo Sound entsteet.
+En Hallefton ass och als Hallefschrëtt bekannt. Et ass dee klengste Intervall, deen an der klassescher westlecher Musek benotzt gëtt, gläich wéi engem zwieleften Oktav oder en halleft Toun.
+DNN-baséiert Vokal Splitter ass aktivéiert. PiKaraoke benotzt PyTorch (vu Facebook) fir en déif neuralt Netzwierk auszeféieren fir instrumental a vokal Toun an all Streck opzedeelen, wat zu Stereo Sound entsteet.
 Spiller Kontroll
 Musek
 Gemëscht
@@ -69,18 +69,18 @@ Schlëssel änneren
 Näischt spillt elo.
 Kee Song ass an der Schlaang.
 Dëst Lidd gëtt net vun Iech bäigefüügt. Sidd Dir sécher datt Dir dës Streck wëllt nei starten?
-Dëst Lidd gëtt net vun Iech bäigefüügt. Sidd Dir sécher, datt Dir dës Streck iwwersprange wëllt?
+Dëst Lidd gëtt net vun Iech bäigefüügt. Sidd Dir sécher datt Dir dës Streck iwwersprange wëllt?
 Spiller Kontroll
 Elo spillt
-Nächste Lidd
+Nächste Song
 Sich no:
 Audio Verzögerung (Sek)
-Ënnertitel Verzögerung (Sek)
+Ënnertitel Verzögerung (sec)
 Restart Song
 Spillen / Paus
 Skip aktuelle Song
 Volume erof
-Volumen setzen
+Set Volumen
 Volume erop
 Reduzéiert Ënnertitel Verzögerung
 Set Ënnertitel Verzögerung
@@ -90,12 +90,12 @@ Set Audio Delay
 Erhéijung Audio Verzögerung
  semitones
 Gitt weg Ären Numm. Dëst erschéngt nieft de Lidder déi Dir vun dësem Apparat an der Schlaang steet.
-Lidd dobäi an d'Schlaang:
+Lidd bäigefüügt an d'Schlaang:
 Lidd schonn an der Schlaang:
-Sortéieren no Datum
+Sortéiert no Datum
 Sortéiert op Alphabetesch
 Füügt '%s' an d'Schlaang
-Surfen
+Browsen
 Sortéiert no 'Datum'
 Sortéiert no 'Alphabetesch'
 Lidder
@@ -105,7 +105,7 @@ Lidd änneren
 Plënneren an der Schlaang
 Plënneren erof an der Schlaang
 Sidd Dir sécher datt Dir aus der Schlaang läschen wëllt
-Sidd Dir sécher, datt Dir d'VOLLZÄIT Schlaang läschen wëllt? Typ 'OK' fir weiderzemaachen
+Sidd Dir sécher, datt Dir d'Ganz Schlaang läschen wëllt? Typ 'OK' fir weiderzemaachen
 Füügt 3 zoufälleg Lidder
 Alles läschen
 D'Schlaang ass eidel
@@ -159,22 +159,22 @@ De Gesangsplitter (deen souwuel DNN-baséiert wéi och Stereo-Subtraktioun ënne
 Synchroniséiert Audio a Video nei:
 Stop Streamer
 Restart Streamer
-Dëst beaflosst nëmmen KTV iwwer Webbrowser ze spillen. Den Écran Capture-a-Streaming nei starten verbessert d'Audio / Video Synchroniséierung, et reduzéiert och d'Latenz tëscht dem Server an dem Browser.
+Dëst beaflosst nëmmen KTV iwwer Webbrowser ze spillen. Neistarten vum Bildschierm-Fang-a-Streaming verbessert d'Audio / Video Synchroniséierung, et reduzéiert och d'Latenz tëscht dem Server an dem Browser.
 D'Liddlëscht erfrëschen:
 Rescan Song Verzeechnes
 Dir sollt dëst nëmmen maachen wann Dir Dateien manuell an den Downloadverzeichnis kopéiert hutt wärend PiKaraoke leeft.
 Aktualiséierungen
 Wann d'Downloads oder d'Sichunge gestoppt hunn ze schaffen, wäert d'Aktualiséierung vun YouTube-dl et wahrscheinlech fixéieren. Déi aktuell installéiert Versioun ass:
 Update youtube-dl
-Dësen Updatelink uewendriwwer ka feelen wann Dir net déi richteg Dateirechter hutt. Kontrolléiert de PiKaraoke Log fir Feeler.
-Ausmaachen
+Dësen Update Link uewendriwwer ka feelen wann Dir net déi richteg Dateirechter hutt. Kontrolléiert de PiKaraoke Log fir Feeler.
+Zou maachen
 Net nëmmen de Stecker zéien! Schalt Äre Server ëmmer richteg aus fir Datenkorruptioun ze vermeiden.
 PiKaraoke ophalen
 Restart System
 Shutdown System
 Aner
 Raspberry Pi Dateisystem erweideren
-Wann Dir just de pre-built Pikaraoke pi Bild installéiert hutt an Är SD Kaart méi grouss ass wéi 4GB, wëllt Dir vläicht de Dateiesystem ausbauen fir de verbleiwen Raum ze benotzen. Dir musst dat nëmmen eemol maachen. Dëst wäert de System nei starten.
+Wann Dir just de pre-built PiKaraoke pi Bild installéiert hutt an Är SD Kaart méi grouss ass wéi 4GB, wëllt Dir vläicht de Dateiesystem ausbauen fir de verbleiwen Raum ze benotzen. Dir musst dat nëmmen eemol maachen. Dëst wäert de System nei starten.
 Admin Modus auszeschalten
 Admin Modus aktivéieren
 ausloggen
@@ -185,13 +185,21 @@ Sprooch änneren
 Wielt w.e.g. Sprooch
 System Sprooch
 Aktuell System Sprooch:
-Dëst ännert d'Sprooch vum PiKaraoke Backend System deen op der Fernsehbildschierm ugewise gëtt; Desweideren, all konnektéieren Benotzer kann och hir jeeweileg Web UI Sprooch am Globus Knäppchen am riets-Top Menü änneren.
+Dëst ännert d'Sprooch vum PiKaraoke Backend System deen um Fernsehbildschierm ugewise gëtt; Desweideren, all konnektéieren Benotzer kann och hir jeeweileg Web UI Sprooch am Globus Knäppchen am riets-Top Menü änneren.
 Download erfollegräich ofgeschloss!
 Eroflueden gescheitert!
 Lidd dobäi an d'Schlaang!
-Konnt d'Lidd net an der Schlaang setzen!
+Ausgefall op d'Lidd an der Schlaang!
 System Info & Astellungen
-Normaliséierung vum Volume
+Volumen Normaliséierung
 Verschidde Lidder hunn dacks ënnerschiddlech Volumen. Wann Dir Volumennormaliséierung aktivéiert, leeft als éischt <i>ffmpeg</i> fir de globale Volume vun engem Lidd ze berechnen an automatesch de Spillervolumen unzepassen, sou datt all Lidd gläich haart kléngt.
 Songbibliothéik Download Wee
 Total Zuel vu Lidder
+Ënnertitel weisen / verstoppen
+Geschwindegkeet änneren
+Dir kënnt d'Lidd méi séier oder méi lues sangen andeems Dir d'Wiedergabegeschwindegkeet op bannent 0,8x op 1,2x ännert andeems Dir d'Geschwindegkeet Trackbar benotzt; fir aner playback Vitesse, klickt op d'Vitesse Wäert ze änneren.
+Klickt fir d'Wiedergabegeschwindegkeet op 1x zréckzetrieden
+Klickt fir d'Wiedergabegeschwindegkeet ze setzen
+Klickt fir de Schlëssel / Pitch zréckzesetzen
+Reset Schlëssel
+Reset Speed

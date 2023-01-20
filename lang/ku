@@ -1,5 +1,5 @@
 Kurdî
-Şîfreya admin çewt!
+Şîfreya rêveberê çewt!
 Ji moda rêveberiyê derketin!
 %s şopên tesadufî lê zêde kirin
 Ji stranan xilas bûn!
@@ -7,7 +7,7 @@ Dorê paqij kir!
 Çewtî di veguheztina babetê de di nav rêzê de: nederbasdar-argument
 Tiştek bi serfirazî li hundurê rêzê hate guheztin:
 Çewtî di veguheztina babetê de di nav rêzê de:
-Di dorê de bar kirin:
+Di dorê de hate xwarê:
 Çewtî di dorê de daket:
 Di dorê de rabû:
 Çewtiya hilkişîna rêzê:
@@ -21,7 +21,7 @@ Stran hat jêbirin:
 Çewtî: Parametreya stranê nehatiye diyarkirin!
 Çewtî: Nikare vê stranê biguherîne ji ber ku niha tê lêxistin:
 Guhertina pelê stranê
-Çewtî Di Guhertina navê pelê de: '%s' bo '%s'. Navê pelê jixwe heye.
+Çewtî Di Guherandina navê pelê de: '%s' bo '%s'. Navê pelê jixwe heye.
 Navê pelê hat guhertin: '%s' bû '%s'
 Çewtî: Parametreyên navê pelê nehatin diyarkirin!
 Nenas
@@ -37,7 +37,7 @@ Destûra te tune ku dev jê berde
 Niha pergalê qut dike!
 Destûra we ya girtinê nîne
 Pergala nûvekirina niha!
-Destûra we ya ji nû ve destpêkirinê nîne
+Destûra we ji bo Rebootkirinê tune
 Berfirehkirina pergala pelan û pergala nûvekirina nuha!
 Nikare fs li ser cîhazên ne-raspberry pi berfireh bike!
 Destûra we tune ku hûn mezinahiya pergala pelan biguherînin
@@ -52,15 +52,15 @@ F bikirtînin da ku tev-ekranê biguherînin
 ESC bikirtînin da ku PiKaraoke biterikînin
 Moda sazkirinê ya RaspiWifiConfig hate dîtin!
 Amûrek/smartphone din bi Wifi AP ve girêdin: '%s'
-Piştre geroka wê nîşan bide: '%s://%s%s' û rêwerzan bişopîne.
+Dûv re geroka wê nîşan bide: '%s://%s%s' û rêwerzan bişopîne.
 Dûv re:
 Zêdekirin ji hêla:
 Niha dilîze:
 Moda rêveberiyê hate dayîn!
 Zêdekirina derengiya deng dê bêtir wext bide we ku hûn stranan bixwînin berî ku hevoka din bistirên.
-Kêmkirina derengiya jêrnivîsê dê bêtir wext bide we ku hûn stranan bixwînin berî ku hevoka din bistirên.
+Kêmkirina derengiya jêrnivîsê dê bêtir wext bide we ku hûn gotinên stranan bixwînin berî ku hevoka din bistirên.
 Nîvek jî wekî nîv-gavek tê zanîn. Ew navbera herî piçûk e ku di muzîka klasîk a rojavayî de tê bikar anîn, bi qasî diwazdehê oktavê an nîv tonekê ye.
-Parçekirina dengbêja-bingeha DNN-ê çalak e. PiKaraoke PyTorch (ji hêla Facebook) ve bikar tîne da ku torgilokek neuralî ya kûr bimeşîne da ku di her rêkê de dengê instrumental û dengbêjî parçe bike û dengê stereo derxe.
+Parçekirina dengbêja-bingeha DNN-ê çalak e. PiKaraoke PyTorch (ji hêla Facebook) ve bikar tîne da ku torgilokek neuralî ya kûr bixebitîne da ku di her rêkê de dengê amûr û dengbêjî parçe bike û dengê stereo derxe.
 Player Control
 Mûzîk
 Mixed
@@ -69,7 +69,7 @@ Biguherîne Key
 Niha tiştek nayê lîstin.
 Stran nayê rêzkirin.
 Ev stran ji aliyê te ve nehatiye zêdekirin. Ma hûn pê bawer in ku hûn dixwazin vê şopê ji nû ve bidin destpêkirin?
-Ev stran ji aliyê te ve nehatiye zêdekirin. Ma tu bi xwe bawer î ku tu dixwazî ​​vê şopê derbas bikî?
+Ev stran ji aliyê te ve nehatiye zêdekirin. Ma tu bawer î ku tu dixwazî ​​vê şopê derbas bikî?
 Player Control
 Niha Dilîstin
 Next Song
@@ -88,7 +88,7 @@ Derengiya Binnivîsê Zêde Bike
 Derengiya Dengê Kêm bikin
 Derengiya Dengê Set
 Derengiya Dengê Zêde bikin
- nîvton
+ nîvtûn
 Ji kerema xwe navê xwe binivîse. Ev ê li kêleka stranên ku hûn ji vê cîhazê di rêzê de dihêlin xuya bibe.
 Stran li rêzê hat zêdekirin:
 Stran jixwe di rêzê de ye:
@@ -96,23 +96,23 @@ Rêzkirina li gorî Dîrokê
 Li gorî alfabeyê rêz bikin
 '%s' li dorê zêde bike
 Browse
-Ji hêla 'Dîrok' ve hatî veqetandin
-Li gorî 'Alfabetîk' hat rêzkirin
+Li gorî 'Dîrok' hat rêzkirin
+Li gorî 'Alfabetîk'
 songs
 nîşan dide <b>{start} - {end}</b> {record_name}, bi tevayî <b>{total}</b> {record_name}
 hat dîtin <b>{found}</b> {record_name}, nîşan dide <b>{start} - {end}</b> {record_name}
 Edit song
-Di dorê de bizivirin
-Di dorê de bimeşin
+Di dorê de hilkişin jor
+Di dorê de biçe jêr
 Ma hûn pê bawer in ku hûn dixwazin ji rêzê jêbirin
 Ma hûn pê bawer in ku hûn dixwazin TEMÛ dorê paqij bikin? Ji bo berdewamiyê 'OK' binivîse
 3 stranên rasthatî lê zêde bikin
-Hemî paqij bikin
+Hemî paqij bike
 Dorê vala ye
 Mar
 Jêbirin
-Di pirtûkxaneya herêmî de stranên berdest
-Stran li rêzê zêde kir:
+Stranên ku di pirtûkxaneya herêmî de hene
+Stranek li rêzê zêde kir:
 Stran jixwe di rêzê de ye:
 Lêgerîn / Nû lê zêde bike
 Gerr
@@ -120,17 +120,17 @@ Mar
 Maçên ne-karaoke tê de
 Pêşveçû
 Stranek (sernav/hunermend) binivîsin da ku li stranên berdest bigerin û 'Queue' bikirtînin da ku wê li rêzê zêde bikin.
-Ger stran di pelika "Stranên Berdest" de xuya nebe, ji bo dîtina wê li ser Youtube-ê 'Lêgerîn' bikirtînin.
+Ger stran di pelika "Stranên Berdest" de xuya nebe, ji bo dîtina wê li ser Youtubeê bikirtînin 'Lêgerîn'.
 URL-ya YouTube-ê rasterast dakêşin:
 Li dorê zêde bikin
 Binnivîsan têde
 Download
 Lêgerîna YouTube ji bo
 Encamên lêgerînê ji bo
-Bişkojka dakêşanê bikirtînin ku encamên bêtir nîşan bidin
+Bişkojka dakêşanê bikirtînin da ku encamên bêtir nîşan bidin
 Pêvek:
 Stranên Berdest
-Ma hûn dixwazin navê xuyangê yê kesê ku vê amûrê bikar tîne biguherînin? Ev ê li kêleka stranên rêzkirî nîşan bide. Vêga:
+Ma hûn dixwazin navê xuyangê yê kesê ku vê cîhazê bikar tîne biguherînin? Ev ê li kêleka stranên rêzkirî nîşan bide. Vêga:
 Bikarhênerê niha
 Settings
 PiKaraoke
@@ -152,29 +152,29 @@ Vebijêrkên Kontrolê yên Pêşkeftî
 Moda dabeşkerê deng:
 L-R/L+R bikar bînin
 DNN bikar bînin
-Dengê MTV-ya standard du kanalên stereo (L û R) bi vî rengî têne kod kirin ku: L-R rêça amûrê ye, L+R şopa dengbêjiyê ye. Bi vî rengî, bi tenê jêbirin an lê zêdekirina du kanalên stereo, em dikarin di dengê mono de rêça instrumental û dengbêjiyê bistînin. Parçekera dengbêjî ya li ser bingeha DNN-ê (tora neuralî ya kûr) ya PiKaraoke algorîtmaya AI-ê bikar tîne da ku di her rêça stereo de dengê amûr û dengbêj bi rengek serbixwe veqetîne û di encamê de rêçikên stereo yên instrumental û dengbêjî peyda bike.
+Dengê MTV-ya standard du kanalên stereo (L û R) bi vî rengî têne kod kirin ku: L-R rêça amûrê ye, L+R rêça dengbêjê ye. Bi vî rengî, bi tenê kêmkirin an lê zêdekirina du kanalên stereo, em dikarin di dengê mono de rêça instrumental û dengbêjiyê bistînin. Parçekera dengbêjî ya li ser bingeha DNN-ê (tora neuralî ya kûr) ya PiKaraoke algorîtmaya AI-ê bikar tîne da ku di her rêça stereo de dengê instrumental û dengbêjî bi rengek serbixwe veqetîne û di encamê de rêyên stereo yên instrumental û dengbêjî peyda bike.
 Stop Splitter
 Splitter ji nû ve bidin destpêkirin
-Dabeşkirina dengbêjê (ku hem jêbirina DNN-based û hem jî stereo piştgirî dike) wekî pêvajoyek cihêreng di paşperdeyê de dimeşe, ji bo her stranê pelê bihîstwerî yê instrumental/vokal çêdike.
+Dabeşkirina dengbêjê (ku hem jêbirina DNN-based û hem jî stereo piştgirî dike) wekî pêvajoyek cihêreng di paşperdeyê de dimeşe, ji bo her stranê pelê dengî ya instrumental/vokal çêdike.
 Deng û vîdyoyê ji nû ve hevdeng bikin:
 Streamer rawestînin
 Streamer ji nû ve bidin destpêkirin
-Ev tenê bandorê li lîstina KTV bi geroka webê dike. Ji nû ve destpêkirina girtina-û-vekêşana ekranê hevdengkirina deng/vîdyoyê çêtir dike, ew jî derengiya di navbera server û gerokê de kêm dike.
+Ev tenê bandorê li lîstina KTV bi geroka webê dike. Ji nû ve destpêkirina girtina-û-vekişandina ekranê hevdengkirina deng/vîdyoyê baştir dike, di heman demê de derengiya di navbera server û gerokê de jî kêm dike.
 Lîsteya stranan nûve bikin:
-Pelrêça stranê ji nû ve bişopîne
+Pelrêça stranê dîsa bişopîne
 Pêdivî ye ku hûn tenê vê yekê bikin ger dema ku PiKaraoke xebitî we bi destan pelan li pelrêça dakêşanê kopî kir.
-Nûvekirin
+Updates
 Ger dakêşandin an lêgerînan nexebitin, nûvekirina youtube-dl belkî wê rast bike. Guhertoya sazkirî ya heyî ev e:
 YouTube-dl-ê nûve bikin
-Dibe ku ev zencîreya nûvekirinê ya li jor têk biçe ger ku hûn destûrnameyên pelê yên rast nebin. Ji bo xeletiyan têketina PiKaraoke kontrol bikin.
+Dibe ku ev girêdana nûvekirinê ya li jor têk biçe ger ku hûn destûrnameyên pelê yên rast nebin. Ji bo xeletiyan têketina PiKaraoke kontrol bikin.
 Temirandin
-Ne tenê fîşê bikişînin! Her gav servera xwe bi rêkûpêk rawestînin da ku ji xirabûna daneyan dûr nekevin.
+Ne tenê fîşê bikişînin! Her gav servera xwe bi rêkûpêk dakêşin da ku ji xirabûna daneyan dûr nekevin.
 PiKaraoke biterikînin
 Pergala Reboot
 System Shutdown
 Yên din
 Pergala pelên Raspberry Pi berfireh bikin
-Ger we tenê wêneya pikaraoke pi-ya ku ji berê ve hatî çêkirin saz kir û qerta weya SD ji 4 GB mezintir e, dibe ku hûn bixwazin pergala pelan berfireh bikin da ku cîhê mayî bikar bînin. Hûn tenê hewce ne ku vê yekê carekê bikin. Ev ê pergalê ji nû ve dest pê bike.
+Ger we tenê wêneya PiKaraoke pi-ya pêş-avakirî saz kir û qerta SD-ya we ji 4 GB mezintir e, dibe ku hûn bixwazin pergala pelan berfireh bikin da ku cîhê mayî bikar bînin. Hûn tenê hewce ne ku vê yekê carekê bikin. Ev ê pergalê ji nû ve dest pê bike.
 Moda rêveberiyê neçalak bike
 Moda rêveberê çalak bike
 derkeve
@@ -185,13 +185,21 @@ Ziman biguherînin
 Ji kerema xwe ziman hilbijêrin
 Ziman Sîstem
 Zimanê pergalê yê niha:
-Ev zimanê pergala pişta PiKaraoke ku li ser ekrana TV-yê tê xuyang kirin diguhezîne; Digel vê yekê, her bikarhênerek têkildar dikare di menuya jorîn a rastê de di bişkoja gerdûnê de zimanê UI-ya Web-a xwe ya têkildar jî biguhezîne.
+Ev zimanê pergala pişta PiKaraoke ku li ser ekrana TV-yê tê xuyang kirin diguhezîne; Wekî din, her bikarhênerek têkildar dikare di menuya jorîn a rastê de di bişkoja gerdûnê de zimanê UI-ya Web-a xwe ya têkildar jî biguhezîne.
 Daxistin bi serkeftî qediya!
 Daxistin bi ser neket!
 Stran li dorê hat zêdekirin!
 Di rêza stranê de têk çû!
-Agahiyên Pergalê & Mîhengan
+Agahiyên Sîstemê & Mîhengan
 Normalîzasyona Volume
 Stranên cihê bi gelemperî dengên cûda hene. Çalakkirina normalîzekirina dengdanê dê pêşî <i>ffmpeg</i> bixebite da ku qebareya gerdûnî ya stranekê hesab bike û bixweber dengê lîstikvanê rast bike da ku her stran bi heman rengî deng bide.
 Rêya dakêşana pirtûkxaneya stranan
 Hejmara tevahî stranan
+Binnivîsê nîşan bide/ veşêre
+Guhertina Leza
+Hûn dikarin bi guheztina leza lêdanê di nav 0,8x ber 1,2x de bi karanîna barika lezê zû an hêdîtir stranê bistirên; ji bo leza lîstika din, li ser nirxa lezê bikirtînin ku biguhezînin.
+Bikirtînin da ku leza lîstikê li 1x vegerînin
+Bikirtînin da ku leza lêdanê saz bikin
+Bikirtînin da ku bişkoj/pitch ji nû ve vegerînin
+Bişkojka vesazkirinê
+Leza Vegere

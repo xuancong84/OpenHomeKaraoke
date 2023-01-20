@@ -1,66 +1,66 @@
-Türkçe
+Türk
 Yanlış yönetici şifresi!
 Yönetici modundan çıkış yapıldı!
 %s rastgele parça eklendi
-Şarkılar tükendi!
-Sırayı temizledi!
-Öğeyi sıraya taşırken hata oluştu: geçersiz argüman
-Öğe sıraya başarıyla taşındı:
-Öğe sıraya taşınırken hata oluştu:
+Şarkılar bitti!
+Kuyruğu temizledim!
+Öğe sıra içinde taşınırken hata oluştu: geçersiz bağımsız değişken
+Öğe kuyruğa başarıyla taşındı:
+Öğe sıra içinde taşınırken hata oluştu:
 Sırada aşağı taşındı:
 Kuyrukta aşağı inerken hata oluştu:
-Sırada yükseldi:
-Kuyrukta yukarı çıkma hatası:
+Sırada yukarı taşındı:
+Kuyrukta yukarı çıkarken hata oluştu:
 Sıradan silindi:
-Sıradan silme hatası:
+Kuyruktan silme hatası:
 İndirme başladı:
-Tamamlandığında, sıraya eklenecektir.
+Tamamlandığında, kuyruğa eklenecektir.
 Tamamlandığında, "mevcut şarkılar" listesinde görünecektir.
-Hata: Bu şarkı mevcut kuyrukta olduğu için silinemiyor:
+Hata: Bu şarkı şu an sırada olduğu için silinemiyor:
 Şarkı silindi:
 Hata: Şarkı parametresi belirtilmedi!
-Hata: Şu anda çalınmakta olduğu için bu şarkı düzenlenemiyor:
+Hata: Şu anda çalındığı için bu şarkı düzenlenemiyor:
 Şarkı Dosyası Düzenleme
-Dosyayı Yeniden Adlandırma Hatası: '%s' - '%s'. Dosya adı zaten var.
-Yeniden adlandırılan dosya: '%s', '%s'
+Dosyayı Yeniden Adlandırma Hatası: '%s' ila '%s'. Dosya adı zaten var.
+Yeniden adlandırılan dosya: '%s' - '%s'
 Hata: Hiçbir dosya adı parametresi belirtilmedi!
 Bilinmeyen
 Koşma
 durduruldu
- (Yalnızca CPU)
+ (yalnızca CPU)
  (GPU etkin)
 youtube-dl güncelleniyor! Bir veya iki dakika sürmeli...
 youtube-dl'yi güncelleme izniniz yok
 Kapatma izniniz yok
 PiKaraoke'den şimdi çıkılıyor!
-Bırakma izniniz yok
+Çıkma izniniz yok
 Sistemi şimdi kapatıyorum!
 Kapatma izniniz yok
-Şimdi sistem yeniden başlatılıyor!
+Sistem şimdi yeniden başlatılıyor!
 Yeniden Başlatma izniniz yok
-Dosya sistemini genişletiyor ve sistemi şimdi yeniden başlatıyor!
-Ahududu pi olmayan cihazlarda fs genişletilemiyor!
+Dosya sistemi genişletiliyor ve sistem şimdi yeniden başlatılıyor!
+Raspberry olmayan pi cihazlarında fs genişletilemiyor!
 Dosya sistemini yeniden boyutlandırma izniniz yok
 Youtube-dl yolu bulunamadı!
 VLC yolu bulunamadı!
 omxplayer yolu bulunamadı!
 İndirme yolu oluşturma:
-Wifi/Ağ bağlı değil. 10 saniye içinde kapanıyor...
-Şarkı seçmek için QR'yi tarayın veya şuraya bağlanın:
-TV ekranı için, şuraya bağlanın:
-Tam ekran arasında geçiş yapmak için F tuşuna basın
+Wifi/Ağ bağlı değil. 10 saniye içinde kapatılıyor...
+Şarkı seçmek için QR tarayın veya şuraya bağlanın:
+TV ekranı için şuraya bağlanın:
+Tam ekrana geçiş yapmak için F tuşuna basın
 PiKaraoke'den çıkmak için ESC'ye basın
 RaspiWifiConfig kurulum modu algılandı!
-Wifi AP'ye başka bir cihaz/akıllı telefon bağlayın: '%s'
+Başka bir cihazı/akıllı telefonu Wifi AP'ye bağlayın: '%s'
 Ardından tarayıcısını '%s://%s%s' konumuna getirin ve talimatları izleyin.
 Bir sonraki:
 Tarafından eklendi:
 Şimdi oynuyor:
 Yönetici modu verildi!
-Artan ses gecikmesi, bir sonraki cümleyi söylemeden önce şarkı sözlerini okumanız için size daha fazla zaman verecektir.
-Altyazı gecikmesini azaltmak, sonraki cümleyi söylemeden önce şarkı sözlerini okumanız için size daha fazla zaman verecektir.
-Yarım ton, yarım adım olarak da bilinir. Klasik Batı müziğinde kullanılan, bir oktavın on ikide birine veya yarım tona eşit en küçük aralıktır.
-DNN tabanlı ses ayırıcı etkinleştirildi. PiKaraoke, stereo sese yol açan her parçada enstrümantal ve vokal sesi ayırmak için derin bir sinir ağı çalıştırmak için PyTorch'u (Facebook tarafından) kullanır.
+Artan ses gecikmesi, bir sonraki cümleyi söylemeden önce şarkı sözlerini okumak için size daha fazla zaman verecektir.
+Altyazı gecikmesini azaltmak, bir sonraki cümleyi söylemeden önce şarkı sözlerini okumak için size daha fazla zaman verecektir.
+Yarım ton, yarım adım olarak da bilinir. Klasik Batı müziğinde kullanılan, bir oktavın on ikide birine veya yarım tona eşit olan en küçük aralıktır.
+DNN tabanlı ses ayırıcı etkinleştirildi. PiKaraoke, derin bir sinir ağı çalıştırmak için PyTorch'u (Facebook tarafından) kullanarak enstrümantal ve vokal sesi her parçada ayırarak stereo sese yol açar.
 Oyuncu Kontrolü
 Müzik
 Karışık
@@ -68,8 +68,8 @@ Ses
 Anahtarı Değiştir
 Şu anda hiçbir şey çalmıyor.
 Hiçbir şarkı sıraya alınmadı.
-Bu şarkı sizin tarafınızdan eklenmedi. Bu parçayı yeniden başlatmak istediğinizden emin misiniz?
-Bu şarkı sizin tarafınızdan eklenmedi. Bu parçayı atlamak istediğinizden emin misiniz?
+Bu şarkı sizin tarafınızdan eklenmemiştir. Bu parçayı yeniden başlatmak istediğinizden emin misiniz?
+Bu şarkı sizin tarafınızdan eklenmemiştir. Bu parçayı atlamak istediğinizden emin misiniz?
 Oyuncu Kontrolü
 Şimdi oynuyor
 Sıradaki şarkı
@@ -82,28 +82,28 @@ Geçerli Şarkıyı Atla
 Sesi kıs
 Sesi Ayarla
 Sesi aç
-Altyazı Gecikmesini Azalt
+Altyazı Gecikmesini Azaltın
 Altyazı Gecikmesini Ayarla
-Altyazı Gecikmesini Artır
-Ses Gecikmesini Azalt
+Altyazı Gecikmesini Artırın
+Ses Gecikmesini Azaltın
 Ses Gecikmesini Ayarla
-Ses Gecikmesini Artır
- yarı tonlar
+Ses Gecikmesini Artırın
+ yarım tonlar
 Lütfen adınızı giriniz. Bu, bu cihazdan sıraya aldığınız şarkıların yanında görünecektir.
 Sıraya eklenen şarkı:
 Şarkı zaten sırada:
 Tarihe göre sırala
-Alfabetik Sırala
+Alfabetik sıralama
 Kuyruğa '%s' ekleyin
 Araştır
-'Tarih'e göre sıralanmış
-'Alfabetik'e göre sıralanmış
+"Tarih"e göre sıralandı
+'Alfabetik'e göre sıralandı
 şarkılar
 <b>{start} - {end}</b> {record_name} görüntüleniyor, toplamda <b>{total}</b> {record_name}
-<b>{found}</b> {record_name} bulundu, <b>{start} - {end}</b> {record_name} gösteriliyor
+<b>{found}</b> {record_name} bulundu, <b>{start} - {end}</b> {record_name} görüntüleniyor
 Şarkıyı düzenle
-Sırada yukarı çık
-Sırada aşağı hareket et
+Sırada yukarı git
+Sırada aşağı git
 Sıradan silmek istediğinizden emin misiniz?
 TÜM sırayı temizlemek istediğinizden emin misiniz? Devam etmek için 'Tamam' yazın
 3 rastgele şarkı ekle
@@ -111,26 +111,26 @@ Hepsini temizle
 sıra boş
 Sıra
 Silmek
-Yerel kitaplıkta mevcut şarkılar
-Sıraya eklenen şarkı:
+Yerel kitaplıkta bulunan şarkılar
+Kuyruğa şarkı eklendi:
 Şarkı zaten sırada:
 Ara / Yeni Ekle
-Aramak
+Arama
 Sıra
 Karaoke olmayan maçları dahil et
-ileri
-Mevcut şarkıları aramak için bir şarkı (başlık/sanatçı) yazın ve onu kuyruğa eklemek için 'Sıraya' tıklayın.
-Şarkı "Mevcut Şarkılar" açılır menüsünde görünmüyorsa, Youtube'da bulmak için "Ara"yı tıklayın.
-Doğrudan indirme YouTube url'si:
+Gelişmiş
+Mevcut şarkıları aramak için bir şarkı (başlık/sanatçı) yazın ve onu kuyruğa eklemek için 'Sıra'ya tıklayın.
+Şarkı "Mevcut Şarkılar" açılır menüsünde görünmüyorsa, onu Youtube'da bulmak için "Ara"yı tıklayın.
+Doğrudan indirme YouTube URL'si:
 Sıraya ekle
-Altyazıları dahil et
+altyazıları dahil et
 İndirmek
 YouTube'da aranıyor
 için arama sonuçları
 Daha fazla sonuç göstermek için açılır menüyü tıklayın
 Bağlantı:
 Mevcut Şarkılar
-Bu cihazı kullanan kişinin görünen adını değiştirmek istiyor musunuz? Bu, sıraya alınan şarkıların yanında görünecektir. Akım:
+Bu cihazı kullanan kişinin ekran adını değiştirmek istiyor musunuz? Bu, sıraya alınmış şarkıların yanında görünecektir. Akım:
 Şu anki kullanıcı
 Ayarlar
 PiKaraoke
@@ -145,26 +145,26 @@ işletim sistemi
 Disk kullanımı
 Hafıza
 Ekran görüntüsü
-Vokal Bölücü
+Vokal Ayırıcı
 Youtube-dl (yt-dlp) sürümü
 PiKaraoke versiyonu
 Gelişmiş Kontrol Seçenekleri
 Vokal ayırıcı modu:
-Sol-Sol/Sol+Sağ kullanın
-DNN'yi kullan
-Standart MTV sesi, şu şekilde kodlanmış iki stereo kanala (Sol ve Sağ) sahiptir: L-R enstrüman izi, L+R vokal izidir. Böylece, iki stereo kanalı basitçe çıkararak veya ekleyerek, enstrümantal ve vokal parçayı mono ses olarak elde edebiliriz. PiKaraoke'nin yerleşik DNN tabanlı (derin sinir ağı) vokal ayırıcısı, enstrümantal ve vokal sesi her stereo parçada bağımsız olarak ayırmak için AI algoritmasını kullanır ve bu da stereo enstrümantal ve vokal parçalar oluşturur.
-Bölücüyü Durdur
+L-R/L+R kullanın
+DNN kullan
+Standart MTV sesi, şu şekilde kodlanmış iki stereo kanala (L ve R) sahiptir: L-R enstrüman izidir, L+R vokal izidir. Böylece, iki stereo kanalı basitçe çıkararak veya ekleyerek, enstrümantal ve vokal izi mono seste elde edebiliriz. PiKaraoke'nin yerleşik DNN tabanlı (derin sinir ağı) vokal ayırıcısı, her bir stereo parçadaki enstrümantal ve vokal sesi bağımsız olarak stereo enstrümantal ve vokal parçalara ayırmak için AI algoritmasını kullanır.
+Ayırıcıyı Durdur
 Splitter'ı yeniden başlatın
-Vokal ayırıcı (hem DNN tabanlı hem de stereo çıkarmayı destekler) arka planda ayrı bir işlem olarak çalışır ve her şarkı için enstrümantal/vokal ses dosyası oluşturur.
-Ses ve videoyu yeniden senkronize edin:
-Streamer'ı Durdur
+Vokal ayırıcı (hem DNN tabanlı hem de stereo çıkarma işlemini destekler) arka planda ayrı bir işlem olarak çalışır ve her şarkı için enstrümantal/vokal ses dosyası oluşturur.
+Sesi ve videoyu yeniden senkronize edin:
+Yayını Durdur
 Streamer'ı yeniden başlatın
-Bu yalnızca KTV'nin web tarayıcısı üzerinden oynatılmasını etkiler. Ekran yakalama ve akışı yeniden başlatmak, ses/video senkronizasyonunu iyileştirir, ayrıca sunucu ile tarayıcı arasındaki gecikmeyi azaltır.
+Bu, yalnızca web tarayıcısı üzerinden KTV oynatmayı etkiler. Ekran yakalama ve akışını yeniden başlatmak, ses/video senkronizasyonunu iyileştirir ve ayrıca sunucu ile tarayıcı arasındaki gecikmeyi azaltır.
 Şarkı listesini yenileyin:
 Şarkı dizinini yeniden tara
 Bunu yalnızca, dosyaları indirme dizinine PiKaraoke çalışırken manuel olarak kopyaladıysanız yapmanız gerekir.
-güncellemeler
-İndirmeler veya aramalar çalışmayı durdurduysa, youtube-dl'yi güncellemek muhtemelen sorunu çözecektir. Geçerli yüklü sürüm:
+Güncellemeler
+İndirmeler veya aramalar çalışmayı durdurduysa, youtube-dl'yi güncellemek muhtemelen sorunu çözecektir. Mevcut yüklü sürüm:
 youtube-dl'yi güncelle
 Uygun dosya izinleriniz yoksa yukarıdaki bu güncelleme bağlantısı başarısız olabilir. Hatalar için PiKaraoke günlüğünü kontrol edin.
 Kapat
@@ -174,7 +174,7 @@ Sistemi yeniden başlatma
 Sistemi kapat
 Diğer
 Raspberry Pi dosya sistemini genişletin
-Önceden oluşturulmuş pikaraoke pi görüntüsünü yeni yüklediyseniz ve SD kartınız 4 GB'den büyükse, kalan alanı kullanmak için dosya sistemini genişletmek isteyebilirsiniz. Bunu sadece bir kez yapmanız gerekir. Bu, sistemi yeniden başlatacaktır.
+Önceden oluşturulmuş PiKaraoke pi görüntüsünü yeni yüklediyseniz ve SD kartınız 4 GB'tan büyükse, kalan alanı kullanmak için dosya sistemini genişletmek isteyebilirsiniz. Bunu sadece bir kez yapmanız gerekir. Bu, sistemi yeniden başlatacaktır.
 Yönetici modunu devre dışı bırak
 Yönetici modunu etkinleştir
 çıkış Yap
@@ -185,13 +185,21 @@ Dili değiştir
 Lütfen dil seçin
 Sistem Dili
 Mevcut sistem dili:
-Bu, TV ekranında görüntülenen PiKaraoke arka uç sisteminin dilini değiştirir; ayrıca, bağlanan her kullanıcı, sağ üst menüdeki küre düğmesinde kendi Web UI dilini de değiştirebilir.
+Bu, TV ekranında görüntülenen PiKaraoke arka uç sisteminin dilini değiştirir; ayrıca, bağlanan her kullanıcı sağ üst menüdeki yerküre düğmesinden kendi Web Kullanıcı Arayüzü dilini değiştirebilir.
 İndirme başarıyla tamamlandı!
 Yükleme başarısız!
 Şarkı sıraya eklendi!
 Şarkı sıraya alınamadı!
 Sistem Bilgisi ve Ayarlar
 Hacim Normalleştirme
-Farklı şarkılar genellikle farklı ses seviyesine sahiptir. Ses düzeyi normalleştirmeyi etkinleştirmek, önce bir şarkının genel ses düzeyini hesaplamak için <i>ffmpeg</i> çalıştırır ve oynatıcı ses düzeyini her şarkının eşit derecede yüksek ses çıkarması için otomatik olarak ayarlar.
+Farklı şarkılar genellikle farklı ses seviyesine sahiptir. Ses normalleştirmesinin etkinleştirilmesi, önce bir şarkının genel ses düzeyini hesaplamak için <i>ffmpeg</i>'yi çalıştırır ve her şarkının sesi eşit yüksek olacak şekilde oynatıcı ses düzeyini otomatik olarak ayarlar.
 Şarkı kitaplığı indirme yolu
 Toplam şarkı sayısı
+Altyazıyı Göster/Gizle
+Hızı Değiştir
+Hız izleme çubuğunu kullanarak çalma hızını 0,8x ila 1,2x aralığında değiştirerek şarkıyı daha hızlı veya daha yavaş söyleyebilirsiniz; diğer oynatma hızları için, değiştirilecek hız değerine tıklayın.
+Oynatma hızını 1x'e sıfırlamak için tıklayın
+Oynatma hızını ayarlamak için tıklayın
+Tuşu/pitch'i sıfırlamak için tıklayın
+Resetleme tuşu
+Hızı Sıfırla
