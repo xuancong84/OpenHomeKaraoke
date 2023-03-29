@@ -87,6 +87,7 @@ class Karaoke:
 		self.show_overlay = args.show_overlay
 		self.run_vocal = args.run_vocal
 		self.normalize_vol = args.normalize_vol
+		self.cookies_opt = args.cookies_opt
 
 		# other initializations
 		self.platform = get_platform()
@@ -495,9 +496,10 @@ class Karaoke:
 		logging.info("Downloading video: " + song_url)
 		self.downloading_songs[song_url] = 1
 		dl_path = "%(title)s---%(id)s.%(ext)s"
-		opt_quality = ['-f', 'bestvideo[ext!=webm][height<=1080]+bestaudio[ext!=webm]/best[ext!=webm]'] if self.high_quality else ['-f', 'mp4']
+		opt_quality = ['-f', 'bestvideo[height<=1080]+bestaudio/best'] if self.high_quality else ['-f', 'mp4+m4a']
 		opt_sub = ['--sub-langs', 'all', '--embed-subs'] if include_subtitles else []
-		cmd = [self.youtubedl_path] + opt_quality + ["-o", self.download_path+'tmp/'+dl_path] + opt_sub + [song_url]
+		cmd = [self.youtubedl_path, '--fixup', 'force'] + self.cookies_opt + opt_quality +\
+		      ["-o", self.download_path+'tmp/'+dl_path] + opt_sub + [song_url]
 		logging.debug("Youtube-dl command: " + " ".join(cmd))
 		rc = subprocess.call(cmd)
 		if rc != 0:

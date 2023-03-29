@@ -5,14 +5,14 @@ import datetime
 import json
 import locale
 import logging
-import os
+import os, sys
 import shutil
 import signal
 import subprocess
-import sys
 import threading
 import time
 import traceback
+import webbrowser
 from functools import wraps
 
 import cherrypy
@@ -727,6 +727,24 @@ def get_default_dl_dir(platform):
 		return legacy_directory if os.path.exists(legacy_directory) else os.path.expanduser("~/pikaraoke-songs")
 
 
+def get_default_browser_cookie(platform):
+	platform = 'linux' if platform=='raspberry_pi' else platform
+	def_cookie_loc = defaultdict(lambda:defaultdict(lambda:''))
+	def_cookie_loc['linux']['firefox'] = '$HOME/.mozilla/firefox/'
+	def_cookie_loc['linux']['chrome'] = '$HOME/.config/google-chrome/'
+	def_cookie_loc['windows']['firefox'] = '%APPDATA%\\Mozilla\\Firefox\\Profiles'
+	def_cookie_loc['windows']['chrome'] = '%LOCALAPPDATA%\\Google\\Chrome\\User Data\\Default\\Network'
+	def_cookie_loc['windows']['edge'] = '%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\Default\\Network'
+	def_cookie_loc['osx']['firefox'] = '$HOME/Library/Application Support/Firefox/Profiles/'
+	def_cookie_loc['osx']['chrome'] = '$HOME/Library/Application Support/Google/Chrome/'
+	def_cookie_loc['osx']['safari'] = '$HOME/Library/Cookies/'
+	try:
+		default_browser = webbrowser.get().name.lower()
+	except:
+		return ''
+	ret = os.path.expandvars(def_cookie_loc[platform][default_browser])
+	return f'{default_browser}:{ret}' if ret else ''
+
 if __name__ == "__main__":
 
 	platform = get_platform()
@@ -869,6 +887,11 @@ if __name__ == "__main__":
 		help = "Start PiKaraoke in windowed mode",
 	)
 	parser.add_argument(
+		'-c', "--browser-cookies",
+		default = "auto",
+		help = "YouTube downloader can use browser cookies from the specified path, it can also be auto (default): automatically determine based on OS; none: do not use any browser cookies",
+	)
+	parser.add_argument(
 		"--admin-password",
 		help = "Administrator password, for locking down certain features of the web UI such as queue editing, player controls, song editing, and system shutdown. If unspecified, everyone is an admin.",
 		default = None,
@@ -887,6 +910,15 @@ if __name__ == "__main__":
 
 	app.jinja_env.globals.update(filename_from_path = filename_from_path)
 	app.jinja_env.globals.update(url_escape = quote)
+
+	# Set browser cookies location for YouTube downloader
+	if args.browser_cookies.lower() == 'none':
+		args.cookies_opt = []
+	elif args.browser_cookies.lower() == 'auto':
+		path = get_default_browser_cookie(platform)
+		args.cookies_opt = ['--cookies-from-browser', path] if path else []
+	else:
+		args.cookies_opt = ['--cookies-from-browser', args.browser_cookies]
 
 	# Handle OMX player if specified
 	if platform == "raspberry_pi" and args.use_omxplayer:
