@@ -115,7 +115,7 @@ Verfügbare Songs in der lokalen Bibliothek
 Lied zur Warteschlange hinzugefügt:
 Lied ist bereits in der Warteschlange:
 Suchen / Neu hinzufügen
-Suche
+Suchen
 Warteschlange
 Schließen Sie Nicht-Karaoke-Matches ein
 Fortschrittlich
@@ -143,7 +143,7 @@ Information
 Praktischer URL-QR-Code zum Teilen mit einem Freund:
 Betriebssystem
 Festplattennutzung
-Erinnerung
+Speicher
 Bildschirmaufnahme
 Vocal-Splitter
 Youtube-dl (yt-dlp)-Version
@@ -167,7 +167,7 @@ Aktualisierung
 Wenn Downloads oder Suchen nicht mehr funktionieren, wird es wahrscheinlich durch die Aktualisierung von youtube-dl behoben. Die aktuell installierte Version ist:
 Aktualisieren Sie youtube-dl
 Dieser Update-Link oben kann fehlschlagen, wenn Sie nicht über die entsprechenden Dateiberechtigungen verfügen. Überprüfen Sie das PiKaraoke-Protokoll auf Fehler.
-Stilllegen
+Abschalten
 Ziehen Sie nicht einfach den Stecker! Fahren Sie Ihren Server immer ordnungsgemäß herunter, um Datenbeschädigungen zu vermeiden.
 Beenden Sie PiKaraoke
 System neu starten
@@ -178,7 +178,7 @@ Wenn Sie gerade das vorgefertigte PiKaraoke-Pi-Image installiert haben und Ihre 
 Admin-Modus deaktivieren
 Administratormodus aktivieren
 Ausloggen
-Einloggen
+Anmeldung
 Systeminformationen
 Heim
 Sprache ändern
@@ -203,3 +203,7 @@ Klicken Sie hier, um die Wiedergabegeschwindigkeit einzustellen
 Klicken Sie hier, um die Tonart/Tonhöhe zurückzusetzen
 Schlüssel zurücksetzen
 Geschwindigkeit zurücksetzen
+Gute Qualität
+Fügen Sie das Lied der Gesangswarteschlange hinzu, nachdem der Download abgeschlossen ist
+Laden Sie Untertitel (nur eingebettet) in allen Sprachen herunter, falls verfügbar
+Das Herunterladen von Videos in hoher Qualität kann sehr lange dauern

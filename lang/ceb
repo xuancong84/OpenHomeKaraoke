@@ -192,14 +192,18 @@ Kanta gidugang sa pila!
 Napakyas sa pagpila sa kanta!
 Impormasyon sa Sistema ug Mga Setting
 Pag-normalize sa Volume
-Ang lainlaing mga kanta kanunay adunay lainlaing volume. Ang pagpagana sa pag-normalize sa volume modagan una og <i>ffmpeg</i> aron makwenta ang global volume sa usa ka kanta ug awtomatik nga i-adjust ang volume sa player aron ang matag kanta parehas og kusog.
+Ang lainlaing mga kanta kasagaran adunay lainlaing volume. Ang pagpagana sa pag-normalize sa volume modagan una og <i>ffmpeg</i> aron makwenta ang global volume sa usa ka kanta ug awtomatik nga i-adjust ang volume sa player aron ang matag kanta parehas og kusog.
 Paagi sa pag-download sa librarya sa kanta
 Total nga gidaghanon sa mga kanta
 Ipakita/Itago ang Subtitle
 Usba ang Speed
 Mahimo nimong kantahon ang kanta nga mas paspas o hinay pinaagi sa pagbag-o sa katulin sa playback sa sulod sa 0.8x hangtod 1.2x gamit ang tulin nga trackbar; para sa uban nga playback speed, i-klik ang speed value aron usbon.
-I-klik aron i-reset ang katulin sa playback ngadto sa 1x
+Pag-klik aron i-reset ang katulin sa pagdula sa 1x
 I-klik aron itakda ang gikusgon sa playback
 I-klik aron i-reset ang yawe/pitch
 I-reset ang yawe
 I-reset ang Speed
+Taas nga Kalidad
+Idugang ang kanta sa pila sa pagkanta human mahuman ang pag-download
+I-download ang mga subtitle (gi-embed lang) sa tanang pinulongan kon anaa
+Ang pag-download sa taas nga kalidad nga mga video mahimong dugay kaayo

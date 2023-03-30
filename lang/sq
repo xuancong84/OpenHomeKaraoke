@@ -137,8 +137,8 @@ PiKaraoke
 Jeni i sigurt që dëshironi të hiqni dorë?
 Je i sigurt që dëshiron ta mbyllësh?
 Jeni i sigurt që dëshironi të rindizni?
-Jeni i sigurt që dëshironi të përditësoni Youtube-dl tani? Shkarkimet aktuale dhe ato në pritje mund të dështojnë.
-Jeni i sigurt që dëshironi të zgjeroni sistemin e skedarëve? Kjo do të ristartoni raspberry pi.
+Jeni i sigurt që dëshironi të përditësoni Youtube-dl tani? Shkarkimet aktuale dhe në pritje mund të dështojnë.
+Jeni i sigurt që dëshironi të zgjeroni sistemin e skedarëve? Kjo do të ristartoni raspberry pi-në tuaj.
 Informacion
 Kodi QR i përshtatshëm i URL-së për t'u ndarë me një mik:
 OS
@@ -174,7 +174,7 @@ Rinisni sistemin
 Sistemi i mbylljes
 Të tjera
 Zgjero sistemin e skedarëve Raspberry Pi
-Nëse sapo keni instaluar imazhin e para-ndërtuar PiKaraoke pi dhe karta juaj SD është më e madhe se 4 GB, mund të dëshironi të zgjeroni sistemin e skedarëve për të përdorur hapësirën e mbetur. Ju duhet ta bëni këtë vetëm një herë. Kjo do të rifillojë sistemin.
+Nëse sapo keni instaluar imazhin e para-ndërtuar PiKaraoke pi dhe karta juaj SD është më e madhe se 4 GB, mund të dëshironi të zgjeroni sistemin e skedarëve për të përdorur hapësirën e mbetur. Ju duhet ta bëni këtë vetëm një herë. Kjo do të rindez sistemin.
 Çaktivizo modalitetin e administratorit
 Aktivizo modalitetin e administratorit
 shkyç
@@ -203,3 +203,7 @@ Klikoni për të vendosur shpejtësinë e riprodhimit
 Klikoni për të rivendosur tastin/tonin
 Tasti i rivendosjes
 Rivendos shpejtësinë
+Cilesi e larte
+Shtoni këngën në radhën e këngës pasi të ketë përfunduar shkarkimi
+Shkarkoni titrat (vetëm të ngulitura) në të gjitha gjuhët nëse ka
+Shkarkimi i videove me cilësi të lartë mund të marrë shumë kohë

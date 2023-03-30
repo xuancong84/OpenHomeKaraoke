@@ -25,7 +25,7 @@ Hiba a fájl átnevezésekor: „%s” erre: „%s”. A fájlnév már létezik
 Átnevezett fájl: „%s” erre: „%s”
 Hiba: Nem adtak meg fájlnév paramétereket!
 Ismeretlen
-Futó
+Futás
 Megállt
  (csak CPU)
  (GPU engedélyezve)
@@ -152,7 +152,7 @@ Speciális vezérlési beállítások
 Énekosztó mód:
 Használja az L-R/L+R
 Használja a DNN-t
-A szabványos MTV hang a két sztereó csatornát (L és R) úgy kódolja, hogy: L-R a hangszersáv, L+R az éneksáv. Így a két sztereó csatorna egyszerűen kivonásával vagy összeadásával mono hangzásban kaphatjuk meg a hangszeres és vokális sávot. A PiKaraoke beépített DNN-alapú (mély neurális hálózat) énekelosztója mesterséges intelligencia algoritmust használ a hangszer és az énekhang felosztására minden sztereó sávban egymástól függetlenül, ami sztereó hangszeres és éneksávokat eredményez.
+A szabványos MTV hang a két sztereó csatornát (L és R) úgy kódolja, hogy: L-R a hangszersáv, L+R az éneksáv. Így a két sztereó csatorna egyszerűen kivonásával vagy összeadásával mono hangzásban kaphatjuk meg a hangszeres és vokális sávot. A PiKaraoke beépített DNN-alapú (mély neurális hálózat) énekelosztója mesterséges intelligencia algoritmust használ a hangszeres és az énekhang felosztására minden sztereó sávban egymástól függetlenül, így sztereó hangszeres és éneksávokat eredményez.
 Állítsa le a Splittert
 Indítsa újra a Splittert
 Az énekelosztó (amely mind a DNN-alapú, mind a sztereó kivonást támogatja) külön folyamatként fut a háttérben, minden dalhoz instrumentális/ének hangfájlt generálva.
@@ -203,3 +203,7 @@ Kattintson a lejátszási sebesség beállításához
 Kattintson a kulcs/hangmagasság visszaállításához
 Reset Key
 Sebesség visszaállítása
+Jó minőség
+A letöltés befejezése után adja hozzá a dalt az éneklési sorhoz
+Feliratok letöltése (csak beágyazva) minden nyelven, ha elérhető
+A jó minőségű videók letöltése nagyon sokáig tarthat

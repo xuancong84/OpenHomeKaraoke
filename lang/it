@@ -15,7 +15,7 @@ Eliminato dalla coda:
 Errore durante l'eliminazione dalla coda:
 Download iniziato:
 Al termine, verrà aggiunto alla coda.
-Al termine, apparirà nell'elenco "brani disponibili".
+Al termine, apparirà nell'elenco dei "brani disponibili".
 Errore: impossibile eliminare questo brano perché è nella coda corrente:
 Canzone eliminata:
 Errore: nessun parametro del brano specificato!
@@ -32,7 +32,7 @@ Fermato
 Aggiornamento di youtube-dl! Dovrebbero volerci un minuto o due...
 Non sei autorizzato ad aggiornare youtube-dl
 Non hai il permesso di chiudere
-Uscire da PiKaraoke adesso!
+Uscire da PiKaraoke ora!
 Non hai il permesso di uscire
 Spegnimento del sistema ora!
 Non hai il permesso di chiudere
@@ -110,7 +110,7 @@ Aggiungi 3 brani casuali
 Cancella tutto
 La coda è vuota
 Coda
-Elimina
+Eliminare
 Canzoni disponibili nella libreria locale
 Canzone aggiunta alla coda:
 Il brano è già in coda:
@@ -124,7 +124,7 @@ Se il brano non viene visualizzato nel menu a discesa "Canzoni disponibili", fai
 URL per il download diretto di YouTube:
 Aggiungi alla coda
 Includere i sottotitoli
-Scarica
+Scaricamento
 Ricerca su YouTube per
 cerca risultati per
 Fai clic sul menu a discesa per visualizzare più risultati
@@ -167,18 +167,18 @@ Aggiornamenti
 Se i download o le ricerche smettono di funzionare, l'aggiornamento di youtube-dl probabilmente lo risolverà. La versione attualmente installata è:
 Aggiorna youtube-dl
 Questo collegamento di aggiornamento sopra potrebbe non riuscire se non si dispone delle autorizzazioni file appropriate. Controlla la presenza di errori nel registro di PiKaraoke.
-Spegnimento
+Fermare
 Non limitarti a staccare la spina! Arrestare sempre correttamente il server per evitare il danneggiamento dei dati.
 Esci da PiKaraoke
 Riavvio del sistema
-Sistema di arresto
+Sistema di spegnimento
 Altro
 Espandi il filesystem Raspberry Pi
 Se hai appena installato l'immagine PiKaraoke pi predefinita e la tua scheda SD è più grande di 4 GB, potresti voler espandere il filesystem per utilizzare lo spazio rimanente. Devi farlo solo una volta. Questo riavvierà il sistema.
 Disabilita la modalità amministratore
 Abilita la modalità amministratore
 disconnettersi
-accesso
+login
 Informazioni di sistema
 Casa
 Cambia lingua
@@ -197,9 +197,13 @@ Percorso di download della libreria dei brani
 Numero totale di canzoni
 Mostra/Nascondi sottotitoli
 Cambia velocità
-Puoi cantare la canzone più velocemente o più lentamente modificando la velocità di riproduzione da 0,8x a 1,2x utilizzando la barra della velocità; per un'altra velocità di riproduzione, fare clic sul valore della velocità da modificare.
+Puoi cantare la canzone più velocemente o più lentamente modificando la velocità di riproduzione tra 0,8x e 1,2x utilizzando la barra della velocità; per un'altra velocità di riproduzione, fare clic sul valore della velocità da modificare.
 Fare clic per reimpostare la velocità di riproduzione su 1x
 Fare clic per impostare la velocità di riproduzione
 Fare clic per reimpostare tonalità/intonazione
 Chiave di ripristino
 Ripristina velocità
+Alta qualità
+Aggiungi il brano alla coda di canto al termine del download
+Scarica i sottotitoli (solo incorporati) in tutte le lingue, se disponibili
+Il download di video di alta qualità potrebbe richiedere molto tempo

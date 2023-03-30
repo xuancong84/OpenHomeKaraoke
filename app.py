@@ -382,6 +382,7 @@ def search():
 		site_title = site_name,
 		title = "Search",
 		songs = K.available_songs,
+		high_quality = K.high_quality,
 		search_results = search_results,
 		search_string = search_string,
 		search_nonkaraoke = search_nonkaraoke
@@ -450,7 +451,7 @@ def transform_boolean(dct, S):
 
 @app.route("/download", methods = ["POST"])
 def download():
-	d = transform_boolean(request.form.to_dict(), {'enqueue', 'include_subtitles'})
+	d = transform_boolean(request.form.to_dict(), {'enqueue', 'include_subtitles', 'high_quality'})
 	enqueue = d.get('enqueue', False)
 
 	# download in the background since this can take a few minutes
@@ -845,7 +846,7 @@ if __name__ == "__main__":
 		help = "Output video to both HDMI ports (raspberry pi 4 only)",
 	)
 	parser.add_argument(
-		"--high-quality",
+		"--high-quality", "-hq",
 		action = "store_true",
 		help = "Download higher quality video. Note: requires ffmpeg and may cause CPU, download speed, and other performance issues",
 	)
@@ -889,7 +890,7 @@ if __name__ == "__main__":
 	parser.add_argument(
 		'-c', "--browser-cookies",
 		default = "auto",
-		help = "YouTube downloader can use browser cookies from the specified path, it can also be auto (default): automatically determine based on OS; none: do not use any browser cookies",
+		help = "YouTube downloader can use browser cookies from the specified path (see the --cookies-from-browser option of yt-dlp), it can also be auto (default): automatically determine based on OS; none: do not use any browser cookies",
 	)
 	parser.add_argument(
 		"--admin-password",

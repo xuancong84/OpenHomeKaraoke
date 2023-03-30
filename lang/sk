@@ -30,7 +30,7 @@ Zastavené
  (iba CPU)
  (GPU povolený)
 Aktualizácia youtube-dl! Malo by to trvať minútu alebo dve...
-Nemáte povolenie aktualizovať youtube-dl
+Nemáte povolenie na aktualizáciu youtube-dl
 Nemáte povolenie na vypnutie
 Okamžite ukončite PiKaraoke!
 Nemáte povolenie skončiť
@@ -119,7 +119,7 @@ Vyhľadávanie
 Fronta
 Zahrňte zápasy bez karaoke
 Pokročilé
-Zadajte skladbu (názov/interpreta), aby ste vyhľadali dostupné skladby a kliknutím na položku „Poradie“ ju pridajte do poradia.
+Zadajte skladbu (názov/interpreta) na vyhľadanie dostupných skladieb a kliknutím na položku „Poradie“ ju pridajte do poradia.
 Ak sa skladba nezobrazuje v rozbaľovacej ponuke „Dostupné skladby“, kliknite na „Hľadať“ a nájdite ju na YouTube.
 Adresa URL na priame stiahnutie z YouTube:
 Pridať do poradia
@@ -203,3 +203,7 @@ Kliknutím nastavíte rýchlosť prehrávania
 Kliknutím obnovíte tón/výšku tónu
 Resetovať kľúč
 Obnoviť rýchlosť
+Vysoká kvalita
+Po dokončení sťahovania pridajte skladbu do poradia spievania
+Stiahnite si titulky (iba vložené) vo všetkých jazykoch, ak sú k dispozícii
+Sťahovanie videí vo vysokej kvalite môže trvať veľmi dlho

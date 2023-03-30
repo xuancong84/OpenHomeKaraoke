@@ -185,7 +185,7 @@ Muuda keelt
 Palun valige keel
 Süsteemi keel
 Praegune süsteemi keel:
-See muudab PiKaraoke taustasüsteemi keelt, mis kuvatakse teleriekraanil; pealegi saab iga ühenduse loov kasutaja muuta oma veebiliidese keelt ka parempoolses ülamenüüs asuval gloobusnupul.
+See muudab PiKaraoke taustasüsteemi keelt, mis kuvatakse teleriekraanil; pealegi saab iga ühenduse loov kasutaja oma veebikasutaja keelt muuta ka parempoolses ülamenüüs asuval gloobusnupul.
 Allalaadimine on edukalt lõpule viidud!
 Allalaadimine ebaõnnestus!
 Laul lisati järjekorda!
@@ -197,9 +197,13 @@ Laulukogu allalaadimise tee
 Laulude koguarv
 Kuva/peida subtiitrid
 Muuda kiirust
-Saate laulda laulu kiiremini või aeglasemalt, muutes kiiruse juhtriba abil taasesituse kiirust vahemikku 0,8x kuni 1,2x; muu taasesituskiiruse jaoks klõpsake muutmiseks kiiruse väärtust.
+Saate laulda laulu kiiremini või aeglasemalt, muutes kiiruse juhtriba abil taasesituse kiirust 0,8–1,2 korda; muu taasesituskiiruse jaoks klõpsake muutmiseks kiiruse väärtust.
 Klõpsake taasesituse kiiruse 1x lähtestamiseks
 Klõpsake taasesituse kiiruse määramiseks
 Klahvi/heli lähtestamiseks klõpsake
 Lähtestamisklahv
 Lähtestage kiirus
+Kõrge kvaliteet
+Pärast allalaadimise lõppu lisage laul laulujärjekorda
+Laadige alla subtiitrid (ainult manustatud) kõigis keeltes, kui need on saadaval
+Kvaliteetsete videote allalaadimine võib võtta väga kaua aega

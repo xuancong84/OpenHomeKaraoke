@@ -24,7 +24,7 @@ Pag-edit ng File ng Kanta
 Error sa Pagpapalit ng pangalan ng file: '%s' to '%s'. Umiiral na ang filename.
 Pinalitan ang pangalan ng file: '%s' sa '%s'
 Error: Walang tinukoy na mga parameter ng filename!
-Hindi alam
+Hindi kilala
 Tumatakbo
 Huminto
  (CPU lang)
@@ -109,14 +109,14 @@ Sigurado ka bang gusto mong i-clear ang BUONG pila? I-type ang 'OK' para magpatu
 Magdagdag ng 3 random na kanta
 Alisin lahat
 Walang laman ang pila
-pila
+Nakapila
 Tanggalin
 Magagamit na mga kanta sa lokal na aklatan
 Nagdagdag ng kanta sa queue:
 Nasa pila na ang kanta:
 Maghanap / Magdagdag ng Bago
 Maghanap
-pila
+Nakapila
 Isama ang mga non-karaoke na laban
 Advanced
 Mag-type ng kanta (title/artist) para hanapin ang mga available na kanta at i-click ang 'Queue' para idagdag ito sa queue.
@@ -148,7 +148,7 @@ Screen Capture
 Vocal Splitter
 Youtube-dl (yt-dlp) na bersyon
 bersyon ng PiKaraoke
-Advanced na Mga Opsyon sa Pagkontrol
+Mga Advanced na Opsyon sa Pagkontrol
 Vocal splitter mode:
 Gamitin ang L-R/L+R
 Gumamit ng DNN
@@ -203,3 +203,7 @@ I-click upang itakda ang bilis ng pag-playback
 I-click upang i-reset ang key/pitch
 I-reset ang Key
 I-reset ang Bilis
+Mataas na Kalidad
+Idagdag ang kanta sa pila ng pagkanta pagkatapos ma-download
+Mag-download ng mga subtitle (naka-embed lang) sa lahat ng wika kung available
+Ang pag-download ng mga video na may mataas na kalidad ay maaaring tumagal ng napakatagal

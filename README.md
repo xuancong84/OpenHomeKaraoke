@@ -9,7 +9,7 @@ See a demo on YouTube: [![Img alt text](https://img.youtube.com/vi/kmQax0EhAxE/0
 - Web interface for multiple users to queue tracks
 - Splash screen with connection QR code and "Next up" display
 - Searching/browsing a local song library
-- Search for songs on YouTube and download new songs from YouTube and many other video websites such as Youku, Bilibili, etc
+- Search for songs on YouTube and download new songs from YouTube and many other video websites such as Youku, Bilibili, etc. (can use browser cookies to download as if logged in)
 - mp3 + cdg support, including compressed .zip bundles
 - Pause/Skip/Restart and volume control
 - Support renaming and deletion of downloaded files
@@ -39,7 +39,7 @@ See a demo on YouTube: [![Img alt text](https://img.youtube.com/vi/kmQax0EhAxE/0
 ### Web interface
 
 <p float="left">
-  <img width="250" style="float:left" alt="pikaraoke-nowplaying" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/home.jpg">
+  <img width="250" style="float:left" alt="pikaraoke-nowplaying" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/home.png">
   <img width="250" style="float:left" alt="pikaraoke-queue" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/queue.jpg">
   <img width="250" style="float:left" alt="pikaraoke-download" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/download.jpg"><br>
   <img width="250" style="float:left" alt="pikaraoke-browse" src="https://raw.githubusercontent.com/xuancong84/pikaraoke/master/.readme/browse.jpg">
@@ -142,69 +142,59 @@ The app should launch and show the PiKaraoke splash screen and a QR code and a U
 Here is the full list of command line arguments on OSX as an example (may not be up to date, run `python3 app.py --help` for the latest):
 
 ```
-usage: app.py [-h] [-u NONROOT_USER] [-p PORT] [-d DOWNLOAD_PATH] [-o OMXPLAYER_PATH] [-y YOUTUBEDL_PATH]
-              [-v VOLUME] [-V] [-s SPLASH_DELAY] [-L LANG] [-l LOG_LEVEL] [--hide-ip]
-              [--hide-raspiwifi-instructions] [--hide-splash-screen] [--adev ADEV] [--dual-screen]
-              [--high-quality] [--use-omxplayer] [--use-vlc] [--vlc-path VLC_PATH] [--vlc-port VLC_PORT]
-              [--logo-path LOGO_PATH] [--show-overlay] [-w] [--admin-password ADMIN_PASSWORD]
-              [--developer-mode]
+usage: app.py [-h] [-u NONROOT_USER] [-p PORT] [-d DOWNLOAD_PATH] [-o OMXPLAYER_PATH] [-y YOUTUBEDL_PATH] [-v VOLUME] [-V] [-nv] [-s SPLASH_DELAY] [-L LANG]
+              [-l LOG_LEVEL] [--hide-ip] [--hide-raspiwifi-instructions] [--hide-splash-screen] [--adev ADEV] [--dual-screen] [--high-quality]
+              [--use-omxplayer] [--use-vlc] [--vlc-path VLC_PATH] [--vlc-port VLC_PORT] [--logo-path LOGO_PATH] [--show-overlay] [-w] [-c BROWSER_COOKIES]
+              [--admin-password ADMIN_PASSWORD] [--developer-mode]
 
 optional arguments:
   -h, --help            show this help message and exit
   -u NONROOT_USER, --nonroot-user NONROOT_USER
-                        Since tmux must be launched by a non-root user (to run pacmd to select recording
-                        source), this is required for sending keys to tmux.
+                        Since tmux must be launched by a non-root user (to run pacmd to select recording source), this is required for sending keys to tmux.
   -p PORT, --port PORT  Desired http port (default: 5000)
   -d DOWNLOAD_PATH, --download-path DOWNLOAD_PATH
-                        Desired path for downloaded songs. (default: ~/pikaraoke-songs)
+                        Desired path for downloaded songs. (default: /home/xuancong/pikaraoke-songs)
   -o OMXPLAYER_PATH, --omxplayer-path OMXPLAYER_PATH
-                        Path of omxplayer. Only important to raspberry pi hardware. (default:
-                        /usr/bin/omxplayer)
+                        Path of omxplayer. Only important to raspberry pi hardware. (default: /usr/bin/omxplayer)
   -y YOUTUBEDL_PATH, --youtubedl-path YOUTUBEDL_PATH
                         Path of youtube-dl. (default: /home/xuancong/anaconda3/bin/yt-dlp)
   -v VOLUME, --volume VOLUME
-                        If using omxplayer, the initial player volume is specified in millibels. Negative
-                        values ok. (default: 0 , Note: 100 millibels = 1 decibel).
-  -V, --run-vocal       Explicitly run vocal-splitter process from the main program (by default, it only
-                        run explicitly in Windows)
+                        If using omxplayer, the initial player volume is specified in millibels. Negative values ok. (default: 0 , Note: 100 millibels = 1
+                        decibel).
+  -V, --run-vocal       Explicitly run vocal-splitter process from the main program (by default, it only run explicitly in Windows)
+  -nv, --normalize-vol  Enable volume normalization
   -s SPLASH_DELAY, --splash-delay SPLASH_DELAY
-                        Delay during splash screen between songs (in secs). (default: 5 )
-  -L LANG, --lang LANG  Set display language (default: None, set according to the current system locale
-                        en_US)
+                        Delay during splash screen between songs (in secs). (default: 3 )
+  -L LANG, --lang LANG  Set display language (default: None, set according to the current system locale en_US)
   -l LOG_LEVEL, --log-level LOG_LEVEL
-                        Logging level int value (DEBUG: 10, INFO: 20, WARNING: 30, ERROR: 40, CRITICAL:
-                        50). (default: 20 )
+                        Logging level int value (DEBUG: 10, INFO: 20, WARNING: 30, ERROR: 40, CRITICAL: 50). (default: 20 )
   --hide-ip             Hide IP address from the screen.
   --hide-raspiwifi-instructions
                         Hide RaspiWiFi setup instructions from the splash screen.
   --hide-splash-screen  Hide splash screen before/between songs.
-  --adev ADEV           Pass the audio output device argument to omxplayer. Possible values:
-                        hdmi/local/both/alsa[:device]. If you are using a rpi USB soundcard or Hifi audio
-                        hat, try: 'alsa:hw:0,0' Default: 'both'
+  --adev ADEV           Pass the audio output device argument to omxplayer. Possible values: hdmi/local/both/alsa[:device]. If you are using a rpi USB
+                        soundcard or Hifi audio hat, try: 'alsa:hw:0,0' Default: 'both'
   --dual-screen         Output video to both HDMI ports (raspberry pi 4 only)
-  --high-quality        Download higher quality video. Note: requires ffmpeg and may cause CPU, download
-                        speed, and other performance issues
-  --use-omxplayer       Use OMX Player to play video instead of the default VLC Player. This may be
-                        better-performing on older raspberry pi devices. Certain features like key change
-                        and cdg support wont be available. Note: if you want to play audio to the
-                        headphone jack on a rpi, you'll need to configure this in raspi-config: 'Advanced
-                        Options > Audio > Force 3.5mm (headphone)'
-  --use-vlc             Use VLC Player to play video. Enabled by default. Note: if you want to play audio
-                        to the headphone jack on a rpi, see troubleshooting steps in README.md
+  --high-quality, -hq   Download higher quality video. Note: requires ffmpeg and may cause CPU, download speed, and other performance issues
+  --use-omxplayer       Use OMX Player to play video instead of the default VLC Player. This may be better-performing on older raspberry pi devices. Certain
+                        features like key change and cdg support wont be available. Note: if you want to play audio to the headphone jack on a rpi, you'll
+                        need to configure this in raspi-config: 'Advanced Options > Audio > Force 3.5mm (headphone)'
+  --use-vlc             Use VLC Player to play video. Enabled by default. Note: if you want to play audio to the headphone jack on a rpi, see
+                        troubleshooting steps in README.md
   --vlc-path VLC_PATH   Full path to VLC (Default: /usr/bin/cvlc)
   --vlc-port VLC_PORT   HTTP port for VLC remote control api (Default: 5002)
   --logo-path LOGO_PATH
-                        Path to a custom logo image file for the splash screen. Recommended dimensions ~
-                        500x500px
+                        Path to a custom logo image file for the splash screen. Recommended dimensions ~ 500x500px
   --show-overlay        Show overlay on top of video with pikaraoke QR code and IP
   -w, --windowed        Start PiKaraoke in windowed mode
+  -c BROWSER_COOKIES, --browser-cookies BROWSER_COOKIES
+                        YouTube downloader can use browser cookies from the specified path (see the --cookies-from-browser option of yt-dlp), it can also be
+                        auto (default): automatically determine based on OS; none: do not use any browser cookies
   --admin-password ADMIN_PASSWORD
-                        Administrator password, for locking down certain features of the web UI such as
-                        queue editing, player controls, song editing, and system shutdown. If unspecified,
-                        everyone is an admin.
-  --developer-mode      Run in flask developer mode. Only useful for tweaking the web UI in real time.
-                        Will disable the splash screen due to pygame main thread conflicts and may require
-                        FLASK_ENV=development env variable for full dev mode features.
+                        Administrator password, for locking down certain features of the web UI such as queue editing, player controls, song editing, and
+                        system shutdown. If unspecified, everyone is an admin.
+  --developer-mode      Run in flask developer mode. Only useful for tweaking the web UI in real time. Will disable the splash screen due to pygame main
+                        thread conflicts and may require FLASK_ENV=development env variable for full dev mode features.
 ```
 
 ## Screen UI

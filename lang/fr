@@ -20,12 +20,12 @@ Erreur : Impossible de supprimer ce morceau, car il se trouve dans la file d'at
 Morceau supprimé :
 Erreur : Aucun paramètre de morceau spécifié !
 Erreur : Impossible de modifier ce morceau, car il est en cours de lecture :
-Édition de fichier de chanson
+Édition de fichier de morceau
 Erreur lors du renommage du fichier : '%s' en '%s'. Le nom de fichier existe déjà.
 Fichier renommé : '%s' en '%s'
 Erreur : Aucun paramètre de nom de fichier n'a été spécifié !
-Inconnue
-En cours d'exécution
+Inconnu
+En cours
 Arrêté
  (UC uniquement)
  (GPU activé)
@@ -115,7 +115,7 @@ Chansons disponibles dans la bibliothèque locale
 Chanson ajoutée à la file d'attente :
 Le morceau est déjà dans la file d'attente :
 Rechercher / Ajouter nouveau
-Rechercher
+Recherche
 File d'attente
 Inclure les matchs non karaoké
 Avancé
@@ -130,7 +130,7 @@ Résultats de recherche pour
 Cliquez sur la liste déroulante pour afficher plus de résultats
 Lien:
 Chansons disponibles
-Voulez-vous modifier le nom d'affichage de la personne qui utilise cet appareil ? Cela apparaîtra à côté des chansons en file d'attente. Courant:
+Voulez-vous modifier le nom d'affichage de la personne qui utilise cet appareil ? Cela apparaîtra à côté des chansons en file d'attente. Actuel:
 Utilisateur actuel
 Paramètres
 PiKaraoké
@@ -139,7 +139,7 @@ Voulez-vous vraiment arrêter ?
 Voulez-vous vraiment redémarrer ?
 Êtes-vous sûr de vouloir mettre à jour Youtube-dl maintenant ? Les téléchargements en cours et en attente peuvent échouer.
 Voulez-vous vraiment étendre le système de fichiers ? Cela va redémarrer votre raspberry pi.
-Informations
+Information
 Code QR d'URL pratique à partager avec un ami :
 SE
 Utilisation du disque
@@ -180,7 +180,7 @@ Activer le mode administrateur
 Se déconnecter
 connexion
 Information système
-Domicile
+Maison
 Changer de langue
 Veuillez choisir la langue
 Langue du système
@@ -195,7 +195,7 @@ Normalisation des volumes
 Différentes chansons ont souvent un volume différent. L'activation de la normalisation du volume exécutera d'abord <i>ffmpeg</i> pour calculer le volume global d'une chanson et ajustera automatiquement le volume du lecteur afin que chaque chanson sonne de la même manière.
 Chemin de téléchargement de la bibliothèque de chansons
 Nombre total de chansons
-Afficher/Masquer les sous-titres
+Afficher/masquer les sous-titres
 Changer de vitesse
 Vous pouvez chanter la chanson plus rapidement ou plus lentement en modifiant la vitesse de lecture entre 0,8x et 1,2x à l'aide de la barre de vitesse ; pour une autre vitesse de lecture, cliquez sur la valeur de vitesse à modifier.
 Cliquez pour réinitialiser la vitesse de lecture à 1x
@@ -203,3 +203,7 @@ Cliquez pour régler la vitesse de lecture
 Cliquez pour réinitialiser la tonalité/la hauteur
 Touche de réinitialisation
 Vitesse de réinitialisation
+Haute qualité
+Ajoutez la chanson à la file d'attente de chant une fois le téléchargement terminé
+Télécharger les sous-titres (uniquement intégrés) dans toutes les langues si disponibles
+Le téléchargement de vidéos de haute qualité peut prendre très longtemps

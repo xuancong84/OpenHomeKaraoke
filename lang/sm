@@ -43,13 +43,13 @@ E le mafai ona fa'alautele fs i masini e le o le rasipipi!
 E leai sau fa'atagaga e sui ai le faila faila
 Youtube-dl ala e le maua!
 E le'i maua le ala VLC!
-omxplayer ala e le maua!
+omxplayer ala le maua!
 Fausia le ala e la'u mai ai:
-Wifi/Network e le'o feso'ota'i. Tapuni i le 10s...
+Wifi/Network le feso'ota'i. Tapuni i le 10s...
 Mo le filifilia o pese, siaki QR pe ​​fa'afeso'ota'i i
 Mo fa'aaliga TV, fa'afeso'ota'i i
 Oomi le F e sui ai le mata atoa
-Oomi le ESC e tuu ai le PiKaraoke
+Oomi le ESC e tuu ai PiKaraoke
 RaspiWifiConfig setup mode ua iloa!
 Fa'afeso'ota'i se isi masini/telefoni atamai i le Wifi AP: '%s'
 Ona tusi lea o lana su'esu'ega i: '%s://%s%s' ma mulimuli i faatonuga.
@@ -59,7 +59,7 @@ Ta'alo nei:
 Fa'atagaina le fa'atonuga!
 O le fa'atuputeleina o le tuai o leo e maua ai le tele o le taimi e te faitau ai upu a'o le'i usuina le isi fuaiupu.
 O le fa'aitiitia ole fa'atuai ole ulutala ole a tele ai lou taimi e faitau ai upu a'o le'i usuina le isi fuaiupu.
-O le semitone e lauiloa foi o se afa-laasaga. O le va la'ititi lea e fa'aaogaina i musika fa'apapalagi masani, e tutusa ma le sefululua o le octave po'o le afa leo.
+O le semitone e lauiloa foi o le afa-laasaga. O le va la'ititi lea e fa'aaogaina i musika fa'apapalagi masani, e tutusa ma le sefululua o le octave po'o le afa leo.
 DNN-fa'avae leo vaeluaga ua mafai. E fa'aaoga e PiKaraoke le PyTorch (e le Facebook) e fa'atautaia ai se feso'ota'iga neural loloto e vaelua ai meafaifa'aili ma leo leo i ala ta'itasi e fa'atupu ai le leo fa'alogo.
 Pulea ta'aalo
 Musika
@@ -130,7 +130,7 @@ Su'esu'ega mo
 Kiliki le pa'u i lalo e fa'aali atili ai fa'ai'uga
 So'oga:
 Pese Avanoa
-E te mana'o e sui le igoa fa'aali o le tagata o lo'o fa'aogaina lenei masini? O le a fa'aalia lea i talaane o pese tu'u. O lo'o iai nei:
+E te mana'o e sui le igoa fa'aali o le tagata o lo'o fa'aogaina lenei masini? O le a fa'aalia lea i tafatafa o pese tu'u. O lo'o iai nei:
 Tagata fa'aoga nei
 Fa'atonu
 PiKaraoke
@@ -203,3 +203,7 @@ Kiliki e seti le saoasaoa o le toe ta'alo
 Kiliki e toe seti le ki/tulaga
 Toe Seti Ki
 Toe seti le Saosaoa
+Tulaga Maualuga
+Fa'aopoopo le pese i le laina pese pe a uma le la'uina
+La'u mai ulutala (na'o fa'apipi'i) i gagana uma pe a maua
+O le la'uina o ata maualuga e ono umi se taimi

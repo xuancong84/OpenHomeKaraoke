@@ -331,8 +331,9 @@
           <input class="input" id="direct-download-url" type="text" name="song_url" />
           <input class="song-added-by" type="hidden" name="song_added_by" />
           <div class="field" style="margin-top: 5px">
-            <label class="checkbox"><input type="checkbox" checked name="enqueue">{{getString1(125)}}</label>
-            <label class="checkbox"><input type="checkbox" name="include_subtitles">{{getString1(126)}}</label>
+            <label class="checkbox" title="{{getString1(207)}}"><input type="checkbox" checked name="enqueue">{{getString1(125)}}</label>
+            <label class="checkbox" title="{{getString1(208)}}"><input type="checkbox" name="include_subtitles">{{getString1(126)}}</label>
+            <label class="checkbox" title="{{getString1(209)}}"><input type="checkbox" name="high_quality" {{'checked' if high_quality else ''}}>{{getString1(206)}}</label>
           </div>
           <div class="has-text-right" style="margin-top: 5px">
             <button class="button is-small is-rounded" id="direct-download-button" type="submit">{{getString1(127)}}</button>

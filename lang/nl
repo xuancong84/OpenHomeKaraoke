@@ -56,7 +56,7 @@ Wijs vervolgens zijn browser naar: '%s://%s%s' en volg de instructies.
 Volgende:
 Toegevoegd door:
 Nu aan het spelen:
-Admin-modus verleend!
+Admin-modus toegekend!
 Door de audiovertraging te vergroten, heb je meer tijd om songteksten te lezen voordat je de volgende zin uitzingt.
 Door de vertraging van de ondertiteling te verminderen, heb je meer tijd om de songtekst te lezen voordat je de volgende zin uitzingt.
 Een halve toon wordt ook wel een halve toon genoemd. Het is het kleinste interval dat wordt gebruikt in klassieke westerse muziek, gelijk aan een twaalfde van een octaaf of een halve toon.
@@ -115,7 +115,7 @@ Beschikbare nummers in de lokale bibliotheek
 Nummer toegevoegd aan wachtrij:
 Nummer staat al in de wachtrij:
 Zoek / voeg nieuw toe
-Zoeken
+Zoekopdracht
 Wachtrij
 Inclusief niet-karaokewedstrijden
 Geavanceerd
@@ -130,7 +130,7 @@ zoekresultaten voor
 Klik op de vervolgkeuzelijst om meer resultaten weer te geven
 Koppeling:
 Beschikbare nummers
-Wilt u de weergavenaam wijzigen van de persoon die dit apparaat gebruikt? Dit verschijnt naast de nummers in de wachtrij. Stroming:
+Wilt u de weergavenaam wijzigen van de persoon die dit apparaat gebruikt? Dit verschijnt naast de nummers in de wachtrij. Huidig:
 Huidige gebruiker
 Instellingen
 PiKaraoke
@@ -203,3 +203,7 @@ Klik om de afspeelsnelheid in te stellen
 Klik om toonsoort/toonhoogte te resetten
 Reset-toets
 Snelheid resetten
+Hoge kwaliteit
+Voeg het nummer toe aan de zangwachtrij nadat het downloaden is voltooid
+Download ondertitels (alleen ingesloten) in alle talen indien beschikbaar
+Het downloaden van video's van hoge kwaliteit kan erg lang duren

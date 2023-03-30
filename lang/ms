@@ -38,7 +38,7 @@ Matikan sistem sekarang!
 Anda tidak mempunyai kebenaran untuk menutup
 But semula sistem sekarang!
 Anda tidak mempunyai kebenaran untuk But semula
-Kembangkan sistem fail dan but semula sistem sekarang!
+Kembangkan sistem fail dan sistem but semula sekarang!
 Tidak boleh mengembangkan fs pada peranti pi bukan raspberi!
 Anda tidak mempunyai kebenaran untuk mengubah saiz sistem fail
 Laluan Youtube-dl tidak ditemui!
@@ -152,7 +152,7 @@ Pilihan Kawalan Lanjutan
 Mod pemisah vokal:
 Gunakan L-R/L+R
 Gunakan DNS
-Audio MTV standard mempunyai dua saluran stereo (L dan R) yang dikodkan sedemikian rupa sehingga: L-R ialah trek instrumen, L+R ialah trek vokal. Oleh itu, dengan hanya menolak atau menambah dua saluran stereo, kita boleh mendapatkan trek instrumental dan vokal dalam bunyi mono. Pemisah vokal berasaskan DNN (rangkaian neural dalam) terbina dalam PiKaraoke menggunakan algoritma AI untuk memisahkan bunyi instrumental dan vokal dalam setiap trek stereo secara bebas menghasilkan trek instrumental dan vokal stereo.
+Audio MTV standard mempunyai dua saluran stereo (L dan R) yang dikodkan sedemikian rupa sehingga: L-R ialah trek instrumen, L+R ialah trek vokal. Oleh itu, dengan hanya menolak atau menambah dua saluran stereo, kita boleh mendapatkan trek instrumental dan vokal dalam bunyi mono. Pemisah vokal berasaskan DNN (rangkaian neural dalam) terbina dalam PiKaraoke menggunakan algoritma AI untuk membelah bunyi instrumental dan vokal dalam setiap trek stereo secara bebas menghasilkan trek instrumental dan vokal stereo.
 Hentikan Splitter
 Mulakan semula Splitter
 Pemisah vokal (yang menyokong penolakan berasaskan DNN dan stereo) berjalan sebagai proses berasingan di latar belakang, menjana fail audio instrumental/vokal untuk setiap lagu.
@@ -185,7 +185,7 @@ Tukar bahasa
 Sila pilih bahasa
 Bahasa Sistem
 Bahasa sistem semasa:
-Ini menukar bahasa sistem hujung belakang PiKaraoke yang akan dipaparkan pada skrin TV; lebih-lebih lagi, setiap pengguna yang menyambungkan juga boleh menukar bahasa UI Web masing-masing dalam butang glob dalam menu sebelah kanan atas.
+Ini menukar bahasa sistem hujung belakang PiKaraoke yang akan dipaparkan pada skrin TV; lebih-lebih lagi, setiap pengguna yang menyambungkan juga boleh menukar bahasa UI Web masing-masing dalam butang glob dalam menu kanan atas.
 Muat turun berjaya diselesaikan!
 Muat turun gagal!
 Lagu ditambahkan pada baris gilir!
@@ -203,3 +203,7 @@ Klik untuk menetapkan kelajuan main balik
 Klik untuk menetapkan semula kunci/padang
 Tetapkan Semula Kunci
 Tetapkan Semula Kelajuan
+Kualiti tinggi
+Tambahkan lagu pada baris gilir nyanyian selepas muat turun selesai
+Muat turun sari kata (hanya dibenamkan) dalam semua bahasa jika tersedia
+Memuat turun video berkualiti tinggi mungkin mengambil masa yang sangat lama

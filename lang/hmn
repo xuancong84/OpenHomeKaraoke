@@ -138,7 +138,7 @@ Koj puas paub tseeb tias koj xav tawm?
 Koj puas paub tseeb tias koj xav kaw?
 Koj puas paub tseeb tias koj xav reboot?
 Koj puas paub tseeb tias koj xav hloov kho Youtube-dl tam sim no? Tam sim no thiab tseem tos downloads yuav ua tsis tau.
-Koj puas paub tseeb tias koj xav nthuav cov filesystem? Qhov no yuav reboot koj raspberry pi.
+Koj puas paub tseeb tias koj xav nthuav cov ntaub ntawv? Qhov no yuav reboot koj raspberry pi.
 Cov ntaub ntawv
 Yooj yim URL QR code los qhia rau ib tug phooj ywg:
 OS
@@ -152,7 +152,7 @@ Advanced Control Options
 Vocal splitter hom:
 Siv L-R / L + R
 Siv DNN
-Standard MTV suab muaj ob lub tso suab raws (L thiab R) encoded nyob rau hauv xws li ib tug txoj kev uas: L-R yog lub twj paj nruag khiav, L + R yog lub suab khiav. Yog li, los ntawm kev rho tawm lossis ntxiv ob lub tso suab tso suab, peb tuaj yeem tau txais cov twj paj nruag thiab suab hauv lub suab mono. PiKaraoke's built-in DNN-raws li (sib sib zog nqus neural network) lub suab splitter siv AI algorithm los faib cov suab paj nruag thiab suab hauv txhua lub tso suab ntawm nws tus kheej ua rau lub suab seev suab paj nruag thiab suab paj nruag.
+Standard MTV suab muaj ob lub tso suab raws (L thiab R) encoded nyob rau hauv xws li ib tug txoj kev uas: L-R yog lub ntsuas khiav, L + R yog lub suab khiav. Yog li, los ntawm kev rho tawm lossis ntxiv ob lub tso suab tso suab, peb tuaj yeem tau txais cov twj paj nruag thiab suab hauv lub suab mono. PiKaraoke's built-in DNN-raws li (sib sib zog nqus neural network) lub suab splitter siv AI algorithm los faib cov suab paj nruag thiab suab hauv txhua lub tso suab ntawm nws tus kheej ua rau lub suab seev suab paj nruag thiab suab paj nruag.
 Nres Splitter
 Pib dua Splitter
 Lub suab splitter (uas txhawb nqa DNN-raws li thiab lub tso suab rho tawm) khiav raws li cov txheej txheem sib cais hauv keeb kwm yav dhau, tsim cov ntaub ntawv suab paj nruag / suab suab rau txhua zaj nkauj.
@@ -203,3 +203,7 @@ Nyem rau teeb tsa playback ceev
 Nyem rau pib dua qhov tseem ceeb / suab
 Pib dua tus yuam sij
 Rov pib dua ceev
+Siab Zoo
+Ntxiv cov nkauj rau cov kab hu nkauj tom qab download tau tiav
+Download subtitles (tsuas yog embedded) nyob rau hauv tag nrho cov lus yog muaj
+Downloading yeeb yaj duab zoo yuav siv sij hawm ntev heev

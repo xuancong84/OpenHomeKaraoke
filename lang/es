@@ -1,4 +1,4 @@
-español
+Español
 ¡Contraseña de administrador incorrecta!
 ¡Se desconectó del modo administrador!
 Se agregaron %s pistas aleatorias
@@ -25,7 +25,7 @@ Error al cambiar el nombre del archivo: '%s' a '%s'. El nombre del archivo ya ex
 Archivo renombrado: '%s' a '%s'
 Error: ¡No se especificaron parámetros de nombre de archivo!
 Desconocido
-Corriendo
+Correr
 Interrumpido
  (solo CPU)
  (GPU habilitado)
@@ -167,7 +167,7 @@ Actualizaciones
 Si las descargas o las búsquedas dejaron de funcionar, es probable que la actualización de youtube-dl lo solucione. La versión actual instalada es:
 Actualizar youtube-dl
 Este enlace de actualización anterior puede fallar si no tiene los permisos de archivo adecuados. Compruebe el registro de PiKaraoke en busca de errores.
-Apagar
+Cerrar
 ¡No tire simplemente del enchufe! Siempre apague su servidor correctamente para evitar la corrupción de datos.
 Salir de PiKaraoke
 Reiniciar el sistema
@@ -178,9 +178,9 @@ Si acaba de instalar la imagen PiKaraoke pi preconstruida y su tarjeta SD tiene 
 Deshabilitar el modo de administrador
 Habilitar el modo de administrador
 cerrar sesión
-iniciar sesión
+acceso
 Información del sistema
-Casa
+Hogar
 Cambiar idioma
 Por favor elige idioma
 Lenguaje del sistema
@@ -195,7 +195,7 @@ Normalización de volumen
 Diferentes canciones a menudo tienen un volumen diferente. Al habilitar la normalización del volumen, primero se ejecutará <i>ffmpeg</i> para calcular el volumen global de una canción y ajustará automáticamente el volumen del reproductor para que cada canción suene igual de fuerte.
 Ruta de descarga de la biblioteca de canciones
 Número total de canciones
-Mostrar/Ocultar subtítulo
+Mostrar/ocultar subtítulo
 Cambiar velocidad
 Puede cantar la canción más rápido o más lento cambiando la velocidad de reproducción entre 0,8x y 1,2x usando la barra de seguimiento de velocidad; para otra velocidad de reproducción, haga clic en el valor de velocidad para cambiar.
 Haga clic para restablecer la velocidad de reproducción a 1x
@@ -203,3 +203,7 @@ Haga clic para establecer la velocidad de reproducción
 Haz clic para restablecer la clave/tono
 Tecla de reinicio
 Restablecer velocidad
+Alta calidad
+Agregue la canción a la cola de canto después de que finalice la descarga
+Descargar subtítulos (solo incrustados) en todos los idiomas si están disponibles
+La descarga de videos de alta calidad puede llevar mucho tiempo

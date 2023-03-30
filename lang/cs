@@ -55,7 +55,7 @@ Připojte další zařízení/smartphone k Wifi AP: '%s'
 Poté nasměrujte jeho prohlížeč na: '%s://%s%s' a postupujte podle pokynů.
 Další:
 Přidal:
-Právě teď hraje:
+Nyní hraje:
 Režim správce povolen!
 Zvýšení zpoždění zvuku vám poskytne více času na přečtení textu, než zazpíváte další větu.
 Snížení zpoždění titulků vám poskytne více času na přečtení textu, než zazpíváte další větu.
@@ -71,7 +71,7 @@ Momentálně se nic nehraje.
 Tuto skladbu jste nepřidali vy. Opravdu chcete tuto stopu restartovat?
 Tuto skladbu jste nepřidali vy. Opravdu chcete tuto stopu přeskočit?
 Ovládání přehrávače
-Právě teď hraje
+Nyní hraje
 Další píseň
 Hledat na:
 Zpoždění zvuku (s)
@@ -159,7 +159,7 @@ Vokální splitter (který podporuje odečítání založené na DNN i stereo) b
 Znovu synchronizujte zvuk a video:
 Zastavit Streamer
 Restartujte Streamer
-To má vliv pouze na přehrávání KTV prostřednictvím webového prohlížeče. Restartování screen-capture-and-streaming zlepšuje audio/video synchronizaci a také snižuje latenci mezi serverem a prohlížečem.
+To se týká pouze přehrávání KTV prostřednictvím webového prohlížeče. Restartování screen-capture-and-streaming zlepšuje audio/video synchronizaci a také snižuje latenci mezi serverem a prohlížečem.
 Obnovte seznam skladeb:
 Znovu prohledejte adresář skladeb
 Měli byste to udělat pouze v případě, že jste ručně zkopírovali soubory do adresáře pro stahování, když bylo spuštěno PiKaraoke.
@@ -203,3 +203,7 @@ Kliknutím nastavíte rychlost přehrávání
 Klepnutím resetujte tóninu/výšku tónu
 Resetovací klíč
 Obnovit rychlost
+Vysoká kvalita
+Po dokončení stahování přidejte skladbu do fronty pro zpěv
+Stáhněte si titulky (pouze vložené) ve všech jazycích, pokud jsou k dispozici
+Stahování vysoce kvalitních videí může trvat velmi dlouho

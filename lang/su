@@ -2,7 +2,7 @@ basa Sunda
 Sandi admin lepat!
 Kaluar tina mode admin!
 Ditambahkeun %s lagu acak
-Habisan lagu!
+Kahabisan lagu!
 Dibersihkeun antrian!
 Kasalahan mindahkeun item dina antrian: invalid-argument
 Barang hasil dipindahkeun kana antrian:
@@ -193,7 +193,7 @@ Gagal ngantri lagu!
 Inpormasi Sistem & Setélan
 Normalisasi Volume
 Lagu anu béda sering gaduh volume anu béda. Aktipkeun normalisasi volume bakal mimiti ngajalankeun <i>ffmpeg</i> pikeun ngitung volume global hiji lagu sareng otomatis nyaluyukeun volume pamuter supados unggal lagu disada sami nyaring.
-Jalur download perpustakaan lagu
+Perpustakaan lagu jalur download
 Jumlah total lagu
 Témbongkeun / Sumputkeun Subjudul
 Robah Speed
@@ -203,3 +203,7 @@ Klik pikeun ngeset speed playback
 Klik pikeun ngareset konci / pitch
 Reset konci
 Reset Speed
+Kualitas luhur
+Tambahkeun lagu kana antrian nyanyi sanggeus diundeur geus réngsé
+Unduh subjudul (ngan dipasang) dina sadaya basa upami sayogi
+Ngundeur pidéo kualitas luhur tiasa lami pisan

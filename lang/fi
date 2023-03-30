@@ -60,7 +60,7 @@ Järjestelmänvalvojatila myönnetty!
 Lisääntyvä äänen viive antaa sinulle enemmän aikaa lukea sanoituksia ennen seuraavan lauseen laulamista.
 Tekstityksen viiveen vähentäminen antaa sinulle enemmän aikaa lukea sanoituksia ennen seuraavan lauseen laulamista.
 Puolisäveltä kutsutaan myös puoliaskeleeksi. Se on pienin klassisessa länsimaisessa musiikissa käytetty intervalli, joka vastaa oktaavin kahdestoistaosaa tai puolisäveltä.
-DNN-pohjainen äänenjakaja on käytössä. PiKaraoke käyttää PyTorchia (Facebook) pyörittääkseen syvää hermoverkkoa instrumentaalisen ja lauluäänen jakamiseksi kussakin kappaleessa, jolloin syntyy stereoääntä.
+DNN-pohjainen äänenjakaja on käytössä. PiKaraoke käyttää PyTorchia (Facebook) pyörittääkseen syvää hermoverkkoa instrumentaali- ja lauluäänen jakamiseksi kussakin kappaleessa, jolloin syntyy stereoääntä.
 Pelaajan ohjaus
 Musiikki
 Sekoitettu
@@ -152,14 +152,14 @@ Ohjauksen lisäasetukset
 Laulunjakajatila:
 Käytä L-R/L+R
 Käytä DNN:tä
-Tavallisessa MTV-äänessä on kaksi stereokanavaa (L ja R) koodattuina siten, että: L-R on instrumenttiraita, L+R on lauluraita. Näin ollen yksinkertaisesti vähentämällä tai lisäämällä kaksi stereokanavaa, saamme instrumentaali- ja lauluraidan monoäänellä. PiKaraoken sisäänrakennettu DNN-pohjainen (syvä hermoverkko) äänenjakaja käyttää AI-algoritmia instrumentaali- ja lauluäänen jakamiseen jokaisessa stereoraidassa itsenäisesti, jolloin tuloksena on stereo-instrumentaali- ja lauluraitoja.
+Tavallisessa MTV-äänessä on kaksi stereokanavaa (L ja R) koodattuina siten, että: L-R on instrumenttiraita, L+R on lauluraita. Näin ollen yksinkertaisesti vähentämällä tai lisäämällä kaksi stereokanavaa, saamme instrumentaali- ja lauluraidan monoäänellä. PiKaraoken sisäänrakennettu DNN-pohjainen (syvä hermoverkko) äänenjakaja käyttää tekoälyalgoritmia jakaa instrumentaali- ja lauluäänen jokaisessa stereoraidassa itsenäisesti, jolloin tuloksena on stereo-instrumentaali- ja lauluraitoja.
 Pysäytä Splitteri
 Käynnistä Splitter uudelleen
 Laulunjakaja (joka tukee sekä DNN-pohjaista että stereovähennystä) toimii erillisenä prosessina taustalla, luoden instrumentaali-/lauluäänitiedoston jokaiselle kappaleelle.
 Synkronoi ääni ja video uudelleen:
 Pysäytä Streamer
 Käynnistä Streamer uudelleen
-Tämä vaikuttaa vain KTV:n pelaamiseen verkkoselaimen kautta. Näytön kaappauksen ja suoratoiston käynnistäminen uudelleen parantaa äänen/videon synkronointia ja vähentää myös palvelimen ja selaimen välistä latenssia.
+Tämä vaikuttaa vain KTV:n pelaamiseen verkkoselaimen kautta. Näytön kaappauksen ja suoratoiston uudelleenkäynnistys parantaa äänen/videon synkronointia ja vähentää myös palvelimen ja selaimen välistä latenssia.
 Päivitä kappalelista:
 Skannaa kappalehakemisto uudelleen
 Sinun pitäisi tehdä tämä vain, jos kopioit tiedostot manuaalisesti lataushakemistoon PiKaraoken ollessa käynnissä.
@@ -203,3 +203,7 @@ Napsauta asettaaksesi toistonopeuden
 Napsauta nollataksesi näppäimen/sävelkorkeuden
 Reset Key
 Nollaa nopeus
+Korkealaatuinen
+Lisää kappale laulujonoon, kun lataus on valmis
+Lataa tekstitykset (vain upotettuina) kaikilla kielillä, jos saatavilla
+Korkealaatuisten videoiden lataaminen voi kestää hyvin kauan

@@ -25,7 +25,7 @@ Erro ao renomear arquivo: '%s' para '%s'. O nome do arquivo já existe.
 Arquivo renomeado: '%s' para '%s'
 Erro: Nenhum parâmetro de nome de arquivo foi especificado!
 Desconhecido
-Corrida
+Correndo
 Parou
  (somente CPU)
  (GPU habilitado)
@@ -61,7 +61,7 @@ Aumentar o atraso do áudio lhe dará mais tempo para ler as letras antes de can
 Diminuir o atraso da legenda lhe dará mais tempo para ler as letras antes de cantar a próxima frase.
 Um semitom também é conhecido como meio-tom. É o menor intervalo usado na música clássica ocidental, igual a um doze avos de oitava ou meio tom.
 O divisor vocal baseado em DNN está ativado. O PiKaraoke usa o PyTorch (do Facebook) para executar uma rede neural profunda para dividir o som instrumental e vocal em cada faixa, dando origem ao som estéreo.
-Controle do Jogador
+Controle do jogador
 Música
 Misturado
 Voz
@@ -70,7 +70,7 @@ Nada está tocando agora.
 Nenhuma música está na fila.
 Esta música não foi adicionada por você. Tem certeza de que deseja reiniciar esta faixa?
 Esta música não foi adicionada por você. Tem certeza de que deseja pular esta faixa?
-Controle do Jogador
+Controle do jogador
 Tocando agora
 Próxima música
 Procurar:
@@ -128,7 +128,7 @@ Download
 Pesquisando no YouTube por
 Resultados da busca por
 Clique no menu suspenso para mostrar mais resultados
-Ligação:
+Link:
 Músicas Disponíveis
 Deseja alterar o nome de exibição da pessoa que está usando este dispositivo? Isso aparecerá ao lado das músicas na fila. Atual:
 Usuário atual
@@ -139,7 +139,7 @@ Tem certeza de que deseja desligar?
 Tem certeza de que deseja reiniciar?
 Tem certeza de que deseja atualizar o Youtube-dl agora? Downloads atuais e pendentes podem falhar.
 Tem certeza de que deseja expandir o sistema de arquivos? Isso reiniciará seu raspberry pi.
-Em formação
+Informação
 Código QR de URL útil para compartilhar com um amigo:
 SO
 Uso de disco
@@ -172,22 +172,22 @@ Não basta puxar o plugue! Sempre desligue seu servidor corretamente para evitar
 Sair do PiKaraokê
 Reiniciar sistema
 Sistema de desligamento
-De outros
+Outro
 Expanda o sistema de arquivos Raspberry Pi
-Se você acabou de instalar a imagem PiKaraoke pi pré-criada e seu cartão SD for maior que 4 GB, convém expandir o sistema de arquivos para utilizar o espaço restante. Você só precisa fazer isso uma vez. Isso reiniciará o sistema.
+Se você acabou de instalar a imagem PiKaraoke pi pré-construída e seu cartão SD for maior que 4 GB, convém expandir o sistema de arquivos para utilizar o espaço restante. Você só precisa fazer isso uma vez. Isso reiniciará o sistema.
 Desativar modo de administrador
 Ativar modo de administrador
 sair
 Conecte-se
 Informação do sistema
-Casa
+Lar
 Mudar idioma
 Escolha o idioma
 Idioma do sistema
 Idioma atual do sistema:
 Isso altera o idioma do sistema de back-end do PiKaraoke, que é exibido na tela da TV; além disso, cada usuário conectado também pode alterar seu respectivo idioma da interface do usuário da Web no botão de globo no menu superior direito.
 Download concluído com sucesso!
-Falha no Download!
+Download falhou!
 Música adicionada à fila!
 Falha ao colocar a música na fila!
 Informações e configurações do sistema
@@ -203,3 +203,7 @@ Clique para definir a velocidade de reprodução
 Clique para redefinir tom/tom
 Botão de reset
 Redefinir velocidade
+Alta qualidade
+Adicione a música à fila de canto após o download terminar
+Baixar legendas (somente incorporadas) em todos os idiomas, se disponíveis
+O download de vídeos de alta qualidade pode levar muito tempo

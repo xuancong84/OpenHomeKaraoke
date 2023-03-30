@@ -107,7 +107,7 @@ Di chuyển xuống trong hàng đợi
 Bạn có chắc chắn muốn xóa khỏi hàng đợi
 Bạn có chắc chắn muốn xóa TOÀN BỘ hàng đợi không? Nhập 'OK' để tiếp tục
 Thêm 3 bài hát ngẫu nhiên
-Quet sạch tât cả
+Làm sạch tất cả
 Hàng đợi trống
 Xếp hàng
 Xóa bỏ
@@ -118,7 +118,7 @@ Tìm kiếm / Thêm mới
 Tìm kiếm
 Xếp hàng
 Bao gồm các trận đấu không phải karaoke
-Nâng cao
+Trình độ cao
 Nhập một bài hát (tiêu đề/nghệ sĩ) để tìm kiếm các bài hát có sẵn và nhấp vào 'Hàng đợi' để thêm bài hát đó vào hàng đợi.
 Nếu bài hát không xuất hiện trong menu thả xuống "Bài hát có sẵn", hãy nhấp vào 'Tìm kiếm' để tìm bài hát đó trên Youtube.
 Tải xuống trực tiếp url YouTube:
@@ -143,7 +143,7 @@ Thông tin
 Mã QR URL tiện dụng để chia sẻ với bạn bè:
 hệ điều hành
 Sử dụng đĩa
-Trí nhớ
+Ký ức
 Chụp màn hình
 Bộ tách giọng hát
 Phiên bản Youtube-dl (yt-dlp)
@@ -155,7 +155,7 @@ Sử dụng DNN
 Âm thanh MTV tiêu chuẩn có hai kênh âm thanh nổi (L và R) được mã hóa theo cách: L-R là rãnh nhạc cụ, L+R là rãnh giọng hát. Do đó, chỉ bằng cách trừ hoặc cộng hai kênh âm thanh nổi, chúng ta có thể nhận được bản nhạc cụ và giọng hát ở dạng âm thanh đơn âm. Bộ tách giọng hát dựa trên DNN (mạng nơ-ron sâu) tích hợp của PiKaraoke sử dụng thuật toán AI để phân tách âm thanh nhạc cụ và giọng hát trong từng rãnh âm thanh nổi một cách độc lập dẫn đến các rãnh nhạc và giọng hát âm thanh nổi.
 Dừng bộ chia
 Khởi động lại bộ chia
-Bộ tách giọng hát (hỗ trợ cả DNN và phép trừ âm thanh nổi) chạy dưới dạng một quy trình riêng biệt trong nền, tạo tệp âm thanh nhạc cụ/giọng hát cho mỗi bài hát.
+Bộ tách giọng hát (hỗ trợ cả DNN và phép trừ âm thanh nổi) chạy dưới dạng một quy trình riêng biệt trong nền, tạo tệp âm thanh nhạc cụ/giọng hát cho mọi bài hát.
 Đồng bộ hóa lại âm thanh và video:
 Dừng truyền phát
 Khởi động lại bộ truyền phát
@@ -180,7 +180,7 @@ Bật chế độ quản trị viên
 đăng xuất
 đăng nhập
 Thông tin hệ thống
-Nhà
+Trang chủ
 Thay đổi ngôn ngữ
 Vui lòng chọn ngôn ngữ
 Ngôn ngữ hệ thống
@@ -201,5 +201,9 @@ Bạn có thể hát bài hát nhanh hơn hoặc chậm hơn bằng cách thay �
 Nhấp để đặt lại tốc độ phát lại thành 1x
 Nhấp để đặt tốc độ phát lại
 Nhấp để đặt lại phím/cao độ
-Đặt lại chìa khoá
+Thiết lập lại chìa khóa
 Đặt lại tốc độ
+Chất lượng cao
+Thêm bài hát vào hàng đợi hát sau khi tải xuống xong
+Tải xuống phụ đề (chỉ được nhúng) bằng tất cả các ngôn ngữ nếu có
+Tải xuống video chất lượng cao có thể mất rất nhiều thời gian

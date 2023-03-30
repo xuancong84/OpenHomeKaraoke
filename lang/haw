@@ -117,7 +117,7 @@ Aia ke mele i ka lālani:
 Huli / Hoʻohui hou
 Huli
 Ka lālani
-Hoʻokomo i nā pāʻani karaoke ʻole
+Hoʻohui i nā pāʻani karaoke ʻole
 Kiʻekiʻe
 Kākau i kahi mele (title/artist) no ka huli ʻana i nā mele i loaʻa a kaomi iā 'Queue' e hoʻohui iā ia i ka pila.
 Inā ʻaʻole ʻike ʻia ke mele ma ka "Available Songs" dropdown, kaomi iā 'Search' e loaʻa iā ia ma Youtube.
@@ -130,7 +130,7 @@ Huli nā hualoaʻa no
 Kaomi i ka hāʻule i lalo e hōʻike i nā hopena hou aʻe
 loulou:
 Loaʻa nā Mele
-Makemake ʻoe e hoʻololi i ka inoa hōʻike o ke kanaka e hoʻohana nei i kēia hāmeʻa? E hōʻike ʻia kēia ma hope o nā mele i hoʻonohonoho ʻia. I kēia manawa:
+Makemake ʻoe e hoʻololi i ka inoa hōʻike o ke kanaka e hoʻohana nei i kēia hāmeʻa? E hōʻike ʻia kēia ma ka ʻaoʻao o nā mele i hoʻonohonoho ʻia. I kēia manawa:
 Mea hoʻohana i kēia manawa
 Nā hoʻonohonoho
 PiKaraoke
@@ -138,7 +138,7 @@ Makemake ʻoe e haʻalele?
 Makemake ʻoe e pani?
 Makemake ʻoe e hoʻomaka hou?
 Makemake ʻoe e hoʻohou iā Youtube-dl i kēia manawa? Hiki ʻole ke hoʻoiho ʻia i kēia manawa a me nā mea e kali nei.
-Makemake ʻoe e hoʻonui i ka ʻōnaehana waihona? E hoʻomaka hou kēia i kāu raspberry pi.
+Makemake ʻoe e hoʻonui i ka waihona waihona? E hoʻomaka hou kēia i kāu raspberry pi.
 ʻIkepili
 He helu QR URL maʻalahi e kaʻana like me kahi hoaaloha:
 OS
@@ -159,7 +159,7 @@ Hoʻokaʻawale ʻia ka mea hoʻokaʻawale leo (e kākoʻo ana i ka DNN-based a m
 Hoʻonohonoho hou i ka leo a me ka wikiō:
 Kāohi Streamer
 Hoʻomaka hou i ka Streamer
-Pili wale kēia i ka pāʻani KTV ma o ka polokalamu kele pūnaewele. ʻO ka hoʻomaka hou ʻana i ka pale-hopu-a me ka hoʻoheheʻe ʻana e hoʻomaikaʻi i ka hoʻonohonoho leo/wikiō, e hoʻemi ana i ka latency ma waena o ke kikowaena a me ka polokalamu kele pūnaewele.
+Pili wale kēia i ka pāʻani ʻana iā KTV ma o ka polokalamu kele pūnaewele. ʻO ka hoʻomaka hou ʻana i ka pale-hopu-a me ka hoʻoheheʻe ʻana e hoʻomaikaʻi i ka hoʻonohonoho leo/wikiō, e hoʻemi ana i ka latency ma waena o ke kikowaena a me ka polokalamu kele pūnaewele.
 Hōʻano hou i ka papa inoa mele:
 E nānā hou i ka papa kuhikuhi mele
 Pono ʻoe e hana i kēia inā ʻoe e kope lima i nā faila i ka papa kuhikuhi hoʻoiho i ka wā e holo ana ʻo PiKaraoke.
@@ -203,3 +203,7 @@ Kaomi no ka hoʻonohonoho ʻana i ka wikiwiki o ka pāʻani
 Kaomi no ka hoʻihoʻi ʻana i ke kī/pitch
 Hoʻoponopono i ke kī
 Hoʻoponopono hou i ka wikiwiki
+Kūlana Kiʻekiʻe
+Hoʻohui i ke mele i ka pila mele ma hope o ka hoʻoiho ʻana
+Hoʻoiho i nā huaʻōlelo (i hoʻokomo wale ʻia) ma nā ʻōlelo āpau inā loaʻa
+He lōʻihi paha ka hoʻoiho ʻana i nā wikiō kiʻekiʻe

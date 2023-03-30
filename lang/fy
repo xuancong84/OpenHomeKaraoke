@@ -58,8 +58,8 @@ Taheakke troch:
 Spilet no:
 Behearmodus ferliend!
 Ferheging fan audiofertraging sil jo mear tiid jaan om teksten te lêzen foardat jo de folgjende sin sjonge.
-Ferminderjen fan ûndertitelfertraging sil jo mear tiid jaan om teksten te lêzen foardat jo de folgjende sin sjonge.
-In heale toan wurdt ek wol in heale stap neamd. It is it lytste ynterval dat brûkt wurdt yn klassike westerske muzyk, gelyk oan in tolfde fan in oktaaf ​​of in heale toan.
+It ferminderjen fan ûndertitelfertraging sil jo mear tiid jaan om teksten te lêzen foardat jo de folgjende sin sjonge.
+In heale toan wurdt ek wol in heale stap neamd. It is it lytste ynterval dat brûkt wurdt yn klassike westerske muzyk, gelyk oan in tolfde fan in oktaaf ​​of heale toan.
 DNN-basearre fokale splitter is ynskeakele. PiKaraoke brûkt PyTorch (troch Facebook) om in djip neuraal netwurk út te fieren om ynstrumintaal en fokaal lûd yn elk spoar te splitsen dat oanlieding is ta stereolûd.
 Spiler kontrôle
 Muzyk
@@ -89,7 +89,7 @@ Audiofertraging ferminderje
 Audio Delay ynstelle
 Ferheegje Audio Delay
  heale toanen
-Fier jo namme yn. Dit sil ferskine neist de ferskes dy't jo fan dit apparaat yn 'e wachtrige stean.
+Fier jo namme yn. Dit sil ferskine neist de ferskes dy't jo yn 'e wachtrige stean fan dit apparaat.
 Lied tafoege oan de wachtrige:
 Lied al yn 'e wachtrige:
 Sortearje op datum
@@ -189,10 +189,10 @@ Dit feroaret de taal fan it PiKaraoke backend systeem dat wurdt werjûn op TV sk
 Download mei súkses foltôge!
 Download mislearre!
 Lied tafoege oan de wachtrige!
-It ferske koe net yn wachtrige stean!
+It ferske yn 'e wachtrige is net slagge!
 Systeemynfo en ynstellings
 Volume normalization
-Ferskillende lieten hawwe faak ferskillende folume. It ynskeakeljen fan folumenormalisaasje sil earst <i>ffmpeg</i> útfiere om it globale folume fan in ferske te berekkenjen en it folume fan it spiler automatysk oan te passen sadat elk ferske like heech klinkt.
+Ferskillende ferskes hawwe faak ferskillende folume. It ynskeakeljen fan folumenormalisaasje sil earst <i>ffmpeg</i> útfiere om it globale folume fan in ferske te berekkenjen en it folume fan it spiler automatysk oan te passen sadat elk ferske like heech klinkt.
 Paad fan de liedbibliotheek download
 Totaal oantal ferskes
 Undertitel sjen litte / ferbergje
@@ -200,6 +200,10 @@ Feroarje Speed
 Jo kinne it ferske rapper of stadiger sjonge troch de ôfspielsnelheid te feroarjen nei binnen 0,8x nei 1,2x mei de snelheidspoarbalke; foar oare playback snelheid, klik op de snelheid wearde te feroarjen.
 Klikje om de ôfspielsnelheid werom te setten nei 1x
 Klikje om de ôfspielsnelheid yn te stellen
-Klikje om kaai / toanhichte werom te setten
+Klikje om de kaai/pitch te resetten
 Kaai weromsette
 Reset Speed
+Hege kwaliteit
+Foegje it ferske ta oan 'e sjongwachtrige nei it downloaden is foltôge
+Download ûndertitels (allinich ynbêde) yn alle talen as beskikber
+It downloaden fan fideo's fan hege kwaliteit kin heul lang duorje

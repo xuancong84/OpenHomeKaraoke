@@ -187,7 +187,7 @@ Jezik sustava
 Trenutačni jezik sustava:
 Time se mijenja jezik pozadinskog sustava PiKaraoke koji se prikazuje na TV ekranu; štoviše, svaki korisnik koji se povezuje također može promijeniti svoj odgovarajući jezik web sučelja na gumbu globusa u desnom gornjem izborniku.
 Preuzimanje je uspješno dovršeno!
-Preuzimanje nije uspjelo!
+Preuzimanje neuspješno!
 Pjesma dodana u red čekanja!
 Neuspješno stavljanje pjesme u red čekanja!
 Podaci o sustavu i postavke
@@ -203,3 +203,7 @@ Kliknite za postavljanje brzine reprodukcije
 Kliknite za poništavanje tonaliteta
 Ključ za resetiranje
 Poništi brzinu
+Visoka kvaliteta
+Dodajte pjesmu u red čekanja za pjevanje nakon završetka preuzimanja
+Preuzmite titlove (samo ugrađene) na svim jezicima ako su dostupni
+Preuzimanje visokokvalitetnih videozapisa može potrajati jako dugo

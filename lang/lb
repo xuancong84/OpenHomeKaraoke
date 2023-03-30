@@ -167,7 +167,7 @@ Aktualiséierungen
 Wann d'Downloads oder d'Sichunge gestoppt hunn ze schaffen, wäert d'Aktualiséierung vun YouTube-dl et wahrscheinlech fixéieren. Déi aktuell installéiert Versioun ass:
 Update youtube-dl
 Dësen Update Link uewendriwwer ka feelen wann Dir net déi richteg Dateirechter hutt. Kontrolléiert de PiKaraoke Log fir Feeler.
-Zou maachen
+Ausmaachen
 Net nëmmen de Stecker zéien! Schalt Äre Server ëmmer richteg aus fir Datenkorruptioun ze vermeiden.
 PiKaraoke ophalen
 Restart System
@@ -191,7 +191,7 @@ Eroflueden gescheitert!
 Lidd dobäi an d'Schlaang!
 Ausgefall op d'Lidd an der Schlaang!
 System Info & Astellungen
-Volumen Normaliséierung
+Normaliséierung vum Volume
 Verschidde Lidder hunn dacks ënnerschiddlech Volumen. Wann Dir Volumennormaliséierung aktivéiert, leeft als éischt <i>ffmpeg</i> fir de globale Volume vun engem Lidd ze berechnen an automatesch de Spillervolumen unzepassen, sou datt all Lidd gläich haart kléngt.
 Songbibliothéik Download Wee
 Total Zuel vu Lidder
@@ -203,3 +203,7 @@ Klickt fir d'Wiedergabegeschwindegkeet ze setzen
 Klickt fir de Schlëssel / Pitch zréckzesetzen
 Reset Schlëssel
 Reset Speed
+Héich Qualitéit
+Füügt d'Lidd an d'Gesangschlaang nodeems den Download fäerdeg ass
+Download Ënnertitelen (nëmmen embedded) an alle Sproochen wa verfügbar
+Héich Qualitéit Videoen eroflueden kann ganz laang daueren

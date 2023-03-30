@@ -39,7 +39,7 @@ Tsy manana alalana hanakatona ianao
 Rebooting ny rafitra izao!
 Tsy manana fahazoan-dàlana hamerenana indray ianao
 Manitatra ny rafi-drakitra sy ny rafitra rebooting izao!
-Tsy afaka manitatra fs amin'ny fitaovana tsy Raspberry pi!
+Tsy afaka manitatra fs amin'ny fitaovana tsy misy raspberry pi!
 Tsy manana alalana hanova habe ny rafi-drakitra ianao
 Tsy hita ny lalana Youtube-dl!
 Tsy hita ny lalana VLC!
@@ -48,8 +48,8 @@ Mamorona lalana fampidinana:
 Wifi/Network tsy mifandray. Nakatona tao anatin'ny 10...
 Raha hifidy hira, scan QR na mifandray amin'ny
 Ho an'ny fahitalavitra, mifandray amin'ny
-Tsindrio F raha te hanova ny efijery feno
-Tsindrio ny ESC hialana amin'ny PiKaraoke
+Tsindrio F raha te hanova ny efijery manontolo
+Tsindrio ny ESC raha hiala amin'ny PiKaraoke
 Hita ny fomba fanamboarana RaspiWifiConfig!
 Mampifandray fitaovana/smartphone hafa amin'ny Wifi AP: '%s'
 Avy eo atoroy ny mpitety azy amin'ny: '%s://%s%s' ary araho ny toromarika.
@@ -60,11 +60,11 @@ Navela ny fomba Admin!
 Ny fanemorana ny feo dia hanome anao fotoana bebe kokoa hamakiana tononkira alohan'ny hihira ny fehezanteny manaraka.
 Ny fampihenana ny fahatarana ny dikanteny dia hanome anao fotoana bebe kokoa hamakiana tononkira alohan'ny hihira ny fehezanteny manaraka.
 Ny semitone dia fantatra koa amin'ny hoe antsasaky ny dingana. Io no elanelana kely indrindra ampiasaina amin'ny mozika tandrefana klasika, mitovy amin'ny ampahafolon'ny octave na antsasaky ny tonony.
-Ny mpizara vocal mifototra amin'ny DNN dia alefa. PiKaraoke dia mampiasa PyTorch (avy amin'ny Facebook) mba hampandehanana tambajotra neural lalina mba hampizarazarana ny feon-javamaneno sy feo amin'ny lalana tsirairay ka miteraka feo stereo.
+Ny mpizara feo mifototra amin'ny DNN dia alefa. PiKaraoke dia mampiasa PyTorch (avy amin'ny Facebook) mba hampandehanana tambajotra neural lalina mba hampizarazarana ny feon-javamaneno sy feo amin'ny lalana tsirairay ka miteraka feo stereo.
 Fanaraha-maso ny mpilalao
 MOZIKA
 mifangaro
-feon'ny
+FEO
 Change Key
 Tsy misy milalao amin'izao fotoana izao.
 Tsy misy hira milahatra.
@@ -131,14 +131,14 @@ Kitiho ny midina raha te hampiseho valiny bebe kokoa
 Rohy:
 Hira misy
 Te hanova ny anaran'ny olona mampiasa an'io fitaovana io ve ianao? Izany dia hiseho eo akaikin'ny hira nilahatra. ankehitriny:
-Mpampiasa amin'izao fotoana izao
+Mpampiasa ankehitriny
 Fikirana
 PiKaraoke
 Tena te hiala ve ianao?
-Tena te hikatona tokoa ve ianao?
+Tena te hikatona ve ianao?
 Tena te hamerenana ve ianao?
 Tena te hanavao ny Youtube-dl ve ianao izao? Mety tsy hahomby ny fampidinana ankehitriny sy miandry.
-Tena te-hanitatra ny rafi-drakitra ve ianao? Izany dia hamerina ny raspberry pi anao.
+Tena te hanitatra ny rafi-drakitra ve ianao? Izany dia hamerina ny raspberry pi anao.
 Information
 Kaody QR URL azo zaraina amin'ny namana iray:
 diritti
@@ -152,10 +152,10 @@ Advanced Control Options
 Fomba fizarazarana feo:
 Ampiasao ny L-R/L+R
 Ampiasao ny DNS
-Ny feo MTV mahazatra dia manana fantsona stereo roa (L sy R) voahodina amin'ny fomba toy izao: L-R ny làlam-pitaovana, L+R ny feon-kira. Noho izany, amin'ny alàlan'ny fanalana na fampidirana ireo fantsona stereo roa, dia afaka mahazo ny mozika sy ny feo amin'ny feo mono. Ny mpizara feo miorina amin'ny DNN (tambajotra neural lalina) an'i PiKaraoke dia mampiasa algorithm AI mba hanasarahana ny feo instrumental sy feo ao amin'ny làlam-peo stereo tsirairay ka tsy miankina ka miteraka làlam-peo sy fitaovana stereo.
+Ny feo MTV mahazatra dia manana fantsona stereo roa (L sy R) voahodina amin'ny fomba toy izao: L-R ny làlam-pitaovana, L+R ny feon-kira. Noho izany, amin'ny alàlan'ny fanalana na fampidirana ireo fantsona stereo roa, dia afaka mahazo ny mozika sy ny feo amin'ny feo mono. Ny mpizara feo miorina ao amin'ny DNN (tambajotra neural lalina) an'i PiKaraoke dia mampiasa algorithm AI mba hanasarahana ny feo instrumental sy feo ao amin'ny làlam-peo stereo tsirairay tsy miankina ka miteraka làlam-peo sy fitaovana stereo.
 Atsaharo ny Splitter
 Avereno indray ny Splitter
-Ny mpizara vocal (izay manohana ny DNN-based sy stereo deduction) dia mandeha ho toy ny dingana misaraka any ambadika, mamorona rakitra an-peo / feo ho an'ny hira tsirairay.
+Ny mpizara vocal (izay manohana ny DNN-based sy ny stereo deduction) dia mandeha ho toy ny dingana mitokana any ambadika, mamorona rakitra an-peo / feo ho an'ny hira tsirairay.
 Ampifandraiso indray ny feo sy horonan-tsary:
 Atsaharo ny Streamer
 Avereno indray ny Streamer
@@ -166,7 +166,7 @@ Mila manao izany ianao raha toa ka mandika ny rakitra amin'ny tananao amin'ny la
 vaovao farany
 Raha tsy miasa intsony ny fampidinana na fikarohana dia mety hanamboatra izany ny fanavaozana ny youtube-dl. Ny kinova napetraka ankehitriny dia:
 Fanavaozana ny youtube-dl
-Ity rohy fanavaozana etsy ambony ity dia mety tsy hahomby raha tsy manana fahazoan-dàlana mety ianao. Jereo ny diarin'ny PiKaraoke raha misy lesoka.
+Ity rohy fanavaozana etsy ambony ity dia mety tsy hahomby raha tsy manana fahazoan-dàlana mety ianao. Jereo ny diarin'ny PiKaraoke raha misy hadisoana.
 Hidio
 Aza misintona fotsiny ny plug! Akatona tsara foana ny mpizara anao mba hisorohana ny kolikoly angona.
 Atsaharo ny PiKaraoke
@@ -174,7 +174,7 @@ Reboot System
 Rafitra fanakatonana
 Hafa
 Manitatra Raspberry Pi fichiersystem
-Raha vao nametraka ny sary PiKaraoke pi efa vita ianao ary lehibe noho ny 4GB ny karatra SD-nao, dia azonao atao ny manitatra ny rafi-drakitra mba hampiasana ny habaka sisa. Indray mandeha ihany ianao no mila manao izany. Izany dia hamerina ny rafitra.
+Raha vao nametraka ny sary PiKaraoke pi efa namboarinao ianao ary lehibe noho ny 4GB ny karatra SD-nao, dia azonao atao ny manitatra ny rafi-drakitra mba hampiasana ny habaka sisa. Indray mandeha ihany ianao no mila manao izany. Izany dia hamerina ny rafitra.
 Atsaharo ny fomba admin
 Alefaso ny fomba admin
 miala
@@ -192,14 +192,18 @@ Hira nampidirina amin'ny filaharana!
 Tsy nahavita nilahatra ilay hira!
 System Info & Settings
 Normalization ny volume
-Ny hira samy hafa matetika dia samy hafa ny feony. Ny fampandehanana ny fanamafisam-peo dia handeha <i>ffmpeg</i> voalohany hanisa ny haavon'ny hira iray ary hanitsy ho azy ny haavon'ny mpilalao mba hitovy feo mafy ny hira rehetra.
+Ny hira samy hafa matetika dia samy hafa ny feony. Ny fampandehanana ny fanamafisam-peo dia handeha <i>ffmpeg</i> aloha mba hanombanana ny haavon'ny hira iray ary hanitsy ho azy ny haavon'ny mpilalao mba hitovy feo mafy ny hira rehetra.
 Lalana fampidinana ny tranomboky hira
 Tontalin'ny hira
 Asehoy/Afeno ny dikanteny
 Hanova haingana
 Azonao atao ny mihira ny hira haingana na miadana kokoa amin'ny alàlan'ny fanovana ny hafainganam-pandehan'ny playback ho ao anatin'ny 0.8x ka hatramin'ny 1.2x amin'ny fampiasana ny trackbar hafainganam-pandeha; ho an'ny hafainganan'ny playback, kitiho ny sandan'ny hafainganam-pandeha hanovana.
 Tsindrio hamerenana ny hafainganam-pandehan'ny playback ho 1x
-Tsindrio raha hametraka ny hafainganam-pandehan'ny playback
+Tsindrio raha hametra ny hafainganam-pandehan'ny playback
 Tsindrio hamerenana ny fanalahidy/pitch
 Reset Key
 Reset Speed
+Kalitao avo
+Ampio ny hira amin'ny filaharana mihira rehefa vita ny fampidinana
+Misintona dikanteny (ampidirina ihany) amin'ny fiteny rehetra raha misy
+Mety haharitra ela ny fampidinana horonan-tsary avo lenta

@@ -60,7 +60,7 @@ Admin rejimi verilir!
 Audio gecikmənin artırılması sizə növbəti cümləni oxumazdan əvvəl sözləri oxumaq üçün daha çox vaxt verəcək.
 Altyazı gecikməsini azaltmaq sizə növbəti cümləni oxumazdan əvvəl sözləri oxumaq üçün daha çox vaxt verəcək.
 Yarım ton yarım addım kimi də tanınır. Klassik Qərb musiqisində istifadə olunan ən kiçik intervaldır, oktavanın on ikidə biri və ya yarım tona bərabərdir.
-DNN əsaslı vokal ayırıcı aktivləşdirilib. PiKaraoke PyTorch-dan (Facebook tərəfindən) istifadə edərək, stereo səsə səbəb olan hər bir trekdə instrumental və vokal səsləri ayırmaq üçün dərin neyron şəbəkəsini idarə edir.
+DNN əsaslı vokal ayırıcı aktivləşdirilib. PiKaraoke, stereo səsə səbəb olan hər bir trekdə instrumental və vokal səsi ayırmaq üçün dərin neyron şəbəkəsini idarə etmək üçün PyTorch (Facebook tərəfindən) istifadə edir.
 Oyunçu Nəzarəti
 Musiqi
 Qarışıq
@@ -203,3 +203,7 @@ Oxutma sürətini təyin etmək üçün klikləyin
 Düyməni/sətiri sıfırlamaq üçün klikləyin
 Açarı sıfırlayın
 Sürəti sıfırlayın
+Yüksək keyfiyyət
+Yükləmə tamamlandıqdan sonra mahnını oxuma növbəsinə əlavə edin
+Əgər varsa, bütün dillərdə subtitrləri endirin (yalnız daxil edilmiş).
+Yüksək keyfiyyətli videoların yüklənməsi çox uzun çəkə bilər

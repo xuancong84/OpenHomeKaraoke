@@ -60,7 +60,7 @@ Stjórnunarhamur veittur!
 Aukin seinkun á hljóði mun gefa þér meiri tíma til að lesa texta áður en þú syngur út næstu setningu.
 Með því að draga úr töfum texta mun þú gefa þér meiri tíma til að lesa texta áður en þú syngur út næstu setningu.
 Hálftónn er einnig þekktur sem hálftónn. Það er minnsta bil sem notað er í klassískri vestrænni tónlist, jafnt og tólfta hluta áttundar eða hálfs tóns.
-DNN-undirstaða raddskipting er virkjuð. PiKaraoke notar PyTorch (eftir Facebook) til að keyra djúpt taugakerfi til að skipta hljóðfæra- og sönghljóði í hverju lagi sem gefur tilefni til steríóhljóðs.
+DNN-undirstaða raddskipting er virkjuð. PiKaraoke notar PyTorch (af Facebook) til að keyra djúpt taugakerfi til að skipta hljóðfæra- og sönghljóði í hverju lagi sem gefur tilefni til steríóhljóðs.
 Leikmannastýring
 Tónlist
 Blandað
@@ -119,7 +119,7 @@ Leita
 Biðröð
 Láttu leiki sem ekki eru karókí
 Ítarlegri
-Sláðu inn lag (titill/listamaður) til að leita að tiltækum lögum og smelltu á 'Biðröð' til að bæta því við röðina.
+Sláðu inn lag (titill/listamaður) til að leita í tiltækum lögum og smelltu á 'Biðröð' til að bæta því við röðina.
 Ef lagið birtist ekki í "Available Songs" fellilistanum, smelltu á 'Search' til að finna það á Youtube.
 Beint niðurhal YouTube vefslóð:
 Bæta við biðröð
@@ -203,3 +203,7 @@ Smelltu til að stilla spilunarhraða
 Smelltu til að endurstilla lykil/pitch
 Endurstilla lykil
 Endurstilla hraða
+Hágæða
+Bættu laginu við söngröðina eftir að niðurhali lýkur
+Sæktu skjátexta (aðeins innbyggður) á öllum tungumálum ef hann er til
+Að hlaða niður hágæða myndböndum gæti tekið mjög langan tíma

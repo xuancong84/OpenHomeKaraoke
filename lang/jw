@@ -37,7 +37,7 @@ Sampeyan ora duwe ijin kanggo metu
 Mateni sistem saiki!
 Sampeyan ora duwe ijin kanggo mateni
 Sistem reboot saiki!
-Sampeyan ora duwe idin kanggo urip maneh
+Sampeyan ora duwe ijin kanggo urip maneh
 Ngembangake sistem file lan rebooting sistem saiki!
 Ora bisa nggedhekake fs ing piranti pi non-raspberry!
 Sampeyan ora duwe ijin kanggo ngowahi ukuran filesystem
@@ -121,7 +121,7 @@ Kalebu pertandhingan non-karaoke
 Majeng
 Ketik lagu (judhul/artis) kanggo nelusuri lagu sing kasedhiya lan klik 'Antrian' kanggo ditambahake menyang antrian.
 Yen lagu ora katon ing gulung mudhun "Lagu Kasedhiya", klik 'Telusuri' kanggo nemokake ing Youtube.
-Ngundhuh langsung URL YouTube:
+Langsung download url YouTube:
 Tambah menyang antrian
 Kalebu subtitle
 Ngundhuh
@@ -130,7 +130,7 @@ asil panelusuran kanggo
 Klik gulung mudhun kanggo nuduhake asil liyane
 Link:
 Lagu kasedhiya
-Apa sampeyan pengin ngganti jeneng tampilan wong sing nggunakake piranti iki? Iki bakal ditampilake ing jejere lagu sing wis antri. saiki:
+Apa sampeyan pengin ngganti jeneng tampilan wong sing nggunakake piranti iki? Iki bakal katon ing jejere lagu sing wis antri. saiki:
 pangguna saiki
 Setelan
 PiKaraoke
@@ -193,7 +193,7 @@ Gagal ngantri lagu!
 Info & Setelan Sistem
 Normalisasi Volume
 Lagu sing beda kerep duwe volume sing beda. Ngaktifake normalisasi volume bakal mbukak <i>ffmpeg</i> kanggo ngetung volume global lagu lan nyetel volume pamuter kanthi otomatis supaya saben lagu muni padha banter.
-Perpustakaan lagu dalan download
+Path download perpustakaan lagu
 Jumlah total lagu
 Tampilake / Singidaken Subtitle
 Ganti Kacepetan
@@ -203,3 +203,7 @@ Klik kanggo nyetel kacepetan puter maneh
 Klik kanggo ngreset tombol/pitch
 Reset Key
 Reset Kacepetan
+High Quality
+Tambah lagu menyang antrian singing sawise download wis rampung
+Download subtitles (mung ditempelake) ing kabeh basa yen kasedhiya
+Ngundhuh video kanthi kualitas dhuwur bisa uga mbutuhake wektu sing suwe

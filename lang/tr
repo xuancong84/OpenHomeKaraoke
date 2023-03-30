@@ -1,4 +1,4 @@
-Türk
+Türkçe
 Yanlış yönetici şifresi!
 Yönetici modundan çıkış yapıldı!
 %s rastgele parça eklendi
@@ -115,7 +115,7 @@ Yerel kitaplıkta bulunan şarkılar
 Kuyruğa şarkı eklendi:
 Şarkı zaten sırada:
 Ara / Yeni Ekle
-Arama
+Aramak
 Sıra
 Karaoke olmayan maçları dahil et
 Gelişmiş
@@ -192,7 +192,7 @@ Yükleme başarısız!
 Şarkı sıraya alınamadı!
 Sistem Bilgisi ve Ayarlar
 Hacim Normalleştirme
-Farklı şarkılar genellikle farklı ses seviyesine sahiptir. Ses normalleştirmesinin etkinleştirilmesi, önce bir şarkının genel ses düzeyini hesaplamak için <i>ffmpeg</i>'yi çalıştırır ve her şarkının sesi eşit yüksek olacak şekilde oynatıcı ses düzeyini otomatik olarak ayarlar.
+Farklı şarkılar genellikle farklı ses seviyelerine sahiptir. Ses normalleştirmesinin etkinleştirilmesi, önce bir şarkının genel ses düzeyini hesaplamak için <i>ffmpeg</i>'yi çalıştırır ve her şarkının sesi eşit yüksek olacak şekilde oynatıcı ses düzeyini otomatik olarak ayarlar.
 Şarkı kitaplığı indirme yolu
 Toplam şarkı sayısı
 Altyazıyı Göster/Gizle
@@ -203,3 +203,7 @@ Oynatma hızını ayarlamak için tıklayın
 Tuşu/pitch'i sıfırlamak için tıklayın
 Resetleme tuşu
 Hızı Sıfırla
+Yüksek kalite
+İndirme işlemi bittikten sonra şarkıyı şarkı söyleme kuyruğuna ekleyin
+Varsa tüm dillerde altyazıları (yalnızca gömülü) indirin
+Yüksek kaliteli videoları indirmek çok uzun sürebilir

@@ -166,8 +166,8 @@ Anda hanya perlu melakukan ini jika Anda menyalin file secara manual ke direktor
 Pembaruan
 Jika unduhan atau pencarian berhenti berfungsi, memperbarui youtube-dl mungkin akan memperbaikinya. Versi terinstal saat ini adalah:
 Perbarui youtube-dl
-Tautan pembaruan di atas ini mungkin gagal jika Anda tidak memiliki izin file yang tepat. Periksa log PiKaraoke untuk kesalahan.
-Menutup
+Tautan pembaruan di atas ini mungkin gagal jika Anda tidak memiliki izin file yang sesuai. Periksa log PiKaraoke untuk kesalahan.
+Matikan
 Jangan hanya menarik stekernya! Selalu matikan server Anda dengan benar untuk menghindari kerusakan data.
 Keluar dari PiKaraoke
 Nyalakan Ulang Sistem
@@ -203,3 +203,7 @@ Klik untuk mengatur kecepatan pemutaran
 Klik untuk mengatur ulang kunci/pitch
 Atur Ulang Kunci
 Atur Ulang Kecepatan
+Kualitas tinggi
+Tambahkan lagu ke antrean bernyanyi setelah pengunduhan selesai
+Unduh subtitle (hanya tersemat) dalam semua bahasa jika tersedia
+Mengunduh video berkualitas tinggi mungkin membutuhkan waktu yang sangat lama

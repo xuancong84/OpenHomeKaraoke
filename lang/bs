@@ -162,7 +162,7 @@ Ponovo pokrenite Streamer
 Ovo utiče samo na igranje KTV-a putem web pretraživača. Ponovno pokretanje screen-capture-and-streaming poboljšava audio/video sinhronizaciju, a takođe smanjuje kašnjenje između servera i pretraživača.
 Osvježite listu pjesama:
 Ponovno skenirajte direktorij pjesama
-Ovo biste trebali učiniti samo ako ste ručno kopirali datoteke u direktorij za preuzimanje dok je PiKaraoke bio pokrenut.
+Ovo trebate učiniti samo ako ste ručno kopirali datoteke u direktorij za preuzimanje dok je PiKaraoke bio pokrenut.
 Ažuriranja
 Ako preuzimanja ili pretraživanja prestanu raditi, ažuriranje youtube-dl će to vjerovatno popraviti. Trenutna instalirana verzija je:
 Ažurirajte youtube-dl
@@ -197,9 +197,13 @@ Putanja za preuzimanje biblioteke pjesama
 Ukupan broj pjesama
 Prikaži/sakrij titl
 Promjena brzine
-Pjesmu možete pjevati brže ili sporije tako što ćete promijeniti brzinu reprodukcije unutar 0,8x do 1,2x koristeći traku za praćenje brzine; za drugu brzinu reprodukcije, kliknite na vrijednost brzine koju želite promijeniti.
+Pjesmu možete pjevati brže ili sporije promjenom brzine reprodukcije unutar 0,8x do 1,2x pomoću trake za praćenje brzine; za drugu brzinu reprodukcije, kliknite na vrijednost brzine koju želite promijeniti.
 Kliknite da vratite brzinu reprodukcije na 1x
 Kliknite da postavite brzinu reprodukcije
 Kliknite da resetujete tipku/visinu
 Reset Key
 Resetiraj brzinu
+Visoka kvaliteta
+Dodajte pjesmu u red za pjevanje nakon što se preuzimanje završi
+Preuzmite titlove (samo ugrađene) na svim jezicima ako su dostupni
+Preuzimanje video zapisa visokog kvaliteta može potrajati jako dugo

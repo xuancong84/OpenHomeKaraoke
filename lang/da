@@ -186,7 +186,7 @@ Vælg venligst sprog
 Systemsprog
 Aktuelt systemsprog:
 Dette ændrer sproget i PiKaraoke-backend-systemet, som vises på TV-skærmen; desuden kan hver tilsluttende bruger også ændre deres respektive web-UI-sprog i globusknappen i menuen øverst til højre.
-Download fuldført med succes!
+Download fuldført!
 Download fejlede!
 Sang tilføjet til køen!
 Det lykkedes ikke at sætte sangen i kø!
@@ -203,3 +203,7 @@ Klik for at indstille afspilningshastigheden
 Klik for at nulstille nøgle/pitch
 Nulstil nøgle
 Nulstil hastighed
+Høj kvalitet
+Tilføj sangen til sangkøen, når download er afsluttet
+Download undertekster (kun indlejret) på alle sprog, hvis de er tilgængelige
+Det kan tage meget lang tid at downloade videoer i høj kvalitet

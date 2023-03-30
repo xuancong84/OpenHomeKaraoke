@@ -95,7 +95,7 @@ Piosenka już w kolejce:
 Sortowanie według daty
 Sortuj według alfabetycznie
 Dodaj „%s” do kolejki
-Przeglądaj
+Przeglądać
 Posortowane według „Daty”
 Sortowane według „Alfabetycznie”
 piosenki
@@ -110,7 +110,7 @@ Dodaj 3 losowe piosenki
 Wyczyść wszystko
 Kolejka jest pusta
 Kolejka
-Usunąć
+Usuwać
 Dostępne utwory w lokalnej bibliotece
 Dodano utwór do kolejki:
 Piosenka jest już w kolejce:
@@ -167,12 +167,12 @@ Aktualizacje
 Jeśli pobieranie lub wyszukiwanie przestało działać, aktualizacja youtube-dl prawdopodobnie to naprawi. Aktualnie zainstalowana wersja to:
 Zaktualizuj youtube-dl
 Powyższy link do aktualizacji może się nie powieść, jeśli nie masz odpowiednich uprawnień do pliku. Sprawdź dziennik PiKaraoke pod kątem błędów.
-Zamknąć
+Zamknięcie
 Nie wystarczy wyciągnąć wtyczkę! Zawsze prawidłowo zamykaj serwer, aby uniknąć uszkodzenia danych.
 Zrezygnuj z PiKaraoke
 Uruchom ponownie system
 System zamykania
-Inne
+Inny
 Rozwiń system plików Raspberry Pi
 Jeśli właśnie zainstalowałeś gotowy obraz PiKaraoke pi, a twoja karta SD jest większa niż 4 GB, możesz rozszerzyć system plików, aby wykorzystać pozostałą przestrzeń. Musisz to zrobić tylko raz. Spowoduje to ponowne uruchomienie systemu.
 Wyłącz tryb administratora
@@ -203,3 +203,7 @@ Kliknij, aby ustawić prędkość odtwarzania
 Kliknij, aby zresetować tonację/ton
 Przycisk reset
 Zresetuj prędkość
+Wysoka jakość
+Dodaj utwór do kolejki śpiewania po zakończeniu pobierania
+Pobierz napisy (tylko osadzone) we wszystkich językach, jeśli są dostępne
+Pobieranie filmów wysokiej jakości może zająć bardzo dużo czasu
