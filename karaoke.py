@@ -498,7 +498,7 @@ class Karaoke:
 		dl_path = "%(title)s---%(id)s.%(ext)s"
 		opt_quality = ['-f', 'bestvideo[height<=1080]+bestaudio[abr<=160]'] if high_quality else ['-f', 'mp4+m4a']
 		opt_sub = ['--sub-langs', 'all', '--embed-subs'] if include_subtitles else []
-		cmd = [self.youtubedl_path, '--fixup', 'force'] + self.cookies_opt + opt_quality +\
+		cmd = [self.youtubedl_path, '--fixup', 'force', '--remux-video', 'mp4'] + self.cookies_opt + opt_quality +\
 		      ["-o", self.download_path+'tmp/'+dl_path] + opt_sub + [song_url]
 		logging.debug("Youtube-dl command: " + " ".join(cmd))
 		rc = subprocess.call(cmd)
