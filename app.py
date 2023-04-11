@@ -733,14 +733,24 @@ def get_default_browser_cookie(platform):
 	def_cookie_loc = defaultdict(lambda:defaultdict(lambda:''))
 	def_cookie_loc['linux']['firefox'] = '$HOME/.mozilla/firefox/'
 	def_cookie_loc['linux']['chrome'] = '$HOME/.config/google-chrome/'
+	def_cookie_loc['linux']['chromium'] = '$HOME/.config/chromium/'
 	def_cookie_loc['windows']['firefox'] = '%APPDATA%\\Mozilla\\Firefox\\Profiles'
 	def_cookie_loc['windows']['chrome'] = '%LOCALAPPDATA%\\Google\\Chrome\\User Data\\Default\\Network'
 	def_cookie_loc['windows']['edge'] = '%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\Default\\Network'
+	def_cookie_loc['windows']['ie'] = '%USERPROFILE%\\AppData\\Roaming\\Microsoft\\Windows\\Cookies'
 	def_cookie_loc['osx']['firefox'] = '$HOME/Library/Application Support/Firefox/Profiles/'
 	def_cookie_loc['osx']['chrome'] = '$HOME/Library/Application Support/Google/Chrome/'
 	def_cookie_loc['osx']['safari'] = '$HOME/Library/Cookies/'
 	try:
-		default_browser = webbrowser.get().name.lower()
+		if platform == 'windows':
+			browsers = ['firefox', 'chrome', 'ie', 'edge']
+			from winreg import OpenKey, HKEY_CURRENT_USER, QueryValueEx
+			with OpenKey(HKEY_CURRENT_USER,
+						 r"Software\\Microsoft\\Windows\\Shell\\Associations\\UrlAssociations\\http\\UserChoice") as key:
+				browser = QueryValueEx(key, 'Progid')[0].lower()
+			default_browser = [b for b in browsers if browser.startswith(b)][0]
+		else:
+			default_browser = webbrowser.get().name.lower()
 	except:
 		return ''
 	ret = os.path.expandvars(def_cookie_loc[platform][default_browser])
