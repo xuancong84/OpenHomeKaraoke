@@ -194,7 +194,7 @@
     $('#search-link').on('click', function (e) {
       e.preventDefault();
       var search_term = $(".search-selectize .selectize-input input").val();
-      var include_non_karaoke = $("#include-non-karaoke").is(":checked")
+      var include_non_karaoke = $("#search-karaoke").is(":checked")
       if (search_term) {
         $('#searching_loader').removeClass("is-hidden");
         $('#searching_loader #search_term').text(search_term);
@@ -307,7 +307,7 @@
       </div>
       <div class="control has-text-right is-flex" style="justify-content: space-between">
         <label class="checkbox is-size-7">
-          <input type="checkbox" id="include-non-karaoke" {% if search_nonkaraoke %}checked{% endif %} name="include-non-karaoke">
+          <input type="checkbox" id="search-karaoke" {% if search_karaoke %}checked{% endif %} name="search-karaoke">
           {{getString1(120)}}
         </label>
         <label class="checkbox is-size-7">
@@ -332,8 +332,8 @@
           <input class="song-added-by" type="hidden" name="song_added_by" />
           <div class="field" style="margin-top: 5px">
             <label class="checkbox" title="{{getString1(207)}}"><input type="checkbox" checked name="enqueue">{{getString1(125)}}</label>
-            <label class="checkbox" title="{{getString1(208)}}"><input type="checkbox" name="include_subtitles">{{getString1(126)}}</label>
             <label class="checkbox" title="{{getString1(209)}}"><input type="checkbox" name="high_quality" {{'checked' if high_quality else ''}}>{{getString1(206)}}</label>
+            <label class="checkbox" title="{{getString1(208)}}"><input type="checkbox" name="include_subtitles">{{getString1(126)}}</label>
           </div>
           <div class="has-text-right" style="margin-top: 5px">
             <button class="button is-small is-rounded" id="direct-download-button" type="submit">{{getString1(127)}}</button>
@@ -374,6 +374,7 @@
       <p class="has-text-centered-mobile"> <img id='youtube-thumb'> </p>
       <div class="field">
         <label class="checkbox"><input type="checkbox" checked name="enqueue">{{getString1(125)}}</label>&nbsp;
+        <label class="checkbox" title="{{getString1(209)}}"><input type="checkbox" name="high_quality" {{'checked' if high_quality else ''}}>{{getString1(206)}}</label>
         <label class="checkbox"><input type="checkbox" name="include_subtitles">{{getString1(126)}}</label>
       </div>
       <div class="field">

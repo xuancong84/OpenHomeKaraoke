@@ -448,7 +448,7 @@ class Karaoke:
 	def get_search_results(self, textToSearch):
 		logging.info("Searching YouTube for: " + textToSearch)
 		num_results = 10
-		yt_search = 'ytsearch%d:"%s"' % (num_results, textToSearch)
+		yt_search = 'ytsearch%d:%s' % (num_results, textToSearch)
 		cmd = [self.youtubedl_path, "-j", "--no-playlist", "--flat-playlist", yt_search]
 		logging.debug("Youtube-dl search command: " + " ".join(cmd))
 		try:
@@ -465,9 +465,6 @@ class Karaoke:
 		except Exception as e:
 			logging.debug("Error while executing search: " + str(e))
 			raise e
-
-	def get_karaoke_search_results(self, songTitle):
-		return self.get_search_results(songTitle + " karaoke")
 
 	def get_yt_dlp_json(self, url):
 		out_json = subprocess.check_output([self.youtubedl_path, '-j', url])

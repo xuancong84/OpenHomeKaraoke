@@ -367,15 +367,12 @@ def vol_set(volume):
 def search():
 	if "search_string" in request.args:
 		search_string = request.args["search_string"]
-		search_nonkaraoke = request.args.get('non_karaoke', 'false') == "true"
-		if search_nonkaraoke:
-			search_results = K.get_search_results(search_string)
-		else:
-			search_results = K.get_karaoke_search_results(search_string)
+		search_karaoke = request.args.get('non_karaoke', 'false') == "true"
+		search_results = K.get_search_results(search_string + (" karaoke" if search_karaoke else ""))
 	else:
 		search_string = None
 		search_results = None
-		search_nonkaraoke = False
+		search_karaoke = False
 	return render_template(
 		"search.html",
 		getString1 = lambda ii: getString1(request.client_lang, ii),
@@ -385,7 +382,7 @@ def search():
 		high_quality = K.high_quality,
 		search_results = search_results,
 		search_string = search_string,
-		search_nonkaraoke = search_nonkaraoke
+		search_karaoke = search_karaoke
 	)
 
 
