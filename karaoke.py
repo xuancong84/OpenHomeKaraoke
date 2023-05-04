@@ -1,4 +1,4 @@
-import os, random, time, json, hashlib
+import os, sys, io, random, time, json, hashlib
 import logging, socket, subprocess
 import multiprocessing as mp
 import shutil, psutil
@@ -22,6 +22,16 @@ STD_VOL = 65536/8/np.sqrt(2)
 
 if get_platform() != "windows":
 	from signal import SIGALRM, alarm, signal
+
+
+def cleanse_modules(name):
+	try:
+		for module_name in sorted(sys.modules.keys()):
+			if module_name.startswith(name):
+				del sys.modules[module_name]
+		del globals()[name]
+	except:
+		pass
 
 
 class Karaoke:
@@ -170,8 +180,26 @@ class Karaoke:
 
 		# get songs from download_path
 		self.get_available_songs()
-
 		self.get_youtubedl_version()
+		
+		# Automatically upgrade yt-dlp if using pip
+		if not args.youtubedl_path:
+			try:
+				import pip, yt_dlp
+				old_stderr, sys.stderr = sys.stderr, io.StringIO()
+				pip.main(['install', 'yt-dlp=='])
+				ret_stderr, sys.stderr = sys.stderr, old_stderr
+				output = ret_stderr.getvalue()
+				posi1 = output.find('versions:')
+				posi2 = output.find(')', posi1)
+				assert posi1>0 and posi2>0
+				latest_version = output[posi1:posi2].split()[-1]
+				if self.youtubedl_version.replace('.0', '.') != latest_version.replace('.0', '.'):
+					self.upgrade_youtubedl()
+					self.get_youtubedl_version()
+			except:
+				pass
+
 
 		# clean up old sessions
 		self.kill_player()
@@ -229,23 +257,22 @@ class Karaoke:
 		return (server_port, ssid_prefix, ssl_enabled)
 
 	def get_youtubedl_version(self):
-		self.youtubedl_version = (check_output([self.youtubedl_path, "--version"]).strip().decode("utf8"))
+		self.youtubedl_version = self.call_yt_dlp(['--version'], True).strip()
 		return self.youtubedl_version
 
 	def upgrade_youtubedl(self):
 		logging.info("Upgrading youtube-dl, current version: %s" % self.youtubedl_version)
-		output = check_output([self.youtubedl_path, "-U"], stderr=subprocess.STDOUT).decode("utf8").strip()
-		logging.info(output)
-		if "it looks like you installed yt-dlp with a package manager" in output.lower():
+		if self.youtubedl_path:
+			self.call_yt_dlp(['-U'])
+		else:
 			try:
-				logging.info("Attempting youtube-dl upgrade via pip3...")
-				output = check_output(["pip3", "install", "--upgrade", "yt-dlp"]).decode("utf8")
-			except FileNotFoundError:
-				logging.info("Attempting youtube-dl upgrade via pip...")
-				output = check_output(["pip", "install", "--upgrade", "yt-dlp"]).decode("utf8")
-			logging.info(output)
-		self.get_youtubedl_version()
-		logging.info("Done. New version: %s" % self.youtubedl_version)
+				import pip
+				pip.main(['install', 'yt-dlp', '-U'])
+				cleanse_modules('yt_dlp')
+				import yt_dlp
+			except:
+				pass
+		logging.info("Done. New version: %s" % self.get_youtubedl_version())
 
 	def is_network_connected(self):
 		return not len(self.ip) < 7
@@ -445,14 +472,36 @@ class Karaoke:
 			break
 		return render
 
+	def call_yt_dlp(self, argv, get_stdout = False):
+		if self.youtubedl_path:
+			if get_stdout:
+				return subprocess.check_output([self.youtubedl_path]+argv).decode("utf-8")
+			else:
+				return subprocess.call([self.youtubedl_path]+argv)
+		ret_code = 0
+		if get_stdout:
+			old_stdout = sys.stdout
+			sys.stdout = io.StringIO()
+		try:
+			import yt_dlp
+			yt_dlp.main(argv)
+		except SystemExit as e:
+			ret_code = e.code
+		if get_stdout:
+			ret_stdout = sys.stdout
+			sys.stdout = old_stdout
+			return ret_stdout.getvalue()
+		return ret_code
+
 	def get_search_results(self, textToSearch):
 		logging.info("Searching YouTube for: " + textToSearch)
 		num_results = 10
 		yt_search = 'ytsearch%d:%s' % (num_results, textToSearch)
-		cmd = [self.youtubedl_path, "-j", "--no-playlist", "--flat-playlist", yt_search]
+		cmd = ["-j", "--no-playlist", "--flat-playlist", yt_search]
 		logging.debug("Youtube-dl search command: " + " ".join(cmd))
 		try:
-			output = subprocess.check_output(cmd).decode("utf-8")
+			# output = subprocess.check_output(cmd).decode("utf-8")
+			output = self.call_yt_dlp(cmd, True)
 			logging.debug("Search results: " + output)
 			rc = []
 			for each in output.split("\n"):
@@ -467,7 +516,8 @@ class Karaoke:
 			raise e
 
 	def get_yt_dlp_json(self, url):
-		out_json = subprocess.check_output([self.youtubedl_path, '-j', url])
+		# out_json = subprocess.check_output([self.youtubedl_path, '-j', url])
+		out_json = self.call_yt_dlp(['-j', url], True)
 		return json.loads(out_json)
 
 	def get_downloaded_file_basename(self, url):
@@ -495,15 +545,15 @@ class Karaoke:
 		dl_path = "%(title)s---%(id)s.%(ext)s"
 		opt_quality = ['-f', 'bestvideo[height<=1080]+bestaudio[abr<=160]'] if high_quality else ['-f', 'mp4+m4a']
 		opt_sub = ['--sub-langs', 'all', '--embed-subs'] if include_subtitles else []
-		cmd = [self.youtubedl_path, '--fixup', 'force', '--remux-video', 'mp4'] + self.cookies_opt + opt_quality +\
+		cmd = ['--fixup', 'force', '--remux-video', 'mp4'] + self.cookies_opt + opt_quality +\
 		      ["-o", self.download_path+'tmp/'+dl_path] + opt_sub + [song_url]
 		logging.debug("Youtube-dl command: " + " ".join(cmd))
-		rc = subprocess.call(cmd)
+		rc = self.call_yt_dlp(cmd)
 		if rc != 0:
 			logging.error("Error code while downloading, retrying without format options ...")
-			cmd = [self.youtubedl_path, "-o", self.download_path + 'tmp/' + dl_path] + opt_sub + [song_url]
+			cmd = ["-o", self.download_path + 'tmp/' + dl_path] + opt_sub + [song_url]
 			logging.debug("Youtube-dl command: " + " ".join(cmd))
-			rc = subprocess.call(cmd)  # retry once. Seems like this can be flaky
+			rc = self.call_yt_dlp(cmd)
 		if rc == 0:
 			logging.debug("Song successfully downloaded: " + song_url)
 			self.downloading_songs[song_url] = 0

@@ -41,7 +41,7 @@ You don't have permission to Reboot
 Expanding filesystem and rebooting system now!
 Cannot expand fs on non-raspberry pi devices!
 You don't have permission to resize the filesystem
-Youtube-dl path not found! 
+Youtube-dl path not found and pip has failed to install it! 
 VLC path not found! 
 omxplayer path not found! 
 Creating download path: 

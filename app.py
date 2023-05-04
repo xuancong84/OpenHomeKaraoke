@@ -5,7 +5,7 @@ import datetime
 import json
 import locale
 import logging
-import os, sys
+import os, sys, io
 import shutil
 import signal
 import subprocess
@@ -692,31 +692,6 @@ def expand_fs():
 signal.signal(signal.SIGTERM, lambda signum, stack_frame: K.stop())
 
 
-def get_default_youtube_dl_path(platform):
-	# use Python's cross-platform way
-	shutil_path = shutil.which('yt-dlp')
-	if shutil_path:
-		return shutil_path
-
-	if platform == "windows":
-		choco_ytdl_path = r"C:\ProgramData\chocolatey\bin\yt-dlp.exe"
-		scoop_ytdl_path = os.path.expanduser(r"~\scoop\shims\yt-dlp.exe")
-		if os.path.isfile(choco_ytdl_path):
-			return choco_ytdl_path
-		if os.path.isfile(scoop_ytdl_path):
-			return scoop_ytdl_path
-		return r"C:\Program Files\yt-dlp\yt-dlp.exe"
-	default_ytdl_unix_path = "/usr/local/bin/yt-dlp"
-	if platform == "osx":
-		if os.path.isfile(default_ytdl_unix_path):
-			return default_ytdl_unix_path
-		else:
-			# just a guess based on the default python 3 install in OSX monterey
-			return "/Library/Frameworks/Python.framework/Versions/3.10/bin/yt-dlp"
-	else:
-		return default_ytdl_unix_path
-
-
 def get_default_dl_dir(platform):
 	if platform == "raspberry_pi":
 		return "/usr/lib/pikaraoke/songs"
@@ -753,8 +728,8 @@ def get_default_browser_cookie(platform):
 	ret = os.path.expandvars(def_cookie_loc[platform][default_browser])
 	return f'{default_browser}:{ret}' if ret else ''
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
 	platform = get_platform()
 	default_port = 5000
 	default_volume = 0
@@ -764,7 +739,6 @@ if __name__ == "__main__":
 	default_dl_dir = get_default_dl_dir(platform)
 	default_omxplayer_path = "/usr/bin/omxplayer"
 	default_adev = "both"
-	default_youtubedl_path = get_default_youtube_dl_path(platform)
 	default_vlc_path = get_default_vlc_path(platform)
 	default_vlc_port = 5002
 
@@ -793,8 +767,8 @@ if __name__ == "__main__":
 	)
 	parser.add_argument(
 		"-y", "--youtubedl-path",
-		help = f"Path of youtube-dl. (default: {default_youtubedl_path})",
-		default = default_youtubedl_path,
+		help = f"Path of youtube-dl. (default: '', use pip package yt-dlp)",
+		default = '',
 	)
 	parser.add_argument(
 		"-v", "--volume",
@@ -934,10 +908,18 @@ if __name__ == "__main__":
 	else:
 		args.use_vlc = True
 
-	# check if required binaries exist
+	# check if required binaries exist, auto pip install yt-dlp if needed
 	if not os.path.isfile(args.youtubedl_path):
-		print(getString(44) + args.youtubedl_path)
-		sys.exit(1)
+		args.youtubedl_path = ''
+		try:
+			import yt_dlp
+		except:
+			try:
+				import pip
+				pip.main(['install', 'yt-dlp'])
+			except:
+				print(getString(44) + args.youtubedl_path)
+				sys.exit(1)
 	if args.use_vlc and not os.path.isfile(args.vlc_path):
 		print(getString(45) + args.vlc_path)
 		sys.exit(1)
