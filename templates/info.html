@@ -48,12 +48,18 @@
 
     $("#use-DNN").change(function(){
       $.get("/set_vocal_mode/" + this.checked, function( data ){
-        location.reload();
+        location.reload(true);
       });
     });
 
     $("#norm-vol").change(function(){
       $.get("/norm_vol/" + this.checked, function( data ){
+        location.reload(true);
+      });
+    });
+
+    $("#save-delays").change(function(){
+      $.get("/save_delays/" + this.checked, function( data ){
         location.reload(true);
       });
     });
@@ -455,6 +461,14 @@ select:-moz-focusring {
 
 {% if admin %}
 <h2>{{getString1(151)}}</h2>
+<h4>{{getString1(210)}}
+  <label style="vertical-align:middle; margin: 5px" class="switch">
+    <input id="save-delays" type="checkbox" {% if save_delays %}checked{% endif %}>
+    <span class="slider round"></span>
+  </label>
+</h4>
+<p class="help-normal">{{getString1(211)}}</p>
+
 <h4>{{getString1(194)}}
   <label style="vertical-align:middle; margin: 5px" class="switch">
     <input id="norm-vol" type="checkbox" {% if norm_vol %}checked{% endif %}>

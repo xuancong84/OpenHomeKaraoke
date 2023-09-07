@@ -207,3 +207,5 @@ High Quality
 Add the song to the singing queue after download has finished
 Download subtitles (only embedded) in all languages if available
 Downloading high-quality videos might take very long time
+Save Play Settings
+Save play settings for each song, this includes: audio delay, subtitle delay, and whether to show subtitles.

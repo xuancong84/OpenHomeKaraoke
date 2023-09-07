@@ -21,6 +21,7 @@ See a demo on YouTube: [![Img alt text](https://img.youtube.com/vi/kmQax0EhAxE/0
 - Seek to play position (you can practice singing a specific sentence over and over again)
 - Audio delay adjustment (YouTube MTVs often have synchronized lyrics, this makes singing difficult as there is not enough time to look at the lyrics)
 - Subtitle delay adjustment and show/hide control for easier singing (subtitle control will be displayed only if the currently-playing media file contains subtitle tracks)
+- Remember audio/subtitle delay for each song for easy singing
 - Stream-to-HTTP allows any TV (or IT device) with a web browser to watch the KTV (on Windows and MacOS, you can use wireless-display/screen-projection and Airplay respectively)
 - Support song titles in all languages (including Chinese/Japanese/Arabic/Greek/Korean/Vietnamese/Hindi/etc.), filenames containing non-English characters are sorted according to their English transliteration
 - Multi-lingual support in both Web UI and backend system UI

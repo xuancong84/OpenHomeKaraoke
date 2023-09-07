@@ -68,36 +68,17 @@ class Karaoke:
 	qr_code_path = None
 	base_path = os.path.dirname(__file__)
 	volume_offset = 0
-	loop_interval = 500  # in milliseconds
 	default_logo_path = os.path.join(base_path, "logo.png")
 	logical_volume = None   # for normalized volume
 
 	def __init__(self, args):
 
 		# override with supplied constructor args if provided
-		self.args = args
-		self.nonroot_user = args.nonroot_user
-		self.port = args.port
-		self.hide_ip = args.hide_ip
-		self.hide_raspiwifi_instructions = args.hide_raspiwifi_instructions
-		self.hide_splash_screen = args.hide_splash_screen
+		self.__dict__.update(args.__dict__)
 		self.omxplayer_adev = 'both'
 		self.download_path = args.dl_path
-		self.dual_screen = args.dual_screen
-		self.high_quality = args.high_quality
-		self.splash_delay = int(args.splash_delay)
 		self.volume_offset = self.volume = args.volume
-		self.youtubedl_path = args.youtubedl_path
-		self.omxplayer_path = args.omxplayer_path
-		self.use_omxplayer = args.use_omxplayer
-		self.use_vlc = args.use_vlc
-		self.vlc_path = args.vlc_path
-		self.vlc_port = args.vlc_port
 		self.logo_path = self.default_logo_path if args.logo_path == None else args.logo_path
-		self.show_overlay = args.show_overlay
-		self.run_vocal = args.run_vocal
-		self.normalize_vol = args.normalize_vol
-		self.cookies_opt = args.cookies_opt
 
 		# other initializations
 		self.platform = get_platform()
@@ -114,49 +95,10 @@ class Karaoke:
 			level = self.log_level,
 		)
 
-		logging.debug(
-			"""
-	http port: %s
-	hide IP: %s
-	hide RaspiWiFi instructions: %s,
-	hide splash: %s
-	splash_delay: %s
-	omx audio device: %s
-	dual screen: %s
-	high quality video: %s
-	download path: %s
-	default volume: %s
-	youtube-dl path: %s
-	omxplayer path: %s
-	logo path: %s
-	Use OMXPlayer: %s
-	Use VLC: %s
-	VLC path: %s
-	VLC port: %s
-	log_level: %s
-	show overlay: %s"""
-			% (
-				self.port,
-				self.hide_ip,
-				self.hide_raspiwifi_instructions,
-				self.hide_splash_screen,
-				self.splash_delay,
-				self.omxplayer_adev,
-				self.dual_screen,
-				self.high_quality,
-				self.download_path,
-				self.volume_offset,
-				self.youtubedl_path,
-				self.omxplayer_path,
-				self.logo_path,
-				self.use_omxplayer,
-				self.use_vlc,
-				self.vlc_path,
-				self.vlc_port,
-				self.log_level,
-				self.show_overlay
-			)
-		)
+		logging.debug(vars(args))
+
+		if self.save_delays:
+			self.init_save_delays()
 
 		# Generate connection URL and QR code, retry in case pi is still starting up
 		# and doesn't have an IP yet (occurs when launched from /etc/rc.local)
@@ -667,6 +609,11 @@ class Karaoke:
 	def play_file(self, file_path, extra_params = []):
 		self.switchingSong = True
 		if self.use_vlc:
+			if self.save_delays:
+				saved_delays = self.delays.get(os.path.basename(file_path), {})
+				self.audio_delay = self.audio_delay if self.audio_delay else saved_delays.get('audio_delay', 0)
+				self.subtitle_delay = self.subtitle_delay if self.subtitle_delay else saved_delays.get('subtitle_delay', 0)
+				self.show_subtitle = False if self.show_subtitle==False else saved_delays.get('show_subtitle', True)
 			extra_params1 = []
 			logging.info("Playing video in VLC: " + file_path)
 			if self.platform != 'osx':
@@ -842,6 +789,19 @@ class Karaoke:
 		logging.warning("Tried to seek, but no file is playing!")
 		return False
 
+	def set_delays_dict(self, filename, key, val, dft_val=0):
+		basename = os.path.basename(filename)
+		delays = self.delays.get(basename, {})
+		if val == dft_val:
+			delays.pop(key, None)
+		else:
+			delays[key] = val
+		if delays:
+			self.delays[basename] = delays
+		else:
+			self.delays.pop(basename, {})
+		self.delays_dirty = True
+
 	def set_audio_delay(self, delay):
 		if delay == '+':
 			self.audio_delay += 0.1
@@ -855,6 +815,9 @@ class Karaoke:
 			except:
 				logging.warning(f"Tried to set audio delay to an invalid value {delay}, ignored!")
 				return False
+
+		if self.save_delays:
+			self.set_delays_dict(self.now_playing_filename, 'audio_delay', self.audio_delay)
 
 		if self.is_file_playing():
 			if self.use_vlc:
@@ -879,6 +842,9 @@ class Karaoke:
 				logging.warning(f"Tried to set subtitle delay to an invalid value {delay}, ignored!")
 				return False
 
+		if self.save_delays:
+			self.set_delays_dict(self.now_playing_filename, 'subtitle_delay', self.subtitle_delay)
+
 		if self.is_file_playing():
 			if self.use_vlc:
 				self.vlcclient.command(f"subdelay&val={self.subtitle_delay}")
@@ -887,6 +853,12 @@ class Karaoke:
 			return self.subtitle_delay
 		logging.warning("Tried to set subtitle delay, but no file is playing!")
 		return False
+
+	def toggle_subtitle(self):
+		self.show_subtitle = not self.show_subtitle
+		self.play_vocal(force=True)
+		if self.save_delays:
+			self.set_delays_dict(self.now_playing_filename, 'show_subtitle', self.show_subtitle, True)
 
 	def pause(self):
 		if self.is_file_playing():
@@ -1054,27 +1026,24 @@ class Karaoke:
 		self.running = False
 
 	def handle_run_loop(self):
-		if self.hide_splash_screen:
-			time.sleep(self.loop_interval / 1000)
-		else:
-			for event in pygame.event.get():
-				if event.type == pygame.QUIT:
-					logging.warn("Window closed: Exiting pikaraoke...")
+		for event in pygame.event.get():
+			if event.type == pygame.QUIT:
+				logging.warn("Window closed: Exiting pikaraoke...")
+				self.running = False
+			elif event.type == pygame.KEYDOWN:
+				if event.key == pygame.K_ESCAPE:
+					logging.warn("ESC pressed: Exiting pikaraoke...")
 					self.running = False
-				elif event.type == pygame.KEYDOWN:
-					if event.key == pygame.K_ESCAPE:
-						logging.warn("ESC pressed: Exiting pikaraoke...")
-						self.running = False
-					if event.key == pygame.K_f:
-						self.toggle_full_screen()
-				elif event.type == pygame.VIDEORESIZE:
-					if self.platform != 'osx':
-						self.screen = pygame.display.set_mode((event.w, event.h),
-					            self.get_default_display_mode() if self.full_screen else pygame.RESIZABLE)
-			if not self.is_file_playing() or not self.has_video:
-				self.render_splash_screen()
-				pygame.display.update()
-			pygame.time.wait(self.loop_interval)
+				if event.key == pygame.K_f:
+					self.toggle_full_screen()
+			elif event.type == pygame.VIDEORESIZE:
+				if self.platform != 'osx':
+					self.screen = pygame.display.set_mode((event.w, event.h),
+							self.get_default_display_mode() if self.full_screen else pygame.RESIZABLE)
+		if not self.is_file_playing() or not self.has_video:
+			self.render_splash_screen()
+			pygame.display.update()
+		pygame.time.wait(100)
 
 	# Use this to reset the screen in case it loses focus
 	# This seems to occur in windows after playing a video
@@ -1086,6 +1055,7 @@ class Karaoke:
 			self.render_splash_screen()
 
 	def reset_now_playing(self):
+		self.auto_save_delays()
 		self.now_playing = None
 		self.now_playing_filename = None
 		self.now_playing_user = None
@@ -1174,6 +1144,30 @@ class Karaoke:
 			self.update_logical_vol()
 		return str(self.logical_volume)
 
+	def init_save_delays(self):
+		self.delays_dirty = False
+		try:
+			self.delays = eval(open(self.save_delays).read())
+		except:
+			self.delays = {}
+			with open(self.save_delays, 'w') as fp:
+				fp.write(str(self.delays))
+
+	def set_save_delays(self, state):
+		if state != bool(self.save_delays):
+			if state:
+				self.save_delays = self.dft_delays_file
+				self.init_save_delays()
+			else:
+				self.save_delays = None
+				self.delete_if_exist(self.dft_delays_file)
+
+	def auto_save_delays(self):
+		if self.save_delays and self.delays_dirty:
+			self.delays_dirty = False
+			with open(self.save_delays, 'w') as fp:
+				fp.write(str(self.delays))
+
 	def run(self):
 		logging.info("Starting PiKaraoke!")
 		self.running = True
@@ -1192,10 +1186,9 @@ class Karaoke:
 						if self.full_screen and not pygame.display.get_active():
 							self.pygame_reset_screen()
 						self.render_splash_screen()
-						i = 0
-						while i < (self.splash_delay * 1000):
+						tm = time.time()
+						while time.time()-tm < self.splash_delay:
 							self.handle_run_loop()
-							i += self.loop_interval
 						head = self.queue.pop(0)
 						self.play_file(head['file'])
 						if not self.firstSongStarted:
@@ -1215,5 +1208,6 @@ class Karaoke:
 		self.streamer_stop()
 		self.vocal_stop()
 		(self.vlcclient if self.use_vlc else self.omxclient).stop()
+		self.auto_save_delays()
 		time.sleep(1)
 		(self.vlcclient if self.use_vlc else self.omxclient).kill()
