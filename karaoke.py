@@ -856,9 +856,9 @@ class Karaoke:
 
 	def toggle_subtitle(self):
 		self.show_subtitle = not self.show_subtitle
-		self.play_vocal(force=True)
 		if self.save_delays:
 			self.set_delays_dict(self.now_playing_filename, 'show_subtitle', self.show_subtitle, True)
+		self.play_vocal(force=True)
 
 	def pause(self):
 		if self.is_file_playing():
