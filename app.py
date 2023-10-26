@@ -964,7 +964,7 @@ if __name__ == "__main__":
 
 	# Configure karaoke process
 	global K
-	K = karaoke.Karaoke(args)
+	os.K = K = karaoke.Karaoke(args)
 
 	if (args.developer_mode):
 		th = threading.Thread(target = K.run)

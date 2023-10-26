@@ -2,13 +2,13 @@ setuptools
 wheel
 tempora==1.14.0
 jaraco.functools==2.0
-CherryPy==10.2.1
+CherryPy
 six
 Flask
 pillow
 qrcode
 pygame; sys_platform != 'darwin'
-pygame==2.1.0; sys_platform == 'darwin'
+pygame==2.1.3; sys_platform == 'darwin'
 futures
 psutil 
 unidecode
@@ -20,3 +20,5 @@ torch>=1.5.1
 tqdm>=4.30
 librosa>=0.6.3,<0.9
 pip
+soundfile
+spec_utils
