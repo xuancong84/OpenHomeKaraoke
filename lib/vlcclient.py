@@ -78,7 +78,7 @@ class VLCClient:
 				"--no-macosx-show-playmode-buttons",
 				"--no-macosx-interfacestyle",
 				"--macosx-nativefullscreenmode",
-				"--macosx-continue-playback", "2",
+				"--macosx-continue-playback=2",
 			]
 		else:
 			self.cmd_base += ["--intf", "dummy"]

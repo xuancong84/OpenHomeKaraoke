@@ -6,6 +6,7 @@ import argparse, requests, subprocess
 import numpy as np
 import soundfile as sf
 import torch
+torch.backends.quantized.engine = 'qnnpack'
 from tqdm import tqdm
 
 from lib import dataset
@@ -120,7 +121,7 @@ def ffm_video2wav(input_fn, output_fn):
 def split_vocal_by_stereo(in_wav, out_wav_nonvocal, out_wav_vocal):
 	try:
 		# Create temporary filenames if not done yet
-		X, sr = librosa.load(in_wav, 44100, False, dtype = np.float32, res_type = 'kaiser_fast')
+		X, sr = librosa.load(in_wav, sr=44100, mono=False, dtype = np.float32, res_type = 'kaiser_fast')
 		if X.shape[0] < 2:
 			return False
 		if out_wav_nonvocal:
@@ -134,7 +135,7 @@ def split_vocal_by_stereo(in_wav, out_wav_nonvocal, out_wav_vocal):
 
 def split_vocal_by_dnn(in_wav, out_wav_nonvocal, out_wav_vocal, args):
 	print('Loading wave source ...', end = ' ', flush = True)
-	X, sr = librosa.load(in_wav, args.sr, False, dtype = np.float32, res_type = 'kaiser_fast')
+	X, sr = librosa.load(in_wav, sr=args.sr, mono=False, dtype = np.float32, res_type = 'kaiser_fast')
 	print('done', flush = True)
 
 	if X.ndim == 1:
