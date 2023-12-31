@@ -26,33 +26,6 @@ class Conv2DBNActiv(nn.Module):
         return self.conv(x)
 
 
-# class SeperableConv2DBNActiv(nn.Module):
-
-#     def __init__(self, nin, nout, ksize=3, stride=1, pad=1, dilation=1, activ=nn.ReLU):
-#         super(SeperableConv2DBNActiv, self).__init__()
-#         self.conv = nn.Sequential(
-#             nn.Conv2d(
-#                 nin, nin,
-#                 kernel_size=ksize,
-#                 stride=stride,
-#                 padding=pad,
-#                 dilation=dilation,
-#                 groups=nin,
-#                 bias=False
-#             ),
-#             nn.Conv2d(
-#                 nin, nout,
-#                 kernel_size=1,
-#                 bias=False
-#             ),
-#             nn.BatchNorm2d(nout),
-#             activ()
-#         )
-
-#     def __call__(self, x):
-#         return self.conv(x)
-
-
 class Encoder(nn.Module):
 
     def __init__(self, nin, nout, ksize=3, stride=1, pad=1, activ=nn.LeakyReLU):
@@ -99,7 +72,9 @@ class ASPPModule(nn.Module):
             nn.AdaptiveAvgPool2d((1, None)),
             Conv2DBNActiv(nin, nout, 1, 1, 0, activ=activ)
         )
-        self.conv2 = Conv2DBNActiv(nin, nout, 1, 1, 0, activ=activ)
+        self.conv2 = Conv2DBNActiv(
+            nin, nout, 1, 1, 0, activ=activ
+        )
         self.conv3 = Conv2DBNActiv(
             nin, nout, 3, 1, dilations[0], dilations[0], activ=activ
         )
@@ -109,7 +84,9 @@ class ASPPModule(nn.Module):
         self.conv5 = Conv2DBNActiv(
             nin, nout, 3, 1, dilations[2], dilations[2], activ=activ
         )
-        self.bottleneck = Conv2DBNActiv(nout * 5, nout, 1, 1, 0, activ=activ)
+        self.bottleneck = Conv2DBNActiv(
+            nout * 5, nout, 1, 1, 0, activ=activ
+        )
         self.dropout = nn.Dropout2d(0.1) if dropout else None
 
     def forward(self, x):
