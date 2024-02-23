@@ -1,18 +1,7 @@
 #!/usr/bin/env python3
 
-import argparse
-import datetime
-import json
-import locale
-import logging
-import os, sys, io
-import shutil
-import signal
-import subprocess
-import threading
-import time
-import traceback
-import webbrowser
+import argparse, datetime, json, locale, os, sys, io, shutil
+import signal, subprocess, threading, time, traceback, webbrowser
 from functools import wraps
 
 import cherrypy
@@ -36,7 +25,7 @@ except ImportError:
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 site_name = "PiKaraoke"
-admin_password = None
+admin_password = K = None
 os.texts = defaultdict(lambda: "")
 getString = lambda ii: os.texts[ii]
 getString1 = lambda lang, ii: os.langs[lang].get(ii, os.langs['en_US'][ii])
@@ -895,6 +884,10 @@ if __name__ == "__main__":
 		help = "Run in flask developer mode. Only useful for tweaking the web UI in real time. Will disable the splash screen due to pygame main thread conflicts and may require FLASK_ENV=development env variable for full dev mode features.",
 		action = "store_true",
 	)
+	parser.add_argument('--cloud', '-C',
+		default='',
+		help='full URL for cloud decoding',
+	)
 	args = parser.parse_args()
 
 	set_language(args.lang)
@@ -963,7 +956,6 @@ if __name__ == "__main__":
 		args.hide_splash_screen = True
 
 	# Configure karaoke process
-	global K
 	os.K = K = karaoke.Karaoke(args)
 
 	if (args.developer_mode):

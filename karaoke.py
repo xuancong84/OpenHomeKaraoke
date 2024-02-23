@@ -1,7 +1,7 @@
 import os, sys, io, random, time, json, hashlib
-import logging, socket, subprocess
+import logging, socket, subprocess, threading
 import multiprocessing as mp
-import shutil, psutil
+import shutil, psutil, traceback, tarfile, requests
 from subprocess import check_output
 from collections import *
 
@@ -19,6 +19,7 @@ from lib.get_platform import *
 from app import getString
 
 STD_VOL = 65536/8/np.sqrt(2)
+TMP_DIR = '/dev/shm'
 
 if get_platform() != "windows":
 	from signal import SIGALRM, alarm, signal
@@ -142,7 +143,6 @@ class Karaoke:
 			except:
 				pass
 
-
 		# clean up old sessions
 		self.kill_player()
 
@@ -158,6 +158,37 @@ class Karaoke:
 		if not self.hide_splash_screen:
 			self.initialize_screen(not args.windowed)
 			self.render_splash_screen()
+
+		self.cloud = args.cloud
+		if args.cloud:
+			self.cloud_trigger = threading.Event()
+			self.cloud_tasks = []
+			threading.Thread(target=self._cloud_thread).start()
+
+
+	def _cloud_thread(self):
+		while True:
+			self.cloud_trigger.wait()
+			self.cloud_trigger.clear()
+			while self.cloud_tasks:
+				try:
+					fn = self.cloud_tasks.pop(0)
+					bn, dn = os.path.basename(fn), os.path.dirname(fn)
+					if os.path.isfile(f'{self.download_path}nonvocal/{bn}.m4a') and os.path.isfile(f'{self.download_path}vocal/{bn}.m4a'):
+						continue
+					os.system(f'ffmpeg -y -i "{fn}" -vn -c copy {TMP_DIR}/input.m4a')
+					with open(f'{TMP_DIR}/input.m4a', 'rb') as f:
+						r = requests.post(self.cloud, files={'file': f})
+					with open(f'{TMP_DIR}/output.tar.gz', 'wb') as f:
+						f.write(r.content)
+					with tarfile.open(f'{TMP_DIR}/output.tar.gz') as tar:
+						tar.extract('nonvocal.m4a', f'{self.download_path}nonvocal')
+						os.rename(f'{self.download_path}nonvocal/nonvocal.m4a', f'{self.download_path}nonvocal/{bn}.m4a')
+						tar.extract('vocal.m4a', f'{self.download_path}vocal')
+						os.rename(f'{self.download_path}vocal/vocal.m4a', f'{self.download_path}vocal/{bn}.m4a')
+				except:
+					traceback.print_exc()
+
 
 	# Other ip-getting methods are unreliable and sometimes return 127.0.0.1
 	# https://stackoverflow.com/a/28950776
@@ -1191,6 +1222,9 @@ class Karaoke:
 							self.handle_run_loop()
 						head = self.queue.pop(0)
 						self.play_file(head['file'])
+						if self.cloud:
+							self.cloud_tasks += [head['file']]
+							self.cloud_trigger.set()
 						if not self.firstSongStarted:
 							if self.streamer_alive():
 								self.streamer_restart(1)
