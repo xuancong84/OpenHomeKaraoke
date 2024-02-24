@@ -127,21 +127,7 @@ class Karaoke:
 		
 		# Automatically upgrade yt-dlp if using pip
 		if not args.youtubedl_path:
-			try:
-				import pip, yt_dlp
-				old_stderr, sys.stderr = sys.stderr, io.StringIO()
-				pip.main(['install', 'yt-dlp=='])
-				ret_stderr, sys.stderr = sys.stderr, old_stderr
-				output = ret_stderr.getvalue()
-				posi1 = output.find('versions:')
-				posi2 = output.find(')', posi1)
-				assert posi1>0 and posi2>0
-				latest_version = output[posi1:posi2].split()[-1]
-				if self.youtubedl_version.replace('.0', '.') != latest_version.replace('.0', '.'):
-					self.upgrade_youtubedl()
-					self.get_youtubedl_version()
-			except:
-				pass
+			threading.Thread(target=self._upgrade_yt_dlp).start()
 
 		# clean up old sessions
 		self.kill_player()
@@ -165,11 +151,25 @@ class Karaoke:
 			self.cloud_tasks = []
 			threading.Thread(target=self._cloud_thread).start()
 
+	def _upgrade_yt_dlp(self):
+		import pip, yt_dlp
+		old_stderr, sys.stderr = sys.stderr, io.StringIO()
+		pip.main(['install', 'yt-dlp=='])
+		ret_stderr, sys.stderr = sys.stderr, old_stderr
+		output = ret_stderr.getvalue()
+		posi1 = output.find('versions:')
+		posi2 = output.find(')', posi1)
+		assert posi1>0 and posi2>0
+		latest_version = output[posi1:posi2].split()[-1]
+		if self.youtubedl_version.replace('.0', '.') != latest_version.replace('.0', '.'):
+			self.upgrade_youtubedl()
+			self.get_youtubedl_version()
 
 	def _cloud_thread(self):
 		while True:
 			self.cloud_trigger.wait()
 			self.cloud_trigger.clear()
+			if not self.running: return
 			while self.cloud_tasks:
 				try:
 					fn = self.cloud_tasks.pop(0)
