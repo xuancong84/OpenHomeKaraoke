@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	{% if title %}
+	<title>{{site_title}} - {{ title }}</title>
+	{% else %}
+	<title>{{site_title}}</title>
+	{% endif %}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="/static/jquery-3.3.1.min.js"></script>
+	<script src="/static/jquery-ui.min.js"></script>
+	<script src="/static/js.cookie-2.2.1.min.js"></script>
+	<script src="/static/lodash.min.js"></script>
+	<script src="/static/siriwave.umd.min.js"></script>
+	<link rel="stylesheet" href="/static/jquery-ui.min.css">
+	<link rel="stylesheet" href="/static/bulma-dark.css">
+	<link rel="stylesheet" href="/static/custom.css">
+	<link rel="icon" type="image/png" href="/static/images/microphone.png">
+	<link rel="stylesheet" href="/static/fontello/css/fontello.css">
+</head>
+
+<style>
+.dark_overlay{
+	position: fixed; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:100; -moz-opacity: 0.5;
+	opacity:.50; display: none; filter: alpha(opacity=80);
+}
+.above_overlay{ position:fixed; width:80%; height:40%; left:50%; top: 50%; transform: translate(-50%, -50%); z-index: 200; display: none; }
+.navbar-item > i { margin-right: 2px; font-size: 24px; }
+.notification { position: fixed; width: 500px; bottom: 5px; left: 50%; margin-left: -250px; z-index: 20; }
+.current-user { position: fixed; padding: 3px; bottom: 5px; right: 10px; }
+tr:nth-child(even) { background-color: rgb(50, 55, 55); }
+@media screen and (max-width: 500px) {
+	.navbar-brand > .navbar-item > span { display: none; }
+	.notification { position: fixed; width: 100%; bottom: 5px; left: 0px; margin-left: 0px; }
+	body { min-height: 120vh; }
+}
+.hide {display: none;}
+rbutton {
+	margin: 4px;
+	align-items: center;
+	appearance: none;
+	background-color: #3EB2FD;
+	background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+	background-size: calc(100% + 20px) calc(100% + 20px);
+	border-radius: 100px;
+	border-width: 0;
+	box-shadow: none;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: CircularStd, sans-serif;
+	font-size: 1.2rem;
+	height: auto;
+	justify-content: center;
+	line-height: 1.2;
+	padding: 6px 20px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color .2s, background-position .2s;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: middle;
+	white-space: nowrap;
+	transform:scale(1.2);
+}
+rbutton:active,
+rbutton:focus {outline: none;}
+rbutton:hover {background-position: -20px -20px;}
+rbutton:focus:not(:active) {box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;}
+</style>
+
+<body>
+	<div id="ASR" class="asr dark_overlay"></div>
+	<div id="ASRpanel" class="asr above_overlay">
+		<h1 style="color: lime; font-size: x-large;">{{getString1(213)}}</h1>
+		<div id="waveform" style="width:100%; height: 50%; border: solid 4px blue; background-color: #00000080;"></div>
+		<h1 style="font-size: 64pt; justify-content: space-around; display: flex;" >
+			<span onclick="use_recorded=true;recorder.stop();">✅︎</span>
+			<span onclick="recorder.stop();">✖</span>
+		</h1>
+	</div>
+	<div id="ASRselect" class="above_overlay" style="font-size: x-large; line-height: 2; overflow: scroll; background-color:darkviolet; height: fit-content;padding: 5%;">
+		<b>{{getString1(228)}}</b>
+		<div id="ASRlist"></div>
+		<div style="justify-content: space-around; display: flex; margin-top:0.5em;">
+			<rbutton onclick="addSelected(); $('#ASRselect').hide(); $('#ASR').hide()">{{getString1(231)}}</rbutton>
+			<rbutton onclick="$('#ASRselect').hide(); $('#ASR').hide()">{{getString1(230)}}</rbutton>
+		</div>
+	</div>
+	<nav class="navbar" role="navigation" aria-label="main navigation" style="position: fixed; top:0; width: 100%; overflow: hidden;">
+		<div class="navbar-brand" id="brand" style="padding-left: 10px">
+			<a id="home" class="navbar-item" onclick="switch_pane('/f_home')">
+				<i class="icon icon-home-2" title="{{getString1(183)}}"></i>
+				<span>{{getString1(183)}}</span>
+			</a>
+			<a id="queue" class="navbar-item" onclick="switch_pane('/f_queue')">
+				<i class="icon icon-list-numbered" title="{{getString1(112)}}"></i>
+				<span>{{getString1(112)}}</span>
+			</a>
+			<a id="search" class="navbar-item" onclick="switch_pane('/f_search')">
+				<i class="icon icon-search-1" title="{{getString1(118)}}"></i>
+				<span>{{getString1(118)}}</span>
+			</a>
+			<a id="browse" class="navbar-item" onclick="switch_pane('/f_browse')">
+				<i class="icon icon-folder-open-empty" title="{{getString1(98)}}"></i>
+				<span>{{getString1(98)}}</span>
+			</a>
+			<a id="speak" class="navbar-item" style="margin-left: auto;" onclick="add_spoken()">
+				<i class="icon" title="{{getString1(212)}}">🗣</i>
+				<span>{{getString1(212)}}</span>
+			</a>
+			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+		</div>
+		<div class="navbar-menu" id="menu">
+			<div class="navbar-end">
+				<a id="current-user" class="navbar-item" href="#">
+					<i class="icon icon-adult" title="{{getString1(134)}}"></i>
+					<span></span>
+				</a>
+				<a id="current-lang" class="navbar-item" href="#">
+					<i class="icon icon-globe" title="{{getString1(184)}}"></i>
+					<span>{{getString1(1)}}</span>
+				</a>
+				<a id="info" class="navbar-item" onclick="switch_pane('/f_info')">
+					<i class="icon icon-cog" title="{{getString1(193)}}"></i>
+					<span>{{getString1(135)}}</span>&nbsp;&nbsp;
+				</a>
+			</div>
+		</div>
+	</nav>
+	<div class="container" style="padding: 5px; max-width: 900px; margin-top: 55px;">
+		<div id="notification" class="notification hide">
+			<button class="delete" onclick="$('.notification').hide();"></button>
+			<div class="flash"></div>
+			<p id="notificationControls" style="float:right; cursor: pointer;">{{getString1(229)}}</p>
+		</div>
+		<div class="box" id="container" style="margin-top: 5px;"></div>
+	</div>
+<script>
+const updateFreq = 5;
+let spectrum, dBASpectrum;
+var recorder, audios, start_time, recorder_timeout, use_recorded, timer, currentUser, ws, siriWave, g_stream, g_devices, taskHandle, source;
+var wav_win = $('#waveform')[0], last_pane='/f_home', ASRlist=$("#ASRlist")[0];
+RA = f => 12194 ** 2 * f ** 4 /((f ** 2 + 20.6 ** 2) * Math.sqrt((f ** 2 + 107.7 ** 2) * (f ** 2 + 737.9 ** 2)) * (f ** 2 + 12194 ** 2));
+A = f => 20 * Math.log10(RA(f)) + 2.0;
+function closeNav(){
+	$(".navbar-burger").removeClass("is-active");
+	$(".navbar-menu").removeClass("is-active");
+}
+function switch_pane(name){
+	clearInterval(timer);
+	var stem = name.split('?')[0];
+	$.get(name, (data)=>{$('#container').html(data);})
+	for(var pn of ['home', 'queue', 'search', 'browse', 'info'])
+		if(stem.endsWith(pn)){$("#"+pn).addClass("is-active"); last_pane = stem;}
+		else $("#"+pn).removeClass("is-active")
+	closeNav();
+}
+get_refresh = (url, pane=last_pane)=>{$.get(url, (_)=>{switch_pane(pane)});}
+post_switch = (url, data)=>{$.post(url, data, (_)=>{
+	clearInterval(timer);
+	$('#container').html(_);
+	closeNav();
+})}
+function add_spoken(){
+	if(window.location.href.startsWith('http://')){
+		if(confirm("{{getString1(214)}}")){
+			var port = parseInt(window.location.href.split(':')[2]);
+			window.location.href = window.location.href.replace('http:', 'https:').replace(port, port+1);
+		}
+		return;
+	}
+	if(g_stream==null)
+		return alert("{{getString1(215)}}");
+
+	open_wsock_if_nec();
+
+	$('.asr').show();
+
+	if(siriWave==null)
+		siriWave = new SiriWave({container: wav_win, cover: true, height: wav_win.offsetHeight, style: "ios9"});
+
+	var context = new (window.AudioContext || window.webkitAudioContext)();
+	source = context.createMediaStreamSource(g_stream);
+	var analyser = context.createAnalyser();
+	var trackSettings = g_stream.getAudioTracks()[0].getSettings();
+	var sampleRate = trackSettings.sampleRate || context.sampleRate;
+	var totalNumberOfSamples = sampleRate / updateFreq;
+	analyser.fftSize = 2 ** Math.floor(Math.log2(totalNumberOfSamples));
+	const uint8TodB = byteLevel => (byteLevel / 255) * (analyser.maxDecibels - analyser.minDecibels) + analyser.minDecibels;
+	const weightings = [-100];
+	for (let i = 1; i < analyser.frequencyBinCount; i++)
+		weightings[i] = A(i * sampleRate / 2 / analyser.frequencyBinCount);
+	spectrum = new Uint8Array(analyser.frequencyBinCount);
+	dBASpectrum = new Float32Array(analyser.frequencyBinCount);
+	var waveForm = new Uint8Array(analyser.frequencyBinCount);
+	source.connect(analyser);
+	siriWave.start();
+
+	const updateAnimation = function (idleDeadline) {
+		taskHandle = requestIdleCallback(updateAnimation, { timeout: 1000 / updateFreq });
+
+		//copy frequency data to spectrum from analyser.
+		// holds Number.NEGATIVE_INFINITY, [0 = -100dB, ..., 255 = -30 dB]
+		analyser.getByteFrequencyData(spectrum);
+
+		spectrum.forEach((byteLevel, idx) => {
+			dBASpectrum[idx] = uint8TodB(byteLevel) + weightings[idx];
+		});
+
+		const 
+			highestPerceptibleFrequencyBin = dBASpectrum.reduce((acc, y, idx) => y > -90 ? idx : acc, 0),
+			// S = ∑ s_i
+			totaldBAPower = dBASpectrum.reduce((acc, y) => acc + y),
+
+			// s⍉ = ∑ s_i ∙ i / ∑ s_i
+			meanFrequencyBin = dBASpectrum.reduce((acc, y, idx) => acc + y * idx) / totaldBAPower,
+			highestPowerBin = dBASpectrum.reduce(([maxPower, iMax], y, idx) => y > maxPower ? [y, idx] : [maxPower, iMax], [-120, 0])[1],
+			highestDetectedFrequency = highestPerceptibleFrequencyBin * (sampleRate / 2 / analyser.frequencyBinCount),
+			meanFrequency = meanFrequencyBin * (sampleRate / 2 / analyser.frequencyBinCount),
+			maxPowerFrequency = highestPowerBin * (sampleRate / 2 / analyser.frequencyBinCount);
+
+		// set the speed for siriwave, scaled to [0..22kHz] -> [0..1]
+		siriWave.setSpeed(maxPowerFrequency / 10e+3);
+		const averagedBAPower = totaldBAPower / analyser.frequencyBinCount;
+
+		// find the max amplituded the zero level is at 128
+		analyser.getByteTimeDomainData(waveForm);
+
+		// find the maximum not considering negative values (without loss of generality)
+		const amplitude = waveForm.reduce((acc, y) => Math.max(acc, y), 128) - 128;
+
+		//scale amplituded from [0, 128] to [0, 10].
+		siriWave.setAmplitude(amplitude / 128 * 10);
+	};
+
+	taskHandle = requestIdleCallback(updateAnimation, { timeout: 1000 / updateFreq });
+
+	audios = [];
+	recorder = new MediaRecorder(g_stream, {mimeType: 'audio/webm'});
+	recorder.ondataavailable = (e) => { audios.push(e.data); if(recorder.state=='inactive') onRecStop(); };
+	recorder.start();
+	start_time=Date.now();
+	recorder_timeout = setTimeout("recorder.stop()", 15000);
+	use_recorded = false;
+}
+function onRecStop(){
+	$('.asr').hide();
+	cancelIdleCallback(taskHandle);
+	source.disconnect();
+	siriWave.stop();
+	clearTimeout(recorder_timeout);
+	recorder = null;
+	if(!use_recorded) return;
+	var blob = new Blob(audios, { type: "audio/webm" });
+	const req = new XMLHttpRequest();
+	req.open("POST", `/add_spoken/${currentUser}`, true);
+	req.send(blob);
+}
+
+function showNotification(message, categoryClass, timeout=3000) {
+	$("#notification").addClass(categoryClass)
+	$("#notification div").text(message)
+	$("#notificationControls").hide()
+	$("#notification").fadeIn()
+	setTimeout(function () {$("#notification").fadeOut()}, timeout)
+	setTimeout(function () {$("#notification").removeClass(categoryClass)}, timeout + 750)
+}
+
+function notifyWithControl(message, action, timeout=3000){
+	$("#notification").addClass('is-info')
+	$("#notification div").text(message)
+	$("#notificationControls").show()
+	$("#notificationControls").click(action)
+	$("#notification").fadeIn()
+	setTimeout(function () {$("#notification").fadeOut()}, timeout)
+	setTimeout(function () {$("#notification").removeClass('is-info')}, timeout + 750)
+}
+
+function setLanguage(lang, reload){
+	Cookies.set("lang", lang, { expires: 3650 });
+	if(reload){
+		window.scrollTo(0, 0);
+		location.reload();
+	}
+}
+
+// Check for click events on the navbar burger icon
+$(".navbar-burger").click(function () {
+	// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+	$(".navbar-burger").toggleClass("is-active");
+	$(".navbar-menu").toggleClass("is-active");
+});
+
+
+// handle current user display
+function set_user(user){
+	currentUser = user;
+	Cookies.set("user", currentUser, { expires: 3650 });
+	$("#current-user span").text(currentUser);
+}
+function load_cur_user(){
+	currentUser = Cookies.get("user");
+	if(currentUser==null)
+		$.get('/auto_username').then((s)=>{set_user(s)});
+	else set_user(currentUser);
+}
+
+$('#current-user').click(function(e) {
+	e.preventDefault();
+	let name = window.prompt("{{getString1(133)}}" + currentUser, currentUser);
+	if (name) {
+		$.get(`/user_rename/${currentUser}/${name}`);
+		set_user(name);
+		closeNav();
+	}
+});
+
+// handle browser language
+load_cur_user();
+var currentLang = Cookies.get("lang");
+if(!currentLang){
+	currentLang = window.navigator.language;
+	setLanguage(currentLang, false);
+}
+
+$('#current-lang').click(function(e) {
+	e.preventDefault();
+	$.get('/get_lang_list').done(function(lang_json){
+		var lang_dict = JSON.parse(lang_json);
+		var popup_html = '';
+		for(var lang1 in lang_dict){
+			popup_html += `<input type="radio" onclick="setLanguage('${lang1}', true);" ${currentLang==lang1?"checked":""}>&nbsp;${lang_dict[lang1]}<br>`;
+		}
+		var popUpList = $(`<div title="{{getString1(185)}}">${popup_html}</div>`)
+		popUpList.dialog();
+	});
+});
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+	navigator.mediaDevices.getUserMedia({audio: true,},)
+		.then(stream => Promise.all([stream, navigator.mediaDevices.enumerateDevices()]))
+		.then(([stream, devices]) => { g_stream = stream; g_devices = devices; })
+		.catch((err) => { console.error(`The following getUserMedia error occurred: ${err}`);
+	});
+} else {
+	console.log("getUserMedia not supported on your browser!");
+}
+function open_wsock_if_nec(){
+	if(ws==null || ws.readyState>1){
+		ws = new WebSocket((window.location.href.startsWith('https:')?'wss://':'ws://') + location.host + '/ws_init');
+		ws.addEventListener('message', ev => {setTimeout(ev.data, 1);});
+	}
+	return ws;
+}
+var titles, files;
+function add1song(title, filename){
+	ws.send(`addsongs ${currentUser}\t${filename}`);
+	notifyWithControl('{{getString1(227)|safe}}'.replace("%s", title), ()=>{
+		ws.send('pop_from_queue '+filename);
+		$("#notification").hide();
+	});
+}
+function add1songById(ii){
+	add1song(titles[ii], files[ii]);
+	$("#ASRselect").hide();
+	$("#ASR").hide();
+}
+function addSongs(json){
+	$(".asr").hide();
+	try{[titles, files] = JSON.parse(json)}
+	catch(err){ console.log(err) }
+	ASRlist.innerHTML = "";
+	for(var i=0; i<titles.length; i++)
+		ASRlist.innerHTML += `<p><input type="checkbox" id="add_optn_${i}" style="cursor:pointer; transform:scale(1.5)" value=${i}>&nbsp;&nbsp;<label for="add_optn_${i}" onclick="add1songById(${i})" style="cursor:pointer">${titles[i]}</label></p>`;
+	$("#ASR").show();
+	$("#ASRselect").show();
+}
+function addSelected(){
+	var msg = `addsongs ${currentUser}`;
+	for(var x=0; x<ASRlist.childElementCount; x++)
+		if(ASRlist.children[x].children[0].checked) msg+='\t'+files[x];
+	ws.send(msg);
+}
+open_wsock_if_nec();
+switch_pane(last_pane);
+</script>
+</body>
+
+</html>

@@ -1,0 +1,519 @@
+<header class="title">
+<style>
+.help-normal {
+  font-size: 1em;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.button::-moz-focus-inner{
+  border: 0;
+  padding: 0;
+}
+
+.button{
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  padding: 6px 20px;
+  margin: 0;
+  cursor: pointer;
+  border: 1px solid #bbb;
+  overflow: visible;
+  font: bold 13px arial, helvetica, sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #555;
+
+  background-color: #ddd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)));
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+  background-image: -ms-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+  background-image: -o-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+  background-image: linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+
+  -webkit-transition: background-color .2s ease-out;
+  -moz-transition: background-color .2s ease-out;
+  -ms-transition: background-color .2s ease-out;
+  -o-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out;
+  background-clip: padding-box; /* Fix bleeding */
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+  text-shadow: 0 1px 0 rgba(255,255,255, .9);
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.button:hover{
+  background-color: #eee;
+  color: #555;
+}
+
+.button:active{
+  background: #e9e9e9;
+  position: relative;
+  top: 1px;
+  text-shadow: none;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+}
+
+.button[disabled], .button[disabled]:hover, .button[disabled]:active{
+  border-color: #eaeaea;
+  background: #fafafa;
+  cursor: default;
+  position: static;
+  color: #999;
+  /* Usually, !important should be avoided but here it's really needed :) */
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+/* Smaller buttons styles */
+
+.button.small{
+  padding: 4px 12px;
+}
+
+/* Colored buttons styles */
+
+.button.green, .button.red, .button.blue {
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0,0,0,.2);
+
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.3)), to(rgba(255,255,255,0)));
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: -ms-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: -o-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+  background-image: linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+}
+
+.button.green{
+  background-color: #57a957;
+  border-color: #57a957;
+}
+
+.button.green:hover{
+  background-color: #62c462;
+}
+
+.button.green:active{
+  background: #57a957;
+}
+
+.button.red{
+  background-color: #ca3535;
+  border-color: #c43c35;
+}
+
+.button.red:hover{
+  background-color: #ee5f5b;
+}
+
+.button.red:active{
+  background: #c43c35;
+}
+
+.button.blue{
+  background-color: #269CE9;
+  border-color: #269CE9;
+}
+
+.button.blue:hover{
+  background-color: #70B9E8;
+}
+
+.button.blue:active{
+  background: #269CE9;
+}
+
+.green[disabled], .green[disabled]:hover, .green[disabled]:active{
+  border-color: #57A957;
+  background: #57A957;
+  color: #D2FFD2;
+}
+
+.red[disabled], .red[disabled]:hover, .red[disabled]:active{
+  border-color: #C43C35;
+  background: #C43C35;
+  color: #FFD3D3;
+}
+
+.blue[disabled], .blue[disabled]:hover, .blue[disabled]:active{
+  border-color: #269CE9;
+  background: #269CE9;
+  color: #93D5FF;
+}
+
+/* Group buttons */
+
+.button-group,
+.button-group li{
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+.button-group{
+  font-size: 0; /* Inline block elements gap - fix */
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, .1);
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  padding: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+}
+
+.button-group li{
+  margin-right: -1px; /* Overlap each right button border */
+}
+
+.button-group .button{
+  font-size: 13px; /* Set the font size, different from inherited 0 */
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.button-group .button:active{
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset, -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset, -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset, -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+}
+
+.button-group li:first-child .button{
+  -moz-border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+
+.button-group li:first-child .button:active{
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, -5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+}
+
+.button-group li:last-child .button{
+  -moz-border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.button-group li:last-child .button:active{
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .2) inset, 5px 0 5px -3px rgba(0, 0, 0, .2) inset;
+}
+
+
+/* Language select */
+select {
+  /* styling */
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 2.5em 0.5em 1em;
+
+  /* reset */
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* arrows */
+select.Round {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    radial-gradient(#ddd 70%, transparent 72%);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - .5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.Round:focus {
+  background-image:
+    linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    radial-gradient(gray 70%, transparent 72%);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - .5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+</style>
+
+<h1>{{getString1(142)}}</h1>
+</header>
+
+<div class="content">
+<hr/>
+<div class="has-text-centered">
+  <p>URL of {{getString1(136)}}:</p>
+  <p class="is-size-4 has-text-warning has-text-centered">{{ url }}</p>
+  <p>{{getString1(143)}}</p>
+<img id="qr-img" width="300px" src="{{ url_for('qrcode') }}" style="image-rendering: pixelated" />
+</div>
+
+<hr />
+
+<h1>{{getString1(182)}}</h1>
+<ul>
+  <li>{{getString1(196)}}: {{ download_path }}</li>
+  <li>{{getString1(197)}}: {{ num_of_songs }}</li>
+  <li>{{getString1(144)}}: {{ ostype }}</li>
+  <li>CPU: {{ cpu }}</li>
+  <li>{{getString1(145)}}: {{ disk }}</li>
+  <li>{{getString1(146)}}: {{ memory }}</li>
+  {% if platform == 'linux' %} <li>{{getString1(147)}}: {{ screencapture }}</li> {% endif %}
+  <li>{{getString1(148)}}: {{ vocalsplitter }}</li>
+  <li>{{getString1(149)}}: {{ youtubedl_version }}</li>
+  <li>{{getString1(150)}}: {{ pikaraoke_version }}</li>
+</ul>
+
+<hr />
+
+{% if admin %}
+<h2>{{getString1(151)}}</h2>
+<h4>{{getString1(210)}}
+  <label style="vertical-align:middle; margin: 5px" class="switch">
+    <input id="save-delays" type="checkbox" {% if save_delays %}checked{% endif %}>
+    <span class="slider round"></span>
+  </label>
+</h4>
+<p class="help-normal">{{getString1(211)}}</p>
+
+<h4>{{getString1(194)}}
+  <label style="vertical-align:middle; margin: 5px" class="switch">
+    <input id="norm-vol" type="checkbox" {% if norm_vol %}checked{% endif %}>
+    <span class="slider round"></span>
+  </label>
+</h4>
+<p class="help-normal">{{getString1(195)}}</p>
+
+<h4>{{getString1(152)}}</h4>
+<div class="is-flex" style="align-items:center">
+  <span style="vertical-align:middle; text-align:center;">{{getString1(153)}}</span>
+  <label style="vertical-align:middle; margin: 5px" class="switch">
+    <input id="use-DNN" type="checkbox" {% if use_DNN %}checked{% endif %}>
+    <span class="slider round"></span>
+  </label>
+  <span style="vertical-align:middle; text-align:center;">{{getString1(154)}}</span>
+</div>
+<p class="help">{{getString1(155)}}</p>
+
+<h4 style="margin-bottom:0">{{getString1(148)}}:</h4>
+<ul class="button-group">
+  <li><button id="vocal-stop" class="red button" style="width:150px">{{getString1(156)}}</button></li>
+  <li><button id="vocal-restart" class="green button" style="width:150px">{{getString1(157)}}</button></li>
+</ul>
+<p class="help-normal">{{getString1(158)}}</p>
+
+{% if platform == 'linux' %}
+<h4 style="margin-bottom:0">{{getString1(159)}}</h4>
+<ul class="button-group">
+  <li><button id="streamer-stop" class="red button" style="width:150px">{{getString1(160)}}</button></li>
+  <li><button id="streamer-restart" class="green button" style="width:150px">{{getString1(161)}}</button></li>
+</ul>
+<p class="help-normal">{{getString1(162)}}</p>
+{% endif %}
+
+<h4>{{getString1(186)}}</h4>
+<p>
+  {{getString1(187)}}
+  <select class="Round" onchange="setServerLang(this.value)">
+    {% for k, v in langs.items() %}
+      <option value="{{k}}" {{ "selected" if k==lang }}>{{v[1]}}</option>
+    {% endfor %}
+  </select>
+</p>
+<p class="help-normal">{{getString1(188)}}</p>
+
+<h4>{{getString1(163)}}</h4>
+<ul style="list-style-type:none;">
+  <li><a href="/refresh"><i class="icon icon-arrows-cw"></i>{{getString1(164)}}</a></li>
+</ul>
+<p class="help-normal">{{getString1(165)}}</p>
+
+<h2>{{getString1(166)}}</h2>
+<p>{{getString1(167)}} "{{ youtubedl_version }}"</p>
+<ul style="list-style-type:none;">
+  <li><a onclick="confirm_goto(3, '/quit')"><i class="icon icon-arrows-cw"></i>{{getString1(168)}}</a></li>
+</ul>
+<p class="help-help-normal">{{getString1(169)}}</p>
+
+<h2>{{getString1(170)}}</h2>
+<p>{{getString1(171)}}</p>
+<ul style="list-style-type:none;">
+  <li><a onclick="confirm_goto(0, '/quit')"><i class="icon icon-off"></i>{{getString1(172)}}</a></li>
+  {% if is_pi %}
+  <li><a onclick="confirm_goto(1, '/reboot')">{{getString1(173)}}</a></li>
+  <li><a onclick="confirm_goto(2, '/shutdown')">{{getString1(174)}}</a></li>
+  {% endif %}
+</ul>
+
+{% if is_pi %}
+<h1>{{getString1(175)}}</h1>
+<a onclick="confirm_goto(4, '/expand_fs')">{{getString1(176)}}</a></li>
+<p class="help">{{getString1(177)}}</p>
+{% endif %}
+
+<hr/>
+{% if admin_enabled %}
+<p>{{getString1(178)}}: <a href="{{ url_for('logout') }}"><i class="icon icon-logout"></i>{{getString1(180)}}</a></p>
+{% endif %}
+{% else %}
+<p>{{getString1(179)}}: <a href="{{ url_for('login') }}"><i class="icon icon-login"></i>{{getString1(181)}}</a></p>
+{% endif %}
+
+</div>
+
+<script>
+var msgs = ["{{getString1(137)}}", "{{getString1(138)}}", "{{getString1(139)}}", "{{getString1(140)}}", "{{getString1(141)}}"];
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function setServerLang(val){
+  $.get('/change_language/'+val).done(function(){
+    location.reload();
+  });
+}
+
+function confirm_goto(msg_id, url){
+  if (window.confirm(msgs[msg_id])) get_refresh(url, '/f_home');
+}
+
+$("#use-DNN").change(function(){
+  $.get("/set_vocal_mode/" + this.checked, function( data ){
+    location.reload(true);
+  });
+});
+
+$("#norm-vol").change(function(){
+  $.get("/norm_vol/" + this.checked, function( data ){
+    location.reload(true);
+  });
+});
+
+$("#save-delays").change(function(){
+  $.get("/save_delays/" + this.checked, function( data ){
+    location.reload(true);
+  });
+});
+
+$("#streamer-stop").click(function(){
+  $.get("/bg-process/streamer-stop", async function (data) { await sleep(200); location.reload(true); });
+});
+
+$("#streamer-restart").click(function(){
+  $.get("/bg-process/streamer-restart", async function (data){ await sleep(200); location.reload(true); });
+});
+
+$("#vocal-stop").click(function(){
+  $.get("/bg-process/vocal-stop", async function (data) { await sleep(200); location.reload(true); });
+});
+
+$("#vocal-restart").click(function(){
+  $.get("/bg-process/vocal-restart", async function (data){ await sleep(200); location.reload(true); });
+});
+</script>

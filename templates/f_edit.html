@@ -1,0 +1,43 @@
+<header class="title">
+<h1>{{getString1(104)}}</h1>
+<style>
+.half {width: 40%}
+.line {line-height: 2.5; display: flex; justify-content: space-evenly}
+</style>
+</header>
+
+<div class="content">
+  <h3 class='has-text-warning'>{{ filename_from_path(song.decode('utf-8')) }}</h3>
+  <input value="{{ song.decode('utf-8') }}" type="hidden" id='old_file_name'>
+  <h4>{{getString1(216)}}</h4>
+  <input autocomplete="off" id="new_file_name" class="input" type="text" value="{{ filename_from_path(song.decode('utf-8')) }}"></input>
+  <hr>
+  <h4>{{getString1(221)}}</h4>
+  <p class="line">{{getString1(223)}}<span id="old_trim_begin">00:00:00</span><input autocomplete="off" id="new_trim_begin" class="input half" type="text" value="00:00:00"></input></p>
+  <p class="line">{{getString1(224)}}<span id="old_trim_end">{{hhmmss}}</span><input autocomplete="off" id="new_trim_end" class="input half" type="text" value="{{hhmmss}}"></input></p>
+  <hr>
+  <h4>{{getString1(222)}}</h4>
+  <p class="line">{{getString1(225)}}<span id="old_volume">{{dBFS}}</span> ⇒ <input autocomplete="off" id="new_volume" class="input half" type="number" value="{{dBFS}}"></input></p>
+  <hr>
+  <button class="button is-primary" onclick="rename_song()" disabled>{{getString1(217)}}</button>
+  <a class="edit-button has-text-danger is-pulled-right" onclick="delete_song()" style="line-height: 2.5;">
+    <i class="icon icon-trash-empty"></i>{{getString1(218)}}</a>
+</div>
+
+<script>
+function check(){
+	var old_name = $('#old_file_name').val().split('/').slice(-1)[0].split('.').slice(0,-1).join('.');
+	var same = (old_name==$('#new_file_name').val() && $('#old_trim_begin').text()==$('#new_trim_begin').val()
+		&& $('#old_trim_end').text()==$('#new_trim_end').val() && $('#old_volume').text()==$('#new_volume').val());
+	$('.is-primary').prop('disabled', same);
+}
+function rename_song(){
+  post_switch('/edit_song', {old_file_name: $('#old_file_name').val(), new_file_name: $("#new_file_name").val(),
+    new_trim_begin: $('#new_trim_begin').val(), new_trim_end: $('#new_trim_end').val(), dBFS: $('#dBFS').val()})
+}
+function delete_song() {
+  if (window.confirm("{{getString1(219)}}"))
+    get_refresh("{{url_for('delete_file')}}?song={{url_escape(song)}}");
+}
+$('.input').change(check);
+</script>

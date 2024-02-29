@@ -1,10 +1,14 @@
 setuptools
+lingua-language-detector
+unidecode
+pykakasi
+pinyin
 wheel
 tempora==1.14.0
 jaraco.functools==2.0
-CherryPy
 six
 Flask
+flask-sock
 pillow
 qrcode
 pygame; sys_platform != 'darwin'

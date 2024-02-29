@@ -16,147 +16,130 @@
   <link rel="stylesheet" href="/static/bulma-dark.css">
   <link rel="stylesheet" href="/static/custom.css">
   <link rel="icon" type="image/png" href="/static/images/microphone.png">
-  <!-- <link rel="stylesheet" href="{{  url_for('static', filename='fontello/css/fontello.css') }}"> -->
   <link rel="stylesheet" href="/static/fontello/css/fontello.css?cachebust=1">
 
   <script>
+function showNotification(message, categoryClass, timeout=3000) {
+  console.log("Showing notification")
+  $("#notification-alt").addClass(categoryClass)
+  $("#notification-alt div").text(message)
+  $("#notification-alt").fadeIn()
+  setTimeout(function () {$("#notification-alt").fadeOut()}, timeout)
+  setTimeout(function () {$("#notification-alt").removeClass(categoryClass)}, timeout + 750)
+}
 
-    function showNotification(message, categoryClass, timeout=3000) {
-      console.log("Showing notification")
-      $("#notification-alt").addClass(categoryClass)
-      $("#notification-alt div").text(message)
-      $("#notification-alt").fadeIn()
-      setTimeout(function () {$("#notification-alt").fadeOut()}, timeout)
-      setTimeout(function () {$("#notification-alt").removeClass(categoryClass)}, timeout + 750)
+function setLanguage(lang, reload){
+  Cookies.set("lang", lang, { expires: 3650 });
+  if(reload){
+    window.scrollTo(0, 0);
+    location.reload();
+  }
+}
+
+$(function () {
+  $("#notification-close").click(function () {
+    $(".notification").hide();
+  });
+  $("#notification-alt").hide()
+
+  // Check for click events on the navbar burger icon
+  $(".navbar-burger").click(function () {
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    $(".navbar-burger").toggleClass("is-active");
+    $(".navbar-menu").toggleClass("is-active");
+  });
+
+
+  // handle highlighting current nav bar location
+  var currentPath = window.location.pathname;
+  if (currentPath == "/") {
+    $("#home").addClass("is-active")
+  }
+  if (currentPath == "/queue") {
+    $("#queue").addClass("is-active")
+  }
+  if (currentPath == "/search") {
+    $("#search").addClass("is-active")
+  }
+  if (currentPath == "/browse") {
+    $("#browse").addClass("is-active")
+  }
+  if (currentPath == "/info") {
+    $("#info").addClass("is-active")
+  }
+
+  // handle auto-close flash notifications
+  setTimeout(function() { $("#notification").fadeOut()}, 3000);
+
+  // handle current user display
+  var currentUser = Cookies.get("user");
+
+  if (currentUser) {
+    $("#current-user span").text(currentUser)
+    $("#current-user").removeClass("is-hidden");
+  };
+
+  $('#current-user').click(function(e) {
+    e.preventDefault();
+    let name = window.prompt(
+      "{{getString1(133)}}" + currentUser
+    );
+    if (name) {
+      Cookies.set("user", name, { expires: 3650 })
     }
-    
-    function setLanguage(lang, reload){
-      Cookies.set("lang", lang, { expires: 3650 });
-      if(reload){
-        window.scrollTo(0, 0);
-        location.reload();
+    location.reload();
+  });
+  
+  // handle browser language
+  var currentLang = Cookies.get("lang");
+  if(!currentLang){
+    currentLang = window.navigator.language;
+    setLanguage(currentLang, false);
+  }
+
+  $('#current-lang').click(function(e) {
+    e.preventDefault();
+    $.get('/get_lang_list').done(function(lang_json){
+      var lang_dict = JSON.parse(lang_json);
+      var popup_html = '';
+      for(var lang1 in lang_dict){
+        popup_html += `<input type="radio" onclick="setLanguage('${lang1}', true);" ${currentLang==lang1?"checked":""}>&nbsp;${lang_dict[lang1]}<br>`;
       }
-    }
-
-    $(function () {
-      $("#notification-close").click(function () {
-        $(".notification").hide();
-      });
-      $("#notification-alt").hide()
-
-      // Check for click events on the navbar burger icon
-      $(".navbar-burger").click(function () {
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        $(".navbar-burger").toggleClass("is-active");
-        $(".navbar-menu").toggleClass("is-active");
-      });
-
-
-      // handle highlighting current nav bar location
-      var currentPath = window.location.pathname;
-      if (currentPath == "/") {
-        $("#home").addClass("is-active")
-      }
-      if (currentPath == "/queue") {
-        $("#queue").addClass("is-active")
-      }
-      if (currentPath == "/search") {
-        $("#search").addClass("is-active")
-      }
-      if (currentPath == "/browse") {
-        $("#browse").addClass("is-active")
-      }
-      if (currentPath == "/info") {
-        $("#info").addClass("is-active")
-      }
-
-      // handle auto-close flash notifications
-      setTimeout(function() { $("#notification").fadeOut()}, 3000);
-
-      // handle current user display
-      var currentUser = Cookies.get("user");
-    
-      if (currentUser) {
-        $("#current-user span").text(currentUser)
-        $("#current-user").removeClass("is-hidden");
-      };
-
-      $('#current-user').click(function(e) {
-        e.preventDefault();
-        let name = window.prompt(
-          "{{getString1(133)}}" + currentUser
-        );
-        if (name) {
-          Cookies.set("user", name, { expires: 3650 })
-        }
-        location.reload();
-      });
-      
-      // handle browser language
-      var currentLang = Cookies.get("lang");
-      if(!currentLang){
-        currentLang = window.navigator.language;
-        setLanguage(currentLang, false);
-      }
-
-      $('#current-lang').click(function(e) {
-        e.preventDefault();
-        $.get('/get_lang_list').done(function(lang_json){
-          var lang_dict = JSON.parse(lang_json);
-          var popup_html = '';
-          for(var lang1 in lang_dict){
-            popup_html += `<input type="radio" onclick="setLanguage('${lang1}', true);" ${currentLang==lang1?"checked":""}>&nbsp;${lang_dict[lang1]}<br>`;
-          }
-          var popUpList = $(`<div title="{{getString1(185)}}">${popup_html}</div>`)
-          popUpList.dialog();
-        });
-      });
+      var popUpList = $(`<div title="{{getString1(185)}}">${popup_html}</div>`)
+      popUpList.dialog();
     });
-  </script>
+  });
+});
+</script>
   {% block scripts %}
   {% endblock %}
 </head>
 
 <style>
-  .navbar-item > i {
-    margin-right: 2px;
-  }
-  .notification {
-    position: fixed;
-    width: 500px;
-    bottom: 5px;
-    left: 50%;
-    margin-left: -250px;
-    z-index: 20;
-  }
-  .current-user {
-    position: fixed;
-    padding: 3px;
-    bottom: 5px;
-    right: 10px;
-  }
-  tr:nth-child(even) {
-    background-color: rgb(50, 55, 55);
-  }
-  @media screen and (max-width: 500px) {
-    .navbar-brand > .navbar-item > span {
-      display: none;
-    }
-    .notification {
-      position: fixed;
-      width: 100%;
-      bottom: 5px;
-      left: 0px;
-      margin-left: 0px;
-    }
-    body {
-      min-height: 120vh;
-    }
-  }
+.dark_overlay{
+  position: fixed; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:100; -moz-opacity: 0.5;
+  opacity:.50; display: none; filter: alpha(opacity=80);
+}
+.above_overlay{ position:fixed; width:50%; height:32%; left:50%; top: 50%; transform: translate(-50%, -50%); z-index: 200; display: none; }
+.navbar-item > i { margin-right: 2px; font-size: 24px; }
+.notification { position: fixed; width: 500px; bottom: 5px; left: 50%; margin-left: -250px; z-index: 20; }
+.current-user { position: fixed; padding: 3px; bottom: 5px; right: 10px; }
+tr:nth-child(even) { background-color: rgb(50, 55, 55); }
+@media screen and (max-width: 500px) {
+  .navbar-brand > .navbar-item > span { display: none; }
+  .notification { position: fixed; width: 100%; bottom: 5px; left: 0px; margin-left: 0px; }
+  body { min-height: 120vh; }
+}
 </style>
 
 <body>
-
+  <div id="ASR" class="asr dark_overlay"></div>
+  <div id="ASRpanel" class="asr above_overlay">
+    <h1 style="color: lime; font-size: x-large;">{{getString1(213)}}</h1>
+    <canvas id="waveform" style="margin-top: 8px; margin-bottom: 8px;"></canvas>
+    <h1 style="font-size: 64pt;" onclick="recorder.stop();"><span>❌</span>&nbsp;
+      <span style="float: right;" onclick="use_recorded=true;recorder.stop();">✅︎</span></h1>
+  </div>
   {% if not blank_page %}
   <nav class="navbar" role="navigation" aria-label="main navigation" style="position:fixed; top:0; width: 100%; overflow: hidden;">
     <div class="navbar-brand" id="brand" style="padding-left: 10px">
@@ -164,7 +147,6 @@
         <i class="icon icon-home-2" title="{{getString1(183)}}"></i>
         <span>{{getString1(183)}}</span>
       </a>
-
       <a id="queue" class="navbar-item" href="{{ url_for('queue') }}">
         <i class="icon icon-list-numbered" title="{{getString1(112)}}"></i>
         <span>{{getString1(112)}}</span>
@@ -177,6 +159,10 @@
         <i class="icon icon-folder-open-empty" title="{{getString1(98)}}"></i>
         <span>{{getString1(98)}}</span>
       </a>
+      <a id="speak" class="navbar-item" style="margin-left: auto;" onclick="add_spoken()">
+        <i class="icon" title="{{getString1(212)}}">🗣</i>
+        <span>{{getString1(212)}}</span>
+      </a>
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -186,7 +172,7 @@
     <div class="navbar-menu" id="menu">
       <div class="navbar-end">
         <a id="current-user" class="navbar-item is-hidden" href="#">
-          <i class="icon icon-mic-1" title="{{getString1(134)}}"></i>
+          <i class="icon icon-adult" title="{{getString1(134)}}"></i>
           <span></span>
         </a>
         <a id="current-lang" class="navbar-item" href="#">
@@ -229,7 +215,50 @@
   {% endif %}
   {% block body %}
   {% endblock %}
+<script>
+var recorder, audios, start_time, recorder_timeout, use_recorded;
+var wav_win = $('#waveform')[0];
+function add_spoken(){
+  if(window.location.href.startsWith('http://')){
+    if(confirm("{{getString1(214)}}")){
+      var port = parseInt(window.location.href.split(':')[2]);
+      window.location.href = window.location.href.replace('http:', 'https:').replace(port, port+1);
+    }
+    return;
+  }
+  if(recorder==null)
+    return alert("{{getString1(215)}}");
+  $('.asr').show();
+  wav_win.width = window.innerWidth/2;
+  wav_win.height = window.innerHeight/8;
+  var ctx=wav_win.getContext("2d");
+  ctx.fillStyle='#fff';
+  ctx.fillRect(0,0,wav_win.width,wav_win.height);
 
+  audios = [];
+  recorder.start();
+  start_time=Date.now();
+  recorder_timeout = setTimeout("recorder.stop()", 16000);
+  use_recorded = false;
+}
+function onRecStop(){
+  if(!use_recorded) return;
+  var blob = new Blob(audios, { type: "audio/webm" });
+  const req = new XMLHttpRequest();
+  req.open("POST", '/add_spoken', true);
+  req.send(blob);
+};
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices.getUserMedia({audio: true,},)
+    .then((stream) => {
+      recorder = new MediaRecorder(stream, {mimeType: 'audio/webm'});
+      recorder.ondataavailable = (e) => { audios.push(e.data); if(recorder.state=='inactive') onRecStop(); };})
+    .catch((err) => { console.error(`The following getUserMedia error occurred: ${err}`);
+  });
+} else {
+  console.log("getUserMedia not supported on your browser!");
+}
+</script>
 </body>
 
 </html>

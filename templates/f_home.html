@@ -1,7 +1,4 @@
-{% extends 'base.html' %} {% block scripts %}
 <script>
-var cutoffTime = Date.now();
-var queryTime = Date.now();
 var transpose_seeking = false;
 var seektrack_seeking = false;
 var playspeed_seeking = false;
@@ -9,7 +6,7 @@ var audiodelay_typing = false;
 var playspeed_typing = false;
 var subdelay_typing = false;
 var volume_changing = false;
-var toggleSwitch;
+var toggleSwitch, seektrack;
 var obj = {};
 function checkMobile() {
 	let check = false;
@@ -20,92 +17,88 @@ var isMobile = checkMobile();
 
 function getSemitonesLabel(value) {return value>0 ? ("+"+value+"{{getString1(91)}}"):(value + "{{getString1(91)}}");}
 function getHHMMSS(value) {return (new Date(value*1000)).toISOString().substr(11, 8)}
-function setImgSrc(img, src) {if(img.attr('src')!=src)img.attr('src', src)}
+function update(data){
+	try{obj = JSON.parse(data);}
+	catch{console.log(`JSON parse error: ${data}`);return;}
+	if (obj.now_playing) {
+	var nowPlayingHtml = `<p style="margin-bottom: 5px">${obj.now_playing}</p>
+		<p class="has-text-success" style="margin-bottom: 5px"><i class="icon icon-adult" title="Current singer"></i>${obj.now_playing_user}</p>`;
 
-function getNowPlaying() {
-	queryTime = Date.now();
-	$.get('{{ url_for("nowplaying") }}').done(function (data) {
-		if(!data || queryTime<cutoffTime) return;
-		obj = JSON.parse(data);
-		if (obj.now_playing) {
-		var nowPlayingHtml = `<p style="margin-bottom: 5px">${obj.now_playing}</p>
-			<p class="has-text-success" style="margin-bottom: 5px"><i class="icon icon-adult" title="Current singer"></i>${obj.now_playing_user}</p>`;
-
-		if ($("#transpose")){
-			if(!transpose_seeking){
-				$("#transpose").val( obj.transpose_value );
-				$("#semitones-label").html(getSemitonesLabel(obj.transpose_value));
-				set_reset_key(obj.transpose_value!=0);
-			}
-			
-			if(!playspeed_seeking){
-				$("#playspeed").val( Math.round(obj.play_speed*100) );
-				var spd_val = parseFloat(obj.play_speed).toFixed(2);
-				if(spd_val>=0.8 && spd_val<=1.2)$("#playspeed").show();
-				else $("#playspeed").hide();
-				if(!playspeed_typing && obj.play_speed!=null){
-					$("#playspeed-val").html(obj.play_speed.toFixed(2));
-					set_reset_speed(obj.play_speed!=1);
-				}
-			}
+	if ($("#transpose")){
+		if(!transpose_seeking){
+			$("#transpose").val( obj.transpose_value );
+			$("#semitones-label").html(getSemitonesLabel(obj.transpose_value));
+			set_reset_key(obj.transpose_value!=0);
 		}
-
-		$("#now-playing").html(nowPlayingHtml);
-		$(".control-box").show();
-
-		if($("#seektrack") && !seektrack_seeking){
-			$("#seektrack").attr({'max':obj.seektrack_max, 'value':obj.seektrack_value});
-			$("#seektrack").val(obj.seektrack_value);
-			$("#seektrack-val").text(getHHMMSS(obj.seektrack_value));
-			$("#seektrack-max").text(getHHMMSS(obj.seektrack_max));
-		}
-
-		if(obj.audio_delay!==null && !audiodelay_typing)
-			$("#delay-val").text(obj.audio_delay.toFixed(2));
-
-		if("subtitle_delay" in obj){
-			$("#subdelay-box").show();
-			if(obj.subtitle_delay!==null && !subdelay_typing)
-				$("#subdelay-val").text(obj.subtitle_delay.toFixed(1));
-			$('#subtitle-sel').css('text-decoration', obj.show_subtitle?"":"line-through");
-		} else {
-			$("#subdelay-box").hide();
-		}
-
-		var use_DNN = obj.vocal_info&0x40;
-		s3_enable(1, use_DNN?(obj.vocal_info&1):(obj.vocal_info&4));
-		s3_enable(3, use_DNN?(obj.vocal_info&2):(obj.vocal_info&8));
-		s3_go_to((obj.vocal_info>>4)&3, false);
-		use_DNN ? $("#pytorch-logo").show():$("#pytorch-logo").hide();
 		
-		if(obj.vol_norm)
-			$("#vol").addClass('boxedText');
-		else
-			$("#vol").removeClass('boxedText');
-		} else {
-			$("#now-playing").html("{{getString1(69)}}");
-			$(".control-box").hide();
+		if(!playspeed_seeking){
+			$("#playspeed").val( Math.round(obj.play_speed*100) );
+			var spd_val = parseFloat(obj.play_speed).toFixed(2);
+			if(spd_val>=0.8 && spd_val<=1.2)$("#playspeed").show();
+			else $("#playspeed").hide();
+			if(!playspeed_typing && obj.play_speed!=null){
+				$("#playspeed-val").html(obj.play_speed.toFixed(2));
+				set_reset_speed(obj.play_speed!=1);
+			}
 		}
+	}
 
-		if (obj.up_next) {
-		$("#up-next").html(`<p style="white-space: nowrap; overflow:hidden;"><span style="max-width:75%;">${obj.up_next}</span>
-			<span class="has-text-success" style="float:right; max-width:25%;"><i class="icon icon-adult" title="Next singer"></i>${obj.next_user}</span></p>`);
-		} else {
-			$("#up-next").html("{{getString1(70)}}");
-		}
+	$("#now-playing").html(nowPlayingHtml);
+	$(".control-box").show();
 
-		if (obj.is_paused) {
-			$("#pause-resume").removeClass("icon-pause").addClass("icon-play");
-			setImgSrc($(".playing_gif"), '/static/images/now-playing.png');
-		} else {
-			$("#pause-resume").removeClass("icon-play").addClass("icon-pause");
-			setImgSrc($(".playing_gif"), '/static/images/now-playing.gif')
-		}
+	if($("#seektrack") && !seektrack_seeking){
+		$("#seektrack").attr({'max':obj.seektrack_max, 'value':obj.seektrack_value});
+		$("#seektrack").val(obj.seektrack_value);
+		$("#seektrack-val").text(getHHMMSS(obj.seektrack_value));
+		$("#seektrack-max").text(getHHMMSS(obj.seektrack_max));
+	}
 
-		if("volume" in obj && !volume_changing)
-			$("#vol").text(obj.volume);
-	});
+	if(obj.audio_delay!==null && !audiodelay_typing)
+		$("#delay-val").text(obj.audio_delay.toFixed(2));
+
+	if("subtitle_delay" in obj){
+		$("#subdelay-box").show();
+		if(obj.subtitle_delay!==null && !subdelay_typing)
+			$("#subdelay-val").text(obj.subtitle_delay.toFixed(1));
+		$('#subtitle-sel').css('text-decoration', obj.show_subtitle?"":"line-through");
+	} else {
+		$("#subdelay-box").hide();
+	}
+
+	var use_DNN = obj.vocal_info&0x40;
+	s3_enable(1, use_DNN?(obj.vocal_info&1):(obj.vocal_info&4));
+	s3_enable(3, use_DNN?(obj.vocal_info&2):(obj.vocal_info&8));
+	s3_go_to((obj.vocal_info>>4)&3, false);
+	use_DNN ? $("#pytorch-logo").show():$("#pytorch-logo").hide();
+	
+	if(obj.vol_norm)
+		$("#vol").addClass('boxedText');
+	else
+		$("#vol").removeClass('boxedText');
+	} else {
+		$("#now-playing").html("{{getString1(69)}}");
+		$(".control-box").hide();
+	}
+
+	if (obj.up_next) {
+	$("#up-next").html(`<p style="white-space: nowrap; overflow:hidden;"><span style="max-width:75%;">${obj.up_next}</span>
+		<span class="has-text-success" style="float:right; max-width:25%;"><i class="icon icon-adult" title="Next singer"></i>${obj.next_user}</span></p>`);
+	} else {
+		$("#up-next").html("{{getString1(70)}}");
+	}
+
+	if (obj.is_paused) {
+		$("#pause-resume").removeClass("icon-pause").addClass("icon-play");
+		$("#playing_gif").hide();$("#playing_png").show();
+	} else {
+		$("#pause-resume").removeClass("icon-play").addClass("icon-pause");
+		$("#playing_gif").show();$("#playing_png").hide();
+	}
+
+	if("volume" in obj && !volume_changing)
+		$("#vol").text(obj.volume);
 }
+function getNowPlaying() { $.get('/nowplaying').done(update); }
 
 function checkUser() {
 	try{ return obj.now_playing_user=='Randomizer' || $('#current-user').text().trim()==obj.now_playing_user; }
@@ -124,145 +117,14 @@ function set_reset_speed(state){
 	else $("#reset_speed").removeClass('boxedText');
 }
 
-$(function () {
-	$(".control-box").hide();
-	toggleSwitch = document.getElementsByClassName('redButton')[0];
-
-	var slider = document.getElementById("transpose");
-	var slider_prev_value = 0;
-	var output = document.getElementById("semitones-label");
-	if (slider) {
-		// Update the current slider value (each time you drag the slider handle)
-		slider.oninput = function () {
-			output.innerHTML = getSemitonesLabel(slider.value);
-		};
-		slider.oninput()
-		slider_prev_value = slider.value;
-	}
-
-	$("#transpose").change(function () {
-		var value = slider?slider.value:0;
-		if ( value != slider_prev_value ){
-			cutoffTime = Date.now();
-			$.get("/transpose/" + value);
-			output.innerHTML = getSemitonesLabel(slider.value);
-			slider_prev_value = value
-		}
-	});
-
-	var seektrack = document.getElementById("seektrack");
-	seektrack.onchange = function () {
-		cutoffTime = Date.now();
-		$.get("/seek/" + seektrack.value);
-	};
-	seektrack.oninput = function () {$("#seektrack-val").text(getHHMMSS(seektrack.value));};
-	
-	var speedtrack = document.getElementById("playspeed");
-	speedtrack.onchange = function () {$.get("/play_speed/" + speedtrack.value/100);};
-	speedtrack.oninput = function () {$("#playspeed-val").text(speedtrack.value/100);};
-
-	$("#pause-resume").click(function () {
-		$.get("/pause", function (is_paused) {
-			if (is_paused=="true") {
-				$("#pause-resume").removeClass("icon-pause");
-				$("#pause-resume").addClass("icon-play");
-			} else {
-				$("#pause-resume").removeClass("icon-play");
-				$("#pause-resume").addClass("icon-pause");
-			}
-		});
-	});
-
-	$("#vol-up").click(function () {
-		$.get("/vol_up", function(vol){$("#vol").text(vol)});
-	});
-
-	$("#vol-down").click(function () {
-		$.get("/vol_down", function(vol){$("#vol").text(vol)});
-	});
-
-	$("#vol").keypress(function (e) {
-		var ch = String.fromCharCode(e.which);
-		if(!("0123456789".includes(ch))) e.preventDefault();
-		if(ch=="\n" || ch=="\r") $(this).blur();
-	});
-
-	$("#vol").blur(function () {
-		$.get("/vol/"+$(this).text(), function(vol){$("#vol").text(vol)});
-		volume_changing = false;
-	});
-
-	$("#restart").click(function () {
-		if (checkUser() || confirm("{{getString1(71)}}")) {
-			cutoffTime = Date.now();
-			$.get("/restart");
-		}
-	});
-
-	$("#skip").click(function () {if (checkUser() || confirm("{{getString1(72)}}")) {$.get("/skip");}});
-	$("#delay-val").keypress(function (e) {
-		var ch = String.fromCharCode(e.which);
-		if(!("0123456789.-".includes(ch))) e.preventDefault();
-		if(ch=="\n" || ch=="\r") $(this).blur();
-	});
-
-	$("#subdelay-val").keypress(function (e) {
-		var ch = String.fromCharCode(e.which);
-		if(!("0123456789.-".includes(ch))) e.preventDefault();
-		if(ch=="\n" || ch=="\r") $(this).blur();
-	});
-
-	$("#playspeed-val").keypress(function (e) {
-		var ch = String.fromCharCode(e.which);
-		if(!("0123456789.".includes(ch))) e.preventDefault();
-		if(ch=="\n" || ch=="\r") $(this).blur();
-	});
-
-	$("#delay-val").blur(function () {
-		if($(this).text()=="") $(this).text("0");
-		$.get("/audio_delay/" + $(this).text());
-		audiodelay_typing=false;
-	});
-
-	$("#playspeed-val").blur(function () {
-		if($(this).text()=="") $(this).text("1");
-		$.get("/play_speed/" + $(this).text());
-		playspeed_typing=false;
-	});
-
-	$("#subdelay-val").blur(function () {
-		if($(this).text()=="") $(this).text("0");
-		$.get("/subtitle_delay/" + $(this).text());
-		subdelay_typing=false;
-	});
-
-	$("#subtitle-sel").click(function () {$.get("/toggle_subtitle");});
-	$("#delay-inc").click(function () {$.get("/audio_delay/+", function(data){$("#delay-val").text(parseFloat(data).toFixed(2))});});
-	$("#delay-dec").click(function () {$.get("/audio_delay/-", function(data){$("#delay-val").text(parseFloat(data).toFixed(2))});});
-	$("#subdelay-inc").click(function () {$.get("/subtitle_delay/+", function(data){$("#subdelay-val").text(parseFloat(data).toFixed(1))});});
-	$("#subdelay-dec").click(function () {$.get("/subtitle_delay/-", function(data){$("#subdelay-val").text(parseFloat(data).toFixed(1))});});
-	$("#audiodelay-info").click(function () {showNotification("{{getString1(60)}}","is-info",8000)});
-	$("#subdelay-info").click(function () {showNotification("{{getString1(61)}}","is-info",8000)});
-	$("#semitones-info").click(function () {showNotification("{{getString1(62)}}","is-info",10000)});
-	$("#playspeed-info").click(function () {showNotification("{{getString1(200)}}","is-info",10000)});
-	$("#pytorch-logo").click(function () {showNotification("{{getString1(63)}}","is-info",12000)});
-
-	getNowPlaying();
-	setInterval(getNowPlaying, 1500);
-	if(isMobile)
-		$("#label-player-control")[0].outerHTML = '<h3 id="label-player-control">{{getString1(73)}}</h3>';
-});
-
 function s3_go_to(n, do_action) {
 	if(n<1 || n>3) n=2;
 	for(var i=1; i<=3; i++){
 		if(i==n) toggleSwitch.classList.add('horizTranslate'+i);
 		else toggleSwitch.classList.remove('horizTranslate'+i);
 	}
-	if(do_action){
-		cutoffTime = Date.now();
+	if(do_action)
 		$.get("/play_vocal/"+(n==2?'mixed':(n==1?'nonvocal':'vocal')));
-	}
 }
 
 function s3_enable(n, val) {
@@ -275,9 +137,129 @@ function s3_enable(n, val) {
 		s3t.style.color = '#444444';
 	}
 }
+
+$(".control-box").hide();
+toggleSwitch = document.getElementsByClassName('redButton')[0];
+
+var slider = document.getElementById("transpose");
+var slider_prev_value = 0;
+var output = document.getElementById("semitones-label");
+if (slider) {
+	// Update the current slider value (each time you drag the slider handle)
+	slider.oninput = function () {
+		output.innerHTML = getSemitonesLabel(slider.value);
+	};
+	slider.oninput()
+	slider_prev_value = slider.value;
+}
+
+$("#transpose").change(function () {
+	var value = slider?slider.value:0;
+	if ( value != slider_prev_value ){
+		$.get("/transpose/" + value);
+		output.innerHTML = getSemitonesLabel(slider.value);
+		slider_prev_value = value
+	}
+});
+
+seektrack = $("#seektrack")[0];
+seektrack.onchange = function () {
+	$.get("/seek/" + seektrack.value);
+};
+seektrack.oninput = function () {$("#seektrack-val").text(getHHMMSS(seektrack.value));};
+
+var speedtrack = document.getElementById("playspeed");
+speedtrack.onchange = function () {$.get("/play_speed/" + speedtrack.value/100);};
+speedtrack.oninput = function () {$("#playspeed-val").text(speedtrack.value/100);};
+
+$("#pause-resume").click(function () {
+	$.get("/pause", function (is_paused) {
+		if (is_paused=='true')
+			$("#pause-resume").removeClass("icon-pause").addClass("icon-play");
+		else
+			$("#pause-resume").removeClass("icon-play").addClass("icon-pause");
+	});
+});
+
+$("#vol-up").click(function () {
+	$.get("/vol_up", function(vol){$("#vol").text(vol)});
+});
+
+$("#vol-down").click(function () {
+	$.get("/vol_down", function(vol){$("#vol").text(vol)});
+});
+
+$("#vol").keypress(function (e) {
+	var ch = String.fromCharCode(e.which);
+	if(!("0123456789".includes(ch))) e.preventDefault();
+	if(ch=="\n" || ch=="\r") $(this).blur();
+});
+
+$("#vol").blur(function () {
+	$.get("/vol/"+$(this).text(), function(vol){$("#vol").text(vol)});
+	volume_changing = false;
+});
+
+$("#restart").click(function () {
+	if (checkUser() || confirm("{{getString1(71)}}"))
+		$.get("/restart");
+});
+
+$("#skip").click(function () {if (checkUser() || confirm("{{getString1(72)}}")) {$.get("/skip");}});
+$("#delay-val").keypress(function (e) {
+	var ch = String.fromCharCode(e.which);
+	if(!("0123456789.-".includes(ch))) e.preventDefault();
+	if(ch=="\n" || ch=="\r") $(this).blur();
+});
+
+$("#subdelay-val").keypress(function (e) {
+	var ch = String.fromCharCode(e.which);
+	if(!("0123456789.-".includes(ch))) e.preventDefault();
+	if(ch=="\n" || ch=="\r") $(this).blur();
+});
+
+$("#playspeed-val").keypress(function (e) {
+	var ch = String.fromCharCode(e.which);
+	if(!("0123456789.".includes(ch))) e.preventDefault();
+	if(ch=="\n" || ch=="\r") $(this).blur();
+});
+
+$("#delay-val").blur(function () {
+	if($(this).text()=="") $(this).text("0");
+	$.get("/audio_delay/" + $(this).text());
+	audiodelay_typing=false;
+});
+
+$("#playspeed-val").blur(function () {
+	if($(this).text()=="") $(this).text("1");
+	$.get("/play_speed/" + $(this).text());
+	playspeed_typing=false;
+});
+
+$("#subdelay-val").blur(function () {
+	if($(this).text()=="") $(this).text("0");
+	$.get("/subtitle_delay/" + $(this).text());
+	subdelay_typing=false;
+});
+
+$("#subtitle-sel").click(function () {$.get("/toggle_subtitle");});
+$("#delay-inc").click(function () {$.get("/audio_delay/+", function(data){$("#delay-val").text(parseFloat(data).toFixed(2))});});
+$("#delay-dec").click(function () {$.get("/audio_delay/-", function(data){$("#delay-val").text(parseFloat(data).toFixed(2))});});
+$("#subdelay-inc").click(function () {$.get("/subtitle_delay/+", function(data){$("#subdelay-val").text(parseFloat(data).toFixed(1))});});
+$("#subdelay-dec").click(function () {$.get("/subtitle_delay/-", function(data){$("#subdelay-val").text(parseFloat(data).toFixed(1))});});
+$("#audiodelay-info").click(function () {showNotification("{{getString1(60)}}","is-info",8000)});
+$("#subdelay-info").click(function () {showNotification("{{getString1(61)}}","is-info",8000)});
+$("#semitones-info").click(function () {showNotification("{{getString1(62)}}","is-info",10000)});
+$("#playspeed-info").click(function () {showNotification("{{getString1(200)}}","is-info",10000)});
+$("#pytorch-logo").click(function () {showNotification("{{getString1(63)}}","is-info",12000)});
+
+getNowPlaying();
+if(isMobile)
+	$("#label-player-control")[0].outerHTML = '<h3 id="label-player-control">{{getString1(73)}}</h3>';
+
 </script>
 
-{% endblock %} {% block header %}
+<header class="title">
 <style>
 hr, h1, h3, h4, p {
 	padding-top: 0em;
@@ -303,15 +285,13 @@ body {
 }
 </style>
 <h1>
-	{% block title %}{{getString1(74)}}
-	<img
-			class="playing_gif control-box"
-			width="40"
-			src="{{  url_for('static', filename='images/now-playing.png') }}"
-	/>{% endblock %}
+	{{getString1(74)}}
+	<img id="playing_gif" class="control-box hide" width="40" src="/static/images/now-playing.gif"/>
+	<img id="playing_png" class="control-box hide" width="40" src="/static/images/now-playing.png"/>
 </h1>
-{% endblock %} {% block content %}
+</header>
 
+<div class="content">
 <p class="is-size-4 has-text-warning" id="now-playing"></p>
 
 <hr/>
@@ -451,5 +431,4 @@ body {
 	</div>
 	{% endif %}
 </div>
-
-{% endblock %}
+</div>

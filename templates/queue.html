@@ -9,7 +9,6 @@
 </style>
 <script>
   var queue = [];
-  var queue_hash = 0;
   var dragging = null;
   function checkMobile() {
     let check = false;
@@ -19,9 +18,9 @@
   var isMobile = checkMobile();
 
   function getQueue() {
-    if(dragging==null) $.get('/get_queue/'+queue_hash, function (data) {
+    if(dragging==null) $.get('/get_queue', function (data) {
       if (!data) return;
-      [queue, queue_hash] =  JSON.parse(data);
+      queue =  JSON.parse(data);
       $("#auto-refresh").html(generateQueueHTML());
       $('#auto-refresh').sortable({
         disabled: isMobile,

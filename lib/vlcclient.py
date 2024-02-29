@@ -321,7 +321,7 @@ class VLCClient:
 
 	def kill(self):
 		try:
-			self.process.kill()
+			if self.process is not None: self.process.kill()
 		except (OSError, AttributeError) as e:
 			print(e)
 		return
