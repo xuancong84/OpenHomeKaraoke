@@ -15,7 +15,7 @@ E kpochapụrụ n'ahịrị:
 Njehie ihichapụ na kwụ n'ahịrị:
 Nbudata malitere:
 Mgbe emechara, a ga-agbakwunye ya na kwụ n'ahịrị.
-Mgbe emechara, ọ ga-apụta na listi "abụ dịnụ".
+Mgbe emechara, ọ ga-apụta na listi "egwu dị".
 Njehie: Enweghị ike ihichapụ egwu a n'ihi na ọ nọ n'ahịrị ugbu a:
 Ehichapụ egwu:
 Njehie: Enweghị oke egwu akọwapụtara!
@@ -32,7 +32,7 @@ Akwụsịla
 Na-emelite youtube-dl! Kwesịrị iwere otu nkeji ma ọ bụ abụọ ...
 Ịnweghị ikike imelite youtube-dl
 Ịnweghị ikike imechi
-Hapụ PiKaraoke ugbu a!
+Hapụ OpenHomeKaraoke ugbu a!
 Ịnweghị ikike ịkwụsị
 Na-emechi usoro ugbu a!
 Ịnweghị ikike imechi
@@ -41,7 +41,7 @@ Rebooting usoro ugbu a!
 Na-agbasa sistemụ faịlụ na ịmalitegharị sistemụ ugbu a!
 Enweghị ike ịgbasa fs na ngwaọrụ ndị na-abụghị rasberi!
 Ịnweghị ikike ịgbanwe nha faịlụ faịlụ
-Achọtaghị ụzọ Youtube-dl!
+Achọtaghị ụzọ Youtube-dl yana pip etinyeghị ya!
 Achọtaghị ụzọ VLC!
 omxplayer ụzọ ahụghị!
 Ịmepụta ụzọ nbudata:
@@ -49,7 +49,7 @@ Ejikọtaghị Wifi/Network. Na-emechi n'ime afọ 10 ...
 Maka ịhọrọ egwu, nyochaa QR ma ọ bụ jikọọ na
 Maka ngosi TV, jikọọ na
 Pịa F ka ịgbanwee ihuenyo zuru oke
-Pịa ESC ka ị kwụsị PiKaraoke
+Pịa ESC ka ị kwụsị OpenHomeKaraoke
 Achọpụtara ọnọdụ ntọlite ​​RaspiWifiConfig!
 Jikọọ ngwaọrụ/smartphone ọzọ na Wifi AP: '%s'
 Mgbe ahụ tụọ ihe nchọgharị ya na: '%s://%s%s' wee soro ntuziaka a.
@@ -60,7 +60,7 @@ Enyere ọnọdụ nchịkwa!
 Ịbawanye igbu oge nke ọdịyo ga-enyekwu gị oge ịgụ egwu tupu ịdepụta ahịrịokwu na-esote.
 Mbelata obere oge igbu oge ga-enyekwu gị oge ịgụ egwu tupu ịdepụta ahịrịokwu na-esote.
 A na-akpọkwa semitone dị ka ọkara nzọụkwụ. Ọ bụ nkeji kacha nta eji na egwu Western oge gboo, hà nhata nke iri na abụọ nke octave ma ọ bụ ọkara ụda.
-Agbanyere nkewa ụda olu dabere na DNN. PiKaraoke na-eji PyTorch (nke Facebook) na-agba ọsọ netwọk akwara miri emi iji kewaa ngwa ngwa na ụda olu na egwu ọ bụla na-eme ka ụda stereo pụta.
+Agbanyere nkewa ụda olu dabere na DNN. OpenHomeKaraoke na-eji PyTorch (nke Facebook) na-agba ọsọ netwọk akwara dị omimi iji kewaa ngwa ngwa na ụda olu na egwu ọ bụla na-eme ka ụda stereo pụta.
 Njikwa ọkpụkpọ
 Egwu
 Ngwakọta
@@ -105,7 +105,7 @@ Dezie egwu
 Bulie na kwụ n'ahịrị
 Budata n'ahịrị
 Ị ji n'aka na ịchọrọ ihichapụ n'ahịrị
-Ị ji n'aka na ịchọrọ ikpochapụ ahịrị niile? Pịnye 'OK' ka ịga n'ihu
+Ị ji n'aka na ịchọrọ ikpochapụ ahịrị niile?
 Tinye egwu 3 enweghị usoro
 Kpochapụ ihe niile
 kwụ n'ahịrị tọgbọ chakoo
@@ -117,12 +117,12 @@ Abụ abanyelarị n'ahịrị:
 Chọọ / Tinye Ọhụrụ
 Chọọ
 kwụ n'ahịrị
-Tinye ọkụ na-abụghị karaoke
+Chọọ naanị egwuregwu karaoke
 Nke dị elu
 Pịnye egwu (aha / onye na-ese ihe) ka ịchọọ egwu dịnụ wee pịa 'Queue' ka ịgbakwunye ya na kwụ n'ahịrị.
 Ọ bụrụ na egwu a pụtaghị na "Egwu dị" dropdown, pịa 'Search' ka ịchọta ya na Youtube.
 Budata url YouTube ozugbo:
-Tinye na kwụ n'ahịrị
+Tinye na kwụ n'ahịrị ma nbudata
 Tinye ndepụta okwu
 Budata
 Na-achọ YouTube
@@ -133,7 +133,7 @@ Egwu dị
 Ị chọrọ ịgbanwe aha ngosi nke onye na-eji ngwaọrụ a? Nke a ga-egosi n'akụkụ egwu ndị kwụ n'ahịrị. Ugbu a:
 Onye ọrụ ugbu a
 Ntọala
-PiKaraoke
+Mepee ụlọKaraoke
 Ị ji n'aka na ị chọrọ ịkwụsị?
 Ị ji n'aka na ị chọrọ imechi?
 Ị ji n'aka na ịchọrọ ịmalitegharị?
@@ -147,34 +147,34 @@ Ebe nchekwa
 Edede ihuenyo
 Mgbasa olu
 Ụdị Youtube-dl (yt-dlp).
-Ụdị PiKaraoke
+Mepee ụdị Karaoke
 Nhọrọ njikwa dị elu
 Ụdị nkewa olu:
 Jiri L-R/L+R
 Jiri DNS
-Ọdịda MTV ọkọlọtọ nwere ọwa stereo abụọ (L na R) etinyere ya n'ụzọ nke na: L-R bụ egwu akụrụngwa, L + R bụ egwu olu. Ya mere, site na iwepụ ma ọ bụ ịgbakwunye ọwa abụọ stereo, anyị nwere ike nweta egwu egwu na ụda olu na ụda mono. PiKaraoke wuru n'ime DNN dabere (netwọk akwara miri emi) ụda olu nkewa na-eji AI algọridim kewaa ngwa ngwa na ụda olu na egwu stereo ọ bụla n'onwe ya na-ebute ngwa ngwa stereo na egwu olu.
+Ọdịda MTV ọkọlọtọ nwere ọwa stereo abụọ (L na R) etinyere ya n'ụzọ na: L-R bụ egwu akụrụngwa, L + R bụ egwu olu. Ya mere, site na iwepụ ma ọ bụ ịgbakwunye ọwa abụọ stereo, anyị nwere ike nweta egwu egwu na ụda olu na ụda mono. OpenHomeKaraoke arụnyere n'ime DNN dabere (netwọk akwara miri emi) ụda olu nkewa na-eji AI algọridim kewaa ngwa ngwa na ụda olu na egwu stereo ọ bụla n'onwe ya na-ebute ngwa ngwa stereo na egwu olu.
 Kwụsị Splitter
 Malitegharịa Splitter
 Nkewa olu (nke na-akwado ma DNN dabere na mwepu stereo) na-agba ọsọ dị ka usoro dị iche na ndabere, na-ewepụta faịlụ ọdịyo / ụda maka egwu ọ bụla.
 Mekọrịtagharịa ọdịyo na vidiyo:
 Kwụsị Streamer
 Malitegharịa ekwentị Streamer
-Nke a na-emetụta naanị ịkpọ KTV site na ihe nchọgharị weebụ. Ịmalitegharịa ihuenyo-na-na-enuba na-emekọrịta mmekọrịta ọdịyo/video, ọ na-ebelatakwa latency n'etiti ihe nkesa na ihe nchọgharị.
+Nke a na-emetụta naanị ịkpọ KTV site na ihe nchọgharị weebụ. Ịmalitegharịa ihuenyo-na-na-enuba na-emekọrịta mmekọrịta ọdịyo/video, ọ na-ebelata nkwụsị n'etiti ihe nkesa na ihe nchọgharị.
 Megharịa ndepụta egwu:
 Nyochaa ndekọ ndekọ egwu
-Naanị ị ga-eme nke a ma ọ bụrụ na iji aka depụta faịlụ na ndekọ nbudata mgbe PiKaraoke na-agba ọsọ.
+Naanị ị ga-eme nke a ma ọ bụrụ na iji aka depụta faịlụ na ndekọ nbudata mgbe OpenHomeKaraoke na-agba ọsọ.
 Mmelite
 Ọ bụrụ na nbudata ma ọ bụ ọchụchọ kwụsịrị ịrụ ọrụ, imelite youtube-dl ga-edozi ya. Ụdị arụnyere ugbu a bụ:
 Melite youtube-dl
-Njikọ mmelite a dị n'elu nwere ike ịda ma ọ bụrụ na ịnweghị ikikere faịlụ kwesịrị ekwesị. Lelee ndekọ PiKaraoke maka mperi.
+Njikọ mmelite a dị n'elu nwere ike daa ma ọ bụrụ na ịnweghị ikikere faịlụ kwesịrị ekwesị. Lelee ndekọ OpenHomeKaraoke maka mperi.
 Mechie
-Akwụsịla plọg naanị! Mechie ihe nkesa gị nke ọma mgbe niile ka ịzenarị nrụrụ data.
-Hapụ PiKaraoke
+Akwụsịla plọg naanị! Mechie ihe nkesa gị mgbe niile ka ịzenarị nrụrụ data.
+Kwụsị OpenHomeKaraoke
 Malitegharịa ekwentị Sistemu
 Sistemụ nkwụsị
 Ndị ọzọ
 Gbasaa sistemụ faịlụ Raspberry Pi
-Ọ bụrụ na ị rụnyere ihe oyiyi PiKaraoke pi nke arụgoro mbụ na kaadị SD gị karịrị 4GB, ị nwere ike ịgbasa sistemụ faịlụ iji jiri ohere fọdụrụnụ. Naanị otu ugboro ka ị ga-eme nke a. Nke a ga-amalitegharịa usoro.
+Ọ bụrụ na ị rụnyere ihe oyiyi OpenHomeKaraoke pi nke arụgoro mbụ na kaadị SD gị karịrị 4GB, ịnwere ike ịgbasa sistemụ faịlụ iji jiri ohere fọdụrụnụ. Naanị otu ugboro ka ị ga-eme nke a. Nke a ga-amalitegharịa usoro.
 Gbanyụọ ọnọdụ nchịkwa
 Kwado ọnọdụ nchịkwa
 pụọ
@@ -185,7 +185,7 @@ Gbanwee Asụsụ
 Biko họrọ asụsụ
 Asụsụ Sistemu
 Asụsụ sistemụ ugbu a:
-Nke a na-agbanwe asụsụ nke usoro azụ azụ PiKaraoke nke na-egosipụta na ihuenyo TV; Ọzọkwa, onye ọ bụla na-ejikọta ọnụ nwekwara ike ịgbanwe asụsụ UI nke ha na bọtịnụ ụwa dị na menu nri-elu.
+Nke a na-agbanwe asụsụ nke sistemụ azụ azụ OpenHomeKaraoke nke na-egosipụta na ihuenyo TV; Ọzọkwa, onye ọ bụla na-ejikọta ọnụ nwekwara ike ịgbanwe asụsụ UI nke ha na bọtịnụ ụwa dị na menu nri-elu.
 Budata emechara nke ọma!
 Nbudata agaghị!
 Abụ agbakwunyere n'ahịrị!
@@ -207,3 +207,25 @@ Tọgharịa ọsọ
 Tinye egwu na kwụ n'ahịrị abụ mgbe nbudata agwụchara
 Budata ndepụta okwu (naanị agbakwunyere) n'asụsụ niile ma ọ dị
 Nbudata vidiyo dị elu nwere ike were ogologo oge
+Chekwaa ntọala egwuregwu
+Chekwaa ntọala egwu maka egwu ọ bụla, nke a gụnyere: igbu oge ọdịyo, igbu oge sobtaitel, yana ma ọ ga-egosi ndepụta okwu.
+Tinye egwu site n'ikwu aha egwu
+Biko kwuo aha egwu wee pịa OK!
+Naanị weebụsaịtị HTTPS nwere ike ịnweta igwe okwu, ị chọrọ ibugharị na weebụsaịtị HTTPS?
+Biko nye ikike ịnweta igwe okwu!
+Dezie aha egwu:
+Chekwa
+Hichapụ egwu a
+Ị ji n'aka na ịchọrọ ihichapụ egwu a n'ọba akwụkwọ?
+Rịọ njehie oke!
+Kpebie egwu ahụ:
+Hazie olu egwu:
+Oge mmalite:
+Oge ngwụcha:
+Olu izizi (dB):
+Enweghị ike ịhụ egwu ọ bụla dabara na "%s".
+Etinyere "%s" n'ahịrị.
+Biko họrọ egwu ịtinye:
+Kwụpụ
+Mechie
+Tinye

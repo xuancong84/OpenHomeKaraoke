@@ -32,7 +32,7 @@ Hætt
 Uppfærir youtube-dl! Ætti að taka eina eða tvær mínútur...
 Þú hefur ekki leyfi til að uppfæra youtube-dl
 Þú hefur ekki leyfi til að loka
-Hætta í PiKaraoke núna!
+Hætta í OpenHomeKaraoke núna!
 Þú hefur ekki leyfi til að hætta
 Loka kerfinu núna!
 Þú hefur ekki leyfi til að loka
@@ -41,7 +41,7 @@ Endurræsir kerfið núna!
 Stækkar skráarkerfið og endurræsir kerfið núna!
 Get ekki stækkað fs á tækjum sem ekki eru hindberjum pi!
 Þú hefur ekki leyfi til að breyta stærð skráarkerfisins
-Youtube-dl slóð fannst ekki!
+Youtube-dl slóð fannst ekki og pip tókst ekki að setja hana upp!
 VLC slóð fannst ekki!
 omxplayer slóð fannst ekki!
 Að búa til niðurhalsslóð:
@@ -49,7 +49,7 @@ WiFi/net er ekki tengt. Lokar eftir 10s...
 Til að velja lög, skannaðu QR eða tengdu við
 Fyrir sjónvarpsskjá, tengdu við
 Ýttu á F til að skipta yfir allan skjáinn
-Ýttu á ESC til að hætta í PiKaraoke
+Ýttu á ESC til að hætta í OpenHomeKaraoke
 RaspiWifiConfig uppsetningarhamur fannst!
 Tengdu annað tæki/snjallsíma við Wifi AP: '%s'
 Beindu síðan vafranum á: '%s://%s%s' og fylgdu leiðbeiningunum.
@@ -57,10 +57,10 @@ Næst:
 Bætt við af:
 Nú spilar:
 Stjórnunarhamur veittur!
-Aukin seinkun á hljóði mun gefa þér meiri tíma til að lesa texta áður en þú syngur út næstu setningu.
-Með því að draga úr töfum texta mun þú gefa þér meiri tíma til að lesa texta áður en þú syngur út næstu setningu.
+Aukin hljóðtöf mun gefa þér meiri tíma til að lesa texta áður en þú syngur út næstu setningu.
+Með því að minnka seinkun texta mun þú gefa þér meiri tíma til að lesa texta áður en þú syngur út næstu setningu.
 Hálftónn er einnig þekktur sem hálftónn. Það er minnsta bil sem notað er í klassískri vestrænni tónlist, jafnt og tólfta hluta áttundar eða hálfs tóns.
-DNN-undirstaða raddskipting er virkjuð. PiKaraoke notar PyTorch (af Facebook) til að keyra djúpt taugakerfi til að skipta hljóðfæra- og sönghljóði í hverju lagi sem gefur tilefni til steríóhljóðs.
+DNN-undirstaða raddskipting er virkjuð. OpenHomeKaraoke notar PyTorch (af Facebook) til að keyra djúpt taugakerfi til að skipta hljóðfæra- og sönghljóði í hverju lagi sem gefur tilefni til steríóhljóðs.
 Leikmannastýring
 Tónlist
 Blandað
@@ -105,7 +105,7 @@ Breyta lagi
 Farðu upp í biðröð
 Færðu þig niður í biðröð
 Ertu viss um að þú viljir eyða úr biðröðinni
-Ertu viss um að þú viljir hreinsa ALLA biðröðina? Sláðu inn 'Í lagi' til að halda áfram
+Ertu viss um að þú viljir hreinsa ALLA biðröðina?
 Bættu við 3 handahófi lögum
 Hreinsa allt
 Biðröðin er tóm
@@ -117,12 +117,12 @@ Lagið er þegar í biðröðinni:
 Leita / Bæta við nýju
 Leita
 Biðröð
-Láttu leiki sem ekki eru karókí
+Leitaðu aðeins að karaoke samsvörun
 Ítarlegri
-Sláðu inn lag (titill/listamaður) til að leita í tiltækum lögum og smelltu á 'Biðröð' til að bæta því við röðina.
+Sláðu inn lag (titill/listamaður) til að leita að tiltækum lögum og smelltu á 'Biðröð' til að bæta því við röðina.
 Ef lagið birtist ekki í "Available Songs" fellilistanum, smelltu á 'Search' til að finna það á Youtube.
 Beint niðurhal YouTube vefslóð:
-Bæta við biðröð
+Bæta við biðröð eftir niðurhal
 Láttu texta fylgja með
 Sækja
 Er að leita að YouTube
@@ -133,7 +133,7 @@ Lög í boði
 Viltu breyta skjánafni þess sem notar þetta tæki? Þetta mun birtast við hlið löganna í biðröð. Núverandi:
 Núverandi notandi
 Stillingar
-PiKaraoke
+OpenHomeKaraoke
 Ertu viss um að þú viljir hætta?
 Ertu viss um að þú viljir leggja niður?
 Ertu viss um að þú viljir endurræsa?
@@ -147,34 +147,34 @@ Minni
 Skjámyndataka
 Vocal Splitter
 Youtube-dl (yt-dlp) útgáfa
-PiKaraoke útgáfa
+OpenHomeKaraoke útgáfa
 Ítarlegir stjórnunarvalkostir
 Raddskiptihamur:
 Notaðu L-R/L+R
 Notaðu DNN
-Staðlað MTV hljóð hefur tvær steríórásir (L og R) kóðaðar á þann hátt að: L-R er hljóðfæralagið, L+R er sönglagið. Þannig, með því einfaldlega að draga frá eða bæta við steríórásunum tveimur, getum við fengið hljóðfæra- og sönglagið í mónóhljóði. Innbyggður DNN-undirstaða (djúpt tauganet) raddskilari PiKaraoke notar gervigreind reiknirit til að skipta hljóðfæra- og raddhljóði í hverju steríólagi sjálfstætt, sem leiðir til hljóðfæra- og sönglaga.
+Staðlað MTV hljóð hefur tvær steríórásir (L og R) kóðaðar á þann hátt að: L-R er hljóðfæralagið, L+R er sönglagið. Þannig, með því einfaldlega að draga frá eða bæta við steríórásunum tveimur, getum við fengið hljóðfæra- og sönglagið í mónóhljóði. Innbyggður DNN-undirstaða (djúpt taugakerfi) raddskiptingur OpenHomeKaraoke notar gervigreind reiknirit til að skipta hljóðfæra- og raddhljóði í hverju steríólagi sjálfstætt, sem leiðir til hljóðfæra- og sönglaga.
 Hættu Splitter
 Endurræstu Splitter
 Raddskiptingin (sem styður bæði DNN-undirstaða og hljómtæki frádrátt) keyrir sem sérstakt ferli í bakgrunni og býr til hljóðfæra-/sönghljóðskrá fyrir hvert lag.
 Samstilla hljóð og mynd aftur:
 Stöðva Streamer
 Endurræstu Streamer
-Þetta hefur aðeins áhrif á spilun KTV í gegnum vafra. Að endurræsa skjámyndatöku og straumspilun bætir samstillingu hljóðs/myndbands, það dregur einnig úr leynd milli netþjónsins og vafrans.
+Þetta hefur aðeins áhrif á spilun KTV í gegnum vafra. Að endurræsa skjámyndatöku og straumspilun bætir samstillingu hljóðs/myndbands, það dregur einnig úr biðtíma milli netþjóns og vafra.
 Endurnýjaðu lagalistann:
 Skannaðu lagaskrána aftur
-Þú ættir aðeins að þurfa að gera þetta ef þú afritaðir skrár handvirkt í niðurhalsskrána á meðan PiKaraoke var í gangi.
+Þú ættir aðeins að þurfa að gera þetta ef þú afritaðir skrár handvirkt í niðurhalsskrána á meðan OpenHomeKaraoke var í gangi.
 Uppfærslur
 Ef niðurhal eða leit hætti að virka mun uppfærsla youtube-dl líklega laga það. Núverandi uppsett útgáfa er:
 Uppfærðu youtube-dl
-Þessi uppfærslutengil hér að ofan gæti mistekist ef þú hefur ekki viðeigandi skráarheimildir. Athugaðu PiKaraoke log fyrir villur.
+Þessi uppfærslutengil hér að ofan gæti mistekist ef þú hefur ekki viðeigandi skráarheimildir. Athugaðu OpenHomeKaraoke log fyrir villur.
 Lokun
-Ekki bara draga úr sambandi! Slökktu alltaf á netþjóninum þínum á réttan hátt til að forðast gagnaspillingu.
-Hætta í PiKaraoke
+Ekki bara draga úr sambandi! Slökktu alltaf rétt á netþjóninum þínum til að forðast gagnaspillingu.
+Hætta í OpenHomeKaraoke
 Endurræstu kerfið
 Lokunarkerfi
 Annað
 Stækkaðu Raspberry Pi skráarkerfið
-Ef þú hefur nýlega sett upp forbyggðu PiKaraoke pi myndina og SD kortið þitt er stærra en 4GB, gætirðu viljað stækka skráarkerfið til að nýta það sem eftir er. Þú þarft bara að gera þetta einu sinni. Þetta mun endurræsa kerfið.
+Ef þú ert nýbúinn að setja upp forsmíðaða OpenHomeKaraoke pi myndina og SD kortið þitt er stærra en 4GB gætirðu viljað stækka skráarkerfið til að nýta það sem eftir er. Þú þarft bara að gera þetta einu sinni. Þetta mun endurræsa kerfið.
 Slökktu á stjórnunarham
 Virkja stjórnunarham
 að skrá þig út
@@ -185,7 +185,7 @@ Skipta um tungumál
 Vinsamlegast veldu tungumál
 Kerfismál
 Núverandi tungumál kerfisins:
-Þetta breytir tungumáli PiKaraoke bakenda kerfisins sem birtist á sjónvarpsskjánum; þar að auki getur hver notandi sem tengist einnig breytt viðkomandi vefviðmótstungumáli sínu í hnatthnappnum í valmyndinni efst til hægri.
+Þetta breytir tungumáli OpenHomeKaraoke bakenda kerfisins sem birtist á sjónvarpsskjánum; þar að auki getur hver notandi sem tengist einnig breytt viðkomandi vefviðmótstungumáli sínu í hnatthnappnum í valmyndinni efst til hægri.
 Niðurhali lokið með góðum árangri!
 Niðurhal mistókst!
 Lagi bætt í röðina!
@@ -207,3 +207,25 @@ Hágæða
 Bættu laginu við söngröðina eftir að niðurhali lýkur
 Sæktu skjátexta (aðeins innbyggður) á öllum tungumálum ef hann er til
 Að hlaða niður hágæða myndböndum gæti tekið mjög langan tíma
+Vista leikstillingar
+Vistaðu spilunarstillingar fyrir hvert lag, þetta felur í sér: seinkun á hljóði, seinkun á texta og hvort sýna eigi texta.
+Bættu við lagi með því að segja lagsheitið
+Vinsamlegast segðu lagheitið og smelltu á OK!
+Aðeins HTTPS vefsíður geta haft aðgang að hljóðnema, viltu beina á HTTPS vefsíðu?
+Vinsamlegast veittu leyfi til að fá aðgang að hljóðnema!
+Breyta nafni lags:
+Vista
+Eyða þessu lagi
+Ertu viss um að þú viljir eyða þessu lagi úr safninu?
+Biðja um villu í færibreytu!
+Klipptu lagið:
+Stilla hljóðstyrk lagsins:
+Upphafstími:
+Lokatími:
+Upprunalegt rúmmál (dB):
+Get ekki fundið neitt lag sem passar við "%s".
+„%s“ bætt við biðröð.
+Vinsamlegast veldu lagið/lögin til að bæta við:
+AFTAKA
+Loka
+Bæta við

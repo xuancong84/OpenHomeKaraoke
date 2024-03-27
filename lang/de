@@ -1,76 +1,76 @@
 Deutsch
 Falsches Admin-Passwort!
 Aus dem Admin-Modus abgemeldet!
-%s zufällige Tracks hinzugefügt
-Lieder ausgegangen!
+%s zufällige Titel hinzugefügt
+Mir sind die Lieder ausgegangen!
 Warteschlange gelöscht!
 Fehler beim Verschieben des Elements in die Warteschlange: ungültiges Argument
-Element erfolgreich in Warteschlange verschoben:
+Element erfolgreich in die Warteschlange verschoben:
 Fehler beim Verschieben des Elements in die Warteschlange:
 In der Warteschlange nach unten verschoben:
-Fehler beim Verschieben nach unten in der Warteschlange:
-In der Warteschlange nach oben gerückt:
-Fehler beim Aufsteigen in der Warteschlange:
-Aus Warteschlange gelöscht:
+Fehler beim Verschieben in der Warteschlange nach unten:
+In der Warteschlange nach oben verschoben:
+Fehler beim Verschieben in der Warteschlange:
+Aus der Warteschlange gelöscht:
 Fehler beim Löschen aus der Warteschlange:
 Download gestartet:
-Nach Abschluss wird es der Warteschlange hinzugefügt.
-Nach Abschluss erscheint es in der Liste "verfügbare Songs".
+Nach Abschluss wird es zur Warteschlange hinzugefügt.
+Nach Abschluss erscheint es in der Liste „Verfügbare Songs“.
 Fehler: Dieses Lied kann nicht gelöscht werden, da es sich in der aktuellen Warteschlange befindet:
 Lied gelöscht:
 Fehler: Kein Songparameter angegeben!
-Fehler: Dieser Song kann nicht bearbeitet werden, da er gerade abgespielt wird:
-Bearbeiten von Songdateien
-Fehler beim Umbenennen der Datei: '%s' in '%s'. Dateiname existiert bereits.
-Datei umbenannt: '%s' in '%s'
+Fehler: Dieses Lied kann nicht bearbeitet werden, da es gerade abgespielt wird:
+Songdatei bearbeiten
+Fehler beim Umbenennen der Datei: „%s“ in „%s“. Dateiname existiert bereits.
+Datei umbenannt: „%s“ in „%s“
 Fehler: Es wurden keine Dateinamenparameter angegeben!
 Unbekannt
-Betrieb
+Läuft
 Gestoppt
- (nur CPU)
+ (Nur CPU)
  (GPU aktiviert)
-Aktualisierung von youtube-dl! Sollte ein oder zwei Minuten dauern...
-Du bist nicht berechtigt, YouTube-dl zu aktualisieren
+Aktualisiere youtube-dl! Sollte ein bis zwei Minuten dauern...
+Du hast keine Berechtigung, youtube-dl zu aktualisieren
 Sie haben keine Berechtigung zum Herunterfahren
-Jetzt PiKaraoke beenden!
-Sie haben keine Berechtigung zum Aufhören
+Beenden Sie OpenHomeKaraoke jetzt!
+Sie haben keine Berechtigung zum Beenden
 System jetzt herunterfahren!
 Sie haben keine Berechtigung zum Herunterfahren
 System jetzt neu starten!
 Sie haben keine Berechtigung zum Neustart
 Dateisystem erweitern und System jetzt neu starten!
-Kann fs auf Nicht-Raspberry-Pi-Geräten nicht erweitern!
+FS kann auf Nicht-Rasberry-Pi-Geräten nicht erweitert werden!
 Sie sind nicht berechtigt, die Größe des Dateisystems zu ändern
-Youtube-dl-Pfad nicht gefunden!
+Youtube-dl-Pfad nicht gefunden und pip konnte ihn nicht installieren!
 VLC-Pfad nicht gefunden!
-omxplayer-Pfad nicht gefunden!
+Omxplayer-Pfad nicht gefunden!
 Downloadpfad erstellen:
-WLAN/Netzwerk nicht verbunden. Abschaltung in 10s...
+WLAN/Netzwerk nicht verbunden. Abschaltung in 10 Sekunden...
 Um Songs auszuwählen, scannen Sie QR oder stellen Sie eine Verbindung her
-Verbinden Sie für die TV-Anzeige mit
-Drücken Sie F, um zum Vollbildmodus zu wechseln
-Drücken Sie ESC, um PiKaraoke zu beenden
-RaspiWifiConfig Setup-Modus erkannt!
-Verbinden Sie ein anderes Gerät/Smartphone mit dem WLAN-AP: '%s'
-Zeigen Sie dann in seinem Browser auf: '%s://%s%s' und folgen Sie den Anweisungen.
+Für die TV-Anzeige schließen Sie an
+Drücken Sie F, um zum Vollbildmodus umzuschalten
+Drücken Sie ESC, um OpenHomeKaraoke zu beenden
+RaspiWifiConfig-Setup-Modus erkannt!
+Verbinden Sie ein anderes Gerät/Smartphone mit dem WLAN-AP: „%s“
+Richten Sie dann den Browser auf „%s://%s%s“ und befolgen Sie die Anweisungen.
 Als nächstes:
 Hinzugefügt von:
 Läuft gerade:
 Admin-Modus gewährt!
-Wenn Sie die Audioverzögerung erhöhen, haben Sie mehr Zeit, den Text zu lesen, bevor Sie den nächsten Satz singen.
-Wenn Sie die Untertitelverzögerung verringern, haben Sie mehr Zeit, den Text zu lesen, bevor Sie den nächsten Satz singen.
-Ein Halbton wird auch als Halbschritt bezeichnet. Es ist das kleinste Intervall, das in der klassischen westlichen Musik verwendet wird, und entspricht einer zwölftel Oktave oder einem halben Ton.
-Der DNN-basierte Vocal-Splitter ist aktiviert. PiKaraoke verwendet PyTorch (von Facebook), um ein tiefes neuronales Netzwerk zu betreiben, um Instrumental- und Gesangssound in jeder Spur aufzuteilen, wodurch Stereosound entsteht.
-Spielersteuerung
+Durch die Erhöhung der Audioverzögerung haben Sie mehr Zeit, den Liedtext zu lesen, bevor Sie den nächsten Satz vorsingen.
+Durch die Verringerung der Untertitelverzögerung haben Sie mehr Zeit, den Liedtext zu lesen, bevor Sie den nächsten Satz vorsingen.
+Ein Halbton wird auch als Halbton bezeichnet. Es ist das kleinste in der klassischen westlichen Musik verwendete Intervall und entspricht einer Zwölftel Oktave oder einem halben Ton.
+DNN-basierter Stimmsplitter ist aktiviert. OpenHomeKaraoke nutzt PyTorch (von Facebook), um ein tiefes neuronales Netzwerk zu betreiben, um den Instrumental- und Gesangsklang in jedem Track aufzuteilen und so Stereoklang zu erzeugen.
+Spielerkontrolle
 Musik
 Gemischt
 Stimme
 Schlüssel ändern
-Im Moment wird nichts abgespielt.
-Kein Lied ist in der Warteschlange.
-Dieses Lied wurde nicht von Ihnen hinzugefügt. Möchten Sie diesen Track wirklich neu starten?
+Im Moment läuft nichts.
+Es befindet sich kein Lied in der Warteschlange.
+Dieses Lied wurde nicht von Ihnen hinzugefügt. Möchten Sie diesen Titel wirklich neu starten?
 Dieses Lied wurde nicht von Ihnen hinzugefügt. Möchten Sie diesen Titel wirklich überspringen?
-Spielersteuerung
+Spielerkontrolle
 Läuft gerade
 Nächstes Lied
 Versuchen:
@@ -78,34 +78,34 @@ Audioverzögerung (Sek.)
 Untertitelverzögerung (Sek.)
 Lied neu starten
 Spielpause
-Aktuellen Titel überspringen
+Aktuellen Song überspringen
 Lautstärke runter
 Lautstärke einstellen
-Lauter
+Lautstärke erhöhen
 Untertitelverzögerung verringern
 Untertitelverzögerung einstellen
-Untertitelverzögerung erhöhen
+Erhöhen Sie die Untertitelverzögerung
 Verringern Sie die Audioverzögerung
-Stellen Sie die Audioverzögerung ein
+Audioverzögerung einstellen
 Erhöhen Sie die Audioverzögerung
  Halbtöne
-Bitte geben Sie Ihren Namen ein. Dies wird neben den Titeln angezeigt, die Sie von diesem Gerät in die Warteschlange stellen.
-Der Warteschlange hinzugefügtes Lied:
+Bitte geben Sie Ihren Namen ein. Dies wird neben den Songs angezeigt, die Sie auf diesem Gerät in die Warteschlange gestellt haben.
+Lied zur Warteschlange hinzugefügt:
 Lied bereits in der Warteschlange:
 Nach Datum sortieren
-Alphabetisch sortieren
-Füge '%s' zur Warteschlange hinzu
+Sortieren Sie nach Alphabet
+Fügen Sie „%s“ zur Warteschlange hinzu
 Durchsuche
-Sortiert nach 'Datum'
-Sortiert nach 'Alphabetisch'
+Sortiert nach „Datum“
+Sortiert nach „Alphabetisch“
 Lieder
 Anzeige von <b>{start} - {end}</b> {record_name}, insgesamt <b>{total}</b> {record_name}
-<b>{found}</b> {record_name} gefunden, Anzeige <b>{start} - {end}</b> {record_name}
+<b>{found}</b> {record_name} gefunden, zeigt <b>{start} - {end}</b> {record_name} an
 Lied bearbeiten
-Bewegen Sie sich in der Warteschlange nach oben
+In der Warteschlange nach oben rücken
 Gehen Sie in der Warteschlange nach unten
-Möchten Sie wirklich aus der Warteschlange löschen?
-Möchten Sie wirklich die GESAMTE Warteschlange löschen? Geben Sie „OK“ ein, um fortzufahren
+Sind Sie sicher, dass Sie etwas aus der Warteschlange löschen möchten?
+Sind Sie sicher, dass Sie die GESAMTE Warteschlange löschen möchten?
 Füge 3 zufällige Lieder hinzu
 Alles löschen
 Die Warteschlange ist leer
@@ -113,97 +113,119 @@ Warteschlange
 Löschen
 Verfügbare Songs in der lokalen Bibliothek
 Lied zur Warteschlange hinzugefügt:
-Lied ist bereits in der Warteschlange:
+Song ist bereits in der Warteschlange:
 Suchen / Neu hinzufügen
 Suchen
 Warteschlange
-Schließen Sie Nicht-Karaoke-Matches ein
+Suche nur nach Karaoke-Matches
 Fortschrittlich
-Geben Sie einen Song (Titel/Künstler) ein, um die verfügbaren Songs zu durchsuchen, und klicken Sie auf „Warteschlange“, um ihn der Warteschlange hinzuzufügen.
-Wenn der Song nicht in der Dropdown-Liste „Verfügbare Songs“ angezeigt wird, klicken Sie auf „Suchen“, um ihn auf YouTube zu finden.
-YouTube-URL für direkten Download:
-Zur Warteschlange hinzufügen
+Geben Sie einen Song (Titel/Interpret) ein, um die verfügbaren Songs zu durchsuchen, und klicken Sie auf „Warteschlange“, um ihn zur Warteschlange hinzuzufügen.
+Wenn der Song nicht im Dropdown-Menü „Verfügbare Songs“ angezeigt wird, klicken Sie auf „Suchen“, um ihn auf YouTube zu finden.
+YouTube-URL zum direkten Download:
+Nach dem Download zur Warteschlange hinzufügen
 Fügen Sie Untertitel hinzu
 Herunterladen
 Suche auf YouTube nach
 Suchergebnisse für
 Klicken Sie auf das Dropdown-Menü, um weitere Ergebnisse anzuzeigen
 Verknüpfung:
-Verfügbare Lieder
+Verfügbare Songs
 Möchten Sie den Anzeigenamen der Person ändern, die dieses Gerät verwendet? Dies wird neben den Songs in der Warteschlange angezeigt. Aktuell:
 Aktueller Benutzer
 Einstellungen
-PiKaraoke
+OpenHomeKaraoke
 Sind Sie sicher, dass Sie aufhören wollen?
-Sind Sie sicher, dass Sie herunterfahren möchten?
-Möchten Sie wirklich neu starten?
+Möchten Sie wirklich herunterfahren?
+Sind Sie sicher, dass Sie einen Neustart durchführen möchten?
 Sind Sie sicher, dass Sie Youtube-dl jetzt aktualisieren möchten? Aktuelle und ausstehende Downloads können fehlschlagen.
-Möchten Sie das Dateisystem wirklich erweitern? Dadurch wird Ihr Himbeer-Pi neu gestartet.
+Sind Sie sicher, dass Sie das Dateisystem erweitern möchten? Dadurch wird Ihr Raspberry Pi neu gestartet.
 Information
 Praktischer URL-QR-Code zum Teilen mit einem Freund:
 Betriebssystem
 Festplattennutzung
-Speicher
+Erinnerung
 Bildschirmaufnahme
-Vocal-Splitter
+Gesangssplitter
 Youtube-dl (yt-dlp)-Version
-PiKaraoke-Version
+OpenHomeKaraoke-Version
 Erweiterte Steuerungsoptionen
 Vocal-Splitter-Modus:
 Verwenden Sie L-R/L+R
 Verwenden Sie DNN
-Bei Standard-MTV-Audio sind die beiden Stereokanäle (L und R) so codiert, dass: L-R die Instrumentenspur ist, L+R die Gesangsspur ist. Durch einfaches Subtrahieren oder Addieren der beiden Stereokanäle erhalten wir also die Instrumental- und Gesangsspur in Mono-Sound. Der integrierte DNN-basierte (Deep Neural Network) Vocal Splitter von PiKaraoke verwendet einen KI-Algorithmus, um Instrumental- und Vocal-Sound in jeder Stereospur unabhängig voneinander aufzuteilen, was zu Stereo-Instrumental- und Vocal-Tracks führt.
+Bei Standard-MTV-Audio sind die beiden Stereokanäle (L und R) so codiert, dass: L-R die Instrumentenspur und L+R die Gesangsspur ist. Durch einfaches Subtrahieren oder Addieren der beiden Stereokanäle erhalten wir also die Instrumental- und Gesangsspur im Monoklang. Der integrierte DNN-basierte (Deep Neural Network) Gesangssplitter von OpenHomeKaraoke verwendet einen KI-Algorithmus, um den Instrumental- und Gesangsklang in jeder Stereospur unabhängig aufzuteilen, was zu Stereo-Instrumental- und Gesangsspuren führt.
 Splitter stoppen
 Splitter neu starten
-Der Vocal-Splitter (der sowohl DNN-basierte als auch Stereo-Subtraktion unterstützt) läuft als separater Prozess im Hintergrund und generiert instrumentale/vokale Audiodateien für jeden Song.
+Der Gesangssplitter (der sowohl DNN-basierte als auch Stereo-Subtraktion unterstützt) läuft als separater Prozess im Hintergrund und generiert für jedes Lied eine Instrumental-/Gesangs-Audiodatei.
 Audio und Video neu synchronisieren:
 Streamer stoppen
 Streamer neu starten
-Dies betrifft nur das Spielen von KTV über den Webbrowser. Das Neustarten der Bildschirmaufnahme und des Streamings verbessert die Audio-/Video-Synchronisation und verringert auch die Latenz zwischen Server und Browser.
+Dies betrifft nur die Wiedergabe von KTV über einen Webbrowser. Durch einen Neustart der Bildschirmaufnahme und des Streamings wird die Audio-/Videosynchronisierung verbessert und die Latenz zwischen Server und Browser verringert.
 Aktualisieren Sie die Songliste:
-Songverzeichnis erneut scannen
-Sie sollten dies nur tun müssen, wenn Sie Dateien manuell in das Download-Verzeichnis kopiert haben, während PiKaraoke ausgeführt wurde.
+Songverzeichnis erneut durchsuchen
+Dies sollte nur erforderlich sein, wenn Sie Dateien manuell in das Download-Verzeichnis kopiert haben, während OpenHomeKaraoke ausgeführt wurde.
 Aktualisierung
-Wenn Downloads oder Suchen nicht mehr funktionieren, wird es wahrscheinlich durch die Aktualisierung von youtube-dl behoben. Die aktuell installierte Version ist:
-Aktualisieren Sie youtube-dl
-Dieser Update-Link oben kann fehlschlagen, wenn Sie nicht über die entsprechenden Dateiberechtigungen verfügen. Überprüfen Sie das PiKaraoke-Protokoll auf Fehler.
+Wenn Downloads oder Suchvorgänge nicht mehr funktionieren, wird das Problem wahrscheinlich durch die Aktualisierung von youtube-dl behoben. Die aktuell installierte Version ist:
+Aktualisiere youtube-dl
+Dieser Update-Link oben schlägt möglicherweise fehl, wenn Sie nicht über die entsprechenden Dateiberechtigungen verfügen. Überprüfen Sie das OpenHomeKaraoke-Protokoll auf Fehler.
 Abschalten
-Ziehen Sie nicht einfach den Stecker! Fahren Sie Ihren Server immer ordnungsgemäß herunter, um Datenbeschädigungen zu vermeiden.
-Beenden Sie PiKaraoke
+Ziehen Sie nicht einfach den Stecker! Fahren Sie Ihren Server immer ordnungsgemäß herunter, um eine Datenbeschädigung zu vermeiden.
+Beenden Sie OpenHomeKaraoke
 System neu starten
 System herunterfahren
 Andere
 Erweitern Sie das Raspberry Pi-Dateisystem
-Wenn Sie gerade das vorgefertigte PiKaraoke-Pi-Image installiert haben und Ihre SD-Karte größer als 4 GB ist, möchten Sie möglicherweise das Dateisystem erweitern, um den verbleibenden Speicherplatz zu nutzen. Sie müssen dies nur einmal tun. Dadurch wird das System neu gestartet.
-Admin-Modus deaktivieren
-Administratormodus aktivieren
+Wenn Sie gerade das vorgefertigte OpenHomeKaraoke-Pi-Image installiert haben und Ihre SD-Karte größer als 4 GB ist, möchten Sie möglicherweise das Dateisystem erweitern, um den verbleibenden Speicherplatz zu nutzen. Sie müssen dies nur einmal tun. Dadurch wird das System neu gestartet.
+Deaktivieren Sie den Admin-Modus
+Aktivieren Sie den Admin-Modus
 Ausloggen
 Anmeldung
 Systeminformationen
 Heim
 Sprache ändern
-Bitte Sprache wählen
+Bitte wählen Sie die Sprache aus
 Systemsprache
 Aktuelle Systemsprache:
-Dies ändert die Sprache des PiKaraoke-Backend-Systems, das auf dem Fernsehbildschirm angezeigt wird; Darüber hinaus kann jeder Benutzer, der eine Verbindung herstellt, seine jeweilige Web-UI-Sprache über die Globus-Schaltfläche im rechten oberen Menü ändern.
+Dadurch wird die Sprache des OpenHomeKaraoke-Backend-Systems geändert, die auf dem Fernsehbildschirm angezeigt wird. Darüber hinaus kann jeder verbindende Benutzer auch seine jeweilige Web-UI-Sprache über die Globus-Schaltfläche im Menü oben rechts ändern.
 Download erfolgreich abgeschlossen!
 Herunterladen fehlgeschlagen!
 Lied zur Warteschlange hinzugefügt!
 Das Lied konnte nicht in die Warteschlange gestellt werden!
-Systeminfo & Einstellungen
+Systeminformationen und Einstellungen
 Volumennormalisierung
-Unterschiedliche Songs haben oft unterschiedliche Lautstärken. Wenn Sie die Lautstärkenormalisierung aktivieren, wird zuerst <i>ffmpeg</i> ausgeführt, um die globale Lautstärke eines Songs zu berechnen und die Player-Lautstärke automatisch so anzupassen, dass jeder Song gleich laut klingt.
-Download-Pfad der Songbibliothek
+Unterschiedliche Lieder haben oft unterschiedliche Lautstärken. Wenn Sie die Lautstärkenormalisierung aktivieren, wird zunächst <i>ffmpeg</i> ausgeführt, um die Gesamtlautstärke eines Songs zu berechnen und die Player-Lautstärke automatisch so anzupassen, dass jeder Song gleich laut klingt.
+Downloadpfad für die Songbibliothek
 Gesamtzahl der Lieder
-Untertitel anzeigen/ausblenden
+Untertitel ein-/ausblenden
 Geschwindigkeit ändern
-Sie können den Song schneller oder langsamer singen, indem Sie die Wiedergabegeschwindigkeit mit der Geschwindigkeits-Trackbar auf 0,8x bis 1,2x ändern; Klicken Sie für eine andere Wiedergabegeschwindigkeit auf den Geschwindigkeitswert, um ihn zu ändern.
+Sie können das Lied schneller oder langsamer singen, indem Sie die Wiedergabegeschwindigkeit mithilfe der Geschwindigkeits-Trackbar auf das 0,8- bis 1,2-fache ändern. Für eine andere Wiedergabegeschwindigkeit klicken Sie auf den zu ändernden Geschwindigkeitswert.
 Klicken Sie hier, um die Wiedergabegeschwindigkeit auf 1x zurückzusetzen
-Klicken Sie hier, um die Wiedergabegeschwindigkeit einzustellen
-Klicken Sie hier, um die Tonart/Tonhöhe zurückzusetzen
-Schlüssel zurücksetzen
+Klicken Sie hier, um die Wiedergabegeschwindigkeit festzulegen
+Klicken Sie hier, um Tonart/Tonhöhe zurückzusetzen
+Reset-Taste
 Geschwindigkeit zurücksetzen
 Gute Qualität
-Fügen Sie das Lied der Gesangswarteschlange hinzu, nachdem der Download abgeschlossen ist
-Laden Sie Untertitel (nur eingebettet) in allen Sprachen herunter, falls verfügbar
-Das Herunterladen von Videos in hoher Qualität kann sehr lange dauern
+Fügen Sie das Lied nach Abschluss des Downloads zur Gesangswarteschlange hinzu
+Laden Sie Untertitel (nur eingebettet) in allen Sprachen herunter, sofern verfügbar
+Das Herunterladen hochwertiger Videos kann sehr lange dauern
+Spieleinstellungen speichern
+Speichern Sie die Wiedergabeeinstellungen für jedes Lied. Dazu gehören: Audioverzögerung, Untertitelverzögerung und ob Untertitel angezeigt werden sollen.
+Fügen Sie ein Lied hinzu, indem Sie den Liedtitel sprechen
+Bitte sprechen Sie den Songtitel und klicken Sie auf OK!
+Nur HTTPS-Websites können auf das Mikrofon zugreifen. Möchten Sie zur HTTPS-Website umleiten?
+Bitte erteilen Sie die Erlaubnis zum Zugriff auf das Mikrofon!
+Songnamen bearbeiten:
+Speichern
+Dieses Lied löschen
+Möchten Sie diesen Song wirklich aus der Bibliothek löschen?
+Anforderungsparameterfehler!
+Schneiden Sie das Lied:
+Song-Lautstärke anpassen:
+Beginnzeit:
+Endzeit:
+Originallautstärke (dB):
+Es konnte kein Lied gefunden werden, das mit „%s“ übereinstimmt.
+„%s“ zur Warteschlange hinzugefügt.
+Bitte wählen Sie die Lieder aus, die Sie hinzufügen möchten:
+RÜCKGÄNGIG MACHEN
+Schließen
+Hinzufügen

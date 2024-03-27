@@ -32,7 +32,7 @@ Sispann
 Mete ajou youtube-dl! Ta dwe pran yon minit oswa de...
 Ou pa gen pèmisyon pou mete ajou youtube-dl
 Ou pa gen pèmisyon pou fèmen
-Kite PiKaraoke kounye a!
+Kite OpenHomeKaraoke kounye a!
 Ou pa gen pèmisyon pou kite
 Fèmen sistèm kounye a!
 Ou pa gen pèmisyon pou fèmen
@@ -40,8 +40,8 @@ Redemaraj sistèm kounye a!
 Ou pa gen pèmisyon pou rdemare
 Agrandi sistèm fichye ak sistèm rdemare kounye a!
 Pa ka elaji fs sou aparèy ki pa Franbwaz pi!
-Ou pa gen pèmisyon pou redimansyonman sistèm fichye a
-Youtube-dl chemen pa jwenn!
+Ou pa gen pèmisyon pou redimensionner sistèm fichye a
+Youtube-dl pa jwenn chemen epi pip pa t rive enstale li!
 Chemen VLC pa jwenn!
 chemen omxplayer pa jwenn!
 Kreye chemen download:
@@ -49,10 +49,10 @@ Wifi/Rezo pa konekte. Fèmen nan 10s...
 Pou chwazi chante, eskane QR oswa konekte
 Pou ekspozisyon televizyon, konekte ak
 Peze F pou chanje ekran plen
-Peze ESC pou kite PiKaraoke
+Peze ESC pou kite OpenHomeKaraoke
 Mòd konfigirasyon RaspiWifiConfig detekte!
 Konekte yon lòt aparèy/smartphone ak Wifi AP: '%s'
-Lè sa a, montre navigatè li a: '%s://%s%s' epi swiv enstriksyon yo.
+Lè sa a, montre navigatè li a sou: '%s://%s%s' epi swiv enstriksyon yo.
 Pi devan:
 Te ajoute pa:
 Kounye a ap jwe:
@@ -60,7 +60,7 @@ Mòd admin akòde!
 Ogmante reta odyo pral ba ou plis tan pou li lyrics anvan chante pwochen fraz la.
 Diminye reta sou-titre a pral ba ou plis tan pou li lyrics anvan chante pwochen fraz la.
 Yon semitone konnen tou kòm yon demi-etap. Li se entèval ki pi piti yo itilize nan mizik klasik Western, ki egal a yon douzyèm nan yon oktav oswa mwatye yon ton.
-Splitter vokal ki baze sou DNN aktive. PiKaraoke itilize PyTorch (pa Facebook) pou dirije yon rezo neral pwofon pou divize son enstrimantal ak vokal nan chak track ki bay monte son stereo.
+Splitter vokal ki baze sou DNN aktive. OpenHomeKaraoke itilize PyTorch (pa Facebook) pou dirije yon rezo neral pwofon pou divize son enstrimantal ak vokal nan chak track ki bay monte son stereo.
 Kontwòl jwè
 Mizik
 Melanje
@@ -105,7 +105,7 @@ Edit chante
 Deplase moute nan keu
 Deplase desann nan keu
 Èske ou sèten ou vle efase nan keu la
-Èske ou sèten ou vle netwaye tout keu la? Tape 'OK' pou kontinye
+Èske ou sèten ou vle netwaye tout keu la?
 Ajoute 3 chante o aza
 Efase tout
 Nat la vid
@@ -117,12 +117,12 @@ Chante a deja nan keu a:
 Rechèch / Ajoute Nouvo
 Rechèch
 Keu
-Mete alimèt ki pa karaoke
+Chèche alimèt Karaoke sèlman
 Avanse
 Tape yon chante (tit/atis) pou chèche chante ki disponib epi klike sou 'Queue' pou ajoute li nan keu a.
 Si chante a pa parèt nan deroule "Chante ki disponib yo", klike sou 'Rechèch' pou jwenn li sou Youtube.
 Telechaje dirèk YouTube URL:
-Ajoute nan keu
+Ajoute nan keu apre telechaje
 Mete sous-titres
 Telechaje
 Chèche YouTube
@@ -133,7 +133,7 @@ Chante ki disponib
 Èske w vle chanje non moun k ap itilize aparèy sa a? Sa a pral parèt akote chante yo nan file. Kouran:
 Itilizatè aktyèl la
 Anviwònman
-PiKaraoke
+OpenHomeKaraoke
 Èske ou sèten ou vle kite fimen?
 Èske ou sèten ou vle fèmen?
 Èske ou sèten ou vle rdemare?
@@ -147,12 +147,12 @@ memwa
 Ekran Capture
 Splitter Vokal
 Youtube-dl (yt-dlp) vèsyon
-PiKaraoke vèsyon
+OpenHomeKaraoke vèsyon
 Opsyon kontwòl avanse
 Mòd splitter vokal:
 Sèvi ak L-R/L+R
 Sèvi ak DNN
-Odyo MTV estanda gen de chanèl stereo yo (L ak R) kode nan yon fason ke: L-R se tras la enstriman, L + R se tras la vokal. Kidonk, tou senpleman soustraksyon oswa ajoute de chanèl stereo yo, nou ka jwenn tras enstrimantal ak vokal nan son mono. Splitter vokal PiKaraoke ki baze sou DNN (rezo neral pwofon) sèvi ak algorithm AI pou divize son enstrimantal ak vokal nan chak tras stereo poukont sa ki lakòz tras enstrimantal ak vokal stereo.
+Odyo MTV estanda gen de chanèl stereo yo (L ak R) kode nan yon fason ke: L-R se tras la enstriman, L + R se tras la vokal. Kidonk, tou senpleman soustraksyon oswa ajoute de chanèl stereo yo, nou ka jwenn tras enstrimantal ak vokal nan son mono. Splitter vokal OpenHomeKaraoke ki baze sou DNN (rezo neral gwo twou san fon) sèvi ak algorithm AI pou divize son enstrimantal ak vokal nan chak track stereo poukont sa ki lakòz track instrumental ak vokal stereo.
 One Stop Splitter
 Rekòmanse Splitter
 Splitter vokal la (ki sipòte tou de DNN ki baze sou ak soustraksyon stereo) kouri kòm yon pwosesis separe nan background nan, jenere dosye enstrimantal / vwa odyo pou chak chante.
@@ -162,19 +162,19 @@ Rekòmanse Streamer
 Sa sèlman afekte jwe KTV atravè navigatè entènèt. Rekòmanse ekran-kaptire-ak-difizyon amelyore senkronizasyon odyo / videyo, li tou diminye latansi ki genyen ant sèvè a ak navigatè a.
 Rafrechi lis chante a:
 Reeskane anyè chante
-Ou ta dwe sèlman bezwen fè sa si ou manyèlman kopye fichye nan anyè download la pandan PiKaraoke t ap kouri.
+Ou ta dwe sèlman bezwen fè sa si ou manyèlman kopye fichye nan anyè download la pandan OpenHomeKaraoke t ap kouri.
 Mizajou
 Si telechajman oswa rechèch yo sispann travay, mete ajou youtube-dl pral pwobableman ranje li. Vèsyon aktyèl la enstale se:
 Mete ajou youtube-dl
-Lyen aktyalizasyon sa a pi wo a ka echwe si ou pa gen otorizasyon pou fichye apwopriye. Tcheke jounal PiKaraoke pou erè.
+Lyen aktyalizasyon sa a pi wo a ka echwe si ou pa gen otorizasyon pou fichye apwopriye. Tcheke jounal OpenHomeKaraoke pou erè.
 Fèmen
 Pa jis rale ploge a! Toujou fèmen sèvè ou byen pou evite koripsyon done yo.
-Kite PiKaraoke
+Kite OpenHomeKaraoke
 Rdemare Sistèm
 Sistèm fèmen
 Lòt
 Elaji sistèm fichye Franbwaz Pi
-Si ou jis enstale imaj PiKaraoke pi pre-bati a epi kat SD ou a pi gwo pase 4GB, ou ka vle elaji sistèm fichye a pou itilize espas ki rete a. Ou sèlman bezwen fè sa yon fwa. Sa a pral rdemare sistèm lan.
+Si ou jis enstale imaj OpenHomeKaraoke pi pre-bati a epi kat SD ou a pi gwo pase 4GB, ou ka vle elaji sistèm fichye a pou itilize espas ki rete a. Ou sèlman bezwen fè sa yon fwa. Sa a pral rdemare sistèm lan.
 Enfim mòd admin
 Pèmèt mòd admin
 Dekonekte
@@ -185,14 +185,14 @@ Chanje Lang
 Tanpri chwazi lang
 Lang sistèm
 Lang sistèm aktyèl la:
-Sa a chanje langaj sistèm backend PiKaraoke la ki parèt sou ekran televizyon; nplis de sa, chak itilizatè konekte kapab tou chanje lang respektif yo UI nan bouton glòb la nan meni an tèt dwat.
+Sa a chanje langaj sistèm nan backend OpenHomeKaraoke ki vin parèt sou ekran televizyon; nplis de sa, chak itilizatè konekte kapab tou chanje lang respektif yo UI nan bouton glòb la nan meni an tèt dwat.
 Download ranpli avèk siksè!
 Telechajman echwe!
 Chante te ajoute nan keu la!
 Echwe pou keu chante a!
 Enfòmasyon ak Anviwònman Sistèm
 Nòmalizasyon Volim
-Chante diferan souvan gen volim diferan. Pèmèt nòmalizasyon volim pral premye kouri <i>ffmpeg</i> pou kalkile volim mondyal yon chante epi otomatikman ajiste volim jwè pou chak chante son egalman fò.
+Chante diferan souvan gen volim diferan. Pèmèt nòmalizasyon volim pral premye kouri <i>ffmpeg</i> pou kalkile volim global yon chante epi otomatikman ajiste volim jwè pou chak chante son egalman fò.
 Chemen download bibliyotèk chante
 Kantite total chante
 Montre/Kache Soutit
@@ -207,3 +207,25 @@ Bon kalite
 Ajoute chante a nan keu chante apre telechajman fini
 Telechaje sous-titres (sèlman entegre) nan tout lang si disponib
 Telechaje bon jan kalite videyo ka pran anpil tan
+Sove Anviwònman Jwe
+Sove paramèt jwe pou chak chante, sa gen ladann: reta odyo, reta sou-titre, epi si yo montre sous-titres.
+Ajoute chante lè w pale tit chante a
+Tanpri pale tit chante a epi klike sou OK!
+Se sèlman sit entènèt HTTPS ki ka gen aksè a mikwofòn, èske ou vle redireksyon sou sit entènèt HTTPS?
+Tanpri bay pèmisyon pou jwenn aksè nan mikwofòn!
+Edit non chante:
+Sove
+Efase chante sa a
+Èske ou sèten ou vle efase chante sa a nan bibliyotèk la?
+Mande erè paramèt!
+Koupe chante a:
+Ajiste volim chante:
+Lè kòmanse:
+Lè fen:
+Volim orijinal (dB):
+Pa ka jwenn okenn chante ki matche "%s".
+Te ajoute "%s" nan keu.
+Tanpri chwazi chante pou ajoute:
+DEFAZE
+Fèmen
+Ajoute

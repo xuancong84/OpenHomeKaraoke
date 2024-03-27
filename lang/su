@@ -2,7 +2,7 @@ basa Sunda
 Sandi admin lepat!
 Kaluar tina mode admin!
 Ditambahkeun %s lagu acak
-Kahabisan lagu!
+Habisan lagu!
 Dibersihkeun antrian!
 Kasalahan mindahkeun item dina antrian: invalid-argument
 Barang hasil dipindahkeun kana antrian:
@@ -32,7 +32,7 @@ Dieureunkeun
 Ngamutahirkeun youtube-dl! Kudu nyandak hiji atawa dua menit ...
 Anjeun teu gaduh idin pikeun ngapdet youtube-dl
 Anjeun teu gaduh idin pikeun mareuman
-Leupaskeun PiKaraoke ayeuna!
+Ngaleungitkeun OpenHomeKaraoke ayeuna!
 Anjeun teu gaduh idin pikeun kaluar
 Pareuman sistem ayeuna!
 Anjeun teu gaduh idin pikeun mareuman
@@ -41,7 +41,7 @@ Anjeun teu gaduh idin pikeun Reboot
 Ngalegaan sistem file sareng sistem rebooting ayeuna!
 Teu tiasa dilegakeun fs dina alat pi non-raspberry!
 Anjeun teu gaduh idin pikeun ngatur ukuran filesystem
-jalur Youtube-dl teu kapanggih!
+Jalur Youtube-dl teu kapendak sareng pip parantos gagal dipasang!
 jalur VLC teu kapanggih!
 jalur omxplayer teu kapanggih!
 Nyieun jalur download:
@@ -49,7 +49,7 @@ Wifi/Jaringan teu nyambung. Pareum dina 10s ...
 Pikeun milih lagu, scan QR atanapi sambungkeun ka
 Pikeun tampilan TV, sambungkeun ka
 Pencét F pikeun togél layar pinuh
-Pencét ESC pikeun kaluar PiKaraoke
+Pencét ESC pikeun kaluar OpenHomeKaraoke
 Modeu setelan RaspiWifiConfig dideteksi!
 Sambungkeun alat/smartphone sejen ka Wifi AP: '%s'
 Teras arahkeun browserna ka: '%s://%s%s' teras turutan parentah.
@@ -59,8 +59,8 @@ Ayeuna maén:
 Modeu admin dipasihkeun!
 Ngaronjatkeun reureuh audio bakal masihan anjeun langkung waktos maca lirik sateuacan nyanyian kalimat salajengna.
 Ngurangan reureuh subjudul bakal masihan anjeun langkung waktos maca lirik sateuacan nyanyian kalimat salajengna.
-Semitone ogé katelah satengah léngkah. Interval pangleutikna dipaké dina musik Barat klasik, sarua jeung dua belas hiji oktaf atawa satengah nada.
-Splitter vokal basis DNN diaktipkeun. PiKaraoke nganggo PyTorch (ku Facebook) pikeun ngajalankeun jaringan saraf jero pikeun ngabagi sora instrumental sareng vokal dina unggal lagu anu nyababkeun sora stereo.
+Semitone ogé katelah satengah léngkah. Interval pangleutikna dipaké dina musik Barat klasik, sarua jeung dua belas tina hiji oktaf atawa satengah nada.
+Splitter vokal basis DNN diaktipkeun. OpenHomeKaraoke nganggo PyTorch (ku Facebook) pikeun ngajalankeun jaringan saraf jero pikeun ngabagi sora instrumental sareng vokal dina unggal lagu anu nyababkeun sora stereo.
 Kontrol pamuter
 Musik
 Kacaturkeun
@@ -89,7 +89,7 @@ Ngurangan Tunda Audio
 Setel Tunda Audio
 Ningkatkeun Tunda Audio
  semitones
-Mangga lebetkeun nami anjeun. Ieu bakal muncul di gigireun lagu anu anjeun antri ti alat ieu.
+Mangga lebetkeun nami anjeun. Ieu bakal muncul di gigireun lagu anu anjeun antrian tina alat ieu.
 Lagu ditambahkeun kana antrian:
 Lagu geus aya dina antrian:
 Susun dumasar Tanggal
@@ -105,7 +105,7 @@ Edit lagu
 Pindah kana antrian
 Pindah ka handap dina antrian
 Naha anjeun yakin rék mupus tina antrian
-Naha anjeun yakin hoyong mupus ENTIRE antrian? Ketik 'OK' pikeun neruskeun
+Naha anjeun yakin hoyong mupus ENTIRE antrian?
 Tambahkeun 3 lagu acak
 Pupus sadayana
 Antrian kosong
@@ -117,12 +117,12 @@ Lagu parantos aya dina antrian:
 Pilarian / Tambahkeun Anyar
 Pilarian
 Ngantri
-Kaasup patandingan non-karaoke
+Milarian patandingan Karaoke wungkul
 Maju
 Ketik lagu (judul/artis) pikeun milarian lagu-lagu anu sayogi teras klik 'Antrian' pikeun nambihanana kana antrian.
 Lamun lagu teu nembongan dina dropdown "Lagu sadia", klik 'Search' pikeun manggihan eta dina Youtube.
 Unduh langsung URL YouTube:
-Tambahkeun ka antrian
+Tambahkeun ka antrian sanggeus download
 Kaasup subjudul
 Ngundeur
 Milarian YouTube pikeun
@@ -133,7 +133,7 @@ Lagu sadia
 Naha anjeun badé ngarobih nami tampilan jalma anu nganggo alat ieu? Ieu bakal muncul gigireun lagu antrian. Ayeuna:
 pamaké ayeuna
 Setélan
-PiKaraoke
+OpenHomeKaraoke
 Anjeun yakin rék kaluar?
 Anjeun yakin rék mareuman?
 Anjeun yakin rék reboot?
@@ -147,12 +147,12 @@ Mémori
 Potret layar
 Pamisah Vokal
 Vérsi Youtube-dl (yt-dlp).
-Vérsi PiKaraoke
+Vérsi OpenHomeKaraoke
 Pilihan Control Advanced
 Mode pamisah vokal:
 Paké L-R/L+R
 Paké DNS
-Audio MTV standar gaduh dua saluran stereo (L sareng R) disandikeun ku cara sapertos: L-R nyaéta lagu instrumen, L+R nyaéta lagu vokal. Ku kituna, ku saukur ngurangan atawa nambahkeun dua saluran stereo, urang bisa meunangkeun lagu instrumental jeung vokal dina sora mono. PiKaraoke diwangun-di basis DNN (jaringan saraf jero) splitter vokal ngagunakeun algoritma AI pikeun ngabagi sora instrumental jeung vokal dina unggal lagu stereo sacara mandiri ngahasilkeun lagu instrumental jeung vokal stereo.
+Audio MTV standar gaduh dua saluran stereo (L sareng R) disandikeun ku cara sapertos: L-R nyaéta lagu instrumen, L+R nyaéta lagu vokal. Ku kituna, ku saukur ngurangan atawa nambahkeun dua saluran stereo, urang bisa meunangkeun lagu instrumental jeung vokal dina sora mono. Pamisah vokal basis DNN (jaringan saraf jero) OpenHomeKaraoke nganggo algoritma AI pikeun ngabagi sora instrumental sareng vokal dina unggal lagu stereo sacara mandiri ngahasilkeun lagu instrumental sareng vokal stereo.
 Eureun Splitter
 Balikan deui Splitter
 Splitter vokal (anu ngarojong duanana basis DNN jeung pangurangan stereo) ngajalankeun salaku prosés misah di latar tukang, generating instrumental / file audio vokal pikeun unggal lagu.
@@ -162,19 +162,19 @@ Balikan deui Streamer
 Ieu ngan mangaruhan maén KTV via web browser. Balikan deui layar-capture-and-streaming ningkatkeun sinkronisasi audio/video, éta ogé ngirangan latency antara server sareng browser.
 Refresh daptar lagu:
 Rescan diréktori lagu
-Anjeun ngan kedah ngalakukeun ieu upami anjeun nyalin file sacara manual ka diréktori undeuran nalika PiKaraoke dijalankeun.
+Anjeun ngan kedah ngalakukeun ieu upami anjeun nyalin file sacara manual kana diréktori undeuran nalika OpenHomeKaraoke dijalankeun.
 Pembaruan
 Upami undeuran atanapi pamilarian lirén damel, ngapdet youtube-dl sigana bakal ngalereskeunana. Versi anu dipasang ayeuna nyaéta:
 Ngamutahirkeun youtube-dl
-Tautan apdet ieu di luhur tiasa gagal upami anjeun henteu ngagaduhan idin file anu leres. Pariksa log PiKaraoke pikeun kasalahan.
+Tautan apdet ieu di luhur tiasa gagal upami anjeun henteu ngagaduhan idin file anu leres. Pariksa log OpenHomeKaraoke pikeun kasalahan.
 Pareuman
 Ulah ngan narik colokan! Salawasna mareuman server anjeun leres pikeun nyegah korupsi data.
-Leupaskeun PiKaraoke
+Kaluar OpenHomeKaraoke
 Reboot System
 Sistem Pareum
 Lain
 Kembangkeun sistem file Raspberry Pi
-Upami anjeun nembé dipasang gambar PiKaraoke pi anu tos diwangun sareng kartu SD anjeun langkung ageung tibatan 4GB, anjeun tiasa ngalegaan sistem file pikeun ngamangpaatkeun rohangan anu sésana. Anjeun ngan ukur kedah ngalakukeun ieu sakali. Ieu bakal reboot sistem.
+Upami anjeun nembé dipasang gambar OpenHomeKaraoke pi anu tos diwangun sareng kartu SD anjeun langkung ageung tibatan 4GB, anjeun panginten hoyong ngalegaan sistem file pikeun ngamangpaatkeun rohangan sésana. Anjeun ngan ukur kedah ngalakukeun ieu sakali. Ieu bakal reboot sistem.
 Pareuman mode admin
 Aktipkeun mode admin
 kaluar
@@ -185,7 +185,7 @@ Robah Basa
 Mangga pilih basa
 Basa Sistim
 Basa sistem ayeuna:
-Ieu ngarobah basa sistem backend PiKaraoke nu bakal dipintonkeun dina layar TV; Leuwih ti éta, unggal pamaké nyambungkeun ogé bisa ngarobah basa UI Wéb masing-masing dina tombol globe dina menu katuhu-luhureun.
+Ieu ngarobah basa sistem backend OpenHomeKaraoke nu bakal dipintonkeun dina layar TV; Leuwih ti éta, unggal pamaké nyambungkeun ogé bisa ngarobah basa UI Wéb masing-masing dina tombol globe dina menu katuhu-luhureun.
 Unduh parantos réngsé!
 Unduh gagal!
 Lagu ditambahkeun kana antrian!
@@ -193,7 +193,7 @@ Gagal ngantri lagu!
 Inpormasi Sistem & Setélan
 Normalisasi Volume
 Lagu anu béda sering gaduh volume anu béda. Aktipkeun normalisasi volume bakal mimiti ngajalankeun <i>ffmpeg</i> pikeun ngitung volume global hiji lagu sareng otomatis nyaluyukeun volume pamuter supados unggal lagu disada sami nyaring.
-Perpustakaan lagu jalur download
+Jalur download perpustakaan lagu
 Jumlah total lagu
 Témbongkeun / Sumputkeun Subjudul
 Robah Speed
@@ -205,5 +205,27 @@ Reset konci
 Reset Speed
 Kualitas luhur
 Tambahkeun lagu kana antrian nyanyi sanggeus diundeur geus réngsé
-Unduh subjudul (ngan dipasang) dina sadaya basa upami sayogi
+Unduh subjudul (ngan diselapkeun) dina sadaya basa upami sayogi
 Ngundeur pidéo kualitas luhur tiasa lami pisan
+Simpen Play Setélan
+Simpen setelan muter pikeun tiap lagu, ieu ngawengku: reureuh audio, reureuh subjudul, jeung naha rék némbongkeun subjudul.
+Tambahkeun lagu ku nyarioskeun judul lagu
+Mangga sebutkeun judul lagu teras klik OK!
+Ngan situs web HTTPS tiasa gaduh aksés kana mikropon, naha anjeun badé alihan ka halaman wéb HTTPS?
+Punten pasihan idin pikeun ngakses mikropon!
+Edit Ngaran Lagu:
+Simpen
+Pupus lagu ieu
+Naha anjeun yakin hoyong mupus lagu ieu ti perpustakaan?
+Ménta kasalahan parameter!
+Potong lagu:
+Saluyukeun volume lagu:
+Mimitian waktos:
+waktos tungtung:
+Volume aslina (dB):
+Teu tiasa mendakan lagu naon waé anu cocog sareng "%s".
+Ditambahkeun "%s" kana antrian.
+Mangga pilih lagu (s) pikeun nambahkeun:
+UNDO
+Tutup
+Tambihan

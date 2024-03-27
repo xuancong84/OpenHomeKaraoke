@@ -5,7 +5,7 @@ Aggiuntu %s tracce casuali
 Finu di canzoni!
 Sguassatu a fila!
 Errore durante u muvimentu di l'elementu in a fila: argumentu invalidu
-Elementu spustatu bè in a fila:
+Elementu spustatu cù successu in a fila:
 Errore durante u muvimentu di l'elementu in a fila:
 Spostatu in a fila:
 Errore di scendere in fila:
@@ -32,7 +32,7 @@ Fermatu
 Aghjurnà youtube-dl! Duverebbe piglià un minutu o dui ...
 Ùn avete micca permessu di aghjurnà youtube-dl
 Ùn avete micca permessu di chjude
-Abbandunà PiKaraoke avà!
+Abbandunà OpenHomeKaraoke avà!
 Ùn avete micca permessu di abbandunà
 Chiudi u sistema avà!
 Ùn avete micca permessu di chjude
@@ -41,7 +41,7 @@ Riavvia u sistema avà!
 Espansione di u sistema di filesystem è u sistema di reboot avà!
 Ùn pò micca espansione fs nantu à i dispositi micca raspberry pi!
 Ùn avete micca permessu di ridimensionà u filesystem
-Percorsu Youtube-dl micca trovu!
+U percorsu Youtube-dl ùn hè micca truvatu è pip hà fiascatu à stallà!
 Percorsu VLC micca trovu!
 U percorsu omxplayer ùn hè micca truvatu!
 Crià una strada di scaricamentu:
@@ -49,18 +49,18 @@ Wifi / Rete micca cunnessu. Chiude in 10s...
 Per selezziunà e canzoni, scansione QR o cunnetta
 Per a visualizazione di TV, cunnette à
 Pulsà F per cambià a pantalla piena
-Press ESC per abbandunà PiKaraoke
-U modu di cunfigurazione RaspiWifiConfig rilevatu!
+Press ESC per abbandunà OpenHomeKaraoke
+U modu di installazione di RaspiWifiConfig rilevatu!
 Cunnette un altru dispositivu/smartphone à l'AP Wifi: '%s'
-Dopu puntate u so navigatore à: '%s://%s%s' è seguite l'istruzzioni.
+Dopu puntate u so navigatore à: '%s://%s%s' è seguite e struzzioni.
 In seguitu:
 Aggiuntu da:
 Avà ghjucatu:
 Modu amministratore cuncessu!
 L'aumentu di u ritardu audio vi darà più tempu per leghje e parole prima di cantà a prossima frase.
 A diminuzione di u ritardu di i sottotitoli vi darà più tempu per leghje e parole prima di cantà a prossima frase.
-Un semitone hè ancu cunnisciutu com'è a mità di passu. Hè u più chjucu intervallu utilizatu in a musica classica occidentale, uguali à un dodicesimu d'ottava o a mità di tonu.
-U splitter vocale basatu in DNN hè attivatu. PiKaraoke usa PyTorch (da Facebook) per gestisce una rete neurale profonda per sparghje u sonu strumentale è vocale in ogni traccia chì dà origine à un sonu stereo.
+Un semitone hè ancu cunnisciutu cum'è mezzu passu. Hè u più chjucu intervallu utilizatu in a musica classica occidentale, uguali à un dodicesimu d'ottava o a mità di tonu.
+U splitter vocale basatu in DNN hè attivatu. OpenHomeKaraoke usa PyTorch (da Facebook) per eseguisce una rete neurale profonda per sparghje u sonu strumentale è vocale in ogni traccia chì dà origine à un sonu stereo.
 Cuntrolla di u ghjucatore
 Musica
 mistu
@@ -105,7 +105,7 @@ Edita a canzone
 Sposta in fila
 Scendete in fila
 Sò sicuru chì vulete sguassà da a fila
-Siate sicuru chì vulete sguassà TUTTA a fila? Type 'OK' per cuntinuà
+Siate sicuru chì vulete sguassà TUTTA a fila?
 Aghjunghjite 3 canzoni casuali
 Pulisce tuttu
 A fila hè viota
@@ -117,12 +117,12 @@ A canzone hè digià in fila:
 Ricerca / Add New
 Ricerca
 Coda
-Includite partite non-karaoke
+Cerca solu i partiti di Karaoke
 Avanzatu
 Scrivite una canzone (titulu / artista) per circà i canti dispunibuli è cliccate "Queue" per aghjunghje à a fila.
-Se a canzone ùn hè micca apparsa in u menù dropdown "Canzoni dispunibili", cliccate "Ricerca" per truvà in Youtube.
+Se a canzone ùn hè micca apparsa in u menù drop-down "Canzoni dispunibili", cliccate "Ricerca" per truvà in Youtube.
 Url di scaricamentu direttu di YouTube:
-Aghjunghjite à a fila
+Aghjunghjite à a fila dopu a scaricamentu
 Includite sottutituli
 Scaricate
 In cerca di YouTube
@@ -133,7 +133,7 @@ Canzoni dispunibuli
 Vulete cambià u nome di visualizazione di a persona chì usa stu dispusitivu? Questu apparirà accantu à e canzoni in fila. attuale:
 Utente attuale
 Settings
-PiKaraoke
+OpenHomeKaraoke
 Sò sicuru chì vulete lascià?
 Sò sicuru chì vulete chjude ?
 Sò sicuru chì vulete riavvià ?
@@ -147,12 +147,12 @@ Memoria
 Screen Capture
 Splitter vocale
 Versione Youtube-dl (yt-dlp).
-Versione PiKaraoke
+Versione OpenHomeKaraoke
 Opzioni di cuntrollu avanzatu
 Modu di splitter vocale:
 Utilizà L-R/L+R
 Aduprate DNN
-L'audio MTV standard hà i dui canali stereo (L è R) codificati in modu chì: L-R hè a traccia di l'instrumentu, L + R hè a traccia vocale. Cusì, solu sottumettendu o aghjunghjendu i dui canali stereo, pudemu uttene a pista instrumentale è vocale in u sonu mono. U splitter vocale integratu di PiKaraoke basatu in DNN (rete neurale profonda) usa l'algoritmu AI per sparghje u sonu strumentale è vocale in ogni traccia stereo in modu indipindenti, risultatu in tracce strumentali è vocali stereo.
+L'audio MTV standard hà i dui canali stereo (L è R) codificati in modu chì: L-R hè a traccia di l'instrumentu, L + R hè a traccia vocale. Cusì, solu sottumettendu o aghjunghjendu i dui canali stereo, pudemu uttene a pista instrumentale è vocale in u sonu mono. U splitter vocale integratu basatu in DNN (rete neurale profonda) di OpenHomeKaraoke usa l'algoritmu AI per sparghje u sonu strumentale è vocale in ogni traccia stereo in modu indipindenti, risultatu in tracce strumentali è vocali stereo.
 Stop Splitter
 Riavvia Splitter
 U splitter vocale (chì supporta a sottrazione basata in DNN è stereo) funziona cum'è un prucessu separatu in u sfondate, generendu un schedariu audio instrumentale / vocale per ogni canzone.
@@ -162,19 +162,19 @@ Riavvia Streamer
 Questu solu afecta à ghjucà KTV via navigatore web. Riavvia a screen-capture-and-streaming mellora a sincronizazione audio / video, diminuisce ancu a latenza trà u servitore è u navigatore.
 Refresh a lista di canzoni:
 Rescannu u repertoriu di canzone
-Duvete bisognu di fà questu solu s'ellu avete copiatu manualmente i schedari in u cartulare di scaricamentu mentre PiKaraoke era in esecuzione.
+Duvete bisognu di fà questu solu s'ellu avete copiatu manualmente i schedari à u cartulare di scaricamentu mentre OpenHomeKaraoke era in esecuzione.
 Aghjurnamenti
 Se i scaricamenti o e ricerche anu cessatu di travaglià, l'aghjurnamentu di youtube-dl probabilmente risolverà. A versione installata attuale hè:
 Aghjurnate youtube-dl
-Stu ligame di l'aghjurnamentu sopra pò fallu s'ellu ùn avete micca permessi adatti à u schedariu. Verificate u log PiKaraoke per errori.
+Stu ligame di l'aghjurnamentu sopra pò fallu s'ellu ùn avete micca permessi adatti à u schedariu. Verificate u log OpenHomeKaraoke per errori.
 Chjodi
 Ùn tirate micca solu u plug! Sempre chjude u vostru servitore bè per evità a corruzzione di dati.
-Lasciate PiKaraoke
+Quit OpenHomeKaraoke
 Reboot System
 Sistema di arrestu
 Altru
 Espandi u sistema di file Raspberry Pi
-Se avete appena installatu l'imaghjini PiKaraoke pi pre-custruita è a vostra carta SD hè più grande di 4GB, pudete vulete espansione u sistema di filesystem per utilizà u spaziu restante. Solu bisognu di fà questu una volta. Questu riavviarà u sistema.
+Se avete appena installatu l'imagine OpenHomeKaraoke pi pre-custruita è a vostra carta SD hè più grande di 4GB, pudete vulete espansione u filesystem per utilizà u spaziu restante. Solu bisognu di fà questu una volta. Questu riavviarà u sistema.
 Disattivà u modu di amministratore
 Attivà u modu amministratore
 scunnettà si
@@ -185,11 +185,11 @@ Cambia lingua
 Per piacè sceglite a lingua
 Lingua di sistema
 Lingua di u sistema attuale:
-Questu cambia a lingua di u sistema di backend PiKaraoke chì si vede nantu à u screnu TV; in più, ogni utilizatore di cunnessione pò ancu cambià a so lingua rispettiva Web UI in u buttone globu in u menù di u dirittu-top.
+Questu cambia a lingua di u sistema di backend OpenHomeKaraoke chì si vede nantu à u screnu TV; in più, ogni utilizatore di cunnessione pò ancu cambià a so lingua rispettiva Web UI in u buttone globu in u menù di u dirittu-top.
 Scaricamentu cumpletu cù successu!
 Scaricamentu fiascatu!
 Canzona aghjunta à a fila !
-Impossibile mette in fila a canzone!
+Impossible di mette in fila a canzone!
 Info di sistema è paràmetri
 Normalizazione di u voluminu
 Diversi canti spessu anu un volumu diversu. L'attivazione di a normalizazione di u voluminu prima eseguirà <i>ffmpeg</i> per calculà u voluminu globale di una canzone è aghjustà automaticamente u voluminu di u lettore in modu chì ogni canzone sona ugualmente forte.
@@ -198,7 +198,7 @@ U numeru tutale di canzoni
 Mostra / Oculte u Subtitle
 Cambia a velocità
 Pudete cantà a canzone più veloce o più lenta cambiendu a velocità di riproduzione à 0.8x à 1.2x usendu a trackbar di velocità; per altre velocità di riproduzione, cliccate nant'à u valore di velocità per cambià.
-Cliccate per resettà a velocità di riproduzione à 1x
+Cliccate per resettate a velocità di riproduzione à 1x
 Cliccate per stabilisce a velocità di riproduzione
 Cliccate per resettà a chjave / pitch
 Reset Key
@@ -207,3 +207,25 @@ High Quality
 Aghjunghjite a canzone à a fila di cantu dopu chì a scaricazione hè finita
 Scaricate i sottotitoli (solu incrustati) in tutte e lingue se dispunibule
 Scaricamentu di video di alta qualità pò piglià assai tempu
+Salvà i paràmetri di Play
+Salvà i paràmetri di riproduzione per ogni canzone, questu include: ritardu di l'audio, ritardu di i sottotitoli, è s'ellu deve vede i sottotitoli.
+Aghjunghjite a canzone parlendu u titulu di a canzone
+Per piacè dì u titulu di a canzone è cliccate OK!
+Solu i siti HTTPS ponu avè accessu à u micrufonu, vulete reindirizzà à u situ HTTPS?
+Per piacè cuncede u permessu per accede à u microfonu!
+Edite u nome di a canzone:
+Salvà
+Sguassà sta canzone
+Sò sicuru chì vulete sguassà sta canzone da a biblioteca ?
+Errore di u paràmetru di dumanda!
+Tagliate a canzone:
+Aghjustate u voluminu di a canzone:
+Tempu di principiu:
+Tempu di fine:
+Volume originale (dB):
+Ùn si pò truvà nisuna canzone chì currisponde à "%s".
+Aggiuntu "%s" in a fila.
+Per piacè sceglite a canzone (s) da aghjunghje:
+ANNULE
+Chiudi
+Add

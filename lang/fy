@@ -32,7 +32,7 @@ Ophâlden
 YouTube-dl bywurkje! It moat in minút as twa duorje ...
 Jo hawwe gjin tastimming om youtube-dl te aktualisearjen
 Jo hawwe gjin tastimming om ôf te sluten
-Stopje mei PiKaraoke no!
+Stopje no mei OpenHomeKaraoke!
 Jo hawwe gjin tastimming om te stopjen
 Systeem no ôfslute!
 Jo hawwe gjin tastimming om ôf te sluten
@@ -41,7 +41,7 @@ Jo hawwe gjin tastimming om te Reboot
 Bestânssysteem útwreidzje en systeem no opnij opstarte!
 Kin fs net útwreidzje op net-raspberry pi-apparaten!
 Jo hawwe gjin tastimming om de grutte fan it triemsysteem te feroarjen
-Youtube-dl-paad net fûn!
+Youtube-dl-paad net fûn en pip is net slagge om it te ynstallearjen!
 VLC paad net fûn!
 omxplayer paad net fûn!
 Ynlaadpaad oanmeitsje:
@@ -49,7 +49,7 @@ Wifi / Netwurk net ferbûn. Yn 10 sekonden ôfslute ...
 Foar it selektearjen fan ferskes, scan QR of ferbine mei
 Foar TV werjefte, ferbine mei
 Druk op F om folslein skerm te wikseljen
-Druk op ESC om PiKaraoke te stopjen
+Druk op ESC om OpenHomeKaraoke te stopjen
 RaspiWifiConfig opsetmodus ûntdutsen!
 Ferbine in oar apparaat/smartphone mei it Wifi AP: '%s'
 Rjochtsje dan syn browser nei: '%s://%s%s' en folgje de ynstruksjes.
@@ -57,10 +57,10 @@ Folgjende:
 Taheakke troch:
 Spilet no:
 Behearmodus ferliend!
-Ferheging fan audiofertraging sil jo mear tiid jaan om teksten te lêzen foardat jo de folgjende sin sjonge.
+Tanimmende audiofertraging sil jo mear tiid jaan om teksten te lêzen foardat jo de folgjende sin sjonge.
 It ferminderjen fan ûndertitelfertraging sil jo mear tiid jaan om teksten te lêzen foardat jo de folgjende sin sjonge.
 In heale toan wurdt ek wol in heale stap neamd. It is it lytste ynterval dat brûkt wurdt yn klassike westerske muzyk, gelyk oan in tolfde fan in oktaaf ​​of heale toan.
-DNN-basearre fokale splitter is ynskeakele. PiKaraoke brûkt PyTorch (troch Facebook) om in djip neuraal netwurk út te fieren om ynstrumintaal en fokaal lûd yn elk spoar te splitsen dat oanlieding is ta stereolûd.
+DNN-basearre fokale splitter is ynskeakele. OpenHomeKaraoke brûkt PyTorch (troch Facebook) om in djip neuraal netwurk út te fieren om ynstrumintaal en fokaal lûd yn elk spoar te splitsen dat oanlieding is ta stereolûd.
 Spiler kontrôle
 Muzyk
 Mixed
@@ -105,7 +105,7 @@ Lied bewurkje
 Gean omheech yn wachtrige
 Ferpleats nei ûnderen yn wachtrige
 Binne jo wis dat jo wolle wiskje út de wachtrige
-Binne jo wis dat jo de HELE wachtrige wiskje wolle? Typ 'OK' om troch te gean
+Binne jo wis dat jo de HELE wachtrige wiskje wolle?
 Foegje 3 willekeurige ferskes ta
 Alles wiskje
 De wachtrige is leech
@@ -117,15 +117,15 @@ It liet stiet al yn de wachtrige:
 Sykje / Nij taheakje
 Sykje
 Rigel
-Net-karaoke wedstriden opnimme
+Sykje allinich karaoke-oerienkomsten
 Avansearre
 Typ in ferske (titel/artyst) om de beskikbere ferskes te sykjen en klik op 'Wachtrige' om it ta te foegjen oan de wachtrige.
 As it ferske net ferskynt yn it útklapmenu "Beskikbere ferskes", klik dan op 'Sykje' om it op Youtube te finen.
 Direkte download YouTube url:
-Tafoegje oan wachtrige
+Tafoegje oan wachtrige nei download
 Ynklusyf ûndertitels
 Download
-Sykje op YouTube foar
+Op syk nei YouTube
 sykresultaten foar
 Klik dropdown om mear resultaten te sjen
 Link:
@@ -133,7 +133,7 @@ Beskikbere Songs
 Wolle jo de werjeftenamme feroarje fan de persoan dy't dit apparaat brûkt? Dit sil ferskine neist de wachtrige ferskes. Aktueel:
 Aktuele brûker
 Ynstellings
-PiKaraoke
+OpenHomeKaraoke
 Bisto wis dasto stoppe wolst?
 Binne jo wis dat jo ôfslute wolle?
 Binne jo wis dat jo opnij opstarte wolle?
@@ -147,12 +147,12 @@ Oantinken
 Skermopname
 Vocal Splitter
 Youtube-dl (yt-dlp) ferzje
-PiKaraoke ferzje
+OpenHomeKaraoke ferzje
 Avansearre kontrôleopsjes
 Vocal splitter modus:
 Brûk L-R/L+R
 Brûk DNN
-Standert MTV-audio hat de twa stereokanalen (L en R) op sa'n manier kodearre dat: L-R it ynstrumintspoar is, L+R it fokale spoar is. Sa kinne wy ​​​​troch gewoan de twa stereokanalen te subtrahearjen of ta te foegjen, it ynstrumintale en fokale spoar yn monolûd krije. PiKaraoke's ynboude DNN-basearre (djippe neurale netwurk) fokale splitter brûkt AI-algoritme om ynstrumintaal en fokaal lûd yn elk stereospoar ûnôfhinklik te splitsen, wat resulteart yn stereo-ynstrumintale en fokale spoaren.
+Standert MTV-audio hat de twa stereokanalen (L en R) op sa'n manier kodearre dat: L-R it ynstrumintspoar is, L+R it fokale spoar is. Sa kinne wy ​​​​troch gewoan de twa stereokanalen te subtrahearjen of ta te foegjen, it ynstrumintale en fokale spoar yn monolûd krije. OpenHomeKaraoke's ynboude DNN-basearre (djippe neurale netwurk) fokale splitter brûkt AI-algoritme om ynstrumintaal en fokaal lûd yn elk stereospoar ûnôfhinklik te splitsen, wat resulteart yn stereo-ynstrumintale en fokale spoaren.
 Stopje Splitter
 Splitter opnij starte
 De fokale splitter (dy't sawol DNN-basearre as stereo-subtraksje stipet) rint as in apart proses op 'e eftergrûn, en generearret ynstrumintale / fokaal audiobestân foar elk ferske.
@@ -162,19 +162,19 @@ Streamer opnij starte
 Dit hat allinich ynfloed op it spieljen fan KTV fia webbrowser. It opnij starte fan 'e skerm-capture-en-streaming ferbetteret audio / fideo syngronisaasje, it ferminderet ek de latency tusken de server en browser.
 Ferfarskje de ferskelist:
 Rescan ferske triemtafel
-Jo moatte dit allinich dwaan as jo bestannen manuell kopieare nei de downloadmap wylst PiKaraoke draaide.
+Jo moatte dit allinich dwaan as jo bestannen manuell kopieare nei de downloadmap wylst OpenHomeKaraoke draaide.
 Updates
-As downloads of sykopdrachten ophâlde te wurkjen, sil it bywurkjen fan youtube-dl it wierskynlik reparearje. De hjoeddeistige ynstalleare ferzje is:
+As downloads of sykopdrachten ophâlde te wurkjen, sil it bywurkjen fan youtube-dl it wierskynlik reparearje. De hjoeddeistige ynstallearre ferzje is:
 Update youtube-dl
-Dizze fernijingskeppeling hjirboppe kin mislearje as jo gjin goede triemrjochten hawwe. Kontrolearje it PiKaraoke-logboek foar flaters.
+Dizze fernijingskeppeling hjirboppe kin mislearje as jo gjin goede triemrjochten hawwe. Kontrolearje it OpenHomeKaraoke-logboek foar flaters.
 Ofslúte
 Net gewoan de stekker útlûke! Slút jo tsjinner altyd goed ôf om datakorrupsje te foarkommen.
-PiKaraoke ôfslute
+Stopje OpenHomeKaraoke
 Werstart it systeem
 Shutdown System
 Oar
 Raspberry Pi triemsysteem útwreidzje
-As jo ​​​​krekt de foarboude PiKaraoke pi-ôfbylding hawwe ynstalleare en jo SD-kaart is grutter dan 4GB, kinne jo it bestânsysteem útwreidzje om de oerbleaune romte te brûken. Jo moatte dit mar ien kear dwaan. Dit sil it systeem opnij starte.
+As jo ​​​​krekt de foarboude OpenHomeKaraoke pi-ôfbylding hawwe ynstalleare en jo SD-kaart is grutter dan 4GB, kinne jo it bestânsysteem útwreidzje om de oerbleaune romte te brûken. Jo moatte dit mar ien kear dwaan. Dit sil it systeem opnij starte.
 Utskeakelje admin modus
 Behearmodus ynskeakelje
 útlogge
@@ -185,15 +185,15 @@ Feroarje Taal
 Kies asjebleaft taal
 Systeemtaal
 Aktuele systeemtaal:
-Dit feroaret de taal fan it PiKaraoke backend systeem dat wurdt werjûn op TV skerm; boppedat, eltse ferbinende brûker kin ek feroarje harren respektive Web UI taal yn de globe knop yn de rjochter-top menu.
+Dit feroaret de taal fan it OpenHomeKaraoke backend systeem dat wurdt werjûn op TV skerm; boppedat, eltse ferbinende brûker kin ek feroarje harren respektive Web UI taal yn de globe knop yn de rjochter-top menu.
 Download mei súkses foltôge!
 Download mislearre!
 Lied tafoege oan de wachtrige!
-It ferske yn 'e wachtrige is net slagge!
+It ferske is net slagge!
 Systeemynfo en ynstellings
 Volume normalization
-Ferskillende ferskes hawwe faak ferskillende folume. It ynskeakeljen fan folumenormalisaasje sil earst <i>ffmpeg</i> útfiere om it globale folume fan in ferske te berekkenjen en it folume fan it spiler automatysk oan te passen sadat elk ferske like heech klinkt.
-Paad fan de liedbibliotheek download
+Ferskillende lieten hawwe faak ferskillende folume. It ynskeakeljen fan folumenormalisaasje sil earst <i>ffmpeg</i> útfiere om it globale folume fan in ferske te berekkenjen en it folume fan it spiler automatysk oan te passen sadat elk ferske like heech klinkt.
+Download pad fan de liedbibliotheek
 Totaal oantal ferskes
 Undertitel sjen litte / ferbergje
 Feroarje Speed
@@ -207,3 +207,25 @@ Hege kwaliteit
 Foegje it ferske ta oan 'e sjongwachtrige nei it downloaden is foltôge
 Download ûndertitels (allinich ynbêde) yn alle talen as beskikber
 It downloaden fan fideo's fan hege kwaliteit kin heul lang duorje
+Bewarje Play ynstellings
+Bewarje spielynstellingen foar elk ferske, dit omfettet: audiofertraging, ûndertitelfertraging, en of ûndertiteling sjen moat.
+Foegje ferske ta troch de fersketitel út te sprekken
+Sprek asjebleaft de titel fan it ferske en klik op OK!
+Allinich HTTPS-websides kinne tagong hawwe ta mikrofoan, wolle jo trochferwize nei HTTPS-webside?
+Jou asjebleaft de tastimming om tagong te krijen ta mikrofoan!
+Liednamme bewurkje:
+Rêde
+Dit ferske wiskje
+Binne jo wis dat jo dit ferske út 'e bibleteek fuortsmite wolle?
+Fersyk parameter flater!
+Trim it ferske:
+Song volume oanpasse:
+Begjintiid:
+Eintiid:
+Oarspronklik volume (dB):
+Kin gjin ferske fine dat oerienkomt mei "%s".
+"%s" tafoege oan wachtrige.
+Kies asjebleaft it ferske(n) om ta te foegjen:
+UNDO
+Slute
+Add

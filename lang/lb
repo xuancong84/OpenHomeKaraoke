@@ -32,7 +32,7 @@ Gestoppt
 Update youtube-dl! Sollt eng Minutt oder zwou daueren ...
 Dir hutt keng Erlaabnis fir youtube-dl ze aktualiséieren
 Dir hutt keng Erlaabnis fir auszeschalten
-PiKaraoke elo ophalen!
+Elo ophalen OpenHomeKaraoke!
 Dir hutt keng Erlaabnis fir opzehalen
 Schalt de System elo aus!
 Dir hutt keng Erlaabnis fir auszeschalten
@@ -41,7 +41,7 @@ Dir hutt keng Erlaabnis fir nei ze starten
 Datesystem ausbauen an de System elo nei starten!
 Kann net fs op Net-Raspberry Pi Apparater ausbauen!
 Dir hutt keng Erlaabnis fir d'Gréisst vum Dateiesystem z'änneren
-Youtube-dl Wee net fonnt!
+Youtube-dl Wee net fonnt a Pip huet et net installéiert!
 VLC Wee net fonnt!
 omxplayer Wee net fonnt!
 Erstellt Download Wee:
@@ -49,18 +49,18 @@ Wifi / Netz net ugeschloss. Schalten an 10s ...
 Fir Lidder ze wielen, scannt QR oder verbënnt mat
 Fir Fernsehsendung, verbannen mat
 Dréckt F fir de Vollbild ze wiesselen
-Dréckt ESC fir de PiKaraoke opzehalen
+Press ESC fir OpenHomeKaraoke opzehalen
 RaspiWifiConfig Setup Modus entdeckt!
 Connect en aneren Apparat/Smartphone mam Wifi AP: '%s'
-Da weist säi Browser op: '%s://%s%s' a befollegt d'Instruktioune.
+Gitt dann säi Browser op: '%s://%s%s' a befollegt d'Instruktioune.
 Nächst:
 Derbäigesat vun:
 Elo spillt:
 Admin Modus accordéiert!
 D'Erhéijung vun der Audioverzögerung gëtt Iech méi Zäit fir Texter ze liesen ier Dir den nächste Saz séngt.
 Ofsenkung vum Ënnertitelverzögerung gëtt Iech méi Zäit fir Texter ze liesen ier Dir den nächste Saz séngt.
-En Hallefton ass och als Hallefschrëtt bekannt. Et ass dee klengste Intervall, deen an der klassescher westlecher Musek benotzt gëtt, gläich wéi engem zwieleften Oktav oder en halleft Toun.
-DNN-baséiert Vokal Splitter ass aktivéiert. PiKaraoke benotzt PyTorch (vu Facebook) fir en déif neuralt Netzwierk auszeféieren fir instrumental a vokal Toun an all Streck opzedeelen, wat zu Stereo Sound entsteet.
+En Hallefton ass och als Hallefschrëtt bekannt. Et ass dee klengste Intervall, deen an der klassescher westlecher Musek benotzt gëtt, gläich wéi en zwieleften Oktav oder en halleft Toun.
+DNN-baséiert Vokal Splitter ass aktivéiert. OpenHomeKaraoke benotzt PyTorch (vu Facebook) fir en déif neuralt Netzwierk auszeféieren fir instrumental a vokal Toun an all Streck opzedeelen, wat zu Stereo Sound entsteet.
 Spiller Kontroll
 Musek
 Gemëscht
@@ -89,7 +89,7 @@ Audio Verzögerung reduzéieren
 Set Audio Delay
 Erhéijung Audio Verzögerung
  semitones
-Gitt weg Ären Numm. Dëst erschéngt nieft de Lidder déi Dir vun dësem Apparat an der Schlaang steet.
+Gitt weg Ären Numm. Dëst erschéngt nieft de Lidder déi Dir vun dësem Apparat setzt.
 Lidd bäigefüügt an d'Schlaang:
 Lidd schonn an der Schlaang:
 Sortéiert no Datum
@@ -105,7 +105,7 @@ Lidd änneren
 Plënneren an der Schlaang
 Plënneren erof an der Schlaang
 Sidd Dir sécher datt Dir aus der Schlaang läschen wëllt
-Sidd Dir sécher, datt Dir d'Ganz Schlaang läschen wëllt? Typ 'OK' fir weiderzemaachen
+Sidd Dir sécher, datt Dir d'Ganz Schlaang läschen wëllt?
 Füügt 3 zoufälleg Lidder
 Alles läschen
 D'Schlaang ass eidel
@@ -117,12 +117,12 @@ Lidd steet schon an der Schlaang:
 Sichen / Add New
 Sichen
 Schlaang
-Ëmfaasst Net-Karaokeszelt Mätscher
+Sich nëmmen Karaokeszelt Mätscher
 Fortgeschratt
-Gidd e Lidd (Titel/Kënschtler) fir déi verfügbar Lidder ze sichen a klickt op 'Queue' fir et an d'Schlaang ze addéieren.
-Wann d'Lidd net am Dropdown "Available Songs" erschéngt, klickt op 'Search' fir et op Youtube ze fannen.
+Gidd e Lidd (Titel/Kënschtler) fir déi verfügbare Lidder ze sichen a klickt op 'Queue' fir et an d'Schlaang ze addéieren.
+Wann d'Lidd net am Dropdown-Menü "Available Songs" erschéngt, klickt op 'Search' fir et op Youtube ze fannen.
 Direkt eroflueden YouTube URL:
-Füügt an d'Schlaang
+Füügt an d'Schlaang nom Download
 Ënnertitelen enthalen
 Download
 Sichen YouTube fir
@@ -133,7 +133,7 @@ Verfügbar Lidder
 Wëllt Dir den Affichage Numm vun der Persoun änneren, déi dësen Apparat benotzt? Dëst erschéngt nieft de Lidder an der Schlaang. Aktuell:
 Aktuelle Benotzer
 Astellungen
-PiKaraoke
+OpenHomeKaraoke
 Sidd Dir sécher datt Dir wëllt ophalen?
 Sidd Dir sécher datt Dir wëllt zoumaachen?
 Sidd Dir sécher datt Dir wëllt nei starten?
@@ -147,12 +147,12 @@ Erënnerung
 Écran Capture
 Vocal Splitter
 Youtube-dl (yt-dlp) Versioun
-PiKaraoke Versioun
+OpenHomeKaraoke Versioun
 Fortgeschratt Kontroll Optiounen
 Vocal Splitter Modus:
 Benotzt L-R/L+R
 Benotzt DNN
-Standard MTV Audio huet déi zwee Stereo Kanäl (L a R) sou kodéiert datt: L-R d'Instrumentstreck ass, L+R d'Gesangstreck ass. Also, andeems mir déi zwee Stereo Kanäl einfach subtrahéieren oder derbäisetzen, kënne mir déi instrumental a Vokal Streck am Mono Sound kréien. PiKaraoke's agebauten DNN-baséierten (deep neuralen Netzwierk) Vokal Splitter benotzt AI Algorithmus fir den instrumentalen a Vokalen Sound an all Stereo Track onofhängeg ze spalten, wat zu Stereo instrumental a Vokal Tracks resultéiert.
+Standard MTV Audio huet déi zwee Stereo Kanäl (L a R) sou kodéiert datt: L-R d'Instrumentstreck ass, L+R d'Gesangstreck ass. Also, andeems mir déi zwee Stereo Kanäl einfach subtrahéieren oder derbäisetzen, kënne mir déi instrumental a Vokal Streck am Mono Sound kréien. OpenHomeKaraoke's agebauten DNN-baséierten (deep neuralen Netzwierk) Vokal Splitter benotzt AI Algorithmus fir instrumental a Vokal Sound an all Stereo Track onofhängeg ze spalten, wat zu Stereo instrumental a Vokal Tracks resultéiert.
 Stop Splitter
 Restart Splitter
 De Gesangsplitter (deen souwuel DNN-baséiert wéi och Stereo-Subtraktioun ënnerstëtzt) leeft als separat Prozess am Hannergrond, generéiert instrumental / Vokal Audiodatei fir all Song.
@@ -162,19 +162,19 @@ Restart Streamer
 Dëst beaflosst nëmmen KTV iwwer Webbrowser ze spillen. Neistarten vum Bildschierm-Fang-a-Streaming verbessert d'Audio / Video Synchroniséierung, et reduzéiert och d'Latenz tëscht dem Server an dem Browser.
 D'Liddlëscht erfrëschen:
 Rescan Song Verzeechnes
-Dir sollt dëst nëmmen maachen wann Dir Dateien manuell an den Downloadverzeichnis kopéiert hutt wärend PiKaraoke leeft.
+Dir sollt dat nëmmen maachen wann Dir Dateien manuell an den Downloadverzeichnis kopéiert hutt wärend OpenHomeKaraoke leeft.
 Aktualiséierungen
 Wann d'Downloads oder d'Sichunge gestoppt hunn ze schaffen, wäert d'Aktualiséierung vun YouTube-dl et wahrscheinlech fixéieren. Déi aktuell installéiert Versioun ass:
 Update youtube-dl
-Dësen Update Link uewendriwwer ka feelen wann Dir net déi richteg Dateirechter hutt. Kontrolléiert de PiKaraoke Log fir Feeler.
+Dësen Updatelink uewendriwwer ka falen wann Dir net déi richteg Dateirechter hutt. Kuckt de OpenHomeKaraoke-Logbuch fir Feeler.
 Ausmaachen
 Net nëmmen de Stecker zéien! Schalt Äre Server ëmmer richteg aus fir Datenkorruptioun ze vermeiden.
-PiKaraoke ophalen
+Opzemaachen OpenHomeKaraoke
 Restart System
 Shutdown System
 Aner
 Raspberry Pi Dateisystem erweideren
-Wann Dir just de pre-built PiKaraoke pi Bild installéiert hutt an Är SD Kaart méi grouss ass wéi 4GB, wëllt Dir vläicht de Dateiesystem ausbauen fir de verbleiwen Raum ze benotzen. Dir musst dat nëmmen eemol maachen. Dëst wäert de System nei starten.
+Wann Dir just de pre-built OpenHomeKaraoke pi Bild installéiert hutt an Är SD Kaart méi grouss ass wéi 4GB, wëllt Dir vläicht de Dateiesystem ausbauen fir de verbleiwen Raum ze benotzen. Dir musst dat nëmmen eemol maachen. Dëst wäert de System nei starten.
 Admin Modus auszeschalten
 Admin Modus aktivéieren
 ausloggen
@@ -185,13 +185,13 @@ Sprooch änneren
 Wielt w.e.g. Sprooch
 System Sprooch
 Aktuell System Sprooch:
-Dëst ännert d'Sprooch vum PiKaraoke Backend System deen um Fernsehbildschierm ugewise gëtt; Desweideren, all konnektéieren Benotzer kann och hir jeeweileg Web UI Sprooch am Globus Knäppchen am riets-Top Menü änneren.
+Dëst ännert d'Sprooch vum OpenHomeKaraoke Backend System deen op der Fernsehbildschierm ugewise gëtt; Desweideren, all konnektéieren Benotzer kann och hir jeeweileg Web UI Sprooch am Globus Knäppchen am riets-Top Menü änneren.
 Download erfollegräich ofgeschloss!
 Eroflueden gescheitert!
 Lidd dobäi an d'Schlaang!
-Ausgefall op d'Lidd an der Schlaang!
+Ausgefall fir d'Lidd ze setzen!
 System Info & Astellungen
-Normaliséierung vum Volume
+Volumen Normaliséierung
 Verschidde Lidder hunn dacks ënnerschiddlech Volumen. Wann Dir Volumennormaliséierung aktivéiert, leeft als éischt <i>ffmpeg</i> fir de globale Volume vun engem Lidd ze berechnen an automatesch de Spillervolumen unzepassen, sou datt all Lidd gläich haart kléngt.
 Songbibliothéik Download Wee
 Total Zuel vu Lidder
@@ -205,5 +205,27 @@ Reset Schlëssel
 Reset Speed
 Héich Qualitéit
 Füügt d'Lidd an d'Gesangschlaang nodeems den Download fäerdeg ass
-Download Ënnertitelen (nëmmen embedded) an alle Sproochen wa verfügbar
+Download Ënnertitelen (nëmmen embedded) an alle Sprooche wa verfügbar
 Héich Qualitéit Videoen eroflueden kann ganz laang daueren
+Späicheren Play Settings
+Späichert Spillastellunge fir all Lidd, dëst enthält: Audioverzögerung, Ënnertitelverzögerung, an ob Ënnertitelen ze weisen.
+Füügt Lidd andeems Dir den Titel vum Lidd schwätzt
+Sot w.e.g. den Titel vum Lidd a klickt OK!
+Nëmmen HTTPS Websäite kënnen Zougang zum Mikrofon hunn, wëllt Dir op HTTPS Websäit viruleeden?
+Gitt w.e.g. d'Erlaabnis fir Zougang zum Mikrofon ze kréien!
+Song Numm änneren:
+Spueren
+Dëst Lidd läschen
+Sidd Dir sécher, datt Dir dëst Lidd aus der Bibliothéik läschen wëllt?
+Ufro Parameter Feeler!
+Trimm d'Lidd:
+Upassung vum Song Volumen:
+Startzeit:
+Enn Zäit:
+Originalvolumen (dB):
+Kann kee Lidd fannen dat entsprécht "%s".
+"%s" an der Schlaang bäigefüügt.
+Wielt w.e.g. d'Lidd(en) fir derbäi ze ginn:
+UNDO
+Zoumaachen
+Addéieren

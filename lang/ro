@@ -32,7 +32,7 @@ Oprit
 Se actualizează youtube-dl! Ar trebui să dureze un minut sau două...
 Nu aveți permisiunea de a actualiza youtube-dl
 Nu aveți permisiunea de a închide
-Renunță la PiKaraoke acum!
+Închideți OpenHomeKaraoke acum!
 Nu aveți permisiunea să renunțați
 Închidem sistemul acum!
 Nu aveți permisiunea de a închide
@@ -41,15 +41,15 @@ Nu aveți permisiunea de a reporni
 Extinderea sistemului de fișiere și repornirea sistemului acum!
 Nu se poate extinde fs pe dispozitive care nu sunt raspberry pi!
 Nu aveți permisiunea de a redimensiona sistemul de fișiere
-Calea Youtube-dl nu a fost găsită!
+Calea Youtube-dl nu a fost găsită și pip nu a reușit să o instaleze!
 Calea VLC nu a fost găsită!
 Calea omxplayer nu a fost găsită!
 Se creează calea de descărcare:
-Wifi/Rețea nu este conectată. Se închide în 10 secunde...
+Wifi/Rețea nu este conectată. Se inchide in 10 secunde...
 Pentru a selecta melodii, scanați QR sau conectați-vă la
 Pentru afișajul TV, conectați-vă la
-Apăsați F pentru a comuta la ecran complet
-Apăsați ESC pentru a părăsi PiKaraoke
+Apăsați F pentru a comuta la ecranul complet
+Apăsați ESC pentru a părăsi OpenHomeKaraoke
 Modul de configurare RaspiWifiConfig a fost detectat!
 Conectați un alt dispozitiv/smartphone la AP-ul Wifi: „%s”
 Apoi îndreptați browserul către: „%s://%s%s” și urmați instrucțiunile.
@@ -60,13 +60,13 @@ Modul de administrare este acordat!
 Creșterea întârzierii audio vă va oferi mai mult timp pentru a citi versurile înainte de a cânta următoarea propoziție.
 Scăderea întârzierii subtitrării vă va oferi mai mult timp pentru a citi versurile înainte de a cânta următoarea propoziție.
 Un semiton este cunoscut și sub denumirea de jumătate de pas. Este cel mai mic interval folosit în muzica clasică occidentală, egal cu o doisprezecea parte de octavă sau jumătate de ton.
-Divizorul vocal bazat pe DNN este activat. PiKaraoke folosește PyTorch (de la Facebook) pentru a rula o rețea neuronală profundă pentru a împărți sunetul instrumental și vocal în fiecare piesă, dând naștere unui sunet stereo.
+Divizorul vocal bazat pe DNN este activat. OpenHomeKaraoke folosește PyTorch (de la Facebook) pentru a rula o rețea neuronală profundă pentru a împărți sunetul instrumental și vocal în fiecare piesă, dând naștere unui sunet stereo.
 Controlul jucătorului
 Muzică
 Amestecat
 Voce
 Schimbați cheia
-Nu se joacă nimic în acest moment.
+Nu se joacă nimic acum.
 Nicio melodie nu este la coadă.
 Acest cântec nu este adăugat de tine. Sigur doriți să reporniți această melodie?
 Acest cântec nu este adăugat de tine. Sigur vrei să sări peste această piesă?
@@ -89,7 +89,7 @@ Reduceți întârzierea audio
 Setați întârzierea audio
 Creșteți întârzierea audio
  semitonuri
-Te rog scrieti numele. Aceasta va apărea lângă melodiile pe care le puneți în coadă de pe acest dispozitiv.
+Te rog scrieti numele. Aceasta va apărea lângă melodiile pe care le puneți la coadă de pe acest dispozitiv.
 Cântec adăugat la coadă:
 Cântec deja în coadă:
 Sortati dupa data
@@ -105,7 +105,7 @@ Editează melodia
 Deplasați-vă la coadă
 Deplasați-vă în jos la coadă
 Sigur doriți să ștergeți din coadă
-Sigur doriți să goliți TOATE coada? Tastați „OK” pentru a continua
+Sigur doriți să goliți TOATE coada?
 Adăugați 3 melodii aleatorii
 Curata tot
 Coada este goală
@@ -117,12 +117,12 @@ Melodia este deja în coadă:
 Căutați / Adăugați nou
 Căutare
 Coadă
-Includeți meciuri non-karaoke
+Căutați numai meciuri Karaoke
 Avansat
 Tastați o melodie (titlu/artist) pentru a căuta melodiile disponibile și faceți clic pe „Coda de așteptare” pentru a o adăuga în coadă.
 Dacă melodia nu apare în meniul drop-down „Cântece disponibile”, faceți clic pe „Căutare” pentru a o găsi pe Youtube.
 Descărcare directă URL YouTube:
-Adauga la coada
+Adăugați la coadă după descărcare
 Includeți subtitrări
 Descarca
 Caut pe YouTube
@@ -133,7 +133,7 @@ Cântece disponibile
 Doriți să schimbați numele afișat al persoanei care utilizează acest dispozitiv? Aceasta va apărea lângă melodiile din coadă. Actual:
 Utilizator curent
 Setări
-PiKaraoke
+OpenHomeKaraoke
 Esti sigur ca vrei sa renunti?
 Ești sigur că vrei să închizi?
 Sigur doriți să reporniți?
@@ -147,35 +147,35 @@ Memorie
 Captură de ecran
 Splitter vocal
 Versiunea Youtube-dl (yt-dlp).
-Versiunea PiKaraoke
+Versiunea OpenHomeKaraoke
 Opțiuni avansate de control
 Modul splitter vocal:
 Folosiți L-R/L+R
 Folosiți DNN
-Audio standard MTV are cele două canale stereo (L și R) codificate astfel încât: L-R este pista instrumentului, L+R este pista vocală. Astfel, prin simpla scadere sau adaugare a celor doua canale stereo, putem obtine piesa instrumentala si vocala in sunet mono. Divizorul vocal încorporat de la PiKaraoke, bazat pe DNN (rețea neuronală profundă), folosește algoritmul AI pentru a împărți sunetul instrumental și vocal în fiecare piesă stereo în mod independent, rezultând piese stereo instrumentale și vocale.
+Audio standard MTV are cele două canale stereo (L și R) codificate astfel încât: L-R este pista instrumentului, L+R este pista vocală. Astfel, prin simpla scadere sau adaugare a celor doua canale stereo, putem obtine piesa instrumentala si vocala in sunet mono. Splitter-ul vocal încorporat bazat pe DNN (rețea neuronală profundă) al OpenHomeKaraoke folosește algoritmul AI pentru a împărți independent sunetul instrumental și vocal în fiecare piesă stereo, rezultând piese stereo instrumentale și vocale.
 Opriți Splitter-ul
 Reporniți Splitter
 Splitter-ul vocal (care acceptă atât scăderea bazată pe DNN, cât și scăderea stereo) rulează ca un proces separat în fundal, generând fișiere audio instrumentale/vocale pentru fiecare melodie.
 Resincronizează audio și video:
 Opriți Streamer-ul
 Reporniți Streamer
-Acest lucru afectează doar redarea KTV prin browser web. Repornirea screen-capture-and-streaming îmbunătățește sincronizarea audio/video, de asemenea, scade latența dintre server și browser.
+Acest lucru afectează doar redarea KTV prin intermediul browserului web. Repornirea screen-capture-and-streaming îmbunătățește sincronizarea audio/video, de asemenea, scade latența dintre server și browser.
 Actualizează lista de melodii:
 Rescanați directorul de melodii
-Ar trebui să faceți acest lucru numai dacă ați copiat manual fișiere în directorul de descărcare în timp ce PiKaraoke rula.
+Ar trebui să faceți acest lucru numai dacă ați copiat manual fișiere în directorul de descărcare în timp ce OpenHomeKaraoke rula.
 Actualizări
 Dacă descărcările sau căutările nu mai funcționează, probabil că actualizarea youtube-dl va rezolva problema. Versiunea curentă instalată este:
 Actualizați youtube-dl
-Acest link de actualizare de mai sus poate eșua dacă nu aveți permisiunile corespunzătoare pentru fișiere. Verificați jurnalul PiKaraoke pentru erori.
+Acest link de actualizare de mai sus poate eșua dacă nu aveți permisiunile corespunzătoare pentru fișiere. Verificați jurnalul OpenHomeKaraoke pentru erori.
 Închide
 Nu trageți doar de ștecher! Închideți întotdeauna serverul în mod corespunzător pentru a evita coruperea datelor.
-Părăsiți PiKaraoke
+Părăsiți OpenHomeKaraoke
 Sistem de repornire
 Sistem de oprire
 Alte
 Extindeți sistemul de fișiere Raspberry Pi
-Dacă tocmai ați instalat imaginea PiKaraoke pi pre-construită și cardul SD este mai mare de 4 GB, este posibil să doriți să extindeți sistemul de fișiere pentru a utiliza spațiul rămas. Trebuie să faci asta o singură dată. Aceasta va reporni sistemul.
-Dezactivează modul admin
+Dacă tocmai ați instalat imaginea pre-construită OpenHomeKaraoke pi și cardul SD este mai mare de 4 GB, este posibil să doriți să extindeți sistemul de fișiere pentru a utiliza spațiul rămas. Trebuie să faci asta o singură dată. Aceasta va reporni sistemul.
+Dezactivați modul de administrare
 Activați modul de administrare
 deconectați-vă
 log in
@@ -185,7 +185,7 @@ Schimbați limba
 Vă rugăm să alegeți limba
 Limbajul sistemului
 Limba actuală a sistemului:
-Aceasta schimbă limba sistemului de backend PiKaraoke, care este afișată pe ecranul televizorului; în plus, fiecare utilizator care se conectează își poate schimba și limba respectivă a interfeței de utilizare Web în butonul glob din meniul din dreapta sus.
+Acest lucru schimbă limba sistemului de backend OpenHomeKaraoke care este afișat pe ecranul televizorului; în plus, fiecare utilizator care se conectează își poate schimba și limba respectivă a interfeței de utilizare Web în butonul glob din meniul din dreapta sus.
 Descărcarea a fost finalizată cu succes!
 Descarcare esuata!
 Cântec adăugat la coadă!
@@ -207,3 +207,25 @@ Calitate superioară
 Adăugați melodia în coada de cântări după ce descărcarea s-a terminat
 Descărcați subtitrări (numai încorporate) în toate limbile, dacă sunt disponibile
 Descărcarea videoclipurilor de înaltă calitate poate dura foarte mult timp
+Salvați setările de redare
+Salvați setările de redare pentru fiecare melodie, acestea includ: întârziere audio, întârziere subtitrare și dacă să afișați subtitrări.
+Adăugați melodia rostind titlul melodiei
+Rostiți titlul melodiei și faceți clic pe OK!
+Numai site-urile HTTPS pot avea acces la microfon, doriți să redirecționați către site-ul HTTPS?
+Vă rugăm să acordați permisiunea de a accesa microfonul!
+Editați numele melodiei:
+Salvați
+Ștergeți acest cântec
+Sigur doriți să ștergeți acest cântec din bibliotecă?
+Eroare de parametru de solicitare!
+Tăiați cântecul:
+Reglați volumul melodiei:
+Ora de începere:
+Sfârșitul timpului:
+Volumul original (dB):
+Nu se poate găsi nicio melodie care să se potrivească cu „%s”.
+S-a adăugat „%s” în coadă.
+Vă rugăm să alegeți cântecele de adăugat:
+ANULA
+Închide
+Adăuga

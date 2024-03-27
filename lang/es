@@ -1,15 +1,15 @@
 Español
 ¡Contraseña de administrador incorrecta!
-¡Se desconectó del modo administrador!
+¡Salí del modo administrador!
 Se agregaron %s pistas aleatorias
-¡Se quedaron sin canciones!
-Borró la cola!
-Error al mover el elemento dentro de la cola: argumento no válido
-Elemento movido con éxito dentro de la cola:
-Error al mover el elemento dentro de la cola:
-Movido hacia abajo en la cola:
+¡Se me acabaron las canciones!
+¡Se despejó la cola!
+Error al mover elemento dentro de la cola: argumento no válido
+Elemento movido correctamente dentro de la cola:
+Error al mover elemento dentro de la cola:
+Bajado en la cola:
 Error al bajar en la cola:
-Subido en la cola:
+Avanzó en la cola:
 Error al subir en la cola:
 Eliminado de la cola:
 Error al eliminar de la cola:
@@ -18,8 +18,8 @@ Al finalizar, se agregará a la cola.
 Al finalizar, aparecerá en la lista de "canciones disponibles".
 Error: no se puede eliminar esta canción porque está en la cola actual:
 Canción eliminada:
-Error: ¡No se especificó ningún parámetro de canción!
-Error: no se puede editar esta canción porque se está reproduciendo actualmente:
+Error: ¡No se ha especificado ningún parámetro de canción!
+Error: No se puede editar esta canción porque se está reproduciendo actualmente:
 Editar archivo de canción
 Error al cambiar el nombre del archivo: '%s' a '%s'. El nombre del archivo ya existe.
 Archivo renombrado: '%s' a '%s'
@@ -28,53 +28,53 @@ Desconocido
 Correr
 Interrumpido
  (solo CPU)
- (GPU habilitado)
-Actualizando youtube-dl! Debería tomar un minuto o dos...
+ (GPU habilitada)
+Actualizando youtube-dl! Debería tomar uno o dos minutos...
 No tienes permiso para actualizar youtube-dl
 No tienes permiso para cerrar
-¡Saliendo de PiKaraoke ahora!
+¡Salir de OpenHomeKaraoke ahora!
 No tienes permiso para salir
-¡Apagando el sistema ahora!
+¡Cerrando el sistema ahora!
 No tienes permiso para cerrar
 ¡Reiniciando el sistema ahora!
 No tienes permiso para reiniciar
 ¡Expandiendo el sistema de archivos y reiniciando el sistema ahora!
-¡No se puede expandir fs en dispositivos que no sean raspberry pi!
-No tienes permiso para cambiar el tamaño del sistema de archivos.
-¡Ruta Youtube-dl no encontrada!
+¡No se pueden expandir fs en dispositivos que no sean Raspberry Pi!
+No tienes permiso para cambiar el tamaño del sistema de archivos
+¡No se encontró la ruta de Youtube-dl y pip no pudo instalarla!
 ¡Ruta VLC no encontrada!
 ¡Ruta de omxplayer no encontrada!
 Creando ruta de descarga:
-Wifi/Red no conectada. Apagando en 10s...
+Wifi/Red no conectada. Apagándose en 10 segundos...
 Para seleccionar canciones, escanee QR o conéctese a
-Para la visualización de TV, conéctese a
-Presione F para alternar pantalla completa
-Presione ESC para salir de PiKaraoke
-¡Modo de configuración de RaspiWifiConfig detectado!
-Conectar otro dispositivo/smartphone al Wifi AP: '%s'
+Para visualización de TV, conéctese a
+Presione F para alternar en pantalla completa
+Presione ESC para salir de OpenHomeKaraoke
+¡Se detectó el modo de configuración de RaspiWifiConfig!
+Conecte otro dispositivo/teléfono inteligente al AP Wifi: '%s'
 Luego apunte su navegador a: '%s://%s%s' y siga las instrucciones.
 Hasta la próxima:
 Añadido por:
 Jugando ahora:
 ¡Modo administrador concedido!
-Aumentar la demora del audio le dará más tiempo para leer la letra antes de cantar la siguiente oración.
-La disminución de la demora de los subtítulos le dará más tiempo para leer la letra antes de cantar la siguiente oración.
-Un semitono también se conoce como medio paso. Es el intervalo más pequeño utilizado en la música clásica occidental, igual a un doceavo de octava o medio tono.
-El divisor vocal basado en DNN está habilitado. PiKaraoke usa PyTorch (de Facebook) para ejecutar una red neuronal profunda para dividir el sonido instrumental y vocal en cada pista, lo que genera un sonido estéreo.
+Aumentar el retraso del audio te dará más tiempo para leer la letra antes de cantar la siguiente frase.
+Reducir el retraso de los subtítulos te dará más tiempo para leer la letra antes de cantar la siguiente frase.
+Un semitono también se conoce como medio paso. Es el intervalo más pequeño utilizado en la música clásica occidental, igual a una duodécima de octava o medio tono.
+El divisor de voz basado en DNN está habilitado. OpenHomeKaraoke utiliza PyTorch (de Facebook) para ejecutar una red neuronal profunda para dividir el sonido instrumental y vocal en cada pista dando lugar a un sonido estéreo.
 Control del jugador
 Música
 Mezclado
 Voz
 Cambiar clave
-Nada está jugando en este momento.
+No se reproduce nada en este momento.
 No hay ninguna canción en cola.
-Esta canción no es agregada por ti. ¿Está seguro de que desea reiniciar esta pista?
-Esta canción no es agregada por ti. ¿Seguro que quieres saltarte esta pista?
+Esta canción no la agregaste tú. ¿Estás seguro de que quieres reiniciar esta pista?
+Esta canción no la agregaste tú. ¿Estás seguro de que quieres saltarte esta pista?
 Control del jugador
 Jugando ahora
-siguiente canción
+Siguiente canción
 Tratar de:
-Retardo de audio (seg)
+Retardo de audio (seg.)
 Retraso de subtítulos (seg)
 Reiniciar canción
 Reproducir pausar
@@ -82,101 +82,101 @@ Saltar canción actual
 Bajar volumen
 Establecer volumen
 Sube el volumen
-Reducir el retraso de los subtítulos
+Disminuir el retraso de los subtítulos
 Establecer retraso de subtítulos
 Aumentar el retraso de los subtítulos
-Reducir el retardo de audio
+Disminuir el retraso del audio
 Establecer retraso de audio
-Aumentar el retardo de audio
+Aumentar el retraso del audio
  semitonos
-Por favor, escriba su nombre. Esto aparecerá junto a las canciones que pones en cola desde este dispositivo.
-Canción añadida a la cola:
+Por favor, escriba su nombre. Esto aparecerá junto a las canciones que pongas en cola desde este dispositivo.
+Canción agregada a la cola:
 Canción que ya está en la cola:
 Ordenar por fecha
-Ordenar por orden alfabético
-Agregar '%s' a la cola
+Ordenar alfabéticamente
+Añade '%s' a la cola
 Navegar
 Ordenado por 'Fecha'
 Ordenado por 'Alfabético'
 canciones
 mostrando <b>{start} - {end}</b> {record_name}, en total <b>{total}</b> {record_name}
-encontrado <b>{encontrado}</b> {record_name}, mostrando <b>{start} - {end}</b> {record_name}
-editar canción
+encontrado <b>{found}</b> {record_name}, mostrando <b>{start} - {end}</b> {record_name}
+Editar canción
 Subir en la cola
-Mover hacia abajo en la cola
-¿Está seguro de que desea eliminar de la cola?
-¿Estás seguro de que quieres borrar TODA la cola? Escriba 'OK' para continuar
-Agrega 3 canciones al azar
+Bajar en la cola
+¿Estás seguro de que deseas eliminar de la cola?
+¿Está seguro de que desea borrar TODA la cola?
+Agrega 3 canciones aleatorias
 Limpiar todo
-la cola esta vacia
+La cola esta vacia
 Cola
 Borrar
-Canciones disponibles en la biblioteca local
-Canción añadida a la cola:
+Canciones disponibles en la biblioteca local.
+Canción agregada a la cola:
 La canción ya está en la cola:
 Buscar / Agregar nuevo
 Buscar
 Cola
-Incluir partidos que no sean de karaoke
+Buscar solo coincidencias de Karaoke
 Avanzado
-Escriba una canción (título/artista) para buscar las canciones disponibles y haga clic en 'Cola' para agregarla a la cola.
+Escriba una canción (título/artista) para buscar las canciones disponibles y haga clic en "Cola" para agregarla a la cola.
 Si la canción no aparece en el menú desplegable "Canciones disponibles", haga clic en "Buscar" para encontrarla en Youtube.
 URL de descarga directa de YouTube:
-Añadir a la cola
+Agregar a la cola después de la descarga
 Incluir subtítulos
 Descargar
-Buscando YouTube para
-Resultados de la búsqueda de
-Haga clic en el menú desplegable para mostrar más resultados
+Buscando en YouTube
+Resultados de la búsqueda para
+Haga clic en el menú desplegable para mostrar más resultados.
 Enlace:
 Canciones disponibles
-¿Desea cambiar el nombre para mostrar de la persona que usa este dispositivo? Esto aparecerá junto a las canciones en cola. Actual:
+¿Quieres cambiar el nombre para mostrar de la persona que usa este dispositivo? Esto aparecerá junto a las canciones en cola. Actual:
 Usuario actual
 Ajustes
-PiKaraoke
+OpenHomeKaraoke
 ¿Seguro que quieres salir?
 ¿Estás seguro de que quieres cerrar?
 ¿Estás seguro de que quieres reiniciar?
-¿Seguro que quieres actualizar Youtube-dl ahora mismo? Las descargas actuales y pendientes pueden fallar.
-¿Estás seguro de que quieres expandir el sistema de archivos? Esto reiniciará tu raspberry pi.
+¿Estás seguro de que quieres actualizar Youtube-dl ahora mismo? Las descargas actuales y pendientes pueden fallar.
+¿Está seguro de que desea ampliar el sistema de archivos? Esto reiniciará tu Raspberry Pi.
 Información
 Práctico código QR URL para compartir con un amigo:
-sistema operativo
+SO
 Uso del disco
 Memoria
 La captura de pantalla
-Divisor vocal
-Versión Youtube-dl (yt-dlp)
-Versión PiKaraoke
+divisor vocal
+Versión youtube-dl (yt-dlp)
+Versión OpenHomeKaraoke
 Opciones de control avanzadas
 Modo divisor de voz:
-Usar L-R/L+R
+Utilice L-R/L+R
 Usar DNN
-El audio MTV estándar tiene los dos canales estéreo (L y R) codificados de tal manera que: L-R es la pista de instrumentos, L+R es la pista vocal. Así, simplemente restando o sumando los dos canales estéreo, podemos obtener la pista instrumental y vocal en sonido mono. El divisor vocal integrado basado en DNN (red neuronal profunda) de PiKaraoke utiliza un algoritmo de inteligencia artificial para dividir el sonido instrumental y vocal en cada pista estéreo de forma independiente, lo que da como resultado pistas instrumentales y vocales estéreo.
+El audio estándar de MTV tiene dos canales estéreo (L y R) codificados de tal manera que: L-R es la pista del instrumento, L+R es la pista vocal. Así, simplemente restando o sumando los dos canales estéreo, podremos obtener la pista instrumental y vocal en sonido mono. El divisor vocal integrado basado en DNN (red neuronal profunda) de OpenHomeKaraoke utiliza un algoritmo de IA para dividir el sonido instrumental y vocal en cada pista estéreo de forma independiente, lo que da como resultado pistas vocales e instrumentales estéreo.
 Detener divisor
-Reiniciar divisor
-El divisor vocal (que admite sustracción estéreo y basada en DNN) se ejecuta como un proceso separado en segundo plano, generando un archivo de audio instrumental/vocal para cada canción.
-Volver a sincronizar audio y video:
-Detener transmisor
+Reiniciar el divisor
+El divisor vocal (que admite resta estéreo y basada en DNN) se ejecuta como un proceso separado en segundo plano, generando archivos de audio instrumental/vocal para cada canción.
+Volver a sincronizar audio y vídeo:
+Detener transmisión
 Reiniciar transmisor
-Esto solo afecta la reproducción de KTV a través del navegador web. Reiniciar la captura de pantalla y la transmisión mejora la sincronización de audio/video, también disminuye la latencia entre el servidor y el navegador.
+Esto sólo afecta la reproducción de KTV a través del navegador web. Reiniciar la captura de pantalla y la transmisión mejora la sincronización de audio/vídeo y también disminuye la latencia entre el servidor y el navegador.
 Actualizar la lista de canciones:
 Volver a escanear el directorio de canciones
-Solo debería necesitar hacer esto si copió manualmente los archivos al directorio de descarga mientras PiKaraoke se estaba ejecutando.
+Sólo debería necesitar hacer esto si copió archivos manualmente al directorio de descarga mientras se ejecutaba OpenHomeKaraoke.
 Actualizaciones
-Si las descargas o las búsquedas dejaron de funcionar, es probable que la actualización de youtube-dl lo solucione. La versión actual instalada es:
+Si las descargas o búsquedas dejaron de funcionar, la actualización de youtube-dl probablemente lo solucionará. La versión instalada actualmente es:
 Actualizar youtube-dl
-Este enlace de actualización anterior puede fallar si no tiene los permisos de archivo adecuados. Compruebe el registro de PiKaraoke en busca de errores.
+Este enlace de actualización anterior puede fallar si no tiene los permisos de archivo adecuados. Consulte el registro de OpenHomeKaraoke para ver si hay errores.
 Cerrar
-¡No tire simplemente del enchufe! Siempre apague su servidor correctamente para evitar la corrupción de datos.
-Salir de PiKaraoke
+¡No simplemente desconectes el enchufe! Apague siempre su servidor correctamente para evitar la corrupción de datos.
+Salir de OpenHomeKaraoke
 Reiniciar el sistema
 Sistema apagado
 Otro
 Expandir el sistema de archivos Raspberry Pi
-Si acaba de instalar la imagen PiKaraoke pi preconstruida y su tarjeta SD tiene más de 4 GB, es posible que desee expandir el sistema de archivos para utilizar el espacio restante. Sólo necesitas hacer esto una vez. Esto reiniciará el sistema.
-Deshabilitar el modo de administrador
-Habilitar el modo de administrador
+Si acaba de instalar la imagen prediseñada de OpenHomeKaraoke pi y su tarjeta SD tiene más de 4 GB, es posible que desee ampliar el sistema de archivos para utilizar el espacio restante. Sólo necesitas hacer esto una vez. Esto reiniciará el sistema.
+Desactivar el modo administrador
+Habilitar el modo administrador
 cerrar sesión
 acceso
 Información del sistema
@@ -185,25 +185,47 @@ Cambiar idioma
 Por favor elige idioma
 Lenguaje del sistema
 Idioma actual del sistema:
-Esto cambia el idioma del sistema backend de PiKaraoke que se muestra en la pantalla del televisor; además, cada usuario que se conecta también puede cambiar su respectivo idioma de la interfaz de usuario web en el botón del globo en el menú superior derecho.
-¡Descarga completada con éxito!
+Esto cambia el idioma del sistema backend de OpenHomeKaraoke que se muestra en la pantalla del televisor; Además, cada usuario que se conecta también puede cambiar el idioma de su respectiva interfaz de usuario web en el botón del globo en el menú superior derecho.
+¡Descarga completada exitosamente!
 ¡Descarga fracasó!
-¡Canción añadida a la cola!
-¡Error al poner en cola la canción!
+¡Canción agregada a la cola!
+¡No se pudo poner la canción en cola!
 Información y configuración del sistema
 Normalización de volumen
-Diferentes canciones a menudo tienen un volumen diferente. Al habilitar la normalización del volumen, primero se ejecutará <i>ffmpeg</i> para calcular el volumen global de una canción y ajustará automáticamente el volumen del reproductor para que cada canción suene igual de fuerte.
+Las diferentes canciones suelen tener un volumen diferente. Al habilitar la normalización del volumen, primero se ejecutará <i>ffmpeg</i> para calcular el volumen global de una canción y ajustar automáticamente el volumen del reproductor para que todas las canciones suenen igual de altas.
 Ruta de descarga de la biblioteca de canciones
 Número total de canciones
-Mostrar/ocultar subtítulo
+Mostrar/Ocultar subtítulo
 Cambiar velocidad
-Puede cantar la canción más rápido o más lento cambiando la velocidad de reproducción entre 0,8x y 1,2x usando la barra de seguimiento de velocidad; para otra velocidad de reproducción, haga clic en el valor de velocidad para cambiar.
+Puede cantar la canción más rápido o más lento cambiando la velocidad de reproducción entre 0,8x y 1,2x usando la barra de velocidad; para otra velocidad de reproducción, haga clic en el valor de velocidad para cambiar.
 Haga clic para restablecer la velocidad de reproducción a 1x
-Haga clic para establecer la velocidad de reproducción
-Haz clic para restablecer la clave/tono
+Haga clic para configurar la velocidad de reproducción
+Haga clic para restablecer clave/tono
 Tecla de reinicio
 Restablecer velocidad
 Alta calidad
-Agregue la canción a la cola de canto después de que finalice la descarga
-Descargar subtítulos (solo incrustados) en todos los idiomas si están disponibles
-La descarga de videos de alta calidad puede llevar mucho tiempo
+Agregue la canción a la cola de canto una vez finalizada la descarga.
+Descargue subtítulos (solo incrustados) en todos los idiomas si están disponibles
+La descarga de vídeos de alta calidad puede llevar mucho tiempo
+Guardar configuración de reproducción
+Guarde la configuración de reproducción para cada canción, esto incluye: retraso de audio, retraso de subtítulos y si se muestran subtítulos.
+Agregue una canción diciendo el título de la canción
+¡Di el título de la canción y haz clic en Aceptar!
+Solo los sitios web HTTPS pueden tener acceso al micrófono. ¿Quieres redirigir al sitio web HTTPS?
+¡Por favor conceda permiso para acceder al micrófono!
+Editar nombre de la canción:
+Ahorrar
+eliminar esta cancion
+¿Estás seguro de que quieres eliminar esta canción de la biblioteca?
+¡Error de parámetro de solicitud!
+Recorta la canción:
+Ajustar el volumen de la canción:
+Hora de inicio:
+Hora de finalización:
+Volumen original (dB):
+No se puede encontrar ninguna canción que coincida con "%s".
+Se agregó "%s" a la cola.
+Por favor elija la(s) canción(es) para agregar:
+DESHACER
+Cerca
+Agregar

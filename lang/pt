@@ -1,12 +1,12 @@
 Português
 Senha de administrador incorreta!
-Saiu do modo admin!
+Desconectado do modo de administrador!
 Adicionadas %s faixas aleatórias
-Fiquei sem músicas!
+Acabou as músicas!
 Limpou a fila!
 Erro ao mover item dentro da fila: argumento inválido
 Item movido com sucesso dentro da fila:
-Erro ao mover item dentro da fila:
+Erro ao mover o item dentro da fila:
 Desceu na fila:
 Erro ao descer na fila:
 Subiu na fila:
@@ -15,12 +15,12 @@ Excluído da fila:
 Erro ao excluir da fila:
 Download iniciado:
 Após a conclusão, ele será adicionado à fila.
-Após a conclusão, ele aparecerá na lista de "músicas disponíveis".
-Erro: Não é possível excluir esta música porque ela está na fila atual:
-Música deletada:
+Após a conclusão, ele aparecerá na lista de “músicas disponíveis”.
+Erro: não é possível excluir esta música porque ela está na fila atual:
+Música excluída:
 Erro: Nenhum parâmetro de música especificado!
-Erro: Não é possível editar esta música porque ela está sendo reproduzida no momento:
-Editar arquivo de música
+Erro: não é possível editar esta música porque ela está sendo reproduzida:
+Edição de arquivo de música
 Erro ao renomear arquivo: '%s' para '%s'. O nome do arquivo já existe.
 Arquivo renomeado: '%s' para '%s'
 Erro: Nenhum parâmetro de nome de arquivo foi especificado!
@@ -28,39 +28,39 @@ Desconhecido
 Correndo
 Parou
  (somente CPU)
- (GPU habilitado)
+ (GPU habilitada)
 Atualizando youtube-dl! Deve demorar um ou dois minutos...
 Você não tem permissão para atualizar o youtube-dl
 Você não tem permissão para desligar
-Saindo do PiKaraoke agora!
+Saindo do OpenHomeKaraoke agora!
 Você não tem permissão para sair
 Desligando o sistema agora!
 Você não tem permissão para desligar
-Reiniciando o sistema agora!
+Reinicializando o sistema agora!
 Você não tem permissão para reiniciar
 Expandindo o sistema de arquivos e reiniciando o sistema agora!
-Não é possível expandir fs em dispositivos não framboesa pi!
+Não é possível expandir o fs em dispositivos que não sejam Raspberry Pi!
 Você não tem permissão para redimensionar o sistema de arquivos
-Caminho Youtube-dl não encontrado!
-Caminho do VLC não encontrado!
-caminho omxplayer não encontrado!
+Caminho Youtube-dl não encontrado e pip não conseguiu instalá-lo!
+Caminho VLC não encontrado!
+Caminho do omxplayer não encontrado!
 Criando caminho de download:
-Wi-Fi/rede não conectado. Desligando em 10s...
+Wifi/rede não conectado. Desligando em 10s...
 Para selecionar músicas, escaneie o QR ou conecte-se a
-Para exibição de TV, conecte a
-Pressione F para alternar para tela cheia
-Pressione ESC para sair do PiKaraoke
+Para exibição de TV, conecte-se a
+Pressione F para alternar para tela inteira
+Pressione ESC para sair do OpenHomeKaraoke
 Modo de configuração RaspiWifiConfig detectado!
 Conecte outro dispositivo/smartphone ao AP Wifi: '%s'
-Em seguida, aponte o navegador para: '%s://%s%s' e siga as instruções.
+Em seguida, aponte seu navegador para: '%s://%s%s' e siga as instruções.
 A seguir:
 Adicionado por:
 Agora jogando:
-Modo administrador concedido!
-Aumentar o atraso do áudio lhe dará mais tempo para ler as letras antes de cantar a próxima frase.
-Diminuir o atraso da legenda lhe dará mais tempo para ler as letras antes de cantar a próxima frase.
-Um semitom também é conhecido como meio-tom. É o menor intervalo usado na música clássica ocidental, igual a um doze avos de oitava ou meio tom.
-O divisor vocal baseado em DNN está ativado. O PiKaraoke usa o PyTorch (do Facebook) para executar uma rede neural profunda para dividir o som instrumental e vocal em cada faixa, dando origem ao som estéreo.
+Modo de administrador concedido!
+Aumentar o atraso do áudio lhe dará mais tempo para ler a letra antes de cantar a próxima frase.
+Diminuir o atraso da legenda lhe dará mais tempo para ler a letra antes de cantar a próxima frase.
+Um semitom também é conhecido como meio tom. É o menor intervalo usado na música clássica ocidental, igual a um duodécimo de oitava ou meio tom.
+O divisor vocal baseado em DNN está habilitado. OpenHomeKaraoke usa PyTorch (do Facebook) para executar uma rede neural profunda para dividir o som instrumental e vocal em cada faixa, dando origem ao som estéreo.
 Controle do jogador
 Música
 Misturado
@@ -71,30 +71,30 @@ Nenhuma música está na fila.
 Esta música não foi adicionada por você. Tem certeza de que deseja reiniciar esta faixa?
 Esta música não foi adicionada por você. Tem certeza de que deseja pular esta faixa?
 Controle do jogador
-Tocando agora
+Agora jogando
 Próxima música
-Procurar:
+Procure:
 Atraso de áudio (seg)
-Atraso da legenda (seg)
-Reinicie a música
+Atraso de legenda (seg)
+Reiniciar música
 A pausa
-Ignorar música atual
+Pular música atual
 Volume baixo
 Definir volume
 Aumentar o volume
 Diminuir o atraso da legenda
-Definir atraso da legenda
+Definir atraso de legenda
 Aumentar o atraso da legenda
 Diminuir atraso de áudio
 Definir atraso de áudio
-Aumentar atraso de áudio
+Aumentar o atraso do áudio
  semitons
-Por favor, insira seu nome. Isso aparecerá ao lado das músicas que você colocar na fila deste dispositivo.
+Por favor, insira seu nome. Isso aparecerá ao lado das músicas que você colocou na fila deste dispositivo.
 Música adicionada à fila:
 Música já na fila:
 Classificar por data
-Ordenar por ordem alfabética
-Adicionar '%s' à fila
+Classificar por ordem alfabética
+Adicione '%s' à fila
 Navegar
 Ordenado por 'Data'
 Ordenado por 'Alfabético'
@@ -103,9 +103,9 @@ exibindo <b>{start} - {end}</b> {record_name}, no total <b>{total}</b> {record_n
 encontrado <b>{found}</b> {record_name}, exibindo <b>{start} - {end}</b> {record_name}
 Editar música
 Subir na fila
-Mover para baixo na fila
+Descer na fila
 Tem certeza de que deseja excluir da fila
-Tem certeza de que deseja limpar TODA a fila? Digite 'OK' para continuar
+Tem certeza de que deseja limpar TODA a fila?
 Adicione 3 músicas aleatórias
 Limpar tudo
 A fila está vazia
@@ -114,67 +114,67 @@ Excluir
 Músicas disponíveis na biblioteca local
 Música adicionada à fila:
 A música já está na fila:
-Pesquisar / Adicionar novo
+Pesquisar/Adicionar novo
 Procurar
 Fila
-Inclua partidas que não sejam de karaokê
+Pesquisar apenas correspondências de karaokê
 Avançado
 Digite uma música (título/artista) para pesquisar as músicas disponíveis e clique em 'Fila' para adicioná-la à fila.
 Se a música não aparecer no menu suspenso "Músicas disponíveis", clique em 'Pesquisar' para encontrá-la no Youtube.
-URL do YouTube para download direto:
-Adicionar à fila
+URL de download direto do YouTube:
+Adicionar à fila após o download
 Incluir legendas
 Download
 Pesquisando no YouTube por
 Resultados da busca por
 Clique no menu suspenso para mostrar mais resultados
 Link:
-Músicas Disponíveis
-Deseja alterar o nome de exibição da pessoa que está usando este dispositivo? Isso aparecerá ao lado das músicas na fila. Atual:
+Músicas disponíveis
+Deseja alterar o nome de exibição da pessoa que usa este dispositivo? Isso aparecerá ao lado das músicas na fila. Atual:
 Usuário atual
 Configurações
-PiKaraokê
+OpenHomeKaraokê
 Você tem certeza que quer sair?
-Tem certeza de que deseja desligar?
+Tem certeza de que deseja encerrar?
 Tem certeza de que deseja reiniciar?
-Tem certeza de que deseja atualizar o Youtube-dl agora? Downloads atuais e pendentes podem falhar.
-Tem certeza de que deseja expandir o sistema de arquivos? Isso reiniciará seu raspberry pi.
+Tem certeza de que deseja atualizar o Youtube-dl agora? Os downloads atuais e pendentes podem falhar.
+Tem certeza de que deseja expandir o sistema de arquivos? Isso irá reiniciar o seu Raspberry Pi.
 Informação
 Código QR de URL útil para compartilhar com um amigo:
 SO
 Uso de disco
 Memória
 Captura de tela
-Divisor Vocal
+Divisor vocal
 Versão Youtube-dl (yt-dlp)
-Versão do PiKaraokê
-Opções avançadas de controle
-Modo de divisão vocal:
-Use L-R/L+R
+Versão OpenHomeKaraokê
+Opções de controle avançadas
+Modo divisor vocal:
+Use LR/L+R
 Usar DNN
-O áudio padrão da MTV tem os dois canais estéreo (L e R) codificados de tal forma que: L-R é a faixa de instrumento, L+R é a faixa de voz. Assim, simplesmente subtraindo ou somando os dois canais estéreo, podemos obter a faixa instrumental e vocal em som mono. O divisor vocal integrado baseado em DNN (rede neural profunda) do PiKaraoke usa o algoritmo AI para dividir o som instrumental e vocal em cada faixa estéreo, resultando independentemente em faixas instrumentais e vocais estéreo.
+O áudio padrão da MTV possui dois canais estéreo (L e R) codificados de tal forma que: LR é a trilha do instrumento, L+R é a trilha vocal. Assim, simplesmente subtraindo ou somando os dois canais estéreo, podemos obter a trilha instrumental e vocal em som mono. O divisor vocal integrado baseado em DNN (rede neural profunda) do OpenHomeKaraoke usa algoritmo de IA para dividir o som instrumental e vocal em cada faixa estéreo de forma independente, resultando em faixas instrumentais e vocais estéreo.
 Parar divisor
-Reinicie o Divisor
+Reiniciar divisor
 O divisor vocal (que suporta subtração baseada em DNN e estéreo) é executado como um processo separado em segundo plano, gerando arquivo de áudio instrumental/vocal para cada música.
-Ressincronizar áudio e vídeo:
-Parar streamer
+Sincronize novamente áudio e vídeo:
+Pare o streamer
 Reinicie o streamer
-Isso afeta apenas a reprodução do KTV via navegador da web. Reiniciar a captura e transmissão de tela melhora a sincronização de áudio/vídeo e também diminui a latência entre o servidor e o navegador.
+Isso afeta apenas a reprodução do KTV via navegador da web. Reiniciar a captura de tela e streaming melhora a sincronização de áudio/vídeo, mas também diminui a latência entre o servidor e o navegador.
 Atualize a lista de músicas:
-Redigitalizar o diretório de músicas
-Você só precisa fazer isso se copiou manualmente os arquivos para o diretório de download enquanto o PiKaraoke estava em execução.
+Digitalizar novamente o diretório de músicas
+Você só precisará fazer isso se tiver copiado manualmente os arquivos para o diretório de download enquanto o OpenHomeKaraoke estava em execução.
 Atualizações
-Se os downloads ou pesquisas pararem de funcionar, atualizar o youtube-dl provavelmente corrigirá isso. A versão atual instalada é:
+Se os downloads ou pesquisas pararem de funcionar, atualizar o youtube-dl provavelmente resolverá o problema. A versão atualmente instalada é:
 Atualizar youtube-dl
-Este link de atualização acima pode falhar se você não tiver permissões de arquivo adequadas. Verifique se há erros no log do PiKaraoke.
+Este link de atualização acima pode falhar se você não tiver as permissões de arquivo adequadas. Verifique se há erros no log do OpenHomeKaraoke.
 Desligar
-Não basta puxar o plugue! Sempre desligue seu servidor corretamente para evitar corrupção de dados.
-Sair do PiKaraokê
+Não basta puxar a tomada! Sempre desligue seu servidor corretamente para evitar corrupção de dados.
+Sair do OpenHomeKaraokê
 Reiniciar sistema
 Sistema de desligamento
 Outro
 Expanda o sistema de arquivos Raspberry Pi
-Se você acabou de instalar a imagem PiKaraoke pi pré-construída e seu cartão SD for maior que 4 GB, convém expandir o sistema de arquivos para utilizar o espaço restante. Você só precisa fazer isso uma vez. Isso reiniciará o sistema.
+Se você acabou de instalar a imagem pi OpenHomeKaraoke pré-construída e seu cartão SD for maior que 4 GB, você pode querer expandir o sistema de arquivos para utilizar o espaço restante. Você só precisa fazer isso uma vez. Isso irá reinicializar o sistema.
 Desativar modo de administrador
 Ativar modo de administrador
 sair
@@ -182,28 +182,50 @@ Conecte-se
 Informação do sistema
 Lar
 Mudar idioma
-Escolha o idioma
+Por favor escolha o idioma
 Idioma do sistema
 Idioma atual do sistema:
-Isso altera o idioma do sistema de back-end do PiKaraoke, que é exibido na tela da TV; além disso, cada usuário conectado também pode alterar seu respectivo idioma da interface do usuário da Web no botão de globo no menu superior direito.
+Isso altera o idioma do sistema backend OpenHomeKaraoke que é exibido na tela da TV; além disso, cada usuário conectado também pode alterar o respectivo idioma da interface da Web no botão do globo no menu superior direito.
 Download concluído com sucesso!
 Download falhou!
 Música adicionada à fila!
 Falha ao colocar a música na fila!
 Informações e configurações do sistema
-Normalização de volume
+Normalização de Volume
 Músicas diferentes geralmente têm volumes diferentes. Ativar a normalização do volume executará primeiro o <i>ffmpeg</i> para calcular o volume global de uma música e ajustar automaticamente o volume do player para que todas as músicas soem igualmente altas.
 Caminho de download da biblioteca de músicas
 Número total de músicas
-Mostrar/Ocultar Legenda
+Mostrar/ocultar legenda
 Alterar velocidade
-Você pode cantar a música mais rápido ou mais devagar alterando a velocidade de reprodução para 0,8x a 1,2x usando a barra de controle de velocidade; para outra velocidade de reprodução, clique no valor da velocidade para alterar.
+Você pode cantar a música mais rápido ou mais devagar alterando a velocidade de reprodução para 0,8x a 1,2x usando a barra de velocidade; para outra velocidade de reprodução, clique no valor da velocidade para alterar.
 Clique para redefinir a velocidade de reprodução para 1x
 Clique para definir a velocidade de reprodução
-Clique para redefinir tom/tom
+Clique para redefinir tonalidade/afinação
 Botão de reset
 Redefinir velocidade
 Alta qualidade
-Adicione a música à fila de canto após o download terminar
-Baixar legendas (somente incorporadas) em todos os idiomas, se disponíveis
-O download de vídeos de alta qualidade pode levar muito tempo
+Adicione a música à fila de canto após o término do download
+Baixe legendas (apenas incorporadas) em todos os idiomas, se disponíveis
+Baixar vídeos de alta qualidade pode levar muito tempo
+Salvar configurações de jogo
+Salve as configurações de reprodução para cada música, incluindo: atraso de áudio, atraso de legenda e exibição de legendas.
+Adicione uma música falando o título da música
+Por favor, fale o título da música e clique em OK!
+Somente sites HTTPS podem ter acesso ao microfone. Deseja redirecionar para site HTTPS?
+Por favor, conceda permissão para acessar o microfone!
+Editar nome da música:
+Salvar
+Excluir esta música
+Tem certeza de que deseja excluir esta música da biblioteca?
+Erro de parâmetro de solicitação!
+Corte a música:
+Ajustar o volume da música:
+Hora de início:
+Fim do tempo:
+Volume Original (dB):
+Não foi possível encontrar nenhuma música correspondente a "%s".
+Adicionado "%s" à fila.
+Escolha a(s) música(s) a adicionar:
+DESFAZER
+Fechar
+Adicionar

@@ -1,55 +1,55 @@
 Français
 Mot de passe administrateur incorrect !
 Déconnecté du mode administrateur !
-%s pistes aléatoires ajoutées
-À court de chansons !
-Effacé la file d'attente !
-Erreur lors du déplacement de l'élément dans la file d'attente : argument invalide
+Ajout de %s pistes aléatoires
+Je n'ai plus de chansons !
+J'ai vidé la file d'attente !
+Erreur lors du déplacement de l'élément dans la file d'attente : argument non valide
 Élément déplacé avec succès dans la file d'attente :
 Erreur lors du déplacement de l'élément dans la file d'attente :
 Descendu dans la file d'attente :
-Erreur lors du déplacement vers le bas dans la file d'attente :
+Erreur de descente dans la file d'attente :
 Remonté dans la file d'attente :
-Erreur lors du déplacement vers le haut dans la file d'attente :
+Erreur de progression dans la file d'attente :
 Supprimé de la file d'attente :
 Erreur lors de la suppression de la file d'attente :
-Le téléchargement a commencé :
+Téléchargement commencé :
 Une fois terminé, il sera ajouté à la file d'attente.
-Une fois terminé, il apparaîtra dans la liste des "chansons disponibles".
-Erreur : Impossible de supprimer ce morceau, car il se trouve dans la file d'attente actuelle :
-Morceau supprimé :
-Erreur : Aucun paramètre de morceau spécifié !
-Erreur : Impossible de modifier ce morceau, car il est en cours de lecture :
-Édition de fichier de morceau
-Erreur lors du renommage du fichier : '%s' en '%s'. Le nom de fichier existe déjà.
+Une fois terminé, il apparaîtra dans la liste des « chansons disponibles ».
+Erreur : Impossible de supprimer cette chanson car elle se trouve dans la file d'attente actuelle :
+Chanson supprimée :
+Erreur : aucun paramètre de chanson spécifié !
+Erreur : Impossible de modifier cette chanson car elle est en cours de lecture :
+Modifier le fichier de chanson
+Erreur de renommage du fichier : '%s' en '%s'. Le nom de fichier existe déjà.
 Fichier renommé : '%s' en '%s'
-Erreur : Aucun paramètre de nom de fichier n'a été spécifié !
+Erreur : aucun paramètre de nom de fichier n'a été spécifié !
 Inconnu
-En cours
+En cours d'exécution
 Arrêté
- (UC uniquement)
+ (processeur uniquement)
  (GPU activé)
 Mise à jour de youtube-dl ! Cela devrait prendre une minute ou deux...
 Vous n'êtes pas autorisé à mettre à jour youtube-dl
-Vous n'êtes pas autorisé à fermer
-Quittez PiKaraoke maintenant !
-Vous n'êtes pas autorisé à quitter
-Arrêter le système maintenant !
-Vous n'êtes pas autorisé à fermer
+Vous n'avez pas la permission de fermer
+Quittez OpenHomeKaraoke maintenant !
+Vous n'avez pas la permission de quitter
+Arrêtez le système maintenant !
+Vous n'avez pas la permission de fermer
 Redémarrage du système maintenant !
 Vous n'êtes pas autorisé à redémarrer
 Extension du système de fichiers et redémarrage du système maintenant !
 Impossible d'étendre fs sur des appareils autres que Raspberry Pi !
 Vous n'êtes pas autorisé à redimensionner le système de fichiers
-Chemin Youtube-dl introuvable !
+Le chemin Youtube-dl est introuvable et pip n'a pas réussi à l'installer !
 Chemin VLC introuvable !
 Chemin omxplayer introuvable !
 Création du chemin de téléchargement :
-Wifi/Réseau non connecté. Fermeture dans 10s...
+Wifi/Réseau non connecté. Arrêt dans 10 secondes...
 Pour sélectionner des chansons, scannez QR ou connectez-vous à
-Pour l'affichage TV, connectez-vous à
-Appuyez sur F pour basculer en plein écran
-Appuyez sur ESC pour quitter PiKaraoke
+Pour l'affichage du téléviseur, connectez-vous à
+Appuyez sur F pour passer en plein écran
+Appuyez sur ESC pour quitter OpenHomeKaraoke
 Mode de configuration RaspiWifiConfig détecté !
 Connectez un autre appareil/smartphone au point d'accès Wifi : '%s'
 Pointez ensuite son navigateur vers : '%s://%s%s' et suivez les instructions.
@@ -58,27 +58,27 @@ Ajouté par:
 Lecture en cours:
 Mode administrateur accordé !
 L'augmentation du délai audio vous donnera plus de temps pour lire les paroles avant de chanter la phrase suivante.
-La diminution du délai des sous-titres vous donnera plus de temps pour lire les paroles avant de chanter la phrase suivante.
-Un demi-ton est également appelé demi-ton. C'est le plus petit intervalle utilisé dans la musique occidentale classique, égal à un douzième d'octave ou à un demi-ton.
-Le séparateur vocal basé sur DNN est activé. PiKaraoke utilise PyTorch (par Facebook) pour exécuter un réseau de neurones profond pour séparer le son instrumental et vocal dans chaque piste donnant lieu à un son stéréo.
+Réduire le délai des sous-titres vous donnera plus de temps pour lire les paroles avant de chanter la phrase suivante.
+Un demi-ton est également appelé demi-ton. C'est le plus petit intervalle utilisé dans la musique classique occidentale, égal à un douzième d'octave ou un demi-ton.
+Le séparateur vocal basé sur DNN est activé. OpenHomeKaraoke utilise PyTorch (par Facebook) pour gérer un réseau neuronal profond afin de diviser le son instrumental et vocal dans chaque piste, donnant ainsi naissance à un son stéréo.
 Contrôle du joueur
 Musique
 Mixte
 Voix
-Changer de clé
+Changer la clé
 Rien ne joue en ce moment.
-Aucune chanson n'est en file d'attente.
-Cette chanson n'est pas ajoutée par vous. Voulez-vous vraiment redémarrer cette piste ?
-Cette chanson n'est pas ajoutée par vous. Voulez-vous vraiment ignorer cette piste ?
+Aucune chanson n'est mise en file d'attente.
+Cette chanson n'est pas ajoutée par vous. Êtes-vous sûr de vouloir redémarrer cette piste ?
+Cette chanson n'est pas ajoutée par vous. Êtes-vous sûr de vouloir ignorer cette piste ?
 Contrôle du joueur
 Lecture en cours
 Prochaine chanson
 Chercher à:
 Délai audio (sec)
-Délai de sous-titre (sec)
+Délai des sous-titres (sec)
 Redémarrer la chanson
 Jouer pause
-Ignorer la chanson en cours
+Sauter la chanson actuelle
 Baisser le volume
 Régler le volume
 Monter le son
@@ -89,7 +89,7 @@ Diminuer le délai audio
 Définir le délai audio
 Augmenter le délai audio
  demi-tons
-S'il vous plaît entrez votre nom. Cela s'affichera à côté des chansons que vous avez mises en file d'attente à partir de cet appareil.
+S'il vous plaît entrez votre nom. Cela apparaîtra à côté des chansons que vous mettez en file d'attente depuis cet appareil.
 Chanson ajoutée à la file d'attente :
 Chanson déjà dans la file d'attente :
 Trier par date
@@ -97,113 +97,135 @@ Trier par ordre alphabétique
 Ajouter '%s' à la file d'attente
 Parcourir
 Trié par 'Date'
-Trié par 'Alphabétique'
+Trié par « Alphabétique »
 Chansons
-affichant <b>{start} - {end}</b> {record_name}, au total <b>{total}</b> {record_name}
+affichage de <b>{start} - {end}</b> {record_name}, au total <b>{total}</b> {record_name}
 trouvé <b>{found}</b> {record_name}, affichant <b>{start} - {end}</b> {record_name}
 Modifier la chanson
-Monter dans la file d'attente
+Remonter dans la file d'attente
 Descendre dans la file d'attente
 Êtes-vous sûr de vouloir supprimer de la file d'attente
-Voulez-vous vraiment effacer TOUTE la file d'attente ? Tapez 'OK' pour continuer
-Ajouter 3 chansons au hasard
+Êtes-vous sûr de vouloir effacer la file d'attente ENTIÈRE ?
+Ajouter 3 chansons aléatoires
 Tout effacer
 La file d'attente est vide
 File d'attente
 Supprimer
 Chansons disponibles dans la bibliothèque locale
 Chanson ajoutée à la file d'attente :
-Le morceau est déjà dans la file d'attente :
-Rechercher / Ajouter nouveau
+La chanson est déjà dans la file d'attente :
+Rechercher/Ajouter un nouveau
 Recherche
 File d'attente
-Inclure les matchs non karaoké
+Rechercher uniquement les matchs de karaoké
 Avancé
-Tapez une chanson (titre/artiste) pour rechercher les chansons disponibles et cliquez sur "File d'attente" pour l'ajouter à la file d'attente.
+Tapez une chanson (titre/artiste) pour rechercher les chansons disponibles et cliquez sur « File d'attente » pour l'ajouter à la file d'attente.
 Si la chanson n'apparaît pas dans la liste déroulante « Chansons disponibles », cliquez sur « Rechercher » pour la trouver sur Youtube.
-URL YouTube de téléchargement direct :
-Ajouter à la liste
+URL de téléchargement direct sur YouTube :
+Ajouter à la file d'attente après le téléchargement
 Inclure les sous-titres
 Télécharger
-Recherche YouTube pour
+Recherche sur YouTube pour
 Résultats de recherche pour
 Cliquez sur la liste déroulante pour afficher plus de résultats
 Lien:
 Chansons disponibles
-Voulez-vous modifier le nom d'affichage de la personne qui utilise cet appareil ? Cela apparaîtra à côté des chansons en file d'attente. Actuel:
+Souhaitez-vous modifier le nom d'affichage de la personne utilisant cet appareil ? Cela apparaîtra à côté des chansons en file d'attente. Actuel:
 Utilisateur actuel
 Paramètres
-PiKaraoké
+OpenHomeKaraoké
 Êtes-vous sûr de vouloir quitter?
-Voulez-vous vraiment arrêter ?
-Voulez-vous vraiment redémarrer ?
+Êtes-vous sûr de vouloir arrêter ?
+Êtes-vous sûr de vouloir redémarrer ?
 Êtes-vous sûr de vouloir mettre à jour Youtube-dl maintenant ? Les téléchargements en cours et en attente peuvent échouer.
-Voulez-vous vraiment étendre le système de fichiers ? Cela va redémarrer votre raspberry pi.
+Êtes-vous sûr de vouloir étendre le système de fichiers ? Cela redémarrera votre Raspberry Pi.
 Information
-Code QR d'URL pratique à partager avec un ami :
-SE
+Code QR URL pratique à partager avec un ami :
+Système d'exploitation
 Utilisation du disque
 Mémoire
 Capture d'écran
-Séparateur de voix
+Séparateur vocal
 Version Youtube-dl (yt-dlp)
-Version PiKaraoké
+Version OpenHomeKaraoké
 Options de contrôle avancées
-Mode répartiteur vocal :
-Utilisez L-R/L+R
+Mode séparateur vocal :
+Utiliser L-R/L+R
 Utiliser le DNN
-L'audio MTV standard a les deux canaux stéréo (L et R) codés de telle sorte que : L-R est la piste d'instrument, L+R est la piste vocale. Ainsi, en soustrayant ou en ajoutant simplement les deux canaux stéréo, on peut obtenir la piste instrumentale et vocale en son mono. Le séparateur vocal intégré basé sur DNN (réseau de neurones profonds) de PiKaraoke utilise un algorithme d'intelligence artificielle pour séparer le son instrumental et vocal dans chaque piste stéréo indépendamment, ce qui donne des pistes instrumentales et vocales stéréo.
+L'audio MTV standard a les deux canaux stéréo (L et R) codés de telle manière que : L-R est la piste d'instrument, L+R est la piste vocale. Ainsi, en soustrayant ou en ajoutant simplement les deux canaux stéréo, on peut obtenir la piste instrumentale et vocale en son mono. Le séparateur vocal intégré basé sur DNN (réseau neuronal profond) d'OpenHomeKaraoke utilise un algorithme d'IA pour diviser indépendamment le son instrumental et vocal dans chaque piste stéréo, ce qui donne lieu à des pistes instrumentales et vocales stéréo.
 Arrêter le séparateur
 Redémarrer le séparateur
-Le séparateur vocal (qui prend en charge à la fois la soustraction basée sur DNN et la soustraction stéréo) fonctionne comme un processus séparé en arrière-plan, générant un fichier audio instrumental/vocal pour chaque chanson.
+Le séparateur vocal (qui prend en charge à la fois la soustraction basée sur DNN et stéréo) s'exécute comme un processus distinct en arrière-plan, générant un fichier audio instrumental/vocal pour chaque chanson.
 Resynchronisez l'audio et la vidéo :
 Arrêter le streamer
 Redémarrer le streamer
-Cela n'affecte que la lecture de KTV via un navigateur Web. Le redémarrage de la capture d'écran et du streaming améliore la synchronisation audio/vidéo, il diminue également la latence entre le serveur et le navigateur.
+Cela affecte uniquement la lecture de KTV via un navigateur Web. Le redémarrage de la capture d'écran et du streaming améliore la synchronisation audio/vidéo et diminue également la latence entre le serveur et le navigateur.
 Actualisez la liste des chansons :
-Réanalyser le répertoire de chansons
-Vous ne devriez avoir à le faire que si vous avez copié manuellement des fichiers dans le répertoire de téléchargement pendant que PiKaraoke était en cours d'exécution.
+Réanalyser le répertoire des chansons
+Vous ne devriez avoir besoin de le faire que si vous avez copié manuellement des fichiers dans le répertoire de téléchargement pendant l'exécution d'OpenHomeKaraoke.
 Mises à jour
-Si les téléchargements ou les recherches ont cessé de fonctionner, la mise à jour de youtube-dl résoudra probablement le problème. La version actuellement installée est :
+Si les téléchargements ou les recherches ne fonctionnent plus, la mise à jour de youtube-dl résoudra probablement le problème. La version actuellement installée est :
 Mettre à jour youtube-dl
-Ce lien de mise à jour ci-dessus peut échouer si vous ne disposez pas des autorisations de fichier appropriées. Vérifiez le journal PiKaraoke pour les erreurs.
+Ce lien de mise à jour ci-dessus peut échouer si vous ne disposez pas des autorisations de fichiers appropriées. Vérifiez le journal OpenHomeKaraoke pour les erreurs.
 Fermer
-Ne vous contentez pas de débrancher la prise ! Éteignez toujours votre serveur correctement pour éviter la corruption des données.
-Quitter PiKaraoké
+Ne vous contentez pas de débrancher la prise ! Arrêtez toujours votre serveur correctement pour éviter la corruption des données.
+Quitter OpenHomeKaraoke
 Redémarrer le système
 Système d'arrêt
 Autre
 Développer le système de fichiers Raspberry Pi
-Si vous venez d'installer l'image PiKaraoke pi pré-construite et que votre carte SD est supérieure à 4 Go, vous souhaiterez peut-être étendre le système de fichiers pour utiliser l'espace restant. Vous n'avez besoin de le faire qu'une seule fois. Cela redémarrera le système.
+Si vous venez d'installer l'image OpenHomeKaraoke pi prédéfinie et que votre carte SD fait plus de 4 Go, vous souhaiterez peut-être étendre le système de fichiers pour utiliser l'espace restant. Vous ne devez le faire qu'une seule fois. Cela redémarrera le système.
 Désactiver le mode administrateur
 Activer le mode administrateur
 Se déconnecter
-connexion
+se connecter
 Information système
 Maison
 Changer de langue
 Veuillez choisir la langue
 Langue du système
 Langue actuelle du système :
-Cela change la langue du système backend PiKaraoke qui s'affiche sur l'écran du téléviseur ; de plus, chaque utilisateur qui se connecte peut également modifier la langue de son interface utilisateur Web respective dans le bouton globe du menu en haut à droite.
+Cela change la langue du système backend OpenHomeKaraoke qui s'affiche sur l'écran du téléviseur ; de plus, chaque utilisateur connecté peut également modifier la langue de son interface Web respective dans le bouton globe du menu en haut à droite.
 Téléchargement terminé avec succès !
 Échec du téléchargement!
 Chanson ajoutée à la file d'attente !
-Échec de la mise en file d'attente du morceau !
+Échec de la mise en file d'attente de la chanson !
 Informations et paramètres système
 Normalisation des volumes
-Différentes chansons ont souvent un volume différent. L'activation de la normalisation du volume exécutera d'abord <i>ffmpeg</i> pour calculer le volume global d'une chanson et ajustera automatiquement le volume du lecteur afin que chaque chanson sonne de la même manière.
+Différentes chansons ont souvent un volume différent. L'activation de la normalisation du volume exécutera d'abord <i>ffmpeg</i> pour calculer le volume global d'une chanson et ajustera automatiquement le volume du lecteur afin que chaque chanson sonne de manière égale.
 Chemin de téléchargement de la bibliothèque de chansons
 Nombre total de chansons
-Afficher/masquer les sous-titres
-Changer de vitesse
+Afficher/Masquer les sous-titres
+Changer la vitesse
 Vous pouvez chanter la chanson plus rapidement ou plus lentement en modifiant la vitesse de lecture entre 0,8x et 1,2x à l'aide de la barre de vitesse ; pour une autre vitesse de lecture, cliquez sur la valeur de vitesse à modifier.
 Cliquez pour réinitialiser la vitesse de lecture à 1x
-Cliquez pour régler la vitesse de lecture
-Cliquez pour réinitialiser la tonalité/la hauteur
+Cliquez pour définir la vitesse de lecture
+Cliquez pour réinitialiser la tonalité/le pas
 Touche de réinitialisation
-Vitesse de réinitialisation
+Réinitialiser la vitesse
 Haute qualité
 Ajoutez la chanson à la file d'attente de chant une fois le téléchargement terminé
-Télécharger les sous-titres (uniquement intégrés) dans toutes les langues si disponibles
-Le téléchargement de vidéos de haute qualité peut prendre très longtemps
+Téléchargez les sous-titres (uniquement intégrés) dans toutes les langues si disponibles
+Le téléchargement de vidéos de haute qualité peut prendre beaucoup de temps
+Enregistrer les paramètres de lecture
+Enregistrez les paramètres de lecture pour chaque chanson, notamment : le délai audio, le délai des sous-titres et l'affichage ou non des sous-titres.
+Ajoutez une chanson en prononçant le titre de la chanson
+Veuillez prononcer le titre de la chanson et cliquez sur OK !
+Seuls les sites Web HTTPS peuvent avoir accès au microphone, souhaitez-vous rediriger vers le site Web HTTPS ?
+Veuillez accorder l'autorisation d'accéder au microphone !
+Modifier le nom de la chanson :
+Sauvegarder
+Supprimer cette chanson
+Etes-vous sûr de vouloir supprimer cette chanson de la bibliothèque ?
+Erreur de paramètre de demande !
+Coupez la chanson :
+Ajustez le volume de la chanson :
+Heure de début :
+Heure de fin:
+Volume d'origine (dB) :
+Impossible de trouver une chanson correspondant à "%s".
+Ajout de "%s" dans la file d'attente.
+Veuillez choisir la ou les chansons à ajouter :
+ANNULER
+Fermer
+Ajouter

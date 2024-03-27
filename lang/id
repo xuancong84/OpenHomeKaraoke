@@ -4,78 +4,78 @@ Keluar dari mode admin!
 Menambahkan %s trek acak
 Kehabisan lagu!
 Membersihkan antrian!
-Kesalahan saat memindahkan item di dalam antrean: argumen-tidak valid
-Berhasil memindahkan item di dalam antrean:
-Kesalahan saat memindahkan item ke dalam antrean:
-Dipindahkan ke bawah dalam antrean:
-Kesalahan bergerak ke bawah dalam antrean:
-Dipindahkan ke atas dalam antrean:
-Kesalahan bergerak ke atas dalam antrean:
-Dihapus dari antrean:
+Kesalahan saat memindahkan item ke dalam antrian: argumen tidak valid
+Berhasil memindahkan item ke dalam antrian:
+Kesalahan saat memindahkan item di dalam antrean:
+Pindah ke bawah dalam antrian:
+Kesalahan saat berpindah ke bawah dalam antrean:
+Pindah dalam antrian:
+Kesalahan saat naik antrian:
+Dihapus dari antrian:
 Kesalahan saat menghapus dari antrean:
 Pengunduhan dimulai:
 Setelah selesai, itu akan ditambahkan ke antrian.
-Setelah selesai, itu akan muncul di daftar "lagu yang tersedia".
+Setelah selesai, lagu itu akan muncul di daftar "lagu yang tersedia".
 Kesalahan: Tidak dapat menghapus lagu ini karena berada dalam antrean saat ini:
 Lagu dihapus:
 Kesalahan: Tidak ada parameter lagu yang ditentukan!
-Error: Tidak dapat mengedit lagu ini karena sedang diputar:
+Kesalahan: Tidak dapat mengedit lagu ini karena sedang diputar:
 Edit File Lagu
-Galat Mengganti nama berkas: '%s' menjadi '%s'. Nama file sudah ada.
-File berganti nama: '%s' menjadi '%s'
-Error: Tidak ada parameter nama file yang ditentukan!
+Kesalahan Mengganti nama file: '%s' menjadi '%s'. Nama file sudah ada.
+Berganti nama file: '%s' menjadi '%s'
+Kesalahan: Tidak ada parameter nama file yang ditentukan!
 Tidak dikenal
 Berlari
 Berhenti
- (CPU saja)
+ (hanya CPU)
  (GPU diaktifkan)
-Memperbarui youtube-dl! Harus mengambil satu atau dua menit...
+Memperbarui youtube-dl! Perlu waktu satu atau dua menit...
 Anda tidak memiliki izin untuk memperbarui youtube-dl
-Anda tidak memiliki izin untuk menutup
-Keluar dari PiKaraoke sekarang!
+Anda tidak memiliki izin untuk mematikan
+Keluar dari OpenHomeKaraoke sekarang!
 Anda tidak memiliki izin untuk berhenti
 Matikan sistem sekarang!
-Anda tidak memiliki izin untuk menutup
-Reboot sistem sekarang!
+Anda tidak memiliki izin untuk mematikan
+Nyalakan ulang sistem sekarang!
 Anda tidak memiliki izin untuk Reboot
 Memperluas sistem file dan me-reboot sistem sekarang!
-Tidak dapat memperluas fs pada perangkat pi non-raspberry!
+Tidak dapat memperluas fs pada perangkat non-raspberry pi!
 Anda tidak memiliki izin untuk mengubah ukuran sistem file
-Jalur Youtube-dl tidak ditemukan!
+Jalur Youtube-dl tidak ditemukan dan pip gagal menginstalnya!
 Jalur VLC tidak ditemukan!
 jalur omxplayer tidak ditemukan!
 Membuat jalur unduhan:
-Wifi/Jaringan tidak tersambung. Mematikan dalam 10 detik...
-Untuk memilih lagu, pindai QR atau sambungkan ke
+Wifi/Jaringan tidak terhubung. Mematikan dalam 10 detik...
+Untuk memilih lagu, pindai QR atau sambungkan
 Untuk tampilan TV, sambungkan ke
-Tekan F untuk beralih layar penuh
-Tekan ESC untuk keluar dari PiKaraoke
-Mode penyiapan RaspiWifiConfig terdeteksi!
+Tekan F untuk beralih ke layar penuh
+Tekan ESC untuk keluar dari OpenHomeKaraoke
+Mode pengaturan RaspiWifiConfig terdeteksi!
 Hubungkan perangkat/smartphone lain ke Wifi AP: '%s'
 Lalu arahkan browsernya ke: '%s://%s%s' dan ikuti petunjuknya.
 Berikutnya:
 Ditambahkan oleh:
 Sedang dimainkan:
 Mode admin diberikan!
-Meningkatkan jeda audio akan memberi Anda lebih banyak waktu untuk membaca lirik sebelum menyanyikan kalimat berikutnya.
-Mengurangi jeda subtitle akan memberi Anda lebih banyak waktu untuk membaca lirik sebelum menyanyikan kalimat berikutnya.
-Semitone juga dikenal sebagai setengah langkah. Ini adalah interval terkecil yang digunakan dalam musik klasik Barat, sama dengan seperdua belas oktaf atau setengah nada.
-Pembagi vokal berbasis DNN diaktifkan. PiKaraoke menggunakan PyTorch (oleh Facebook) untuk menjalankan jaringan saraf yang dalam untuk membagi suara instrumental dan vokal di setiap trek sehingga menimbulkan suara stereo.
+Meningkatkan penundaan audio akan memberi Anda lebih banyak waktu untuk membaca lirik sebelum menyanyikan kalimat berikutnya.
+Mengurangi penundaan subtitle akan memberi Anda lebih banyak waktu untuk membaca lirik sebelum menyanyikan kalimat berikutnya.
+Seminada juga dikenal sebagai setengah langkah. Ini adalah interval terkecil yang digunakan dalam musik klasik Barat, sama dengan seperdua belas oktaf atau setengah nada.
+Pemisah vokal berbasis DNN diaktifkan. OpenHomeKaraoke menggunakan PyTorch (oleh Facebook) untuk menjalankan jaringan saraf dalam untuk membagi suara instrumental dan vokal di setiap trek sehingga menghasilkan suara stereo.
 Kontrol Pemain
 Musik
 Campuran
 Suara
 Ubah Kunci
 Tidak ada yang diputar saat ini.
-Tidak ada lagu yang diantrekan.
-Lagu ini tidak ditambahkan oleh Anda. Yakin ingin memulai ulang jalur ini?
-Lagu ini tidak ditambahkan oleh Anda. Yakin ingin melewati jalur ini?
+Tidak ada lagu yang dimasukkan dalam antrean.
+Lagu ini tidak Anda tambahkan. Apakah Anda yakin ingin memulai ulang trek ini?
+Lagu ini tidak Anda tambahkan. Apakah Anda yakin ingin melewati jalur ini?
 Kontrol Pemain
 Sedang dimainkan
 Lagu berikutnya
 Mencari:
-Penundaan Audio (dtk)
-Penundaan Subtitel (dtk)
+Penundaan Audio (detik)
+Penundaan Subtitle (dtk)
 Mulai Ulang Lagu
 Putar/Jeda
 Lewati Lagu Saat Ini
@@ -83,98 +83,98 @@ Volume Turun
 Atur Volume
 Volume Naik
 Kurangi Penundaan Subtitle
-Atur Penundaan Teks Layar
+Setel Penundaan Subtitle
 Tingkatkan Penundaan Subtitle
 Kurangi Penundaan Audio
-Atur Penundaan Audio
+Setel Penundaan Audio
 Tingkatkan Penundaan Audio
- setengah nada
+ seminada
 Silahkan masukan nama anda. Ini akan muncul di samping lagu yang Anda antri dari perangkat ini.
-Lagu ditambahkan ke antrean:
-Lagu sudah dalam antrian:
+Lagu ditambahkan ke antrian:
+Lagu sudah ada dalam antrian:
 Urutkan berdasarkan Tanggal
 Urutkan berdasarkan Abjad
-Tambahkan '%s' ke antrean
+Tambahkan '%s' ke antrian
 Jelajahi
 Diurutkan berdasarkan 'Tanggal'
-Diurutkan berdasarkan 'Abjad'
+Diurutkan berdasarkan 'Alfabet'
 lagu
 menampilkan <b>{start} - {end}</b> {record_name}, total <b>{total}</b> {record_name}
 ditemukan <b>{found}</b> {record_name}, menampilkan <b>{start} - {end}</b> {record_name}
-Mengedit lagu
+Sunting lagu
 Naik dalam antrian
-Turun dalam antrian
-Anda yakin ingin menghapus dari antrean
-Anda yakin ingin menghapus SELURUH antrean? Ketik 'OK' untuk melanjutkan
+Pindah ke bawah dalam antrian
+Apakah Anda yakin ingin menghapus dari antrean
+Apakah Anda yakin ingin menghapus SELURUH antrean?
 Tambahkan 3 lagu acak
 Bersihkan semua
-Antrean kosong
+Antriannya kosong
 Antre
 Menghapus
 Lagu yang tersedia di perpustakaan setempat
-Menambahkan lagu ke antrean:
-Lagu sudah dalam antrean:
+Menambahkan lagu ke antrian:
+Lagu sudah ada dalam antrian:
 Cari / Tambah Baru
 Mencari
 Antre
-Sertakan pertandingan non-karaoke
+Cari pertandingan Karaoke saja
 Canggih
 Ketik lagu (judul/artis) untuk mencari lagu yang tersedia dan klik 'Antrian' untuk menambahkannya ke antrean.
-Jika lagu tidak muncul di tarik-turun "Lagu yang Tersedia", klik 'Cari' untuk menemukannya di Youtube.
+Jika lagu tidak muncul di menu tarik-turun "Lagu yang Tersedia", klik 'Cari' untuk menemukannya di Youtube.
 Unduh langsung url YouTube:
-Tambahkan ke antrean
+Tambahkan ke antrian setelah diunduh
 Sertakan subtitle
 Unduh
 Mencari YouTube untuk
 Hasil pencarian
-Klik dropdown untuk menampilkan lebih banyak hasil
+Klik tarik-turun untuk menampilkan hasil lainnya
 Tautan:
 Lagu yang Tersedia
-Apakah Anda ingin mengubah nama tampilan orang yang menggunakan perangkat ini? Ini akan muncul di sebelah lagu yang antri. Saat ini:
+Apakah Anda ingin mengubah nama tampilan orang yang menggunakan perangkat ini? Ini akan muncul di sebelah lagu yang masuk antrean. Saat ini:
 Pengguna saat ini
 Pengaturan
-PiKaraoke
+BukaRumahKaraoke
 Apakah Anda yakin ingin berhenti?
-Anda yakin ingin menutup?
+Apakah Anda yakin ingin mematikannya?
 Apakah Anda yakin ingin memulai ulang?
-Anda yakin ingin memperbarui Youtube-dl sekarang? Unduhan saat ini dan yang tertunda mungkin gagal.
-Apakah Anda yakin ingin memperluas sistem file? Ini akan mem-boot ulang raspberry pi Anda.
+Apakah Anda yakin ingin memperbarui Youtube-dl sekarang? Unduhan saat ini dan yang tertunda mungkin gagal.
+Apakah Anda yakin ingin memperluas sistem file? Ini akan me-reboot raspberry pi Anda.
 Informasi
-Kode QR URL praktis untuk dibagikan dengan teman:
-OS
+Kode QR URL yang berguna untuk dibagikan dengan teman:
+sistem operasi
 Penggunaan Disk
 Penyimpanan
 Cuplikan Layar
 Pemisah Vokal
 Versi Youtube-dl (yt-dlp).
-Versi PiKaraoke
-Opsi Kontrol Lanjutan
-Mode pembagi vokal:
-Gunakan L-R/L+R
+Versi OpenHomeKaraoke
+Opsi Kontrol Tingkat Lanjut
+Mode pemisah vokal:
+Gunakan Kiri-R/L+R
 Gunakan DNN
-Audio MTV standar memiliki dua saluran stereo (L dan R) yang dikodekan sedemikian rupa sehingga: L-R adalah track instrumen, L+R adalah track vokal. Jadi, hanya dengan mengurangi atau menambahkan dua saluran stereo, kita bisa mendapatkan trek instrumental dan vokal dalam suara mono. Pemisah vokal berbasis DNN (jaringan saraf dalam) bawaan PiKaraoke menggunakan algoritme AI untuk membagi suara instrumental dan vokal di setiap trek stereo secara independen sehingga menghasilkan trek instrumental dan vokal stereo.
+Audio MTV standar memiliki dua saluran stereo (Kiri dan Kanan) yang dikodekan sedemikian rupa sehingga: Kiri-R adalah trek instrumen, L+R adalah trek vokal. Jadi, hanya dengan mengurangi atau menambahkan dua saluran stereo, kita bisa mendapatkan trek instrumental dan vokal dalam suara mono. Pemisah vokal (jaringan saraf dalam) berbasis DNN bawaan OpenHomeKaraoke menggunakan algoritma AI untuk membagi suara instrumental dan vokal di setiap trek stereo secara independen sehingga menghasilkan trek instrumental dan vokal stereo.
 Hentikan Pemisah
 Mulai ulang Pemisah
 Pemisah vokal (yang mendukung pengurangan berbasis DNN dan stereo) berjalan sebagai proses terpisah di latar belakang, menghasilkan file audio instrumental/vokal untuk setiap lagu.
-Sinkronkan ulang audio dan video:
-Hentikan Pita
-Mulai ulang Pita
-Ini hanya memengaruhi pemutaran KTV melalui browser web. Memulai ulang tangkapan layar dan streaming meningkatkan sinkronisasi audio/video, juga mengurangi latensi antara server dan browser.
+Sinkronisasi ulang audio dan video:
+Hentikan Streamer
+Mulai ulang Streamer
+Ini hanya mempengaruhi bermain KTV melalui browser web. Memulai ulang tangkapan layar dan streaming akan meningkatkan sinkronisasi audio/video, juga mengurangi latensi antara server dan browser.
 Segarkan daftar lagu:
-Telusuri ulang direktori lagu
-Anda hanya perlu melakukan ini jika Anda menyalin file secara manual ke direktori unduhan saat PiKaraoke sedang berjalan.
+Pindai ulang direktori lagu
+Anda hanya perlu melakukan ini jika Anda menyalin file secara manual ke direktori unduhan saat OpenHomeKaraoke sedang berjalan.
 Pembaruan
 Jika unduhan atau pencarian berhenti berfungsi, memperbarui youtube-dl mungkin akan memperbaikinya. Versi terinstal saat ini adalah:
 Perbarui youtube-dl
-Tautan pembaruan di atas ini mungkin gagal jika Anda tidak memiliki izin file yang sesuai. Periksa log PiKaraoke untuk kesalahan.
+Tautan pembaruan di atas mungkin gagal jika Anda tidak memiliki izin file yang tepat. Periksa log OpenHomeKaraoke untuk mengetahui adanya kesalahan.
 Matikan
-Jangan hanya menarik stekernya! Selalu matikan server Anda dengan benar untuk menghindari kerusakan data.
-Keluar dari PiKaraoke
-Nyalakan Ulang Sistem
-Sistem Mati
+Jangan hanya mencabut stekernya! Selalu matikan server Anda dengan benar untuk menghindari kerusakan data.
+Keluar dari OpenHomeKaraoke
+Mulai Ulang Sistem
+Sistem Pematian
 Lainnya
-Luaskan sistem file Raspberry Pi
-Jika Anda baru saja menginstal gambar PiKaraoke pi bawaan dan kartu SD Anda lebih besar dari 4GB, Anda mungkin ingin memperluas sistem file untuk menggunakan ruang yang tersisa. Anda hanya perlu melakukan ini sekali. Ini akan mem-boot ulang sistem.
+Perluas sistem file Raspberry Pi
+Jika Anda baru saja menginstal image OpenHomeKaraoke pi bawaan dan kartu SD Anda lebih besar dari 4GB, Anda mungkin ingin memperluas sistem file untuk memanfaatkan ruang yang tersisa. Anda hanya perlu melakukan ini sekali saja. Ini akan me-reboot sistem.
 Nonaktifkan mode admin
 Aktifkan mode admin
 keluar
@@ -185,25 +185,47 @@ Ganti BAHASA
 Silakan pilih bahasa
 Bahasa Sistem
 Bahasa sistem saat ini:
-Ini mengubah bahasa sistem backend PiKaraoke yang ditampilkan ke layar TV; selain itu, setiap pengguna yang terhubung juga dapat mengubah bahasa UI Web masing-masing di tombol globe di menu kanan atas.
-Unduh selesai dengan sukses!
-Unduhan gagal!
-Lagu ditambahkan ke antrean!
+Ini mengubah bahasa sistem backend OpenHomeKaraoke yang ditampilkan di layar TV; selain itu, setiap pengguna yang terhubung juga dapat mengubah bahasa UI Web masing-masing di tombol globe di menu kanan atas.
+Pengunduhan berhasil diselesaikan!
+Pengunduhan gagal!
+Lagu ditambahkan ke antrian!
 Gagal mengantri lagu!
 Info & Pengaturan Sistem
 Normalisasi Volume
-Lagu yang berbeda seringkali memiliki volume yang berbeda. Mengaktifkan normalisasi volume pertama-tama akan menjalankan <i>ffmpeg</i> untuk menghitung volume global sebuah lagu dan menyesuaikan volume pemutar secara otomatis sehingga setiap lagu terdengar sama kerasnya.
+Lagu yang berbeda seringkali memiliki volume yang berbeda. Mengaktifkan normalisasi volume akan menjalankan <i>ffmpeg</i> terlebih dahulu untuk menghitung volume global sebuah lagu dan secara otomatis menyesuaikan volume pemutar sehingga setiap lagu terdengar sama kerasnya.
 Jalur pengunduhan perpustakaan lagu
 Jumlah total lagu
 Tampilkan/Sembunyikan Subjudul
 Ubah Kecepatan
-Anda dapat menyanyikan lagu lebih cepat atau lebih lambat dengan mengubah kecepatan pemutaran antara 0,8x hingga 1,2x menggunakan speed trackbar; untuk kecepatan pemutaran lainnya, klik nilai kecepatan yang akan diubah.
-Klik untuk menyetel ulang kecepatan pemutaran ke 1x
+Anda dapat menyanyikan lagu lebih cepat atau lebih lambat dengan mengubah kecepatan pemutaran menjadi 0,8x hingga 1,2x menggunakan trackbar kecepatan; untuk kecepatan pemutaran lainnya, klik pada nilai kecepatan yang ingin diubah.
+Klik untuk mengatur ulang kecepatan pemutaran ke 1x
 Klik untuk mengatur kecepatan pemutaran
 Klik untuk mengatur ulang kunci/pitch
 Atur Ulang Kunci
 Atur Ulang Kecepatan
 Kualitas tinggi
-Tambahkan lagu ke antrean bernyanyi setelah pengunduhan selesai
+Tambahkan lagu ke antrian bernyanyi setelah pengunduhan selesai
 Unduh subtitle (hanya tersemat) dalam semua bahasa jika tersedia
-Mengunduh video berkualitas tinggi mungkin membutuhkan waktu yang sangat lama
+Mengunduh video berkualitas tinggi mungkin memerlukan waktu yang sangat lama
+Simpan Pengaturan Putar
+Simpan pengaturan pemutaran untuk setiap lagu, termasuk: penundaan audio, penundaan subtitle, dan apakah akan menampilkan subtitle.
+Tambahkan lagu dengan mengucapkan judul lagu
+Silakan ucapkan judul lagunya dan klik OK!
+Hanya situs web HTTPS yang dapat memiliki akses ke mikrofon, apakah Anda ingin mengalihkan ke situs web HTTPS?
+Harap berikan izin untuk mengakses mikrofon!
+Sunting Nama Lagu:
+Menyimpan
+Hapus lagu ini
+Apakah Anda yakin ingin menghapus lagu ini dari perpustakaan?
+Kesalahan parameter permintaan!
+Pangkas lagunya:
+Sesuaikan volume lagu:
+Waktu mulai:
+Akhir waktu:
+Volume Asli (dB):
+Tidak dapat menemukan lagu yang cocok dengan "%s".
+Menambahkan "%s" ke dalam antrian.
+Silakan pilih lagu yang ingin ditambahkan:
+MEMBUKA
+Menutup
+Menambahkan

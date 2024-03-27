@@ -32,7 +32,7 @@ Zaustavljeno
 Ažuriranje youtube-dl! Trebalo bi potrajati minut-dva...
 Nemate dozvolu da ažurirate youtube-dl
 Nemate dozvolu za gašenje
-Napuštam PiKaraoke sada!
+Napuštam OpenHomeKaraoke sada!
 Nemate dozvolu da odustanete
 Isključite sistem odmah!
 Nemate dozvolu za gašenje
@@ -41,7 +41,7 @@ Nemate dozvolu za ponovno pokretanje
 Proširivanje sistema datoteka i ponovno pokretanje sistema sada!
 Nije moguće proširiti fs na uređajima koji nisu raspberry pi!
 Nemate dozvolu za promjenu veličine sistema datoteka
-Putanja za Youtube-dl nije pronađena!
+Putanja za Youtube-dl nije pronađena i pip ga nije uspio instalirati!
 VLC putanja nije pronađena!
 omxplayer putanja nije pronađena!
 Kreiranje putanje za preuzimanje:
@@ -49,7 +49,7 @@ Wifi/mreža nije povezana. Gasenje za 10s...
 Za odabir pjesama, skenirajte QR ili se povežite na
 Za TV ekran, povežite se na
 Pritisnite F za prebacivanje preko cijelog ekrana
-Pritisnite ESC da zatvorite PiKaraoke
+Pritisnite ESC da zatvorite OpenHomeKaraoke
 Otkriven način podešavanja RaspiWifiConfig!
 Povežite drugi uređaj/pametni telefon na Wifi AP: '%s'
 Zatim usmjerite njegov pretraživač na: '%s://%s%s' i slijedite upute.
@@ -60,7 +60,7 @@ Admin način rada odobren!
 Povećanje kašnjenja zvuka će vam dati više vremena za čitanje teksta prije nego što otpjevate sljedeću rečenicu.
 Smanjenje kašnjenja titlova će vam dati više vremena za čitanje teksta prije nego što otpjevate sljedeću rečenicu.
 Poluton je poznat i kao polukorak. To je najmanji interval koji se koristi u klasičnoj zapadnoj muzici, jednak dvanaestini oktave ili pola tona.
-Vokalni razdjelnik zasnovan na DNN-u je omogućen. PiKaraoke koristi PyTorch (od strane Facebooka) za pokretanje duboke neuronske mreže kako bi podijelio instrumentalni i vokalni zvuk u svakoj numeri što dovodi do stereo zvuka.
+Vokalni razdjelnik zasnovan na DNN-u je omogućen. OpenHomeKaraoke koristi PyTorch (od strane Facebook-a) za pokretanje duboke neuronske mreže za razdvajanje instrumentalnog i vokalnog zvuka u svakoj numeri što dovodi do stereo zvuka.
 Kontrola igrača
 Muzika
 Miješano
@@ -77,7 +77,7 @@ Traži za:
 Kašnjenje zvuka (s)
 Kašnjenje titla (s)
 Ponovo pokreni pjesmu
-Pusti/Pauza
+Play/Pause
 Preskoči trenutnu pjesmu
 Utišavanje zvuka
 Podesite jačinu zvuka
@@ -105,7 +105,7 @@ Uredi pjesmu
 Idite gore u redu
 Pomaknite se dolje u redu
 Jeste li sigurni da želite izbrisati iz reda čekanja
-Jeste li sigurni da želite izbrisati CIJELI red čekanja? Upišite 'OK' da nastavite
+Jeste li sigurni da želite izbrisati CIJELI red čekanja?
 Dodajte 3 nasumične pjesme
 Obriši sve
 Red je prazan
@@ -117,12 +117,12 @@ Pesma je već u redu:
 Traži / Dodaj novo
 Traži
 Red
-Uključite ne-karaoke šibice
+Traži samo karaoke podudaranja
 Napredno
 Otkucajte pjesmu (naslov/izvođač) da pretražite dostupne pjesme i kliknite na 'Queue' da je dodate u red čekanja.
 Ako se pjesma ne pojavi u padajućem izborniku "Dostupne pjesme", kliknite na "Traži" da je pronađete na Youtube-u.
 Direktan download YouTube URL:
-Dodaj u red čekanja
+Dodaj u red nakon preuzimanja
 Uključi titlove
 Skinuti
 Pretraživanje YouTube za
@@ -133,7 +133,7 @@ Dostupne pjesme
 Želite li promijeniti ime za prikaz osobe koja koristi ovaj uređaj? Ovo će se pojaviti pored pjesama na čekanju. trenutno:
 Trenutni korisnik
 Postavke
-PiKaraoke
+OpenHomeKaraoke
 Jeste li sigurni da želite odustati?
 Jeste li sigurni da se želite isključiti?
 Jeste li sigurni da želite ponovo pokrenuti?
@@ -147,34 +147,34 @@ Memorija
 Screen Capture
 Vocal Splitter
 Youtube-dl (yt-dlp) verzija
-PiKaraoke verzija
+OpenHomeKaraoke verzija
 Napredne opcije kontrole
 Način vokalnog razdjelnika:
 Koristite L-R/L+R
 Koristite DNN
-Standardni MTV audio ima dva stereo kanala (L i R) kodirana na takav način da: L-R je instrument numera, L+R je vokalna traka. Dakle, jednostavnim oduzimanjem ili sabiranjem dva stereo kanala, možemo dobiti instrumentalnu i vokalnu numeru u mono zvuku. PiKaraokeov ugrađeni vokalni razdjelnik baziran na DNN-u (duboka neuronska mreža) koristi AI algoritam da podijeli instrumentalni i vokalni zvuk u svakoj stereo stazi nezavisno, što rezultira stereo instrumentalnim i vokalnim zapisima.
+Standardni MTV audio ima dva stereo kanala (L i R) kodirana na takav način da: L-R je instrument numera, L+R je vokalna traka. Dakle, jednostavnim oduzimanjem ili sabiranjem dva stereo kanala, možemo dobiti instrumentalnu i vokalnu numeru u mono zvuku. OpenHomeKaraoke ugrađeni vokalni razdjelnik zasnovan na DNN-u (duboka neuronska mreža) koristi AI algoritam da podijeli instrumentalni i vokalni zvuk u svakoj stereo stazi nezavisno, što rezultira stereo instrumentalnim i vokalnim zapisima.
 Stop Splitter
 Ponovo pokrenite Splitter
 Vokalni razdjelnik (koji podržava i DNN-bazirano i stereo oduzimanje) radi kao poseban proces u pozadini, generirajući instrumentalni/vokalni audio fajl za svaku pjesmu.
-Ponovno sinhronizirajte audio i video:
+Ponovo sinhronizirajte audio i video:
 Zaustavi Streamer
 Ponovo pokrenite Streamer
 Ovo utiče samo na igranje KTV-a putem web pretraživača. Ponovno pokretanje screen-capture-and-streaming poboljšava audio/video sinhronizaciju, a takođe smanjuje kašnjenje između servera i pretraživača.
 Osvježite listu pjesama:
 Ponovno skenirajte direktorij pjesama
-Ovo trebate učiniti samo ako ste ručno kopirali datoteke u direktorij za preuzimanje dok je PiKaraoke bio pokrenut.
+Ovo biste trebali učiniti samo ako ste ručno kopirali datoteke u direktorij za preuzimanje dok je OpenHomeKaraoke bio pokrenut.
 Ažuriranja
 Ako preuzimanja ili pretraživanja prestanu raditi, ažuriranje youtube-dl će to vjerovatno popraviti. Trenutna instalirana verzija je:
 Ažurirajte youtube-dl
-Ova gornja veza za ažuriranje možda neće uspjeti ako nemate odgovarajuće dozvole za fajl. Provjerite PiKaraoke dnevnik za greške.
+Ova gornja veza za ažuriranje možda neće uspjeti ako nemate odgovarajuće dozvole za fajl. Provjerite OpenHomeKaraoke dnevnik za greške.
 Ugasiti
 Nemojte samo izvlačiti utikač! Uvijek ispravno isključite server kako biste izbjegli oštećenje podataka.
-Prekini PiKaraoke
+Zatvorite OpenHomeKaraoke
 Ponovo pokrenite sistem
 Sistem za isključivanje
 Ostalo
 Proširite Raspberry Pi sistem datoteka
-Ako ste upravo instalirali unaprijed izgrađenu sliku PiKaraoke pi i vaša SD kartica je veća od 4 GB, možda biste željeli proširiti sistem datoteka kako biste iskoristili preostali prostor. Ovo treba da uradite samo jednom. Ovo će ponovo pokrenuti sistem.
+Ako ste upravo instalirali unapred izgrađenu OpenHomeKaraoke pi sliku i vaša SD kartica je veća od 4 GB, možda ćete želeti da proširite sistem datoteka da biste iskoristili preostali prostor. Ovo treba da uradite samo jednom. Ovo će ponovo pokrenuti sistem.
 Onemogućite način rada administratora
 Omogući način rada administratora
 odjaviti se
@@ -185,7 +185,7 @@ Promijeni jezik
 Molimo odaberite jezik
 Sistemski jezik
 Trenutni sistemski jezik:
-Ovo menja jezik pozadinskog sistema PiKaraoke koji se prikazuje na TV ekranu; štaviše, svaki korisnik koji se povezuje može takođe promeniti svoj odgovarajući Web UI jezik pomoću dugmeta globusa u gornjem desnom uglu menija.
+Ovo menja jezik pozadinskog sistema OpenHomeKaraoke koji se prikazuje na TV ekranu; štaviše, svaki korisnik koji se povezuje može takođe promeniti svoj odgovarajući Web UI jezik pomoću dugmeta globusa u gornjem desnom uglu menija.
 Preuzimanje je uspješno završeno!
 Preuzimanje nije uspjelo!
 Pjesma je dodana u red čekanja!
@@ -197,7 +197,7 @@ Putanja za preuzimanje biblioteke pjesama
 Ukupan broj pjesama
 Prikaži/sakrij titl
 Promjena brzine
-Pjesmu možete pjevati brže ili sporije promjenom brzine reprodukcije unutar 0,8x do 1,2x pomoću trake za praćenje brzine; za drugu brzinu reprodukcije, kliknite na vrijednost brzine koju želite promijeniti.
+Pjesmu možete pjevati brže ili sporije tako što ćete promijeniti brzinu reprodukcije unutar 0,8x do 1,2x koristeći traku za praćenje brzine; za drugu brzinu reprodukcije, kliknite na vrijednost brzine koju želite promijeniti.
 Kliknite da vratite brzinu reprodukcije na 1x
 Kliknite da postavite brzinu reprodukcije
 Kliknite da resetujete tipku/visinu
@@ -207,3 +207,25 @@ Visoka kvaliteta
 Dodajte pjesmu u red za pjevanje nakon što se preuzimanje završi
 Preuzmite titlove (samo ugrađene) na svim jezicima ako su dostupni
 Preuzimanje video zapisa visokog kvaliteta može potrajati jako dugo
+Sačuvaj postavke za reprodukciju
+Sačuvajte postavke reprodukcije za svaku pjesmu, to uključuje: kašnjenje zvuka, kašnjenje titla i da li da se titlovi prikazuju.
+Dodajte pjesmu izgovaranjem naslova pjesme
+Molimo izgovorite naslov pjesme i kliknite OK!
+Samo HTTPS web stranice mogu imati pristup mikrofonu, da li želite da se preusmjerite na HTTPS web stranicu?
+Molimo da date dozvolu za pristup mikrofonu!
+Uredi naziv pjesme:
+Sačuvaj
+Izbriši ovu pjesmu
+Jeste li sigurni da želite izbrisati ovu pjesmu iz biblioteke?
+Greška u parametrima zahtjeva!
+Skratite pjesmu:
+Podesite glasnoću pjesme:
+vrijeme početka:
+vrijeme završetka:
+Originalna jačina zvuka (dB):
+Ne mogu pronaći nijednu pjesmu koja odgovara "%s".
+Dodano "%s" u red čekanja.
+Molimo odaberite pjesmu(e) koju želite dodati:
+UNDO
+Zatvori
+Dodati

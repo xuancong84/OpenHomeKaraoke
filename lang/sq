@@ -32,7 +32,7 @@ Ndaloi
 youtube-dl po përditësohet! Duhet të duhen një ose dy minuta ...
 Nuk ke leje të përditësosh youtube-dl
 Nuk ke leje të mbyllesh
-Po largohesh nga PiKaraoke tani!
+Po largohesh nga OpenHomeKaraoke tani!
 Ju nuk keni leje të hiqni dorë
 Sistemi po mbyllet tani!
 Nuk ke leje të mbyllesh
@@ -41,7 +41,7 @@ Ju nuk keni leje për të rindezur
 Zgjerimi i sistemit të skedarëve dhe rinisja e sistemit tani!
 Fs nuk mund të zgjerohet në pajisjet jo raspberry pi!
 Ju nuk keni leje për të ndryshuar madhësinë e sistemit të skedarëve
-Rruga Youtube-dl nuk u gjet!
+Rruga Youtube-dl nuk u gjet dhe pip nuk arriti ta instalojë atë!
 Rruga VLC nuk u gjet!
 Rruga omxplayer nuk u gjet!
 Krijimi i rrugës së shkarkimit:
@@ -49,7 +49,7 @@ Wi-Fi/Rrjeti nuk është i lidhur. Do të mbyllet pas 10 sekondash...
 Për zgjedhjen e këngëve, skanoni QR ose lidheni me
 Për ekranin e televizorit, lidheni me
 Shtypni F për të ndryshuar ekranin e plotë
-Shtypni ESC për të lënë PiKaraoke
+Shtypni ESC për të dalë nga OpenHomeKaraoke
 U zbulua mënyra e konfigurimit të RaspiWifiConfig!
 Lidhni një pajisje tjetër/smartphone me AP Wifi: '%s'
 Më pas drejtojeni shfletuesin e tij te: '%s://%s%s' dhe ndiqni udhëzimet.
@@ -60,7 +60,7 @@ Modaliteti i administratorit u dha!
 Rritja e vonesës së audios do t'ju japë më shumë kohë për të lexuar tekstet para se të këndoni fjalinë tjetër.
 Zvogëlimi i vonesës së titrave do t'ju japë më shumë kohë për të lexuar tekstet para se të këndoni fjalinë tjetër.
 Një gjysmëton njihet gjithashtu si gjysmë hapi. Është intervali më i vogël i përdorur në muzikën klasike perëndimore, i barabartë me një të dymbëdhjetën e oktavës ose gjysmë tonin.
-Ndarësi vokal i bazuar në DNN është aktivizuar. PiKaraoke përdor PyTorch (nga Facebook) për të drejtuar një rrjet të thellë nervor për të ndarë tingullin instrumental dhe vokal në secilën këngë duke krijuar tinguj stereo.
+Ndarësi vokal i bazuar në DNN është aktivizuar. OpenHomeKaraoke përdor PyTorch (nga Facebook) për të drejtuar një rrjet të thellë nervor për të ndarë tingujt instrumentalë dhe vokalë në secilën këngë duke krijuar tinguj stereo.
 Kontrolli i lojtarit
 Muzikë
 Të përziera
@@ -105,7 +105,7 @@ Redakto këngën
 Lëvizni lart në radhë
 Lëvizni poshtë në radhë
 Jeni të sigurt që dëshironi të fshini nga radha
-Jeni i sigurt që dëshironi të pastroni TË GJITHË radhën? Shkruani 'OK' për të vazhduar
+Jeni i sigurt që dëshironi të pastroni TË GJITHË radhën?
 Shtoni 3 këngë të rastësishme
 Pastroji të gjitha
 Radha është bosh
@@ -117,12 +117,12 @@ Kënga tashmë është në radhë:
 Kërko / Shto të Re
 Kërko
 Radhe
-Përfshi ndeshje jo karaoke
+Kërkoni vetëm ndeshje Karaoke
 E avancuar
 Shkruani një këngë (titull/artist) për të kërkuar këngët e disponueshme dhe klikoni 'Radhë' për ta shtuar në radhë.
-Nëse kënga nuk shfaqet në listën rënëse "Këngët e disponueshme", klikoni "Kërko" për ta gjetur në Youtube.
+Nëse kënga nuk shfaqet në listën rënëse "Këngët e disponueshme", kliko "Kërko" për ta gjetur në Youtube.
 URL-ja e YouTube për shkarkim direkt:
-Shto në radhë
+Shto në radhë pas shkarkimit
 Përfshi titrat
 Shkarko
 Duke kërkuar në YouTube për
@@ -133,12 +133,12 @@ Këngët e disponueshme
 Dëshiron të ndryshosh emrin e shfaqur të personit që përdor këtë pajisje? Kjo do të shfaqet pranë këngëve në radhë. Aktuale:
 Përdoruesi aktual
 Cilësimet
-PiKaraoke
+OpenHomeKaraoke
 Jeni i sigurt që dëshironi të hiqni dorë?
 Je i sigurt që dëshiron ta mbyllësh?
 Jeni i sigurt që dëshironi të rindizni?
-Jeni i sigurt që dëshironi të përditësoni Youtube-dl tani? Shkarkimet aktuale dhe në pritje mund të dështojnë.
-Jeni i sigurt që dëshironi të zgjeroni sistemin e skedarëve? Kjo do të ristartoni raspberry pi-në tuaj.
+Jeni i sigurt që dëshironi të përditësoni Youtube-dl tani? Shkarkimet aktuale dhe ato në pritje mund të dështojnë.
+Jeni i sigurt që dëshironi të zgjeroni sistemin e skedarëve? Kjo do të ristartoni raspberry pi.
 Informacion
 Kodi QR i përshtatshëm i URL-së për t'u ndarë me një mik:
 OS
@@ -147,12 +147,12 @@ Kujtesa
 Kapja e ekranit
 Ndarëse vokale
 Versioni Youtube-dl (yt-dlp).
-Versioni PiKaraoke
+Versioni OpenHomeKaraoke
 Opsionet e avancuara të kontrollit
 Modaliteti i ndarjes vokale:
 Përdorni L-R/L+R
 Përdorni DNN
-Audioja standarde MTV ka dy kanale stereo (L dhe R) të koduar në atë mënyrë që: L-R është pjesa e instrumentit, L+R është pjesa vokale. Kështu, thjesht duke zbritur ose shtuar dy kanalet stereo, mund të marrim pjesën instrumentale dhe vokale në tingull mono. Ndarësi vokal i integruar i bazuar në DNN (rrjeti nervor i thellë) i PiKaraoke përdor algoritmin AI për të ndarë tingujt instrumental dhe vokal në çdo pjesë stereo në mënyrë të pavarur duke rezultuar në këngë stereo instrumentale dhe vokale.
+Audioja standarde MTV ka dy kanale stereo (L dhe R) të koduar në atë mënyrë që: L-R është pjesa e instrumentit, L+R është pjesa vokale. Kështu, thjesht duke zbritur ose shtuar dy kanalet stereo, mund të marrim pjesën instrumentale dhe vokale në tingull mono. Ndarësi vokal i integruar i bazuar në DNN (rrjeti nervor i thellë) i OpenHomeKaraoke përdor algoritmin e AI për të ndarë tingujt instrumental dhe vokal në çdo pjesë stereo në mënyrë të pavarur duke rezultuar në këngë stereo instrumentale dhe vokale.
 Stop Splitter
 Rinisni Spliter
 Ndarësi vokal (që mbështet zbritjen e bazuar në DNN dhe stereo) funksionon si një proces i veçantë në sfond, duke gjeneruar skedar audio instrumental/vokal për çdo këngë.
@@ -162,19 +162,19 @@ Rinis Transmetuesin
 Kjo ndikon vetëm në luajtjen e KTV-së përmes shfletuesit të internetit. Rinisja e kapjes dhe transmetimit të ekranit përmirëson sinkronizimin audio/video, gjithashtu zvogëlon vonesën midis serverit dhe shfletuesit.
 Rifresko listën e këngëve:
 Riskano direktorinë e këngëve
-Ju duhet ta bëni këtë vetëm nëse i keni kopjuar manualisht skedarët në drejtorinë e shkarkimit ndërsa PiKaraoke po funksiononte.
+Ju duhet ta bëni këtë vetëm nëse i keni kopjuar manualisht skedarët në drejtorinë e shkarkimit ndërsa OpenHomeKaraoke po funksiononte.
 Përditësimet
 Nëse shkarkimet ose kërkimet pushuan së funksionuari, përditësimi i youtube-dl ndoshta do ta rregullojë atë. Versioni aktual i instaluar është:
 Përditëso youtube-dl
-Kjo lidhje përditësuese e mësipërme mund të dështojë nëse nuk keni lejet e duhura të skedarit. Kontrolloni regjistrin e PiKaraoke për gabime.
+Kjo lidhje përditësuese e mësipërme mund të dështojë nëse nuk keni lejet e duhura të skedarit. Kontrolloni regjistrin e OpenHomeKaraoke për gabime.
 Fike
 Mos e tërhiqni vetëm spinën! Mbyllni gjithmonë serverin tuaj siç duhet për të shmangur prishjen e të dhënave.
-Hiq dorë nga PiKaraoke
+Dilni OpenHomeKaraoke
 Rinisni sistemin
 Sistemi i mbylljes
 Të tjera
 Zgjero sistemin e skedarëve Raspberry Pi
-Nëse sapo keni instaluar imazhin e para-ndërtuar PiKaraoke pi dhe karta juaj SD është më e madhe se 4 GB, mund të dëshironi të zgjeroni sistemin e skedarëve për të përdorur hapësirën e mbetur. Ju duhet ta bëni këtë vetëm një herë. Kjo do të rindez sistemin.
+Nëse sapo keni instaluar imazhin e para-ndërtuar OpenHomeKaraoke pi dhe karta juaj SD është më e madhe se 4 GB, mund të dëshironi të zgjeroni sistemin e skedarëve për të përdorur hapësirën e mbetur. Ju duhet ta bëni këtë vetëm një herë. Kjo do të rifillojë sistemin.
 Çaktivizo modalitetin e administratorit
 Aktivizo modalitetin e administratorit
 shkyç
@@ -185,7 +185,7 @@ Ndrysho gjuhën
 Ju lutemi zgjidhni gjuhën
 Gjuha e sistemit
 Gjuha aktuale e sistemit:
-Kjo ndryshon gjuhën e sistemit mbështetës PiKaraoke i cili shfaqet në ekranin e televizorit; Për më tepër, çdo përdorues që lidhet gjithashtu mund të ndryshojë gjuhën e tij përkatëse të ndërfaqes së uebit në butonin globe në menunë e sipërme djathtas.
+Kjo ndryshon gjuhën e sistemit mbështetës OpenHomeKaraoke i cili shfaqet në ekranin e televizorit; Për më tepër, çdo përdorues që lidhet gjithashtu mund të ndryshojë gjuhën e tij përkatëse të ndërfaqes së uebit në butonin globe në menunë e sipërme djathtas.
 Shkarkimi përfundoi me sukses!
 Shkarkimi deshtoi!
 Kënga u shtua në radhë!
@@ -205,5 +205,27 @@ Tasti i rivendosjes
 Rivendos shpejtësinë
 Cilesi e larte
 Shtoni këngën në radhën e këngës pasi të ketë përfunduar shkarkimi
-Shkarkoni titrat (vetëm të ngulitura) në të gjitha gjuhët nëse ka
+Shkarko titrat (vetëm të ngulitura) në të gjitha gjuhët nëse ka
 Shkarkimi i videove me cilësi të lartë mund të marrë shumë kohë
+Ruaj cilësimet e Play
+Ruani cilësimet e luajtjes për secilën këngë, kjo përfshin: vonesën e audios, vonesën e titrave dhe nëse duhen shfaqur titrat.
+Shto këngë duke thënë titullin e këngës
+Ju lutemi thoni titullin e këngës dhe klikoni OK!
+Vetëm faqet e internetit HTTPS mund të kenë qasje në mikrofon, a doni të ridrejtoheni në uebsajtin HTTPS?
+Ju lutemi jepni lejen për të hyrë në mikrofon!
+Redakto emrin e këngës:
+Ruaj
+Fshije këtë këngë
+Je i sigurt që dëshiron ta fshish këtë këngë nga biblioteka?
+Kërko gabim parametri!
+Shkurtoni këngën:
+Rregulloni volumin e këngës:
+Koha e fillimit:
+Koha e përfundimit:
+Vëllimi origjinal (dB):
+Nuk mund të gjendet asnjë këngë që përputhet me "%s".
+U shtua "%s" në radhë.
+Ju lutemi zgjidhni këngën për të shtuar:
+ZBËRKO
+Mbylle
+Shtoni

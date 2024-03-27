@@ -32,7 +32,7 @@ Nres
 Hloov kho youtube-dl! Yuav tsum siv ib feeb lossis ob...
 Koj tsis muaj kev tso cai los hloov youtube-dl
 Koj tsis muaj kev tso cai kaw
-Tso PiKaraoke tam sim no!
+Tso tawm OpenHomeKaraoke tam sim no!
 Koj tsis muaj kev tso cai tawm
 Kaw qhov system tam sim no!
 Koj tsis muaj kev tso cai kaw
@@ -41,7 +41,7 @@ Koj tsis muaj kev tso cai rau Reboot
 Expanding filesystem thiab rebooting system tam sim no!
 Tsis tuaj yeem nthuav fs ntawm cov khoom siv tsis-raspberry pi!
 Koj tsis muaj kev tso cai los hloov cov ntaub ntawv
-Youtube-dl txoj kev tsis pom!
+Youtube-dl txoj kev tsis pom thiab pip tau ua tsis tiav rau nruab nws!
 VLC txoj kev tsis pom!
 omxplayer txoj kev tsis pom!
 Tsim txoj kev download:
@@ -49,18 +49,18 @@ Wifi/Network tsis txuas. Kev kaw hauv 10s ...
 Txhawm rau xaiv cov nkauj, luam theej duab QR lossis txuas rau
 Rau TV zaub, txuas rau
 Nias F kom toggle puv npo
-Nias ESC tawm PiKaraoke
+Nias ESC tawm ntawm OpenHomeKaraoke
 RaspiWifiConfig teeb hom kuaj pom!
 Txuas lwm lub cuab yeej/smartphone rau Wifi AP: '%s'
-Tom qab ntawd taw tes nws qhov browser mus rau: '%s: // %s%s' thiab ua raws li cov lus qhia.
+Tom qab ntawd taw tes nws qhov browser mus rau: '%s://%s%s' thiab ua raws li cov lus qhia.
 Tom ntej no:
 Ntxiv los ntawm:
 Tam sim no ua si:
 Admin hom tso cai!
-Kev ncua lub suab yuav muab sij hawm ntxiv rau koj nyeem cov nkauj ua ntej hu nkauj tawm ntawm kab lus tom ntej.
-Kev txo qis subtitle ncua yuav muab sijhawm rau koj nyeem cov nkauj ua ntej hu nkauj rau kab lus tom ntej.
+Kev ncua lub suab yuav muab sij hawm ntxiv rau koj nyeem cov nkauj ua ntej hu nkauj rau kab lus tom ntej.
+Kev txo qis subtitle ncua yuav muab sijhawm rau koj los nyeem cov nkauj ua ntej hu nkauj rau kab lus tom ntej.
 Lub semitone kuj tseem hu ua ib nrab kauj ruam. Nws yog qhov tsawg tshaj plaws siv nyob rau hauv classical Western suab paj nruag, sib npaug rau kaum ob ntawm ib octave los yog ib nrab ib lub suab.
-DNN-based suab splitter tau qhib. PiKaraoke siv PyTorch (los ntawm Facebook) los khiav qhov sib sib zog nqus neural network los faib cov suab paj nruag thiab suab hauv txhua txoj kev ua rau lub suab nrov.
+DNN-based suab splitter tau qhib. OpenHomeKaraoke siv PyTorch (los ntawm Facebook) los khiav qhov sib sib zog nqus neural network los faib cov suab paj nruag thiab suab hauv txhua txoj kev ua rau lub suab nrov.
 Player Control
 Suab paj nruag
 Mixed
@@ -105,7 +105,7 @@ Kho kom raug nkauj
 Txav mus rau hauv queue
 Txav mus rau hauv queue
 Koj puas paub tseeb tias koj xav rho tawm ntawm kab
-Koj puas paub tseeb tias koj xav tshem tag nrho cov kab ke? Ntaus 'OK' mus ntxiv
+Koj puas paub tseeb tias koj xav tshem tag nrho cov kab ke?
 Ntxiv 3 zaj nkauj random
 Clear tag nrho
 Lub queue yog khoob
@@ -117,12 +117,12 @@ Nkauj twb nyob rau hauv kab:
 Nrhiav / Ntxiv Tshiab
 Nrhiav
 Daim ntawv
-suav tsis txheeb karaoke
+Nrhiav Karaoke matches xwb
 Advanced
 Ntaus ib zaj nkauj (lub npe / tus kws kos duab) txhawm rau tshawb cov nkauj muaj thiab nyem 'Queue' ntxiv rau hauv kab.
 Yog hais tias zaj nkauj tsis tshwm nyob rau hauv "Available Songs" dropdown, nyem 'Search' kom pom nws hauv Youtube.
 Direct download YouTube url:
-Ntxiv rau kab
+Ntxiv rau kab tom qab rub tawm
 suav nrog subtitles
 Download tau
 Nrhiav YouTube rau
@@ -133,12 +133,12 @@ Muaj Nkauj
 Koj puas xav hloov lub npe ntawm tus neeg siv lub cuab yeej no? Qhov no yuav tshwm sim ib sab ntawm cov nkauj queued. Tam sim no:
 Tus neeg siv tam sim no
 Chaw
-PiKaraoke
+OpenHomeKaraoke
 Koj puas paub tseeb tias koj xav tawm?
 Koj puas paub tseeb tias koj xav kaw?
 Koj puas paub tseeb tias koj xav reboot?
 Koj puas paub tseeb tias koj xav hloov kho Youtube-dl tam sim no? Tam sim no thiab tseem tos downloads yuav ua tsis tau.
-Koj puas paub tseeb tias koj xav nthuav cov ntaub ntawv? Qhov no yuav reboot koj raspberry pi.
+Koj puas paub tseeb tias koj xav nthuav cov filesystem? Qhov no yuav reboot koj raspberry pi.
 Cov ntaub ntawv
 Yooj yim URL QR code los qhia rau ib tug phooj ywg:
 OS
@@ -147,34 +147,34 @@ Nco
 Screen Capture
 Vocal Splitter
 Youtube-dl (yt-dlp) version
-PiKaraoke version
+OpenHomeKaraoke version
 Advanced Control Options
 Vocal splitter hom:
 Siv L-R / L + R
 Siv DNN
-Standard MTV suab muaj ob lub tso suab raws (L thiab R) encoded nyob rau hauv xws li ib tug txoj kev uas: L-R yog lub ntsuas khiav, L + R yog lub suab khiav. Yog li, los ntawm kev rho tawm lossis ntxiv ob lub tso suab tso suab, peb tuaj yeem tau txais cov twj paj nruag thiab suab hauv lub suab mono. PiKaraoke's built-in DNN-raws li (sib sib zog nqus neural network) lub suab splitter siv AI algorithm los faib cov suab paj nruag thiab suab hauv txhua lub tso suab ntawm nws tus kheej ua rau lub suab seev suab paj nruag thiab suab paj nruag.
+Standard MTV suab muaj ob lub tso suab raws (L thiab R) encoded nyob rau hauv xws li ib tug txoj kev uas: L-R yog lub ntsuas khiav, L + R yog lub suab khiav. Yog li, los ntawm kev rho tawm lossis ntxiv ob lub tso suab tso suab, peb tuaj yeem tau txais cov twj paj nruag thiab suab hauv lub suab mono. OpenHomeKaraoke's built-in DNN-raws li (sib sib zog nqus neural network) lub suab splitter siv AI algorithm los faib cov suab paj nruag thiab suab hauv txhua lub suab tso suab ntawm nws tus kheej ua rau cov suab paj nruag thiab suab paj nruag.
 Nres Splitter
 Pib dua Splitter
-Lub suab splitter (uas txhawb nqa DNN-raws li thiab lub tso suab rho tawm) khiav raws li cov txheej txheem sib cais hauv keeb kwm yav dhau, tsim cov ntaub ntawv suab paj nruag / suab suab rau txhua zaj nkauj.
+Lub suab splitter (uas txhawb nqa DNN-raws li thiab lub tso suab rho tawm) khiav raws li cov txheej txheem cais hauv keeb kwm yav dhau, tsim cov ntaub ntawv suab paj nruag / suab rau txhua zaj nkauj.
 Re-synchronize suab thiab video:
 Nres Streamer
 Restart Streamer
 Qhov no tsuas yog cuam tshuam rau kev ua si KTV ntawm lub web browser. Rov pib qhov screen-capture-thiab-streaming txhim kho suab / video synchronization, nws kuj txo qis latency ntawm tus neeg rau zaub mov thiab browser.
 Refresh lub npe nkauj:
 Rescan song directory
-Koj tsuas yog yuav tsum tau ua qhov no yog tias koj luam cov ntaub ntawv rau hauv phau ntawv rub tawm thaum PiKaraoke tab tom khiav.
+Koj tsuas yog yuav tsum tau ua qhov no yog tias koj luam cov ntaub ntawv rau hauv phau ntawv rub tawm thaum OpenHomeKaraoke tab tom khiav.
 Hloov tshiab
 Yog tias downloads lossis tshawb nrhiav tsis ua haujlwm, hloov kho youtube-dl tej zaum yuav kho nws. Tam sim no ntsia version yog:
 Update youtube-dl
-Qhov hloov tshiab txuas saum toj no yuav ua tsis tiav yog tias koj tsis muaj kev tso cai ua ntaub ntawv tsim nyog. Kos lub PiKaraoke cav rau qhov yuam kev.
+Qhov hloov tshiab txuas saum toj no yuav ua tsis tiav yog tias koj tsis muaj kev tso cai ua ntaub ntawv tsim nyog. Kos lub OpenHomeKaraoke cav rau qhov yuam kev.
 Kaw
 Tsis txhob rub lub ntsaws! Ib txwm kaw koj lub server kom zoo kom tsis txhob muaj cov ntaub ntawv tsis raug cai.
-Txhob tos lwm tiam karaoke
+Tawm ntawm OpenHomeKaraoke
 Reboot System
 Shutdown System
 Lwm yam
 Nthuav Raspberry Pi filesystem
-Yog tias koj nyuam qhuav teeb tsa cov duab PiKaraoke pi ua ntej thiab koj daim npav SD loj dua 4GB, koj tuaj yeem xav nthuav cov ntaub ntawv los siv qhov chaw seem. Koj tsuas yog yuav tsum ua qhov no ib zaug xwb. Qhov no yuav reboot lub system.
+Yog tias koj nyuam qhuav tau teeb tsa cov duab ua ntej OpenHomeKaraoke pi thiab koj daim npav SD loj dua 4GB, koj tuaj yeem xav nthuav cov ntaub ntawv los siv qhov chaw seem. Koj tsuas yog yuav tsum ua qhov no ib zaug xwb. Qhov no yuav reboot lub system.
 Disable admin hom
 Qhib hom admin
 log tawm
@@ -185,7 +185,7 @@ Hloov lus
 Thov xaiv hom lus
 System Language
 Hom lus tam sim no:
-Qhov no hloov cov lus ntawm PiKaraoke backend system uas tau tso tawm rau hauv TV screen; Tsis tas li ntawd, txhua tus neeg siv txuas kuj tuaj yeem hloov pauv lawv cov lus Web UI hauv lub ntiaj teb khawm hauv cov ntawv qhia zaub mov sab xis.
+Qhov no hloov cov lus ntawm OpenHomeKaraoke backend system uas tau tshwm sim rau hauv TV screen; Tsis tas li ntawd, txhua tus neeg siv txuas kuj tuaj yeem hloov pauv lawv cov lus Web UI hauv lub ntiaj teb khawm hauv cov ntawv qhia zaub mov sab xis.
 Download tau tiav lawm!
 Download tsis tau!
 Nkauj ntxiv rau cov kab!
@@ -207,3 +207,25 @@ Siab Zoo
 Ntxiv cov nkauj rau cov kab hu nkauj tom qab download tau tiav
 Download subtitles (tsuas yog embedded) nyob rau hauv tag nrho cov lus yog muaj
 Downloading yeeb yaj duab zoo yuav siv sij hawm ntev heev
+Txuag Play Settings
+Txuag cov chaw ua si rau txhua zaj nkauj, qhov no suav nrog: suab ncua, ncua subtitle, thiab seb puas yuav qhia subtitles.
+Ntxiv nkauj los ntawm kev hais lub npe nkauj
+Thov hais lub npe nkauj thiab nias OK!
+Tsuas yog HTTPS cov vev xaib tuaj yeem nkag mus rau microphone, koj puas xav hloov mus rau HTTPS lub vev xaib?
+Thov tso cai nkag mus rau lub microphone!
+Edit Song Name:
+Txuag
+Rho tawm zaj nkauj no
+Koj puas paub tseeb tias koj xav rho tawm zaj nkauj no tawm ntawm lub tsev qiv ntawv?
+Thov parameter yuam kev!
+Trim zaj nkauj:
+Kho lub suab nkauj:
+Pib lub sijhawm:
+Lub sijhawm kawg:
+Original Volume (dB):
+Nrhiav tsis tau ib zaj nkauj uas phim "%s".
+Ntxiv "%s" rau hauv kab.
+Thov xaiv zaj nkauj ntxiv:
+UNDO
+Kaw
+Ntxiv

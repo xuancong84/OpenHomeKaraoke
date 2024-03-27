@@ -32,7 +32,7 @@ Mihunong
 Pag-update sa youtube-dl! Kinahanglan nga usa o duha ka minuto ...
 Wala kay permiso sa pag-update sa youtube-dl
 Wala kay permiso sa pagsira
-Pag-undang sa PiKaraoke karon!
+Pag-undang sa OpenHomeKaraoke karon!
 Wala kay permiso nga moundang
 Pagsira sa sistema karon!
 Wala kay permiso sa pagsira
@@ -41,15 +41,15 @@ Wala kay permiso sa Reboot
 Pagpalapad sa filesystem ug rebooting system karon!
 Dili mapalapad ang fs sa mga non-raspberry pi device!
 Wala kay permiso sa pag-resize sa filesystem
-Ang dalan sa Youtube-dl wala makit-an!
+Ang dalan sa Youtube-dl wala makit-an ug ang pip napakyas sa pag-instalar niini!
 Ang dalan sa VLC wala makit-an!
 Ang dalan sa omxplayer wala makit-an!
 Paghimo og dalan sa pag-download:
 Wala konektado ang Wifi/Network. Pag-shut down sa 10s...
-Para sa pagpili og mga kanta, i-scan ang QR o kumonekta sa
+Alang sa pagpili og mga kanta, i-scan ang QR o kumonekta sa
 Para sa TV display, sumpay sa
 Pindota ang F aron i-toggle ang full-screen
-Pindota ang ESC aron mohunong sa PiKaraoke
+Pindota ang ESC aron mohunong sa OpenHomeKaraoke
 Ang RaspiWifiConfig setup mode nakita!
 Ikonektar ang laing device/smartphone sa Wifi AP: '%s'
 Dayon itudlo ang browser niini sa: '%s://%s%s' ug sunda ang mga instruksyon.
@@ -57,10 +57,10 @@ Sunod:
 Gidugang ni:
 Karon nagdula:
 Admin mode gihatag!
-Ang pagdugang sa paglangan sa audio maghatag kanimo ug daghang oras sa pagbasa sa mga liriko sa dili pa kantahon ang sunod nga sentence.
+Ang pagdugang sa paglangan sa audio maghatag kanimo ug dugang nga oras sa pagbasa sa mga liriko sa dili pa kantahon ang sunod nga sentence.
 Ang pagkunhod sa paglangan sa subtitle maghatag kanimo ug daghang oras sa pagbasa sa mga liriko sa dili pa kantahon ang sunod nga sentence.
-Ang semitone nailhan usab nga tunga nga lakang. Kini ang pinakagamay nga agwat nga gigamit sa klasikal nga musika sa Kasadpan, katumbas sa ika-dose sa usa ka oktaba o tunga sa usa ka tono.
-Ang vocal splitter nga nakabase sa DNN gipalihok. Gigamit sa PiKaraoke ang PyTorch (sa Facebook) aron magpadagan ug lawom nga neural network aron mabahin ang instrumental ug vocal nga tunog sa matag track nga maghatag ug stereo sound.
+Ang semitone nailhan usab nga tunga nga lakang. Kini ang pinakagamay nga agwat nga gigamit sa klasikal nga musika sa Kasadpan, katumbas sa ikanapulo ug duha sa usa ka oktaba o tunga sa tono.
+Ang vocal splitter nga nakabase sa DNN gipalihok. Ang OpenHomeKaraoke naggamit sa PyTorch (sa Facebook) sa pagpadagan sa usa ka lawom nga neural network aron sa pagbahin sa instrumental ug vocal nga tingog sa matag track nga makahatag og stereo sound.
 Pagkontrol sa Manlalaro
 Musika
 Gisagol
@@ -68,7 +68,7 @@ Tingog
 Usba ang Yawe
 Walay nagdula karon.
 Walay kanta nga gipila.
-Kini nga kanta wala nimo gidugang. Sigurado ka ba nga gusto nimo i-restart kini nga track?
+Kini nga kanta wala nimo gidugang. Sigurado ka ba nga gusto nimong i-restart kini nga track?
 Kini nga kanta wala nimo gidugang. Sigurado ka ba nga gusto nimong laktawan kini nga track?
 Pagkontrol sa Manlalaro
 Karon Nagdula
@@ -105,7 +105,7 @@ Edit kanta
 Pagbalhin sa pila
 Ibalhin sa ubos sa pila
 Sigurado ka ba nga gusto nimong papason gikan sa pila
-Sigurado ka ba nga gusto nimong hawanan ang TIBUOK pila? I-type ang 'OK' aron magpadayon
+Sigurado ka ba nga gusto nimong hawanan ang TIBUOK pila?
 Pagdugang 3 ka random nga kanta
 Klaro tanan
 Walay sulod ang pila
@@ -117,12 +117,12 @@ Naa na sa pila ang kanta:
 Pagpangita / Pagdugang Bag-o
 Pangitaa
 Pila
-Ilakip ang non-karaoke nga mga posporo
+Pangitag Karaoke match lang
 Abante
 Pag-type og kanta (titulo/artista) aron pangitaon ang anaa nga mga kanta ug i-klik ang 'Queue' aron idugang kini sa pila.
-Kung ang kanta dili makita sa dropdown nga "Available Songs", i-klik ang 'Search' aron makit-an kini sa Youtube.
+Kung ang kanta dili makita sa dropdown nga "Available Songs", i-klik ang 'Pagpangita' aron makit-an kini sa Youtube.
 Direkta nga pag-download sa YouTube url:
-Idugang sa pila
+Idugang sa pila pagkahuman sa pag-download
 Ilakip ang mga subtitle
 Pag-download
 Pagpangita sa YouTube alang sa
@@ -133,7 +133,7 @@ Anaa nga mga Kanta
 Gusto ba nimong usbon ang display name sa tawo nga naggamit niini nga device? Kini magpakita sunod sa mga nakapila nga kanta. Karon:
 Kasamtangang tiggamit
 Mga setting
-PiKaraoke
+OpenHomeKaraoke
 Sigurado ka nga gusto ka moundang?
 Sigurado ka nga gusto nimong isira?
 Sigurado ka ba nga gusto nimo i-reboot?
@@ -147,34 +147,34 @@ Memorya
 Pagkuha sa Screen
 Vocal Splitter
 Youtube-dl (yt-dlp) nga bersyon
-PiKaraoke nga bersyon
+OpenHomeKaraoke nga bersyon
 Advanced nga Control Options
 Vocal splitter mode:
 Gamita ang L-R/L+R
 Gamit ug DNN
-Ang standard nga MTV audio adunay duha ka stereo channel (L ug R) nga gi-encode sa paagi nga: L-R ang instrument track, L+R ang vocal track. Busa, pinaagi lamang sa pagkubkob o pagdugang sa duha ka stereo channel, makuha nato ang instrumental ug vocal track sa mono sound. Ang built-in nga DNN-based (deep neural network) vocal splitter sa PiKaraoke naggamit sa AI algorithm aron mabahin ang instrumental ug vocal sound sa matag stereo track nga independente nga moresulta sa stereo instrumental ug vocal tracks.
+Ang standard nga MTV audio adunay duha ka stereo channel (L ug R) nga gi-encode sa paagi nga: L-R ang instrument track, L+R ang vocal track. Busa, pinaagi lamang sa pagkubkob o pagdugang sa duha ka stereo channel, makuha nato ang instrumental ug vocal track sa mono sound. Ang OpenHomeKaraoke's built-in DNN-based (deep neural network) vocal splitter naggamit sa AI algorithm sa pagbahin sa instrumental ug vocal sound sa matag stereo track nga independente nga moresulta sa stereo instrumental ug vocal tracks.
 Hunong ang Splitter
 I-restart ang Splitter
-Ang vocal splitter (nga nagsuporta sa DNN-based ug stereo subtraction) nagdagan isip usa ka separado nga proseso sa background, nagmugna og instrumental/vocal audio file alang sa matag kanta.
+Ang vocal splitter (nga nagsuporta sa DNN-based ug stereo subtraction) nagdagan isip usa ka separado nga proseso sa background, nga nagpatunghag instrumental/vocal audio file alang sa matag kanta.
 I-synchronize pag-usab ang audio ug video:
 Hunong Streamer
 I-restart ang Streamer
 Kini makaapekto lamang sa pagdula sa KTV pinaagi sa web browser. Ang pagsugod pag-usab sa screen-capture-and-streaming makapauswag sa audio/video nga pag-synchronize, kini usab makapamenos sa latency tali sa server ug browser.
 I-refresh ang listahan sa kanta:
 I-scan pag-usab ang direktoryo sa kanta
-Kinahanglan ra nimo nga buhaton kini kung imong gikopya ang mga file sa direktoryo sa pag-download samtang nagdagan ang PiKaraoke.
+Kinahanglan ra nimo nga buhaton kini kung imong gikopya ang mga file sa direktoryo sa pag-download samtang nagdagan ang OpenHomeKaraoke.
 Mga update
 Kung ang mga pag-download o pagpangita mihunong sa pagtrabaho, ang pag-update sa youtube-dl lagmit nga ayohon kini. Ang kasamtangan nga na-install nga bersyon mao ang:
 Pag-update sa youtube-dl
-Kini nga link sa pag-update sa ibabaw mahimong mapakyas kung wala ka husto nga pagtugot sa file. Susiha ang PiKaraoke log alang sa mga sayup.
+Kini nga link sa pag-update sa ibabaw mahimong mapakyas kung wala ka husto nga pagtugot sa file. Susiha ang OpenHomeKaraoke log alang sa mga sayup.
 Pagsira
 Ayaw lang ibira ang plug! Kanunay isira ang imong server sa hustong paagi aron malikayan ang korapsyon sa datos.
-Hunong sa PiKaraoke
+Hunonga ang OpenHomeKaraoke
 Pag-reboot nga Sistema
 Sistema sa pagsira
 Ang uban
 Pagpalapad sa Raspberry Pi filesystem
-Kung bag-o lang nimo na-install ang pre-built nga PiKaraoke pi image ug ang imong SD card mas dako pa sa 4GB, mahimo nimong palapdan ang filesystem aron magamit ang nahabilin nga espasyo. Kausa ra nimo kinahanglan buhaton. Kini mag-reboot sa sistema.
+Kung imong gi-install ang pre-built nga OpenHomeKaraoke pi nga imahe ug ang imong SD card mas dako pa sa 4GB, mahimo nimong palapdan ang filesystem aron magamit ang nahabilin nga wanang. Kausa ra nimo kinahanglan buhaton. Kini mag-reboot sa sistema.
 I-disable ang admin mode
 I-enable ang admin mode
 log out
@@ -185,20 +185,20 @@ Usba ang Pinulongan
 Palihug pagpili og pinulongan
 Sistema nga Pinulongan
 Kasamtangang pinulongan sa sistema:
-Gibag-o niini ang lengguwahe sa PiKaraoke backend system nga gipakita sa screen sa TV; Dugang pa, ang matag nagkonektar nga tiggamit mahimo usab nga magbag-o sa ilang tagsa-tagsa nga Web UI nga pinulongan sa globe nga buton sa tuo nga menu.
+Gibag-o niini ang lengguwahe sa OpenHomeKaraoke backend system nga gipakita sa screen sa TV; Dugang pa, ang matag nagkonektar nga tiggamit mahimo usab nga magbag-o sa ilang tagsa-tagsa nga Web UI nga pinulongan sa globe nga buton sa tuo nga menu.
 Malampuson nga nahuman ang pag-download!
 Napakyas ang pag-download!
 Kanta gidugang sa pila!
 Napakyas sa pagpila sa kanta!
 Impormasyon sa Sistema ug Mga Setting
 Pag-normalize sa Volume
-Ang lainlaing mga kanta kasagaran adunay lainlaing volume. Ang pagpagana sa pag-normalize sa volume modagan una og <i>ffmpeg</i> aron makwenta ang global volume sa usa ka kanta ug awtomatik nga i-adjust ang volume sa player aron ang matag kanta parehas og kusog.
+Ang lainlaing mga kanta kanunay adunay lainlaing volume. Ang pagpagana sa pag-normalize sa volume modagan una og <i>ffmpeg</i> aron makwenta ang global volume sa usa ka kanta ug awtomatik nga i-adjust ang volume sa player aron ang matag kanta parehas og kusog.
 Paagi sa pag-download sa librarya sa kanta
 Total nga gidaghanon sa mga kanta
 Ipakita/Itago ang Subtitle
 Usba ang Speed
 Mahimo nimong kantahon ang kanta nga mas paspas o hinay pinaagi sa pagbag-o sa katulin sa playback sa sulod sa 0.8x hangtod 1.2x gamit ang tulin nga trackbar; para sa uban nga playback speed, i-klik ang speed value aron usbon.
-Pag-klik aron i-reset ang katulin sa pagdula sa 1x
+I-klik aron i-reset ang katulin sa playback ngadto sa 1x
 I-klik aron itakda ang gikusgon sa playback
 I-klik aron i-reset ang yawe/pitch
 I-reset ang yawe
@@ -207,3 +207,25 @@ Taas nga Kalidad
 Idugang ang kanta sa pila sa pagkanta human mahuman ang pag-download
 I-download ang mga subtitle (gi-embed lang) sa tanang pinulongan kon anaa
 Ang pag-download sa taas nga kalidad nga mga video mahimong dugay kaayo
+I-save ang Mga Setting sa Play
+I-save ang mga setting sa pagdula alang sa matag kanta, kini naglakip sa: paglangan sa audio, paglangan sa subtitle, ug kung ipakita ba ang mga subtitle.
+Idugang ang kanta pinaagi sa pagsulti sa titulo sa kanta
+Palihug isulti ang titulo sa kanta ug i-klik ang OK!
+Ang mga website sa HTTPS ra ang adunay access sa mikropono, gusto ba nimo nga mag-redirect sa website sa HTTPS?
+Palihug ihatag ang pagtugot sa pag-access sa mikropono!
+I-edit ang Ngalan sa Kanta:
+Tipigi
+I-delete kini nga kanta
+Sigurado ka ba nga gusto nimong papason kini nga kanta gikan sa librarya?
+Pangayo ug parameter error!
+Guntinga ang kanta:
+I-adjust ang gidaghanon sa kanta:
+Panahon sa pagsugod:
+Panahon sa pagtapos:
+Orihinal nga Tomo (dB):
+Dili makit-an ang bisan unsang kanta nga katumbas sa "%s".
+Gidugang ang "%s" sa pila.
+Palihug pilia ang (mga) kanta nga idugang:
+UNDO
+Suod nga
+Idugang

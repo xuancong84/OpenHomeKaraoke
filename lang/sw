@@ -32,7 +32,7 @@ Imesimamishwa
 Inasasisha youtube-dl! Inapaswa kuchukua dakika moja au mbili...
 Huna ruhusa ya kusasisha youtube-dl
 Huna ruhusa ya kuzima
-Inaacha PiKaraoke sasa!
+Kuacha OpenHomeKaraoke sasa!
 Huna ruhusa ya kuacha
 Inazima mfumo sasa!
 Huna ruhusa ya kuzima
@@ -41,7 +41,7 @@ Huna ruhusa ya Kuwasha Upya
 Kupanua mfumo wa faili na mfumo wa kuwasha upya sasa!
 Haiwezi kupanua fs kwenye vifaa visivyo vya raspberry pi!
 Huna ruhusa ya kubadilisha ukubwa wa mfumo wa faili
-Njia ya Youtube-dl haijapatikana!
+Njia ya Youtube-dl haijapatikana na bomba imeshindwa kuisakinisha!
 Njia ya VLC haijapatikana!
 njia ya omxplayer haijapatikana!
 Kuunda njia ya kupakua:
@@ -49,9 +49,9 @@ Wifi/Mtandao haujaunganishwa. Inazima baada ya 10s...
 Kwa kuchagua nyimbo, changanua QR au unganisha kwa
 Kwa onyesho la TV, unganisha kwa
 Bonyeza F ili kugeuza skrini nzima
-Bonyeza ESC ili kuacha PiKaraoke
+Bonyeza ESC ili kuacha OpenHomeKaraoke
 Hali ya usanidi ya RaspiWifiConfig imegunduliwa!
-Unganisha kifaa/simu mahiri nyingine kwenye AP ya Wifi: '%s'
+Unganisha kifaa/simu mahiri nyingine kwenye Wifi AP: '%s'
 Kisha uelekeze kivinjari chake kwa: '%s://%s%s' na ufuate maagizo.
 Inayofuata:
 Imeongezwa na:
@@ -60,7 +60,7 @@ Hali ya msimamizi imekubaliwa!
 Kuongezeka kwa ucheleweshaji wa sauti kutakupa muda zaidi wa kusoma maneno kabla ya kuimba sentensi inayofuata.
 Kupunguza ucheleweshaji wa manukuu kutakupa muda zaidi wa kusoma maneno kabla ya kuimba sentensi inayofuata.
 Semitone pia inajulikana kama hatua ya nusu. Ni muda mdogo zaidi unaotumiwa katika muziki wa kitamaduni wa Magharibi, sawa na sehemu ya kumi na mbili ya oktava au nusu ya toni.
-Kigawanya sauti cha msingi wa DNN kimewashwa. PiKaraoke hutumia PyTorch (na Facebook) kuendesha mtandao wa kina wa neva ili kugawanya sauti ya ala na ya sauti katika kila wimbo na kusababisha sauti ya stereo.
+Kigawanya sauti cha msingi wa DNN kimewashwa. OpenHomeKaraoke hutumia PyTorch (na Facebook) kuendesha mtandao wa kina wa neva ili kugawanya sauti ya ala na ya sauti katika kila wimbo na kusababisha sauti ya stereo.
 Udhibiti wa Mchezaji
 Muziki
 Imechanganywa
@@ -68,8 +68,8 @@ Sauti
 Badilisha Kitufe
 Hakuna kinachocheza sasa hivi.
 Hakuna wimbo uliowekwa kwenye foleni.
-Wimbo huu haujaongezwa na wewe. Je, una uhakika unataka kuanzisha upya wimbo huu?
-Wimbo huu haujaongezwa na wewe. Je, una uhakika unataka kuruka wimbo huu?
+Wimbo huu haujauongeza. Je, una uhakika unataka kuanzisha upya wimbo huu?
+Wimbo huu haujauongeza. Je, una uhakika unataka kuruka wimbo huu?
 Udhibiti wa Mchezaji
 Inacheza sasa
 Wimbo Unaofuata
@@ -105,7 +105,7 @@ Hariri wimbo
 Nenda juu kwenye foleni
 Sogeza chini kwenye foleni
 Je, una uhakika unataka kufuta kutoka kwenye foleni
-Je, una uhakika unataka kufuta foleni YOTE? Andika 'Sawa' ili kuendelea
+Je, una uhakika unataka kufuta foleni YOTE?
 Ongeza nyimbo 3 za nasibu
 Futa zote
 Foleni ni tupu
@@ -117,12 +117,12 @@ Wimbo tayari uko kwenye foleni:
 Tafuta / Ongeza Mpya
 Tafuta
 Foleni
-Jumuisha mechi zisizo za karaoke
+Tafuta mechi za Karaoke pekee
 Advanced
 Andika wimbo (kichwa/msanii) kutafuta nyimbo zinazopatikana na ubofye 'Foleni' ili kuiongeza kwenye foleni.
-Ikiwa wimbo hauonekani katika menyu kunjuzi ya "Nyimbo Zinazopatikana", bofya 'Tafuta' ili kuipata kwenye Youtube.
+Ikiwa wimbo hauonekani kwenye menyu kunjuzi ya "Nyimbo Zinazopatikana", bofya 'Tafuta' ili kuipata kwenye Youtube.
 Pakua moja kwa moja url ya YouTube:
-Ongeza kwenye foleni
+Ongeza kwenye foleni baada ya kupakua
 Jumuisha manukuu
 Pakua
 Inatafuta YouTube
@@ -133,7 +133,7 @@ Nyimbo Zinazopatikana
 Je, ungependa kubadilisha jina la onyesho la mtu anayetumia kifaa hiki? Hii itaonekana karibu na nyimbo zilizowekwa kwenye foleni. Sasa:
 Mtumiaji wa sasa
 Mipangilio
-PiKaraoke
+OpenHomeKaraoke
 Una uhakika unataka kuacha?
 Je, una uhakika unataka kuzima?
 Je, una uhakika unataka kuwasha upya?
@@ -147,12 +147,12 @@ Kumbukumbu
 Picha ya skrini
 Mgawanyiko wa sauti
 Toleo la Youtube-dl (yt-dlp).
-Toleo la PiKaraoke
+Toleo la OpenHomeKaraoke
 Chaguzi za Udhibiti wa hali ya juu
 Njia ya kugawanya sauti:
 Tumia L-R/L+R
 Tumia DNN
-Sauti ya kawaida ya MTV ina chaneli mbili za stereo (L na R) zilizosimbwa kwa njia ambayo: L-R ni wimbo wa ala, L+R ni wimbo wa sauti. Kwa hivyo, kwa kupunguza au kuongeza chaneli mbili za stereo, tunaweza kupata wimbo wa ala na sauti katika sauti ya mono. Kipasuaji cha sauti cha PiKaraoke kilichojengwa ndani ya DNN (mtandao wa neva wa kina) hutumia algoriti ya AI kugawanya sauti ya ala na sauti katika kila wimbo wa stereo na kusababisha ala za stereo na sauti.
+Sauti ya kawaida ya MTV ina chaneli mbili za stereo (L na R) zilizosimbwa kwa njia ambayo: L-R ni wimbo wa ala, L+R ni wimbo wa sauti. Kwa hivyo, kwa kupunguza au kuongeza chaneli mbili za stereo, tunaweza kupata wimbo wa ala na sauti katika sauti ya mono. Kipasuaji cha sauti cha OpenHomeKaraoke kilichojengwa ndani ya DNN (mtandao wa neva wa kina) hutumia algoriti ya AI kugawanya sauti ya ala na ya sauti katika kila wimbo wa stereo na kusababisha ala za stereo na sauti.
 Acha Kugawanyika
 Anzisha tena Splitter
 Kigawanyiko cha sauti (kinachoauni utoaji wa DNN na stereo) huendesha kama mchakato tofauti chinichini, na kutengeneza faili ya sauti ya ala/ya sauti kwa kila wimbo.
@@ -162,19 +162,19 @@ Anzisha tena Kipeperushi
 Hii huathiri tu kucheza KTV kupitia kivinjari cha wavuti. Kuanzisha upya kunasa-na-tiririsha skrini kunaboresha usawazishaji wa sauti/video, pia hupunguza muda wa kusubiri kati ya seva na kivinjari.
 Onyesha upya orodha ya nyimbo:
 Changanua upya saraka ya wimbo
-Unapaswa tu kuhitaji kufanya hivi ikiwa ulinakili faili kwa mikono kwenye saraka ya upakuaji wakati PiKaraoke ilikuwa inaendesha.
+Unapaswa tu kuhitaji kufanya hivi ikiwa ulinakili faili mwenyewe kwa saraka ya upakuaji wakati OpenHomeKaraoke ilikuwa inafanya kazi.
 Sasisho
 Ikiwa upakuaji au utafutaji utaacha kufanya kazi, kusasisha youtube-dl kunaweza kurekebisha. Toleo la sasa lililowekwa ni:
 Sasisha youtube-dl
-Kiungo hiki cha sasisho hapo juu kinaweza kushindwa ikiwa huna ruhusa zinazofaa za faili. Angalia logi ya PiKaraoke kwa makosa.
+Kiungo hiki cha sasisho hapo juu kinaweza kushindwa ikiwa huna ruhusa zinazofaa za faili. Angalia logi ya OpenHomeKaraoke kwa makosa.
 Kuzimisha
 Usivute tu kuziba! Zima seva yako kila wakati ili kuzuia uharibifu wa data.
-Acha PiKaraoke
+Acha OpenHomeKaraoke
 Anzisha tena Mfumo
 Zima Mfumo
 Nyingine
 Panua mfumo wa faili wa Raspberry Pi
-Ikiwa umesakinisha tu picha ya PiKaraoke pi iliyojengwa awali na kadi yako ya SD ni kubwa kuliko 4GB, unaweza kutaka kupanua mfumo wa faili ili kutumia nafasi iliyobaki. Unahitaji kufanya hivi mara moja tu. Hii itaanzisha upya mfumo.
+Ikiwa umesakinisha picha ya OpenHomeKaraoke pi iliyojengwa awali na kadi yako ya SD ni kubwa kuliko 4GB, unaweza kutaka kupanua mfumo wa faili ili kutumia nafasi iliyobaki. Unahitaji kufanya hivi mara moja tu. Hii itaanzisha upya mfumo.
 Zima hali ya msimamizi
 Washa hali ya msimamizi
 ingia nje
@@ -185,7 +185,7 @@ Badilisha Lugha
 Tafadhali chagua lugha
 Lugha ya Mfumo
 Lugha ya mfumo wa sasa:
-Hii inabadilisha lugha ya mfumo wa nyuma wa PiKaraoke ambao huonyeshwa kwenye skrini ya TV; zaidi ya hayo, kila mtumiaji anayeunganisha pia anaweza kubadilisha lugha yake ya Kiolesura cha Wavuti katika kitufe cha ulimwengu kwenye menyu ya juu kulia.
+Hii inabadilisha lugha ya mfumo wa nyuma wa OpenHomeKaraoke ambao huonyeshwa kwenye skrini ya TV; zaidi ya hayo, kila mtumiaji anayeunganisha pia anaweza kubadilisha lugha yake ya Kiolesura cha Wavuti katika kitufe cha ulimwengu kwenye menyu ya juu kulia.
 Upakuaji umekamilika!
 Imeshindwa kupakua!
 Wimbo umeongezwa kwenye foleni!
@@ -207,3 +207,25 @@ Ubora wa juu
 Ongeza wimbo kwenye foleni ya uimbaji baada ya upakuaji kukamilika
 Pakua manukuu (yaliyopachikwa pekee) katika lugha zote kama yanapatikana
 Kupakua video za ubora wa juu kunaweza kuchukua muda mrefu sana
+Hifadhi Mipangilio ya Google Play
+Hifadhi mipangilio ya kucheza kwa kila wimbo, hii inajumuisha: kuchelewa kwa sauti, kucheleweshwa kwa manukuu, na ikiwa itaonyesha manukuu.
+Ongeza wimbo kwa kuzungumza jina la wimbo
+Tafadhali sema kichwa cha wimbo na ubofye Sawa!
+Tovuti za HTTPS pekee ndizo zinaweza kufikia maikrofoni, je, ungependa kuelekeza kwenye tovuti ya HTTPS?
+Tafadhali toa ruhusa ya kufikia maikrofoni!
+Hariri Jina la Wimbo:
+Hifadhi
+Futa wimbo huu
+Je, una uhakika unataka kufuta wimbo huu kutoka kwa maktaba?
+Omba hitilafu ya kigezo!
+Punguza wimbo:
+Rekebisha sauti ya wimbo:
+Wakati wa kuanza:
+Wakati wa mwisho:
+Kiasi Asili (dB):
+Haiwezi kupata wimbo wowote unaolingana na "%s".
+Imeongeza "%s" kwenye foleni.
+Tafadhali chagua nyimbo za kuongeza:
+TENDWA
+Funga
+Ongeza

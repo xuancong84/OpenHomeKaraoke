@@ -32,7 +32,7 @@ To'xtatildi
 youtube-dl yangilanmoqda! Bir-ikki daqiqa kerak ...
 Sizda youtube-dl-ni yangilash uchun ruxsat yo'q
 Oʻchirishga ruxsatingiz yoʻq
-PiKaraoke-ni hozir tark eting!
+OpenHomeKaraoke-dan hozir chiqmoqdamiz!
 Chiqish uchun ruxsatingiz yo‘q
 Tizim hozir o'chirilmoqda!
 Oʻchirishga ruxsatingiz yoʻq
@@ -41,7 +41,7 @@ Qayta ishga tushirish uchun ruxsatingiz yo'q
 Fayl tizimini kengaytirish va tizimni hozir qayta ishga tushirish!
 Malinali bo'lmagan pi qurilmalarida fsni kengaytirib bo'lmaydi!
 Sizda fayl tizimining oʻlchamini oʻzgartirishga ruxsatingiz yoʻq
-Youtube-dl yo'li topilmadi!
+Youtube-dl yo'li topilmadi va pip uni o'rnatib bo'lmadi!
 VLC yo'li topilmadi!
 omxplayer yo'li topilmadi!
 Yuklab olish yo'lini yaratish:
@@ -49,7 +49,7 @@ Wi-Fi/tarmoq ulanmagan. 10 soniyadan keyin yopiladi...
 Qo'shiqlarni tanlash uchun QR ni skanerlang yoki ulaning
 Televizor ekrani uchun ulaning
 Toʻliq ekranga oʻtish uchun F tugmasini bosing
-PiKaraoke-dan chiqish uchun ESC tugmasini bosing
+OpenHomeKaraoke-dan chiqish uchun ESC tugmasini bosing
 RaspiWifiConfig sozlash rejimi aniqlandi!
 Boshqa qurilmani/smartfonni Wi-Fi APga ulang: '%s'
 Keyin brauzerni '%s://%s%s' manziliga yo'naltiring va ko'rsatmalarga amal qiling.
@@ -60,7 +60,7 @@ Administrator rejimi berildi!
 Ovozni kechiktirishni oshirish sizga keyingi jumlani kuylashdan oldin matnlarni o'qish uchun ko'proq vaqt beradi.
 Subtitr kechikishini kamaytirish keyingi jumlani kuylashdan oldin matnlarni o'qish uchun ko'proq vaqt beradi.
 Yarim ohang yarim qadam sifatida ham tanilgan. Bu klassik Gʻarb musiqasida qoʻllaniladigan eng kichik interval boʻlib, oktavaning oʻn ikkidan biriga yoki yarim tonga teng.
-DNN-ga asoslangan vokal splitter yoqilgan. PiKaraoke PyTorch-dan (Facebook tomonidan) chuqur neyron tarmoqni ishga tushirish uchun har bir trekda instrumental va vokal tovushlarni ajratib, stereo tovushni keltirib chiqaradi.
+DNN-ga asoslangan vokal splitter yoqilgan. OpenHomeKaraoke PyTorch-dan (Facebook tomonidan) chuqur neyron tarmoqni ishga tushirish uchun har bir trekda instrumental va vokal tovushlarni ajratib, stereo tovushni keltirib chiqaradi.
 O'yinchi nazorati
 Musiqa
 Aralashgan
@@ -100,12 +100,12 @@ Ko‘rib chiqish
 “Alifbo tartibida” saralangan
 qo'shiqlar
 ko'rsatilmoqda <b>{start} - {end}</b> {record_name}, jami <b>{total}</b> {record_name}
-topildi <b>{topildi}</b> {record_name}, koʻrsatilayotgan <b>{start} - {end}</b> {record_name}
+topildi <b>{topildi}</b> {record_name}, koʻrsatilmoqda <b>{start} - {end}</b> {record_name}
 Qo'shiqni tahrirlash
 Navbatda yuqoriga o'ting
 Navbatda pastga tushing
 Haqiqatan ham navbatdan oʻchirib tashlamoqchimisiz
-Toʻliq navbatni tozalamoqchimisiz? Davom etish uchun “OK” ni kiriting
+Toʻliq navbatni tozalamoqchimisiz?
 3 ta tasodifiy qo'shiq qo'shing
 Hammasini tozalamoq
 Navbat boʻsh
@@ -117,14 +117,14 @@ Qo'shiq allaqachon navbatda:
 Qidirish / Yangisini qo'shish
 Qidirmoq
 Navbat
-Karaoke bo'lmagan o'yinlarni qo'shing
+Faqat karaoke moslamalarini qidiring
 Murakkab
-Mavjud qo'shiqlarni qidirish uchun qo'shiqni (nom/ifachi) kiriting va uni navbatga qo'shish uchun "Navbat" tugmasini bosing.
+Mavjud qo'shiqlarni qidirish uchun qo'shiqni (nom/ijodkor) kiriting va uni navbatga qo'shish uchun "Navbat" tugmasini bosing.
 Agar qo'shiq "Mavjud qo'shiqlar" ochiladigan ro'yxatida ko'rinmasa, uni Youtube-da topish uchun "Qidirish" tugmasini bosing.
 YouTube url-ni to'g'ridan-to'g'ri yuklab olish:
-Navbatga qo'shish
+Yuklab olingandan keyin navbatga qo'shing
 Subtitrlarni qo'shing
-Yuklab olish
+Yuklab oling
 YouTube uchun qidirilmoqda
 uchun qidiruv natijalari
 Ko'proq natijalarni ko'rsatish uchun ochiladigan menyuni bosing
@@ -133,7 +133,7 @@ Mavjud qo'shiqlar
 Ushbu qurilmadan foydalanadigan odamning ismini o'zgartirmoqchimisiz? Bu navbatdagi qoʻshiqlar yonida koʻrsatiladi. Hozirgi:
 Joriy foydalanuvchi
 Sozlamalar
-PiKaraoke
+OpenHomeKaraoke
 Chiqishni xohlayotganingizga ishonchingiz komilmi?
 Haqiqatan ham oʻchirib qoʻymoqchimisiz?
 Haqiqatan ham qayta ishga tushirishni xohlaysizmi?
@@ -147,12 +147,12 @@ Xotira
 Ekranni suratga olish
 Vokal ajratuvchi
 Youtube-dl (yt-dlp) versiyasi
-PiKaraoke versiyasi
+OpenHomeKaraoke versiyasi
 Kengaytirilgan boshqaruv parametrlari
 Vokal splitter rejimi:
 L-R/L+R dan foydalaning
 DNN dan foydalaning
-Standart MTV audiosi ikkita stereo kanalga ega (L va R) shunday kodlangan: L-R - asbob treki, L+R - vokal trek. Shunday qilib, ikkita stereo kanalni oddiygina ayirish yoki qo'shish orqali biz mono tovushda instrumental va vokal trekni olishimiz mumkin. PiKaraoke-ning o'rnatilgan DNN-ga asoslangan (chuqur neyron tarmog'i) vokal splitteri AI algoritmidan foydalanib, har bir stereo trekdagi instrumental va vokal tovushlarni mustaqil ravishda ajratib turadi, natijada stereo instrumental va vokal treklar paydo bo'ladi.
+Standart MTV audiosi ikkita stereo kanalga ega (L va R) shunday kodlangan: L-R - asbob treki, L+R - vokal trek. Shunday qilib, ikkita stereo kanalni oddiygina ayirish yoki qo'shish orqali biz mono tovushda instrumental va vokal trekni olishimiz mumkin. OpenHomeKaraoke-ning o'rnatilgan DNN-ga asoslangan (chuqur neyron tarmog'i) vokal splitteri AI algoritmidan foydalanib, har bir stereo trekda instrumental va vokal tovushlarni mustaqil ravishda ajratib turadi, natijada stereo instrumental va vokal treklar paydo bo'ladi.
 Splitterni to'xtating
 Splitterni qayta ishga tushiring
 Vokal splitter (ham DNN-ga asoslangan, ham stereo chiqarishni qo'llab-quvvatlaydi) fonda alohida jarayon sifatida ishlaydi va har bir qo'shiq uchun instrumental/vokal audio faylini yaratadi.
@@ -162,19 +162,19 @@ Streamerni qayta ishga tushiring
 Bu faqat veb-brauzer orqali KTV o'ynashga ta'sir qiladi. Ekranni suratga olish va oqimni qayta ishga tushirish audio/video sinxronizatsiyasini yaxshilaydi, shuningdek, server va brauzer o‘rtasidagi kechikishni kamaytiradi.
 Qo'shiqlar ro'yxatini yangilang:
 Qo'shiq katalogini qayta skanerlash
-Buni faqat PiKaraoke ishlayotgan vaqtda fayllarni yuklab olish katalogiga qo'lda ko'chirgan bo'lsangizgina qilishingiz kerak.
+Buni faqat OpenHomeKaraoke ishlayotgan vaqtda fayllarni yuklab olish katalogiga qo'lda ko'chirgan bo'lsangiz qilish kerak.
 Yangilanishlar
 Agar yuklab olishlar yoki qidiruvlar ishlamay qolsa, youtube-dl-ni yangilash muammoni hal qilishi mumkin. Joriy o'rnatilgan versiya:
 youtube-dl-ni yangilang
-Tegishli fayl ruxsatnomalariga ega boʻlmasangiz, yuqoridagi yangilanish havolasi ishlamay qolishi mumkin. Xatolar uchun PiKaraoke jurnalini tekshiring.
+Tegishli fayl ruxsatnomalariga ega boʻlmasangiz, yuqoridagi yangilanish havolasi ishlamay qolishi mumkin. Xatolar uchun OpenHomeKaraoke jurnalini tekshiring.
 O'chirish; yopish
 Shunchaki vilkadan tortmang! Ma'lumotlarning buzilishini oldini olish uchun har doim serveringizni to'g'ri o'chirib qo'ying.
-PiKaraoke-dan chiqing
+OpenHomeKaraoke-dan chiqing
 Tizimni qayta ishga tushirish
 O'chirish tizimi
 Boshqa
 Raspberry Pi fayl tizimini kengaytiring
-Agar siz oldindan o'rnatilgan PiKaraoke pi tasvirini o'rnatgan bo'lsangiz va SD-kartangiz 4 Gb dan katta bo'lsa, qolgan joydan foydalanish uchun fayl tizimini kengaytirishni xohlashingiz mumkin. Buni faqat bir marta qilishingiz kerak. Bu tizimni qayta ishga tushiradi.
+Agar siz hozirgina oldindan o'rnatilgan OpenHomeKaraoke pi tasvirini o'rnatgan bo'lsangiz va SD-kartangiz 4 Gb dan katta bo'lsa, qolgan joydan foydalanish uchun fayl tizimini kengaytirishni xohlashingiz mumkin. Buni faqat bir marta qilishingiz kerak. Bu tizimni qayta ishga tushiradi.
 Administrator rejimini o'chiring
 Administrator rejimini yoqing
 chiqish
@@ -185,14 +185,14 @@ Tilni o'zgartirish
 Iltimos, tilni tanlang
 Tizim tili
 Joriy tizim tili:
-Bu televizor ekranida ko'rsatiladigan PiKaraoke backend tizimining tilini o'zgartiradi; bundan tashqari, har bir ulanish foydalanuvchisi o'zining yuqori o'ng menyusidagi globe tugmasidagi tegishli Web UI tilini ham o'zgartirishi mumkin.
+Bu televizor ekranida ko'rsatiladigan OpenHomeKaraoke backend tizimining tilini o'zgartiradi; bundan tashqari, har bir ulanish foydalanuvchisi o'zining yuqori o'ng menyusidagi globe tugmasidagi tegishli Web UI tilini ham o'zgartirishi mumkin.
 Yuklab olish muvaffaqiyatli yakunlandi!
 Yuklab olinmadi!
 Qo'shiq navbatga qo'shildi!
 Qo‘shiqni navbatga qo‘yib bo‘lmadi!
 Tizim ma'lumotlari va sozlamalari
 Ovozni normallashtirish
-Turli xil qo'shiqlar ko'pincha har xil hajmga ega. Ovoz balandligini normallashtirishni yoqish birinchi navbatda qo'shiqning global hajmini hisoblash uchun <i>ffmpeg</i>ni ishga tushiradi va har bir qo'shiq bir xil darajada baland bo'lishi uchun o'yinchi ovozini avtomatik ravishda moslashtiradi.
+Turli xil qo'shiqlar ko'pincha har xil hajmga ega. Ovoz balandligini normallashtirishni yoqish birinchi navbatda qo'shiqning global hajmini hisoblash uchun <i>ffmpeg</i>ni ishga tushiradi va har bir qo'shiq bir xil darajada baland ovozda eshitilishi uchun pleer ovozini avtomatik ravishda sozlaydi.
 Qo'shiq kutubxona yuklab olish yo'li
 Qo'shiqlarning umumiy soni
 Subtitrni ko'rsatish/yashirish
@@ -207,3 +207,25 @@ Yuqori sifatli
 Yuklab olish tugagandan so'ng qo'shiqni kuylash navbatiga qo'shing
 Agar mavjud bo'lsa, barcha tillarda subtitrlarni yuklab oling (faqat o'rnatilgan).
 Yuqori sifatli videolarni yuklab olish juda uzoq vaqt talab qilishi mumkin
+Play sozlamalarini saqlang
+Har bir qo'shiq uchun ijro sozlamalarini saqlang, bunga quyidagilar kiradi: audio kechikish, subtitrni kechiktirish va subtitrlarni ko'rsatish.
+Qo'shiq nomini aytib qo'shiq qo'shing
+Iltimos, qo'shiq nomini ayting va OK tugmasini bosing!
+Faqat HTTPS veb-saytlari mikrofondan foydalanishi mumkin, HTTPS veb-saytiga yo'naltirishni xohlaysizmi?
+Mikrofonga kirishga ruxsat bering!
+Qo'shiq nomini tahrirlash:
+Saqlash
+Bu qoʻshiqni oʻchirib tashlang
+Haqiqatan ham bu qoʻshiqni kutubxonadan oʻchirib tashlamoqchimisiz?
+So'rov parametri xatosi!
+Qo'shiqni qisqartiring:
+Qo'shiq tovushini sozlash:
+Boshlanish vaqti:
+Tugash vaqti:
+Asl hajmi (dB):
+“%s”ga mos keladigan qo‘shiq topilmadi.
+Navbatga “%s” qo‘shildi.
+Iltimos, qo'shiladigan qo'shiq(lar)ni tanlang:
+BERISH
+Yopish
+Qo'shish

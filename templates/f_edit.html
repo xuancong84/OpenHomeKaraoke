@@ -37,7 +37,7 @@ function rename_song(){
 }
 function delete_song() {
   if (window.confirm("{{getString1(219)}}"))
-    get_refresh("{{url_for('delete_file')}}?song={{url_escape(song)}}");
+    get_refresh("/files/delete?song={{url_escape(song)}}");
 }
 $('.input').change(check);
 </script>

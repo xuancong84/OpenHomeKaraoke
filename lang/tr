@@ -3,70 +3,70 @@ Yanlış yönetici şifresi!
 Yönetici modundan çıkış yapıldı!
 %s rastgele parça eklendi
 Şarkılar bitti!
-Kuyruğu temizledim!
-Öğe sıra içinde taşınırken hata oluştu: geçersiz bağımsız değişken
-Öğe kuyruğa başarıyla taşındı:
-Öğe sıra içinde taşınırken hata oluştu:
-Sırada aşağı taşındı:
-Kuyrukta aşağı inerken hata oluştu:
-Sırada yukarı taşındı:
-Kuyrukta yukarı çıkarken hata oluştu:
+Sırayı temizledim!
+Öğe kuyruk içinde taşınırken hata oluştu: geçersiz argüman
+Öğe başarıyla sıraya taşındı:
+Öğe kuyruk içinde taşınırken hata oluştu:
+Sırada aşağıya taşındı:
+Sırada aşağı doğru ilerlerken hata oluştu:
+Sırada yukarıya taşındı:
+Sırada yukarıya doğru ilerlerken hata oluştu:
 Sıradan silindi:
-Kuyruktan silme hatası:
+Sıradan silme hatası:
 İndirme başladı:
-Tamamlandığında, kuyruğa eklenecektir.
-Tamamlandığında, "mevcut şarkılar" listesinde görünecektir.
-Hata: Bu şarkı şu an sırada olduğu için silinemiyor:
+Tamamlandığında sıraya eklenecektir.
+Tamamlandığında "mevcut şarkılar" listesinde görünecektir.
+Hata: Bu şarkı mevcut sırada olduğundan silinemiyor:
 Şarkı silindi:
 Hata: Şarkı parametresi belirtilmedi!
-Hata: Şu anda çalındığı için bu şarkı düzenlenemiyor:
+Hata: Bu şarkı şu anda çalındığı için düzenlenemiyor:
 Şarkı Dosyası Düzenleme
-Dosyayı Yeniden Adlandırma Hatası: '%s' ila '%s'. Dosya adı zaten var.
-Yeniden adlandırılan dosya: '%s' - '%s'
+Dosyayı yeniden adlandırma hatası: '%s' - '%s'. Dosya adı zaten mevcut.
+Dosya yeniden adlandırıldı: '%s' - '%s'
 Hata: Hiçbir dosya adı parametresi belirtilmedi!
 Bilinmeyen
 Koşma
-durduruldu
- (yalnızca CPU)
+Durduruldu
+ (Yalnızca CPU)
  (GPU etkin)
-youtube-dl güncelleniyor! Bir veya iki dakika sürmeli...
+Youtube-dl güncelleniyor! Bir veya iki dakikanızı alır...
 youtube-dl'yi güncelleme izniniz yok
 Kapatma izniniz yok
-PiKaraoke'den şimdi çıkılıyor!
+OpenHomeKaraoke'yi artık bırakıyorum!
 Çıkma izniniz yok
-Sistemi şimdi kapatıyorum!
+Sistemi hemen kapatıyorum!
 Kapatma izniniz yok
-Sistem şimdi yeniden başlatılıyor!
+Sistemi şimdi yeniden başlatıyorum!
 Yeniden Başlatma izniniz yok
 Dosya sistemi genişletiliyor ve sistem şimdi yeniden başlatılıyor!
-Raspberry olmayan pi cihazlarında fs genişletilemiyor!
+Raspberry pi olmayan cihazlarda fs genişletilemiyor!
 Dosya sistemini yeniden boyutlandırma izniniz yok
-Youtube-dl yolu bulunamadı!
+Youtube-dl yolu bulunamadı ve pip bunu yükleyemedi!
 VLC yolu bulunamadı!
 omxplayer yolu bulunamadı!
 İndirme yolu oluşturma:
-Wifi/Ağ bağlı değil. 10 saniye içinde kapatılıyor...
-Şarkı seçmek için QR tarayın veya şuraya bağlanın:
+Wifi/Ağ bağlı değil. 10 saniye içinde kapanıyor...
+Şarkı seçmek için QR'yi tarayın veya
 TV ekranı için şuraya bağlanın:
 Tam ekrana geçiş yapmak için F tuşuna basın
-PiKaraoke'den çıkmak için ESC'ye basın
+OpenHomeKaraoke'den çıkmak için ESC'ye basın
 RaspiWifiConfig kurulum modu algılandı!
 Başka bir cihazı/akıllı telefonu Wifi AP'ye bağlayın: '%s'
-Ardından tarayıcısını '%s://%s%s' konumuna getirin ve talimatları izleyin.
+Daha sonra tarayıcısını şu adrese yönlendirin: '%s://%s%s' ve talimatları izleyin.
 Bir sonraki:
 Tarafından eklendi:
 Şimdi oynuyor:
 Yönetici modu verildi!
-Artan ses gecikmesi, bir sonraki cümleyi söylemeden önce şarkı sözlerini okumak için size daha fazla zaman verecektir.
+Ses gecikmesini artırmak, bir sonraki cümleyi söylemeden önce şarkı sözlerini okumak için size daha fazla zaman verecektir.
 Altyazı gecikmesini azaltmak, bir sonraki cümleyi söylemeden önce şarkı sözlerini okumak için size daha fazla zaman verecektir.
-Yarım ton, yarım adım olarak da bilinir. Klasik Batı müziğinde kullanılan, bir oktavın on ikide birine veya yarım tona eşit olan en küçük aralıktır.
-DNN tabanlı ses ayırıcı etkinleştirildi. PiKaraoke, derin bir sinir ağı çalıştırmak için PyTorch'u (Facebook tarafından) kullanarak enstrümantal ve vokal sesi her parçada ayırarak stereo sese yol açar.
+Yarım ton aynı zamanda yarım adım olarak da bilinir. Klasik Batı müziğinde kullanılan, bir oktavın on ikide birine veya yarım tona eşit olan en küçük aralıktır.
+DNN tabanlı ses ayırıcı etkinleştirildi. OpenHomeKaraoke, stereo sese yol açacak şekilde her parçadaki enstrümantal ve vokal sesi bölmek üzere derin bir sinir ağını çalıştırmak için PyTorch'u (Facebook tarafından) kullanıyor.
 Oyuncu Kontrolü
 Müzik
 Karışık
 Ses
 Anahtarı Değiştir
-Şu anda hiçbir şey çalmıyor.
+Şu anda hiçbir şey oynatılmıyor.
 Hiçbir şarkı sıraya alınmadı.
 Bu şarkı sizin tarafınızdan eklenmemiştir. Bu parçayı yeniden başlatmak istediğinizden emin misiniz?
 Bu şarkı sizin tarafınızdan eklenmemiştir. Bu parçayı atlamak istediğinizden emin misiniz?
@@ -82,99 +82,99 @@ Geçerli Şarkıyı Atla
 Sesi kıs
 Sesi Ayarla
 Sesi aç
-Altyazı Gecikmesini Azaltın
+Altyazı Gecikmesini Azalt
 Altyazı Gecikmesini Ayarla
 Altyazı Gecikmesini Artırın
 Ses Gecikmesini Azaltın
 Ses Gecikmesini Ayarla
 Ses Gecikmesini Artırın
  yarım tonlar
-Lütfen adınızı giriniz. Bu, bu cihazdan sıraya aldığınız şarkıların yanında görünecektir.
-Sıraya eklenen şarkı:
-Şarkı zaten sırada:
+Lütfen adınızı giriniz. Bu, bu cihazdan sıraya koyduğunuz şarkıların yanında görünecektir.
+Şarkı sıraya eklendi:
+Şarkı zaten kuyrukta:
 Tarihe göre sırala
-Alfabetik sıralama
-Kuyruğa '%s' ekleyin
+Alfabetik sıraya göre sırala
+'%s'yi sıraya ekle
 Araştır
-"Tarih"e göre sıralandı
+'Tarih'e göre sıralandı
 'Alfabetik'e göre sıralandı
 şarkılar
-<b>{start} - {end}</b> {record_name} görüntüleniyor, toplamda <b>{total}</b> {record_name}
-<b>{found}</b> {record_name} bulundu, <b>{start} - {end}</b> {record_name} görüntüleniyor
+<b>{start} - {end</b> {record_name}, toplamda <b>{total</b> {record_name} görüntüleniyor
+<b>{found</b> {record_name} bulundu, <b>{start} - {end</b> {record_name} görüntüleniyor
 Şarkıyı düzenle
 Sırada yukarı git
 Sırada aşağı git
 Sıradan silmek istediğinizden emin misiniz?
-TÜM sırayı temizlemek istediğinizden emin misiniz? Devam etmek için 'Tamam' yazın
+TÜM kuyruğu temizlemek istediğinizden emin misiniz?
 3 rastgele şarkı ekle
 Hepsini temizle
-sıra boş
+Sıra boş
 Sıra
 Silmek
-Yerel kitaplıkta bulunan şarkılar
-Kuyruğa şarkı eklendi:
+Yerel kütüphanede mevcut şarkılar
+Şarkı sıraya eklendi:
 Şarkı zaten sırada:
 Ara / Yeni Ekle
 Aramak
 Sıra
-Karaoke olmayan maçları dahil et
+Yalnızca Karaoke eşleşmelerinde ara
 Gelişmiş
-Mevcut şarkıları aramak için bir şarkı (başlık/sanatçı) yazın ve onu kuyruğa eklemek için 'Sıra'ya tıklayın.
-Şarkı "Mevcut Şarkılar" açılır menüsünde görünmüyorsa, onu Youtube'da bulmak için "Ara"yı tıklayın.
+Mevcut şarkıları aramak için bir şarkı (başlık/sanatçı) yazın ve onu sıraya eklemek için 'Sıraya Al'ı tıklayın.
+Şarkı "Kullanılabilir Şarkılar" açılır menüsünde görünmüyorsa şarkıyı Youtube'da bulmak için "Ara"yı tıklayın.
 Doğrudan indirme YouTube URL'si:
-Sıraya ekle
-altyazıları dahil et
+İndirdikten sonra sıraya ekle
+Altyazıları ekle
 İndirmek
-YouTube'da aranıyor
+YouTube'da arama yapılıyor
 için arama sonuçları
 Daha fazla sonuç göstermek için açılır menüyü tıklayın
 Bağlantı:
 Mevcut Şarkılar
-Bu cihazı kullanan kişinin ekran adını değiştirmek istiyor musunuz? Bu, sıraya alınmış şarkıların yanında görünecektir. Akım:
+Bu cihazı kullanan kişinin ekran adını değiştirmek istiyor musunuz? Bu, sıradaki şarkıların yanında görünecektir. Akım:
 Şu anki kullanıcı
 Ayarlar
-PiKaraoke
+OpenHomeKaraoke
 Çıkmak istediğinden emin misin?
 Kapatmak istediğinizden emin misiniz?
 Yeniden başlatmak istediğinizden emin misiniz?
-Youtube-dl'yi hemen güncellemek istediğinizden emin misiniz? Mevcut ve bekleyen indirmeler başarısız olabilir.
-Dosya sistemini genişletmek istediğinizden emin misiniz? Bu, ahududu pi'nizi yeniden başlatacaktır.
+Şu anda Youtube-dl'yi güncellemek istediğinizden emin misiniz? Mevcut ve bekleyen indirmeler başarısız olabilir.
+Dosya sistemini genişletmek istediğinizden emin misiniz? Bu, Raspberry Pi'nizi yeniden başlatacaktır.
 Bilgi
-Bir arkadaşınızla paylaşmak için kullanışlı URL QR kodu:
+Arkadaşınızla paylaşmak için kullanışlı URL QR kodu:
 işletim sistemi
 Disk kullanımı
 Hafıza
 Ekran görüntüsü
 Vokal Ayırıcı
 Youtube-dl (yt-dlp) sürümü
-PiKaraoke versiyonu
+OpenHomeKaraoke versiyonu
 Gelişmiş Kontrol Seçenekleri
 Vokal ayırıcı modu:
-L-R/L+R kullanın
-DNN kullan
-Standart MTV sesi, şu şekilde kodlanmış iki stereo kanala (L ve R) sahiptir: L-R enstrüman izidir, L+R vokal izidir. Böylece, iki stereo kanalı basitçe çıkararak veya ekleyerek, enstrümantal ve vokal izi mono seste elde edebiliriz. PiKaraoke'nin yerleşik DNN tabanlı (derin sinir ağı) vokal ayırıcısı, her bir stereo parçadaki enstrümantal ve vokal sesi bağımsız olarak stereo enstrümantal ve vokal parçalara ayırmak için AI algoritmasını kullanır.
+Sol-Sağ/Sol+Sağ'ı kullanın
+DNN'yi kullan
+Standart MTV ses, şu şekilde kodlanmış iki stereo kanala (Sol ve Sağ) sahiptir: Sol-R enstrüman parçası, L+R vokal parçası. Böylece, iki stereo kanalı basitçe çıkararak veya ekleyerek enstrümantal ve vokal parçayı mono seste elde edebiliriz. OpenHomeKaraoke'nin yerleşik DNN tabanlı (derin sinir ağı) vokal ayırıcısı, her stereo parçadaki enstrümantal ve vokal sesi bağımsız olarak bölerek stereo enstrümantal ve vokal parçaları oluşturmak için AI algoritmasını kullanır.
 Ayırıcıyı Durdur
-Splitter'ı yeniden başlatın
-Vokal ayırıcı (hem DNN tabanlı hem de stereo çıkarma işlemini destekler) arka planda ayrı bir işlem olarak çalışır ve her şarkı için enstrümantal/vokal ses dosyası oluşturur.
-Sesi ve videoyu yeniden senkronize edin:
-Yayını Durdur
-Streamer'ı yeniden başlatın
-Bu, yalnızca web tarayıcısı üzerinden KTV oynatmayı etkiler. Ekran yakalama ve akışını yeniden başlatmak, ses/video senkronizasyonunu iyileştirir ve ayrıca sunucu ile tarayıcı arasındaki gecikmeyi azaltır.
+Splitter'ı yeniden başlat
+Vokal ayırıcı (hem DNN tabanlı hem de stereo çıkarmayı destekleyen), arka planda ayrı bir işlem olarak çalışarak her şarkı için enstrümantal/vokal ses dosyası oluşturur.
+Ses ve videoyu yeniden senkronize edin:
+Yayıncıyı Durdur
+Streamer'ı yeniden başlat
+Bu yalnızca KTV'nin web tarayıcısı üzerinden oynatılmasını etkiler. Ekran yakalama ve akışının yeniden başlatılması ses/video senkronizasyonunu iyileştirir, aynı zamanda sunucu ile tarayıcı arasındaki gecikmeyi de azaltır.
 Şarkı listesini yenileyin:
 Şarkı dizinini yeniden tara
-Bunu yalnızca, dosyaları indirme dizinine PiKaraoke çalışırken manuel olarak kopyaladıysanız yapmanız gerekir.
+Bunu yalnızca OpenHomeKaraoke çalışırken dosyaları indirme dizinine manuel olarak kopyaladıysanız yapmanız gerekir.
 Güncellemeler
-İndirmeler veya aramalar çalışmayı durdurduysa, youtube-dl'yi güncellemek muhtemelen sorunu çözecektir. Mevcut yüklü sürüm:
+İndirmeler veya aramalar çalışmayı durdurduysa youtube-dl'yi güncellemek muhtemelen sorunu çözecektir. Şu anda yüklü olan sürüm:
 youtube-dl'yi güncelle
-Uygun dosya izinleriniz yoksa yukarıdaki bu güncelleme bağlantısı başarısız olabilir. Hatalar için PiKaraoke günlüğünü kontrol edin.
+Uygun dosya izinleriniz yoksa yukarıdaki güncelleme bağlantısı başarısız olabilir. Hatalar için OpenHomeKaraoke günlüğünü kontrol edin.
 Kapat
-Sadece fişi çekmeyin! Veri bozulmasını önlemek için sunucunuzu her zaman düzgün bir şekilde kapatın.
-PiKaraoke'den çık
+Sadece fişi çekmeyin! Veri bozulmasını önlemek için sunucunuzu her zaman düzgün şekilde kapatın.
+OpenHomeKaraoke'den çık
 Sistemi yeniden başlatma
 Sistemi kapat
 Diğer
 Raspberry Pi dosya sistemini genişletin
-Önceden oluşturulmuş PiKaraoke pi görüntüsünü yeni yüklediyseniz ve SD kartınız 4 GB'tan büyükse, kalan alanı kullanmak için dosya sistemini genişletmek isteyebilirsiniz. Bunu sadece bir kez yapmanız gerekir. Bu, sistemi yeniden başlatacaktır.
+Önceden oluşturulmuş OpenHomeKaraoke pi görüntüsünü yeni yüklediyseniz ve SD kartınız 4 GB'tan büyükse, kalan alanı kullanmak için dosya sistemini genişletmek isteyebilirsiniz. Bunu sadece bir kez yapmanız gerekir. Bu sistemi yeniden başlatacaktır.
 Yönetici modunu devre dışı bırak
 Yönetici modunu etkinleştir
 çıkış Yap
@@ -182,28 +182,50 @@ giriş yapmak
 Sistem bilgisi
 Ev
 Dili değiştir
-Lütfen dil seçin
+Lütfen dili seçin
 Sistem Dili
 Mevcut sistem dili:
-Bu, TV ekranında görüntülenen PiKaraoke arka uç sisteminin dilini değiştirir; ayrıca, bağlanan her kullanıcı sağ üst menüdeki yerküre düğmesinden kendi Web Kullanıcı Arayüzü dilini değiştirebilir.
+Bu, TV ekranında görüntülenen OpenHomeKaraoke arka uç sisteminin dilini değiştirir; ayrıca bağlanan her kullanıcı, sağ üst menüdeki dünya düğmesinden kendi Web Kullanıcı Arayüzü dilini de değiştirebilir.
 İndirme başarıyla tamamlandı!
 Yükleme başarısız!
 Şarkı sıraya eklendi!
 Şarkı sıraya alınamadı!
-Sistem Bilgisi ve Ayarlar
-Hacim Normalleştirme
-Farklı şarkılar genellikle farklı ses seviyelerine sahiptir. Ses normalleştirmesinin etkinleştirilmesi, önce bir şarkının genel ses düzeyini hesaplamak için <i>ffmpeg</i>'yi çalıştırır ve her şarkının sesi eşit yüksek olacak şekilde oynatıcı ses düzeyini otomatik olarak ayarlar.
+Sistem Bilgisi ve Ayarları
+Hacim Normalleştirmesi
+Farklı şarkıların genellikle farklı ses seviyeleri vardır. Ses düzeyi normalleştirmesinin etkinleştirilmesi, ilk olarak bir şarkının genel ses düzeyini hesaplamak için <i>ffmpeg</i>'i çalıştıracak ve her şarkının eşit derecede yüksek ses çıkarması için oynatıcı ses düzeyini otomatik olarak ayarlayacaktır.
 Şarkı kitaplığı indirme yolu
 Toplam şarkı sayısı
 Altyazıyı Göster/Gizle
 Hızı Değiştir
-Hız izleme çubuğunu kullanarak çalma hızını 0,8x ila 1,2x aralığında değiştirerek şarkıyı daha hızlı veya daha yavaş söyleyebilirsiniz; diğer oynatma hızları için, değiştirilecek hız değerine tıklayın.
+Hız izleme çubuğunu kullanarak oynatma hızını 0,8x ile 1,2x arasında değiştirerek şarkıyı daha hızlı veya daha yavaş söyleyebilirsiniz; diğer oynatma hızları için değiştirilecek hız değerine tıklayın.
 Oynatma hızını 1x'e sıfırlamak için tıklayın
 Oynatma hızını ayarlamak için tıklayın
-Tuşu/pitch'i sıfırlamak için tıklayın
+Anahtarı/perdeyi sıfırlamak için tıklayın
 Resetleme tuşu
 Hızı Sıfırla
 Yüksek kalite
-İndirme işlemi bittikten sonra şarkıyı şarkı söyleme kuyruğuna ekleyin
-Varsa tüm dillerde altyazıları (yalnızca gömülü) indirin
-Yüksek kaliteli videoları indirmek çok uzun sürebilir
+İndirme işlemi tamamlandıktan sonra şarkıyı şarkı söyleme sırasına ekleyin
+Varsa tüm dillerdeki altyazıları (yalnızca gömülü) indirin
+Yüksek kaliteli videoların indirilmesi çok uzun zaman alabilir
+Oynatma Ayarlarını Kaydet
+Her şarkı için oynatma ayarlarını kaydedin; buna şunlar dahildir: ses gecikmesi, altyazı gecikmesi ve altyazıların gösterilip gösterilmeyeceği.
+Şarkı adını söyleyerek şarkı ekleyin
+Lütfen şarkının adını söyleyin ve Tamam'a tıklayın!
+Yalnızca HTTPS web siteleri mikrofona erişebilir, HTTPS web sitesine yönlendirmek istiyor musunuz?
+Lütfen mikrofona erişim izni verin!
+Şarkı Adını Düzenle:
+Kaydetmek
+Bu şarkıyı sil
+Bu şarkıyı kitaplıktan silmek istediğinizden emin misiniz?
+Parametre hatası isteyin!
+Şarkıyı kesin:
+Şarkı ses düzeyini ayarlayın:
+Başlangıç ​​zamanı:
+Bitiş zamanı:
+Orijinal Ses Düzeyi (dB):
+"%s" ile eşleşen herhangi bir şarkı bulunamadı.
+"%s" sıraya eklendi.
+Lütfen eklenecek şarkıyı/şarkıları seçin:
+GERİ ALMA
+Kapalı
+Eklemek

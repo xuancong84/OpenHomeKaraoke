@@ -32,7 +32,7 @@ Akamira
 Kuvandudza youtube-dl! Zvinofanira kutora miniti kana maviri...
 Hauna mvumo yekuvandudza youtube-dl
 Hauna mvumo yekudzima
-Kusiya PiKaraoke ikozvino!
+Kusiya OpenHomeKaraoke izvozvi!
 Hauna mvumo yekurega
 Kudzima system ikozvino!
 Hauna mvumo yekudzima
@@ -41,7 +41,7 @@ Iwe hauna mvumo yekuReboot
 Kuwedzera faira system uye rebooting system izvozvi!
 Haikwanise kuwedzera fs pane isiri-raspberry pi zvishandiso!
 Iwe hauna mvumo yekuisa saizi yefaira system
-Youtube-dl nzira haina kuwanikwa!
+Youtube-dl nzira haina kuwanikwa uye pip yatadza kuimisa!
 VLC nzira haina kuwanikwa!
 omxplayer nzira haina kuwanikwa!
 Kugadzira nzira yekurodha:
@@ -49,7 +49,7 @@ Wifi/Network haina kubatana. Kuvhara mu10s...
 Pakusarudza nziyo, tarisa QR kana batanidza kune
 Nekuratidzwa kweTV, batanidza ku
 Dzvanya F kuti ushandure yakazara-skrini
-Dzvanya ESC kuti usiye PiKaraoke
+Dzvanya ESC kuti usiye OpenHomeKaraoke
 RaspiWifiConfig setup mode yaonekwa!
 Batanidza imwe mudziyo/smartphone kuWifi AP: '%s'
 Wonangisa bhurawuza ku: '%s://%s%s' wotevera mirairo.
@@ -60,7 +60,7 @@ Admin mode yapihwa!
 Kuwedzera kunonoka kwekuteerera kunokupa nguva yakawanda yekuverenga mazwi usati waimba mutsara unotevera.
 Kudzikira subtitle kunonoka kunokupa nguva yakawanda yekuverenga mazwi usati waimba mutsara unotevera.
 Semitone inozivikanwawo sehafu-nhanho. Ndiyo nguva diki diki inoshandiswa mumhanzi wekare wekuMadokero, yakaenzana negumi nembiri yeoctave kana hafu yetoni.
-DNN-based vocal splitter inogoneswa. PiKaraoke inoshandisa PyTorch (neFacebook) kumhanyisa yakadzika neural network kupatsanura chiridzwa uye chezwi ruzha murwiyo rwega rwega zvichipa ruzha rwestereo.
+DNN-based vocal splitter inogoneswa. OpenHomeKaraoke inoshandisa PyTorch (neFacebook) kumhanyisa yakadzika neural network kupatsanura chiridzwa uye chezwi ruzha murwiyo rwega rwega zvichipa ruzha rwestereo.
 Mutambi Kudzora
 Music
 Mixed
@@ -105,7 +105,7 @@ Edit song
 Enda kumusoro mumutsetse
 Enda pasi mumutsetse
 Une chokwadi chekuti unoda kudzima kubva pamutsetse
-Une chokwadi chekuti unoda kudzima mutsara WESE? Nyora 'OK' kuti uenderere mberi
+Une chokwadi chekuti unoda kudzima mutsara WESE?
 Wedzera 3 nziyo dzisina kurongeka
 Bvisa zvese
 Mutsara hauna chinhu
@@ -117,12 +117,12 @@ Rwiyo rwatova mumutsara:
 Tsvaga / Wedzera Zvitsva
 Search
 Mutsara
-Sanganisira mitambo isiri-karaoke
+Tsvaga machisi eKaraoke chete
 Advanced
 Nyora rwiyo (zita/muimbi) kutsvaga nziyo dziripo wodzvanya 'Queue' kuti uiwedzere pamutsetse.
 Kana rwiyo rusingaratidzike mukudonha kwe "Nziyo Dziripo", tinya 'Tsvaga' kuti uiwane paYouTube.
 Dhawunirodha zvakananga YouTube url:
-Wedzera kumutsara
+Wedzera kumutsetse mushure mekudhaunirodha
 Batanidza zvinyorwa zvidiki
 Download
 Kutsvaga paYouTube
@@ -133,7 +133,7 @@ Nziyo dziripo
 Unoda kushandura zita rekuratidza remunhu ari kushandisa mudziyo uyu? Izvi zvichaonekwa padivi penziyo dzakaiswa mumutsara. Zvazvino:
 Mushandisi wazvino
 Settings
-PiKaraoke
+OpenHomeKaraoke
 Une chokwadi chekuti unoda kusiya?
 Une chokwadi chekuti unoda kuvhara?
 Une chokwadi chekuti unoda kutangazve?
@@ -147,34 +147,34 @@ Memory
 Screen Capture
 Vocal Splitter
 Youtube-dl (yt-dlp) shanduro
-PiKaraoke version
+OpenHomeKaraoke shanduro
 Advanced Control Options
 Vocal splitter mode:
 Shandisa L-R/L+R
 Shandisa DNN
-Yakajairwa MTV odhiyo ine maviri stereo chiteshi (L uye R) encoded nenzira yekuti: L-R ndiyo track yechiridzwa, L+R ndiyo inonzwika track. Nekudaro, nekungobvisa kana kuwedzera maviri estereo chiteshi, isu tinogona kuwana chiridzwa uye chezwi rwiyo mumono ruzha. PiKaraoke's yakavakirwa-mukati DNN-yakavakirwa (yakadzika neural network) inzwi rinopatsanura rinoshandisa AI algorithm kupatsanura chiridzwa uye chezwi ruzha murwiyo rwese stereo zvakazvimiririra zvichikonzera stereo chiridzwa uye manzwi ezwi.
+Yakajairwa MTV odhiyo ine maviri stereo chiteshi (L uye R) encoded nenzira yekuti: L-R ndiyo track yechiridzwa, L+R ndiyo inonzwika track. Nekudaro, nekungobvisa kana kuwedzera maviri estereo chiteshi, tinogona kuwana chiridzwa uye chezwi rwiyo mumono ruzha. OpenHomeKaraoke's yakavakirwa-muDNN-yakavakirwa (yakadzika neural network) izwi rinopatsanura rinoshandisa AI algorithm kupatsanura chiridzwa uye chezwi ruzha mune yega stereo track yakazvimiririra zvichikonzera stereo chiridzwa uye chenzwi nziyo.
 Stop Splitter
 Tangazve Splitter
 Iyo inopatsanura yezwi (inotsigira zvese DNN-yakavakirwa uye stereo kubvisa) inomhanya seyakasiyana maitiro kumashure, ichigadzira chiridzwa / inzwi redhiyo faira renziyo yega yega.
 Batanidza zvakare odhiyo nevhidhiyo:
 Misa Streamer
 Tangazve Streamer
-Izvi zvinongokanganisa kutamba KTV kuburikidza newebhu browser. Kutangazve iyo skrini-kutora-uye-kutenderera inovandudza odhiyo / vhidhiyo kuwiriranisa, zvakare inoderedza iyo latency pakati peseva nebrowser.
+Izvi zvinongokanganisa kutamba KTV kuburikidza newebhu browser. Kutangazve iyo skrini-kutora-uye-kutenderera inovandudza odhiyo / vhidhiyo kuwiriranisa, zvakare inoderedza iyo latency pakati pesevha nebrowser.
 Gadzirisa runyoro rwenziyo:
 Rescan rwiyo directory
-Iwe unongofanirwa kuita izvi kana iwe wakakopa mafaera kune iyo yekurodha dhairekitori PiKaraoke ichimhanya.
+Iwe unofanirwa chete kuita izvi kana iwe wakakopa mafaera nemaoko kudhairekitori rekurodha apo OpenHomeKaraoke ichimhanya.
 Updates
 Kana kudhawunirodha kana kutsvaga kwakamira kushanda, kugadzirisa youtube-dl kungangozvigadzirisa. Iyo yazvino yakaiswa vhezheni ndeye:
 Gadziridza youtube-dl
-Iyi yekuvandudza link iri pamusoro inogona kutadza kana iwe usina mvumo yefaira. Tarisa iyo PiKaraoke log yezvikanganiso.
+Iyi yekuvandudza link iri pamusoro inogona kutadza kana iwe usina mvumo yefaira. Tarisa iyo OpenHomeKaraoke log yezvikanganiso.
 Vhara
 Usangodhonza plug! Gara uchivhara server yako nemazvo kuti udzivise huwori hwe data.
-Quit PiKaraoke
+Rega OpenHomeKaraoke
 Reboot System
 Shutdown System
 Zvimwe
 Wedzera Raspberry Pi faira system
-Kana iwe uchangobva kuisa iyo pre-yakavakwa PiKaraoke pi mufananidzo uye SD kadhi yako yakakura kupfuura 4GB, ungangoda kuwedzera iyo faira system kushandisa yasara nzvimbo. Unongofanira kuita izvi kamwe chete. Izvi zvichatangazve system.
+Kana iwe uchangobva kuisa iyo pre-yakavakwa OpenHomeKaraoke pi mufananidzo uye SD kadhi yako yakakura kupfuura 4GB, ungangoda kuwedzera iyo faira system kushandisa yasara nzvimbo. Unongofanira kuita izvi kamwe chete. Izvi zvichatangazve system.
 Dzima admin modhi
 Gonesa admin modhi
 kubuda
@@ -185,8 +185,8 @@ Chinja Mutauro
 Ndapota sarudza mutauro
 Mutauro Wehurongwa
 Mutauro wehurongwa hwazvino:
-Izvi zvinoshandura mutauro wePiKaraoke backend system inoratidzwa paTV screen; uyezve, mushandisi wega wega wekubatanidza anogonawo kushandura mutauro wavo weWebhu UI mubhatani repasi mune yekurudyi-yepamusoro menyu.
-Kudhaunirodha kwakapera!
+Izvi zvinoshandura mutauro weOpenHomeKaraoke backend system inoratidzwa paTV screen; uyezve, mushandisi wega wega wekubatanidza anogonawo kushandura mutauro wavo weWebhu UI mubhatani repasi mune yekurudyi-yepamusoro menyu.
+Kudhaunirodha kwakapera zvakanaka!
 Kudhaunirodha kwatadza!
 Rwiyo rwakawedzerwa pamutsetse!
 Tatadza kumisa rwiyo!
@@ -207,3 +207,25 @@ High Quality
 Wedzera rwiyo kumutsara wekuimba mushure mekunge kudhaunirodha kwapera
 Dhaunirodha zvinyorwa zvidiki (zvakaiswa chete) mumitauro yese kana zviripo
 Kudhaunirodha mavhidhiyo emhando yepamusoro kunogona kutora nguva yakareba
+Chengetedza Play Settings
+Sevha marongero ekutamba kwenziyo yega yega, izvi zvinosanganisira: kunonoka kwekuteerera, subtitle kunonoka, uye kana kuratidza zvinyorwa zvidiki.
+Wedzera rwiyo nekutaura zita renziyo
+Ndapota taura zita renziyo uye tinya OK!
+Chete mawebhusaiti eHTTPS anogona kuwana maikorofoni, iwe unoda kutungamira kune HTTPS webhusaiti?
+Ndokumbira upe mvumo yekuwana maikorofoni!
+Rongedza Zita reRwiyo:
+Sevha
+Dzima rwiyo urwu
+Une chokwadi chekuti unoda kudzima rwiyo urwu kubva mu library?
+Kumbira kukanganisa parameter!
+Cheka rwiyo:
+Gadzirisa inzwi renziyo:
+Nguva yekutanga:
+Nguva yekupedzisira:
+Vhoriyamu Yekutanga (dB):
+Hatina kuwana chero rwiyo rwunoenderana ne "%s".
+Yakawedzera "%s" mumutsara.
+Ndapota sarudza rwiyo (s) rwekuwedzera:
+ZVANYA
+Close
+Wedzera

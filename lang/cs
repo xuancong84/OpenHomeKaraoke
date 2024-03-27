@@ -15,7 +15,7 @@ Smazáno z fronty:
 Chyba při mazání z fronty:
 Stahování zahájeno:
 Po dokončení bude přidán do fronty.
-Po dokončení se objeví v seznamu "dostupných skladeb".
+Po dokončení se objeví v seznamu „dostupných skladeb“.
 Chyba: Tuto skladbu nelze smazat, protože je v aktuální frontě:
 Skladba smazána:
 Chyba: Nebyl zadán žádný parametr skladby!
@@ -32,7 +32,7 @@ Zastavil
 Aktualizace youtube-dl! Mělo by to trvat minutu nebo dvě...
 Nemáte oprávnění aktualizovat youtube-dl
 Nemáte povolení k vypnutí
-Okamžitě ukončete PiKaraoke!
+Okamžitě ukončete OpenHomeKaraoke!
 Nemáte povolení skončit
 Vypínání systému nyní!
 Nemáte povolení k vypnutí
@@ -41,15 +41,15 @@ Nemáte oprávnění k restartování
 Rozšiřování souborového systému a restartování systému nyní!
 Nelze rozšířit fs na jiných zařízeních než malina pi!
 Nemáte oprávnění ke změně velikosti souborového systému
-Cesta Youtube-dl nebyla nalezena!
-Cesta VLC nebyla nalezena!
+Cesta Youtube-dl nebyla nalezena a pip se nepodařilo nainstalovat!
+Cesta VLC nenalezena!
 cesta k omxplayeru nebyla nalezena!
 Vytvoření cesty ke stažení:
 Wifi/síť není připojena. Vypínání za 10s...
 Chcete-li vybrat skladby, naskenujte QR kód nebo se připojte
-Chcete-li zobrazit TV, připojte se k
+Pro zobrazení TV připojte k
 Stisknutím F přepnete na celou obrazovku
-Stiskněte ESC pro ukončení PiKaraoke
+Stiskněte ESC pro ukončení OpenHomeKaraoke
 Byl zjištěn režim nastavení RaspiWifiConfig!
 Připojte další zařízení/smartphone k Wifi AP: '%s'
 Poté nasměrujte jeho prohlížeč na: '%s://%s%s' a postupujte podle pokynů.
@@ -60,7 +60,7 @@ Režim správce povolen!
 Zvýšení zpoždění zvuku vám poskytne více času na přečtení textu, než zazpíváte další větu.
 Snížení zpoždění titulků vám poskytne více času na přečtení textu, než zazpíváte další větu.
 Půltón je také známý jako poloviční krok. Je to nejmenší interval používaný v klasické západní hudbě, rovný dvanáctině oktávy nebo polovině tónu.
-Rozdělovač hlasu založený na DNN je povolen. PiKaraoke používá PyTorch (od Facebooku) k provozování hluboké neuronové sítě k rozdělení instrumentálního a vokálního zvuku v každé stopě, což vede ke stereo zvuku.
+Rozdělovač hlasu založený na DNN je povolen. OpenHomeKaraoke používá PyTorch (od Facebooku) k provozování hluboké neuronové sítě k rozdělení instrumentálního a vokálního zvuku v každé stopě, což vede ke stereo zvuku.
 Ovládání přehrávače
 Hudba
 Smíšený
@@ -105,7 +105,7 @@ Upravit skladbu
 Posuňte se ve frontě nahoru
 Posuňte se ve frontě dolů
 Opravdu chcete smazat z fronty?
-Opravdu chcete vymazat CELOU frontu? Chcete-li pokračovat, zadejte „OK“.
+Opravdu chcete vymazat CELOU frontu?
 Přidejte 3 náhodné skladby
 Vymazat vše
 Fronta je prázdná
@@ -117,12 +117,12 @@ Skladba je již ve frontě:
 Hledat / Přidat nový
 Vyhledávání
 Fronta
-Zahrňte zápasy bez karaoke
+Hledat pouze zápasy Karaoke
 Pokročilý
 Zadejte skladbu (název/interpreta) pro vyhledání dostupných skladeb a kliknutím na 'Fronta' ji přidejte do fronty.
-Pokud se skladba nezobrazuje v rozevírací nabídce „Dostupné skladby“, klikněte na „Hledat“ a najděte ji na YouTube.
+Pokud se skladba v rozevírací nabídce „Dostupné skladby“ nezobrazuje, klikněte na „Hledat“ a najděte ji na Youtube.
 URL pro přímé stažení z YouTube:
-Přidat do fronty
+Po stažení přidat do fronty
 Zahrnout titulky
 Stažení
 Hledání na YouTube
@@ -133,7 +133,7 @@ Dostupné skladby
 Chcete změnit zobrazované jméno osoby používající toto zařízení? To se zobrazí vedle skladeb ve frontě. Aktuální:
 Současný uživatel
 Nastavení
-PiKaraoke
+OpenHomeKaraoke
 Jste si jisti, že chcete skončit?
 Opravdu chcete vypnout?
 Opravdu chcete restartovat?
@@ -147,34 +147,34 @@ Paměť
 Snímání obrazovky
 Vokální splitter
 Verze Youtube-dl (yt-dlp).
-PiKaraoke verze
+OpenHomeKaraoke verze
 Pokročilé možnosti ovládání
 Režim rozdělovače hlasu:
 Použijte L-R/L+R
 Použijte DNN
-Standardní MTV audio má dva stereo kanály (L a R) zakódované takovým způsobem, že: L-R je nástrojová stopa, L+R je vokální stopa. Jednoduchým odečtením nebo přidáním dvou stereo kanálů tedy můžeme získat instrumentální a vokální stopu v mono zvuku. Vestavěný rozdělovač vokálů založený na DNN (hluboké neuronové síti) PiKaraoke používá algoritmus AI k samostatnému rozdělení instrumentálního a vokálního zvuku v každé stereo stopě, což vede ke stereo instrumentálním a vokálním stopám.
+Standardní MTV audio má dva stereo kanály (L a R) zakódované takovým způsobem, že: L-R je nástrojová stopa, L+R je vokální stopa. Jednoduchým odečtením nebo přidáním dvou stereo kanálů tedy můžeme získat instrumentální a vokální stopu v mono zvuku. Vestavěný rozdělovač vokálů založený na DNN (hluboké neuronové síti) OpenHomeKaraoke používá algoritmus AI k samostatnému rozdělení instrumentálního a vokálního zvuku v každé stereo stopě, což vede ke stereo instrumentálním a vokálním stopám.
 Zastavte splitter
 Restartujte Splitter
 Vokální splitter (který podporuje odečítání založené na DNN i stereo) běží jako samostatný proces na pozadí a generuje instrumentální/vokální zvukový soubor pro každou skladbu.
 Znovu synchronizujte zvuk a video:
 Zastavit Streamer
 Restartujte Streamer
-To se týká pouze přehrávání KTV prostřednictvím webového prohlížeče. Restartování screen-capture-and-streaming zlepšuje audio/video synchronizaci a také snižuje latenci mezi serverem a prohlížečem.
+To má vliv pouze na přehrávání KTV prostřednictvím webového prohlížeče. Restartování screen-capture-and-streaming zlepšuje audio/video synchronizaci a také snižuje latenci mezi serverem a prohlížečem.
 Obnovte seznam skladeb:
 Znovu prohledejte adresář skladeb
-Měli byste to udělat pouze v případě, že jste ručně zkopírovali soubory do adresáře pro stahování, když bylo spuštěno PiKaraoke.
+Měli byste to udělat pouze v případě, že jste ručně zkopírovali soubory do adresáře pro stahování, když byl spuštěn OpenHomeKaraoke.
 Aktualizace
 Pokud stahování nebo vyhledávání přestalo fungovat, aktualizace youtube-dl to pravděpodobně opraví. Aktuální nainstalovaná verze je:
 Aktualizujte youtube-dl
-Tento odkaz na aktualizaci výše může selhat, pokud nemáte správná oprávnění k souboru. Zkontrolujte protokol PiKaraoke, zda neobsahuje chyby.
+Tento odkaz na aktualizaci výše může selhat, pokud nemáte správná oprávnění k souboru. Zkontrolujte protokol OpenHomeKaraoke, zda neobsahuje chyby.
 Vypnout
 Nevytahujte jen zástrčku! Vždy řádně vypněte server, aby nedošlo k poškození dat.
-Ukončete PiKaraoke
+Ukončete OpenHomeKaraoke
 Restartovat systém
 Vypínací systém
 jiný
 Rozbalte souborový systém Raspberry Pi
-Pokud jste právě nainstalovali předpřipravený obraz PiKaraoke pi a vaše SD karta je větší než 4 GB, možná budete chtít rozšířit souborový systém, abyste využili zbývající místo. Musíte to udělat pouze jednou. Tím se systém restartuje.
+Pokud jste právě nainstalovali předem vytvořený obraz OpenHomeKaraoke pi a vaše SD karta je větší než 4 GB, možná budete chtít rozšířit souborový systém, abyste využili zbývající místo. Musíte to udělat pouze jednou. Tím se systém restartuje.
 Zakázat režim správce
 Povolit režim správce
 odhlásit se
@@ -185,7 +185,7 @@ Změnit jazyk
 Vyberte prosím jazyk
 Systémový jazyk
 Aktuální jazyk systému:
-Tím se změní jazyk backendového systému PiKaraoke, který se zobrazí na televizní obrazovce; navíc každý připojující se uživatel může také změnit svůj příslušný jazyk webového uživatelského rozhraní na tlačítku zeměkoule v nabídce vpravo nahoře.
+Tím se změní jazyk backendového systému OpenHomeKaraoke, který se zobrazí na televizní obrazovce; navíc každý připojující se uživatel může také změnit svůj příslušný jazyk webového uživatelského rozhraní na tlačítku zeměkoule v nabídce vpravo nahoře.
 Stahování bylo úspěšně dokončeno!
 Stažení se nezdařilo!
 Skladba přidána do fronty!
@@ -207,3 +207,25 @@ Vysoká kvalita
 Po dokončení stahování přidejte skladbu do fronty pro zpěv
 Stáhněte si titulky (pouze vložené) ve všech jazycích, pokud jsou k dispozici
 Stahování vysoce kvalitních videí může trvat velmi dlouho
+Uložit nastavení přehrávání
+Uložte nastavení přehrávání pro každou skladbu, to zahrnuje: zpoždění zvuku, zpoždění titulků a to, zda se mají titulky zobrazovat.
+Přidejte skladbu vyslovením názvu skladby
+Vyslovte název skladby a klikněte na OK!
+Přístup k mikrofonu mohou mít pouze weby HTTPS, chcete přesměrovat na web HTTPS?
+Udělte prosím oprávnění k přístupu k mikrofonu!
+Upravit název skladby:
+Uložit
+Smazat tuto skladbu
+Opravdu chcete smazat tuto skladbu z knihovny?
+Chyba parametru požadavku!
+Ořízněte píseň:
+Upravte hlasitost skladby:
+Čas zahájení:
+Čas ukončení:
+Původní hlasitost (dB):
+Nelze najít žádnou skladbu odpovídající "%s".
+Přidáno „%s“ do fronty.
+Vyberte skladby, které chcete přidat:
+VRÁTIT
+Zavřít
+Přidat

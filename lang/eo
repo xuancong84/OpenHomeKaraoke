@@ -32,7 +32,7 @@ Haltis
 Ĝisdatigas youtube-dl! Devus preni unu aŭ du minutojn...
 Vi ne havas permeson ĝisdatigi youtube-dl
 Vi ne havas permeson fermi
-Forlasu PiKaraoke nun!
+Forlasu OpenHomeKaraoke nun!
 Vi ne havas permeson ĉesi
 Fermu la sistemon nun!
 Vi ne havas permeson fermi
@@ -41,15 +41,15 @@ Vi ne havas permeson Rekomenci
 Vastigante dosiersistemon kaj rekomencan sistemon nun!
 Ne povas vastigi fs sur ne-frambo-pi-aparatoj!
 Vi ne havas permeson regrandigi la dosiersistemon
-Youtube-dl-vojo ne trovita!
+Youtube-dl-vojo ne trovita kaj pip malsukcesis instali ĝin!
 VLC-vojo ne trovita!
 omxplayer-vojo ne trovita!
 Kreante elŝutan vojon:
-Wifi/Reto ne konektita. Fermu post 10-aj jaroj...
+Wifi/Reto ne konektita. Fermo post 10-aj jaroj...
 Por elekti kantojn, skanu QR aŭ konektu al
 Por televida ekrano, konektu al
 Premu F por ŝanĝi la plenan ekranon
-Premu ESC por ĉesi PiKaraoke
+Premu ESC por ĉesi OpenHomeKaraoke
 RaspiWifiConfig agorda reĝimo detektita!
 Konektu alian aparaton/smartphone al la Wifi AP: '%s'
 Poste direktu ĝian retumilon al: '%s://%s%s' kaj sekvu la instrukciojn.
@@ -57,10 +57,10 @@ Poste:
 Aldonita de:
 Nun ludante:
 Administra reĝimo koncedita!
-Pliiĝanta sonprokrasto donos al vi pli da tempo por legi kantotekston antaŭ ol kanti la sekvan frazon.
+Pliigi sonprokraston donos al vi pli da tempo por legi kantotekston antaŭ ol kanti la sekvan frazon.
 Malkreskanta subtitolo prokrasto donos al vi pli da tempo por legi kantotekston antaŭ kanti la sekvan frazon.
 Duontono ankaŭ estas konata kiel duonpaŝo. Ĝi estas la plej malgranda intervalo uzita en klasika okcidenta muziko, egala al dekduono de oktavo aŭ duona tono.
-DNN-bazita voĉdividilo estas ebligita. PiKaraoke uzas PyTorch (de Facebook) por prizorgi profundan neŭralan reton por dividi instrumentan kaj voĉan sonon en ĉiu trako kaŭzante stereosonon.
+DNN-bazita voĉdividilo estas ebligita. OpenHomeKaraoke uzas PyTorch (de Facebook) por prizorgi profundan neŭralan reton por dividi instrumentan kaj voĉan sonon en ĉiu trako kaŭzante stereosonon.
 Ludanta Kontrolo
 Muziko
 Miksita
@@ -100,12 +100,12 @@ Ordigita laŭ 'Dato'
 Ordigita laŭ 'Alfabeta'
 kantoj
 montrante <b>{komenco} - {end}</b> {record_name}, entute <b>{total}</b> {record_name}
-trovita <b>{found}</b> {record_name}, montrante <b>{start} - {end}</b> {record_name}
+trovis <b>{found}</b> {record_name}, montrante <b>{start} - {end}</b> {record_name}
 Redaktu kanton
 Movu supren en atendovico
 Movu malsupren en atendovico
 Ĉu vi certas, ke vi volas forigi el la atendovico
-Ĉu vi certas, ke vi volas forigi la TUTAN atendovicon? Tajpu 'Bone' por daŭrigi
+Ĉu vi certas, ke vi volas forigi la TUTAN atendovicon?
 Aldonu 3 hazardajn kantojn
 Forigi ĉion
 La vico estas malplena
@@ -117,12 +117,12 @@ Kanto jam estas en la vico:
 Serĉu / Aldoni Novan
 Serĉu
 Vico
-Inkluzivi ne-karaokeajn matĉojn
+Serĉu nur kongruojn kun Karaokeo
 Altnivela
 Tajpu kanton (titolon/artisto) por serĉi la disponeblajn kantojn kaj alklaku 'Avico' por aldoni ĝin al la vico.
 Se la kanto ne aperas en la menuo "Disponeblaj Kantoj", alklaku 'Serĉi' por trovi ĝin ĉe Youtube.
 Rekta elŝuta YouTube-url:
-Aldonu al vico
+Aldonu al vosto post elŝuto
 Inkluzivi subtekstojn
 Elŝutu
 Serĉante Jutubo
@@ -133,7 +133,7 @@ Disponeblaj Kantoj
 Ĉu vi volas ŝanĝi la montran nomon de la persono uzanta ĉi tiun aparaton? Ĉi tio aperos apud la vicigitaj kantoj. Aktualo:
 Nuna uzanto
 Agordoj
-PiKaraoke
+OpenHomeKaraoke
 Ĉu vi certas, ke vi volas ĉesi?
 Ĉu vi certas, ke vi volas fermi?
 Ĉu vi certas, ke vi volas rekomenci?
@@ -147,34 +147,34 @@ Memoro
 Ekrankapto
 Voĉa Spliter
 Youtube-dl (yt-dlp) versio
-PiKaraoke versio
+OpenHomeKaraoke-versio
 Altnivelaj Kontrolaj Opcioj
 Voĉa dividita reĝimo:
 Uzu L-R/L+R
 Uzu DNN
-Norma MTV-aŭdio havas la du stereajn kanalojn (L kaj R) ĉifritajn tiel ke: L-R estas la instrumenttrako, L+R estas la voĉa trako. Tiel, simple subtrahante aŭ aldonante la du stereajn kanalojn, ni povas akiri la instrumentan kaj voĉan trakon en monoa sono. La enkonstruita DNN-bazita (profunda neŭrala reto) voĉdividilo de PiKaraoke uzas AI-algoritmon por disfendi instrumentan kaj voĉan sonon en ĉiu stereofonia aŭtoveturejo sendepende rezultigante stereoajn instrumentajn kaj voĉajn spurojn.
+Norma MTV-aŭdio havas la du stereajn kanalojn (L kaj R) ĉifritajn tiel ke: L-R estas la instrumenttrako, L+R estas la voĉa trako. Tiel, simple subtrahante aŭ aldonante la du stereajn kanalojn, ni povas akiri la instrumentan kaj voĉan trakon en monoa sono. La enkonstruita DNN-bazita (profunda neŭrala reto) voĉdividilo de OpenHomeKaraoke uzas AI-algoritmon por dividi instrumentan kaj voĉan sonon en ĉiu stereofonia aŭtoveturejo sendepende rezultigante stereoajn instrumentajn kaj voĉajn spurojn.
 Haltu Splitter
 Rekomencu Splitter
-La voĉa splitilo (kiu subtenas kaj DNN-bazitan kaj stereon subtraho) funkcias kiel aparta procezo en la fono, generante instrumentan/voĉan sondosieron por ĉiu kanto.
+La voĉa disigilo (kiu subtenas kaj DNN-bazitan kaj stereon subtraho) funkcias kiel aparta procezo en la fono, generante instrumentan/voĉan sondosieron por ĉiu kanto.
 Re-sinkronigi audio kaj video:
 Haltu Streamer
 Rekomencu Streamer
 Ĉi tio nur influas ludadon de KTV per retumilo. Rekomenci la ekrankapton-kaj-fluon plibonigas aŭd-/videon sinkronigon, ĝi ankaŭ malpliigas la latentecon inter la servilo kaj retumilo.
 Refreŝigu la kantoliston:
 Reskani kantodosierujon
-Vi devus fari tion nur se vi mane kopiis dosierojn al la elŝuta dosierujo dum PiKaraoke funkciis.
+Vi devus fari tion nur se vi mane kopiis dosierojn al la elŝuta dosierujo dum OpenHomeKaraoke funkciis.
 Ĝisdatigoj
 Se elŝutoj aŭ serĉoj ĉesis funkcii, ĝisdatigi youtube-dl verŝajne riparos ĝin. La nuna instalita versio estas:
 Ĝisdatigu youtube-dl
-Ĉi tiu supre ĝisdatiga ligilo povas malsukcesi se vi ne havas taŭgajn dosierpermesojn. Kontrolu la protokolon de PiKaraoke por eraroj.
+Ĉi tiu supre ĝisdatiga ligilo povas malsukcesi se vi ne havas taŭgajn dosierpermesojn. Kontrolu la protokolon de OpenHomeKaraoke por eraroj.
 Malŝalto
 Ne nur tiru la ŝtopilon! Ĉiam malŝaltu vian servilon ĝuste por eviti datuman korupton.
-Forlasu PiKaraoke
+Forlasu OpenHomeKaraoke
 Rekomencu Sistemon
 Malŝalta Sistemo
 Alia
 Vastigu dosiersistemon Raspberry Pi
-Se vi ĵus instalis la antaŭkonstruitan PiKaraoke pi-bildon kaj via SD-karto estas pli granda ol 4GB, vi eble volas vastigi la dosiersistemon por uzi la restantan spacon. Vi devas fari ĉi tion nur unufoje. Ĉi tio rekomencos la sistemon.
+Se vi ĵus instalis la antaŭkonstruitan OpenHomeKaraoke pi-bildon kaj via SD-karto estas pli granda ol 4GB, vi eble volas vastigi la dosiersistemon por uzi la restantan spacon. Vi devas fari ĉi tion nur unufoje. Ĉi tio rekomencos la sistemon.
 Malebligu administran reĝimon
 Ebligu administran reĝimon
 elsaluti
@@ -185,7 +185,7 @@ Hejmo
 Bonvolu elekti lingvon
 Sistema Lingvo
 Nuna sistema lingvo:
-Ĉi tio ŝanĝas la lingvon de la backend-sistemo PiKaraoke, kiu montriĝas sur televida ekrano; plie, ĉiu konektanta uzanto ankaŭ povas ŝanĝi sian respektivan Retejan Interfacon-lingvon en la globbutono en la dekstra supra menuo.
+Ĉi tio ŝanĝas la lingvon de la malantaŭa sistemo OpenHomeKaraoke, kiu montriĝas sur televida ekrano; plie, ĉiu konektanta uzanto ankaŭ povas ŝanĝi sian respektivan Retejan Interfacon-lingvon en la globbutono en la dekstra supra menuo.
 Elŝuto sukcese kompletigita!
 Elŝuto malsukcesis!
 Kanto aldonita al la vico!
@@ -205,5 +205,27 @@ Restarigi Ŝlosilon
 Restarigi Rapidon
 Alta kvalito
 Aldonu la kanton al la kantvico post la elŝuto finiĝis
-Elŝutu subtekstojn (nur enkorpigitaj) en ĉiuj lingvoj se disponeblaj
+Elŝutu subtekstojn (nur enigitaj) en ĉiuj lingvoj se disponeblaj
 Elŝuti altkvalitajn filmetojn povus preni tre longan tempon
+Konservu Ludajn Agordojn
+Konservu ludajn agordojn por ĉiu kanto, ĉi tio inkluzivas: aŭdprokrasto, subtitolo prokrasto, kaj ĉu montri subtekstojn.
+Aldonu kanton per la kantotitolon
+Bonvolu paroli la kantotitolon kaj alklaku OK!
+Nur HTTPS-retejoj povas havi aliron al mikrofono, ĉu vi volas redirekti al HTTPS-retejo?
+Bonvolu doni la permeson aliri mikrofonon!
+Redakti Kantan Nomon:
+Savi
+Forigu ĉi tiun kanton
+Ĉu vi certas, ke vi volas forigi ĉi tiun kanton el la biblioteko?
+Peti parametro-eraron!
+Tondi la kanton:
+Alĝustigu kantovolumenon:
+Komenca tempo:
+Fintempo:
+Originala Volumo (dB):
+Ne povas trovi ajnan kanton kongruan kun "%s".
+Aldonita "%s" en atendovico.
+Bonvolu elekti la kanto(j)n por aldoni:
+MALNULO
+Fermu
+Aldoni
