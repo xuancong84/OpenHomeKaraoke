@@ -32,24 +32,24 @@ Imile
 Ibuyekeza i-youtube-dl! Kufanele kuthathe iminithi noma amabili...
 Awunayo imvume yokubuyekeza i-youtube-dl
 Awunayo imvume yokuvala
-Iyeka i-PiKaraoke manje!
+Iyeka i-OpenHomeKaraoke manje!
 Awunayo imvume yokuyeka
 Ivala isistimu manje!
 Awunayo imvume yokuvala
 Iqalisa kabusha isistimu manje!
 Awunayo imvume yokuqalisa kabusha
-Inweba uhlelo lwefayela kanye nesistimu yokuqalisa kabusha manje!
+Inweba uhlelo lwefayela kanye nohlelo lokuqalisa kabusha manje!
 Ayikwazi ukunweba ama-fs kumadivayisi we-non-raspberry pi!
 Awunayo imvume yokushintsha usayizi wesistimu yefayela
-Indlela ye-YouTube-dl ayitholakali!
+Indlela ye-YouTube-dl ayitholakali futhi i-pip yehlulekile ukuyifaka!
 Indlela ye-VLC ayitholakali!
 indlela ye-omxplayer ayitholakali!
 Idala indlela yokulanda:
 I-Wifi/Inethiwekhi ayixhunyiwe. Ivala ngo-10s...
-Ngokukhetha izingoma, skena i-QR noma xhuma ku
+Ngokukhetha izingoma, skena i-QR noma xhuma kuyo
 Ngombukiso we-TV, xhuma ku-
 Cindezela okuthi F ukuze uguqule isikrini esigcwele
-Cindezela u-ESC ukuze uyeke i-PiKaraoke
+Cindezela u-ESC ukuze uyeke i-OpenHomeKaraoke
 Imodi yokusetha ye-RaspiWifiConfig itholiwe!
 Xhuma enye idivayisi/i-smartphone ku-Wifi AP: '%s'
 Bese ukhomba isiphequluli sayo ku-: '%s://%s%s' bese ulandela imiyalelo.
@@ -57,10 +57,10 @@ Okulandelayo:
 Kwengezwe ngu:
 Okudlalayo manje:
 Imodi yokuphatha ivunyiwe!
-Ukwenyusa ukubambezeleka komsindo kuzokunikeza isikhathi esengeziwe sokufunda amagama ngaphambi kokucula umusho olandelayo.
+Ukwenyusa ukubambezeleka komsindo kuzokunika isikhathi esengeziwe sokufunda amagama ngaphambi kokucula umusho olandelayo.
 Ukunciphisa ukubambezeleka kwemibhalo engezansi kuzokunikeza isikhathi esengeziwe sokufunda amagama ngaphambi kokucula umusho olandelayo.
-I-semitone yaziwa nangokuthi i-half-step. Isikhathi esincane kunazo zonke esisetshenziswa emculweni wasendulo waseNtshonalanga, esilingana neshumi nambili le-octave noma ithoni uhhafu.
-Isihlukanisi sezwi esisekelwe ku-DNN sivuliwe. I-PiKaraoke isebenzisa i-PyTorch (nge-Facebook) ukuze iqhube inethiwekhi ejulile ye-neural ukuze ihlukanise umsindo wezinsimbi kanye nezwi kuthrekhi ngayinye ekhipha umsindo we-stereo.
+I-semitone yaziwa nangokuthi i-half-step. Isikhathi esincane kunazo zonke esisetshenziswa emculweni wasendulo waseNtshonalanga, olingana neshumi nambili le-octave noma ithoni uhhafu.
+Isihlukanisi sezwi esisekelwe ku-DNN sivuliwe. I-OpenHomeKaraoke isebenzisa i-PyTorch (nge-Facebook) ukusebenzisa inethiwekhi ejulile ye-neural ukuze ihlukanise umsindo wezinsimbi kanye nezwi kuthrekhi ngayinye okukhipha umsindo we-stereo.
 Ukulawula Isidlali
 Umculo
 Kuxutshiwe
@@ -99,13 +99,13 @@ Phequlula
 Kuhlungwe ngokuthi 'Idethi'
 Kuhlungwe nge-'Alfabhethi'
 izingoma
-ukubonisa <b>{start} - {end}</b> {record_name}, isiyonke <b>{total}</b> {record_name}
+ibonisa <b>{start} - {end}</b> {record_name}, isiyonke <b>{total}</b> {record_name}
 kutholwe <b>{found}</b> {record_name}, kuboniswa <b>{start} - {end}</b> {record_name}
 Hlela ingoma
 Hamba phezulu kulayini
 Yehla emgqeni
 Uqinisekile ukuthi ufuna ukususa kulayini
-Uqinisekile ukuthi ufuna ukusula ulayini WONKE? Thayipha 'KULUNGILE' ukuze uqhubeke
+Uqinisekile ukuthi ufuna ukusula ulayini WONKE?
 Engeza izingoma ezi-3 ezingahleliwe
 Sula konke
 Ulayini awunalutho
@@ -117,12 +117,12 @@ Ingoma isivele ikumugqa:
 Sesha / Engeza Okusha
 Sesha
 Ulayini
-Bandakanya okufanayo okungewona we-karaoke
+Sesha okufanayo kwe-Karaoke kuphela
 Okuthuthukile
 Thayipha ingoma (isihloko/umculi) ukuze useshe izingoma ezitholakalayo bese uchofoza u-'Layini' ukuze uyengeze kulayini.
 Uma ingoma ingaveli kokuthi "Izingoma Ezitholakalayo", chofoza okuthi 'Sesha' ukuze uyithole ku-YouTube.
 Landa i-url ye-YouTube eqondile:
-Engeza kulayini
+Engeza kulayini ngemva kokulanda
 Faka nemibhalo engezansi
 Landa
 Isesha i-YouTube
@@ -133,7 +133,7 @@ Izingoma Ezitholakalayo
 Uyafuna ukushintsha igama lesibonisi lomuntu osebenzisa le divayisi? Lokhu kuzovela eduze kwezingoma ezikulayini. Okwamanje:
 Umsebenzisi wamanje
 Izilungiselelo
-I-PiKaraoke
+I-OpenHomeKaraoke
 Uqinisekile ukuthi ufuna ukuyeka?
 Uqinisekile ukuthi ufuna ukuvala?
 Uqinisekile ukuthi ufuna ukuqalisa kabusha?
@@ -147,34 +147,34 @@ Inkumbulo
 Ukuthwebula isikrini
 I-Vocal Splitter
 Inguqulo ye-YouTube-dl (yt-dlp).
-Inguqulo ye-PiKaraoke
+Inguqulo ye-OpenHomeKaraoke
 Izinketho Zokulawula Okuthuthukile
 Imodi ye-Vocal splitter:
 Sebenzisa i-L-R/L+R
 Sebenzisa i-DNN
-Umsindo we-MTV ojwayelekile unamashaneli amabili e-stereo (L no-R) afakwe ikhodi ngendlela yokuthi: I-L-R iyiculo lensimbi, i-L+R iyiculo lezwi. Ngakho-ke, ngokumane sikhiphe noma singeze amashaneli amabili e-stereo, singathola ithrekhi yezinsimbi nezwi kumsindo we-mono. Isihlukanisi sezwi se-PiKaraoke esakhelwe ngaphakathi se-DNN (inethiwekhi ye-neural ejulile) sisebenzisa i-algorithm ye-AI ukuhlukanisa umsindo wezinsimbi kanye nezwi kuthrekhi ngayinye ye-stereo ngokuzimela okuholela ekudlalwayo kwezinsimbi ze-stereo nezwi.
+Umsindo we-MTV ojwayelekile unamashaneli amabili e-stereo (L no-R) afakwe ikhodi ngendlela yokuthi: I-L-R iyiculo lensimbi, i-L+R iyiculo lezwi. Ngakho-ke, ngokumane sikhiphe noma singeze amashaneli amabili e-stereo, singathola ithrekhi yezinsimbi nezwi kumsindo we-mono. Isihlukanisi sezwi se-OpenHomeKaraoke esakhelwe ngaphakathi se-DNN (inethiwekhi ye-neural ejulile) sisebenzisa i-algorithm ye-AI ukuhlukanisa umsindo wezinsimbi kanye nezwi kuthrekhi ngayinye ye-stereo ngokuzimela okuholela ekudlalwayo kwezinsimbi nezingoma ze-stereo.
 Misa i-Splitter
 Qala kabusha i-Splitter
 Isihlukanisi sephimbo (esisekela kokubili ukususa okusekelwe ku-DNN kanye nokukhipha isitiriyo) sisebenza njengenqubo ehlukile ngemuva, sikhiqiza ifayela lomsindo wezinsimbi/izwi layo yonke ingoma.
 Phinda uvumelanise umsindo nevidiyo:
 Misa i-Streamer
 Qala kabusha i-Streamer
-Lokhu kuthinta kuphela ukudlala i-KTV ngesiphequluli sewebhu. Ukuqalisa kabusha ukuthwebula-nokusakaza-bukhoma kuthuthukisa ukuvumelanisa komsindo/ividiyo, futhi kunciphisa ukubambezeleka phakathi kweseva nesiphequluli.
+Lokhu kuthinta kuphela ukudlala i-KTV ngesiphequluli sewebhu. Ukuqalisa kabusha ukuthwebula isikrini-nokusakaza-bukhoma kuthuthukisa ukuvumelanisa komsindo/ividiyo, futhi kunciphisa ukubambezeleka phakathi kweseva nesiphequluli.
 Vuselela uhlu lwezingoma:
 Skena kabusha umkhombandlela wengoma
-Kufanele wenze lokhu kuphela uma ukopishele amafayela ngesandla kuhla lwemibhalo ngenkathi i-PiKaraoke isebenza.
+Kuzomele wenze lokhu kuphela uma ukopishele amafayela ngesandla kuhla lwemibhalo ngenkathi i-OpenHomeKaraoke isebenza.
 Izibuyekezo
 Uma okulandiwe noma ukusesha kuyeka ukusebenza, ukubuyekeza i-youtube-dl cishe kuzoyilungisa. Inguqulo efakiwe yamanje ithi:
 Buyekeza i-youtube-dl
-Lesi sixhumanisi sokubuyekeza esingenhla singase sehluleke uma ungenazo izimvume zefayela ezifanele. Hlola ilogu ye-PiKaraoke ukuze uthole amaphutha.
+Lesi sixhumanisi sokubuyekeza esingenhla singase sehluleke uma ungenazo izimvume zefayela ezifanele. Hlola ilogu ye-OpenHomeKaraoke ukuze uthole amaphutha.
 Vala shaqa
 Ungavele udonse ipulaki! Hlala uvala iseva yakho ngendlela efanele ukuze ugweme ukonakala kwedatha.
-Yeka i-PiKaraoke
+Yeka i-OpenHomeKaraoke
 Qalisa kabusha Uhlelo
 Vala uhlelo
 Okunye
 Nweba isistimu yefayela ye-Raspberry Pi
-Uma usanda kufaka isithombe esakhiwe ngaphambilini se-PiKaraoke pi futhi ikhadi lakho le-SD likhulu kuno-4GB, ungase ufune ukwandisa uhlelo lwefayela ukuze usebenzise isikhala esisele. Udinga ukwenza lokhu kanye kuphela. Lokhu kuzoqalisa kabusha isistimu.
+Uma usanda kufaka isithombe esakhiwe ngaphambilini se-OpenHomeKaraoke pi futhi ikhadi lakho le-SD likhulu kuno-4GB, ungase ufune ukwandisa uhlelo lwefayela ukuze usebenzise isikhala esisele. Udinga ukwenza lokhu kanye kuphela. Lokhu kuzoqalisa kabusha isistimu.
 Khubaza imodi yomqondisi
 Nika amandla imodi yomqondisi
 Phuma
@@ -185,7 +185,7 @@ Shintsha Ulimi
 Sicela ukhethe ulimi
 Ulimi Lwesistimu
 Ulimi lwesistimu yamanje:
-Lokhu kushintsha ulimi lwesistimu ye-backend ye-PiKaraoke eboniswa kusikrini se-TV; ngaphezu kwalokho, umsebenzisi ngamunye oxhumayo angakwazi futhi ukushintsha ulimi lwakhe lwe-Web UI enkinobho yembulunga kumenyu engaphezulu kwesokudla.
+Lokhu kushintsha ulimi lwe-OpenHomeKaraoke backend system eboniswa kusikrini se-TV; ngaphezu kwalokho, umsebenzisi ngamunye oxhumayo angakwazi futhi ukushintsha ulimi lwakhe lwe-Web UI enkinobho yembulunga kumenyu engaphezulu kwesokudla.
 Ukulanda kuqedwe ngempumelelo!
 Ukulanda kuhlulekile!
 Ingoma yengezwe kulayini!
@@ -193,7 +193,7 @@ Yehlulekile ukufaka umugqa ingoma!
 Ulwazi Lwesistimu & Izilungiselelo
 Ukwenziwa Kwevolumu
 Izingoma ezihlukene zivame ukuba nevolumu ehlukene. Ukunika amandla ukwenziwa kwevolumu evamile kuzoqala kuqalise i-<i>ffmpeg</i> ukuze kubalwe ivolumu yomhlaba wonke yengoma futhi kulungise ngokuzenzakalelayo ivolumu yesidlali ukuze ingoma ngayinye izwakale phezulu ngokulinganayo.
-Indlela yokulanda umtapo wezingoma wezingoma
+Umzila wokulanda umtapo wezingoma
 Isamba senani lezingoma
 Bonisa/Fihla umbhalo ongezansi
 Shintsha Isivinini
@@ -207,3 +207,25 @@ Ikhwalithi ephezulu
 Engeza ingoma emugqeni wokucula ngemva kokuqeda ukulanda
 Landa imibhalo engezansi (ishumekwe kuphela) ngazo zonke izilimi uma itholakala
 Ukulanda amavidiyo ekhwalithi ephezulu kungathatha isikhathi eside kakhulu
+Londoloza Izilungiselelo ze-Google Play
+Londoloza izilungiselelo zokudlala zengoma ngayinye, lokhu kuhlanganisa: ukubambezeleka komsindo, ukubambezeleka kwemibhalo engezansi, nokuthi kufanele kuboniswe imibhalo engezansi yini.
+Engeza ingoma ngokukhuluma isihloko sengoma
+Sicela ukhulume isihloko sengoma bese uchofoza okuthi KULUNGILE!
+Amawebhusayithi e-HTTPS kuphela akwazi ukufinyelela imakrofoni, ingabe ufuna ukuqondisa kabusha kuwebhusayithi ye-HTTPS?
+Sicela unikeze imvume yokufinyelela imakrofoni!
+Hlela Igama Lengoma:
+Londoloza
+Susa le ngoma
+Uqinisekile ukuthi ufuna ukususa le ngoma kulabhulali?
+Cela iphutha lepharamitha!
+Nquma ingoma:
+Lungisa ivolumu yengoma:
+Isikhathi sokuqala:
+Isikhathi sokugcina:
+Ivolumu yoqobo (dB):
+Ayikwazi ukuthola ingoma efanayo "%s".
+Kwengezwe "%s" kulayini.
+Sicela ukhethe i(ama)ngoma ozoyengeza:
+HLELA
+Vala
+Engeza

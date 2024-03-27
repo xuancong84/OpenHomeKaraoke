@@ -32,7 +32,7 @@ Slutade
 Uppdaterar youtube-dl! Borde ta en minut eller två...
 Du har inte behörighet att uppdatera youtube-dl
 Du har inte behörighet att stänga av
-Avsluta PiKaraoke nu!
+Avsluta OpenHomeKaraoke nu!
 Du har inte behörighet att sluta
 Stänger av systemet nu!
 Du har inte behörighet att stänga av
@@ -41,7 +41,7 @@ Du har inte behörighet att starta om
 Utökar filsystemet och startar om systemet nu!
 Kan inte utöka fs på icke-raspberry pi-enheter!
 Du har inte behörighet att ändra storlek på filsystemet
-Youtube-dl sökväg hittades inte!
+Youtube-dl sökväg hittades inte och pip har misslyckats med att installera den!
 VLC-sökväg hittades inte!
 omxplayer sökväg hittades inte!
 Skapar nedladdningsväg:
@@ -49,9 +49,9 @@ Wifi/nätverk är inte anslutet. Stängs av om 10...
 För att välja låtar, skanna QR eller anslut till
 För TV-visning, anslut till
 Tryck på F för att växla helskärm
-Tryck på ESC för att avsluta PiKaraoke
+Tryck på ESC för att avsluta OpenHomeKaraoke
 RaspiWifiConfig-inställningsläge upptäckt!
-Anslut en annan enhet/smartphone till Wifi AP: '%s'
+Anslut en annan enhet/smarttelefon till Wifi AP: '%s'
 Rikta sedan webbläsaren till: '%s://%s%s' och följ instruktionerna.
 Strax:
 Tillagd av:
@@ -60,7 +60,7 @@ Adminläge beviljat!
 Ökad ljudfördröjning ger dig mer tid att läsa texter innan du sjunger ut nästa mening.
 Om du minskar fördröjningen av undertexter får du mer tid att läsa texterna innan du sjunger ut nästa mening.
 En halvton är också känd som ett halvsteg. Det är det minsta intervallet som används i klassisk västerländsk musik, lika med en tolftedel av en oktav eller en halv ton.
-DNN-baserad röstsplitter är aktiverad. PiKaraoke använder PyTorch (av Facebook) för att köra ett djupt neuralt nätverk för att dela upp instrumental- och vokalljud i varje spår som ger upphov till stereoljud.
+DNN-baserad röstsplitter är aktiverad. OpenHomeKaraoke använder PyTorch (av Facebook) för att driva ett djupt neuralt nätverk för att dela instrumental- och vokalljud i varje spår som ger upphov till stereoljud.
 Spelarkontroll
 musik
 Blandad
@@ -105,7 +105,7 @@ Redigera låt
 Flytta upp i kön
 Flytta ner i kön
 Är du säker på att du vill ta bort från kön
-Är du säker på att du vill rensa HELA kön? Skriv 'OK' för att fortsätta
+Är du säker på att du vill rensa HELA kön?
 Lägg till 3 slumpmässiga låtar
 Rensa alla
 Kön är tom
@@ -117,12 +117,12 @@ Låten finns redan i kön:
 Sök / Lägg till ny
 Sök
 Kö
-Inkludera icke-karaoke-matcher
+Sök endast Karaoke-matchningar
 Avancerad
 Skriv en låt (titel/artist) för att söka efter tillgängliga låtar och klicka på "Kö" för att lägga till den i kön.
 Om låten inte visas i rullgardinsmenyn "Tillgängliga låtar", klicka på "Sök" för att hitta den på Youtube.
 Direktnedladdning YouTube url:
-Lägg till i kö
+Lägg till i kön efter nedladdning
 Inkludera undertexter
 Ladda ner
 Söker på YouTube efter
@@ -133,7 +133,7 @@ Tillgängliga låtar
 Vill du ändra visningsnamnet på personen som använder den här enheten? Detta kommer att visas bredvid de köade låtarna. Nuvarande:
 Nuvarande användaren
 inställningar
-PiKaraoke
+OpenHomeKaraoke
 Är du säker på att du vill sluta?
 Är du säker på att du vill stänga av?
 Är du säker på att du vill starta om?
@@ -147,34 +147,34 @@ Minne
 Skärminspelning
 Vocal Splitter
 Youtube-dl (yt-dlp) version
-PiKaraoke version
+OpenHomeKaraoke-version
 Avancerade kontrollalternativ
 Vocal splitter-läge:
 Använd L-R/L+R
 Använd DNN
-Standard MTV-ljud har de två stereokanalerna (L och R) kodade på ett sådant sätt att: L-R är instrumentspåret, L+R är sångspåret. Således, genom att helt enkelt subtrahera eller lägga till de två stereokanalerna, kan vi få instrumental- och vokalspåret i monoljud. PiKaraokes inbyggda DNN-baserade (djupa neurala nätverk) sångsplitter använder AI-algoritm för att dela upp instrument- och sångljud i varje stereospår oberoende vilket resulterar i stereoinstrument- och sångspår.
+Standard MTV-ljud har de två stereokanalerna (L och R) kodade på ett sådant sätt att: L-R är instrumentspåret, L+R är sångspåret. Således, genom att helt enkelt subtrahera eller lägga till de två stereokanalerna, kan vi få instrumental- och vokalspåret i monoljud. OpenHomeKaraokes inbyggda DNN-baserade (djupa neurala nätverk) vokalsplitter använder AI-algoritm för att dela upp instrumental- och vokalljud i varje stereospår oberoende vilket resulterar i stereoinstrument- och vokalspår.
 Stoppa Splitter
 Starta om Splitter
 Röstdelaren (som stöder både DNN-baserad och stereosubtraktion) körs som en separat process i bakgrunden och genererar instrumental/vokal ljudfil för varje låt.
 Synkronisera om ljud och video:
 Stoppa Streamer
 Starta om Streamer
-Detta påverkar endast att spela KTV via webbläsare. Om du startar om screen-capture-and-streaming förbättras ljud/video-synkroniseringen, det minskar också latensen mellan servern och webbläsaren.
+Detta påverkar endast att spela KTV via webbläsaren. Om du startar om screen-capture-and-streaming förbättras ljud/video-synkroniseringen, det minskar också latensen mellan servern och webbläsaren.
 Uppdatera låtlistan:
 Skanna sångkatalogen igen
-Du ska bara behöva göra detta om du manuellt kopierade filer till nedladdningskatalogen medan PiKaraoke kördes.
+Du ska bara behöva göra detta om du manuellt kopierade filer till nedladdningskatalogen medan OpenHomeKaraoke kördes.
 Uppdateringar
 Om nedladdningar eller sökningar slutade fungera, kommer uppdatering av youtube-dl förmodligen att fixa det. Den nuvarande installerade versionen är:
 Uppdatera youtube-dl
-Den här uppdateringslänken ovan kan misslyckas om du inte har rätt filbehörighet. Kontrollera PiKaraoke-loggen för fel.
+Den här uppdateringslänken ovan kan misslyckas om du inte har rätt filbehörighet. Kontrollera OpenHomeKaraoke-loggen för fel.
 Stänga av
 Dra inte bara ur kontakten! Stäng alltid av din server ordentligt för att undvika datakorruption.
-Avsluta PiKaraoke
+Avsluta OpenHomeKaraoke
 Omstart-system
 Avstängningssystem
 Övrig
 Expandera Raspberry Pi-filsystemet
-Om du precis har installerat den förbyggda PiKaraoke pi-bilden och ditt SD-kort är större än 4 GB, kanske du vill utöka filsystemet för att utnyttja det återstående utrymmet. Du behöver bara göra detta en gång. Detta kommer att starta om systemet.
+Om du precis har installerat den förbyggda OpenHomeKaraoke pi-bilden och ditt SD-kort är större än 4 GB, kanske du vill utöka filsystemet för att utnyttja det återstående utrymmet. Du behöver bara göra detta en gång. Detta kommer att starta om systemet.
 Inaktivera adminläge
 Aktivera administratörsläge
 logga ut
@@ -185,7 +185,7 @@ Hem
 Välj språk
 Systemspråk
 Aktuellt systemspråk:
-Detta ändrar språket för PiKaraoke backend-systemet som visas på TV-skärmen; dessutom kan varje anslutande användare också ändra sitt respektive webbgränssnittsspråk i globknappen i menyn högst upp till höger.
+Detta ändrar språket för OpenHomeKaraoke-backend-systemet som visas på TV-skärmen; dessutom kan varje anslutande användare också ändra sitt respektive webbgränssnittsspråk i globknappen i menyn högst upp till höger.
 Nedladdningen har slutförts!
 Nedladdning misslyckad!
 Låten har lagts till i kön!
@@ -207,3 +207,25 @@ Hög kvalitet
 Lägg till låten i sångkön efter att nedladdningen är klar
 Ladda ner undertexter (endast inbäddade) på alla språk om tillgängligt
 Att ladda ner videor av hög kvalitet kan ta mycket lång tid
+Spara spelinställningar
+Spara uppspelningsinställningar för varje låt, detta inkluderar: ljudfördröjning, undertextfördröjning och om undertexter ska visas.
+Lägg till låt genom att säga låttiteln
+Säg låttiteln och klicka på OK!
+Endast HTTPS-webbplatser kan ha tillgång till mikrofon, vill du omdirigera till HTTPS-webbplatsen?
+Vänligen ge tillstånd att komma åt mikrofonen!
+Redigera låtnamn:
+Spara
+Ta bort den här låten
+Är du säker på att du vill ta bort den här låten från biblioteket?
+Begär parameterfel!
+Trimma låten:
+Justera låtvolymen:
+Starttid:
+Sluttid:
+Originalvolym (dB):
+Kan inte hitta någon låt som matchar "%s".
+Lade till "%s" i kön.
+Välj låten/låtarna att lägga till:
+ÅNGRA
+Stänga
+Lägg till

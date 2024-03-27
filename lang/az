@@ -32,7 +32,7 @@ Dayandı
 youtube-dl yenilənir! Bir-iki dəqiqə çəkməlidir...
 Sizin youtube-dl-ni yeniləmək icazəniz yoxdur
 Bağlamaq üçün icazəniz yoxdur
-PiKaraoke-dən indi çıxın!
+OpenHomeKaraoke-dən indi çıxın!
 Sizin çıxmağa icazəniz yoxdur
 Sistem indi bağlanır!
 Bağlamaq üçün icazəniz yoxdur
@@ -41,7 +41,7 @@ Yenidən başlamağa icazəniz yoxdur
 Fayl sistemi genişləndirilir və sistem indi yenidən yüklənir!
 Moruq olmayan pi cihazlarda fs genişləndirilə bilməz!
 Fayl sisteminin ölçüsünü dəyişmək icazəniz yoxdur
-Youtube-dl yolu tapılmadı!
+Youtube-dl yolu tapılmadı və pip onu quraşdıra bilmədi!
 VLC yolu tapılmadı!
 omxplayer yolu tapılmadı!
 Yükləmə yolunun yaradılması:
@@ -49,7 +49,7 @@ Wifi/Şəbəkə qoşulmayıb. 10 saniyəyə bağlanır...
 Mahnıları seçmək üçün QR-i skan edin və ya qoşulun
 TV ekranı üçün qoşulun
 Tam ekrana keçmək üçün F düyməsini basın
-PiKaraoke-dən çıxmaq üçün ESC düyməsini basın
+OpenHomeKaraoke-dən çıxmaq üçün ESC düyməsini basın
 RaspiWifiConfig quraşdırma rejimi aşkar edildi!
 Başqa cihazı/smartfonu Wifi AP-yə qoşun: '%s'
 Sonra onun brauzerini göstərin: '%s://%s%s' və təlimatlara əməl edin.
@@ -60,7 +60,7 @@ Admin rejimi verilir!
 Audio gecikmənin artırılması sizə növbəti cümləni oxumazdan əvvəl sözləri oxumaq üçün daha çox vaxt verəcək.
 Altyazı gecikməsini azaltmaq sizə növbəti cümləni oxumazdan əvvəl sözləri oxumaq üçün daha çox vaxt verəcək.
 Yarım ton yarım addım kimi də tanınır. Klassik Qərb musiqisində istifadə olunan ən kiçik intervaldır, oktavanın on ikidə biri və ya yarım tona bərabərdir.
-DNN əsaslı vokal ayırıcı aktivləşdirilib. PiKaraoke, stereo səsə səbəb olan hər bir trekdə instrumental və vokal səsi ayırmaq üçün dərin neyron şəbəkəsini idarə etmək üçün PyTorch (Facebook tərəfindən) istifadə edir.
+DNN əsaslı vokal ayırıcı aktivləşdirilib. OpenHomeKaraoke PyTorch-dan (Facebook tərəfindən) istifadə edərək, stereo səsə səbəb olan hər bir trekdə instrumental və vokal səsi ayırmaq üçün dərin neyron şəbəkəsini idarə edir.
 Oyunçu Nəzarəti
 Musiqi
 Qarışıq
@@ -105,7 +105,7 @@ Mahnı redaktə
 Növbədə yuxarı hərəkət edin
 Növbədə aşağı hərəkət edin
 Növbədən silmək istədiyinizə əminsiniz
-BÜTÜN növbəni silmək istədiyinizə əminsiniz? Davam etmək üçün 'OK' yazın
+BÜTÜN növbəni silmək istədiyinizə əminsiniz?
 3 təsadüfi mahnı əlavə edin
 Hamısını sil, hamısını təmizlə
 Növbə boşdur
@@ -117,12 +117,12 @@ Mahnı artıq növbədədir:
 Axtar / Yeni əlavə et
 Axtar
 Növbə
-Karaoke olmayan matçları daxil edin
+Yalnız Karaoke uyğunluqlarını axtarın
 Qabaqcıl
 Mövcud mahnıları axtarmaq üçün mahnı (ad/ifaçı) yazın və onu növbəyə əlavə etmək üçün "Növbəyə" klikləyin.
 Mahnı "Mövcud Mahnılar" açılan siyahısında görünmürsə, onu Youtube-da tapmaq üçün "Axtar" üzərinə klikləyin.
 YouTube url-ni birbaşa yükləyin:
-Növbəyə əlavə edin
+Yüklədikdən sonra növbəyə əlavə edin
 Subtitrləri daxil edin
 Yüklə
 YouTube üçün axtarış
@@ -133,7 +133,7 @@ Mövcud Mahnılar
 Bu cihazı istifadə edən şəxsin ekran adını dəyişmək istəyirsiniz? Bu növbəli mahnıların yanında görünəcək. Cari:
 Cari istifadəçi
 Parametrlər
-PiKaraoke
+OpenHomeKaraoke
 Çıxmaq istədiyinizə əminsiniz?
 Bağlamaq istədiyinizə əminsiniz?
 Yenidən yükləmək istədiyinizə əminsiniz?
@@ -147,12 +147,12 @@ Yaddaş
 Ekran Çəkisi
 Vokal Splitter
 Youtube-dl (yt-dlp) versiyası
-PiKaraoke versiyası
+OpenHomeKaraoke versiyası
 Qabaqcıl Nəzarət Seçimləri
 Vokal ayırıcı rejimi:
 L-R/L+R istifadə edin
 DNN istifadə edin
-Standart MTV səsi iki stereo kanala (Sol və Sağ) belə kodlaşdırılmış şəkildə malikdir: L-R alət trekidir, L+R vokal trekidir. Beləliklə, sadəcə olaraq iki stereo kanalı çıxmaqla və ya əlavə etməklə biz mono səsdə instrumental və vokal treki əldə edə bilərik. PiKaraoke-nin daxili DNN əsaslı (dərin neyron şəbəkəsi) vokal ayırıcısı hər bir stereo trekdə instrumental və vokal səsi müstəqil şəkildə bölmək üçün süni intellekt alqoritmindən istifadə edir və nəticədə stereo instrumental və vokal treklər yaranır.
+Standart MTV səsi iki stereo kanala (Sol və Sağ) belə kodlaşdırılmış şəkildə malikdir: L-R alət trekidir, L+R vokal trekidir. Beləliklə, sadəcə olaraq iki stereo kanalı çıxmaqla və ya əlavə etməklə biz mono səsdə instrumental və vokal treki əldə edə bilərik. OpenHomeKaraoke-un daxili DNN əsaslı (dərin neyron şəbəkəsi) vokal splitteri süni intellekt alqoritmindən istifadə edərək hər bir stereo trekdə instrumental və vokal səsi müstəqil şəkildə ayırır, nəticədə stereo instrumental və vokal treklər yaranır.
 Splitter dayandırın
 Splitter-i yenidən başladın
 Vokal ayırıcı (həm DNN əsaslı, həm də stereo çıxarmanı dəstəkləyir) hər mahnı üçün instrumental/vokal audio faylı yaradaraq, fonda ayrıca proses kimi işləyir.
@@ -162,30 +162,30 @@ Streamer-i yenidən başladın
 Bu, yalnız veb brauzer vasitəsilə KTV oynamağa təsir edir. Ekranın çəkilməsi və yayımının yenidən başlaması audio/video sinxronizasiyasını yaxşılaşdırır, həmçinin server və brauzer arasında gecikməni azaldır.
 Mahnı siyahısını yeniləyin:
 Mahnı kataloqunu yenidən yoxlayın
-Bunu yalnız PiKaraoke işləyərkən faylları yükləmə qovluğuna əl ilə kopyaladığınız halda etməlisiniz.
+Bunu yalnız OpenHomeKaraoke işləyərkən faylları yükləmə qovluğuna əl ilə kopyaladığınız halda etməlisiniz.
 Yeniləmələr
 Yükləmələr və ya axtarışlar işləməyibsə, youtube-dl-nin yenilənməsi yəqin ki, bunu düzəldəcək. Cari quraşdırılmış versiya:
 youtube-dl-i yeniləyin
-Əgər müvafiq fayl icazələriniz yoxdursa, yuxarıdakı bu yeniləmə linki uğursuz ola bilər. Səhvlər üçün PiKaraoke jurnalını yoxlayın.
+Əgər müvafiq fayl icazələriniz yoxdursa, yuxarıdakı bu yeniləmə linki uğursuz ola bilər. Səhvlər üçün OpenHomeKaraoke jurnalını yoxlayın.
 Söndür
 Sadəcə fişini çəkməyin! Məlumatların korlanmasının qarşısını almaq üçün həmişə serverinizi düzgün şəkildə bağlayın.
-PiKaraoke-dən çıxın
+OpenHomeKaraoke-dən çıxın
 Sistemi yenidən başladın
 Bağlama Sistemi
 Digər
 Raspberry Pi fayl sistemini genişləndirin
-Əgər siz indicə əvvəlcədən qurulmuş PiKaraoke pi şəklini quraşdırmısınızsa və SD kartınız 4GB-dan böyükdürsə, qalan yerdən istifadə etmək üçün fayl sistemini genişləndirmək istəyə bilərsiniz. Bunu yalnız bir dəfə etməlisiniz. Bu, sistemi yenidən işə salacaq.
+Əgər siz indicə əvvəlcədən qurulmuş OpenHomeKaraoke pi şəklini quraşdırmısınızsa və SD kartınız 4GB-dan böyükdürsə, qalan yerdən istifadə etmək üçün fayl sistemini genişləndirmək istəyə bilərsiniz. Bunu yalnız bir dəfə etməlisiniz. Bu, sistemi yenidən işə salacaq.
 Admin rejimini söndürün
 Admin rejimini aktivləşdirin
 çıxış
 daxil ol
 Sistem Məlumatı
 Ev
-Dili Dəyişdirin
+Dili dəyişdirin
 Zəhmət olmasa dil seçin
 Sistem dili
 Cari sistem dili:
-Bu, TV ekranında görünən PiKaraoke backend sisteminin dilini dəyişir; üstəlik, hər bir qoşulan istifadəçi yuxarı sağdakı menyuda yer kürəsinin düyməsindəki müvafiq Veb UI dilini də dəyişə bilər.
+Bu, TV ekranında göstərilən OpenHomeKaraoke backend sisteminin dilini dəyişir; üstəlik, hər bir qoşulan istifadəçi yuxarı sağdakı menyuda yer kürəsinin düyməsindəki müvafiq Veb UI dilini də dəyişə bilər.
 Yükləmə uğurla tamamlandı!
 Endirmə alınmadı!
 Mahnı növbəyə əlavə edildi!
@@ -207,3 +207,25 @@ Yüksək keyfiyyət
 Yükləmə tamamlandıqdan sonra mahnını oxuma növbəsinə əlavə edin
 Əgər varsa, bütün dillərdə subtitrləri endirin (yalnız daxil edilmiş).
 Yüksək keyfiyyətli videoların yüklənməsi çox uzun çəkə bilər
+Play Parametrlərini yadda saxlayın
+Hər mahnı üçün ifa parametrlərini yadda saxlayın, bura daxildir: audio gecikməsi, alt yazı gecikməsi və subtitrlərin göstərilib-göstərilməməsi.
+Mahnının adını danışaraq mahnı əlavə edin
+Zəhmət olmasa mahnının adını söyləyin və OK düyməsini basın!
+Yalnız HTTPS veb-saytlarının mikrofona girişi ola bilər, HTTPS veb-saytına yönləndirmək istəyirsiniz?
+Mikrofona daxil olmaq üçün icazə verin!
+Mahnının adını redaktə edin:
+Yadda saxla
+Bu mahnını silin
+Bu mahnını kitabxanadan silmək istədiyinizə əminsiniz?
+Sorğu parametri xətası!
+Mahnını kəsin:
+Mahnının səsini tənzimləyin:
+Başlama vaxtı:
+Bitmə vaxtı:
+Orijinal Həcmi (dB):
+"%s" ilə uyğun gələn mahnı tapılmadı.
+Növbəyə "%s" əlavə edildi.
+Əlavə etmək üçün mahnı(ları) seçin:
+GERİ ALIN
+Yaxın
+əlavə et

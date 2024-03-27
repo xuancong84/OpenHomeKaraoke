@@ -32,7 +32,7 @@ E emisitsoe
 E nchafatsa youtube-dl! E ka nka motsotso kapa e 'meli...
 Ha u na tumello ea ho nchafatsa youtube-dl
 Ha u na tumello ea ho koala
-E tlohela PiKaraoke hona joale!
+Ho tlohela OpenHomeKaraoke hona joale!
 Ha u na tumello ea ho tlohela
 Ho koala sistimi hona joale!
 Ha u na tumello ea ho koala
@@ -41,7 +41,7 @@ Ha u na tumello ea ho Reboot
 Ho holisa sistimi ea faele le sistimi ea ho qala bocha hona joale!
 Ha e khone ho holisa li-fs ho lisebelisoa tsa non-raspberry pi!
 Ha u na tumello ea ho fetola boholo ba sistimi
-Tsela ea Youtube-dl ha e fumanehe!
+Tsela ea Youtube-dl ha e so fumanehe mme pip e hlotsoe ho e kenya!
 Tsela ea VLC ha e fumanehe!
 tsela ea omxplayer ha e fumanehe!
 Ho theha mokhoa oa ho jarolla:
@@ -49,10 +49,10 @@ Wifi/Network ha e hokahane. E koala ka mor'a 10s...
 Bakeng sa ho khetha lipina, hlahloba QR kapa hokela ho
 Bakeng sa pontšo ea TV, hokela ho
 Tobetsa F ho fetola skrineng se felletseng
-Tobetsa ESC ho tlohela PiKaraoke
+Tobetsa ESC ho tlohela OpenHomeKaraoke
 Mokhoa oa ho seta oa RaspiWifiConfig o fumanoe!
 Hokela sesebelisoa se seng/smartphone ho Wifi AP: '%s'
-Ebe u supa sebatli sa eona ho: '%s://%s%s' ebe u latela litaelo.
+Ebe u supa sebatli sa eona ho: '%s://%s%s' 'me u latele litaelo.
 E latelang:
 E kentsoe ke:
 E ntse e bapala:
@@ -60,7 +60,7 @@ Mokhoa oa taolo o lumelletsoe!
 Ho eketsa ho lieha ha molumo ho tla u fa nako e eketsehileng ea ho bala mantsoe pele u bina polelo e latelang.
 Ho fokotsa ho lieha ha sehloohoana ho tla u fa nako e eketsehileng ea ho bala mantsoe pele u bina polelo e latelang.
 Semitone e boetse e tsejoa e le halofo ea mohato. Ke nako e nyane ka ho fetisisa e sebelisoang 'minong oa khale oa Bophirimela, e lekanang le karolo ea leshome le metso e' meli ea octave kapa halofo ea molumo.
-Sesebelisoa sa ho arola mantsoe se thehiloeng ho DNN se lumelletsoe. PiKaraoke e sebelisa PyTorch (ka Facebook) ho tsamaisa marang-rang a tebileng a methapo ea kutlo ho arola molumo oa liletsa le lentsoe pina e 'ngoe le e 'ngoe e hlahisang molumo oa stereo.
+Sesebelisoa sa ho arola mantsoe se thehiloeng ho DNN se lumelletsoe. OpenHomeKaraoke e sebelisa PyTorch (ka Facebook) ho tsamaisa marang-rang a tebileng a methapo ea kutlo ho arola molumo oa liletsa le lentsoe pina ka 'ngoe e hlahisang molumo oa stereo.
 Taolo ea Sebapali
 Mmino
 Kopantsoeng
@@ -89,7 +89,7 @@ Fokotsa ho lieha ha molumo
 Beha Ho lieha ha Audio
 Eketsa Tieho ea Audio
  li-semitones
-Ka kopo, kenya lebitso la hau. Sena se tla hlaha haufi le lipina tseo u li behelang ho tsoa sesebelisoa sena.
+Ka kopo, kenya lebitso la hau. Sena se tla hlaha haufi le lipina tseo u li behelang ho tloha sesebelisoa sena.
 Pina e kentsoe moleng:
 Pina e se e le moleng:
 Hlophisa ka Letsatsi
@@ -100,12 +100,12 @@ Hlophisa ka 'Date'
 Hlophisoa ka 'Alfabeta'
 lipina
 e hlahisa <b>{start} - {end}</b> {record_name}, ka kakaretso <b>{total}</b> {record_name}
-e fumanoe <b>{fumanwe}</b> {record_name}, e hlahisa <b>{start} - {end}</b> {record_name}
+e fumanoe <b>{found}</b> {record_name}, e hlahisa <b>{start} - {end}</b> {record_name}
 Fetola pina
 Suthela holimo moleng
 Theohela tlase moleng
 Na u na le bonnete ba hore u batla ho hlakola lethathamong
-Na ehlile u batla ho hlakola letoto KAOFELA? Tlanya 'OK' ho tsoela pele
+Na ehlile u batla ho hlakola letoto KAOFELA?
 Kenya lipina tse 3 tse sa reroang
 Hlakola tsohle
 Lethathamo ha le na letho
@@ -117,12 +117,12 @@ Pina e se e le moleng:
 Batla / Eketsa e Ncha
 Batla
 Lethathamo
-Kenyelletsa le lipapali tseo e seng tsa karaoke
+Batla lipapali tsa Karaoke feela
 E tsoetseng pele
 Tlanya pina (sehlooho / moetsi oa litšoantšo) ho batla lipina tse fumanehang ebe o tobetsa 'Queue' ho e eketsa moleng.
 Haeba pina e sa hlahe ho "Lipina Tse Fumanehang", tobetsa 'Batla' ho e fumana ho Youtube.
 Khoasolla url ea YouTube ka kotloloho:
-Eketsa moleng
+Eketsa moleng ka mor'a ho khoasolla
 Kenyelletsa le lihloohoana
 Khoasolla
 Batla YouTube bakeng sa
@@ -133,7 +133,7 @@ Lipina Tse Fumanehang
 Na u batla ho fetola lebitso la motho ea sebelisang sesebelisoa see? Sena se tla hlaha haufi le lipina tse behiloeng. Hona joale:
 Mosebelisi oa hajoale
 Litlhophiso
-PiKaraoke
+OpenHomeKaraoke
 Na ehlile u batla ho tlohela?
 Na ehlile u batla ho koala?
 Na ehlile u batla ho qala bocha?
@@ -147,12 +147,12 @@ Mohopolo
 Screen Capture
 Sekhahla sa Vocal
 Mofuta oa Youtube-dl (yt-dlp).
-Phetolelo ea PiKaraoke
+Mofuta oa OpenHomeKaraoke
 Mekhoa e tsoetseng pele ea ho laola
 Mokhoa oa ho arohana ha lentsoe:
 Sebelisa L-R/L+R
 Sebelisa DNN
-Molumo o tloaelehileng oa MTV o na le likanale tse peli tsa stereo (L le R) tse kentsoeng ka tsela ea hore: L-R ke pina ea seletsa, L+R ke pina ea lentsoe. Kahoo, ka ho tlosa kapa ho kenyelletsa liteishene tse peli tsa stereo, re ka fumana pina ea liletsa le lentsoe ka molumo oa mono. PiKaraoke e hahelletsoeng ka hare ho DNN-based (deep neural network) vocal splitter e sebelisa algorithm ea AI ho arola molumo oa liletsa le oa lentsoe pina e 'ngoe le e 'ngoe ea stereo ka boikemelo e hlahisang liletsa tsa stereo le tsa mantsoe.
+Molumo o tloaelehileng oa MTV o na le likanale tse peli tsa stereo (L le R) tse kentsoeng ka tsela eo: L-R ke pina ea seletsa, L+R ke pina ea lentsoe. Kahoo, ka ho tlosa kapa ho kenyelletsa liteishene tse peli tsa stereo, re ka fumana pina ea liletsa le lentsoe ka molumo oa mono. OpenHomeKaraoke e hahelletsoeng ka hare ho DNN-based (deep neural network) vocal splitter e sebelisa algorithm ea AI ho arola molumo oa liletsa le oa lentsoe pina e 'ngoe le e 'ngoe ea stereo ka boikemelo e hlahisang liletsa tsa stereo le mantsoe.
 Emisa Splitter
 Qala hape Splitter
 Moqapi oa lentsoe (o tšehetsang ho tlosoa ha DNN-based le stereo) o sebetsa e le mokhoa o arohaneng ka morao, o hlahisa faele ea molumo oa liletsa / lentsoe bakeng sa pina e 'ngoe le e 'ngoe.
@@ -162,19 +162,19 @@ Qala Streamer hape
 Sena se ama feela ho bapala KTV ka sebatli sa marang-rang. Ho qala skrini-ts'oants'o-le-streaming ho ntlafatsa khokahano ea molumo / video, hape ho fokotsa latency lipakeng tsa seva le sebatli.
 Hlahisa lenane la lipina hape:
 Hlakola bukana ea lipina hape
-U lokela ho etsa sena feela haeba u kopitsitse lifaele bukeng ea download ha PiKaraoke e ntse e sebetsa.
+U lokela ho etsa sena feela haeba u kopitsitse lifaele bukeng ea download ha OpenHomeKaraoke e ntse e sebetsa.
 Lintlafatso
 Haeba download kapa lipatlisiso li emisa ho sebetsa, ho nchafatsa youtube-dl mohlomong ho tla e lokisa. Mofuta oa hajoale o kentsoeng ke:
 Ntlafatsa youtube-dl
-Sehokelo sena sa ntlafatso se kaholimo se ka hloleha haeba o sena tumello e nepahetseng ea faele. Sheba tlaleho ea PiKaraoke bakeng sa liphoso.
+Sehokelo sena sa ntlafatso se kaholimo se ka hloleha haeba o sena tumello e nepahetseng ea faele. Sheba lethathamo la OpenHomeKaraoke bakeng sa liphoso.
 Koala
 U se ke ua hula polaka feela! Kamehla koala seva ea hau hantle ho qoba bobolu ba data.
-Tlohela PiKaraoke
+Tlohela OpenHomeKaraoke
 Qala hape Sisteme
 Sistimi ea ho koala
 Tse ding
 Eketsa tsamaiso ea lifaele tsa Raspberry Pi
-Haeba u sa tsoa kenya setšoantšo sa PiKaraoke pi se hahiloeng pele 'me karete ea hau ea SD e kholo ho feta 4GB, u ka' na ua batla ho atolosa tsamaiso ea lifaele ho sebelisa sebaka se setseng. U hloka ho etsa sena hang feela. Sena se tla qala sistimi hape.
+Haeba u sa tsoa kenya setšoantšo sa OpenHomeKaraoke pi se hahiloeng pele 'me karete ea hau ea SD e kholo ho feta 4GB, u ka' na ua batla ho atolosa tsamaiso ea lifaele ho sebelisa sebaka se setseng. U hloka ho etsa sena hang feela. Sena se tla qala sistimi hape.
 Tlosa mokhoa oa admin
 Lumella mokhoa oa admin
 tsoa
@@ -185,7 +185,7 @@ Fetola Puo
 Ka kopo, khetha puo
 Puo ea Tsamaiso
 Puo ea hajoale ea sistimi:
-Sena se fetola puo ea PiKaraoke backend system e hlahang skrineng sa TV; Ho feta moo, mosebelisi e mong le e mong ea hokahanyang a ka fetola puo ea bona ea Web UI ka har'a konopo ea globe ho menu e kaholimo ho le letona.
+Sena se fetola puo ea OpenHomeKaraoke backend system e hlahang skrineng sa TV; Ho feta moo, mosebelisi e mong le e mong ea hokahanyang a ka fetola puo ea bona ea Web UI ka har'a konopo ea globe ho menu e kaholimo ho le letona.
 Ho phethela ka katleho!
 Ho daunelouta ho hlolehile!
 Pina e kentsoe moleng!
@@ -207,3 +207,25 @@ Boleng bo phahameng
 Kenya pina moleng oa ho bina ka mor'a hore download e qete
 Khoasolla lingoloa (tse kentsoeng feela) ka lipuo tsohle haeba li le teng
 Ho jarolla livideo tsa boleng bo holimo ho ka nka nako e telele haholo
+Boloka Litlhophiso tsa Play
+Boloka litlhophiso tsa ho bapala bakeng sa pina e 'ngoe le e 'ngoe, sena se kenyelletsa: ho lieha ha molumo, ho lieha ha lihlooho, le hore na ho tla hlahisoa mengolo.
+Eketsa pina ka ho bua sehlooho sa pina
+Ka kopo bua sehlooho sa pina ebe o tobetsa OK!
+Ke liwebsaete tsa HTTPS feela tse khonang ho fihlella maekerofounu, na u batla ho fetisetsa sebakeng sa marang-rang sa HTTPS?
+Ka kopo fana ka tumello ea ho fihlella maekrofounu!
+Fetola Lebitso la Pina:
+Boloka
+Hlakola pina ena
+Na ehlile u batla ho hlakola pina ee boebraring?
+Kopa phoso ea paramethara!
+Fokotsa pina:
+Fetola molumo oa pina:
+Nako ea ho qala:
+Nako ea ho qetela:
+Phatlalatso ea mantlha (dB):
+Ha re fumane pina e nyallanang le "%s".
+E kentse "%s" moleng.
+Ka kopo, khetha lipina tseo u ka li kenyang:
+PHETHA
+Koala
+Eketsa

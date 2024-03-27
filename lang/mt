@@ -32,7 +32,7 @@ Waqqaf
 Naġġorna youtube-dl! Għandu jieħu minuta jew tnejn...
 M'għandekx permess biex taġġorna youtube-dl
 M'għandekx permess biex tagħlaq
-Tieqaf PiKaraoke issa!
+Tieqaf OpenHomeKaraoke issa!
 M'għandekx permess biex tieqaf
 Jingħalqu sistema issa!
 M'għandekx permess biex tagħlaq
@@ -41,15 +41,15 @@ M'għandekx permess biex Reboot
 Tespandi sistema ta 'fajls u sistema ta' rebooting issa!
 Ma tistax tespandi fs fuq apparati mhux lampun pi!
 M'għandekx permess biex tibdel id-daqs tas-sistema tal-fajls
-Il-mogħdija ta' Youtube-dl ma nstabx!
+Youtube-dl mogħdija ma nstabx u pip naqas milli jinstallah!
 It-triq tal-VLC ma nstabx!
 mogħdija omxplayer ma nstabx!
 Il-ħolqien tal-mogħdija tat-tniżżil:
 Wifi/Netwerk mhux konness. Jingħalqu f'10s...
-Għall-għażla tal-kanzunetti, skennja QR jew qabbad
+Għall-għażla tal-kanzunetti, skennja QR jew qabbad ma '
 Għall-wiri tat-TV, qabbad ma '
 Agħfas F biex taqleb l-iskrin sħiħ
-Agħfas ESC biex tieqaf minn PiKaraoke
+Agħfas ESC biex tieqaf OpenHomeKaraoke
 RaspiWifiConfig setup mode misjuba!
 Qabbad apparat/smartphone ieħor mal-Wifi AP: '%s'
 Imbagħad ippunta l-browser tiegħu lejn: '%s://%s%s' u segwi l-istruzzjonijiet.
@@ -58,9 +58,9 @@ Miżjud minn:
 Issa qed tilgħab:
 Mod ta' amministrazzjoni mogħtija!
 Iż-żieda tad-dewmien tal-awdjo tagħtik aktar ħin biex taqra l-lirika qabel tkanta s-sentenza li jmiss.
-It-tnaqqis tad-dewmien tas-sottotitli jagħtik aktar ħin biex taqra l-lirika qabel tkanta s-sentenza li jmiss.
+It-tnaqqis tad-dewmien tas-sottotitoli jagħtik aktar ħin biex taqra l-lirika qabel tkanta s-sentenza li jmiss.
 Semitone huwa magħruf ukoll bħala nofs pass. Huwa l-iżgħar intervall użat fil-mużika klassika tal-Punent, ugwali għal tnax ta' ottava jew nofs ton.
-Splitter vokali bbażat fuq DNN huwa attivat. PiKaraoke juża PyTorch (minn Facebook) biex imexxi netwerk newrali profond biex jaqsam il-ħoss strumentali u vokali f'kull track li jagħti lok għal ħoss stereo.
+Splitter vokali bbażat fuq DNN huwa attivat. OpenHomeKaraoke juża PyTorch (minn Facebook) biex imexxi netwerk newrali profond biex jaqsam il-ħoss strumentali u vokali f'kull track li jagħti lok għal ħoss stereo.
 Kontroll tal-Plejer
 Mużika
 Imħallat
@@ -89,7 +89,7 @@ Naqqas id-Dewmien tal-Awdjo
 Issettja Dewmien Awdjo
 Żid Dewmien tal-Awdjo
  semitoni
-Jekk jogħġbok daħħal ismek. Dan se jidher ħdejn il-kanzunetti inti fil-kju minn dan l-apparat.
+Jekk jogħġbok daħħal ismek. Dan se jidher ħdejn il-kanzunetti li inti fil-kju minn dan l-apparat.
 Kanzunetta miżjuda mal-kju:
 Kanzunetta diġà fil-kju:
 Issortja skond id-Data
@@ -105,7 +105,7 @@ Editja kanzunetta
 Nimxu 'l fuq fil-kju
 Nimxu 'l isfel fil-kju
 Int żgur li trid tħassar mill-kju
-Int żgur li trid tneħħi l-kju KOLLU? Ittajpja 'OK' biex tkompli
+Int żgur li trid tneħħi l-kju KOLLU?
 Żid 3 kanzunetti każwali
 Żbarazza kollox
 Il-kju huwa vojt
@@ -117,12 +117,12 @@ Il-kanzunetta diġà tinsab fil-kju:
 Fittex / Żid Ġdid
 Fittex
 Kju
-Inkludi logħbiet mhux karaoke
+Fittex logħbiet tal-karaoke biss
 Avvanzat
 Ittajpja kanzunetta (titlu/artist) biex tfittex il-kanzunetti disponibbli u kklikkja 'Kju' biex iżżidha mal-kju.
-Jekk il-kanzunetta ma tidhirx fid-dropdown "Kanzunetti Disponibbli", ikklikkja 'Fittex' biex issibha fuq Youtube.
+Jekk il-kanzunetta ma tidhirx fil-dropdown "Kanzunetti Disponibbli", ikklikkja 'Fittex' biex issibha fuq Youtube.
 Niżżel dirett YouTube URL:
-Żid mal-kju
+Żid mal-kju wara t-tniżżil
 Inkludi sottotitli
 Niżżel
 Fittex fuq YouTube
@@ -130,10 +130,10 @@ Riżultati tat-tfittxija għal
 Ikklikkja dropdown biex turi aktar riżultati
 Link:
 Kanzunetti Disponibbli
-Trid tibdel l-isem tal-wiri tal-persuna li tuża dan l-apparat? Dan se juri ħdejn il-kanzunetti fil-kju. Kurrenti:
+Trid tibdel l-isem tal-wiri tal-persuna li tuża dan l-apparat? Dan se jidher ħdejn il-kanzunetti fil-kju. Kurrenti:
 Utent kurrenti
 Settings
-PiKaraoke
+OpenHomeKaraoke
 Int żgur li trid tieqaf?
 Int żgur li trid tagħlaq?
 Int żgur li trid terġa' tibda?
@@ -147,12 +147,12 @@ Memorja
 Qbid tal-Iskrin
 Splitter Vokali
 Verżjoni Youtube-dl (yt-dlp).
-Verżjoni PiKaraoke
+Verżjoni OpenHomeKaraoke
 Għażliet ta 'Kontroll Avvanzati
 Modalità splitter vokali:
 Uża L-R/L+R
 Uża DNN
-L-awdjo MTV standard għandu ż-żewġ kanali stereo (L u R) kodifikati b'tali mod li: L-R hija l-korsa tal-istrument, L + R hija l-korsa vokali. Għalhekk, billi sempliċement innaqqsu jew inżidu ż-żewġ kanali stereo, nistgħu niksbu t-track strumentali u vokali f'ħoss mono. Is-splitter vokali mibni fuq DNN (netwerk newrali profond) ta 'PiKaraoke juża algoritmu AI biex jaqsam il-ħoss strumentali u vokali f'kull track stereo b'mod indipendenti li jirriżulta f'binarji stereo strumentali u vokali.
+L-awdjo MTV standard għandu ż-żewġ kanali stereo (L u R) kodifikati b'tali mod li: L-R hija l-korsa tal-istrument, L + R hija l-korsa vokali. Għalhekk, billi sempliċement innaqqsu jew inżidu ż-żewġ kanali stereo, nistgħu niksbu t-track strumentali u vokali f'ħoss mono. Is-splitter vokali mibni fuq id-DNN (netwerk newrali profond) ta' OpenHomeKaraoke juża algoritmu AI biex jaqsam il-ħoss strumentali u vokali f'kull track stereo b'mod indipendenti li jirriżulta f'binarji stereo strumentali u vokali.
 Stop Splitter
 Ibda mill-ġdid Splitter
 Is-splitter vokali (li jappoġġja t-tnaqqis kemm ibbażat fuq DNN kif ukoll stereo) jimxi bħala proċess separat fl-isfond, li jiġġenera fajl awdjo strumentali/vokali għal kull kanzunetta.
@@ -162,19 +162,19 @@ Ibda mill-ġdid Streamer
 Dan jaffettwa biss id-daqq tal-KTV permezz tal-web browser. Il-bidu mill-ġdid tal-screen-capture-and-streaming itejjeb is-sinkronizzazzjoni tal-awdjo/vidjow, inaqqas ukoll il-latency bejn is-server u l-browser.
 Aġġorna l-lista tal-kanzunetti:
 Iscan mill-ġdid direttorju tal-kanzunetti
-Għandek bżonn tagħmel dan biss jekk ikkupjajt manwalment fajls fid-direttorju tat-tniżżil waqt li PiKaraoke kien qed jaħdem.
+Għandek bżonn tagħmel dan biss jekk ikkupjajt manwalment fajls fid-direttorju tat-tniżżil waqt li kien qed jaħdem OpenHomeKaraoke.
 Aġġornamenti
 Jekk it-tniżżil jew it-tfittxijiet ma baqgħux jaħdmu, l-aġġornament ta' youtube-dl probabbilment se jirranġaha. Il-verżjoni installata attwali hija:
 Aġġorna youtube-dl
-Din il-link tal-aġġornament ta' hawn fuq tista' tfalli jekk ma jkollokx permessi xierqa għall-fajls. Iċċekkja l-log PiKaraoke għal żbalji.
+Din il-link għall-aġġornament ta' hawn fuq tista' tfalli jekk ma jkollokx permessi xierqa għall-fajls. Iċċekkja l-log OpenHomeKaraoke għal żbalji.
 Għalaq
 Tiġbedx il-plagg biss! Dejjem agħlaq is-server tiegħek sew biex tevita l-korruzzjoni tad-dejta.
-Nieqaf PiKaraoke
+Nieqaf OpenHomeKaraoke
 Reboot Sistema
 Sistema ta' Tfigħ
 Oħrajn
 Jespandu s-sistema tal-fajls Raspberry Pi
-Jekk għadek kif installajt l-immaġni PiKaraoke pi mibnija minn qabel u l-karta SD tiegħek hija akbar minn 4GB, tista 'tixtieq tespandi s-sistema tal-fajls biex tutilizza l-ispazju li jifdal. Għandek bżonn tagħmel dan darba biss. Dan jerġa 'jibda s-sistema.
+Jekk għadek kif installajt l-immaġni OpenHomeKaraoke pi mibnija minn qabel u l-karta SD tiegħek hija akbar minn 4GB, tista 'tixtieq tespandi s-sistema tal-fajls biex tutilizza l-ispazju li jifdal. Għandek bżonn tagħmel dan darba biss. Dan jerġa 'jibda s-sistema.
 Iddiżattiva l-mod ta' amministrazzjoni
 Ippermetti l-mod ta' amministrazzjoni
 Oħroġ
@@ -184,8 +184,8 @@ Dar
 Bidla Lingwa
 Jekk jogħġbok agħżel il-lingwa
 Lingwa tas-Sistema
-Lingwa tas-sistema attwali:
-Dan jibdel il-lingwa tas-sistema backend PiKaraoke li tintwera fuq l-iskrin tat-TV; barra minn hekk, kull utent li jgħaqqad jista 'wkoll ibiddel il-lingwa rispettiva tagħhom tal-Web UI fil-buttuna globu fil-menu ta' fuq tal-lemin.
+Lingwa tas-sistema kurrenti:
+Dan jibdel il-lingwa tas-sistema backend OpenHomeKaraoke li tintwera fuq l-iskrin tat-TV; barra minn hekk, kull utent li jgħaqqad jista 'wkoll ibiddel il-lingwa rispettiva tagħhom tal-Web UI fil-buttuna globu fil-menu ta' fuq tal-lemin.
 It-tniżżil tlesta b'suċċess!
 It-tniżżil falla!
 Kanzunetta miżjuda mal-kju!
@@ -206,4 +206,26 @@ Irrisettja Veloċità
 Kwalita għolja
 Żid il-kanzunetta fil-kju tal-kant wara li tkun intemmet it-tniżżil
 Niżżel is-sottotitli (inkorporati biss) fil-lingwi kollha jekk disponibbli
-It-tniżżil ta' vidjows ta' kwalità għolja jista' jieħu żmien twil ħafna
+It-tniżżil ta' vidjows ta' kwalità għolja jista' jieħu ħafna żmien
+Ħlief Issettjar tal-Play
+Issejvja l-issettjar tal-logħob għal kull kanzunetta, dan jinkludi: dewmien tal-awdjo, dewmien tas-sottotitli, u jekk turix is-sottotitli.
+Żid il-kanzunetta billi tkellem it-titlu tal-kanzunetta
+Jekk jogħġbok kellem it-titlu tal-kanzunetta u kklikkja OK!
+Il-websajts HTTPS biss jistgħu jkollhom aċċess għall-mikrofonu, trid terġa 'tidderieġi għall-websajt HTTPS?
+Jekk jogħġbok agħti l-permess biex taċċessa l-mikrofonu!
+Editja l-Isem tal-Kanzunetta:
+Ħlief
+Ħassar din il-kanzunetta
+Int żgur li trid tħassar din il-kanzunetta mil-librerija?
+Itlob żball tal-parametru!
+Ittrimmja l-kanzunetta:
+Aġġusta l-volum tal-kanzunetta:
+Ħin tal-bidu:
+Ħin tat-tmiem:
+Volum oriġinali (dB):
+Ma tistax issib xi kanzunetta li taqbel ma' "%s".
+"%s" miżjud fil-kju.
+Jekk jogħġbok agħżel il-kanzunetta(i) li trid iżżid:
+ĦALLA
+Agħlaq
+Żid

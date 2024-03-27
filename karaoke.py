@@ -14,15 +14,23 @@ import qrcode
 import arabic_reshaper
 from bidi.algorithm import get_display
 from unidecode import unidecode
+from flask import request
 from lib import omxclient, vlcclient
 from lib.get_platform import *
+from lib.NLP import *
 from app import getString
 
-STD_VOL = 65536/8/np.sqrt(2)
-
 if get_platform() != "windows":
-	from signal import SIGALRM, alarm, signal
+	from signal import SIGALRM, alarm, signal, SIGTERM
+	signal(SIGTERM, lambda signum, stack_frame: K.stop())
 
+STD_VOL = 65536/8/np.sqrt(2)
+ip2websock, ip2pane = {}, {}
+
+ws_send = lambda ip, msg: ip2websock[ip].send(msg) if ip in ip2websock else None
+
+def flash(message: str, category: str = "message", client_ip = ''):
+	ws_send(client_ip or request.remote_addr, f'showNotification("{message}", "{category}")')
 
 def cleanse_modules(name):
 	try:
@@ -439,7 +447,7 @@ class Karaoke:
 					j = json.loads(each)
 					if (not "title" in j) or (not "url" in j):
 						continue
-					rc.append([j["title"], j["url"], j["id"]])
+					rc.append([j["title"], j["url"], j["id"], sec2hhmmss(j["duration"])])
 			return rc
 		except Exception as e:
 			logging.debug("Error while executing search: " + str(e))
@@ -469,8 +477,9 @@ class Karaoke:
 		filename = f"{info_json['title']}---{info_json['id']}.{info_json['ext']}"
 		return filename if os.path.isfile(self.download_path+'tmp/'+filename) else None
 
-	def download_video(self, song_url = '', enqueue = False, song_added_by = "Pikaraoke", include_subtitles = False, high_quality = False):
+	def download_video(self, client_lang='', client_ip='', song_url = '', enqueue = False, song_added_by = "Pikaraoke", include_subtitles = False, high_quality = False):
 		logging.info("Downloading video: " + song_url)
+		getString2 = lambda ii: os.langs.get(client_lang, os.langs['en_US'])[ii]
 		self.downloading_songs[song_url] = 1
 		dl_path = "%(title)s---%(id)s.%(ext)s"
 		opt_quality = ['-f', 'bestvideo[height<=1080]+bestaudio[abr<=160]'] if high_quality else ['-f', 'mp4+m4a']
@@ -494,13 +503,18 @@ class Karaoke:
 				if enqueue:
 					self.enqueue(self.download_path+bn, song_added_by)
 					self.downloading_songs[song_url] = '00'
+					flash(getString2(189)+' '+getString2(191), client_ip = client_ip)
+				else:
+					flash(getString2(189), client_ip = client_ip)
 			else:
 				logging.error("Error queueing song: " + song_url)
 				self.downloading_songs[song_url] = '01'
+				flash(getString2(189)+' '+getString2(192), client_ip = client_ip)
 		else:
 			logging.error("Error downloading song: " + song_url)
 			self.downloading_songs[song_url] = -1
-		return rc
+			flash(getString2(190), client_ip = client_ip)
+		return ws_send(client_ip, 'download_ended()')
 
 	def get_available_songs(self):
 		logging.info("Fetching available songs in: " + self.download_path)
@@ -706,7 +720,7 @@ class Karaoke:
 		self.update_queue()
 		self.skip()
 
-	def queue_edit(self, song_name, action, **kwargs):
+	def queue_edit(self, song_file, action, **kwargs):
 		if action == "move":
 			try:
 				src, tgt, size = [int(kwargs[n]) for n in ['src', 'tgt', 'size']]
@@ -721,7 +735,7 @@ class Karaoke:
 				logging.error("Invalid move song request: " + str(kwargs))
 				return False
 		else:
-			match = [(ii,each) for ii,each in enumerate(self.queue) if f'/{song_name}.' in each["file"]]
+			match = [(ii,each) for ii,each in enumerate(self.queue) if song_file in each["file"]]
 			index, song = match[0] if match else (-1, None)
 			if song == None:
 				logging.error("Song not found in queue: " + song["file"])

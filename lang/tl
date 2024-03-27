@@ -24,7 +24,7 @@ Pag-edit ng File ng Kanta
 Error sa Pagpapalit ng pangalan ng file: '%s' to '%s'. Umiiral na ang filename.
 Pinalitan ang pangalan ng file: '%s' sa '%s'
 Error: Walang tinukoy na mga parameter ng filename!
-Hindi kilala
+Hindi alam
 Tumatakbo
 Huminto
  (CPU lang)
@@ -32,7 +32,7 @@ Huminto
 Ina-update ang youtube-dl! Dapat tumagal ng isang minuto o dalawa...
 Wala kang pahintulot na i-update ang youtube-dl
 Wala kang pahintulot na mag-shut down
-Tumigil sa PiKaraoke ngayon!
+Inihinto ang OpenHomeKaraoke ngayon!
 Wala kang pahintulot na huminto
 Isinasara ang sistema ngayon!
 Wala kang pahintulot na mag-shut down
@@ -41,7 +41,7 @@ Wala kang pahintulot na Mag-reboot
 Pinapalawak ang filesystem at rebooting system ngayon!
 Hindi ma-expand ang fs sa mga non-raspberry pi device!
 Wala kang pahintulot na baguhin ang laki ng filesystem
-Hindi nahanap ang path ng Youtube-dl!
+Hindi nahanap ang path ng Youtube-dl at nabigo itong i-install ang pip!
 Hindi nahanap ang path ng VLC!
 hindi nahanap ang landas ng omxplayer!
 Lumilikha ng landas sa pag-download:
@@ -49,7 +49,7 @@ Hindi nakakonekta ang Wifi/Network. Magsasara sa loob ng 10s...
 Para sa pagpili ng mga kanta, i-scan ang QR o kumonekta sa
 Para sa TV display, kumonekta sa
 Pindutin ang F upang i-toggle ang full-screen
-Pindutin ang ESC upang ihinto ang PiKaraoke
+Pindutin ang ESC upang ihinto ang OpenHomeKaraoke
 Na-detect ang RaspiWifiConfig setup mode!
 Ikonekta ang isa pang device/smartphone sa Wifi AP: '%s'
 Pagkatapos ay ituro ang browser nito sa: '%s://%s%s' at sundin ang mga tagubilin.
@@ -60,7 +60,7 @@ Nabigyan ng admin mode!
 Ang pagtaas ng pagkaantala sa audio ay magbibigay sa iyo ng mas maraming oras upang basahin ang mga lyrics bago kantahin ang susunod na pangungusap.
 Ang pagpapababa ng pagkaantala sa subtitle ay magbibigay sa iyo ng mas maraming oras upang basahin ang mga lyrics bago kantahin ang susunod na pangungusap.
 Ang isang semitone ay kilala rin bilang isang kalahating hakbang. Ito ang pinakamaliit na pagitan na ginagamit sa klasikal na musikang Kanluranin, katumbas ng ikalabindalawa ng isang oktaba o kalahating tono.
-Naka-enable ang vocal splitter na nakabatay sa DNN. Gumagamit ang PiKaraoke ng PyTorch (sa pamamagitan ng Facebook) upang magpatakbo ng malalim na neural network upang hatiin ang instrumental at vocal na tunog sa bawat track na nagdudulot ng stereo sound.
+Naka-enable ang vocal splitter na nakabatay sa DNN. Gumagamit ang OpenHomeKaraoke ng PyTorch (sa pamamagitan ng Facebook) upang magpatakbo ng isang malalim na neural network upang hatiin ang instrumental at vocal na tunog sa bawat track na nagdudulot ng stereo sound.
 Kontrol ng Manlalaro
 Musika
 Magkakahalo
@@ -105,7 +105,7 @@ I-edit ang kanta
 Umakyat sa pila
 Bumaba sa pila
 Sigurado ka bang gusto mong tanggalin sa pila
-Sigurado ka bang gusto mong i-clear ang BUONG pila? I-type ang 'OK' para magpatuloy
+Sigurado ka bang gusto mong i-clear ang BUONG pila?
 Magdagdag ng 3 random na kanta
 Alisin lahat
 Walang laman ang pila
@@ -117,12 +117,12 @@ Nasa pila na ang kanta:
 Maghanap / Magdagdag ng Bago
 Maghanap
 Nakapila
-Isama ang mga non-karaoke na laban
+Maghanap ng mga tugma sa Karaoke lamang
 Advanced
 Mag-type ng kanta (title/artist) para hanapin ang mga available na kanta at i-click ang 'Queue' para idagdag ito sa queue.
 Kung hindi lumalabas ang kanta sa dropdown na "Available Songs," i-click ang 'Search' para mahanap ito sa Youtube.
 Direktang pag-download ng YouTube url:
-Idagdag sa pila
+Idagdag sa pila pagkatapos ng pag-download
 Isama ang mga subtitle
 I-download
 Naghahanap sa YouTube para sa
@@ -133,7 +133,7 @@ Mga Magagamit na Kanta
 Gusto mo bang baguhin ang display name ng taong gumagamit ng device na ito? Lalabas ito sa tabi ng mga nakapila na kanta. Kasalukuyan:
 Gumagamit ngayon
 Mga setting
-PiKaraoke
+OpenHomeKaraoke
 Sigurado ka bang gusto mong umalis?
 Sigurado ka bang gusto mong isara?
 Sigurado ka bang gusto mong i-reboot?
@@ -147,12 +147,12 @@ Alaala
 Screen Capture
 Vocal Splitter
 Youtube-dl (yt-dlp) na bersyon
-bersyon ng PiKaraoke
+Bersyon ng OpenHomeKaraoke
 Mga Advanced na Opsyon sa Pagkontrol
 Vocal splitter mode:
 Gamitin ang L-R/L+R
 Gumamit ng DNN
-Ang karaniwang MTV audio ay may dalawang stereo channel (L at R) na naka-encode sa paraang: L-R ang instrument track, L+R ang vocal track. Kaya, sa pamamagitan lamang ng pagbabawas o pagdaragdag ng dalawang stereo channel, makukuha natin ang instrumental at vocal track sa mono sound. Ang built-in na DNN-based (deep neural network) vocal splitter ng PiKaraoke ay gumagamit ng AI algorithm upang hatiin ang instrumental at vocal na tunog sa bawat stereo track nang hiwalay na nagreresulta sa stereo instrumental at vocal track.
+Ang karaniwang MTV audio ay may dalawang stereo channel (L at R) na naka-encode sa paraang: L-R ang instrument track, L+R ang vocal track. Kaya, sa pamamagitan lamang ng pagbabawas o pagdaragdag ng dalawang stereo channel, makukuha natin ang instrumental at vocal track sa mono sound. Ang built-in na DNN-based (deep neural network) na vocal splitter ng OpenHomeKaraoke ay gumagamit ng AI algorithm upang hatiin ang instrumental at vocal na tunog sa bawat stereo track nang hiwalay na nagreresulta sa stereo instrumental at vocal track.
 Itigil ang Splitter
 I-restart ang Splitter
 Ang vocal splitter (na sumusuporta sa parehong DNN-based at stereo subtraction) ay tumatakbo bilang isang hiwalay na proseso sa background, na bumubuo ng instrumental/vocal audio file para sa bawat kanta.
@@ -162,19 +162,19 @@ I-restart ang Streamer
 Nakakaapekto lamang ito sa paglalaro ng KTV sa pamamagitan ng web browser. Ang pag-restart ng screen-capture-and-streaming ay nagpapabuti sa pag-synchronize ng audio/video, binabawasan din nito ang latency sa pagitan ng server at browser.
 I-refresh ang listahan ng kanta:
 I-scan muli ang direktoryo ng kanta
-Kailangan mo lang gawin ito kung manu-mano mong kinopya ang mga file sa direktoryo ng pag-download habang tumatakbo ang PiKaraoke.
+Kailangan mo lang gawin ito kung manu-mano mong kinopya ang mga file sa direktoryo ng pag-download habang tumatakbo ang OpenHomeKaraoke.
 Mga update
 Kung huminto sa paggana ang mga pag-download o paghahanap, malamang na ayusin ito ng pag-update ng youtube-dl. Ang kasalukuyang naka-install na bersyon ay:
 I-update ang youtube-dl
-Maaaring mabigo ang link sa pag-update na ito sa itaas kung wala kang tamang mga pahintulot sa file. Suriin ang PiKaraoke log para sa mga error.
+Maaaring mabigo ang link sa pag-update na ito sa itaas kung wala kang tamang mga pahintulot sa file. Suriin ang OpenHomeKaraoke log para sa mga error.
 Pagsara
 Huwag lamang hilahin ang plug! Palaging isara nang maayos ang iyong server upang maiwasan ang pagkasira ng data.
-Ihinto ang PiKaraoke
+Ihinto ang OpenHomeKaraoke
 I-reboot ang System
 Sistema ng Pagsara
 Iba pa
 Palawakin ang Raspberry Pi filesystem
-Kung kaka-install mo lang ng pre-built na PiKaraoke pi image at ang iyong SD card ay mas malaki sa 4GB, maaaring gusto mong palawakin ang filesystem upang magamit ang natitirang espasyo. Isang beses mo lang kailangang gawin ito. Ire-reboot nito ang system.
+Kung kaka-install mo lang ng pre-built na OpenHomeKaraoke pi image at ang iyong SD card ay mas malaki sa 4GB, maaaring gusto mong palawakin ang filesystem upang magamit ang natitirang espasyo. Isang beses mo lang kailangang gawin ito. Ire-reboot nito ang system.
 I-disable ang admin mode
 Paganahin ang admin mode
 mag log out
@@ -185,14 +185,14 @@ Baguhin ang Wika
 Mangyaring pumili ng wika
 Wika ng Sistema
 Kasalukuyang wika ng system:
-Binabago nito ang wika ng PiKaraoke backend system na ipapakita sa screen ng TV; bukod pa rito, maaari ding baguhin ng bawat kumukonektang user ang kani-kanilang wika ng Web UI sa globe button sa kanang tuktok na menu.
+Binabago nito ang wika ng OpenHomeKaraoke backend system na ipinapakita sa screen ng TV; bukod pa rito, maaari ding baguhin ng bawat kumukonektang user ang kani-kanilang wika ng Web UI sa globe button sa kanang tuktok na menu.
 Matagumpay na nakumpleto ang pag-download!
 Nabigo ang pag-download!
 Idinagdag ang kanta sa pila!
 Nabigong i-queue ang kanta!
 Impormasyon at Mga Setting ng System
 Volume Normalization
-Ang iba't ibang kanta ay kadalasang may iba't ibang volume. Ang pagpapagana ng volume normalization ay tatakbo muna ng <i>ffmpeg</i> upang makalkula ang pandaigdigang volume ng isang kanta at awtomatikong ayusin ang volume ng player upang ang bawat kanta ay tumunog nang pantay na malakas.
+Ang iba't ibang kanta ay kadalasang may iba't ibang volume. Ang pagpapagana ng volume normalization ay tatakbo muna ng <i>ffmpeg</i> upang makalkula ang pandaigdigang volume ng isang kanta at awtomatikong isaayos ang volume ng player upang ang bawat kanta ay tumunog nang pantay na malakas.
 Landas sa pag-download ng library ng kanta
 Kabuuang bilang ng mga kanta
 Ipakita/Itago ang Subtitle
@@ -207,3 +207,25 @@ Mataas na Kalidad
 Idagdag ang kanta sa pila ng pagkanta pagkatapos ma-download
 Mag-download ng mga subtitle (naka-embed lang) sa lahat ng wika kung available
 Ang pag-download ng mga video na may mataas na kalidad ay maaaring tumagal ng napakatagal
+I-save ang Mga Setting ng Play
+I-save ang mga setting ng play para sa bawat kanta, kabilang dito ang: pagkaantala ng audio, pagkaantala ng subtitle, at kung magpapakita ng mga subtitle.
+Magdagdag ng kanta sa pamamagitan ng pagbigkas ng pamagat ng kanta
+Pakisabi ang pamagat ng kanta at i-click ang OK!
+Ang mga website ng HTTPS lang ang maaaring magkaroon ng access sa mikropono, gusto mo bang mag-redirect sa website ng HTTPS?
+Mangyaring bigyan ng pahintulot na i-access ang mikropono!
+I-edit ang Pangalan ng Kanta:
+I-save
+Tanggalin ang kantang ito
+Sigurado ka bang gusto mong tanggalin ang kantang ito sa library?
+Humiling ng error sa parameter!
+I-trim ang kanta:
+Ayusin ang volume ng kanta:
+Oras ng pagsisimula:
+Oras ng pagtatapos:
+Orihinal na Dami (dB):
+Hindi mahanap ang anumang kanta na tumutugma sa "%s".
+Idinagdag ang "%s" sa pila.
+Pakipili ang (mga) kanta na idaragdag:
+PAWALANG-BISA
+Isara
+Idagdag

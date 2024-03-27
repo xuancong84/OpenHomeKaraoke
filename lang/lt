@@ -15,7 +15,7 @@ Ištrinta iš eilės:
 Klaida ištrinant iš eilės:
 Atsisiuntimas pradėtas:
 Užbaigus, jis bus įtrauktas į eilę.
-Užbaigus, jis bus rodomas „galimų dainų“ sąraše.
+Užbaigus jis bus rodomas „galimų dainų“ sąraše.
 Klaida: negalima ištrinti šios dainos, nes ji yra dabartinėje eilėje:
 Daina ištrinta:
 Klaida: nenurodytas dainos parametras!
@@ -32,7 +32,7 @@ Sustojo
 Atnaujinamas youtube-dl! Turėtų užtrukti minutę ar dvi...
 Neturite leidimo atnaujinti youtube-dl
 Neturite leidimo išjungti
-Baigti PiKaraoke dabar!
+Išeinate iš OpenHomeKaraoke dabar!
 Jūs neturite leidimo mesti
 Sistema išjungiama dabar!
 Neturite leidimo išjungti
@@ -41,7 +41,7 @@ Neturite leidimo paleisti iš naujo
 Išplečiama failų sistema ir perkraunama sistema dabar!
 Negalima išplėsti fs ne Raspberry Pi įrenginiuose!
 Neturite leidimo keisti failų sistemos dydžio
-Youtube-dl kelias nerastas!
+Youtube-dl kelias nerastas ir pip nepavyko jo įdiegti!
 VLC kelias nerastas!
 omxplayer kelias nerastas!
 Kuriamas atsisiuntimo kelias:
@@ -49,18 +49,18 @@ Wifi / tinklas neprijungtas. Išsijungs po 10 sekundžių...
 Norėdami pasirinkti dainas, nuskaitykite QR kodą arba prisijunkite prie
 Norėdami televizoriaus ekraną, prijunkite prie
 Norėdami perjungti viso ekrano režimą, paspauskite F
-Paspauskite ESC, kad išeitumėte iš PiKaraoke
+Paspauskite ESC, kad išeitumėte iš OpenHomeKaraoke
 Aptiktas „RaspiWifiConfig“ sąrankos režimas!
 Prijunkite kitą įrenginį / išmanųjį telefoną prie „Wi-Fi“ AP: „%s“
-Tada nukreipkite naršyklę į: „%s://%s%s“ ir vykdykite instrukcijas.
+Tada nukreipkite naršyklę į: '%s://%s%s' ir vykdykite instrukcijas.
 Kitas:
 Pridėjo:
 Dabar žaidžia:
 Administratoriaus režimas suteiktas!
 Didėjant garso delsai, turėsite daugiau laiko perskaityti dainų tekstus prieš išdainuojant kitą sakinį.
 Sumažėjus subtitrų delsai, turėsite daugiau laiko perskaityti dainų tekstus prieš išdainuojant kitą sakinį.
-Pustonis taip pat žinomas kaip pusė žingsnio. Tai mažiausias klasikinėje Vakarų muzikoje naudojamas intervalas, lygus dvyliktajai oktavos arba pusei tono.
-DNN pagrįstas balso skirstytuvas įjungtas. „PiKaraoke“ naudoja „PyTorch“ („Facebook“), kad paleistų gilųjį neuroninį tinklą, kad kiekviename takelyje būtų padalintas instrumentinis ir vokalinis garsas, sukuriantis stereo garsą.
+Pustonis taip pat žinomas kaip pusė žingsnio. Tai mažiausias klasikinėje Vakarų muzikoje naudojamas intervalas, lygus oktavos dvyliktajai daliai arba pusei tono.
+DNN pagrįstas balso skirstytuvas įjungtas. „OpenHomeKaraoke“ naudoja „PyTorch“ („Facebook“), kad paleistų gilųjį neuroninį tinklą, kad kiekviename takelyje būtų padalintas instrumentinis ir vokalinis garsas, sukuriantis stereo garsą.
 Žaidėjo valdymas
 Muzika
 Mišrus
@@ -105,7 +105,7 @@ Redaguoti dainą
 Perkelti eilėje aukštyn
 Pereikite į eilę žemyn
 Ar tikrai norite ištrinti iš eilės
-Ar tikrai norite išvalyti VISĄ eilę? Norėdami tęsti, įveskite „Gerai“.
+Ar tikrai norite išvalyti VISĄ eilę?
 Pridėkite 3 atsitiktines dainas
 Išvalyti viską
 Eilė tuščia
@@ -117,12 +117,12 @@ Daina jau eilėje:
 Ieškoti / Pridėti naują
 Paieška
 Eilė
-Įtraukite ne karaoke rungtynes
+Ieškoti tik karaoke rungtynių
 Išplėstinė
 Įveskite dainą (pavadinimą / atlikėją), kad ieškotumėte galimų dainų, ir spustelėkite „Eilė“, kad įtrauktumėte ją į eilę.
 Jei daina nerodoma išskleidžiamajame meniu „Galimos dainos“, spustelėkite „Ieškoti“, kad ją rastumėte „YouTube“.
 Tiesioginio atsisiuntimo „YouTube“ URL:
-Pridėti į eilę
+Pridėti į eilę po atsisiuntimo
 Įtraukti subtitrus
 parsisiųsti
 „YouTube“ ieškoma
@@ -133,7 +133,7 @@ Galimos dainos
 Ar norite pakeisti šį įrenginį naudojančio asmens rodomą vardą? Tai bus rodoma šalia eilėje esančių dainų. Dabartinis:
 Dabartinis vartotojas
 Nustatymai
-PiKaraoke
+OpenHomeKaraoke
 Ar tikrai norite mesti?
 Ar tikrai norite išjungti?
 Ar tikrai norite paleisti iš naujo?
@@ -147,12 +147,12 @@ Atmintis
 Ekrano nuotrauka
 Vokalo skirstytuvas
 Youtube-dl (yt-dlp) versija
-PiKaraoke versija
+OpenHomeKaraoke versija
 Išplėstinės valdymo parinktys
 Balso skirstytuvo režimas:
 Naudokite L-R/L+R
 Naudokite DNN
-Standartiniame MTV garse yra du stereo kanalai (L ir R), užkoduoti taip, kad: L-R yra instrumento takelis, L+R yra balso takelis. Taigi, tiesiog atėmus arba pridėjus du stereo kanalus, instrumentinį ir vokalinį takelį galime gauti mono garsu. „PiKaraoke“ integruotas DNN (giliojo neuroninio tinklo) balso skirstytuvas naudoja AI algoritmą, kad atskirtų instrumentinį ir vokalinį garsą kiekviename stereo takelyje atskirai, todėl sukuriami stereo instrumentiniai ir vokaliniai takeliai.
+Standartiniame MTV garse yra du stereo kanalai (L ir R), užkoduoti taip, kad: L-R yra instrumento takelis, L+R yra balso takelis. Taigi, tiesiog atėmus arba pridėjus du stereo kanalus, instrumentinį ir vokalinį takelį galime gauti mono garsu. „OpenHomeKaraoke“ integruotas DNN (giliojo neuroninio tinklo) balso skirstytuvas naudoja AI algoritmą, kad atskirtų instrumentinį ir vokalinį garsą kiekviename stereo takelyje atskirai, todėl sukuriami stereo instrumentiniai ir vokaliniai takeliai.
 Sustabdykite skirstytuvą
 Iš naujo paleiskite skirstytuvą
 Balso skirstytuvas (kuris palaiko tiek DNN, tiek stereo atimtį) veikia kaip atskiras procesas fone, kiekvienai dainai generuodamas instrumentinį / vokalinį garso failą.
@@ -162,19 +162,19 @@ Iš naujo paleiskite „Streamer“.
 Tai turi įtakos tik KTV žaidimui per interneto naršyklę. Iš naujo paleidus ekrano fiksavimo ir srautinio perdavimo funkciją, pagerėja garso ir vaizdo sinchronizavimas, taip pat sumažėja delsa tarp serverio ir naršyklės.
 Atnaujinkite dainų sąrašą:
 Iš naujo nuskaityti dainų katalogą
-Turėtumėte tai padaryti tik tuo atveju, jei rankiniu būdu nukopijavote failus į atsisiuntimų katalogą, kai veikė PiKaraoke.
+Turėtumėte tai padaryti tik tuo atveju, jei rankiniu būdu nukopijavote failus į atsisiuntimų katalogą, kai veikė OpenHomeKaraoke.
 Atnaujinimai
 Jei atsisiuntimai ar paieškos nustojo veikti, atnaujinus youtube-dl tikriausiai tai išspręs. Dabartinė įdiegta versija yra:
 Atnaujinti youtube-dl
-Ši aukščiau pateikta naujinimo nuoroda gali neveikti, jei neturite tinkamų failo teisių. Patikrinkite, ar PiKaraoke žurnale nėra klaidų.
+Ši aukščiau pateikta naujinimo nuoroda gali neveikti, jei neturite tinkamų failo teisių. Patikrinkite, ar „OpenHomeKaraoke“ žurnale nėra klaidų.
 Išjungti
 Netraukite tik už kištuko! Visada tinkamai išjunkite serverį, kad išvengtumėte duomenų sugadinimo.
-Išeikite iš PiKaraoke
+Išeikite iš „OpenHomeKaraoke“.
 Perkraukite sistemą
 Išjungimo sistema
 Kita
 Išplėskite Raspberry Pi failų sistemą
-Jei ką tik įdiegėte iš anksto sukurtą PiKaraoke pi vaizdą ir jūsų SD kortelė yra didesnė nei 4 GB, galbūt norėsite išplėsti failų sistemą, kad išnaudotumėte likusią vietą. Tai padaryti reikia tik vieną kartą. Tai iš naujo paleis sistemą.
+Jei ką tik įdiegėte iš anksto sukurtą OpenHomeKaraoke pi vaizdą ir jūsų SD kortelė yra didesnė nei 4 GB, galbūt norėsite išplėsti failų sistemą, kad išnaudotumėte likusią vietą. Tai padaryti reikia tik vieną kartą. Tai iš naujo paleis sistemą.
 Išjungti administratoriaus režimą
 Įjungti administratoriaus režimą
 Atsijungti
@@ -185,7 +185,7 @@ Pakeisti KALBĄ
 Pasirinkite kalbą
 Sistemos kalba
 Dabartinė sistemos kalba:
-Tai pakeičia PiKaraoke backend sistemos kalbą, kuri rodoma televizoriaus ekrane; be to, kiekvienas besijungiantis vartotojas taip pat gali pakeisti atitinkamą žiniatinklio vartotojo sąsajos kalbą spustelėjus gaublio mygtuką viršutiniame dešiniajame meniu.
+Tai pakeičia „OpenHomeKaraoke“ foninės sistemos, kuri rodoma televizoriaus ekrane, kalbą; be to, kiekvienas besijungiantis vartotojas taip pat gali pakeisti atitinkamą žiniatinklio vartotojo sąsajos kalbą spustelėjus gaublio mygtuką viršutiniame dešiniajame meniu.
 Atsisiuntimas sėkmingai baigtas!
 Atsisiuntimas nepavyko!
 Daina įtraukta į eilę!
@@ -198,7 +198,7 @@ Bendras dainų skaičius
 Rodyti/slėpti subtitrus
 Keisti greitį
 Dainą galite dainuoti greičiau arba lėčiau, naudodami greičio stebėjimo juostą pakeisdami atkūrimo greitį nuo 0,8 iki 1,2 karto; Norėdami pakeisti kitą atkūrimo greitį, spustelėkite greičio reikšmę.
-Spustelėkite, kad iš naujo nustatytumėte atkūrimo greitį iki 1x
+Spustelėkite, jei norite iš naujo nustatyti atkūrimo greitį iki 1x
 Spustelėkite norėdami nustatyti atkūrimo greitį
 Spustelėkite norėdami iš naujo nustatyti klavišą / žingsnį
 Atstatyti raktas
@@ -207,3 +207,25 @@ Aukštos kokybės
 Įtraukite dainą į dainavimo eilę, kai atsisiuntimas bus baigtas
 Atsisiųskite subtitrus (tik įterptus) visomis kalbomis, jei yra
 Aukštos kokybės vaizdo įrašų atsisiuntimas gali užtrukti labai ilgai
+Išsaugokite „Play“ nustatymus
+Išsaugokite kiekvienos dainos atkūrimo nustatymus, įskaitant: garso delsą, subtitrų delsą ir tai, ar rodyti subtitrus.
+Pridėkite dainą ištardami dainos pavadinimą
+Ištarkite dainos pavadinimą ir spustelėkite Gerai!
+Tik HTTPS svetainės gali turėti prieigą prie mikrofono. Ar norite peradresuoti į HTTPS svetainę?
+Suteikite leidimą pasiekti mikrofoną!
+Redaguoti dainos pavadinimą:
+Sutaupyti
+Ištrinti šią dainą
+Ar tikrai norite ištrinti šią dainą iš bibliotekos?
+Prašyti parametro klaidos!
+Apkarpyti dainą:
+Sureguliuokite dainos garsumą:
+Pradžios laikas:
+Pabaigos laikas:
+Originalus garsas (dB):
+Nepavyko rasti dainos, atitinkančios „%s“.
+„%s“ įtraukta į eilę.
+Pasirinkite dainą (-as), kurią norite pridėti:
+ATŠAUKTI
+Uždaryti
+Papildyti

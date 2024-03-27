@@ -32,7 +32,7 @@ Stoppet
 Oppdaterer youtube-dl! Burde ta et minutt eller to...
 Du har ikke tillatelse til å oppdatere youtube-dl
 Du har ikke tillatelse til å stenge
-Avslutt PiKaraoke nå!
+Avslutter OpenHomeKaraoke nå!
 Du har ikke tillatelse til å slutte
 Slår av systemet nå!
 Du har ikke tillatelse til å stenge
@@ -41,7 +41,7 @@ Du har ikke tillatelse til å starte på nytt
 Utvider filsystemet og starter systemet på nytt nå!
 Kan ikke utvide fs på ikke-raspberry pi-enheter!
 Du har ikke tillatelse til å endre størrelse på filsystemet
-Youtube-dl-sti ble ikke funnet!
+Youtube-dl-banen ble ikke funnet, og pip klarte ikke å installere den!
 VLC-bane ikke funnet!
 omxplayer banen ble ikke funnet!
 Oppretter nedlastingsbane:
@@ -49,7 +49,7 @@ Wifi/nettverk er ikke tilkoblet. Slår av om 10...
 For å velge sanger, skann QR eller koble til
 For TV-visning, koble til
 Trykk F for å bytte fullskjerm
-Trykk ESC for å avslutte PiKaraoke
+Trykk ESC for å avslutte OpenHomeKaraoke
 RaspiWifiConfig-oppsettmodus oppdaget!
 Koble en annen enhet/smarttelefon til Wifi AP: '%s'
 Pek deretter nettleseren til: '%s://%s%s' og følg instruksjonene.
@@ -60,7 +60,7 @@ Administrasjonsmodus gitt!
 Økende lydforsinkelse vil gi deg mer tid til å lese tekster før du synger ut neste setning.
 Redusere undertekstforsinkelse vil gi deg mer tid til å lese tekster før du synger ut neste setning.
 En halvtone er også kjent som et halvtrinn. Det er det minste intervallet som brukes i klassisk vestlig musikk, lik en tolvtedel av en oktav eller en halv tone.
-DNN-basert vokalsplitter er aktivert. PiKaraoke bruker PyTorch (fra Facebook) til å kjøre et dypt nevralt nettverk for å dele instrumental- og vokallyd i hvert spor som gir opphav til stereolyd.
+DNN-basert vokalsplitter er aktivert. OpenHomeKaraoke bruker PyTorch (fra Facebook) for å kjøre et dypt nevralt nettverk for å dele instrumental- og vokallyd i hvert spor som gir opphav til stereolyd.
 Spillerkontroll
 Musikk
 Blandet
@@ -105,7 +105,7 @@ Rediger sang
 Flytt opp i køen
 Flytt ned i køen
 Er du sikker på at du vil slette fra køen
-Er du sikker på at du vil tømme HELE køen? Skriv 'OK' for å fortsette
+Er du sikker på at du vil tømme HELE køen?
 Legg til 3 tilfeldige sanger
 Rydd alt
 Køen er tom
@@ -117,12 +117,12 @@ Sangen står allerede i køen:
 Søk / Legg til ny
 Søk
 Kø
-Inkluder ikke-karaoke-kamper
+Søk kun Karaoke-treff
 Avansert
 Skriv inn en sang (tittel/artist) for å søke etter de tilgjengelige sangene og klikk "Kø" for å legge den til i køen.
 Hvis sangen ikke vises i rullegardinmenyen "Tilgjengelige sanger", klikker du på "Søk" for å finne den på Youtube.
 YouTube-nettadresse for direkte nedlasting:
-Legg til i kø
+Legg til i køen etter nedlasting
 Inkluder undertekster
 nedlasting
 Søker på YouTube etter
@@ -133,7 +133,7 @@ Tilgjengelige sanger
 Vil du endre visningsnavnet til personen som bruker denne enheten? Dette vil vises ved siden av sangene i køen. Nåværende:
 Nåværende bruker
 Innstillinger
-PiKaraoke
+OpenHomeKaraoke
 Er du sikker på at du vil slutte?
 Er du sikker på at du vil avslutte?
 Er du sikker på at du vil starte på nytt?
@@ -147,12 +147,12 @@ Hukommelse
 Skjermfangst
 Vokal Splitter
 Youtube-dl (yt-dlp) versjon
-PiKaraoke versjon
+OpenHomeKaraoke-versjon
 Avanserte kontrollalternativer
 Vocal splitter-modus:
 Bruk L-R/L+R
 Bruk DNN
-Standard MTV-lyd har de to stereokanalene (L og R) kodet på en slik måte at: L-R er instrumentsporet, L+R er vokalsporet. Ved ganske enkelt å trekke fra eller legge til de to stereokanalene, kan vi altså få instrumental- og vokalsporet i monolyd. PiKaraokes innebygde DNN-baserte (dyp nevrale nettverk) vokalsplitter bruker AI-algoritme for å dele instrumental- og vokallyd i hvert stereospor uavhengig, noe som resulterer i stereoinstrumental- og vokalspor.
+Standard MTV-lyd har de to stereokanalene (L og R) kodet på en slik måte at: L-R er instrumentsporet, L+R er vokalsporet. Ved ganske enkelt å trekke fra eller legge til de to stereokanalene, kan vi altså få instrumental- og vokalsporet i monolyd. OpenHomeKaraokes innebygde DNN-baserte (dyp nevrale nettverk) vokalsplitter bruker AI-algoritme til å dele instrumental- og vokallyd i hvert stereospor uavhengig, noe som resulterer i stereoinstrumental- og vokalspor.
 Stopp splitter
 Start Splitter på nytt
 Vokalsplitteren (som støtter både DNN-basert og stereosubtraksjon) kjører som en separat prosess i bakgrunnen, og genererer instrumental/vokal lydfil for hver sang.
@@ -162,19 +162,19 @@ Start Streamer på nytt
 Dette påvirker kun å spille KTV via nettleseren. Omstart av skjermfangst-og-streaming forbedrer lyd/video-synkronisering, det reduserer også ventetiden mellom serveren og nettleseren.
 Oppdater sanglisten:
 Skann sangkatalogen på nytt
-Du skal bare trenge å gjøre dette hvis du manuelt kopierte filer til nedlastingsmappen mens PiKaraoke kjørte.
+Du skal bare trenge å gjøre dette hvis du manuelt kopierte filer til nedlastingsmappen mens OpenHomeKaraoke kjørte.
 Oppdateringer
 Hvis nedlastinger eller søk sluttet å virke, vil oppdatering av youtube-dl sannsynligvis fikse det. Den nåværende installerte versjonen er:
 Oppdater youtube-dl
-Denne oppdateringslenken ovenfor kan mislykkes hvis du ikke har riktige filtillatelser. Sjekk PiKaraoke-loggen for feil.
+Denne oppdateringslenken ovenfor kan mislykkes hvis du ikke har riktige filtillatelser. Sjekk OpenHomeKaraoke-loggen for feil.
 Skru av
 Ikke bare trekk ut støpselet! Slå alltid av serveren på riktig måte for å unngå datakorrupsjon.
-Avslutt PiKaraoke
+Avslutt OpenHomeKaraoke
 Restart systemet
 Slå av systemet
 Annen
 Utvid Raspberry Pi-filsystemet
-Hvis du nettopp installerte det forhåndsbygde PiKaraoke pi-bildet og SD-kortet ditt er større enn 4 GB, vil du kanskje utvide filsystemet for å utnytte den gjenværende plassen. Du trenger bare å gjøre dette én gang. Dette vil starte systemet på nytt.
+Hvis du nettopp installerte det forhåndsbygde OpenHomeKaraoke pi-bildet og SD-kortet ditt er større enn 4 GB, kan det være lurt å utvide filsystemet for å utnytte den gjenværende plassen. Du trenger bare å gjøre dette én gang. Dette vil starte systemet på nytt.
 Deaktiver admin-modus
 Aktiver admin-modus
 Logg ut
@@ -185,7 +185,7 @@ Skifte språk
 Vennligst velg språk
 Systemspråk
 Gjeldende systemspråk:
-Dette endrer språket til PiKaraoke-backend-systemet som vises på TV-skjermen; dessuten kan hver tilkoblende bruker også endre sitt respektive web-UI-språk i globusknappen i menyen øverst til høyre.
+Dette endrer språket til OpenHomeKaraoke-backend-systemet som vises på TV-skjermen; dessuten kan hver tilkoblende bruker også endre sitt respektive web-UI-språk i globusknappen i menyen øverst til høyre.
 Nedlasting fullført!
 Nedlasting mislyktes!
 Sang lagt til i køen!
@@ -207,3 +207,25 @@ Høy kvalitet
 Legg sangen til sangkøen etter at nedlastingen er fullført
 Last ned undertekster (bare innebygd) på alle språk hvis tilgjengelig
 Nedlasting av videoer av høy kvalitet kan ta veldig lang tid
+Lagre spilleinnstillinger
+Lagre avspillingsinnstillinger for hver sang, dette inkluderer: lydforsinkelse, undertekstforsinkelse og om undertekster skal vises.
+Legg til sang ved å si sangtittelen
+Si sangtittelen og klikk OK!
+Bare HTTPS-nettsteder kan ha tilgang til mikrofon, vil du omdirigere til HTTPS-nettstedet?
+Vennligst gi tillatelse til å få tilgang til mikrofonen!
+Rediger sangnavn:
+Lagre
+Slett denne sangen
+Er du sikker på at du vil slette denne sangen fra biblioteket?
+Be om parameterfeil!
+Trim sangen:
+Juster sangvolumet:
+Starttid:
+Sluttid:
+Originalvolum (dB):
+Kan ikke finne noen sang som samsvarer med "%s".
+Lagt til "%s" i køen.
+Velg sangen(e) du vil legge til:
+ANGRE
+Lukk
+Legg til

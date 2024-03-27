@@ -32,7 +32,7 @@ Stopadh
 Youtube-dl á nuashonrú! Ba cheart go dtógfadh sé nóiméad nó dhó...
 Níl cead agat youtube-dl a nuashonrú
 Níl cead agat dúnadh
-Ag éirí as PiKaraoke anois!
+Ag éirí as OpenHomeKaraoke anois!
 Níl cead agat éirí as
 Córas múchadh anois!
 Níl cead agat dúnadh
@@ -41,7 +41,7 @@ Níl cead agat Atosaigh
 Córas comhad agus córas atosaithe á leathnú anois!
 Ní féidir fs a leathnú ar ghléasanna pi neamh-sú craobh!
 Níl cead agat an córas comhad a athrú
-Conair Youtube-dl gan aimsiú!
+Níor aimsíodh cosán Youtube-dl agus níor éirigh le pip é a shuiteáil!
 Conair VLC gan aimsiú!
 cosán omxplayer gan aimsiú!
 Bealach íoslódála a chruthú:
@@ -49,7 +49,7 @@ Wifi/Líonra nach bhfuil ceangailte. A mhúchadh i 10s...
 Chun amhráin a roghnú, scanadh QR nó ceangail leis
 Le haghaidh taispeáint teilifíse, ceangail le
 Brúigh F chun lánscáileán a scoránú
-Brúigh ESC chun PiKaraoke a scor
+Brúigh ESC chun OpenHomeKaraoke a scor
 Braitheadh ​​mód socraithe RaspiWifiConfig!
 Ceangail gléas/fón cliste eile leis an AP Wifi: '%s'
 Ansin pointeáil a bhrabhsálaí chuig: '%s://%s%s' agus lean na treoracha.
@@ -57,10 +57,10 @@ Suas seo chugainn:
 Arna chur leis ag:
 Anois ag imirt:
 Mód riaracháin ceadaithe!
-Má mhéadaítear moille fuaime, cuirfear níos mó ama ar fáil duit le liricí a léamh roimh an gcéad abairt eile a chanadh.
+Má mhéadaítear moille fuaime, tabharfar níos mó ama duit chun liricí a léamh sula gcanann tú an chéad abairt eile.
 Má laghdaítear an mhoill ar fhotheideal beidh níos mó ama agat chun liricí a léamh sula gcanfaidh tú an chéad abairt eile.
-Tugtar leathchéim ar leath-thón freisin. Is é an t-eatramh is lú a úsáidtear i gceol clasaiceach an Iarthair é, arb ionann é agus an dóú cuid déag d'ochtábh nó leath ton.
-Tá scoilteoir gutha bunaithe ar DNN cumasaithe. Úsáideann PiKaraoke PyTorch (le Facebook) chun líonra néarach domhain a reáchtáil chun fuaim uirlise agus gutha a roinnt i ngach rian as a dtagann fuaim steirió.
+Tugtar leathchéim ar leath-thón freisin. Is é an t-eatramh is lú a úsáidtear i gceol clasaiceach an Iarthair é, arb ionann é agus an dóú cuid déag d’ochtábh nó leath ton.
+Tá scoilteoir gutha bunaithe ar DNN cumasaithe. Úsáideann OpenHomeKaraoke PyTorch (le Facebook) chun líonra néarach domhain a reáchtáil chun fuaim uirlise agus gutha a roinnt i ngach rian as a dtagann fuaim steirió.
 Rialú Imreoir
 Ceol
 Measctha
@@ -105,7 +105,7 @@ Cuir an t-amhrán in eagar
 Bog suas sa scuaine
 Bog síos sa scuaine
 An bhfuil tú cinnte gur mhaith leat a scriosadh as an scuaine
-An bhfuil tú cinnte gur mian leat an scuaine UILE a ghlanadh? Clóscríobh 'OK' chun leanúint ar aghaidh
+An bhfuil tú cinnte gur mian leat an scuaine UILE a ghlanadh?
 Cuir 3 amhrán randamacha leis
 Soiléir ar fad
 Tá an scuaine folamh
@@ -117,12 +117,12 @@ Tá an t-amhrán sa scuaine cheana féin:
 Cuardach/Cuir Nua Leis
 Cuardach
 scuaine
-Cuir cluichí neamh-karaoke san áireamh
+Cuardaigh cluichí karaoke amháin
 Casta
-Clóscríobh amhrán (teideal/ealaíontóir) chun na hamhráin atá ar fáil a chuardach agus cliceáil ‘Queue’ chun é a chur leis an scuaine.
+Clóscríobh amhrán (teideal/ealaíontóir) chun na hamhráin atá ar fáil a chuardach agus cliceáil ar ‘Queue’ chun é a chur leis an scuaine.
 Mura bhfuil an t-amhrán le feiceáil sa roghchlár anuas "Amhráin ar Fáil", cliceáil ar 'Search' chun é a fháil ar Youtube.
 Íoslódáil YouTube go díreach. .
-Cuir leis an scuaine
+Cuir leis an scuaine tar éis íoslódáil
 Cuir fotheidil san áireamh
 Íosluchtaigh
 Ag cuardach YouTube le haghaidh
@@ -133,7 +133,7 @@ Amhráin ar Fáil
 Ar mhaith leat ainm taispeána an duine a úsáideann an gléas seo a athrú? Taispeánfar é seo in aice leis na hamhráin atá i scuaine. Reatha:
 Úsáideoir reatha
 Socruithe
-PiKaraoke
+OpenHomeKaraoke
 An bhfuil tú cinnte gur mhaith leat éirí as?
 An bhfuil tú cinnte gur mhaith leat dúnadh?
 An bhfuil tú cinnte gur mhaith leat a atosú?
@@ -147,34 +147,34 @@ Cuimhne
 Gabháil Scáileáin
 Scoilteoir gutha
 Leagan Youtube-dl (yt-dlp).
-Leagan piKaraoke
+OpenHomeKaraoke leagan
 Ardroghanna Rialaithe
 Mód scoilteoir gutha:
 Úsáid L-R/L+R
 Úsáid DNN
-Tá an dá chainéal steirió (L agus R) ionchódaithe i bhfuaim chaighdeánach MTV sa chaoi is gur: L-R an rian uirlise, is é L+R an rian gutha. Mar sin, tríd an dá chainéal steirió a dhealú nó a chur leis, is féidir linn an rian uirlise agus gutha a fháil i bhfuaim mona. Úsáideann scoilteoir gutha ionsuite DNN (líonra domhain neural) PiKaraoke algartam AI chun fuaim uirlise agus gutha a roinnt i ngach rian steirió go neamhspleách agus rianta steirió uirlise agus gutha mar thoradh air.
+Tá an dá chainéal steirió (L agus R) ionchódaithe i bhfuaim chaighdeánach MTV sa chaoi seo a leanas: Is é L-R an rian uirlise, is é L+R an rian gutha. Mar sin, tríd an dá bhealach steirió a dhealú nó a chur leis, is féidir linn an rian uirlise agus gutha a fháil i bhfuaim mona. Úsáideann scoilteoir gutha ionsuite DNN (líonra domhain néarúil) OpenHomeKaraoke algartam AI chun fuaim uirlise agus gutha a roinnt i ngach rian steirió go neamhspleách agus mar thoradh ar rianta steirió uirlise agus gutha.
 Stop Scoilteoir
 Atosaigh Scoilteoir
 Ritheann an scoilteoir gutha (a thacaíonn le dealú DNN-bhunaithe agus steirió araon) mar phróiseas ar leith sa chúlra, ag giniúint comhad fuaime uirlise / gutha do gach amhrán.
 Athshioncronú fuaime agus físe:
 Stop Streamer
 Atosaigh Streamer
-Ní dhéanann sé seo ach difear do imirt KTV trí bhrabhsálaí gréasáin. Feabhsaítear an sioncrónú fuaime/físeán má atosaítear an scáileán-gabháil-agus-sruthú, laghdaítear an foighne idir an freastalaí agus an brabhsálaí freisin.
+Ní dhéanann sé seo ach difear do imirt KTV trí bhrabhsálaí gréasáin. Feabhsaítear an sioncronú fuaime/físeán má atosaítear an scáileán-gabháil-agus-sruthú, laghdaítear an foighne idir an freastalaí agus an brabhsálaí freisin.
 Athnuaigh an liosta amhrán:
 Athscan eolaire amhrán
-Níor cheart go mbeadh ort é seo a dhéanamh ach amháin má chóipeáil tú comhaid de láimh chuig an eolaire íoslódála agus PiKaraoke ar siúl.
+Níor cheart go mbeadh ort é seo a dhéanamh ach amháin má chóipeáil tú comhaid de láimh chuig an eolaire íoslódála agus OpenHomeKaraoke ar siúl.
 Nuashonruithe
 Mura n-oibríonn íoslódálacha nó cuardaigh ag obair, is dócha go socróidh nuashonrú youtube-dl é. Is é an leagan suiteáilte reatha ná:
 Nuashonraigh youtube-dl
-Seans go dteipfidh ar an nasc nuashonraithe seo thuas mura bhfuil na ceadanna cuí comhaid agat. Seiceáil logáil PiKaraoke le haghaidh earráidí.
+Seans go dteipfidh ar an nasc nuashonraithe seo thuas mura bhfuil cead comhaid chuí agat. Seiceáil logáil OpenHomeKaraoke le haghaidh earráidí.
 Múchadh
 Ná tarraing an breiseán díreach! Dún do fhreastalaí síos i gceart i gcónaí chun éilliú sonraí a sheachaint.
-Scoir PiKaraoke
+Scoir OpenHomeKaraoke
 Córas Atosaigh
-Córas Múchadh
+Córas múchta
 Eile
 Leathnaigh córas comhaid Raspberry Pi
-Má tá tú díreach tar éis an íomhá PiKaraoke pi réamhthógtha a shuiteáil agus go bhfuil do chárta SD níos mó ná 4GB, b'fhéidir gur mhaith leat an córas comhaid a leathnú chun an spás atá fágtha a úsáid. Ní mór duit é seo a dhéanamh ach uair amháin. Atosóidh sé seo an córas.
+Má tá tú díreach tar éis an íomhá pi OpenHomeKaraoke réamhthógtha a shuiteáil agus go bhfuil do chárta SD níos mó ná 4GB, b'fhéidir gur mhaith leat an córas comhaid a leathnú chun an spás atá fágtha a úsáid. Ní mór duit é seo a dhéanamh ach uair amháin. Atosóidh sé seo an córas.
 Díchumasaigh mód riaracháin
 Cumasaigh mód riaracháin
 Logáil Amach
@@ -185,14 +185,14 @@ Athrú Teanga
 Roghnaigh teanga le do thoil
 Teanga an Chórais
 Teanga an chórais reatha:
-Athraíonn sé seo teanga an chórais backend PiKaraoke a thaispeánfar ar scáileán teilifíse; ina theannta sin, is féidir le gach úsáideoir nasctha a dteanga Chomhéadain Gréasáin faoi seach a athrú freisin sa chnaipe cruinne sa roghchlár ar dheis.
+Athraíonn sé seo teanga an chórais backend OpenHomeKaraoke a thaispeánfar ar scáileán na teilifíse; ina theannta sin, is féidir le gach úsáideoir nasctha a dteanga Chomhéadain Gréasáin faoi seach a athrú freisin sa chnaipe cruinne sa roghchlár ar dheis.
 Íosluchtú críochnaithe go rathúil!
 Theip ar an íoslódáil!
 Amhrán curtha leis an scuaine!
 Theip ar scuaine an amhráin!
 Eolas & Socruithe Córais
 Normalú Toirt
-Is minic a bhíonn toirt éagsúil ag amhráin éagsúla. Má dhéantar normalú toirte a chumasú, déanfar <i>ffmpeg</i> ar dtús chun toirt dhomhanda amhráin a ríomh agus chun toirt an imreora a choigeartú go huathoibríoch ionas go gcloisfidh gach amhrán chomh hard céanna.
+Is minic a bhíonn toirt éagsúil ag amhráin éagsúla. Má táthar chun normalú toirte a chumasú, déanfar <i>ffmpeg</i> ar dtús chun toirt dhomhanda amhráin a ríomh agus chun toirt an imreora a choigeartú go huathoibríoch ionas go gcloisfidh gach amhrán chomh hard céanna.
 Leabharlann amhráin a íoslódáil
 Líon iomlán na n-amhrán
 Taispeáin/Folaigh Fotheideal
@@ -207,3 +207,25 @@ Ardchaighdeáin
 Cuir an t-amhrán leis an scuaine amhránaíochta tar éis don íoslódáil a bheith críochnaithe
 Íoslódáil fotheidil (leabaithe amháin) i ngach teanga má tá siad ar fáil
 Seans go dtógfaidh sé am an-fhada físeáin ardchaighdeáin a íoslódáil
+Sábháil Socruithe Súgartha
+Sábháil socruithe súgartha do gach amhrán, áirítear leis seo: moill fuaime, moill ar fhotheideal, agus cibé acu is ceart fotheidil a thaispeáint.
+Cuir amhrán leis trí theideal an amhráin a labhairt
+Labhair teideal an amhráin le do thoil agus cliceáil OK!
+Ní féidir ach le láithreáin ghréasáin HTTPS rochtain a bheith acu ar mhicreafón, ar mhaith leat a atreorú chuig suíomh Gréasáin HTTPS?
+Tabhair cead rochtain a fháil ar an micreafón!
+Cuir Ainm Amhrán in Eagar:
+Sábháil
+Scrios an t-amhrán seo
+An bhfuil tú cinnte gur mhaith leat an t-amhrán seo a scriosadh as an leabharlann?
+Earráid pharaiméadar iarratais!
+Trim an t-amhrán:
+Coigeartaigh toirt an amhráin:
+Am tosaithe:
+Am críochnaithe:
+Bunleabhar (dB):
+Ní féidir amhrán ar bith a mheaitseálann "%s" a aimsiú.
+Cuireadh "%s" sa scuaine.
+Roghnaigh na hamhráin le cur leis:
+UNDO
+Dún
+Cuir

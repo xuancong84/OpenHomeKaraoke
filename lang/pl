@@ -1,72 +1,72 @@
 Polski
 Nieprawidłowe hasło administratora!
 Wylogowano z trybu administratora!
-Dodano losowe trasy %s
+Dodano %s losowych utworów
 Skończyły się piosenki!
-Oczyścił kolejkę!
-Błąd przenoszenia elementu do kolejki: nieprawidłowy argument
+Oczyściłem kolejkę!
+Błąd podczas przenoszenia elementu w kolejce: nieprawidłowy argument
 Pomyślnie przeniesiono element do kolejki:
-Błąd przenoszenia elementu w kolejce:
+Błąd podczas przenoszenia elementu w kolejce:
 Przesunięto w dół w kolejce:
-Błąd przejścia w dół kolejki:
-Awans w kolejce:
-Błąd podczas przesuwania się w kolejce:
+Błąd podczas przesuwania w dół w kolejce:
+Przesunięte w górę w kolejce:
+Błąd podczas przesuwania się w górę w kolejce:
 Usunięto z kolejki:
 Błąd podczas usuwania z kolejki:
 Pobieranie rozpoczęte:
 Po zakończeniu zostanie dodany do kolejki.
 Po zakończeniu pojawi się na liście „dostępnych utworów”.
-Błąd: nie można usunąć tego utworu, ponieważ znajduje się on w bieżącej kolejce:
-Utwór usunięty:
+Błąd: nie można usunąć tego utworu, ponieważ znajduje się w bieżącej kolejce:
+Piosenka usunięta:
 Błąd: nie określono parametru utworu!
-Błąd: nie można edytować tego utworu, ponieważ jest on aktualnie odtwarzany:
+Błąd: nie można edytować tego utworu, ponieważ jest aktualnie odtwarzany:
 Edycja pliku utworu
 Błąd podczas zmiany nazwy pliku: „%s” na „%s”. Nazwa pliku już istnieje.
 Zmieniono nazwę pliku: „%s” na „%s”
-Błąd: Nie podano parametrów nazwy pliku!
+Błąd: nie określono parametrów nazwy pliku!
 Nieznany
 Działanie
 Zatrzymany
  (tylko procesor)
- (GPU włączone)
-Aktualizowanie youtube-dl! Powinno zająć minutę lub dwie...
+ (Włączona karta graficzna)
+Aktualizacja youtube-dl! Powinno zająć minutę lub dwie...
 Nie masz uprawnień do aktualizacji youtube-dl
-Nie masz uprawnień do zamknięcia
-Rzucam teraz PiKaraoke!
-Nie masz uprawnień do rezygnacji
-Zamykanie systemu teraz!
-Nie masz uprawnień do zamknięcia
-Ponowne uruchamianie systemu teraz!
+Nie masz pozwolenia na zamknięcie
+Opuszczam teraz OpenHomeKaraoke!
+Nie masz pozwolenia na rezygnację
+Zamykam system, teraz!
+Nie masz pozwolenia na zamknięcie
+Ponowne uruchomienie systemu teraz!
 Nie masz uprawnień do ponownego uruchomienia
 Rozszerzanie systemu plików i ponowne uruchamianie systemu teraz!
-Nie można rozszerzyć plików FS na urządzeniach innych niż Raspberry Pi!
+Nie można rozszerzyć fs na urządzeniach innych niż Raspberry Pi!
 Nie masz uprawnień do zmiany rozmiaru systemu plików
-Nie znaleziono ścieżki Youtube-dl!
+Nie znaleziono ścieżki Youtube-dl i pip nie mógł jej zainstalować!
 Nie znaleziono ścieżki VLC!
-Nie znaleziono ścieżki omxplayera!
+Nie znaleziono ścieżki omxplayer!
 Tworzenie ścieżki pobierania:
-Brak połączenia Wi-Fi/sieci. Zamknięcie za 10 sekund...
+Wi-Fi/sieć nie jest podłączona. Wyłączenie za 10 s...
 Aby wybrać utwory, zeskanuj kod QR lub połącz się z
-Aby wyświetlać na telewizorze, podłącz do
+Aby wyświetlić telewizor, podłącz do
 Naciśnij F, aby przełączyć na pełny ekran
-Naciśnij ESC, aby wyjść z PiKaraoke
+Naciśnij ESC, aby wyjść z OpenHomeKaraoke
 Wykryto tryb konfiguracji RaspiWifiConfig!
 Podłącz inne urządzenie/smartfon do punktu dostępowego Wi-Fi: „%s”
-Następnie skieruj jego przeglądarkę na: „%s://%s%s” i postępuj zgodnie z instrukcjami.
+Następnie wskaż przeglądarkę na: „%s://%s%s” i postępuj zgodnie z instrukcjami.
 W przyszłym:
 Dodane przez:
-Teraz gra:
+Teraz odtwarzane:
 Tryb administratora przyznany!
-Zwiększenie opóźnienia dźwięku da ci więcej czasu na przeczytanie tekstu przed wyśpiewaniem następnego zdania.
-Zmniejszenie opóźnienia napisów da ci więcej czasu na przeczytanie tekstu przed wyśpiewaniem następnego zdania.
-Półton jest również znany jako półton. Jest to najmniejszy interwał używany w klasycznej muzyce zachodniej, równy dwunastej części oktawy lub pół tonu.
-Rozdzielacz głosu oparty na DNN jest włączony. PiKaraoke używa PyTorch (firmy Facebook) do uruchomienia głębokiej sieci neuronowej w celu rozdzielenia dźwięku instrumentalnego i wokalnego na każdą ścieżkę, co daje dźwięk stereo.
+Zwiększenie opóźnienia dźwięku zapewni więcej czasu na przeczytanie tekstu przed wyśpiewaniem kolejnego zdania.
+Zmniejszenie opóźnienia napisów zapewni więcej czasu na przeczytanie tekstu przed wyśpiewaniem kolejnego zdania.
+Półton jest również nazywany półtonem. Jest to najmniejszy interwał używany w klasycznej muzyce zachodniej, równy dwunastej oktawie lub pół tonu.
+Rozdzielacz wokalu oparty na DNN jest włączony. OpenHomeKaraoke wykorzystuje PyTorch (z Facebooka) do uruchomienia głębokiej sieci neuronowej w celu rozdzielenia dźwięku instrumentalnego i wokalnego w każdej ścieżce, tworząc dźwięk stereo.
 Kontrola gracza
 Muzyka
 Mieszany
 Głos
 Zmień klucz
-W tej chwili nic nie gra.
+Nic nie gra w tej chwili.
 Żaden utwór nie jest w kolejce.
 Ta piosenka nie została dodana przez Ciebie. Czy na pewno chcesz ponownie uruchomić ten utwór?
 Ta piosenka nie została dodana przez Ciebie. Czy na pewno chcesz pominąć ten utwór?
@@ -77,7 +77,7 @@ Dążyć do:
 Opóźnienie dźwięku (s)
 Opóźnienie napisów (s)
 Uruchom ponownie utwór
-Odtwórz/wstrzymaj
+Odtwórz/Wstrzymaj
 Pomiń bieżący utwór
 Ściszanie
 Ustaw głośność
@@ -89,24 +89,24 @@ Zmniejsz opóźnienie dźwięku
 Ustaw opóźnienie dźwięku
 Zwiększ opóźnienie dźwięku
  półtony
-Proszę wpisać swoje imię. To pojawi się obok utworów, które ustawiasz w kolejce z tego urządzenia.
-Piosenka dodana do kolejki:
+Proszę wpisać swoje imię. Pojawi się obok utworów, które umieścisz w kolejce na tym urządzeniu.
+Utwór dodany do kolejki:
 Piosenka już w kolejce:
 Sortowanie według daty
-Sortuj według alfabetycznie
-Dodaj „%s” do kolejki
+Sortuj alfabetycznie
+Dodaj '%s' do kolejki
 Przeglądać
 Posortowane według „Daty”
-Sortowane według „Alfabetycznie”
+Posortowane według „Alfabetycznego”
 piosenki
-wyświetla <b>{start} - {end}</b> {record_name}, w sumie <b>{total}</b> {record_name}
-znaleziono <b>{found}</b> {nazwa_rekordu}, wyświetlanie <b>{start} - {end}</b> {nazwa_rekordu}
+wyświetlanie <b>{start} - {end}</b> {record_name}, łącznie <b>{total</b> {record_name}
+znaleziono <b>{found</b> {record_name}, wyświetlanie <b>{start} - {end</b> {record_name}
 Edytuj piosenkę
-Awansuj w kolejce
-Przesuń w dół w kolejce
+Przejdź w górę w kolejce
+Przejdź w dół w kolejce
 Czy na pewno chcesz usunąć z kolejki
-Czy na pewno chcesz wyczyścić CAŁĄ kolejkę? Wpisz „OK”, aby kontynuować
-Dodaj 3 losowe piosenki
+Czy na pewno chcesz wyczyścić CAŁĄ kolejkę?
+Dodaj 3 losowe utwory
 Wyczyść wszystko
 Kolejka jest pusta
 Kolejka
@@ -117,64 +117,64 @@ Piosenka jest już w kolejce:
 Wyszukaj / Dodaj nowy
 Szukaj
 Kolejka
-Uwzględnij mecze inne niż karaoke
+Wyszukaj tylko mecze karaoke
 Zaawansowany
-Wpisz utwór (tytuł/artystę), aby wyszukać dostępne utwory i kliknij „Kolejka”, aby dodać go do kolejki.
-Jeśli utworu nie ma na liście rozwijanej „Dostępne utwory”, kliknij „Wyszukaj”, aby znaleźć go w serwisie YouTube.
-Bezpośredni adres URL do pobrania z YouTube:
-Dodać do kolejki
+Wpisz utwór (tytuł/wykonawcę), aby wyszukać dostępne utwory i kliknij „Kolejka”, aby dodać go do kolejki.
+Jeśli utwór nie pojawia się na liście „Dostępne utwory”, kliknij „Wyszukaj”, aby znaleźć go w serwisie YouTube.
+Bezpośredni adres URL YouTube do pobrania:
+Dodaj do kolejki po pobraniu
 Dołącz napisy
 Pobierać
 Wyszukiwanie w YouTube
 Wyniki wyszukiwania dla
-Kliknij listę rozwijaną, aby wyświetlić więcej wyników
+Kliknij menu rozwijane, aby wyświetlić więcej wyników
 Połączyć:
 Dostępne utwory
-Czy chcesz zmienić wyświetlaną nazwę osoby korzystającej z tego urządzenia? To pojawi się obok utworów w kolejce. Aktualny:
+Czy chcesz zmienić wyświetlaną nazwę osoby korzystającej z tego urządzenia? Pojawi się obok utworów znajdujących się w kolejce. Aktualny:
 Aktualny użytkownik
 Ustawienia
-PiKaraoke
+OtwórzHomeKaraoke
 Czy na pewno chcesz zrezygnować?
 Czy na pewno chcesz zamknąć?
 Czy na pewno chcesz uruchomić ponownie?
-Czy na pewno chcesz teraz zaktualizować Youtube-dl? Bieżące i oczekujące pobieranie może się nie powieść.
+Czy na pewno chcesz teraz zaktualizować Youtube-dl? Bieżące i oczekujące pobieranie może zakończyć się niepowodzeniem.
 Czy na pewno chcesz rozszerzyć system plików? Spowoduje to ponowne uruchomienie Raspberry Pi.
 Informacja
-Przydatny kod QR adresu URL do udostępnienia znajomemu:
+Przydatny kod QR URL do udostępnienia znajomym:
 system operacyjny
 Użycie dysku
 Pamięć
 Zrzut ekranu
 Rozdzielacz wokalny
 Wersja Youtube-dl (yt-dlp).
-Wersja PiKaraoke
+Wersja OpenHomeKaraoke
 Zaawansowane opcje sterowania
 Tryb rozdzielacza wokalu:
-Użyj L-P/L+R
-Użyj DNN
-Standardowy dźwięk MTV ma dwa kanały stereo (L i R) zakodowane w taki sposób, że: L-R to ścieżka instrumentalna, L+R to ścieżka wokalna. W ten sposób, po prostu odejmując lub dodając dwa kanały stereo, możemy uzyskać ścieżkę instrumentalną i wokalną w dźwięku mono. Wbudowany rozdzielacz wokalny PiKaraoke oparty na DNN (głębokiej sieci neuronowej) wykorzystuje algorytm AI do niezależnego rozdzielania dźwięku instrumentalnego i wokalnego na każdą ścieżkę stereo, co daje stereofoniczne ścieżki instrumentalne i wokalne.
-Zatrzymaj Splitter
+Użyj L-R/L+R
+Skorzystaj z DNN
+Standardowy dźwięk MTV ma dwa kanały stereo (L i R) zakodowane w taki sposób, że: L-R to ścieżka instrumentu, L+R to ścieżka wokalu. Zatem po prostu odejmując lub dodając dwa kanały stereo, możemy uzyskać ścieżkę instrumentalną i wokalną w dźwięku monofonicznym. Wbudowany w OpenHomeKaraoke rozdzielacz wokalu oparty na DNN (głębokiej sieci neuronowej) wykorzystuje algorytm AI do niezależnego dzielenia dźwięku instrumentalnego i wokalnego w każdej ścieżce stereo, co daje stereofoniczne ścieżki instrumentalne i wokalne.
+Zatrzymaj Splittera
 Uruchom ponownie Splitter
-Rozdzielacz wokalny (obsługujący zarówno odejmowanie oparte na DNN, jak i odejmowanie stereo) działa jako osobny proces w tle, generując instrumentalny/wokalny plik audio dla każdego utworu.
-Ponownie zsynchronizuj audio i wideo:
+Rozdzielacz wokalu (obsługujący zarówno odejmowanie oparte na DNN, jak i stereo) działa jako oddzielny proces w tle, generując plik audio instrumentalny/wokalny dla każdego utworu.
+Ponowna synchronizacja dźwięku i obrazu:
 Zatrzymaj Streamera
 Uruchom ponownie Streamera
-Dotyczy to tylko odtwarzania KTV przez przeglądarkę internetową. Ponowne uruchomienie przechwytywania ekranu i przesyłania strumieniowego poprawia synchronizację audio/wideo, zmniejsza również opóźnienie między serwerem a przeglądarką.
+Dotyczy to wyłącznie odtwarzania KTV za pośrednictwem przeglądarki internetowej. Ponowne uruchomienie przechwytywania i przesyłania strumieniowego ekranu poprawia synchronizację audio/wideo, a także zmniejsza opóźnienie między serwerem a przeglądarką.
 Odśwież listę utworów:
 Przeskanuj ponownie katalog utworów
-Powinieneś to zrobić tylko wtedy, gdy ręcznie skopiowałeś pliki do katalogu pobierania, gdy PiKaraoke był uruchomiony.
+Powinieneś to zrobić tylko wtedy, gdy ręcznie skopiowałeś pliki do katalogu pobierania podczas działania OpenHomeKaraoke.
 Aktualizacje
-Jeśli pobieranie lub wyszukiwanie przestało działać, aktualizacja youtube-dl prawdopodobnie to naprawi. Aktualnie zainstalowana wersja to:
+Jeśli pobieranie lub wyszukiwanie przestanie działać, aktualizacja youtube-dl prawdopodobnie to naprawi. Aktualnie zainstalowana wersja to:
 Zaktualizuj youtube-dl
-Powyższy link do aktualizacji może się nie powieść, jeśli nie masz odpowiednich uprawnień do pliku. Sprawdź dziennik PiKaraoke pod kątem błędów.
+Powyższy link do aktualizacji może się nie powieść, jeśli nie masz odpowiednich uprawnień do plików. Sprawdź dziennik OpenHomeKaraoke pod kątem błędów.
 Zamknięcie
-Nie wystarczy wyciągnąć wtyczkę! Zawsze prawidłowo zamykaj serwer, aby uniknąć uszkodzenia danych.
-Zrezygnuj z PiKaraoke
+Nie tylko wyciągaj wtyczkę! Zawsze prawidłowo zamykaj serwer, aby uniknąć uszkodzenia danych.
+Zakończ OpenHomeKaraoke
 Uruchom ponownie system
-System zamykania
+System wyłączania
 Inny
 Rozwiń system plików Raspberry Pi
-Jeśli właśnie zainstalowałeś gotowy obraz PiKaraoke pi, a twoja karta SD jest większa niż 4 GB, możesz rozszerzyć system plików, aby wykorzystać pozostałą przestrzeń. Musisz to zrobić tylko raz. Spowoduje to ponowne uruchomienie systemu.
+Jeśli właśnie zainstalowałeś gotowy obraz pi OpenHomeKaraoke, a Twoja karta SD jest większa niż 4 GB, możesz rozszerzyć system plików, aby wykorzystać pozostałe miejsce. Wystarczy to zrobić tylko raz. Spowoduje to ponowne uruchomienie systemu.
 Wyłącz tryb administratora
 Włącz tryb administratora
 Wyloguj
@@ -182,28 +182,50 @@ Zaloguj sie
 Informacja o systemie
 Dom
 Zmień język
-Wybierz język
-Język systemowy
-Bieżący język systemu:
-Zmienia to język systemu zaplecza PiKaraoke, który jest wyświetlany na ekranie telewizora; ponadto każdy łączący się użytkownik może również zmienić swój język interfejsu internetowego za pomocą przycisku kuli ziemskiej w prawym górnym menu.
+Proszę wybrać język
+Język systemu
+Aktualny język systemu:
+Spowoduje to zmianę języka systemu zaplecza OpenHomeKaraoke wyświetlanego na ekranie telewizora; co więcej, każdy łączący się użytkownik może również zmienić swój język interfejsu WWW za pomocą przycisku kuli ziemskiej w prawym górnym menu.
 Pobieranie zakończone pomyślnie!
 Pobieranie nie udane!
 Piosenka dodana do kolejki!
-Nie udało się umieścić utworu w kolejce!
+Nie udało się ustawić utworu w kolejce!
 Informacje o systemie i ustawienia
-Normalizacja głośności
-Różne utwory często mają różną głośność. Włączenie normalizacji głośności najpierw uruchomi <i>ffmpeg</i>, aby obliczyć globalną głośność utworu i automatycznie dostosować głośność odtwarzacza, aby każdy utwór brzmiał równie głośno.
+Normalizacja objętości
+Różne utwory często mają różną głośność. Włączenie normalizacji głośności spowoduje najpierw uruchomienie <i>ffmpeg</i> w celu obliczenia globalnej głośności utworu i automatyczne dostosowanie głośności odtwarzacza, tak aby każdy utwór brzmiał równie głośno.
 Ścieżka pobierania biblioteki utworów
-Całkowita liczba utworów
+Łączna liczba utworów
 Pokaż/ukryj napisy
 Zmień prędkość
-Możesz śpiewać piosenkę szybciej lub wolniej, zmieniając prędkość odtwarzania w zakresie od 0,8x do 1,2x za pomocą paska prędkości; w przypadku innej prędkości odtwarzania kliknij wartość prędkości, aby ją zmienić.
+Możesz śpiewać utwór szybciej lub wolniej, zmieniając prędkość odtwarzania w zakresie od 0,8x do 1,2x za pomocą paska prędkości; aby wybrać inną prędkość odtwarzania, kliknij wartość prędkości, którą chcesz zmienić.
 Kliknij, aby zresetować prędkość odtwarzania do 1x
 Kliknij, aby ustawić prędkość odtwarzania
-Kliknij, aby zresetować tonację/ton
+Kliknij, aby zresetować tonację/skok
 Przycisk reset
 Zresetuj prędkość
 Wysoka jakość
-Dodaj utwór do kolejki śpiewania po zakończeniu pobierania
+Po zakończeniu pobierania dodaj utwór do kolejki odtwarzania
 Pobierz napisy (tylko osadzone) we wszystkich językach, jeśli są dostępne
 Pobieranie filmów wysokiej jakości może zająć bardzo dużo czasu
+Zapisz ustawienia odtwarzania
+Zapisz ustawienia odtwarzania dla każdego utworu, w tym: opóźnienie dźwięku, opóźnienie napisów i wyświetlanie napisów.
+Dodaj utwór, wypowiadając jego tytuł
+Wypowiedz tytuł utworu i kliknij OK!
+Tylko strony HTTPS mogą mieć dostęp do mikrofonu. Czy chcesz przekierować na stronę HTTPS?
+Proszę o zezwolenie na dostęp do mikrofonu!
+Edytuj nazwę utworu:
+Ratować
+Usuń tę piosenkę
+Czy na pewno chcesz usunąć ten utwór z biblioteki?
+Żądaj błędu parametru!
+Przytnij piosenkę:
+Dostosuj głośność utworu:
+Czas rozpoczęcia:
+Koniec czasu:
+Oryginalna głośność (dB):
+Nie można znaleźć żadnego utworu pasującego do „%s”.
+Dodano „%s” do kolejki.
+Wybierz utwory, które chcesz dodać:
+COFNIJ
+Zamknąć
+Dodać

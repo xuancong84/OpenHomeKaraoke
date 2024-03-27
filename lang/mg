@@ -32,7 +32,7 @@ nitsahatra
 Fanavaozana ny youtube-dl! Tokony haharitra iray na roa minitra...
 Tsy manana alalana hanavao ny youtube-dl ianao
 Tsy manana alalana hanakatona ianao
-Miala amin'ny PiKaraoke izao!
+Miala amin'ny OpenHomeKaraoke izao!
 Tsy manana alalana hiala ianao
 Atsaharo ny rafitra izao!
 Tsy manana alalana hanakatona ianao
@@ -41,26 +41,26 @@ Tsy manana fahazoan-dàlana hamerenana indray ianao
 Manitatra ny rafi-drakitra sy ny rafitra rebooting izao!
 Tsy afaka manitatra fs amin'ny fitaovana tsy misy raspberry pi!
 Tsy manana alalana hanova habe ny rafi-drakitra ianao
-Tsy hita ny lalana Youtube-dl!
+Tsy hita ny lalana Youtube-dl ary tsy nahavita nametraka azy ny pip!
 Tsy hita ny lalana VLC!
 tsy hita ny lalana omxplayer!
 Mamorona lalana fampidinana:
-Wifi/Network tsy mifandray. Nakatona tao anatin'ny 10...
+Wifi/Network tsy mifandray. Nakatona afaka 10...
 Raha hifidy hira, scan QR na mifandray amin'ny
 Ho an'ny fahitalavitra, mifandray amin'ny
-Tsindrio F raha te hanova ny efijery manontolo
-Tsindrio ny ESC raha hiala amin'ny PiKaraoke
+Tsindrio F raha te hanova ny efijery feno
+Tsindrio ny ESC raha hiala amin'ny OpenHomeKaraoke
 Hita ny fomba fanamboarana RaspiWifiConfig!
 Mampifandray fitaovana/smartphone hafa amin'ny Wifi AP: '%s'
-Avy eo atoroy ny mpitety azy amin'ny: '%s://%s%s' ary araho ny toromarika.
+Avy eo, araho amin'ny: '%s://%s%s' ary araho ny torolalana.
 Manaraka:
 Nampian'i:
 Milalao izao:
 Navela ny fomba Admin!
 Ny fanemorana ny feo dia hanome anao fotoana bebe kokoa hamakiana tononkira alohan'ny hihira ny fehezanteny manaraka.
-Ny fampihenana ny fahatarana ny dikanteny dia hanome anao fotoana bebe kokoa hamakiana tononkira alohan'ny hihira ny fehezanteny manaraka.
+Ny fampihenana ny fahatarana amin'ny dikanteny dia hanome anao fotoana bebe kokoa hamakiana tononkira alohan'ny hihira ny fehezanteny manaraka.
 Ny semitone dia fantatra koa amin'ny hoe antsasaky ny dingana. Io no elanelana kely indrindra ampiasaina amin'ny mozika tandrefana klasika, mitovy amin'ny ampahafolon'ny octave na antsasaky ny tonony.
-Ny mpizara feo mifototra amin'ny DNN dia alefa. PiKaraoke dia mampiasa PyTorch (avy amin'ny Facebook) mba hampandehanana tambajotra neural lalina mba hampizarazarana ny feon-javamaneno sy feo amin'ny lalana tsirairay ka miteraka feo stereo.
+Ny mpizara vocal mifototra amin'ny DNN dia alefa. OpenHomeKaraoke dia mampiasa PyTorch (avy amin'ny Facebook) mba hampandehanana tambajotra neural lalina mba hampizarazara ny feon-javamaneno sy feo amin'ny lalana tsirairay ka miteraka feo stereo.
 Fanaraha-maso ny mpilalao
 MOZIKA
 mifangaro
@@ -105,7 +105,7 @@ Ahitsio hira
 Miakara amin'ny filaharana
 Midina amin'ny filaharana
 Tena te-hamafa amin'ny filaharana ve ianao
-Tena te-hamafa ny filaharana TONTOLO ve ianao? Soraty ny 'OK' raha hanohy
+Tena te-hamafa ny filaharana TONTOLO ve ianao?
 Ampio hira 3 kisendrasendra
 Fafao daholo
 Foana ny filaharana
@@ -117,12 +117,12 @@ Efa eo amin'ny filaharana ny hira:
 Fikarohana / Hanampy Vaovao
 karohy
 Filaharana
-Ampidiro lalao tsy karaoke
+Mitadiava lalao Karaoke ihany
 Advanced
 Manorata hira (lohateny/mpanakanto) hikaroka ireo hira misy ary tsindrio ny 'Filaharana' hampidirana azy amin'ny filaharana.
 Raha toa ka tsy hita ao amin'ny fidina "Hira misy" ilay hira, tsindrio ny 'Karoka' hahitana azy ao amin'ny Youtube.
 Misintona mivantana ny URL YouTube:
-Ampio amin'ny filaharana
+Ampio amin'ny filaharana aorian'ny fampidinana
 Asio dikanteny
 DOWNLOAD
 Mitady YouTube
@@ -133,12 +133,12 @@ Hira misy
 Te hanova ny anaran'ny olona mampiasa an'io fitaovana io ve ianao? Izany dia hiseho eo akaikin'ny hira nilahatra. ankehitriny:
 Mpampiasa ankehitriny
 Fikirana
-PiKaraoke
+OpenHomeKaraoke
 Tena te hiala ve ianao?
-Tena te hikatona ve ianao?
+Tena te hikatona tokoa ve ianao?
 Tena te hamerenana ve ianao?
 Tena te hanavao ny Youtube-dl ve ianao izao? Mety tsy hahomby ny fampidinana ankehitriny sy miandry.
-Tena te hanitatra ny rafi-drakitra ve ianao? Izany dia hamerina ny raspberry pi anao.
+Tena te-hanitatra ny rafi-drakitra ve ianao? Izany dia hamerina ny raspberry pi anao.
 Information
 Kaody QR URL azo zaraina amin'ny namana iray:
 diritti
@@ -147,12 +147,12 @@ fahatsiarovana
 Fakan-tsary
 Vocal Splitter
 Youtube-dl (yt-dlp) version
-Version PiKaraoke
+OpenHomeKaraoke version
 Advanced Control Options
 Fomba fizarazarana feo:
 Ampiasao ny L-R/L+R
 Ampiasao ny DNS
-Ny feo MTV mahazatra dia manana fantsona stereo roa (L sy R) voahodina amin'ny fomba toy izao: L-R ny làlam-pitaovana, L+R ny feon-kira. Noho izany, amin'ny alàlan'ny fanalana na fampidirana ireo fantsona stereo roa, dia afaka mahazo ny mozika sy ny feo amin'ny feo mono. Ny mpizara feo miorina ao amin'ny DNN (tambajotra neural lalina) an'i PiKaraoke dia mampiasa algorithm AI mba hanasarahana ny feo instrumental sy feo ao amin'ny làlam-peo stereo tsirairay tsy miankina ka miteraka làlam-peo sy fitaovana stereo.
+Ny feo MTV mahazatra dia manana fantsona stereo roa (L sy R) voahodina amin'ny fomba toy izao: L-R ny làlam-pitaovana, L+R ny feon-kira. Noho izany, amin'ny alàlan'ny fanalana na fampidirana ireo fantsona stereo roa, dia afaka mahazo ny mozika sy ny feo amin'ny feo mono. OpenHomeKaraoke's naorina-in DNN-monina (tambajotra neural lalina) vocal splitter dia mampiasa AI algorithm mba hanasaraka ny zavamaneno sy ny feo ao amin'ny stereo hira tsirairay tsy miankina ka miteraka stereo instrumental sy feo.
 Atsaharo ny Splitter
 Avereno indray ny Splitter
 Ny mpizara vocal (izay manohana ny DNN-based sy ny stereo deduction) dia mandeha ho toy ny dingana mitokana any ambadika, mamorona rakitra an-peo / feo ho an'ny hira tsirairay.
@@ -162,19 +162,19 @@ Avereno indray ny Streamer
 Izany dia misy fiantraikany amin'ny filalaovana KTV amin'ny alàlan'ny navigateur web ihany. Ny famerenana indray ny fakan-tsary-ary-streaming dia manatsara ny fampifanarahana feo/video, mampihena ihany koa ny fahatarana eo amin'ny mpizara sy ny navigateur.
 Havaozy ny lisitry ny hira:
 Rescan lahatahiry
-Mila manao izany ianao raha toa ka mandika ny rakitra amin'ny tananao amin'ny lahatahiry fampidinana raha mbola mandeha ny PiKaraoke.
+Mila manao izany ianao raha toa ka mandika ny rakitra amin'ny tananao amin'ny lahatahiry fampidinana raha mbola mandeha ny OpenHomeKaraoke.
 vaovao farany
 Raha tsy miasa intsony ny fampidinana na fikarohana dia mety hanamboatra izany ny fanavaozana ny youtube-dl. Ny kinova napetraka ankehitriny dia:
 Fanavaozana ny youtube-dl
-Ity rohy fanavaozana etsy ambony ity dia mety tsy hahomby raha tsy manana fahazoan-dàlana mety ianao. Jereo ny diarin'ny PiKaraoke raha misy hadisoana.
+Ity rohy fanavaozana etsy ambony ity dia mety tsy hahomby raha tsy manana fahazoan-dàlana mety ianao. Jereo ny log OpenHomeKaraoke raha misy lesoka.
 Hidio
 Aza misintona fotsiny ny plug! Akatona tsara foana ny mpizara anao mba hisorohana ny kolikoly angona.
-Atsaharo ny PiKaraoke
+Atsaharo ny OpenHomeKaraoke
 Reboot System
 Rafitra fanakatonana
 Hafa
 Manitatra Raspberry Pi fichiersystem
-Raha vao nametraka ny sary PiKaraoke pi efa namboarinao ianao ary lehibe noho ny 4GB ny karatra SD-nao, dia azonao atao ny manitatra ny rafi-drakitra mba hampiasana ny habaka sisa. Indray mandeha ihany ianao no mila manao izany. Izany dia hamerina ny rafitra.
+Raha vao nametraka ny sary OpenHomeKaraoke pi efa namboarinao ianao ary lehibe noho ny 4GB ny karatra SD-nao, dia azonao atao ny manitatra ny rafi-drakitra mba hampiasana ny habaka sisa. Indray mandeha ihany ianao no mila manao izany. Izany dia hamerina ny rafitra.
 Atsaharo ny fomba admin
 Alefaso ny fomba admin
 miala
@@ -185,7 +185,7 @@ Hanova fiteny
 Mifidiana fiteny azafady
 System Language
 Fiteny rafitra ankehitriny:
-Izany dia manova ny fitenin'ny rafitra backend PiKaraoke izay aseho amin'ny efijery fahitalavitra; Ankoatra izany, ny mpampiasa mifandray tsirairay dia afaka manova ny fitenin'ny Web UI tsirairay ao amin'ny bokotra globe ao amin'ny menio havanana.
+Izany dia manova ny fitenin'ny rafitra backend OpenHomeKaraoke izay aseho amin'ny efijery fahitalavitra; Ankoatra izany, ny mpampiasa mifandray tsirairay dia afaka manova ny fitenin'ny Web UI tsirairay ao amin'ny bokotra globe ao amin'ny menio havanana.
 Vita soa aman-tsara ny fandefasana!
 Tsy nahomby ny fampidinana!
 Hira nampidirina amin'ny filaharana!
@@ -207,3 +207,25 @@ Kalitao avo
 Ampio ny hira amin'ny filaharana mihira rehefa vita ny fampidinana
 Misintona dikanteny (ampidirina ihany) amin'ny fiteny rehetra raha misy
 Mety haharitra ela ny fampidinana horonan-tsary avo lenta
+Save Play Settings
+Tehirizo ny firafitry ny filalaovana ho an'ny hira tsirairay, ao anatin'izany ny: fahatarana feo, fahatarana ny dikanteny, ary raha hampiseho dikanteny.
+Ampio hira amin'ny fitenenana ny lohatenin'ny hira
+Mba lazao ny lohatenin'ny hira dia tsindrio OK!
+Ny tranokala HTTPS ihany no afaka miditra amin'ny mikrô, te-hivily mankany amin'ny tranokala HTTPS ve ianao?
+Mba omeo alalana hiditra mikrofona!
+Ahitsio ny anaran-kira:
+afa-tsy
+Fafao ity hira ity
+Tena te-hamafa ity hira ity ao amin'ny tranomboky ve ianao?
+Mangataka hadisoana parameter!
+Tapaho ny hira:
+Ahitsio ny feon-kira:
+Fotoana fanombohana:
+Ora farany:
+Boky voalohany (dB):
+Tsy mahita hira mifanaraka amin'ny "%s".
+Nampiana "%s" tamin'ny filaharana.
+Fidio azafady ny hira ampiana:
+Ravao
+AKAIKY
+hametraka

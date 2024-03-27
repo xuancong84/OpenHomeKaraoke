@@ -32,7 +32,7 @@ Ayima
 Kusintha youtube-dl! Zingatenge miniti imodzi kapena ziwiri...
 Mulibe chilolezo chosinthira youtube-dl
 Mulibe chilolezo chotseka
-Kusiya PiKaraoke tsopano!
+Kusiya OpenHomeKaraoke tsopano!
 Mulibe chilolezo choti musiye
 Kuyimitsa dongosolo tsopano!
 Mulibe chilolezo chotseka
@@ -41,7 +41,7 @@ Mulibe chilolezo choyambitsanso
 Kukulitsa mafayilo amafayilo ndikuyambiranso dongosolo tsopano!
 Sitingathe kukulitsa ma fs pazida zopanda raspberry pi!
 Mulibe chilolezo chosinthira kukula kwa fayilo
-Njira ya Youtube-dl sinapezeke!
+Njira ya Youtube-dl sinapezeke ndipo pip yalephera kuyiyika!
 Njira ya VLC sinapezeke!
 njira ya omxplayer sinapezeke!
 Kupanga njira yotsitsa:
@@ -49,7 +49,7 @@ Wifi/Network sinalumikizidwe. Kutseka mu 10s ...
 Posankha nyimbo, sankhani QR kapena gwirizanitsani
 Kwa chiwonetsero cha TV, lumikizani ku
 Dinani F kuti musinthe skrini yonse
-Dinani ESC kuti musiye PiKaraoke
+Dinani ESC kuti musiye OpenHomeKaraoke
 Kukhazikitsa kwa RaspiWifiConfig kwapezeka!
 Lumikizani chipangizo china/smartphone ku Wifi AP: '%s'
 Kenako lozani msakatuli wake ku: '%s://%s%s' ndikutsatira malangizowo.
@@ -60,7 +60,7 @@ Kuwongolera kwaperekedwa!
 Kuchulukitsa kuchedwa kwamawu kukupatsani nthawi yochulukirapo yowerengera mawu musanayimbe chiganizo chotsatira.
 Kuchepetsa kuchedwa kwa mawu ang'onoang'ono kumakupatsani nthawi yochulukirapo yowerengera mawu musanayimbe chiganizo chotsatira.
 Semitone imadziwikanso ngati theka-sitepe. Ndi nthawi yaying'ono kwambiri yomwe imagwiritsidwa ntchito mu nyimbo zachikale zaku Western, zofanana ndi khumi ndi ziwiri za octave kapena theka la toni.
-DNN-based vocal splitter ndiwoyatsidwa. PiKaraoke imagwiritsa ntchito PyTorch (yolemba Facebook) kuyendetsa netiweki yakuya ya neural kuti igawanitse phokoso la zida ndi mawu munyimbo iliyonse zomwe zimapangitsa kuti stereo azimveka.
+DNN-based vocal splitter ndiwoyatsidwa. OpenHomeKaraoke imagwiritsa ntchito PyTorch (yolemba Facebook) kuyendetsa netiweki yakuya ya neural kuti igawanitse mawu a zida ndi mawu mu nyimbo iliyonse kuti imveke bwino.
 Player Control
 Nyimbo
 Zosakanizidwa
@@ -105,7 +105,7 @@ Sinthani nyimbo
 Kwerani mmwamba pamzere
 Yendani pansi pamzere
 Mukutsimikiza kuti mukufuna kufufuta pamzere
-Mukutsimikiza kuti mukufuna kuchotsa pamzere WONSE? Lembani 'Chabwino' kuti mupitirize
+Mukutsimikiza kuti mukufuna kuchotsa pamzere WONSE?
 Onjezani nyimbo 3 mwachisawawa
 Chotsani zonse
 Mzere mulibe
@@ -117,12 +117,12 @@ Nyimbo ili kale pamzere:
 Sakani / Onjezani Chatsopano
 Sakani
 Mzere
-Phatikizani machesi omwe si a karaoke
+Sakani machesi a Karaoke okha
 Zapamwamba
-Lembani nyimbo (mutu / wojambula) kufufuza nyimbo zomwe zilipo ndikudina 'Mzere' kuti muwonjezere pamzere.
+Lembani nyimbo (mutu/wojambula) kufufuza nyimbo zomwe zilipo ndikudina 'Mzere' kuti muwonjezere pamzere.
 Ngati nyimboyo sikuwoneka mu "Nyimbo Zomwe Zilipo", dinani 'Sakani' kuti mupeze pa Youtube.
 Tsitsani mwachindunji ulalo wa YouTube:
-Onjezani pamzere
+Onjezani pamzere mukatsitsa
 Phatikizani mawu ang'onoang'ono
 Tsitsani
 Kusaka pa YouTube
@@ -133,7 +133,7 @@ Nyimbo Zopezeka
 Kodi mukufuna kusintha dzina la munthu amene akugwiritsa ntchito chipangizochi? Izi zidzawonekera pafupi ndi nyimbo zomwe zili pamzere. Panopa:
 Wogwiritsa ntchito pano
 Zokonda
-PiKaraoke
+OpenHomeKaraoke
 Mukutsimikiza kuti mukufuna kusiya?
 Mukutsimikiza kuti mukufuna kutseka?
 Kodi mukutsimikiza kuti mukufuna kuyambitsanso?
@@ -147,34 +147,34 @@ Memory
 Screen Jambulani
 Vocal Splitter
 Mtundu wa Youtube-dl (yt-dlp).
-Mtundu wa PiKaraoke
+Mtundu wa OpenHomeKaraoke
 MwaukadauloZida Control Mungasankhe
 Vocal splitter mode:
 Gwiritsani ntchito L-R/L+R
 Gwiritsani ntchito DNN
-Nyimbo zomveka za MTV zili ndi ma stereo awiri (L ndi R) osungidwa m'njira yakuti: L-R ndi nyimbo ya chida, L+R ndi nyimbo. Chifukwa chake, pongochotsa kapena kuwonjezera njira ziwiri za stereo, titha kupeza nyimbo yoyimba ndi mawu mu mawu a mono. PiKaraoke yomangidwa mu DNN-based (deep neural network) vocal splitter imagwiritsa ntchito algorithm ya AI kugawaniza zida ndi mawu mu stereo iliyonse mosadalira zomwe zimapangitsa kuti nyimbo za stereo ziziyimbidwa ndi mawu.
+Nyimbo zomveka za MTV zili ndi ma stereo awiri (L ndi R) osungidwa m'njira yakuti: L-R ndi nyimbo ya chida, L+R ndi nyimbo. Chifukwa chake, pongochotsa kapena kuwonjezera njira ziwiri za stereo, titha kupeza nyimbo yoyimba ndi mawu mu mawu a mono. OpenHomeKaraoke's yomangidwa mu DNN-based (deep neural network) vocal splitter imagwiritsa ntchito AI algorithm kugawaniza zida ndi mawu mu stereo iliyonse mosadalira zomwe zimapangitsa kuti nyimbo za stereo zikhale zoyimba komanso zamawu.
 Imitsani Splitter
 Yambitsaninso Splitter
 Chogawa mawu (chomwe chimathandizira kuchotsera kwa DNN ndi stereo) chimayenda ngati njira yosiyana kumbuyo, ndikupanga fayilo yoyimba / mawu panyimbo iliyonse.
 Lumikizaninso mawu ndi makanema:
 Imani Streamer
 Yambitsaninso Streamer
-Izi zimangokhudza kusewera KTV kudzera pa msakatuli. Kuyambitsanso kujambula-kujambula-ndi-kusuntha kumathandizira kugwirizanitsa ma audio / makanema, kumachepetsanso kuchedwa pakati pa seva ndi msakatuli.
+Izi zimangokhudza kusewera KTV kudzera pa msakatuli. Kuyambitsanso kujambula-kujambula-ndi-kutsitsa kumapangitsa kuti ma audio/kanema azilumikizana, kumachepetsanso kuchedwa pakati pa seva ndi msakatuli.
 Tsitsaninso mndandanda wanyimbo:
 Yambitsaninso chikwatu cha nyimbo
-Muyenera kungochita izi ngati mutakopera pamanja mafayilo kumalo otsitsa pomwe PiKaraoke ikugwira ntchito.
+Muyenera kungochita izi ngati mutakopera pamanja mafayilo kumalo otsitsa pomwe OpenHomeKaraoke ikugwira ntchito.
 Zosintha
 Ngati kutsitsa kapena kusaka kwasiya kugwira ntchito, kukonzanso youtube-dl kumatha kukonza. Mtundu womwe wakhazikitsidwa pano ndi:
 Sinthani youtube-dl
-Ulalo wosinthawu womwe uli pamwambapa ukhoza kulephera ngati mulibe zilolezo zoyenera zamafayilo. Onani chipika cha PiKaraoke kuti muwone zolakwika.
+Ulalo wosinthawu womwe uli pamwambapa ukhoza kulephera ngati mulibe zilolezo zoyenera zamafayilo. Onani chipika cha OpenHomeKaraoke cha zolakwika.
 Tsekani
 Osangokoka pulagi! Nthawi zonse muzitseka seva yanu moyenera kuti mupewe kuwonongeka kwa data.
-Siyani PiKaraoke
+Siyani OpenHomeKaraoke
 Yambitsaninso System
 Shutdown System
 Zina
 Wonjezerani mafayilo a Raspberry Pi
-Ngati mwangoyikapo chithunzi cha PiKaraoke pi ndipo khadi yanu ya SD ndi yayikulu kuposa 4GB, mungafune kukulitsa fayilo kuti mugwiritse ntchito malo otsalawo. Muyenera kuchita izi kamodzi kokha. Izi zidzayambitsanso dongosolo.
+Ngati mwangoyikapo chithunzi cha OpenHomeKaraoke pi ndipo khadi yanu ya SD ndi yokulirapo kuposa 4GB, mungafune kukulitsa fayilo kuti mugwiritse ntchito malo otsalawo. Muyenera kuchita izi kamodzi kokha. Izi zidzayambitsanso dongosolo.
 Letsani mawonekedwe a admin
 Yambitsani mtundu wa admin
 tuluka
@@ -185,7 +185,7 @@ Sinthani Chinenero
 Chonde sankhani chilankhulo
 Chinenero Chadongosolo
 Chilankhulo chamakono:
-Izi zimasintha chilankhulo cha PiKaraoke backend system yomwe imawonetsedwa pa TV; Komanso, wogwiritsa ntchito aliyense wolumikizira amathanso kusintha chilankhulo chawo cha Web UI pa batani lapadziko lonse lapansi patsamba lakumanja.
+Izi zimasintha chilankhulo cha OpenHomeKaraoke backend system yomwe imawonetsedwa pa TV; Komanso, wogwiritsa ntchito aliyense wolumikizira amathanso kusintha chilankhulo chawo cha Web UI pa batani lapadziko lonse lapansi patsamba lakumanja.
 Kutsitsa kwatha!
 Kutsitsa kwalephera!
 Nyimbo idawonjezedwa pamzere!
@@ -201,9 +201,31 @@ Mutha kuyimba nyimboyi mwachangu kapena pang'onopang'ono posintha liwiro losewer
 Dinani kuti mukhazikitsenso liwiro losewera kuti likhale 1x
 Dinani kuti muyike liwiro losewera
 Dinani kuti mukhazikitsenso kiyi / mawu
-Bwezerani Kiyi
+Bwezerani Bwino
 Bwezerani Kuthamanga
 Mapangidwe apamwamba
 Onjezani nyimboyo pamzere woyimba mukamaliza kutsitsa
 Tsitsani mawu ang'onoang'ono (ophatikizidwa okha) m'zilankhulo zonse ngati alipo
-Kutsitsa makanema apamwamba kungatenge nthawi yayitali
+Kutsitsa makanema apamwamba kungatenge nthawi yayitali kwambiri
+Sungani Zokonda pa Play
+Sungani makonda a nyimbo iliyonse, izi zikuphatikizapo: kuchedwa kwa mawu, kuchedwa kwa mawu ang'onoang'ono, ndikuwonetsanso mawu ang'onoang'ono.
+Onjezani nyimbo polankhula mutu wa nyimbo
+Chonde lankhulani mutu wa nyimbo ndikudina Chabwino!
+Mawebusayiti a HTTPS okha ndi omwe angathe kukhala ndi maikolofoni, kodi mukufuna kupita kutsamba la HTTPS?
+Chonde perekani chilolezo chofikira cholankhulira!
+Sinthani Dzina la Nyimbo:
+Sungani
+Chotsani nyimboyi
+Kodi mukutsimikiza kuti mukufuna kuchotsa nyimboyi mulaibulale?
+Pemphani cholakwika cha parameter!
+Chepetsani nyimbo:
+Sinthani kuchuluka kwa nyimbo:
+Nthawi yoyambira:
+Nthawi yomaliza:
+Voliyumu Yoyambirira (dB):
+Sindikupeza nyimbo yofanana ndi "%s".
+Adawonjezedwa "%s" pamzere.
+Chonde sankhani nyimbo zomwe mungawonjezere:
+ZONSE
+Tsekani
+Onjezani

@@ -32,7 +32,7 @@ Stopped
 Updating youtube-dl! Should take a minute or two... 
 You don't have permission to update youtube-dl
 You don't have permission to shut down
-Quitting PiKaraoke now!
+Quitting OpenHomeKaraoke now!
 You don't have permission to quit
 Shutting down system now!
 You don't have permission to shut down
@@ -49,7 +49,7 @@ Wifi/Network not connected. Shutting down in 10s...
 For selecting songs, scan QR or connect to 
 For TV display, connect to 
 Press F to toggle full-screen
-Press ESC to quit PiKaraoke
+Press ESC to quit OpenHomeKaraoke
 RaspiWifiConfig setup mode detected!
 Connect another device/smartphone to the Wifi AP: '%s'
 Then point its browser to: '%s://%s%s' and follow the instructions.
@@ -60,7 +60,7 @@ Admin mode granted!
 Increasing audio delay will give you more time to read lyrics before singing out the next sentence.
 Decreasing subtitle delay will give you more time to read lyrics before singing out the next sentence.
 A semitone is also known as a half-step. It is the smallest interval used in classical Western music, equal to a twelfth of an octave or half a tone.
-DNN-based vocal splitter is enabled. PiKaraoke uses PyTorch (by Facebook) to run a deep neural network to split instrumental and vocal sound in each track giving rise to stereo sound.
+DNN-based vocal splitter is enabled. OpenHomeKaraoke uses PyTorch (by Facebook) to run a deep neural network to split instrumental and vocal sound in each track giving rise to stereo sound.
 Player Control
 Music
 Mixed
@@ -133,7 +133,7 @@ Available Songs
 Do you want to change the display name of the person using this device? This will show up next to the queued songs. Current:
 Current user
 Settings
-PiKaraoke
+OpenHomeKaraoke
 Are you sure you want to quit?
 Are you sure you want to shut down?
 Are you sure you want to reboot?
@@ -147,12 +147,12 @@ Memory
 Screen Capture
 Vocal Splitter
 Youtube-dl (yt-dlp) version
-PiKaraoke version
+OpenHomeKaraoke version
 Advanced Control Options
 Vocal splitter mode:
 Use L-R/L+R
 Use DNN
-Standard MTV audio has the two stereo channels (L and R) encoded in such a way that: L-R is the instrument track, L+R is the vocal track. Thus, by simply subtracting or adding the two stereo channels, we can get the instrumental and vocal track in mono sound. PiKaraoke's built-in DNN-based (deep neural network) vocal splitter uses AI algorithm to split instrumental and vocal sound in each stereo track independently resulting in stereo instrumental and vocal tracks.
+Standard MTV audio has the two stereo channels (L and R) encoded in such a way that: L-R is the instrument track, L+R is the vocal track. Thus, by simply subtracting or adding the two stereo channels, we can get the instrumental and vocal track in mono sound. OpenHomeKaraoke's built-in DNN-based (deep neural network) vocal splitter uses AI algorithm to split instrumental and vocal sound in each stereo track independently resulting in stereo instrumental and vocal tracks.
 Stop Splitter
 Restart Splitter
 The vocal splitter (that supports both DNN-based and stereo subtraction) runs as a separate process in the background, generating instrumental/vocal audio file for every song.
@@ -162,19 +162,19 @@ Restart Streamer
 This only affects playing KTV via web browser. Restarting the screen-capture-and-streaming improves audio/video synchronization, it also decreases the latency between the server and browser.
 Refresh the song list:
 Rescan song directory
-You should only need to do this if you manually copied files to the download directory while PiKaraoke was running.
+You should only need to do this if you manually copied files to the download directory while OpenHomeKaraoke was running.
 Updates
 If downloads or searches stopped working, updating youtube-dl will probably fix it. The current installed version is:
 Update youtube-dl
-This update link above may fail if you don't have proper file permissions. Check the PiKaraoke log for errors.
+This update link above may fail if you don't have proper file permissions. Check the OpenHomeKaraoke log for errors.
 Shutdown
 Don't just pull the plug! Always shut down your server properly to avoid data corruption.
-Quit PiKaraoke
+Quit OpenHomeKaraoke
 Reboot System
 Shutdown System
 Other
 Expand Raspberry Pi filesystem
-If you just installed the pre-built PiKaraoke pi image and your SD card is larger than 4GB, you may want to expand the filesystem to utilize the remaining space. You only need to do this once. This will reboot the system.
+If you just installed the pre-built OpenHomeKaraoke pi image and your SD card is larger than 4GB, you may want to expand the filesystem to utilize the remaining space. You only need to do this once. This will reboot the system.
 Disable admin mode
 Enable admin mode
 log out
@@ -185,7 +185,7 @@ Change Language
 Please choose language
 System Language
 Current system language:
-This changes the language of the PiKaraoke backend system which gets displayed onto TV screen; moreover, each connecting user can also change their respective Web UI language in the globe button in the right-top menu. 
+This changes the language of the OpenHomeKaraoke backend system which gets displayed onto TV screen; moreover, each connecting user can also change their respective Web UI language in the globe button in the right-top menu. 
 Download completed successfully!
 Download failed!
 Song added to the queue!
@@ -210,7 +210,7 @@ Downloading high-quality videos might take very long time
 Save Play Settings
 Save play settings for each song, this includes: audio delay, subtitle delay, and whether to show subtitles.
 Add song by speaking the song title
-Please speak the song title and click OK!
+Please speak the title and click OK!
 Only HTTPS websites can have access to microphone, do you want to redirect to HTTPS website?
 Please grant the permission to access microphone!
 Edit Song Name:
@@ -222,10 +222,12 @@ Trim the song:
 Adjust song volume:
 Begin time:
 End time:
-Original Volume (dB):
+Original Volume (dBFS):
 Cannot find any song matching "%s".
 Added "%s" into queue.
 Please choose the song(s) to add:
 UNDO
 Close
 Add
+Video duration: 
+Search for a song by speaking its title

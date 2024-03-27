@@ -19,7 +19,7 @@ Marka la dhammeeyo, waxay ka soo muuqan doontaa liiska "heesaha la heli karo".
 Khalad: Lama tirtiri karo heestan sababtoo ah waxay ku jirtaa safka hadda:
 Heesta waa la tirtiray:
 Khalad: Halbeeg-beegtida heesta lama cayimin!
-Khalad: Ma tafatirin karo heestan sababtoo ah hadda waa la tumay:
+Khalad: Ma tafatiri karo heestan sababtoo ah hadda waa la tumay:
 Tafatirka faylka heesta
 Cilad dib u magacaabista faylka: '%s' ilaa '%s' Magaca faylka ayaa hore u jiray
 Faylka la beddelay: '%s' ilaa '%s'
@@ -32,7 +32,7 @@ Joogsaday
 Cusbooneysiinta youtube-dl! Waa inay qaadataa hal ama laba daqiiqo...
 Ma haysatid fasax aad ku cusbooneysiiso youtube-dl
 Ma haysatid fasax aad ku xidhid
-Joojinta PiKaraoke hadda!
+Joojinta OpenHomeKaraoke hadda!
 Ma haysatid fasax aad ku joojiso
 Deminta nidaamka hadda!
 Ma haysatid fasax aad ku xidhid
@@ -41,7 +41,7 @@ Ma haysatid fasax aad dib u soo kiciso
 Kordhinta nidaamka faylalka iyo nidaamka dib u kicinta hadda!
 Laguma fidin karo fs aaladaha aan raspberry pi!
 Ma haysatid fasax aad ku beddesho nidaamka faylka
-Jidka Youtube-dl lama helin!
+Jidka Youtube-dl lama helin oo pip ayaa ku guuldareystay inuu rakibo!
 Waddada VLC lama helin!
 Waddada omxplayer lama helin!
 Abuuritaanka dariiqa soo dejinta:
@@ -49,7 +49,7 @@ Wifi/Shabakad kuma xidhna La xirayo 10s ka...
 Xulashada heesaha, sawir QR ama ku xidh
 Bandhigga TV-ga, ku xidh
 Riix F si aad u rogto shaashadda buuxda
-Taabo ESC si aad uga baxdo PiKaraoke
+Taabo ESC si aad uga baxdo OpenHomeKaraoke
 Habka dejinta RaspiWifiConfig waa la helay!
 Ku xidh qalab kale/taleefanka casriga ah Wifi AP: '%s'
 Kadibna u fiiq browser-keeda: '%s://%s%s' oo raac tilmaamaha.
@@ -59,8 +59,8 @@ Hadda ciyaaraya:
 Habka maamulka waa la siiyay!
 Kordhinta daahitaanka maqalku waxay ku siin doontaa wakhti dheeraad ah oo aad ku akhrido erayada ka hor intaadan heesin jumlada xigta.
 Hoos u dhigista daahitaanka qoraal-hoosaadku waxay ku siin doontaa wakhti dheeraad ah oo aad ku akhrido erayada ka hor intaadan heesin jumlada xigta.
-Semitone sidoo kale waxaa loo yaqaannaa tallaabo nus ah. Waa inta ugu yar ee loo isticmaalo muusiga reer galbeedka ee qadiimiga ah, oo la mid ah laba iyo tobnaad ee octave ama codka badhkii.
-Qaybiyaha codka ku salaysan ee DNS waa la dajiyay PiKaraoke waxay isticmaashaa PyTorch (ee Facebook) si ay u socodsiiso shabakad neerfaha qoto dheer si ay u kala qaybiso codka qalabka iyo codka raad kasta oo kor u qaada codka isteeriyo.
+Semitone sidoo kale waxaa loo yaqaannaa tallaabo nus ah. Waa inta u dhexaysa ugu yar ee loo isticmaalo muusiga reer galbeedka ee qadiimiga ah, oo la mid ah laba iyo tobnaad ee octave ama codka badhkii.
+Qaybiyaha codka ku salaysan ee DNS waa la dajiyay OpenHomeKaraoke waxay isticmaashaa PyTorch (ee Facebook) si ay u socodsiiso shabakad neerfaha qoto dheer si ay u kala qaybiso dhawaaqa qalabka iyo codka ee waddo kasta oo kor u qaada codka stereo.
 Xakamaynta Ciyaartoyga
 Muusiga
 Isku dhafan
@@ -105,7 +105,7 @@ Wax ka beddel heesta
 Kor u kac safka
 Hoos ugu soo deg safka
 Ma hubtaa inaad doonayso inaad safka ka tirtirto
-Ma hubtaa inaad doonayso inaad nadiifiso safka oo dhan? Ku qor 'OK' si aad u sii wadato
+Ma hubtaa inaad doonayso inaad nadiifiso safka oo dhan?
 Ku dar 3 heesood oo random
 Nadiifi dhammaan
 Safku waa faaruq
@@ -117,12 +117,12 @@ Heestu safka hore ayay ugu jirtay:
 Raadi / Ku dar Cusub
 Raadi
 Safka
-Ku dar ciyaaraha aan karaoke ahayn
+Raadi Karaoke waa u dhigma kaliya
 Sareeye
-Ku qor hees (ciwaanka/fanaanka) si aad u baadho heesaha jira oo guji 'Queue' si aad ugu darto safka
-Haddii aysan heestu ka soo bixin "heesaha la heli karo", dhagsii 'Search' si aad uga hesho Youtube-ka.
+Ku qor hees (ciwaan/fannaan) si aad u baadho heesaha diyaarsan oo guji 'Queue' si aad ugu darto safka.
+Haddii aysan heestu ka soo bixin meesha "Heesaha La heli karo", dhagsii 'Search' si aad uga hesho Youtube-ka.
 Soo deji toos ah url YouTube:
-Ku darso safka
+Ku darso soo dejinta kadib
 Ku dar qoraal-hoosaadyo
 Download
 Raadinta YouTube
@@ -133,7 +133,7 @@ Heesaha la heli karo
 Ma doonaysaa in aad badasho magaca muuqaalka qofka isticmaalaya qalabkan? Tani waxay ka muuqan doontaa agteeda heesaha safka ku jira. Hadda:
 Isticmaalaha hadda
 Dejinta
-PiKaraoke
+FurHomeKaraoke
 Ma hubtaa inaad doonayso inaad joojiso?
 Ma hubtaa inaad doonayso inaad xidho?
 Ma hubtaa inaad rabto inaad dib u bilowdo?
@@ -147,34 +147,34 @@ Xusuusta
 Qabashada Shaashada
 Vocal Splitter
 Youtube-dl (yt-dlp) nooca
-Nooca PiKaraoke
+Nooca HomeKaraoke fur
 Doorashooyinka Sare ee Xakamaynta
 Habka qaybiyaha codka:
 Isticmaal L-R/L+R
 Isticmaal DNS
-Maqalka caadiga ah ee MTV waxa uu leeyahay labada kanaal ee isteeriyo (L iyo R) oo loo habeeyey si ay: L-R waa track-ga qalabka, L+R waa raad-raaca codka. Haddaba, innaga oo si fudud u kala jaraya ama ku daraya labada kanaal ee isteeriyo, waxa aynu ku heli karnaa qalab-qalabka iyo codka dhawaaqa mono. PiKaraoke-ku-ku-saleysan-DNN-ku-saleysan (shabakadda neerfaha qoto dheer) cod-qeybiyaha wuxuu adeegsadaa AI algorithm si uu u kala qaybiyo dhawaaqa aaladaha iyo codka ee waddo kasta oo stereo ah si madax-bannaan taasoo keentay qalab stereo iyo raad-cod.
+Maqalka caadiga ah ee MTV waxa uu leeyahay labada kanaal ee isteeriyo (L iyo R) oo loo habeeyey si ay: L-R waa track-ga qalabka, L+R waa raad-raaca codka. Haddaba, innaga oo si fudud u kala jaraya ama ku daraya labada kanaal ee isteeriyo, waxa aynu ku heli karnaa qalab-qalabka iyo codka dhawaaqa mono. OpenHomeKaraoke ee ku dhisan DNN-ku-saleysan (shabakadda neerfaha qoto dheer) qaybiyaha codka wuxuu adeegsadaa AI algorithm si uu u kala qaybiyo dhawaaqa qalabka iyo codka ee raadad kasta oo stereo ah si madax-bannaan taasoo keentay qalab stereo ah iyo raad-raac dhawaaqeed.
 Jooji Kala-bax
 Dib u bilow Splitter
-Kala qaybisa codka (ta taageerta labada ku salaysan DNN iyo kala goynta stereo) waxay u socotaa hab gooni ah oo gadaal ka jira, isaga oo soo saaraya faylalka maqalka ee qalabka/codka ee hees kasta.
+Kala qaybisa codka (ta taageerta labada ku salaysan DNN iyo kala goynta stereo) waxay u shaqeysaa sidii hab gooni ah oo gadaal ka jira, isaga oo soo saaraya galka maqalka qalabka/codka ee hees kasta.
 Dib u habeyn maqal iyo muuqaal:
 Jooji Streamer
 Dib u bilow Streamer
 Tani waxay kaliya saamaynaysaa ku ciyaarista KTV iyada oo loo marayo browserka webka. Dib u bilaabida shaashada-qabsashada-iyo-qulqulka waxay wanaajisaa wada shaqaynta maqalka/muuqaalka, waxay sidoo kale hoos u dhigtaa daahitaanka u dhexeeya server-ka iyo browserka.
 Dib u cusboonaysii liiska heesta:
 Dib u baadh hagaha heesaha
-Waa inaad tan samaysaa oo keliya haddii aad gacanta ku koobiyaysay faylalka hagaha soo dejinta iyadoo PiKaraoke uu soconayo.
+Waa inaad tan samaysaa oo keliya haddii aad gacanta ku koobisay faylasha hagaha soo dejinta iyadoo OpenHomeKaraoke uu soconayo.
 Cusbooneysii
 Haddii soo dejinta ama raadinta ay joojiyaan shaqada, cusboonaysiinta youtube-dl waxay u badan tahay inay hagaajin doonto. Nooca hadda la rakibay waa:
 Cusbooneysii youtube-dl
-Xidhiidhkan cusboonaysiinta ee sare waxa laga yaabaa inuu guul-darraysto haddii aanad haysan oggolaansho fayl habboon. Ka hubi diiwaanka PiKaraoke khaladaadka.
+Xidhiidhkan cusboonaysiinta ee sare waxa laga yaabaa inuu guul-darraysto haddii aanad haysan oggolaansho fayl habboon. Ka hubi diiwaanka OpenHomeKaraoke khaladaadka.
 Bakhtii
 Kaliya ha jiidin balka! Had iyo jeer xidh server-kaaga si sax ah si aad uga fogaato musuqmaasuqa xogta.
-Jooji PiKaraoke
+Jooji OpenHomeKaraoke
 Nidaamka dib u soo kabashada
 Nidaamka Xiritaanka
 Mid kale
 Kordhi nidaamka faylka Raspberry Pi
-Haddii aad hadda rakibtay sawirka PiKaraoke pi ee horay loo dhisay kaarka SD-gaaguna uu ka weyn yahay 4GB, waxaa laga yaabaa inaad rabto inaad balaadhiso nidaamka faylka si aad uga faa'iidaysato meesha hadhay. Waxa aad u baahan tahay inaad tan samayso hal mar. Tani waxay dib u bilaabi doontaa nidaamka.
+Haddii aad hadda rakibtay sawirka OpenHomeKaraoke pi ee horay loo dhisay kaarka SD-gaaguna uu ka weyn yahay 4GB, waxaa laga yaabaa inaad rabto inaad balaadhiso nidaamka faylka si aad uga faa'iidaysato meesha hadhay. Waxa aad u baahan tahay inaad tan samayso hal mar. Tani waxay dib u bilaabi doontaa nidaamka.
 Dami qaabka maamulka
 Daar habka maamulka
 ka bax
@@ -185,7 +185,7 @@ Beddel luqadda
 Fadlan door luqadda
 Luuqadda Nidaamka
 Luuqadda nidaamka hadda:
-Tani waxay bedeshaa luqadda nidaamka dhabarka dambe ee PiKaraoke kaas oo lagu soo bandhigo shaashadda TV-ga; Intaa waxaa dheer, isticmaale kasta oo isku xira ayaa sidoo kale beddeli kara luqaddooda Shabakadda UI ee badhanka adduunka ee menu-ka sare ee midig.
+Tani waxay bedeshaa luqadda nidaamka dhabarka dambe ee OpenHomeKaraoke kaas oo lagu soo bandhigo shaashadda TV-ga; Intaa waxaa dheer, isticmaale kasta oo isku xira ayaa sidoo kale beddeli kara luqaddooda Shabakadda UI ee badhanka adduunka ee menu-ka sare ee midig.
 Soo dejintu waxay dhammaatay si guul leh!
 Soo dejintu way fashilantay!
 Hees ayaa lagu daray safka!
@@ -207,3 +207,25 @@ Tayo Sare
 Ku dar heesta safka heesaha ka dib marka soo dejintu dhammaato
 Soo deji qoraal-hoosaadyo (kaliya ku guntan) dhammaan luqadaha haddii la heli karo
 Soo dejinta fiidiyowyada tayada sare leh waxay qaadan kartaa waqti aad u dheer
+Keydi goobaha ciyaarta
+U keydi habaynta ciyaarta hees kasta, tan waxaa ka mid ah: daahitaanka maqalka, dib u dhigista qoraal hoosaadka, iyo haddii la muujinayo qoraal hoosaadyo.
+Ku dar heesta adigoo ku hadlaya magaca heesta
+Fadlan ku hadal magaca heesta oo guji OK!
+Mareegaha HTTPS kaliya ayaa heli kara makarafoon, ma waxaad rabtaa inaad u jiheyso mareegta HTTPS?
+Fadlan sii oggolaanshaha lagu galo makarafoonka!
+Wax ka beddel Magaca heesta:
+Badbaadin
+Tirtir heestan
+Ma hubtaa inaad rabto inaad ka tirtirto heestan maktabadda?
+Codso qaladka cabbirka!
+Ka jar heesta:
+Hagaajin mugga heesta:
+Waqtiga bilowga:
+Waqtiga dhamaadka:
+Mugga asalka ah (dB):
+Lama heli karo hees ku habboon "%s".
+Lagu daray "%s" safka
+Fadlan door heesta (yada) aad ku darto:
+UNDO
+Xir
+Ku dar

@@ -1,370 +1,225 @@
-<link href="{{  url_for('static', filename='selectize.min.css') }}" rel="stylesheet" />
-<script src="{{  url_for('static', filename='selectize.min.js') }}"></script>
-<style>
-  .optgroup-header {
-    font-weight: bold;
-  }
-
-  .row {
-    display: flex;
-    /* equal height of the children */
-    border-bottom: 1px solid #cccccc;
-  }
-
-  .col-icon {
-    padding-left: 1px;
-  }
-
-  .col-text {
-    padding-left: 2px;
-    font-size: 120%;
-  }
-
-  #youtube-link {
-    font-size: 80%;
-  }
-
-  .selectize-input {
-    height: 37px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-</style>
 <script>
-  var download_url = "";
-  var timer1;
-  function check_download(){
-    $.post('/check_download', {"url": download_url}, function(val){
-      msg = "";
-      switch(val){
-        case '1': return;
-        case '00': msg = "{{getString1(191)}}";
-        case '0': msg = "{{getString1(189)}} "+msg; break;
-        case '-1': msg ="{{getString1(190)}}"; break;
-        case '01': msg = "{{getString1(189)}} {{getString1(192)}}"; break;
-      }
-      clearInterval(timer1);
-      $("#download-button").removeClass("is-loading");
-      $("#direct-download-button").removeClass("is-loading");
-      showNotification(msg);
-    });
+var download_url = "";
+function download_ended(){
+  $("#direct-download-button").removeClass("is-loading");
+  $("#download-button").removeClass("is-loading");
+}
+$("#search_result_selector").focus();
+$("#download-button").click(function () {
+  if (!$("#download-button").is('[disabled=disabled]')) {
+    $("#download-button").addClass("is-loading");
   }
-  $(function () {
-  
-    $("#search_result_selector").focus();
+});
 
-    $("#search-link").click(function () {
-      if (!$("#search-link").is('[disabled=disabled]')) {
-        $("#search-link").addClass("is-loading");
-      }
-    });
+$("#direct-download-button").click(function () {
+  if (!$("#direct-download-button").is('[disabled=disabled]')) {
+    $("#direct-download-button").addClass("is-loading");
+  }
+});
 
-    $("#download-button").click(function () {
-      if (!$("#download-button").is('[disabled=disabled]')) {
-        $("#download-button").addClass("is-loading");
-      }
-    });
-    
-    $("#direct-download-button").click(function () {
-      if (!$("#direct-download-button").is('[disabled=disabled]')) {
-        $("#direct-download-button").addClass("is-loading");
-      }
-    });
-    
-    $('.download-direct').submit(function(){
-      download_url = $(this).find('[name=song_url]').val()
-      $.post($(this).attr('action'), $(this).serialize(), function(msg) {
-        showNotification(msg);
-        timer1 = setInterval(check_download, 2000);
-      }, 'text');
-      return false;
-    });
+$('.download-direct').submit(function(){
+  download_url = $(this).find('[name=song_url]').val()
+  $.post($(this).attr('action'), $(this).serialize(), function(msg) {
+    showNotification(msg);
+  }, 'text');
+  return false;
+});
 
-    $("#add-queue-link").click(function () {
- 
-    });
+//START SELECTIZE CHANGES
 
-    //START SELECTIZE CHANGES
+//if enter key press, by default search button is click
+$(document).keypress(
+  function (event) {
+    if (event.which == '13') {
+      event.preventDefault();
 
-    //if enter key press, by default search button is click
-    $(document).keypress(
-      function (event) {
-        if (event.which == '13') {
-          event.preventDefault();
-
-          if ($(".search-selectize .selectize-input input").val()) {
-            $('#search-link').trigger("click");
-          }
-          else if ($('.search-selectize').find(":selected").text()) {
-            $('#add-queue-link').trigger("click");
-          }
-        }
-      });
-
-    $("#add-queue-link").hide();
-    $("#add-queue-link").attr("disabled", "true");
-    $("#search-link").attr("disabled", "true");
-    var $select = $('#song-to-add').selectize({
-      valueField: 'path',
-      labelField: 'fileName',
-      searchField: ['fileName'],
-      optgroupField: "type",
-      optgroups: [{value: 'autocomplete', label: '{{getString1(114)}}'}],
-      createOnBlur: true,
-      openOnFocus: false,
-      createFilter: function (input) { return input.length >= 2; },
-      onInitialize: function () {
-        var that = this;
-
-        this.$control.on("click", function () {
-          that.ignoreFocusOpen = true;
-          setTimeout(function () {
-            that.ignoreFocusOpen = false;
-          }, 50);
-        });
-      },
-
-      onFocus: function () {
-        if ($(window).width() <= 500 && $(window).height() <= 740) {
-          document.getElementById('search-field').scrollIntoView();
-        }
-        if (!this.ignoreFocusOpen) {
-          this.open();
-        }
-      },
-      onBlur: function () {
-        this.setTextboxValue(this.currentResults.query);
-      },
-      onChange: function (id) {
-        if (!id) {
-          $("#add-queue-link").attr("disabled", "true");
-          $("#search-link").attr("disabled", "true");
-          $("#add-queue-link").hide();
-          $("#search-link").show();
-        } else {
-          $("#add-queue-link").removeAttr("disabled");
-          $("#search-link").removeAttr("disabled");
-          $("#add-queue-link").show();
-          $("#search-link").hide();
-        }
-      },
-      onType: function (text) {
-        if (!text) {
-          $("#search-link").attr("disabled", "true");
-          $("#add-queue-link").show();
-          $("#search-link").hide();
-        }
-        else {
-          $("#search-link").removeAttr("disabled");
-          $("#add-queue-link").hide();
-          $("#search-link").show();
-        }
-      },
-      render: {
-        option: function (item, escape) {
-          return '<div class="row">'
-            + '<div class="col-icon"><i class="icon icon-music has-text-info"></i></div>'
-            + '<div class="col-text">' + escape(item.fileName) + '</div>'
-            + '</div>';
-        },
-        optgroup_header: function(data, escape) {
-          return '<div class="optgroup-header">' + escape(data.label) + '</div>';
-        }
-      },
-      load: function(query, callback) {
-        if (query.length < 2)  return callback;
-        $.ajax({
-          url: "{{ url_for('autocomplete') }}" + "?q=" + query,
-          type: 'get',
-          success: function(data){
-            callback(data)
-          }
-        });
-      }
-    });
-
-{% if search_string %}
-    $("#song-to-add-selectized").val("{{search_string}}")
-    $("#song-to-add-selectized").width("100%");
-{% endif %}
-
-    $('#search-link').on('click', function (e) {
-      e.preventDefault();
-      var search_term = $(".search-selectize .selectize-input input").val();
-      var include_non_karaoke = $("#search-karaoke").is(":checked")
-      if (search_term) {
-        $('#searching_loader').removeClass("is-hidden");
-        $('#searching_loader #search_term').text(search_term);
-        $('#search-link').attr("disabled", "true");
-        $('#search_string').val(search_term);
-        $('#non_karaoke').val(include_non_karaoke);
-        $('#container_search_result').hide();
-        $('#container_search_form form').submit();
-      }
-    });
-    $('#add-queue-link').on('click', function (e) {
-      e.preventDefault();
-      if ($('.search-selectize').find(":selected").text()) {
-        $('#add-queue-link').attr("disabled", "true");
-        $("#add-queue-link").addClass("is-loading");
-        setTimeout(function(){$("#add-queue-link").removeClass("is-loading");}, 1000)
-        $.ajax({
-          url: "{{ url_for('enqueue') }}",
-          type: 'post',
-          data:$('#queue-form').serialize(),
-          success: function(data){
-            var obj = JSON.parse(data);
-            if (obj.success) {
-              showNotification("{{getString1(115)}}" + obj.song, "is-success")
-            } else {
-              showNotification("{{getString1(116)}}" + obj.song, "is-danger")
-            }
-            $select[0].selectize.clear()
-          }
-       });
-      }
-    });
-
-    //END SELECTIZE CHANGES
-
-    $('#youtube-link').attr('href', $('#search_result_selector').val());
-    $('#youtube-link').text($('#search_result_selector').val());
-
-    //get youtube thumbnail based on ID
-    i = -1;
-    changeImage();
-
-    $(document).on('change', '#search_result_selector', function () {
-      var url = $('#search_result_selector').val();
-      $('#youtube-link').attr('href', url);
-      $('#youtube-link').text(url);
-      changeImage();
-    });
-    //allow click of images
-    $('#youtube-thumb').click(function (e) {
-      changeImage();
-    });
-    timer = setInterval(function () { $('#youtube-thumb').trigger('click'); }, 2000);
-
-    $('#advanced-settings').hide()
-
-    // handle show advanced state
-    $('#show-advanced').on('change', function () {
-      if ($('#show-advanced').is(":checked")) {
-        $('#advanced-settings').show()
-      }
-      else {
-        $('#advanced-settings').hide()
-      }
-    });
-
-    var user = Cookies.get("user");
-
-    if (!user) {
-        let name = window.prompt("{{getString1(92)}}");
-        if (name) {
-          Cookies.set("user", name , { expires: 3650 })
-        }
-        location.reload()
-      }
-
-    $(".song-added-by").val(user)
+      if ($(".search-selectize .selectize-input input").val())
+        $('#search-link').trigger("click");
+      else if ($('.search-selectize').find(":selected").text())
+        $('#add-queue-link').trigger("click");
+    }
   });
- 
-  function changeImage() {
-    var next = (++i % 4);
-    var youtube_id = $('#search_result_selector').find(':selected').data('ytid');
-    var fn = (next == 0) ? "default" : next;
-    var img_src = 'https://img.youtube.com/vi/' + youtube_id + '/mq' + fn + '.jpg'
-    $('#youtube-thumb').attr("src", img_src);
-  }  
+
+$("#add-queue-link").hide();
+$('#search-link').click((e) => {
+  $("#search-link").addClass("is-loading");
+  var search_term = $("#search-box").val();
+  var include_non_karaoke = $("#search-karaoke").is(":checked");
+  if (search_term)
+    post_switch("/f_search", {search_string:search_term, non_karaoke:include_non_karaoke});
+});
+$('#add-queue-link').click((e) => {
+  $.post("/enqueue", {song: suggests[$('#search-box').val()], user: currentUser}).then((data) => {
+    var obj = JSON.parse(data);
+    if (obj.success)
+      showNotification("{{getString1(115)}}" + obj.song, "is-success")
+    else
+      showNotification("{{getString1(116)}}" + obj.song, "is-danger")
+  });
+});
+
+//END SELECTIZE CHANGES
+
+$('#youtube-link').attr('href', $('#search_result_selector').val());
+$('#youtube-link').text($('#search_result_selector').val());
+
+//get youtube thumbnail based on ID
+i = -1;
+changeImage();
+
+$(document).on('change', '#search_result_selector', function () {
+  var url = $('#search_result_selector').val();
+  $('#youtube-link').attr('href', url);
+  $('#youtube-link').text(url);
+  changeImage();
+});
+//allow click of images
+$('#youtube-thumb').click(function (e) { changeImage(); });
+timer = setInterval(function () { $('#youtube-thumb').trigger('click'); }, 2000);
+
+$('#advanced-settings').hide()
+
+// handle show advanced state
+$('#show-advanced').change(() => {
+  if ($('#show-advanced').is(":checked"))
+    $('#advanced-settings').show()
+  else
+    $('#advanced-settings').hide()
+});
+
+$(".song-added-by").val(currentUser)
+
+function changeImage() {
+  var next = (++i % 4);
+  var youtube_id = $('#search_result_selector').find(':selected').data('ytid');
+  var fn = (next == 0) ? "default" : next;
+  var img_src = 'https://img.youtube.com/vi/' + youtube_id + '/mq' + fn + '.jpg'
+  $('#youtube-thumb').attr("src", img_src);
+}
+function countChars(s){
+  var sum=0;
+  for(var x=0; x<s.length; x++)
+    sum += s.charCodeAt(x)>127?2:1;
+  return sum;
+}
+var old_text, suggests;
+function set_suggests(obj){
+  suggests = obj;
+  var html = '';
+  for(var i of Object.keys(obj))
+    html += `<option value="${i}">`;
+  $('#suggestions').html(html);
+}
+function searchASR(){
+  var blob = new Blob(audios, { type: "audio/webm" });
+	const req = new XMLHttpRequest();
+	req.open("POST", '/get_ASR', true);
+  req.onload = (e)=>{
+    $('#search-box').val(e.target.responseText);
+    $('#search-box').trigger('input');
+    $('#search-box').focus();
+  };
+	req.send(blob);
+}
+$('#search-box').on('input', (ev) => {
+  if(ev.target.value!=old_text && countChars(ev.target.value)>=4){
+    old_text = ev.target.value;
+    $.get('/suggest?q='+ev.target.value).then((data) => { set_suggests(JSON.parse(data)); });
+    if(suggests!=null && old_text in suggests){
+      $('#add-queue-link').show();
+      $('#search-link').hide();
+    }else{
+      $('#add-queue-link').hide();
+      $('#search-link').show();
+    }
+  }
+});
+if(old_text){
+  $('#search-box').val(old_text);
+  if(suggests) set_suggests(suggests);
+}
 </script>
 
 <header class="title">
-<h1>{{getString1(117)}}</h1>
+<h1>{{getString1(117)}}<i class="icon icon-mic-1 hand" style="float: right; display: inline; transform:translateX(-50%)" 
+  title="{{getString1(233)}}" onclick="ASR('searchASR()')"></i></h1>
 </header>
 
 <div class="content">
 <div>
   <div class="field" id="container_queue_form">
-    <form id="queue-form" >
-      <div id="search-field" class="field has-addons" style="margin-bottom: 5px">
-        <div class="control" style="width:100%">
-          <select id="song-to-add" class="search-selectize is-size-7" name="song-to-add">
-            <optgroup label="{{getString1(132)}}" id="available-songs"></optgroup>
-          </select>
-        </div>
-        <div class="control">
-          <a class="button is-warning" id="search-link">{{getString1(118)}}</a>
-          <a class="button is-info" id="add-queue-link">{{getString1(119)}}</a>
-        </div>
-        <input class="song-added-by" type="hidden" name="song-added-by" />
+    <div id="search-field" class="field has-addons" style="margin-bottom: 5px">
+      <div class="control" style="width:100%">
+        <input class="input" list="suggestions" id="search-box" type="text" value="{{search_string}}" autocomplete="off">
+        <datalist id="suggestions"></datalist>
       </div>
-      <div class="control has-text-right is-flex" style="justify-content: space-between">
-        <label class="checkbox is-size-7">
-          <input type="checkbox" id="search-karaoke" {% if search_karaoke %}checked{% endif %} name="search-karaoke">
-          {{getString1(120)}}
-        </label>
-        <label class="checkbox is-size-7">
-          <input type="checkbox" id="show-advanced" name="show-advanced">
-          {{getString1(121)}}
-        </label>
+      <div class="control">
+        <a class="button is-warning" id="search-link">{{getString1(118)}}</a>
+        <a class="button is-info" id="add-queue-link">{{getString1(119)}}</a>
       </div>
-      
-      <div>
-        <p class="help" style="margin-top: 15px">{{getString1(122)}}</p>
-        <p class="help">{{getString1(123)}}</p>
-      </div>
-    </form>
+      <input class="song-added-by" type="hidden" name="song-added-by" />
+    </div>
+    <div class="control has-text-right is-flex" style="justify-content: space-between">
+      <label class="checkbox is-size-7">
+        <input type="checkbox" id="search-karaoke" {% if search_karaoke %}checked{% endif %} name="search-karaoke">
+        {{getString1(120)}}
+      </label>
+      <label class="checkbox is-size-7">
+        <input type="checkbox" id="show-advanced">
+        {{getString1(121)}}
+      </label>
+    </div>
+    
+    <div>
+      <p class="help" style="margin-top: 15px">{{getString1(122)}}</p>
+      <p class="help">{{getString1(123)}}</p>
+    </div>
   </div>
 
-  <div>
-    <div id="advanced-settings" class="box has-background-black-bis" style="margin-top: 10px">
-      <div class="control">
-        <div class="label">{{getString1(124)}}</div>
-        <form class="download-direct" action="{{ url_for('download') }}" method="post">
-          <input class="input" id="direct-download-url" type="text" name="song_url" />
-          <input class="song-added-by" type="hidden" name="song_added_by" />
-          <div class="field" style="margin-top: 5px; justify-content: space-evenly; display: flex;">
-            <label class="checkbox" title="{{getString1(207)}}"><input type="checkbox" checked name="enqueue">{{getString1(125)}}</label>
-            <label class="checkbox" title="{{getString1(209)}}"><input type="checkbox" name="high_quality" {{'checked' if high_quality else ''}}>{{getString1(206)}}</label>
-            <label class="checkbox" title="{{getString1(208)}}"><input type="checkbox" name="include_subtitles">{{getString1(126)}}</label>
-          </div>
-          <div class="has-text-right" style="margin-top: 5px">
-            <button class="button is-small is-rounded" id="direct-download-button" type="submit">{{getString1(127)}}</button>
-          </div>
-        </form>
-      </div>
+  <div id="advanced-settings" class="box has-background-black-bis" style="margin-top: 10px">
+    <div class="control">
+      <div class="label">{{getString1(124)}}</div>
+      <form class="download-direct" action="/download" method="post">
+        <input class="input" id="direct-download-url" type="text" name="song_url" />
+        <input class="song-added-by" type="hidden" name="song_added_by" />
+        <div class="field" style="margin-top: 5px; justify-content: space-evenly; display: flex;">
+          <label class="checkbox" title="{{getString1(207)}}"><input type="checkbox" checked name="enqueue">{{getString1(125)}}</label>
+          <label class="checkbox" title="{{getString1(209)}}"><input type="checkbox" name="high_quality" {{'checked' if high_quality else ''}}>{{getString1(206)}}</label>
+          <label class="checkbox" title="{{getString1(208)}}"><input type="checkbox" name="include_subtitles">{{getString1(126)}}</label>
+        </div>
+        <div class="has-text-right" style="margin-top: 5px">
+          <button class="button is-small is-rounded" id="direct-download-button" type="submit">{{getString1(127)}}</button>
+        </div>
+      </form>
     </div>
   </div>
 
   <hr>
 
-  <div class="field is-hidden" id="container_search_form">
-    <form action="{{ url_for('search') }}" method="get">
+  <div class="field is-hidden">
+    <form action="/search" method="get">
       <input id="search_string" type="text" name='search_string' />
       <input type="text" id="non_karaoke" name="non_karaoke" />
     </form>
   </div>
 
-  <div id="searching_loader" class="control is-loading is-hidden">{{getString1(128)}}<small><i>'<span
-          id="search_term"></span>'</i></small></div>
+  <div id="searching_loader" class="control is-loading is-hidden">{{getString1(128)}}
+    <small><i>'<span id="search_term"></span>'</i></small></div>
   {% if search_results %}
   <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-  <div class="field" id="container_search_result">
-    <form class="download-direct" action="{{ url_for('download') }}" method="post">
+  <div class="field">
+    <form class="download-direct" action="/download" method="post">
       <label class="label">{{getString1(129)}}<small><i>'{{search_string}}'</i></small></label>
       <div class="field select">
         <select id="search_result_selector" name='song_url'>
-          {% for title,url,id in search_results %}
-          <option data-ytID='{{id}}' value='{{url}}'>{{title}}</option>
+          {% for title,url,id,dur in search_results %}
+          <option data-ytID='{{id}}' value='{{url}}' title="{{getString1(232)+dur}}">{{title}}</option>
           {% endfor %}
         </select>
       </div>
       <input class="song-added-by" type="hidden" name="song_added_by" />
       <p class="help">{{getString1(130)}}</p>
-
-      <p> {{getString1(131)}}<a target="_blank" id='youtube-link' href=''></a> </p>
+      <p> {{getString1(131)}}<a target="_blank" id='youtube-link' href='' style="font-size: 80%;"></a> </p>
       <p class="has-text-centered-mobile"> <img id='youtube-thumb'> </p>
       <div class="field">
         <label class="checkbox"><input type="checkbox" checked name="enqueue">{{getString1(125)}}</label>&nbsp;

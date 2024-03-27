@@ -32,7 +32,7 @@ Detido
 Actualizando youtube-dl! Debería levar un ou dous minutos...
 Non tes permiso para actualizar youtube-dl
 Non tes permiso para apagar
-Saindo de PiKaraoke agora!
+Saindo de OpenHomeKaraoke agora!
 Non tes permiso para saír
 Apagando o sistema agora!
 Non tes permiso para apagar
@@ -41,7 +41,7 @@ Non tes permiso para reiniciar
 Ampliando o sistema de ficheiros e reiniciando o sistema agora!
 Non se pode expandir fs en dispositivos que non sexan Raspberry Pi.
 Non tes permiso para cambiar o tamaño do sistema de ficheiros
-Non se atopou o camiño de Youtube-dl!
+Non se atopou o camiño de Youtube-dl e pip non puido instalalo.
 Non se atopou o camiño VLC!
 O camiño de omxplayer non se atopou!
 Creando ruta de descarga:
@@ -49,8 +49,8 @@ Wifi/rede non conectada. Pechando en 10 segundos...
 Para seleccionar cancións, escanea QR ou conéctate a
 Para a pantalla de TV, conéctese a
 Preme F para cambiar a pantalla completa
-Preme ESC para saír de PiKaraoke
-Modo de configuración de RaspiWifiConfig detectado!
+Preme ESC para saír de OpenHomeKaraoke
+Modo de configuración RaspiWifiConfig detectado!
 Conecta outro dispositivo/teléfono intelixente ao AP Wifi: '%s'
 A continuación, apunte o seu navegador a: '%s://%s%s' e siga as instrucións.
 A continuación:
@@ -60,7 +60,7 @@ Modo administrador concedido!
 Aumentar o atraso do audio darache máis tempo para ler as letras antes de cantar a seguinte frase.
 Ao diminuír o atraso dos subtítulos, darache máis tempo para ler as letras antes de cantar a seguinte frase.
 Un semitono tamén se coñece como medio paso. É o intervalo máis pequeno empregado na música clásica occidental, igual a un duodécimo de oitava ou medio ton.
-O divisor de voz baseado en DNN está activado. PiKaraoke usa PyTorch (de Facebook) para executar unha rede neuronal profunda para dividir o son instrumental e vocal en cada pista dando lugar a un son estéreo.
+O divisor de voz baseado en DNN está activado. OpenHomeKaraoke usa PyTorch (de Facebook) para executar unha rede neuronal profunda para dividir o son instrumental e vocal en cada pista dando lugar a un son estéreo.
 Control do xogador
 Música
 Mixto
@@ -68,8 +68,8 @@ Voz
 Cambiar clave
 Non se xoga nada neste momento.
 Non hai ningunha canción en cola.
-Esta canción non a engadiches ti. Estás seguro de que queres reiniciar esta pista?
-Esta canción non a engadiches ti. Estás seguro de que queres omitir esta pista?
+Non engadiches esta canción. Estás seguro de que queres reiniciar esta pista?
+Non engadiches esta canción. Estás seguro de que queres omitir esta pista?
 Control do xogador
 Agora xogando
 Próxima canción
@@ -105,7 +105,7 @@ Editar canción
 Sube na cola
 Mover cara abaixo na cola
 Seguro que queres eliminar da cola
-Estás seguro de que queres borrar TODA a cola? Escribe "Aceptar" para continuar
+Estás seguro de que queres borrar TODA a cola?
 Engade 3 cancións aleatorias
 Borrar todo
 A cola está baleira
@@ -117,12 +117,12 @@ A canción xa está na cola:
 Buscar / Engadir novo
 Busca
 Fila
-Inclúe partidas que non sexan de karaoke
+Busca só coincidencias de karaoke
 Avanzado
 Escribe unha canción (título/artista) para buscar as cancións dispoñibles e fai clic en 'Cola' para engadila á cola.
 Se a canción non aparece no menú despregable "Cancións dispoñibles", fai clic en "Buscar" para atopala en Youtube.
 URL de descarga directa de YouTube:
-Engadir á cola
+Engadir á cola despois da descarga
 Incluír subtítulos
 Descargar
 Buscando en YouTube
@@ -133,7 +133,7 @@ Cancións dispoñibles
 Queres cambiar o nome para mostrar da persoa que usa este dispositivo? Isto aparecerá xunto ás cancións da cola. Actual:
 Usuario actual
 Configuración
-PiKaraoke
+OpenHomeKaraoke
 Estás seguro de que queres saír?
 Estás seguro de que queres pechar?
 Estás seguro de que queres reiniciar?
@@ -147,12 +147,12 @@ Memoria
 Captura de pantalla
 Divisor vocal
 Versión Youtube-dl (yt-dlp).
-Versión de PiKaraoke
+Versión OpenHomeKaraoke
 Opcións de control avanzadas
 Modo divisor vocal:
 Use L-R/L+R
 Use DNN
-O audio estándar de MTV ten as dúas canles estéreo (L e R) codificadas de tal xeito que: L-R é a pista do instrumento, L+R é a pista vocal. Así, simplemente restando ou sumando as dúas canles estéreo, podemos obter a pista instrumental e vocal en son mono. O divisor vocal integrado de PiKaraoke baseado en DNN (rede neuronal profunda) usa o algoritmo de intelixencia artificial para dividir o son instrumental e vocal en cada pista estéreo de forma independente, o que resulta en pistas instrumentais e vocais estéreo.
+O audio estándar de MTV ten as dúas canles estéreo (L e R) codificadas de tal xeito que: L-R é a pista do instrumento, L+R é a pista vocal. Así, simplemente restando ou sumando as dúas canles estéreo, podemos obter a pista instrumental e vocal en son mono. O divisor vocal integrado de OpenHomeKaraoke baseado en DNN (rede neuronal profunda) usa o algoritmo de intelixencia artificial para dividir o son instrumental e vocal en cada pista estéreo de forma independente, o que resulta en pistas instrumentais e vocais estéreo.
 Detén Splitter
 Reinicie Splitter
 O divisor vocal (que admite a subtracción baseada en DNN e estéreo) execútase como un proceso separado en segundo plano, xerando ficheiros de audio instrumental/vocal para cada canción.
@@ -162,20 +162,20 @@ Reinicie Streamer
 Isto só afecta a reprodución de KTV a través do navegador web. Reiniciar a captura de pantalla e a transmisión mellora a sincronización de audio/vídeo e tamén diminúe a latencia entre o servidor e o navegador.
 Actualiza a lista de cancións:
 Volver a buscar o directorio de cancións
-Só deberías facelo se copiaches manualmente ficheiros no directorio de descargas mentres PiKaraoke estaba en execución.
+Só deberías facelo se copiaches manualmente ficheiros no directorio de descargas mentres estaba en execución OpenHomeKaraoke.
 Actualizacións
 Se as descargas ou as buscas deixaron de funcionar, a actualización de youtube-dl probablemente o solucione. A versión instalada actual é:
 Actualizar youtube-dl
-Esta ligazón de actualización anterior pode fallar se non tes os permisos de ficheiro adecuados. Comprobe o rexistro de PiKaraoke para detectar erros.
+Esta ligazón de actualización anterior pode fallar se non tes os permisos de ficheiro adecuados. Comprobe o rexistro de OpenHomeKaraoke para detectar erros.
 Apagado
 Non só tire do enchufe! Apague sempre o servidor correctamente para evitar a corrupción dos datos.
-Saír de PiKaraoke
+Saír de OpenHomeKaraoke
 Reinicie o sistema
 Sistema de apagado
 Outra
 Expanda o sistema de ficheiros Raspberry Pi
-Se acabas de instalar a imaxe de PiKaraoke pi preconstruída e a túa tarxeta SD ten máis de 4 GB, quizais queiras expandir o sistema de ficheiros para utilizar o espazo restante. Só tes que facelo unha vez. Isto reiniciará o sistema.
-Desactivar o modo administrador
+Se acabas de instalar a imaxe OpenHomeKaraoke pi preconstruída e a túa tarxeta SD ten máis de 4 GB, quizais queiras expandir o sistema de ficheiros para utilizar o espazo restante. Só tes que facelo unha vez. Isto reiniciará o sistema.
+Desactiva o modo administrador
 Activa o modo administrador
 pechar sesión
 Iniciar sesión
@@ -185,7 +185,7 @@ Cambiar Idioma
 Escolla o idioma
 Linguaxe do sistema
 Idioma do sistema actual:
-Isto cambia o idioma do sistema de backend PiKaraoke que se mostra na pantalla do televisor; ademais, cada usuario que se conecta tamén pode cambiar o seu idioma da IU web no botón globo terráqueo do menú superior dereito.
+Isto cambia o idioma do sistema de backend OpenHomeKaraoke que se mostra na pantalla do televisor; ademais, cada usuario que se conecta tamén pode cambiar o seu idioma da IU web no botón globo terráqueo do menú superior dereito.
 Descarga completada con éxito!
 Fallou a descarga!
 Canción engadida á cola!
@@ -205,5 +205,27 @@ Tecla de reinicio
 Restablecer velocidade
 Alta calidade
 Engade a canción á cola de canto despois de que remate a descarga
-Descarga subtítulos (só incorporados) en todos os idiomas, se están dispoñibles
+Descarga subtítulos (só incorporados) en todos os idiomas, se está dispoñible
 A descarga de vídeos de alta calidade pode levar moito tempo
+Garda a configuración de Play
+Garda a configuración de reprodución para cada canción, isto inclúe: atraso de audio, atraso de subtítulos e se queres mostrar os subtítulos.
+Engade unha canción pronunciando o título da canción
+Di o título da canción e fai clic en Aceptar!
+Só os sitios web HTTPS poden ter acceso ao micrófono, queres redireccionar ao sitio web HTTPS?
+Por favor, concede permiso para acceder ao micrófono!
+Editar o nome da canción:
+Gardar
+Elimina esta canción
+Estás seguro de que queres eliminar esta canción da biblioteca?
+Erro de parámetro de solicitude!
+Recorta a canción:
+Axustar o volume da canción:
+Hora de inicio:
+Hora de finalización:
+Volume orixinal (dB):
+Non se pode atopar ningunha canción que coincida con "%s".
+Engadiuse "%s" á cola.
+Escolle a(s) canción(s) para engadir:
+DESFACER
+Pechar
+Engadir

@@ -32,7 +32,7 @@ Parat
 S'està actualitzant youtube-dl! Hauria de trigar un minut o dos...
 No tens permís per actualitzar youtube-dl
 No tens permís per tancar
-Sortant de PiKaraoke ara!
+Sortant d'OpenHomeKaraoke ara!
 No tens permís per sortir
 Tancant el sistema ara!
 No tens permís per tancar
@@ -41,7 +41,7 @@ No teniu permís per reiniciar
 Ampliant el sistema de fitxers i reiniciant el sistema ara!
 No es pot expandir fs en dispositius que no siguin Raspberry Pi!
 No teniu permís per canviar la mida del sistema de fitxers
-No s'ha trobat la ruta de Youtube-dl!
+No s'ha trobat el camí de Youtube-dl i el pip no l'ha pogut instal·lar!
 No s'ha trobat el camí VLC!
 No s'ha trobat el camí d'omxplayer!
 S'està creant la ruta de descàrrega:
@@ -49,7 +49,7 @@ Wifi/Xarxa no connectada. Tancament d'aquí a 10 segons...
 Per seleccionar cançons, escaneja QR o connecta't a
 Per a la pantalla de TV, connecteu-vos a
 Premeu F per canviar la pantalla completa
-Premeu ESC per sortir de PiKaraoke
+Premeu ESC per sortir de l'OpenHomeKaraoke
 S'ha detectat el mode de configuració de RaspiWifiConfig!
 Connecta un altre dispositiu/telèfon intel·ligent a l'AP Wifi: '%s'
 A continuació, apunteu el seu navegador a: '%s://%s%s' i seguiu les instruccions.
@@ -60,7 +60,7 @@ Mode administrador concedit!
 Augmentar el retard d'àudio us donarà més temps per llegir les lletres abans de cantar la següent frase.
 Disminuir el retard dels subtítols us donarà més temps per llegir les lletres abans de cantar la següent frase.
 Un semitò també es coneix com a mig pas. És l'interval més petit utilitzat en la música clàssica occidental, igual a una dotzena part d'octava o mig to.
-El divisor vocal basat en DNN està habilitat. PiKaraoke utilitza PyTorch (de Facebook) per executar una xarxa neuronal profunda per dividir el so instrumental i vocal a cada pista donant lloc a so estèreo.
+El divisor vocal basat en DNN està habilitat. OpenHomeKaraoke utilitza PyTorch (de Facebook) per executar una xarxa neuronal profunda per dividir el so instrumental i vocal a cada pista donant lloc a so estèreo.
 Control del jugador
 Música
 Mixt
@@ -100,12 +100,12 @@ Ordenat per "Data"
 Ordenat per "Alfabètic"
 cançons
 mostra <b>{start} - {end}</b> {record_name}, en total <b>{total}</b> {record_name}
-trobat <b>{found}</b> {record_name}, mostrant <b>{start} - {end}</b> {record_name}
+S'ha trobat <b>{found}</b> {record_name}, que mostra <b>{start} - {end}</b> {record_name}
 Edita la cançó
 Amunt a la cua
 Baixa a la cua
 Esteu segur que voleu suprimir de la cua
-Esteu segur que voleu esborrar TOTA la cua? Escriviu "D'acord" per continuar
+Esteu segur que voleu esborrar TOTA la cua?
 Afegeix 3 cançons aleatòries
 Esborra-ho tot
 La cua està buida
@@ -117,12 +117,12 @@ La cançó ja està a la cua:
 Cerca / Afegeix nou
 Cerca
 Cua
-Inclou partits que no siguin karaoke
+Cerca només coincidències de karaoke
 Avançat
 Escriviu una cançó (títol/artista) per cercar les cançons disponibles i feu clic a "Cua" per afegir-la a la cua.
 Si la cançó no apareix al menú desplegable "Cançons disponibles", feu clic a "Cerca" per trobar-la a Youtube.
 URL de descàrrega directa de YouTube:
-Afegeix a la cua
+Afegeix a la cua després de la descàrrega
 Inclou subtítols
 descarregar
 Buscant a YouTube
@@ -133,7 +133,7 @@ Cançons disponibles
 Voleu canviar el nom de visualització de la persona que utilitza aquest dispositiu? Això apareixerà al costat de les cançons a la cua. Actual:
 Usuari actual
 Configuració
-PiKaraoke
+OpenHomeKaraoke
 Estàs segur que vols deixar-ho?
 Esteu segur que voleu tancar?
 Esteu segur que voleu reiniciar?
@@ -147,12 +147,12 @@ Memòria
 Captura de pantalla
 Divisor vocal
 Versió Youtube-dl (yt-dlp).
-Versió PiKaraoke
+Versió OpenHomeKaraoke
 Opcions de control avançades
 Mode divisor vocal:
 Utilitzeu L-R/L+R
 Utilitzeu DNN
-L'àudio estàndard de MTV té els dos canals estèreo (L i R) codificats de manera que: L-R és la pista de l'instrument, L+R és la pista vocal. Així, simplement restant o sumant els dos canals estèreo, podem obtenir la pista instrumental i vocal en so mono. El divisor vocal integrat de PiKaraoke basat en DNN (xarxa neuronal profunda) utilitza un algorisme d'IA per dividir el so instrumental i vocal a cada pista estèreo de manera independent, donant com a resultat pistes instrumentals i vocals estèreo.
+L'àudio estàndard de MTV té els dos canals estèreo (L i R) codificats de manera que: L-R és la pista de l'instrument, L+R és la pista vocal. Així, simplement restant o sumant els dos canals estèreo, podem obtenir la pista instrumental i vocal en so mono. El divisor vocal integrat d'OpenHomeKaraoke basat en DNN (xarxa neuronal profunda) utilitza un algorisme d'IA per dividir el so instrumental i vocal a cada pista estèreo de manera independent, donant com a resultat pistes vocals i instrumentals estèreo.
 Atura Splitter
 Reinicieu Splitter
 El divisor vocal (que admet tant la resta basada en DNN com la estèreo) s'executa com un procés independent en segon pla, generant un fitxer d'àudio instrumental/vocal per a cada cançó.
@@ -162,19 +162,19 @@ Reinicieu Streamer
 Això només afecta la reproducció de KTV mitjançant el navegador web. Reiniciar la captura de pantalla i la transmissió en temps real millora la sincronització d'àudio/vídeo i també disminueix la latència entre el servidor i el navegador.
 Actualitza la llista de cançons:
 Torna a escanejar el directori de cançons
-Només hauríeu de fer-ho si heu copiat manualment fitxers al directori de descàrrega mentre s'executava PiKaraoke.
+Només hauríeu de fer-ho si heu copiat manualment fitxers al directori de descàrregues mentre s'executava l'OpenHomeKaraoke.
 Actualitzacions
 Si les baixades o les cerques van deixar de funcionar, l'actualització de youtube-dl probablement ho solucionarà. La versió instal·lada actual és:
 Actualitza youtube-dl
-Aquest enllaç d'actualització anterior pot fallar si no teniu els permisos de fitxer adequats. Comproveu el registre de PiKaraoke per detectar errors.
+Aquest enllaç d'actualització anterior pot fallar si no teniu els permisos de fitxer adequats. Comproveu si hi ha errors al registre d'OpenHomeKaraoke.
 Tancar
 No només estireu l'endoll! Apagueu sempre el vostre servidor correctament per evitar la corrupció de dades.
-Surt de PiKaraoke
+Surt d'OpenHomeKaraoke
 Reinicieu el sistema
 Sistema d'apagada
 Altres
 Amplieu el sistema de fitxers Raspberry Pi
-Si acabeu d'instal·lar la imatge de PiKaraoke pi preconstruïda i la vostra targeta SD és de més de 4 GB, és possible que vulgueu ampliar el sistema de fitxers per utilitzar l'espai restant. Només heu de fer això una vegada. Això reiniciarà el sistema.
+Si acabeu d'instal·lar la imatge OpenHomeKaraoke pi preconstruïda i la vostra targeta SD és més gran que 4 GB, potser voldreu ampliar el sistema de fitxers per utilitzar l'espai restant. Només heu de fer això una vegada. Això reiniciarà el sistema.
 Desactiva el mode d'administració
 Activa el mode d'administració
 tancar sessió
@@ -185,7 +185,7 @@ Canviar d'idioma
 Si us plau, trieu l'idioma
 Llenguatge del sistema
 Idioma actual del sistema:
-Això canvia l'idioma del sistema de fons PiKaraoke que es mostra a la pantalla del televisor; a més, cada usuari que es connecta també pot canviar el seu respectiu idioma de la interfície d'usuari web al botó del globus terraqüi del menú superior dret.
+Això canvia l'idioma del sistema de fons d'OpenHomeKaraoke que es mostra a la pantalla del televisor; a més, cada usuari que es connecta també pot canviar el seu respectiu idioma de la interfície d'usuari web al botó del globus terraqüi del menú superior dret.
 La descàrrega s'ha completat correctament!
 La baixada ha fallat!
 La cançó s'ha afegit a la cua!
@@ -204,6 +204,28 @@ Feu clic per restablir la tecla/el to
 Clau de restabliment
 Restableix la velocitat
 Alta qualitat
-Afegiu la cançó a la cua de cant un cop hagi acabat la descàrrega
+Afegiu la cançó a la cua de cant un cop hagi finalitzat la descàrrega
 Baixeu subtítols (només incrustats) en tots els idiomes si estan disponibles
 La baixada de vídeos d'alta qualitat pot trigar molt de temps
+Desa la configuració de Play
+Desa la configuració de reproducció per a cada cançó, això inclou: retard d'àudio, retard de subtítols i si s'han de mostrar els subtítols.
+Afegeix una cançó pronunciant el títol de la cançó
+Si us plau, digueu el títol de la cançó i feu clic a D'acord!
+Només els llocs web HTTPS poden tenir accés al micròfon, voleu redirigir al lloc web HTTPS?
+Doneu permís per accedir al micròfon!
+Edita el nom de la cançó:
+Desa
+Suprimeix aquesta cançó
+Confirmes que vols suprimir aquesta cançó de la biblioteca?
+Error de paràmetre de sol·licitud!
+Retalla la cançó:
+Ajustar el volum de la cançó:
+Hora d'inici:
+Fi del temps:
+Volum original (dB):
+No es pot trobar cap cançó que coincideixi amb "%s".
+S'ha afegit "%s" a la cua.
+Si us plau, trieu les cançons que voleu afegir:
+DESFAR
+Tanca
+Afegeix

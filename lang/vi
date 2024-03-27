@@ -1,75 +1,75 @@
 Tiếng Việt
-Mật khẩu quản trị không chính xác!
-Đăng xuất khỏi chế độ quản trị viên!
+Mật khẩu quản trị viên không chính xác!
+Đã đăng xuất khỏi chế độ quản trị viên!
 Đã thêm %s bản nhạc ngẫu nhiên
-Đã hết bài hát!
+Hết bài hát rồi!
 Đã xóa hàng đợi!
-Lỗi di chuyển mục bên trong hàng đợi: đối số không hợp lệ
+Lỗi di chuyển mục trong hàng đợi: đối số không hợp lệ
 Đã di chuyển thành công mục vào hàng đợi:
-Lỗi di chuyển mục bên trong hàng đợi:
-Di chuyển xuống trong hàng đợi:
-Lỗi di chuyển xuống trong hàng đợi:
-Di chuyển lên trong hàng đợi:
+Lỗi di chuyển mục trong hàng đợi:
+Đã di chuyển xuống hàng đợi:
+Lỗi di chuyển xuống hàng đợi:
+Đã di chuyển lên trong hàng đợi:
 Lỗi di chuyển lên trong hàng đợi:
 Đã xóa khỏi hàng đợi:
 Lỗi xóa khỏi hàng đợi:
 Đã bắt đầu tải xuống:
 Sau khi hoàn thành, nó sẽ được thêm vào hàng đợi.
-Sau khi hoàn thành, nó sẽ xuất hiện trong danh sách "các bài hát có sẵn".
+Sau khi hoàn thành, nó sẽ xuất hiện trong danh sách "bài hát có sẵn".
 Lỗi: Không thể xóa bài hát này vì nó nằm trong hàng đợi hiện tại:
 Bài hát đã bị xóa:
-Lỗi: Không có thông số bài hát nào được chỉ định!
+Lỗi: Không có thông số bài hát được chỉ định!
 Lỗi: Không thể chỉnh sửa bài hát này vì nó hiện đang được phát:
 Chỉnh sửa tập tin bài hát
-Lỗi khi đổi tên tệp: '%s' thành '%s'. Tên tệp đã tồn tại.
-Đã đổi tên tệp: '%s' thành '%s'
+Lỗi khi đổi tên tập tin: '%s' thành '%s'. Tên tập tin đã tồn tại.
+Đã đổi tên tập tin: '%s' thành '%s'
 Lỗi: Không có tham số tên tệp nào được chỉ định!
 không xác định
 Đang chạy
 Đã dừng
  (chỉ CPU)
  (Đã bật GPU)
-Đang cập nhật youtube-dl! Sẽ mất một hoặc hai phút ...
+Đang cập nhật youtube-dl! Sẽ mất một hoặc hai phút...
 Bạn không có quyền cập nhật youtube-dl
-Bạn không có quyền tắt máy
-Bỏ PiKaraoke ngay!
-Bạn không có quyền thoát
+Bạn không có quyền tắt
+Hãy thoát khỏi OpenHomeKaraoke ngay bây giờ!
+Bạn không có quyền bỏ cuộc
 Tắt hệ thống ngay bây giờ!
-Bạn không có quyền tắt máy
+Bạn không có quyền tắt
 Khởi động lại hệ thống ngay bây giờ!
 Bạn không có quyền Khởi động lại
 Mở rộng hệ thống tập tin và khởi động lại hệ thống ngay bây giờ!
 Không thể mở rộng fs trên các thiết bị pi không phải mâm xôi!
 Bạn không có quyền thay đổi kích thước hệ thống tập tin
-Không tìm thấy đường dẫn Youtube-dl!
+Không tìm thấy đường dẫn Youtube-dl và pip không cài đặt được nó!
 Không tìm thấy đường dẫn VLC!
 không tìm thấy đường dẫn omxplayer!
 Tạo đường dẫn tải xuống:
-Wifi/Mạng không được kết nối. Tắt sau 10s...
+Wifi/Mạng không được kết nối. Tắt máy sau 10s...
 Để chọn bài hát, hãy quét QR hoặc kết nối với
 Đối với màn hình TV, hãy kết nối với
-Nhấn F để chuyển toàn màn hình
-Nhấn ESC để thoát PiKaraoke
+Nhấn F để chuyển sang chế độ toàn màn hình
+Nhấn ESC để thoát OpenHomeKaraoke
 Đã phát hiện chế độ thiết lập RaspiWifiConfig!
 Kết nối thiết bị/điện thoại thông minh khác với Wifi AP: '%s'
 Sau đó trỏ trình duyệt của nó tới: '%s://%s%s' và làm theo hướng dẫn.
 Tiếp theo:
-Được thêm bởi:
+Đã thêm bởi:
 Đang chơi:
-Chế độ quản trị được cấp!
-Tăng độ trễ âm thanh sẽ giúp bạn có thêm thời gian để đọc lời bài hát trước khi hát to câu tiếp theo.
-Giảm độ trễ phụ đề sẽ cho bạn nhiều thời gian hơn để đọc lời bài hát trước khi hát câu tiếp theo.
-Nửa cung còn được gọi là nửa cung. Đó là quãng nhỏ nhất được sử dụng trong âm nhạc cổ điển phương Tây, bằng một phần mười hai quãng tám hoặc nửa cung.
-Bộ tách âm dựa trên DNN được bật. PiKaraoke sử dụng PyTorch (của Facebook) để chạy một mạng lưới thần kinh sâu nhằm phân tách âm thanh của nhạc cụ và giọng hát trong mỗi bản nhạc để tạo ra âm thanh nổi.
+Đã cấp chế độ quản trị viên!
+Việc tăng độ trễ âm thanh sẽ giúp bạn có nhiều thời gian hơn để đọc lời bài hát trước khi hát câu tiếp theo.
+Việc giảm độ trễ của phụ đề sẽ giúp bạn có nhiều thời gian hơn để đọc lời bài hát trước khi hát câu tiếp theo.
+Nửa cung còn được gọi là nửa cung. Đó là quãng nhỏ nhất được sử dụng trong âm nhạc cổ điển phương Tây, bằng một phần mười hai quãng tám hoặc nửa âm.
+Bộ chia giọng hát dựa trên DNN được bật. OpenHomeKaraoke sử dụng PyTorch (của Facebook) để chạy một mạng lưới thần kinh sâu nhằm phân chia âm thanh nhạc cụ và giọng hát trong mỗi bản nhạc để tạo ra âm thanh nổi.
 Kiểm soát người chơi
 Âm nhạc
 Trộn
 Tiếng nói
 Thay đổi khóa
-Không có gì đang chơi ngay bây giờ.
-Không có bài hát nào được xếp hàng.
+Hiện tại không có nội dung nào đang phát.
+Không có bài hát nào được xếp hàng đợi.
 Bài hát này không phải do bạn thêm vào. Bạn có chắc chắn muốn bắt đầu lại bản nhạc này không?
-Bài hát này không phải do bạn thêm vào. Bạn có chắc chắn muốn bỏ qua bài hát này?
+Bài hát này không phải do bạn thêm vào. Bạn có chắc chắn muốn bỏ qua bài hát này không?
 Kiểm soát người chơi
 Đang phát
 Bài hát tiếp theo
@@ -95,87 +95,87 @@ Bài hát đã có trong hàng đợi:
 Lọc theo ngày
 Sắp xếp theo bảng chữ cái
 Thêm '%s' vào hàng đợi
-duyệt
+Duyệt qua
 Sắp xếp theo 'Ngày'
 Sắp xếp theo 'Bảng chữ cái'
 bài hát
-hiển thị tổng cộng <b>{start} - {end}</b> {record_name}, <b>{total}</b> {record_name}
-đã tìm thấy <b>{found}</b> {record_name}, đang hiển thị <b>{start} - {end}</b> {record_name}
-chỉnh sửa bài hát
+hiển thị <b>{start} - {end</b> {record_name}, trong tổng số <b>{total</b> {record_name}
+đã tìm thấy <b>{found</b> {record_name}, đang hiển thị <b>{start} - {end</b> {record_name}
+Chỉnh sửa bài hát
 Di chuyển lên trong hàng đợi
-Di chuyển xuống trong hàng đợi
+Di chuyển xuống hàng đợi
 Bạn có chắc chắn muốn xóa khỏi hàng đợi
-Bạn có chắc chắn muốn xóa TOÀN BỘ hàng đợi không? Nhập 'OK' để tiếp tục
+Bạn có chắc chắn muốn xóa TOÀN BỘ hàng đợi không?
 Thêm 3 bài hát ngẫu nhiên
 Làm sạch tất cả
 Hàng đợi trống
 Xếp hàng
 Xóa bỏ
-bài hát có sẵn trong thư viện địa phương
+Các bài hát có sẵn trong thư viện địa phương
 Đã thêm bài hát vào hàng đợi:
 Bài hát đã có trong hàng đợi:
-Tìm kiếm / Thêm mới
+Tìm kiếm/Thêm mới
 Tìm kiếm
 Xếp hàng
-Bao gồm các trận đấu không phải karaoke
+Chỉ tìm trận đấu Karaoke
 Trình độ cao
-Nhập một bài hát (tiêu đề/nghệ sĩ) để tìm kiếm các bài hát có sẵn và nhấp vào 'Hàng đợi' để thêm bài hát đó vào hàng đợi.
-Nếu bài hát không xuất hiện trong menu thả xuống "Bài hát có sẵn", hãy nhấp vào 'Tìm kiếm' để tìm bài hát đó trên Youtube.
+Nhập bài hát (tiêu đề/nghệ sĩ) để tìm kiếm các bài hát có sẵn và nhấp vào 'Hàng đợi' để thêm bài hát đó vào hàng đợi.
+Nếu bài hát không xuất hiện trong danh sách thả xuống "Bài hát có sẵn", hãy nhấp vào 'Tìm kiếm' để tìm bài hát đó trên Youtube.
 Tải xuống trực tiếp url YouTube:
-Thêm vào hàng
+Thêm vào hàng đợi sau khi tải xuống
 Bao gồm phụ đề
 Tải xuống
-Tìm kiếm YouTube cho
+Đang tìm kiếm trên YouTube
 tìm kiếm kết quả cho
-Nhấp vào menu thả xuống để hiển thị thêm kết quả
-liên kết:
-bài hát có sẵn
-Bạn có muốn thay đổi tên hiển thị của người đang sử dụng thiết bị này không? Điều này sẽ hiển thị bên cạnh các bài hát xếp hàng. Hiện hành:
+Nhấp vào thả xuống để hiển thị nhiều kết quả hơn
+Liên kết:
+Bài hát có sẵn
+Bạn có muốn thay đổi tên hiển thị của người sử dụng thiết bị này không? Điều này sẽ hiển thị bên cạnh các bài hát được xếp hàng đợi. Hiện hành:
 Người dùng hiện tại
 Cài đặt
-PiKaraoke
+KaraokeMởNhà
 Bạn có chắc bạn muốn thoát khỏi?
-Bạn có chắc chắn muốn tắt máy không?
-Bạn có chắc chắn muốn khởi động lại?
+Bạn có chắc chắn muốn tắt không?
+Bạn có chắc chắn muốn khởi động lại không?
 Bạn có chắc chắn muốn cập nhật Youtube-dl ngay bây giờ không? Tải xuống hiện tại và đang chờ xử lý có thể không thành công.
-Bạn có chắc chắn muốn mở rộng hệ thống tập tin? Thao tác này sẽ khởi động lại mâm xôi pi của bạn.
+Bạn có chắc chắn muốn mở rộng hệ thống tập tin? Điều này sẽ khởi động lại Raspberry Pi của bạn.
 Thông tin
 Mã QR URL tiện dụng để chia sẻ với bạn bè:
 hệ điều hành
 Sử dụng đĩa
 Ký ức
 Chụp màn hình
-Bộ tách giọng hát
+Bộ chia giọng hát
 Phiên bản Youtube-dl (yt-dlp)
-Phiên bản PiKaraoke
+Phiên bản OpenHomeKaraoke
 Tùy chọn điều khiển nâng cao
-Chế độ tách âm thanh:
+Chế độ tách giọng:
 Sử dụng L-R/L+R
 Sử dụng DNN
-Âm thanh MTV tiêu chuẩn có hai kênh âm thanh nổi (L và R) được mã hóa theo cách: L-R là rãnh nhạc cụ, L+R là rãnh giọng hát. Do đó, chỉ bằng cách trừ hoặc cộng hai kênh âm thanh nổi, chúng ta có thể nhận được bản nhạc cụ và giọng hát ở dạng âm thanh đơn âm. Bộ tách giọng hát dựa trên DNN (mạng nơ-ron sâu) tích hợp của PiKaraoke sử dụng thuật toán AI để phân tách âm thanh nhạc cụ và giọng hát trong từng rãnh âm thanh nổi một cách độc lập dẫn đến các rãnh nhạc và giọng hát âm thanh nổi.
+Âm thanh MTV tiêu chuẩn có hai kênh âm thanh nổi (L và R) được mã hóa theo cách: L-R là rãnh nhạc cụ, L+R là rãnh giọng hát. Do đó, chỉ cần trừ hoặc thêm hai kênh âm thanh nổi, chúng ta có thể có được bản nhạc cụ và giọng hát ở dạng đơn âm. Bộ chia giọng hát dựa trên DNN (mạng thần kinh sâu) tích hợp của OpenHomeKaraoke sử dụng thuật toán AI để phân tách âm thanh nhạc cụ và giọng hát trong từng bản nhạc âm thanh nổi một cách độc lập, tạo ra các bản nhạc và giọng hát âm thanh nổi.
 Dừng bộ chia
 Khởi động lại bộ chia
-Bộ tách giọng hát (hỗ trợ cả DNN và phép trừ âm thanh nổi) chạy dưới dạng một quy trình riêng biệt trong nền, tạo tệp âm thanh nhạc cụ/giọng hát cho mọi bài hát.
-Đồng bộ hóa lại âm thanh và video:
-Dừng truyền phát
+Bộ tách giọng hát (hỗ trợ cả phép trừ âm thanh nổi và dựa trên DNN) chạy dưới dạng một quy trình riêng biệt ở chế độ nền, tạo tệp âm thanh nhạc cụ/giọng hát cho mỗi bài hát.
+Đồng bộ lại âm thanh và video:
+Dừng phát trực tiếp
 Khởi động lại bộ truyền phát
-Điều này chỉ ảnh hưởng đến việc phát KTV qua trình duyệt web. Việc khởi động lại tính năng chụp và phát trực tuyến màn hình sẽ cải thiện khả năng đồng bộ hóa âm thanh/video, đồng thời giảm độ trễ giữa máy chủ và trình duyệt.
+Điều này chỉ ảnh hưởng đến việc phát KTV qua trình duyệt web. Việc khởi động lại tính năng chụp và phát trực tuyến màn hình sẽ cải thiện khả năng đồng bộ hóa âm thanh/video, nó cũng làm giảm độ trễ giữa máy chủ và trình duyệt.
 Làm mới danh sách bài hát:
 Quét lại thư mục bài hát
-Bạn chỉ cần làm điều này nếu bạn đã sao chép các tệp theo cách thủ công vào thư mục tải xuống trong khi PiKaraoke đang chạy.
-cập nhật
-Nếu quá trình tải xuống hoặc tìm kiếm ngừng hoạt động, việc cập nhật youtube-dl có thể sẽ khắc phục được sự cố đó. Phiên bản cài đặt hiện tại là:
+Bạn chỉ cần thực hiện việc này nếu bạn đã sao chép thủ công các tệp vào thư mục tải xuống trong khi OpenHomeKaraoke đang chạy.
+Cập nhật
+Nếu quá trình tải xuống hoặc tìm kiếm ngừng hoạt động thì việc cập nhật youtube-dl có thể sẽ khắc phục được sự cố. Phiên bản cài đặt hiện tại là:
 Cập nhật youtube-dl
-Liên kết cập nhật ở trên có thể không thành công nếu bạn không có quyền đối với tệp thích hợp. Kiểm tra nhật ký PiKaraoke để tìm lỗi.
+Liên kết cập nhật ở trên có thể không thành công nếu bạn không có quyền truy cập tệp thích hợp. Kiểm tra nhật ký OpenHomeKaraoke để tìm lỗi.
 Tắt
-Đừng chỉ rút phích cắm! Luôn tắt máy chủ của bạn đúng cách để tránh làm hỏng dữ liệu.
-Bỏ PiKaraoke
+Đừng chỉ rút phích cắm! Luôn tắt máy chủ của bạn đúng cách để tránh hỏng dữ liệu.
+Thoát khỏi OpenHomeKaraoke
 Hệ thống khởi động lại
-hệ thống tắt máy
+Hệ thống tắt máy
 Khác
 Mở rộng hệ thống tập tin Raspberry Pi
-Nếu bạn vừa cài đặt hình ảnh PiKaraoke pi dựng sẵn và thẻ SD của bạn lớn hơn 4GB, bạn có thể muốn mở rộng hệ thống tệp để sử dụng dung lượng còn lại. Bạn chỉ cần làm điều này một lần. Điều này sẽ khởi động lại hệ thống.
-Tắt chế độ quản trị
+Nếu bạn vừa cài đặt hình ảnh pi OpenHomeKaraoke dựng sẵn và thẻ SD của bạn lớn hơn 4GB, bạn có thể muốn mở rộng hệ thống tệp để tận dụng dung lượng còn lại. Bạn chỉ cần làm điều này một lần. Điều này sẽ khởi động lại hệ thống.
+Tắt chế độ quản trị viên
 Bật chế độ quản trị viên
 đăng xuất
 đăng nhập
@@ -185,25 +185,47 @@ Thay đổi ngôn ngữ
 Vui lòng chọn ngôn ngữ
 Ngôn ngữ hệ thống
 Ngôn ngữ hệ thống hiện tại:
-Điều này thay đổi ngôn ngữ của hệ thống phụ trợ PiKaraoke được hiển thị trên màn hình TV; hơn nữa, mỗi người dùng kết nối cũng có thể thay đổi ngôn ngữ Giao diện người dùng web tương ứng của họ trong nút quả địa cầu ở menu trên cùng bên phải.
+Điều này thay đổi ngôn ngữ của hệ thống phụ trợ OpenHomeKaraoke được hiển thị trên màn hình TV; hơn nữa, mỗi người dùng kết nối cũng có thể thay đổi ngôn ngữ giao diện người dùng Web tương ứng của họ bằng nút hình cầu ở menu trên cùng bên phải.
 Tải xuống hoàn tất thành công!
 Tải xuống không thành công!
 Bài hát được thêm vào hàng đợi!
 Không thể xếp hàng bài hát!
-Thông tin & Cài đặt hệ thống
+Thông tin & cài đặt hệ thống
 Chuẩn hóa âm lượng
-Các bài hát khác nhau thường có âm lượng khác nhau. Bật chuẩn hóa âm lượng trước tiên sẽ chạy <i>ffmpeg</i> để tính toán âm lượng chung của một bài hát và tự động điều chỉnh âm lượng của trình phát để mọi bài hát đều có âm lượng lớn như nhau.
+Các bài hát khác nhau thường có âm lượng khác nhau. Việc bật chuẩn hóa âm lượng trước tiên sẽ chạy <i>ffmpeg</i> để tính toán âm lượng chung của một bài hát và tự động điều chỉnh âm lượng của trình phát để mọi bài hát đều có âm lượng lớn như nhau.
 Đường dẫn tải thư viện bài hát
 Tổng số bài hát
-Hiện/Ẩn phụ đề
+Hiển thị/Ẩn phụ đề
 Thay đổi tốc độ
-Bạn có thể hát bài hát nhanh hơn hoặc chậm hơn bằng cách thay đổi tốc độ phát lại trong khoảng 0,8x đến 1,2x bằng thanh theo dõi tốc độ; đối với tốc độ phát lại khác, nhấp vào giá trị tốc độ để thay đổi.
+Bạn có thể hát bài hát nhanh hơn hoặc chậm hơn bằng cách thay đổi tốc độ phát lại trong khoảng 0,8x đến 1,2x bằng thanh trackbar tốc độ; đối với tốc độ phát lại khác, nhấp vào giá trị tốc độ để thay đổi.
 Nhấp để đặt lại tốc độ phát lại thành 1x
 Nhấp để đặt tốc độ phát lại
 Nhấp để đặt lại phím/cao độ
 Thiết lập lại chìa khóa
 Đặt lại tốc độ
 Chất lượng cao
-Thêm bài hát vào hàng đợi hát sau khi tải xuống xong
-Tải xuống phụ đề (chỉ được nhúng) bằng tất cả các ngôn ngữ nếu có
+Thêm bài hát vào hàng đợi hát sau khi tải xong
+Tải xuống phụ đề (chỉ nhúng) bằng tất cả các ngôn ngữ nếu có
 Tải xuống video chất lượng cao có thể mất rất nhiều thời gian
+Lưu cài đặt phát
+Lưu cài đặt phát cho từng bài hát, bao gồm: độ trễ âm thanh, độ trễ phụ đề và có hiển thị phụ đề hay không.
+Thêm bài hát bằng cách nói tên bài hát
+Hãy nói tên bài hát và nhấn OK!
+Chỉ các trang web HTTPS mới có thể truy cập micrô, bạn có muốn chuyển hướng đến trang web HTTPS không?
+Vui lòng cấp quyền truy cập micrô!
+Chỉnh sửa tên bài hát:
+Cứu
+Xóa bài hát này
+Bạn có chắc chắn muốn xóa bài hát này khỏi thư viện không?
+Yêu cầu lỗi tham số!
+Cắt bài hát:
+Điều chỉnh âm lượng bài hát:
+Thời gian bắt đầu:
+Thời gian kết thúc:
+Âm lượng gốc (dB):
+Không thể tìm thấy bất kỳ bài hát nào phù hợp với "%s".
+Đã thêm "%s" vào hàng đợi.
+Vui lòng chọn (các) bài hát để thêm:
+HOÀN TÁC
+Đóng
+Thêm vào

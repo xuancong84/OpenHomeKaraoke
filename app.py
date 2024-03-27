@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse, datetime, json, locale, os, sys, io, shutil
-import signal, subprocess, threading, time, traceback, webbrowser
+import subprocess, threading, time, traceback, webbrowser
 from functools import wraps
 
 import psutil, tempfile
@@ -12,12 +12,11 @@ from pydub import AudioSegment as AudSeg
 from flask_sock import Sock
 from flask_paginate import Pagination, get_page_parameter
 
-import karaoke
+from karaoke import *
 from constants import VERSION
 from collections import defaultdict
 from lib.get_platform import *
 from lib.vlcclient import get_default_vlc_path
-from lib.NLP import *
 
 try:
 	from urllib.parse import quote, unquote
@@ -33,7 +32,6 @@ os.texts = defaultdict(lambda: "")
 getString = lambda ii: os.texts[ii]
 getString1 = lambda lang, ii: os.langs[lang].get(ii, os.langs['en_US'][ii])
 getString2 = lambda ii: getString1(request.client_lang, ii)
-ip2websock, ip2pane = {}, {}
 
 
 # Websocket handler
@@ -57,9 +55,6 @@ def wscmd(client_ip, cmd):
 		lst = cmd[9:].split('\t')
 		for fn in lst[1:]:
 			K.enqueue(fn, lst[0])
-
-def flash(message: str, category: str = "message"):
-	ip2websock[request.remote_addr].send(f'showNotification("{message}", "{category}")')
 
 def status_thread():
 	cached_status = ''
@@ -382,16 +377,9 @@ def queue_edit():
 
 @app.route("/enqueue", methods = ["POST", "GET"])
 def enqueue():
-	if "song" in request.args:
-		song = request.args["song"]
-	else:
-		d = request.form.to_dict()
-		song = d["song-to-add"]
-	if "user" in request.args:
-		user = request.args["user"]
-	else:
-		d = request.form.to_dict()
-		user = d["song-added-by"]
+	d = request.values.to_dict()
+	song = d['song' if 'song' in d else 'song-to-add']
+	user = d['user' if 'user' in d else 'song-added-by']
 	rc = K.enqueue(song, user)
 	song_title = filename_from_path(song)
 	return json.dumps({"song": song_title, "success": rc})
@@ -491,15 +479,16 @@ def search():
 		search_string = search_string,
 		search_karaoke = search_karaoke
 	)
-@app.route("/f_search", methods = ["GET"])
+@app.route("/f_search", methods = ["GET", "POST"])
 def f_search():
 	ip2pane[request.remote_addr] = 'search'
-	if "search_string" in request.args:
-		search_string = request.args["search_string"]
-		search_karaoke = request.args.get('non_karaoke', 'false') == "true"
+	dct = request.values.to_dict()
+	if "search_string" in dct:
+		search_string = dct["search_string"]
+		search_karaoke = dct.get('non_karaoke', 'false') == "true"
 		search_results = K.get_search_results(search_string + (" karaoke" if search_karaoke else ""))
 	else:
-		search_string = None
+		search_string = ''
 		search_results = None
 		search_karaoke = False
 	return render_template(
@@ -508,7 +497,6 @@ def f_search():
 		songs = K.available_songs,
 		high_quality = K.high_quality,
 		search_results = search_results,
-		search_string = search_string,
 		search_karaoke = search_karaoke
 	)
 
@@ -525,6 +513,13 @@ def autocomplete():
 		mimetype = 'application/json'
 	)
 	return response
+
+
+@app.route("/suggest")
+def suggest():
+	q = request.args.get('q').lower()
+	res = {K.filename_from_path(s):s for s in K.available_songs if q in s.lower()}
+	return json.dumps(res)
 
 
 @app.route("/browse", methods = ["GET"])
@@ -612,15 +607,14 @@ def transform_boolean(dct, S):
 
 @app.route("/download", methods = ["POST"])
 def download():
-	d = transform_boolean(request.form.to_dict(), {'enqueue', 'include_subtitles', 'high_quality'})
-	enqueue = d.get('enqueue', False)
+	dct = transform_boolean(request.form.to_dict(), {'enqueue', 'include_subtitles', 'high_quality'})
 
 	# download in the background since this can take a few minutes
-	t = threading.Thread(target = K.download_video, kwargs = d)
+	t = threading.Thread(target = K.download_video, kwargs = dct|{'client_ip': request.remote_addr, 'client_lang': request.client_lang})
 	t.daemon = True
 	t.start()
 
-	return getString(16) + d["song_url"] + '\n' + getString(17 if enqueue else 18)
+	return getString(16) + dct["song_url"] + '\n' + getString(17 if dct.get('enqueue', False) else 18)
 
 @app.route("/check_download", methods = ["POST"])
 def check_download():
@@ -833,11 +827,15 @@ def f_info():
 		admin_enabled = admin_password != None
 	)
 
-def _add_spoken(client_ip, user, getString):
+def run_asr():
 	global args
 	with open(f'{K.tmp_dir}/rec.webm', 'rb') as f:
 		r = requests.post(args.cloud+'/run_asr/base', files={'file': f}, timeout=8)
 	asr_output = json.loads(r.text) if r.status_code==200 else {}
+	return asr_output
+
+def _add_spoken(client_ip, user, getString):
+	asr_output = run_asr()
 
 	print(f'ASR result: {asr_output}', file=sys.stderr)
 	if asr_output=={} or type(asr_output)==str:
@@ -862,6 +860,14 @@ def add_spoken(user):
 		fp.write(request.data)
 	threading.Thread(target=_add_spoken, args=(request.remote_addr, user, getString)).start()
 	return 'OK'
+
+@app.route('/get_ASR', methods=['POST'])
+@app.route('/get_ASR/<path:cmd>', methods=['POST'])
+def get_ASR(cmd=''):
+	with open(f'{K.tmp_dir}/rec.webm', 'wb') as fp:
+		fp.write(request.data)
+	asr_output = run_asr()
+	return asr_output['text']
 
 
 # Delay system commands to allow redirect to render first
@@ -958,16 +964,11 @@ def expand_fs():
 	return ''
 
 
-# Handle sigterm
-signal.signal(signal.SIGTERM, lambda signum, stack_frame: K.stop())
-
-
 def get_default_dl_dir():
 	return os.path.expanduser("~/pikaraoke-songs")
 
 def get_default_tmp_dir():
 	return '/dev/shm' if os.path.isdir('/dev/shm') else tempfile.gettempdir()
-
 
 def get_default_browser_cookie(platform):
 	platform = 'linux' if platform=='raspberry_pi' else platform
@@ -1228,7 +1229,7 @@ if __name__ == "__main__":
 		args.save_delays = None
 
 	# Configure karaoke process
-	os.K = K = karaoke.Karaoke(args)
+	os.K = K = Karaoke(args)
 
 	if not args.ssl:
 		threading.Thread(target=lambda:app.run(host='0.0.0.0', port=args.port+1, threaded = True, ssl_context=('cert.pem', 'key.pem'))).start()

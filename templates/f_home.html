@@ -130,7 +130,7 @@ function s3_go_to(n, do_action) {
 function s3_enable(n, val) {
 	var s3t = document.getElementById("s3t"+n);
 	if(val!=0){
-		s3t.onclick = function(){s3_go_to(n, true)};
+		s3t.onclick = () =>{s3_go_to(n, true)};
 		s3t.style.color = '#ffffff';
 	} else {
 		s3t.onclick = null;
@@ -146,14 +146,12 @@ var slider_prev_value = 0;
 var output = document.getElementById("semitones-label");
 if (slider) {
 	// Update the current slider value (each time you drag the slider handle)
-	slider.oninput = function () {
-		output.innerHTML = getSemitonesLabel(slider.value);
-	};
-	slider.oninput()
+	slider.oninput = () => {output.innerHTML = getSemitonesLabel(slider.value);}
+	slider.oninput();
 	slider_prev_value = slider.value;
 }
 
-$("#transpose").change(function () {
+$("#transpose").change(() => {
 	var value = slider?slider.value:0;
 	if ( value != slider_prev_value ){
 		$.get("/transpose/" + value);
@@ -163,30 +161,31 @@ $("#transpose").change(function () {
 });
 
 seektrack = $("#seektrack")[0];
-seektrack.onchange = function () {
-	$.get("/seek/" + seektrack.value);
-};
-seektrack.oninput = function () {$("#seektrack-val").text(getHHMMSS(seektrack.value));};
+seektrack.onchange = () => { $.get("/seek/" + seektrack.value); }
+seektrack.oninput = () => {$("#seektrack-val").text(getHHMMSS(seektrack.value));}
 
 var speedtrack = document.getElementById("playspeed");
-speedtrack.onchange = function () {$.get("/play_speed/" + speedtrack.value/100);};
-speedtrack.oninput = function () {$("#playspeed-val").text(speedtrack.value/100);};
+speedtrack.onchange = () => {$.get("/play_speed/" + speedtrack.value/100);};
+speedtrack.oninput = () => {$("#playspeed-val").text(speedtrack.value/100);};
 
-$("#pause-resume").click(function () {
+$("#pause-resume").click(() => {
 	$.get("/pause", function (is_paused) {
-		if (is_paused=='true')
+		if (is_paused=='true'){
 			$("#pause-resume").removeClass("icon-pause").addClass("icon-play");
-		else
+			$("#playing_gif").hide();$("#playing_png").show();
+		}else{
 			$("#pause-resume").removeClass("icon-play").addClass("icon-pause");
+			$("#playing_gif").show();$("#playing_png").hide();
+		}
 	});
 });
 
-$("#vol-up").click(function () {
-	$.get("/vol_up", function(vol){$("#vol").text(vol)});
+$("#vol-up").click(() => {
+	$.get("/vol_up", (vol) => {$("#vol").text(vol)});
 });
 
-$("#vol-down").click(function () {
-	$.get("/vol_down", function(vol){$("#vol").text(vol)});
+$("#vol-down").click(() => {
+	$.get("/vol_down", (vol) => {$("#vol").text(vol)});
 });
 
 $("#vol").keypress(function (e) {
@@ -195,17 +194,17 @@ $("#vol").keypress(function (e) {
 	if(ch=="\n" || ch=="\r") $(this).blur();
 });
 
-$("#vol").blur(function () {
+$("#vol").blur(() => {
 	$.get("/vol/"+$(this).text(), function(vol){$("#vol").text(vol)});
 	volume_changing = false;
 });
 
-$("#restart").click(function () {
+$("#restart").click(() => {
 	if (checkUser() || confirm("{{getString1(71)}}"))
 		$.get("/restart");
 });
 
-$("#skip").click(function () {if (checkUser() || confirm("{{getString1(72)}}")) {$.get("/skip");}});
+$("#skip").click(() => {if (checkUser() || confirm("{{getString1(72)}}")) {$.get("/skip");}});
 $("#delay-val").keypress(function (e) {
 	var ch = String.fromCharCode(e.which);
 	if(!("0123456789.-".includes(ch))) e.preventDefault();
@@ -224,34 +223,34 @@ $("#playspeed-val").keypress(function (e) {
 	if(ch=="\n" || ch=="\r") $(this).blur();
 });
 
-$("#delay-val").blur(function () {
+$("#delay-val").blur(() => {
 	if($(this).text()=="") $(this).text("0");
 	$.get("/audio_delay/" + $(this).text());
 	audiodelay_typing=false;
 });
 
-$("#playspeed-val").blur(function () {
+$("#playspeed-val").blur(() => {
 	if($(this).text()=="") $(this).text("1");
 	$.get("/play_speed/" + $(this).text());
 	playspeed_typing=false;
 });
 
-$("#subdelay-val").blur(function () {
+$("#subdelay-val").blur(() => {
 	if($(this).text()=="") $(this).text("0");
 	$.get("/subtitle_delay/" + $(this).text());
 	subdelay_typing=false;
 });
 
-$("#subtitle-sel").click(function () {$.get("/toggle_subtitle");});
-$("#delay-inc").click(function () {$.get("/audio_delay/+", function(data){$("#delay-val").text(parseFloat(data).toFixed(2))});});
-$("#delay-dec").click(function () {$.get("/audio_delay/-", function(data){$("#delay-val").text(parseFloat(data).toFixed(2))});});
-$("#subdelay-inc").click(function () {$.get("/subtitle_delay/+", function(data){$("#subdelay-val").text(parseFloat(data).toFixed(1))});});
-$("#subdelay-dec").click(function () {$.get("/subtitle_delay/-", function(data){$("#subdelay-val").text(parseFloat(data).toFixed(1))});});
-$("#audiodelay-info").click(function () {showNotification("{{getString1(60)}}","is-info",8000)});
-$("#subdelay-info").click(function () {showNotification("{{getString1(61)}}","is-info",8000)});
-$("#semitones-info").click(function () {showNotification("{{getString1(62)}}","is-info",10000)});
-$("#playspeed-info").click(function () {showNotification("{{getString1(200)}}","is-info",10000)});
-$("#pytorch-logo").click(function () {showNotification("{{getString1(63)}}","is-info",12000)});
+$("#subtitle-sel").click(() => {$.get("/toggle_subtitle");});
+$("#delay-inc").click(() => {$.get("/audio_delay/+", function(data){$("#delay-val").text(parseFloat(data).toFixed(2))});});
+$("#delay-dec").click(() => {$.get("/audio_delay/-", function(data){$("#delay-val").text(parseFloat(data).toFixed(2))});});
+$("#subdelay-inc").click(() => {$.get("/subtitle_delay/+", function(data){$("#subdelay-val").text(parseFloat(data).toFixed(1))});});
+$("#subdelay-dec").click(() => {$.get("/subtitle_delay/-", function(data){$("#subdelay-val").text(parseFloat(data).toFixed(1))});});
+$("#audiodelay-info").click(() => {showNotification("{{getString1(60)}}","is-info",8000)});
+$("#subdelay-info").click(() => {showNotification("{{getString1(61)}}","is-info",8000)});
+$("#semitones-info").click(() => {showNotification("{{getString1(62)}}","is-info",10000)});
+$("#playspeed-info").click(() => {showNotification("{{getString1(200)}}","is-info",10000)});
+$("#pytorch-logo").click(() => {showNotification("{{getString1(63)}}","is-info",12000)});
 
 getNowPlaying();
 if(isMobile)
@@ -331,17 +330,17 @@ body {
 	<div id="subdelay-box">
 		<div class="is-flex" style="justify-content: space-between">
 			<h4><span title="{{getString1(198)}}" id="subtitle-sel" style="cursor:pointer">{{getString1(78)}}</span><a id="subdelay-info"> <i class="icon icon-info-circled-1" title="Info"></i></a>:</h4>
-			<h4 title="{{getString1(85)}}" id="subdelay-dec" class="tabs" style="margin:0; color:red; cursor: pointer; font-weight: bold; font-size:x-large;" >&#x2296;</h4>
-			<h4 title="{{getString1(86)}}" id="subdelay-val" class="tabs" style="padding-top:2px; margin:0; cursor: pointer" contenteditable="true" onfocus="subdelay_typing=true">0</h4>
-			<h4 title="{{getString1(87)}}" id="subdelay-inc" class="tabs" style="margin:0; color:green; cursor: pointer; font-weight:bold;font-size:x-large;" >&#x2295;</h4>
+			<h4 title="{{getString1(85)}}" id="subdelay-dec" class="tabs hand" style="margin:0; color:red; font-weight: bold; font-size:x-large;" >&#x2296;</h4>
+			<h4 title="{{getString1(86)}}" id="subdelay-val" class="tabs hand" style="padding-top:2px; margin:0; contenteditable="true" onfocus="subdelay_typing=true">0</h4>
+			<h4 title="{{getString1(87)}}" id="subdelay-inc" class="tabs hand" style="margin:0; color:green; font-weight:bold;font-size:x-large;" >&#x2295;</h4>
 		</div>
 	</div>
 
 	<div class="is-flex" style="justify-content: space-between">
 		<h4>{{getString1(77)}}<a id="audiodelay-info"> <i class="icon icon-info-circled-1" title="Info"></i></a>:</h4>
-		<h4 title="{{getString1(88)}}" id="delay-dec" class="tabs" style="margin:0; color:red; cursor: pointer; font-weight: bold; font-size:x-large;" >&#x2296;</h4>
-		<h4 title="{{getString1(89)}}" id="delay-val" class="tabs" style="padding-top:2px; margin:0; cursor: pointer" contenteditable="true" onfocus="audiodelay_typing=true">0</h4>
-		<h4 title="{{getString1(90)}}" id="delay-inc" class="tabs" style="margin:0; color:green; cursor: pointer; font-weight:bold;font-size:x-large;" >&#x2295;</h4>
+		<h4 title="{{getString1(88)}}" id="delay-dec" class="tabs hand" style="margin:0; color:red; font-weight: bold; font-size:x-large;" >&#x2296;</h4>
+		<h4 title="{{getString1(89)}}" id="delay-val" class="tabs hand" style="padding-top:2px; margin:0;" contenteditable="true" onfocus="audiodelay_typing=true">0</h4>
+		<h4 title="{{getString1(90)}}" id="delay-inc" class="tabs hand" style="margin:0; color:green; font-weight:bold;font-size:x-large;" >&#x2295;</h4>
 	</div>
 
 	<div class="is-flex" style="justify-content: space-between">
@@ -403,10 +402,10 @@ body {
 	
 	<div class="is-flex" style="justify-content: space-between; padding-top: 1em">
 		<div>
-			<h4 id="reset_speed" title="{{getString1(201)}}" style="cursor: pointer" onclick="$.get('/play_speed/1')">{{getString1(199)}}</h4>
+			<h4 id="reset_speed" title="{{getString1(201)}}" class="hand" onclick="$.get('/play_speed/1')">{{getString1(199)}}</h4>
 		</div>
 		<div class="is-flex">
-			<h4><span id="playspeed-val" title="{{getString1(202)}}" style="cursor: pointer" contenteditable="true" onfocus="playspeed_typing=true"></span>x</h4>
+			<h4><span id="playspeed-val" title="{{getString1(202)}}" class="hand" contenteditable="true" onfocus="playspeed_typing=true"></span>x</h4>
 			<a id="playspeed-info"> <i class="icon icon-info-circled-1" title="Info"></i></a>
 		</div>
 	</div>

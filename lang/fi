@@ -32,7 +32,7 @@ Pysähtynyt
 Päivitetään youtube-dl! Pitäisi kestää minuutti tai kaksi...
 Sinulla ei ole lupaa päivittää youtube-dl
 Sinulla ei ole lupaa sulkea
-Lopeta PiKaraoke nyt!
+Lopeta OpenHomeKaraoke nyt!
 Sinulla ei ole lupaa lopettaa
 Sulje järjestelmä nyt!
 Sinulla ei ole lupaa sulkea
@@ -41,7 +41,7 @@ Sinulla ei ole lupaa käynnistää uudelleen
 Laajenna tiedostojärjestelmää ja käynnistä järjestelmä uudelleen nyt!
 Fs:ää ei voi laajentaa muissa kuin Raspberry pi -laitteissa!
 Sinulla ei ole oikeutta muuttaa tiedostojärjestelmän kokoa
-Youtube-dl polkua ei löydy!
+Youtube-dl-polkua ei löydy ja pip ei onnistunut asentamaan sitä!
 VLC-polkua ei löydy!
 omxplayer polkua ei löydy!
 Latauspolun luominen:
@@ -49,7 +49,7 @@ Wifi/verkko ei yhdistetty. Suljetaan 10 sekunnissa...
 Voit valita kappaleita skannaamalla QR-koodin tai muodostamalla yhteyden
 Yhdistä TV-näyttöä varten
 Paina F vaihtaaksesi koko näytön tilaan
-Paina ESC poistuaksesi PiKaraokesta
+Paina ESC sulkeaksesi OpenHomeKaraoken
 RaspiWifiConfig-asennustila havaittu!
 Yhdistä toinen laite/älypuhelin Wifi-tukiasemaan: '%s'
 Valitse sitten selain osoitteeseen %s://%s%s ja seuraa ohjeita.
@@ -60,7 +60,7 @@ Järjestelmänvalvojatila myönnetty!
 Lisääntyvä äänen viive antaa sinulle enemmän aikaa lukea sanoituksia ennen seuraavan lauseen laulamista.
 Tekstityksen viiveen vähentäminen antaa sinulle enemmän aikaa lukea sanoituksia ennen seuraavan lauseen laulamista.
 Puolisäveltä kutsutaan myös puoliaskeleeksi. Se on pienin klassisessa länsimaisessa musiikissa käytetty intervalli, joka vastaa oktaavin kahdestoistaosaa tai puolisäveltä.
-DNN-pohjainen äänenjakaja on käytössä. PiKaraoke käyttää PyTorchia (Facebook) pyörittääkseen syvää hermoverkkoa instrumentaali- ja lauluäänen jakamiseksi kussakin kappaleessa, jolloin syntyy stereoääntä.
+DNN-pohjainen äänenjakaja on käytössä. OpenHomeKaraoke käyttää PyTorchia (Facebook) pyörittääkseen syvää hermoverkkoa instrumentaali- ja lauluäänen jakamiseksi kussakin kappaleessa, jolloin syntyy stereoääntä.
 Pelaajan ohjaus
 Musiikki
 Sekoitettu
@@ -105,7 +105,7 @@ Muokkaa kappaletta
 Siirrä ylöspäin jonossa
 Siirry alas jonossa
 Haluatko varmasti poistaa jonosta
-Haluatko varmasti tyhjentää KOKO jonon? Kirjoita "OK" jatkaaksesi
+Haluatko varmasti tyhjentää KOKO jonon?
 Lisää 3 satunnaista kappaletta
 Tyhjennä
 Jono on tyhjä
@@ -117,12 +117,12 @@ Kappale on jo jonossa:
 Etsi / Lisää uusi
 Hae
 Jonottaa
-Sisällytä muita kuin karaoke-otteluita
+Hae vain karaoke-osuuksia
 Pitkälle kehittynyt
 Hae käytettävissä olevia kappaleita kirjoittamalla kappale (nimi/artisti) ja lisää se jonoon napsauttamalla Jono.
 Jos kappale ei näy Available Songs -pudotusvalikossa, napsauta Hae löytääksesi sen Youtubesta.
 Suora lataus YouTube url:
-Lisää jonoon
+Lisää jonoon latauksen jälkeen
 Sisällytä tekstitykset
 ladata
 Haetaan YouTubesta
@@ -133,7 +133,7 @@ Saatavilla olevat kappaleet
 Haluatko muuttaa tätä laitetta käyttävän henkilön näyttönimeä? Tämä näkyy jonossa olevien kappaleiden vieressä. Nykyinen:
 Nykyinen käyttäjä
 asetukset
-PiKaraoke
+OpenHomeKaraoke
 Oletko varma, että haluat lopettaa?
 Haluatko varmasti sulkea?
 Oletko varma, että haluat käynnistää uudelleen?
@@ -147,34 +147,34 @@ Muisti
 Kuvakaappaus
 Vocal Splitter
 Youtube-dl (yt-dlp) -versio
-PiKaraoke versio
+OpenHomeKaraoke-versio
 Ohjauksen lisäasetukset
 Laulunjakajatila:
 Käytä L-R/L+R
 Käytä DNN:tä
-Tavallisessa MTV-äänessä on kaksi stereokanavaa (L ja R) koodattuina siten, että: L-R on instrumenttiraita, L+R on lauluraita. Näin ollen yksinkertaisesti vähentämällä tai lisäämällä kaksi stereokanavaa, saamme instrumentaali- ja lauluraidan monoäänellä. PiKaraoken sisäänrakennettu DNN-pohjainen (syvä hermoverkko) äänenjakaja käyttää tekoälyalgoritmia jakaa instrumentaali- ja lauluäänen jokaisessa stereoraidassa itsenäisesti, jolloin tuloksena on stereo-instrumentaali- ja lauluraitoja.
+Tavallisessa MTV-äänessä on kaksi stereokanavaa (L ja R) koodattuina siten, että: L-R on instrumenttiraita, L+R on lauluraita. Näin ollen yksinkertaisesti vähentämällä tai lisäämällä kaksi stereokanavaa, saamme instrumentaali- ja lauluraidan monoäänellä. OpenHomeKaraoken sisäänrakennettu DNN-pohjainen (syvä hermoverkko) äänenjakaja käyttää AI-algoritmia instrumentaali- ja lauluäänen jakamiseen kussakin stereoraidassa itsenäisesti, jolloin tuloksena on stereo-instrumentaali- ja lauluraitoja.
 Pysäytä Splitteri
 Käynnistä Splitter uudelleen
 Laulunjakaja (joka tukee sekä DNN-pohjaista että stereovähennystä) toimii erillisenä prosessina taustalla, luoden instrumentaali-/lauluäänitiedoston jokaiselle kappaleelle.
 Synkronoi ääni ja video uudelleen:
 Pysäytä Streamer
 Käynnistä Streamer uudelleen
-Tämä vaikuttaa vain KTV:n pelaamiseen verkkoselaimen kautta. Näytön kaappauksen ja suoratoiston uudelleenkäynnistys parantaa äänen/videon synkronointia ja vähentää myös palvelimen ja selaimen välistä latenssia.
+Tämä vaikuttaa vain KTV:n pelaamiseen verkkoselaimen kautta. Näytön kaappauksen ja suoratoiston käynnistäminen uudelleen parantaa äänen/videon synkronointia ja vähentää myös palvelimen ja selaimen välistä latenssia.
 Päivitä kappalelista:
 Skannaa kappalehakemisto uudelleen
-Sinun pitäisi tehdä tämä vain, jos kopioit tiedostot manuaalisesti lataushakemistoon PiKaraoken ollessa käynnissä.
+Sinun pitäisi tehdä tämä vain, jos kopioit tiedostot manuaalisesti lataushakemistoon OpenHomeKaraoken ollessa käynnissä.
 Päivitykset
 Jos lataukset tai haut lakkaavat toimimasta, youtube-dl:n päivittäminen todennäköisesti korjaa sen. Nykyinen asennettu versio on:
 Päivitä youtube-dl
-Tämä yllä oleva päivityslinkki saattaa epäonnistua, jos sinulla ei ole asianmukaisia ​​tiedostooikeuksia. Tarkista PiKaraoke-lokista virheitä.
+Tämä yllä oleva päivityslinkki saattaa epäonnistua, jos sinulla ei ole asianmukaisia ​​tiedostooikeuksia. Tarkista OpenHomeKaraoke-lokista virheitä.
 Sammuttaa
 Älä vain vedä pistokkeesta! Sammuta aina palvelin kunnolla tietojen vioittumisen välttämiseksi.
-Lopeta PiKaraoke
+Lopeta OpenHomeKaraoke
 Käynnistä järjestelmä uudelleen
 Sammutusjärjestelmä
 muu
 Laajenna Raspberry Pi -tiedostojärjestelmää
-Jos asensit juuri valmiiksi rakennetun PiKaraoke pi -kuvan ja SD-korttisi on suurempi kuin 4 Gt, saatat haluta laajentaa tiedostojärjestelmää hyödyntääksesi jäljellä olevan tilan. Sinun tarvitsee tehdä tämä vain kerran. Tämä käynnistää järjestelmän uudelleen.
+Jos asensit juuri valmiiksi rakennetun OpenHomeKaraoke pi -kuvan ja SD-korttisi on suurempi kuin 4 Gt, saatat haluta laajentaa tiedostojärjestelmää hyödyntääksesi jäljellä olevan tilan. Sinun tarvitsee tehdä tämä vain kerran. Tämä käynnistää järjestelmän uudelleen.
 Poista järjestelmänvalvojatila käytöstä
 Ota järjestelmänvalvojatila käyttöön
 kirjautua ulos
@@ -185,7 +185,7 @@ Vaihda kieltä
 Valitse kieli
 Järjestelmän kieli
 Nykyinen järjestelmän kieli:
-Tämä muuttaa PiKaraoke-taustajärjestelmän kielen, joka näytetään TV-ruudulla; Lisäksi jokainen yhteyden muodostava käyttäjä voi myös vaihtaa oman Web-käyttöliittymänsä kielen oikean ylävalikon maapallo-painikkeesta.
+Tämä muuttaa OpenHomeKaraoke-taustajärjestelmän kielen, joka näytetään TV-ruudulla; Lisäksi jokainen yhteyden muodostava käyttäjä voi myös vaihtaa oman Web-käyttöliittymänsä kielen oikean ylävalikon maapallo-painikkeesta.
 Lataus suoritettu onnistuneesti!
 Lataus epäonnistui!
 Kappale lisätty jonoon!
@@ -205,5 +205,27 @@ Reset Key
 Nollaa nopeus
 Korkealaatuinen
 Lisää kappale laulujonoon, kun lataus on valmis
-Lataa tekstitykset (vain upotettuina) kaikilla kielillä, jos saatavilla
+Lataa tekstitykset (vain upotettuina) kaikilla kielillä, jos niitä on saatavilla
 Korkealaatuisten videoiden lataaminen voi kestää hyvin kauan
+Tallenna Play-asetukset
+Tallenna kunkin kappaleen toistoasetukset, mukaan lukien: äänen viive, tekstityksen viive ja tekstityksen näyttäminen.
+Lisää kappale sanomalla kappaleen nimi
+Sano kappaleen nimi ja napsauta OK!
+Vain HTTPS-verkkosivustoilla voi olla pääsy mikrofoniin. Haluatko uudelleenohjata HTTPS-verkkosivustolle?
+Myönnä mikrofonin käyttöoikeus!
+Muokkaa kappaleen nimeä:
+Tallentaa
+Poista tämä kappale
+Haluatko varmasti poistaa tämän kappaleen kirjastosta?
+Pyydä parametrivirhettä!
+Leikkaa kappale:
+Säädä kappaleen äänenvoimakkuutta:
+Aloitusaika:
+Loppu aika:
+Alkuperäinen äänenvoimakkuus (dB):
+Ei löydy kappaletta, joka vastaa "%s".
+"%s" lisättiin jonoon.
+Valitse lisättävät kappaleet:
+KUMOA
+kiinni
+Lisätä

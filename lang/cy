@@ -32,7 +32,7 @@ Wedi stopio
 Yn diweddaru youtube-dl! Dylai gymryd munud neu ddwy...
 Nid oes gennych ganiatâd i ddiweddaru youtube-dl
 Nid oes gennych ganiatâd i gau i lawr
-Rhoi'r gorau i PiKaraoke nawr!
+Rhoi'r gorau i OpenHomeKaraoke nawr!
 Nid oes gennych ganiatâd i roi'r gorau iddi
 System cau i lawr nawr!
 Nid oes gennych ganiatâd i gau i lawr
@@ -41,7 +41,7 @@ Nid oes gennych ganiatâd i Ailgychwyn
 System ffeiliau ehangu a system ailgychwyn nawr!
 Methu ehangu fs ar ddyfeisiau pi di-mafon!
 Nid oes gennych ganiatâd i newid maint y system ffeiliau
-Heb ganfod llwybr Youtube-dl!
+Heb ganfod llwybr Youtube-dl ac mae pip wedi methu â'i osod!
 Heb ganfod llwybr VLC!
 llwybr omxplayer heb ei ganfod!
 Creu llwybr lawrlwytho:
@@ -49,7 +49,7 @@ Wifi/Rhwydwaith heb ei gysylltu. Cau i lawr mewn 10s...
 Ar gyfer dewis caneuon, sganiwch QR neu cysylltwch â
 Ar gyfer arddangosfa deledu, cysylltwch â
 Pwyswch F i doglo sgrin lawn
-Pwyswch ESC i roi'r gorau iddi PiKaraoke
+Pwyswch ESC i roi'r gorau iddi OpenHomeKaraoke
 Wedi canfod modd gosod RaspiWifiConfig!
 Cysylltwch dyfais/ffôn clyfar arall i'r AP Wifi: '%s'
 Yna pwyntiwch ei borwr at: '%s://%s%s' a dilynwch y cyfarwyddiadau.
@@ -60,7 +60,7 @@ Modd gweinyddol wedi'i ganiatáu!
 Bydd oedi cynyddol sain yn rhoi mwy o amser i chi ddarllen geiriau cyn canu'r frawddeg nesaf.
 Bydd oedi is-deitlau yn rhoi mwy o amser i chi ddarllen geiriau cyn canu'r frawddeg nesaf.
 Gelwir hanner tôn hefyd yn hanner cam. Dyma'r cyfwng lleiaf a ddefnyddir yng ngherddoriaeth glasurol y Gorllewin, sy'n hafal i ddeuddegfed wythfed neu hanner tôn.
-Mae holltwr lleisiol seiliedig ar DNN wedi'i alluogi. Mae PiKaraoke yn defnyddio PyTorch (gan Facebook) i redeg rhwydwaith niwral dwfn i hollti sain offerynnol a lleisiol ym mhob trac gan arwain at sain stereo.
+Mae holltwr lleisiol seiliedig ar DNN wedi'i alluogi. Mae OpenHomeKaraoke yn defnyddio PyTorch (gan Facebook) i redeg rhwydwaith niwral dwfn i hollti sain offerynnol a lleisiol ym mhob trac gan arwain at sain stereo.
 Rheoli Chwaraewr
 Cerddoriaeth
 Cymysg
@@ -79,7 +79,7 @@ Oedi Isdeitl (eiliad)
 Ailgychwyn y Gân
 Chwarae/Saib
 Hepgor y Gân Gyfredol
-Cyfrol i Lawr
+Cyfrol Lawr
 Gosod Cyfrol
 Cyfrol i Fyny
 Lleihau Oedi Isdeitl
@@ -105,7 +105,7 @@ Golygu cân
 Symud i fyny yn y ciw
 Symud i lawr yn y ciw
 Ydych chi'n siŵr eich bod am ddileu o'r ciw
-Ydych chi'n siŵr eich bod am glirio'r ciw CYFAN? Teipiwch 'OK' i barhau
+Ydych chi'n siŵr eich bod am glirio'r ciw CYFAN?
 Ychwanegu 3 cân ar hap
 Clirio'r cyfan
 Mae'r ciw yn wag
@@ -117,12 +117,12 @@ Mae'r gân eisoes yn y ciw:
 Chwilio / Ychwanegu Newydd
 Chwiliwch
 Ciw
-Cynnwys gemau nad ydynt yn rhai karaoke
+Chwilio gemau Karaoke yn unig
 Uwch
-Teipiwch gân (teitl/artist) i chwilio'r caneuon sydd ar gael a chliciwch ar 'Ciw' i'w hychwanegu at y ciw.
+Teipiwch gân (teitl/artist) i chwilio'r caneuon sydd ar gael a chliciwch ar 'Queue' i'w hychwanegu at y ciw.
 Os nad yw'r gân yn ymddangos yn y gwymplen "Available Songs", cliciwch ar 'Chwilio' i ddod o hyd iddi ar Youtube.
 Lawrlwytho url YouTube yn uniongyrchol:
-Ychwanegu at y ciw
+Ychwanegu at y ciw ar ôl llwytho i lawr
 Cynnwys isdeitlau
 Lawrlwythwch
 Chwilio YouTube am
@@ -133,7 +133,7 @@ Caneuon Sydd ar Gael
 Ydych chi am newid enw arddangos y person sy'n defnyddio'r ddyfais hon? Bydd hwn yn ymddangos wrth ymyl y caneuon ciwio. Cyfredol:
 Defnyddiwr presennol
 Gosodiadau
-PiKaraoke
+Caraoke Cartref Agored
 Ydych chi'n siŵr eich bod am roi'r gorau iddi?
 Ydych chi'n siŵr eich bod am gau i lawr?
 Ydych chi'n siŵr eich bod am ailgychwyn?
@@ -147,12 +147,12 @@ Cof
 Dal Sgrin
 Llorweddol Lleisiol
 Fersiwn Youtube-dl (yt-dlp).
-Fersiwn PiKaraoke
+Fersiwn OpenHomeKaraoke
 Opsiynau Rheoli Uwch
 Modd hollti lleisiol:
 Defnyddiwch L-R/L+R
 Defnyddiwch DNN
-Mae gan sain MTV safonol y ddwy sianel stereo (L ac R) wedi'u hamgodio yn y fath fodd fel: LR yw'r trac offeryn, L + R yw'r trac lleisiol. Felly, trwy dynnu neu ychwanegu'r ddwy sianel stereo yn unig, gallwn gael y trac offerynnol a lleisiol mewn sain mono. Mae holltwr lleisiol adeiledig PiKaraoke yn seiliedig ar DNN (rhwydwaith niwral dwfn) yn defnyddio algorithm AI i hollti sain offerynnol a lleisiol ym mhob trac stereo yn annibynnol gan arwain at draciau stereo offerynnol a lleisiol.
+Mae gan sain MTV safonol y ddwy sianel stereo (L ac R) wedi'u hamgodio yn y fath fodd fel: LR yw'r trac offeryn, L + R yw'r trac lleisiol. Felly, trwy dynnu neu ychwanegu'r ddwy sianel stereo yn unig, gallwn gael y trac offerynnol a lleisiol mewn sain mono. Mae holltwr lleisiol wedi'i seilio ar DNN (rhwydwaith niwral dwfn) OpenHomeKaraoke yn defnyddio algorithm AI i hollti sain offerynnol a lleisiol ym mhob trac stereo yn annibynnol gan arwain at draciau stereo offerynnol a lleisiol.
 Stopiwch Hollti
 Ailgychwyn Hollti
 Mae'r holltwr lleisiol (sy'n cefnogi tynnu seiliedig ar DNN a stereo) yn rhedeg fel proses ar wahân yn y cefndir, gan gynhyrchu ffeil sain offerynnol / lleisiol ar gyfer pob cân.
@@ -162,19 +162,19 @@ Ailgychwyn Streamer
 Mae hyn ond yn effeithio ar chwarae KTV trwy borwr gwe. Mae ailgychwyn y sgrin-dal-a-ffrydio yn gwella cydamseru sain/fideo, mae hefyd yn lleihau'r hwyrni rhwng y gweinydd a'r porwr.
 Adnewyddu'r rhestr caneuon:
 Ailsganio cyfeiriadur caneuon
-Dim ond os gwnaethoch chi gopïo ffeiliau â llaw i'r cyfeiriadur lawrlwytho tra roedd PiKaraoke yn rhedeg y dylai fod angen i chi wneud hyn.
+Dim ond os gwnaethoch chi gopïo ffeiliau â llaw i'r cyfeiriadur lawrlwytho tra roedd OpenHomeKaraoke yn rhedeg y dylai fod angen i chi wneud hyn.
 Diweddariadau
-Pe bai lawrlwythiadau neu chwiliadau'n stopio gweithio, mae'n debyg y bydd diweddaru youtube-dl yn ei drwsio. Y fersiwn sydd wedi'i gosod ar hyn o bryd yw:
+Pe bai lawrlwythiadau neu chwiliadau yn stopio gweithio, mae'n debyg y bydd diweddaru youtube-dl yn ei drwsio. Y fersiwn sydd wedi'i gosod ar hyn o bryd yw:
 Diweddaru youtube-dl
-Mae'n bosibl y bydd y ddolen ddiweddaru hon uchod yn methu os nad oes gennych ganiatâd ffeil priodol. Gwiriwch log PiKaraoke am wallau.
+Mae'n bosibl y bydd y ddolen diweddaru hon uchod yn methu os nad oes gennych ganiatâd ffeil priodol. Gwiriwch log OpenHomeKaraoke am wallau.
 Cau i lawr
 Peidiwch â thynnu'r plwg yn unig! Caewch eich gweinydd yn iawn bob amser er mwyn osgoi llygredd data.
-Gadael PiKaraoke
+Rhoi'r gorau i OpenHomeKaraoke
 System Ailgychwyn
 System Shutdown
 Arall
 Ehangu system ffeiliau Raspberry Pi
-Os ydych newydd osod y ddelwedd PiKaraoke pi a adeiladwyd ymlaen llaw a bod eich cerdyn SD yn fwy na 4GB, efallai y byddwch am ehangu'r system ffeiliau i ddefnyddio'r gofod sy'n weddill. Dim ond unwaith y mae angen i chi wneud hyn. Bydd hyn yn ailgychwyn y system.
+Os ydych chi newydd osod y ddelwedd pi OpenHomeKaraoke a adeiladwyd ymlaen llaw a bod eich cerdyn SD yn fwy na 4GB, efallai y byddwch am ehangu'r system ffeiliau i ddefnyddio'r gofod sy'n weddill. Dim ond unwaith y mae angen i chi wneud hyn. Bydd hyn yn ailgychwyn y system.
 Analluogi modd gweinyddol
 Galluogi modd gweinyddol
 allgofnodi
@@ -185,19 +185,19 @@ Newid Iaith
 Dewiswch iaith
 Iaith System
 Iaith system gyfredol:
-Mae hyn yn newid iaith system backend PiKaraoke sy'n cael ei harddangos ar sgrin deledu; ar ben hynny, gall pob defnyddiwr cyswllt hefyd newid eu hiaith Web UI priodol yn y botwm glôb yn y ddewislen top dde.
+Mae hyn yn newid iaith system backend OpenHomeKaraoke sy'n cael ei harddangos ar sgrin deledu; ar ben hynny, gall pob defnyddiwr cyswllt hefyd newid eu hiaith Web UI priodol yn y botwm glôb yn y ddewislen top dde.
 Cwblhawyd y lawrlwythiad yn llwyddiannus!
 Wedi methu llwytho i lawr!
 Cân wedi'i hychwanegu at y ciw!
 Wedi methu ciwio'r gân!
 Gwybodaeth a Gosodiadau System
 Normaleiddio Cyfrol
-Yn aml mae gan wahanol ganeuon gyfaint gwahanol. Bydd galluogi normaleiddio sain yn rhedeg <i>ffmpeg</i> yn gyntaf i gyfrifo cyfaint byd-eang cân ac yn addasu cyfaint y chwaraewr yn awtomatig fel bod pob cân yr un mor uchel.
+Yn aml mae gan wahanol ganeuon gyfaint gwahanol. Bydd galluogi normaleiddio sain yn rhedeg <i>ffmpeg</i> yn gyntaf i gyfrifo cyfaint byd-eang cân ac addasu cyfaint y chwaraewr yn awtomatig fel bod pob cân yr un mor uchel.
 Llwybr lawrlwytho llyfrgell caneuon
 Cyfanswm y caneuon
 Dangos/Cuddio Isdeitl
 Newid Cyflymder
-Gallwch ganu'r gân yn gyflymach neu'n arafach trwy newid y cyflymder chwarae o fewn 0.8x i 1.2x gan ddefnyddio'r bar trac cyflymder; ar gyfer cyflymder chwarae arall, cliciwch ar y gwerth cyflymder i newid.
+Gallwch chi ganu'r gân yn gyflymach neu'n arafach trwy newid y cyflymder chwarae o fewn 0.8x i 1.2x gan ddefnyddio'r bar trac cyflymder; ar gyfer cyflymder chwarae arall, cliciwch ar y gwerth cyflymder i newid.
 Cliciwch i ailosod cyflymder chwarae i 1x
 Cliciwch i osod cyflymder chwarae
 Cliciwch i ailosod allwedd/traw
@@ -207,3 +207,25 @@ Ansawdd uchel
 Ychwanegwch y gân i'r ciw canu ar ôl i'r lawrlwythiad ddod i ben
 Lawrlwythwch isdeitlau (wedi'u mewnosod yn unig) ym mhob iaith os ydynt ar gael
 Efallai y bydd yn cymryd amser hir iawn i lawrlwytho fideos o ansawdd uchel
+Cadw Gosodiadau Chwarae
+Cadw gosodiadau chwarae ar gyfer pob cân, mae hyn yn cynnwys: oedi sain, oedi is-deitlau, ac a ddylid dangos is-deitlau.
+Ychwanegu cân trwy siarad teitl y gân
+Siaradwch deitl y gân a chliciwch Iawn!
+Dim ond gwefannau HTTPS all gael mynediad i feicroffon, a ydych chi am ailgyfeirio i wefan HTTPS?
+Rhowch ganiatâd i gael mynediad i'r meicroffon!
+Golygu Enw'r Gân:
+Arbed
+Dileu'r gân hon
+Ydych chi'n siŵr eich bod am ddileu'r gân hon o'r llyfrgell?
+Cais am wall paramedr!
+Torrwch y gân:
+Addasu cyfaint y gân:
+Amser cychwyn:
+Amser gorffen:
+Cyfrol Wreiddiol (dB):
+Methu canfod unrhyw gân sy'n cyfateb i "%s".
+Wedi ychwanegu "%s" i'r ciw.
+Dewiswch y gân(nau) i'w hychwanegu:
+UNDO
+Cau
+Ychwanegu

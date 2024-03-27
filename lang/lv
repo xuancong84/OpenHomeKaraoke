@@ -32,7 +32,7 @@ Apstājās
 Notiek youtube-dl atjaunināšana! Vajadzētu kādu minūti vai divas...
 Jums nav atļaujas atjaunināt youtube-dl
 Jums nav atļaujas izslēgt
-Pabeigt PiKaraoke tūlīt!
+Tagad aiziet no OpenHomeKaraoke!
 Jums nav atļaujas atmest
 Sistēmas izslēgšana tūlīt!
 Jums nav atļaujas izslēgt
@@ -41,7 +41,7 @@ Jums nav atļaujas pārstartēt
 Failu sistēmas paplašināšana un sistēmas atsāknēšana tūlīt!
 Nevar izvērst fs ierīcēs, kas nav Raspberry Pi!
 Jums nav atļaujas mainīt failu sistēmas izmērus
-Youtube-dl ceļš nav atrasts!
+Youtube-dl ceļš nav atrasts, un pip neizdevās to instalēt!
 VLC ceļš nav atrasts!
 omxplayer ceļš nav atrasts!
 Lejupielādes ceļa izveide:
@@ -49,7 +49,7 @@ Wi-Fi/tīkls nav savienots. Izslēgsies pēc 10 s...
 Lai atlasītu dziesmas, skenējiet QR kodu vai izveidojiet savienojumu ar
 Televizora displejam izveidojiet savienojumu ar
 Nospiediet F, lai pārslēgtu pilnekrāna režīmu
-Nospiediet ESC, lai aizvērtu PiKaraoke
+Nospiediet ESC, lai aizvērtu OpenHomeKaraoke
 Konstatēts RaspiWifiConfig iestatīšanas režīms!
 Savienojiet citu ierīci/viedtālruni ar Wifi AP: '%s'
 Pēc tam norādiet pārlūkprogrammu uz: '%s://%s%s' un izpildiet norādījumus.
@@ -57,10 +57,10 @@ Nākošais:
 Pievienoja:
 Tagad spēlē:
 Administrēšanas režīms ir piešķirts!
-Palielināta audio aizkave dos jums vairāk laika, lai lasītu dziesmu tekstus pirms nākamā teikuma izdziedāšanas.
+Palielinot audio aizkavi, jums būs vairāk laika, lai lasītu dziesmu tekstus pirms nākamā teikuma izdziedāšanas.
 Subtitru aizkaves samazināšana dos jums vairāk laika, lai lasītu dziesmu tekstus pirms nākamā teikuma izdziedāšanas.
 Pustonis ir pazīstams arī kā pussolis. Tas ir mazākais klasiskajā Rietumu mūzikā izmantotais intervāls, kas vienāds ar oktāvas divpadsmito daļu vai pustoni.
-Ir iespējots DNN balss sadalītājs. PiKaraoke izmanto PyTorch (no Facebook), lai palaistu dziļu neironu tīklu, lai sadalītu instrumentālo un vokālo skaņu katrā ierakstā, radot stereo skaņu.
+Ir iespējots DNN balss sadalītājs. OpenHomeKaraoke izmanto PyTorch (no Facebook), lai palaistu dziļu neironu tīklu, lai sadalītu instrumentālo un vokālo skaņu katrā ierakstā, radot stereo skaņu.
 Spēlētāja vadība
 Mūzika
 Jaukti
@@ -89,7 +89,7 @@ Samaziniet audio aizkavi
 Iestatiet audio aizkavi
 Palieliniet audio aizkavi
  pustoņi
-Lūdzu, ievadiet savu vārdu. Tas tiks rādīts blakus dziesmām, kuras ievietojat rindā no šīs ierīces.
+Lūdzu, ievadiet savu vārdu. Tas tiks parādīts blakus dziesmām, kuras ievietojat rindā no šīs ierīces.
 Rindai pievienota dziesma:
 Dziesma jau rindā:
 Kārtot pēc datuma
@@ -105,7 +105,7 @@ Rediģēt dziesmu
 Pārvietoties rindā uz augšu
 Pārvietojieties uz leju rindā
 Vai tiešām vēlaties dzēst no rindas
-Vai tiešām vēlaties notīrīt VISU rindu? Lai turpinātu, ierakstiet “OK”.
+Vai tiešām vēlaties notīrīt VISU rindu?
 Pievienojiet 3 nejaušas dziesmas
 Iztīrīt visu
 Rinda ir tukša
@@ -117,12 +117,12 @@ Dziesma jau ir rindā:
 Meklēt / Pievienot jaunu
 Meklēt
 Rinda
-Iekļaujiet spēles, kas nav karaoke
+Meklēt tikai karaoke spēles
 Papildu
 Ierakstiet dziesmu (nosaukumu/mākslinieku), lai meklētu pieejamās dziesmas, un noklikšķiniet uz "Rinda", lai to pievienotu rindai.
 Ja dziesma neparādās nolaižamajā izvēlnē “Pieejamās dziesmas”, noklikšķiniet uz “Meklēt”, lai to atrastu vietnē Youtube.
 Tiešās lejupielādes YouTube URL:
-Pievienot rindai
+Pievienot rindai pēc lejupielādes
 Iekļaut subtitrus
 Lejupielādēt
 Notiek YouTube meklēšana
@@ -133,7 +133,7 @@ Pieejamās dziesmas
 Vai vēlaties mainīt šīs ierīces lietotājas parādāmo vārdu? Tas tiks parādīts blakus rindā esošajām dziesmām. Pašreizējais:
 Pašreizējais lietotājs
 Iestatījumi
-PiKaraoke
+OpenHomeKaraoke
 Vai tiešām vēlaties atmest?
 Vai tiešām vēlaties aizvērt?
 Vai tiešām vēlaties atsāknēt?
@@ -147,12 +147,12 @@ Atmiņa
 Ekrāna tveršana
 Vokālais sadalītājs
 Youtube-dl (yt-dlp) versija
-PiKaraoke versija
+OpenHomeKaraoke versija
 Papildu vadības opcijas
 Vokālā sadalītāja režīms:
 Izmantojiet L-R/L+R
 Izmantojiet DNN
-Standarta MTV audio ir divi stereo kanāli (L un R), kas kodēti tā, ka: L-R ir instrumenta celiņš, L+R ir vokālais celiņš. Tādējādi, vienkārši atņemot vai pievienojot divus stereo kanālus, mēs varam iegūt instrumentālo un vokālo celiņu mono skaņā. PiKaraoke iebūvētais DNN (dziļā neironu tīkla) balss sadalītājs izmanto AI algoritmu, lai sadalītu instrumentālo un vokālo skaņu katrā stereo celiņā neatkarīgi, tādējādi radot stereo instrumentālos un vokālos ierakstus.
+Standarta MTV audio ir divi stereo kanāli (L un R), kas kodēti tā, ka: L-R ir instrumenta celiņš, L+R ir vokālais celiņš. Tādējādi, vienkārši atņemot vai pievienojot divus stereo kanālus, mēs varam iegūt instrumentālo un vokālo celiņu mono skaņā. OpenHomeKaraoke iebūvētais DNN (dziļā neironu tīkla) balss sadalītājs izmanto AI algoritmu, lai sadalītu instrumentālo un vokālo skaņu katrā stereo celiņā neatkarīgi, tādējādi radot stereo instrumentālos un vokālos ierakstus.
 Apturiet sadalītāju
 Restartējiet Splitter
 Balss sadalītājs (kas atbalsta gan uz DNN balstītu, gan stereo atņemšanu) darbojas kā atsevišķs process fonā, ģenerējot instrumentālo/vokālo audio failu katrai dziesmai.
@@ -162,19 +162,19 @@ Restartējiet programmu Streamer
 Tas ietekmē tikai KTV atskaņošanu, izmantojot tīmekļa pārlūkprogrammu. Ekrāna tveršanas un straumēšanas restartēšana uzlabo audio/video sinhronizāciju, kā arī samazina latentumu starp serveri un pārlūkprogrammu.
 Atsvaidziniet dziesmu sarakstu:
 Atkārtoti skenēt dziesmu direktoriju
-Tas jādara tikai tad, ja manuāli kopējāt failus lejupielādes direktorijā, kamēr darbojās PiKaraoke.
+Tas jādara tikai tad, ja manuāli kopējāt failus lejupielādes direktorijā, kamēr darbojās OpenHomeKaraoke.
 Atjauninājumi
-Ja lejupielādes vai meklēšana pārstāja darboties, youtube-dl atjaunināšana, iespējams, to novērsīs. Pašreizējā instalētā versija ir:
+Ja lejupielāde vai meklēšana pārstāja darboties, youtube-dl atjaunināšana, iespējams, to novērsīs. Pašreizējā instalētā versija ir:
 Atjaunināt youtube-dl
-Ja jums nav atbilstošu faila atļauju, šī atjaunināšanas saite var nedarboties. Pārbaudiet, vai PiKaraoke žurnālā nav kļūdu.
+Ja jums nav atbilstošu faila atļauju, šī atjaunināšanas saite var nedarboties. Pārbaudiet, vai OpenHomeKaraoke žurnālā nav kļūdu.
 Izslēgt
 Nevelciet tikai aiz kontaktdakšas! Vienmēr pareizi izslēdziet serveri, lai izvairītos no datu sabojāšanas.
-Iziet no PiKaraoke
+Aizveriet OpenHomeKaraoke
 Restartējiet sistēmu
 Izslēgšanas sistēma
 Cits
 Paplašiniet Raspberry Pi failu sistēmu
-Ja tikko instalējāt iepriekš izveidoto PiKaraoke pi attēlu un jūsu SD karte ir lielāka par 4 GB, iespējams, vēlēsities paplašināt failu sistēmu, lai izmantotu atlikušo vietu. Jums tas jādara tikai vienu reizi. Tādējādi sistēma tiks restartēta.
+Ja tikko instalējāt iepriekš izveidoto OpenHomeKaraoke pi attēlu un jūsu SD karte ir lielāka par 4 GB, iespējams, vēlēsities paplašināt failu sistēmu, lai izmantotu atlikušo vietu. Jums tas jādara tikai vienu reizi. Tādējādi sistēma tiks restartēta.
 Atspējot administratora režīmu
 Iespējot administratora režīmu
 izlogoties
@@ -185,7 +185,7 @@ Mainīt VALODU
 Lūdzu, izvēlieties valodu
 Sistēmas valoda
 Pašreizējā sistēmas valoda:
-Tas maina PiKaraoke aizmugursistēmas valodu, kas tiek parādīta TV ekrānā; turklāt katrs lietotājs, kas izveido savienojumu, var arī mainīt savu Web UI valodu, izmantojot globusa pogu augšējā labajā izvēlnē.
+Tas maina OpenHomeKaraoke aizmugursistēmas valodu, kas tiek parādīta TV ekrānā; turklāt katrs lietotājs, kas izveido savienojumu, var arī mainīt savu Web UI valodu, izmantojot globusa pogu augšējā labajā izvēlnē.
 Lejupielāde ir veiksmīgi pabeigta!
 Lejupielāde neizdevās!
 Dziesma pievienota rindai!
@@ -204,6 +204,28 @@ Noklikšķiniet, lai atiestatītu taustiņu/soli
 Atiestatīšanas atslēga
 Atiestatīt ātrumu
 Augstas kvalitātes
-Pēc lejupielādes pabeigšanas pievienojiet dziesmu dziedāšanas rindai
+Kad lejupielāde ir pabeigta, pievienojiet dziesmu dziedāšanas rindai
 Lejupielādējiet subtitrus (tikai iegultos) visās valodās, ja iespējams
 Augstas kvalitātes video lejupielāde var aizņemt ļoti ilgu laiku
+Saglabājiet Play iestatījumus
+Saglabājiet katras dziesmas atskaņošanas iestatījumus, tostarp: audio aizkavi, subtitru aizkavi un to, vai rādīt subtitrus.
+Pievienojiet dziesmu, izrunājot dziesmas nosaukumu
+Lūdzu, izrunājiet dziesmas nosaukumu un noklikšķiniet uz Labi!
+Tikai HTTPS vietnēm var būt piekļuve mikrofonam. Vai vēlaties novirzīt uz HTTPS vietni?
+Lūdzu, piešķiriet atļauju piekļūt mikrofonam!
+Rediģēt dziesmas nosaukumu:
+Saglabāt
+Dzēst šo dziesmu
+Vai tiešām vēlaties dzēst šo dziesmu no bibliotēkas?
+Pieprasīt parametra kļūdu!
+Apgrieziet dziesmu:
+Pielāgojiet dziesmas skaļumu:
+Sākuma laiks:
+Beigu laiks:
+Sākotnējais skaļums (dB):
+Nevar atrast nevienu dziesmu, kas atbilst "%s".
+Pievienots "%s" rindā.
+Lūdzu, izvēlieties dziesmu(-as), ko pievienot:
+ATCELT
+Aizvērt
+Pievienot

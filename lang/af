@@ -32,7 +32,7 @@ Gestop
 Dateer tans youtube-dl op! Behoort 'n minuut of twee te neem...
 Jy het nie toestemming om youtube-dl op te dateer nie
 Jy het nie toestemming om af te sluit nie
-Stop nou met PiKaraoke!
+Sluit nou op OpenHomeKaraoke!
 Jy het nie toestemming om op te hou nie
 Sluit stelsel nou af!
 Jy het nie toestemming om af te sluit nie
@@ -41,7 +41,7 @@ Jy het nie toestemming om te herlaai nie
 Brei lêerstelsel uit en herlaai stelsel nou!
 Kan nie fs uitbrei op nie-raspberry pi-toestelle nie!
 Jy het nie toestemming om die grootte van die lêerstelsel te verander nie
-Youtube-dl-pad nie gevind nie!
+Youtube-dl-pad nie gevind nie en pip kon dit nie installeer nie!
 VLC-pad nie gevind nie!
 omxplayer pad nie gevind nie!
 Skep aflaaipad:
@@ -49,7 +49,7 @@ Wifi/netwerk nie gekoppel nie. Sluit af in 10s...
 Om liedjies te kies, skandeer QR of koppel aan
 Vir TV-vertoning, koppel aan
 Druk F om volskerm te wissel
-Druk ESC om PiKaraoke te verlaat
+Druk ESC om OpenHomeKaraoke te verlaat
 RaspiWifiConfig opstelmodus bespeur!
 Koppel 'n ander toestel/slimfoon aan die Wifi AP: '%s'
 Wys dan sy blaaier na: '%s://%s%s' en volg die instruksies.
@@ -60,7 +60,7 @@ Admin-modus toegestaan!
 Verhoogde klankvertraging sal jou meer tyd gee om lirieke te lees voordat jy die volgende sin uitsing.
 As u ondertitelvertraging verminder, sal u meer tyd gee om lirieke te lees voordat u die volgende sin uitsing.
 'n Halftoon staan ​​ook bekend as 'n halfstap. Dit is die kleinste interval wat in klassieke Westerse musiek gebruik word, gelyk aan 'n twaalfde van 'n oktaaf ​​of 'n halwe toon.
-DNN-gebaseerde vokale splitter is geaktiveer. PiKaraoke gebruik PyTorch (deur Facebook) om 'n diep neurale netwerk te bestuur om instrumentele en vokale klank in elke snit te verdeel wat tot stereoklank aanleiding gee.
+DNN-gebaseerde vokale splitter is geaktiveer. OpenHomeKaraoke gebruik PyTorch (deur Facebook) om 'n diep neurale netwerk te bestuur om instrumentele en vokale klank in elke snit te verdeel wat aanleiding gee tot stereoklank.
 Speler beheer
 Musiek
 Gemengd
@@ -105,7 +105,7 @@ Redigeer liedjie
 Skuif op in die tou
 Beweeg af in die tou
 Is jy seker jy wil uit die tou verwyder
-Is jy seker jy wil die HELE tou uitvee? Tik 'OK' om voort te gaan
+Is jy seker jy wil die HELE tou uitvee?
 Voeg 3 ewekansige liedjies by
 Vee alles uit
 Die tou is leeg
@@ -117,12 +117,12 @@ Liedjie is reeds in die ry:
 Soek / Voeg nuwe by
 Soek
 Tou
-Sluit nie-karaoke-wedstryde in
+Soek slegs Karaoke-passings
 Gevorderd
 Tik 'n liedjie (titel/kunstenaar) om die beskikbare liedjies te soek en klik 'Wou' om dit by die tou te voeg.
 As die liedjie nie in die "Beskikbare liedjies" aftreklys verskyn nie, klik 'Soek' om dit op Youtube te vind.
 Direkte aflaai YouTube url:
-Voeg by tou
+Voeg by tou na aflaai
 Sluit onderskrifte in
 Aflaai
 Soek YouTube vir
@@ -133,7 +133,7 @@ Beskikbare liedjies
 Wil jy die vertoonnaam verander van die persoon wat hierdie toestel gebruik? Dit sal langs die liedjies in die ry verskyn. Huidige:
 Huidige gebruiker
 Instellings
-PiKaraoke
+OpenHome Karaoke
 Is jy seker jy wil opgee?
 Is jy seker jy wil afskakel?
 Is jy seker jy wil herselflaai?
@@ -147,12 +147,12 @@ Geheue
 Sketmskoot
 Vokale Splitter
 Youtube-dl (yt-dlp) weergawe
-PiKaraoke weergawe
+OpenHomeKaraoke weergawe
 Gevorderde beheeropsies
 Vokale splitter-modus:
 Gebruik L-R/L+R
 Gebruik DNN
-Standaard MTV-klank het die twee stereokanale (L en R) so geënkodeer dat: L-R die instrumentsnit is, L+R die vokale snit is. Dus, deur eenvoudig die twee stereokanale af te trek of by te voeg, kan ons die instrumentale en vokale snit in monoklank kry. PiKaraoke se ingeboude DNN-gebaseerde (diep neurale netwerk) vokale splitter gebruik AI-algoritme om instrumentele en vokale klank in elke stereo-snit onafhanklik te verdeel, wat lei tot stereo-instrumentele en vokale snitte.
+Standaard MTV-klank het die twee stereokanale (L en R) so geënkodeer dat: L-R die instrumentsnit is, L+R die vokale snit is. Dus, deur eenvoudig die twee stereokanale af te trek of by te voeg, kan ons die instrumentale en vokale snit in monoklank kry. OpenHomeKaraoke se ingeboude DNN-gebaseerde (diep neurale netwerk) vokale splitter gebruik AI-algoritme om instrumentele en vokale klank in elke stereosnit onafhanklik te verdeel, wat lei tot stereo-instrumentele en vokale snitte.
 Stop Splitter
 Herbegin Splitter
 Die vokale splitter (wat beide DNN-gebaseerde en stereo-aftrekking ondersteun) loop as 'n aparte proses in die agtergrond, wat instrumentale/vokale klanklêer vir elke liedjie genereer.
@@ -162,19 +162,19 @@ Herbegin Streamer
 Dit beïnvloed slegs die speel van KTV via webblaaier. Die herbegin van die skermvasvang-en-stroom verbeter oudio/video-sinchronisasie, dit verminder ook die vertraging tussen die bediener en blaaier.
 Herlaai die liedjielys:
 Skandeer liedjiegids weer
-Jy hoef dit net te doen as jy lêers met die hand na die aflaaigids gekopieer het terwyl PiKaraoke aan die gang was.
+Jy hoef dit net te doen as jy lêers met die hand na die aflaaigids gekopieer het terwyl OpenHomeKaraoke aan die gang was.
 Opdaterings
 As aflaaie of soektogte ophou werk het, sal die opdatering van youtube-dl dit waarskynlik regmaak. Die huidige geïnstalleerde weergawe is:
 Dateer youtube-dl op
-Hierdie opdateringskakel hierbo kan misluk as jy nie behoorlike lêertoestemmings het nie. Gaan die PiKaraoke-logboek na vir foute.
+Hierdie opdateringskakel hierbo kan misluk as jy nie behoorlike lêertoestemmings het nie. Gaan die OpenHomeKaraoke-logboek na vir foute.
 Afskakeling
 Moenie net die prop uittrek nie! Skakel altyd jou bediener behoorlik af om datakorrupsie te vermy.
-Verlaat PiKaraoke
+Verlaat OpenHome Karaoke
 Herlaai stelsel
 Afskakelstelsel
 Ander
 Brei Raspberry Pi-lêerstelsel uit
-As jy pas die voorafgeboude PiKaraoke pi-beeld geïnstalleer het en jou SD-kaart is groter as 4GB, wil jy dalk die lêerstelsel uitbrei om die oorblywende spasie te benut. Jy hoef dit net een keer te doen. Dit sal die stelsel herlaai.
+As jy sopas die voorafgeboude OpenHomeKaraoke pi-beeld geïnstalleer het en jou SD-kaart is groter as 4GB, wil jy dalk die lêerstelsel uitbrei om die oorblywende spasie te benut. Jy hoef dit net een keer te doen. Dit sal die stelsel herlaai.
 Deaktiveer adminmodus
 Aktiveer adminmodus
 teken uit
@@ -185,7 +185,7 @@ Verander taal
 Kies asseblief taal
 Stelseltaal
 Huidige stelseltaal:
-Dit verander die taal van die PiKaraoke backend-stelsel wat op TV-skerm vertoon word; bowendien kan elke verbindende gebruiker ook hul onderskeie web-UI-taal verander in die aardbolknoppie in die regterbo-kieslys.
+Dit verander die taal van die OpenHomeKaraoke-agtergrondstelsel wat op TV-skerm vertoon word; bowendien kan elke verbindende gebruiker ook hul onderskeie web-UI-taal verander in die aardbolknoppie in die regterbo-kieslys.
 Aflaai suksesvol voltooi!
 Aflaai het misluk!
 Liedjie is by die tou gevoeg!
@@ -207,3 +207,25 @@ Hoë kwaliteit
 Voeg die liedjie by die sangry nadat die aflaai voltooi is
 Laai onderskrifte af (slegs ingebed) in alle tale indien beskikbaar
 Die aflaai van video's van hoë gehalte kan baie lank neem
+Stoor Play-instellings
+Stoor speelinstellings vir elke liedjie, dit sluit in: oudiovertraging, ondertitelvertraging en of onderskrifte gewys moet word.
+Voeg liedjie by deur die liedjietitel te praat
+Praat asseblief die liedjietitel en klik OK!
+Slegs HTTPS-webwerwe kan toegang tot mikrofoon hê, wil jy na HTTPS-webwerf herlei?
+Gee asseblief die toestemming om toegang tot mikrofoon te verkry!
+Wysig liedjienaam:
+Stoor
+Vee hierdie liedjie uit
+Is jy seker jy wil hierdie liedjie uit die biblioteek uitvee?
+Versoek parameter fout!
+Knip die liedjie:
+Pas liedjievolume aan:
+Begin tyd:
+Eind tyd:
+Oorspronklike volume (dB):
+Kan geen liedjie vind wat by "%s" pas nie.
+Het "%s" by die tou gevoeg.
+Kies asseblief die lied(e) om by te voeg:
+ONGEDIEN
+Naby
+Voeg by

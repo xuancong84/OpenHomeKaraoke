@@ -18,9 +18,12 @@ ls_media_files = lambda fullpath: sorted([f'{fullpath}/{f}'.replace('//','/') fo
 ls_subdir = lambda fullpath: sorted([g.rstrip('/') for f in os.listdir(fullpath) for g in [f'{fullpath}/{f}'.replace('//','/')] if not f.startswith('.') and os.path.isdir(g)])
 
 
-def sec2hhmmss(sec):
-	s = float(sec)
-	return f'{int(s//3600)}:{int((s%3600)//60)}:{"%.2f"%(s%60)}'
+def sec2hhmmss(sec, sub_second=False):
+	try:
+		s = float(sec)
+		return f'{int(s//3600):02d}:{int((s%3600)//60):02d}:{int(s%60):02d}.{int(s%1*100):02d}'
+	except:
+		return ''
 
 def hhmmss2sec(hms):
 	hh, mm, ss = [float(i) for i in (['0', '0']+hms.split(':'))[-3:]]

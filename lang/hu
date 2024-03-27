@@ -32,7 +32,7 @@ Megállt
 youtube-dl frissítés! Kellene egy-két perc...
 Nincs engedélyed a youtube-dl frissítésére
 Nincs engedélye a leállításra
-Kilépés a PiKaraoke-ból most!
+Kilépés az OpenHomeKaraoke-ból most!
 Nincs engedélye a kilépésre
 A rendszer leállítása most!
 Nincs engedélye a leállításra
@@ -41,7 +41,7 @@ Nincs engedélye az újraindításra
 A fájlrendszer bővítése és a rendszer újraindítása most!
 Az fs nem bővíthető nem Raspberry pi eszközökön!
 Nincs engedélye a fájlrendszer átméretezésére
-Youtube-dl elérési út nem található!
+A Youtube-dl elérési útja nem található, és a pip nem tudta telepíteni!
 VLC elérési út nem található!
 omxplayer elérési út nem található!
 Letöltési útvonal létrehozása:
@@ -49,7 +49,7 @@ Wifi/hálózat nincs csatlakoztatva. 10 másodperc múlva leáll...
 A dalok kiválasztásához olvassa be a QR-kódot, vagy csatlakozzon
 A TV-képernyőhöz csatlakoztassa
 Nyomja meg az F gombot a teljes képernyőre váltáshoz
-Nyomja meg az ESC gombot a PiKaraoke kilépéséhez
+Nyomja meg az ESC gombot az OpenHomeKaraoke kilépéséhez
 RaspiWifiConfig beállítási mód észlelve!
 Másik eszköz/okostelefon csatlakoztatása a Wifi AP-hoz: „%s”
 Ezután mutasson a böngészőjének a következőre: '%s://%s%s', és kövesse az utasításokat.
@@ -60,7 +60,7 @@ Adminisztrációs mód engedélyezve!
 A növekvő hangkésleltetés több időt biztosít a dalszövegek elolvasására, mielőtt elénekelné a következő mondatot.
 A feliratok késleltetésének csökkentése több időt biztosít a dalszövegek elolvasására, mielőtt elénekelné a következő mondatot.
 A félhangot féllépésnek is nevezik. Ez a klasszikus nyugati zenében használt legkisebb hangköz, amely egy oktáv tizenketted részével vagy fél hangszínnel egyenlő.
-A DNN-alapú énekelosztó engedélyezve van. A PiKaraoke a PyTorch segítségével (a Facebooktól) egy mély neurális hálózatot futtat, hogy az egyes számokban megosztja a hangszeres és az énekhangot, ami sztereó hangzást eredményez.
+A DNN-alapú énekelosztó engedélyezve van. Az OpenHomeKaraoke a PyTorch-ot (a Facebooktól) használja egy mély neurális hálózat működtetésére, hogy az egyes számokban megoszthassa a hangszeres és az énekhangot, ami sztereó hangzást eredményez.
 Játékos vezérlés
 Zene
 Vegyes
@@ -105,7 +105,7 @@ Dal szerkesztése
 Feljebb a sorban
 Lépjen lejjebb a sorban
 Biztos, hogy törölni akarja a sorból?
-Biztosan törli a TELJES sort? A folytatáshoz írja be az „OK” gombot
+Biztosan törli a TELJES sort?
 Adj hozzá 3 véletlenszerű dalt
 Mindent kitöröl
 A sor üres
@@ -117,12 +117,12 @@ A dal már a sorban van:
 Keresés / Új hozzáadása
 Keresés
 Sor
-Tartalmazzon nem karaoke meccseket
+Csak karaoke meccsek keresése
 Fejlett
 Írjon be egy dalt (cím/előadó) az elérhető dalok kereséséhez, majd kattintson a „Várólista” gombra, hogy hozzáadja a lejátszási sorhoz.
 Ha a dal nem jelenik meg az „Elérhető dalok” legördülő listában, kattintson a „Keresés” gombra, hogy megtalálja a Youtube-on.
 Közvetlen letöltés YouTube url:
-Hozzáadás a sorhoz
+Letöltés után adja hozzá a várólistához
 Feliratok szerepeltetése
 Letöltés
 Keresés a YouTube-on
@@ -133,7 +133,7 @@ Elérhető dalok
 Meg akarja változtatni az eszközt használó személy megjelenített nevét? Ez a sorban álló dalok mellett fog megjelenni. Jelenlegi:
 Jelenlegi felhasználó
 Beállítások
-PiKaraoke
+OpenHomeKaraoke
 Biztosan ki szeretne lépni?
 Biztosan le akarod kapcsolni?
 Biztos, hogy újra akarod indítani?
@@ -147,12 +147,12 @@ memória
 Képernyőfelvétel
 Vocal Splitter
 Youtube-dl (yt-dlp) verzió
-PiKaraoke verzió
+OpenHomeKaraoke verzió
 Speciális vezérlési beállítások
 Énekosztó mód:
 Használja az L-R/L+R
 Használja a DNN-t
-A szabványos MTV hang a két sztereó csatornát (L és R) úgy kódolja, hogy: L-R a hangszersáv, L+R az éneksáv. Így a két sztereó csatorna egyszerűen kivonásával vagy összeadásával mono hangzásban kaphatjuk meg a hangszeres és vokális sávot. A PiKaraoke beépített DNN-alapú (mély neurális hálózat) énekelosztója mesterséges intelligencia algoritmust használ a hangszeres és az énekhang felosztására minden sztereó sávban egymástól függetlenül, így sztereó hangszeres és éneksávokat eredményez.
+A szabványos MTV hang a két sztereó csatornát (L és R) úgy kódolja, hogy: L-R a hangszersáv, L+R az éneksáv. Így a két sztereó csatorna egyszerű kivonásával vagy összeadásával mono hangzásban kaphatjuk meg a hangszeres és a vokális sávot. Az OpenHomeKaraoke beépített DNN-alapú (mély neurális hálózat) énekelosztója mesterséges intelligencia algoritmust használ a hangszer és az énekhang felosztására minden sztereó sávban egymástól függetlenül, így sztereó hangszeres és éneksávokat eredményez.
 Állítsa le a Splittert
 Indítsa újra a Splittert
 Az énekelosztó (amely mind a DNN-alapú, mind a sztereó kivonást támogatja) külön folyamatként fut a háttérben, minden dalhoz instrumentális/ének hangfájlt generálva.
@@ -162,19 +162,19 @@ Indítsa újra a Streamert
 Ez csak a KTV webböngészőn keresztüli lejátszását érinti. A képernyőrögzítés és streaming újraindítása javítja az audio/video szinkronizálást, valamint csökkenti a szerver és a böngésző közötti késleltetést.
 A dallista frissítése:
 Olvassa be újra a dalkönyvtárat
-Ezt csak akkor kell megtennie, ha manuálisan másolta át a fájlokat a letöltési könyvtárba, miközben a PiKaraoke futott.
+Ezt csak akkor kell megtennie, ha manuálisan másolta át a fájlokat a letöltési könyvtárba, miközben az OpenHomeKaraoke futott.
 Frissítések
 Ha a letöltések vagy a keresések leálltak, a youtube-dl frissítése valószínűleg megoldja. A jelenlegi telepített verzió:
 Frissítse a youtube-dl-t
-A fenti frissítési hivatkozás meghiúsulhat, ha nem rendelkezik megfelelő fájlengedélyekkel. Ellenőrizze a PiKaraoke naplójában, hogy vannak-e hibák.
+A fenti frissítési hivatkozás meghiúsulhat, ha nem rendelkezik megfelelő fájlengedélyekkel. Ellenőrizze az OpenHomeKaraoke naplóját, hogy vannak-e hibák.
 Leállitás
 Ne csak a dugót húzza ki! Mindig megfelelően állítsa le a szervert, hogy elkerülje az adatsérülést.
-Lépjen ki a PiKaraoke-ból
+Lépjen ki az OpenHomeKaraoke-ból
 Rendszer újraindítása
 Leállító rendszer
 Egyéb
 Bontsa ki a Raspberry Pi fájlrendszert
-Ha most telepítette az előre elkészített PiKaraoke pi képet, és az SD-kártya nagyobb, mint 4 GB, érdemes lehet bővíteni a fájlrendszert, hogy kihasználja a fennmaradó helyet. Ezt csak egyszer kell megtennie. Ezzel újraindul a rendszer.
+Ha most telepítette az előre beépített OpenHomeKaraoke pi képet, és az SD-kártya nagyobb, mint 4 GB, érdemes lehet bővíteni a fájlrendszert, hogy kihasználja a fennmaradó helyet. Ezt csak egyszer kell megtennie. Ezzel újraindul a rendszer.
 Az adminisztrátori mód letiltása
 Adminisztrátori mód engedélyezése
 Kijelentkezés
@@ -185,7 +185,7 @@ Válts nyelvet
 Kérjük, válasszon nyelvet
 Rendszer nyelve
 A rendszer jelenlegi nyelve:
-Ez megváltoztatja a PiKaraoke háttérrendszer nyelvét, amely megjelenik a TV képernyőjén; ezenfelül minden egyes csatlakozó felhasználó megváltoztathatja a megfelelő webes felhasználói felület nyelvét a jobb felső menüben található földgömb gombbal.
+Ez megváltoztatja az OpenHomeKaraoke háttérrendszer nyelvét, amely megjelenik a TV képernyőjén; ezenfelül minden egyes csatlakozó felhasználó megváltoztathatja a megfelelő webes felhasználói felület nyelvét a jobb felső menüben található földgömb gombbal.
 A letöltés sikeresen befejeződött!
 Sikertelen letöltés!
 A dal felkerült a sorba!
@@ -207,3 +207,25 @@ Jó minőség
 A letöltés befejezése után adja hozzá a dalt az éneklési sorhoz
 Feliratok letöltése (csak beágyazva) minden nyelven, ha elérhető
 A jó minőségű videók letöltése nagyon sokáig tarthat
+Mentse el a lejátszási beállításokat
+Mentse el az egyes dalokhoz tartozó lejátszási beállításokat, beleértve a hang késleltetését, a felirat késleltetését és a feliratok megjelenítését.
+Adjon hozzá dalt a dal címének kimondásával
+Kérjük, mondja ki a dal címét, és kattintson az OK gombra!
+Csak HTTPS-webhelyek férhetnek hozzá a mikrofonhoz. Szeretne átirányítani a HTTPS-webhelyre?
+Kérjük, adja meg a mikrofon hozzáférési engedélyét!
+A dal nevének szerkesztése:
+Megment
+Törölje ezt a dalt
+Biztosan törli ezt a dalt a könyvtárból?
+Paraméterhiba kérése!
+Vágja le a dalt:
+A dal hangerejének beállítása:
+Kezdés időpontja:
+Idő vége:
+Eredeti hangerő (dB):
+Nem található "%s" kifejezésnek megfelelő dal.
+"%s" hozzáadva a sorhoz.
+Kérjük, válassza ki a hozzáadni kívánt dalo(ka)t:
+VISSZA
+Bezárás
+Hozzáadás

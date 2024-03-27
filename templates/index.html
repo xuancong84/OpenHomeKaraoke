@@ -36,6 +36,7 @@ tr:nth-child(even) { background-color: rgb(50, 55, 55); }
 	body { min-height: 120vh; }
 }
 .hide {display: none;}
+.hand {cursor: pointer;}
 rbutton {
 	margin: 4px;
 	align-items: center;
@@ -109,7 +110,7 @@ rbutton:focus:not(:active) {box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;}
 				<i class="icon icon-folder-open-empty" title="{{getString1(98)}}"></i>
 				<span>{{getString1(98)}}</span>
 			</a>
-			<a id="speak" class="navbar-item" style="margin-left: auto;" onclick="add_spoken()">
+			<a id="speak" class="navbar-item" style="margin-left: auto;" onclick="ASR()">
 				<i class="icon" title="{{getString1(212)}}">🗣</i>
 				<span>{{getString1(212)}}</span>
 			</a>
@@ -146,9 +147,9 @@ rbutton:focus:not(:active) {box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;}
 	</div>
 <script>
 const updateFreq = 5;
-let spectrum, dBASpectrum;
-var recorder, audios, start_time, recorder_timeout, use_recorded, timer, currentUser, ws, siriWave, g_stream, g_devices, taskHandle, source;
-var wav_win = $('#waveform')[0], last_pane='/f_home', ASRlist=$("#ASRlist")[0];
+var spectrum, dBASpectrum, recorder, audios, start_time, recorder_timeout, use_recorded;
+var timer, currentUser, ws, siriWave, g_stream, g_devices, taskHandle, source;
+var wav_win = $('#waveform')[0], last_pane=Cookies.get('last_pane') || '/f_home', ASRlist=$("#ASRlist")[0];
 RA = f => 12194 ** 2 * f ** 4 /((f ** 2 + 20.6 ** 2) * Math.sqrt((f ** 2 + 107.7 ** 2) * (f ** 2 + 737.9 ** 2)) * (f ** 2 + 12194 ** 2));
 A = f => 20 * Math.log10(RA(f)) + 2.0;
 function closeNav(){
@@ -170,7 +171,8 @@ post_switch = (url, data)=>{$.post(url, data, (_)=>{
 	$('#container').html(_);
 	closeNav();
 })}
-function add_spoken(){
+var ASR_hook = '';
+function ASR(task=""){
 	if(window.location.href.startsWith('http://')){
 		if(confirm("{{getString1(214)}}")){
 			var port = parseInt(window.location.href.split(':')[2]);
@@ -190,6 +192,7 @@ function add_spoken(){
 
 	var context = new (window.AudioContext || window.webkitAudioContext)();
 	source = context.createMediaStreamSource(g_stream);
+	ASR_hook = task;
 	var analyser = context.createAnalyser();
 	var trackSettings = g_stream.getAudioTracks()[0].getSettings();
 	var sampleRate = trackSettings.sampleRate || context.sampleRate;
@@ -260,6 +263,7 @@ function onRecStop(){
 	clearTimeout(recorder_timeout);
 	recorder = null;
 	if(!use_recorded) return;
+	if(ASR_hook) return setTimeout(ASR_hook, 1);
 	var blob = new Blob(audios, { type: "audio/webm" });
 	const req = new XMLHttpRequest();
 	req.open("POST", `/add_spoken/${currentUser}`, true);
@@ -287,6 +291,7 @@ function notifyWithControl(message, action, timeout=3000){
 
 function setLanguage(lang, reload){
 	Cookies.set("lang", lang, { expires: 3650 });
+	Cookies.set("last_pane", last_pane);
 	if(reload){
 		window.scrollTo(0, 0);
 		location.reload();

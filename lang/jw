@@ -32,16 +32,16 @@ mandheg
 Nganyari youtube-dl! Sampeyan kudu njupuk siji utawa rong menit ...
 Sampeyan ora duwe ijin kanggo nganyari youtube-dl
 Sampeyan ora duwe ijin kanggo mateni
-Mungkasi PiKaraoke saiki!
+Mungkasi OpenHomeKaraoke saiki!
 Sampeyan ora duwe ijin kanggo metu
 Mateni sistem saiki!
 Sampeyan ora duwe ijin kanggo mateni
 Sistem reboot saiki!
-Sampeyan ora duwe ijin kanggo urip maneh
+Sampeyan ora duwe idin kanggo urip maneh
 Ngembangake sistem file lan rebooting sistem saiki!
 Ora bisa nggedhekake fs ing piranti pi non-raspberry!
 Sampeyan ora duwe ijin kanggo ngowahi ukuran filesystem
-Path Youtube-dl ora ditemokake!
+Path Youtube-dl ora ditemokake lan pip gagal nginstal!
 Path VLC ora ditemokake!
 path omxplayer ora ketemu!
 Nggawe path download:
@@ -49,18 +49,18 @@ Wifi/Jaringan ora nyambung. Mati ing 10s ...
 Kanggo milih lagu, pindai QR utawa sambungake
 Kanggo tampilan TV, nyambung menyang
 Pencet F kanggo ngowahi layar wutuh
-Pencet ESC kanggo metu saka PiKaraoke
+Pencet ESC kanggo metu saka OpenHomeKaraoke
 Mode persiyapan RaspiWifiConfig dideteksi!
 Sambungake piranti/smartphone liya menyang AP Wifi: '%s'
 Banjur arahake browser menyang: '%s://%s%s' lan tindakake pandhuane.
 Sabanjure:
 Ditambahake dening:
-Saiki muter:
+Saiki diputer:
 Mode admin diwenehake!
 Nambah wektu tundha audio bakal menehi wektu luwih akeh kanggo maca lirik sadurunge nembangake ukara sabanjure.
 Ngurangi wektu tundha subtitle bakal menehi wektu luwih akeh kanggo maca lirik sadurunge nembangake ukara sabanjure.
 Semitone uga dikenal minangka setengah langkah. Iki minangka interval paling cilik sing digunakake ing musik Barat klasik, padha karo sepersepuluh saka oktaf utawa setengah nada.
-Pemisah vokal basis DNN diaktifake. PiKaraoke nggunakake PyTorch (dening Facebook) kanggo mbukak jaringan saraf sing jero kanggo pamisah swara instrumental lan vokal ing saben trek sing nyebabake swara stereo.
+Pemisah vokal basis DNN diaktifake. OpenHomeKaraoke nggunakake PyTorch (dening Facebook) kanggo mbukak jaringan saraf sing jero kanggo pamisah swara instrumental lan vokal ing saben trek sing nyebabake swara stereo.
 Kontrol pamuter
 Musik
 Campuran
@@ -105,7 +105,7 @@ Ngedit lagu
 Pindhah munggah ing antrian
 Pindhah mudhun ing antrian
 Apa sampeyan yakin pengin mbusak saka antrian
-Apa sampeyan yakin pengin mbusak ENTIRE antrian? Ketik 'OK' kanggo nerusake
+Apa sampeyan yakin pengin mbusak ENTIRE antrian?
 Tambah 3 lagu acak
 Busek kabeh
 Antrian kosong
@@ -117,12 +117,12 @@ Lagu wis ana ing antrian:
 Telusuri / Tambah Anyar
 Nggoleki
 antri
-Kalebu pertandhingan non-karaoke
+Telusuri Karaoke mung cocog
 Majeng
 Ketik lagu (judhul/artis) kanggo nelusuri lagu sing kasedhiya lan klik 'Antrian' kanggo ditambahake menyang antrian.
 Yen lagu ora katon ing gulung mudhun "Lagu Kasedhiya", klik 'Telusuri' kanggo nemokake ing Youtube.
-Langsung download url YouTube:
-Tambah menyang antrian
+Ngundhuh langsung URL YouTube:
+Tambah menyang antrian sawise download
 Kalebu subtitle
 Ngundhuh
 Nggoleki YouTube kanggo
@@ -130,10 +130,10 @@ asil panelusuran kanggo
 Klik gulung mudhun kanggo nuduhake asil liyane
 Link:
 Lagu kasedhiya
-Apa sampeyan pengin ngganti jeneng tampilan wong sing nggunakake piranti iki? Iki bakal katon ing jejere lagu sing wis antri. saiki:
+Apa sampeyan pengin ngganti jeneng tampilan wong sing nggunakake piranti iki? Iki bakal ditampilake ing jejere lagu sing wis antri. saiki:
 pangguna saiki
 Setelan
-PiKaraoke
+OpenHomeKaraoke
 Apa sampeyan yakin pengin mandheg?
 Apa sampeyan yakin arep mateni?
 Apa sampeyan yakin pengin urip maneh?
@@ -147,12 +147,12 @@ Memori
 Jupuk layar
 Vokal Splitter
 Versi Youtube-dl (yt-dlp).
-Versi PiKaraoke
+Versi OpenHomeKaraoke
 Pilihan Kontrol Lanjut
 Mode pamisah vokal:
 Gunakake L-R/L+R
 Gunakake DNS
-Audio MTV standar nduweni rong saluran stereo (L lan R) sing dikodekake kanthi cara: L-R minangka trek instrumen, L+R minangka trek vokal. Dadi, kanthi mung nyuda utawa nambah rong saluran stereo, kita bisa entuk trek instrumental lan vokal kanthi swara mono. Pemisah vokal berbasis DNN (jaringan syaraf jero) PiKaraoke nggunakake algoritma AI kanggo pamisah swara instrumental lan vokal ing saben trek stereo kanthi mandiri sing ngasilake trek instrumental lan vokal stereo.
+Audio MTV standar nduweni rong saluran stereo (L lan R) sing dikodekake kanthi cara: L-R minangka trek instrumen, L+R minangka trek vokal. Dadi, kanthi mung nyuda utawa nambah rong saluran stereo, kita bisa entuk trek instrumental lan vokal kanthi swara mono. Pemisah vokal berbasis DNN (jaringan syaraf jero) OpenHomeKaraoke nggunakake algoritma AI kanggo pamisah swara instrumental lan vokal ing saben trek stereo kanthi mandiri sing ngasilake trek instrumental lan vokal stereo.
 Stop Splitter
 Wiwiti maneh Splitter
 Splitter vokal (sing ndhukung subtraction basis DNN lan stereo) mlaku minangka proses kapisah ing latar mburi, ngasilake file audio instrumental/vokal kanggo saben lagu.
@@ -162,19 +162,19 @@ Wiwiti maneh Streamer
 Iki mung mengaruhi muter KTV liwat browser web. Wiwiti maneh layar-capture-lan-streaming nambah sinkronisasi audio/video, uga nyuda latensi antarane server lan browser.
 Refresh dhaptar lagu:
 Pindai maneh direktori lagu
-Sampeyan mung kudu nindakake iki yen sampeyan nyalin file kanthi manual menyang direktori download nalika PiKaraoke lagi mlaku.
+Sampeyan mung kudu nindakake iki yen sampeyan nyalin file kanthi manual menyang direktori undhuhan nalika OpenHomeKaraoke lagi mlaku.
 Nganyari
 Yen undhuhan utawa telusuran mandheg, nganyari youtube-dl bisa uga bakal ndandani. Versi sing diinstal saiki yaiku:
 Nganyari youtube-dl
-Link nganyari ing ndhuwur bisa gagal yen sampeyan ora duwe ijin file sing tepat. Priksa log PiKaraoke kanggo kesalahan.
+Link nganyari ing ndhuwur bisa gagal yen sampeyan ora duwe ijin file sing tepat. Priksa log OpenHomeKaraoke kanggo kesalahan.
 mateni
 Aja mung narik plug! Tansah mateni server sampeyan kanthi bener supaya ora korupsi data.
-Mungkasi PiKaraoke
+Mungkasi OpenHomeKaraoke
 Sistem urip maneh
 Sistem shutdown
 Liyane
 Expand sistem file Raspberry Pi
-Yen sampeyan mung nginstal gambar PiKaraoke pi sing wis dibangun lan kertu SD sampeyan luwih gedhe tinimbang 4GB, sampeyan bisa uga pengin nggedhekake sistem file kanggo nggunakake ruang sing isih ana. Sampeyan mung kudu nindakake iki sapisan. Iki bakal urip maneh sistem.
+Yen sampeyan mung nginstal gambar OpenHomeKaraoke pi sing wis dibangun lan kertu SD sampeyan luwih gedhe tinimbang 4GB, sampeyan bisa uga pengin nggedhekake sistem file kanggo nggunakake ruang sing isih ana. Sampeyan mung kudu nindakake iki sapisan. Iki bakal urip maneh sistem.
 Pateni mode admin
 Aktifake mode admin
 metu
@@ -185,7 +185,7 @@ Ganti Basa
 Mangga milih basa
 Basa Sistem
 Basa sistem saiki:
-Iki ngganti basa sistem backend PiKaraoke sing bakal ditampilake ing layar TV; malih, saben pangguna nyambungake uga bisa ngganti basa UI Web pamilike ing tombol globe ing menu tengen ndhuwur.
+Iki ngganti basa sistem backend OpenHomeKaraoke sing bakal ditampilake ing layar TV; malih, saben pangguna nyambungake uga bisa ngganti basa UI Web pamilike ing tombol globe ing menu tengen ndhuwur.
 Download kasil rampung!
 Download gagal!
 Lagu ditambahake ing antrian!
@@ -207,3 +207,25 @@ High Quality
 Tambah lagu menyang antrian singing sawise download wis rampung
 Download subtitles (mung ditempelake) ing kabeh basa yen kasedhiya
 Ngundhuh video kanthi kualitas dhuwur bisa uga mbutuhake wektu sing suwe
+Simpen Setelan Play
+Simpen setelan muter kanggo saben lagu, iki kalebu: wektu tundha audio, wektu tundha subtitle, lan apa bakal nuduhake subtitles.
+Tambah lagu kanthi nyebutake judhul lagu
+Mangga sebutno judhul lagu banjur klik OK!
+Mung situs web HTTPS sing bisa ngakses mikropon, apa sampeyan pengin pangalihan menyang situs web HTTPS?
+Mangga wenehi idin kanggo ngakses mikropon!
+Sunting Jeneng Lagu:
+Simpen
+Busak lagu iki
+Apa sampeyan yakin arep mbusak lagu iki saka perpustakaan?
+Njaluk kesalahan parameter!
+Trim lagu:
+Nyetel volume lagu:
+Wektu miwiti:
+Wektu pungkasan:
+Volume Asli (dB):
+Ora bisa nemokake lagu sing cocog karo "%s".
+Ditambahake "%s" ing antrian.
+Pilih lagu sing arep ditambahake:
+UNDO
+Nutup
+Tambah
