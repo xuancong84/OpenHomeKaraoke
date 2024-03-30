@@ -73,7 +73,7 @@ class Karaoke:
 	qr_code_path = None
 	base_path = os.path.dirname(__file__)
 	volume_offset = 0
-	default_logo_path = os.path.join(base_path, "logo.png")
+	default_logo_path = os.path.join(base_path, "logo.jpg")
 	logical_volume = None   # for normalized volume
 	status_dirty = True
 	event_dirty = threading.Event()
@@ -316,6 +316,7 @@ class Karaoke:
 		if not hasattr(self, 'logo'):
 			self.logo = pygame.image.load(self.logo_path)
 		_, _, W, H = self.normalize(list(self.logo.get_rect()))
+		W, H = W/2, H/2
 		center = self.screen.get_rect().center
 		self.logo1 = pygame.transform.scale(self.logo, (W, H))
 		self.screen.blit(self.logo1, (center[0]-W/2, center[1]-H/2-text[1].height/2))

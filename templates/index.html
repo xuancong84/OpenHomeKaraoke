@@ -22,8 +22,8 @@
 
 <style>
 .dark_overlay{
-	position: fixed; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:100; -moz-opacity: 0.5;
-	opacity:.50; display: none; filter: alpha(opacity=80);
+	position: fixed; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:100; -moz-opacity: 0.8;
+	opacity:.8; display: none; filter: alpha(opacity=80);
 }
 .above_overlay{ position:fixed; width:80%; height:40%; left:50%; top: 50%; transform: translate(-50%, -50%); z-index: 200; display: none; }
 .navbar-item > i { margin-right: 2px; font-size: 24px; }
@@ -71,17 +71,17 @@ rbutton {
 rbutton:active,
 rbutton:focus {outline: none;}
 rbutton:hover {background-position: -20px -20px;}
-rbutton:focus:not(:active) {box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;}
+rbutton:focus:not(:active) {box-shadow: #28aaff40 0 0 0 .125em;}
 </style>
 
 <body>
 	<div id="ASR" class="asr dark_overlay"></div>
 	<div id="ASRpanel" class="asr above_overlay">
-		<h1 style="color: lime; font-size: x-large;">{{getString1(213)}}</h1>
-		<div id="waveform" style="width:100%; height: 50%; border: solid 4px blue; background-color: #00000080;"></div>
+		<h1 style="color: white; font-size: x-large; margin: 0.5em; line-height: 1.5; font-weight: bold;">{{getString1(213)}}</h1>
+		<div id="waveform" style="width:100%; height: 50%; border-radius: 2em; border: solid 4px blue; background-color: #00000080;"></div>
 		<h1 style="font-size: 64pt; justify-content: space-around; display: flex;" >
-			<span onclick="use_recorded=true;recorder.stop();">✅︎</span>
-			<span onclick="recorder.stop();">✖</span>
+			<span class="hand" style="color:lime" onclick="use_recorded=true;recorder.stop();">☑</span>
+			<span class="hand" style="color:red" onclick="recorder.stop();">☒</span>
 		</h1>
 	</div>
 	<div id="ASRselect" class="above_overlay" style="font-size: x-large; line-height: 2; overflow: scroll; background-color:darkviolet; height: fit-content;padding: 5%;">

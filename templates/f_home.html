@@ -195,7 +195,7 @@ $("#vol").keypress(function (e) {
 });
 
 $("#vol").blur(() => {
-	$.get("/vol/"+$(this).text(), function(vol){$("#vol").text(vol)});
+	$.get("/vol/"+$("#vol").text(), (vol) => {$("#vol").text(vol)});
 	volume_changing = false;
 });
 

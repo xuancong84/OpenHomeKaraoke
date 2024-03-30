@@ -1,6 +1,6 @@
 # OpenHomeKaraoke 【开源之家卡啦OK】 (The World's best open-source Home Karaoke system)
 
-This is the world's best open-source YouTube-based Home Karaoke system up to today (2024.4), originally named as OpenHomeKaraoke, forked from @vicwomg's repo (thanks) and thoroughly revamped and incorporated @tsurumeso's DNN-based (deep neural network) vocal splitter (thanks to https://github.com/tsurumeso/vocal-remover). OpenHomeKaraoke is a "KTV"-style Karaoke song search and queueing system. It connects to your TV either via an HDMI cable, or screen sharing, or using TV's web-browser (backend KTV player is screen-captured and streamed to HTTP), and shows a QR code for computers and smartphones to connect to a web interface. From there, multiple users can seamlessly search your local track library, queue up songs, add an endless selection of new Karaoke tracks from YouTube, and more. Works on Linux, Windows, Raspberry Pi, and OSX!
+This is the world's best open-source YouTube-based Home Karaoke system up to today (2024.4), originally named as PiKaraoke, forked from @vicwomg's repo (thanks to https://github.com/vicwomg/pikaraoke/) and thoroughly revamped and incorporated @tsurumeso's DNN-based (deep neural network) vocal splitter (thanks to https://github.com/tsurumeso/vocal-remover). OpenHomeKaraoke is a "KTV"-style Karaoke song search, download, and queueing system. It runs on your PC or Raspberry Pi, with screen projected to your TV either via an HDMI cable, or screen sharing, or using TV's web-browser (backend KTV player is screen-captured and streamed to HTTP), and shows a QR code for computers and smartphones to connect to a web interface. From there, multiple users can seamlessly search your local track library, queue up songs, add an endless selection of new Karaoke tracks from YouTube, and more. Works on Linux, Windows, Raspberry Pi, and OSX!
 See a demo on YouTube: [![Img alt text](https://img.youtube.com/vi/kmQax0EhAxE/0.jpg)](https://www.youtube.com/watch?v=kmQax0EhAxE)
 
 ## Key Features
@@ -55,9 +55,7 @@ This _should_ work on Windows, Linux machines and all Raspberry Pi devices (mult
 
 ## Installation
 
-### Manual install
-
-Firstly, for all OS:
+### For all OS
 
 - Install git, if you haven't already. (on Raspberry Pi: `sudo apt-get update; sudo apt-get install git`)
 - Clone this repo, `git clone https://github.com/xuancong84/OpenHomeKaraoke.git`
@@ -65,7 +63,9 @@ Firstly, for all OS:
 - Install pip dependencies, in the conda environment, cd into the project folder and run `pip install -r requirements.txt`
 - Create song download directory `$HOME/pikaraoke-songs` (by default) or specify it on the command line.
 - Create `nonvocal` and `vocal` sub-folders inside the song download directory to enable automatic extraction of instrumental and vocal tracks in the background, e.g.,`$HOME/pikaraoke-songs/nonvocal` and `$HOME/pikaraoke-songs/vocal` by default.
-- Make sure `VLC` (https://www.videolan.org/) and `ffmpeg` (https://ffmpeg.org/download.html) are installed, and their executables are in the execution PATH environment variable
+- Make sure `VLC` (https://www.videolan.org/) and `ffmpeg` (https://ffmpeg.org/download.html) are installed, and their executables are in the execution PATH environment variable.
+- For GPU-accelerated speech recognition, you need to install the cloud-side server on any CUDA-enabled GPU machine. Copy over the entire `cloud` folder from https://github.com/xuancong84/OpenSmartLight/tree/main/tools/cloud, setup conda environment correctly and run the `cloud.py`, then pass the cloud server URL as argument to `app.py`.
+- GPU-accelerated vocal splitter can run either locally or via cloud (see previous point with option `-vs`). If your local machine is powerful enough, with a fast CPU and a decent NVidia GPU with >=8GB GPU memory, you can host the cloud on the same local machine.
 
 #### Linux / OSX / Raspberry Pi (>=4)
 
@@ -73,7 +73,7 @@ Firstly, for all OS:
 - You can activate conda environment by `export PATH=$HOME/anaconda3/bin:$PATH`
 - yt-dlp should be automatically installed when you run `pip install -r requirements.txt`
 - Make sure you can run `yt-dlp`, `ffmpeg` and `vlc` (optionally `cvlc`) directly
-- For GPU-accelerated vocal splitter, install Nvidia driver (Google on how to install); and use Anaconda3's pip to install PyTorch (see https://pytorch.org/)
+- For GPU-accelerated vocal splitter, install NVidia driver (Google on how to install); and use Anaconda3's pip to install PyTorch (see https://pytorch.org/)
 
 #### Windows
 
@@ -114,7 +114,7 @@ Here is the full list of command line arguments on OSX as an example (may not be
 usage: app.py [-h] [-u NONROOT_USER] [-p PORT] [-d DOWNLOAD_PATH] [-o OMXPLAYER_PATH] [-y YOUTUBEDL_PATH] [-v VOLUME] [-V] [-nv] [-s SPLASH_DELAY] [-L LANG]
               [-l LOG_LEVEL] [--hide-ip] [--hide-raspiwifi-instructions] [--hide-splash-screen] [--adev ADEV] [--dual-screen] [--high-quality]
               [--use-omxplayer] [--use-vlc] [--vlc-path VLC_PATH] [--vlc-port VLC_PORT] [--logo-path LOGO_PATH] [--show-overlay] [-w] [-c BROWSER_COOKIES]
-              [--admin-password ADMIN_PASSWORD] [--developer-mode]
+              [--cloud CLOUD_URL] [--admin-password ADMIN_PASSWORD] [--developer-mode]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -159,6 +159,7 @@ optional arguments:
   -c BROWSER_COOKIES, --browser-cookies BROWSER_COOKIES
                         YouTube downloader can use browser cookies from the specified path (see the --cookies-from-browser option of yt-dlp), it can also be
                         auto (default): automatically determine based on OS; none: do not use any browser cookies
+  --cloud, -c CLOUD_URL cloud URL for DNN-based vocal splitter and speech recognition
   --admin-password ADMIN_PASSWORD
                         Administrator password, for locking down certain features of the web UI such as queue editing, player controls, song editing, and
                         system shutdown. If unspecified, everyone is an admin.
