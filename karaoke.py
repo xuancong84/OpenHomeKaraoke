@@ -1165,7 +1165,7 @@ class Karaoke:
 
 		# Windows does not have tmux, vocal splitter can only be invoked from the main program
 		if self.platform == 'windows' or self.run_vocal:
-			self.vocal_restart()
+			Try(lambda: self.vocal_restart())
 
 		while self.running:
 			try:
