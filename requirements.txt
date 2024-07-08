@@ -4,6 +4,8 @@ unidecode
 pykakasi
 pinyin
 wheel
+pydub
+yt-dlp
 tempora==1.14.0
 jaraco.functools==2.0
 six

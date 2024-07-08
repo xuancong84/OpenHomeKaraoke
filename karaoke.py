@@ -8,6 +8,7 @@ from collections import *
 import numpy as np
 
 from constants import media_types
+from datetime import datetime
 
 import pygame
 import qrcode
@@ -22,7 +23,7 @@ from app import getString
 
 if get_platform() != "windows":
 	from signal import SIGALRM, alarm, signal, SIGTERM
-	signal(SIGTERM, lambda signum, stack_frame: K.stop())
+	signal(SIGTERM, lambda signum, stack_frame: os.K.stop())
 
 STD_VOL = 65536/8/np.sqrt(2)
 ip2websock, ip2pane = {}, {}
@@ -142,7 +143,6 @@ class Karaoke:
 		if self.use_vlc:
 			self.vlcclient = vlcclient.VLCClient(port = self.vlc_port, path = self.vlc_path,
 			                                     qrcode = (self.qr_code_path if self.show_overlay else None), url = self.url)
-			self.vlcclient.K = self
 		else:
 			self.omxclient = omxclient.OMXClient(path = self.omxplayer_path, adev = self.omxplayer_adev,
 			                                     dual_screen = self.dual_screen, volume_offset = self.volume_offset)
@@ -159,17 +159,18 @@ class Karaoke:
 
 	def _upgrade_yt_dlp(self):
 		import pip, yt_dlp
-		old_stderr, sys.stderr = sys.stderr, io.StringIO()
-		pip.main(['install', 'yt-dlp=='])
-		ret_stderr, sys.stderr = sys.stderr, old_stderr
-		output = ret_stderr.getvalue()
-		posi1 = output.find('versions:')
-		posi2 = output.find(')', posi1)
-		assert posi1>0 and posi2>0
-		latest_version = output[posi1:posi2].split()[-1]
-		if self.youtubedl_version.replace('.0', '.') != latest_version.replace('.0', '.'):
-			self.upgrade_youtubedl()
-			self.get_youtubedl_version()
+		fn = '.yt-dlp.last-update'
+		date_today = datetime.today().isoformat()[:10]
+		date_last = Try(lambda: open(fn).read().strip(), '')
+		if date_today == date_last:
+			logging.info(f"yt-dlp is up-to-date at {date_today}")
+			return
+
+		self.upgrade_youtubedl()
+		self.get_youtubedl_version()
+		with open(fn, 'w') as fp:
+			print(date_today, file=fp)
+
 
 	def _cloud_thread(self):
 		while True:

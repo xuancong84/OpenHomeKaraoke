@@ -170,7 +170,7 @@ class VLCClient:
 					xml = self.command(f"volume&val={volume}", False).text
 					if int(self.get_val_xml(xml, 'volume')) == volume:
 						okay = True
-					if not self.K.is_paused and self.get_val_xml(xml, 'state') != 'playing':
+					if not os.K.is_paused and self.get_val_xml(xml, 'state') != 'playing':
 						okay = False
 				except:
 					time.sleep(0.1)
@@ -225,14 +225,14 @@ class VLCClient:
 				return SimpleNamespace(**{'text': self.last_status_text, 'status_code': request.status_code})
 			if save_status:
 				self.last_status_text = request.text
-				self.K.has_video = "<info name='Type'>Video</info>" in request.text
-			if not self.K.now_playing:
+				os.K.has_video = "<info name='Type'>Video</info>" in request.text
+			if not os.K.now_playing:
 				# by right, here should never be reached
 				request.encoding = 'utf-8'
-				self.K.now_playing_filename = unescape(unescape(self.get_val_xml(request.text, "info name='filename'")))
-				if not os.path.isfile(self.K.now_playing_filename):
-					self.K.now_playing_filename = self.K.download_path + self.K.now_playing_filename
-				self.K.now_playing = self.K.filename_from_path(self.K.now_playing_filename)
+				os.K.now_playing_filename = unescape(unescape(self.get_val_xml(request.text, "info name='filename'")))
+				if not os.path.isfile(os.K.now_playing_filename):
+					os.K.now_playing_filename = os.K.download_path + os.K.now_playing_filename
+				os.K.now_playing = os.K.filename_from_path(os.K.now_playing_filename)
 			return request
 		except:
 			logging.error("No active VLC process. Could not run command: " + command)
