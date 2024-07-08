@@ -291,11 +291,14 @@ class Karaoke:
 			if self.full_screen:
 				self.screen = pygame.display.set_mode([self.WIDTH, self.HEIGHT], self.get_default_display_mode())
 			else:
-				self.screen = pygame.display.set_mode([1280, 720], pygame.RESIZABLE)
-			self.render_splash_screen()
+				self.screen = pygame.display.set_mode([self.WIDTH*3//4, self.HEIGHT*3//4], pygame.RESIZABLE)
+			if self.is_file_playing():
+				self.play_transposed(self.now_playing_transpose)
+			else:
+				self.render_splash_screen()
 
 	def normalize(self, v):
-		r = self.screen.get_width()/1920
+		r = self.screen.get_width()/self.ref_W
 		if type(v) is list:
 			return [i*r for i in v]
 		elif type(v) is tuple:
@@ -309,7 +312,7 @@ class Karaoke:
 		# Clear the screen and start
 		logging.debug("Rendering splash screen")
 		self.screen.fill((0, 0, 0))
-		blitY = self.ref_H - 40
+		blitY = self.ref_W*self.screen.get_height()//self.screen.get_width() - 40
 		sysfont_size = 30
 
 		# Draw logo and name
@@ -659,8 +662,6 @@ class Karaoke:
 
 	def play_transposed(self, semitones):
 		if self.use_vlc:
-			if self.now_playing_transpose == semitones:
-				return
 			self.now_playing_transpose = semitones
 			status_xml = self.vlcclient.command().text if self.is_paused else self.vlcclient.pause(False).text
 			info = self.vlcclient.get_info_xml(status_xml)
@@ -1039,10 +1040,6 @@ class Karaoke:
 					self.running = False
 				if event.key == pygame.K_f:
 					self.toggle_full_screen()
-			elif event.type == pygame.VIDEORESIZE:
-				if self.platform != 'osx':
-					self.screen = pygame.display.set_mode((event.w, event.h),
-							self.get_default_display_mode() if self.full_screen else pygame.RESIZABLE)
 		if not self.is_file_playing() or not self.has_video:
 			self.render_splash_screen()
 			pygame.display.update()
@@ -1174,8 +1171,6 @@ class Karaoke:
 				if self.queue:
 					if not self.is_file_playing():
 						self.reset_now_playing()
-						if self.full_screen and not pygame.display.get_active():
-							self.pygame_reset_screen()
 						self.render_splash_screen()
 						tm = time.time()
 						while time.time()-tm < self.splash_delay:
@@ -1191,8 +1186,6 @@ class Karaoke:
 							self.firstSongStarted = True
 						self.now_playing_user = head["user"]
 						self.update_queue()
-				elif (self.full_screen and not pygame.display.get_active()) and not self.is_file_playing():
-					self.pygame_reset_screen()
 				self.handle_run_loop()
 			except KeyboardInterrupt:
 				logging.warn("Keyboard interrupt: Exiting pikaraoke...")

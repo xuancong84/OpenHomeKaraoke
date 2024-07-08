@@ -276,10 +276,10 @@ def user_rename(old_name, new_name):
 	return ''
 
 
-@app.route("/get_vocal_todo_list/<vocal_device>")
-def get_vocal_todo_list(vocal_device):
+@app.route("/get_vocal_todo_list/<vocal_device>/")
+@app.route("/get_vocal_todo_list/<vocal_device>/<path:last_completed>")
+def get_vocal_todo_list(vocal_device, last_completed=''):
 	K.vocal_device = vocal_device
-	last_completed = request.headers['last_completed']
 	if last_completed in K.rename_history:
 		K.rename(last_completed, os.path.splitext(K.rename_history[last_completed])[0])
 		K.rename_history.pop(last_completed)

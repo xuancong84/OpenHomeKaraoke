@@ -13,8 +13,7 @@ Flask
 flask-sock
 pillow
 qrcode
-pygame; sys_platform != 'darwin'
-pygame==2.1.3; sys_platform == 'darwin'
+pygame==2.5.2
 futures
 psutil 
 unidecode
@@ -23,10 +22,10 @@ arabic-reshaper
 python-bidi
 flask-paginate==2021.10.29
 flask==2.3.1
-numpy
-#torch>=1.5.1
+numpy==1.26.4
+torch>=1.5.1
 tqdm>=4.30
-librosa
+librosa==0.10.0
 pip
 soundfile
 spec_utils

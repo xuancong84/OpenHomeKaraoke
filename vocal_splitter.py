@@ -163,8 +163,7 @@ use_DNN = True
 def get_next_file(cuda_device):
 	global song_path, use_DNN, last_completed
 	try:
-		obj = requests.get(f'http://localhost:5000/get_vocal_todo_list/{cuda_device.type}',
-		                   headers = {'last_completed': last_completed.encode('utf-8', 'ignore')}).json()
+		obj = requests.get(f'http://localhost:5000/get_vocal_todo_list/{cuda_device.type}/{last_completed}').json()
 		song_path = obj['download_path'].rstrip('/')
 		use_DNN = obj['use_DNN']
 	except:
