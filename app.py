@@ -271,6 +271,9 @@ def user_rename(old_name, new_name):
 		if q['user'] == old_name:
 			q['user'] = new_name
 			dirty = True
+	if K.now_playing_user == old_name:
+		K.now_playing_user = new_name
+		K.status_dirty = True
 	if dirty:
 		K.update_queue()
 	return ''

@@ -81,8 +81,8 @@ function update(data){
 	}
 
 	if (obj.up_next) {
-	$("#up-next").html(`<p style="white-space: nowrap; overflow:hidden;"><span style="max-width:75%;">${obj.up_next}</span>
-		<span class="has-text-success" style="float:right; max-width:25%;"><i class="icon icon-adult" title="Next singer"></i>${obj.next_user}</span></p>`);
+	$("#up-next").html(`<p><span style="max-width:70%; white-space:nowrap; overflow:hidden; position:absolute; padding-top:4px;">${obj.up_next}</span>
+		<span class="has-text-success" style="float:right; max-width:30%; white-space:nowrap; overflow:hidden;"><i class="icon icon-adult" title="Next singer"></i>${obj.next_user}</span></p>`);
 	} else {
 		$("#up-next").html("{{getString1(70)}}");
 	}
@@ -101,7 +101,7 @@ function update(data){
 function getNowPlaying() { $.get('/nowplaying').done(update); }
 
 function checkUser() {
-	try{ return obj.now_playing_user=='Randomizer' || $('#current-user').text().trim()==obj.now_playing_user; }
+	try{ return obj.now_playing_user=='Random' || $('#current-user').text().trim()==obj.now_playing_user; }
 	catch(err){ return false; }
 }
 
@@ -295,7 +295,7 @@ body {
 
 <hr/>
 <h3>{{getString1(75)}}</h3>
-<p id="up-next" class="has-text-warning truncate"></p>
+<p id="up-next" class="has-text-warning truncate" style="overflow:hidden;"></p>
 <hr/>
 
 <div class="has-background-black-bis box control-box" style="max-width: 500px">

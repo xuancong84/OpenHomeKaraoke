@@ -108,7 +108,7 @@ function getNowPlaying() {
 }
 
 function checkUser() {
-	try{ return obj.now_playing_user=='Randomizer' || $('#current-user').text().trim()==obj.now_playing_user; }
+	try{ return obj.now_playing_user=='Random' || $('#current-user').text().trim()==obj.now_playing_user; }
 	catch(err){ return false; }
 }
 

@@ -703,7 +703,7 @@ class Karaoke:
 			if self.is_song_in_queue(songs[r]):
 				logging.warn("Song already in queue, trying another... " + songs[r])
 			else:
-				self.queue.append({"user": "Randomizer", "file": songs[r], "title": self.filename_from_path(songs[r])})
+				self.queue.append({"user": "Random", "file": songs[r], "title": self.filename_from_path(songs[r])})
 				i += 1
 			songs.pop(r)
 			if len(songs) == 0:
