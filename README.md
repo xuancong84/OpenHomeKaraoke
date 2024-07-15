@@ -47,6 +47,8 @@ See a demo on YouTube: [![Img alt text](https://img.youtube.com/vi/kmQax0EhAxE/0
   <img width="250" style="float:left" alt="OpenHomeKaraoke-browse" src="https://raw.githubusercontent.com/xuancong84/OpenHomeKaraoke/master/.readme/browse.jpg">
   <img width="250" style="float:left" alt="OpenHomeKaraoke-search1" src="https://raw.githubusercontent.com/xuancong84/OpenHomeKaraoke/master/.readme/search.jpg">
   <img width="250" style="float:left" alt="OpenHomeKaraoke-language" src="https://raw.githubusercontent.com/xuancong84/OpenHomeKaraoke/master/.readme/language.jpg">
+  <img width="250" style="float:left" alt="OpenHomeKaraoke-language" src="https://raw.githubusercontent.com/xuancong84/OpenHomeKaraoke/master/.readme/asr1.png">
+  <img width="250" style="float:left" alt="OpenHomeKaraoke-language" src="https://raw.githubusercontent.com/xuancong84/OpenHomeKaraoke/master/.readme/asr2.png">
 </p>
   
 ## Supported Devices

@@ -147,7 +147,7 @@ rbutton:focus:not(:active) {box-shadow: #28aaff40 0 0 0 .125em;}
 	</div>
 <script>
 const updateFreq = 5;
-var spectrum, dBASpectrum, recorder, audios, start_time, recorder_timeout, use_recorded;
+var spectrum, dBASpectrum, recorder, audios, recorder_timeout, use_recorded;
 var timer, currentUser, ws, siriWave, g_stream, g_devices, taskHandle, source;
 var wav_win = $('#waveform')[0], last_pane=Cookies.get('last_pane') || '/f_home', ASRlist=$("#ASRlist")[0];
 RA = f => 12194 ** 2 * f ** 4 /((f ** 2 + 20.6 ** 2) * Math.sqrt((f ** 2 + 107.7 ** 2) * (f ** 2 + 737.9 ** 2)) * (f ** 2 + 12194 ** 2));
@@ -251,7 +251,6 @@ function ASR(task=""){
 	recorder = new MediaRecorder(g_stream, {mimeType: 'audio/webm'});
 	recorder.ondataavailable = (e) => { audios.push(e.data); if(recorder.state=='inactive') onRecStop(); };
 	recorder.start();
-	start_time=Date.now();
 	recorder_timeout = setTimeout("recorder.stop()", 15000);
 	use_recorded = false;
 }
