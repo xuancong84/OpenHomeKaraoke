@@ -231,3 +231,5 @@ Close
 Add
 Video duration: 
 Search for a song by speaking its title
+You are using Chrome browser which supports treat-insecure-origin-as-secure flag, do you want to add the current URL into it?
+Please copy 'chrome://flags/#unsafely-treat-insecure-origin-as-secure' into clipboard and paste it in new tab.

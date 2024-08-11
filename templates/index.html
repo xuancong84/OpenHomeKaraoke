@@ -173,10 +173,15 @@ post_switch = (url, data)=>{$.post(url, data, (_)=>{
 })}
 var ASR_hook = '';
 function ASR(task=""){
-	if(window.location.href.startsWith('http://')){
+	if(g_stream==null && window.location.href.startsWith('http://')){
 		if(confirm("{{getString1(214)}}")){
 			var port = parseInt(window.location.href.split(':')[2]);
 			window.location.href = window.location.href.replace('http:', 'https:').replace(port, port+1);
+		}else if(window.navigator.userAgent.includes('Chrome')){
+			if(confirm("{{getString1(234)}}")){
+				alert("{{getString1(235)}}");
+				openInNewTab("");
+			}
 		}
 		return;
 	}

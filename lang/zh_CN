@@ -231,3 +231,5 @@ Youtube-dl (yt-dlp) 版本
 添加
 视频长度：
 用语音识别来搜索歌曲
+您正在使用的Chrome浏览器支持treat-insecure-origin-as-secure选项，是否将当前页面的URL添加至此选项？
+请将'chrome://flags/#unsafely-treat-insecure-origin-as-secure'复制到剪贴板并在新浏览页中粘贴并打开。
