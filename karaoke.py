@@ -131,6 +131,7 @@ class Karaoke:
 		# get songs from download_path
 		self.get_available_songs()
 		self.get_youtubedl_version()
+		self.song2vol = Try(lambda: json.load(Open(self.download_path+'/.mp3_volume.json.gz')), {})
 		
 		# Automatically upgrade yt-dlp if using pip
 		if not args.youtubedl_path:
@@ -641,7 +642,7 @@ class Karaoke:
 			self.now_playing_filename = file_path
 			self.is_paused = ('--start-paused' in extra_params1)
 			if self.normalize_vol and self.logical_volume is not None:
-				self.volume = self.logical_volume / np.sqrt(self.compute_volume(file_path))
+				self.volume = self.logical_volume / np.sqrt(self.get_mp3_volume(file_path))
 			if self.now_playing_transpose == 0:
 				xml = self.vlcclient.play_file(file_path, self.volume, extra_params + extra_params1)
 			else:
@@ -650,7 +651,7 @@ class Karaoke:
 			self.has_video = "<info name='Type'>Video</info>" in xml
 			self.volume = round(float(self.vlcclient.get_val_xml(xml, 'volume')))
 			if self.normalize_vol:
-				self.media_vol = self.compute_volume(self.now_playing_filename)
+				self.media_vol = self.get_mp3_volume(self.now_playing_filename)
 				self.logical_volume = self.volume * np.sqrt(self.media_vol)
 		else:
 			logging.info("Playing video in omxplayer: " + file_path)
@@ -1110,10 +1111,18 @@ class Karaoke:
 		elif self.platform != 'windows':
 			os.system(f"tmux send-keys -t PiKaraoke:0.4 C-c")
 
-	def compute_volume(self, filename):
+	def get_mp3_volume(self, filename):
 		try:
+			basename, md5, fsize = os.path.basename(filename), md5sum(filename), os.stat(filename).st_size
+			vol_fsize_md5 = self.song2vol.get(basename, [0]*3)
+			if fsize == vol_fsize_md5[1] and md5 == vol_fsize_md5[2]:
+				return vol_fsize_md5[0]
 			pcm_data = subprocess.check_output(['ffmpeg', '-i', filename, '-vn', '-f', 's16le', '-acodec', 'pcm_s16le', '-'], stderr = subprocess.DEVNULL)
-			return np.clip(np.sqrt(np.std(np.frombuffer(pcm_data, dtype = np.int16))/STD_VOL), 0.1, 10)
+			volume_val = np.clip(np.sqrt(np.std(np.frombuffer(pcm_data, dtype = np.int16))/STD_VOL), 1/16, 16)
+			self.song2vol[basename] = [volume_val, fsize, md5]
+			with Open(self.download_path+'/.mp3_volume.json.gz', 'wb') as fp:
+				json.dump(self.song2vol, fp, indent=1)
+			return volume_val
 		except:
 			self.normalize_vol = False
 			return 1
@@ -1128,7 +1137,7 @@ class Karaoke:
 			self.normalize_vol = enable = False
 		if enable and self.now_playing_filename:
 			self.volume = self.vlcclient.get_info_xml()['volume']
-			self.media_vol = self.compute_volume(self.now_playing_filename)
+			self.media_vol = self.get_mp3_volume(self.now_playing_filename)
 			self.update_logical_vol()
 		return str(self.logical_volume)
 

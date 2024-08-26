@@ -1,5 +1,5 @@
-import os, sys, io, string, json, subprocess, yt_dlp
-import pykakasi, pinyin, logging, requests, shutil
+import os, sys, io, string, json, subprocess, yt_dlp, gzip
+import pykakasi, pinyin, logging, requests, shutil, hashlib
 from unidecode import unidecode
 from urllib.parse import unquote
 
@@ -29,12 +29,24 @@ def hhmmss2sec(hms):
 	hh, mm, ss = [float(i) for i in (['0', '0']+hms.split(':'))[-3:]]
 	return hh*3600 + mm*60 + ss
 
+expand_path = lambda t: os.path.expanduser(os.path.expandvars(t))
 
-def Try(fn, default=None):
-	try:
-		return fn()
-	except Exception as e:
-		return str(e) if default=='ERROR_MSG' else default
+def Open(fn, mode='r', **kwargs):
+	if fn == '-':
+		return sys.stdin if mode.startswith('r') else sys.stdout
+	fn = expand_path(fn)
+	return gzip.open(fn, mode, **kwargs) if fn.lower().endswith('.gz') else open(fn, mode, **kwargs)
+
+md5sum = lambda filepath: hashlib.md5(Open(filepath,'rb').read()).hexdigest()
+
+def Try(*args):
+	exc = ''
+	for arg in args:
+		try:
+			return arg() if callable(arg) else arg
+		except Exception as e:
+			exc = e
+	return str(exc)
 
 get_filesize = lambda fn: Try(lambda: os.path.getsize(fn), 0)
 
