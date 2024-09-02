@@ -1,68 +1,74 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import argparse
-import sys
+import argparse, time, random
+import os, sys, gzip
+from tqdm import tqdm
 from googletrans import Translator
 
 
-def find_lt(arr, n_limit):
-	n = len(arr)
-	while sum(arr[:n])>n_limit:
-		new_n = int(n*n_limit/sum(arr[:n]))
-		n = min(n-1, new_n)
-	return n
+def Open(fn, mode='r', **kwargs):
+	if fn == '-':
+		return open(sys.stdin.fileno(), mode) if mode.startswith('r') else sys.stdout
+	fn = os.path.expanduser(fn)
+	return gzip.open(fn, mode, **kwargs) if fn.lower().endswith('.gz') else open(fn, mode, **kwargs)
 
 
-def split_by_char(arr, n_limit):
-	ret = []
-	cur_start = 0
-	while not ret or ret[-1][1]<len(arr):
-		n = cur_start + find_lt(arr[cur_start:], n_limit)
-		ret += [(cur_start, n)]
-		cur_start = n
-	return ret
-
+def translate(txt, src, dst):
+	while True:
+		try:
+			return os.translator.translate(txt, dest = dst, src = src).text
+		except:
+			os.translator = Translator()
+			time.sleep(random.randint(1,5))
 
 def main():
 	parser = argparse.ArgumentParser(
 		description = 'Python Google Translator as a command-line tool')
 	parser.add_argument('text', help = 'The text you want to translate.', nargs = '?')
-	parser.add_argument('-d', '--dest', default = 'en',
-	                    help = 'The destination language you want to translate. (Default: en)')
-	parser.add_argument('-s', '--src', default = 'auto',
-	                    help = 'The source language you want to translate. (Default: auto)')
-	parser.add_argument('-c', '--detect', action = 'store_true', default = False,
-	                    help = 'Detect source language, print language type and confidence score')
-	parser.add_argument('-f', '--file', default = '',
-	                    help = 'Input file, this has the highest priority')
-	parser.add_argument('-n', '--split-threshold', type = int, default = 5000,
-	                    help = 'Character limit for splitting into multiple batches')
+	parser.add_argument('-d', '--dest', default = 'en', help = 'The destination language you want to translate. (Default: en)')
+	parser.add_argument('-s', '--src', default = 'auto', help = 'The source language you want to translate. (Default: auto)')
+	parser.add_argument('-c', '--detect', action = 'store_true', default = False, help = 'Detect source language, print language type and confidence score')
+	parser.add_argument('-i', '--file', default = '', help = 'Input file, this has the highest priority')
+	parser.add_argument('-o', '--output', default = '-', help = 'Output file, Default: - for STDOUT')
+	parser.add_argument('-n', '--split-threshold', type = int, default = 5000, help = 'Character limit for splitting into multiple batches')
 	args = parser.parse_args()
-	translator = Translator()
+	os.translator = Translator()
+
+	fp_out = Open(args.output, 'w')
 
 	if args.detect:
-		result = translator.detect(args.text)
-		print(result.lang, result.confidence)
+		result = os.translator.detect(args.text)
+		print(result.lang, result.confidence, file=fp_out)
 		return
 
 	if args.file:
 		text = open(args.file, 'rt').read()
 	elif args.text is None:
-		text = sys.stdin.read()
+		text = open(sys.stdin.fileno()).read()
 	else:
 		text = args.text
 
-	arr = text.splitlines()
-	if len(arr)>1:
-		bnds = split_by_char([len(L.encode('utf-8', 'ignore'))+1 for L in arr], args.split_threshold)
-		chunks = ['\n'.join(arr[p1:p2]) for p1, p2 in bnds]
-		for chunk in chunks:
-			result = translator.translate(chunk, dest = args.dest, src = args.src)
-			print(result.text)
-	else:
-		result = translator.translate(text, dest = args.dest, src = args.src)
-		print(result.text)
+	cur_chunk = ''
+	for L in tqdm(text.splitlines()):
+		L = L.strip()
+		if not L:
+			if cur_chunk:
+				text = translate(cur_chunk, args.src, args.dest)
+				print(text, flush=True, file=fp_out)
+				cur_chunk = ''
+			print(flush=True, file=fp_out)
+		elif len(cur_chunk)+1+len(L) > args.split_threshold:
+			if cur_chunk:
+				result = translate(cur_chunk, args.src, args.dest)
+				print(text, flush=True, file=fp_out)
+			cur_chunk = L
+		else:
+			cur_chunk += ('\n' if cur_chunk else '')+L
+	
+	if cur_chunk:
+		result = translate(cur_chunk, args.src, args.dest)
+		print(text, flush=True, file=fp_out)
 
 
 if __name__ == '__main__':
