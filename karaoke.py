@@ -1,4 +1,4 @@
-import os, sys, io, random, time, json
+import os, sys, io, random, time, json, datetime
 import logging, socket, subprocess, threading
 import multiprocessing as mp
 import shutil, psutil, traceback, tarfile, requests
@@ -8,7 +8,6 @@ from collections import *
 import numpy as np
 
 from constants import media_types
-from datetime import datetime
 
 import pygame
 import qrcode
@@ -161,7 +160,7 @@ class Karaoke:
 	def _upgrade_yt_dlp(self):
 		import pip, yt_dlp
 		fn = '.yt-dlp.last-update'
-		date_today = datetime.today().isoformat()[:10]
+		date_today = datetime.datetime.today().isoformat()[:10]
 		date_last = Try(lambda: open(fn).read().strip(), '')
 		if date_today == date_last:
 			logging.info(f"yt-dlp is up-to-date at {date_today}")
