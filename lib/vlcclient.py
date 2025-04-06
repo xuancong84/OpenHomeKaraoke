@@ -207,8 +207,8 @@ class VLCClient:
 			"%s" % semitones,
 			"--speex-resampler-quality",
 			"%s" % speex_quality,
-			"--src-converter-type",
-			"%s" % src_type,
+#			"--src-converter-type",
+#			"%s" % src_type,
 		]
 
 		logging.debug("Transposing file...")
