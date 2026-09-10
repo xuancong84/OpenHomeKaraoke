@@ -452,7 +452,7 @@ class Karaoke:
 					j = json.loads(each)
 					if (not "title" in j) or (not "url" in j):
 						continue
-					rc.append([j["title"], j["url"], j["id"], sec2hhmmss(j["duration"])])
+					rc.append([j["title"], j["url"], j["id"], sec2hhmmss(j.get("duration", 0))])
 			return rc
 		except Exception as e:
 			logging.debug("Error while executing search: " + str(e))
