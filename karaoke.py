@@ -440,7 +440,7 @@ class Karaoke:
 		logging.info("Searching YouTube for: " + textToSearch)
 		num_results = 10
 		yt_search = 'ytsearch%d:%s' % (num_results, textToSearch)
-		cmd = ["-j", "--no-playlist", "--flat-playlist", yt_search]
+		cmd = ["-j", "--no-playlist", "--flat-playlist", "--js-runtimes", "node", "--remote-components", "ejs:github"] + self.cookies_opt + [yt_search]
 		logging.debug("Youtube-dl search command: " + " ".join(cmd))
 		try:
 			# output = subprocess.check_output(cmd).decode("utf-8")
@@ -452,7 +452,7 @@ class Karaoke:
 					j = json.loads(each)
 					if (not "title" in j) or (not "url" in j):
 						continue
-					rc.append([j["title"], j["url"], j["id"], sec2hhmmss(j["duration"])])
+					rc.append([j["title"], j["url"], j["id"], sec2hhmmss(j.get("duration", 0))])
 			return rc
 		except Exception as e:
 			logging.debug("Error while executing search: " + str(e))
@@ -489,13 +489,14 @@ class Karaoke:
 		dl_path = "%(title)s---%(id)s.%(ext)s"
 		opt_quality = ['-f', 'bestvideo[height<=1080]+bestaudio[abr<=160]'] if high_quality else ['-f', 'mp4+m4a']
 		opt_sub = ['--sub-langs', 'all', '--embed-subs'] if include_subtitles else []
-		cmd = ['--fixup', 'force', '--socket-timeout', '3', '-R', 'infinite', '--remux-video', 'mp4'] + self.cookies_opt + opt_quality +\
-		      ["-o", self.download_path+'tmp/'+dl_path] + opt_sub + [song_url]
+		cmd = ['--fixup', 'force', '--socket-timeout', '3', '-R', 'infinite', '--remux-video', 'mp4', '--js-runtimes', 'node', '--remote-components', 'ejs:github'] + self.cookies_opt + opt_quality +\
+			["-o", self.download_path+'tmp/'+dl_path] + opt_sub + [song_url]
 		logging.info("Youtube-dl command: " + " ".join(cmd))
 		rc = self.call_yt_dlp(cmd)
 		if rc != 0:
 			logging.error("Error code while downloading, retrying without format options ...")
-			cmd = ["-o", self.download_path + 'tmp/' + dl_path] + opt_sub + [song_url]
+			cmd = ['--fixup', 'force', '--socket-timeout', '3', '-R', 'infinite', '--remux-video', 'mp4', '--js-runtimes', 'node', '--remote-components', 'ejs:github'] + self.cookies_opt + \
+				["-o", self.download_path + 'tmp/' + dl_path] + opt_sub + [song_url]
 			logging.debug("Youtube-dl command: " + " ".join(cmd))
 			rc = self.call_yt_dlp(cmd)
 		if rc == 0:

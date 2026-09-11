@@ -1187,7 +1187,11 @@ if __name__ == "__main__":
 		path = get_default_browser_cookie(platform)
 		args.cookies_opt = ['--cookies-from-browser', path] if path else []
 	else:
-		args.cookies_opt = ['--cookies-from-browser', args.browser_cookies]
+		# Support both cookies.txt files and browser names
+		if args.browser_cookies.endswith('.txt'):
+			args.cookies_opt = ['--cookies', args.browser_cookies]
+		else:
+			args.cookies_opt = ['--cookies-from-browser', args.browser_cookies]
 
 	# Handle OMX player if specified
 	if platform == "raspberry_pi" and args.use_omxplayer:
