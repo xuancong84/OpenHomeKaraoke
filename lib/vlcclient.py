@@ -27,6 +27,7 @@ def get_default_vlc_path(platform):
 
 class VLCClient:
 	vol_increment = 10
+	startup_timeout = 15  # seconds to wait for VLC's HTTP interface to report the media
 
 	def __init__(self, port = 5002, path = None, qrcode = None, url = None):
 
@@ -154,13 +155,15 @@ class VLCClient:
 			logging.info("VLC Command: %s" % command)
 			self.process = subprocess.Popen(command, stdin = subprocess.PIPE)
 
-			# wait for the process to start
-			while self.process.poll() is not None:
-				pass
-
-			# wait for VLC HTTP is ready
+			# wait for VLC HTTP is ready. Give up if VLC exits (e.g. unreadable file) or
+			# takes too long, so the caller can skip the song instead of hanging forever.
+			deadline = time.time() + self.startup_timeout
 			while True:
 				time.sleep(0.1)
+				if self.process.poll() is not None:
+					raise Exception(f"VLC exited during startup (exit code {self.process.returncode})")
+				if time.time() > deadline:
+					raise Exception(f"VLC did not report the media within {self.startup_timeout}s")
 				req = self.command("", False)
 				xml = req.text
 				if "<info name='Type'>Video</info>" not in xml and "<info name='Type'>Audio</info>" not in xml:
@@ -194,7 +197,9 @@ class VLCClient:
 
 		except Exception as e:
 			logging.error("Playing file failed: " + str(e))
+			self.kill()
 			self.is_transposing = False
+			return None
 
 	def play_file_transpose(self, file_path, semitones, volume, extra_params = []):
 		# --speex-resampler-quality=<integer [0 .. 10]>
