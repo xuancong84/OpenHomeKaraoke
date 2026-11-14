@@ -169,16 +169,24 @@ class VLCClient:
 					break
 
 			# workaround --volume-save not working in Windows
+			# VLC built with newer Lua reports volume as "256.0", so parse it as float.
+			# Never loop forever: this runs on the main (pygame) thread when switching songs,
+			# and a stuck loop freezes the window ("not responding" on GNOME/Wayland).
 			okay = False
+			deadline = time.time() + 5
 			while volume and not okay:
+				if self.process.poll() is not None or time.time() > deadline:
+					logging.warning(f"Could not confirm VLC volume {volume}, continuing")
+					break
 				try:
 					volume = round(volume)
 					xml = self.command(f"volume&val={volume}", False).text
-					if int(self.get_val_xml(xml, 'volume')) == volume:
-						okay = True
+					okay = round(float(self.get_val_xml(xml, 'volume'))) == volume
 					if not os.K.is_paused and self.get_val_xml(xml, 'state') != 'playing':
 						okay = False
-				except:
+				except (TypeError, ValueError):
+					okay = False
+				if not okay:
 					time.sleep(0.1)
 
 			self.is_transposing = False
