@@ -143,6 +143,7 @@ class Karaoke:
 		if self.use_vlc:
 			self.vlcclient = vlcclient.VLCClient(port = self.vlc_port, path = self.vlc_path,
 			                                     qrcode = (self.qr_code_path if self.show_overlay else None), url = self.url)
+			self.vlcclient.wait_hook = self.pump_events_if_main_thread
 		else:
 			self.omxclient = omxclient.OMXClient(path = self.omxplayer_path, adev = self.omxplayer_adev,
 			                                     dual_screen = self.dual_screen, volume_offset = self.volume_offset)
@@ -1054,6 +1055,13 @@ class Karaoke:
 			self.render_splash_screen()
 			pygame.display.update()
 		pygame.time.wait(100)
+
+	def pump_events_if_main_thread(self):
+		# While the main thread is blocked waiting for VLC to start, let SDL process window
+		# events so it keeps answering the window manager's ping (no "not responding" dialog).
+		# Events stay queued and are handled by handle_run_loop afterwards.
+		if self.screen is not None and threading.current_thread() is threading.main_thread():
+			pygame.event.pump()
 
 	# Use this to reset the screen in case it loses focus
 	# This seems to occur in windows after playing a video

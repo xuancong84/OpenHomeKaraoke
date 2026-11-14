@@ -28,6 +28,17 @@ def get_default_vlc_path(platform):
 class VLCClient:
 	vol_increment = 10
 	startup_timeout = 15  # seconds to wait for VLC's HTTP interface to report the media
+	# Called while play_file waits for VLC. Karaoke sets it to pump pygame events when on the
+	# main thread, so the window keeps answering the window manager's ping and stays movable.
+	wait_hook = None
+
+	def _wait(self, seconds):
+		time.sleep(seconds)
+		if self.wait_hook is not None:
+			try:
+				self.wait_hook()
+			except Exception as e:
+				logging.debug(f"wait_hook failed: {e}")
 
 	def __init__(self, port = 5002, path = None, qrcode = None, url = None):
 
@@ -159,7 +170,7 @@ class VLCClient:
 			# takes too long, so the caller can skip the song instead of hanging forever.
 			deadline = time.time() + self.startup_timeout
 			while True:
-				time.sleep(0.1)
+				self._wait(0.1)
 				if self.process.poll() is not None:
 					raise Exception(f"VLC exited during startup (exit code {self.process.returncode})")
 				if time.time() > deadline:
@@ -190,7 +201,7 @@ class VLCClient:
 				except (TypeError, ValueError):
 					okay = False
 				if not okay:
-					time.sleep(0.1)
+					self._wait(0.1)
 
 			self.is_transposing = False
 			return xml
